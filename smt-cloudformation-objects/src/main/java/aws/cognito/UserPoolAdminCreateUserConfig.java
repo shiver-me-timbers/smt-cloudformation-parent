@@ -42,14 +42,14 @@ public class UserPoolAdminCreateUserConfig implements Property<UserPoolAdminCrea
      */
     @JsonProperty("UnusedAccountValidityDays")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-admincreateuserconfig.html#cfn-cognito-userpool-admincreateuserconfig-unusedaccountvaliditydays")
-    private Double unusedAccountValidityDays;
+    private Number unusedAccountValidityDays;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-admincreateuserconfig.html#cfn-cognito-userpool-admincreateuserconfig-allowadmincreateuseronly
      * 
      */
     @JsonProperty("AllowAdminCreateUserOnly")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-admincreateuserconfig.html#cfn-cognito-userpool-admincreateuserconfig-allowadmincreateuseronly")
-    private Boolean allowAdminCreateUserOnly;
+    private CharSequence allowAdminCreateUserOnly;
 
     /**
      * UserPoolInviteMessageTemplate
@@ -83,7 +83,7 @@ public class UserPoolAdminCreateUserConfig implements Property<UserPoolAdminCrea
      * 
      */
     @JsonIgnore
-    public Double getUnusedAccountValidityDays() {
+    public Number getUnusedAccountValidityDays() {
         return unusedAccountValidityDays;
     }
 
@@ -92,11 +92,11 @@ public class UserPoolAdminCreateUserConfig implements Property<UserPoolAdminCrea
      * 
      */
     @JsonIgnore
-    public void setUnusedAccountValidityDays(Double unusedAccountValidityDays) {
+    public void setUnusedAccountValidityDays(Number unusedAccountValidityDays) {
         this.unusedAccountValidityDays = unusedAccountValidityDays;
     }
 
-    public UserPoolAdminCreateUserConfig withUnusedAccountValidityDays(Double unusedAccountValidityDays) {
+    public UserPoolAdminCreateUserConfig withUnusedAccountValidityDays(Number unusedAccountValidityDays) {
         this.unusedAccountValidityDays = unusedAccountValidityDays;
         return this;
     }
@@ -106,7 +106,7 @@ public class UserPoolAdminCreateUserConfig implements Property<UserPoolAdminCrea
      * 
      */
     @JsonIgnore
-    public Boolean getAllowAdminCreateUserOnly() {
+    public CharSequence getAllowAdminCreateUserOnly() {
         return allowAdminCreateUserOnly;
     }
 
@@ -115,11 +115,11 @@ public class UserPoolAdminCreateUserConfig implements Property<UserPoolAdminCrea
      * 
      */
     @JsonIgnore
-    public void setAllowAdminCreateUserOnly(Boolean allowAdminCreateUserOnly) {
+    public void setAllowAdminCreateUserOnly(CharSequence allowAdminCreateUserOnly) {
         this.allowAdminCreateUserOnly = allowAdminCreateUserOnly;
     }
 
-    public UserPoolAdminCreateUserConfig withAllowAdminCreateUserOnly(Boolean allowAdminCreateUserOnly) {
+    public UserPoolAdminCreateUserConfig withAllowAdminCreateUserOnly(CharSequence allowAdminCreateUserOnly) {
         this.allowAdminCreateUserOnly = allowAdminCreateUserOnly;
         return this;
     }

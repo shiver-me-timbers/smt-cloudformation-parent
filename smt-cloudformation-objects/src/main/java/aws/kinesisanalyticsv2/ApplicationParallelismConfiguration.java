@@ -41,21 +41,21 @@ public class ApplicationParallelismConfiguration implements Property<Application
      */
     @JsonProperty("ParallelismPerKPU")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-parallelismconfiguration.html#cfn-kinesisanalyticsv2-application-parallelismconfiguration-parallelismperkpu")
-    private Integer parallelismPerKPU;
+    private Number parallelismPerKPU;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-parallelismconfiguration.html#cfn-kinesisanalyticsv2-application-parallelismconfiguration-autoscalingenabled
      * 
      */
     @JsonProperty("AutoScalingEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-parallelismconfiguration.html#cfn-kinesisanalyticsv2-application-parallelismconfiguration-autoscalingenabled")
-    private Boolean autoScalingEnabled;
+    private CharSequence autoScalingEnabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-parallelismconfiguration.html#cfn-kinesisanalyticsv2-application-parallelismconfiguration-parallelism
      * 
      */
     @JsonProperty("Parallelism")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-parallelismconfiguration.html#cfn-kinesisanalyticsv2-application-parallelismconfiguration-parallelism")
-    private Integer parallelism;
+    private Number parallelism;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-parallelismconfiguration.html#cfn-kinesisanalyticsv2-application-parallelismconfiguration-configurationtype
@@ -85,7 +85,7 @@ public class ApplicationParallelismConfiguration implements Property<Application
      * 
      */
     @JsonIgnore
-    public Integer getParallelismPerKPU() {
+    public Number getParallelismPerKPU() {
         return parallelismPerKPU;
     }
 
@@ -94,11 +94,11 @@ public class ApplicationParallelismConfiguration implements Property<Application
      * 
      */
     @JsonIgnore
-    public void setParallelismPerKPU(Integer parallelismPerKPU) {
+    public void setParallelismPerKPU(Number parallelismPerKPU) {
         this.parallelismPerKPU = parallelismPerKPU;
     }
 
-    public ApplicationParallelismConfiguration withParallelismPerKPU(Integer parallelismPerKPU) {
+    public ApplicationParallelismConfiguration withParallelismPerKPU(Number parallelismPerKPU) {
         this.parallelismPerKPU = parallelismPerKPU;
         return this;
     }
@@ -108,7 +108,7 @@ public class ApplicationParallelismConfiguration implements Property<Application
      * 
      */
     @JsonIgnore
-    public Boolean getAutoScalingEnabled() {
+    public CharSequence getAutoScalingEnabled() {
         return autoScalingEnabled;
     }
 
@@ -117,11 +117,11 @@ public class ApplicationParallelismConfiguration implements Property<Application
      * 
      */
     @JsonIgnore
-    public void setAutoScalingEnabled(Boolean autoScalingEnabled) {
+    public void setAutoScalingEnabled(CharSequence autoScalingEnabled) {
         this.autoScalingEnabled = autoScalingEnabled;
     }
 
-    public ApplicationParallelismConfiguration withAutoScalingEnabled(Boolean autoScalingEnabled) {
+    public ApplicationParallelismConfiguration withAutoScalingEnabled(CharSequence autoScalingEnabled) {
         this.autoScalingEnabled = autoScalingEnabled;
         return this;
     }
@@ -131,7 +131,7 @@ public class ApplicationParallelismConfiguration implements Property<Application
      * 
      */
     @JsonIgnore
-    public Integer getParallelism() {
+    public Number getParallelism() {
         return parallelism;
     }
 
@@ -140,11 +140,11 @@ public class ApplicationParallelismConfiguration implements Property<Application
      * 
      */
     @JsonIgnore
-    public void setParallelism(Integer parallelism) {
+    public void setParallelism(Number parallelism) {
         this.parallelism = parallelism;
     }
 
-    public ApplicationParallelismConfiguration withParallelism(Integer parallelism) {
+    public ApplicationParallelismConfiguration withParallelism(Number parallelism) {
         this.parallelism = parallelism;
         return this;
     }

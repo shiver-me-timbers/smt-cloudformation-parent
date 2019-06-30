@@ -1,6 +1,6 @@
 package aws.fn;
 
-import aws.StringProperty;
+import aws.PrimitiveProperty;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.Map;
@@ -8,7 +8,7 @@ import java.util.Map;
 import static java.lang.String.format;
 import static java.util.Arrays.asList;
 
-public class Sub extends StringProperty implements StringFunction {
+public class Sub extends PrimitiveProperty implements StringFunction {
 
     @JsonProperty("Fn::Sub")
     private final Object value;

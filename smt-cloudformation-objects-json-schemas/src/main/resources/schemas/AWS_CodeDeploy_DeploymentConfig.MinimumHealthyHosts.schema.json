@@ -14,7 +14,8 @@
     },
     "Value" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentconfig-minimumhealthyhosts.html#cfn-codedeploy-deploymentconfig-minimumhealthyhosts-value",
-      "type" : "integer"
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
     }
   }
 }

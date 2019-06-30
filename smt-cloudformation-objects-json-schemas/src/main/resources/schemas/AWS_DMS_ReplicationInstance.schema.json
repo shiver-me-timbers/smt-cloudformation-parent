@@ -33,7 +33,8 @@
     },
     "AutoMinorVersionUpgrade" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-autominorversionupgrade",
-      "type" : "boolean"
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
     },
     "ReplicationSubnetGroupIdentifier" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-replicationsubnetgroupidentifier",
@@ -42,7 +43,8 @@
     },
     "AllocatedStorage" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-allocatedstorage",
-      "type" : "integer"
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
     },
     "VpcSecurityGroupIds" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-vpcsecuritygroupids",
@@ -54,7 +56,8 @@
     },
     "AllowMajorVersionUpgrade" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-allowmajorversionupgrade",
-      "type" : "boolean"
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
     },
     "ReplicationInstanceClass" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-replicationinstanceclass",
@@ -63,11 +66,13 @@
     },
     "PubliclyAccessible" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-publiclyaccessible",
-      "type" : "boolean"
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
     },
     "MultiAZ" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-multiaz",
-      "type" : "boolean"
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
     },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-tags",

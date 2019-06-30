@@ -33,7 +33,7 @@ public class RuleInputTransformer implements Property<RuleInputTransformer>
      */
     @JsonProperty("InputPathsMap")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-inputtransformer.html#cfn-events-rule-inputtransformer-inputpathsmap")
-    private Map<String, String> inputPathsMap;
+    private Map<String, CharSequence> inputPathsMap;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-inputtransformer.html#cfn-events-rule-inputtransformer-inputtemplate
      * 
@@ -47,7 +47,7 @@ public class RuleInputTransformer implements Property<RuleInputTransformer>
      * 
      */
     @JsonIgnore
-    public Map<String, String> getInputPathsMap() {
+    public Map<String, CharSequence> getInputPathsMap() {
         return inputPathsMap;
     }
 
@@ -56,11 +56,11 @@ public class RuleInputTransformer implements Property<RuleInputTransformer>
      * 
      */
     @JsonIgnore
-    public void setInputPathsMap(Map<String, String> inputPathsMap) {
+    public void setInputPathsMap(Map<String, CharSequence> inputPathsMap) {
         this.inputPathsMap = inputPathsMap;
     }
 
-    public RuleInputTransformer withInputPathsMap(Map<String, String> inputPathsMap) {
+    public RuleInputTransformer withInputPathsMap(Map<String, CharSequence> inputPathsMap) {
         this.inputPathsMap = inputPathsMap;
         return this;
     }

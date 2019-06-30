@@ -1,6 +1,6 @@
 package aws.fn;
 
-import aws.StringProperty;
+import aws.PrimitiveProperty;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
@@ -8,7 +8,7 @@ import java.util.List;
 import static java.lang.String.format;
 import static java.util.Arrays.asList;
 
-public class Cidr extends StringProperty implements StringFunction {
+public class Cidr extends PrimitiveProperty implements StringFunction {
 
     @JsonProperty("Fn::Cidr")
     private final List<CharSequence> values;

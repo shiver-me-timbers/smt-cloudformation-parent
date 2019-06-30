@@ -28,7 +28,8 @@
     },
     "RawMessageDelivery" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-rawmessagedelivery",
-      "type" : "boolean"
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
     },
     "Region" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-region",

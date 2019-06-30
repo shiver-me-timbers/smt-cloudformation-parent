@@ -1,11 +1,11 @@
 package aws.fn;
 
-import aws.StringProperty;
+import aws.PrimitiveProperty;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import static java.lang.String.format;
 
-public class ImportValue extends StringProperty implements StringFunction {
+public class ImportValue extends PrimitiveProperty implements StringFunction {
 
     @JsonProperty("Fn::ImportValue")
     private final CharSequence value;

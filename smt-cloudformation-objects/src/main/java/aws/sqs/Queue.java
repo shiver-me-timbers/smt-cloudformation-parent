@@ -44,28 +44,28 @@ public class Queue {
      */
     @JsonProperty("ContentBasedDeduplication")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-contentbaseddeduplication")
-    private Boolean contentBasedDeduplication;
+    private CharSequence contentBasedDeduplication;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-delayseconds
      * 
      */
     @JsonProperty("DelaySeconds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-delayseconds")
-    private Integer delaySeconds;
+    private Number delaySeconds;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-fifoqueue
      * 
      */
     @JsonProperty("FifoQueue")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-fifoqueue")
-    private Boolean fifoQueue;
+    private CharSequence fifoQueue;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-kmsdatakeyreuseperiodseconds
      * 
      */
     @JsonProperty("KmsDataKeyReusePeriodSeconds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-kmsdatakeyreuseperiodseconds")
-    private Integer kmsDataKeyReusePeriodSeconds;
+    private Number kmsDataKeyReusePeriodSeconds;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-kmsmasterkeyid
      * 
@@ -79,14 +79,14 @@ public class Queue {
      */
     @JsonProperty("MaximumMessageSize")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-maxmesgsize")
-    private Integer maximumMessageSize;
+    private Number maximumMessageSize;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-msgretentionperiod
      * 
      */
     @JsonProperty("MessageRetentionPeriod")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-msgretentionperiod")
-    private Integer messageRetentionPeriod;
+    private Number messageRetentionPeriod;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-name
      * 
@@ -100,7 +100,7 @@ public class Queue {
      */
     @JsonProperty("ReceiveMessageWaitTimeSeconds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-receivemsgwaittime")
-    private Integer receiveMessageWaitTimeSeconds;
+    private Number receiveMessageWaitTimeSeconds;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-redrive
      * 
@@ -121,14 +121,14 @@ public class Queue {
      */
     @JsonProperty("VisibilityTimeout")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-visiblitytimeout")
-    private Integer visibilityTimeout;
+    private Number visibilityTimeout;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-contentbaseddeduplication
      * 
      */
     @JsonIgnore
-    public Boolean getContentBasedDeduplication() {
+    public CharSequence getContentBasedDeduplication() {
         return contentBasedDeduplication;
     }
 
@@ -137,11 +137,11 @@ public class Queue {
      * 
      */
     @JsonIgnore
-    public void setContentBasedDeduplication(Boolean contentBasedDeduplication) {
+    public void setContentBasedDeduplication(CharSequence contentBasedDeduplication) {
         this.contentBasedDeduplication = contentBasedDeduplication;
     }
 
-    public Queue withContentBasedDeduplication(Boolean contentBasedDeduplication) {
+    public Queue withContentBasedDeduplication(CharSequence contentBasedDeduplication) {
         this.contentBasedDeduplication = contentBasedDeduplication;
         return this;
     }
@@ -151,7 +151,7 @@ public class Queue {
      * 
      */
     @JsonIgnore
-    public Integer getDelaySeconds() {
+    public Number getDelaySeconds() {
         return delaySeconds;
     }
 
@@ -160,11 +160,11 @@ public class Queue {
      * 
      */
     @JsonIgnore
-    public void setDelaySeconds(Integer delaySeconds) {
+    public void setDelaySeconds(Number delaySeconds) {
         this.delaySeconds = delaySeconds;
     }
 
-    public Queue withDelaySeconds(Integer delaySeconds) {
+    public Queue withDelaySeconds(Number delaySeconds) {
         this.delaySeconds = delaySeconds;
         return this;
     }
@@ -174,7 +174,7 @@ public class Queue {
      * 
      */
     @JsonIgnore
-    public Boolean getFifoQueue() {
+    public CharSequence getFifoQueue() {
         return fifoQueue;
     }
 
@@ -183,11 +183,11 @@ public class Queue {
      * 
      */
     @JsonIgnore
-    public void setFifoQueue(Boolean fifoQueue) {
+    public void setFifoQueue(CharSequence fifoQueue) {
         this.fifoQueue = fifoQueue;
     }
 
-    public Queue withFifoQueue(Boolean fifoQueue) {
+    public Queue withFifoQueue(CharSequence fifoQueue) {
         this.fifoQueue = fifoQueue;
         return this;
     }
@@ -197,7 +197,7 @@ public class Queue {
      * 
      */
     @JsonIgnore
-    public Integer getKmsDataKeyReusePeriodSeconds() {
+    public Number getKmsDataKeyReusePeriodSeconds() {
         return kmsDataKeyReusePeriodSeconds;
     }
 
@@ -206,11 +206,11 @@ public class Queue {
      * 
      */
     @JsonIgnore
-    public void setKmsDataKeyReusePeriodSeconds(Integer kmsDataKeyReusePeriodSeconds) {
+    public void setKmsDataKeyReusePeriodSeconds(Number kmsDataKeyReusePeriodSeconds) {
         this.kmsDataKeyReusePeriodSeconds = kmsDataKeyReusePeriodSeconds;
     }
 
-    public Queue withKmsDataKeyReusePeriodSeconds(Integer kmsDataKeyReusePeriodSeconds) {
+    public Queue withKmsDataKeyReusePeriodSeconds(Number kmsDataKeyReusePeriodSeconds) {
         this.kmsDataKeyReusePeriodSeconds = kmsDataKeyReusePeriodSeconds;
         return this;
     }
@@ -243,7 +243,7 @@ public class Queue {
      * 
      */
     @JsonIgnore
-    public Integer getMaximumMessageSize() {
+    public Number getMaximumMessageSize() {
         return maximumMessageSize;
     }
 
@@ -252,11 +252,11 @@ public class Queue {
      * 
      */
     @JsonIgnore
-    public void setMaximumMessageSize(Integer maximumMessageSize) {
+    public void setMaximumMessageSize(Number maximumMessageSize) {
         this.maximumMessageSize = maximumMessageSize;
     }
 
-    public Queue withMaximumMessageSize(Integer maximumMessageSize) {
+    public Queue withMaximumMessageSize(Number maximumMessageSize) {
         this.maximumMessageSize = maximumMessageSize;
         return this;
     }
@@ -266,7 +266,7 @@ public class Queue {
      * 
      */
     @JsonIgnore
-    public Integer getMessageRetentionPeriod() {
+    public Number getMessageRetentionPeriod() {
         return messageRetentionPeriod;
     }
 
@@ -275,11 +275,11 @@ public class Queue {
      * 
      */
     @JsonIgnore
-    public void setMessageRetentionPeriod(Integer messageRetentionPeriod) {
+    public void setMessageRetentionPeriod(Number messageRetentionPeriod) {
         this.messageRetentionPeriod = messageRetentionPeriod;
     }
 
-    public Queue withMessageRetentionPeriod(Integer messageRetentionPeriod) {
+    public Queue withMessageRetentionPeriod(Number messageRetentionPeriod) {
         this.messageRetentionPeriod = messageRetentionPeriod;
         return this;
     }
@@ -312,7 +312,7 @@ public class Queue {
      * 
      */
     @JsonIgnore
-    public Integer getReceiveMessageWaitTimeSeconds() {
+    public Number getReceiveMessageWaitTimeSeconds() {
         return receiveMessageWaitTimeSeconds;
     }
 
@@ -321,11 +321,11 @@ public class Queue {
      * 
      */
     @JsonIgnore
-    public void setReceiveMessageWaitTimeSeconds(Integer receiveMessageWaitTimeSeconds) {
+    public void setReceiveMessageWaitTimeSeconds(Number receiveMessageWaitTimeSeconds) {
         this.receiveMessageWaitTimeSeconds = receiveMessageWaitTimeSeconds;
     }
 
-    public Queue withReceiveMessageWaitTimeSeconds(Integer receiveMessageWaitTimeSeconds) {
+    public Queue withReceiveMessageWaitTimeSeconds(Number receiveMessageWaitTimeSeconds) {
         this.receiveMessageWaitTimeSeconds = receiveMessageWaitTimeSeconds;
         return this;
     }
@@ -381,7 +381,7 @@ public class Queue {
      * 
      */
     @JsonIgnore
-    public Integer getVisibilityTimeout() {
+    public Number getVisibilityTimeout() {
         return visibilityTimeout;
     }
 
@@ -390,11 +390,11 @@ public class Queue {
      * 
      */
     @JsonIgnore
-    public void setVisibilityTimeout(Integer visibilityTimeout) {
+    public void setVisibilityTimeout(Number visibilityTimeout) {
         this.visibilityTimeout = visibilityTimeout;
     }
 
-    public Queue withVisibilityTimeout(Integer visibilityTimeout) {
+    public Queue withVisibilityTimeout(Number visibilityTimeout) {
         this.visibilityTimeout = visibilityTimeout;
         return this;
     }

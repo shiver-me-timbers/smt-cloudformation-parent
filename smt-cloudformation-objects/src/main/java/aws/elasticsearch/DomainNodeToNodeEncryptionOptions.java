@@ -31,14 +31,14 @@ public class DomainNodeToNodeEncryptionOptions implements Property<DomainNodeToN
      */
     @JsonProperty("Enabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-nodetonodeencryptionoptions.html#cfn-elasticsearch-domain-nodetonodeencryptionoptions-enabled")
-    private Boolean enabled;
+    private CharSequence enabled;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-nodetonodeencryptionoptions.html#cfn-elasticsearch-domain-nodetonodeencryptionoptions-enabled
      * 
      */
     @JsonIgnore
-    public Boolean getEnabled() {
+    public CharSequence getEnabled() {
         return enabled;
     }
 
@@ -47,11 +47,11 @@ public class DomainNodeToNodeEncryptionOptions implements Property<DomainNodeToN
      * 
      */
     @JsonIgnore
-    public void setEnabled(Boolean enabled) {
+    public void setEnabled(CharSequence enabled) {
         this.enabled = enabled;
     }
 
-    public DomainNodeToNodeEncryptionOptions withEnabled(Boolean enabled) {
+    public DomainNodeToNodeEncryptionOptions withEnabled(CharSequence enabled) {
         this.enabled = enabled;
         return this;
     }

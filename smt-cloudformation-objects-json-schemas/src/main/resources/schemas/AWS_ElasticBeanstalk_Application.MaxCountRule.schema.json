@@ -9,15 +9,18 @@
   "properties" : {
     "DeleteSourceFromS3" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxcountrule.html#cfn-elasticbeanstalk-application-maxcountrule-deletesourcefroms3",
-      "type" : "boolean"
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
     },
     "Enabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxcountrule.html#cfn-elasticbeanstalk-application-maxcountrule-enabled",
-      "type" : "boolean"
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
     },
     "MaxCount" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxcountrule.html#cfn-elasticbeanstalk-application-maxcountrule-maxcount",
-      "type" : "integer"
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
     }
   }
 }

@@ -36,14 +36,14 @@ public class EC2FleetFleetLaunchTemplateOverridesRequest implements Property<EC2
      */
     @JsonProperty("WeightedCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-weightedcapacity")
-    private Double weightedCapacity;
+    private Number weightedCapacity;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-priority
      * 
      */
     @JsonProperty("Priority")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-priority")
-    private Double priority;
+    private Number priority;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-availabilityzone
      * 
@@ -78,7 +78,7 @@ public class EC2FleetFleetLaunchTemplateOverridesRequest implements Property<EC2
      * 
      */
     @JsonIgnore
-    public Double getWeightedCapacity() {
+    public Number getWeightedCapacity() {
         return weightedCapacity;
     }
 
@@ -87,11 +87,11 @@ public class EC2FleetFleetLaunchTemplateOverridesRequest implements Property<EC2
      * 
      */
     @JsonIgnore
-    public void setWeightedCapacity(Double weightedCapacity) {
+    public void setWeightedCapacity(Number weightedCapacity) {
         this.weightedCapacity = weightedCapacity;
     }
 
-    public EC2FleetFleetLaunchTemplateOverridesRequest withWeightedCapacity(Double weightedCapacity) {
+    public EC2FleetFleetLaunchTemplateOverridesRequest withWeightedCapacity(Number weightedCapacity) {
         this.weightedCapacity = weightedCapacity;
         return this;
     }
@@ -101,7 +101,7 @@ public class EC2FleetFleetLaunchTemplateOverridesRequest implements Property<EC2
      * 
      */
     @JsonIgnore
-    public Double getPriority() {
+    public Number getPriority() {
         return priority;
     }
 
@@ -110,11 +110,11 @@ public class EC2FleetFleetLaunchTemplateOverridesRequest implements Property<EC2
      * 
      */
     @JsonIgnore
-    public void setPriority(Double priority) {
+    public void setPriority(Number priority) {
         this.priority = priority;
     }
 
-    public EC2FleetFleetLaunchTemplateOverridesRequest withPriority(Double priority) {
+    public EC2FleetFleetLaunchTemplateOverridesRequest withPriority(Number priority) {
         this.priority = priority;
         return this;
     }

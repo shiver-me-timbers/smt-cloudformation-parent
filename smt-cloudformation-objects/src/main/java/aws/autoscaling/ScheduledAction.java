@@ -42,7 +42,7 @@ public class ScheduledAction {
      */
     @JsonProperty("DesiredCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html#cfn-as-scheduledaction-desiredcapacity")
-    private Integer desiredCapacity;
+    private Number desiredCapacity;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html#cfn-as-scheduledaction-endtime
      * 
@@ -56,14 +56,14 @@ public class ScheduledAction {
      */
     @JsonProperty("MaxSize")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html#cfn-as-scheduledaction-maxsize")
-    private Integer maxSize;
+    private Number maxSize;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html#cfn-as-scheduledaction-minsize
      * 
      */
     @JsonProperty("MinSize")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html#cfn-as-scheduledaction-minsize")
-    private Integer minSize;
+    private Number minSize;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html#cfn-as-scheduledaction-recurrence
      * 
@@ -107,7 +107,7 @@ public class ScheduledAction {
      * 
      */
     @JsonIgnore
-    public Integer getDesiredCapacity() {
+    public Number getDesiredCapacity() {
         return desiredCapacity;
     }
 
@@ -116,11 +116,11 @@ public class ScheduledAction {
      * 
      */
     @JsonIgnore
-    public void setDesiredCapacity(Integer desiredCapacity) {
+    public void setDesiredCapacity(Number desiredCapacity) {
         this.desiredCapacity = desiredCapacity;
     }
 
-    public ScheduledAction withDesiredCapacity(Integer desiredCapacity) {
+    public ScheduledAction withDesiredCapacity(Number desiredCapacity) {
         this.desiredCapacity = desiredCapacity;
         return this;
     }
@@ -153,7 +153,7 @@ public class ScheduledAction {
      * 
      */
     @JsonIgnore
-    public Integer getMaxSize() {
+    public Number getMaxSize() {
         return maxSize;
     }
 
@@ -162,11 +162,11 @@ public class ScheduledAction {
      * 
      */
     @JsonIgnore
-    public void setMaxSize(Integer maxSize) {
+    public void setMaxSize(Number maxSize) {
         this.maxSize = maxSize;
     }
 
-    public ScheduledAction withMaxSize(Integer maxSize) {
+    public ScheduledAction withMaxSize(Number maxSize) {
         this.maxSize = maxSize;
         return this;
     }
@@ -176,7 +176,7 @@ public class ScheduledAction {
      * 
      */
     @JsonIgnore
-    public Integer getMinSize() {
+    public Number getMinSize() {
         return minSize;
     }
 
@@ -185,11 +185,11 @@ public class ScheduledAction {
      * 
      */
     @JsonIgnore
-    public void setMinSize(Integer minSize) {
+    public void setMinSize(Number minSize) {
         this.minSize = minSize;
     }
 
-    public ScheduledAction withMinSize(Integer minSize) {
+    public ScheduledAction withMinSize(Number minSize) {
         this.minSize = minSize;
         return this;
     }

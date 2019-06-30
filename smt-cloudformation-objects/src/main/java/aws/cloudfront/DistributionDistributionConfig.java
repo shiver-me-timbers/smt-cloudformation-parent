@@ -109,7 +109,7 @@ public class DistributionDistributionConfig implements Property<DistributionDist
      */
     @JsonProperty("Enabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-enabled")
-    private Boolean enabled;
+    private CharSequence enabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-aliases
      * 
@@ -123,7 +123,7 @@ public class DistributionDistributionConfig implements Property<DistributionDist
      */
     @JsonProperty("IPV6Enabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-ipv6enabled")
-    private Boolean iPV6Enabled;
+    private CharSequence iPV6Enabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-webaclid
      * 
@@ -356,7 +356,7 @@ public class DistributionDistributionConfig implements Property<DistributionDist
      * 
      */
     @JsonIgnore
-    public Boolean getEnabled() {
+    public CharSequence getEnabled() {
         return enabled;
     }
 
@@ -365,11 +365,11 @@ public class DistributionDistributionConfig implements Property<DistributionDist
      * 
      */
     @JsonIgnore
-    public void setEnabled(Boolean enabled) {
+    public void setEnabled(CharSequence enabled) {
         this.enabled = enabled;
     }
 
-    public DistributionDistributionConfig withEnabled(Boolean enabled) {
+    public DistributionDistributionConfig withEnabled(CharSequence enabled) {
         this.enabled = enabled;
         return this;
     }
@@ -402,7 +402,7 @@ public class DistributionDistributionConfig implements Property<DistributionDist
      * 
      */
     @JsonIgnore
-    public Boolean getIPV6Enabled() {
+    public CharSequence getIPV6Enabled() {
         return iPV6Enabled;
     }
 
@@ -411,11 +411,11 @@ public class DistributionDistributionConfig implements Property<DistributionDist
      * 
      */
     @JsonIgnore
-    public void setIPV6Enabled(Boolean iPV6Enabled) {
+    public void setIPV6Enabled(CharSequence iPV6Enabled) {
         this.iPV6Enabled = iPV6Enabled;
     }
 
-    public DistributionDistributionConfig withIPV6Enabled(Boolean iPV6Enabled) {
+    public DistributionDistributionConfig withIPV6Enabled(CharSequence iPV6Enabled) {
         this.iPV6Enabled = iPV6Enabled;
         return this;
     }

@@ -46,7 +46,7 @@ public class ConfigurationSetEventDestinationEventDestination implements Propert
      */
     @JsonProperty("Enabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-eventdestination.html#cfn-ses-configurationseteventdestination-eventdestination-enabled")
-    private Boolean enabled;
+    private CharSequence enabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-eventdestination.html#cfn-ses-configurationseteventdestination-eventdestination-matchingeventtypes
      * 
@@ -103,7 +103,7 @@ public class ConfigurationSetEventDestinationEventDestination implements Propert
      * 
      */
     @JsonIgnore
-    public Boolean getEnabled() {
+    public CharSequence getEnabled() {
         return enabled;
     }
 
@@ -112,11 +112,11 @@ public class ConfigurationSetEventDestinationEventDestination implements Propert
      * 
      */
     @JsonIgnore
-    public void setEnabled(Boolean enabled) {
+    public void setEnabled(CharSequence enabled) {
         this.enabled = enabled;
     }
 
-    public ConfigurationSetEventDestinationEventDestination withEnabled(Boolean enabled) {
+    public ConfigurationSetEventDestinationEventDestination withEnabled(CharSequence enabled) {
         this.enabled = enabled;
         return this;
     }

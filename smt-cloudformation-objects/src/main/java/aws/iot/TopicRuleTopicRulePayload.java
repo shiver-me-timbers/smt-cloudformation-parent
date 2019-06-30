@@ -70,7 +70,7 @@ public class TopicRuleTopicRulePayload implements Property<TopicRuleTopicRulePay
      */
     @JsonProperty("RuleDisabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-topicrulepayload.html#cfn-iot-topicrule-topicrulepayload-ruledisabled")
-    private Boolean ruleDisabled;
+    private CharSequence ruleDisabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-topicrulepayload.html#cfn-iot-topicrule-topicrulepayload-sql
      * 
@@ -180,7 +180,7 @@ public class TopicRuleTopicRulePayload implements Property<TopicRuleTopicRulePay
      * 
      */
     @JsonIgnore
-    public Boolean getRuleDisabled() {
+    public CharSequence getRuleDisabled() {
         return ruleDisabled;
     }
 
@@ -189,11 +189,11 @@ public class TopicRuleTopicRulePayload implements Property<TopicRuleTopicRulePay
      * 
      */
     @JsonIgnore
-    public void setRuleDisabled(Boolean ruleDisabled) {
+    public void setRuleDisabled(CharSequence ruleDisabled) {
         this.ruleDisabled = ruleDisabled;
     }
 
-    public TopicRuleTopicRulePayload withRuleDisabled(Boolean ruleDisabled) {
+    public TopicRuleTopicRulePayload withRuleDisabled(CharSequence ruleDisabled) {
         this.ruleDisabled = ruleDisabled;
         return this;
     }

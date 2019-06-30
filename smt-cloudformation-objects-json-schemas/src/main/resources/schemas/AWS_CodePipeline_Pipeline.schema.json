@@ -36,7 +36,8 @@
     },
     "RestartExecutionOnUpdate" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-restartexecutiononupdate",
-      "type" : "boolean"
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
     },
     "RoleArn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-rolearn",

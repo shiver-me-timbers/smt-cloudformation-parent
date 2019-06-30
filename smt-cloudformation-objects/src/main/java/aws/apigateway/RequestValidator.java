@@ -46,14 +46,14 @@ public class RequestValidator {
      */
     @JsonProperty("ValidateRequestBody")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-requestvalidator.html#cfn-apigateway-requestvalidator-validaterequestbody")
-    private Boolean validateRequestBody;
+    private CharSequence validateRequestBody;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-requestvalidator.html#cfn-apigateway-requestvalidator-validaterequestparameters
      * 
      */
     @JsonProperty("ValidateRequestParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-requestvalidator.html#cfn-apigateway-requestvalidator-validaterequestparameters")
-    private Boolean validateRequestParameters;
+    private CharSequence validateRequestParameters;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-requestvalidator.html#cfn-apigateway-requestvalidator-name
@@ -106,7 +106,7 @@ public class RequestValidator {
      * 
      */
     @JsonIgnore
-    public Boolean getValidateRequestBody() {
+    public CharSequence getValidateRequestBody() {
         return validateRequestBody;
     }
 
@@ -115,11 +115,11 @@ public class RequestValidator {
      * 
      */
     @JsonIgnore
-    public void setValidateRequestBody(Boolean validateRequestBody) {
+    public void setValidateRequestBody(CharSequence validateRequestBody) {
         this.validateRequestBody = validateRequestBody;
     }
 
-    public RequestValidator withValidateRequestBody(Boolean validateRequestBody) {
+    public RequestValidator withValidateRequestBody(CharSequence validateRequestBody) {
         this.validateRequestBody = validateRequestBody;
         return this;
     }
@@ -129,7 +129,7 @@ public class RequestValidator {
      * 
      */
     @JsonIgnore
-    public Boolean getValidateRequestParameters() {
+    public CharSequence getValidateRequestParameters() {
         return validateRequestParameters;
     }
 
@@ -138,11 +138,11 @@ public class RequestValidator {
      * 
      */
     @JsonIgnore
-    public void setValidateRequestParameters(Boolean validateRequestParameters) {
+    public void setValidateRequestParameters(CharSequence validateRequestParameters) {
         this.validateRequestParameters = validateRequestParameters;
     }
 
-    public RequestValidator withValidateRequestParameters(Boolean validateRequestParameters) {
+    public RequestValidator withValidateRequestParameters(CharSequence validateRequestParameters) {
         this.validateRequestParameters = validateRequestParameters;
         return this;
     }

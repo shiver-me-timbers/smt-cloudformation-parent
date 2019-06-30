@@ -18,7 +18,8 @@
     },
     "DesiredEC2Instances" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-desiredec2instances",
-      "type" : "integer"
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
     },
     "EC2InboundPermissions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-ec2inboundpermissions",
@@ -45,11 +46,13 @@
     },
     "MaxSize" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-maxsize",
-      "type" : "integer"
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
     },
     "MinSize" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-minsize",
-      "type" : "integer"
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
     },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-name",

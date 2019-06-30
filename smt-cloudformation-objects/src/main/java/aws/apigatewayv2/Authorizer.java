@@ -66,7 +66,7 @@ public class Authorizer {
      */
     @JsonProperty("AuthorizerResultTtlInSeconds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-authorizer.html#cfn-apigatewayv2-authorizer-authorizerresultttlinseconds")
-    private Integer authorizerResultTtlInSeconds;
+    private Number authorizerResultTtlInSeconds;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-authorizer.html#cfn-apigatewayv2-authorizer-identitysource
      * 
@@ -186,7 +186,7 @@ public class Authorizer {
      * 
      */
     @JsonIgnore
-    public Integer getAuthorizerResultTtlInSeconds() {
+    public Number getAuthorizerResultTtlInSeconds() {
         return authorizerResultTtlInSeconds;
     }
 
@@ -195,11 +195,11 @@ public class Authorizer {
      * 
      */
     @JsonIgnore
-    public void setAuthorizerResultTtlInSeconds(Integer authorizerResultTtlInSeconds) {
+    public void setAuthorizerResultTtlInSeconds(Number authorizerResultTtlInSeconds) {
         this.authorizerResultTtlInSeconds = authorizerResultTtlInSeconds;
     }
 
-    public Authorizer withAuthorizerResultTtlInSeconds(Integer authorizerResultTtlInSeconds) {
+    public Authorizer withAuthorizerResultTtlInSeconds(Number authorizerResultTtlInSeconds) {
         this.authorizerResultTtlInSeconds = authorizerResultTtlInSeconds;
         return this;
     }

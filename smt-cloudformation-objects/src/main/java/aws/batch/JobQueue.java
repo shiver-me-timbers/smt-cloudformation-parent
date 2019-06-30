@@ -42,7 +42,7 @@ public class JobQueue {
      */
     @JsonProperty("Priority")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobqueue.html#cfn-batch-jobqueue-priority")
-    private Integer priority;
+    private Number priority;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobqueue.html#cfn-batch-jobqueue-state
      * 
@@ -86,7 +86,7 @@ public class JobQueue {
      * 
      */
     @JsonIgnore
-    public Integer getPriority() {
+    public Number getPriority() {
         return priority;
     }
 
@@ -95,11 +95,11 @@ public class JobQueue {
      * 
      */
     @JsonIgnore
-    public void setPriority(Integer priority) {
+    public void setPriority(Number priority) {
         this.priority = priority;
     }
 
-    public JobQueue withPriority(Integer priority) {
+    public JobQueue withPriority(Number priority) {
         this.priority = priority;
         return this;
     }

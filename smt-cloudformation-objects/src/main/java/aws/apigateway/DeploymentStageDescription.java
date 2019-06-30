@@ -65,7 +65,7 @@ public class DeploymentStageDescription implements Property<DeploymentStageDescr
      */
     @JsonProperty("CacheClusterEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-cacheclusterenabled")
-    private Boolean cacheClusterEnabled;
+    private CharSequence cacheClusterEnabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-cacheclustersize
      * 
@@ -79,21 +79,21 @@ public class DeploymentStageDescription implements Property<DeploymentStageDescr
      */
     @JsonProperty("CacheDataEncrypted")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-cachedataencrypted")
-    private Boolean cacheDataEncrypted;
+    private CharSequence cacheDataEncrypted;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-cachettlinseconds
      * 
      */
     @JsonProperty("CacheTtlInSeconds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-cachettlinseconds")
-    private Integer cacheTtlInSeconds;
+    private Number cacheTtlInSeconds;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-cachingenabled
      * 
      */
     @JsonProperty("CachingEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-cachingenabled")
-    private Boolean cachingEnabled;
+    private CharSequence cachingEnabled;
     /**
      * DeploymentCanarySetting
      * <p>
@@ -116,7 +116,7 @@ public class DeploymentStageDescription implements Property<DeploymentStageDescr
      */
     @JsonProperty("DataTraceEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-datatraceenabled")
-    private Boolean dataTraceEnabled;
+    private CharSequence dataTraceEnabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-description
      * 
@@ -152,7 +152,7 @@ public class DeploymentStageDescription implements Property<DeploymentStageDescr
      */
     @JsonProperty("MetricsEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-metricsenabled")
-    private Boolean metricsEnabled;
+    private CharSequence metricsEnabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-tags
      * 
@@ -166,28 +166,28 @@ public class DeploymentStageDescription implements Property<DeploymentStageDescr
      */
     @JsonProperty("ThrottlingBurstLimit")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-throttlingburstlimit")
-    private Integer throttlingBurstLimit;
+    private Number throttlingBurstLimit;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-throttlingratelimit
      * 
      */
     @JsonProperty("ThrottlingRateLimit")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-throttlingratelimit")
-    private Double throttlingRateLimit;
+    private Number throttlingRateLimit;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-tracingenabled
      * 
      */
     @JsonProperty("TracingEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-tracingenabled")
-    private Boolean tracingEnabled;
+    private CharSequence tracingEnabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-variables
      * 
      */
     @JsonProperty("Variables")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-variables")
-    private Map<String, String> variables;
+    private Map<String, CharSequence> variables;
 
     /**
      * DeploymentAccessLogSetting
@@ -221,7 +221,7 @@ public class DeploymentStageDescription implements Property<DeploymentStageDescr
      * 
      */
     @JsonIgnore
-    public Boolean getCacheClusterEnabled() {
+    public CharSequence getCacheClusterEnabled() {
         return cacheClusterEnabled;
     }
 
@@ -230,11 +230,11 @@ public class DeploymentStageDescription implements Property<DeploymentStageDescr
      * 
      */
     @JsonIgnore
-    public void setCacheClusterEnabled(Boolean cacheClusterEnabled) {
+    public void setCacheClusterEnabled(CharSequence cacheClusterEnabled) {
         this.cacheClusterEnabled = cacheClusterEnabled;
     }
 
-    public DeploymentStageDescription withCacheClusterEnabled(Boolean cacheClusterEnabled) {
+    public DeploymentStageDescription withCacheClusterEnabled(CharSequence cacheClusterEnabled) {
         this.cacheClusterEnabled = cacheClusterEnabled;
         return this;
     }
@@ -267,7 +267,7 @@ public class DeploymentStageDescription implements Property<DeploymentStageDescr
      * 
      */
     @JsonIgnore
-    public Boolean getCacheDataEncrypted() {
+    public CharSequence getCacheDataEncrypted() {
         return cacheDataEncrypted;
     }
 
@@ -276,11 +276,11 @@ public class DeploymentStageDescription implements Property<DeploymentStageDescr
      * 
      */
     @JsonIgnore
-    public void setCacheDataEncrypted(Boolean cacheDataEncrypted) {
+    public void setCacheDataEncrypted(CharSequence cacheDataEncrypted) {
         this.cacheDataEncrypted = cacheDataEncrypted;
     }
 
-    public DeploymentStageDescription withCacheDataEncrypted(Boolean cacheDataEncrypted) {
+    public DeploymentStageDescription withCacheDataEncrypted(CharSequence cacheDataEncrypted) {
         this.cacheDataEncrypted = cacheDataEncrypted;
         return this;
     }
@@ -290,7 +290,7 @@ public class DeploymentStageDescription implements Property<DeploymentStageDescr
      * 
      */
     @JsonIgnore
-    public Integer getCacheTtlInSeconds() {
+    public Number getCacheTtlInSeconds() {
         return cacheTtlInSeconds;
     }
 
@@ -299,11 +299,11 @@ public class DeploymentStageDescription implements Property<DeploymentStageDescr
      * 
      */
     @JsonIgnore
-    public void setCacheTtlInSeconds(Integer cacheTtlInSeconds) {
+    public void setCacheTtlInSeconds(Number cacheTtlInSeconds) {
         this.cacheTtlInSeconds = cacheTtlInSeconds;
     }
 
-    public DeploymentStageDescription withCacheTtlInSeconds(Integer cacheTtlInSeconds) {
+    public DeploymentStageDescription withCacheTtlInSeconds(Number cacheTtlInSeconds) {
         this.cacheTtlInSeconds = cacheTtlInSeconds;
         return this;
     }
@@ -313,7 +313,7 @@ public class DeploymentStageDescription implements Property<DeploymentStageDescr
      * 
      */
     @JsonIgnore
-    public Boolean getCachingEnabled() {
+    public CharSequence getCachingEnabled() {
         return cachingEnabled;
     }
 
@@ -322,11 +322,11 @@ public class DeploymentStageDescription implements Property<DeploymentStageDescr
      * 
      */
     @JsonIgnore
-    public void setCachingEnabled(Boolean cachingEnabled) {
+    public void setCachingEnabled(CharSequence cachingEnabled) {
         this.cachingEnabled = cachingEnabled;
     }
 
-    public DeploymentStageDescription withCachingEnabled(Boolean cachingEnabled) {
+    public DeploymentStageDescription withCachingEnabled(CharSequence cachingEnabled) {
         this.cachingEnabled = cachingEnabled;
         return this;
     }
@@ -386,7 +386,7 @@ public class DeploymentStageDescription implements Property<DeploymentStageDescr
      * 
      */
     @JsonIgnore
-    public Boolean getDataTraceEnabled() {
+    public CharSequence getDataTraceEnabled() {
         return dataTraceEnabled;
     }
 
@@ -395,11 +395,11 @@ public class DeploymentStageDescription implements Property<DeploymentStageDescr
      * 
      */
     @JsonIgnore
-    public void setDataTraceEnabled(Boolean dataTraceEnabled) {
+    public void setDataTraceEnabled(CharSequence dataTraceEnabled) {
         this.dataTraceEnabled = dataTraceEnabled;
     }
 
-    public DeploymentStageDescription withDataTraceEnabled(Boolean dataTraceEnabled) {
+    public DeploymentStageDescription withDataTraceEnabled(CharSequence dataTraceEnabled) {
         this.dataTraceEnabled = dataTraceEnabled;
         return this;
     }
@@ -501,7 +501,7 @@ public class DeploymentStageDescription implements Property<DeploymentStageDescr
      * 
      */
     @JsonIgnore
-    public Boolean getMetricsEnabled() {
+    public CharSequence getMetricsEnabled() {
         return metricsEnabled;
     }
 
@@ -510,11 +510,11 @@ public class DeploymentStageDescription implements Property<DeploymentStageDescr
      * 
      */
     @JsonIgnore
-    public void setMetricsEnabled(Boolean metricsEnabled) {
+    public void setMetricsEnabled(CharSequence metricsEnabled) {
         this.metricsEnabled = metricsEnabled;
     }
 
-    public DeploymentStageDescription withMetricsEnabled(Boolean metricsEnabled) {
+    public DeploymentStageDescription withMetricsEnabled(CharSequence metricsEnabled) {
         this.metricsEnabled = metricsEnabled;
         return this;
     }
@@ -547,7 +547,7 @@ public class DeploymentStageDescription implements Property<DeploymentStageDescr
      * 
      */
     @JsonIgnore
-    public Integer getThrottlingBurstLimit() {
+    public Number getThrottlingBurstLimit() {
         return throttlingBurstLimit;
     }
 
@@ -556,11 +556,11 @@ public class DeploymentStageDescription implements Property<DeploymentStageDescr
      * 
      */
     @JsonIgnore
-    public void setThrottlingBurstLimit(Integer throttlingBurstLimit) {
+    public void setThrottlingBurstLimit(Number throttlingBurstLimit) {
         this.throttlingBurstLimit = throttlingBurstLimit;
     }
 
-    public DeploymentStageDescription withThrottlingBurstLimit(Integer throttlingBurstLimit) {
+    public DeploymentStageDescription withThrottlingBurstLimit(Number throttlingBurstLimit) {
         this.throttlingBurstLimit = throttlingBurstLimit;
         return this;
     }
@@ -570,7 +570,7 @@ public class DeploymentStageDescription implements Property<DeploymentStageDescr
      * 
      */
     @JsonIgnore
-    public Double getThrottlingRateLimit() {
+    public Number getThrottlingRateLimit() {
         return throttlingRateLimit;
     }
 
@@ -579,11 +579,11 @@ public class DeploymentStageDescription implements Property<DeploymentStageDescr
      * 
      */
     @JsonIgnore
-    public void setThrottlingRateLimit(Double throttlingRateLimit) {
+    public void setThrottlingRateLimit(Number throttlingRateLimit) {
         this.throttlingRateLimit = throttlingRateLimit;
     }
 
-    public DeploymentStageDescription withThrottlingRateLimit(Double throttlingRateLimit) {
+    public DeploymentStageDescription withThrottlingRateLimit(Number throttlingRateLimit) {
         this.throttlingRateLimit = throttlingRateLimit;
         return this;
     }
@@ -593,7 +593,7 @@ public class DeploymentStageDescription implements Property<DeploymentStageDescr
      * 
      */
     @JsonIgnore
-    public Boolean getTracingEnabled() {
+    public CharSequence getTracingEnabled() {
         return tracingEnabled;
     }
 
@@ -602,11 +602,11 @@ public class DeploymentStageDescription implements Property<DeploymentStageDescr
      * 
      */
     @JsonIgnore
-    public void setTracingEnabled(Boolean tracingEnabled) {
+    public void setTracingEnabled(CharSequence tracingEnabled) {
         this.tracingEnabled = tracingEnabled;
     }
 
-    public DeploymentStageDescription withTracingEnabled(Boolean tracingEnabled) {
+    public DeploymentStageDescription withTracingEnabled(CharSequence tracingEnabled) {
         this.tracingEnabled = tracingEnabled;
         return this;
     }
@@ -616,7 +616,7 @@ public class DeploymentStageDescription implements Property<DeploymentStageDescr
      * 
      */
     @JsonIgnore
-    public Map<String, String> getVariables() {
+    public Map<String, CharSequence> getVariables() {
         return variables;
     }
 
@@ -625,11 +625,11 @@ public class DeploymentStageDescription implements Property<DeploymentStageDescr
      * 
      */
     @JsonIgnore
-    public void setVariables(Map<String, String> variables) {
+    public void setVariables(Map<String, CharSequence> variables) {
         this.variables = variables;
     }
 
-    public DeploymentStageDescription withVariables(Map<String, String> variables) {
+    public DeploymentStageDescription withVariables(Map<String, CharSequence> variables) {
         this.variables = variables;
         return this;
     }

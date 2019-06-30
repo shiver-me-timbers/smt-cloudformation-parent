@@ -62,7 +62,7 @@ public class Trail {
      */
     @JsonProperty("EnableLogFileValidation")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-enablelogfilevalidation")
-    private Boolean enableLogFileValidation;
+    private CharSequence enableLogFileValidation;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-eventselectors
      * 
@@ -77,21 +77,21 @@ public class Trail {
      */
     @JsonProperty("IncludeGlobalServiceEvents")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-includeglobalserviceevents")
-    private Boolean includeGlobalServiceEvents;
+    private CharSequence includeGlobalServiceEvents;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-islogging
      * 
      */
     @JsonProperty("IsLogging")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-islogging")
-    private Boolean isLogging;
+    private CharSequence isLogging;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-ismultiregiontrail
      * 
      */
     @JsonProperty("IsMultiRegionTrail")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-ismultiregiontrail")
-    private Boolean isMultiRegionTrail;
+    private CharSequence isMultiRegionTrail;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-kmskeyid
      * 
@@ -186,7 +186,7 @@ public class Trail {
      * 
      */
     @JsonIgnore
-    public Boolean getEnableLogFileValidation() {
+    public CharSequence getEnableLogFileValidation() {
         return enableLogFileValidation;
     }
 
@@ -195,11 +195,11 @@ public class Trail {
      * 
      */
     @JsonIgnore
-    public void setEnableLogFileValidation(Boolean enableLogFileValidation) {
+    public void setEnableLogFileValidation(CharSequence enableLogFileValidation) {
         this.enableLogFileValidation = enableLogFileValidation;
     }
 
-    public Trail withEnableLogFileValidation(Boolean enableLogFileValidation) {
+    public Trail withEnableLogFileValidation(CharSequence enableLogFileValidation) {
         this.enableLogFileValidation = enableLogFileValidation;
         return this;
     }
@@ -232,7 +232,7 @@ public class Trail {
      * 
      */
     @JsonIgnore
-    public Boolean getIncludeGlobalServiceEvents() {
+    public CharSequence getIncludeGlobalServiceEvents() {
         return includeGlobalServiceEvents;
     }
 
@@ -241,11 +241,11 @@ public class Trail {
      * 
      */
     @JsonIgnore
-    public void setIncludeGlobalServiceEvents(Boolean includeGlobalServiceEvents) {
+    public void setIncludeGlobalServiceEvents(CharSequence includeGlobalServiceEvents) {
         this.includeGlobalServiceEvents = includeGlobalServiceEvents;
     }
 
-    public Trail withIncludeGlobalServiceEvents(Boolean includeGlobalServiceEvents) {
+    public Trail withIncludeGlobalServiceEvents(CharSequence includeGlobalServiceEvents) {
         this.includeGlobalServiceEvents = includeGlobalServiceEvents;
         return this;
     }
@@ -255,7 +255,7 @@ public class Trail {
      * 
      */
     @JsonIgnore
-    public Boolean getIsLogging() {
+    public CharSequence getIsLogging() {
         return isLogging;
     }
 
@@ -264,11 +264,11 @@ public class Trail {
      * 
      */
     @JsonIgnore
-    public void setIsLogging(Boolean isLogging) {
+    public void setIsLogging(CharSequence isLogging) {
         this.isLogging = isLogging;
     }
 
-    public Trail withIsLogging(Boolean isLogging) {
+    public Trail withIsLogging(CharSequence isLogging) {
         this.isLogging = isLogging;
         return this;
     }
@@ -278,7 +278,7 @@ public class Trail {
      * 
      */
     @JsonIgnore
-    public Boolean getIsMultiRegionTrail() {
+    public CharSequence getIsMultiRegionTrail() {
         return isMultiRegionTrail;
     }
 
@@ -287,11 +287,11 @@ public class Trail {
      * 
      */
     @JsonIgnore
-    public void setIsMultiRegionTrail(Boolean isMultiRegionTrail) {
+    public void setIsMultiRegionTrail(CharSequence isMultiRegionTrail) {
         this.isMultiRegionTrail = isMultiRegionTrail;
     }
 
-    public Trail withIsMultiRegionTrail(Boolean isMultiRegionTrail) {
+    public Trail withIsMultiRegionTrail(CharSequence isMultiRegionTrail) {
         this.isMultiRegionTrail = isMultiRegionTrail;
         return this;
     }

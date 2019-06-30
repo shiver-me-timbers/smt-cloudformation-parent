@@ -47,7 +47,7 @@ public class RulePredicate implements Property<RulePredicate>
      */
     @JsonProperty("Negated")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-rule-predicate.html#cfn-wafregional-rule-predicate-negated")
-    private Boolean negated;
+    private CharSequence negated;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-rule-predicate.html#cfn-wafregional-rule-predicate-type
@@ -100,7 +100,7 @@ public class RulePredicate implements Property<RulePredicate>
      * 
      */
     @JsonIgnore
-    public Boolean getNegated() {
+    public CharSequence getNegated() {
         return negated;
     }
 
@@ -109,11 +109,11 @@ public class RulePredicate implements Property<RulePredicate>
      * 
      */
     @JsonIgnore
-    public void setNegated(Boolean negated) {
+    public void setNegated(CharSequence negated) {
         this.negated = negated;
     }
 
-    public RulePredicate withNegated(Boolean negated) {
+    public RulePredicate withNegated(CharSequence negated) {
         this.negated = negated;
         return this;
     }

@@ -52,11 +52,13 @@
     },
     "MemorySize" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-memorysize",
-      "type" : "integer"
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
     },
     "ReservedConcurrentExecutions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-reservedconcurrentexecutions",
-      "type" : "integer"
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
     },
     "Role" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-role",
@@ -78,7 +80,8 @@
     },
     "Timeout" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-timeout",
-      "type" : "integer"
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
     },
     "TracingConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-tracingconfig",

@@ -2,7 +2,6 @@ package aws;
 
 import aws.fn.ConditionFunction;
 
-import java.util.LinkedHashMap;
 import java.util.Map;
 
 import static aws.Names.getMap;

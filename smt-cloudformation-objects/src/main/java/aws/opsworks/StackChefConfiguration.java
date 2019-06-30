@@ -39,7 +39,7 @@ public class StackChefConfiguration implements Property<StackChefConfiguration>
      */
     @JsonProperty("ManageBerkshelf")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-chefconfiguration.html#cfn-opsworks-chefconfiguration-berkshelfversion")
-    private Boolean manageBerkshelf;
+    private CharSequence manageBerkshelf;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-chefconfiguration.html#cfn-opsworks-chefconfiguration-berkshelfversion
@@ -69,7 +69,7 @@ public class StackChefConfiguration implements Property<StackChefConfiguration>
      * 
      */
     @JsonIgnore
-    public Boolean getManageBerkshelf() {
+    public CharSequence getManageBerkshelf() {
         return manageBerkshelf;
     }
 
@@ -78,11 +78,11 @@ public class StackChefConfiguration implements Property<StackChefConfiguration>
      * 
      */
     @JsonIgnore
-    public void setManageBerkshelf(Boolean manageBerkshelf) {
+    public void setManageBerkshelf(CharSequence manageBerkshelf) {
         this.manageBerkshelf = manageBerkshelf;
     }
 
-    public StackChefConfiguration withManageBerkshelf(Boolean manageBerkshelf) {
+    public StackChefConfiguration withManageBerkshelf(CharSequence manageBerkshelf) {
         this.manageBerkshelf = manageBerkshelf;
         return this;
     }

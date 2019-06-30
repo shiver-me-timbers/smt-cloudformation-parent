@@ -44,14 +44,14 @@ public class Stream {
      */
     @JsonProperty("RetentionPeriodHours")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-stream.html#cfn-kinesis-stream-retentionperiodhours")
-    private Integer retentionPeriodHours;
+    private Number retentionPeriodHours;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-stream.html#cfn-kinesis-stream-shardcount
      * 
      */
     @JsonProperty("ShardCount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-stream.html#cfn-kinesis-stream-shardcount")
-    private Integer shardCount;
+    private Number shardCount;
     /**
      * StreamStreamEncryption
      * <p>
@@ -97,7 +97,7 @@ public class Stream {
      * 
      */
     @JsonIgnore
-    public Integer getRetentionPeriodHours() {
+    public Number getRetentionPeriodHours() {
         return retentionPeriodHours;
     }
 
@@ -106,11 +106,11 @@ public class Stream {
      * 
      */
     @JsonIgnore
-    public void setRetentionPeriodHours(Integer retentionPeriodHours) {
+    public void setRetentionPeriodHours(Number retentionPeriodHours) {
         this.retentionPeriodHours = retentionPeriodHours;
     }
 
-    public Stream withRetentionPeriodHours(Integer retentionPeriodHours) {
+    public Stream withRetentionPeriodHours(Number retentionPeriodHours) {
         this.retentionPeriodHours = retentionPeriodHours;
         return this;
     }
@@ -120,7 +120,7 @@ public class Stream {
      * 
      */
     @JsonIgnore
-    public Integer getShardCount() {
+    public Number getShardCount() {
         return shardCount;
     }
 
@@ -129,11 +129,11 @@ public class Stream {
      * 
      */
     @JsonIgnore
-    public void setShardCount(Integer shardCount) {
+    public void setShardCount(Number shardCount) {
         this.shardCount = shardCount;
     }
 
-    public Stream withShardCount(Integer shardCount) {
+    public Stream withShardCount(Number shardCount) {
         this.shardCount = shardCount;
         return this;
     }

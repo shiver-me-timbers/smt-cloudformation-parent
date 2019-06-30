@@ -8,7 +8,8 @@
   "properties" : {
     "AmazonSideAsn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-gateway.html#cfn-ec2-vpngateway-amazonsideasn",
-      "type" : "integer"
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
     },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-gateway.html#cfn-ec2-vpngateway-tags",

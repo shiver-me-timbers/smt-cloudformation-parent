@@ -33,14 +33,14 @@ public class TaskDefinitionPortMapping implements Property<TaskDefinitionPortMap
      */
     @JsonProperty("ContainerPort")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-portmappings.html#cfn-ecs-taskdefinition-containerdefinition-portmappings-containerport")
-    private Integer containerPort;
+    private Number containerPort;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-portmappings.html#cfn-ecs-taskdefinition-containerdefinition-portmappings-readonly
      * 
      */
     @JsonProperty("HostPort")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-portmappings.html#cfn-ecs-taskdefinition-containerdefinition-portmappings-readonly")
-    private Integer hostPort;
+    private Number hostPort;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-portmappings.html#cfn-ecs-taskdefinition-containerdefinition-portmappings-sourcevolume
      * 
@@ -54,7 +54,7 @@ public class TaskDefinitionPortMapping implements Property<TaskDefinitionPortMap
      * 
      */
     @JsonIgnore
-    public Integer getContainerPort() {
+    public Number getContainerPort() {
         return containerPort;
     }
 
@@ -63,11 +63,11 @@ public class TaskDefinitionPortMapping implements Property<TaskDefinitionPortMap
      * 
      */
     @JsonIgnore
-    public void setContainerPort(Integer containerPort) {
+    public void setContainerPort(Number containerPort) {
         this.containerPort = containerPort;
     }
 
-    public TaskDefinitionPortMapping withContainerPort(Integer containerPort) {
+    public TaskDefinitionPortMapping withContainerPort(Number containerPort) {
         this.containerPort = containerPort;
         return this;
     }
@@ -77,7 +77,7 @@ public class TaskDefinitionPortMapping implements Property<TaskDefinitionPortMap
      * 
      */
     @JsonIgnore
-    public Integer getHostPort() {
+    public Number getHostPort() {
         return hostPort;
     }
 
@@ -86,11 +86,11 @@ public class TaskDefinitionPortMapping implements Property<TaskDefinitionPortMap
      * 
      */
     @JsonIgnore
-    public void setHostPort(Integer hostPort) {
+    public void setHostPort(Number hostPort) {
         this.hostPort = hostPort;
     }
 
-    public TaskDefinitionPortMapping withHostPort(Integer hostPort) {
+    public TaskDefinitionPortMapping withHostPort(Number hostPort) {
         this.hostPort = hostPort;
         return this;
     }

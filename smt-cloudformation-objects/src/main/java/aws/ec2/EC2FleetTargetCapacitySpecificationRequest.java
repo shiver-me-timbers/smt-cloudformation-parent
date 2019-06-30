@@ -41,21 +41,21 @@ public class EC2FleetTargetCapacitySpecificationRequest implements Property<EC2F
      */
     @JsonProperty("TotalTargetCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-targetcapacityspecificationrequest.html#cfn-ec2-ec2fleet-targetcapacityspecificationrequest-totaltargetcapacity")
-    private Integer totalTargetCapacity;
+    private Number totalTargetCapacity;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-targetcapacityspecificationrequest.html#cfn-ec2-ec2fleet-targetcapacityspecificationrequest-ondemandtargetcapacity
      * 
      */
     @JsonProperty("OnDemandTargetCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-targetcapacityspecificationrequest.html#cfn-ec2-ec2fleet-targetcapacityspecificationrequest-ondemandtargetcapacity")
-    private Integer onDemandTargetCapacity;
+    private Number onDemandTargetCapacity;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-targetcapacityspecificationrequest.html#cfn-ec2-ec2fleet-targetcapacityspecificationrequest-spottargetcapacity
      * 
      */
     @JsonProperty("SpotTargetCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-targetcapacityspecificationrequest.html#cfn-ec2-ec2fleet-targetcapacityspecificationrequest-spottargetcapacity")
-    private Integer spotTargetCapacity;
+    private Number spotTargetCapacity;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-targetcapacityspecificationrequest.html#cfn-ec2-ec2fleet-targetcapacityspecificationrequest-defaulttargetcapacitytype
@@ -85,7 +85,7 @@ public class EC2FleetTargetCapacitySpecificationRequest implements Property<EC2F
      * 
      */
     @JsonIgnore
-    public Integer getTotalTargetCapacity() {
+    public Number getTotalTargetCapacity() {
         return totalTargetCapacity;
     }
 
@@ -94,11 +94,11 @@ public class EC2FleetTargetCapacitySpecificationRequest implements Property<EC2F
      * 
      */
     @JsonIgnore
-    public void setTotalTargetCapacity(Integer totalTargetCapacity) {
+    public void setTotalTargetCapacity(Number totalTargetCapacity) {
         this.totalTargetCapacity = totalTargetCapacity;
     }
 
-    public EC2FleetTargetCapacitySpecificationRequest withTotalTargetCapacity(Integer totalTargetCapacity) {
+    public EC2FleetTargetCapacitySpecificationRequest withTotalTargetCapacity(Number totalTargetCapacity) {
         this.totalTargetCapacity = totalTargetCapacity;
         return this;
     }
@@ -108,7 +108,7 @@ public class EC2FleetTargetCapacitySpecificationRequest implements Property<EC2F
      * 
      */
     @JsonIgnore
-    public Integer getOnDemandTargetCapacity() {
+    public Number getOnDemandTargetCapacity() {
         return onDemandTargetCapacity;
     }
 
@@ -117,11 +117,11 @@ public class EC2FleetTargetCapacitySpecificationRequest implements Property<EC2F
      * 
      */
     @JsonIgnore
-    public void setOnDemandTargetCapacity(Integer onDemandTargetCapacity) {
+    public void setOnDemandTargetCapacity(Number onDemandTargetCapacity) {
         this.onDemandTargetCapacity = onDemandTargetCapacity;
     }
 
-    public EC2FleetTargetCapacitySpecificationRequest withOnDemandTargetCapacity(Integer onDemandTargetCapacity) {
+    public EC2FleetTargetCapacitySpecificationRequest withOnDemandTargetCapacity(Number onDemandTargetCapacity) {
         this.onDemandTargetCapacity = onDemandTargetCapacity;
         return this;
     }
@@ -131,7 +131,7 @@ public class EC2FleetTargetCapacitySpecificationRequest implements Property<EC2F
      * 
      */
     @JsonIgnore
-    public Integer getSpotTargetCapacity() {
+    public Number getSpotTargetCapacity() {
         return spotTargetCapacity;
     }
 
@@ -140,11 +140,11 @@ public class EC2FleetTargetCapacitySpecificationRequest implements Property<EC2F
      * 
      */
     @JsonIgnore
-    public void setSpotTargetCapacity(Integer spotTargetCapacity) {
+    public void setSpotTargetCapacity(Number spotTargetCapacity) {
         this.spotTargetCapacity = spotTargetCapacity;
     }
 
-    public EC2FleetTargetCapacitySpecificationRequest withSpotTargetCapacity(Integer spotTargetCapacity) {
+    public EC2FleetTargetCapacitySpecificationRequest withSpotTargetCapacity(Number spotTargetCapacity) {
         this.spotTargetCapacity = spotTargetCapacity;
         return this;
     }

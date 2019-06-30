@@ -32,21 +32,21 @@ public class UserPoolDeviceConfiguration implements Property<UserPoolDeviceConfi
      */
     @JsonProperty("DeviceOnlyRememberedOnUserPrompt")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-deviceconfiguration.html#cfn-cognito-userpool-deviceconfiguration-deviceonlyrememberedonuserprompt")
-    private Boolean deviceOnlyRememberedOnUserPrompt;
+    private CharSequence deviceOnlyRememberedOnUserPrompt;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-deviceconfiguration.html#cfn-cognito-userpool-deviceconfiguration-challengerequiredonnewdevice
      * 
      */
     @JsonProperty("ChallengeRequiredOnNewDevice")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-deviceconfiguration.html#cfn-cognito-userpool-deviceconfiguration-challengerequiredonnewdevice")
-    private Boolean challengeRequiredOnNewDevice;
+    private CharSequence challengeRequiredOnNewDevice;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-deviceconfiguration.html#cfn-cognito-userpool-deviceconfiguration-deviceonlyrememberedonuserprompt
      * 
      */
     @JsonIgnore
-    public Boolean getDeviceOnlyRememberedOnUserPrompt() {
+    public CharSequence getDeviceOnlyRememberedOnUserPrompt() {
         return deviceOnlyRememberedOnUserPrompt;
     }
 
@@ -55,11 +55,11 @@ public class UserPoolDeviceConfiguration implements Property<UserPoolDeviceConfi
      * 
      */
     @JsonIgnore
-    public void setDeviceOnlyRememberedOnUserPrompt(Boolean deviceOnlyRememberedOnUserPrompt) {
+    public void setDeviceOnlyRememberedOnUserPrompt(CharSequence deviceOnlyRememberedOnUserPrompt) {
         this.deviceOnlyRememberedOnUserPrompt = deviceOnlyRememberedOnUserPrompt;
     }
 
-    public UserPoolDeviceConfiguration withDeviceOnlyRememberedOnUserPrompt(Boolean deviceOnlyRememberedOnUserPrompt) {
+    public UserPoolDeviceConfiguration withDeviceOnlyRememberedOnUserPrompt(CharSequence deviceOnlyRememberedOnUserPrompt) {
         this.deviceOnlyRememberedOnUserPrompt = deviceOnlyRememberedOnUserPrompt;
         return this;
     }
@@ -69,7 +69,7 @@ public class UserPoolDeviceConfiguration implements Property<UserPoolDeviceConfi
      * 
      */
     @JsonIgnore
-    public Boolean getChallengeRequiredOnNewDevice() {
+    public CharSequence getChallengeRequiredOnNewDevice() {
         return challengeRequiredOnNewDevice;
     }
 
@@ -78,11 +78,11 @@ public class UserPoolDeviceConfiguration implements Property<UserPoolDeviceConfi
      * 
      */
     @JsonIgnore
-    public void setChallengeRequiredOnNewDevice(Boolean challengeRequiredOnNewDevice) {
+    public void setChallengeRequiredOnNewDevice(CharSequence challengeRequiredOnNewDevice) {
         this.challengeRequiredOnNewDevice = challengeRequiredOnNewDevice;
     }
 
-    public UserPoolDeviceConfiguration withChallengeRequiredOnNewDevice(Boolean challengeRequiredOnNewDevice) {
+    public UserPoolDeviceConfiguration withChallengeRequiredOnNewDevice(CharSequence challengeRequiredOnNewDevice) {
         this.challengeRequiredOnNewDevice = challengeRequiredOnNewDevice;
         return this;
     }

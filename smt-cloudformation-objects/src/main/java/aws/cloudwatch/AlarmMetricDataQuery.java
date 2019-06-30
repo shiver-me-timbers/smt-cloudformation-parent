@@ -65,7 +65,7 @@ public class AlarmMetricDataQuery implements Property<AlarmMetricDataQuery>
      */
     @JsonProperty("ReturnData")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metricdataquery.html#cfn-cloudwatch-alarm-metricdataquery-returndata")
-    private Boolean returnData;
+    private CharSequence returnData;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metricdataquery.html#cfn-cloudwatch-alarm-metricdataquery-expression
@@ -168,7 +168,7 @@ public class AlarmMetricDataQuery implements Property<AlarmMetricDataQuery>
      * 
      */
     @JsonIgnore
-    public Boolean getReturnData() {
+    public CharSequence getReturnData() {
         return returnData;
     }
 
@@ -177,11 +177,11 @@ public class AlarmMetricDataQuery implements Property<AlarmMetricDataQuery>
      * 
      */
     @JsonIgnore
-    public void setReturnData(Boolean returnData) {
+    public void setReturnData(CharSequence returnData) {
         this.returnData = returnData;
     }
 
-    public AlarmMetricDataQuery withReturnData(Boolean returnData) {
+    public AlarmMetricDataQuery withReturnData(CharSequence returnData) {
         this.returnData = returnData;
         return this;
     }

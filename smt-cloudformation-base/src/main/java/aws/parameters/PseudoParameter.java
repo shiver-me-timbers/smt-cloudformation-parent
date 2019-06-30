@@ -1,7 +1,7 @@
 package aws.parameters;
 
 import aws.HasReference;
-import aws.StringProperty;
+import aws.PrimitiveProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonValue;
@@ -31,10 +31,10 @@ public enum PseudoParameter implements CharSequence, HasReference {
     }
 
     @JsonIgnore
-    private final StringProperty property;
+    private final PrimitiveProperty property;
 
     PseudoParameter(String name) {
-        this.property = new StringProperty(name);
+        this.property = new PrimitiveProperty(name);
     }
 
     @JsonValue

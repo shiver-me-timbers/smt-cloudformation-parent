@@ -75,7 +75,7 @@ public class InstanceGroupConfig {
      */
     @JsonProperty("InstanceCount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-instancegroupconfig.html#cfn-emr-instancegroupconfiginstancecount-")
-    private Integer instanceCount;
+    private Number instanceCount;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-instancegroupconfig.html#cfn-emr-instancegroupconfig-instancerole
      * 
@@ -217,7 +217,7 @@ public class InstanceGroupConfig {
      * 
      */
     @JsonIgnore
-    public Integer getInstanceCount() {
+    public Number getInstanceCount() {
         return instanceCount;
     }
 
@@ -226,11 +226,11 @@ public class InstanceGroupConfig {
      * 
      */
     @JsonIgnore
-    public void setInstanceCount(Integer instanceCount) {
+    public void setInstanceCount(Number instanceCount) {
         this.instanceCount = instanceCount;
     }
 
-    public InstanceGroupConfig withInstanceCount(Integer instanceCount) {
+    public InstanceGroupConfig withInstanceCount(Number instanceCount) {
         this.instanceCount = instanceCount;
         return this;
     }

@@ -31,14 +31,14 @@ public class DomainSnapshotOptions implements Property<DomainSnapshotOptions>
      */
     @JsonProperty("AutomatedSnapshotStartHour")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-snapshotoptions.html#cfn-elasticsearch-domain-snapshotoptions-automatedsnapshotstarthour")
-    private Integer automatedSnapshotStartHour;
+    private Number automatedSnapshotStartHour;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-snapshotoptions.html#cfn-elasticsearch-domain-snapshotoptions-automatedsnapshotstarthour
      * 
      */
     @JsonIgnore
-    public Integer getAutomatedSnapshotStartHour() {
+    public Number getAutomatedSnapshotStartHour() {
         return automatedSnapshotStartHour;
     }
 
@@ -47,11 +47,11 @@ public class DomainSnapshotOptions implements Property<DomainSnapshotOptions>
      * 
      */
     @JsonIgnore
-    public void setAutomatedSnapshotStartHour(Integer automatedSnapshotStartHour) {
+    public void setAutomatedSnapshotStartHour(Number automatedSnapshotStartHour) {
         this.automatedSnapshotStartHour = automatedSnapshotStartHour;
     }
 
-    public DomainSnapshotOptions withAutomatedSnapshotStartHour(Integer automatedSnapshotStartHour) {
+    public DomainSnapshotOptions withAutomatedSnapshotStartHour(Number automatedSnapshotStartHour) {
         this.automatedSnapshotStartHour = automatedSnapshotStartHour;
         return this;
     }

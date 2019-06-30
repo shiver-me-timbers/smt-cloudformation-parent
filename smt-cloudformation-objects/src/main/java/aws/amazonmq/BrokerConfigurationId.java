@@ -32,7 +32,7 @@ public class BrokerConfigurationId implements Property<BrokerConfigurationId>
      */
     @JsonProperty("Revision")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-configurationid.html#cfn-amazonmq-broker-configurationid-revision")
-    private Integer revision;
+    private Number revision;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-configurationid.html#cfn-amazonmq-broker-configurationid-id
      * 
@@ -46,7 +46,7 @@ public class BrokerConfigurationId implements Property<BrokerConfigurationId>
      * 
      */
     @JsonIgnore
-    public Integer getRevision() {
+    public Number getRevision() {
         return revision;
     }
 
@@ -55,11 +55,11 @@ public class BrokerConfigurationId implements Property<BrokerConfigurationId>
      * 
      */
     @JsonIgnore
-    public void setRevision(Integer revision) {
+    public void setRevision(Number revision) {
         this.revision = revision;
     }
 
-    public BrokerConfigurationId withRevision(Integer revision) {
+    public BrokerConfigurationId withRevision(Number revision) {
         this.revision = revision;
         return this;
     }

@@ -57,7 +57,7 @@ public class Fleet {
      */
     @JsonProperty("DesiredEC2Instances")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-desiredec2instances")
-    private Integer desiredEC2Instances;
+    private Number desiredEC2Instances;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-ec2inboundpermissions
      * 
@@ -87,14 +87,14 @@ public class Fleet {
      */
     @JsonProperty("MaxSize")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-maxsize")
-    private Integer maxSize;
+    private Number maxSize;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-minsize
      * 
      */
     @JsonProperty("MinSize")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-minsize")
-    private Integer minSize;
+    private Number minSize;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-name
      * 
@@ -168,7 +168,7 @@ public class Fleet {
      * 
      */
     @JsonIgnore
-    public Integer getDesiredEC2Instances() {
+    public Number getDesiredEC2Instances() {
         return desiredEC2Instances;
     }
 
@@ -177,11 +177,11 @@ public class Fleet {
      * 
      */
     @JsonIgnore
-    public void setDesiredEC2Instances(Integer desiredEC2Instances) {
+    public void setDesiredEC2Instances(Number desiredEC2Instances) {
         this.desiredEC2Instances = desiredEC2Instances;
     }
 
-    public Fleet withDesiredEC2Instances(Integer desiredEC2Instances) {
+    public Fleet withDesiredEC2Instances(Number desiredEC2Instances) {
         this.desiredEC2Instances = desiredEC2Instances;
         return this;
     }
@@ -260,7 +260,7 @@ public class Fleet {
      * 
      */
     @JsonIgnore
-    public Integer getMaxSize() {
+    public Number getMaxSize() {
         return maxSize;
     }
 
@@ -269,11 +269,11 @@ public class Fleet {
      * 
      */
     @JsonIgnore
-    public void setMaxSize(Integer maxSize) {
+    public void setMaxSize(Number maxSize) {
         this.maxSize = maxSize;
     }
 
-    public Fleet withMaxSize(Integer maxSize) {
+    public Fleet withMaxSize(Number maxSize) {
         this.maxSize = maxSize;
         return this;
     }
@@ -283,7 +283,7 @@ public class Fleet {
      * 
      */
     @JsonIgnore
-    public Integer getMinSize() {
+    public Number getMinSize() {
         return minSize;
     }
 
@@ -292,11 +292,11 @@ public class Fleet {
      * 
      */
     @JsonIgnore
-    public void setMinSize(Integer minSize) {
+    public void setMinSize(Number minSize) {
         this.minSize = minSize;
     }
 
-    public Fleet withMinSize(Integer minSize) {
+    public Fleet withMinSize(Number minSize) {
         this.minSize = minSize;
         return this;
     }

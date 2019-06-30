@@ -9,7 +9,8 @@
   "properties" : {
     "EndTime" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-endtime",
-      "type" : "string"
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
     },
     "ScalableTargetAction" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-scalabletargetaction",
@@ -28,7 +29,8 @@
     },
     "StartTime" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-starttime",
-      "type" : "string"
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
     }
   }
 }

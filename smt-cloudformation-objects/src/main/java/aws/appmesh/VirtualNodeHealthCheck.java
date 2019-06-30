@@ -44,28 +44,28 @@ public class VirtualNodeHealthCheck implements Property<VirtualNodeHealthCheck>
      */
     @JsonProperty("UnhealthyThreshold")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-healthcheck.html#cfn-appmesh-virtualnode-healthcheck-unhealthythreshold")
-    private Integer unhealthyThreshold;
+    private Number unhealthyThreshold;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-healthcheck.html#cfn-appmesh-virtualnode-healthcheck-port
      * 
      */
     @JsonProperty("Port")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-healthcheck.html#cfn-appmesh-virtualnode-healthcheck-port")
-    private Integer port;
+    private Number port;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-healthcheck.html#cfn-appmesh-virtualnode-healthcheck-healthythreshold
      * 
      */
     @JsonProperty("HealthyThreshold")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-healthcheck.html#cfn-appmesh-virtualnode-healthcheck-healthythreshold")
-    private Integer healthyThreshold;
+    private Number healthyThreshold;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-healthcheck.html#cfn-appmesh-virtualnode-healthcheck-timeoutmillis
      * 
      */
     @JsonProperty("TimeoutMillis")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-healthcheck.html#cfn-appmesh-virtualnode-healthcheck-timeoutmillis")
-    private Integer timeoutMillis;
+    private Number timeoutMillis;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-healthcheck.html#cfn-appmesh-virtualnode-healthcheck-protocol
      * 
@@ -79,7 +79,7 @@ public class VirtualNodeHealthCheck implements Property<VirtualNodeHealthCheck>
      */
     @JsonProperty("IntervalMillis")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-healthcheck.html#cfn-appmesh-virtualnode-healthcheck-intervalmillis")
-    private Integer intervalMillis;
+    private Number intervalMillis;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-healthcheck.html#cfn-appmesh-virtualnode-healthcheck-path
@@ -109,7 +109,7 @@ public class VirtualNodeHealthCheck implements Property<VirtualNodeHealthCheck>
      * 
      */
     @JsonIgnore
-    public Integer getUnhealthyThreshold() {
+    public Number getUnhealthyThreshold() {
         return unhealthyThreshold;
     }
 
@@ -118,11 +118,11 @@ public class VirtualNodeHealthCheck implements Property<VirtualNodeHealthCheck>
      * 
      */
     @JsonIgnore
-    public void setUnhealthyThreshold(Integer unhealthyThreshold) {
+    public void setUnhealthyThreshold(Number unhealthyThreshold) {
         this.unhealthyThreshold = unhealthyThreshold;
     }
 
-    public VirtualNodeHealthCheck withUnhealthyThreshold(Integer unhealthyThreshold) {
+    public VirtualNodeHealthCheck withUnhealthyThreshold(Number unhealthyThreshold) {
         this.unhealthyThreshold = unhealthyThreshold;
         return this;
     }
@@ -132,7 +132,7 @@ public class VirtualNodeHealthCheck implements Property<VirtualNodeHealthCheck>
      * 
      */
     @JsonIgnore
-    public Integer getPort() {
+    public Number getPort() {
         return port;
     }
 
@@ -141,11 +141,11 @@ public class VirtualNodeHealthCheck implements Property<VirtualNodeHealthCheck>
      * 
      */
     @JsonIgnore
-    public void setPort(Integer port) {
+    public void setPort(Number port) {
         this.port = port;
     }
 
-    public VirtualNodeHealthCheck withPort(Integer port) {
+    public VirtualNodeHealthCheck withPort(Number port) {
         this.port = port;
         return this;
     }
@@ -155,7 +155,7 @@ public class VirtualNodeHealthCheck implements Property<VirtualNodeHealthCheck>
      * 
      */
     @JsonIgnore
-    public Integer getHealthyThreshold() {
+    public Number getHealthyThreshold() {
         return healthyThreshold;
     }
 
@@ -164,11 +164,11 @@ public class VirtualNodeHealthCheck implements Property<VirtualNodeHealthCheck>
      * 
      */
     @JsonIgnore
-    public void setHealthyThreshold(Integer healthyThreshold) {
+    public void setHealthyThreshold(Number healthyThreshold) {
         this.healthyThreshold = healthyThreshold;
     }
 
-    public VirtualNodeHealthCheck withHealthyThreshold(Integer healthyThreshold) {
+    public VirtualNodeHealthCheck withHealthyThreshold(Number healthyThreshold) {
         this.healthyThreshold = healthyThreshold;
         return this;
     }
@@ -178,7 +178,7 @@ public class VirtualNodeHealthCheck implements Property<VirtualNodeHealthCheck>
      * 
      */
     @JsonIgnore
-    public Integer getTimeoutMillis() {
+    public Number getTimeoutMillis() {
         return timeoutMillis;
     }
 
@@ -187,11 +187,11 @@ public class VirtualNodeHealthCheck implements Property<VirtualNodeHealthCheck>
      * 
      */
     @JsonIgnore
-    public void setTimeoutMillis(Integer timeoutMillis) {
+    public void setTimeoutMillis(Number timeoutMillis) {
         this.timeoutMillis = timeoutMillis;
     }
 
-    public VirtualNodeHealthCheck withTimeoutMillis(Integer timeoutMillis) {
+    public VirtualNodeHealthCheck withTimeoutMillis(Number timeoutMillis) {
         this.timeoutMillis = timeoutMillis;
         return this;
     }
@@ -224,7 +224,7 @@ public class VirtualNodeHealthCheck implements Property<VirtualNodeHealthCheck>
      * 
      */
     @JsonIgnore
-    public Integer getIntervalMillis() {
+    public Number getIntervalMillis() {
         return intervalMillis;
     }
 
@@ -233,11 +233,11 @@ public class VirtualNodeHealthCheck implements Property<VirtualNodeHealthCheck>
      * 
      */
     @JsonIgnore
-    public void setIntervalMillis(Integer intervalMillis) {
+    public void setIntervalMillis(Number intervalMillis) {
         this.intervalMillis = intervalMillis;
     }
 
-    public VirtualNodeHealthCheck withIntervalMillis(Integer intervalMillis) {
+    public VirtualNodeHealthCheck withIntervalMillis(Number intervalMillis) {
         this.intervalMillis = intervalMillis;
         return this;
     }

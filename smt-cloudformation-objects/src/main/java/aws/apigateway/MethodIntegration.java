@@ -113,21 +113,21 @@ public class MethodIntegration implements Property<MethodIntegration>
      */
     @JsonProperty("RequestParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-requestparameters")
-    private Map<String, String> requestParameters;
+    private Map<String, CharSequence> requestParameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-requesttemplates
      * 
      */
     @JsonProperty("RequestTemplates")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-requesttemplates")
-    private Map<String, String> requestTemplates;
+    private Map<String, CharSequence> requestTemplates;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-timeoutinmillis
      * 
      */
     @JsonProperty("TimeoutInMillis")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-timeoutinmillis")
-    private Integer timeoutInMillis;
+    private Number timeoutInMillis;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-type
      * 
@@ -355,7 +355,7 @@ public class MethodIntegration implements Property<MethodIntegration>
      * 
      */
     @JsonIgnore
-    public Map<String, String> getRequestParameters() {
+    public Map<String, CharSequence> getRequestParameters() {
         return requestParameters;
     }
 
@@ -364,11 +364,11 @@ public class MethodIntegration implements Property<MethodIntegration>
      * 
      */
     @JsonIgnore
-    public void setRequestParameters(Map<String, String> requestParameters) {
+    public void setRequestParameters(Map<String, CharSequence> requestParameters) {
         this.requestParameters = requestParameters;
     }
 
-    public MethodIntegration withRequestParameters(Map<String, String> requestParameters) {
+    public MethodIntegration withRequestParameters(Map<String, CharSequence> requestParameters) {
         this.requestParameters = requestParameters;
         return this;
     }
@@ -378,7 +378,7 @@ public class MethodIntegration implements Property<MethodIntegration>
      * 
      */
     @JsonIgnore
-    public Map<String, String> getRequestTemplates() {
+    public Map<String, CharSequence> getRequestTemplates() {
         return requestTemplates;
     }
 
@@ -387,11 +387,11 @@ public class MethodIntegration implements Property<MethodIntegration>
      * 
      */
     @JsonIgnore
-    public void setRequestTemplates(Map<String, String> requestTemplates) {
+    public void setRequestTemplates(Map<String, CharSequence> requestTemplates) {
         this.requestTemplates = requestTemplates;
     }
 
-    public MethodIntegration withRequestTemplates(Map<String, String> requestTemplates) {
+    public MethodIntegration withRequestTemplates(Map<String, CharSequence> requestTemplates) {
         this.requestTemplates = requestTemplates;
         return this;
     }
@@ -401,7 +401,7 @@ public class MethodIntegration implements Property<MethodIntegration>
      * 
      */
     @JsonIgnore
-    public Integer getTimeoutInMillis() {
+    public Number getTimeoutInMillis() {
         return timeoutInMillis;
     }
 
@@ -410,11 +410,11 @@ public class MethodIntegration implements Property<MethodIntegration>
      * 
      */
     @JsonIgnore
-    public void setTimeoutInMillis(Integer timeoutInMillis) {
+    public void setTimeoutInMillis(Number timeoutInMillis) {
         this.timeoutInMillis = timeoutInMillis;
     }
 
-    public MethodIntegration withTimeoutInMillis(Integer timeoutInMillis) {
+    public MethodIntegration withTimeoutInMillis(Number timeoutInMillis) {
         this.timeoutInMillis = timeoutInMillis;
         return this;
     }

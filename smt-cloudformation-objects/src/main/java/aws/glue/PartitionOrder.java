@@ -39,7 +39,7 @@ public class PartitionOrder implements Property<PartitionOrder>
      */
     @JsonProperty("SortOrder")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-order.html#cfn-glue-partition-order-sortorder")
-    private Integer sortOrder;
+    private Number sortOrder;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-order.html#cfn-glue-partition-order-column
@@ -69,7 +69,7 @@ public class PartitionOrder implements Property<PartitionOrder>
      * 
      */
     @JsonIgnore
-    public Integer getSortOrder() {
+    public Number getSortOrder() {
         return sortOrder;
     }
 
@@ -78,11 +78,11 @@ public class PartitionOrder implements Property<PartitionOrder>
      * 
      */
     @JsonIgnore
-    public void setSortOrder(Integer sortOrder) {
+    public void setSortOrder(Number sortOrder) {
         this.sortOrder = sortOrder;
     }
 
-    public PartitionOrder withSortOrder(Integer sortOrder) {
+    public PartitionOrder withSortOrder(Number sortOrder) {
         this.sortOrder = sortOrder;
         return this;
     }

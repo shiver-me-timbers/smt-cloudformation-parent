@@ -41,14 +41,14 @@ public class ServiceServiceRegistry implements Property<ServiceServiceRegistry>
      */
     @JsonProperty("ContainerPort")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-serviceregistry.html#cfn-ecs-service-serviceregistry-containerport")
-    private Integer containerPort;
+    private Number containerPort;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-serviceregistry.html#cfn-ecs-service-serviceregistry-port
      * 
      */
     @JsonProperty("Port")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-serviceregistry.html#cfn-ecs-service-serviceregistry-port")
-    private Integer port;
+    private Number port;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-serviceregistry.html#cfn-ecs-service-serviceregistry-registryarn
      * 
@@ -85,7 +85,7 @@ public class ServiceServiceRegistry implements Property<ServiceServiceRegistry>
      * 
      */
     @JsonIgnore
-    public Integer getContainerPort() {
+    public Number getContainerPort() {
         return containerPort;
     }
 
@@ -94,11 +94,11 @@ public class ServiceServiceRegistry implements Property<ServiceServiceRegistry>
      * 
      */
     @JsonIgnore
-    public void setContainerPort(Integer containerPort) {
+    public void setContainerPort(Number containerPort) {
         this.containerPort = containerPort;
     }
 
-    public ServiceServiceRegistry withContainerPort(Integer containerPort) {
+    public ServiceServiceRegistry withContainerPort(Number containerPort) {
         this.containerPort = containerPort;
         return this;
     }
@@ -108,7 +108,7 @@ public class ServiceServiceRegistry implements Property<ServiceServiceRegistry>
      * 
      */
     @JsonIgnore
-    public Integer getPort() {
+    public Number getPort() {
         return port;
     }
 
@@ -117,11 +117,11 @@ public class ServiceServiceRegistry implements Property<ServiceServiceRegistry>
      * 
      */
     @JsonIgnore
-    public void setPort(Integer port) {
+    public void setPort(Number port) {
         this.port = port;
     }
 
-    public ServiceServiceRegistry withPort(Integer port) {
+    public ServiceServiceRegistry withPort(Number port) {
         this.port = port;
         return this;
     }

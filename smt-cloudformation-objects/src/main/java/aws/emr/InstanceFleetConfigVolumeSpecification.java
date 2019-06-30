@@ -33,14 +33,14 @@ public class InstanceFleetConfigVolumeSpecification implements Property<Instance
      */
     @JsonProperty("Iops")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-volumespecification.html#cfn-elasticmapreduce-instancefleetconfig-volumespecification-iops")
-    private Integer iops;
+    private Number iops;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-volumespecification.html#cfn-elasticmapreduce-instancefleetconfig-volumespecification-sizeingb
      * 
      */
     @JsonProperty("SizeInGB")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-volumespecification.html#cfn-elasticmapreduce-instancefleetconfig-volumespecification-sizeingb")
-    private Integer sizeInGB;
+    private Number sizeInGB;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-volumespecification.html#cfn-elasticmapreduce-instancefleetconfig-volumespecification-volumetype
      * 
@@ -54,7 +54,7 @@ public class InstanceFleetConfigVolumeSpecification implements Property<Instance
      * 
      */
     @JsonIgnore
-    public Integer getIops() {
+    public Number getIops() {
         return iops;
     }
 
@@ -63,11 +63,11 @@ public class InstanceFleetConfigVolumeSpecification implements Property<Instance
      * 
      */
     @JsonIgnore
-    public void setIops(Integer iops) {
+    public void setIops(Number iops) {
         this.iops = iops;
     }
 
-    public InstanceFleetConfigVolumeSpecification withIops(Integer iops) {
+    public InstanceFleetConfigVolumeSpecification withIops(Number iops) {
         this.iops = iops;
         return this;
     }
@@ -77,7 +77,7 @@ public class InstanceFleetConfigVolumeSpecification implements Property<Instance
      * 
      */
     @JsonIgnore
-    public Integer getSizeInGB() {
+    public Number getSizeInGB() {
         return sizeInGB;
     }
 
@@ -86,11 +86,11 @@ public class InstanceFleetConfigVolumeSpecification implements Property<Instance
      * 
      */
     @JsonIgnore
-    public void setSizeInGB(Integer sizeInGB) {
+    public void setSizeInGB(Number sizeInGB) {
         this.sizeInGB = sizeInGB;
     }
 
-    public InstanceFleetConfigVolumeSpecification withSizeInGB(Integer sizeInGB) {
+    public InstanceFleetConfigVolumeSpecification withSizeInGB(Number sizeInGB) {
         this.sizeInGB = sizeInGB;
         return this;
     }

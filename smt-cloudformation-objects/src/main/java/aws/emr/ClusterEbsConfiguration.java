@@ -43,7 +43,7 @@ public class ClusterEbsConfiguration implements Property<ClusterEbsConfiguration
      */
     @JsonProperty("EbsOptimized")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-ebsconfiguration.html#cfn-elasticmapreduce-cluster-ebsconfiguration-ebsoptimized")
-    private Boolean ebsOptimized;
+    private CharSequence ebsOptimized;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-ebsconfiguration.html#cfn-elasticmapreduce-cluster-ebsconfiguration-ebsblockdeviceconfigs
@@ -73,7 +73,7 @@ public class ClusterEbsConfiguration implements Property<ClusterEbsConfiguration
      * 
      */
     @JsonIgnore
-    public Boolean getEbsOptimized() {
+    public CharSequence getEbsOptimized() {
         return ebsOptimized;
     }
 
@@ -82,11 +82,11 @@ public class ClusterEbsConfiguration implements Property<ClusterEbsConfiguration
      * 
      */
     @JsonIgnore
-    public void setEbsOptimized(Boolean ebsOptimized) {
+    public void setEbsOptimized(CharSequence ebsOptimized) {
         this.ebsOptimized = ebsOptimized;
     }
 
-    public ClusterEbsConfiguration withEbsOptimized(Boolean ebsOptimized) {
+    public ClusterEbsConfiguration withEbsOptimized(CharSequence ebsOptimized) {
         this.ebsOptimized = ebsOptimized;
         return this;
     }

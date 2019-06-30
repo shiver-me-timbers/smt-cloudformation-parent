@@ -34,14 +34,14 @@ public class MethodMethodResponse implements Property<MethodMethodResponse>
      */
     @JsonProperty("ResponseModels")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-methodresponse.html#cfn-apigateway-method-methodresponse-responsemodels")
-    private Map<String, String> responseModels;
+    private Map<String, CharSequence> responseModels;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-methodresponse.html#cfn-apigateway-method-methodresponse-responseparameters
      * 
      */
     @JsonProperty("ResponseParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-methodresponse.html#cfn-apigateway-method-methodresponse-responseparameters")
-    private Map<String, Boolean> responseParameters;
+    private Map<String, CharSequence> responseParameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-methodresponse.html#cfn-apigateway-method-methodresponse-statuscode
      * 
@@ -55,7 +55,7 @@ public class MethodMethodResponse implements Property<MethodMethodResponse>
      * 
      */
     @JsonIgnore
-    public Map<String, String> getResponseModels() {
+    public Map<String, CharSequence> getResponseModels() {
         return responseModels;
     }
 
@@ -64,11 +64,11 @@ public class MethodMethodResponse implements Property<MethodMethodResponse>
      * 
      */
     @JsonIgnore
-    public void setResponseModels(Map<String, String> responseModels) {
+    public void setResponseModels(Map<String, CharSequence> responseModels) {
         this.responseModels = responseModels;
     }
 
-    public MethodMethodResponse withResponseModels(Map<String, String> responseModels) {
+    public MethodMethodResponse withResponseModels(Map<String, CharSequence> responseModels) {
         this.responseModels = responseModels;
         return this;
     }
@@ -78,7 +78,7 @@ public class MethodMethodResponse implements Property<MethodMethodResponse>
      * 
      */
     @JsonIgnore
-    public Map<String, Boolean> getResponseParameters() {
+    public Map<String, CharSequence> getResponseParameters() {
         return responseParameters;
     }
 
@@ -87,11 +87,11 @@ public class MethodMethodResponse implements Property<MethodMethodResponse>
      * 
      */
     @JsonIgnore
-    public void setResponseParameters(Map<String, Boolean> responseParameters) {
+    public void setResponseParameters(Map<String, CharSequence> responseParameters) {
         this.responseParameters = responseParameters;
     }
 
-    public MethodMethodResponse withResponseParameters(Map<String, Boolean> responseParameters) {
+    public MethodMethodResponse withResponseParameters(Map<String, CharSequence> responseParameters) {
         this.responseParameters = responseParameters;
         return this;
     }

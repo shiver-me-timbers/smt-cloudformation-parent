@@ -73,7 +73,7 @@ public class SecurityGroupEgress implements Property<SecurityGroupEgress>
      */
     @JsonProperty("FromPort")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-fromport")
-    private Integer fromPort;
+    private Number fromPort;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-ipprotocol
      * 
@@ -87,7 +87,7 @@ public class SecurityGroupEgress implements Property<SecurityGroupEgress>
      */
     @JsonProperty("ToPort")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-toport")
-    private Integer toPort;
+    private Number toPort;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-cidrip
@@ -209,7 +209,7 @@ public class SecurityGroupEgress implements Property<SecurityGroupEgress>
      * 
      */
     @JsonIgnore
-    public Integer getFromPort() {
+    public Number getFromPort() {
         return fromPort;
     }
 
@@ -218,11 +218,11 @@ public class SecurityGroupEgress implements Property<SecurityGroupEgress>
      * 
      */
     @JsonIgnore
-    public void setFromPort(Integer fromPort) {
+    public void setFromPort(Number fromPort) {
         this.fromPort = fromPort;
     }
 
-    public SecurityGroupEgress withFromPort(Integer fromPort) {
+    public SecurityGroupEgress withFromPort(Number fromPort) {
         this.fromPort = fromPort;
         return this;
     }
@@ -255,7 +255,7 @@ public class SecurityGroupEgress implements Property<SecurityGroupEgress>
      * 
      */
     @JsonIgnore
-    public Integer getToPort() {
+    public Number getToPort() {
         return toPort;
     }
 
@@ -264,11 +264,11 @@ public class SecurityGroupEgress implements Property<SecurityGroupEgress>
      * 
      */
     @JsonIgnore
-    public void setToPort(Integer toPort) {
+    public void setToPort(Number toPort) {
         this.toPort = toPort;
     }
 
-    public SecurityGroupEgress withToPort(Integer toPort) {
+    public SecurityGroupEgress withToPort(Number toPort) {
         this.toPort = toPort;
         return this;
     }

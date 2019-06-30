@@ -31,14 +31,14 @@ public class TableSSESpecification implements Property<TableSSESpecification>
      */
     @JsonProperty("SSEEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-ssespecification.html#cfn-dynamodb-table-ssespecification-sseenabled")
-    private Boolean sSEEnabled;
+    private CharSequence sSEEnabled;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-ssespecification.html#cfn-dynamodb-table-ssespecification-sseenabled
      * 
      */
     @JsonIgnore
-    public Boolean getSSEEnabled() {
+    public CharSequence getSSEEnabled() {
         return sSEEnabled;
     }
 
@@ -47,11 +47,11 @@ public class TableSSESpecification implements Property<TableSSESpecification>
      * 
      */
     @JsonIgnore
-    public void setSSEEnabled(Boolean sSEEnabled) {
+    public void setSSEEnabled(CharSequence sSEEnabled) {
         this.sSEEnabled = sSEEnabled;
     }
 
-    public TableSSESpecification withSSEEnabled(Boolean sSEEnabled) {
+    public TableSSESpecification withSSEEnabled(CharSequence sSEEnabled) {
         this.sSEEnabled = sSEEnabled;
         return this;
     }

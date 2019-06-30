@@ -31,14 +31,14 @@ public class RotationScheduleRotationRules implements Property<RotationScheduleR
      */
     @JsonProperty("AutomaticallyAfterDays")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-secretsmanager-rotationschedule-rotationrules.html#cfn-secretsmanager-rotationschedule-rotationrules-automaticallyafterdays")
-    private Integer automaticallyAfterDays;
+    private Number automaticallyAfterDays;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-secretsmanager-rotationschedule-rotationrules.html#cfn-secretsmanager-rotationschedule-rotationrules-automaticallyafterdays
      * 
      */
     @JsonIgnore
-    public Integer getAutomaticallyAfterDays() {
+    public Number getAutomaticallyAfterDays() {
         return automaticallyAfterDays;
     }
 
@@ -47,11 +47,11 @@ public class RotationScheduleRotationRules implements Property<RotationScheduleR
      * 
      */
     @JsonIgnore
-    public void setAutomaticallyAfterDays(Integer automaticallyAfterDays) {
+    public void setAutomaticallyAfterDays(Number automaticallyAfterDays) {
         this.automaticallyAfterDays = automaticallyAfterDays;
     }
 
-    public RotationScheduleRotationRules withAutomaticallyAfterDays(Integer automaticallyAfterDays) {
+    public RotationScheduleRotationRules withAutomaticallyAfterDays(Number automaticallyAfterDays) {
         this.automaticallyAfterDays = automaticallyAfterDays;
         return this;
     }

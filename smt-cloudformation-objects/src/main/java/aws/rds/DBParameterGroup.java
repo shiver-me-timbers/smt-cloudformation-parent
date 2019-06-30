@@ -51,7 +51,7 @@ public class DBParameterGroup {
      */
     @JsonProperty("Parameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbparametergroup.html#cfn-rds-dbparametergroup-parameters")
-    private Map<String, String> parameters;
+    private Map<String, CharSequence> parameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbparametergroup.html#cfn-rds-dbparametergroup-tags
      * 
@@ -111,7 +111,7 @@ public class DBParameterGroup {
      * 
      */
     @JsonIgnore
-    public Map<String, String> getParameters() {
+    public Map<String, CharSequence> getParameters() {
         return parameters;
     }
 
@@ -120,11 +120,11 @@ public class DBParameterGroup {
      * 
      */
     @JsonIgnore
-    public void setParameters(Map<String, String> parameters) {
+    public void setParameters(Map<String, CharSequence> parameters) {
         this.parameters = parameters;
     }
 
-    public DBParameterGroup withParameters(Map<String, String> parameters) {
+    public DBParameterGroup withParameters(Map<String, CharSequence> parameters) {
         this.parameters = parameters;
         return this;
     }

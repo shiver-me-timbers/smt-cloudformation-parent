@@ -44,7 +44,7 @@ public class DatasetVariable implements Property<DatasetVariable>
      */
     @JsonProperty("DoubleValue")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-variable.html#cfn-iotanalytics-dataset-variable-doublevalue")
-    private Double doubleValue;
+    private Number doubleValue;
     /**
      * DatasetOutputFileUriValue
      * <p>
@@ -101,7 +101,7 @@ public class DatasetVariable implements Property<DatasetVariable>
      * 
      */
     @JsonIgnore
-    public Double getDoubleValue() {
+    public Number getDoubleValue() {
         return doubleValue;
     }
 
@@ -110,11 +110,11 @@ public class DatasetVariable implements Property<DatasetVariable>
      * 
      */
     @JsonIgnore
-    public void setDoubleValue(Double doubleValue) {
+    public void setDoubleValue(Number doubleValue) {
         this.doubleValue = doubleValue;
     }
 
-    public DatasetVariable withDoubleValue(Double doubleValue) {
+    public DatasetVariable withDoubleValue(Number doubleValue) {
         this.doubleValue = doubleValue;
         return this;
     }

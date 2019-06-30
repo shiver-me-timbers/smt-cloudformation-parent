@@ -54,14 +54,14 @@ public class BucketRule implements Property<BucketRule>
      */
     @JsonProperty("ExpirationDate")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-expirationdate")
-    private String expirationDate;
+    private CharSequence expirationDate;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-expirationindays
      * 
      */
     @JsonProperty("ExpirationInDays")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-expirationindays")
-    private Integer expirationInDays;
+    private Number expirationInDays;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-id
      * 
@@ -75,7 +75,7 @@ public class BucketRule implements Property<BucketRule>
      */
     @JsonProperty("NoncurrentVersionExpirationInDays")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-noncurrentversionexpirationindays")
-    private Integer noncurrentVersionExpirationInDays;
+    private Number noncurrentVersionExpirationInDays;
     /**
      * BucketNoncurrentVersionTransition
      * <p>
@@ -165,7 +165,7 @@ public class BucketRule implements Property<BucketRule>
      * 
      */
     @JsonIgnore
-    public String getExpirationDate() {
+    public CharSequence getExpirationDate() {
         return expirationDate;
     }
 
@@ -174,11 +174,11 @@ public class BucketRule implements Property<BucketRule>
      * 
      */
     @JsonIgnore
-    public void setExpirationDate(String expirationDate) {
+    public void setExpirationDate(CharSequence expirationDate) {
         this.expirationDate = expirationDate;
     }
 
-    public BucketRule withExpirationDate(String expirationDate) {
+    public BucketRule withExpirationDate(CharSequence expirationDate) {
         this.expirationDate = expirationDate;
         return this;
     }
@@ -188,7 +188,7 @@ public class BucketRule implements Property<BucketRule>
      * 
      */
     @JsonIgnore
-    public Integer getExpirationInDays() {
+    public Number getExpirationInDays() {
         return expirationInDays;
     }
 
@@ -197,11 +197,11 @@ public class BucketRule implements Property<BucketRule>
      * 
      */
     @JsonIgnore
-    public void setExpirationInDays(Integer expirationInDays) {
+    public void setExpirationInDays(Number expirationInDays) {
         this.expirationInDays = expirationInDays;
     }
 
-    public BucketRule withExpirationInDays(Integer expirationInDays) {
+    public BucketRule withExpirationInDays(Number expirationInDays) {
         this.expirationInDays = expirationInDays;
         return this;
     }
@@ -234,7 +234,7 @@ public class BucketRule implements Property<BucketRule>
      * 
      */
     @JsonIgnore
-    public Integer getNoncurrentVersionExpirationInDays() {
+    public Number getNoncurrentVersionExpirationInDays() {
         return noncurrentVersionExpirationInDays;
     }
 
@@ -243,11 +243,11 @@ public class BucketRule implements Property<BucketRule>
      * 
      */
     @JsonIgnore
-    public void setNoncurrentVersionExpirationInDays(Integer noncurrentVersionExpirationInDays) {
+    public void setNoncurrentVersionExpirationInDays(Number noncurrentVersionExpirationInDays) {
         this.noncurrentVersionExpirationInDays = noncurrentVersionExpirationInDays;
     }
 
-    public BucketRule withNoncurrentVersionExpirationInDays(Integer noncurrentVersionExpirationInDays) {
+    public BucketRule withNoncurrentVersionExpirationInDays(Number noncurrentVersionExpirationInDays) {
         this.noncurrentVersionExpirationInDays = noncurrentVersionExpirationInDays;
         return this;
     }

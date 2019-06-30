@@ -14,7 +14,8 @@
     },
     "TTL" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-dnsrecord.html#cfn-servicediscovery-service-dnsrecord-ttl",
-      "type" : "number"
+      "type" : "number",
+      "javaType" : "java.lang.Number"
     }
   }
 }

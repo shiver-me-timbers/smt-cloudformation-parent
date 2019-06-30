@@ -40,7 +40,7 @@ public class TaskDefinitionMountPoint implements Property<TaskDefinitionMountPoi
      */
     @JsonProperty("ReadOnly")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-mountpoints.html#cfn-ecs-taskdefinition-containerdefinition-mountpoints-readonly")
-    private Boolean readOnly;
+    private CharSequence readOnly;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-mountpoints.html#cfn-ecs-taskdefinition-containerdefinition-mountpoints-sourcevolume
      * 
@@ -77,7 +77,7 @@ public class TaskDefinitionMountPoint implements Property<TaskDefinitionMountPoi
      * 
      */
     @JsonIgnore
-    public Boolean getReadOnly() {
+    public CharSequence getReadOnly() {
         return readOnly;
     }
 
@@ -86,11 +86,11 @@ public class TaskDefinitionMountPoint implements Property<TaskDefinitionMountPoi
      * 
      */
     @JsonIgnore
-    public void setReadOnly(Boolean readOnly) {
+    public void setReadOnly(CharSequence readOnly) {
         this.readOnly = readOnly;
     }
 
-    public TaskDefinitionMountPoint withReadOnly(Boolean readOnly) {
+    public TaskDefinitionMountPoint withReadOnly(CharSequence readOnly) {
         this.readOnly = readOnly;
         return this;
     }

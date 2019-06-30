@@ -71,7 +71,7 @@ public class Pipeline {
      */
     @JsonProperty("RestartExecutionOnUpdate")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-restartexecutiononupdate")
-    private Boolean restartExecutionOnUpdate;
+    private CharSequence restartExecutionOnUpdate;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-rolearn
      * 
@@ -189,7 +189,7 @@ public class Pipeline {
      * 
      */
     @JsonIgnore
-    public Boolean getRestartExecutionOnUpdate() {
+    public CharSequence getRestartExecutionOnUpdate() {
         return restartExecutionOnUpdate;
     }
 
@@ -198,11 +198,11 @@ public class Pipeline {
      * 
      */
     @JsonIgnore
-    public void setRestartExecutionOnUpdate(Boolean restartExecutionOnUpdate) {
+    public void setRestartExecutionOnUpdate(CharSequence restartExecutionOnUpdate) {
         this.restartExecutionOnUpdate = restartExecutionOnUpdate;
     }
 
-    public Pipeline withRestartExecutionOnUpdate(Boolean restartExecutionOnUpdate) {
+    public Pipeline withRestartExecutionOnUpdate(CharSequence restartExecutionOnUpdate) {
         this.restartExecutionOnUpdate = restartExecutionOnUpdate;
         return this;
     }

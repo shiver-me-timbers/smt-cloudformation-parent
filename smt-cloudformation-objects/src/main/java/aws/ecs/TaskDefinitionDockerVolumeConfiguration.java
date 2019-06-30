@@ -36,7 +36,7 @@ public class TaskDefinitionDockerVolumeConfiguration implements Property<TaskDef
      */
     @JsonProperty("Autoprovision")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html#cfn-ecs-taskdefinition-dockervolumeconfiguration-autoprovision")
-    private Boolean autoprovision;
+    private CharSequence autoprovision;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html#cfn-ecs-taskdefinition-dockervolumeconfiguration-driver
      * 
@@ -50,14 +50,14 @@ public class TaskDefinitionDockerVolumeConfiguration implements Property<TaskDef
      */
     @JsonProperty("DriverOpts")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html#cfn-ecs-taskdefinition-dockervolumeconfiguration-driveropts")
-    private Map<String, String> driverOpts;
+    private Map<String, CharSequence> driverOpts;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html#cfn-ecs-taskdefinition-dockervolumeconfiguration-labels
      * 
      */
     @JsonProperty("Labels")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html#cfn-ecs-taskdefinition-dockervolumeconfiguration-labels")
-    private Map<String, String> labels;
+    private Map<String, CharSequence> labels;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html#cfn-ecs-taskdefinition-dockervolumeconfiguration-scope
      * 
@@ -71,7 +71,7 @@ public class TaskDefinitionDockerVolumeConfiguration implements Property<TaskDef
      * 
      */
     @JsonIgnore
-    public Boolean getAutoprovision() {
+    public CharSequence getAutoprovision() {
         return autoprovision;
     }
 
@@ -80,11 +80,11 @@ public class TaskDefinitionDockerVolumeConfiguration implements Property<TaskDef
      * 
      */
     @JsonIgnore
-    public void setAutoprovision(Boolean autoprovision) {
+    public void setAutoprovision(CharSequence autoprovision) {
         this.autoprovision = autoprovision;
     }
 
-    public TaskDefinitionDockerVolumeConfiguration withAutoprovision(Boolean autoprovision) {
+    public TaskDefinitionDockerVolumeConfiguration withAutoprovision(CharSequence autoprovision) {
         this.autoprovision = autoprovision;
         return this;
     }
@@ -117,7 +117,7 @@ public class TaskDefinitionDockerVolumeConfiguration implements Property<TaskDef
      * 
      */
     @JsonIgnore
-    public Map<String, String> getDriverOpts() {
+    public Map<String, CharSequence> getDriverOpts() {
         return driverOpts;
     }
 
@@ -126,11 +126,11 @@ public class TaskDefinitionDockerVolumeConfiguration implements Property<TaskDef
      * 
      */
     @JsonIgnore
-    public void setDriverOpts(Map<String, String> driverOpts) {
+    public void setDriverOpts(Map<String, CharSequence> driverOpts) {
         this.driverOpts = driverOpts;
     }
 
-    public TaskDefinitionDockerVolumeConfiguration withDriverOpts(Map<String, String> driverOpts) {
+    public TaskDefinitionDockerVolumeConfiguration withDriverOpts(Map<String, CharSequence> driverOpts) {
         this.driverOpts = driverOpts;
         return this;
     }
@@ -140,7 +140,7 @@ public class TaskDefinitionDockerVolumeConfiguration implements Property<TaskDef
      * 
      */
     @JsonIgnore
-    public Map<String, String> getLabels() {
+    public Map<String, CharSequence> getLabels() {
         return labels;
     }
 
@@ -149,11 +149,11 @@ public class TaskDefinitionDockerVolumeConfiguration implements Property<TaskDef
      * 
      */
     @JsonIgnore
-    public void setLabels(Map<String, String> labels) {
+    public void setLabels(Map<String, CharSequence> labels) {
         this.labels = labels;
     }
 
-    public TaskDefinitionDockerVolumeConfiguration withLabels(Map<String, String> labels) {
+    public TaskDefinitionDockerVolumeConfiguration withLabels(Map<String, CharSequence> labels) {
         this.labels = labels;
         return this;
     }

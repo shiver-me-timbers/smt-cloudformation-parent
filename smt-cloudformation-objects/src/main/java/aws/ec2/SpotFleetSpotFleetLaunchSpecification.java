@@ -58,7 +58,7 @@ public class SpotFleetSpotFleetLaunchSpecification implements Property<SpotFleet
      */
     @JsonProperty("EbsOptimized")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-ebsoptimized")
-    private Boolean ebsOptimized;
+    private CharSequence ebsOptimized;
     /**
      * SpotFleetIamInstanceProfileSpecification
      * <p>
@@ -172,7 +172,7 @@ public class SpotFleetSpotFleetLaunchSpecification implements Property<SpotFleet
      */
     @JsonProperty("WeightedCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-weightedcapacity")
-    private Double weightedCapacity;
+    private Number weightedCapacity;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-blockdevicemappings
@@ -202,7 +202,7 @@ public class SpotFleetSpotFleetLaunchSpecification implements Property<SpotFleet
      * 
      */
     @JsonIgnore
-    public Boolean getEbsOptimized() {
+    public CharSequence getEbsOptimized() {
         return ebsOptimized;
     }
 
@@ -211,11 +211,11 @@ public class SpotFleetSpotFleetLaunchSpecification implements Property<SpotFleet
      * 
      */
     @JsonIgnore
-    public void setEbsOptimized(Boolean ebsOptimized) {
+    public void setEbsOptimized(CharSequence ebsOptimized) {
         this.ebsOptimized = ebsOptimized;
     }
 
-    public SpotFleetSpotFleetLaunchSpecification withEbsOptimized(Boolean ebsOptimized) {
+    public SpotFleetSpotFleetLaunchSpecification withEbsOptimized(CharSequence ebsOptimized) {
         this.ebsOptimized = ebsOptimized;
         return this;
     }
@@ -559,7 +559,7 @@ public class SpotFleetSpotFleetLaunchSpecification implements Property<SpotFleet
      * 
      */
     @JsonIgnore
-    public Double getWeightedCapacity() {
+    public Number getWeightedCapacity() {
         return weightedCapacity;
     }
 
@@ -568,11 +568,11 @@ public class SpotFleetSpotFleetLaunchSpecification implements Property<SpotFleet
      * 
      */
     @JsonIgnore
-    public void setWeightedCapacity(Double weightedCapacity) {
+    public void setWeightedCapacity(Number weightedCapacity) {
         this.weightedCapacity = weightedCapacity;
     }
 
-    public SpotFleetSpotFleetLaunchSpecification withWeightedCapacity(Double weightedCapacity) {
+    public SpotFleetSpotFleetLaunchSpecification withWeightedCapacity(Number weightedCapacity) {
         this.weightedCapacity = weightedCapacity;
         return this;
     }

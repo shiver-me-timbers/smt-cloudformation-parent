@@ -94,7 +94,7 @@ public class LoadBalancer {
      */
     @JsonProperty("CrossZone")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-crosszone")
-    private Boolean crossZone;
+    private CharSequence crossZone;
     /**
      * LoadBalancerHealthCheck
      * <p>
@@ -306,7 +306,7 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public Boolean getCrossZone() {
+    public CharSequence getCrossZone() {
         return crossZone;
     }
 
@@ -315,11 +315,11 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public void setCrossZone(Boolean crossZone) {
+    public void setCrossZone(CharSequence crossZone) {
         this.crossZone = crossZone;
     }
 
-    public LoadBalancer withCrossZone(Boolean crossZone) {
+    public LoadBalancer withCrossZone(CharSequence crossZone) {
         this.crossZone = crossZone;
         return this;
     }

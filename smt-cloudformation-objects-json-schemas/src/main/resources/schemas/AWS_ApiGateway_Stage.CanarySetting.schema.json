@@ -14,16 +14,18 @@
     },
     "PercentTraffic" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-canarysetting.html#cfn-apigateway-stage-canarysetting-percenttraffic",
-      "type" : "number"
+      "type" : "number",
+      "javaType" : "java.lang.Number"
     },
     "StageVariableOverrides" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-canarysetting.html#cfn-apigateway-stage-canarysetting-stagevariableoverrides",
       "type" : "object",
-      "javaType" : "java.util.Map<String, String>"
+      "javaType" : "java.util.Map<String, java.lang.CharSequence>"
     },
     "UseStageCache" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-canarysetting.html#cfn-apigateway-stage-canarysetting-usestagecache",
-      "type" : "boolean"
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
     }
   }
 }

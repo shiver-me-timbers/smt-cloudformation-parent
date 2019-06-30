@@ -46,7 +46,7 @@ public class ScalingPlanScalingInstruction implements Property<ScalingPlanScalin
      */
     @JsonProperty("DisableDynamicScaling")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-disabledynamicscaling")
-    private Boolean disableDynamicScaling;
+    private CharSequence disableDynamicScaling;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-servicenamespace
      * 
@@ -81,7 +81,7 @@ public class ScalingPlanScalingInstruction implements Property<ScalingPlanScalin
      */
     @JsonProperty("MinCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-mincapacity")
-    private Integer minCapacity;
+    private Number minCapacity;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-targettrackingconfigurations
      * 
@@ -95,7 +95,7 @@ public class ScalingPlanScalingInstruction implements Property<ScalingPlanScalin
      */
     @JsonProperty("PredictiveScalingMaxCapacityBuffer")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-predictivescalingmaxcapacitybuffer")
-    private Integer predictiveScalingMaxCapacityBuffer;
+    private Number predictiveScalingMaxCapacityBuffer;
     /**
      * ScalingPlanCustomizedLoadMetricSpecification
      * <p>
@@ -127,14 +127,14 @@ public class ScalingPlanScalingInstruction implements Property<ScalingPlanScalin
      */
     @JsonProperty("ScheduledActionBufferTime")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-scheduledactionbuffertime")
-    private Integer scheduledActionBufferTime;
+    private Number scheduledActionBufferTime;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-maxcapacity
      * 
      */
     @JsonProperty("MaxCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-maxcapacity")
-    private Integer maxCapacity;
+    private Number maxCapacity;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-predictivescalingmode
      * 
@@ -148,7 +148,7 @@ public class ScalingPlanScalingInstruction implements Property<ScalingPlanScalin
      * 
      */
     @JsonIgnore
-    public Boolean getDisableDynamicScaling() {
+    public CharSequence getDisableDynamicScaling() {
         return disableDynamicScaling;
     }
 
@@ -157,11 +157,11 @@ public class ScalingPlanScalingInstruction implements Property<ScalingPlanScalin
      * 
      */
     @JsonIgnore
-    public void setDisableDynamicScaling(Boolean disableDynamicScaling) {
+    public void setDisableDynamicScaling(CharSequence disableDynamicScaling) {
         this.disableDynamicScaling = disableDynamicScaling;
     }
 
-    public ScalingPlanScalingInstruction withDisableDynamicScaling(Boolean disableDynamicScaling) {
+    public ScalingPlanScalingInstruction withDisableDynamicScaling(CharSequence disableDynamicScaling) {
         this.disableDynamicScaling = disableDynamicScaling;
         return this;
     }
@@ -263,7 +263,7 @@ public class ScalingPlanScalingInstruction implements Property<ScalingPlanScalin
      * 
      */
     @JsonIgnore
-    public Integer getMinCapacity() {
+    public Number getMinCapacity() {
         return minCapacity;
     }
 
@@ -272,11 +272,11 @@ public class ScalingPlanScalingInstruction implements Property<ScalingPlanScalin
      * 
      */
     @JsonIgnore
-    public void setMinCapacity(Integer minCapacity) {
+    public void setMinCapacity(Number minCapacity) {
         this.minCapacity = minCapacity;
     }
 
-    public ScalingPlanScalingInstruction withMinCapacity(Integer minCapacity) {
+    public ScalingPlanScalingInstruction withMinCapacity(Number minCapacity) {
         this.minCapacity = minCapacity;
         return this;
     }
@@ -309,7 +309,7 @@ public class ScalingPlanScalingInstruction implements Property<ScalingPlanScalin
      * 
      */
     @JsonIgnore
-    public Integer getPredictiveScalingMaxCapacityBuffer() {
+    public Number getPredictiveScalingMaxCapacityBuffer() {
         return predictiveScalingMaxCapacityBuffer;
     }
 
@@ -318,11 +318,11 @@ public class ScalingPlanScalingInstruction implements Property<ScalingPlanScalin
      * 
      */
     @JsonIgnore
-    public void setPredictiveScalingMaxCapacityBuffer(Integer predictiveScalingMaxCapacityBuffer) {
+    public void setPredictiveScalingMaxCapacityBuffer(Number predictiveScalingMaxCapacityBuffer) {
         this.predictiveScalingMaxCapacityBuffer = predictiveScalingMaxCapacityBuffer;
     }
 
-    public ScalingPlanScalingInstruction withPredictiveScalingMaxCapacityBuffer(Integer predictiveScalingMaxCapacityBuffer) {
+    public ScalingPlanScalingInstruction withPredictiveScalingMaxCapacityBuffer(Number predictiveScalingMaxCapacityBuffer) {
         this.predictiveScalingMaxCapacityBuffer = predictiveScalingMaxCapacityBuffer;
         return this;
     }
@@ -409,7 +409,7 @@ public class ScalingPlanScalingInstruction implements Property<ScalingPlanScalin
      * 
      */
     @JsonIgnore
-    public Integer getScheduledActionBufferTime() {
+    public Number getScheduledActionBufferTime() {
         return scheduledActionBufferTime;
     }
 
@@ -418,11 +418,11 @@ public class ScalingPlanScalingInstruction implements Property<ScalingPlanScalin
      * 
      */
     @JsonIgnore
-    public void setScheduledActionBufferTime(Integer scheduledActionBufferTime) {
+    public void setScheduledActionBufferTime(Number scheduledActionBufferTime) {
         this.scheduledActionBufferTime = scheduledActionBufferTime;
     }
 
-    public ScalingPlanScalingInstruction withScheduledActionBufferTime(Integer scheduledActionBufferTime) {
+    public ScalingPlanScalingInstruction withScheduledActionBufferTime(Number scheduledActionBufferTime) {
         this.scheduledActionBufferTime = scheduledActionBufferTime;
         return this;
     }
@@ -432,7 +432,7 @@ public class ScalingPlanScalingInstruction implements Property<ScalingPlanScalin
      * 
      */
     @JsonIgnore
-    public Integer getMaxCapacity() {
+    public Number getMaxCapacity() {
         return maxCapacity;
     }
 
@@ -441,11 +441,11 @@ public class ScalingPlanScalingInstruction implements Property<ScalingPlanScalin
      * 
      */
     @JsonIgnore
-    public void setMaxCapacity(Integer maxCapacity) {
+    public void setMaxCapacity(Number maxCapacity) {
         this.maxCapacity = maxCapacity;
     }
 
-    public ScalingPlanScalingInstruction withMaxCapacity(Integer maxCapacity) {
+    public ScalingPlanScalingInstruction withMaxCapacity(Number maxCapacity) {
         this.maxCapacity = maxCapacity;
         return this;
     }

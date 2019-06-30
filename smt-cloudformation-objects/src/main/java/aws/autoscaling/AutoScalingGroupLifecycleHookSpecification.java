@@ -44,7 +44,7 @@ public class AutoScalingGroupLifecycleHookSpecification implements Property<Auto
      */
     @JsonProperty("HeartbeatTimeout")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-lifecyclehookspecification.html#cfn-autoscaling-autoscalinggroup-lifecyclehookspecification-heartbeattimeout")
-    private Integer heartbeatTimeout;
+    private Number heartbeatTimeout;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-lifecyclehookspecification.html#cfn-autoscaling-autoscalinggroup-lifecyclehookspecification-lifecyclehookname
      * 
@@ -109,7 +109,7 @@ public class AutoScalingGroupLifecycleHookSpecification implements Property<Auto
      * 
      */
     @JsonIgnore
-    public Integer getHeartbeatTimeout() {
+    public Number getHeartbeatTimeout() {
         return heartbeatTimeout;
     }
 
@@ -118,11 +118,11 @@ public class AutoScalingGroupLifecycleHookSpecification implements Property<Auto
      * 
      */
     @JsonIgnore
-    public void setHeartbeatTimeout(Integer heartbeatTimeout) {
+    public void setHeartbeatTimeout(Number heartbeatTimeout) {
         this.heartbeatTimeout = heartbeatTimeout;
     }
 
-    public AutoScalingGroupLifecycleHookSpecification withHeartbeatTimeout(Integer heartbeatTimeout) {
+    public AutoScalingGroupLifecycleHookSpecification withHeartbeatTimeout(Number heartbeatTimeout) {
         this.heartbeatTimeout = heartbeatTimeout;
         return this;
     }

@@ -63,7 +63,7 @@ public class Api {
      */
     @JsonProperty("DisableSchemaValidation")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html#cfn-apigatewayv2-api-disableschemavalidation")
-    private Boolean disableSchemaValidation;
+    private CharSequence disableSchemaValidation;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html#cfn-apigatewayv2-api-name
      * 
@@ -176,7 +176,7 @@ public class Api {
      * 
      */
     @JsonIgnore
-    public Boolean getDisableSchemaValidation() {
+    public CharSequence getDisableSchemaValidation() {
         return disableSchemaValidation;
     }
 
@@ -185,11 +185,11 @@ public class Api {
      * 
      */
     @JsonIgnore
-    public void setDisableSchemaValidation(Boolean disableSchemaValidation) {
+    public void setDisableSchemaValidation(CharSequence disableSchemaValidation) {
         this.disableSchemaValidation = disableSchemaValidation;
     }
 
-    public Api withDisableSchemaValidation(Boolean disableSchemaValidation) {
+    public Api withDisableSchemaValidation(CharSequence disableSchemaValidation) {
         this.disableSchemaValidation = disableSchemaValidation;
         return this;
     }

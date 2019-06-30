@@ -41,7 +41,7 @@ public class Volume {
      */
     @JsonProperty("AutoEnableIO")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volume.html#cfn-ec2-ebs-volume-autoenableio")
-    private Boolean autoEnableIO;
+    private CharSequence autoEnableIO;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volume.html#cfn-ec2-ebs-volume-availabilityzone
      * 
@@ -55,14 +55,14 @@ public class Volume {
      */
     @JsonProperty("Encrypted")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volume.html#cfn-ec2-ebs-volume-encrypted")
-    private Boolean encrypted;
+    private CharSequence encrypted;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volume.html#cfn-ec2-ebs-volume-iops
      * 
      */
     @JsonProperty("Iops")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volume.html#cfn-ec2-ebs-volume-iops")
-    private Integer iops;
+    private Number iops;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volume.html#cfn-ec2-ebs-volume-kmskeyid
      * 
@@ -76,7 +76,7 @@ public class Volume {
      */
     @JsonProperty("Size")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volume.html#cfn-ec2-ebs-volume-size")
-    private Integer size;
+    private Number size;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volume.html#cfn-ec2-ebs-volume-snapshotid
      * 
@@ -104,7 +104,7 @@ public class Volume {
      * 
      */
     @JsonIgnore
-    public Boolean getAutoEnableIO() {
+    public CharSequence getAutoEnableIO() {
         return autoEnableIO;
     }
 
@@ -113,11 +113,11 @@ public class Volume {
      * 
      */
     @JsonIgnore
-    public void setAutoEnableIO(Boolean autoEnableIO) {
+    public void setAutoEnableIO(CharSequence autoEnableIO) {
         this.autoEnableIO = autoEnableIO;
     }
 
-    public Volume withAutoEnableIO(Boolean autoEnableIO) {
+    public Volume withAutoEnableIO(CharSequence autoEnableIO) {
         this.autoEnableIO = autoEnableIO;
         return this;
     }
@@ -150,7 +150,7 @@ public class Volume {
      * 
      */
     @JsonIgnore
-    public Boolean getEncrypted() {
+    public CharSequence getEncrypted() {
         return encrypted;
     }
 
@@ -159,11 +159,11 @@ public class Volume {
      * 
      */
     @JsonIgnore
-    public void setEncrypted(Boolean encrypted) {
+    public void setEncrypted(CharSequence encrypted) {
         this.encrypted = encrypted;
     }
 
-    public Volume withEncrypted(Boolean encrypted) {
+    public Volume withEncrypted(CharSequence encrypted) {
         this.encrypted = encrypted;
         return this;
     }
@@ -173,7 +173,7 @@ public class Volume {
      * 
      */
     @JsonIgnore
-    public Integer getIops() {
+    public Number getIops() {
         return iops;
     }
 
@@ -182,11 +182,11 @@ public class Volume {
      * 
      */
     @JsonIgnore
-    public void setIops(Integer iops) {
+    public void setIops(Number iops) {
         this.iops = iops;
     }
 
-    public Volume withIops(Integer iops) {
+    public Volume withIops(Number iops) {
         this.iops = iops;
         return this;
     }
@@ -219,7 +219,7 @@ public class Volume {
      * 
      */
     @JsonIgnore
-    public Integer getSize() {
+    public Number getSize() {
         return size;
     }
 
@@ -228,11 +228,11 @@ public class Volume {
      * 
      */
     @JsonIgnore
-    public void setSize(Integer size) {
+    public void setSize(Number size) {
         this.size = size;
     }
 
-    public Volume withSize(Integer size) {
+    public Volume withSize(Number size) {
         this.size = size;
         return this;
     }

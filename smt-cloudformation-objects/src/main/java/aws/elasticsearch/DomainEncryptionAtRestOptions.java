@@ -32,7 +32,7 @@ public class DomainEncryptionAtRestOptions implements Property<DomainEncryptionA
      */
     @JsonProperty("Enabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-encryptionatrestoptions.html#cfn-elasticsearch-domain-encryptionatrestoptions-enabled")
-    private Boolean enabled;
+    private CharSequence enabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-encryptionatrestoptions.html#cfn-elasticsearch-domain-encryptionatrestoptions-kmskeyid
      * 
@@ -46,7 +46,7 @@ public class DomainEncryptionAtRestOptions implements Property<DomainEncryptionA
      * 
      */
     @JsonIgnore
-    public Boolean getEnabled() {
+    public CharSequence getEnabled() {
         return enabled;
     }
 
@@ -55,11 +55,11 @@ public class DomainEncryptionAtRestOptions implements Property<DomainEncryptionA
      * 
      */
     @JsonIgnore
-    public void setEnabled(Boolean enabled) {
+    public void setEnabled(CharSequence enabled) {
         this.enabled = enabled;
     }
 
-    public DomainEncryptionAtRestOptions withEnabled(Boolean enabled) {
+    public DomainEncryptionAtRestOptions withEnabled(CharSequence enabled) {
         this.enabled = enabled;
         return this;
     }

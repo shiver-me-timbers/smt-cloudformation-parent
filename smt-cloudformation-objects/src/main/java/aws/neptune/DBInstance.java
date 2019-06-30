@@ -57,7 +57,7 @@ public class DBInstance {
      */
     @JsonProperty("AllowMajorVersionUpgrade")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-allowmajorversionupgrade")
-    private Boolean allowMajorVersionUpgrade;
+    private CharSequence allowMajorVersionUpgrade;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-dbclusteridentifier
      * 
@@ -85,7 +85,7 @@ public class DBInstance {
      */
     @JsonProperty("AutoMinorVersionUpgrade")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-autominorversionupgrade")
-    private Boolean autoMinorVersionUpgrade;
+    private CharSequence autoMinorVersionUpgrade;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-dbsubnetgroupname
      * 
@@ -166,7 +166,7 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public Boolean getAllowMajorVersionUpgrade() {
+    public CharSequence getAllowMajorVersionUpgrade() {
         return allowMajorVersionUpgrade;
     }
 
@@ -175,11 +175,11 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public void setAllowMajorVersionUpgrade(Boolean allowMajorVersionUpgrade) {
+    public void setAllowMajorVersionUpgrade(CharSequence allowMajorVersionUpgrade) {
         this.allowMajorVersionUpgrade = allowMajorVersionUpgrade;
     }
 
-    public DBInstance withAllowMajorVersionUpgrade(Boolean allowMajorVersionUpgrade) {
+    public DBInstance withAllowMajorVersionUpgrade(CharSequence allowMajorVersionUpgrade) {
         this.allowMajorVersionUpgrade = allowMajorVersionUpgrade;
         return this;
     }
@@ -258,7 +258,7 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public Boolean getAutoMinorVersionUpgrade() {
+    public CharSequence getAutoMinorVersionUpgrade() {
         return autoMinorVersionUpgrade;
     }
 
@@ -267,11 +267,11 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public void setAutoMinorVersionUpgrade(Boolean autoMinorVersionUpgrade) {
+    public void setAutoMinorVersionUpgrade(CharSequence autoMinorVersionUpgrade) {
         this.autoMinorVersionUpgrade = autoMinorVersionUpgrade;
     }
 
-    public DBInstance withAutoMinorVersionUpgrade(Boolean autoMinorVersionUpgrade) {
+    public DBInstance withAutoMinorVersionUpgrade(CharSequence autoMinorVersionUpgrade) {
         this.autoMinorVersionUpgrade = autoMinorVersionUpgrade;
         return this;
     }

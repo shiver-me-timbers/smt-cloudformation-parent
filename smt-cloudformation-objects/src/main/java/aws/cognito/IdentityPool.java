@@ -87,7 +87,7 @@ public class IdentityPool {
      */
     @JsonProperty("AllowUnauthenticatedIdentities")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-allowunauthenticatedidentities")
-    private Boolean allowUnauthenticatedIdentities;
+    private CharSequence allowUnauthenticatedIdentities;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-supportedloginproviders
      * 
@@ -261,7 +261,7 @@ public class IdentityPool {
      * 
      */
     @JsonIgnore
-    public Boolean getAllowUnauthenticatedIdentities() {
+    public CharSequence getAllowUnauthenticatedIdentities() {
         return allowUnauthenticatedIdentities;
     }
 
@@ -270,11 +270,11 @@ public class IdentityPool {
      * 
      */
     @JsonIgnore
-    public void setAllowUnauthenticatedIdentities(Boolean allowUnauthenticatedIdentities) {
+    public void setAllowUnauthenticatedIdentities(CharSequence allowUnauthenticatedIdentities) {
         this.allowUnauthenticatedIdentities = allowUnauthenticatedIdentities;
     }
 
-    public IdentityPool withAllowUnauthenticatedIdentities(Boolean allowUnauthenticatedIdentities) {
+    public IdentityPool withAllowUnauthenticatedIdentities(CharSequence allowUnauthenticatedIdentities) {
         this.allowUnauthenticatedIdentities = allowUnauthenticatedIdentities;
         return this;
     }

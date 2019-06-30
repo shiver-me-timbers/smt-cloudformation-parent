@@ -40,7 +40,7 @@ public class IPSet {
      */
     @JsonProperty("Activate")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-ipset.html#cfn-guardduty-ipset-activate")
-    private Boolean activate;
+    private CharSequence activate;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-ipset.html#cfn-guardduty-ipset-detectorid
      * 
@@ -91,7 +91,7 @@ public class IPSet {
      * 
      */
     @JsonIgnore
-    public Boolean getActivate() {
+    public CharSequence getActivate() {
         return activate;
     }
 
@@ -100,11 +100,11 @@ public class IPSet {
      * 
      */
     @JsonIgnore
-    public void setActivate(Boolean activate) {
+    public void setActivate(CharSequence activate) {
         this.activate = activate;
     }
 
-    public IPSet withActivate(Boolean activate) {
+    public IPSet withActivate(CharSequence activate) {
         this.activate = activate;
         return this;
     }

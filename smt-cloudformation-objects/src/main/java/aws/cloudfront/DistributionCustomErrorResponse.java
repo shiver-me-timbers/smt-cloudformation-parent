@@ -34,21 +34,21 @@ public class DistributionCustomErrorResponse implements Property<DistributionCus
      */
     @JsonProperty("ResponseCode")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customerrorresponse.html#cfn-cloudfront-distribution-customerrorresponse-responsecode")
-    private Integer responseCode;
+    private Number responseCode;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customerrorresponse.html#cfn-cloudfront-distribution-customerrorresponse-errorcachingminttl
      * 
      */
     @JsonProperty("ErrorCachingMinTTL")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customerrorresponse.html#cfn-cloudfront-distribution-customerrorresponse-errorcachingminttl")
-    private Double errorCachingMinTTL;
+    private Number errorCachingMinTTL;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customerrorresponse.html#cfn-cloudfront-distribution-customerrorresponse-errorcode
      * 
      */
     @JsonProperty("ErrorCode")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customerrorresponse.html#cfn-cloudfront-distribution-customerrorresponse-errorcode")
-    private Integer errorCode;
+    private Number errorCode;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customerrorresponse.html#cfn-cloudfront-distribution-customerrorresponse-responsepagepath
      * 
@@ -62,7 +62,7 @@ public class DistributionCustomErrorResponse implements Property<DistributionCus
      * 
      */
     @JsonIgnore
-    public Integer getResponseCode() {
+    public Number getResponseCode() {
         return responseCode;
     }
 
@@ -71,11 +71,11 @@ public class DistributionCustomErrorResponse implements Property<DistributionCus
      * 
      */
     @JsonIgnore
-    public void setResponseCode(Integer responseCode) {
+    public void setResponseCode(Number responseCode) {
         this.responseCode = responseCode;
     }
 
-    public DistributionCustomErrorResponse withResponseCode(Integer responseCode) {
+    public DistributionCustomErrorResponse withResponseCode(Number responseCode) {
         this.responseCode = responseCode;
         return this;
     }
@@ -85,7 +85,7 @@ public class DistributionCustomErrorResponse implements Property<DistributionCus
      * 
      */
     @JsonIgnore
-    public Double getErrorCachingMinTTL() {
+    public Number getErrorCachingMinTTL() {
         return errorCachingMinTTL;
     }
 
@@ -94,11 +94,11 @@ public class DistributionCustomErrorResponse implements Property<DistributionCus
      * 
      */
     @JsonIgnore
-    public void setErrorCachingMinTTL(Double errorCachingMinTTL) {
+    public void setErrorCachingMinTTL(Number errorCachingMinTTL) {
         this.errorCachingMinTTL = errorCachingMinTTL;
     }
 
-    public DistributionCustomErrorResponse withErrorCachingMinTTL(Double errorCachingMinTTL) {
+    public DistributionCustomErrorResponse withErrorCachingMinTTL(Number errorCachingMinTTL) {
         this.errorCachingMinTTL = errorCachingMinTTL;
         return this;
     }
@@ -108,7 +108,7 @@ public class DistributionCustomErrorResponse implements Property<DistributionCus
      * 
      */
     @JsonIgnore
-    public Integer getErrorCode() {
+    public Number getErrorCode() {
         return errorCode;
     }
 
@@ -117,11 +117,11 @@ public class DistributionCustomErrorResponse implements Property<DistributionCus
      * 
      */
     @JsonIgnore
-    public void setErrorCode(Integer errorCode) {
+    public void setErrorCode(Number errorCode) {
         this.errorCode = errorCode;
     }
 
-    public DistributionCustomErrorResponse withErrorCode(Integer errorCode) {
+    public DistributionCustomErrorResponse withErrorCode(Number errorCode) {
         this.errorCode = errorCode;
         return this;
     }

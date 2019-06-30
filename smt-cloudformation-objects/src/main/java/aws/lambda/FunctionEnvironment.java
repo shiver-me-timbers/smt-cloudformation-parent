@@ -32,14 +32,14 @@ public class FunctionEnvironment implements Property<FunctionEnvironment>
      */
     @JsonProperty("Variables")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-environment.html#cfn-lambda-function-environment-variables")
-    private Map<String, String> variables;
+    private Map<String, CharSequence> variables;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-environment.html#cfn-lambda-function-environment-variables
      * 
      */
     @JsonIgnore
-    public Map<String, String> getVariables() {
+    public Map<String, CharSequence> getVariables() {
         return variables;
     }
 
@@ -48,11 +48,11 @@ public class FunctionEnvironment implements Property<FunctionEnvironment>
      * 
      */
     @JsonIgnore
-    public void setVariables(Map<String, String> variables) {
+    public void setVariables(Map<String, CharSequence> variables) {
         this.variables = variables;
     }
 
-    public FunctionEnvironment withVariables(Map<String, String> variables) {
+    public FunctionEnvironment withVariables(Map<String, CharSequence> variables) {
         this.variables = variables;
         return this;
     }

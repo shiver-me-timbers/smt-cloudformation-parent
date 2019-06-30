@@ -40,7 +40,7 @@ public class RecordSetAliasTarget implements Property<RecordSetAliasTarget>
      */
     @JsonProperty("EvaluateTargetHealth")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html#cfn-route53-aliastarget-evaluatetargethealth")
-    private Boolean evaluateTargetHealth;
+    private CharSequence evaluateTargetHealth;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html#cfn-route53-aliastarget-hostedzoneid
      * 
@@ -77,7 +77,7 @@ public class RecordSetAliasTarget implements Property<RecordSetAliasTarget>
      * 
      */
     @JsonIgnore
-    public Boolean getEvaluateTargetHealth() {
+    public CharSequence getEvaluateTargetHealth() {
         return evaluateTargetHealth;
     }
 
@@ -86,11 +86,11 @@ public class RecordSetAliasTarget implements Property<RecordSetAliasTarget>
      * 
      */
     @JsonIgnore
-    public void setEvaluateTargetHealth(Boolean evaluateTargetHealth) {
+    public void setEvaluateTargetHealth(CharSequence evaluateTargetHealth) {
         this.evaluateTargetHealth = evaluateTargetHealth;
     }
 
-    public RecordSetAliasTarget withEvaluateTargetHealth(Boolean evaluateTargetHealth) {
+    public RecordSetAliasTarget withEvaluateTargetHealth(CharSequence evaluateTargetHealth) {
         this.evaluateTargetHealth = evaluateTargetHealth;
         return this;
     }

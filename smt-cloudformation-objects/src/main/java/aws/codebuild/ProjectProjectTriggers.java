@@ -41,7 +41,7 @@ public class ProjectProjectTriggers implements Property<ProjectProjectTriggers>
      */
     @JsonProperty("Webhook")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projecttriggers.html#cfn-codebuild-project-projecttriggers-webhook")
-    private Boolean webhook;
+    private CharSequence webhook;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projecttriggers.html#cfn-codebuild-project-projecttriggers-filtergroups
@@ -71,7 +71,7 @@ public class ProjectProjectTriggers implements Property<ProjectProjectTriggers>
      * 
      */
     @JsonIgnore
-    public Boolean getWebhook() {
+    public CharSequence getWebhook() {
         return webhook;
     }
 
@@ -80,11 +80,11 @@ public class ProjectProjectTriggers implements Property<ProjectProjectTriggers>
      * 
      */
     @JsonIgnore
-    public void setWebhook(Boolean webhook) {
+    public void setWebhook(CharSequence webhook) {
         this.webhook = webhook;
     }
 
-    public ProjectProjectTriggers withWebhook(Boolean webhook) {
+    public ProjectProjectTriggers withWebhook(CharSequence webhook) {
         this.webhook = webhook;
         return this;
     }

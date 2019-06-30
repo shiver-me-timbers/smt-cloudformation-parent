@@ -37,14 +37,14 @@ public class FunctionDefinitionFunctionConfiguration implements Property<Functio
      */
     @JsonProperty("MemorySize")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functionconfiguration.html#cfn-greengrass-functiondefinition-functionconfiguration-memorysize")
-    private Integer memorySize;
+    private Number memorySize;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functionconfiguration.html#cfn-greengrass-functiondefinition-functionconfiguration-pinned
      * 
      */
     @JsonProperty("Pinned")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functionconfiguration.html#cfn-greengrass-functiondefinition-functionconfiguration-pinned")
-    private Boolean pinned;
+    private CharSequence pinned;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functionconfiguration.html#cfn-greengrass-functiondefinition-functionconfiguration-execargs
      * 
@@ -58,7 +58,7 @@ public class FunctionDefinitionFunctionConfiguration implements Property<Functio
      */
     @JsonProperty("Timeout")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functionconfiguration.html#cfn-greengrass-functiondefinition-functionconfiguration-timeout")
-    private Integer timeout;
+    private Number timeout;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functionconfiguration.html#cfn-greengrass-functiondefinition-functionconfiguration-encodingtype
      * 
@@ -88,7 +88,7 @@ public class FunctionDefinitionFunctionConfiguration implements Property<Functio
      * 
      */
     @JsonIgnore
-    public Integer getMemorySize() {
+    public Number getMemorySize() {
         return memorySize;
     }
 
@@ -97,11 +97,11 @@ public class FunctionDefinitionFunctionConfiguration implements Property<Functio
      * 
      */
     @JsonIgnore
-    public void setMemorySize(Integer memorySize) {
+    public void setMemorySize(Number memorySize) {
         this.memorySize = memorySize;
     }
 
-    public FunctionDefinitionFunctionConfiguration withMemorySize(Integer memorySize) {
+    public FunctionDefinitionFunctionConfiguration withMemorySize(Number memorySize) {
         this.memorySize = memorySize;
         return this;
     }
@@ -111,7 +111,7 @@ public class FunctionDefinitionFunctionConfiguration implements Property<Functio
      * 
      */
     @JsonIgnore
-    public Boolean getPinned() {
+    public CharSequence getPinned() {
         return pinned;
     }
 
@@ -120,11 +120,11 @@ public class FunctionDefinitionFunctionConfiguration implements Property<Functio
      * 
      */
     @JsonIgnore
-    public void setPinned(Boolean pinned) {
+    public void setPinned(CharSequence pinned) {
         this.pinned = pinned;
     }
 
-    public FunctionDefinitionFunctionConfiguration withPinned(Boolean pinned) {
+    public FunctionDefinitionFunctionConfiguration withPinned(CharSequence pinned) {
         this.pinned = pinned;
         return this;
     }
@@ -157,7 +157,7 @@ public class FunctionDefinitionFunctionConfiguration implements Property<Functio
      * 
      */
     @JsonIgnore
-    public Integer getTimeout() {
+    public Number getTimeout() {
         return timeout;
     }
 
@@ -166,11 +166,11 @@ public class FunctionDefinitionFunctionConfiguration implements Property<Functio
      * 
      */
     @JsonIgnore
-    public void setTimeout(Integer timeout) {
+    public void setTimeout(Number timeout) {
         this.timeout = timeout;
     }
 
-    public FunctionDefinitionFunctionConfiguration withTimeout(Integer timeout) {
+    public FunctionDefinitionFunctionConfiguration withTimeout(Number timeout) {
         this.timeout = timeout;
         return this;
     }

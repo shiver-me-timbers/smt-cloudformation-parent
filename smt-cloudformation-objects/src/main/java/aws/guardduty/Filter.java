@@ -65,7 +65,7 @@ public class Filter {
      */
     @JsonProperty("Rank")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html#cfn-guardduty-filter-rank")
-    private Integer rank;
+    private Number rank;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html#cfn-guardduty-filter-name
      * 
@@ -175,7 +175,7 @@ public class Filter {
      * 
      */
     @JsonIgnore
-    public Integer getRank() {
+    public Number getRank() {
         return rank;
     }
 
@@ -184,11 +184,11 @@ public class Filter {
      * 
      */
     @JsonIgnore
-    public void setRank(Integer rank) {
+    public void setRank(Number rank) {
         this.rank = rank;
     }
 
-    public Filter withRank(Integer rank) {
+    public Filter withRank(Number rank) {
         this.rank = rank;
         return this;
     }

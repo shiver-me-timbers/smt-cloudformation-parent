@@ -33,7 +33,7 @@ public class ClusterSpotProvisioningSpecification implements Property<ClusterSpo
      */
     @JsonProperty("BlockDurationMinutes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-spotprovisioningspecification.html#cfn-elasticmapreduce-cluster-spotprovisioningspecification-blockdurationminutes")
-    private Integer blockDurationMinutes;
+    private Number blockDurationMinutes;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-spotprovisioningspecification.html#cfn-elasticmapreduce-cluster-spotprovisioningspecification-timeoutaction
      * 
@@ -47,14 +47,14 @@ public class ClusterSpotProvisioningSpecification implements Property<ClusterSpo
      */
     @JsonProperty("TimeoutDurationMinutes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-spotprovisioningspecification.html#cfn-elasticmapreduce-cluster-spotprovisioningspecification-timeoutdurationminutes")
-    private Integer timeoutDurationMinutes;
+    private Number timeoutDurationMinutes;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-spotprovisioningspecification.html#cfn-elasticmapreduce-cluster-spotprovisioningspecification-blockdurationminutes
      * 
      */
     @JsonIgnore
-    public Integer getBlockDurationMinutes() {
+    public Number getBlockDurationMinutes() {
         return blockDurationMinutes;
     }
 
@@ -63,11 +63,11 @@ public class ClusterSpotProvisioningSpecification implements Property<ClusterSpo
      * 
      */
     @JsonIgnore
-    public void setBlockDurationMinutes(Integer blockDurationMinutes) {
+    public void setBlockDurationMinutes(Number blockDurationMinutes) {
         this.blockDurationMinutes = blockDurationMinutes;
     }
 
-    public ClusterSpotProvisioningSpecification withBlockDurationMinutes(Integer blockDurationMinutes) {
+    public ClusterSpotProvisioningSpecification withBlockDurationMinutes(Number blockDurationMinutes) {
         this.blockDurationMinutes = blockDurationMinutes;
         return this;
     }
@@ -100,7 +100,7 @@ public class ClusterSpotProvisioningSpecification implements Property<ClusterSpo
      * 
      */
     @JsonIgnore
-    public Integer getTimeoutDurationMinutes() {
+    public Number getTimeoutDurationMinutes() {
         return timeoutDurationMinutes;
     }
 
@@ -109,11 +109,11 @@ public class ClusterSpotProvisioningSpecification implements Property<ClusterSpo
      * 
      */
     @JsonIgnore
-    public void setTimeoutDurationMinutes(Integer timeoutDurationMinutes) {
+    public void setTimeoutDurationMinutes(Number timeoutDurationMinutes) {
         this.timeoutDurationMinutes = timeoutDurationMinutes;
     }
 
-    public ClusterSpotProvisioningSpecification withTimeoutDurationMinutes(Integer timeoutDurationMinutes) {
+    public ClusterSpotProvisioningSpecification withTimeoutDurationMinutes(Number timeoutDurationMinutes) {
         this.timeoutDurationMinutes = timeoutDurationMinutes;
         return this;
     }

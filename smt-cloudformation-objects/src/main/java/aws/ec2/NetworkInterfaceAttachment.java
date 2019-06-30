@@ -32,7 +32,7 @@ public class NetworkInterfaceAttachment {
      */
     @JsonProperty("DeleteOnTermination")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface-attachment.html#cfn-ec2-network-interface-attachment-deleteonterm")
-    private Boolean deleteOnTermination;
+    private CharSequence deleteOnTermination;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface-attachment.html#cfn-ec2-network-interface-attachment-deviceindex
      * 
@@ -60,7 +60,7 @@ public class NetworkInterfaceAttachment {
      * 
      */
     @JsonIgnore
-    public Boolean getDeleteOnTermination() {
+    public CharSequence getDeleteOnTermination() {
         return deleteOnTermination;
     }
 
@@ -69,11 +69,11 @@ public class NetworkInterfaceAttachment {
      * 
      */
     @JsonIgnore
-    public void setDeleteOnTermination(Boolean deleteOnTermination) {
+    public void setDeleteOnTermination(CharSequence deleteOnTermination) {
         this.deleteOnTermination = deleteOnTermination;
     }
 
-    public NetworkInterfaceAttachment withDeleteOnTermination(Boolean deleteOnTermination) {
+    public NetworkInterfaceAttachment withDeleteOnTermination(CharSequence deleteOnTermination) {
         this.deleteOnTermination = deleteOnTermination;
         return this;
     }

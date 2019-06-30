@@ -63,7 +63,7 @@ public class CacheCluster {
      */
     @JsonProperty("AutoMinorVersionUpgrade")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-autominorversionupgrade")
-    private Boolean autoMinorVersionUpgrade;
+    private CharSequence autoMinorVersionUpgrade;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-cachenodetype
      * 
@@ -126,14 +126,14 @@ public class CacheCluster {
      */
     @JsonProperty("NumCacheNodes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-numcachenodes")
-    private Integer numCacheNodes;
+    private Number numCacheNodes;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-port
      * 
      */
     @JsonProperty("Port")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-port")
-    private Integer port;
+    private Number port;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-preferredavailabilityzone
      * 
@@ -177,7 +177,7 @@ public class CacheCluster {
      */
     @JsonProperty("SnapshotRetentionLimit")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-snapshotretentionlimit")
-    private Integer snapshotRetentionLimit;
+    private Number snapshotRetentionLimit;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-snapshotwindow
      * 
@@ -228,7 +228,7 @@ public class CacheCluster {
      * 
      */
     @JsonIgnore
-    public Boolean getAutoMinorVersionUpgrade() {
+    public CharSequence getAutoMinorVersionUpgrade() {
         return autoMinorVersionUpgrade;
     }
 
@@ -237,11 +237,11 @@ public class CacheCluster {
      * 
      */
     @JsonIgnore
-    public void setAutoMinorVersionUpgrade(Boolean autoMinorVersionUpgrade) {
+    public void setAutoMinorVersionUpgrade(CharSequence autoMinorVersionUpgrade) {
         this.autoMinorVersionUpgrade = autoMinorVersionUpgrade;
     }
 
-    public CacheCluster withAutoMinorVersionUpgrade(Boolean autoMinorVersionUpgrade) {
+    public CacheCluster withAutoMinorVersionUpgrade(CharSequence autoMinorVersionUpgrade) {
         this.autoMinorVersionUpgrade = autoMinorVersionUpgrade;
         return this;
     }
@@ -435,7 +435,7 @@ public class CacheCluster {
      * 
      */
     @JsonIgnore
-    public Integer getNumCacheNodes() {
+    public Number getNumCacheNodes() {
         return numCacheNodes;
     }
 
@@ -444,11 +444,11 @@ public class CacheCluster {
      * 
      */
     @JsonIgnore
-    public void setNumCacheNodes(Integer numCacheNodes) {
+    public void setNumCacheNodes(Number numCacheNodes) {
         this.numCacheNodes = numCacheNodes;
     }
 
-    public CacheCluster withNumCacheNodes(Integer numCacheNodes) {
+    public CacheCluster withNumCacheNodes(Number numCacheNodes) {
         this.numCacheNodes = numCacheNodes;
         return this;
     }
@@ -458,7 +458,7 @@ public class CacheCluster {
      * 
      */
     @JsonIgnore
-    public Integer getPort() {
+    public Number getPort() {
         return port;
     }
 
@@ -467,11 +467,11 @@ public class CacheCluster {
      * 
      */
     @JsonIgnore
-    public void setPort(Integer port) {
+    public void setPort(Number port) {
         this.port = port;
     }
 
-    public CacheCluster withPort(Integer port) {
+    public CacheCluster withPort(Number port) {
         this.port = port;
         return this;
     }
@@ -596,7 +596,7 @@ public class CacheCluster {
      * 
      */
     @JsonIgnore
-    public Integer getSnapshotRetentionLimit() {
+    public Number getSnapshotRetentionLimit() {
         return snapshotRetentionLimit;
     }
 
@@ -605,11 +605,11 @@ public class CacheCluster {
      * 
      */
     @JsonIgnore
-    public void setSnapshotRetentionLimit(Integer snapshotRetentionLimit) {
+    public void setSnapshotRetentionLimit(Number snapshotRetentionLimit) {
         this.snapshotRetentionLimit = snapshotRetentionLimit;
     }
 
-    public CacheCluster withSnapshotRetentionLimit(Integer snapshotRetentionLimit) {
+    public CacheCluster withSnapshotRetentionLimit(Number snapshotRetentionLimit) {
         this.snapshotRetentionLimit = snapshotRetentionLimit;
         return this;
     }

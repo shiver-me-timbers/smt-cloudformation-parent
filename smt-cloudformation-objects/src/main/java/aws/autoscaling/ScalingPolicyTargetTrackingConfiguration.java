@@ -43,7 +43,7 @@ public class ScalingPolicyTargetTrackingConfiguration implements Property<Scalin
      */
     @JsonProperty("DisableScaleIn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-targettrackingconfiguration.html#cfn-autoscaling-scalingpolicy-targettrackingconfiguration-disablescalein")
-    private Boolean disableScaleIn;
+    private CharSequence disableScaleIn;
     /**
      * ScalingPolicyPredefinedMetricSpecification
      * <p>
@@ -59,7 +59,7 @@ public class ScalingPolicyTargetTrackingConfiguration implements Property<Scalin
      */
     @JsonProperty("TargetValue")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-targettrackingconfiguration.html#cfn-autoscaling-scalingpolicy-targettrackingconfiguration-targetvalue")
-    private Double targetValue;
+    private Number targetValue;
 
     /**
      * ScalingPolicyCustomizedMetricSpecification
@@ -93,7 +93,7 @@ public class ScalingPolicyTargetTrackingConfiguration implements Property<Scalin
      * 
      */
     @JsonIgnore
-    public Boolean getDisableScaleIn() {
+    public CharSequence getDisableScaleIn() {
         return disableScaleIn;
     }
 
@@ -102,11 +102,11 @@ public class ScalingPolicyTargetTrackingConfiguration implements Property<Scalin
      * 
      */
     @JsonIgnore
-    public void setDisableScaleIn(Boolean disableScaleIn) {
+    public void setDisableScaleIn(CharSequence disableScaleIn) {
         this.disableScaleIn = disableScaleIn;
     }
 
-    public ScalingPolicyTargetTrackingConfiguration withDisableScaleIn(Boolean disableScaleIn) {
+    public ScalingPolicyTargetTrackingConfiguration withDisableScaleIn(CharSequence disableScaleIn) {
         this.disableScaleIn = disableScaleIn;
         return this;
     }
@@ -143,7 +143,7 @@ public class ScalingPolicyTargetTrackingConfiguration implements Property<Scalin
      * 
      */
     @JsonIgnore
-    public Double getTargetValue() {
+    public Number getTargetValue() {
         return targetValue;
     }
 
@@ -152,11 +152,11 @@ public class ScalingPolicyTargetTrackingConfiguration implements Property<Scalin
      * 
      */
     @JsonIgnore
-    public void setTargetValue(Double targetValue) {
+    public void setTargetValue(Number targetValue) {
         this.targetValue = targetValue;
     }
 
-    public ScalingPolicyTargetTrackingConfiguration withTargetValue(Double targetValue) {
+    public ScalingPolicyTargetTrackingConfiguration withTargetValue(Number targetValue) {
         this.targetValue = targetValue;
         return this;
     }

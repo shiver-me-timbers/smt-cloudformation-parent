@@ -33,14 +33,14 @@ public class EventSourceMapping {
      */
     @JsonProperty("BatchSize")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-batchsize")
-    private Integer batchSize;
+    private Number batchSize;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-enabled
      * 
      */
     @JsonProperty("Enabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-enabled")
-    private Boolean enabled;
+    private CharSequence enabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-eventsourcearn
      * 
@@ -68,7 +68,7 @@ public class EventSourceMapping {
      * 
      */
     @JsonIgnore
-    public Integer getBatchSize() {
+    public Number getBatchSize() {
         return batchSize;
     }
 
@@ -77,11 +77,11 @@ public class EventSourceMapping {
      * 
      */
     @JsonIgnore
-    public void setBatchSize(Integer batchSize) {
+    public void setBatchSize(Number batchSize) {
         this.batchSize = batchSize;
     }
 
-    public EventSourceMapping withBatchSize(Integer batchSize) {
+    public EventSourceMapping withBatchSize(Number batchSize) {
         this.batchSize = batchSize;
         return this;
     }
@@ -91,7 +91,7 @@ public class EventSourceMapping {
      * 
      */
     @JsonIgnore
-    public Boolean getEnabled() {
+    public CharSequence getEnabled() {
         return enabled;
     }
 
@@ -100,11 +100,11 @@ public class EventSourceMapping {
      * 
      */
     @JsonIgnore
-    public void setEnabled(Boolean enabled) {
+    public void setEnabled(CharSequence enabled) {
         this.enabled = enabled;
     }
 
-    public EventSourceMapping withEnabled(Boolean enabled) {
+    public EventSourceMapping withEnabled(CharSequence enabled) {
         this.enabled = enabled;
         return this;
     }

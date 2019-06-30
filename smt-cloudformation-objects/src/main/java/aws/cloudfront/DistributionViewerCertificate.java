@@ -56,7 +56,7 @@ public class DistributionViewerCertificate implements Property<DistributionViewe
      */
     @JsonProperty("CloudFrontDefaultCertificate")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html#cfn-cloudfront-distribution-viewercertificate-cloudfrontdefaultcertificate")
-    private Boolean cloudFrontDefaultCertificate;
+    private CharSequence cloudFrontDefaultCertificate;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html#cfn-cloudfront-distribution-viewercertificate-acmcertificatearn
      * 
@@ -139,7 +139,7 @@ public class DistributionViewerCertificate implements Property<DistributionViewe
      * 
      */
     @JsonIgnore
-    public Boolean getCloudFrontDefaultCertificate() {
+    public CharSequence getCloudFrontDefaultCertificate() {
         return cloudFrontDefaultCertificate;
     }
 
@@ -148,11 +148,11 @@ public class DistributionViewerCertificate implements Property<DistributionViewe
      * 
      */
     @JsonIgnore
-    public void setCloudFrontDefaultCertificate(Boolean cloudFrontDefaultCertificate) {
+    public void setCloudFrontDefaultCertificate(CharSequence cloudFrontDefaultCertificate) {
         this.cloudFrontDefaultCertificate = cloudFrontDefaultCertificate;
     }
 
-    public DistributionViewerCertificate withCloudFrontDefaultCertificate(Boolean cloudFrontDefaultCertificate) {
+    public DistributionViewerCertificate withCloudFrontDefaultCertificate(CharSequence cloudFrontDefaultCertificate) {
         this.cloudFrontDefaultCertificate = cloudFrontDefaultCertificate;
         return this;
     }

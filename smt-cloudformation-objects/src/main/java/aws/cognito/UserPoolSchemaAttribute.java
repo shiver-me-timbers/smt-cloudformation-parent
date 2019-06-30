@@ -37,14 +37,14 @@ public class UserPoolSchemaAttribute implements Property<UserPoolSchemaAttribute
      */
     @JsonProperty("DeveloperOnlyAttribute")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-developeronlyattribute")
-    private Boolean developerOnlyAttribute;
+    private CharSequence developerOnlyAttribute;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-mutable
      * 
      */
     @JsonProperty("Mutable")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-mutable")
-    private Boolean mutable;
+    private CharSequence mutable;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-attributedatatype
      * 
@@ -67,7 +67,7 @@ public class UserPoolSchemaAttribute implements Property<UserPoolSchemaAttribute
      */
     @JsonProperty("Required")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-required")
-    private Boolean required;
+    private CharSequence required;
     /**
      * UserPoolNumberAttributeConstraints
      * <p>
@@ -90,7 +90,7 @@ public class UserPoolSchemaAttribute implements Property<UserPoolSchemaAttribute
      * 
      */
     @JsonIgnore
-    public Boolean getDeveloperOnlyAttribute() {
+    public CharSequence getDeveloperOnlyAttribute() {
         return developerOnlyAttribute;
     }
 
@@ -99,11 +99,11 @@ public class UserPoolSchemaAttribute implements Property<UserPoolSchemaAttribute
      * 
      */
     @JsonIgnore
-    public void setDeveloperOnlyAttribute(Boolean developerOnlyAttribute) {
+    public void setDeveloperOnlyAttribute(CharSequence developerOnlyAttribute) {
         this.developerOnlyAttribute = developerOnlyAttribute;
     }
 
-    public UserPoolSchemaAttribute withDeveloperOnlyAttribute(Boolean developerOnlyAttribute) {
+    public UserPoolSchemaAttribute withDeveloperOnlyAttribute(CharSequence developerOnlyAttribute) {
         this.developerOnlyAttribute = developerOnlyAttribute;
         return this;
     }
@@ -113,7 +113,7 @@ public class UserPoolSchemaAttribute implements Property<UserPoolSchemaAttribute
      * 
      */
     @JsonIgnore
-    public Boolean getMutable() {
+    public CharSequence getMutable() {
         return mutable;
     }
 
@@ -122,11 +122,11 @@ public class UserPoolSchemaAttribute implements Property<UserPoolSchemaAttribute
      * 
      */
     @JsonIgnore
-    public void setMutable(Boolean mutable) {
+    public void setMutable(CharSequence mutable) {
         this.mutable = mutable;
     }
 
-    public UserPoolSchemaAttribute withMutable(Boolean mutable) {
+    public UserPoolSchemaAttribute withMutable(CharSequence mutable) {
         this.mutable = mutable;
         return this;
     }
@@ -186,7 +186,7 @@ public class UserPoolSchemaAttribute implements Property<UserPoolSchemaAttribute
      * 
      */
     @JsonIgnore
-    public Boolean getRequired() {
+    public CharSequence getRequired() {
         return required;
     }
 
@@ -195,11 +195,11 @@ public class UserPoolSchemaAttribute implements Property<UserPoolSchemaAttribute
      * 
      */
     @JsonIgnore
-    public void setRequired(Boolean required) {
+    public void setRequired(CharSequence required) {
         this.required = required;
     }
 
-    public UserPoolSchemaAttribute withRequired(Boolean required) {
+    public UserPoolSchemaAttribute withRequired(CharSequence required) {
         this.required = required;
         return this;
     }

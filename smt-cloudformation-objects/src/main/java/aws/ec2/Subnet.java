@@ -39,7 +39,7 @@ public class Subnet {
      */
     @JsonProperty("AssignIpv6AddressOnCreation")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-ec2-subnet-assignipv6addressoncreation")
-    private Boolean assignIpv6AddressOnCreation;
+    private CharSequence assignIpv6AddressOnCreation;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-ec2-subnet-availabilityzone
      * 
@@ -67,7 +67,7 @@ public class Subnet {
      */
     @JsonProperty("MapPublicIpOnLaunch")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-ec2-subnet-mappubliciponlaunch")
-    private Boolean mapPublicIpOnLaunch;
+    private CharSequence mapPublicIpOnLaunch;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-ec2-subnet-tags
      * 
@@ -88,7 +88,7 @@ public class Subnet {
      * 
      */
     @JsonIgnore
-    public Boolean getAssignIpv6AddressOnCreation() {
+    public CharSequence getAssignIpv6AddressOnCreation() {
         return assignIpv6AddressOnCreation;
     }
 
@@ -97,11 +97,11 @@ public class Subnet {
      * 
      */
     @JsonIgnore
-    public void setAssignIpv6AddressOnCreation(Boolean assignIpv6AddressOnCreation) {
+    public void setAssignIpv6AddressOnCreation(CharSequence assignIpv6AddressOnCreation) {
         this.assignIpv6AddressOnCreation = assignIpv6AddressOnCreation;
     }
 
-    public Subnet withAssignIpv6AddressOnCreation(Boolean assignIpv6AddressOnCreation) {
+    public Subnet withAssignIpv6AddressOnCreation(CharSequence assignIpv6AddressOnCreation) {
         this.assignIpv6AddressOnCreation = assignIpv6AddressOnCreation;
         return this;
     }
@@ -180,7 +180,7 @@ public class Subnet {
      * 
      */
     @JsonIgnore
-    public Boolean getMapPublicIpOnLaunch() {
+    public CharSequence getMapPublicIpOnLaunch() {
         return mapPublicIpOnLaunch;
     }
 
@@ -189,11 +189,11 @@ public class Subnet {
      * 
      */
     @JsonIgnore
-    public void setMapPublicIpOnLaunch(Boolean mapPublicIpOnLaunch) {
+    public void setMapPublicIpOnLaunch(CharSequence mapPublicIpOnLaunch) {
         this.mapPublicIpOnLaunch = mapPublicIpOnLaunch;
     }
 
-    public Subnet withMapPublicIpOnLaunch(Boolean mapPublicIpOnLaunch) {
+    public Subnet withMapPublicIpOnLaunch(CharSequence mapPublicIpOnLaunch) {
         this.mapPublicIpOnLaunch = mapPublicIpOnLaunch;
         return this;
     }

@@ -63,7 +63,7 @@ public class ScalingPolicy {
      */
     @JsonProperty("EstimatedInstanceWarmup")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-estimatedinstancewarmup")
-    private Integer estimatedInstanceWarmup;
+    private Number estimatedInstanceWarmup;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-metricaggregationtype
      * 
@@ -77,7 +77,7 @@ public class ScalingPolicy {
      */
     @JsonProperty("MinAdjustmentMagnitude")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-minadjustmentmagnitude")
-    private Integer minAdjustmentMagnitude;
+    private Number minAdjustmentMagnitude;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-policytype
      * 
@@ -91,7 +91,7 @@ public class ScalingPolicy {
      */
     @JsonProperty("ScalingAdjustment")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-scalingadjustment")
-    private Integer scalingAdjustment;
+    private Number scalingAdjustment;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-stepadjustments
      * 
@@ -184,7 +184,7 @@ public class ScalingPolicy {
      * 
      */
     @JsonIgnore
-    public Integer getEstimatedInstanceWarmup() {
+    public Number getEstimatedInstanceWarmup() {
         return estimatedInstanceWarmup;
     }
 
@@ -193,11 +193,11 @@ public class ScalingPolicy {
      * 
      */
     @JsonIgnore
-    public void setEstimatedInstanceWarmup(Integer estimatedInstanceWarmup) {
+    public void setEstimatedInstanceWarmup(Number estimatedInstanceWarmup) {
         this.estimatedInstanceWarmup = estimatedInstanceWarmup;
     }
 
-    public ScalingPolicy withEstimatedInstanceWarmup(Integer estimatedInstanceWarmup) {
+    public ScalingPolicy withEstimatedInstanceWarmup(Number estimatedInstanceWarmup) {
         this.estimatedInstanceWarmup = estimatedInstanceWarmup;
         return this;
     }
@@ -230,7 +230,7 @@ public class ScalingPolicy {
      * 
      */
     @JsonIgnore
-    public Integer getMinAdjustmentMagnitude() {
+    public Number getMinAdjustmentMagnitude() {
         return minAdjustmentMagnitude;
     }
 
@@ -239,11 +239,11 @@ public class ScalingPolicy {
      * 
      */
     @JsonIgnore
-    public void setMinAdjustmentMagnitude(Integer minAdjustmentMagnitude) {
+    public void setMinAdjustmentMagnitude(Number minAdjustmentMagnitude) {
         this.minAdjustmentMagnitude = minAdjustmentMagnitude;
     }
 
-    public ScalingPolicy withMinAdjustmentMagnitude(Integer minAdjustmentMagnitude) {
+    public ScalingPolicy withMinAdjustmentMagnitude(Number minAdjustmentMagnitude) {
         this.minAdjustmentMagnitude = minAdjustmentMagnitude;
         return this;
     }
@@ -276,7 +276,7 @@ public class ScalingPolicy {
      * 
      */
     @JsonIgnore
-    public Integer getScalingAdjustment() {
+    public Number getScalingAdjustment() {
         return scalingAdjustment;
     }
 
@@ -285,11 +285,11 @@ public class ScalingPolicy {
      * 
      */
     @JsonIgnore
-    public void setScalingAdjustment(Integer scalingAdjustment) {
+    public void setScalingAdjustment(Number scalingAdjustment) {
         this.scalingAdjustment = scalingAdjustment;
     }
 
-    public ScalingPolicy withScalingAdjustment(Integer scalingAdjustment) {
+    public ScalingPolicy withScalingAdjustment(Number scalingAdjustment) {
         this.scalingAdjustment = scalingAdjustment;
         return this;
     }

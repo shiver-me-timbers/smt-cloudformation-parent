@@ -37,14 +37,14 @@ public class FunctionDefinitionVersionFunctionConfiguration implements Property<
      */
     @JsonProperty("MemorySize")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-functionconfiguration.html#cfn-greengrass-functiondefinitionversion-functionconfiguration-memorysize")
-    private Integer memorySize;
+    private Number memorySize;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-functionconfiguration.html#cfn-greengrass-functiondefinitionversion-functionconfiguration-pinned
      * 
      */
     @JsonProperty("Pinned")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-functionconfiguration.html#cfn-greengrass-functiondefinitionversion-functionconfiguration-pinned")
-    private Boolean pinned;
+    private CharSequence pinned;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-functionconfiguration.html#cfn-greengrass-functiondefinitionversion-functionconfiguration-execargs
      * 
@@ -58,7 +58,7 @@ public class FunctionDefinitionVersionFunctionConfiguration implements Property<
      */
     @JsonProperty("Timeout")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-functionconfiguration.html#cfn-greengrass-functiondefinitionversion-functionconfiguration-timeout")
-    private Integer timeout;
+    private Number timeout;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-functionconfiguration.html#cfn-greengrass-functiondefinitionversion-functionconfiguration-encodingtype
      * 
@@ -88,7 +88,7 @@ public class FunctionDefinitionVersionFunctionConfiguration implements Property<
      * 
      */
     @JsonIgnore
-    public Integer getMemorySize() {
+    public Number getMemorySize() {
         return memorySize;
     }
 
@@ -97,11 +97,11 @@ public class FunctionDefinitionVersionFunctionConfiguration implements Property<
      * 
      */
     @JsonIgnore
-    public void setMemorySize(Integer memorySize) {
+    public void setMemorySize(Number memorySize) {
         this.memorySize = memorySize;
     }
 
-    public FunctionDefinitionVersionFunctionConfiguration withMemorySize(Integer memorySize) {
+    public FunctionDefinitionVersionFunctionConfiguration withMemorySize(Number memorySize) {
         this.memorySize = memorySize;
         return this;
     }
@@ -111,7 +111,7 @@ public class FunctionDefinitionVersionFunctionConfiguration implements Property<
      * 
      */
     @JsonIgnore
-    public Boolean getPinned() {
+    public CharSequence getPinned() {
         return pinned;
     }
 
@@ -120,11 +120,11 @@ public class FunctionDefinitionVersionFunctionConfiguration implements Property<
      * 
      */
     @JsonIgnore
-    public void setPinned(Boolean pinned) {
+    public void setPinned(CharSequence pinned) {
         this.pinned = pinned;
     }
 
-    public FunctionDefinitionVersionFunctionConfiguration withPinned(Boolean pinned) {
+    public FunctionDefinitionVersionFunctionConfiguration withPinned(CharSequence pinned) {
         this.pinned = pinned;
         return this;
     }
@@ -157,7 +157,7 @@ public class FunctionDefinitionVersionFunctionConfiguration implements Property<
      * 
      */
     @JsonIgnore
-    public Integer getTimeout() {
+    public Number getTimeout() {
         return timeout;
     }
 
@@ -166,11 +166,11 @@ public class FunctionDefinitionVersionFunctionConfiguration implements Property<
      * 
      */
     @JsonIgnore
-    public void setTimeout(Integer timeout) {
+    public void setTimeout(Number timeout) {
         this.timeout = timeout;
     }
 
-    public FunctionDefinitionVersionFunctionConfiguration withTimeout(Integer timeout) {
+    public FunctionDefinitionVersionFunctionConfiguration withTimeout(Number timeout) {
         this.timeout = timeout;
         return this;
     }

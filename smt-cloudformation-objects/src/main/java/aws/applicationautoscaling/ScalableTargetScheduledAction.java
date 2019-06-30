@@ -35,7 +35,7 @@ public class ScalableTargetScheduledAction implements Property<ScalableTargetSch
      */
     @JsonProperty("EndTime")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-endtime")
-    private String endTime;
+    private CharSequence endTime;
     /**
      * ScalableTargetScalableTargetAction
      * <p>
@@ -65,14 +65,14 @@ public class ScalableTargetScheduledAction implements Property<ScalableTargetSch
      */
     @JsonProperty("StartTime")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-starttime")
-    private String startTime;
+    private CharSequence startTime;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-endtime
      * 
      */
     @JsonIgnore
-    public String getEndTime() {
+    public CharSequence getEndTime() {
         return endTime;
     }
 
@@ -81,11 +81,11 @@ public class ScalableTargetScheduledAction implements Property<ScalableTargetSch
      * 
      */
     @JsonIgnore
-    public void setEndTime(String endTime) {
+    public void setEndTime(CharSequence endTime) {
         this.endTime = endTime;
     }
 
-    public ScalableTargetScheduledAction withEndTime(String endTime) {
+    public ScalableTargetScheduledAction withEndTime(CharSequence endTime) {
         this.endTime = endTime;
         return this;
     }
@@ -168,7 +168,7 @@ public class ScalableTargetScheduledAction implements Property<ScalableTargetSch
      * 
      */
     @JsonIgnore
-    public String getStartTime() {
+    public CharSequence getStartTime() {
         return startTime;
     }
 
@@ -177,11 +177,11 @@ public class ScalableTargetScheduledAction implements Property<ScalableTargetSch
      * 
      */
     @JsonIgnore
-    public void setStartTime(String startTime) {
+    public void setStartTime(CharSequence startTime) {
         this.startTime = startTime;
     }
 
-    public ScalableTargetScheduledAction withStartTime(String startTime) {
+    public ScalableTargetScheduledAction withStartTime(CharSequence startTime) {
         this.startTime = startTime;
         return this;
     }

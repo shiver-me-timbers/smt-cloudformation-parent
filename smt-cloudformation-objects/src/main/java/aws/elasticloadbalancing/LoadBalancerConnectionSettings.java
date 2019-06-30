@@ -31,14 +31,14 @@ public class LoadBalancerConnectionSettings implements Property<LoadBalancerConn
      */
     @JsonProperty("IdleTimeout")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-connectionsettings.html#cfn-elb-connectionsettings-idletimeout")
-    private Integer idleTimeout;
+    private Number idleTimeout;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-connectionsettings.html#cfn-elb-connectionsettings-idletimeout
      * 
      */
     @JsonIgnore
-    public Integer getIdleTimeout() {
+    public Number getIdleTimeout() {
         return idleTimeout;
     }
 
@@ -47,11 +47,11 @@ public class LoadBalancerConnectionSettings implements Property<LoadBalancerConn
      * 
      */
     @JsonIgnore
-    public void setIdleTimeout(Integer idleTimeout) {
+    public void setIdleTimeout(Number idleTimeout) {
         this.idleTimeout = idleTimeout;
     }
 
-    public LoadBalancerConnectionSettings withIdleTimeout(Integer idleTimeout) {
+    public LoadBalancerConnectionSettings withIdleTimeout(Number idleTimeout) {
         this.idleTimeout = idleTimeout;
         return this;
     }

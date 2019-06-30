@@ -1,22 +1,26 @@
 package aws;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Before;
 import org.junit.Test;
 
+import static java.util.Collections.singletonMap;
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;
 import static shiver.me.timbers.data.random.RandomIntegers.someIntegerBetween;
 import static shiver.me.timbers.data.random.RandomStrings.someString;
 
-public class StringPropertyTest {
+public class PrimitivePropertyTest {
 
     private String string;
-    private StringProperty property;
+    private PrimitiveProperty property;
 
     @Before
     public void setUp() {
         string = someString();
-        property = new StringProperty(string);
+        property = new PrimitiveProperty(string);
     }
 
     @Test
@@ -64,5 +68,26 @@ public class StringPropertyTest {
 
         // Then
         assertThat(actual, equalTo(string.subSequence(start, length)));
+    }
+
+    @Test
+    public void Can_serialise_primitive_property_type_as_object() throws JsonProcessingException {
+
+        // Given
+        final String value = someString();
+
+        // When
+        final String actual = toJson(new PrimitiveProperty(someString()) {
+
+            @JsonProperty
+            private final String one = value;
+        });
+
+        // Then
+        assertThat(actual, equalTo(toJson(singletonMap("one", value))));
+    }
+
+    private static String toJson(Object object) throws JsonProcessingException {
+        return new ObjectMapper().writeValueAsString(object);
     }
 }

@@ -32,21 +32,21 @@ public class NetworkAclEntryIcmp implements Property<NetworkAclEntryIcmp>
      */
     @JsonProperty("Code")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-icmp.html#cfn-ec2-networkaclentry-icmp-code")
-    private Integer code;
+    private Number code;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-icmp.html#cfn-ec2-networkaclentry-icmp-type
      * 
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-icmp.html#cfn-ec2-networkaclentry-icmp-type")
-    private Integer type;
+    private Number type;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-icmp.html#cfn-ec2-networkaclentry-icmp-code
      * 
      */
     @JsonIgnore
-    public Integer getCode() {
+    public Number getCode() {
         return code;
     }
 
@@ -55,11 +55,11 @@ public class NetworkAclEntryIcmp implements Property<NetworkAclEntryIcmp>
      * 
      */
     @JsonIgnore
-    public void setCode(Integer code) {
+    public void setCode(Number code) {
         this.code = code;
     }
 
-    public NetworkAclEntryIcmp withCode(Integer code) {
+    public NetworkAclEntryIcmp withCode(Number code) {
         this.code = code;
         return this;
     }
@@ -69,7 +69,7 @@ public class NetworkAclEntryIcmp implements Property<NetworkAclEntryIcmp>
      * 
      */
     @JsonIgnore
-    public Integer getType() {
+    public Number getType() {
         return type;
     }
 
@@ -78,11 +78,11 @@ public class NetworkAclEntryIcmp implements Property<NetworkAclEntryIcmp>
      * 
      */
     @JsonIgnore
-    public void setType(Integer type) {
+    public void setType(Number type) {
         this.type = type;
     }
 
-    public NetworkAclEntryIcmp withType(Integer type) {
+    public NetworkAclEntryIcmp withType(Number type) {
         this.type = type;
         return this;
     }

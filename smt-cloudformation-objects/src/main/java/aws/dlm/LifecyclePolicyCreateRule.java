@@ -49,7 +49,7 @@ public class LifecyclePolicyCreateRule implements Property<LifecyclePolicyCreate
      */
     @JsonProperty("Interval")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-createrule.html#cfn-dlm-lifecyclepolicy-createrule-interval")
-    private Integer interval;
+    private Number interval;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-createrule.html#cfn-dlm-lifecyclepolicy-createrule-intervalunit
@@ -102,7 +102,7 @@ public class LifecyclePolicyCreateRule implements Property<LifecyclePolicyCreate
      * 
      */
     @JsonIgnore
-    public Integer getInterval() {
+    public Number getInterval() {
         return interval;
     }
 
@@ -111,11 +111,11 @@ public class LifecyclePolicyCreateRule implements Property<LifecyclePolicyCreate
      * 
      */
     @JsonIgnore
-    public void setInterval(Integer interval) {
+    public void setInterval(Number interval) {
         this.interval = interval;
     }
 
-    public LifecyclePolicyCreateRule withInterval(Integer interval) {
+    public LifecyclePolicyCreateRule withInterval(Number interval) {
         this.interval = interval;
         return this;
     }

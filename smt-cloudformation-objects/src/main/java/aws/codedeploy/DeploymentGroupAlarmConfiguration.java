@@ -44,14 +44,14 @@ public class DeploymentGroupAlarmConfiguration implements Property<DeploymentGro
      */
     @JsonProperty("Enabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-alarmconfiguration.html#cfn-codedeploy-deploymentgroup-alarmconfiguration-enabled")
-    private Boolean enabled;
+    private CharSequence enabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-alarmconfiguration.html#cfn-codedeploy-deploymentgroup-alarmconfiguration-ignorepollalarmfailure
      * 
      */
     @JsonProperty("IgnorePollAlarmFailure")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-alarmconfiguration.html#cfn-codedeploy-deploymentgroup-alarmconfiguration-ignorepollalarmfailure")
-    private Boolean ignorePollAlarmFailure;
+    private CharSequence ignorePollAlarmFailure;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-alarmconfiguration.html#cfn-codedeploy-deploymentgroup-alarmconfiguration-alarms
@@ -81,7 +81,7 @@ public class DeploymentGroupAlarmConfiguration implements Property<DeploymentGro
      * 
      */
     @JsonIgnore
-    public Boolean getEnabled() {
+    public CharSequence getEnabled() {
         return enabled;
     }
 
@@ -90,11 +90,11 @@ public class DeploymentGroupAlarmConfiguration implements Property<DeploymentGro
      * 
      */
     @JsonIgnore
-    public void setEnabled(Boolean enabled) {
+    public void setEnabled(CharSequence enabled) {
         this.enabled = enabled;
     }
 
-    public DeploymentGroupAlarmConfiguration withEnabled(Boolean enabled) {
+    public DeploymentGroupAlarmConfiguration withEnabled(CharSequence enabled) {
         this.enabled = enabled;
         return this;
     }
@@ -104,7 +104,7 @@ public class DeploymentGroupAlarmConfiguration implements Property<DeploymentGro
      * 
      */
     @JsonIgnore
-    public Boolean getIgnorePollAlarmFailure() {
+    public CharSequence getIgnorePollAlarmFailure() {
         return ignorePollAlarmFailure;
     }
 
@@ -113,11 +113,11 @@ public class DeploymentGroupAlarmConfiguration implements Property<DeploymentGro
      * 
      */
     @JsonIgnore
-    public void setIgnorePollAlarmFailure(Boolean ignorePollAlarmFailure) {
+    public void setIgnorePollAlarmFailure(CharSequence ignorePollAlarmFailure) {
         this.ignorePollAlarmFailure = ignorePollAlarmFailure;
     }
 
-    public DeploymentGroupAlarmConfiguration withIgnorePollAlarmFailure(Boolean ignorePollAlarmFailure) {
+    public DeploymentGroupAlarmConfiguration withIgnorePollAlarmFailure(CharSequence ignorePollAlarmFailure) {
         this.ignorePollAlarmFailure = ignorePollAlarmFailure;
         return this;
     }

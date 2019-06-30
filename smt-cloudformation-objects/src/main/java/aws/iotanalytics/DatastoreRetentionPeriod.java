@@ -32,21 +32,21 @@ public class DatastoreRetentionPeriod implements Property<DatastoreRetentionPeri
      */
     @JsonProperty("NumberOfDays")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-retentionperiod.html#cfn-iotanalytics-datastore-retentionperiod-numberofdays")
-    private Integer numberOfDays;
+    private Number numberOfDays;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-retentionperiod.html#cfn-iotanalytics-datastore-retentionperiod-unlimited
      * 
      */
     @JsonProperty("Unlimited")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-retentionperiod.html#cfn-iotanalytics-datastore-retentionperiod-unlimited")
-    private Boolean unlimited;
+    private CharSequence unlimited;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-retentionperiod.html#cfn-iotanalytics-datastore-retentionperiod-numberofdays
      * 
      */
     @JsonIgnore
-    public Integer getNumberOfDays() {
+    public Number getNumberOfDays() {
         return numberOfDays;
     }
 
@@ -55,11 +55,11 @@ public class DatastoreRetentionPeriod implements Property<DatastoreRetentionPeri
      * 
      */
     @JsonIgnore
-    public void setNumberOfDays(Integer numberOfDays) {
+    public void setNumberOfDays(Number numberOfDays) {
         this.numberOfDays = numberOfDays;
     }
 
-    public DatastoreRetentionPeriod withNumberOfDays(Integer numberOfDays) {
+    public DatastoreRetentionPeriod withNumberOfDays(Number numberOfDays) {
         this.numberOfDays = numberOfDays;
         return this;
     }
@@ -69,7 +69,7 @@ public class DatastoreRetentionPeriod implements Property<DatastoreRetentionPeri
      * 
      */
     @JsonIgnore
-    public Boolean getUnlimited() {
+    public CharSequence getUnlimited() {
         return unlimited;
     }
 
@@ -78,11 +78,11 @@ public class DatastoreRetentionPeriod implements Property<DatastoreRetentionPeri
      * 
      */
     @JsonIgnore
-    public void setUnlimited(Boolean unlimited) {
+    public void setUnlimited(CharSequence unlimited) {
         this.unlimited = unlimited;
     }
 
-    public DatastoreRetentionPeriod withUnlimited(Boolean unlimited) {
+    public DatastoreRetentionPeriod withUnlimited(CharSequence unlimited) {
         this.unlimited = unlimited;
         return this;
     }

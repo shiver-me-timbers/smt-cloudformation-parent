@@ -33,7 +33,7 @@ public class DeliveryStreamCloudWatchLoggingOptions implements Property<Delivery
      */
     @JsonProperty("Enabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.html#cfn-kinesisfirehose-deliverystream-cloudwatchloggingoptions-enabled")
-    private Boolean enabled;
+    private CharSequence enabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.html#cfn-kinesisfirehose-deliverystream-cloudwatchloggingoptions-loggroupname
      * 
@@ -54,7 +54,7 @@ public class DeliveryStreamCloudWatchLoggingOptions implements Property<Delivery
      * 
      */
     @JsonIgnore
-    public Boolean getEnabled() {
+    public CharSequence getEnabled() {
         return enabled;
     }
 
@@ -63,11 +63,11 @@ public class DeliveryStreamCloudWatchLoggingOptions implements Property<Delivery
      * 
      */
     @JsonIgnore
-    public void setEnabled(Boolean enabled) {
+    public void setEnabled(CharSequence enabled) {
         this.enabled = enabled;
     }
 
-    public DeliveryStreamCloudWatchLoggingOptions withEnabled(Boolean enabled) {
+    public DeliveryStreamCloudWatchLoggingOptions withEnabled(CharSequence enabled) {
         this.enabled = enabled;
         return this;
     }

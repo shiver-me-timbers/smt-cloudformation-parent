@@ -33,28 +33,28 @@ public class ApplicationMaxCountRule implements Property<ApplicationMaxCountRule
      */
     @JsonProperty("DeleteSourceFromS3")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxcountrule.html#cfn-elasticbeanstalk-application-maxcountrule-deletesourcefroms3")
-    private Boolean deleteSourceFromS3;
+    private CharSequence deleteSourceFromS3;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxcountrule.html#cfn-elasticbeanstalk-application-maxcountrule-enabled
      * 
      */
     @JsonProperty("Enabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxcountrule.html#cfn-elasticbeanstalk-application-maxcountrule-enabled")
-    private Boolean enabled;
+    private CharSequence enabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxcountrule.html#cfn-elasticbeanstalk-application-maxcountrule-maxcount
      * 
      */
     @JsonProperty("MaxCount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxcountrule.html#cfn-elasticbeanstalk-application-maxcountrule-maxcount")
-    private Integer maxCount;
+    private Number maxCount;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxcountrule.html#cfn-elasticbeanstalk-application-maxcountrule-deletesourcefroms3
      * 
      */
     @JsonIgnore
-    public Boolean getDeleteSourceFromS3() {
+    public CharSequence getDeleteSourceFromS3() {
         return deleteSourceFromS3;
     }
 
@@ -63,11 +63,11 @@ public class ApplicationMaxCountRule implements Property<ApplicationMaxCountRule
      * 
      */
     @JsonIgnore
-    public void setDeleteSourceFromS3(Boolean deleteSourceFromS3) {
+    public void setDeleteSourceFromS3(CharSequence deleteSourceFromS3) {
         this.deleteSourceFromS3 = deleteSourceFromS3;
     }
 
-    public ApplicationMaxCountRule withDeleteSourceFromS3(Boolean deleteSourceFromS3) {
+    public ApplicationMaxCountRule withDeleteSourceFromS3(CharSequence deleteSourceFromS3) {
         this.deleteSourceFromS3 = deleteSourceFromS3;
         return this;
     }
@@ -77,7 +77,7 @@ public class ApplicationMaxCountRule implements Property<ApplicationMaxCountRule
      * 
      */
     @JsonIgnore
-    public Boolean getEnabled() {
+    public CharSequence getEnabled() {
         return enabled;
     }
 
@@ -86,11 +86,11 @@ public class ApplicationMaxCountRule implements Property<ApplicationMaxCountRule
      * 
      */
     @JsonIgnore
-    public void setEnabled(Boolean enabled) {
+    public void setEnabled(CharSequence enabled) {
         this.enabled = enabled;
     }
 
-    public ApplicationMaxCountRule withEnabled(Boolean enabled) {
+    public ApplicationMaxCountRule withEnabled(CharSequence enabled) {
         this.enabled = enabled;
         return this;
     }
@@ -100,7 +100,7 @@ public class ApplicationMaxCountRule implements Property<ApplicationMaxCountRule
      * 
      */
     @JsonIgnore
-    public Integer getMaxCount() {
+    public Number getMaxCount() {
         return maxCount;
     }
 
@@ -109,11 +109,11 @@ public class ApplicationMaxCountRule implements Property<ApplicationMaxCountRule
      * 
      */
     @JsonIgnore
-    public void setMaxCount(Integer maxCount) {
+    public void setMaxCount(Number maxCount) {
         this.maxCount = maxCount;
     }
 
-    public ApplicationMaxCountRule withMaxCount(Integer maxCount) {
+    public ApplicationMaxCountRule withMaxCount(Number maxCount) {
         this.maxCount = maxCount;
         return this;
     }

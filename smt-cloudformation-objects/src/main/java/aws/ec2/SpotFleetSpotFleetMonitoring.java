@@ -31,14 +31,14 @@ public class SpotFleetSpotFleetMonitoring implements Property<SpotFleetSpotFleet
      */
     @JsonProperty("Enabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-monitoring.html#cfn-ec2-spotfleet-spotfleetmonitoring-enabled")
-    private Boolean enabled;
+    private CharSequence enabled;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-monitoring.html#cfn-ec2-spotfleet-spotfleetmonitoring-enabled
      * 
      */
     @JsonIgnore
-    public Boolean getEnabled() {
+    public CharSequence getEnabled() {
         return enabled;
     }
 
@@ -47,11 +47,11 @@ public class SpotFleetSpotFleetMonitoring implements Property<SpotFleetSpotFleet
      * 
      */
     @JsonIgnore
-    public void setEnabled(Boolean enabled) {
+    public void setEnabled(CharSequence enabled) {
         this.enabled = enabled;
     }
 
-    public SpotFleetSpotFleetMonitoring withEnabled(Boolean enabled) {
+    public SpotFleetSpotFleetMonitoring withEnabled(CharSequence enabled) {
         this.enabled = enabled;
         return this;
     }

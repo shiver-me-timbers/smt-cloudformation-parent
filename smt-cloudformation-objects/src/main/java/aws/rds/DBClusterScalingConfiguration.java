@@ -34,35 +34,35 @@ public class DBClusterScalingConfiguration implements Property<DBClusterScalingC
      */
     @JsonProperty("AutoPause")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html#cfn-rds-dbcluster-scalingconfiguration-autopause")
-    private Boolean autoPause;
+    private CharSequence autoPause;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html#cfn-rds-dbcluster-scalingconfiguration-maxcapacity
      * 
      */
     @JsonProperty("MaxCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html#cfn-rds-dbcluster-scalingconfiguration-maxcapacity")
-    private Integer maxCapacity;
+    private Number maxCapacity;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html#cfn-rds-dbcluster-scalingconfiguration-mincapacity
      * 
      */
     @JsonProperty("MinCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html#cfn-rds-dbcluster-scalingconfiguration-mincapacity")
-    private Integer minCapacity;
+    private Number minCapacity;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html#cfn-rds-dbcluster-scalingconfiguration-secondsuntilautopause
      * 
      */
     @JsonProperty("SecondsUntilAutoPause")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html#cfn-rds-dbcluster-scalingconfiguration-secondsuntilautopause")
-    private Integer secondsUntilAutoPause;
+    private Number secondsUntilAutoPause;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html#cfn-rds-dbcluster-scalingconfiguration-autopause
      * 
      */
     @JsonIgnore
-    public Boolean getAutoPause() {
+    public CharSequence getAutoPause() {
         return autoPause;
     }
 
@@ -71,11 +71,11 @@ public class DBClusterScalingConfiguration implements Property<DBClusterScalingC
      * 
      */
     @JsonIgnore
-    public void setAutoPause(Boolean autoPause) {
+    public void setAutoPause(CharSequence autoPause) {
         this.autoPause = autoPause;
     }
 
-    public DBClusterScalingConfiguration withAutoPause(Boolean autoPause) {
+    public DBClusterScalingConfiguration withAutoPause(CharSequence autoPause) {
         this.autoPause = autoPause;
         return this;
     }
@@ -85,7 +85,7 @@ public class DBClusterScalingConfiguration implements Property<DBClusterScalingC
      * 
      */
     @JsonIgnore
-    public Integer getMaxCapacity() {
+    public Number getMaxCapacity() {
         return maxCapacity;
     }
 
@@ -94,11 +94,11 @@ public class DBClusterScalingConfiguration implements Property<DBClusterScalingC
      * 
      */
     @JsonIgnore
-    public void setMaxCapacity(Integer maxCapacity) {
+    public void setMaxCapacity(Number maxCapacity) {
         this.maxCapacity = maxCapacity;
     }
 
-    public DBClusterScalingConfiguration withMaxCapacity(Integer maxCapacity) {
+    public DBClusterScalingConfiguration withMaxCapacity(Number maxCapacity) {
         this.maxCapacity = maxCapacity;
         return this;
     }
@@ -108,7 +108,7 @@ public class DBClusterScalingConfiguration implements Property<DBClusterScalingC
      * 
      */
     @JsonIgnore
-    public Integer getMinCapacity() {
+    public Number getMinCapacity() {
         return minCapacity;
     }
 
@@ -117,11 +117,11 @@ public class DBClusterScalingConfiguration implements Property<DBClusterScalingC
      * 
      */
     @JsonIgnore
-    public void setMinCapacity(Integer minCapacity) {
+    public void setMinCapacity(Number minCapacity) {
         this.minCapacity = minCapacity;
     }
 
-    public DBClusterScalingConfiguration withMinCapacity(Integer minCapacity) {
+    public DBClusterScalingConfiguration withMinCapacity(Number minCapacity) {
         this.minCapacity = minCapacity;
         return this;
     }
@@ -131,7 +131,7 @@ public class DBClusterScalingConfiguration implements Property<DBClusterScalingC
      * 
      */
     @JsonIgnore
-    public Integer getSecondsUntilAutoPause() {
+    public Number getSecondsUntilAutoPause() {
         return secondsUntilAutoPause;
     }
 
@@ -140,11 +140,11 @@ public class DBClusterScalingConfiguration implements Property<DBClusterScalingC
      * 
      */
     @JsonIgnore
-    public void setSecondsUntilAutoPause(Integer secondsUntilAutoPause) {
+    public void setSecondsUntilAutoPause(Number secondsUntilAutoPause) {
         this.secondsUntilAutoPause = secondsUntilAutoPause;
     }
 
-    public DBClusterScalingConfiguration withSecondsUntilAutoPause(Integer secondsUntilAutoPause) {
+    public DBClusterScalingConfiguration withSecondsUntilAutoPause(Number secondsUntilAutoPause) {
         this.secondsUntilAutoPause = secondsUntilAutoPause;
         return this;
     }

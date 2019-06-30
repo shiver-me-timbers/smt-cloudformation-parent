@@ -45,7 +45,7 @@ public class DistributionDefaultCacheBehavior implements Property<DistributionDe
      */
     @JsonProperty("Compress")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-compress")
-    private Boolean compress;
+    private CharSequence compress;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-lambdafunctionassociations
      * 
@@ -80,7 +80,7 @@ public class DistributionDefaultCacheBehavior implements Property<DistributionDe
      */
     @JsonProperty("DefaultTTL")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-defaultttl")
-    private Double defaultTTL;
+    private Number defaultTTL;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-fieldlevelencryptionid
      * 
@@ -108,7 +108,7 @@ public class DistributionDefaultCacheBehavior implements Property<DistributionDe
      */
     @JsonProperty("SmoothStreaming")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-smoothstreaming")
-    private Boolean smoothStreaming;
+    private CharSequence smoothStreaming;
     /**
      * DistributionForwardedValues
      * <p>
@@ -124,21 +124,21 @@ public class DistributionDefaultCacheBehavior implements Property<DistributionDe
      */
     @JsonProperty("MinTTL")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-minttl")
-    private Double minTTL;
+    private Number minTTL;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-maxttl
      * 
      */
     @JsonProperty("MaxTTL")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-maxttl")
-    private Double maxTTL;
+    private Number maxTTL;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-compress
      * 
      */
     @JsonIgnore
-    public Boolean getCompress() {
+    public CharSequence getCompress() {
         return compress;
     }
 
@@ -147,11 +147,11 @@ public class DistributionDefaultCacheBehavior implements Property<DistributionDe
      * 
      */
     @JsonIgnore
-    public void setCompress(Boolean compress) {
+    public void setCompress(CharSequence compress) {
         this.compress = compress;
     }
 
-    public DistributionDefaultCacheBehavior withCompress(Boolean compress) {
+    public DistributionDefaultCacheBehavior withCompress(CharSequence compress) {
         this.compress = compress;
         return this;
     }
@@ -253,7 +253,7 @@ public class DistributionDefaultCacheBehavior implements Property<DistributionDe
      * 
      */
     @JsonIgnore
-    public Double getDefaultTTL() {
+    public Number getDefaultTTL() {
         return defaultTTL;
     }
 
@@ -262,11 +262,11 @@ public class DistributionDefaultCacheBehavior implements Property<DistributionDe
      * 
      */
     @JsonIgnore
-    public void setDefaultTTL(Double defaultTTL) {
+    public void setDefaultTTL(Number defaultTTL) {
         this.defaultTTL = defaultTTL;
     }
 
-    public DistributionDefaultCacheBehavior withDefaultTTL(Double defaultTTL) {
+    public DistributionDefaultCacheBehavior withDefaultTTL(Number defaultTTL) {
         this.defaultTTL = defaultTTL;
         return this;
     }
@@ -345,7 +345,7 @@ public class DistributionDefaultCacheBehavior implements Property<DistributionDe
      * 
      */
     @JsonIgnore
-    public Boolean getSmoothStreaming() {
+    public CharSequence getSmoothStreaming() {
         return smoothStreaming;
     }
 
@@ -354,11 +354,11 @@ public class DistributionDefaultCacheBehavior implements Property<DistributionDe
      * 
      */
     @JsonIgnore
-    public void setSmoothStreaming(Boolean smoothStreaming) {
+    public void setSmoothStreaming(CharSequence smoothStreaming) {
         this.smoothStreaming = smoothStreaming;
     }
 
-    public DistributionDefaultCacheBehavior withSmoothStreaming(Boolean smoothStreaming) {
+    public DistributionDefaultCacheBehavior withSmoothStreaming(CharSequence smoothStreaming) {
         this.smoothStreaming = smoothStreaming;
         return this;
     }
@@ -395,7 +395,7 @@ public class DistributionDefaultCacheBehavior implements Property<DistributionDe
      * 
      */
     @JsonIgnore
-    public Double getMinTTL() {
+    public Number getMinTTL() {
         return minTTL;
     }
 
@@ -404,11 +404,11 @@ public class DistributionDefaultCacheBehavior implements Property<DistributionDe
      * 
      */
     @JsonIgnore
-    public void setMinTTL(Double minTTL) {
+    public void setMinTTL(Number minTTL) {
         this.minTTL = minTTL;
     }
 
-    public DistributionDefaultCacheBehavior withMinTTL(Double minTTL) {
+    public DistributionDefaultCacheBehavior withMinTTL(Number minTTL) {
         this.minTTL = minTTL;
         return this;
     }
@@ -418,7 +418,7 @@ public class DistributionDefaultCacheBehavior implements Property<DistributionDe
      * 
      */
     @JsonIgnore
-    public Double getMaxTTL() {
+    public Number getMaxTTL() {
         return maxTTL;
     }
 
@@ -427,11 +427,11 @@ public class DistributionDefaultCacheBehavior implements Property<DistributionDe
      * 
      */
     @JsonIgnore
-    public void setMaxTTL(Double maxTTL) {
+    public void setMaxTTL(Number maxTTL) {
         this.maxTTL = maxTTL;
     }
 
-    public DistributionDefaultCacheBehavior withMaxTTL(Double maxTTL) {
+    public DistributionDefaultCacheBehavior withMaxTTL(Number maxTTL) {
         this.maxTTL = maxTTL;
         return this;
     }

@@ -78,7 +78,7 @@ public class Fleet {
      */
     @JsonProperty("EnableDefaultInternetAccess")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-enabledefaultinternetaccess")
-    private Boolean enableDefaultInternetAccess;
+    private CharSequence enableDefaultInternetAccess;
     /**
      * FleetDomainJoinInfo
      * <p>
@@ -108,14 +108,14 @@ public class Fleet {
      */
     @JsonProperty("MaxUserDurationInSeconds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-maxuserdurationinseconds")
-    private Integer maxUserDurationInSeconds;
+    private Number maxUserDurationInSeconds;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-disconnecttimeoutinseconds
      * 
      */
     @JsonProperty("DisconnectTimeoutInSeconds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-disconnecttimeoutinseconds")
-    private Integer disconnectTimeoutInSeconds;
+    private Number disconnectTimeoutInSeconds;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-displayname
      * 
@@ -250,7 +250,7 @@ public class Fleet {
      * 
      */
     @JsonIgnore
-    public Boolean getEnableDefaultInternetAccess() {
+    public CharSequence getEnableDefaultInternetAccess() {
         return enableDefaultInternetAccess;
     }
 
@@ -259,11 +259,11 @@ public class Fleet {
      * 
      */
     @JsonIgnore
-    public void setEnableDefaultInternetAccess(Boolean enableDefaultInternetAccess) {
+    public void setEnableDefaultInternetAccess(CharSequence enableDefaultInternetAccess) {
         this.enableDefaultInternetAccess = enableDefaultInternetAccess;
     }
 
-    public Fleet withEnableDefaultInternetAccess(Boolean enableDefaultInternetAccess) {
+    public Fleet withEnableDefaultInternetAccess(CharSequence enableDefaultInternetAccess) {
         this.enableDefaultInternetAccess = enableDefaultInternetAccess;
         return this;
     }
@@ -346,7 +346,7 @@ public class Fleet {
      * 
      */
     @JsonIgnore
-    public Integer getMaxUserDurationInSeconds() {
+    public Number getMaxUserDurationInSeconds() {
         return maxUserDurationInSeconds;
     }
 
@@ -355,11 +355,11 @@ public class Fleet {
      * 
      */
     @JsonIgnore
-    public void setMaxUserDurationInSeconds(Integer maxUserDurationInSeconds) {
+    public void setMaxUserDurationInSeconds(Number maxUserDurationInSeconds) {
         this.maxUserDurationInSeconds = maxUserDurationInSeconds;
     }
 
-    public Fleet withMaxUserDurationInSeconds(Integer maxUserDurationInSeconds) {
+    public Fleet withMaxUserDurationInSeconds(Number maxUserDurationInSeconds) {
         this.maxUserDurationInSeconds = maxUserDurationInSeconds;
         return this;
     }
@@ -369,7 +369,7 @@ public class Fleet {
      * 
      */
     @JsonIgnore
-    public Integer getDisconnectTimeoutInSeconds() {
+    public Number getDisconnectTimeoutInSeconds() {
         return disconnectTimeoutInSeconds;
     }
 
@@ -378,11 +378,11 @@ public class Fleet {
      * 
      */
     @JsonIgnore
-    public void setDisconnectTimeoutInSeconds(Integer disconnectTimeoutInSeconds) {
+    public void setDisconnectTimeoutInSeconds(Number disconnectTimeoutInSeconds) {
         this.disconnectTimeoutInSeconds = disconnectTimeoutInSeconds;
     }
 
-    public Fleet withDisconnectTimeoutInSeconds(Integer disconnectTimeoutInSeconds) {
+    public Fleet withDisconnectTimeoutInSeconds(Number disconnectTimeoutInSeconds) {
         this.disconnectTimeoutInSeconds = disconnectTimeoutInSeconds;
         return this;
     }

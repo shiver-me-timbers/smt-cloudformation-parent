@@ -31,14 +31,14 @@ public class LifecyclePolicyRetainRule implements Property<LifecyclePolicyRetain
      */
     @JsonProperty("Count")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-retainrule.html#cfn-dlm-lifecyclepolicy-retainrule-count")
-    private Integer count;
+    private Number count;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-retainrule.html#cfn-dlm-lifecyclepolicy-retainrule-count
      * 
      */
     @JsonIgnore
-    public Integer getCount() {
+    public Number getCount() {
         return count;
     }
 
@@ -47,11 +47,11 @@ public class LifecyclePolicyRetainRule implements Property<LifecyclePolicyRetain
      * 
      */
     @JsonIgnore
-    public void setCount(Integer count) {
+    public void setCount(Number count) {
         this.count = count;
     }
 
-    public LifecyclePolicyRetainRule withCount(Integer count) {
+    public LifecyclePolicyRetainRule withCount(Number count) {
         this.count = count;
         return this;
     }

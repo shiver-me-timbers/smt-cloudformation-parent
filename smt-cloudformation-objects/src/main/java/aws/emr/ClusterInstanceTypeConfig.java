@@ -46,7 +46,7 @@ public class ClusterInstanceTypeConfig implements Property<ClusterInstanceTypeCo
      */
     @JsonProperty("BidPriceAsPercentageOfOnDemandPrice")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancetypeconfig.html#cfn-elasticmapreduce-cluster-instancetypeconfig-bidpriceaspercentageofondemandprice")
-    private Double bidPriceAsPercentageOfOnDemandPrice;
+    private Number bidPriceAsPercentageOfOnDemandPrice;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancetypeconfig.html#cfn-elasticmapreduce-cluster-instancetypeconfig-configurations
      * 
@@ -77,7 +77,7 @@ public class ClusterInstanceTypeConfig implements Property<ClusterInstanceTypeCo
      */
     @JsonProperty("WeightedCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancetypeconfig.html#cfn-elasticmapreduce-cluster-instancetypeconfig-weightedcapacity")
-    private Integer weightedCapacity;
+    private Number weightedCapacity;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancetypeconfig.html#cfn-elasticmapreduce-cluster-instancetypeconfig-bidprice
@@ -107,7 +107,7 @@ public class ClusterInstanceTypeConfig implements Property<ClusterInstanceTypeCo
      * 
      */
     @JsonIgnore
-    public Double getBidPriceAsPercentageOfOnDemandPrice() {
+    public Number getBidPriceAsPercentageOfOnDemandPrice() {
         return bidPriceAsPercentageOfOnDemandPrice;
     }
 
@@ -116,11 +116,11 @@ public class ClusterInstanceTypeConfig implements Property<ClusterInstanceTypeCo
      * 
      */
     @JsonIgnore
-    public void setBidPriceAsPercentageOfOnDemandPrice(Double bidPriceAsPercentageOfOnDemandPrice) {
+    public void setBidPriceAsPercentageOfOnDemandPrice(Number bidPriceAsPercentageOfOnDemandPrice) {
         this.bidPriceAsPercentageOfOnDemandPrice = bidPriceAsPercentageOfOnDemandPrice;
     }
 
-    public ClusterInstanceTypeConfig withBidPriceAsPercentageOfOnDemandPrice(Double bidPriceAsPercentageOfOnDemandPrice) {
+    public ClusterInstanceTypeConfig withBidPriceAsPercentageOfOnDemandPrice(Number bidPriceAsPercentageOfOnDemandPrice) {
         this.bidPriceAsPercentageOfOnDemandPrice = bidPriceAsPercentageOfOnDemandPrice;
         return this;
     }
@@ -203,7 +203,7 @@ public class ClusterInstanceTypeConfig implements Property<ClusterInstanceTypeCo
      * 
      */
     @JsonIgnore
-    public Integer getWeightedCapacity() {
+    public Number getWeightedCapacity() {
         return weightedCapacity;
     }
 
@@ -212,11 +212,11 @@ public class ClusterInstanceTypeConfig implements Property<ClusterInstanceTypeCo
      * 
      */
     @JsonIgnore
-    public void setWeightedCapacity(Integer weightedCapacity) {
+    public void setWeightedCapacity(Number weightedCapacity) {
         this.weightedCapacity = weightedCapacity;
     }
 
-    public ClusterInstanceTypeConfig withWeightedCapacity(Integer weightedCapacity) {
+    public ClusterInstanceTypeConfig withWeightedCapacity(Number weightedCapacity) {
         this.weightedCapacity = weightedCapacity;
         return this;
     }

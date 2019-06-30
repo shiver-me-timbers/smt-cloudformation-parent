@@ -48,7 +48,7 @@ public class BudgetNotification implements Property<BudgetNotification>
      */
     @JsonProperty("Threshold")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-notification.html#cfn-budgets-budget-notification-threshold")
-    private Double threshold;
+    private Number threshold;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-notification.html#cfn-budgets-budget-notification-thresholdtype
      * 
@@ -108,7 +108,7 @@ public class BudgetNotification implements Property<BudgetNotification>
      * 
      */
     @JsonIgnore
-    public Double getThreshold() {
+    public Number getThreshold() {
         return threshold;
     }
 
@@ -117,11 +117,11 @@ public class BudgetNotification implements Property<BudgetNotification>
      * 
      */
     @JsonIgnore
-    public void setThreshold(Double threshold) {
+    public void setThreshold(Number threshold) {
         this.threshold = threshold;
     }
 
-    public BudgetNotification withThreshold(Double threshold) {
+    public BudgetNotification withThreshold(Number threshold) {
         this.threshold = threshold;
         return this;
     }

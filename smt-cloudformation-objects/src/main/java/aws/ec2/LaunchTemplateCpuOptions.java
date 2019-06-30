@@ -32,21 +32,21 @@ public class LaunchTemplateCpuOptions implements Property<LaunchTemplateCpuOptio
      */
     @JsonProperty("ThreadsPerCore")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-cpuoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-cpuoptions-threadspercore")
-    private Integer threadsPerCore;
+    private Number threadsPerCore;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-cpuoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-cpuoptions-corecount
      * 
      */
     @JsonProperty("CoreCount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-cpuoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-cpuoptions-corecount")
-    private Integer coreCount;
+    private Number coreCount;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-cpuoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-cpuoptions-threadspercore
      * 
      */
     @JsonIgnore
-    public Integer getThreadsPerCore() {
+    public Number getThreadsPerCore() {
         return threadsPerCore;
     }
 
@@ -55,11 +55,11 @@ public class LaunchTemplateCpuOptions implements Property<LaunchTemplateCpuOptio
      * 
      */
     @JsonIgnore
-    public void setThreadsPerCore(Integer threadsPerCore) {
+    public void setThreadsPerCore(Number threadsPerCore) {
         this.threadsPerCore = threadsPerCore;
     }
 
-    public LaunchTemplateCpuOptions withThreadsPerCore(Integer threadsPerCore) {
+    public LaunchTemplateCpuOptions withThreadsPerCore(Number threadsPerCore) {
         this.threadsPerCore = threadsPerCore;
         return this;
     }
@@ -69,7 +69,7 @@ public class LaunchTemplateCpuOptions implements Property<LaunchTemplateCpuOptio
      * 
      */
     @JsonIgnore
-    public Integer getCoreCount() {
+    public Number getCoreCount() {
         return coreCount;
     }
 
@@ -78,11 +78,11 @@ public class LaunchTemplateCpuOptions implements Property<LaunchTemplateCpuOptio
      * 
      */
     @JsonIgnore
-    public void setCoreCount(Integer coreCount) {
+    public void setCoreCount(Number coreCount) {
         this.coreCount = coreCount;
     }
 
-    public LaunchTemplateCpuOptions withCoreCount(Integer coreCount) {
+    public LaunchTemplateCpuOptions withCoreCount(Number coreCount) {
         this.coreCount = coreCount;
         return this;
     }

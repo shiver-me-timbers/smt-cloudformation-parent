@@ -63,14 +63,14 @@ public class Service {
      */
     @JsonProperty("DesiredCount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-desiredcount")
-    private Integer desiredCount;
+    private Number desiredCount;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-healthcheckgraceperiodseconds
      * 
      */
     @JsonProperty("HealthCheckGracePeriodSeconds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-healthcheckgraceperiodseconds")
-    private Integer healthCheckGracePeriodSeconds;
+    private Number healthCheckGracePeriodSeconds;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-launchtype
      * 
@@ -210,7 +210,7 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public Integer getDesiredCount() {
+    public Number getDesiredCount() {
         return desiredCount;
     }
 
@@ -219,11 +219,11 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public void setDesiredCount(Integer desiredCount) {
+    public void setDesiredCount(Number desiredCount) {
         this.desiredCount = desiredCount;
     }
 
-    public Service withDesiredCount(Integer desiredCount) {
+    public Service withDesiredCount(Number desiredCount) {
         this.desiredCount = desiredCount;
         return this;
     }
@@ -233,7 +233,7 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public Integer getHealthCheckGracePeriodSeconds() {
+    public Number getHealthCheckGracePeriodSeconds() {
         return healthCheckGracePeriodSeconds;
     }
 
@@ -242,11 +242,11 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public void setHealthCheckGracePeriodSeconds(Integer healthCheckGracePeriodSeconds) {
+    public void setHealthCheckGracePeriodSeconds(Number healthCheckGracePeriodSeconds) {
         this.healthCheckGracePeriodSeconds = healthCheckGracePeriodSeconds;
     }
 
-    public Service withHealthCheckGracePeriodSeconds(Integer healthCheckGracePeriodSeconds) {
+    public Service withHealthCheckGracePeriodSeconds(Number healthCheckGracePeriodSeconds) {
         this.healthCheckGracePeriodSeconds = healthCheckGracePeriodSeconds;
         return this;
     }

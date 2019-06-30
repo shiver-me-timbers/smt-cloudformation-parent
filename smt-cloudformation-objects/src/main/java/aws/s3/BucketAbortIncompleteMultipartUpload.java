@@ -31,14 +31,14 @@ public class BucketAbortIncompleteMultipartUpload implements Property<BucketAbor
      */
     @JsonProperty("DaysAfterInitiation")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-abortincompletemultipartupload.html#cfn-s3-bucket-abortincompletemultipartupload-daysafterinitiation")
-    private Integer daysAfterInitiation;
+    private Number daysAfterInitiation;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-abortincompletemultipartupload.html#cfn-s3-bucket-abortincompletemultipartupload-daysafterinitiation
      * 
      */
     @JsonIgnore
-    public Integer getDaysAfterInitiation() {
+    public Number getDaysAfterInitiation() {
         return daysAfterInitiation;
     }
 
@@ -47,11 +47,11 @@ public class BucketAbortIncompleteMultipartUpload implements Property<BucketAbor
      * 
      */
     @JsonIgnore
-    public void setDaysAfterInitiation(Integer daysAfterInitiation) {
+    public void setDaysAfterInitiation(Number daysAfterInitiation) {
         this.daysAfterInitiation = daysAfterInitiation;
     }
 
-    public BucketAbortIncompleteMultipartUpload withDaysAfterInitiation(Integer daysAfterInitiation) {
+    public BucketAbortIncompleteMultipartUpload withDaysAfterInitiation(Number daysAfterInitiation) {
         this.daysAfterInitiation = daysAfterInitiation;
         return this;
     }

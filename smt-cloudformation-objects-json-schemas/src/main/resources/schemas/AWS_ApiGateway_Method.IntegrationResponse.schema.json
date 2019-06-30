@@ -15,12 +15,12 @@
     "ResponseParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration-integrationresponse.html#cfn-apigateway-method-integration-integrationresponse-responseparameters",
       "type" : "object",
-      "javaType" : "java.util.Map<String, String>"
+      "javaType" : "java.util.Map<String, java.lang.CharSequence>"
     },
     "ResponseTemplates" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration-integrationresponse.html#cfn-apigateway-method-integration-integrationresponse-responsetemplates",
       "type" : "object",
-      "javaType" : "java.util.Map<String, String>"
+      "javaType" : "java.util.Map<String, java.lang.CharSequence>"
     },
     "SelectionPattern" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration-integrationresponse.html#cfn-apigateway-method-integration-integrationresponse-selectionpattern",

@@ -99,7 +99,7 @@ public class Cluster {
      */
     @JsonProperty("EbsRootVolumeSize")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-ebsrootvolumesize")
-    private Integer ebsRootVolumeSize;
+    private Number ebsRootVolumeSize;
     /**
      * ClusterJobFlowInstancesConfig
      * <p>
@@ -188,7 +188,7 @@ public class Cluster {
      */
     @JsonProperty("VisibleToAllUsers")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-visibletoallusers")
-    private Boolean visibleToAllUsers;
+    private CharSequence visibleToAllUsers;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-additionalinfo
@@ -333,7 +333,7 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public Integer getEbsRootVolumeSize() {
+    public Number getEbsRootVolumeSize() {
         return ebsRootVolumeSize;
     }
 
@@ -342,11 +342,11 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public void setEbsRootVolumeSize(Integer ebsRootVolumeSize) {
+    public void setEbsRootVolumeSize(Number ebsRootVolumeSize) {
         this.ebsRootVolumeSize = ebsRootVolumeSize;
     }
 
-    public Cluster withEbsRootVolumeSize(Integer ebsRootVolumeSize) {
+    public Cluster withEbsRootVolumeSize(Number ebsRootVolumeSize) {
         this.ebsRootVolumeSize = ebsRootVolumeSize;
         return this;
     }
@@ -617,7 +617,7 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public Boolean getVisibleToAllUsers() {
+    public CharSequence getVisibleToAllUsers() {
         return visibleToAllUsers;
     }
 
@@ -626,11 +626,11 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public void setVisibleToAllUsers(Boolean visibleToAllUsers) {
+    public void setVisibleToAllUsers(CharSequence visibleToAllUsers) {
         this.visibleToAllUsers = visibleToAllUsers;
     }
 
-    public Cluster withVisibleToAllUsers(Boolean visibleToAllUsers) {
+    public Cluster withVisibleToAllUsers(CharSequence visibleToAllUsers) {
         this.visibleToAllUsers = visibleToAllUsers;
         return this;
     }

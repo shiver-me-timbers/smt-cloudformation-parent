@@ -40,7 +40,7 @@ public class AppEnvironmentVariable implements Property<AppEnvironmentVariable>
      */
     @JsonProperty("Secure")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-environment.html#cfn-opsworks-app-environment-secure")
-    private Boolean secure;
+    private CharSequence secure;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-environment.html#value
      * 
@@ -77,7 +77,7 @@ public class AppEnvironmentVariable implements Property<AppEnvironmentVariable>
      * 
      */
     @JsonIgnore
-    public Boolean getSecure() {
+    public CharSequence getSecure() {
         return secure;
     }
 
@@ -86,11 +86,11 @@ public class AppEnvironmentVariable implements Property<AppEnvironmentVariable>
      * 
      */
     @JsonIgnore
-    public void setSecure(Boolean secure) {
+    public void setSecure(CharSequence secure) {
         this.secure = secure;
     }
 
-    public AppEnvironmentVariable withSecure(Boolean secure) {
+    public AppEnvironmentVariable withSecure(CharSequence secure) {
         this.secure = secure;
         return this;
     }

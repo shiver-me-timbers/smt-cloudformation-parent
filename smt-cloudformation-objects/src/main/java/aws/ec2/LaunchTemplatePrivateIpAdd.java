@@ -39,7 +39,7 @@ public class LaunchTemplatePrivateIpAdd implements Property<LaunchTemplatePrivat
      */
     @JsonProperty("Primary")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-privateipadd.html#cfn-ec2-launchtemplate-privateipadd-primary")
-    private Boolean primary;
+    private CharSequence primary;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-privateipadd.html#cfn-ec2-launchtemplate-privateipadd-privateipaddress
@@ -69,7 +69,7 @@ public class LaunchTemplatePrivateIpAdd implements Property<LaunchTemplatePrivat
      * 
      */
     @JsonIgnore
-    public Boolean getPrimary() {
+    public CharSequence getPrimary() {
         return primary;
     }
 
@@ -78,11 +78,11 @@ public class LaunchTemplatePrivateIpAdd implements Property<LaunchTemplatePrivat
      * 
      */
     @JsonIgnore
-    public void setPrimary(Boolean primary) {
+    public void setPrimary(CharSequence primary) {
         this.primary = primary;
     }
 
-    public LaunchTemplatePrivateIpAdd withPrimary(Boolean primary) {
+    public LaunchTemplatePrivateIpAdd withPrimary(CharSequence primary) {
         this.primary = primary;
         return this;
     }

@@ -48,7 +48,7 @@ public class FileSystemLustreConfiguration implements Property<FileSystemLustreC
      */
     @JsonProperty("ImportedFileChunkSize")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-lustreconfiguration.html#cfn-fsx-filesystem-lustreconfiguration-importedfilechunksize")
-    private Integer importedFileChunkSize;
+    private Number importedFileChunkSize;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-lustreconfiguration.html#cfn-fsx-filesystem-lustreconfiguration-exportpath
      * 
@@ -108,7 +108,7 @@ public class FileSystemLustreConfiguration implements Property<FileSystemLustreC
      * 
      */
     @JsonIgnore
-    public Integer getImportedFileChunkSize() {
+    public Number getImportedFileChunkSize() {
         return importedFileChunkSize;
     }
 
@@ -117,11 +117,11 @@ public class FileSystemLustreConfiguration implements Property<FileSystemLustreC
      * 
      */
     @JsonIgnore
-    public void setImportedFileChunkSize(Integer importedFileChunkSize) {
+    public void setImportedFileChunkSize(Number importedFileChunkSize) {
         this.importedFileChunkSize = importedFileChunkSize;
     }
 
-    public FileSystemLustreConfiguration withImportedFileChunkSize(Integer importedFileChunkSize) {
+    public FileSystemLustreConfiguration withImportedFileChunkSize(Number importedFileChunkSize) {
         this.importedFileChunkSize = importedFileChunkSize;
         return this;
     }

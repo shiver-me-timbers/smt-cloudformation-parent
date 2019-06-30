@@ -120,7 +120,7 @@ public class Project {
      */
     @JsonProperty("BadgeEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-badgeenabled")
-    private Boolean badgeEnabled;
+    private CharSequence badgeEnabled;
     /**
      * ProjectLogsConfig
      * <p>
@@ -143,7 +143,7 @@ public class Project {
      */
     @JsonProperty("QueuedTimeoutInMinutes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-queuedtimeoutinminutes")
-    private Integer queuedTimeoutInMinutes;
+    private Number queuedTimeoutInMinutes;
     /**
      * ProjectEnvironment
      * <p>
@@ -166,7 +166,7 @@ public class Project {
      */
     @JsonProperty("TimeoutInMinutes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-timeoutinminutes")
-    private Integer timeoutInMinutes;
+    private Number timeoutInMinutes;
     /**
      * ProjectProjectCache
      * <p>
@@ -405,7 +405,7 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public Boolean getBadgeEnabled() {
+    public CharSequence getBadgeEnabled() {
         return badgeEnabled;
     }
 
@@ -414,11 +414,11 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public void setBadgeEnabled(Boolean badgeEnabled) {
+    public void setBadgeEnabled(CharSequence badgeEnabled) {
         this.badgeEnabled = badgeEnabled;
     }
 
-    public Project withBadgeEnabled(Boolean badgeEnabled) {
+    public Project withBadgeEnabled(CharSequence badgeEnabled) {
         this.badgeEnabled = badgeEnabled;
         return this;
     }
@@ -478,7 +478,7 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public Integer getQueuedTimeoutInMinutes() {
+    public Number getQueuedTimeoutInMinutes() {
         return queuedTimeoutInMinutes;
     }
 
@@ -487,11 +487,11 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public void setQueuedTimeoutInMinutes(Integer queuedTimeoutInMinutes) {
+    public void setQueuedTimeoutInMinutes(Number queuedTimeoutInMinutes) {
         this.queuedTimeoutInMinutes = queuedTimeoutInMinutes;
     }
 
-    public Project withQueuedTimeoutInMinutes(Integer queuedTimeoutInMinutes) {
+    public Project withQueuedTimeoutInMinutes(Number queuedTimeoutInMinutes) {
         this.queuedTimeoutInMinutes = queuedTimeoutInMinutes;
         return this;
     }
@@ -551,7 +551,7 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public Integer getTimeoutInMinutes() {
+    public Number getTimeoutInMinutes() {
         return timeoutInMinutes;
     }
 
@@ -560,11 +560,11 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public void setTimeoutInMinutes(Integer timeoutInMinutes) {
+    public void setTimeoutInMinutes(Number timeoutInMinutes) {
         this.timeoutInMinutes = timeoutInMinutes;
     }
 
-    public Project withTimeoutInMinutes(Integer timeoutInMinutes) {
+    public Project withTimeoutInMinutes(Number timeoutInMinutes) {
         this.timeoutInMinutes = timeoutInMinutes;
         return this;
     }

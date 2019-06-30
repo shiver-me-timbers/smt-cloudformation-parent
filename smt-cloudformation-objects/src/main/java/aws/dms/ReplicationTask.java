@@ -97,7 +97,7 @@ public class ReplicationTask {
      */
     @JsonProperty("CdcStartTime")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-cdcstarttime")
-    private Double cdcStartTime;
+    private Number cdcStartTime;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-replicationtasksettings
@@ -288,7 +288,7 @@ public class ReplicationTask {
      * 
      */
     @JsonIgnore
-    public Double getCdcStartTime() {
+    public Number getCdcStartTime() {
         return cdcStartTime;
     }
 
@@ -297,11 +297,11 @@ public class ReplicationTask {
      * 
      */
     @JsonIgnore
-    public void setCdcStartTime(Double cdcStartTime) {
+    public void setCdcStartTime(Number cdcStartTime) {
         this.cdcStartTime = cdcStartTime;
     }
 
-    public ReplicationTask withCdcStartTime(Double cdcStartTime) {
+    public ReplicationTask withCdcStartTime(Number cdcStartTime) {
         this.cdcStartTime = cdcStartTime;
         return this;
     }

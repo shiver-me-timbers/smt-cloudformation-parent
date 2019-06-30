@@ -31,7 +31,7 @@ public class VPCCidrBlock {
      */
     @JsonProperty("AmazonProvidedIpv6CidrBlock")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpccidrblock.html#cfn-ec2-vpccidrblock-amazonprovidedipv6cidrblock")
-    private Boolean amazonProvidedIpv6CidrBlock;
+    private CharSequence amazonProvidedIpv6CidrBlock;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpccidrblock.html#cfn-ec2-vpccidrblock-cidrblock
      * 
@@ -52,7 +52,7 @@ public class VPCCidrBlock {
      * 
      */
     @JsonIgnore
-    public Boolean getAmazonProvidedIpv6CidrBlock() {
+    public CharSequence getAmazonProvidedIpv6CidrBlock() {
         return amazonProvidedIpv6CidrBlock;
     }
 
@@ -61,11 +61,11 @@ public class VPCCidrBlock {
      * 
      */
     @JsonIgnore
-    public void setAmazonProvidedIpv6CidrBlock(Boolean amazonProvidedIpv6CidrBlock) {
+    public void setAmazonProvidedIpv6CidrBlock(CharSequence amazonProvidedIpv6CidrBlock) {
         this.amazonProvidedIpv6CidrBlock = amazonProvidedIpv6CidrBlock;
     }
 
-    public VPCCidrBlock withAmazonProvidedIpv6CidrBlock(Boolean amazonProvidedIpv6CidrBlock) {
+    public VPCCidrBlock withAmazonProvidedIpv6CidrBlock(CharSequence amazonProvidedIpv6CidrBlock) {
         this.amazonProvidedIpv6CidrBlock = amazonProvidedIpv6CidrBlock;
         return this;
     }

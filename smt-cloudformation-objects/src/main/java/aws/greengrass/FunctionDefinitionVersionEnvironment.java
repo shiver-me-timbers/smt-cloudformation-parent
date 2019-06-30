@@ -59,7 +59,7 @@ public class FunctionDefinitionVersionEnvironment implements Property<FunctionDe
      */
     @JsonProperty("AccessSysfs")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-environment.html#cfn-greengrass-functiondefinitionversion-environment-accesssysfs")
-    private Boolean accessSysfs;
+    private CharSequence accessSysfs;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-environment.html#cfn-greengrass-functiondefinitionversion-environment-variables
@@ -139,7 +139,7 @@ public class FunctionDefinitionVersionEnvironment implements Property<FunctionDe
      * 
      */
     @JsonIgnore
-    public Boolean getAccessSysfs() {
+    public CharSequence getAccessSysfs() {
         return accessSysfs;
     }
 
@@ -148,11 +148,11 @@ public class FunctionDefinitionVersionEnvironment implements Property<FunctionDe
      * 
      */
     @JsonIgnore
-    public void setAccessSysfs(Boolean accessSysfs) {
+    public void setAccessSysfs(CharSequence accessSysfs) {
         this.accessSysfs = accessSysfs;
     }
 
-    public FunctionDefinitionVersionEnvironment withAccessSysfs(Boolean accessSysfs) {
+    public FunctionDefinitionVersionEnvironment withAccessSysfs(CharSequence accessSysfs) {
         this.accessSysfs = accessSysfs;
         return this;
     }

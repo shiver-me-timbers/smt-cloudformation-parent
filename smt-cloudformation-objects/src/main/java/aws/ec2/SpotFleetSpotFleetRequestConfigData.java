@@ -100,7 +100,7 @@ public class SpotFleetSpotFleetRequestConfigData implements Property<SpotFleetSp
      */
     @JsonProperty("ReplaceUnhealthyInstances")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-replaceunhealthyinstances")
-    private Boolean replaceUnhealthyInstances;
+    private CharSequence replaceUnhealthyInstances;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-spotprice
      * 
@@ -114,14 +114,14 @@ public class SpotFleetSpotFleetRequestConfigData implements Property<SpotFleetSp
      */
     @JsonProperty("TargetCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-targetcapacity")
-    private Integer targetCapacity;
+    private Number targetCapacity;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-terminateinstanceswithexpiration
      * 
      */
     @JsonProperty("TerminateInstancesWithExpiration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-terminateinstanceswithexpiration")
-    private Boolean terminateInstancesWithExpiration;
+    private CharSequence terminateInstancesWithExpiration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-type
      * 
@@ -314,7 +314,7 @@ public class SpotFleetSpotFleetRequestConfigData implements Property<SpotFleetSp
      * 
      */
     @JsonIgnore
-    public Boolean getReplaceUnhealthyInstances() {
+    public CharSequence getReplaceUnhealthyInstances() {
         return replaceUnhealthyInstances;
     }
 
@@ -323,11 +323,11 @@ public class SpotFleetSpotFleetRequestConfigData implements Property<SpotFleetSp
      * 
      */
     @JsonIgnore
-    public void setReplaceUnhealthyInstances(Boolean replaceUnhealthyInstances) {
+    public void setReplaceUnhealthyInstances(CharSequence replaceUnhealthyInstances) {
         this.replaceUnhealthyInstances = replaceUnhealthyInstances;
     }
 
-    public SpotFleetSpotFleetRequestConfigData withReplaceUnhealthyInstances(Boolean replaceUnhealthyInstances) {
+    public SpotFleetSpotFleetRequestConfigData withReplaceUnhealthyInstances(CharSequence replaceUnhealthyInstances) {
         this.replaceUnhealthyInstances = replaceUnhealthyInstances;
         return this;
     }
@@ -360,7 +360,7 @@ public class SpotFleetSpotFleetRequestConfigData implements Property<SpotFleetSp
      * 
      */
     @JsonIgnore
-    public Integer getTargetCapacity() {
+    public Number getTargetCapacity() {
         return targetCapacity;
     }
 
@@ -369,11 +369,11 @@ public class SpotFleetSpotFleetRequestConfigData implements Property<SpotFleetSp
      * 
      */
     @JsonIgnore
-    public void setTargetCapacity(Integer targetCapacity) {
+    public void setTargetCapacity(Number targetCapacity) {
         this.targetCapacity = targetCapacity;
     }
 
-    public SpotFleetSpotFleetRequestConfigData withTargetCapacity(Integer targetCapacity) {
+    public SpotFleetSpotFleetRequestConfigData withTargetCapacity(Number targetCapacity) {
         this.targetCapacity = targetCapacity;
         return this;
     }
@@ -383,7 +383,7 @@ public class SpotFleetSpotFleetRequestConfigData implements Property<SpotFleetSp
      * 
      */
     @JsonIgnore
-    public Boolean getTerminateInstancesWithExpiration() {
+    public CharSequence getTerminateInstancesWithExpiration() {
         return terminateInstancesWithExpiration;
     }
 
@@ -392,11 +392,11 @@ public class SpotFleetSpotFleetRequestConfigData implements Property<SpotFleetSp
      * 
      */
     @JsonIgnore
-    public void setTerminateInstancesWithExpiration(Boolean terminateInstancesWithExpiration) {
+    public void setTerminateInstancesWithExpiration(CharSequence terminateInstancesWithExpiration) {
         this.terminateInstancesWithExpiration = terminateInstancesWithExpiration;
     }
 
-    public SpotFleetSpotFleetRequestConfigData withTerminateInstancesWithExpiration(Boolean terminateInstancesWithExpiration) {
+    public SpotFleetSpotFleetRequestConfigData withTerminateInstancesWithExpiration(CharSequence terminateInstancesWithExpiration) {
         this.terminateInstancesWithExpiration = terminateInstancesWithExpiration;
         return this;
     }

@@ -39,7 +39,7 @@ public class MaintenanceWindowTaskMaintenanceWindowRunCommandParameters implemen
      */
     @JsonProperty("TimeoutSeconds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-timeoutseconds")
-    private Integer timeoutSeconds;
+    private Number timeoutSeconds;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-comment
      * 
@@ -104,7 +104,7 @@ public class MaintenanceWindowTaskMaintenanceWindowRunCommandParameters implemen
      * 
      */
     @JsonIgnore
-    public Integer getTimeoutSeconds() {
+    public Number getTimeoutSeconds() {
         return timeoutSeconds;
     }
 
@@ -113,11 +113,11 @@ public class MaintenanceWindowTaskMaintenanceWindowRunCommandParameters implemen
      * 
      */
     @JsonIgnore
-    public void setTimeoutSeconds(Integer timeoutSeconds) {
+    public void setTimeoutSeconds(Number timeoutSeconds) {
         this.timeoutSeconds = timeoutSeconds;
     }
 
-    public MaintenanceWindowTaskMaintenanceWindowRunCommandParameters withTimeoutSeconds(Integer timeoutSeconds) {
+    public MaintenanceWindowTaskMaintenanceWindowRunCommandParameters withTimeoutSeconds(Number timeoutSeconds) {
         this.timeoutSeconds = timeoutSeconds;
         return this;
     }

@@ -34,14 +34,14 @@ public class GatewayResponse {
      */
     @JsonProperty("ResponseParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html#cfn-apigateway-gatewayresponse-responseparameters")
-    private Map<String, String> responseParameters;
+    private Map<String, CharSequence> responseParameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html#cfn-apigateway-gatewayresponse-responsetemplates
      * 
      */
     @JsonProperty("ResponseTemplates")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html#cfn-apigateway-gatewayresponse-responsetemplates")
-    private Map<String, String> responseTemplates;
+    private Map<String, CharSequence> responseTemplates;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html#cfn-apigateway-gatewayresponse-responsetype
      * 
@@ -69,7 +69,7 @@ public class GatewayResponse {
      * 
      */
     @JsonIgnore
-    public Map<String, String> getResponseParameters() {
+    public Map<String, CharSequence> getResponseParameters() {
         return responseParameters;
     }
 
@@ -78,11 +78,11 @@ public class GatewayResponse {
      * 
      */
     @JsonIgnore
-    public void setResponseParameters(Map<String, String> responseParameters) {
+    public void setResponseParameters(Map<String, CharSequence> responseParameters) {
         this.responseParameters = responseParameters;
     }
 
-    public GatewayResponse withResponseParameters(Map<String, String> responseParameters) {
+    public GatewayResponse withResponseParameters(Map<String, CharSequence> responseParameters) {
         this.responseParameters = responseParameters;
         return this;
     }
@@ -92,7 +92,7 @@ public class GatewayResponse {
      * 
      */
     @JsonIgnore
-    public Map<String, String> getResponseTemplates() {
+    public Map<String, CharSequence> getResponseTemplates() {
         return responseTemplates;
     }
 
@@ -101,11 +101,11 @@ public class GatewayResponse {
      * 
      */
     @JsonIgnore
-    public void setResponseTemplates(Map<String, String> responseTemplates) {
+    public void setResponseTemplates(Map<String, CharSequence> responseTemplates) {
         this.responseTemplates = responseTemplates;
     }
 
-    public GatewayResponse withResponseTemplates(Map<String, String> responseTemplates) {
+    public GatewayResponse withResponseTemplates(Map<String, CharSequence> responseTemplates) {
         this.responseTemplates = responseTemplates;
         return this;
     }

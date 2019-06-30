@@ -8,7 +8,7 @@
     "$ref": "Named.schema.json"
   },
   "javaType": "aws.Resource",
-  "javaInterfaces": [ "aws.HasReference" ],
+  "javaInterfaces": ["aws.HasReference"],
   "properties": {
     "Type": {
       "type": "string"

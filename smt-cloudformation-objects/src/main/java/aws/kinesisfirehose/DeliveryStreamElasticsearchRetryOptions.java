@@ -31,14 +31,14 @@ public class DeliveryStreamElasticsearchRetryOptions implements Property<Deliver
      */
     @JsonProperty("DurationInSeconds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchretryoptions.html#cfn-kinesisfirehose-deliverystream-elasticsearchretryoptions-durationinseconds")
-    private Integer durationInSeconds;
+    private Number durationInSeconds;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchretryoptions.html#cfn-kinesisfirehose-deliverystream-elasticsearchretryoptions-durationinseconds
      * 
      */
     @JsonIgnore
-    public Integer getDurationInSeconds() {
+    public Number getDurationInSeconds() {
         return durationInSeconds;
     }
 
@@ -47,11 +47,11 @@ public class DeliveryStreamElasticsearchRetryOptions implements Property<Deliver
      * 
      */
     @JsonIgnore
-    public void setDurationInSeconds(Integer durationInSeconds) {
+    public void setDurationInSeconds(Number durationInSeconds) {
         this.durationInSeconds = durationInSeconds;
     }
 
-    public DeliveryStreamElasticsearchRetryOptions withDurationInSeconds(Integer durationInSeconds) {
+    public DeliveryStreamElasticsearchRetryOptions withDurationInSeconds(Number durationInSeconds) {
         this.durationInSeconds = durationInSeconds;
         return this;
     }

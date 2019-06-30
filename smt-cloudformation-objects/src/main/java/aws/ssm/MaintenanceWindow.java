@@ -56,14 +56,14 @@ public class MaintenanceWindow {
      */
     @JsonProperty("AllowUnassociatedTargets")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindow.html#cfn-ssm-maintenancewindow-allowunassociatedtargets")
-    private Boolean allowUnassociatedTargets;
+    private CharSequence allowUnassociatedTargets;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindow.html#cfn-ssm-maintenancewindow-cutoff
      * 
      */
     @JsonProperty("Cutoff")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindow.html#cfn-ssm-maintenancewindow-cutoff")
-    private Integer cutoff;
+    private Number cutoff;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindow.html#cfn-ssm-maintenancewindow-schedule
      * 
@@ -77,7 +77,7 @@ public class MaintenanceWindow {
      */
     @JsonProperty("Duration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindow.html#cfn-ssm-maintenancewindow-duration")
-    private Integer duration;
+    private Number duration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindow.html#cfn-ssm-maintenancewindow-enddate
      * 
@@ -158,7 +158,7 @@ public class MaintenanceWindow {
      * 
      */
     @JsonIgnore
-    public Boolean getAllowUnassociatedTargets() {
+    public CharSequence getAllowUnassociatedTargets() {
         return allowUnassociatedTargets;
     }
 
@@ -167,11 +167,11 @@ public class MaintenanceWindow {
      * 
      */
     @JsonIgnore
-    public void setAllowUnassociatedTargets(Boolean allowUnassociatedTargets) {
+    public void setAllowUnassociatedTargets(CharSequence allowUnassociatedTargets) {
         this.allowUnassociatedTargets = allowUnassociatedTargets;
     }
 
-    public MaintenanceWindow withAllowUnassociatedTargets(Boolean allowUnassociatedTargets) {
+    public MaintenanceWindow withAllowUnassociatedTargets(CharSequence allowUnassociatedTargets) {
         this.allowUnassociatedTargets = allowUnassociatedTargets;
         return this;
     }
@@ -181,7 +181,7 @@ public class MaintenanceWindow {
      * 
      */
     @JsonIgnore
-    public Integer getCutoff() {
+    public Number getCutoff() {
         return cutoff;
     }
 
@@ -190,11 +190,11 @@ public class MaintenanceWindow {
      * 
      */
     @JsonIgnore
-    public void setCutoff(Integer cutoff) {
+    public void setCutoff(Number cutoff) {
         this.cutoff = cutoff;
     }
 
-    public MaintenanceWindow withCutoff(Integer cutoff) {
+    public MaintenanceWindow withCutoff(Number cutoff) {
         this.cutoff = cutoff;
         return this;
     }
@@ -227,7 +227,7 @@ public class MaintenanceWindow {
      * 
      */
     @JsonIgnore
-    public Integer getDuration() {
+    public Number getDuration() {
         return duration;
     }
 
@@ -236,11 +236,11 @@ public class MaintenanceWindow {
      * 
      */
     @JsonIgnore
-    public void setDuration(Integer duration) {
+    public void setDuration(Number duration) {
         this.duration = duration;
     }
 
-    public MaintenanceWindow withDuration(Integer duration) {
+    public MaintenanceWindow withDuration(Number duration) {
         this.duration = duration;
         return this;
     }

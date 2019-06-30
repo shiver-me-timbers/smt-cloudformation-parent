@@ -9,12 +9,12 @@
     "ResponseParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html#cfn-apigateway-gatewayresponse-responseparameters",
       "type" : "object",
-      "javaType" : "java.util.Map<String, String>"
+      "javaType" : "java.util.Map<String, java.lang.CharSequence>"
     },
     "ResponseTemplates" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html#cfn-apigateway-gatewayresponse-responsetemplates",
       "type" : "object",
-      "javaType" : "java.util.Map<String, String>"
+      "javaType" : "java.util.Map<String, java.lang.CharSequence>"
     },
     "ResponseType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html#cfn-apigateway-gatewayresponse-responsetype",

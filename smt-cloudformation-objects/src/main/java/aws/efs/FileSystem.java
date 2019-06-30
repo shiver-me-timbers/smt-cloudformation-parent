@@ -38,7 +38,7 @@ public class FileSystem {
      */
     @JsonProperty("Encrypted")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-encrypted")
-    private Boolean encrypted;
+    private CharSequence encrypted;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-filesystemtags
      * 
@@ -67,7 +67,7 @@ public class FileSystem {
      */
     @JsonProperty("ProvisionedThroughputInMibps")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-elasticfilesystem-filesystem-provisionedthroughputinmibps")
-    private Double provisionedThroughputInMibps;
+    private Number provisionedThroughputInMibps;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-elasticfilesystem-filesystem-throughputmode
      * 
@@ -81,7 +81,7 @@ public class FileSystem {
      * 
      */
     @JsonIgnore
-    public Boolean getEncrypted() {
+    public CharSequence getEncrypted() {
         return encrypted;
     }
 
@@ -90,11 +90,11 @@ public class FileSystem {
      * 
      */
     @JsonIgnore
-    public void setEncrypted(Boolean encrypted) {
+    public void setEncrypted(CharSequence encrypted) {
         this.encrypted = encrypted;
     }
 
-    public FileSystem withEncrypted(Boolean encrypted) {
+    public FileSystem withEncrypted(CharSequence encrypted) {
         this.encrypted = encrypted;
         return this;
     }
@@ -173,7 +173,7 @@ public class FileSystem {
      * 
      */
     @JsonIgnore
-    public Double getProvisionedThroughputInMibps() {
+    public Number getProvisionedThroughputInMibps() {
         return provisionedThroughputInMibps;
     }
 
@@ -182,11 +182,11 @@ public class FileSystem {
      * 
      */
     @JsonIgnore
-    public void setProvisionedThroughputInMibps(Double provisionedThroughputInMibps) {
+    public void setProvisionedThroughputInMibps(Number provisionedThroughputInMibps) {
         this.provisionedThroughputInMibps = provisionedThroughputInMibps;
     }
 
-    public FileSystem withProvisionedThroughputInMibps(Double provisionedThroughputInMibps) {
+    public FileSystem withProvisionedThroughputInMibps(Number provisionedThroughputInMibps) {
         this.provisionedThroughputInMibps = provisionedThroughputInMibps;
         return this;
     }

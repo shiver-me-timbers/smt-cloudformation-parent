@@ -32,21 +32,21 @@ public class LayerShutdownEventConfiguration implements Property<LayerShutdownEv
      */
     @JsonProperty("DelayUntilElbConnectionsDrained")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration-shutdowneventconfiguration.html#cfn-opsworks-layer-lifecycleconfiguration-shutdowneventconfiguration-delayuntilelbconnectionsdrained")
-    private Boolean delayUntilElbConnectionsDrained;
+    private CharSequence delayUntilElbConnectionsDrained;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration-shutdowneventconfiguration.html#cfn-opsworks-layer-lifecycleconfiguration-shutdowneventconfiguration-executiontimeout
      * 
      */
     @JsonProperty("ExecutionTimeout")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration-shutdowneventconfiguration.html#cfn-opsworks-layer-lifecycleconfiguration-shutdowneventconfiguration-executiontimeout")
-    private Integer executionTimeout;
+    private Number executionTimeout;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration-shutdowneventconfiguration.html#cfn-opsworks-layer-lifecycleconfiguration-shutdowneventconfiguration-delayuntilelbconnectionsdrained
      * 
      */
     @JsonIgnore
-    public Boolean getDelayUntilElbConnectionsDrained() {
+    public CharSequence getDelayUntilElbConnectionsDrained() {
         return delayUntilElbConnectionsDrained;
     }
 
@@ -55,11 +55,11 @@ public class LayerShutdownEventConfiguration implements Property<LayerShutdownEv
      * 
      */
     @JsonIgnore
-    public void setDelayUntilElbConnectionsDrained(Boolean delayUntilElbConnectionsDrained) {
+    public void setDelayUntilElbConnectionsDrained(CharSequence delayUntilElbConnectionsDrained) {
         this.delayUntilElbConnectionsDrained = delayUntilElbConnectionsDrained;
     }
 
-    public LayerShutdownEventConfiguration withDelayUntilElbConnectionsDrained(Boolean delayUntilElbConnectionsDrained) {
+    public LayerShutdownEventConfiguration withDelayUntilElbConnectionsDrained(CharSequence delayUntilElbConnectionsDrained) {
         this.delayUntilElbConnectionsDrained = delayUntilElbConnectionsDrained;
         return this;
     }
@@ -69,7 +69,7 @@ public class LayerShutdownEventConfiguration implements Property<LayerShutdownEv
      * 
      */
     @JsonIgnore
-    public Integer getExecutionTimeout() {
+    public Number getExecutionTimeout() {
         return executionTimeout;
     }
 
@@ -78,11 +78,11 @@ public class LayerShutdownEventConfiguration implements Property<LayerShutdownEv
      * 
      */
     @JsonIgnore
-    public void setExecutionTimeout(Integer executionTimeout) {
+    public void setExecutionTimeout(Number executionTimeout) {
         this.executionTimeout = executionTimeout;
     }
 
-    public LayerShutdownEventConfiguration withExecutionTimeout(Integer executionTimeout) {
+    public LayerShutdownEventConfiguration withExecutionTimeout(Number executionTimeout) {
         this.executionTimeout = executionTimeout;
         return this;
     }

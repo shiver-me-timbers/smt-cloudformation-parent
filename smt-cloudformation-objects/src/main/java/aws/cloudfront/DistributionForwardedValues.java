@@ -52,7 +52,7 @@ public class DistributionForwardedValues implements Property<DistributionForward
      */
     @JsonProperty("QueryString")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-forwardedvalues.html#cfn-cloudfront-distribution-forwardedvalues-querystring")
-    private Boolean queryString;
+    private CharSequence queryString;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-forwardedvalues.html#cfn-cloudfront-distribution-forwardedvalues-querystringcachekeys
      * 
@@ -116,7 +116,7 @@ public class DistributionForwardedValues implements Property<DistributionForward
      * 
      */
     @JsonIgnore
-    public Boolean getQueryString() {
+    public CharSequence getQueryString() {
         return queryString;
     }
 
@@ -125,11 +125,11 @@ public class DistributionForwardedValues implements Property<DistributionForward
      * 
      */
     @JsonIgnore
-    public void setQueryString(Boolean queryString) {
+    public void setQueryString(CharSequence queryString) {
         this.queryString = queryString;
     }
 
-    public DistributionForwardedValues withQueryString(Boolean queryString) {
+    public DistributionForwardedValues withQueryString(CharSequence queryString) {
         this.queryString = queryString;
         return this;
     }

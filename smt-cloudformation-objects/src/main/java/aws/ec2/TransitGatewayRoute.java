@@ -46,7 +46,7 @@ public class TransitGatewayRoute {
      */
     @JsonProperty("Blackhole")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgatewayroute.html#cfn-ec2-transitgatewayroute-blackhole")
-    private Boolean blackhole;
+    private CharSequence blackhole;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgatewayroute.html#cfn-ec2-transitgatewayroute-transitgatewayattachmentid
      * 
@@ -106,7 +106,7 @@ public class TransitGatewayRoute {
      * 
      */
     @JsonIgnore
-    public Boolean getBlackhole() {
+    public CharSequence getBlackhole() {
         return blackhole;
     }
 
@@ -115,11 +115,11 @@ public class TransitGatewayRoute {
      * 
      */
     @JsonIgnore
-    public void setBlackhole(Boolean blackhole) {
+    public void setBlackhole(CharSequence blackhole) {
         this.blackhole = blackhole;
     }
 
-    public TransitGatewayRoute withBlackhole(Boolean blackhole) {
+    public TransitGatewayRoute withBlackhole(CharSequence blackhole) {
         this.blackhole = blackhole;
         return this;
     }

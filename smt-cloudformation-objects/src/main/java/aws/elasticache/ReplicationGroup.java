@@ -64,7 +64,7 @@ public class ReplicationGroup {
      */
     @JsonProperty("AtRestEncryptionEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-atrestencryptionenabled")
-    private Boolean atRestEncryptionEnabled;
+    private CharSequence atRestEncryptionEnabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-authtoken
      * 
@@ -78,14 +78,14 @@ public class ReplicationGroup {
      */
     @JsonProperty("AutoMinorVersionUpgrade")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-autominorversionupgrade")
-    private Boolean autoMinorVersionUpgrade;
+    private CharSequence autoMinorVersionUpgrade;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-automaticfailoverenabled
      * 
      */
     @JsonProperty("AutomaticFailoverEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-automaticfailoverenabled")
-    private Boolean automaticFailoverEnabled;
+    private CharSequence automaticFailoverEnabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-cachenodetype
      * 
@@ -150,21 +150,21 @@ public class ReplicationGroup {
      */
     @JsonProperty("NumCacheClusters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-numcacheclusters")
-    private Integer numCacheClusters;
+    private Number numCacheClusters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-numnodegroups
      * 
      */
     @JsonProperty("NumNodeGroups")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-numnodegroups")
-    private Integer numNodeGroups;
+    private Number numNodeGroups;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-port
      * 
      */
     @JsonProperty("Port")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-port")
-    private Integer port;
+    private Number port;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-preferredcacheclusterazs
      * 
@@ -193,7 +193,7 @@ public class ReplicationGroup {
      */
     @JsonProperty("ReplicasPerNodeGroup")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-replicaspernodegroup")
-    private Integer replicasPerNodeGroup;
+    private Number replicasPerNodeGroup;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-replicationgroupdescription
      * 
@@ -237,7 +237,7 @@ public class ReplicationGroup {
      */
     @JsonProperty("SnapshotRetentionLimit")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-snapshotretentionlimit")
-    private Integer snapshotRetentionLimit;
+    private Number snapshotRetentionLimit;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-snapshotwindow
      * 
@@ -265,14 +265,14 @@ public class ReplicationGroup {
      */
     @JsonProperty("TransitEncryptionEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-transitencryptionenabled")
-    private Boolean transitEncryptionEnabled;
+    private CharSequence transitEncryptionEnabled;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-atrestencryptionenabled
      * 
      */
     @JsonIgnore
-    public Boolean getAtRestEncryptionEnabled() {
+    public CharSequence getAtRestEncryptionEnabled() {
         return atRestEncryptionEnabled;
     }
 
@@ -281,11 +281,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonIgnore
-    public void setAtRestEncryptionEnabled(Boolean atRestEncryptionEnabled) {
+    public void setAtRestEncryptionEnabled(CharSequence atRestEncryptionEnabled) {
         this.atRestEncryptionEnabled = atRestEncryptionEnabled;
     }
 
-    public ReplicationGroup withAtRestEncryptionEnabled(Boolean atRestEncryptionEnabled) {
+    public ReplicationGroup withAtRestEncryptionEnabled(CharSequence atRestEncryptionEnabled) {
         this.atRestEncryptionEnabled = atRestEncryptionEnabled;
         return this;
     }
@@ -318,7 +318,7 @@ public class ReplicationGroup {
      * 
      */
     @JsonIgnore
-    public Boolean getAutoMinorVersionUpgrade() {
+    public CharSequence getAutoMinorVersionUpgrade() {
         return autoMinorVersionUpgrade;
     }
 
@@ -327,11 +327,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonIgnore
-    public void setAutoMinorVersionUpgrade(Boolean autoMinorVersionUpgrade) {
+    public void setAutoMinorVersionUpgrade(CharSequence autoMinorVersionUpgrade) {
         this.autoMinorVersionUpgrade = autoMinorVersionUpgrade;
     }
 
-    public ReplicationGroup withAutoMinorVersionUpgrade(Boolean autoMinorVersionUpgrade) {
+    public ReplicationGroup withAutoMinorVersionUpgrade(CharSequence autoMinorVersionUpgrade) {
         this.autoMinorVersionUpgrade = autoMinorVersionUpgrade;
         return this;
     }
@@ -341,7 +341,7 @@ public class ReplicationGroup {
      * 
      */
     @JsonIgnore
-    public Boolean getAutomaticFailoverEnabled() {
+    public CharSequence getAutomaticFailoverEnabled() {
         return automaticFailoverEnabled;
     }
 
@@ -350,11 +350,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonIgnore
-    public void setAutomaticFailoverEnabled(Boolean automaticFailoverEnabled) {
+    public void setAutomaticFailoverEnabled(CharSequence automaticFailoverEnabled) {
         this.automaticFailoverEnabled = automaticFailoverEnabled;
     }
 
-    public ReplicationGroup withAutomaticFailoverEnabled(Boolean automaticFailoverEnabled) {
+    public ReplicationGroup withAutomaticFailoverEnabled(CharSequence automaticFailoverEnabled) {
         this.automaticFailoverEnabled = automaticFailoverEnabled;
         return this;
     }
@@ -548,7 +548,7 @@ public class ReplicationGroup {
      * 
      */
     @JsonIgnore
-    public Integer getNumCacheClusters() {
+    public Number getNumCacheClusters() {
         return numCacheClusters;
     }
 
@@ -557,11 +557,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonIgnore
-    public void setNumCacheClusters(Integer numCacheClusters) {
+    public void setNumCacheClusters(Number numCacheClusters) {
         this.numCacheClusters = numCacheClusters;
     }
 
-    public ReplicationGroup withNumCacheClusters(Integer numCacheClusters) {
+    public ReplicationGroup withNumCacheClusters(Number numCacheClusters) {
         this.numCacheClusters = numCacheClusters;
         return this;
     }
@@ -571,7 +571,7 @@ public class ReplicationGroup {
      * 
      */
     @JsonIgnore
-    public Integer getNumNodeGroups() {
+    public Number getNumNodeGroups() {
         return numNodeGroups;
     }
 
@@ -580,11 +580,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonIgnore
-    public void setNumNodeGroups(Integer numNodeGroups) {
+    public void setNumNodeGroups(Number numNodeGroups) {
         this.numNodeGroups = numNodeGroups;
     }
 
-    public ReplicationGroup withNumNodeGroups(Integer numNodeGroups) {
+    public ReplicationGroup withNumNodeGroups(Number numNodeGroups) {
         this.numNodeGroups = numNodeGroups;
         return this;
     }
@@ -594,7 +594,7 @@ public class ReplicationGroup {
      * 
      */
     @JsonIgnore
-    public Integer getPort() {
+    public Number getPort() {
         return port;
     }
 
@@ -603,11 +603,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonIgnore
-    public void setPort(Integer port) {
+    public void setPort(Number port) {
         this.port = port;
     }
 
-    public ReplicationGroup withPort(Integer port) {
+    public ReplicationGroup withPort(Number port) {
         this.port = port;
         return this;
     }
@@ -686,7 +686,7 @@ public class ReplicationGroup {
      * 
      */
     @JsonIgnore
-    public Integer getReplicasPerNodeGroup() {
+    public Number getReplicasPerNodeGroup() {
         return replicasPerNodeGroup;
     }
 
@@ -695,11 +695,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonIgnore
-    public void setReplicasPerNodeGroup(Integer replicasPerNodeGroup) {
+    public void setReplicasPerNodeGroup(Number replicasPerNodeGroup) {
         this.replicasPerNodeGroup = replicasPerNodeGroup;
     }
 
-    public ReplicationGroup withReplicasPerNodeGroup(Integer replicasPerNodeGroup) {
+    public ReplicationGroup withReplicasPerNodeGroup(Number replicasPerNodeGroup) {
         this.replicasPerNodeGroup = replicasPerNodeGroup;
         return this;
     }
@@ -824,7 +824,7 @@ public class ReplicationGroup {
      * 
      */
     @JsonIgnore
-    public Integer getSnapshotRetentionLimit() {
+    public Number getSnapshotRetentionLimit() {
         return snapshotRetentionLimit;
     }
 
@@ -833,11 +833,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonIgnore
-    public void setSnapshotRetentionLimit(Integer snapshotRetentionLimit) {
+    public void setSnapshotRetentionLimit(Number snapshotRetentionLimit) {
         this.snapshotRetentionLimit = snapshotRetentionLimit;
     }
 
-    public ReplicationGroup withSnapshotRetentionLimit(Integer snapshotRetentionLimit) {
+    public ReplicationGroup withSnapshotRetentionLimit(Number snapshotRetentionLimit) {
         this.snapshotRetentionLimit = snapshotRetentionLimit;
         return this;
     }
@@ -916,7 +916,7 @@ public class ReplicationGroup {
      * 
      */
     @JsonIgnore
-    public Boolean getTransitEncryptionEnabled() {
+    public CharSequence getTransitEncryptionEnabled() {
         return transitEncryptionEnabled;
     }
 
@@ -925,11 +925,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonIgnore
-    public void setTransitEncryptionEnabled(Boolean transitEncryptionEnabled) {
+    public void setTransitEncryptionEnabled(CharSequence transitEncryptionEnabled) {
         this.transitEncryptionEnabled = transitEncryptionEnabled;
     }
 
-    public ReplicationGroup withTransitEncryptionEnabled(Boolean transitEncryptionEnabled) {
+    public ReplicationGroup withTransitEncryptionEnabled(CharSequence transitEncryptionEnabled) {
         this.transitEncryptionEnabled = transitEncryptionEnabled;
         return this;
     }

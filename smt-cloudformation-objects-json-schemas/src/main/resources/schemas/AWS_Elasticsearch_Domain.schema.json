@@ -14,7 +14,7 @@
     "AdvancedOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-advancedoptions",
       "type" : "object",
-      "javaType" : "java.util.Map<String, String>"
+      "javaType" : "java.util.Map<String, java.lang.CharSequence>"
     },
     "DomainName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-domainname",

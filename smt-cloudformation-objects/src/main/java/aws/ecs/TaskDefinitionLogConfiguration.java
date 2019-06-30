@@ -40,7 +40,7 @@ public class TaskDefinitionLogConfiguration implements Property<TaskDefinitionLo
      */
     @JsonProperty("Options")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-logconfiguration.html#cfn-ecs-taskdefinition-containerdefinition-logconfiguration-options")
-    private Map<String, String> options;
+    private Map<String, CharSequence> options;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-logconfiguration.html#cfn-ecs-taskdefinition-containerdefinition-logconfiguration-logdriver
@@ -70,7 +70,7 @@ public class TaskDefinitionLogConfiguration implements Property<TaskDefinitionLo
      * 
      */
     @JsonIgnore
-    public Map<String, String> getOptions() {
+    public Map<String, CharSequence> getOptions() {
         return options;
     }
 
@@ -79,11 +79,11 @@ public class TaskDefinitionLogConfiguration implements Property<TaskDefinitionLo
      * 
      */
     @JsonIgnore
-    public void setOptions(Map<String, String> options) {
+    public void setOptions(Map<String, CharSequence> options) {
         this.options = options;
     }
 
-    public TaskDefinitionLogConfiguration withOptions(Map<String, String> options) {
+    public TaskDefinitionLogConfiguration withOptions(Map<String, CharSequence> options) {
         this.options = options;
         return this;
     }

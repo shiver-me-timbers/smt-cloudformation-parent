@@ -52,14 +52,14 @@ public class TargetGroup {
      */
     @JsonProperty("HealthCheckEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthcheckenabled")
-    private Boolean healthCheckEnabled;
+    private CharSequence healthCheckEnabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthcheckintervalseconds
      * 
      */
     @JsonProperty("HealthCheckIntervalSeconds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthcheckintervalseconds")
-    private Integer healthCheckIntervalSeconds;
+    private Number healthCheckIntervalSeconds;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthcheckpath
      * 
@@ -87,14 +87,14 @@ public class TargetGroup {
      */
     @JsonProperty("HealthCheckTimeoutSeconds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthchecktimeoutseconds")
-    private Integer healthCheckTimeoutSeconds;
+    private Number healthCheckTimeoutSeconds;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthythresholdcount
      * 
      */
     @JsonProperty("HealthyThresholdCount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthythresholdcount")
-    private Integer healthyThresholdCount;
+    private Number healthyThresholdCount;
     /**
      * TargetGroupMatcher
      * <p>
@@ -117,7 +117,7 @@ public class TargetGroup {
      */
     @JsonProperty("Port")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-port")
-    private Integer port;
+    private Number port;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-protocol
      * 
@@ -161,7 +161,7 @@ public class TargetGroup {
      */
     @JsonProperty("UnhealthyThresholdCount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-unhealthythresholdcount")
-    private Integer unhealthyThresholdCount;
+    private Number unhealthyThresholdCount;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-vpcid
      * 
@@ -175,7 +175,7 @@ public class TargetGroup {
      * 
      */
     @JsonIgnore
-    public Boolean getHealthCheckEnabled() {
+    public CharSequence getHealthCheckEnabled() {
         return healthCheckEnabled;
     }
 
@@ -184,11 +184,11 @@ public class TargetGroup {
      * 
      */
     @JsonIgnore
-    public void setHealthCheckEnabled(Boolean healthCheckEnabled) {
+    public void setHealthCheckEnabled(CharSequence healthCheckEnabled) {
         this.healthCheckEnabled = healthCheckEnabled;
     }
 
-    public TargetGroup withHealthCheckEnabled(Boolean healthCheckEnabled) {
+    public TargetGroup withHealthCheckEnabled(CharSequence healthCheckEnabled) {
         this.healthCheckEnabled = healthCheckEnabled;
         return this;
     }
@@ -198,7 +198,7 @@ public class TargetGroup {
      * 
      */
     @JsonIgnore
-    public Integer getHealthCheckIntervalSeconds() {
+    public Number getHealthCheckIntervalSeconds() {
         return healthCheckIntervalSeconds;
     }
 
@@ -207,11 +207,11 @@ public class TargetGroup {
      * 
      */
     @JsonIgnore
-    public void setHealthCheckIntervalSeconds(Integer healthCheckIntervalSeconds) {
+    public void setHealthCheckIntervalSeconds(Number healthCheckIntervalSeconds) {
         this.healthCheckIntervalSeconds = healthCheckIntervalSeconds;
     }
 
-    public TargetGroup withHealthCheckIntervalSeconds(Integer healthCheckIntervalSeconds) {
+    public TargetGroup withHealthCheckIntervalSeconds(Number healthCheckIntervalSeconds) {
         this.healthCheckIntervalSeconds = healthCheckIntervalSeconds;
         return this;
     }
@@ -290,7 +290,7 @@ public class TargetGroup {
      * 
      */
     @JsonIgnore
-    public Integer getHealthCheckTimeoutSeconds() {
+    public Number getHealthCheckTimeoutSeconds() {
         return healthCheckTimeoutSeconds;
     }
 
@@ -299,11 +299,11 @@ public class TargetGroup {
      * 
      */
     @JsonIgnore
-    public void setHealthCheckTimeoutSeconds(Integer healthCheckTimeoutSeconds) {
+    public void setHealthCheckTimeoutSeconds(Number healthCheckTimeoutSeconds) {
         this.healthCheckTimeoutSeconds = healthCheckTimeoutSeconds;
     }
 
-    public TargetGroup withHealthCheckTimeoutSeconds(Integer healthCheckTimeoutSeconds) {
+    public TargetGroup withHealthCheckTimeoutSeconds(Number healthCheckTimeoutSeconds) {
         this.healthCheckTimeoutSeconds = healthCheckTimeoutSeconds;
         return this;
     }
@@ -313,7 +313,7 @@ public class TargetGroup {
      * 
      */
     @JsonIgnore
-    public Integer getHealthyThresholdCount() {
+    public Number getHealthyThresholdCount() {
         return healthyThresholdCount;
     }
 
@@ -322,11 +322,11 @@ public class TargetGroup {
      * 
      */
     @JsonIgnore
-    public void setHealthyThresholdCount(Integer healthyThresholdCount) {
+    public void setHealthyThresholdCount(Number healthyThresholdCount) {
         this.healthyThresholdCount = healthyThresholdCount;
     }
 
-    public TargetGroup withHealthyThresholdCount(Integer healthyThresholdCount) {
+    public TargetGroup withHealthyThresholdCount(Number healthyThresholdCount) {
         this.healthyThresholdCount = healthyThresholdCount;
         return this;
     }
@@ -386,7 +386,7 @@ public class TargetGroup {
      * 
      */
     @JsonIgnore
-    public Integer getPort() {
+    public Number getPort() {
         return port;
     }
 
@@ -395,11 +395,11 @@ public class TargetGroup {
      * 
      */
     @JsonIgnore
-    public void setPort(Integer port) {
+    public void setPort(Number port) {
         this.port = port;
     }
 
-    public TargetGroup withPort(Integer port) {
+    public TargetGroup withPort(Number port) {
         this.port = port;
         return this;
     }
@@ -524,7 +524,7 @@ public class TargetGroup {
      * 
      */
     @JsonIgnore
-    public Integer getUnhealthyThresholdCount() {
+    public Number getUnhealthyThresholdCount() {
         return unhealthyThresholdCount;
     }
 
@@ -533,11 +533,11 @@ public class TargetGroup {
      * 
      */
     @JsonIgnore
-    public void setUnhealthyThresholdCount(Integer unhealthyThresholdCount) {
+    public void setUnhealthyThresholdCount(Number unhealthyThresholdCount) {
         this.unhealthyThresholdCount = unhealthyThresholdCount;
     }
 
-    public TargetGroup withUnhealthyThresholdCount(Integer unhealthyThresholdCount) {
+    public TargetGroup withUnhealthyThresholdCount(Number unhealthyThresholdCount) {
         this.unhealthyThresholdCount = unhealthyThresholdCount;
         return this;
     }

@@ -50,7 +50,7 @@ public class LaunchConfigurationBlockDeviceMapping implements Property<LaunchCon
      */
     @JsonProperty("NoDevice")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig-blockdev-mapping.html#cfn-as-launchconfig-blockdev-mapping-nodevice")
-    private Boolean noDevice;
+    private CharSequence noDevice;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig-blockdev-mapping.html#cfn-as-launchconfig-blockdev-mapping-virtualname
      * 
@@ -114,7 +114,7 @@ public class LaunchConfigurationBlockDeviceMapping implements Property<LaunchCon
      * 
      */
     @JsonIgnore
-    public Boolean getNoDevice() {
+    public CharSequence getNoDevice() {
         return noDevice;
     }
 
@@ -123,11 +123,11 @@ public class LaunchConfigurationBlockDeviceMapping implements Property<LaunchCon
      * 
      */
     @JsonIgnore
-    public void setNoDevice(Boolean noDevice) {
+    public void setNoDevice(CharSequence noDevice) {
         this.noDevice = noDevice;
     }
 
-    public LaunchConfigurationBlockDeviceMapping withNoDevice(Boolean noDevice) {
+    public LaunchConfigurationBlockDeviceMapping withNoDevice(CharSequence noDevice) {
         this.noDevice = noDevice;
         return this;
     }

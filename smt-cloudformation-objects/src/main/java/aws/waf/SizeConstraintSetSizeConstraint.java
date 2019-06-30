@@ -50,7 +50,7 @@ public class SizeConstraintSetSizeConstraint implements Property<SizeConstraintS
      */
     @JsonProperty("Size")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-sizeconstraintset-sizeconstraint.html#cfn-waf-sizeconstraintset-sizeconstraint-size")
-    private Integer size;
+    private Number size;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-sizeconstraintset-sizeconstraint.html#cfn-waf-sizeconstraintset-sizeconstraint-texttransformation
      * 
@@ -114,7 +114,7 @@ public class SizeConstraintSetSizeConstraint implements Property<SizeConstraintS
      * 
      */
     @JsonIgnore
-    public Integer getSize() {
+    public Number getSize() {
         return size;
     }
 
@@ -123,11 +123,11 @@ public class SizeConstraintSetSizeConstraint implements Property<SizeConstraintS
      * 
      */
     @JsonIgnore
-    public void setSize(Integer size) {
+    public void setSize(Number size) {
         this.size = size;
     }
 
-    public SizeConstraintSetSizeConstraint withSize(Integer size) {
+    public SizeConstraintSetSizeConstraint withSize(Number size) {
         this.size = size;
         return this;
     }

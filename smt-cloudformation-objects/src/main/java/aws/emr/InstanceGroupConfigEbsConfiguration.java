@@ -43,7 +43,7 @@ public class InstanceGroupConfigEbsConfiguration implements Property<InstanceGro
      */
     @JsonProperty("EbsOptimized")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration.html#cfn-emr-ebsconfiguration-ebsoptimized")
-    private Boolean ebsOptimized;
+    private CharSequence ebsOptimized;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration.html#cfn-emr-ebsconfiguration-ebsblockdeviceconfigs
@@ -73,7 +73,7 @@ public class InstanceGroupConfigEbsConfiguration implements Property<InstanceGro
      * 
      */
     @JsonIgnore
-    public Boolean getEbsOptimized() {
+    public CharSequence getEbsOptimized() {
         return ebsOptimized;
     }
 
@@ -82,11 +82,11 @@ public class InstanceGroupConfigEbsConfiguration implements Property<InstanceGro
      * 
      */
     @JsonIgnore
-    public void setEbsOptimized(Boolean ebsOptimized) {
+    public void setEbsOptimized(CharSequence ebsOptimized) {
         this.ebsOptimized = ebsOptimized;
     }
 
-    public InstanceGroupConfigEbsConfiguration withEbsOptimized(Boolean ebsOptimized) {
+    public InstanceGroupConfigEbsConfiguration withEbsOptimized(CharSequence ebsOptimized) {
         this.ebsOptimized = ebsOptimized;
         return this;
     }

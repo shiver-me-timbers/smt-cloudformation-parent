@@ -47,7 +47,7 @@ public class ProjectWebhookFilter implements Property<ProjectWebhookFilter>
      */
     @JsonProperty("ExcludeMatchedPattern")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-webhookfilter.html#cfn-codebuild-project-webhookfilter-excludematchedpattern")
-    private Boolean excludeMatchedPattern;
+    private CharSequence excludeMatchedPattern;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-webhookfilter.html#cfn-codebuild-project-webhookfilter-pattern
@@ -100,7 +100,7 @@ public class ProjectWebhookFilter implements Property<ProjectWebhookFilter>
      * 
      */
     @JsonIgnore
-    public Boolean getExcludeMatchedPattern() {
+    public CharSequence getExcludeMatchedPattern() {
         return excludeMatchedPattern;
     }
 
@@ -109,11 +109,11 @@ public class ProjectWebhookFilter implements Property<ProjectWebhookFilter>
      * 
      */
     @JsonIgnore
-    public void setExcludeMatchedPattern(Boolean excludeMatchedPattern) {
+    public void setExcludeMatchedPattern(CharSequence excludeMatchedPattern) {
         this.excludeMatchedPattern = excludeMatchedPattern;
     }
 
-    public ProjectWebhookFilter withExcludeMatchedPattern(Boolean excludeMatchedPattern) {
+    public ProjectWebhookFilter withExcludeMatchedPattern(CharSequence excludeMatchedPattern) {
         this.excludeMatchedPattern = excludeMatchedPattern;
         return this;
     }

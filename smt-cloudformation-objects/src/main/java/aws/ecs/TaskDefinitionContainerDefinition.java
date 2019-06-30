@@ -71,14 +71,14 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
      */
     @JsonProperty("Cpu")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-cpu")
-    private Integer cpu;
+    private Number cpu;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-disablenetworking
      * 
      */
     @JsonProperty("DisableNetworking")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-disablenetworking")
-    private Boolean disableNetworking;
+    private CharSequence disableNetworking;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-dnssearchdomains
      * 
@@ -101,7 +101,7 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
      */
     @JsonProperty("DockerLabels")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-dockerlabels")
-    private Map<String, String> dockerLabels;
+    private Map<String, CharSequence> dockerLabels;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-dockersecurityoptions
      * 
@@ -132,7 +132,7 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
      */
     @JsonProperty("Essential")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-essential")
-    private Boolean essential;
+    private CharSequence essential;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-extrahosts
      * 
@@ -196,14 +196,14 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
      */
     @JsonProperty("Memory")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-memory")
-    private Integer memory;
+    private Number memory;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-memoryreservation
      * 
      */
     @JsonProperty("MemoryReservation")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-memoryreservation")
-    private Integer memoryReservation;
+    private Number memoryReservation;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-mountpoints
      * 
@@ -233,14 +233,14 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
      */
     @JsonProperty("Privileged")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-privileged")
-    private Boolean privileged;
+    private CharSequence privileged;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-readonlyrootfilesystem
      * 
      */
     @JsonProperty("ReadonlyRootFilesystem")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-readonlyrootfilesystem")
-    private Boolean readonlyRootFilesystem;
+    private CharSequence readonlyRootFilesystem;
     /**
      * TaskDefinitionRepositoryCredentials
      * <p>
@@ -309,7 +309,7 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
      * 
      */
     @JsonIgnore
-    public Integer getCpu() {
+    public Number getCpu() {
         return cpu;
     }
 
@@ -318,11 +318,11 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
      * 
      */
     @JsonIgnore
-    public void setCpu(Integer cpu) {
+    public void setCpu(Number cpu) {
         this.cpu = cpu;
     }
 
-    public TaskDefinitionContainerDefinition withCpu(Integer cpu) {
+    public TaskDefinitionContainerDefinition withCpu(Number cpu) {
         this.cpu = cpu;
         return this;
     }
@@ -332,7 +332,7 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
      * 
      */
     @JsonIgnore
-    public Boolean getDisableNetworking() {
+    public CharSequence getDisableNetworking() {
         return disableNetworking;
     }
 
@@ -341,11 +341,11 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
      * 
      */
     @JsonIgnore
-    public void setDisableNetworking(Boolean disableNetworking) {
+    public void setDisableNetworking(CharSequence disableNetworking) {
         this.disableNetworking = disableNetworking;
     }
 
-    public TaskDefinitionContainerDefinition withDisableNetworking(Boolean disableNetworking) {
+    public TaskDefinitionContainerDefinition withDisableNetworking(CharSequence disableNetworking) {
         this.disableNetworking = disableNetworking;
         return this;
     }
@@ -401,7 +401,7 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
      * 
      */
     @JsonIgnore
-    public Map<String, String> getDockerLabels() {
+    public Map<String, CharSequence> getDockerLabels() {
         return dockerLabels;
     }
 
@@ -410,11 +410,11 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
      * 
      */
     @JsonIgnore
-    public void setDockerLabels(Map<String, String> dockerLabels) {
+    public void setDockerLabels(Map<String, CharSequence> dockerLabels) {
         this.dockerLabels = dockerLabels;
     }
 
-    public TaskDefinitionContainerDefinition withDockerLabels(Map<String, String> dockerLabels) {
+    public TaskDefinitionContainerDefinition withDockerLabels(Map<String, CharSequence> dockerLabels) {
         this.dockerLabels = dockerLabels;
         return this;
     }
@@ -493,7 +493,7 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
      * 
      */
     @JsonIgnore
-    public Boolean getEssential() {
+    public CharSequence getEssential() {
         return essential;
     }
 
@@ -502,11 +502,11 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
      * 
      */
     @JsonIgnore
-    public void setEssential(Boolean essential) {
+    public void setEssential(CharSequence essential) {
         this.essential = essential;
     }
 
-    public TaskDefinitionContainerDefinition withEssential(Boolean essential) {
+    public TaskDefinitionContainerDefinition withEssential(CharSequence essential) {
         this.essential = essential;
         return this;
     }
@@ -689,7 +689,7 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
      * 
      */
     @JsonIgnore
-    public Integer getMemory() {
+    public Number getMemory() {
         return memory;
     }
 
@@ -698,11 +698,11 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
      * 
      */
     @JsonIgnore
-    public void setMemory(Integer memory) {
+    public void setMemory(Number memory) {
         this.memory = memory;
     }
 
-    public TaskDefinitionContainerDefinition withMemory(Integer memory) {
+    public TaskDefinitionContainerDefinition withMemory(Number memory) {
         this.memory = memory;
         return this;
     }
@@ -712,7 +712,7 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
      * 
      */
     @JsonIgnore
-    public Integer getMemoryReservation() {
+    public Number getMemoryReservation() {
         return memoryReservation;
     }
 
@@ -721,11 +721,11 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
      * 
      */
     @JsonIgnore
-    public void setMemoryReservation(Integer memoryReservation) {
+    public void setMemoryReservation(Number memoryReservation) {
         this.memoryReservation = memoryReservation;
     }
 
-    public TaskDefinitionContainerDefinition withMemoryReservation(Integer memoryReservation) {
+    public TaskDefinitionContainerDefinition withMemoryReservation(Number memoryReservation) {
         this.memoryReservation = memoryReservation;
         return this;
     }
@@ -804,7 +804,7 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
      * 
      */
     @JsonIgnore
-    public Boolean getPrivileged() {
+    public CharSequence getPrivileged() {
         return privileged;
     }
 
@@ -813,11 +813,11 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
      * 
      */
     @JsonIgnore
-    public void setPrivileged(Boolean privileged) {
+    public void setPrivileged(CharSequence privileged) {
         this.privileged = privileged;
     }
 
-    public TaskDefinitionContainerDefinition withPrivileged(Boolean privileged) {
+    public TaskDefinitionContainerDefinition withPrivileged(CharSequence privileged) {
         this.privileged = privileged;
         return this;
     }
@@ -827,7 +827,7 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
      * 
      */
     @JsonIgnore
-    public Boolean getReadonlyRootFilesystem() {
+    public CharSequence getReadonlyRootFilesystem() {
         return readonlyRootFilesystem;
     }
 
@@ -836,11 +836,11 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
      * 
      */
     @JsonIgnore
-    public void setReadonlyRootFilesystem(Boolean readonlyRootFilesystem) {
+    public void setReadonlyRootFilesystem(CharSequence readonlyRootFilesystem) {
         this.readonlyRootFilesystem = readonlyRootFilesystem;
     }
 
-    public TaskDefinitionContainerDefinition withReadonlyRootFilesystem(Boolean readonlyRootFilesystem) {
+    public TaskDefinitionContainerDefinition withReadonlyRootFilesystem(CharSequence readonlyRootFilesystem) {
         this.readonlyRootFilesystem = readonlyRootFilesystem;
         return this;
     }

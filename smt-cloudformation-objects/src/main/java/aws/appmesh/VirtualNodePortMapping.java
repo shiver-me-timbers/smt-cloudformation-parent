@@ -32,7 +32,7 @@ public class VirtualNodePortMapping implements Property<VirtualNodePortMapping>
      */
     @JsonProperty("Port")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-portmapping.html#cfn-appmesh-virtualnode-portmapping-port")
-    private Integer port;
+    private Number port;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-portmapping.html#cfn-appmesh-virtualnode-portmapping-protocol
      * 
@@ -46,7 +46,7 @@ public class VirtualNodePortMapping implements Property<VirtualNodePortMapping>
      * 
      */
     @JsonIgnore
-    public Integer getPort() {
+    public Number getPort() {
         return port;
     }
 
@@ -55,11 +55,11 @@ public class VirtualNodePortMapping implements Property<VirtualNodePortMapping>
      * 
      */
     @JsonIgnore
-    public void setPort(Integer port) {
+    public void setPort(Number port) {
         this.port = port;
     }
 
-    public VirtualNodePortMapping withPort(Integer port) {
+    public VirtualNodePortMapping withPort(Number port) {
         this.port = port;
         return this;
     }

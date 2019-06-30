@@ -40,7 +40,7 @@ public class AutoScalingGroupTagProperty implements Property<AutoScalingGroupTag
      */
     @JsonProperty("PropagateAtLaunch")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-tags.html#cfn-as-tags-PropagateAtLaunch")
-    private Boolean propagateAtLaunch;
+    private CharSequence propagateAtLaunch;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-tags.html#cfn-as-tags-Value
      * 
@@ -77,7 +77,7 @@ public class AutoScalingGroupTagProperty implements Property<AutoScalingGroupTag
      * 
      */
     @JsonIgnore
-    public Boolean getPropagateAtLaunch() {
+    public CharSequence getPropagateAtLaunch() {
         return propagateAtLaunch;
     }
 
@@ -86,11 +86,11 @@ public class AutoScalingGroupTagProperty implements Property<AutoScalingGroupTag
      * 
      */
     @JsonIgnore
-    public void setPropagateAtLaunch(Boolean propagateAtLaunch) {
+    public void setPropagateAtLaunch(CharSequence propagateAtLaunch) {
         this.propagateAtLaunch = propagateAtLaunch;
     }
 
-    public AutoScalingGroupTagProperty withPropagateAtLaunch(Boolean propagateAtLaunch) {
+    public AutoScalingGroupTagProperty withPropagateAtLaunch(CharSequence propagateAtLaunch) {
         this.propagateAtLaunch = propagateAtLaunch;
         return this;
     }

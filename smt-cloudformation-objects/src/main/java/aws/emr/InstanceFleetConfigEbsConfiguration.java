@@ -43,7 +43,7 @@ public class InstanceFleetConfigEbsConfiguration implements Property<InstanceFle
      */
     @JsonProperty("EbsOptimized")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-ebsconfiguration.html#cfn-elasticmapreduce-instancefleetconfig-ebsconfiguration-ebsoptimized")
-    private Boolean ebsOptimized;
+    private CharSequence ebsOptimized;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-ebsconfiguration.html#cfn-elasticmapreduce-instancefleetconfig-ebsconfiguration-ebsblockdeviceconfigs
@@ -73,7 +73,7 @@ public class InstanceFleetConfigEbsConfiguration implements Property<InstanceFle
      * 
      */
     @JsonIgnore
-    public Boolean getEbsOptimized() {
+    public CharSequence getEbsOptimized() {
         return ebsOptimized;
     }
 
@@ -82,11 +82,11 @@ public class InstanceFleetConfigEbsConfiguration implements Property<InstanceFle
      * 
      */
     @JsonIgnore
-    public void setEbsOptimized(Boolean ebsOptimized) {
+    public void setEbsOptimized(CharSequence ebsOptimized) {
         this.ebsOptimized = ebsOptimized;
     }
 
-    public InstanceFleetConfigEbsConfiguration withEbsOptimized(Boolean ebsOptimized) {
+    public InstanceFleetConfigEbsConfiguration withEbsOptimized(CharSequence ebsOptimized) {
         this.ebsOptimized = ebsOptimized;
         return this;
     }

@@ -32,21 +32,21 @@ public class InstanceGroupConfigScalingConstraints implements Property<InstanceG
      */
     @JsonProperty("MaxCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-scalingconstraints.html#cfn-elasticmapreduce-instancegroupconfig-scalingconstraints-maxcapacity")
-    private Integer maxCapacity;
+    private Number maxCapacity;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-scalingconstraints.html#cfn-elasticmapreduce-instancegroupconfig-scalingconstraints-mincapacity
      * 
      */
     @JsonProperty("MinCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-scalingconstraints.html#cfn-elasticmapreduce-instancegroupconfig-scalingconstraints-mincapacity")
-    private Integer minCapacity;
+    private Number minCapacity;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-scalingconstraints.html#cfn-elasticmapreduce-instancegroupconfig-scalingconstraints-maxcapacity
      * 
      */
     @JsonIgnore
-    public Integer getMaxCapacity() {
+    public Number getMaxCapacity() {
         return maxCapacity;
     }
 
@@ -55,11 +55,11 @@ public class InstanceGroupConfigScalingConstraints implements Property<InstanceG
      * 
      */
     @JsonIgnore
-    public void setMaxCapacity(Integer maxCapacity) {
+    public void setMaxCapacity(Number maxCapacity) {
         this.maxCapacity = maxCapacity;
     }
 
-    public InstanceGroupConfigScalingConstraints withMaxCapacity(Integer maxCapacity) {
+    public InstanceGroupConfigScalingConstraints withMaxCapacity(Number maxCapacity) {
         this.maxCapacity = maxCapacity;
         return this;
     }
@@ -69,7 +69,7 @@ public class InstanceGroupConfigScalingConstraints implements Property<InstanceG
      * 
      */
     @JsonIgnore
-    public Integer getMinCapacity() {
+    public Number getMinCapacity() {
         return minCapacity;
     }
 
@@ -78,11 +78,11 @@ public class InstanceGroupConfigScalingConstraints implements Property<InstanceG
      * 
      */
     @JsonIgnore
-    public void setMinCapacity(Integer minCapacity) {
+    public void setMinCapacity(Number minCapacity) {
         this.minCapacity = minCapacity;
     }
 
-    public InstanceGroupConfigScalingConstraints withMinCapacity(Integer minCapacity) {
+    public InstanceGroupConfigScalingConstraints withMinCapacity(Number minCapacity) {
         this.minCapacity = minCapacity;
         return this;
     }

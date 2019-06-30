@@ -34,7 +34,7 @@ public class PipelineLambda implements Property<PipelineLambda>
      */
     @JsonProperty("BatchSize")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-lambda.html#cfn-iotanalytics-pipeline-lambda-batchsize")
-    private Integer batchSize;
+    private Number batchSize;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-lambda.html#cfn-iotanalytics-pipeline-lambda-next
      * 
@@ -62,7 +62,7 @@ public class PipelineLambda implements Property<PipelineLambda>
      * 
      */
     @JsonIgnore
-    public Integer getBatchSize() {
+    public Number getBatchSize() {
         return batchSize;
     }
 
@@ -71,11 +71,11 @@ public class PipelineLambda implements Property<PipelineLambda>
      * 
      */
     @JsonIgnore
-    public void setBatchSize(Integer batchSize) {
+    public void setBatchSize(Number batchSize) {
         this.batchSize = batchSize;
     }
 
-    public PipelineLambda withBatchSize(Integer batchSize) {
+    public PipelineLambda withBatchSize(Number batchSize) {
         this.batchSize = batchSize;
         return this;
     }

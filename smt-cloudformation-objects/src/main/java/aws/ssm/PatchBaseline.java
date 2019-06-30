@@ -117,7 +117,7 @@ public class PatchBaseline {
      */
     @JsonProperty("ApprovedPatchesEnableNonSecurity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-approvedpatchesenablenonsecurity")
-    private Boolean approvedPatchesEnableNonSecurity;
+    private CharSequence approvedPatchesEnableNonSecurity;
     /**
      * PatchBaselinePatchFilterGroup
      * <p>
@@ -374,7 +374,7 @@ public class PatchBaseline {
      * 
      */
     @JsonIgnore
-    public Boolean getApprovedPatchesEnableNonSecurity() {
+    public CharSequence getApprovedPatchesEnableNonSecurity() {
         return approvedPatchesEnableNonSecurity;
     }
 
@@ -383,11 +383,11 @@ public class PatchBaseline {
      * 
      */
     @JsonIgnore
-    public void setApprovedPatchesEnableNonSecurity(Boolean approvedPatchesEnableNonSecurity) {
+    public void setApprovedPatchesEnableNonSecurity(CharSequence approvedPatchesEnableNonSecurity) {
         this.approvedPatchesEnableNonSecurity = approvedPatchesEnableNonSecurity;
     }
 
-    public PatchBaseline withApprovedPatchesEnableNonSecurity(Boolean approvedPatchesEnableNonSecurity) {
+    public PatchBaseline withApprovedPatchesEnableNonSecurity(CharSequence approvedPatchesEnableNonSecurity) {
         this.approvedPatchesEnableNonSecurity = approvedPatchesEnableNonSecurity;
         return this;
     }

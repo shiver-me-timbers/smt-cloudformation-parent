@@ -32,7 +32,7 @@ public class VirtualRouterPortMapping implements Property<VirtualRouterPortMappi
      */
     @JsonProperty("Port")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualrouter-portmapping.html#cfn-appmesh-virtualrouter-portmapping-port")
-    private Integer port;
+    private Number port;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualrouter-portmapping.html#cfn-appmesh-virtualrouter-portmapping-protocol
      * 
@@ -46,7 +46,7 @@ public class VirtualRouterPortMapping implements Property<VirtualRouterPortMappi
      * 
      */
     @JsonIgnore
-    public Integer getPort() {
+    public Number getPort() {
         return port;
     }
 
@@ -55,11 +55,11 @@ public class VirtualRouterPortMapping implements Property<VirtualRouterPortMappi
      * 
      */
     @JsonIgnore
-    public void setPort(Integer port) {
+    public void setPort(Number port) {
         this.port = port;
     }
 
-    public VirtualRouterPortMapping withPort(Integer port) {
+    public VirtualRouterPortMapping withPort(Number port) {
         this.port = port;
         return this;
     }

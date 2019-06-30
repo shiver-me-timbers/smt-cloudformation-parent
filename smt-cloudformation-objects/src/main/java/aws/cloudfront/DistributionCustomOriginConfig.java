@@ -38,21 +38,21 @@ public class DistributionCustomOriginConfig implements Property<DistributionCust
      */
     @JsonProperty("OriginReadTimeout")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customoriginconfig.html#cfn-cloudfront-distribution-customoriginconfig-originreadtimeout")
-    private Integer originReadTimeout;
+    private Number originReadTimeout;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customoriginconfig.html#cfn-cloudfront-distribution-customoriginconfig-httpsport
      * 
      */
     @JsonProperty("HTTPSPort")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customoriginconfig.html#cfn-cloudfront-distribution-customoriginconfig-httpsport")
-    private Integer hTTPSPort;
+    private Number hTTPSPort;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customoriginconfig.html#cfn-cloudfront-distribution-customoriginconfig-originkeepalivetimeout
      * 
      */
     @JsonProperty("OriginKeepaliveTimeout")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customoriginconfig.html#cfn-cloudfront-distribution-customoriginconfig-originkeepalivetimeout")
-    private Integer originKeepaliveTimeout;
+    private Number originKeepaliveTimeout;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customoriginconfig.html#cfn-cloudfront-distribution-customoriginconfig-originsslprotocols
      * 
@@ -66,7 +66,7 @@ public class DistributionCustomOriginConfig implements Property<DistributionCust
      */
     @JsonProperty("HTTPPort")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customoriginconfig.html#cfn-cloudfront-distribution-customoriginconfig-httpport")
-    private Integer hTTPPort;
+    private Number hTTPPort;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customoriginconfig.html#cfn-cloudfront-distribution-customoriginconfig-originprotocolpolicy
      * 
@@ -80,7 +80,7 @@ public class DistributionCustomOriginConfig implements Property<DistributionCust
      * 
      */
     @JsonIgnore
-    public Integer getOriginReadTimeout() {
+    public Number getOriginReadTimeout() {
         return originReadTimeout;
     }
 
@@ -89,11 +89,11 @@ public class DistributionCustomOriginConfig implements Property<DistributionCust
      * 
      */
     @JsonIgnore
-    public void setOriginReadTimeout(Integer originReadTimeout) {
+    public void setOriginReadTimeout(Number originReadTimeout) {
         this.originReadTimeout = originReadTimeout;
     }
 
-    public DistributionCustomOriginConfig withOriginReadTimeout(Integer originReadTimeout) {
+    public DistributionCustomOriginConfig withOriginReadTimeout(Number originReadTimeout) {
         this.originReadTimeout = originReadTimeout;
         return this;
     }
@@ -103,7 +103,7 @@ public class DistributionCustomOriginConfig implements Property<DistributionCust
      * 
      */
     @JsonIgnore
-    public Integer getHTTPSPort() {
+    public Number getHTTPSPort() {
         return hTTPSPort;
     }
 
@@ -112,11 +112,11 @@ public class DistributionCustomOriginConfig implements Property<DistributionCust
      * 
      */
     @JsonIgnore
-    public void setHTTPSPort(Integer hTTPSPort) {
+    public void setHTTPSPort(Number hTTPSPort) {
         this.hTTPSPort = hTTPSPort;
     }
 
-    public DistributionCustomOriginConfig withHTTPSPort(Integer hTTPSPort) {
+    public DistributionCustomOriginConfig withHTTPSPort(Number hTTPSPort) {
         this.hTTPSPort = hTTPSPort;
         return this;
     }
@@ -126,7 +126,7 @@ public class DistributionCustomOriginConfig implements Property<DistributionCust
      * 
      */
     @JsonIgnore
-    public Integer getOriginKeepaliveTimeout() {
+    public Number getOriginKeepaliveTimeout() {
         return originKeepaliveTimeout;
     }
 
@@ -135,11 +135,11 @@ public class DistributionCustomOriginConfig implements Property<DistributionCust
      * 
      */
     @JsonIgnore
-    public void setOriginKeepaliveTimeout(Integer originKeepaliveTimeout) {
+    public void setOriginKeepaliveTimeout(Number originKeepaliveTimeout) {
         this.originKeepaliveTimeout = originKeepaliveTimeout;
     }
 
-    public DistributionCustomOriginConfig withOriginKeepaliveTimeout(Integer originKeepaliveTimeout) {
+    public DistributionCustomOriginConfig withOriginKeepaliveTimeout(Number originKeepaliveTimeout) {
         this.originKeepaliveTimeout = originKeepaliveTimeout;
         return this;
     }
@@ -172,7 +172,7 @@ public class DistributionCustomOriginConfig implements Property<DistributionCust
      * 
      */
     @JsonIgnore
-    public Integer getHTTPPort() {
+    public Number getHTTPPort() {
         return hTTPPort;
     }
 
@@ -181,11 +181,11 @@ public class DistributionCustomOriginConfig implements Property<DistributionCust
      * 
      */
     @JsonIgnore
-    public void setHTTPPort(Integer hTTPPort) {
+    public void setHTTPPort(Number hTTPPort) {
         this.hTTPPort = hTTPPort;
     }
 
-    public DistributionCustomOriginConfig withHTTPPort(Integer hTTPPort) {
+    public DistributionCustomOriginConfig withHTTPPort(Number hTTPPort) {
         this.hTTPPort = hTTPPort;
         return this;
     }

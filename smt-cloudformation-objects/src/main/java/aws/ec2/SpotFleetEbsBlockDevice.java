@@ -36,21 +36,21 @@ public class SpotFleetEbsBlockDevice implements Property<SpotFleetEbsBlockDevice
      */
     @JsonProperty("DeleteOnTermination")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-blockdevicemappings-ebs.html#cfn-ec2-spotfleet-ebsblockdevice-deleteontermination")
-    private Boolean deleteOnTermination;
+    private CharSequence deleteOnTermination;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-blockdevicemappings-ebs.html#cfn-ec2-spotfleet-ebsblockdevice-encrypted
      * 
      */
     @JsonProperty("Encrypted")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-blockdevicemappings-ebs.html#cfn-ec2-spotfleet-ebsblockdevice-encrypted")
-    private Boolean encrypted;
+    private CharSequence encrypted;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-blockdevicemappings-ebs.html#cfn-ec2-spotfleet-ebsblockdevice-iops
      * 
      */
     @JsonProperty("Iops")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-blockdevicemappings-ebs.html#cfn-ec2-spotfleet-ebsblockdevice-iops")
-    private Integer iops;
+    private Number iops;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-blockdevicemappings-ebs.html#cfn-ec2-spotfleet-ebsblockdevice-snapshotid
      * 
@@ -64,7 +64,7 @@ public class SpotFleetEbsBlockDevice implements Property<SpotFleetEbsBlockDevice
      */
     @JsonProperty("VolumeSize")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-blockdevicemappings-ebs.html#cfn-ec2-spotfleet-ebsblockdevice-volumesize")
-    private Integer volumeSize;
+    private Number volumeSize;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-blockdevicemappings-ebs.html#cfn-ec2-spotfleet-ebsblockdevice-volumetype
      * 
@@ -78,7 +78,7 @@ public class SpotFleetEbsBlockDevice implements Property<SpotFleetEbsBlockDevice
      * 
      */
     @JsonIgnore
-    public Boolean getDeleteOnTermination() {
+    public CharSequence getDeleteOnTermination() {
         return deleteOnTermination;
     }
 
@@ -87,11 +87,11 @@ public class SpotFleetEbsBlockDevice implements Property<SpotFleetEbsBlockDevice
      * 
      */
     @JsonIgnore
-    public void setDeleteOnTermination(Boolean deleteOnTermination) {
+    public void setDeleteOnTermination(CharSequence deleteOnTermination) {
         this.deleteOnTermination = deleteOnTermination;
     }
 
-    public SpotFleetEbsBlockDevice withDeleteOnTermination(Boolean deleteOnTermination) {
+    public SpotFleetEbsBlockDevice withDeleteOnTermination(CharSequence deleteOnTermination) {
         this.deleteOnTermination = deleteOnTermination;
         return this;
     }
@@ -101,7 +101,7 @@ public class SpotFleetEbsBlockDevice implements Property<SpotFleetEbsBlockDevice
      * 
      */
     @JsonIgnore
-    public Boolean getEncrypted() {
+    public CharSequence getEncrypted() {
         return encrypted;
     }
 
@@ -110,11 +110,11 @@ public class SpotFleetEbsBlockDevice implements Property<SpotFleetEbsBlockDevice
      * 
      */
     @JsonIgnore
-    public void setEncrypted(Boolean encrypted) {
+    public void setEncrypted(CharSequence encrypted) {
         this.encrypted = encrypted;
     }
 
-    public SpotFleetEbsBlockDevice withEncrypted(Boolean encrypted) {
+    public SpotFleetEbsBlockDevice withEncrypted(CharSequence encrypted) {
         this.encrypted = encrypted;
         return this;
     }
@@ -124,7 +124,7 @@ public class SpotFleetEbsBlockDevice implements Property<SpotFleetEbsBlockDevice
      * 
      */
     @JsonIgnore
-    public Integer getIops() {
+    public Number getIops() {
         return iops;
     }
 
@@ -133,11 +133,11 @@ public class SpotFleetEbsBlockDevice implements Property<SpotFleetEbsBlockDevice
      * 
      */
     @JsonIgnore
-    public void setIops(Integer iops) {
+    public void setIops(Number iops) {
         this.iops = iops;
     }
 
-    public SpotFleetEbsBlockDevice withIops(Integer iops) {
+    public SpotFleetEbsBlockDevice withIops(Number iops) {
         this.iops = iops;
         return this;
     }
@@ -170,7 +170,7 @@ public class SpotFleetEbsBlockDevice implements Property<SpotFleetEbsBlockDevice
      * 
      */
     @JsonIgnore
-    public Integer getVolumeSize() {
+    public Number getVolumeSize() {
         return volumeSize;
     }
 
@@ -179,11 +179,11 @@ public class SpotFleetEbsBlockDevice implements Property<SpotFleetEbsBlockDevice
      * 
      */
     @JsonIgnore
-    public void setVolumeSize(Integer volumeSize) {
+    public void setVolumeSize(Number volumeSize) {
         this.volumeSize = volumeSize;
     }
 
-    public SpotFleetEbsBlockDevice withVolumeSize(Integer volumeSize) {
+    public SpotFleetEbsBlockDevice withVolumeSize(Number volumeSize) {
         this.volumeSize = volumeSize;
         return this;
     }

@@ -34,7 +34,7 @@ public class PatchBaselineRule implements Property<PatchBaselineRule>
      */
     @JsonProperty("EnableNonSecurity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html#cfn-ssm-patchbaseline-rule-enablenonsecurity")
-    private Boolean enableNonSecurity;
+    private CharSequence enableNonSecurity;
     /**
      * PatchBaselinePatchFilterGroup
      * <p>
@@ -50,7 +50,7 @@ public class PatchBaselineRule implements Property<PatchBaselineRule>
      */
     @JsonProperty("ApproveAfterDays")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html#cfn-ssm-patchbaseline-rule-approveafterdays")
-    private Integer approveAfterDays;
+    private Number approveAfterDays;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html#cfn-ssm-patchbaseline-rule-compliancelevel
      * 
@@ -64,7 +64,7 @@ public class PatchBaselineRule implements Property<PatchBaselineRule>
      * 
      */
     @JsonIgnore
-    public Boolean getEnableNonSecurity() {
+    public CharSequence getEnableNonSecurity() {
         return enableNonSecurity;
     }
 
@@ -73,11 +73,11 @@ public class PatchBaselineRule implements Property<PatchBaselineRule>
      * 
      */
     @JsonIgnore
-    public void setEnableNonSecurity(Boolean enableNonSecurity) {
+    public void setEnableNonSecurity(CharSequence enableNonSecurity) {
         this.enableNonSecurity = enableNonSecurity;
     }
 
-    public PatchBaselineRule withEnableNonSecurity(Boolean enableNonSecurity) {
+    public PatchBaselineRule withEnableNonSecurity(CharSequence enableNonSecurity) {
         this.enableNonSecurity = enableNonSecurity;
         return this;
     }
@@ -114,7 +114,7 @@ public class PatchBaselineRule implements Property<PatchBaselineRule>
      * 
      */
     @JsonIgnore
-    public Integer getApproveAfterDays() {
+    public Number getApproveAfterDays() {
         return approveAfterDays;
     }
 
@@ -123,11 +123,11 @@ public class PatchBaselineRule implements Property<PatchBaselineRule>
      * 
      */
     @JsonIgnore
-    public void setApproveAfterDays(Integer approveAfterDays) {
+    public void setApproveAfterDays(Number approveAfterDays) {
         this.approveAfterDays = approveAfterDays;
     }
 
-    public PatchBaselineRule withApproveAfterDays(Integer approveAfterDays) {
+    public PatchBaselineRule withApproveAfterDays(Number approveAfterDays) {
         this.approveAfterDays = approveAfterDays;
         return this;
     }

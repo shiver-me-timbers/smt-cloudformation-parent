@@ -77,14 +77,14 @@ public class InstanceFleetConfig {
      */
     @JsonProperty("TargetOnDemandCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-targetondemandcapacity")
-    private Integer targetOnDemandCapacity;
+    private Number targetOnDemandCapacity;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-targetspotcapacity
      * 
      */
     @JsonProperty("TargetSpotCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-targetspotcapacity")
-    private Integer targetSpotCapacity;
+    private Number targetSpotCapacity;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-clusterid
@@ -210,7 +210,7 @@ public class InstanceFleetConfig {
      * 
      */
     @JsonIgnore
-    public Integer getTargetOnDemandCapacity() {
+    public Number getTargetOnDemandCapacity() {
         return targetOnDemandCapacity;
     }
 
@@ -219,11 +219,11 @@ public class InstanceFleetConfig {
      * 
      */
     @JsonIgnore
-    public void setTargetOnDemandCapacity(Integer targetOnDemandCapacity) {
+    public void setTargetOnDemandCapacity(Number targetOnDemandCapacity) {
         this.targetOnDemandCapacity = targetOnDemandCapacity;
     }
 
-    public InstanceFleetConfig withTargetOnDemandCapacity(Integer targetOnDemandCapacity) {
+    public InstanceFleetConfig withTargetOnDemandCapacity(Number targetOnDemandCapacity) {
         this.targetOnDemandCapacity = targetOnDemandCapacity;
         return this;
     }
@@ -233,7 +233,7 @@ public class InstanceFleetConfig {
      * 
      */
     @JsonIgnore
-    public Integer getTargetSpotCapacity() {
+    public Number getTargetSpotCapacity() {
         return targetSpotCapacity;
     }
 
@@ -242,11 +242,11 @@ public class InstanceFleetConfig {
      * 
      */
     @JsonIgnore
-    public void setTargetSpotCapacity(Integer targetSpotCapacity) {
+    public void setTargetSpotCapacity(Number targetSpotCapacity) {
         this.targetSpotCapacity = targetSpotCapacity;
     }
 
-    public InstanceFleetConfig withTargetSpotCapacity(Integer targetSpotCapacity) {
+    public InstanceFleetConfig withTargetSpotCapacity(Number targetSpotCapacity) {
         this.targetSpotCapacity = targetSpotCapacity;
         return this;
     }

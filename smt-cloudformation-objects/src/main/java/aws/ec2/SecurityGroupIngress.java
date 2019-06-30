@@ -61,7 +61,7 @@ public class SecurityGroupIngress implements Property<SecurityGroupIngress>
      */
     @JsonProperty("FromPort")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-fromport")
-    private Integer fromPort;
+    private Number fromPort;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-ipprotocol
      * 
@@ -103,7 +103,7 @@ public class SecurityGroupIngress implements Property<SecurityGroupIngress>
      */
     @JsonProperty("ToPort")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-toport")
-    private Integer toPort;
+    private Number toPort;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-cidrip
@@ -179,7 +179,7 @@ public class SecurityGroupIngress implements Property<SecurityGroupIngress>
      * 
      */
     @JsonIgnore
-    public Integer getFromPort() {
+    public Number getFromPort() {
         return fromPort;
     }
 
@@ -188,11 +188,11 @@ public class SecurityGroupIngress implements Property<SecurityGroupIngress>
      * 
      */
     @JsonIgnore
-    public void setFromPort(Integer fromPort) {
+    public void setFromPort(Number fromPort) {
         this.fromPort = fromPort;
     }
 
-    public SecurityGroupIngress withFromPort(Integer fromPort) {
+    public SecurityGroupIngress withFromPort(Number fromPort) {
         this.fromPort = fromPort;
         return this;
     }
@@ -317,7 +317,7 @@ public class SecurityGroupIngress implements Property<SecurityGroupIngress>
      * 
      */
     @JsonIgnore
-    public Integer getToPort() {
+    public Number getToPort() {
         return toPort;
     }
 
@@ -326,11 +326,11 @@ public class SecurityGroupIngress implements Property<SecurityGroupIngress>
      * 
      */
     @JsonIgnore
-    public void setToPort(Integer toPort) {
+    public void setToPort(Number toPort) {
         this.toPort = toPort;
     }
 
-    public SecurityGroupIngress withToPort(Integer toPort) {
+    public SecurityGroupIngress withToPort(Number toPort) {
         this.toPort = toPort;
         return this;
     }

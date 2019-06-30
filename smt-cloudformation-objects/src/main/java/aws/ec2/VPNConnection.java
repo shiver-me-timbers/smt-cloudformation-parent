@@ -48,7 +48,7 @@ public class VPNConnection {
      */
     @JsonProperty("StaticRoutesOnly")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-StaticRoutesOnly")
-    private Boolean staticRoutesOnly;
+    private CharSequence staticRoutesOnly;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-tags
      * 
@@ -107,7 +107,7 @@ public class VPNConnection {
      * 
      */
     @JsonIgnore
-    public Boolean getStaticRoutesOnly() {
+    public CharSequence getStaticRoutesOnly() {
         return staticRoutesOnly;
     }
 
@@ -116,11 +116,11 @@ public class VPNConnection {
      * 
      */
     @JsonIgnore
-    public void setStaticRoutesOnly(Boolean staticRoutesOnly) {
+    public void setStaticRoutesOnly(CharSequence staticRoutesOnly) {
         this.staticRoutesOnly = staticRoutesOnly;
     }
 
-    public VPNConnection withStaticRoutesOnly(Boolean staticRoutesOnly) {
+    public VPNConnection withStaticRoutesOnly(CharSequence staticRoutesOnly) {
         this.staticRoutesOnly = staticRoutesOnly;
         return this;
     }

@@ -36,7 +36,7 @@ public class CustomerGateway {
      */
     @JsonProperty("BgpAsn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-customer-gateway.html#cfn-ec2-customergateway-bgpasn")
-    private Integer bgpAsn;
+    private Number bgpAsn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-customer-gateway.html#cfn-ec2-customergateway-ipaddress
      * 
@@ -64,7 +64,7 @@ public class CustomerGateway {
      * 
      */
     @JsonIgnore
-    public Integer getBgpAsn() {
+    public Number getBgpAsn() {
         return bgpAsn;
     }
 
@@ -73,11 +73,11 @@ public class CustomerGateway {
      * 
      */
     @JsonIgnore
-    public void setBgpAsn(Integer bgpAsn) {
+    public void setBgpAsn(Number bgpAsn) {
         this.bgpAsn = bgpAsn;
     }
 
-    public CustomerGateway withBgpAsn(Integer bgpAsn) {
+    public CustomerGateway withBgpAsn(Number bgpAsn) {
         this.bgpAsn = bgpAsn;
         return this;
     }

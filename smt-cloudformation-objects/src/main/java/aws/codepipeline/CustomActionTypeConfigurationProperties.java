@@ -44,7 +44,7 @@ public class CustomActionTypeConfigurationProperties implements Property<CustomA
      */
     @JsonProperty("Key")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-configurationproperties.html#cfn-codepipeline-customactiontype-configurationproperties-key")
-    private Boolean key;
+    private CharSequence key;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-configurationproperties.html#cfn-codepipeline-customactiontype-configurationproperties-name
      * 
@@ -58,21 +58,21 @@ public class CustomActionTypeConfigurationProperties implements Property<CustomA
      */
     @JsonProperty("Queryable")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-configurationproperties.html#cfn-codepipeline-customactiontype-configurationproperties-queryable")
-    private Boolean queryable;
+    private CharSequence queryable;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-configurationproperties.html#cfn-codepipeline-customactiontype-configurationproperties-required
      * 
      */
     @JsonProperty("Required")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-configurationproperties.html#cfn-codepipeline-customactiontype-configurationproperties-required")
-    private Boolean required;
+    private CharSequence required;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-configurationproperties.html#cfn-codepipeline-customactiontype-configurationproperties-secret
      * 
      */
     @JsonProperty("Secret")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-configurationproperties.html#cfn-codepipeline-customactiontype-configurationproperties-secret")
-    private Boolean secret;
+    private CharSequence secret;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-configurationproperties.html#cfn-codepipeline-customactiontype-configurationproperties-type
      * 
@@ -109,7 +109,7 @@ public class CustomActionTypeConfigurationProperties implements Property<CustomA
      * 
      */
     @JsonIgnore
-    public Boolean getKey() {
+    public CharSequence getKey() {
         return key;
     }
 
@@ -118,11 +118,11 @@ public class CustomActionTypeConfigurationProperties implements Property<CustomA
      * 
      */
     @JsonIgnore
-    public void setKey(Boolean key) {
+    public void setKey(CharSequence key) {
         this.key = key;
     }
 
-    public CustomActionTypeConfigurationProperties withKey(Boolean key) {
+    public CustomActionTypeConfigurationProperties withKey(CharSequence key) {
         this.key = key;
         return this;
     }
@@ -155,7 +155,7 @@ public class CustomActionTypeConfigurationProperties implements Property<CustomA
      * 
      */
     @JsonIgnore
-    public Boolean getQueryable() {
+    public CharSequence getQueryable() {
         return queryable;
     }
 
@@ -164,11 +164,11 @@ public class CustomActionTypeConfigurationProperties implements Property<CustomA
      * 
      */
     @JsonIgnore
-    public void setQueryable(Boolean queryable) {
+    public void setQueryable(CharSequence queryable) {
         this.queryable = queryable;
     }
 
-    public CustomActionTypeConfigurationProperties withQueryable(Boolean queryable) {
+    public CustomActionTypeConfigurationProperties withQueryable(CharSequence queryable) {
         this.queryable = queryable;
         return this;
     }
@@ -178,7 +178,7 @@ public class CustomActionTypeConfigurationProperties implements Property<CustomA
      * 
      */
     @JsonIgnore
-    public Boolean getRequired() {
+    public CharSequence getRequired() {
         return required;
     }
 
@@ -187,11 +187,11 @@ public class CustomActionTypeConfigurationProperties implements Property<CustomA
      * 
      */
     @JsonIgnore
-    public void setRequired(Boolean required) {
+    public void setRequired(CharSequence required) {
         this.required = required;
     }
 
-    public CustomActionTypeConfigurationProperties withRequired(Boolean required) {
+    public CustomActionTypeConfigurationProperties withRequired(CharSequence required) {
         this.required = required;
         return this;
     }
@@ -201,7 +201,7 @@ public class CustomActionTypeConfigurationProperties implements Property<CustomA
      * 
      */
     @JsonIgnore
-    public Boolean getSecret() {
+    public CharSequence getSecret() {
         return secret;
     }
 
@@ -210,11 +210,11 @@ public class CustomActionTypeConfigurationProperties implements Property<CustomA
      * 
      */
     @JsonIgnore
-    public void setSecret(Boolean secret) {
+    public void setSecret(CharSequence secret) {
         this.secret = secret;
     }
 
-    public CustomActionTypeConfigurationProperties withSecret(Boolean secret) {
+    public CustomActionTypeConfigurationProperties withSecret(CharSequence secret) {
         this.secret = secret;
         return this;
     }

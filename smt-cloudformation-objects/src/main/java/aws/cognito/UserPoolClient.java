@@ -37,7 +37,7 @@ public class UserPoolClient {
      */
     @JsonProperty("GenerateSecret")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-generatesecret")
-    private Boolean generateSecret;
+    private CharSequence generateSecret;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-clientname
      * 
@@ -65,7 +65,7 @@ public class UserPoolClient {
      */
     @JsonProperty("RefreshTokenValidity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-refreshtokenvalidity")
-    private Double refreshTokenValidity;
+    private Number refreshTokenValidity;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-readattributes
      * 
@@ -86,7 +86,7 @@ public class UserPoolClient {
      * 
      */
     @JsonIgnore
-    public Boolean getGenerateSecret() {
+    public CharSequence getGenerateSecret() {
         return generateSecret;
     }
 
@@ -95,11 +95,11 @@ public class UserPoolClient {
      * 
      */
     @JsonIgnore
-    public void setGenerateSecret(Boolean generateSecret) {
+    public void setGenerateSecret(CharSequence generateSecret) {
         this.generateSecret = generateSecret;
     }
 
-    public UserPoolClient withGenerateSecret(Boolean generateSecret) {
+    public UserPoolClient withGenerateSecret(CharSequence generateSecret) {
         this.generateSecret = generateSecret;
         return this;
     }
@@ -178,7 +178,7 @@ public class UserPoolClient {
      * 
      */
     @JsonIgnore
-    public Double getRefreshTokenValidity() {
+    public Number getRefreshTokenValidity() {
         return refreshTokenValidity;
     }
 
@@ -187,11 +187,11 @@ public class UserPoolClient {
      * 
      */
     @JsonIgnore
-    public void setRefreshTokenValidity(Double refreshTokenValidity) {
+    public void setRefreshTokenValidity(Number refreshTokenValidity) {
         this.refreshTokenValidity = refreshTokenValidity;
     }
 
-    public UserPoolClient withRefreshTokenValidity(Double refreshTokenValidity) {
+    public UserPoolClient withRefreshTokenValidity(Number refreshTokenValidity) {
         this.refreshTokenValidity = refreshTokenValidity;
         return this;
     }

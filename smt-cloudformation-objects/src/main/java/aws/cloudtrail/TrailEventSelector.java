@@ -44,7 +44,7 @@ public class TrailEventSelector implements Property<TrailEventSelector>
      */
     @JsonProperty("IncludeManagementEvents")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudtrail-trail-eventselector.html#cfn-cloudtrail-trail-eventselector-includemanagementevents")
-    private Boolean includeManagementEvents;
+    private CharSequence includeManagementEvents;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudtrail-trail-eventselector.html#cfn-cloudtrail-trail-eventselector-readwritetype
      * 
@@ -81,7 +81,7 @@ public class TrailEventSelector implements Property<TrailEventSelector>
      * 
      */
     @JsonIgnore
-    public Boolean getIncludeManagementEvents() {
+    public CharSequence getIncludeManagementEvents() {
         return includeManagementEvents;
     }
 
@@ -90,11 +90,11 @@ public class TrailEventSelector implements Property<TrailEventSelector>
      * 
      */
     @JsonIgnore
-    public void setIncludeManagementEvents(Boolean includeManagementEvents) {
+    public void setIncludeManagementEvents(CharSequence includeManagementEvents) {
         this.includeManagementEvents = includeManagementEvents;
     }
 
-    public TrailEventSelector withIncludeManagementEvents(Boolean includeManagementEvents) {
+    public TrailEventSelector withIncludeManagementEvents(CharSequence includeManagementEvents) {
         this.includeManagementEvents = includeManagementEvents;
         return this;
     }

@@ -1,11 +1,11 @@
 package aws.fn;
 
-import aws.StringProperty;
+import aws.PrimitiveProperty;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import static java.lang.String.format;
 
-public class Base64 extends StringProperty implements StringFunction {
+public class Base64 extends PrimitiveProperty implements StringFunction {
 
     @JsonProperty("Fn::Base64")
     private final CharSequence value;

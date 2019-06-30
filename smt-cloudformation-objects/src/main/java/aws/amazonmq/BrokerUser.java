@@ -50,7 +50,7 @@ public class BrokerUser implements Property<BrokerUser>
      */
     @JsonProperty("ConsoleAccess")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-user.html#cfn-amazonmq-broker-user-consoleaccess")
-    private Boolean consoleAccess;
+    private CharSequence consoleAccess;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-user.html#cfn-amazonmq-broker-user-password
      * 
@@ -110,7 +110,7 @@ public class BrokerUser implements Property<BrokerUser>
      * 
      */
     @JsonIgnore
-    public Boolean getConsoleAccess() {
+    public CharSequence getConsoleAccess() {
         return consoleAccess;
     }
 
@@ -119,11 +119,11 @@ public class BrokerUser implements Property<BrokerUser>
      * 
      */
     @JsonIgnore
-    public void setConsoleAccess(Boolean consoleAccess) {
+    public void setConsoleAccess(CharSequence consoleAccess) {
         this.consoleAccess = consoleAccess;
     }
 
-    public BrokerUser withConsoleAccess(Boolean consoleAccess) {
+    public BrokerUser withConsoleAccess(CharSequence consoleAccess) {
         this.consoleAccess = consoleAccess;
         return this;
     }

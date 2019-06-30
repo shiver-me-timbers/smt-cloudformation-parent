@@ -53,14 +53,14 @@ public class ApiKey {
      */
     @JsonProperty("Enabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-enabled")
-    private Boolean enabled;
+    private CharSequence enabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-generatedistinctid
      * 
      */
     @JsonProperty("GenerateDistinctId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-generatedistinctid")
-    private Boolean generateDistinctId;
+    private CharSequence generateDistinctId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-name
      * 
@@ -135,7 +135,7 @@ public class ApiKey {
      * 
      */
     @JsonIgnore
-    public Boolean getEnabled() {
+    public CharSequence getEnabled() {
         return enabled;
     }
 
@@ -144,11 +144,11 @@ public class ApiKey {
      * 
      */
     @JsonIgnore
-    public void setEnabled(Boolean enabled) {
+    public void setEnabled(CharSequence enabled) {
         this.enabled = enabled;
     }
 
-    public ApiKey withEnabled(Boolean enabled) {
+    public ApiKey withEnabled(CharSequence enabled) {
         this.enabled = enabled;
         return this;
     }
@@ -158,7 +158,7 @@ public class ApiKey {
      * 
      */
     @JsonIgnore
-    public Boolean getGenerateDistinctId() {
+    public CharSequence getGenerateDistinctId() {
         return generateDistinctId;
     }
 
@@ -167,11 +167,11 @@ public class ApiKey {
      * 
      */
     @JsonIgnore
-    public void setGenerateDistinctId(Boolean generateDistinctId) {
+    public void setGenerateDistinctId(CharSequence generateDistinctId) {
         this.generateDistinctId = generateDistinctId;
     }
 
-    public ApiKey withGenerateDistinctId(Boolean generateDistinctId) {
+    public ApiKey withGenerateDistinctId(CharSequence generateDistinctId) {
         this.generateDistinctId = generateDistinctId;
         return this;
     }

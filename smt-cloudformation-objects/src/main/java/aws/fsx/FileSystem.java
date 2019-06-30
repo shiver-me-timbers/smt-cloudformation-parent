@@ -48,7 +48,7 @@ public class FileSystem {
      */
     @JsonProperty("StorageCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html#cfn-fsx-filesystem-storagecapacity")
-    private Integer storageCapacity;
+    private Number storageCapacity;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html#cfn-fsx-filesystem-filesystemtype
      * 
@@ -131,7 +131,7 @@ public class FileSystem {
      * 
      */
     @JsonIgnore
-    public Integer getStorageCapacity() {
+    public Number getStorageCapacity() {
         return storageCapacity;
     }
 
@@ -140,11 +140,11 @@ public class FileSystem {
      * 
      */
     @JsonIgnore
-    public void setStorageCapacity(Integer storageCapacity) {
+    public void setStorageCapacity(Number storageCapacity) {
         this.storageCapacity = storageCapacity;
     }
 
-    public FileSystem withStorageCapacity(Integer storageCapacity) {
+    public FileSystem withStorageCapacity(Number storageCapacity) {
         this.storageCapacity = storageCapacity;
         return this;
     }

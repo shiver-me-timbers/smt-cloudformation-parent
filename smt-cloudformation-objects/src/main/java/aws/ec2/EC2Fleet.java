@@ -97,7 +97,7 @@ public class EC2Fleet {
      */
     @JsonProperty("ReplaceUnhealthyInstances")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-replaceunhealthyinstances")
-    private Boolean replaceUnhealthyInstances;
+    private CharSequence replaceUnhealthyInstances;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-launchtemplateconfigs
      * 
@@ -111,7 +111,7 @@ public class EC2Fleet {
      */
     @JsonProperty("TerminateInstancesWithExpiration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-terminateinstanceswithexpiration")
-    private Boolean terminateInstancesWithExpiration;
+    private CharSequence terminateInstancesWithExpiration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-validuntil
      * 
@@ -298,7 +298,7 @@ public class EC2Fleet {
      * 
      */
     @JsonIgnore
-    public Boolean getReplaceUnhealthyInstances() {
+    public CharSequence getReplaceUnhealthyInstances() {
         return replaceUnhealthyInstances;
     }
 
@@ -307,11 +307,11 @@ public class EC2Fleet {
      * 
      */
     @JsonIgnore
-    public void setReplaceUnhealthyInstances(Boolean replaceUnhealthyInstances) {
+    public void setReplaceUnhealthyInstances(CharSequence replaceUnhealthyInstances) {
         this.replaceUnhealthyInstances = replaceUnhealthyInstances;
     }
 
-    public EC2Fleet withReplaceUnhealthyInstances(Boolean replaceUnhealthyInstances) {
+    public EC2Fleet withReplaceUnhealthyInstances(CharSequence replaceUnhealthyInstances) {
         this.replaceUnhealthyInstances = replaceUnhealthyInstances;
         return this;
     }
@@ -344,7 +344,7 @@ public class EC2Fleet {
      * 
      */
     @JsonIgnore
-    public Boolean getTerminateInstancesWithExpiration() {
+    public CharSequence getTerminateInstancesWithExpiration() {
         return terminateInstancesWithExpiration;
     }
 
@@ -353,11 +353,11 @@ public class EC2Fleet {
      * 
      */
     @JsonIgnore
-    public void setTerminateInstancesWithExpiration(Boolean terminateInstancesWithExpiration) {
+    public void setTerminateInstancesWithExpiration(CharSequence terminateInstancesWithExpiration) {
         this.terminateInstancesWithExpiration = terminateInstancesWithExpiration;
     }
 
-    public EC2Fleet withTerminateInstancesWithExpiration(Boolean terminateInstancesWithExpiration) {
+    public EC2Fleet withTerminateInstancesWithExpiration(CharSequence terminateInstancesWithExpiration) {
         this.terminateInstancesWithExpiration = terminateInstancesWithExpiration;
         return this;
     }

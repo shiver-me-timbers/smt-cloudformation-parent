@@ -64,7 +64,7 @@ public class ListenerAction implements Property<ListenerAction>
      */
     @JsonProperty("Order")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-defaultactions.html#cfn-elasticloadbalancingv2-listener-action-order")
-    private Integer order;
+    private Number order;
     /**
      * ListenerRedirectConfig
      * <p>
@@ -175,7 +175,7 @@ public class ListenerAction implements Property<ListenerAction>
      * 
      */
     @JsonIgnore
-    public Integer getOrder() {
+    public Number getOrder() {
         return order;
     }
 
@@ -184,11 +184,11 @@ public class ListenerAction implements Property<ListenerAction>
      * 
      */
     @JsonIgnore
-    public void setOrder(Integer order) {
+    public void setOrder(Number order) {
         this.order = order;
     }
 
-    public ListenerAction withOrder(Integer order) {
+    public ListenerAction withOrder(Number order) {
         this.order = order;
         return this;
     }

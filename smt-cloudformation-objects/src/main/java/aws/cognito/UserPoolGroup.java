@@ -54,7 +54,7 @@ public class UserPoolGroup {
      */
     @JsonProperty("Precedence")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolgroup.html#cfn-cognito-userpoolgroup-precedence")
-    private Double precedence;
+    private Number precedence;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolgroup.html#cfn-cognito-userpoolgroup-rolearn
      * 
@@ -137,7 +137,7 @@ public class UserPoolGroup {
      * 
      */
     @JsonIgnore
-    public Double getPrecedence() {
+    public Number getPrecedence() {
         return precedence;
     }
 
@@ -146,11 +146,11 @@ public class UserPoolGroup {
      * 
      */
     @JsonIgnore
-    public void setPrecedence(Double precedence) {
+    public void setPrecedence(Number precedence) {
         this.precedence = precedence;
     }
 
-    public UserPoolGroup withPrecedence(Double precedence) {
+    public UserPoolGroup withPrecedence(Number precedence) {
         this.precedence = precedence;
         return this;
     }

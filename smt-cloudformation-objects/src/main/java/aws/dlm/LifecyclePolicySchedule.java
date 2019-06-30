@@ -70,7 +70,7 @@ public class LifecyclePolicySchedule implements Property<LifecyclePolicySchedule
      */
     @JsonProperty("CopyTags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-schedule.html#cfn-dlm-lifecyclepolicy-schedule-copytags")
-    private Boolean copyTags;
+    private CharSequence copyTags;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-schedule.html#cfn-dlm-lifecyclepolicy-schedule-tagstoadd
@@ -177,7 +177,7 @@ public class LifecyclePolicySchedule implements Property<LifecyclePolicySchedule
      * 
      */
     @JsonIgnore
-    public Boolean getCopyTags() {
+    public CharSequence getCopyTags() {
         return copyTags;
     }
 
@@ -186,11 +186,11 @@ public class LifecyclePolicySchedule implements Property<LifecyclePolicySchedule
      * 
      */
     @JsonIgnore
-    public void setCopyTags(Boolean copyTags) {
+    public void setCopyTags(CharSequence copyTags) {
         this.copyTags = copyTags;
     }
 
-    public LifecyclePolicySchedule withCopyTags(Boolean copyTags) {
+    public LifecyclePolicySchedule withCopyTags(CharSequence copyTags) {
         this.copyTags = copyTags;
         return this;
     }

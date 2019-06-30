@@ -43,7 +43,7 @@ public class AlarmMetricStat implements Property<AlarmMetricStat>
      */
     @JsonProperty("Period")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metricstat.html#cfn-cloudwatch-alarm-metricstat-period")
-    private Integer period;
+    private Number period;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metricstat.html#cfn-cloudwatch-alarm-metricstat-stat
      * 
@@ -91,7 +91,7 @@ public class AlarmMetricStat implements Property<AlarmMetricStat>
      * 
      */
     @JsonIgnore
-    public Integer getPeriod() {
+    public Number getPeriod() {
         return period;
     }
 
@@ -100,11 +100,11 @@ public class AlarmMetricStat implements Property<AlarmMetricStat>
      * 
      */
     @JsonIgnore
-    public void setPeriod(Integer period) {
+    public void setPeriod(Number period) {
         this.period = period;
     }
 
-    public AlarmMetricStat withPeriod(Integer period) {
+    public AlarmMetricStat withPeriod(Number period) {
         this.period = period;
         return this;
     }

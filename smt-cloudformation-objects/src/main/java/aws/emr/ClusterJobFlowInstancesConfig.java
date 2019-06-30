@@ -117,7 +117,7 @@ public class ClusterJobFlowInstancesConfig implements Property<ClusterJobFlowIns
      */
     @JsonProperty("KeepJobFlowAliveWhenNoSteps")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-keepjobflowalivewhennosteps")
-    private Boolean keepJobFlowAliveWhenNoSteps;
+    private CharSequence keepJobFlowAliveWhenNoSteps;
     /**
      * ClusterInstanceFleetConfig
      * <p>
@@ -158,7 +158,7 @@ public class ClusterJobFlowInstancesConfig implements Property<ClusterJobFlowIns
      */
     @JsonProperty("TerminationProtected")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-terminationprotected")
-    private Boolean terminationProtected;
+    private CharSequence terminationProtected;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-additionalmastersecuritygroups
@@ -380,7 +380,7 @@ public class ClusterJobFlowInstancesConfig implements Property<ClusterJobFlowIns
      * 
      */
     @JsonIgnore
-    public Boolean getKeepJobFlowAliveWhenNoSteps() {
+    public CharSequence getKeepJobFlowAliveWhenNoSteps() {
         return keepJobFlowAliveWhenNoSteps;
     }
 
@@ -389,11 +389,11 @@ public class ClusterJobFlowInstancesConfig implements Property<ClusterJobFlowIns
      * 
      */
     @JsonIgnore
-    public void setKeepJobFlowAliveWhenNoSteps(Boolean keepJobFlowAliveWhenNoSteps) {
+    public void setKeepJobFlowAliveWhenNoSteps(CharSequence keepJobFlowAliveWhenNoSteps) {
         this.keepJobFlowAliveWhenNoSteps = keepJobFlowAliveWhenNoSteps;
     }
 
-    public ClusterJobFlowInstancesConfig withKeepJobFlowAliveWhenNoSteps(Boolean keepJobFlowAliveWhenNoSteps) {
+    public ClusterJobFlowInstancesConfig withKeepJobFlowAliveWhenNoSteps(CharSequence keepJobFlowAliveWhenNoSteps) {
         this.keepJobFlowAliveWhenNoSteps = keepJobFlowAliveWhenNoSteps;
         return this;
     }
@@ -507,7 +507,7 @@ public class ClusterJobFlowInstancesConfig implements Property<ClusterJobFlowIns
      * 
      */
     @JsonIgnore
-    public Boolean getTerminationProtected() {
+    public CharSequence getTerminationProtected() {
         return terminationProtected;
     }
 
@@ -516,11 +516,11 @@ public class ClusterJobFlowInstancesConfig implements Property<ClusterJobFlowIns
      * 
      */
     @JsonIgnore
-    public void setTerminationProtected(Boolean terminationProtected) {
+    public void setTerminationProtected(CharSequence terminationProtected) {
         this.terminationProtected = terminationProtected;
     }
 
-    public ClusterJobFlowInstancesConfig withTerminationProtected(Boolean terminationProtected) {
+    public ClusterJobFlowInstancesConfig withTerminationProtected(CharSequence terminationProtected) {
         this.terminationProtected = terminationProtected;
         return this;
     }

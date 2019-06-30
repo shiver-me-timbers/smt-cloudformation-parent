@@ -94,7 +94,7 @@ public class PipelineActionDeclaration implements Property<PipelineActionDeclara
      */
     @JsonProperty("RunOrder")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-runorder")
-    private Integer runOrder;
+    private Number runOrder;
 
     /**
      * PipelineActionTypeId
@@ -266,7 +266,7 @@ public class PipelineActionDeclaration implements Property<PipelineActionDeclara
      * 
      */
     @JsonIgnore
-    public Integer getRunOrder() {
+    public Number getRunOrder() {
         return runOrder;
     }
 
@@ -275,11 +275,11 @@ public class PipelineActionDeclaration implements Property<PipelineActionDeclara
      * 
      */
     @JsonIgnore
-    public void setRunOrder(Integer runOrder) {
+    public void setRunOrder(Number runOrder) {
         this.runOrder = runOrder;
     }
 
-    public PipelineActionDeclaration withRunOrder(Integer runOrder) {
+    public PipelineActionDeclaration withRunOrder(Number runOrder) {
         this.runOrder = runOrder;
         return this;
     }

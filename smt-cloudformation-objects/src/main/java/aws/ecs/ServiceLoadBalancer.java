@@ -41,7 +41,7 @@ public class ServiceLoadBalancer implements Property<ServiceLoadBalancer>
      */
     @JsonProperty("ContainerPort")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-loadbalancers.html#cfn-ecs-service-loadbalancers-containerport")
-    private Integer containerPort;
+    private Number containerPort;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-loadbalancers.html#cfn-ecs-service-loadbalancers-loadbalancername
      * 
@@ -85,7 +85,7 @@ public class ServiceLoadBalancer implements Property<ServiceLoadBalancer>
      * 
      */
     @JsonIgnore
-    public Integer getContainerPort() {
+    public Number getContainerPort() {
         return containerPort;
     }
 
@@ -94,11 +94,11 @@ public class ServiceLoadBalancer implements Property<ServiceLoadBalancer>
      * 
      */
     @JsonIgnore
-    public void setContainerPort(Integer containerPort) {
+    public void setContainerPort(Number containerPort) {
         this.containerPort = containerPort;
     }
 
-    public ServiceLoadBalancer withContainerPort(Integer containerPort) {
+    public ServiceLoadBalancer withContainerPort(Number containerPort) {
         this.containerPort = containerPort;
         return this;
     }

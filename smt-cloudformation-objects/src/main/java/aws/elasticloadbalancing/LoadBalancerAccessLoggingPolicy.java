@@ -34,14 +34,14 @@ public class LoadBalancerAccessLoggingPolicy implements Property<LoadBalancerAcc
      */
     @JsonProperty("EmitInterval")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-accessloggingpolicy.html#cfn-elb-accessloggingpolicy-emitinterval")
-    private Integer emitInterval;
+    private Number emitInterval;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-accessloggingpolicy.html#cfn-elb-accessloggingpolicy-enabled
      * 
      */
     @JsonProperty("Enabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-accessloggingpolicy.html#cfn-elb-accessloggingpolicy-enabled")
-    private Boolean enabled;
+    private CharSequence enabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-accessloggingpolicy.html#cfn-elb-accessloggingpolicy-s3bucketname
      * 
@@ -62,7 +62,7 @@ public class LoadBalancerAccessLoggingPolicy implements Property<LoadBalancerAcc
      * 
      */
     @JsonIgnore
-    public Integer getEmitInterval() {
+    public Number getEmitInterval() {
         return emitInterval;
     }
 
@@ -71,11 +71,11 @@ public class LoadBalancerAccessLoggingPolicy implements Property<LoadBalancerAcc
      * 
      */
     @JsonIgnore
-    public void setEmitInterval(Integer emitInterval) {
+    public void setEmitInterval(Number emitInterval) {
         this.emitInterval = emitInterval;
     }
 
-    public LoadBalancerAccessLoggingPolicy withEmitInterval(Integer emitInterval) {
+    public LoadBalancerAccessLoggingPolicy withEmitInterval(Number emitInterval) {
         this.emitInterval = emitInterval;
         return this;
     }
@@ -85,7 +85,7 @@ public class LoadBalancerAccessLoggingPolicy implements Property<LoadBalancerAcc
      * 
      */
     @JsonIgnore
-    public Boolean getEnabled() {
+    public CharSequence getEnabled() {
         return enabled;
     }
 
@@ -94,11 +94,11 @@ public class LoadBalancerAccessLoggingPolicy implements Property<LoadBalancerAcc
      * 
      */
     @JsonIgnore
-    public void setEnabled(Boolean enabled) {
+    public void setEnabled(CharSequence enabled) {
         this.enabled = enabled;
     }
 
-    public LoadBalancerAccessLoggingPolicy withEnabled(Boolean enabled) {
+    public LoadBalancerAccessLoggingPolicy withEnabled(CharSequence enabled) {
         this.enabled = enabled;
         return this;
     }

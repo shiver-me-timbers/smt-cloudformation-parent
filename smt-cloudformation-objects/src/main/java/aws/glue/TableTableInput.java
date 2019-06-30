@@ -100,7 +100,7 @@ public class TableTableInput implements Property<TableTableInput>
      */
     @JsonProperty("Retention")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-retention")
-    private Integer retention;
+    private Number retention;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-name
      * 
@@ -302,7 +302,7 @@ public class TableTableInput implements Property<TableTableInput>
      * 
      */
     @JsonIgnore
-    public Integer getRetention() {
+    public Number getRetention() {
         return retention;
     }
 
@@ -311,11 +311,11 @@ public class TableTableInput implements Property<TableTableInput>
      * 
      */
     @JsonIgnore
-    public void setRetention(Integer retention) {
+    public void setRetention(Number retention) {
         this.retention = retention;
     }
 
-    public TableTableInput withRetention(Integer retention) {
+    public TableTableInput withRetention(Number retention) {
         this.retention = retention;
         return this;
     }

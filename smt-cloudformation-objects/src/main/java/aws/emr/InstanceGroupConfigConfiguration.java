@@ -44,7 +44,7 @@ public class InstanceGroupConfigConfiguration implements Property<InstanceGroupC
      */
     @JsonProperty("ConfigurationProperties")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-cluster-configuration.html#cfn-emr-cluster-configuration-configurationproperties")
-    private Map<String, String> configurationProperties;
+    private Map<String, CharSequence> configurationProperties;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-cluster-configuration.html#cfn-emr-cluster-configuration-configurations
      * 
@@ -82,7 +82,7 @@ public class InstanceGroupConfigConfiguration implements Property<InstanceGroupC
      * 
      */
     @JsonIgnore
-    public Map<String, String> getConfigurationProperties() {
+    public Map<String, CharSequence> getConfigurationProperties() {
         return configurationProperties;
     }
 
@@ -91,11 +91,11 @@ public class InstanceGroupConfigConfiguration implements Property<InstanceGroupC
      * 
      */
     @JsonIgnore
-    public void setConfigurationProperties(Map<String, String> configurationProperties) {
+    public void setConfigurationProperties(Map<String, CharSequence> configurationProperties) {
         this.configurationProperties = configurationProperties;
     }
 
-    public InstanceGroupConfigConfiguration withConfigurationProperties(Map<String, String> configurationProperties) {
+    public InstanceGroupConfigConfiguration withConfigurationProperties(Map<String, CharSequence> configurationProperties) {
         this.configurationProperties = configurationProperties;
         return this;
     }

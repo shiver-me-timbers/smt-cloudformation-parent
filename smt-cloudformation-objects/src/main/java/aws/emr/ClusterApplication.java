@@ -38,7 +38,7 @@ public class ClusterApplication implements Property<ClusterApplication>
      */
     @JsonProperty("AdditionalInfo")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-application.html#cfn-elasticmapreduce-cluster-application-additionalinfo")
-    private Map<String, String> additionalInfo;
+    private Map<String, CharSequence> additionalInfo;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-application.html#cfn-elasticmapreduce-cluster-application-args
      * 
@@ -67,7 +67,7 @@ public class ClusterApplication implements Property<ClusterApplication>
      * 
      */
     @JsonIgnore
-    public Map<String, String> getAdditionalInfo() {
+    public Map<String, CharSequence> getAdditionalInfo() {
         return additionalInfo;
     }
 
@@ -76,11 +76,11 @@ public class ClusterApplication implements Property<ClusterApplication>
      * 
      */
     @JsonIgnore
-    public void setAdditionalInfo(Map<String, String> additionalInfo) {
+    public void setAdditionalInfo(Map<String, CharSequence> additionalInfo) {
         this.additionalInfo = additionalInfo;
     }
 
-    public ClusterApplication withAdditionalInfo(Map<String, String> additionalInfo) {
+    public ClusterApplication withAdditionalInfo(Map<String, CharSequence> additionalInfo) {
         this.additionalInfo = additionalInfo;
         return this;
     }

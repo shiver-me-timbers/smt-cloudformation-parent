@@ -32,7 +32,7 @@ public class UserProfile {
      */
     @JsonProperty("AllowSelfManagement")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-userprofile.html#cfn-opsworks-userprofile-allowselfmanagement")
-    private Boolean allowSelfManagement;
+    private CharSequence allowSelfManagement;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-userprofile.html#cfn-opsworks-userprofile-iamuserarn
      * 
@@ -60,7 +60,7 @@ public class UserProfile {
      * 
      */
     @JsonIgnore
-    public Boolean getAllowSelfManagement() {
+    public CharSequence getAllowSelfManagement() {
         return allowSelfManagement;
     }
 
@@ -69,11 +69,11 @@ public class UserProfile {
      * 
      */
     @JsonIgnore
-    public void setAllowSelfManagement(Boolean allowSelfManagement) {
+    public void setAllowSelfManagement(CharSequence allowSelfManagement) {
         this.allowSelfManagement = allowSelfManagement;
     }
 
-    public UserProfile withAllowSelfManagement(Boolean allowSelfManagement) {
+    public UserProfile withAllowSelfManagement(CharSequence allowSelfManagement) {
         this.allowSelfManagement = allowSelfManagement;
         return this;
     }

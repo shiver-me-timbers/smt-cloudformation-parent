@@ -59,7 +59,7 @@ public class DevEndpoint {
      */
     @JsonProperty("NumberOfNodes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-numberofnodes")
-    private Integer numberOfNodes;
+    private Number numberOfNodes;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-subnetid
      * 
@@ -163,7 +163,7 @@ public class DevEndpoint {
      * 
      */
     @JsonIgnore
-    public Integer getNumberOfNodes() {
+    public Number getNumberOfNodes() {
         return numberOfNodes;
     }
 
@@ -172,11 +172,11 @@ public class DevEndpoint {
      * 
      */
     @JsonIgnore
-    public void setNumberOfNodes(Integer numberOfNodes) {
+    public void setNumberOfNodes(Number numberOfNodes) {
         this.numberOfNodes = numberOfNodes;
     }
 
-    public DevEndpoint withNumberOfNodes(Integer numberOfNodes) {
+    public DevEndpoint withNumberOfNodes(Number numberOfNodes) {
         this.numberOfNodes = numberOfNodes;
         return this;
     }

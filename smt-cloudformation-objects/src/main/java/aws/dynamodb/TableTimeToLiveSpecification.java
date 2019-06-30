@@ -39,7 +39,7 @@ public class TableTimeToLiveSpecification implements Property<TableTimeToLiveSpe
      */
     @JsonProperty("Enabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-timetolivespecification.html#cfn-dynamodb-timetolivespecification-enabled")
-    private Boolean enabled;
+    private CharSequence enabled;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-timetolivespecification.html#cfn-dynamodb-timetolivespecification-attributename
@@ -69,7 +69,7 @@ public class TableTimeToLiveSpecification implements Property<TableTimeToLiveSpe
      * 
      */
     @JsonIgnore
-    public Boolean getEnabled() {
+    public CharSequence getEnabled() {
         return enabled;
     }
 
@@ -78,11 +78,11 @@ public class TableTimeToLiveSpecification implements Property<TableTimeToLiveSpe
      * 
      */
     @JsonIgnore
-    public void setEnabled(Boolean enabled) {
+    public void setEnabled(CharSequence enabled) {
         this.enabled = enabled;
     }
 
-    public TableTimeToLiveSpecification withEnabled(Boolean enabled) {
+    public TableTimeToLiveSpecification withEnabled(CharSequence enabled) {
         this.enabled = enabled;
         return this;
     }

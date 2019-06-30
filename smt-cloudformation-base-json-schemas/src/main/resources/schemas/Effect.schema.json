@@ -1,8 +1,8 @@
 {
-  "$schema" : "http://json-schema.org/draft-07/schema#",
-  "$id" : "Effect.schema.json",
-  "title" : "Effect",
-  "type" : "string",
-  "enum" : [ "Allow", "Deny" ],
-  "javaType" : "aws.iam.Effect"
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "Effect.schema.json",
+  "title": "Effect",
+  "type": "string",
+  "enum": ["Allow", "Deny"],
+  "javaType": "aws.iam.Effect"
 }

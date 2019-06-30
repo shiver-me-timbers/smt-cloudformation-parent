@@ -40,7 +40,7 @@ public class ThreatIntelSet {
      */
     @JsonProperty("Activate")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-threatintelset.html#cfn-guardduty-threatintelset-activate")
-    private Boolean activate;
+    private CharSequence activate;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-threatintelset.html#cfn-guardduty-threatintelset-detectorid
      * 
@@ -91,7 +91,7 @@ public class ThreatIntelSet {
      * 
      */
     @JsonIgnore
-    public Boolean getActivate() {
+    public CharSequence getActivate() {
         return activate;
     }
 
@@ -100,11 +100,11 @@ public class ThreatIntelSet {
      * 
      */
     @JsonIgnore
-    public void setActivate(Boolean activate) {
+    public void setActivate(CharSequence activate) {
         this.activate = activate;
     }
 
-    public ThreatIntelSet withActivate(Boolean activate) {
+    public ThreatIntelSet withActivate(CharSequence activate) {
         this.activate = activate;
         return this;
     }

@@ -36,14 +36,14 @@ public class ConfigurationRecorderRecordingGroup implements Property<Configurati
      */
     @JsonProperty("AllSupported")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationrecorder-recordinggroup.html#cfn-config-configurationrecorder-recordinggroup-allsupported")
-    private Boolean allSupported;
+    private CharSequence allSupported;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationrecorder-recordinggroup.html#cfn-config-configurationrecorder-recordinggroup-includeglobalresourcetypes
      * 
      */
     @JsonProperty("IncludeGlobalResourceTypes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationrecorder-recordinggroup.html#cfn-config-configurationrecorder-recordinggroup-includeglobalresourcetypes")
-    private Boolean includeGlobalResourceTypes;
+    private CharSequence includeGlobalResourceTypes;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationrecorder-recordinggroup.html#cfn-config-configurationrecorder-recordinggroup-resourcetypes
      * 
@@ -58,7 +58,7 @@ public class ConfigurationRecorderRecordingGroup implements Property<Configurati
      * 
      */
     @JsonIgnore
-    public Boolean getAllSupported() {
+    public CharSequence getAllSupported() {
         return allSupported;
     }
 
@@ -67,11 +67,11 @@ public class ConfigurationRecorderRecordingGroup implements Property<Configurati
      * 
      */
     @JsonIgnore
-    public void setAllSupported(Boolean allSupported) {
+    public void setAllSupported(CharSequence allSupported) {
         this.allSupported = allSupported;
     }
 
-    public ConfigurationRecorderRecordingGroup withAllSupported(Boolean allSupported) {
+    public ConfigurationRecorderRecordingGroup withAllSupported(CharSequence allSupported) {
         this.allSupported = allSupported;
         return this;
     }
@@ -81,7 +81,7 @@ public class ConfigurationRecorderRecordingGroup implements Property<Configurati
      * 
      */
     @JsonIgnore
-    public Boolean getIncludeGlobalResourceTypes() {
+    public CharSequence getIncludeGlobalResourceTypes() {
         return includeGlobalResourceTypes;
     }
 
@@ -90,11 +90,11 @@ public class ConfigurationRecorderRecordingGroup implements Property<Configurati
      * 
      */
     @JsonIgnore
-    public void setIncludeGlobalResourceTypes(Boolean includeGlobalResourceTypes) {
+    public void setIncludeGlobalResourceTypes(CharSequence includeGlobalResourceTypes) {
         this.includeGlobalResourceTypes = includeGlobalResourceTypes;
     }
 
-    public ConfigurationRecorderRecordingGroup withIncludeGlobalResourceTypes(Boolean includeGlobalResourceTypes) {
+    public ConfigurationRecorderRecordingGroup withIncludeGlobalResourceTypes(CharSequence includeGlobalResourceTypes) {
         this.includeGlobalResourceTypes = includeGlobalResourceTypes;
         return this;
     }

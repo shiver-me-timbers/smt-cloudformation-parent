@@ -57,7 +57,7 @@ public class InstanceGroupConfigCloudWatchAlarmDefinition implements Property<In
      */
     @JsonProperty("EvaluationPeriods")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-instancegroupconfig-cloudwatchalarmdefinition-evaluationperiods")
-    private Integer evaluationPeriods;
+    private Number evaluationPeriods;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-instancegroupconfig-cloudwatchalarmdefinition-metricname
      * 
@@ -78,7 +78,7 @@ public class InstanceGroupConfigCloudWatchAlarmDefinition implements Property<In
      */
     @JsonProperty("Period")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-instancegroupconfig-cloudwatchalarmdefinition-period")
-    private Integer period;
+    private Number period;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-instancegroupconfig-cloudwatchalarmdefinition-statistic
      * 
@@ -92,7 +92,7 @@ public class InstanceGroupConfigCloudWatchAlarmDefinition implements Property<In
      */
     @JsonProperty("Threshold")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-instancegroupconfig-cloudwatchalarmdefinition-threshold")
-    private Double threshold;
+    private Number threshold;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-instancegroupconfig-cloudwatchalarmdefinition-unit
      * 
@@ -152,7 +152,7 @@ public class InstanceGroupConfigCloudWatchAlarmDefinition implements Property<In
      * 
      */
     @JsonIgnore
-    public Integer getEvaluationPeriods() {
+    public Number getEvaluationPeriods() {
         return evaluationPeriods;
     }
 
@@ -161,11 +161,11 @@ public class InstanceGroupConfigCloudWatchAlarmDefinition implements Property<In
      * 
      */
     @JsonIgnore
-    public void setEvaluationPeriods(Integer evaluationPeriods) {
+    public void setEvaluationPeriods(Number evaluationPeriods) {
         this.evaluationPeriods = evaluationPeriods;
     }
 
-    public InstanceGroupConfigCloudWatchAlarmDefinition withEvaluationPeriods(Integer evaluationPeriods) {
+    public InstanceGroupConfigCloudWatchAlarmDefinition withEvaluationPeriods(Number evaluationPeriods) {
         this.evaluationPeriods = evaluationPeriods;
         return this;
     }
@@ -221,7 +221,7 @@ public class InstanceGroupConfigCloudWatchAlarmDefinition implements Property<In
      * 
      */
     @JsonIgnore
-    public Integer getPeriod() {
+    public Number getPeriod() {
         return period;
     }
 
@@ -230,11 +230,11 @@ public class InstanceGroupConfigCloudWatchAlarmDefinition implements Property<In
      * 
      */
     @JsonIgnore
-    public void setPeriod(Integer period) {
+    public void setPeriod(Number period) {
         this.period = period;
     }
 
-    public InstanceGroupConfigCloudWatchAlarmDefinition withPeriod(Integer period) {
+    public InstanceGroupConfigCloudWatchAlarmDefinition withPeriod(Number period) {
         this.period = period;
         return this;
     }
@@ -267,7 +267,7 @@ public class InstanceGroupConfigCloudWatchAlarmDefinition implements Property<In
      * 
      */
     @JsonIgnore
-    public Double getThreshold() {
+    public Number getThreshold() {
         return threshold;
     }
 
@@ -276,11 +276,11 @@ public class InstanceGroupConfigCloudWatchAlarmDefinition implements Property<In
      * 
      */
     @JsonIgnore
-    public void setThreshold(Double threshold) {
+    public void setThreshold(Number threshold) {
         this.threshold = threshold;
     }
 
-    public InstanceGroupConfigCloudWatchAlarmDefinition withThreshold(Double threshold) {
+    public InstanceGroupConfigCloudWatchAlarmDefinition withThreshold(Number threshold) {
         this.threshold = threshold;
         return this;
     }

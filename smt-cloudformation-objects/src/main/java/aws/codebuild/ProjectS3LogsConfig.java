@@ -40,7 +40,7 @@ public class ProjectS3LogsConfig implements Property<ProjectS3LogsConfig>
      */
     @JsonProperty("EncryptionDisabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-s3logsconfig.html#cfn-codebuild-project-s3logsconfig-encryptiondisabled")
-    private Boolean encryptionDisabled;
+    private CharSequence encryptionDisabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-s3logsconfig.html#cfn-codebuild-project-s3logsconfig-location
      * 
@@ -77,7 +77,7 @@ public class ProjectS3LogsConfig implements Property<ProjectS3LogsConfig>
      * 
      */
     @JsonIgnore
-    public Boolean getEncryptionDisabled() {
+    public CharSequence getEncryptionDisabled() {
         return encryptionDisabled;
     }
 
@@ -86,11 +86,11 @@ public class ProjectS3LogsConfig implements Property<ProjectS3LogsConfig>
      * 
      */
     @JsonIgnore
-    public void setEncryptionDisabled(Boolean encryptionDisabled) {
+    public void setEncryptionDisabled(CharSequence encryptionDisabled) {
         this.encryptionDisabled = encryptionDisabled;
     }
 
-    public ProjectS3LogsConfig withEncryptionDisabled(Boolean encryptionDisabled) {
+    public ProjectS3LogsConfig withEncryptionDisabled(CharSequence encryptionDisabled) {
         this.encryptionDisabled = encryptionDisabled;
         return this;
     }

@@ -35,7 +35,7 @@ public class LoggerDefinitionLogger implements Property<LoggerDefinitionLogger>
      */
     @JsonProperty("Space")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-loggerdefinition-logger.html#cfn-greengrass-loggerdefinition-logger-space")
-    private Integer space;
+    private Number space;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-loggerdefinition-logger.html#cfn-greengrass-loggerdefinition-logger-type
      * 
@@ -70,7 +70,7 @@ public class LoggerDefinitionLogger implements Property<LoggerDefinitionLogger>
      * 
      */
     @JsonIgnore
-    public Integer getSpace() {
+    public Number getSpace() {
         return space;
     }
 
@@ -79,11 +79,11 @@ public class LoggerDefinitionLogger implements Property<LoggerDefinitionLogger>
      * 
      */
     @JsonIgnore
-    public void setSpace(Integer space) {
+    public void setSpace(Number space) {
         this.space = space;
     }
 
-    public LoggerDefinitionLogger withSpace(Integer space) {
+    public LoggerDefinitionLogger withSpace(Number space) {
         this.space = space;
         return this;
     }

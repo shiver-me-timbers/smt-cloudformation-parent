@@ -64,14 +64,14 @@ public class Cluster {
      */
     @JsonProperty("AllowVersionUpgrade")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-allowversionupgrade")
-    private Boolean allowVersionUpgrade;
+    private CharSequence allowVersionUpgrade;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-automatedsnapshotretentionperiod
      * 
      */
     @JsonProperty("AutomatedSnapshotRetentionPeriod")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-automatedsnapshotretentionperiod")
-    private Integer automatedSnapshotRetentionPeriod;
+    private Number automatedSnapshotRetentionPeriod;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-availabilityzone
      * 
@@ -141,7 +141,7 @@ public class Cluster {
      */
     @JsonProperty("Encrypted")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-encrypted")
-    private Boolean encrypted;
+    private CharSequence encrypted;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-hsmclientcertidentifier
      * 
@@ -207,7 +207,7 @@ public class Cluster {
      */
     @JsonProperty("NumberOfNodes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-nodetype")
-    private Integer numberOfNodes;
+    private Number numberOfNodes;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-owneraccount
      * 
@@ -221,7 +221,7 @@ public class Cluster {
      */
     @JsonProperty("Port")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-port")
-    private Integer port;
+    private Number port;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-preferredmaintenancewindow
      * 
@@ -235,7 +235,7 @@ public class Cluster {
      */
     @JsonProperty("PubliclyAccessible")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-publiclyaccessible")
-    private Boolean publiclyAccessible;
+    private CharSequence publiclyAccessible;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-snapshotclusteridentifier
      * 
@@ -270,7 +270,7 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public Boolean getAllowVersionUpgrade() {
+    public CharSequence getAllowVersionUpgrade() {
         return allowVersionUpgrade;
     }
 
@@ -279,11 +279,11 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public void setAllowVersionUpgrade(Boolean allowVersionUpgrade) {
+    public void setAllowVersionUpgrade(CharSequence allowVersionUpgrade) {
         this.allowVersionUpgrade = allowVersionUpgrade;
     }
 
-    public Cluster withAllowVersionUpgrade(Boolean allowVersionUpgrade) {
+    public Cluster withAllowVersionUpgrade(CharSequence allowVersionUpgrade) {
         this.allowVersionUpgrade = allowVersionUpgrade;
         return this;
     }
@@ -293,7 +293,7 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public Integer getAutomatedSnapshotRetentionPeriod() {
+    public Number getAutomatedSnapshotRetentionPeriod() {
         return automatedSnapshotRetentionPeriod;
     }
 
@@ -302,11 +302,11 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public void setAutomatedSnapshotRetentionPeriod(Integer automatedSnapshotRetentionPeriod) {
+    public void setAutomatedSnapshotRetentionPeriod(Number automatedSnapshotRetentionPeriod) {
         this.automatedSnapshotRetentionPeriod = automatedSnapshotRetentionPeriod;
     }
 
-    public Cluster withAutomatedSnapshotRetentionPeriod(Integer automatedSnapshotRetentionPeriod) {
+    public Cluster withAutomatedSnapshotRetentionPeriod(Number automatedSnapshotRetentionPeriod) {
         this.automatedSnapshotRetentionPeriod = automatedSnapshotRetentionPeriod;
         return this;
     }
@@ -523,7 +523,7 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public Boolean getEncrypted() {
+    public CharSequence getEncrypted() {
         return encrypted;
     }
 
@@ -532,11 +532,11 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public void setEncrypted(Boolean encrypted) {
+    public void setEncrypted(CharSequence encrypted) {
         this.encrypted = encrypted;
     }
 
-    public Cluster withEncrypted(Boolean encrypted) {
+    public Cluster withEncrypted(CharSequence encrypted) {
         this.encrypted = encrypted;
         return this;
     }
@@ -734,7 +734,7 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public Integer getNumberOfNodes() {
+    public Number getNumberOfNodes() {
         return numberOfNodes;
     }
 
@@ -743,11 +743,11 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public void setNumberOfNodes(Integer numberOfNodes) {
+    public void setNumberOfNodes(Number numberOfNodes) {
         this.numberOfNodes = numberOfNodes;
     }
 
-    public Cluster withNumberOfNodes(Integer numberOfNodes) {
+    public Cluster withNumberOfNodes(Number numberOfNodes) {
         this.numberOfNodes = numberOfNodes;
         return this;
     }
@@ -780,7 +780,7 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public Integer getPort() {
+    public Number getPort() {
         return port;
     }
 
@@ -789,11 +789,11 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public void setPort(Integer port) {
+    public void setPort(Number port) {
         this.port = port;
     }
 
-    public Cluster withPort(Integer port) {
+    public Cluster withPort(Number port) {
         this.port = port;
         return this;
     }
@@ -826,7 +826,7 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public Boolean getPubliclyAccessible() {
+    public CharSequence getPubliclyAccessible() {
         return publiclyAccessible;
     }
 
@@ -835,11 +835,11 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public void setPubliclyAccessible(Boolean publiclyAccessible) {
+    public void setPubliclyAccessible(CharSequence publiclyAccessible) {
         this.publiclyAccessible = publiclyAccessible;
     }
 
-    public Cluster withPubliclyAccessible(Boolean publiclyAccessible) {
+    public Cluster withPubliclyAccessible(CharSequence publiclyAccessible) {
         this.publiclyAccessible = publiclyAccessible;
         return this;
     }

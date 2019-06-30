@@ -34,21 +34,21 @@ public class DomainEBSOptions implements Property<DomainEBSOptions>
      */
     @JsonProperty("EBSEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html#cfn-elasticsearch-domain-ebsoptions-ebsenabled")
-    private Boolean eBSEnabled;
+    private CharSequence eBSEnabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html#cfn-elasticsearch-domain-ebsoptions-iops
      * 
      */
     @JsonProperty("Iops")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html#cfn-elasticsearch-domain-ebsoptions-iops")
-    private Integer iops;
+    private Number iops;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html#cfn-elasticsearch-domain-ebsoptions-volumesize
      * 
      */
     @JsonProperty("VolumeSize")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html#cfn-elasticsearch-domain-ebsoptions-volumesize")
-    private Integer volumeSize;
+    private Number volumeSize;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html#cfn-elasticsearch-domain-ebsoptions-volumetype
      * 
@@ -62,7 +62,7 @@ public class DomainEBSOptions implements Property<DomainEBSOptions>
      * 
      */
     @JsonIgnore
-    public Boolean getEBSEnabled() {
+    public CharSequence getEBSEnabled() {
         return eBSEnabled;
     }
 
@@ -71,11 +71,11 @@ public class DomainEBSOptions implements Property<DomainEBSOptions>
      * 
      */
     @JsonIgnore
-    public void setEBSEnabled(Boolean eBSEnabled) {
+    public void setEBSEnabled(CharSequence eBSEnabled) {
         this.eBSEnabled = eBSEnabled;
     }
 
-    public DomainEBSOptions withEBSEnabled(Boolean eBSEnabled) {
+    public DomainEBSOptions withEBSEnabled(CharSequence eBSEnabled) {
         this.eBSEnabled = eBSEnabled;
         return this;
     }
@@ -85,7 +85,7 @@ public class DomainEBSOptions implements Property<DomainEBSOptions>
      * 
      */
     @JsonIgnore
-    public Integer getIops() {
+    public Number getIops() {
         return iops;
     }
 
@@ -94,11 +94,11 @@ public class DomainEBSOptions implements Property<DomainEBSOptions>
      * 
      */
     @JsonIgnore
-    public void setIops(Integer iops) {
+    public void setIops(Number iops) {
         this.iops = iops;
     }
 
-    public DomainEBSOptions withIops(Integer iops) {
+    public DomainEBSOptions withIops(Number iops) {
         this.iops = iops;
         return this;
     }
@@ -108,7 +108,7 @@ public class DomainEBSOptions implements Property<DomainEBSOptions>
      * 
      */
     @JsonIgnore
-    public Integer getVolumeSize() {
+    public Number getVolumeSize() {
         return volumeSize;
     }
 
@@ -117,11 +117,11 @@ public class DomainEBSOptions implements Property<DomainEBSOptions>
      * 
      */
     @JsonIgnore
-    public void setVolumeSize(Integer volumeSize) {
+    public void setVolumeSize(Number volumeSize) {
         this.volumeSize = volumeSize;
     }
 
-    public DomainEBSOptions withVolumeSize(Integer volumeSize) {
+    public DomainEBSOptions withVolumeSize(Number volumeSize) {
         this.volumeSize = volumeSize;
         return this;
     }

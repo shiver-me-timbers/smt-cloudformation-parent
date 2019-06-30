@@ -36,21 +36,21 @@ public class InstanceEbs implements Property<InstanceEbs>
      */
     @JsonProperty("DeleteOnTermination")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-deleteontermination")
-    private Boolean deleteOnTermination;
+    private CharSequence deleteOnTermination;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-encrypted
      * 
      */
     @JsonProperty("Encrypted")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-encrypted")
-    private Boolean encrypted;
+    private CharSequence encrypted;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-iops
      * 
      */
     @JsonProperty("Iops")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-iops")
-    private Integer iops;
+    private Number iops;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-snapshotid
      * 
@@ -64,7 +64,7 @@ public class InstanceEbs implements Property<InstanceEbs>
      */
     @JsonProperty("VolumeSize")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-volumesize")
-    private Integer volumeSize;
+    private Number volumeSize;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-volumetype
      * 
@@ -78,7 +78,7 @@ public class InstanceEbs implements Property<InstanceEbs>
      * 
      */
     @JsonIgnore
-    public Boolean getDeleteOnTermination() {
+    public CharSequence getDeleteOnTermination() {
         return deleteOnTermination;
     }
 
@@ -87,11 +87,11 @@ public class InstanceEbs implements Property<InstanceEbs>
      * 
      */
     @JsonIgnore
-    public void setDeleteOnTermination(Boolean deleteOnTermination) {
+    public void setDeleteOnTermination(CharSequence deleteOnTermination) {
         this.deleteOnTermination = deleteOnTermination;
     }
 
-    public InstanceEbs withDeleteOnTermination(Boolean deleteOnTermination) {
+    public InstanceEbs withDeleteOnTermination(CharSequence deleteOnTermination) {
         this.deleteOnTermination = deleteOnTermination;
         return this;
     }
@@ -101,7 +101,7 @@ public class InstanceEbs implements Property<InstanceEbs>
      * 
      */
     @JsonIgnore
-    public Boolean getEncrypted() {
+    public CharSequence getEncrypted() {
         return encrypted;
     }
 
@@ -110,11 +110,11 @@ public class InstanceEbs implements Property<InstanceEbs>
      * 
      */
     @JsonIgnore
-    public void setEncrypted(Boolean encrypted) {
+    public void setEncrypted(CharSequence encrypted) {
         this.encrypted = encrypted;
     }
 
-    public InstanceEbs withEncrypted(Boolean encrypted) {
+    public InstanceEbs withEncrypted(CharSequence encrypted) {
         this.encrypted = encrypted;
         return this;
     }
@@ -124,7 +124,7 @@ public class InstanceEbs implements Property<InstanceEbs>
      * 
      */
     @JsonIgnore
-    public Integer getIops() {
+    public Number getIops() {
         return iops;
     }
 
@@ -133,11 +133,11 @@ public class InstanceEbs implements Property<InstanceEbs>
      * 
      */
     @JsonIgnore
-    public void setIops(Integer iops) {
+    public void setIops(Number iops) {
         this.iops = iops;
     }
 
-    public InstanceEbs withIops(Integer iops) {
+    public InstanceEbs withIops(Number iops) {
         this.iops = iops;
         return this;
     }
@@ -170,7 +170,7 @@ public class InstanceEbs implements Property<InstanceEbs>
      * 
      */
     @JsonIgnore
-    public Integer getVolumeSize() {
+    public Number getVolumeSize() {
         return volumeSize;
     }
 
@@ -179,11 +179,11 @@ public class InstanceEbs implements Property<InstanceEbs>
      * 
      */
     @JsonIgnore
-    public void setVolumeSize(Integer volumeSize) {
+    public void setVolumeSize(Number volumeSize) {
         this.volumeSize = volumeSize;
     }
 
-    public InstanceEbs withVolumeSize(Integer volumeSize) {
+    public InstanceEbs withVolumeSize(Number volumeSize) {
         this.volumeSize = volumeSize;
         return this;
     }

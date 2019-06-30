@@ -9,7 +9,8 @@
   "properties" : {
     "Amount" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-spend.html#cfn-budgets-budget-spend-amount",
-      "type" : "number"
+      "type" : "number",
+      "javaType" : "java.lang.Number"
     },
     "Unit" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-spend.html#cfn-budgets-budget-spend-unit",

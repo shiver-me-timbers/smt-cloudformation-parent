@@ -37,14 +37,14 @@ public class FilterCondition implements Property<FilterCondition>
      */
     @JsonProperty("Lt")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-condition.html#cfn-guardduty-filter-condition-lt")
-    private Integer lt;
+    private Number lt;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-condition.html#cfn-guardduty-filter-condition-gte
      * 
      */
     @JsonProperty("Gte")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-condition.html#cfn-guardduty-filter-condition-gte")
-    private Integer gte;
+    private Number gte;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-condition.html#cfn-guardduty-filter-condition-neq
      * 
@@ -65,14 +65,14 @@ public class FilterCondition implements Property<FilterCondition>
      */
     @JsonProperty("Lte")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-condition.html#cfn-guardduty-filter-condition-lte")
-    private Integer lte;
+    private Number lte;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-condition.html#cfn-guardduty-filter-condition-lt
      * 
      */
     @JsonIgnore
-    public Integer getLt() {
+    public Number getLt() {
         return lt;
     }
 
@@ -81,11 +81,11 @@ public class FilterCondition implements Property<FilterCondition>
      * 
      */
     @JsonIgnore
-    public void setLt(Integer lt) {
+    public void setLt(Number lt) {
         this.lt = lt;
     }
 
-    public FilterCondition withLt(Integer lt) {
+    public FilterCondition withLt(Number lt) {
         this.lt = lt;
         return this;
     }
@@ -95,7 +95,7 @@ public class FilterCondition implements Property<FilterCondition>
      * 
      */
     @JsonIgnore
-    public Integer getGte() {
+    public Number getGte() {
         return gte;
     }
 
@@ -104,11 +104,11 @@ public class FilterCondition implements Property<FilterCondition>
      * 
      */
     @JsonIgnore
-    public void setGte(Integer gte) {
+    public void setGte(Number gte) {
         this.gte = gte;
     }
 
-    public FilterCondition withGte(Integer gte) {
+    public FilterCondition withGte(Number gte) {
         this.gte = gte;
         return this;
     }
@@ -164,7 +164,7 @@ public class FilterCondition implements Property<FilterCondition>
      * 
      */
     @JsonIgnore
-    public Integer getLte() {
+    public Number getLte() {
         return lte;
     }
 
@@ -173,11 +173,11 @@ public class FilterCondition implements Property<FilterCondition>
      * 
      */
     @JsonIgnore
-    public void setLte(Integer lte) {
+    public void setLte(Number lte) {
         this.lte = lte;
     }
 
-    public FilterCondition withLte(Integer lte) {
+    public FilterCondition withLte(Number lte) {
         this.lte = lte;
         return this;
     }

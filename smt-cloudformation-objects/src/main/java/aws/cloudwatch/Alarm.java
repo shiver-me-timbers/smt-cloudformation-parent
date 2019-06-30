@@ -54,7 +54,7 @@ public class Alarm {
      */
     @JsonProperty("ActionsEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-actionsenabled")
-    private Boolean actionsEnabled;
+    private CharSequence actionsEnabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-alarmactions
      * 
@@ -89,7 +89,7 @@ public class Alarm {
      */
     @JsonProperty("DatapointsToAlarm")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarm-datapointstoalarm")
-    private Integer datapointsToAlarm;
+    private Number datapointsToAlarm;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-dimension
      * 
@@ -110,7 +110,7 @@ public class Alarm {
      */
     @JsonProperty("EvaluationPeriods")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-evaluationperiods")
-    private Integer evaluationPeriods;
+    private Number evaluationPeriods;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-extendedstatistic
      * 
@@ -160,7 +160,7 @@ public class Alarm {
      */
     @JsonProperty("Period")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-period")
-    private Integer period;
+    private Number period;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-statistic
      * 
@@ -174,7 +174,7 @@ public class Alarm {
      */
     @JsonProperty("Threshold")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-threshold")
-    private Double threshold;
+    private Number threshold;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-treatmissingdata
      * 
@@ -195,7 +195,7 @@ public class Alarm {
      * 
      */
     @JsonIgnore
-    public Boolean getActionsEnabled() {
+    public CharSequence getActionsEnabled() {
         return actionsEnabled;
     }
 
@@ -204,11 +204,11 @@ public class Alarm {
      * 
      */
     @JsonIgnore
-    public void setActionsEnabled(Boolean actionsEnabled) {
+    public void setActionsEnabled(CharSequence actionsEnabled) {
         this.actionsEnabled = actionsEnabled;
     }
 
-    public Alarm withActionsEnabled(Boolean actionsEnabled) {
+    public Alarm withActionsEnabled(CharSequence actionsEnabled) {
         this.actionsEnabled = actionsEnabled;
         return this;
     }
@@ -310,7 +310,7 @@ public class Alarm {
      * 
      */
     @JsonIgnore
-    public Integer getDatapointsToAlarm() {
+    public Number getDatapointsToAlarm() {
         return datapointsToAlarm;
     }
 
@@ -319,11 +319,11 @@ public class Alarm {
      * 
      */
     @JsonIgnore
-    public void setDatapointsToAlarm(Integer datapointsToAlarm) {
+    public void setDatapointsToAlarm(Number datapointsToAlarm) {
         this.datapointsToAlarm = datapointsToAlarm;
     }
 
-    public Alarm withDatapointsToAlarm(Integer datapointsToAlarm) {
+    public Alarm withDatapointsToAlarm(Number datapointsToAlarm) {
         this.datapointsToAlarm = datapointsToAlarm;
         return this;
     }
@@ -379,7 +379,7 @@ public class Alarm {
      * 
      */
     @JsonIgnore
-    public Integer getEvaluationPeriods() {
+    public Number getEvaluationPeriods() {
         return evaluationPeriods;
     }
 
@@ -388,11 +388,11 @@ public class Alarm {
      * 
      */
     @JsonIgnore
-    public void setEvaluationPeriods(Integer evaluationPeriods) {
+    public void setEvaluationPeriods(Number evaluationPeriods) {
         this.evaluationPeriods = evaluationPeriods;
     }
 
-    public Alarm withEvaluationPeriods(Integer evaluationPeriods) {
+    public Alarm withEvaluationPeriods(Number evaluationPeriods) {
         this.evaluationPeriods = evaluationPeriods;
         return this;
     }
@@ -540,7 +540,7 @@ public class Alarm {
      * 
      */
     @JsonIgnore
-    public Integer getPeriod() {
+    public Number getPeriod() {
         return period;
     }
 
@@ -549,11 +549,11 @@ public class Alarm {
      * 
      */
     @JsonIgnore
-    public void setPeriod(Integer period) {
+    public void setPeriod(Number period) {
         this.period = period;
     }
 
-    public Alarm withPeriod(Integer period) {
+    public Alarm withPeriod(Number period) {
         this.period = period;
         return this;
     }
@@ -586,7 +586,7 @@ public class Alarm {
      * 
      */
     @JsonIgnore
-    public Double getThreshold() {
+    public Number getThreshold() {
         return threshold;
     }
 
@@ -595,11 +595,11 @@ public class Alarm {
      * 
      */
     @JsonIgnore
-    public void setThreshold(Double threshold) {
+    public void setThreshold(Number threshold) {
         this.threshold = threshold;
     }
 
-    public Alarm withThreshold(Double threshold) {
+    public Alarm withThreshold(Number threshold) {
         this.threshold = threshold;
         return this;
     }

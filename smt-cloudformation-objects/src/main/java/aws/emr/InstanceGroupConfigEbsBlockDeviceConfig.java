@@ -41,7 +41,7 @@ public class InstanceGroupConfigEbsBlockDeviceConfig implements Property<Instanc
      */
     @JsonProperty("VolumesPerInstance")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration-ebsblockdeviceconfig.html#cfn-emr-ebsconfiguration-ebsblockdeviceconfig-volumesperinstance")
-    private Integer volumesPerInstance;
+    private Number volumesPerInstance;
 
     /**
      * InstanceGroupConfigVolumeSpecification
@@ -75,7 +75,7 @@ public class InstanceGroupConfigEbsBlockDeviceConfig implements Property<Instanc
      * 
      */
     @JsonIgnore
-    public Integer getVolumesPerInstance() {
+    public Number getVolumesPerInstance() {
         return volumesPerInstance;
     }
 
@@ -84,11 +84,11 @@ public class InstanceGroupConfigEbsBlockDeviceConfig implements Property<Instanc
      * 
      */
     @JsonIgnore
-    public void setVolumesPerInstance(Integer volumesPerInstance) {
+    public void setVolumesPerInstance(Number volumesPerInstance) {
         this.volumesPerInstance = volumesPerInstance;
     }
 
-    public InstanceGroupConfigEbsBlockDeviceConfig withVolumesPerInstance(Integer volumesPerInstance) {
+    public InstanceGroupConfigEbsBlockDeviceConfig withVolumesPerInstance(Number volumesPerInstance) {
         this.volumesPerInstance = volumesPerInstance;
         return this;
     }

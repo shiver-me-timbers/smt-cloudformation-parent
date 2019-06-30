@@ -31,14 +31,14 @@ public class RouteParameterConstraints implements Property<RouteParameterConstra
      */
     @JsonProperty("Required")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-route-parameterconstraints.html#cfn-apigatewayv2-route-parameterconstraints-required")
-    private Boolean required;
+    private CharSequence required;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-route-parameterconstraints.html#cfn-apigatewayv2-route-parameterconstraints-required
      * 
      */
     @JsonIgnore
-    public Boolean getRequired() {
+    public CharSequence getRequired() {
         return required;
     }
 
@@ -47,11 +47,11 @@ public class RouteParameterConstraints implements Property<RouteParameterConstra
      * 
      */
     @JsonIgnore
-    public void setRequired(Boolean required) {
+    public void setRequired(CharSequence required) {
         this.required = required;
     }
 
-    public RouteParameterConstraints withRequired(Boolean required) {
+    public RouteParameterConstraints withRequired(CharSequence required) {
         this.required = required;
         return this;
     }

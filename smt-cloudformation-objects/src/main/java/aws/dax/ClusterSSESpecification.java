@@ -31,14 +31,14 @@ public class ClusterSSESpecification implements Property<ClusterSSESpecification
      */
     @JsonProperty("SSEEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dax-cluster-ssespecification.html#cfn-dax-cluster-ssespecification-sseenabled")
-    private Boolean sSEEnabled;
+    private CharSequence sSEEnabled;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dax-cluster-ssespecification.html#cfn-dax-cluster-ssespecification-sseenabled
      * 
      */
     @JsonIgnore
-    public Boolean getSSEEnabled() {
+    public CharSequence getSSEEnabled() {
         return sSEEnabled;
     }
 
@@ -47,11 +47,11 @@ public class ClusterSSESpecification implements Property<ClusterSSESpecification
      * 
      */
     @JsonIgnore
-    public void setSSEEnabled(Boolean sSEEnabled) {
+    public void setSSEEnabled(CharSequence sSEEnabled) {
         this.sSEEnabled = sSEEnabled;
     }
 
-    public ClusterSSESpecification withSSEEnabled(Boolean sSEEnabled) {
+    public ClusterSSESpecification withSSEEnabled(CharSequence sSEEnabled) {
         this.sSEEnabled = sSEEnabled;
         return this;
     }

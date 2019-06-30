@@ -42,7 +42,7 @@ public class LayerLoadBasedAutoScaling implements Property<LayerLoadBasedAutoSca
      */
     @JsonProperty("Enable")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling.html#cfn-opsworks-layer-loadbasedautoscaling-enable")
-    private Boolean enable;
+    private CharSequence enable;
     /**
      * LayerAutoScalingThresholds
      * <p>
@@ -85,7 +85,7 @@ public class LayerLoadBasedAutoScaling implements Property<LayerLoadBasedAutoSca
      * 
      */
     @JsonIgnore
-    public Boolean getEnable() {
+    public CharSequence getEnable() {
         return enable;
     }
 
@@ -94,11 +94,11 @@ public class LayerLoadBasedAutoScaling implements Property<LayerLoadBasedAutoSca
      * 
      */
     @JsonIgnore
-    public void setEnable(Boolean enable) {
+    public void setEnable(CharSequence enable) {
         this.enable = enable;
     }
 
-    public LayerLoadBasedAutoScaling withEnable(Boolean enable) {
+    public LayerLoadBasedAutoScaling withEnable(CharSequence enable) {
         this.enable = enable;
         return this;
     }

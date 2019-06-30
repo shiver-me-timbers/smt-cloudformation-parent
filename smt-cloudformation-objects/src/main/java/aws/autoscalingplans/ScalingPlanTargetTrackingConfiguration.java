@@ -37,14 +37,14 @@ public class ScalingPlanTargetTrackingConfiguration implements Property<ScalingP
      */
     @JsonProperty("ScaleOutCooldown")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html#cfn-autoscalingplans-scalingplan-targettrackingconfiguration-scaleoutcooldown")
-    private Integer scaleOutCooldown;
+    private Number scaleOutCooldown;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html#cfn-autoscalingplans-scalingplan-targettrackingconfiguration-targetvalue
      * 
      */
     @JsonProperty("TargetValue")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html#cfn-autoscalingplans-scalingplan-targettrackingconfiguration-targetvalue")
-    private Double targetValue;
+    private Number targetValue;
     /**
      * ScalingPlanPredefinedScalingMetricSpecification
      * <p>
@@ -60,21 +60,21 @@ public class ScalingPlanTargetTrackingConfiguration implements Property<ScalingP
      */
     @JsonProperty("DisableScaleIn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html#cfn-autoscalingplans-scalingplan-targettrackingconfiguration-disablescalein")
-    private Boolean disableScaleIn;
+    private CharSequence disableScaleIn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html#cfn-autoscalingplans-scalingplan-targettrackingconfiguration-scaleincooldown
      * 
      */
     @JsonProperty("ScaleInCooldown")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html#cfn-autoscalingplans-scalingplan-targettrackingconfiguration-scaleincooldown")
-    private Integer scaleInCooldown;
+    private Number scaleInCooldown;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html#cfn-autoscalingplans-scalingplan-targettrackingconfiguration-estimatedinstancewarmup
      * 
      */
     @JsonProperty("EstimatedInstanceWarmup")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html#cfn-autoscalingplans-scalingplan-targettrackingconfiguration-estimatedinstancewarmup")
-    private Integer estimatedInstanceWarmup;
+    private Number estimatedInstanceWarmup;
     /**
      * ScalingPlanCustomizedScalingMetricSpecification
      * <p>
@@ -90,7 +90,7 @@ public class ScalingPlanTargetTrackingConfiguration implements Property<ScalingP
      * 
      */
     @JsonIgnore
-    public Integer getScaleOutCooldown() {
+    public Number getScaleOutCooldown() {
         return scaleOutCooldown;
     }
 
@@ -99,11 +99,11 @@ public class ScalingPlanTargetTrackingConfiguration implements Property<ScalingP
      * 
      */
     @JsonIgnore
-    public void setScaleOutCooldown(Integer scaleOutCooldown) {
+    public void setScaleOutCooldown(Number scaleOutCooldown) {
         this.scaleOutCooldown = scaleOutCooldown;
     }
 
-    public ScalingPlanTargetTrackingConfiguration withScaleOutCooldown(Integer scaleOutCooldown) {
+    public ScalingPlanTargetTrackingConfiguration withScaleOutCooldown(Number scaleOutCooldown) {
         this.scaleOutCooldown = scaleOutCooldown;
         return this;
     }
@@ -113,7 +113,7 @@ public class ScalingPlanTargetTrackingConfiguration implements Property<ScalingP
      * 
      */
     @JsonIgnore
-    public Double getTargetValue() {
+    public Number getTargetValue() {
         return targetValue;
     }
 
@@ -122,11 +122,11 @@ public class ScalingPlanTargetTrackingConfiguration implements Property<ScalingP
      * 
      */
     @JsonIgnore
-    public void setTargetValue(Double targetValue) {
+    public void setTargetValue(Number targetValue) {
         this.targetValue = targetValue;
     }
 
-    public ScalingPlanTargetTrackingConfiguration withTargetValue(Double targetValue) {
+    public ScalingPlanTargetTrackingConfiguration withTargetValue(Number targetValue) {
         this.targetValue = targetValue;
         return this;
     }
@@ -163,7 +163,7 @@ public class ScalingPlanTargetTrackingConfiguration implements Property<ScalingP
      * 
      */
     @JsonIgnore
-    public Boolean getDisableScaleIn() {
+    public CharSequence getDisableScaleIn() {
         return disableScaleIn;
     }
 
@@ -172,11 +172,11 @@ public class ScalingPlanTargetTrackingConfiguration implements Property<ScalingP
      * 
      */
     @JsonIgnore
-    public void setDisableScaleIn(Boolean disableScaleIn) {
+    public void setDisableScaleIn(CharSequence disableScaleIn) {
         this.disableScaleIn = disableScaleIn;
     }
 
-    public ScalingPlanTargetTrackingConfiguration withDisableScaleIn(Boolean disableScaleIn) {
+    public ScalingPlanTargetTrackingConfiguration withDisableScaleIn(CharSequence disableScaleIn) {
         this.disableScaleIn = disableScaleIn;
         return this;
     }
@@ -186,7 +186,7 @@ public class ScalingPlanTargetTrackingConfiguration implements Property<ScalingP
      * 
      */
     @JsonIgnore
-    public Integer getScaleInCooldown() {
+    public Number getScaleInCooldown() {
         return scaleInCooldown;
     }
 
@@ -195,11 +195,11 @@ public class ScalingPlanTargetTrackingConfiguration implements Property<ScalingP
      * 
      */
     @JsonIgnore
-    public void setScaleInCooldown(Integer scaleInCooldown) {
+    public void setScaleInCooldown(Number scaleInCooldown) {
         this.scaleInCooldown = scaleInCooldown;
     }
 
-    public ScalingPlanTargetTrackingConfiguration withScaleInCooldown(Integer scaleInCooldown) {
+    public ScalingPlanTargetTrackingConfiguration withScaleInCooldown(Number scaleInCooldown) {
         this.scaleInCooldown = scaleInCooldown;
         return this;
     }
@@ -209,7 +209,7 @@ public class ScalingPlanTargetTrackingConfiguration implements Property<ScalingP
      * 
      */
     @JsonIgnore
-    public Integer getEstimatedInstanceWarmup() {
+    public Number getEstimatedInstanceWarmup() {
         return estimatedInstanceWarmup;
     }
 
@@ -218,11 +218,11 @@ public class ScalingPlanTargetTrackingConfiguration implements Property<ScalingP
      * 
      */
     @JsonIgnore
-    public void setEstimatedInstanceWarmup(Integer estimatedInstanceWarmup) {
+    public void setEstimatedInstanceWarmup(Number estimatedInstanceWarmup) {
         this.estimatedInstanceWarmup = estimatedInstanceWarmup;
     }
 
-    public ScalingPlanTargetTrackingConfiguration withEstimatedInstanceWarmup(Integer estimatedInstanceWarmup) {
+    public ScalingPlanTargetTrackingConfiguration withEstimatedInstanceWarmup(Number estimatedInstanceWarmup) {
         this.estimatedInstanceWarmup = estimatedInstanceWarmup;
         return this;
     }

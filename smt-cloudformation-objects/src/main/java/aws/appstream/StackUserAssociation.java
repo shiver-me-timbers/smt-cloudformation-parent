@@ -32,7 +32,7 @@ public class StackUserAssociation {
      */
     @JsonProperty("SendEmailNotification")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stackuserassociation.html#cfn-appstream-stackuserassociation-sendemailnotification")
-    private Boolean sendEmailNotification;
+    private CharSequence sendEmailNotification;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stackuserassociation.html#cfn-appstream-stackuserassociation-username
      * 
@@ -60,7 +60,7 @@ public class StackUserAssociation {
      * 
      */
     @JsonIgnore
-    public Boolean getSendEmailNotification() {
+    public CharSequence getSendEmailNotification() {
         return sendEmailNotification;
     }
 
@@ -69,11 +69,11 @@ public class StackUserAssociation {
      * 
      */
     @JsonIgnore
-    public void setSendEmailNotification(Boolean sendEmailNotification) {
+    public void setSendEmailNotification(CharSequence sendEmailNotification) {
         this.sendEmailNotification = sendEmailNotification;
     }
 
-    public StackUserAssociation withSendEmailNotification(Boolean sendEmailNotification) {
+    public StackUserAssociation withSendEmailNotification(CharSequence sendEmailNotification) {
         this.sendEmailNotification = sendEmailNotification;
         return this;
     }

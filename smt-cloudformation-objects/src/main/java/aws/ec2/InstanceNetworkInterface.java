@@ -44,14 +44,14 @@ public class InstanceNetworkInterface implements Property<InstanceNetworkInterfa
      */
     @JsonProperty("AssociatePublicIpAddress")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-associatepubip")
-    private Boolean associatePublicIpAddress;
+    private CharSequence associatePublicIpAddress;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-delete
      * 
      */
     @JsonProperty("DeleteOnTermination")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-delete")
-    private Boolean deleteOnTermination;
+    private CharSequence deleteOnTermination;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-description
      * 
@@ -79,7 +79,7 @@ public class InstanceNetworkInterface implements Property<InstanceNetworkInterfa
      */
     @JsonProperty("Ipv6AddressCount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#cfn-ec2-instance-networkinterface-ipv6addresscount")
-    private Integer ipv6AddressCount;
+    private Number ipv6AddressCount;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#cfn-ec2-instance-networkinterface-ipv6addresses
      * 
@@ -114,7 +114,7 @@ public class InstanceNetworkInterface implements Property<InstanceNetworkInterfa
      */
     @JsonProperty("SecondaryPrivateIpAddressCount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-secondprivateip")
-    private Integer secondaryPrivateIpAddressCount;
+    private Number secondaryPrivateIpAddressCount;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-subnetid
      * 
@@ -128,7 +128,7 @@ public class InstanceNetworkInterface implements Property<InstanceNetworkInterfa
      * 
      */
     @JsonIgnore
-    public Boolean getAssociatePublicIpAddress() {
+    public CharSequence getAssociatePublicIpAddress() {
         return associatePublicIpAddress;
     }
 
@@ -137,11 +137,11 @@ public class InstanceNetworkInterface implements Property<InstanceNetworkInterfa
      * 
      */
     @JsonIgnore
-    public void setAssociatePublicIpAddress(Boolean associatePublicIpAddress) {
+    public void setAssociatePublicIpAddress(CharSequence associatePublicIpAddress) {
         this.associatePublicIpAddress = associatePublicIpAddress;
     }
 
-    public InstanceNetworkInterface withAssociatePublicIpAddress(Boolean associatePublicIpAddress) {
+    public InstanceNetworkInterface withAssociatePublicIpAddress(CharSequence associatePublicIpAddress) {
         this.associatePublicIpAddress = associatePublicIpAddress;
         return this;
     }
@@ -151,7 +151,7 @@ public class InstanceNetworkInterface implements Property<InstanceNetworkInterfa
      * 
      */
     @JsonIgnore
-    public Boolean getDeleteOnTermination() {
+    public CharSequence getDeleteOnTermination() {
         return deleteOnTermination;
     }
 
@@ -160,11 +160,11 @@ public class InstanceNetworkInterface implements Property<InstanceNetworkInterfa
      * 
      */
     @JsonIgnore
-    public void setDeleteOnTermination(Boolean deleteOnTermination) {
+    public void setDeleteOnTermination(CharSequence deleteOnTermination) {
         this.deleteOnTermination = deleteOnTermination;
     }
 
-    public InstanceNetworkInterface withDeleteOnTermination(Boolean deleteOnTermination) {
+    public InstanceNetworkInterface withDeleteOnTermination(CharSequence deleteOnTermination) {
         this.deleteOnTermination = deleteOnTermination;
         return this;
     }
@@ -243,7 +243,7 @@ public class InstanceNetworkInterface implements Property<InstanceNetworkInterfa
      * 
      */
     @JsonIgnore
-    public Integer getIpv6AddressCount() {
+    public Number getIpv6AddressCount() {
         return ipv6AddressCount;
     }
 
@@ -252,11 +252,11 @@ public class InstanceNetworkInterface implements Property<InstanceNetworkInterfa
      * 
      */
     @JsonIgnore
-    public void setIpv6AddressCount(Integer ipv6AddressCount) {
+    public void setIpv6AddressCount(Number ipv6AddressCount) {
         this.ipv6AddressCount = ipv6AddressCount;
     }
 
-    public InstanceNetworkInterface withIpv6AddressCount(Integer ipv6AddressCount) {
+    public InstanceNetworkInterface withIpv6AddressCount(Number ipv6AddressCount) {
         this.ipv6AddressCount = ipv6AddressCount;
         return this;
     }
@@ -358,7 +358,7 @@ public class InstanceNetworkInterface implements Property<InstanceNetworkInterfa
      * 
      */
     @JsonIgnore
-    public Integer getSecondaryPrivateIpAddressCount() {
+    public Number getSecondaryPrivateIpAddressCount() {
         return secondaryPrivateIpAddressCount;
     }
 
@@ -367,11 +367,11 @@ public class InstanceNetworkInterface implements Property<InstanceNetworkInterfa
      * 
      */
     @JsonIgnore
-    public void setSecondaryPrivateIpAddressCount(Integer secondaryPrivateIpAddressCount) {
+    public void setSecondaryPrivateIpAddressCount(Number secondaryPrivateIpAddressCount) {
         this.secondaryPrivateIpAddressCount = secondaryPrivateIpAddressCount;
     }
 
-    public InstanceNetworkInterface withSecondaryPrivateIpAddressCount(Integer secondaryPrivateIpAddressCount) {
+    public InstanceNetworkInterface withSecondaryPrivateIpAddressCount(Number secondaryPrivateIpAddressCount) {
         this.secondaryPrivateIpAddressCount = secondaryPrivateIpAddressCount;
         return this;
     }

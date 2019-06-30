@@ -32,7 +32,7 @@ public class ConfigurationAssociationConfigurationId implements Property<Configu
      */
     @JsonProperty("Revision")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-configurationassociation-configurationid.html#cfn-amazonmq-configurationassociation-configurationid-revision")
-    private Integer revision;
+    private Number revision;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-configurationassociation-configurationid.html#cfn-amazonmq-configurationassociation-configurationid-id
      * 
@@ -46,7 +46,7 @@ public class ConfigurationAssociationConfigurationId implements Property<Configu
      * 
      */
     @JsonIgnore
-    public Integer getRevision() {
+    public Number getRevision() {
         return revision;
     }
 
@@ -55,11 +55,11 @@ public class ConfigurationAssociationConfigurationId implements Property<Configu
      * 
      */
     @JsonIgnore
-    public void setRevision(Integer revision) {
+    public void setRevision(Number revision) {
         this.revision = revision;
     }
 
-    public ConfigurationAssociationConfigurationId withRevision(Integer revision) {
+    public ConfigurationAssociationConfigurationId withRevision(Number revision) {
         this.revision = revision;
         return this;
     }

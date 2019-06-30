@@ -40,21 +40,21 @@ public class SecretGenerateSecretString implements Property<SecretGenerateSecret
      */
     @JsonProperty("ExcludeUppercase")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-secretsmanager-secret-generatesecretstring.html#cfn-secretsmanager-secret-generatesecretstring-excludeuppercase")
-    private Boolean excludeUppercase;
+    private CharSequence excludeUppercase;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-secretsmanager-secret-generatesecretstring.html#cfn-secretsmanager-secret-generatesecretstring-requireeachincludedtype
      * 
      */
     @JsonProperty("RequireEachIncludedType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-secretsmanager-secret-generatesecretstring.html#cfn-secretsmanager-secret-generatesecretstring-requireeachincludedtype")
-    private Boolean requireEachIncludedType;
+    private CharSequence requireEachIncludedType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-secretsmanager-secret-generatesecretstring.html#cfn-secretsmanager-secret-generatesecretstring-includespace
      * 
      */
     @JsonProperty("IncludeSpace")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-secretsmanager-secret-generatesecretstring.html#cfn-secretsmanager-secret-generatesecretstring-includespace")
-    private Boolean includeSpace;
+    private CharSequence includeSpace;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-secretsmanager-secret-generatesecretstring.html#cfn-secretsmanager-secret-generatesecretstring-excludecharacters
      * 
@@ -75,21 +75,21 @@ public class SecretGenerateSecretString implements Property<SecretGenerateSecret
      */
     @JsonProperty("PasswordLength")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-secretsmanager-secret-generatesecretstring.html#cfn-secretsmanager-secret-generatesecretstring-passwordlength")
-    private Integer passwordLength;
+    private Number passwordLength;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-secretsmanager-secret-generatesecretstring.html#cfn-secretsmanager-secret-generatesecretstring-excludepunctuation
      * 
      */
     @JsonProperty("ExcludePunctuation")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-secretsmanager-secret-generatesecretstring.html#cfn-secretsmanager-secret-generatesecretstring-excludepunctuation")
-    private Boolean excludePunctuation;
+    private CharSequence excludePunctuation;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-secretsmanager-secret-generatesecretstring.html#cfn-secretsmanager-secret-generatesecretstring-excludelowercase
      * 
      */
     @JsonProperty("ExcludeLowercase")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-secretsmanager-secret-generatesecretstring.html#cfn-secretsmanager-secret-generatesecretstring-excludelowercase")
-    private Boolean excludeLowercase;
+    private CharSequence excludeLowercase;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-secretsmanager-secret-generatesecretstring.html#cfn-secretsmanager-secret-generatesecretstring-secretstringtemplate
      * 
@@ -103,14 +103,14 @@ public class SecretGenerateSecretString implements Property<SecretGenerateSecret
      */
     @JsonProperty("ExcludeNumbers")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-secretsmanager-secret-generatesecretstring.html#cfn-secretsmanager-secret-generatesecretstring-excludenumbers")
-    private Boolean excludeNumbers;
+    private CharSequence excludeNumbers;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-secretsmanager-secret-generatesecretstring.html#cfn-secretsmanager-secret-generatesecretstring-excludeuppercase
      * 
      */
     @JsonIgnore
-    public Boolean getExcludeUppercase() {
+    public CharSequence getExcludeUppercase() {
         return excludeUppercase;
     }
 
@@ -119,11 +119,11 @@ public class SecretGenerateSecretString implements Property<SecretGenerateSecret
      * 
      */
     @JsonIgnore
-    public void setExcludeUppercase(Boolean excludeUppercase) {
+    public void setExcludeUppercase(CharSequence excludeUppercase) {
         this.excludeUppercase = excludeUppercase;
     }
 
-    public SecretGenerateSecretString withExcludeUppercase(Boolean excludeUppercase) {
+    public SecretGenerateSecretString withExcludeUppercase(CharSequence excludeUppercase) {
         this.excludeUppercase = excludeUppercase;
         return this;
     }
@@ -133,7 +133,7 @@ public class SecretGenerateSecretString implements Property<SecretGenerateSecret
      * 
      */
     @JsonIgnore
-    public Boolean getRequireEachIncludedType() {
+    public CharSequence getRequireEachIncludedType() {
         return requireEachIncludedType;
     }
 
@@ -142,11 +142,11 @@ public class SecretGenerateSecretString implements Property<SecretGenerateSecret
      * 
      */
     @JsonIgnore
-    public void setRequireEachIncludedType(Boolean requireEachIncludedType) {
+    public void setRequireEachIncludedType(CharSequence requireEachIncludedType) {
         this.requireEachIncludedType = requireEachIncludedType;
     }
 
-    public SecretGenerateSecretString withRequireEachIncludedType(Boolean requireEachIncludedType) {
+    public SecretGenerateSecretString withRequireEachIncludedType(CharSequence requireEachIncludedType) {
         this.requireEachIncludedType = requireEachIncludedType;
         return this;
     }
@@ -156,7 +156,7 @@ public class SecretGenerateSecretString implements Property<SecretGenerateSecret
      * 
      */
     @JsonIgnore
-    public Boolean getIncludeSpace() {
+    public CharSequence getIncludeSpace() {
         return includeSpace;
     }
 
@@ -165,11 +165,11 @@ public class SecretGenerateSecretString implements Property<SecretGenerateSecret
      * 
      */
     @JsonIgnore
-    public void setIncludeSpace(Boolean includeSpace) {
+    public void setIncludeSpace(CharSequence includeSpace) {
         this.includeSpace = includeSpace;
     }
 
-    public SecretGenerateSecretString withIncludeSpace(Boolean includeSpace) {
+    public SecretGenerateSecretString withIncludeSpace(CharSequence includeSpace) {
         this.includeSpace = includeSpace;
         return this;
     }
@@ -225,7 +225,7 @@ public class SecretGenerateSecretString implements Property<SecretGenerateSecret
      * 
      */
     @JsonIgnore
-    public Integer getPasswordLength() {
+    public Number getPasswordLength() {
         return passwordLength;
     }
 
@@ -234,11 +234,11 @@ public class SecretGenerateSecretString implements Property<SecretGenerateSecret
      * 
      */
     @JsonIgnore
-    public void setPasswordLength(Integer passwordLength) {
+    public void setPasswordLength(Number passwordLength) {
         this.passwordLength = passwordLength;
     }
 
-    public SecretGenerateSecretString withPasswordLength(Integer passwordLength) {
+    public SecretGenerateSecretString withPasswordLength(Number passwordLength) {
         this.passwordLength = passwordLength;
         return this;
     }
@@ -248,7 +248,7 @@ public class SecretGenerateSecretString implements Property<SecretGenerateSecret
      * 
      */
     @JsonIgnore
-    public Boolean getExcludePunctuation() {
+    public CharSequence getExcludePunctuation() {
         return excludePunctuation;
     }
 
@@ -257,11 +257,11 @@ public class SecretGenerateSecretString implements Property<SecretGenerateSecret
      * 
      */
     @JsonIgnore
-    public void setExcludePunctuation(Boolean excludePunctuation) {
+    public void setExcludePunctuation(CharSequence excludePunctuation) {
         this.excludePunctuation = excludePunctuation;
     }
 
-    public SecretGenerateSecretString withExcludePunctuation(Boolean excludePunctuation) {
+    public SecretGenerateSecretString withExcludePunctuation(CharSequence excludePunctuation) {
         this.excludePunctuation = excludePunctuation;
         return this;
     }
@@ -271,7 +271,7 @@ public class SecretGenerateSecretString implements Property<SecretGenerateSecret
      * 
      */
     @JsonIgnore
-    public Boolean getExcludeLowercase() {
+    public CharSequence getExcludeLowercase() {
         return excludeLowercase;
     }
 
@@ -280,11 +280,11 @@ public class SecretGenerateSecretString implements Property<SecretGenerateSecret
      * 
      */
     @JsonIgnore
-    public void setExcludeLowercase(Boolean excludeLowercase) {
+    public void setExcludeLowercase(CharSequence excludeLowercase) {
         this.excludeLowercase = excludeLowercase;
     }
 
-    public SecretGenerateSecretString withExcludeLowercase(Boolean excludeLowercase) {
+    public SecretGenerateSecretString withExcludeLowercase(CharSequence excludeLowercase) {
         this.excludeLowercase = excludeLowercase;
         return this;
     }
@@ -317,7 +317,7 @@ public class SecretGenerateSecretString implements Property<SecretGenerateSecret
      * 
      */
     @JsonIgnore
-    public Boolean getExcludeNumbers() {
+    public CharSequence getExcludeNumbers() {
         return excludeNumbers;
     }
 
@@ -326,11 +326,11 @@ public class SecretGenerateSecretString implements Property<SecretGenerateSecret
      * 
      */
     @JsonIgnore
-    public void setExcludeNumbers(Boolean excludeNumbers) {
+    public void setExcludeNumbers(CharSequence excludeNumbers) {
         this.excludeNumbers = excludeNumbers;
     }
 
-    public SecretGenerateSecretString withExcludeNumbers(Boolean excludeNumbers) {
+    public SecretGenerateSecretString withExcludeNumbers(CharSequence excludeNumbers) {
         this.excludeNumbers = excludeNumbers;
         return this;
     }

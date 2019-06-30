@@ -33,7 +33,7 @@ public class IdentityPoolCognitoIdentityProvider implements Property<IdentityPoo
      */
     @JsonProperty("ServerSideTokenCheck")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitoidentityprovider.html#cfn-cognito-identitypool-cognitoidentityprovider-serversidetokencheck")
-    private Boolean serverSideTokenCheck;
+    private CharSequence serverSideTokenCheck;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitoidentityprovider.html#cfn-cognito-identitypool-cognitoidentityprovider-providername
      * 
@@ -54,7 +54,7 @@ public class IdentityPoolCognitoIdentityProvider implements Property<IdentityPoo
      * 
      */
     @JsonIgnore
-    public Boolean getServerSideTokenCheck() {
+    public CharSequence getServerSideTokenCheck() {
         return serverSideTokenCheck;
     }
 
@@ -63,11 +63,11 @@ public class IdentityPoolCognitoIdentityProvider implements Property<IdentityPoo
      * 
      */
     @JsonIgnore
-    public void setServerSideTokenCheck(Boolean serverSideTokenCheck) {
+    public void setServerSideTokenCheck(CharSequence serverSideTokenCheck) {
         this.serverSideTokenCheck = serverSideTokenCheck;
     }
 
-    public IdentityPoolCognitoIdentityProvider withServerSideTokenCheck(Boolean serverSideTokenCheck) {
+    public IdentityPoolCognitoIdentityProvider withServerSideTokenCheck(CharSequence serverSideTokenCheck) {
         this.serverSideTokenCheck = serverSideTokenCheck;
         return this;
     }

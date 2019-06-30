@@ -62,7 +62,7 @@ public class Member {
      */
     @JsonProperty("DisableEmailNotification")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html#cfn-guardduty-member-disableemailnotification")
-    private Boolean disableEmailNotification;
+    private CharSequence disableEmailNotification;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html#cfn-guardduty-member-detectorid
      * 
@@ -168,7 +168,7 @@ public class Member {
      * 
      */
     @JsonIgnore
-    public Boolean getDisableEmailNotification() {
+    public CharSequence getDisableEmailNotification() {
         return disableEmailNotification;
     }
 
@@ -177,11 +177,11 @@ public class Member {
      * 
      */
     @JsonIgnore
-    public void setDisableEmailNotification(Boolean disableEmailNotification) {
+    public void setDisableEmailNotification(CharSequence disableEmailNotification) {
         this.disableEmailNotification = disableEmailNotification;
     }
 
-    public Member withDisableEmailNotification(Boolean disableEmailNotification) {
+    public Member withDisableEmailNotification(CharSequence disableEmailNotification) {
         this.disableEmailNotification = disableEmailNotification;
         return this;
     }

@@ -42,28 +42,28 @@ public class StageRouteSettings implements Property<StageRouteSettings>
      */
     @JsonProperty("DataTraceEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-stage-routesettings.html#cfn-apigatewayv2-stage-routesettings-datatraceenabled")
-    private Boolean dataTraceEnabled;
+    private CharSequence dataTraceEnabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-stage-routesettings.html#cfn-apigatewayv2-stage-routesettings-throttlingburstlimit
      * 
      */
     @JsonProperty("ThrottlingBurstLimit")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-stage-routesettings.html#cfn-apigatewayv2-stage-routesettings-throttlingburstlimit")
-    private Integer throttlingBurstLimit;
+    private Number throttlingBurstLimit;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-stage-routesettings.html#cfn-apigatewayv2-stage-routesettings-detailedmetricsenabled
      * 
      */
     @JsonProperty("DetailedMetricsEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-stage-routesettings.html#cfn-apigatewayv2-stage-routesettings-detailedmetricsenabled")
-    private Boolean detailedMetricsEnabled;
+    private CharSequence detailedMetricsEnabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-stage-routesettings.html#cfn-apigatewayv2-stage-routesettings-throttlingratelimit
      * 
      */
     @JsonProperty("ThrottlingRateLimit")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-stage-routesettings.html#cfn-apigatewayv2-stage-routesettings-throttlingratelimit")
-    private Double throttlingRateLimit;
+    private Number throttlingRateLimit;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-stage-routesettings.html#cfn-apigatewayv2-stage-routesettings-logginglevel
@@ -93,7 +93,7 @@ public class StageRouteSettings implements Property<StageRouteSettings>
      * 
      */
     @JsonIgnore
-    public Boolean getDataTraceEnabled() {
+    public CharSequence getDataTraceEnabled() {
         return dataTraceEnabled;
     }
 
@@ -102,11 +102,11 @@ public class StageRouteSettings implements Property<StageRouteSettings>
      * 
      */
     @JsonIgnore
-    public void setDataTraceEnabled(Boolean dataTraceEnabled) {
+    public void setDataTraceEnabled(CharSequence dataTraceEnabled) {
         this.dataTraceEnabled = dataTraceEnabled;
     }
 
-    public StageRouteSettings withDataTraceEnabled(Boolean dataTraceEnabled) {
+    public StageRouteSettings withDataTraceEnabled(CharSequence dataTraceEnabled) {
         this.dataTraceEnabled = dataTraceEnabled;
         return this;
     }
@@ -116,7 +116,7 @@ public class StageRouteSettings implements Property<StageRouteSettings>
      * 
      */
     @JsonIgnore
-    public Integer getThrottlingBurstLimit() {
+    public Number getThrottlingBurstLimit() {
         return throttlingBurstLimit;
     }
 
@@ -125,11 +125,11 @@ public class StageRouteSettings implements Property<StageRouteSettings>
      * 
      */
     @JsonIgnore
-    public void setThrottlingBurstLimit(Integer throttlingBurstLimit) {
+    public void setThrottlingBurstLimit(Number throttlingBurstLimit) {
         this.throttlingBurstLimit = throttlingBurstLimit;
     }
 
-    public StageRouteSettings withThrottlingBurstLimit(Integer throttlingBurstLimit) {
+    public StageRouteSettings withThrottlingBurstLimit(Number throttlingBurstLimit) {
         this.throttlingBurstLimit = throttlingBurstLimit;
         return this;
     }
@@ -139,7 +139,7 @@ public class StageRouteSettings implements Property<StageRouteSettings>
      * 
      */
     @JsonIgnore
-    public Boolean getDetailedMetricsEnabled() {
+    public CharSequence getDetailedMetricsEnabled() {
         return detailedMetricsEnabled;
     }
 
@@ -148,11 +148,11 @@ public class StageRouteSettings implements Property<StageRouteSettings>
      * 
      */
     @JsonIgnore
-    public void setDetailedMetricsEnabled(Boolean detailedMetricsEnabled) {
+    public void setDetailedMetricsEnabled(CharSequence detailedMetricsEnabled) {
         this.detailedMetricsEnabled = detailedMetricsEnabled;
     }
 
-    public StageRouteSettings withDetailedMetricsEnabled(Boolean detailedMetricsEnabled) {
+    public StageRouteSettings withDetailedMetricsEnabled(CharSequence detailedMetricsEnabled) {
         this.detailedMetricsEnabled = detailedMetricsEnabled;
         return this;
     }
@@ -162,7 +162,7 @@ public class StageRouteSettings implements Property<StageRouteSettings>
      * 
      */
     @JsonIgnore
-    public Double getThrottlingRateLimit() {
+    public Number getThrottlingRateLimit() {
         return throttlingRateLimit;
     }
 
@@ -171,11 +171,11 @@ public class StageRouteSettings implements Property<StageRouteSettings>
      * 
      */
     @JsonIgnore
-    public void setThrottlingRateLimit(Double throttlingRateLimit) {
+    public void setThrottlingRateLimit(Number throttlingRateLimit) {
         this.throttlingRateLimit = throttlingRateLimit;
     }
 
-    public StageRouteSettings withThrottlingRateLimit(Double throttlingRateLimit) {
+    public StageRouteSettings withThrottlingRateLimit(Number throttlingRateLimit) {
         this.throttlingRateLimit = throttlingRateLimit;
         return this;
     }

@@ -69,7 +69,7 @@ public class Server {
      */
     @JsonProperty("DisableAutomatedBackup")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-disableautomatedbackup")
-    private Boolean disableAutomatedBackup;
+    private CharSequence disableAutomatedBackup;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-backupid
      * 
@@ -97,7 +97,7 @@ public class Server {
      */
     @JsonProperty("AssociatePublicIpAddress")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-associatepublicipaddress")
-    private Boolean associatePublicIpAddress;
+    private CharSequence associatePublicIpAddress;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-instanceprofilearn
      * 
@@ -146,7 +146,7 @@ public class Server {
      */
     @JsonProperty("BackupRetentionCount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-backupretentioncount")
-    private Integer backupRetentionCount;
+    private Number backupRetentionCount;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-instancetype
      * 
@@ -236,7 +236,7 @@ public class Server {
      * 
      */
     @JsonIgnore
-    public Boolean getDisableAutomatedBackup() {
+    public CharSequence getDisableAutomatedBackup() {
         return disableAutomatedBackup;
     }
 
@@ -245,11 +245,11 @@ public class Server {
      * 
      */
     @JsonIgnore
-    public void setDisableAutomatedBackup(Boolean disableAutomatedBackup) {
+    public void setDisableAutomatedBackup(CharSequence disableAutomatedBackup) {
         this.disableAutomatedBackup = disableAutomatedBackup;
     }
 
-    public Server withDisableAutomatedBackup(Boolean disableAutomatedBackup) {
+    public Server withDisableAutomatedBackup(CharSequence disableAutomatedBackup) {
         this.disableAutomatedBackup = disableAutomatedBackup;
         return this;
     }
@@ -328,7 +328,7 @@ public class Server {
      * 
      */
     @JsonIgnore
-    public Boolean getAssociatePublicIpAddress() {
+    public CharSequence getAssociatePublicIpAddress() {
         return associatePublicIpAddress;
     }
 
@@ -337,11 +337,11 @@ public class Server {
      * 
      */
     @JsonIgnore
-    public void setAssociatePublicIpAddress(Boolean associatePublicIpAddress) {
+    public void setAssociatePublicIpAddress(CharSequence associatePublicIpAddress) {
         this.associatePublicIpAddress = associatePublicIpAddress;
     }
 
-    public Server withAssociatePublicIpAddress(Boolean associatePublicIpAddress) {
+    public Server withAssociatePublicIpAddress(CharSequence associatePublicIpAddress) {
         this.associatePublicIpAddress = associatePublicIpAddress;
         return this;
     }
@@ -489,7 +489,7 @@ public class Server {
      * 
      */
     @JsonIgnore
-    public Integer getBackupRetentionCount() {
+    public Number getBackupRetentionCount() {
         return backupRetentionCount;
     }
 
@@ -498,11 +498,11 @@ public class Server {
      * 
      */
     @JsonIgnore
-    public void setBackupRetentionCount(Integer backupRetentionCount) {
+    public void setBackupRetentionCount(Number backupRetentionCount) {
         this.backupRetentionCount = backupRetentionCount;
     }
 
-    public Server withBackupRetentionCount(Integer backupRetentionCount) {
+    public Server withBackupRetentionCount(Number backupRetentionCount) {
         this.backupRetentionCount = backupRetentionCount;
         return this;
     }

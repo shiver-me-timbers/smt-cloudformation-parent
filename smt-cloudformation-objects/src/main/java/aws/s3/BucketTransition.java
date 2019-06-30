@@ -40,14 +40,14 @@ public class BucketTransition implements Property<BucketTransition>
      */
     @JsonProperty("TransitionDate")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-transition.html#cfn-s3-bucket-lifecycleconfig-rule-transition-transitiondate")
-    private String transitionDate;
+    private CharSequence transitionDate;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-transition.html#cfn-s3-bucket-lifecycleconfig-rule-transition-transitionindays
      * 
      */
     @JsonProperty("TransitionInDays")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-transition.html#cfn-s3-bucket-lifecycleconfig-rule-transition-transitionindays")
-    private Integer transitionInDays;
+    private Number transitionInDays;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-transition.html#cfn-s3-bucket-lifecycleconfig-rule-transition-storageclass
@@ -77,7 +77,7 @@ public class BucketTransition implements Property<BucketTransition>
      * 
      */
     @JsonIgnore
-    public String getTransitionDate() {
+    public CharSequence getTransitionDate() {
         return transitionDate;
     }
 
@@ -86,11 +86,11 @@ public class BucketTransition implements Property<BucketTransition>
      * 
      */
     @JsonIgnore
-    public void setTransitionDate(String transitionDate) {
+    public void setTransitionDate(CharSequence transitionDate) {
         this.transitionDate = transitionDate;
     }
 
-    public BucketTransition withTransitionDate(String transitionDate) {
+    public BucketTransition withTransitionDate(CharSequence transitionDate) {
         this.transitionDate = transitionDate;
         return this;
     }
@@ -100,7 +100,7 @@ public class BucketTransition implements Property<BucketTransition>
      * 
      */
     @JsonIgnore
-    public Integer getTransitionInDays() {
+    public Number getTransitionInDays() {
         return transitionInDays;
     }
 
@@ -109,11 +109,11 @@ public class BucketTransition implements Property<BucketTransition>
      * 
      */
     @JsonIgnore
-    public void setTransitionInDays(Integer transitionInDays) {
+    public void setTransitionInDays(Number transitionInDays) {
         this.transitionInDays = transitionInDays;
     }
 
-    public BucketTransition withTransitionInDays(Integer transitionInDays) {
+    public BucketTransition withTransitionInDays(Number transitionInDays) {
         this.transitionInDays = transitionInDays;
         return this;
     }

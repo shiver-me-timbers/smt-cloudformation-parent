@@ -39,7 +39,7 @@ public class UserLoginProfile implements Property<UserLoginProfile>
      */
     @JsonProperty("PasswordResetRequired")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user-loginprofile.html#cfn-iam-user-loginprofile-passwordresetrequired")
-    private Boolean passwordResetRequired;
+    private CharSequence passwordResetRequired;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user-loginprofile.html#cfn-iam-user-loginprofile-password
@@ -69,7 +69,7 @@ public class UserLoginProfile implements Property<UserLoginProfile>
      * 
      */
     @JsonIgnore
-    public Boolean getPasswordResetRequired() {
+    public CharSequence getPasswordResetRequired() {
         return passwordResetRequired;
     }
 
@@ -78,11 +78,11 @@ public class UserLoginProfile implements Property<UserLoginProfile>
      * 
      */
     @JsonIgnore
-    public void setPasswordResetRequired(Boolean passwordResetRequired) {
+    public void setPasswordResetRequired(CharSequence passwordResetRequired) {
         this.passwordResetRequired = passwordResetRequired;
     }
 
-    public UserLoginProfile withPasswordResetRequired(Boolean passwordResetRequired) {
+    public UserLoginProfile withPasswordResetRequired(CharSequence passwordResetRequired) {
         this.passwordResetRequired = passwordResetRequired;
         return this;
     }

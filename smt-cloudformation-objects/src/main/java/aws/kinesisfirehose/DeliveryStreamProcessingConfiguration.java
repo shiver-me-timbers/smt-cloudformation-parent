@@ -35,7 +35,7 @@ public class DeliveryStreamProcessingConfiguration implements Property<DeliveryS
      */
     @JsonProperty("Enabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processingconfiguration.html#cfn-kinesisfirehose-deliverystream-processingconfiguration-enabled")
-    private Boolean enabled;
+    private CharSequence enabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processingconfiguration.html#cfn-kinesisfirehose-deliverystream-processingconfiguration-processors
      * 
@@ -50,7 +50,7 @@ public class DeliveryStreamProcessingConfiguration implements Property<DeliveryS
      * 
      */
     @JsonIgnore
-    public Boolean getEnabled() {
+    public CharSequence getEnabled() {
         return enabled;
     }
 
@@ -59,11 +59,11 @@ public class DeliveryStreamProcessingConfiguration implements Property<DeliveryS
      * 
      */
     @JsonIgnore
-    public void setEnabled(Boolean enabled) {
+    public void setEnabled(CharSequence enabled) {
         this.enabled = enabled;
     }
 
-    public DeliveryStreamProcessingConfiguration withEnabled(Boolean enabled) {
+    public DeliveryStreamProcessingConfiguration withEnabled(CharSequence enabled) {
         this.enabled = enabled;
         return this;
     }

@@ -99,7 +99,7 @@ public class RecordSet {
      */
     @JsonProperty("MultiValueAnswer")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-multivalueanswer")
-    private Boolean multiValueAnswer;
+    private CharSequence multiValueAnswer;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-name
      * 
@@ -148,7 +148,7 @@ public class RecordSet {
      */
     @JsonProperty("Weight")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-weight")
-    private Integer weight;
+    private Number weight;
 
     /**
      * RecordSetGroupAliasTarget
@@ -324,7 +324,7 @@ public class RecordSet {
      * 
      */
     @JsonIgnore
-    public Boolean getMultiValueAnswer() {
+    public CharSequence getMultiValueAnswer() {
         return multiValueAnswer;
     }
 
@@ -333,11 +333,11 @@ public class RecordSet {
      * 
      */
     @JsonIgnore
-    public void setMultiValueAnswer(Boolean multiValueAnswer) {
+    public void setMultiValueAnswer(CharSequence multiValueAnswer) {
         this.multiValueAnswer = multiValueAnswer;
     }
 
-    public RecordSet withMultiValueAnswer(Boolean multiValueAnswer) {
+    public RecordSet withMultiValueAnswer(CharSequence multiValueAnswer) {
         this.multiValueAnswer = multiValueAnswer;
         return this;
     }
@@ -485,7 +485,7 @@ public class RecordSet {
      * 
      */
     @JsonIgnore
-    public Integer getWeight() {
+    public Number getWeight() {
         return weight;
     }
 
@@ -494,11 +494,11 @@ public class RecordSet {
      * 
      */
     @JsonIgnore
-    public void setWeight(Integer weight) {
+    public void setWeight(Number weight) {
         this.weight = weight;
     }
 
-    public RecordSet withWeight(Integer weight) {
+    public RecordSet withWeight(Number weight) {
         this.weight = weight;
         return this;
     }

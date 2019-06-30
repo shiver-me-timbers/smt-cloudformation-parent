@@ -44,14 +44,14 @@ public class VPC {
      */
     @JsonProperty("EnableDnsHostnames")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-EnableDnsHostnames")
-    private Boolean enableDnsHostnames;
+    private CharSequence enableDnsHostnames;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-EnableDnsSupport
      * 
      */
     @JsonProperty("EnableDnsSupport")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-EnableDnsSupport")
-    private Boolean enableDnsSupport;
+    private CharSequence enableDnsSupport;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-instancetenancy
      * 
@@ -95,7 +95,7 @@ public class VPC {
      * 
      */
     @JsonIgnore
-    public Boolean getEnableDnsHostnames() {
+    public CharSequence getEnableDnsHostnames() {
         return enableDnsHostnames;
     }
 
@@ -104,11 +104,11 @@ public class VPC {
      * 
      */
     @JsonIgnore
-    public void setEnableDnsHostnames(Boolean enableDnsHostnames) {
+    public void setEnableDnsHostnames(CharSequence enableDnsHostnames) {
         this.enableDnsHostnames = enableDnsHostnames;
     }
 
-    public VPC withEnableDnsHostnames(Boolean enableDnsHostnames) {
+    public VPC withEnableDnsHostnames(CharSequence enableDnsHostnames) {
         this.enableDnsHostnames = enableDnsHostnames;
         return this;
     }
@@ -118,7 +118,7 @@ public class VPC {
      * 
      */
     @JsonIgnore
-    public Boolean getEnableDnsSupport() {
+    public CharSequence getEnableDnsSupport() {
         return enableDnsSupport;
     }
 
@@ -127,11 +127,11 @@ public class VPC {
      * 
      */
     @JsonIgnore
-    public void setEnableDnsSupport(Boolean enableDnsSupport) {
+    public void setEnableDnsSupport(CharSequence enableDnsSupport) {
         this.enableDnsSupport = enableDnsSupport;
     }
 
-    public VPC withEnableDnsSupport(Boolean enableDnsSupport) {
+    public VPC withEnableDnsSupport(CharSequence enableDnsSupport) {
         this.enableDnsSupport = enableDnsSupport;
         return this;
     }

@@ -54,14 +54,14 @@ public class ComputeEnvironmentComputeResources implements Property<ComputeEnvir
      */
     @JsonProperty("MaxvCpus")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-maxvcpus")
-    private Integer maxvCpus;
+    private Number maxvCpus;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-bidpercentage
      * 
      */
     @JsonProperty("BidPercentage")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-bidpercentage")
-    private Integer bidPercentage;
+    private Number bidPercentage;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-securitygroupids
      * 
@@ -89,7 +89,7 @@ public class ComputeEnvironmentComputeResources implements Property<ComputeEnvir
      */
     @JsonProperty("MinvCpus")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-minvcpus")
-    private Integer minvCpus;
+    private Number minvCpus;
     /**
      * ComputeEnvironmentLaunchTemplateSpecification
      * <p>
@@ -147,7 +147,7 @@ public class ComputeEnvironmentComputeResources implements Property<ComputeEnvir
      */
     @JsonProperty("DesiredvCpus")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-desiredvcpus")
-    private Integer desiredvCpus;
+    private Number desiredvCpus;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-spotiamfleetrole
@@ -177,7 +177,7 @@ public class ComputeEnvironmentComputeResources implements Property<ComputeEnvir
      * 
      */
     @JsonIgnore
-    public Integer getMaxvCpus() {
+    public Number getMaxvCpus() {
         return maxvCpus;
     }
 
@@ -186,11 +186,11 @@ public class ComputeEnvironmentComputeResources implements Property<ComputeEnvir
      * 
      */
     @JsonIgnore
-    public void setMaxvCpus(Integer maxvCpus) {
+    public void setMaxvCpus(Number maxvCpus) {
         this.maxvCpus = maxvCpus;
     }
 
-    public ComputeEnvironmentComputeResources withMaxvCpus(Integer maxvCpus) {
+    public ComputeEnvironmentComputeResources withMaxvCpus(Number maxvCpus) {
         this.maxvCpus = maxvCpus;
         return this;
     }
@@ -200,7 +200,7 @@ public class ComputeEnvironmentComputeResources implements Property<ComputeEnvir
      * 
      */
     @JsonIgnore
-    public Integer getBidPercentage() {
+    public Number getBidPercentage() {
         return bidPercentage;
     }
 
@@ -209,11 +209,11 @@ public class ComputeEnvironmentComputeResources implements Property<ComputeEnvir
      * 
      */
     @JsonIgnore
-    public void setBidPercentage(Integer bidPercentage) {
+    public void setBidPercentage(Number bidPercentage) {
         this.bidPercentage = bidPercentage;
     }
 
-    public ComputeEnvironmentComputeResources withBidPercentage(Integer bidPercentage) {
+    public ComputeEnvironmentComputeResources withBidPercentage(Number bidPercentage) {
         this.bidPercentage = bidPercentage;
         return this;
     }
@@ -292,7 +292,7 @@ public class ComputeEnvironmentComputeResources implements Property<ComputeEnvir
      * 
      */
     @JsonIgnore
-    public Integer getMinvCpus() {
+    public Number getMinvCpus() {
         return minvCpus;
     }
 
@@ -301,11 +301,11 @@ public class ComputeEnvironmentComputeResources implements Property<ComputeEnvir
      * 
      */
     @JsonIgnore
-    public void setMinvCpus(Integer minvCpus) {
+    public void setMinvCpus(Number minvCpus) {
         this.minvCpus = minvCpus;
     }
 
-    public ComputeEnvironmentComputeResources withMinvCpus(Integer minvCpus) {
+    public ComputeEnvironmentComputeResources withMinvCpus(Number minvCpus) {
         this.minvCpus = minvCpus;
         return this;
     }
@@ -480,7 +480,7 @@ public class ComputeEnvironmentComputeResources implements Property<ComputeEnvir
      * 
      */
     @JsonIgnore
-    public Integer getDesiredvCpus() {
+    public Number getDesiredvCpus() {
         return desiredvCpus;
     }
 
@@ -489,11 +489,11 @@ public class ComputeEnvironmentComputeResources implements Property<ComputeEnvir
      * 
      */
     @JsonIgnore
-    public void setDesiredvCpus(Integer desiredvCpus) {
+    public void setDesiredvCpus(Number desiredvCpus) {
         this.desiredvCpus = desiredvCpus;
     }
 
-    public ComputeEnvironmentComputeResources withDesiredvCpus(Integer desiredvCpus) {
+    public ComputeEnvironmentComputeResources withDesiredvCpus(Number desiredvCpus) {
         this.desiredvCpus = desiredvCpus;
         return this;
     }

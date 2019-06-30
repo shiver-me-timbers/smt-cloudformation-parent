@@ -39,7 +39,7 @@ public class RouteWeightedTarget implements Property<RouteWeightedTarget>
      */
     @JsonProperty("Weight")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-weightedtarget.html#cfn-appmesh-route-weightedtarget-weight")
-    private Integer weight;
+    private Number weight;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-weightedtarget.html#cfn-appmesh-route-weightedtarget-virtualnode
@@ -69,7 +69,7 @@ public class RouteWeightedTarget implements Property<RouteWeightedTarget>
      * 
      */
     @JsonIgnore
-    public Integer getWeight() {
+    public Number getWeight() {
         return weight;
     }
 
@@ -78,11 +78,11 @@ public class RouteWeightedTarget implements Property<RouteWeightedTarget>
      * 
      */
     @JsonIgnore
-    public void setWeight(Integer weight) {
+    public void setWeight(Number weight) {
         this.weight = weight;
     }
 
-    public RouteWeightedTarget withWeight(Integer weight) {
+    public RouteWeightedTarget withWeight(Number weight) {
         this.weight = weight;
         return this;
     }

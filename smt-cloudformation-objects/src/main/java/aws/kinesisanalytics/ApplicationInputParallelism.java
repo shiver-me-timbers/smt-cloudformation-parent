@@ -31,14 +31,14 @@ public class ApplicationInputParallelism implements Property<ApplicationInputPar
      */
     @JsonProperty("Count")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-inputparallelism.html#cfn-kinesisanalytics-application-inputparallelism-count")
-    private Integer count;
+    private Number count;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-inputparallelism.html#cfn-kinesisanalytics-application-inputparallelism-count
      * 
      */
     @JsonIgnore
-    public Integer getCount() {
+    public Number getCount() {
         return count;
     }
 
@@ -47,11 +47,11 @@ public class ApplicationInputParallelism implements Property<ApplicationInputPar
      * 
      */
     @JsonIgnore
-    public void setCount(Integer count) {
+    public void setCount(Number count) {
         this.count = count;
     }
 
-    public ApplicationInputParallelism withCount(Integer count) {
+    public ApplicationInputParallelism withCount(Number count) {
         this.count = count;
         return this;
     }

@@ -31,14 +31,14 @@ public class TablePointInTimeRecoverySpecification implements Property<TablePoin
      */
     @JsonProperty("PointInTimeRecoveryEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-pointintimerecoveryspecification.html#cfn-dynamodb-table-pointintimerecoveryspecification-pointintimerecoveryenabled")
-    private Boolean pointInTimeRecoveryEnabled;
+    private CharSequence pointInTimeRecoveryEnabled;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-pointintimerecoveryspecification.html#cfn-dynamodb-table-pointintimerecoveryspecification-pointintimerecoveryenabled
      * 
      */
     @JsonIgnore
-    public Boolean getPointInTimeRecoveryEnabled() {
+    public CharSequence getPointInTimeRecoveryEnabled() {
         return pointInTimeRecoveryEnabled;
     }
 
@@ -47,11 +47,11 @@ public class TablePointInTimeRecoverySpecification implements Property<TablePoin
      * 
      */
     @JsonIgnore
-    public void setPointInTimeRecoveryEnabled(Boolean pointInTimeRecoveryEnabled) {
+    public void setPointInTimeRecoveryEnabled(CharSequence pointInTimeRecoveryEnabled) {
         this.pointInTimeRecoveryEnabled = pointInTimeRecoveryEnabled;
     }
 
-    public TablePointInTimeRecoverySpecification withPointInTimeRecoveryEnabled(Boolean pointInTimeRecoveryEnabled) {
+    public TablePointInTimeRecoverySpecification withPointInTimeRecoveryEnabled(CharSequence pointInTimeRecoveryEnabled) {
         this.pointInTimeRecoveryEnabled = pointInTimeRecoveryEnabled;
         return this;
     }

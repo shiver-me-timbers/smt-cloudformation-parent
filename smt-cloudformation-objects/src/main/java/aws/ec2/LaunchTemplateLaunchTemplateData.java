@@ -101,7 +101,7 @@ public class LaunchTemplateLaunchTemplateData implements Property<LaunchTemplate
      */
     @JsonProperty("EbsOptimized")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-ebsoptimized")
-    private Boolean ebsOptimized;
+    private CharSequence ebsOptimized;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-elasticgpuspecifications
      * 
@@ -207,7 +207,7 @@ public class LaunchTemplateLaunchTemplateData implements Property<LaunchTemplate
      */
     @JsonProperty("DisableApiTermination")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-disableapitermination")
-    private Boolean disableApiTermination;
+    private CharSequence disableApiTermination;
     /**
      * LaunchTemplateInstanceMarketOptions
      * <p>
@@ -390,7 +390,7 @@ public class LaunchTemplateLaunchTemplateData implements Property<LaunchTemplate
      * 
      */
     @JsonIgnore
-    public Boolean getEbsOptimized() {
+    public CharSequence getEbsOptimized() {
         return ebsOptimized;
     }
 
@@ -399,11 +399,11 @@ public class LaunchTemplateLaunchTemplateData implements Property<LaunchTemplate
      * 
      */
     @JsonIgnore
-    public void setEbsOptimized(Boolean ebsOptimized) {
+    public void setEbsOptimized(CharSequence ebsOptimized) {
         this.ebsOptimized = ebsOptimized;
     }
 
-    public LaunchTemplateLaunchTemplateData withEbsOptimized(Boolean ebsOptimized) {
+    public LaunchTemplateLaunchTemplateData withEbsOptimized(CharSequence ebsOptimized) {
         this.ebsOptimized = ebsOptimized;
         return this;
     }
@@ -728,7 +728,7 @@ public class LaunchTemplateLaunchTemplateData implements Property<LaunchTemplate
      * 
      */
     @JsonIgnore
-    public Boolean getDisableApiTermination() {
+    public CharSequence getDisableApiTermination() {
         return disableApiTermination;
     }
 
@@ -737,11 +737,11 @@ public class LaunchTemplateLaunchTemplateData implements Property<LaunchTemplate
      * 
      */
     @JsonIgnore
-    public void setDisableApiTermination(Boolean disableApiTermination) {
+    public void setDisableApiTermination(CharSequence disableApiTermination) {
         this.disableApiTermination = disableApiTermination;
     }
 
-    public LaunchTemplateLaunchTemplateData withDisableApiTermination(Boolean disableApiTermination) {
+    public LaunchTemplateLaunchTemplateData withDisableApiTermination(CharSequence disableApiTermination) {
         this.disableApiTermination = disableApiTermination;
         return this;
     }

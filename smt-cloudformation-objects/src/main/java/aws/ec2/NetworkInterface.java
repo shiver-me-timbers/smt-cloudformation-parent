@@ -68,7 +68,7 @@ public class NetworkInterface {
      */
     @JsonProperty("Ipv6AddressCount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-ec2-networkinterface-ipv6addresscount")
-    private Integer ipv6AddressCount;
+    private Number ipv6AddressCount;
     /**
      * NetworkInterfaceInstanceIpv6Address
      * <p>
@@ -99,14 +99,14 @@ public class NetworkInterface {
      */
     @JsonProperty("SecondaryPrivateIpAddressCount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-secondaryprivateipcount")
-    private Integer secondaryPrivateIpAddressCount;
+    private Number secondaryPrivateIpAddressCount;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-sourcedestcheck
      * 
      */
     @JsonProperty("SourceDestCheck")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-sourcedestcheck")
-    private Boolean sourceDestCheck;
+    private CharSequence sourceDestCheck;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-subnetid
      * 
@@ -196,7 +196,7 @@ public class NetworkInterface {
      * 
      */
     @JsonIgnore
-    public Integer getIpv6AddressCount() {
+    public Number getIpv6AddressCount() {
         return ipv6AddressCount;
     }
 
@@ -205,11 +205,11 @@ public class NetworkInterface {
      * 
      */
     @JsonIgnore
-    public void setIpv6AddressCount(Integer ipv6AddressCount) {
+    public void setIpv6AddressCount(Number ipv6AddressCount) {
         this.ipv6AddressCount = ipv6AddressCount;
     }
 
-    public NetworkInterface withIpv6AddressCount(Integer ipv6AddressCount) {
+    public NetworkInterface withIpv6AddressCount(Number ipv6AddressCount) {
         this.ipv6AddressCount = ipv6AddressCount;
         return this;
     }
@@ -292,7 +292,7 @@ public class NetworkInterface {
      * 
      */
     @JsonIgnore
-    public Integer getSecondaryPrivateIpAddressCount() {
+    public Number getSecondaryPrivateIpAddressCount() {
         return secondaryPrivateIpAddressCount;
     }
 
@@ -301,11 +301,11 @@ public class NetworkInterface {
      * 
      */
     @JsonIgnore
-    public void setSecondaryPrivateIpAddressCount(Integer secondaryPrivateIpAddressCount) {
+    public void setSecondaryPrivateIpAddressCount(Number secondaryPrivateIpAddressCount) {
         this.secondaryPrivateIpAddressCount = secondaryPrivateIpAddressCount;
     }
 
-    public NetworkInterface withSecondaryPrivateIpAddressCount(Integer secondaryPrivateIpAddressCount) {
+    public NetworkInterface withSecondaryPrivateIpAddressCount(Number secondaryPrivateIpAddressCount) {
         this.secondaryPrivateIpAddressCount = secondaryPrivateIpAddressCount;
         return this;
     }
@@ -315,7 +315,7 @@ public class NetworkInterface {
      * 
      */
     @JsonIgnore
-    public Boolean getSourceDestCheck() {
+    public CharSequence getSourceDestCheck() {
         return sourceDestCheck;
     }
 
@@ -324,11 +324,11 @@ public class NetworkInterface {
      * 
      */
     @JsonIgnore
-    public void setSourceDestCheck(Boolean sourceDestCheck) {
+    public void setSourceDestCheck(CharSequence sourceDestCheck) {
         this.sourceDestCheck = sourceDestCheck;
     }
 
-    public NetworkInterface withSourceDestCheck(Boolean sourceDestCheck) {
+    public NetworkInterface withSourceDestCheck(CharSequence sourceDestCheck) {
         this.sourceDestCheck = sourceDestCheck;
         return this;
     }

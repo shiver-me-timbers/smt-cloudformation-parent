@@ -67,7 +67,7 @@ public class DBInstance {
      */
     @JsonProperty("AutoMinorVersionUpgrade")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbinstance.html#cfn-docdb-dbinstance-autominorversionupgrade")
-    private Boolean autoMinorVersionUpgrade;
+    private CharSequence autoMinorVersionUpgrade;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbinstance.html#cfn-docdb-dbinstance-dbinstanceidentifier
      * 
@@ -180,7 +180,7 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public Boolean getAutoMinorVersionUpgrade() {
+    public CharSequence getAutoMinorVersionUpgrade() {
         return autoMinorVersionUpgrade;
     }
 
@@ -189,11 +189,11 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public void setAutoMinorVersionUpgrade(Boolean autoMinorVersionUpgrade) {
+    public void setAutoMinorVersionUpgrade(CharSequence autoMinorVersionUpgrade) {
         this.autoMinorVersionUpgrade = autoMinorVersionUpgrade;
     }
 
-    public DBInstance withAutoMinorVersionUpgrade(Boolean autoMinorVersionUpgrade) {
+    public DBInstance withAutoMinorVersionUpgrade(CharSequence autoMinorVersionUpgrade) {
         this.autoMinorVersionUpgrade = autoMinorVersionUpgrade;
         return this;
     }

@@ -78,7 +78,7 @@ public class BucketCorsRule implements Property<BucketCorsRule>
      */
     @JsonProperty("MaxAge")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-maxage")
-    private Integer maxAge;
+    private Number maxAge;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-allowedheaders
@@ -200,7 +200,7 @@ public class BucketCorsRule implements Property<BucketCorsRule>
      * 
      */
     @JsonIgnore
-    public Integer getMaxAge() {
+    public Number getMaxAge() {
         return maxAge;
     }
 
@@ -209,11 +209,11 @@ public class BucketCorsRule implements Property<BucketCorsRule>
      * 
      */
     @JsonIgnore
-    public void setMaxAge(Integer maxAge) {
+    public void setMaxAge(Number maxAge) {
         this.maxAge = maxAge;
     }
 
-    public BucketCorsRule withMaxAge(Integer maxAge) {
+    public BucketCorsRule withMaxAge(Number maxAge) {
         this.maxAge = maxAge;
         return this;
     }

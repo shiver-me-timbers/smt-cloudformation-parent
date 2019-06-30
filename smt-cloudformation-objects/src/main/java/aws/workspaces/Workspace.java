@@ -54,7 +54,7 @@ public class Workspace {
      */
     @JsonProperty("RootVolumeEncryptionEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-rootvolumeencryptionenabled")
-    private Boolean rootVolumeEncryptionEnabled;
+    private CharSequence rootVolumeEncryptionEnabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-tags
      * 
@@ -75,7 +75,7 @@ public class Workspace {
      */
     @JsonProperty("UserVolumeEncryptionEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-uservolumeencryptionenabled")
-    private Boolean userVolumeEncryptionEnabled;
+    private CharSequence userVolumeEncryptionEnabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-volumeencryptionkey
      * 
@@ -144,7 +144,7 @@ public class Workspace {
      * 
      */
     @JsonIgnore
-    public Boolean getRootVolumeEncryptionEnabled() {
+    public CharSequence getRootVolumeEncryptionEnabled() {
         return rootVolumeEncryptionEnabled;
     }
 
@@ -153,11 +153,11 @@ public class Workspace {
      * 
      */
     @JsonIgnore
-    public void setRootVolumeEncryptionEnabled(Boolean rootVolumeEncryptionEnabled) {
+    public void setRootVolumeEncryptionEnabled(CharSequence rootVolumeEncryptionEnabled) {
         this.rootVolumeEncryptionEnabled = rootVolumeEncryptionEnabled;
     }
 
-    public Workspace withRootVolumeEncryptionEnabled(Boolean rootVolumeEncryptionEnabled) {
+    public Workspace withRootVolumeEncryptionEnabled(CharSequence rootVolumeEncryptionEnabled) {
         this.rootVolumeEncryptionEnabled = rootVolumeEncryptionEnabled;
         return this;
     }
@@ -213,7 +213,7 @@ public class Workspace {
      * 
      */
     @JsonIgnore
-    public Boolean getUserVolumeEncryptionEnabled() {
+    public CharSequence getUserVolumeEncryptionEnabled() {
         return userVolumeEncryptionEnabled;
     }
 
@@ -222,11 +222,11 @@ public class Workspace {
      * 
      */
     @JsonIgnore
-    public void setUserVolumeEncryptionEnabled(Boolean userVolumeEncryptionEnabled) {
+    public void setUserVolumeEncryptionEnabled(CharSequence userVolumeEncryptionEnabled) {
         this.userVolumeEncryptionEnabled = userVolumeEncryptionEnabled;
     }
 
-    public Workspace withUserVolumeEncryptionEnabled(Boolean userVolumeEncryptionEnabled) {
+    public Workspace withUserVolumeEncryptionEnabled(CharSequence userVolumeEncryptionEnabled) {
         this.userVolumeEncryptionEnabled = userVolumeEncryptionEnabled;
         return this;
     }

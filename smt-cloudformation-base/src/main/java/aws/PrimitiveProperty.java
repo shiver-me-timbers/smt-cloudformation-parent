@@ -1,10 +1,10 @@
 package aws;
 
-public class StringProperty implements CharSequence {
+public class PrimitiveProperty extends NumberProperty implements CharSequence {
 
     private final String string;
 
-    public StringProperty(String string) {
+    public PrimitiveProperty(String string) {
         this.string = string;
     }
 

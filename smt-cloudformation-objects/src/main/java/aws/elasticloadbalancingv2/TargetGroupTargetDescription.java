@@ -47,7 +47,7 @@ public class TargetGroupTargetDescription implements Property<TargetGroupTargetD
      */
     @JsonProperty("Port")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-targetgroup-targetdescription.html#cfn-elasticloadbalancingv2-targetgroup-targetdescription-port")
-    private Integer port;
+    private Number port;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-targetgroup-targetdescription.html#cfn-elasticloadbalancingv2-targetgroup-targetdescription-availabilityzone
@@ -100,7 +100,7 @@ public class TargetGroupTargetDescription implements Property<TargetGroupTargetD
      * 
      */
     @JsonIgnore
-    public Integer getPort() {
+    public Number getPort() {
         return port;
     }
 
@@ -109,11 +109,11 @@ public class TargetGroupTargetDescription implements Property<TargetGroupTargetD
      * 
      */
     @JsonIgnore
-    public void setPort(Integer port) {
+    public void setPort(Number port) {
         this.port = port;
     }
 
-    public TargetGroupTargetDescription withPort(Integer port) {
+    public TargetGroupTargetDescription withPort(Number port) {
         this.port = port;
         return this;
     }

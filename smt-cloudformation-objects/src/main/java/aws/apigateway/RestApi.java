@@ -99,14 +99,14 @@ public class RestApi {
      */
     @JsonProperty("FailOnWarnings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-failonwarnings")
-    private Boolean failOnWarnings;
+    private CharSequence failOnWarnings;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-minimumcompressionsize
      * 
      */
     @JsonProperty("MinimumCompressionSize")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-minimumcompressionsize")
-    private Integer minimumCompressionSize;
+    private Number minimumCompressionSize;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-name
      * 
@@ -120,7 +120,7 @@ public class RestApi {
      */
     @JsonProperty("Parameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-parameters")
-    private Map<String, String> parameters;
+    private Map<String, CharSequence> parameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-policy
      * 
@@ -303,7 +303,7 @@ public class RestApi {
      * 
      */
     @JsonIgnore
-    public Boolean getFailOnWarnings() {
+    public CharSequence getFailOnWarnings() {
         return failOnWarnings;
     }
 
@@ -312,11 +312,11 @@ public class RestApi {
      * 
      */
     @JsonIgnore
-    public void setFailOnWarnings(Boolean failOnWarnings) {
+    public void setFailOnWarnings(CharSequence failOnWarnings) {
         this.failOnWarnings = failOnWarnings;
     }
 
-    public RestApi withFailOnWarnings(Boolean failOnWarnings) {
+    public RestApi withFailOnWarnings(CharSequence failOnWarnings) {
         this.failOnWarnings = failOnWarnings;
         return this;
     }
@@ -326,7 +326,7 @@ public class RestApi {
      * 
      */
     @JsonIgnore
-    public Integer getMinimumCompressionSize() {
+    public Number getMinimumCompressionSize() {
         return minimumCompressionSize;
     }
 
@@ -335,11 +335,11 @@ public class RestApi {
      * 
      */
     @JsonIgnore
-    public void setMinimumCompressionSize(Integer minimumCompressionSize) {
+    public void setMinimumCompressionSize(Number minimumCompressionSize) {
         this.minimumCompressionSize = minimumCompressionSize;
     }
 
-    public RestApi withMinimumCompressionSize(Integer minimumCompressionSize) {
+    public RestApi withMinimumCompressionSize(Number minimumCompressionSize) {
         this.minimumCompressionSize = minimumCompressionSize;
         return this;
     }
@@ -372,7 +372,7 @@ public class RestApi {
      * 
      */
     @JsonIgnore
-    public Map<String, String> getParameters() {
+    public Map<String, CharSequence> getParameters() {
         return parameters;
     }
 
@@ -381,11 +381,11 @@ public class RestApi {
      * 
      */
     @JsonIgnore
-    public void setParameters(Map<String, String> parameters) {
+    public void setParameters(Map<String, CharSequence> parameters) {
         this.parameters = parameters;
     }
 
-    public RestApi withParameters(Map<String, String> parameters) {
+    public RestApi withParameters(Map<String, CharSequence> parameters) {
         this.parameters = parameters;
         return this;
     }

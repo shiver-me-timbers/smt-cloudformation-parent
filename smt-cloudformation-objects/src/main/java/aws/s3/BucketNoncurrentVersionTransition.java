@@ -39,7 +39,7 @@ public class BucketNoncurrentVersionTransition implements Property<BucketNoncurr
      */
     @JsonProperty("TransitionInDays")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-noncurrentversiontransition.html#cfn-s3-bucket-lifecycleconfig-rule-noncurrentversiontransition-transitionindays")
-    private Integer transitionInDays;
+    private Number transitionInDays;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-noncurrentversiontransition.html#cfn-s3-bucket-lifecycleconfig-rule-noncurrentversiontransition-storageclass
@@ -69,7 +69,7 @@ public class BucketNoncurrentVersionTransition implements Property<BucketNoncurr
      * 
      */
     @JsonIgnore
-    public Integer getTransitionInDays() {
+    public Number getTransitionInDays() {
         return transitionInDays;
     }
 
@@ -78,11 +78,11 @@ public class BucketNoncurrentVersionTransition implements Property<BucketNoncurr
      * 
      */
     @JsonIgnore
-    public void setTransitionInDays(Integer transitionInDays) {
+    public void setTransitionInDays(Number transitionInDays) {
         this.transitionInDays = transitionInDays;
     }
 
-    public BucketNoncurrentVersionTransition withTransitionInDays(Integer transitionInDays) {
+    public BucketNoncurrentVersionTransition withTransitionInDays(Number transitionInDays) {
         this.transitionInDays = transitionInDays;
         return this;
     }

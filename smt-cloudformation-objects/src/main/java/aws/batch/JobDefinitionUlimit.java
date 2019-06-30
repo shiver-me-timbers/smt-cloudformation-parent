@@ -33,14 +33,14 @@ public class JobDefinitionUlimit implements Property<JobDefinitionUlimit>
      */
     @JsonProperty("SoftLimit")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-ulimit.html#cfn-batch-jobdefinition-ulimit-softlimit")
-    private Integer softLimit;
+    private Number softLimit;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-ulimit.html#cfn-batch-jobdefinition-ulimit-hardlimit
      * 
      */
     @JsonProperty("HardLimit")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-ulimit.html#cfn-batch-jobdefinition-ulimit-hardlimit")
-    private Integer hardLimit;
+    private Number hardLimit;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-ulimit.html#cfn-batch-jobdefinition-ulimit-name
      * 
@@ -54,7 +54,7 @@ public class JobDefinitionUlimit implements Property<JobDefinitionUlimit>
      * 
      */
     @JsonIgnore
-    public Integer getSoftLimit() {
+    public Number getSoftLimit() {
         return softLimit;
     }
 
@@ -63,11 +63,11 @@ public class JobDefinitionUlimit implements Property<JobDefinitionUlimit>
      * 
      */
     @JsonIgnore
-    public void setSoftLimit(Integer softLimit) {
+    public void setSoftLimit(Number softLimit) {
         this.softLimit = softLimit;
     }
 
-    public JobDefinitionUlimit withSoftLimit(Integer softLimit) {
+    public JobDefinitionUlimit withSoftLimit(Number softLimit) {
         this.softLimit = softLimit;
         return this;
     }
@@ -77,7 +77,7 @@ public class JobDefinitionUlimit implements Property<JobDefinitionUlimit>
      * 
      */
     @JsonIgnore
-    public Integer getHardLimit() {
+    public Number getHardLimit() {
         return hardLimit;
     }
 
@@ -86,11 +86,11 @@ public class JobDefinitionUlimit implements Property<JobDefinitionUlimit>
      * 
      */
     @JsonIgnore
-    public void setHardLimit(Integer hardLimit) {
+    public void setHardLimit(Number hardLimit) {
         this.hardLimit = hardLimit;
     }
 
-    public JobDefinitionUlimit withHardLimit(Integer hardLimit) {
+    public JobDefinitionUlimit withHardLimit(Number hardLimit) {
         this.hardLimit = hardLimit;
         return this;
     }

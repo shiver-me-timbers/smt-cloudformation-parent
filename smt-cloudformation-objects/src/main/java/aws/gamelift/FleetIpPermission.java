@@ -34,7 +34,7 @@ public class FleetIpPermission implements Property<FleetIpPermission>
      */
     @JsonProperty("FromPort")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-ec2inboundpermission.html#cfn-gamelift-fleet-ec2inboundpermissions-fromport")
-    private Integer fromPort;
+    private Number fromPort;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-ec2inboundpermission.html#cfn-gamelift-fleet-ec2inboundpermissions-iprange
      * 
@@ -55,14 +55,14 @@ public class FleetIpPermission implements Property<FleetIpPermission>
      */
     @JsonProperty("ToPort")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-ec2inboundpermission.html#cfn-gamelift-fleet-ec2inboundpermissions-toport")
-    private Integer toPort;
+    private Number toPort;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-ec2inboundpermission.html#cfn-gamelift-fleet-ec2inboundpermissions-fromport
      * 
      */
     @JsonIgnore
-    public Integer getFromPort() {
+    public Number getFromPort() {
         return fromPort;
     }
 
@@ -71,11 +71,11 @@ public class FleetIpPermission implements Property<FleetIpPermission>
      * 
      */
     @JsonIgnore
-    public void setFromPort(Integer fromPort) {
+    public void setFromPort(Number fromPort) {
         this.fromPort = fromPort;
     }
 
-    public FleetIpPermission withFromPort(Integer fromPort) {
+    public FleetIpPermission withFromPort(Number fromPort) {
         this.fromPort = fromPort;
         return this;
     }
@@ -131,7 +131,7 @@ public class FleetIpPermission implements Property<FleetIpPermission>
      * 
      */
     @JsonIgnore
-    public Integer getToPort() {
+    public Number getToPort() {
         return toPort;
     }
 
@@ -140,11 +140,11 @@ public class FleetIpPermission implements Property<FleetIpPermission>
      * 
      */
     @JsonIgnore
-    public void setToPort(Integer toPort) {
+    public void setToPort(Number toPort) {
         this.toPort = toPort;
     }
 
-    public FleetIpPermission withToPort(Integer toPort) {
+    public FleetIpPermission withToPort(Number toPort) {
         this.toPort = toPort;
         return this;
     }

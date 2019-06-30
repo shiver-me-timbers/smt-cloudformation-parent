@@ -38,7 +38,7 @@ public class ReceiptRuleRule implements Property<ReceiptRuleRule>
      */
     @JsonProperty("ScanEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html#cfn-ses-receiptrule-rule-scanenabled")
-    private Boolean scanEnabled;
+    private CharSequence scanEnabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html#cfn-ses-receiptrule-rule-recipients
      * 
@@ -59,7 +59,7 @@ public class ReceiptRuleRule implements Property<ReceiptRuleRule>
      */
     @JsonProperty("Enabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html#cfn-ses-receiptrule-rule-enabled")
-    private Boolean enabled;
+    private CharSequence enabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html#cfn-ses-receiptrule-rule-name
      * 
@@ -80,7 +80,7 @@ public class ReceiptRuleRule implements Property<ReceiptRuleRule>
      * 
      */
     @JsonIgnore
-    public Boolean getScanEnabled() {
+    public CharSequence getScanEnabled() {
         return scanEnabled;
     }
 
@@ -89,11 +89,11 @@ public class ReceiptRuleRule implements Property<ReceiptRuleRule>
      * 
      */
     @JsonIgnore
-    public void setScanEnabled(Boolean scanEnabled) {
+    public void setScanEnabled(CharSequence scanEnabled) {
         this.scanEnabled = scanEnabled;
     }
 
-    public ReceiptRuleRule withScanEnabled(Boolean scanEnabled) {
+    public ReceiptRuleRule withScanEnabled(CharSequence scanEnabled) {
         this.scanEnabled = scanEnabled;
         return this;
     }
@@ -149,7 +149,7 @@ public class ReceiptRuleRule implements Property<ReceiptRuleRule>
      * 
      */
     @JsonIgnore
-    public Boolean getEnabled() {
+    public CharSequence getEnabled() {
         return enabled;
     }
 
@@ -158,11 +158,11 @@ public class ReceiptRuleRule implements Property<ReceiptRuleRule>
      * 
      */
     @JsonIgnore
-    public void setEnabled(Boolean enabled) {
+    public void setEnabled(CharSequence enabled) {
         this.enabled = enabled;
     }
 
-    public ReceiptRuleRule withEnabled(Boolean enabled) {
+    public ReceiptRuleRule withEnabled(CharSequence enabled) {
         this.enabled = enabled;
         return this;
     }

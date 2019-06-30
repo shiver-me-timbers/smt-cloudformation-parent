@@ -33,7 +33,7 @@ public class JobDefinitionMountPoints implements Property<JobDefinitionMountPoin
      */
     @JsonProperty("ReadOnly")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-mountpoints.html#cfn-batch-jobdefinition-mountpoints-readonly")
-    private Boolean readOnly;
+    private CharSequence readOnly;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-mountpoints.html#cfn-batch-jobdefinition-mountpoints-sourcevolume
      * 
@@ -54,7 +54,7 @@ public class JobDefinitionMountPoints implements Property<JobDefinitionMountPoin
      * 
      */
     @JsonIgnore
-    public Boolean getReadOnly() {
+    public CharSequence getReadOnly() {
         return readOnly;
     }
 
@@ -63,11 +63,11 @@ public class JobDefinitionMountPoints implements Property<JobDefinitionMountPoin
      * 
      */
     @JsonIgnore
-    public void setReadOnly(Boolean readOnly) {
+    public void setReadOnly(CharSequence readOnly) {
         this.readOnly = readOnly;
     }
 
-    public JobDefinitionMountPoints withReadOnly(Boolean readOnly) {
+    public JobDefinitionMountPoints withReadOnly(CharSequence readOnly) {
         this.readOnly = readOnly;
         return this;
     }

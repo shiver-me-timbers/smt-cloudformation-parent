@@ -33,28 +33,28 @@ public class ScalingPolicyStepAdjustment implements Property<ScalingPolicyStepAd
      */
     @JsonProperty("MetricIntervalLowerBound")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-stepadjustment.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-stepadjustment-metricintervallowerbound")
-    private Double metricIntervalLowerBound;
+    private Number metricIntervalLowerBound;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-stepadjustment.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-stepadjustment-metricintervalupperbound
      * 
      */
     @JsonProperty("MetricIntervalUpperBound")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-stepadjustment.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-stepadjustment-metricintervalupperbound")
-    private Double metricIntervalUpperBound;
+    private Number metricIntervalUpperBound;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-stepadjustment.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-stepadjustment-scalingadjustment
      * 
      */
     @JsonProperty("ScalingAdjustment")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-stepadjustment.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-stepadjustment-scalingadjustment")
-    private Integer scalingAdjustment;
+    private Number scalingAdjustment;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-stepadjustment.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-stepadjustment-metricintervallowerbound
      * 
      */
     @JsonIgnore
-    public Double getMetricIntervalLowerBound() {
+    public Number getMetricIntervalLowerBound() {
         return metricIntervalLowerBound;
     }
 
@@ -63,11 +63,11 @@ public class ScalingPolicyStepAdjustment implements Property<ScalingPolicyStepAd
      * 
      */
     @JsonIgnore
-    public void setMetricIntervalLowerBound(Double metricIntervalLowerBound) {
+    public void setMetricIntervalLowerBound(Number metricIntervalLowerBound) {
         this.metricIntervalLowerBound = metricIntervalLowerBound;
     }
 
-    public ScalingPolicyStepAdjustment withMetricIntervalLowerBound(Double metricIntervalLowerBound) {
+    public ScalingPolicyStepAdjustment withMetricIntervalLowerBound(Number metricIntervalLowerBound) {
         this.metricIntervalLowerBound = metricIntervalLowerBound;
         return this;
     }
@@ -77,7 +77,7 @@ public class ScalingPolicyStepAdjustment implements Property<ScalingPolicyStepAd
      * 
      */
     @JsonIgnore
-    public Double getMetricIntervalUpperBound() {
+    public Number getMetricIntervalUpperBound() {
         return metricIntervalUpperBound;
     }
 
@@ -86,11 +86,11 @@ public class ScalingPolicyStepAdjustment implements Property<ScalingPolicyStepAd
      * 
      */
     @JsonIgnore
-    public void setMetricIntervalUpperBound(Double metricIntervalUpperBound) {
+    public void setMetricIntervalUpperBound(Number metricIntervalUpperBound) {
         this.metricIntervalUpperBound = metricIntervalUpperBound;
     }
 
-    public ScalingPolicyStepAdjustment withMetricIntervalUpperBound(Double metricIntervalUpperBound) {
+    public ScalingPolicyStepAdjustment withMetricIntervalUpperBound(Number metricIntervalUpperBound) {
         this.metricIntervalUpperBound = metricIntervalUpperBound;
         return this;
     }
@@ -100,7 +100,7 @@ public class ScalingPolicyStepAdjustment implements Property<ScalingPolicyStepAd
      * 
      */
     @JsonIgnore
-    public Integer getScalingAdjustment() {
+    public Number getScalingAdjustment() {
         return scalingAdjustment;
     }
 
@@ -109,11 +109,11 @@ public class ScalingPolicyStepAdjustment implements Property<ScalingPolicyStepAd
      * 
      */
     @JsonIgnore
-    public void setScalingAdjustment(Integer scalingAdjustment) {
+    public void setScalingAdjustment(Number scalingAdjustment) {
         this.scalingAdjustment = scalingAdjustment;
     }
 
-    public ScalingPolicyStepAdjustment withScalingAdjustment(Integer scalingAdjustment) {
+    public ScalingPolicyStepAdjustment withScalingAdjustment(Number scalingAdjustment) {
         this.scalingAdjustment = scalingAdjustment;
         return this;
     }

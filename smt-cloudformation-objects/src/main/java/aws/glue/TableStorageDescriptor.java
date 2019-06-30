@@ -44,7 +44,7 @@ public class TableStorageDescriptor implements Property<TableStorageDescriptor>
      */
     @JsonProperty("StoredAsSubDirectories")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-storagedescriptor.html#cfn-glue-table-storagedescriptor-storedassubdirectories")
-    private Boolean storedAsSubDirectories;
+    private CharSequence storedAsSubDirectories;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-storagedescriptor.html#cfn-glue-table-storagedescriptor-parameters
      * 
@@ -81,7 +81,7 @@ public class TableStorageDescriptor implements Property<TableStorageDescriptor>
      */
     @JsonProperty("NumberOfBuckets")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-storagedescriptor.html#cfn-glue-table-storagedescriptor-numberofbuckets")
-    private Integer numberOfBuckets;
+    private Number numberOfBuckets;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-storagedescriptor.html#cfn-glue-table-storagedescriptor-outputformat
      * 
@@ -118,7 +118,7 @@ public class TableStorageDescriptor implements Property<TableStorageDescriptor>
      */
     @JsonProperty("Compressed")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-storagedescriptor.html#cfn-glue-table-storagedescriptor-compressed")
-    private Boolean compressed;
+    private CharSequence compressed;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-storagedescriptor.html#cfn-glue-table-storagedescriptor-location
      * 
@@ -132,7 +132,7 @@ public class TableStorageDescriptor implements Property<TableStorageDescriptor>
      * 
      */
     @JsonIgnore
-    public Boolean getStoredAsSubDirectories() {
+    public CharSequence getStoredAsSubDirectories() {
         return storedAsSubDirectories;
     }
 
@@ -141,11 +141,11 @@ public class TableStorageDescriptor implements Property<TableStorageDescriptor>
      * 
      */
     @JsonIgnore
-    public void setStoredAsSubDirectories(Boolean storedAsSubDirectories) {
+    public void setStoredAsSubDirectories(CharSequence storedAsSubDirectories) {
         this.storedAsSubDirectories = storedAsSubDirectories;
     }
 
-    public TableStorageDescriptor withStoredAsSubDirectories(Boolean storedAsSubDirectories) {
+    public TableStorageDescriptor withStoredAsSubDirectories(CharSequence storedAsSubDirectories) {
         this.storedAsSubDirectories = storedAsSubDirectories;
         return this;
     }
@@ -251,7 +251,7 @@ public class TableStorageDescriptor implements Property<TableStorageDescriptor>
      * 
      */
     @JsonIgnore
-    public Integer getNumberOfBuckets() {
+    public Number getNumberOfBuckets() {
         return numberOfBuckets;
     }
 
@@ -260,11 +260,11 @@ public class TableStorageDescriptor implements Property<TableStorageDescriptor>
      * 
      */
     @JsonIgnore
-    public void setNumberOfBuckets(Integer numberOfBuckets) {
+    public void setNumberOfBuckets(Number numberOfBuckets) {
         this.numberOfBuckets = numberOfBuckets;
     }
 
-    public TableStorageDescriptor withNumberOfBuckets(Integer numberOfBuckets) {
+    public TableStorageDescriptor withNumberOfBuckets(Number numberOfBuckets) {
         this.numberOfBuckets = numberOfBuckets;
         return this;
     }
@@ -370,7 +370,7 @@ public class TableStorageDescriptor implements Property<TableStorageDescriptor>
      * 
      */
     @JsonIgnore
-    public Boolean getCompressed() {
+    public CharSequence getCompressed() {
         return compressed;
     }
 
@@ -379,11 +379,11 @@ public class TableStorageDescriptor implements Property<TableStorageDescriptor>
      * 
      */
     @JsonIgnore
-    public void setCompressed(Boolean compressed) {
+    public void setCompressed(CharSequence compressed) {
         this.compressed = compressed;
     }
 
-    public TableStorageDescriptor withCompressed(Boolean compressed) {
+    public TableStorageDescriptor withCompressed(CharSequence compressed) {
         this.compressed = compressed;
         return this;
     }

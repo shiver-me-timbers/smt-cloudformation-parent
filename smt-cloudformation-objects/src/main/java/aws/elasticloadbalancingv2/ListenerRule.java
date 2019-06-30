@@ -59,7 +59,7 @@ public class ListenerRule {
      */
     @JsonProperty("Priority")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenerrule.html#cfn-elasticloadbalancingv2-listenerrule-priority")
-    private Integer priority;
+    private Number priority;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenerrule.html#cfn-elasticloadbalancingv2-listenerrule-actions
@@ -135,7 +135,7 @@ public class ListenerRule {
      * 
      */
     @JsonIgnore
-    public Integer getPriority() {
+    public Number getPriority() {
         return priority;
     }
 
@@ -144,11 +144,11 @@ public class ListenerRule {
      * 
      */
     @JsonIgnore
-    public void setPriority(Integer priority) {
+    public void setPriority(Number priority) {
         this.priority = priority;
     }
 
-    public ListenerRule withPriority(Integer priority) {
+    public ListenerRule withPriority(Number priority) {
         this.priority = priority;
         return this;
     }

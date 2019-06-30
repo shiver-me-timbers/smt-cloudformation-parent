@@ -65,7 +65,7 @@ public class MaintenanceWindowTask {
      */
     @JsonProperty("Priority")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-priority")
-    private Integer priority;
+    private Number priority;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-maxconcurrency
      * 
@@ -208,7 +208,7 @@ public class MaintenanceWindowTask {
      * 
      */
     @JsonIgnore
-    public Integer getPriority() {
+    public Number getPriority() {
         return priority;
     }
 
@@ -217,11 +217,11 @@ public class MaintenanceWindowTask {
      * 
      */
     @JsonIgnore
-    public void setPriority(Integer priority) {
+    public void setPriority(Number priority) {
         this.priority = priority;
     }
 
-    public MaintenanceWindowTask withPriority(Integer priority) {
+    public MaintenanceWindowTask withPriority(Number priority) {
         this.priority = priority;
         return this;
     }

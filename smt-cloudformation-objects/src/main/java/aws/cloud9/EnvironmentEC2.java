@@ -59,7 +59,7 @@ public class EnvironmentEC2 {
      */
     @JsonProperty("AutomaticStopTimeMinutes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-automaticstoptimeminutes")
-    private Integer automaticStopTimeMinutes;
+    private Number automaticStopTimeMinutes;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-subnetid
      * 
@@ -156,7 +156,7 @@ public class EnvironmentEC2 {
      * 
      */
     @JsonIgnore
-    public Integer getAutomaticStopTimeMinutes() {
+    public Number getAutomaticStopTimeMinutes() {
         return automaticStopTimeMinutes;
     }
 
@@ -165,11 +165,11 @@ public class EnvironmentEC2 {
      * 
      */
     @JsonIgnore
-    public void setAutomaticStopTimeMinutes(Integer automaticStopTimeMinutes) {
+    public void setAutomaticStopTimeMinutes(Number automaticStopTimeMinutes) {
         this.automaticStopTimeMinutes = automaticStopTimeMinutes;
     }
 
-    public EnvironmentEC2 withAutomaticStopTimeMinutes(Integer automaticStopTimeMinutes) {
+    public EnvironmentEC2 withAutomaticStopTimeMinutes(Number automaticStopTimeMinutes) {
         this.automaticStopTimeMinutes = automaticStopTimeMinutes;
         return this;
     }

@@ -46,7 +46,7 @@ public class ParameterGroup {
      */
     @JsonProperty("Properties")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-parameter-group.html#cfn-elasticache-parametergroup-properties")
-    private Map<String, String> properties;
+    private Map<String, CharSequence> properties;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-parameter-group.html#cfn-elasticache-parametergroup-cacheparametergroupfamily
@@ -99,7 +99,7 @@ public class ParameterGroup {
      * 
      */
     @JsonIgnore
-    public Map<String, String> getProperties() {
+    public Map<String, CharSequence> getProperties() {
         return properties;
     }
 
@@ -108,11 +108,11 @@ public class ParameterGroup {
      * 
      */
     @JsonIgnore
-    public void setProperties(Map<String, String> properties) {
+    public void setProperties(Map<String, CharSequence> properties) {
         this.properties = properties;
     }
 
-    public ParameterGroup withProperties(Map<String, String> properties) {
+    public ParameterGroup withProperties(Map<String, CharSequence> properties) {
         this.properties = properties;
         return this;
     }

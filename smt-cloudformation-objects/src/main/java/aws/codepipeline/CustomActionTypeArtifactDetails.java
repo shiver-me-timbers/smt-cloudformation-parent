@@ -32,21 +32,21 @@ public class CustomActionTypeArtifactDetails implements Property<CustomActionTyp
      */
     @JsonProperty("MaximumCount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-artifactdetails.html#cfn-codepipeline-customactiontype-artifactdetails-maximumcount")
-    private Integer maximumCount;
+    private Number maximumCount;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-artifactdetails.html#cfn-codepipeline-customactiontype-artifactdetails-minimumcount
      * 
      */
     @JsonProperty("MinimumCount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-artifactdetails.html#cfn-codepipeline-customactiontype-artifactdetails-minimumcount")
-    private Integer minimumCount;
+    private Number minimumCount;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-artifactdetails.html#cfn-codepipeline-customactiontype-artifactdetails-maximumcount
      * 
      */
     @JsonIgnore
-    public Integer getMaximumCount() {
+    public Number getMaximumCount() {
         return maximumCount;
     }
 
@@ -55,11 +55,11 @@ public class CustomActionTypeArtifactDetails implements Property<CustomActionTyp
      * 
      */
     @JsonIgnore
-    public void setMaximumCount(Integer maximumCount) {
+    public void setMaximumCount(Number maximumCount) {
         this.maximumCount = maximumCount;
     }
 
-    public CustomActionTypeArtifactDetails withMaximumCount(Integer maximumCount) {
+    public CustomActionTypeArtifactDetails withMaximumCount(Number maximumCount) {
         this.maximumCount = maximumCount;
         return this;
     }
@@ -69,7 +69,7 @@ public class CustomActionTypeArtifactDetails implements Property<CustomActionTyp
      * 
      */
     @JsonIgnore
-    public Integer getMinimumCount() {
+    public Number getMinimumCount() {
         return minimumCount;
     }
 
@@ -78,11 +78,11 @@ public class CustomActionTypeArtifactDetails implements Property<CustomActionTyp
      * 
      */
     @JsonIgnore
-    public void setMinimumCount(Integer minimumCount) {
+    public void setMinimumCount(Number minimumCount) {
         this.minimumCount = minimumCount;
     }
 
-    public CustomActionTypeArtifactDetails withMinimumCount(Integer minimumCount) {
+    public CustomActionTypeArtifactDetails withMinimumCount(Number minimumCount) {
         this.minimumCount = minimumCount;
         return this;
     }

@@ -50,7 +50,7 @@ public class LaunchConfiguration {
      */
     @JsonProperty("AssociatePublicIpAddress")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cf-as-launchconfig-associatepubip")
-    private Boolean associatePublicIpAddress;
+    private CharSequence associatePublicIpAddress;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-blockdevicemappings
      * 
@@ -80,7 +80,7 @@ public class LaunchConfiguration {
      */
     @JsonProperty("EbsOptimized")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-ebsoptimized")
-    private Boolean ebsOptimized;
+    private CharSequence ebsOptimized;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-iaminstanceprofile
      * 
@@ -108,7 +108,7 @@ public class LaunchConfiguration {
      */
     @JsonProperty("InstanceMonitoring")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-instancemonitoring")
-    private Boolean instanceMonitoring;
+    private CharSequence instanceMonitoring;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-instancetype
      * 
@@ -179,7 +179,7 @@ public class LaunchConfiguration {
      * 
      */
     @JsonIgnore
-    public Boolean getAssociatePublicIpAddress() {
+    public CharSequence getAssociatePublicIpAddress() {
         return associatePublicIpAddress;
     }
 
@@ -188,11 +188,11 @@ public class LaunchConfiguration {
      * 
      */
     @JsonIgnore
-    public void setAssociatePublicIpAddress(Boolean associatePublicIpAddress) {
+    public void setAssociatePublicIpAddress(CharSequence associatePublicIpAddress) {
         this.associatePublicIpAddress = associatePublicIpAddress;
     }
 
-    public LaunchConfiguration withAssociatePublicIpAddress(Boolean associatePublicIpAddress) {
+    public LaunchConfiguration withAssociatePublicIpAddress(CharSequence associatePublicIpAddress) {
         this.associatePublicIpAddress = associatePublicIpAddress;
         return this;
     }
@@ -271,7 +271,7 @@ public class LaunchConfiguration {
      * 
      */
     @JsonIgnore
-    public Boolean getEbsOptimized() {
+    public CharSequence getEbsOptimized() {
         return ebsOptimized;
     }
 
@@ -280,11 +280,11 @@ public class LaunchConfiguration {
      * 
      */
     @JsonIgnore
-    public void setEbsOptimized(Boolean ebsOptimized) {
+    public void setEbsOptimized(CharSequence ebsOptimized) {
         this.ebsOptimized = ebsOptimized;
     }
 
-    public LaunchConfiguration withEbsOptimized(Boolean ebsOptimized) {
+    public LaunchConfiguration withEbsOptimized(CharSequence ebsOptimized) {
         this.ebsOptimized = ebsOptimized;
         return this;
     }
@@ -363,7 +363,7 @@ public class LaunchConfiguration {
      * 
      */
     @JsonIgnore
-    public Boolean getInstanceMonitoring() {
+    public CharSequence getInstanceMonitoring() {
         return instanceMonitoring;
     }
 
@@ -372,11 +372,11 @@ public class LaunchConfiguration {
      * 
      */
     @JsonIgnore
-    public void setInstanceMonitoring(Boolean instanceMonitoring) {
+    public void setInstanceMonitoring(CharSequence instanceMonitoring) {
         this.instanceMonitoring = instanceMonitoring;
     }
 
-    public LaunchConfiguration withInstanceMonitoring(Boolean instanceMonitoring) {
+    public LaunchConfiguration withInstanceMonitoring(CharSequence instanceMonitoring) {
         this.instanceMonitoring = instanceMonitoring;
         return this;
     }

@@ -44,7 +44,7 @@ public class ClusterConfiguration implements Property<ClusterConfiguration>
      */
     @JsonProperty("ConfigurationProperties")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-configuration.html#cfn-elasticmapreduce-cluster-configuration-configurationproperties")
-    private Map<String, String> configurationProperties;
+    private Map<String, CharSequence> configurationProperties;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-configuration.html#cfn-elasticmapreduce-cluster-configuration-configurations
      * 
@@ -82,7 +82,7 @@ public class ClusterConfiguration implements Property<ClusterConfiguration>
      * 
      */
     @JsonIgnore
-    public Map<String, String> getConfigurationProperties() {
+    public Map<String, CharSequence> getConfigurationProperties() {
         return configurationProperties;
     }
 
@@ -91,11 +91,11 @@ public class ClusterConfiguration implements Property<ClusterConfiguration>
      * 
      */
     @JsonIgnore
-    public void setConfigurationProperties(Map<String, String> configurationProperties) {
+    public void setConfigurationProperties(Map<String, CharSequence> configurationProperties) {
         this.configurationProperties = configurationProperties;
     }
 
-    public ClusterConfiguration withConfigurationProperties(Map<String, String> configurationProperties) {
+    public ClusterConfiguration withConfigurationProperties(Map<String, CharSequence> configurationProperties) {
         this.configurationProperties = configurationProperties;
         return this;
     }

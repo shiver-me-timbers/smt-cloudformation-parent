@@ -45,7 +45,7 @@ public class ScalingPolicyTargetTrackingScalingPolicyConfiguration implements Pr
      */
     @JsonProperty("DisableScaleIn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration-disablescalein")
-    private Boolean disableScaleIn;
+    private CharSequence disableScaleIn;
     /**
      * ScalingPolicyPredefinedMetricSpecification
      * <p>
@@ -61,21 +61,21 @@ public class ScalingPolicyTargetTrackingScalingPolicyConfiguration implements Pr
      */
     @JsonProperty("ScaleInCooldown")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration-scaleincooldown")
-    private Integer scaleInCooldown;
+    private Number scaleInCooldown;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration-scaleoutcooldown
      * 
      */
     @JsonProperty("ScaleOutCooldown")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration-scaleoutcooldown")
-    private Integer scaleOutCooldown;
+    private Number scaleOutCooldown;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration-targetvalue
      * 
      */
     @JsonProperty("TargetValue")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration-targetvalue")
-    private Double targetValue;
+    private Number targetValue;
 
     /**
      * ScalingPolicyCustomizedMetricSpecification
@@ -109,7 +109,7 @@ public class ScalingPolicyTargetTrackingScalingPolicyConfiguration implements Pr
      * 
      */
     @JsonIgnore
-    public Boolean getDisableScaleIn() {
+    public CharSequence getDisableScaleIn() {
         return disableScaleIn;
     }
 
@@ -118,11 +118,11 @@ public class ScalingPolicyTargetTrackingScalingPolicyConfiguration implements Pr
      * 
      */
     @JsonIgnore
-    public void setDisableScaleIn(Boolean disableScaleIn) {
+    public void setDisableScaleIn(CharSequence disableScaleIn) {
         this.disableScaleIn = disableScaleIn;
     }
 
-    public ScalingPolicyTargetTrackingScalingPolicyConfiguration withDisableScaleIn(Boolean disableScaleIn) {
+    public ScalingPolicyTargetTrackingScalingPolicyConfiguration withDisableScaleIn(CharSequence disableScaleIn) {
         this.disableScaleIn = disableScaleIn;
         return this;
     }
@@ -159,7 +159,7 @@ public class ScalingPolicyTargetTrackingScalingPolicyConfiguration implements Pr
      * 
      */
     @JsonIgnore
-    public Integer getScaleInCooldown() {
+    public Number getScaleInCooldown() {
         return scaleInCooldown;
     }
 
@@ -168,11 +168,11 @@ public class ScalingPolicyTargetTrackingScalingPolicyConfiguration implements Pr
      * 
      */
     @JsonIgnore
-    public void setScaleInCooldown(Integer scaleInCooldown) {
+    public void setScaleInCooldown(Number scaleInCooldown) {
         this.scaleInCooldown = scaleInCooldown;
     }
 
-    public ScalingPolicyTargetTrackingScalingPolicyConfiguration withScaleInCooldown(Integer scaleInCooldown) {
+    public ScalingPolicyTargetTrackingScalingPolicyConfiguration withScaleInCooldown(Number scaleInCooldown) {
         this.scaleInCooldown = scaleInCooldown;
         return this;
     }
@@ -182,7 +182,7 @@ public class ScalingPolicyTargetTrackingScalingPolicyConfiguration implements Pr
      * 
      */
     @JsonIgnore
-    public Integer getScaleOutCooldown() {
+    public Number getScaleOutCooldown() {
         return scaleOutCooldown;
     }
 
@@ -191,11 +191,11 @@ public class ScalingPolicyTargetTrackingScalingPolicyConfiguration implements Pr
      * 
      */
     @JsonIgnore
-    public void setScaleOutCooldown(Integer scaleOutCooldown) {
+    public void setScaleOutCooldown(Number scaleOutCooldown) {
         this.scaleOutCooldown = scaleOutCooldown;
     }
 
-    public ScalingPolicyTargetTrackingScalingPolicyConfiguration withScaleOutCooldown(Integer scaleOutCooldown) {
+    public ScalingPolicyTargetTrackingScalingPolicyConfiguration withScaleOutCooldown(Number scaleOutCooldown) {
         this.scaleOutCooldown = scaleOutCooldown;
         return this;
     }
@@ -205,7 +205,7 @@ public class ScalingPolicyTargetTrackingScalingPolicyConfiguration implements Pr
      * 
      */
     @JsonIgnore
-    public Double getTargetValue() {
+    public Number getTargetValue() {
         return targetValue;
     }
 
@@ -214,11 +214,11 @@ public class ScalingPolicyTargetTrackingScalingPolicyConfiguration implements Pr
      * 
      */
     @JsonIgnore
-    public void setTargetValue(Double targetValue) {
+    public void setTargetValue(Number targetValue) {
         this.targetValue = targetValue;
     }
 
-    public ScalingPolicyTargetTrackingScalingPolicyConfiguration withTargetValue(Double targetValue) {
+    public ScalingPolicyTargetTrackingScalingPolicyConfiguration withTargetValue(Number targetValue) {
         this.targetValue = targetValue;
         return this;
     }

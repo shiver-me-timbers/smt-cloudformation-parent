@@ -83,14 +83,14 @@ public class Webhook {
      */
     @JsonProperty("TargetPipelineVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-targetpipelineversion")
-    private Integer targetPipelineVersion;
+    private Number targetPipelineVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-registerwiththirdparty
      * 
      */
     @JsonProperty("RegisterWithThirdParty")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-registerwiththirdparty")
-    private Boolean registerWithThirdParty;
+    private CharSequence registerWithThirdParty;
 
     /**
      * WebhookWebhookAuthConfiguration
@@ -239,7 +239,7 @@ public class Webhook {
      * 
      */
     @JsonIgnore
-    public Integer getTargetPipelineVersion() {
+    public Number getTargetPipelineVersion() {
         return targetPipelineVersion;
     }
 
@@ -248,11 +248,11 @@ public class Webhook {
      * 
      */
     @JsonIgnore
-    public void setTargetPipelineVersion(Integer targetPipelineVersion) {
+    public void setTargetPipelineVersion(Number targetPipelineVersion) {
         this.targetPipelineVersion = targetPipelineVersion;
     }
 
-    public Webhook withTargetPipelineVersion(Integer targetPipelineVersion) {
+    public Webhook withTargetPipelineVersion(Number targetPipelineVersion) {
         this.targetPipelineVersion = targetPipelineVersion;
         return this;
     }
@@ -262,7 +262,7 @@ public class Webhook {
      * 
      */
     @JsonIgnore
-    public Boolean getRegisterWithThirdParty() {
+    public CharSequence getRegisterWithThirdParty() {
         return registerWithThirdParty;
     }
 
@@ -271,11 +271,11 @@ public class Webhook {
      * 
      */
     @JsonIgnore
-    public void setRegisterWithThirdParty(Boolean registerWithThirdParty) {
+    public void setRegisterWithThirdParty(CharSequence registerWithThirdParty) {
         this.registerWithThirdParty = registerWithThirdParty;
     }
 
-    public Webhook withRegisterWithThirdParty(Boolean registerWithThirdParty) {
+    public Webhook withRegisterWithThirdParty(CharSequence registerWithThirdParty) {
         this.registerWithThirdParty = registerWithThirdParty;
         return this;
     }

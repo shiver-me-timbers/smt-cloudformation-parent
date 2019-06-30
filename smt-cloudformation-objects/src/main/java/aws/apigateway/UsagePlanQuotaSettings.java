@@ -33,14 +33,14 @@ public class UsagePlanQuotaSettings implements Property<UsagePlanQuotaSettings>
      */
     @JsonProperty("Limit")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-quotasettings.html#cfn-apigateway-usageplan-quotasettings-limit")
-    private Integer limit;
+    private Number limit;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-quotasettings.html#cfn-apigateway-usageplan-quotasettings-offset
      * 
      */
     @JsonProperty("Offset")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-quotasettings.html#cfn-apigateway-usageplan-quotasettings-offset")
-    private Integer offset;
+    private Number offset;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-quotasettings.html#cfn-apigateway-usageplan-quotasettings-period
      * 
@@ -54,7 +54,7 @@ public class UsagePlanQuotaSettings implements Property<UsagePlanQuotaSettings>
      * 
      */
     @JsonIgnore
-    public Integer getLimit() {
+    public Number getLimit() {
         return limit;
     }
 
@@ -63,11 +63,11 @@ public class UsagePlanQuotaSettings implements Property<UsagePlanQuotaSettings>
      * 
      */
     @JsonIgnore
-    public void setLimit(Integer limit) {
+    public void setLimit(Number limit) {
         this.limit = limit;
     }
 
-    public UsagePlanQuotaSettings withLimit(Integer limit) {
+    public UsagePlanQuotaSettings withLimit(Number limit) {
         this.limit = limit;
         return this;
     }
@@ -77,7 +77,7 @@ public class UsagePlanQuotaSettings implements Property<UsagePlanQuotaSettings>
      * 
      */
     @JsonIgnore
-    public Integer getOffset() {
+    public Number getOffset() {
         return offset;
     }
 
@@ -86,11 +86,11 @@ public class UsagePlanQuotaSettings implements Property<UsagePlanQuotaSettings>
      * 
      */
     @JsonIgnore
-    public void setOffset(Integer offset) {
+    public void setOffset(Number offset) {
         this.offset = offset;
     }
 
-    public UsagePlanQuotaSettings withOffset(Integer offset) {
+    public UsagePlanQuotaSettings withOffset(Number offset) {
         this.offset = offset;
         return this;
     }

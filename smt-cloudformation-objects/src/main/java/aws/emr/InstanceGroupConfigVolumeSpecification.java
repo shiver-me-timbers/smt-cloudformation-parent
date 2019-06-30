@@ -33,14 +33,14 @@ public class InstanceGroupConfigVolumeSpecification implements Property<Instance
      */
     @JsonProperty("Iops")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration-ebsblockdeviceconfig-volumespecification.html#cfn-emr-ebsconfiguration-ebsblockdeviceconfig-volumespecification-iops")
-    private Integer iops;
+    private Number iops;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration-ebsblockdeviceconfig-volumespecification.html#cfn-emr-ebsconfiguration-ebsblockdeviceconfig-volumespecification-sizeingb
      * 
      */
     @JsonProperty("SizeInGB")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration-ebsblockdeviceconfig-volumespecification.html#cfn-emr-ebsconfiguration-ebsblockdeviceconfig-volumespecification-sizeingb")
-    private Integer sizeInGB;
+    private Number sizeInGB;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration-ebsblockdeviceconfig-volumespecification.html#cfn-emr-ebsconfiguration-ebsblockdeviceconfig-volumespecification-volumetype
      * 
@@ -54,7 +54,7 @@ public class InstanceGroupConfigVolumeSpecification implements Property<Instance
      * 
      */
     @JsonIgnore
-    public Integer getIops() {
+    public Number getIops() {
         return iops;
     }
 
@@ -63,11 +63,11 @@ public class InstanceGroupConfigVolumeSpecification implements Property<Instance
      * 
      */
     @JsonIgnore
-    public void setIops(Integer iops) {
+    public void setIops(Number iops) {
         this.iops = iops;
     }
 
-    public InstanceGroupConfigVolumeSpecification withIops(Integer iops) {
+    public InstanceGroupConfigVolumeSpecification withIops(Number iops) {
         this.iops = iops;
         return this;
     }
@@ -77,7 +77,7 @@ public class InstanceGroupConfigVolumeSpecification implements Property<Instance
      * 
      */
     @JsonIgnore
-    public Integer getSizeInGB() {
+    public Number getSizeInGB() {
         return sizeInGB;
     }
 
@@ -86,11 +86,11 @@ public class InstanceGroupConfigVolumeSpecification implements Property<Instance
      * 
      */
     @JsonIgnore
-    public void setSizeInGB(Integer sizeInGB) {
+    public void setSizeInGB(Number sizeInGB) {
         this.sizeInGB = sizeInGB;
     }
 
-    public InstanceGroupConfigVolumeSpecification withSizeInGB(Integer sizeInGB) {
+    public InstanceGroupConfigVolumeSpecification withSizeInGB(Number sizeInGB) {
         this.sizeInGB = sizeInGB;
         return this;
     }

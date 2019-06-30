@@ -59,7 +59,7 @@ public class FunctionDefinitionEnvironment implements Property<FunctionDefinitio
      */
     @JsonProperty("AccessSysfs")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-environment.html#cfn-greengrass-functiondefinition-environment-accesssysfs")
-    private Boolean accessSysfs;
+    private CharSequence accessSysfs;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-environment.html#cfn-greengrass-functiondefinition-environment-variables
@@ -139,7 +139,7 @@ public class FunctionDefinitionEnvironment implements Property<FunctionDefinitio
      * 
      */
     @JsonIgnore
-    public Boolean getAccessSysfs() {
+    public CharSequence getAccessSysfs() {
         return accessSysfs;
     }
 
@@ -148,11 +148,11 @@ public class FunctionDefinitionEnvironment implements Property<FunctionDefinitio
      * 
      */
     @JsonIgnore
-    public void setAccessSysfs(Boolean accessSysfs) {
+    public void setAccessSysfs(CharSequence accessSysfs) {
         this.accessSysfs = accessSysfs;
     }
 
-    public FunctionDefinitionEnvironment withAccessSysfs(Boolean accessSysfs) {
+    public FunctionDefinitionEnvironment withAccessSysfs(CharSequence accessSysfs) {
         this.accessSysfs = accessSysfs;
         return this;
     }

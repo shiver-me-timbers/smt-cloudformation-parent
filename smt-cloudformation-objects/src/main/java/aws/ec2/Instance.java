@@ -106,14 +106,14 @@ public class Instance {
      */
     @JsonProperty("DisableApiTermination")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-disableapitermination")
-    private Boolean disableApiTermination;
+    private CharSequence disableApiTermination;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-ebsoptimized
      * 
      */
     @JsonProperty("EbsOptimized")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-ebsoptimized")
-    private Boolean ebsOptimized;
+    private CharSequence ebsOptimized;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-elasticgpuspecifications
      * 
@@ -171,7 +171,7 @@ public class Instance {
      */
     @JsonProperty("Ipv6AddressCount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-ipv6addresscount")
-    private Integer ipv6AddressCount;
+    private Number ipv6AddressCount;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-ipv6addresses
      * 
@@ -216,7 +216,7 @@ public class Instance {
      */
     @JsonProperty("Monitoring")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-monitoring")
-    private Boolean monitoring;
+    private CharSequence monitoring;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-networkinterfaces
      * 
@@ -265,7 +265,7 @@ public class Instance {
      */
     @JsonProperty("SourceDestCheck")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-sourcedestcheck")
-    private Boolean sourceDestCheck;
+    private CharSequence sourceDestCheck;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-ssmassociations
      * 
@@ -433,7 +433,7 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public Boolean getDisableApiTermination() {
+    public CharSequence getDisableApiTermination() {
         return disableApiTermination;
     }
 
@@ -442,11 +442,11 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public void setDisableApiTermination(Boolean disableApiTermination) {
+    public void setDisableApiTermination(CharSequence disableApiTermination) {
         this.disableApiTermination = disableApiTermination;
     }
 
-    public Instance withDisableApiTermination(Boolean disableApiTermination) {
+    public Instance withDisableApiTermination(CharSequence disableApiTermination) {
         this.disableApiTermination = disableApiTermination;
         return this;
     }
@@ -456,7 +456,7 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public Boolean getEbsOptimized() {
+    public CharSequence getEbsOptimized() {
         return ebsOptimized;
     }
 
@@ -465,11 +465,11 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public void setEbsOptimized(Boolean ebsOptimized) {
+    public void setEbsOptimized(CharSequence ebsOptimized) {
         this.ebsOptimized = ebsOptimized;
     }
 
-    public Instance withEbsOptimized(Boolean ebsOptimized) {
+    public Instance withEbsOptimized(CharSequence ebsOptimized) {
         this.ebsOptimized = ebsOptimized;
         return this;
     }
@@ -640,7 +640,7 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public Integer getIpv6AddressCount() {
+    public Number getIpv6AddressCount() {
         return ipv6AddressCount;
     }
 
@@ -649,11 +649,11 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public void setIpv6AddressCount(Integer ipv6AddressCount) {
+    public void setIpv6AddressCount(Number ipv6AddressCount) {
         this.ipv6AddressCount = ipv6AddressCount;
     }
 
-    public Instance withIpv6AddressCount(Integer ipv6AddressCount) {
+    public Instance withIpv6AddressCount(Number ipv6AddressCount) {
         this.ipv6AddressCount = ipv6AddressCount;
         return this;
     }
@@ -782,7 +782,7 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public Boolean getMonitoring() {
+    public CharSequence getMonitoring() {
         return monitoring;
     }
 
@@ -791,11 +791,11 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public void setMonitoring(Boolean monitoring) {
+    public void setMonitoring(CharSequence monitoring) {
         this.monitoring = monitoring;
     }
 
-    public Instance withMonitoring(Boolean monitoring) {
+    public Instance withMonitoring(CharSequence monitoring) {
         this.monitoring = monitoring;
         return this;
     }
@@ -943,7 +943,7 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public Boolean getSourceDestCheck() {
+    public CharSequence getSourceDestCheck() {
         return sourceDestCheck;
     }
 
@@ -952,11 +952,11 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public void setSourceDestCheck(Boolean sourceDestCheck) {
+    public void setSourceDestCheck(CharSequence sourceDestCheck) {
         this.sourceDestCheck = sourceDestCheck;
     }
 
-    public Instance withSourceDestCheck(Boolean sourceDestCheck) {
+    public Instance withSourceDestCheck(CharSequence sourceDestCheck) {
         this.sourceDestCheck = sourceDestCheck;
         return this;
     }

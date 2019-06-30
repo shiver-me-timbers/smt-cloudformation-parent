@@ -101,7 +101,7 @@ public class RecordSetGroupRecordSet implements Property<RecordSetGroupRecordSet
      */
     @JsonProperty("MultiValueAnswer")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-multivalueanswer")
-    private Boolean multiValueAnswer;
+    private CharSequence multiValueAnswer;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-name
      * 
@@ -151,7 +151,7 @@ public class RecordSetGroupRecordSet implements Property<RecordSetGroupRecordSet
      */
     @JsonProperty("Weight")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-weight")
-    private Integer weight;
+    private Number weight;
 
     /**
      * RecordSetGroupAliasTarget
@@ -327,7 +327,7 @@ public class RecordSetGroupRecordSet implements Property<RecordSetGroupRecordSet
      * 
      */
     @JsonIgnore
-    public Boolean getMultiValueAnswer() {
+    public CharSequence getMultiValueAnswer() {
         return multiValueAnswer;
     }
 
@@ -336,11 +336,11 @@ public class RecordSetGroupRecordSet implements Property<RecordSetGroupRecordSet
      * 
      */
     @JsonIgnore
-    public void setMultiValueAnswer(Boolean multiValueAnswer) {
+    public void setMultiValueAnswer(CharSequence multiValueAnswer) {
         this.multiValueAnswer = multiValueAnswer;
     }
 
-    public RecordSetGroupRecordSet withMultiValueAnswer(Boolean multiValueAnswer) {
+    public RecordSetGroupRecordSet withMultiValueAnswer(CharSequence multiValueAnswer) {
         this.multiValueAnswer = multiValueAnswer;
         return this;
     }
@@ -488,7 +488,7 @@ public class RecordSetGroupRecordSet implements Property<RecordSetGroupRecordSet
      * 
      */
     @JsonIgnore
-    public Integer getWeight() {
+    public Number getWeight() {
         return weight;
     }
 
@@ -497,11 +497,11 @@ public class RecordSetGroupRecordSet implements Property<RecordSetGroupRecordSet
      * 
      */
     @JsonIgnore
-    public void setWeight(Integer weight) {
+    public void setWeight(Number weight) {
         this.weight = weight;
     }
 
-    public RecordSetGroupRecordSet withWeight(Integer weight) {
+    public RecordSetGroupRecordSet withWeight(Number weight) {
         this.weight = weight;
         return this;
     }

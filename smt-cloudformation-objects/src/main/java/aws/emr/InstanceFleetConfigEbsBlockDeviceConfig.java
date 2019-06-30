@@ -41,7 +41,7 @@ public class InstanceFleetConfigEbsBlockDeviceConfig implements Property<Instanc
      */
     @JsonProperty("VolumesPerInstance")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-ebsblockdeviceconfig.html#cfn-elasticmapreduce-instancefleetconfig-ebsblockdeviceconfig-volumesperinstance")
-    private Integer volumesPerInstance;
+    private Number volumesPerInstance;
 
     /**
      * InstanceFleetConfigVolumeSpecification
@@ -75,7 +75,7 @@ public class InstanceFleetConfigEbsBlockDeviceConfig implements Property<Instanc
      * 
      */
     @JsonIgnore
-    public Integer getVolumesPerInstance() {
+    public Number getVolumesPerInstance() {
         return volumesPerInstance;
     }
 
@@ -84,11 +84,11 @@ public class InstanceFleetConfigEbsBlockDeviceConfig implements Property<Instanc
      * 
      */
     @JsonIgnore
-    public void setVolumesPerInstance(Integer volumesPerInstance) {
+    public void setVolumesPerInstance(Number volumesPerInstance) {
         this.volumesPerInstance = volumesPerInstance;
     }
 
-    public InstanceFleetConfigEbsBlockDeviceConfig withVolumesPerInstance(Integer volumesPerInstance) {
+    public InstanceFleetConfigEbsBlockDeviceConfig withVolumesPerInstance(Number volumesPerInstance) {
         this.volumesPerInstance = volumesPerInstance;
         return this;
     }

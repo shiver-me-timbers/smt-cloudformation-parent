@@ -76,7 +76,7 @@ public class EndpointMongoDbSettings implements Property<EndpointMongoDbSettings
      */
     @JsonProperty("Port")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-port")
-    private Integer port;
+    private Number port;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-extractdocid
      * 
@@ -233,7 +233,7 @@ public class EndpointMongoDbSettings implements Property<EndpointMongoDbSettings
      * 
      */
     @JsonIgnore
-    public Integer getPort() {
+    public Number getPort() {
         return port;
     }
 
@@ -242,11 +242,11 @@ public class EndpointMongoDbSettings implements Property<EndpointMongoDbSettings
      * 
      */
     @JsonIgnore
-    public void setPort(Integer port) {
+    public void setPort(Number port) {
         this.port = port;
     }
 
-    public EndpointMongoDbSettings withPort(Integer port) {
+    public EndpointMongoDbSettings withPort(Number port) {
         this.port = port;
         return this;
     }

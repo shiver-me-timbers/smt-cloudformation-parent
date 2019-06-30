@@ -66,7 +66,7 @@ public class Stack {
      */
     @JsonProperty("DeleteStorageConnectors")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-deletestorageconnectors")
-    private Boolean deleteStorageConnectors;
+    private CharSequence deleteStorageConnectors;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-usersettings
      * 
@@ -195,7 +195,7 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public Boolean getDeleteStorageConnectors() {
+    public CharSequence getDeleteStorageConnectors() {
         return deleteStorageConnectors;
     }
 
@@ -204,11 +204,11 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public void setDeleteStorageConnectors(Boolean deleteStorageConnectors) {
+    public void setDeleteStorageConnectors(CharSequence deleteStorageConnectors) {
         this.deleteStorageConnectors = deleteStorageConnectors;
     }
 
-    public Stack withDeleteStorageConnectors(Boolean deleteStorageConnectors) {
+    public Stack withDeleteStorageConnectors(CharSequence deleteStorageConnectors) {
         this.deleteStorageConnectors = deleteStorageConnectors;
         return this;
     }

@@ -35,7 +35,7 @@ public class JobDefinitionNodeProperties implements Property<JobDefinitionNodePr
      */
     @JsonProperty("MainNode")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-nodeproperties.html#cfn-batch-jobdefinition-nodeproperties-mainnode")
-    private Integer mainNode;
+    private Number mainNode;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-nodeproperties.html#cfn-batch-jobdefinition-nodeproperties-noderangeproperties
      * 
@@ -49,14 +49,14 @@ public class JobDefinitionNodeProperties implements Property<JobDefinitionNodePr
      */
     @JsonProperty("NumNodes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-nodeproperties.html#cfn-batch-jobdefinition-nodeproperties-numnodes")
-    private Integer numNodes;
+    private Number numNodes;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-nodeproperties.html#cfn-batch-jobdefinition-nodeproperties-mainnode
      * 
      */
     @JsonIgnore
-    public Integer getMainNode() {
+    public Number getMainNode() {
         return mainNode;
     }
 
@@ -65,11 +65,11 @@ public class JobDefinitionNodeProperties implements Property<JobDefinitionNodePr
      * 
      */
     @JsonIgnore
-    public void setMainNode(Integer mainNode) {
+    public void setMainNode(Number mainNode) {
         this.mainNode = mainNode;
     }
 
-    public JobDefinitionNodeProperties withMainNode(Integer mainNode) {
+    public JobDefinitionNodeProperties withMainNode(Number mainNode) {
         this.mainNode = mainNode;
         return this;
     }
@@ -102,7 +102,7 @@ public class JobDefinitionNodeProperties implements Property<JobDefinitionNodePr
      * 
      */
     @JsonIgnore
-    public Integer getNumNodes() {
+    public Number getNumNodes() {
         return numNodes;
     }
 
@@ -111,11 +111,11 @@ public class JobDefinitionNodeProperties implements Property<JobDefinitionNodePr
      * 
      */
     @JsonIgnore
-    public void setNumNodes(Integer numNodes) {
+    public void setNumNodes(Number numNodes) {
         this.numNodes = numNodes;
     }
 
-    public JobDefinitionNodeProperties withNumNodes(Integer numNodes) {
+    public JobDefinitionNodeProperties withNumNodes(Number numNodes) {
         this.numNodes = numNodes;
         return this;
     }

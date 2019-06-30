@@ -45,7 +45,7 @@ public class ScalingPolicyStepScalingPolicyConfiguration implements Property<Sca
      */
     @JsonProperty("Cooldown")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-cooldown")
-    private Integer cooldown;
+    private Number cooldown;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-metricaggregationtype
      * 
@@ -59,7 +59,7 @@ public class ScalingPolicyStepScalingPolicyConfiguration implements Property<Sca
      */
     @JsonProperty("MinAdjustmentMagnitude")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-minadjustmentmagnitude")
-    private Integer minAdjustmentMagnitude;
+    private Number minAdjustmentMagnitude;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-stepadjustments
      * 
@@ -97,7 +97,7 @@ public class ScalingPolicyStepScalingPolicyConfiguration implements Property<Sca
      * 
      */
     @JsonIgnore
-    public Integer getCooldown() {
+    public Number getCooldown() {
         return cooldown;
     }
 
@@ -106,11 +106,11 @@ public class ScalingPolicyStepScalingPolicyConfiguration implements Property<Sca
      * 
      */
     @JsonIgnore
-    public void setCooldown(Integer cooldown) {
+    public void setCooldown(Number cooldown) {
         this.cooldown = cooldown;
     }
 
-    public ScalingPolicyStepScalingPolicyConfiguration withCooldown(Integer cooldown) {
+    public ScalingPolicyStepScalingPolicyConfiguration withCooldown(Number cooldown) {
         this.cooldown = cooldown;
         return this;
     }
@@ -143,7 +143,7 @@ public class ScalingPolicyStepScalingPolicyConfiguration implements Property<Sca
      * 
      */
     @JsonIgnore
-    public Integer getMinAdjustmentMagnitude() {
+    public Number getMinAdjustmentMagnitude() {
         return minAdjustmentMagnitude;
     }
 
@@ -152,11 +152,11 @@ public class ScalingPolicyStepScalingPolicyConfiguration implements Property<Sca
      * 
      */
     @JsonIgnore
-    public void setMinAdjustmentMagnitude(Integer minAdjustmentMagnitude) {
+    public void setMinAdjustmentMagnitude(Number minAdjustmentMagnitude) {
         this.minAdjustmentMagnitude = minAdjustmentMagnitude;
     }
 
-    public ScalingPolicyStepScalingPolicyConfiguration withMinAdjustmentMagnitude(Integer minAdjustmentMagnitude) {
+    public ScalingPolicyStepScalingPolicyConfiguration withMinAdjustmentMagnitude(Number minAdjustmentMagnitude) {
         this.minAdjustmentMagnitude = minAdjustmentMagnitude;
         return this;
     }

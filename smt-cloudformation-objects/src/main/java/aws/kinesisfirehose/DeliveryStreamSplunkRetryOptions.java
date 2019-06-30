@@ -31,14 +31,14 @@ public class DeliveryStreamSplunkRetryOptions implements Property<DeliveryStream
      */
     @JsonProperty("DurationInSeconds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkretryoptions.html#cfn-kinesisfirehose-deliverystream-splunkretryoptions-durationinseconds")
-    private Integer durationInSeconds;
+    private Number durationInSeconds;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkretryoptions.html#cfn-kinesisfirehose-deliverystream-splunkretryoptions-durationinseconds
      * 
      */
     @JsonIgnore
-    public Integer getDurationInSeconds() {
+    public Number getDurationInSeconds() {
         return durationInSeconds;
     }
 
@@ -47,11 +47,11 @@ public class DeliveryStreamSplunkRetryOptions implements Property<DeliveryStream
      * 
      */
     @JsonIgnore
-    public void setDurationInSeconds(Integer durationInSeconds) {
+    public void setDurationInSeconds(Number durationInSeconds) {
         this.durationInSeconds = durationInSeconds;
     }
 
-    public DeliveryStreamSplunkRetryOptions withDurationInSeconds(Integer durationInSeconds) {
+    public DeliveryStreamSplunkRetryOptions withDurationInSeconds(Number durationInSeconds) {
         this.durationInSeconds = durationInSeconds;
         return this;
     }

@@ -34,7 +34,7 @@ public class DeviceDefinitionDevice implements Property<DeviceDefinitionDevice>
      */
     @JsonProperty("SyncShadow")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-devicedefinition-device.html#cfn-greengrass-devicedefinition-device-syncshadow")
-    private Boolean syncShadow;
+    private CharSequence syncShadow;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-devicedefinition-device.html#cfn-greengrass-devicedefinition-device-thingarn
      * 
@@ -62,7 +62,7 @@ public class DeviceDefinitionDevice implements Property<DeviceDefinitionDevice>
      * 
      */
     @JsonIgnore
-    public Boolean getSyncShadow() {
+    public CharSequence getSyncShadow() {
         return syncShadow;
     }
 
@@ -71,11 +71,11 @@ public class DeviceDefinitionDevice implements Property<DeviceDefinitionDevice>
      * 
      */
     @JsonIgnore
-    public void setSyncShadow(Boolean syncShadow) {
+    public void setSyncShadow(CharSequence syncShadow) {
         this.syncShadow = syncShadow;
     }
 
-    public DeviceDefinitionDevice withSyncShadow(Boolean syncShadow) {
+    public DeviceDefinitionDevice withSyncShadow(CharSequence syncShadow) {
         this.syncShadow = syncShadow;
         return this;
     }

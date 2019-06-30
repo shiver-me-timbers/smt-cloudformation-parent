@@ -49,7 +49,7 @@ public class BucketInventoryConfiguration implements Property<BucketInventoryCon
      */
     @JsonProperty("Enabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-inventoryconfiguration.html#cfn-s3-bucket-inventoryconfiguration-enabled")
-    private Boolean enabled;
+    private CharSequence enabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-inventoryconfiguration.html#cfn-s3-bucket-inventoryconfiguration-id
      * 
@@ -119,7 +119,7 @@ public class BucketInventoryConfiguration implements Property<BucketInventoryCon
      * 
      */
     @JsonIgnore
-    public Boolean getEnabled() {
+    public CharSequence getEnabled() {
         return enabled;
     }
 
@@ -128,11 +128,11 @@ public class BucketInventoryConfiguration implements Property<BucketInventoryCon
      * 
      */
     @JsonIgnore
-    public void setEnabled(Boolean enabled) {
+    public void setEnabled(CharSequence enabled) {
         this.enabled = enabled;
     }
 
-    public BucketInventoryConfiguration withEnabled(Boolean enabled) {
+    public BucketInventoryConfiguration withEnabled(CharSequence enabled) {
         this.enabled = enabled;
         return this;
     }

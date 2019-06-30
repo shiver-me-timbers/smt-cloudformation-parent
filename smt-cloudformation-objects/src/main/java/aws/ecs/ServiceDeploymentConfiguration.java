@@ -32,21 +32,21 @@ public class ServiceDeploymentConfiguration implements Property<ServiceDeploymen
      */
     @JsonProperty("MaximumPercent")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-deploymentconfiguration.html#cfn-ecs-service-deploymentconfiguration-maximumpercent")
-    private Integer maximumPercent;
+    private Number maximumPercent;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-deploymentconfiguration.html#cfn-ecs-service-deploymentconfiguration-minimumhealthypercent
      * 
      */
     @JsonProperty("MinimumHealthyPercent")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-deploymentconfiguration.html#cfn-ecs-service-deploymentconfiguration-minimumhealthypercent")
-    private Integer minimumHealthyPercent;
+    private Number minimumHealthyPercent;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-deploymentconfiguration.html#cfn-ecs-service-deploymentconfiguration-maximumpercent
      * 
      */
     @JsonIgnore
-    public Integer getMaximumPercent() {
+    public Number getMaximumPercent() {
         return maximumPercent;
     }
 
@@ -55,11 +55,11 @@ public class ServiceDeploymentConfiguration implements Property<ServiceDeploymen
      * 
      */
     @JsonIgnore
-    public void setMaximumPercent(Integer maximumPercent) {
+    public void setMaximumPercent(Number maximumPercent) {
         this.maximumPercent = maximumPercent;
     }
 
-    public ServiceDeploymentConfiguration withMaximumPercent(Integer maximumPercent) {
+    public ServiceDeploymentConfiguration withMaximumPercent(Number maximumPercent) {
         this.maximumPercent = maximumPercent;
         return this;
     }
@@ -69,7 +69,7 @@ public class ServiceDeploymentConfiguration implements Property<ServiceDeploymen
      * 
      */
     @JsonIgnore
-    public Integer getMinimumHealthyPercent() {
+    public Number getMinimumHealthyPercent() {
         return minimumHealthyPercent;
     }
 
@@ -78,11 +78,11 @@ public class ServiceDeploymentConfiguration implements Property<ServiceDeploymen
      * 
      */
     @JsonIgnore
-    public void setMinimumHealthyPercent(Integer minimumHealthyPercent) {
+    public void setMinimumHealthyPercent(Number minimumHealthyPercent) {
         this.minimumHealthyPercent = minimumHealthyPercent;
     }
 
-    public ServiceDeploymentConfiguration withMinimumHealthyPercent(Integer minimumHealthyPercent) {
+    public ServiceDeploymentConfiguration withMinimumHealthyPercent(Number minimumHealthyPercent) {
         this.minimumHealthyPercent = minimumHealthyPercent;
         return this;
     }

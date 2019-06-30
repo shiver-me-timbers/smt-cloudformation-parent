@@ -49,7 +49,7 @@ public class VPCEndpoint {
      */
     @JsonProperty("PrivateDnsEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-privatednsenabled")
-    private Boolean privateDnsEnabled;
+    private CharSequence privateDnsEnabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-routetableids
      * 
@@ -128,7 +128,7 @@ public class VPCEndpoint {
      * 
      */
     @JsonIgnore
-    public Boolean getPrivateDnsEnabled() {
+    public CharSequence getPrivateDnsEnabled() {
         return privateDnsEnabled;
     }
 
@@ -137,11 +137,11 @@ public class VPCEndpoint {
      * 
      */
     @JsonIgnore
-    public void setPrivateDnsEnabled(Boolean privateDnsEnabled) {
+    public void setPrivateDnsEnabled(CharSequence privateDnsEnabled) {
         this.privateDnsEnabled = privateDnsEnabled;
     }
 
-    public VPCEndpoint withPrivateDnsEnabled(Boolean privateDnsEnabled) {
+    public VPCEndpoint withPrivateDnsEnabled(CharSequence privateDnsEnabled) {
         this.privateDnsEnabled = privateDnsEnabled;
         return this;
     }

@@ -39,14 +39,14 @@ public class ScalableTarget {
      */
     @JsonProperty("MaxCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-maxcapacity")
-    private Integer maxCapacity;
+    private Number maxCapacity;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-mincapacity
      * 
      */
     @JsonProperty("MinCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-mincapacity")
-    private Integer minCapacity;
+    private Number minCapacity;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-resourceid
      * 
@@ -89,7 +89,7 @@ public class ScalableTarget {
      * 
      */
     @JsonIgnore
-    public Integer getMaxCapacity() {
+    public Number getMaxCapacity() {
         return maxCapacity;
     }
 
@@ -98,11 +98,11 @@ public class ScalableTarget {
      * 
      */
     @JsonIgnore
-    public void setMaxCapacity(Integer maxCapacity) {
+    public void setMaxCapacity(Number maxCapacity) {
         this.maxCapacity = maxCapacity;
     }
 
-    public ScalableTarget withMaxCapacity(Integer maxCapacity) {
+    public ScalableTarget withMaxCapacity(Number maxCapacity) {
         this.maxCapacity = maxCapacity;
         return this;
     }
@@ -112,7 +112,7 @@ public class ScalableTarget {
      * 
      */
     @JsonIgnore
-    public Integer getMinCapacity() {
+    public Number getMinCapacity() {
         return minCapacity;
     }
 
@@ -121,11 +121,11 @@ public class ScalableTarget {
      * 
      */
     @JsonIgnore
-    public void setMinCapacity(Integer minCapacity) {
+    public void setMinCapacity(Number minCapacity) {
         this.minCapacity = minCapacity;
     }
 
-    public ScalableTarget withMinCapacity(Integer minCapacity) {
+    public ScalableTarget withMinCapacity(Number minCapacity) {
         this.minCapacity = minCapacity;
         return this;
     }

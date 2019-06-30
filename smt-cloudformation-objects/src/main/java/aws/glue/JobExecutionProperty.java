@@ -31,14 +31,14 @@ public class JobExecutionProperty implements Property<JobExecutionProperty>
      */
     @JsonProperty("MaxConcurrentRuns")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-executionproperty.html#cfn-glue-job-executionproperty-maxconcurrentruns")
-    private Double maxConcurrentRuns;
+    private Number maxConcurrentRuns;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-executionproperty.html#cfn-glue-job-executionproperty-maxconcurrentruns
      * 
      */
     @JsonIgnore
-    public Double getMaxConcurrentRuns() {
+    public Number getMaxConcurrentRuns() {
         return maxConcurrentRuns;
     }
 
@@ -47,11 +47,11 @@ public class JobExecutionProperty implements Property<JobExecutionProperty>
      * 
      */
     @JsonIgnore
-    public void setMaxConcurrentRuns(Double maxConcurrentRuns) {
+    public void setMaxConcurrentRuns(Number maxConcurrentRuns) {
         this.maxConcurrentRuns = maxConcurrentRuns;
     }
 
-    public JobExecutionProperty withMaxConcurrentRuns(Double maxConcurrentRuns) {
+    public JobExecutionProperty withMaxConcurrentRuns(Number maxConcurrentRuns) {
         this.maxConcurrentRuns = maxConcurrentRuns;
         return this;
     }

@@ -46,7 +46,7 @@ public class InstanceFleetConfigInstanceTypeConfig implements Property<InstanceF
      */
     @JsonProperty("BidPriceAsPercentageOfOnDemandPrice")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfig-bidpriceaspercentageofondemandprice")
-    private Double bidPriceAsPercentageOfOnDemandPrice;
+    private Number bidPriceAsPercentageOfOnDemandPrice;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfig-configurations
      * 
@@ -77,7 +77,7 @@ public class InstanceFleetConfigInstanceTypeConfig implements Property<InstanceF
      */
     @JsonProperty("WeightedCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfig-weightedcapacity")
-    private Integer weightedCapacity;
+    private Number weightedCapacity;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfig-bidprice
@@ -107,7 +107,7 @@ public class InstanceFleetConfigInstanceTypeConfig implements Property<InstanceF
      * 
      */
     @JsonIgnore
-    public Double getBidPriceAsPercentageOfOnDemandPrice() {
+    public Number getBidPriceAsPercentageOfOnDemandPrice() {
         return bidPriceAsPercentageOfOnDemandPrice;
     }
 
@@ -116,11 +116,11 @@ public class InstanceFleetConfigInstanceTypeConfig implements Property<InstanceF
      * 
      */
     @JsonIgnore
-    public void setBidPriceAsPercentageOfOnDemandPrice(Double bidPriceAsPercentageOfOnDemandPrice) {
+    public void setBidPriceAsPercentageOfOnDemandPrice(Number bidPriceAsPercentageOfOnDemandPrice) {
         this.bidPriceAsPercentageOfOnDemandPrice = bidPriceAsPercentageOfOnDemandPrice;
     }
 
-    public InstanceFleetConfigInstanceTypeConfig withBidPriceAsPercentageOfOnDemandPrice(Double bidPriceAsPercentageOfOnDemandPrice) {
+    public InstanceFleetConfigInstanceTypeConfig withBidPriceAsPercentageOfOnDemandPrice(Number bidPriceAsPercentageOfOnDemandPrice) {
         this.bidPriceAsPercentageOfOnDemandPrice = bidPriceAsPercentageOfOnDemandPrice;
         return this;
     }
@@ -203,7 +203,7 @@ public class InstanceFleetConfigInstanceTypeConfig implements Property<InstanceF
      * 
      */
     @JsonIgnore
-    public Integer getWeightedCapacity() {
+    public Number getWeightedCapacity() {
         return weightedCapacity;
     }
 
@@ -212,11 +212,11 @@ public class InstanceFleetConfigInstanceTypeConfig implements Property<InstanceF
      * 
      */
     @JsonIgnore
-    public void setWeightedCapacity(Integer weightedCapacity) {
+    public void setWeightedCapacity(Number weightedCapacity) {
         this.weightedCapacity = weightedCapacity;
     }
 
-    public InstanceFleetConfigInstanceTypeConfig withWeightedCapacity(Integer weightedCapacity) {
+    public InstanceFleetConfigInstanceTypeConfig withWeightedCapacity(Number weightedCapacity) {
         this.weightedCapacity = weightedCapacity;
         return this;
     }

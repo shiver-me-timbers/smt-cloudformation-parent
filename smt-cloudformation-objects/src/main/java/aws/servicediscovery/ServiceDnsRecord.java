@@ -39,7 +39,7 @@ public class ServiceDnsRecord implements Property<ServiceDnsRecord>
      */
     @JsonProperty("TTL")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-dnsrecord.html#cfn-servicediscovery-service-dnsrecord-ttl")
-    private Double tTL;
+    private Number tTL;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-dnsrecord.html#cfn-servicediscovery-service-dnsrecord-type
@@ -69,7 +69,7 @@ public class ServiceDnsRecord implements Property<ServiceDnsRecord>
      * 
      */
     @JsonIgnore
-    public Double getTTL() {
+    public Number getTTL() {
         return tTL;
     }
 
@@ -78,11 +78,11 @@ public class ServiceDnsRecord implements Property<ServiceDnsRecord>
      * 
      */
     @JsonIgnore
-    public void setTTL(Double tTL) {
+    public void setTTL(Number tTL) {
         this.tTL = tTL;
     }
 
-    public ServiceDnsRecord withTTL(Double tTL) {
+    public ServiceDnsRecord withTTL(Number tTL) {
         this.tTL = tTL;
         return this;
     }

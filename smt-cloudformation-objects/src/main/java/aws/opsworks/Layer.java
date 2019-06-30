@@ -52,21 +52,21 @@ public class Layer {
      */
     @JsonProperty("Attributes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-attributes")
-    private Map<String, String> attributes;
+    private Map<String, CharSequence> attributes;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-autoassignelasticips
      * 
      */
     @JsonProperty("AutoAssignElasticIps")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-autoassignelasticips")
-    private Boolean autoAssignElasticIps;
+    private CharSequence autoAssignElasticIps;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-autoassignpublicips
      * 
      */
     @JsonProperty("AutoAssignPublicIps")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-autoassignpublicips")
-    private Boolean autoAssignPublicIps;
+    private CharSequence autoAssignPublicIps;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-custominstanceprofilearn
      * 
@@ -103,14 +103,14 @@ public class Layer {
      */
     @JsonProperty("EnableAutoHealing")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-enableautohealing")
-    private Boolean enableAutoHealing;
+    private CharSequence enableAutoHealing;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-installupdatesonboot
      * 
      */
     @JsonProperty("InstallUpdatesOnBoot")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-installupdatesonboot")
-    private Boolean installUpdatesOnBoot;
+    private CharSequence installUpdatesOnBoot;
     /**
      * LayerLifecycleEventConfiguration
      * <p>
@@ -177,7 +177,7 @@ public class Layer {
      */
     @JsonProperty("UseEbsOptimizedInstances")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-useebsoptimizedinstances")
-    private Boolean useEbsOptimizedInstances;
+    private CharSequence useEbsOptimizedInstances;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-volumeconfigurations
      * 
@@ -191,7 +191,7 @@ public class Layer {
      * 
      */
     @JsonIgnore
-    public Map<String, String> getAttributes() {
+    public Map<String, CharSequence> getAttributes() {
         return attributes;
     }
 
@@ -200,11 +200,11 @@ public class Layer {
      * 
      */
     @JsonIgnore
-    public void setAttributes(Map<String, String> attributes) {
+    public void setAttributes(Map<String, CharSequence> attributes) {
         this.attributes = attributes;
     }
 
-    public Layer withAttributes(Map<String, String> attributes) {
+    public Layer withAttributes(Map<String, CharSequence> attributes) {
         this.attributes = attributes;
         return this;
     }
@@ -214,7 +214,7 @@ public class Layer {
      * 
      */
     @JsonIgnore
-    public Boolean getAutoAssignElasticIps() {
+    public CharSequence getAutoAssignElasticIps() {
         return autoAssignElasticIps;
     }
 
@@ -223,11 +223,11 @@ public class Layer {
      * 
      */
     @JsonIgnore
-    public void setAutoAssignElasticIps(Boolean autoAssignElasticIps) {
+    public void setAutoAssignElasticIps(CharSequence autoAssignElasticIps) {
         this.autoAssignElasticIps = autoAssignElasticIps;
     }
 
-    public Layer withAutoAssignElasticIps(Boolean autoAssignElasticIps) {
+    public Layer withAutoAssignElasticIps(CharSequence autoAssignElasticIps) {
         this.autoAssignElasticIps = autoAssignElasticIps;
         return this;
     }
@@ -237,7 +237,7 @@ public class Layer {
      * 
      */
     @JsonIgnore
-    public Boolean getAutoAssignPublicIps() {
+    public CharSequence getAutoAssignPublicIps() {
         return autoAssignPublicIps;
     }
 
@@ -246,11 +246,11 @@ public class Layer {
      * 
      */
     @JsonIgnore
-    public void setAutoAssignPublicIps(Boolean autoAssignPublicIps) {
+    public void setAutoAssignPublicIps(CharSequence autoAssignPublicIps) {
         this.autoAssignPublicIps = autoAssignPublicIps;
     }
 
-    public Layer withAutoAssignPublicIps(Boolean autoAssignPublicIps) {
+    public Layer withAutoAssignPublicIps(CharSequence autoAssignPublicIps) {
         this.autoAssignPublicIps = autoAssignPublicIps;
         return this;
     }
@@ -356,7 +356,7 @@ public class Layer {
      * 
      */
     @JsonIgnore
-    public Boolean getEnableAutoHealing() {
+    public CharSequence getEnableAutoHealing() {
         return enableAutoHealing;
     }
 
@@ -365,11 +365,11 @@ public class Layer {
      * 
      */
     @JsonIgnore
-    public void setEnableAutoHealing(Boolean enableAutoHealing) {
+    public void setEnableAutoHealing(CharSequence enableAutoHealing) {
         this.enableAutoHealing = enableAutoHealing;
     }
 
-    public Layer withEnableAutoHealing(Boolean enableAutoHealing) {
+    public Layer withEnableAutoHealing(CharSequence enableAutoHealing) {
         this.enableAutoHealing = enableAutoHealing;
         return this;
     }
@@ -379,7 +379,7 @@ public class Layer {
      * 
      */
     @JsonIgnore
-    public Boolean getInstallUpdatesOnBoot() {
+    public CharSequence getInstallUpdatesOnBoot() {
         return installUpdatesOnBoot;
     }
 
@@ -388,11 +388,11 @@ public class Layer {
      * 
      */
     @JsonIgnore
-    public void setInstallUpdatesOnBoot(Boolean installUpdatesOnBoot) {
+    public void setInstallUpdatesOnBoot(CharSequence installUpdatesOnBoot) {
         this.installUpdatesOnBoot = installUpdatesOnBoot;
     }
 
-    public Layer withInstallUpdatesOnBoot(Boolean installUpdatesOnBoot) {
+    public Layer withInstallUpdatesOnBoot(CharSequence installUpdatesOnBoot) {
         this.installUpdatesOnBoot = installUpdatesOnBoot;
         return this;
     }
@@ -594,7 +594,7 @@ public class Layer {
      * 
      */
     @JsonIgnore
-    public Boolean getUseEbsOptimizedInstances() {
+    public CharSequence getUseEbsOptimizedInstances() {
         return useEbsOptimizedInstances;
     }
 
@@ -603,11 +603,11 @@ public class Layer {
      * 
      */
     @JsonIgnore
-    public void setUseEbsOptimizedInstances(Boolean useEbsOptimizedInstances) {
+    public void setUseEbsOptimizedInstances(CharSequence useEbsOptimizedInstances) {
         this.useEbsOptimizedInstances = useEbsOptimizedInstances;
     }
 
-    public Layer withUseEbsOptimizedInstances(Boolean useEbsOptimizedInstances) {
+    public Layer withUseEbsOptimizedInstances(CharSequence useEbsOptimizedInstances) {
         this.useEbsOptimizedInstances = useEbsOptimizedInstances;
         return this;
     }

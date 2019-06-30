@@ -31,14 +31,14 @@ public class LaunchTemplateHibernationOptions implements Property<LaunchTemplate
      */
     @JsonProperty("Configured")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-hibernationoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-hibernationoptions-configured")
-    private Boolean configured;
+    private CharSequence configured;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-hibernationoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-hibernationoptions-configured
      * 
      */
     @JsonIgnore
-    public Boolean getConfigured() {
+    public CharSequence getConfigured() {
         return configured;
     }
 
@@ -47,11 +47,11 @@ public class LaunchTemplateHibernationOptions implements Property<LaunchTemplate
      * 
      */
     @JsonIgnore
-    public void setConfigured(Boolean configured) {
+    public void setConfigured(CharSequence configured) {
         this.configured = configured;
     }
 
-    public LaunchTemplateHibernationOptions withConfigured(Boolean configured) {
+    public LaunchTemplateHibernationOptions withConfigured(CharSequence configured) {
         this.configured = configured;
         return this;
     }

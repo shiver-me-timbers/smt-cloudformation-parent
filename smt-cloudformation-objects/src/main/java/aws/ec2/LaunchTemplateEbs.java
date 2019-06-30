@@ -58,28 +58,28 @@ public class LaunchTemplateEbs implements Property<LaunchTemplateEbs>
      */
     @JsonProperty("Encrypted")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-blockdevicemapping-ebs.html#cfn-ec2-launchtemplate-blockdevicemapping-ebs-encrypted")
-    private Boolean encrypted;
+    private CharSequence encrypted;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-blockdevicemapping-ebs.html#cfn-ec2-launchtemplate-blockdevicemapping-ebs-iops
      * 
      */
     @JsonProperty("Iops")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-blockdevicemapping-ebs.html#cfn-ec2-launchtemplate-blockdevicemapping-ebs-iops")
-    private Integer iops;
+    private Number iops;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-blockdevicemapping-ebs.html#cfn-ec2-launchtemplate-blockdevicemapping-ebs-volumesize
      * 
      */
     @JsonProperty("VolumeSize")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-blockdevicemapping-ebs.html#cfn-ec2-launchtemplate-blockdevicemapping-ebs-volumesize")
-    private Integer volumeSize;
+    private Number volumeSize;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-blockdevicemapping-ebs.html#cfn-ec2-launchtemplate-blockdevicemapping-ebs-deleteontermination
      * 
      */
     @JsonProperty("DeleteOnTermination")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-blockdevicemapping-ebs.html#cfn-ec2-launchtemplate-blockdevicemapping-ebs-deleteontermination")
-    private Boolean deleteOnTermination;
+    private CharSequence deleteOnTermination;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-blockdevicemapping-ebs.html#cfn-ec2-launchtemplate-blockdevicemapping-ebs-snapshotid
@@ -155,7 +155,7 @@ public class LaunchTemplateEbs implements Property<LaunchTemplateEbs>
      * 
      */
     @JsonIgnore
-    public Boolean getEncrypted() {
+    public CharSequence getEncrypted() {
         return encrypted;
     }
 
@@ -164,11 +164,11 @@ public class LaunchTemplateEbs implements Property<LaunchTemplateEbs>
      * 
      */
     @JsonIgnore
-    public void setEncrypted(Boolean encrypted) {
+    public void setEncrypted(CharSequence encrypted) {
         this.encrypted = encrypted;
     }
 
-    public LaunchTemplateEbs withEncrypted(Boolean encrypted) {
+    public LaunchTemplateEbs withEncrypted(CharSequence encrypted) {
         this.encrypted = encrypted;
         return this;
     }
@@ -178,7 +178,7 @@ public class LaunchTemplateEbs implements Property<LaunchTemplateEbs>
      * 
      */
     @JsonIgnore
-    public Integer getIops() {
+    public Number getIops() {
         return iops;
     }
 
@@ -187,11 +187,11 @@ public class LaunchTemplateEbs implements Property<LaunchTemplateEbs>
      * 
      */
     @JsonIgnore
-    public void setIops(Integer iops) {
+    public void setIops(Number iops) {
         this.iops = iops;
     }
 
-    public LaunchTemplateEbs withIops(Integer iops) {
+    public LaunchTemplateEbs withIops(Number iops) {
         this.iops = iops;
         return this;
     }
@@ -201,7 +201,7 @@ public class LaunchTemplateEbs implements Property<LaunchTemplateEbs>
      * 
      */
     @JsonIgnore
-    public Integer getVolumeSize() {
+    public Number getVolumeSize() {
         return volumeSize;
     }
 
@@ -210,11 +210,11 @@ public class LaunchTemplateEbs implements Property<LaunchTemplateEbs>
      * 
      */
     @JsonIgnore
-    public void setVolumeSize(Integer volumeSize) {
+    public void setVolumeSize(Number volumeSize) {
         this.volumeSize = volumeSize;
     }
 
-    public LaunchTemplateEbs withVolumeSize(Integer volumeSize) {
+    public LaunchTemplateEbs withVolumeSize(Number volumeSize) {
         this.volumeSize = volumeSize;
         return this;
     }
@@ -224,7 +224,7 @@ public class LaunchTemplateEbs implements Property<LaunchTemplateEbs>
      * 
      */
     @JsonIgnore
-    public Boolean getDeleteOnTermination() {
+    public CharSequence getDeleteOnTermination() {
         return deleteOnTermination;
     }
 
@@ -233,11 +233,11 @@ public class LaunchTemplateEbs implements Property<LaunchTemplateEbs>
      * 
      */
     @JsonIgnore
-    public void setDeleteOnTermination(Boolean deleteOnTermination) {
+    public void setDeleteOnTermination(CharSequence deleteOnTermination) {
         this.deleteOnTermination = deleteOnTermination;
     }
 
-    public LaunchTemplateEbs withDeleteOnTermination(Boolean deleteOnTermination) {
+    public LaunchTemplateEbs withDeleteOnTermination(CharSequence deleteOnTermination) {
         this.deleteOnTermination = deleteOnTermination;
         return this;
     }

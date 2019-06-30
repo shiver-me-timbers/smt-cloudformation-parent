@@ -44,7 +44,7 @@ public class ResourceShare {
      */
     @JsonProperty("AllowExternalPrincipals")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ram-resourceshare.html#cfn-ram-resourceshare-allowexternalprincipals")
-    private Boolean allowExternalPrincipals;
+    private CharSequence allowExternalPrincipals;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ram-resourceshare.html#cfn-ram-resourceshare-resourcearns
      * 
@@ -95,7 +95,7 @@ public class ResourceShare {
      * 
      */
     @JsonIgnore
-    public Boolean getAllowExternalPrincipals() {
+    public CharSequence getAllowExternalPrincipals() {
         return allowExternalPrincipals;
     }
 
@@ -104,11 +104,11 @@ public class ResourceShare {
      * 
      */
     @JsonIgnore
-    public void setAllowExternalPrincipals(Boolean allowExternalPrincipals) {
+    public void setAllowExternalPrincipals(CharSequence allowExternalPrincipals) {
         this.allowExternalPrincipals = allowExternalPrincipals;
     }
 
-    public ResourceShare withAllowExternalPrincipals(Boolean allowExternalPrincipals) {
+    public ResourceShare withAllowExternalPrincipals(CharSequence allowExternalPrincipals) {
         this.allowExternalPrincipals = allowExternalPrincipals;
         return this;
     }

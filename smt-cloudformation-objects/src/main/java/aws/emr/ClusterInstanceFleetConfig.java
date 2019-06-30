@@ -62,14 +62,14 @@ public class ClusterInstanceFleetConfig implements Property<ClusterInstanceFleet
      */
     @JsonProperty("TargetOnDemandCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-targetondemandcapacity")
-    private Integer targetOnDemandCapacity;
+    private Number targetOnDemandCapacity;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-targetspotcapacity
      * 
      */
     @JsonProperty("TargetSpotCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-targetspotcapacity")
-    private Integer targetSpotCapacity;
+    private Number targetSpotCapacity;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-instancetypeconfigs
@@ -149,7 +149,7 @@ public class ClusterInstanceFleetConfig implements Property<ClusterInstanceFleet
      * 
      */
     @JsonIgnore
-    public Integer getTargetOnDemandCapacity() {
+    public Number getTargetOnDemandCapacity() {
         return targetOnDemandCapacity;
     }
 
@@ -158,11 +158,11 @@ public class ClusterInstanceFleetConfig implements Property<ClusterInstanceFleet
      * 
      */
     @JsonIgnore
-    public void setTargetOnDemandCapacity(Integer targetOnDemandCapacity) {
+    public void setTargetOnDemandCapacity(Number targetOnDemandCapacity) {
         this.targetOnDemandCapacity = targetOnDemandCapacity;
     }
 
-    public ClusterInstanceFleetConfig withTargetOnDemandCapacity(Integer targetOnDemandCapacity) {
+    public ClusterInstanceFleetConfig withTargetOnDemandCapacity(Number targetOnDemandCapacity) {
         this.targetOnDemandCapacity = targetOnDemandCapacity;
         return this;
     }
@@ -172,7 +172,7 @@ public class ClusterInstanceFleetConfig implements Property<ClusterInstanceFleet
      * 
      */
     @JsonIgnore
-    public Integer getTargetSpotCapacity() {
+    public Number getTargetSpotCapacity() {
         return targetSpotCapacity;
     }
 
@@ -181,11 +181,11 @@ public class ClusterInstanceFleetConfig implements Property<ClusterInstanceFleet
      * 
      */
     @JsonIgnore
-    public void setTargetSpotCapacity(Integer targetSpotCapacity) {
+    public void setTargetSpotCapacity(Number targetSpotCapacity) {
         this.targetSpotCapacity = targetSpotCapacity;
     }
 
-    public ClusterInstanceFleetConfig withTargetSpotCapacity(Integer targetSpotCapacity) {
+    public ClusterInstanceFleetConfig withTargetSpotCapacity(Number targetSpotCapacity) {
         this.targetSpotCapacity = targetSpotCapacity;
         return this;
     }

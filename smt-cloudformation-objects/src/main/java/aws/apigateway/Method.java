@@ -46,7 +46,7 @@ public class Method {
      */
     @JsonProperty("ApiKeyRequired")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-apikeyrequired")
-    private java.lang.Boolean apiKeyRequired;
+    private CharSequence apiKeyRequired;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-authorizationscopes
      * 
@@ -106,14 +106,14 @@ public class Method {
      */
     @JsonProperty("RequestModels")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-requestmodels")
-    private Map<String, String> requestModels;
+    private Map<String, CharSequence> requestModels;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-requestparameters
      * 
      */
     @JsonProperty("RequestParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-requestparameters")
-    private Map<String, Boolean> requestParameters;
+    private Map<String, CharSequence> requestParameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-requestvalidatorid
      * 
@@ -141,7 +141,7 @@ public class Method {
      * 
      */
     @JsonIgnore
-    public java.lang.Boolean getApiKeyRequired() {
+    public CharSequence getApiKeyRequired() {
         return apiKeyRequired;
     }
 
@@ -150,11 +150,11 @@ public class Method {
      * 
      */
     @JsonIgnore
-    public void setApiKeyRequired(java.lang.Boolean apiKeyRequired) {
+    public void setApiKeyRequired(CharSequence apiKeyRequired) {
         this.apiKeyRequired = apiKeyRequired;
     }
 
-    public Method withApiKeyRequired(java.lang.Boolean apiKeyRequired) {
+    public Method withApiKeyRequired(CharSequence apiKeyRequired) {
         this.apiKeyRequired = apiKeyRequired;
         return this;
     }
@@ -329,7 +329,7 @@ public class Method {
      * 
      */
     @JsonIgnore
-    public Map<String, String> getRequestModels() {
+    public Map<String, CharSequence> getRequestModels() {
         return requestModels;
     }
 
@@ -338,11 +338,11 @@ public class Method {
      * 
      */
     @JsonIgnore
-    public void setRequestModels(Map<String, String> requestModels) {
+    public void setRequestModels(Map<String, CharSequence> requestModels) {
         this.requestModels = requestModels;
     }
 
-    public Method withRequestModels(Map<String, String> requestModels) {
+    public Method withRequestModels(Map<String, CharSequence> requestModels) {
         this.requestModels = requestModels;
         return this;
     }
@@ -352,7 +352,7 @@ public class Method {
      * 
      */
     @JsonIgnore
-    public Map<String, Boolean> getRequestParameters() {
+    public Map<String, CharSequence> getRequestParameters() {
         return requestParameters;
     }
 
@@ -361,11 +361,11 @@ public class Method {
      * 
      */
     @JsonIgnore
-    public void setRequestParameters(Map<String, Boolean> requestParameters) {
+    public void setRequestParameters(Map<String, CharSequence> requestParameters) {
         this.requestParameters = requestParameters;
     }
 
-    public Method withRequestParameters(Map<String, Boolean> requestParameters) {
+    public Method withRequestParameters(Map<String, CharSequence> requestParameters) {
         this.requestParameters = requestParameters;
         return this;
     }

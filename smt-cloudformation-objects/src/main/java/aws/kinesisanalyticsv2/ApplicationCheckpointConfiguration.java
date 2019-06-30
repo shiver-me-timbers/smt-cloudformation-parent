@@ -41,21 +41,21 @@ public class ApplicationCheckpointConfiguration implements Property<ApplicationC
      */
     @JsonProperty("CheckpointInterval")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-checkpointconfiguration.html#cfn-kinesisanalyticsv2-application-checkpointconfiguration-checkpointinterval")
-    private Integer checkpointInterval;
+    private Number checkpointInterval;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-checkpointconfiguration.html#cfn-kinesisanalyticsv2-application-checkpointconfiguration-minpausebetweencheckpoints
      * 
      */
     @JsonProperty("MinPauseBetweenCheckpoints")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-checkpointconfiguration.html#cfn-kinesisanalyticsv2-application-checkpointconfiguration-minpausebetweencheckpoints")
-    private Integer minPauseBetweenCheckpoints;
+    private Number minPauseBetweenCheckpoints;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-checkpointconfiguration.html#cfn-kinesisanalyticsv2-application-checkpointconfiguration-checkpointingenabled
      * 
      */
     @JsonProperty("CheckpointingEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-checkpointconfiguration.html#cfn-kinesisanalyticsv2-application-checkpointconfiguration-checkpointingenabled")
-    private Boolean checkpointingEnabled;
+    private CharSequence checkpointingEnabled;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-checkpointconfiguration.html#cfn-kinesisanalyticsv2-application-checkpointconfiguration-configurationtype
@@ -85,7 +85,7 @@ public class ApplicationCheckpointConfiguration implements Property<ApplicationC
      * 
      */
     @JsonIgnore
-    public Integer getCheckpointInterval() {
+    public Number getCheckpointInterval() {
         return checkpointInterval;
     }
 
@@ -94,11 +94,11 @@ public class ApplicationCheckpointConfiguration implements Property<ApplicationC
      * 
      */
     @JsonIgnore
-    public void setCheckpointInterval(Integer checkpointInterval) {
+    public void setCheckpointInterval(Number checkpointInterval) {
         this.checkpointInterval = checkpointInterval;
     }
 
-    public ApplicationCheckpointConfiguration withCheckpointInterval(Integer checkpointInterval) {
+    public ApplicationCheckpointConfiguration withCheckpointInterval(Number checkpointInterval) {
         this.checkpointInterval = checkpointInterval;
         return this;
     }
@@ -108,7 +108,7 @@ public class ApplicationCheckpointConfiguration implements Property<ApplicationC
      * 
      */
     @JsonIgnore
-    public Integer getMinPauseBetweenCheckpoints() {
+    public Number getMinPauseBetweenCheckpoints() {
         return minPauseBetweenCheckpoints;
     }
 
@@ -117,11 +117,11 @@ public class ApplicationCheckpointConfiguration implements Property<ApplicationC
      * 
      */
     @JsonIgnore
-    public void setMinPauseBetweenCheckpoints(Integer minPauseBetweenCheckpoints) {
+    public void setMinPauseBetweenCheckpoints(Number minPauseBetweenCheckpoints) {
         this.minPauseBetweenCheckpoints = minPauseBetweenCheckpoints;
     }
 
-    public ApplicationCheckpointConfiguration withMinPauseBetweenCheckpoints(Integer minPauseBetweenCheckpoints) {
+    public ApplicationCheckpointConfiguration withMinPauseBetweenCheckpoints(Number minPauseBetweenCheckpoints) {
         this.minPauseBetweenCheckpoints = minPauseBetweenCheckpoints;
         return this;
     }
@@ -131,7 +131,7 @@ public class ApplicationCheckpointConfiguration implements Property<ApplicationC
      * 
      */
     @JsonIgnore
-    public Boolean getCheckpointingEnabled() {
+    public CharSequence getCheckpointingEnabled() {
         return checkpointingEnabled;
     }
 
@@ -140,11 +140,11 @@ public class ApplicationCheckpointConfiguration implements Property<ApplicationC
      * 
      */
     @JsonIgnore
-    public void setCheckpointingEnabled(Boolean checkpointingEnabled) {
+    public void setCheckpointingEnabled(CharSequence checkpointingEnabled) {
         this.checkpointingEnabled = checkpointingEnabled;
     }
 
-    public ApplicationCheckpointConfiguration withCheckpointingEnabled(Boolean checkpointingEnabled) {
+    public ApplicationCheckpointConfiguration withCheckpointingEnabled(CharSequence checkpointingEnabled) {
         this.checkpointingEnabled = checkpointingEnabled;
         return this;
     }

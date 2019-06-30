@@ -43,14 +43,14 @@ public class AutoScalingGroupInstancesDistribution implements Property<AutoScali
      */
     @JsonProperty("OnDemandBaseCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-mixedinstancespolicy-instancesdistribution.html#cfn-autoscaling-autoscalinggroup-instancesdistribution-ondemandbasecapacity")
-    private Integer onDemandBaseCapacity;
+    private Number onDemandBaseCapacity;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-mixedinstancespolicy-instancesdistribution.html#cfn-autoscaling-autoscalinggroup-instancesdistribution-ondemandpercentageabovebasecapacity
      * 
      */
     @JsonProperty("OnDemandPercentageAboveBaseCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-mixedinstancespolicy-instancesdistribution.html#cfn-autoscaling-autoscalinggroup-instancesdistribution-ondemandpercentageabovebasecapacity")
-    private Integer onDemandPercentageAboveBaseCapacity;
+    private Number onDemandPercentageAboveBaseCapacity;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-mixedinstancespolicy-instancesdistribution.html#cfn-autoscaling-autoscalinggroup-instancesdistribution-spotallocationstrategy
      * 
@@ -64,7 +64,7 @@ public class AutoScalingGroupInstancesDistribution implements Property<AutoScali
      */
     @JsonProperty("SpotInstancePools")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-mixedinstancespolicy-instancesdistribution.html#cfn-autoscaling-autoscalinggroup-instancesdistribution-spotinstancepools")
-    private Integer spotInstancePools;
+    private Number spotInstancePools;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-mixedinstancespolicy-instancesdistribution.html#cfn-autoscaling-autoscalinggroup-instancesdistribution-spotmaxprice
      * 
@@ -101,7 +101,7 @@ public class AutoScalingGroupInstancesDistribution implements Property<AutoScali
      * 
      */
     @JsonIgnore
-    public Integer getOnDemandBaseCapacity() {
+    public Number getOnDemandBaseCapacity() {
         return onDemandBaseCapacity;
     }
 
@@ -110,11 +110,11 @@ public class AutoScalingGroupInstancesDistribution implements Property<AutoScali
      * 
      */
     @JsonIgnore
-    public void setOnDemandBaseCapacity(Integer onDemandBaseCapacity) {
+    public void setOnDemandBaseCapacity(Number onDemandBaseCapacity) {
         this.onDemandBaseCapacity = onDemandBaseCapacity;
     }
 
-    public AutoScalingGroupInstancesDistribution withOnDemandBaseCapacity(Integer onDemandBaseCapacity) {
+    public AutoScalingGroupInstancesDistribution withOnDemandBaseCapacity(Number onDemandBaseCapacity) {
         this.onDemandBaseCapacity = onDemandBaseCapacity;
         return this;
     }
@@ -124,7 +124,7 @@ public class AutoScalingGroupInstancesDistribution implements Property<AutoScali
      * 
      */
     @JsonIgnore
-    public Integer getOnDemandPercentageAboveBaseCapacity() {
+    public Number getOnDemandPercentageAboveBaseCapacity() {
         return onDemandPercentageAboveBaseCapacity;
     }
 
@@ -133,11 +133,11 @@ public class AutoScalingGroupInstancesDistribution implements Property<AutoScali
      * 
      */
     @JsonIgnore
-    public void setOnDemandPercentageAboveBaseCapacity(Integer onDemandPercentageAboveBaseCapacity) {
+    public void setOnDemandPercentageAboveBaseCapacity(Number onDemandPercentageAboveBaseCapacity) {
         this.onDemandPercentageAboveBaseCapacity = onDemandPercentageAboveBaseCapacity;
     }
 
-    public AutoScalingGroupInstancesDistribution withOnDemandPercentageAboveBaseCapacity(Integer onDemandPercentageAboveBaseCapacity) {
+    public AutoScalingGroupInstancesDistribution withOnDemandPercentageAboveBaseCapacity(Number onDemandPercentageAboveBaseCapacity) {
         this.onDemandPercentageAboveBaseCapacity = onDemandPercentageAboveBaseCapacity;
         return this;
     }
@@ -170,7 +170,7 @@ public class AutoScalingGroupInstancesDistribution implements Property<AutoScali
      * 
      */
     @JsonIgnore
-    public Integer getSpotInstancePools() {
+    public Number getSpotInstancePools() {
         return spotInstancePools;
     }
 
@@ -179,11 +179,11 @@ public class AutoScalingGroupInstancesDistribution implements Property<AutoScali
      * 
      */
     @JsonIgnore
-    public void setSpotInstancePools(Integer spotInstancePools) {
+    public void setSpotInstancePools(Number spotInstancePools) {
         this.spotInstancePools = spotInstancePools;
     }
 
-    public AutoScalingGroupInstancesDistribution withSpotInstancePools(Integer spotInstancePools) {
+    public AutoScalingGroupInstancesDistribution withSpotInstancePools(Number spotInstancePools) {
         this.spotInstancePools = spotInstancePools;
         return this;
     }

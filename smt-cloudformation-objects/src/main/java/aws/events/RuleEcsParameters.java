@@ -32,7 +32,7 @@ public class RuleEcsParameters implements Property<RuleEcsParameters>
      */
     @JsonProperty("TaskCount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-ecsparameters.html#cfn-events-rule-ecsparameters-taskcount")
-    private Integer taskCount;
+    private Number taskCount;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-ecsparameters.html#cfn-events-rule-ecsparameters-taskdefinitionarn
      * 
@@ -46,7 +46,7 @@ public class RuleEcsParameters implements Property<RuleEcsParameters>
      * 
      */
     @JsonIgnore
-    public Integer getTaskCount() {
+    public Number getTaskCount() {
         return taskCount;
     }
 
@@ -55,11 +55,11 @@ public class RuleEcsParameters implements Property<RuleEcsParameters>
      * 
      */
     @JsonIgnore
-    public void setTaskCount(Integer taskCount) {
+    public void setTaskCount(Number taskCount) {
         this.taskCount = taskCount;
     }
 
-    public RuleEcsParameters withTaskCount(Integer taskCount) {
+    public RuleEcsParameters withTaskCount(Number taskCount) {
         this.taskCount = taskCount;
         return this;
     }

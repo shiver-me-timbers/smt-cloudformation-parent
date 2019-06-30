@@ -34,7 +34,7 @@ public class MetricFilterMetricTransformation implements Property<MetricFilterMe
      */
     @JsonProperty("DefaultValue")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-logs-metricfilter-metrictransformation.html#cfn-cwl-metricfilter-metrictransformation-defaultvalue")
-    private Double defaultValue;
+    private Number defaultValue;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-logs-metricfilter-metrictransformation.html#cfn-cwl-metricfilter-metrictransformation-metricname
      * 
@@ -62,7 +62,7 @@ public class MetricFilterMetricTransformation implements Property<MetricFilterMe
      * 
      */
     @JsonIgnore
-    public Double getDefaultValue() {
+    public Number getDefaultValue() {
         return defaultValue;
     }
 
@@ -71,11 +71,11 @@ public class MetricFilterMetricTransformation implements Property<MetricFilterMe
      * 
      */
     @JsonIgnore
-    public void setDefaultValue(Double defaultValue) {
+    public void setDefaultValue(Number defaultValue) {
         this.defaultValue = defaultValue;
     }
 
-    public MetricFilterMetricTransformation withDefaultValue(Double defaultValue) {
+    public MetricFilterMetricTransformation withDefaultValue(Number defaultValue) {
         this.defaultValue = defaultValue;
         return this;
     }

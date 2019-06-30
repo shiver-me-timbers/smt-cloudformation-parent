@@ -44,7 +44,7 @@ public class AssessmentTemplate {
      */
     @JsonProperty("DurationInSeconds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-durationinseconds")
-    private Integer durationInSeconds;
+    private Number durationInSeconds;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-assessmenttemplatename
      * 
@@ -95,7 +95,7 @@ public class AssessmentTemplate {
      * 
      */
     @JsonIgnore
-    public Integer getDurationInSeconds() {
+    public Number getDurationInSeconds() {
         return durationInSeconds;
     }
 
@@ -104,11 +104,11 @@ public class AssessmentTemplate {
      * 
      */
     @JsonIgnore
-    public void setDurationInSeconds(Integer durationInSeconds) {
+    public void setDurationInSeconds(Number durationInSeconds) {
         this.durationInSeconds = durationInSeconds;
     }
 
-    public AssessmentTemplate withDurationInSeconds(Integer durationInSeconds) {
+    public AssessmentTemplate withDurationInSeconds(Number durationInSeconds) {
         this.durationInSeconds = durationInSeconds;
         return this;
     }

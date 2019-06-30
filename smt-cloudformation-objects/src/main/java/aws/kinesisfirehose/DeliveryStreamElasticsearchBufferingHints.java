@@ -32,21 +32,21 @@ public class DeliveryStreamElasticsearchBufferingHints implements Property<Deliv
      */
     @JsonProperty("IntervalInSeconds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchbufferinghints.html#cfn-kinesisfirehose-deliverystream-elasticsearchbufferinghints-intervalinseconds")
-    private Integer intervalInSeconds;
+    private Number intervalInSeconds;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchbufferinghints.html#cfn-kinesisfirehose-deliverystream-elasticsearchbufferinghints-sizeinmbs
      * 
      */
     @JsonProperty("SizeInMBs")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchbufferinghints.html#cfn-kinesisfirehose-deliverystream-elasticsearchbufferinghints-sizeinmbs")
-    private Integer sizeInMBs;
+    private Number sizeInMBs;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchbufferinghints.html#cfn-kinesisfirehose-deliverystream-elasticsearchbufferinghints-intervalinseconds
      * 
      */
     @JsonIgnore
-    public Integer getIntervalInSeconds() {
+    public Number getIntervalInSeconds() {
         return intervalInSeconds;
     }
 
@@ -55,11 +55,11 @@ public class DeliveryStreamElasticsearchBufferingHints implements Property<Deliv
      * 
      */
     @JsonIgnore
-    public void setIntervalInSeconds(Integer intervalInSeconds) {
+    public void setIntervalInSeconds(Number intervalInSeconds) {
         this.intervalInSeconds = intervalInSeconds;
     }
 
-    public DeliveryStreamElasticsearchBufferingHints withIntervalInSeconds(Integer intervalInSeconds) {
+    public DeliveryStreamElasticsearchBufferingHints withIntervalInSeconds(Number intervalInSeconds) {
         this.intervalInSeconds = intervalInSeconds;
         return this;
     }
@@ -69,7 +69,7 @@ public class DeliveryStreamElasticsearchBufferingHints implements Property<Deliv
      * 
      */
     @JsonIgnore
-    public Integer getSizeInMBs() {
+    public Number getSizeInMBs() {
         return sizeInMBs;
     }
 
@@ -78,11 +78,11 @@ public class DeliveryStreamElasticsearchBufferingHints implements Property<Deliv
      * 
      */
     @JsonIgnore
-    public void setSizeInMBs(Integer sizeInMBs) {
+    public void setSizeInMBs(Number sizeInMBs) {
         this.sizeInMBs = sizeInMBs;
     }
 
-    public DeliveryStreamElasticsearchBufferingHints withSizeInMBs(Integer sizeInMBs) {
+    public DeliveryStreamElasticsearchBufferingHints withSizeInMBs(Number sizeInMBs) {
         this.sizeInMBs = sizeInMBs;
         return this;
     }

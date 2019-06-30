@@ -32,21 +32,21 @@ public class TableProvisionedThroughput implements Property<TableProvisionedThro
      */
     @JsonProperty("ReadCapacityUnits")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-provisionedthroughput.html#cfn-dynamodb-provisionedthroughput-readcapacityunits")
-    private Integer readCapacityUnits;
+    private Number readCapacityUnits;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-provisionedthroughput.html#cfn-dynamodb-provisionedthroughput-writecapacityunits
      * 
      */
     @JsonProperty("WriteCapacityUnits")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-provisionedthroughput.html#cfn-dynamodb-provisionedthroughput-writecapacityunits")
-    private Integer writeCapacityUnits;
+    private Number writeCapacityUnits;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-provisionedthroughput.html#cfn-dynamodb-provisionedthroughput-readcapacityunits
      * 
      */
     @JsonIgnore
-    public Integer getReadCapacityUnits() {
+    public Number getReadCapacityUnits() {
         return readCapacityUnits;
     }
 
@@ -55,11 +55,11 @@ public class TableProvisionedThroughput implements Property<TableProvisionedThro
      * 
      */
     @JsonIgnore
-    public void setReadCapacityUnits(Integer readCapacityUnits) {
+    public void setReadCapacityUnits(Number readCapacityUnits) {
         this.readCapacityUnits = readCapacityUnits;
     }
 
-    public TableProvisionedThroughput withReadCapacityUnits(Integer readCapacityUnits) {
+    public TableProvisionedThroughput withReadCapacityUnits(Number readCapacityUnits) {
         this.readCapacityUnits = readCapacityUnits;
         return this;
     }
@@ -69,7 +69,7 @@ public class TableProvisionedThroughput implements Property<TableProvisionedThro
      * 
      */
     @JsonIgnore
-    public Integer getWriteCapacityUnits() {
+    public Number getWriteCapacityUnits() {
         return writeCapacityUnits;
     }
 
@@ -78,11 +78,11 @@ public class TableProvisionedThroughput implements Property<TableProvisionedThro
      * 
      */
     @JsonIgnore
-    public void setWriteCapacityUnits(Integer writeCapacityUnits) {
+    public void setWriteCapacityUnits(Number writeCapacityUnits) {
         this.writeCapacityUnits = writeCapacityUnits;
     }
 
-    public TableProvisionedThroughput withWriteCapacityUnits(Integer writeCapacityUnits) {
+    public TableProvisionedThroughput withWriteCapacityUnits(Number writeCapacityUnits) {
         this.writeCapacityUnits = writeCapacityUnits;
         return this;
     }

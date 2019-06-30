@@ -46,7 +46,7 @@ public class ProjectSource implements Property<ProjectSource>
      */
     @JsonProperty("ReportBuildStatus")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-reportbuildstatus")
-    private Boolean reportBuildStatus;
+    private CharSequence reportBuildStatus;
     /**
      * ProjectSourceAuth
      * <p>
@@ -76,7 +76,7 @@ public class ProjectSource implements Property<ProjectSource>
      */
     @JsonProperty("GitCloneDepth")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-gitclonedepth")
-    private Integer gitCloneDepth;
+    private Number gitCloneDepth;
     /**
      * ProjectGitSubmodulesConfig
      * <p>
@@ -92,7 +92,7 @@ public class ProjectSource implements Property<ProjectSource>
      */
     @JsonProperty("InsecureSsl")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-insecuressl")
-    private Boolean insecureSsl;
+    private CharSequence insecureSsl;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-location
      * 
@@ -129,7 +129,7 @@ public class ProjectSource implements Property<ProjectSource>
      * 
      */
     @JsonIgnore
-    public Boolean getReportBuildStatus() {
+    public CharSequence getReportBuildStatus() {
         return reportBuildStatus;
     }
 
@@ -138,11 +138,11 @@ public class ProjectSource implements Property<ProjectSource>
      * 
      */
     @JsonIgnore
-    public void setReportBuildStatus(Boolean reportBuildStatus) {
+    public void setReportBuildStatus(CharSequence reportBuildStatus) {
         this.reportBuildStatus = reportBuildStatus;
     }
 
-    public ProjectSource withReportBuildStatus(Boolean reportBuildStatus) {
+    public ProjectSource withReportBuildStatus(CharSequence reportBuildStatus) {
         this.reportBuildStatus = reportBuildStatus;
         return this;
     }
@@ -225,7 +225,7 @@ public class ProjectSource implements Property<ProjectSource>
      * 
      */
     @JsonIgnore
-    public Integer getGitCloneDepth() {
+    public Number getGitCloneDepth() {
         return gitCloneDepth;
     }
 
@@ -234,11 +234,11 @@ public class ProjectSource implements Property<ProjectSource>
      * 
      */
     @JsonIgnore
-    public void setGitCloneDepth(Integer gitCloneDepth) {
+    public void setGitCloneDepth(Number gitCloneDepth) {
         this.gitCloneDepth = gitCloneDepth;
     }
 
-    public ProjectSource withGitCloneDepth(Integer gitCloneDepth) {
+    public ProjectSource withGitCloneDepth(Number gitCloneDepth) {
         this.gitCloneDepth = gitCloneDepth;
         return this;
     }
@@ -275,7 +275,7 @@ public class ProjectSource implements Property<ProjectSource>
      * 
      */
     @JsonIgnore
-    public Boolean getInsecureSsl() {
+    public CharSequence getInsecureSsl() {
         return insecureSsl;
     }
 
@@ -284,11 +284,11 @@ public class ProjectSource implements Property<ProjectSource>
      * 
      */
     @JsonIgnore
-    public void setInsecureSsl(Boolean insecureSsl) {
+    public void setInsecureSsl(CharSequence insecureSsl) {
         this.insecureSsl = insecureSsl;
     }
 
-    public ProjectSource withInsecureSsl(Boolean insecureSsl) {
+    public ProjectSource withInsecureSsl(CharSequence insecureSsl) {
         this.insecureSsl = insecureSsl;
         return this;
     }

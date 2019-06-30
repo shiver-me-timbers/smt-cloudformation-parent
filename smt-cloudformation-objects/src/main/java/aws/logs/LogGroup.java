@@ -37,7 +37,7 @@ public class LogGroup {
      */
     @JsonProperty("RetentionInDays")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html#cfn-cwl-loggroup-retentionindays")
-    private Integer retentionInDays;
+    private Number retentionInDays;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html#cfn-cwl-loggroup-loggroupname
@@ -67,7 +67,7 @@ public class LogGroup {
      * 
      */
     @JsonIgnore
-    public Integer getRetentionInDays() {
+    public Number getRetentionInDays() {
         return retentionInDays;
     }
 
@@ -76,11 +76,11 @@ public class LogGroup {
      * 
      */
     @JsonIgnore
-    public void setRetentionInDays(Integer retentionInDays) {
+    public void setRetentionInDays(Number retentionInDays) {
         this.retentionInDays = retentionInDays;
     }
 
-    public LogGroup withRetentionInDays(Integer retentionInDays) {
+    public LogGroup withRetentionInDays(Number retentionInDays) {
         this.retentionInDays = retentionInDays;
         return this;
     }

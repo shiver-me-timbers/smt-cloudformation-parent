@@ -70,7 +70,7 @@ public class OptionGroupOptionConfiguration implements Property<OptionGroupOptio
      */
     @JsonProperty("Port")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-port")
-    private Integer port;
+    private Number port;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-vpcsecuritygroupmemberships
      * 
@@ -176,7 +176,7 @@ public class OptionGroupOptionConfiguration implements Property<OptionGroupOptio
      * 
      */
     @JsonIgnore
-    public Integer getPort() {
+    public Number getPort() {
         return port;
     }
 
@@ -185,11 +185,11 @@ public class OptionGroupOptionConfiguration implements Property<OptionGroupOptio
      * 
      */
     @JsonIgnore
-    public void setPort(Integer port) {
+    public void setPort(Number port) {
         this.port = port;
     }
 
-    public OptionGroupOptionConfiguration withPort(Integer port) {
+    public OptionGroupOptionConfiguration withPort(Number port) {
         this.port = port;
         return this;
     }

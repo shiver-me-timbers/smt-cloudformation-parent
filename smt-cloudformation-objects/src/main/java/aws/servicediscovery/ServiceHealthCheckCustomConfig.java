@@ -31,14 +31,14 @@ public class ServiceHealthCheckCustomConfig implements Property<ServiceHealthChe
      */
     @JsonProperty("FailureThreshold")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-healthcheckcustomconfig.html#cfn-servicediscovery-service-healthcheckcustomconfig-failurethreshold")
-    private Double failureThreshold;
+    private Number failureThreshold;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-healthcheckcustomconfig.html#cfn-servicediscovery-service-healthcheckcustomconfig-failurethreshold
      * 
      */
     @JsonIgnore
-    public Double getFailureThreshold() {
+    public Number getFailureThreshold() {
         return failureThreshold;
     }
 
@@ -47,11 +47,11 @@ public class ServiceHealthCheckCustomConfig implements Property<ServiceHealthChe
      * 
      */
     @JsonIgnore
-    public void setFailureThreshold(Double failureThreshold) {
+    public void setFailureThreshold(Number failureThreshold) {
         this.failureThreshold = failureThreshold;
     }
 
-    public ServiceHealthCheckCustomConfig withFailureThreshold(Double failureThreshold) {
+    public ServiceHealthCheckCustomConfig withFailureThreshold(Number failureThreshold) {
         this.failureThreshold = failureThreshold;
         return this;
     }

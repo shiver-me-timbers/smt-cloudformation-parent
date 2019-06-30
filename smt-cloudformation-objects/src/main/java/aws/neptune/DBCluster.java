@@ -46,7 +46,7 @@ public class DBCluster {
      */
     @JsonProperty("StorageEncrypted")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-storageencrypted")
-    private Boolean storageEncrypted;
+    private CharSequence storageEncrypted;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-kmskeyid
      * 
@@ -74,7 +74,7 @@ public class DBCluster {
      */
     @JsonProperty("Port")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-port")
-    private Integer port;
+    private Number port;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-dbclusteridentifier
      * 
@@ -95,7 +95,7 @@ public class DBCluster {
      */
     @JsonProperty("IamAuthEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-iamauthenabled")
-    private Boolean iamAuthEnabled;
+    private CharSequence iamAuthEnabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-dbsubnetgroupname
      * 
@@ -130,7 +130,7 @@ public class DBCluster {
      */
     @JsonProperty("BackupRetentionPeriod")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-backupretentionperiod")
-    private Integer backupRetentionPeriod;
+    private Number backupRetentionPeriod;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-tags
      * 
@@ -144,7 +144,7 @@ public class DBCluster {
      * 
      */
     @JsonIgnore
-    public Boolean getStorageEncrypted() {
+    public CharSequence getStorageEncrypted() {
         return storageEncrypted;
     }
 
@@ -153,11 +153,11 @@ public class DBCluster {
      * 
      */
     @JsonIgnore
-    public void setStorageEncrypted(Boolean storageEncrypted) {
+    public void setStorageEncrypted(CharSequence storageEncrypted) {
         this.storageEncrypted = storageEncrypted;
     }
 
-    public DBCluster withStorageEncrypted(Boolean storageEncrypted) {
+    public DBCluster withStorageEncrypted(CharSequence storageEncrypted) {
         this.storageEncrypted = storageEncrypted;
         return this;
     }
@@ -236,7 +236,7 @@ public class DBCluster {
      * 
      */
     @JsonIgnore
-    public Integer getPort() {
+    public Number getPort() {
         return port;
     }
 
@@ -245,11 +245,11 @@ public class DBCluster {
      * 
      */
     @JsonIgnore
-    public void setPort(Integer port) {
+    public void setPort(Number port) {
         this.port = port;
     }
 
-    public DBCluster withPort(Integer port) {
+    public DBCluster withPort(Number port) {
         this.port = port;
         return this;
     }
@@ -305,7 +305,7 @@ public class DBCluster {
      * 
      */
     @JsonIgnore
-    public Boolean getIamAuthEnabled() {
+    public CharSequence getIamAuthEnabled() {
         return iamAuthEnabled;
     }
 
@@ -314,11 +314,11 @@ public class DBCluster {
      * 
      */
     @JsonIgnore
-    public void setIamAuthEnabled(Boolean iamAuthEnabled) {
+    public void setIamAuthEnabled(CharSequence iamAuthEnabled) {
         this.iamAuthEnabled = iamAuthEnabled;
     }
 
-    public DBCluster withIamAuthEnabled(Boolean iamAuthEnabled) {
+    public DBCluster withIamAuthEnabled(CharSequence iamAuthEnabled) {
         this.iamAuthEnabled = iamAuthEnabled;
         return this;
     }
@@ -420,7 +420,7 @@ public class DBCluster {
      * 
      */
     @JsonIgnore
-    public Integer getBackupRetentionPeriod() {
+    public Number getBackupRetentionPeriod() {
         return backupRetentionPeriod;
     }
 
@@ -429,11 +429,11 @@ public class DBCluster {
      * 
      */
     @JsonIgnore
-    public void setBackupRetentionPeriod(Integer backupRetentionPeriod) {
+    public void setBackupRetentionPeriod(Number backupRetentionPeriod) {
         this.backupRetentionPeriod = backupRetentionPeriod;
     }
 
-    public DBCluster withBackupRetentionPeriod(Integer backupRetentionPeriod) {
+    public DBCluster withBackupRetentionPeriod(Number backupRetentionPeriod) {
         this.backupRetentionPeriod = backupRetentionPeriod;
         return this;
     }

@@ -58,7 +58,7 @@ public class Role {
      */
     @JsonProperty("MaxSessionDuration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-maxsessionduration")
-    private Integer maxSessionDuration;
+    private Number maxSessionDuration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-path
      * 
@@ -143,7 +143,7 @@ public class Role {
      * 
      */
     @JsonIgnore
-    public Integer getMaxSessionDuration() {
+    public Number getMaxSessionDuration() {
         return maxSessionDuration;
     }
 
@@ -152,11 +152,11 @@ public class Role {
      * 
      */
     @JsonIgnore
-    public void setMaxSessionDuration(Integer maxSessionDuration) {
+    public void setMaxSessionDuration(Number maxSessionDuration) {
         this.maxSessionDuration = maxSessionDuration;
     }
 
-    public Role withMaxSessionDuration(Integer maxSessionDuration) {
+    public Role withMaxSessionDuration(Number maxSessionDuration) {
         this.maxSessionDuration = maxSessionDuration;
         return this;
     }

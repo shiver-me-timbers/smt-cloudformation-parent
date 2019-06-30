@@ -40,7 +40,7 @@ public class StreamingDistributionLogging implements Property<StreamingDistribut
      */
     @JsonProperty("Enabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-logging.html#cfn-cloudfront-streamingdistribution-logging-enabled")
-    private Boolean enabled;
+    private CharSequence enabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-logging.html#cfn-cloudfront-streamingdistribution-logging-prefix
      * 
@@ -77,7 +77,7 @@ public class StreamingDistributionLogging implements Property<StreamingDistribut
      * 
      */
     @JsonIgnore
-    public Boolean getEnabled() {
+    public CharSequence getEnabled() {
         return enabled;
     }
 
@@ -86,11 +86,11 @@ public class StreamingDistributionLogging implements Property<StreamingDistribut
      * 
      */
     @JsonIgnore
-    public void setEnabled(Boolean enabled) {
+    public void setEnabled(CharSequence enabled) {
         this.enabled = enabled;
     }
 
-    public StreamingDistributionLogging withEnabled(Boolean enabled) {
+    public StreamingDistributionLogging withEnabled(CharSequence enabled) {
         this.enabled = enabled;
         return this;
     }

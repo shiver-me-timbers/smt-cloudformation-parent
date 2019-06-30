@@ -31,7 +31,7 @@ public class WaitCondition {
      */
     @JsonProperty("Count")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html#cfn-waitcondition-count")
-    private Integer count;
+    private Number count;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html#cfn-waitcondition-handle
      * 
@@ -52,7 +52,7 @@ public class WaitCondition {
      * 
      */
     @JsonIgnore
-    public Integer getCount() {
+    public Number getCount() {
         return count;
     }
 
@@ -61,11 +61,11 @@ public class WaitCondition {
      * 
      */
     @JsonIgnore
-    public void setCount(Integer count) {
+    public void setCount(Number count) {
         this.count = count;
     }
 
-    public WaitCondition withCount(Integer count) {
+    public WaitCondition withCount(Number count) {
         this.count = count;
         return this;
     }

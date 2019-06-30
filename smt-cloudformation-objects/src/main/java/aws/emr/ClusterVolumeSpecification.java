@@ -33,14 +33,14 @@ public class ClusterVolumeSpecification implements Property<ClusterVolumeSpecifi
      */
     @JsonProperty("Iops")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-volumespecification.html#cfn-elasticmapreduce-cluster-volumespecification-iops")
-    private Integer iops;
+    private Number iops;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-volumespecification.html#cfn-elasticmapreduce-cluster-volumespecification-sizeingb
      * 
      */
     @JsonProperty("SizeInGB")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-volumespecification.html#cfn-elasticmapreduce-cluster-volumespecification-sizeingb")
-    private Integer sizeInGB;
+    private Number sizeInGB;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-volumespecification.html#cfn-elasticmapreduce-cluster-volumespecification-volumetype
      * 
@@ -54,7 +54,7 @@ public class ClusterVolumeSpecification implements Property<ClusterVolumeSpecifi
      * 
      */
     @JsonIgnore
-    public Integer getIops() {
+    public Number getIops() {
         return iops;
     }
 
@@ -63,11 +63,11 @@ public class ClusterVolumeSpecification implements Property<ClusterVolumeSpecifi
      * 
      */
     @JsonIgnore
-    public void setIops(Integer iops) {
+    public void setIops(Number iops) {
         this.iops = iops;
     }
 
-    public ClusterVolumeSpecification withIops(Integer iops) {
+    public ClusterVolumeSpecification withIops(Number iops) {
         this.iops = iops;
         return this;
     }
@@ -77,7 +77,7 @@ public class ClusterVolumeSpecification implements Property<ClusterVolumeSpecifi
      * 
      */
     @JsonIgnore
-    public Integer getSizeInGB() {
+    public Number getSizeInGB() {
         return sizeInGB;
     }
 
@@ -86,11 +86,11 @@ public class ClusterVolumeSpecification implements Property<ClusterVolumeSpecifi
      * 
      */
     @JsonIgnore
-    public void setSizeInGB(Integer sizeInGB) {
+    public void setSizeInGB(Number sizeInGB) {
         this.sizeInGB = sizeInGB;
     }
 
-    public ClusterVolumeSpecification withSizeInGB(Integer sizeInGB) {
+    public ClusterVolumeSpecification withSizeInGB(Number sizeInGB) {
         this.sizeInGB = sizeInGB;
         return this;
     }

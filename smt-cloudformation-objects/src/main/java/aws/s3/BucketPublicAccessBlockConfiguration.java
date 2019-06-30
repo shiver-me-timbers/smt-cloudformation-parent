@@ -34,35 +34,35 @@ public class BucketPublicAccessBlockConfiguration implements Property<BucketPubl
      */
     @JsonProperty("BlockPublicAcls")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-publicaccessblockconfiguration.html#cfn-s3-bucket-publicaccessblockconfiguration-blockpublicacls")
-    private Boolean blockPublicAcls;
+    private CharSequence blockPublicAcls;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-publicaccessblockconfiguration.html#cfn-s3-bucket-publicaccessblockconfiguration-blockpublicpolicy
      * 
      */
     @JsonProperty("BlockPublicPolicy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-publicaccessblockconfiguration.html#cfn-s3-bucket-publicaccessblockconfiguration-blockpublicpolicy")
-    private Boolean blockPublicPolicy;
+    private CharSequence blockPublicPolicy;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-publicaccessblockconfiguration.html#cfn-s3-bucket-publicaccessblockconfiguration-ignorepublicacls
      * 
      */
     @JsonProperty("IgnorePublicAcls")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-publicaccessblockconfiguration.html#cfn-s3-bucket-publicaccessblockconfiguration-ignorepublicacls")
-    private Boolean ignorePublicAcls;
+    private CharSequence ignorePublicAcls;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-publicaccessblockconfiguration.html#cfn-s3-bucket-publicaccessblockconfiguration-restrictpublicbuckets
      * 
      */
     @JsonProperty("RestrictPublicBuckets")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-publicaccessblockconfiguration.html#cfn-s3-bucket-publicaccessblockconfiguration-restrictpublicbuckets")
-    private Boolean restrictPublicBuckets;
+    private CharSequence restrictPublicBuckets;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-publicaccessblockconfiguration.html#cfn-s3-bucket-publicaccessblockconfiguration-blockpublicacls
      * 
      */
     @JsonIgnore
-    public Boolean getBlockPublicAcls() {
+    public CharSequence getBlockPublicAcls() {
         return blockPublicAcls;
     }
 
@@ -71,11 +71,11 @@ public class BucketPublicAccessBlockConfiguration implements Property<BucketPubl
      * 
      */
     @JsonIgnore
-    public void setBlockPublicAcls(Boolean blockPublicAcls) {
+    public void setBlockPublicAcls(CharSequence blockPublicAcls) {
         this.blockPublicAcls = blockPublicAcls;
     }
 
-    public BucketPublicAccessBlockConfiguration withBlockPublicAcls(Boolean blockPublicAcls) {
+    public BucketPublicAccessBlockConfiguration withBlockPublicAcls(CharSequence blockPublicAcls) {
         this.blockPublicAcls = blockPublicAcls;
         return this;
     }
@@ -85,7 +85,7 @@ public class BucketPublicAccessBlockConfiguration implements Property<BucketPubl
      * 
      */
     @JsonIgnore
-    public Boolean getBlockPublicPolicy() {
+    public CharSequence getBlockPublicPolicy() {
         return blockPublicPolicy;
     }
 
@@ -94,11 +94,11 @@ public class BucketPublicAccessBlockConfiguration implements Property<BucketPubl
      * 
      */
     @JsonIgnore
-    public void setBlockPublicPolicy(Boolean blockPublicPolicy) {
+    public void setBlockPublicPolicy(CharSequence blockPublicPolicy) {
         this.blockPublicPolicy = blockPublicPolicy;
     }
 
-    public BucketPublicAccessBlockConfiguration withBlockPublicPolicy(Boolean blockPublicPolicy) {
+    public BucketPublicAccessBlockConfiguration withBlockPublicPolicy(CharSequence blockPublicPolicy) {
         this.blockPublicPolicy = blockPublicPolicy;
         return this;
     }
@@ -108,7 +108,7 @@ public class BucketPublicAccessBlockConfiguration implements Property<BucketPubl
      * 
      */
     @JsonIgnore
-    public Boolean getIgnorePublicAcls() {
+    public CharSequence getIgnorePublicAcls() {
         return ignorePublicAcls;
     }
 
@@ -117,11 +117,11 @@ public class BucketPublicAccessBlockConfiguration implements Property<BucketPubl
      * 
      */
     @JsonIgnore
-    public void setIgnorePublicAcls(Boolean ignorePublicAcls) {
+    public void setIgnorePublicAcls(CharSequence ignorePublicAcls) {
         this.ignorePublicAcls = ignorePublicAcls;
     }
 
-    public BucketPublicAccessBlockConfiguration withIgnorePublicAcls(Boolean ignorePublicAcls) {
+    public BucketPublicAccessBlockConfiguration withIgnorePublicAcls(CharSequence ignorePublicAcls) {
         this.ignorePublicAcls = ignorePublicAcls;
         return this;
     }
@@ -131,7 +131,7 @@ public class BucketPublicAccessBlockConfiguration implements Property<BucketPubl
      * 
      */
     @JsonIgnore
-    public Boolean getRestrictPublicBuckets() {
+    public CharSequence getRestrictPublicBuckets() {
         return restrictPublicBuckets;
     }
 
@@ -140,11 +140,11 @@ public class BucketPublicAccessBlockConfiguration implements Property<BucketPubl
      * 
      */
     @JsonIgnore
-    public void setRestrictPublicBuckets(Boolean restrictPublicBuckets) {
+    public void setRestrictPublicBuckets(CharSequence restrictPublicBuckets) {
         this.restrictPublicBuckets = restrictPublicBuckets;
     }
 
-    public BucketPublicAccessBlockConfiguration withRestrictPublicBuckets(Boolean restrictPublicBuckets) {
+    public BucketPublicAccessBlockConfiguration withRestrictPublicBuckets(CharSequence restrictPublicBuckets) {
         this.restrictPublicBuckets = restrictPublicBuckets;
         return this;
     }

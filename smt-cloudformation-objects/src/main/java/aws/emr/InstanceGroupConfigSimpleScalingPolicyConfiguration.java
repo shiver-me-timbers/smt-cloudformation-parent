@@ -40,14 +40,14 @@ public class InstanceGroupConfigSimpleScalingPolicyConfiguration implements Prop
      */
     @JsonProperty("CoolDown")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-simplescalingpolicyconfiguration.html#cfn-elasticmapreduce-instancegroupconfig-simplescalingpolicyconfiguration-cooldown")
-    private Integer coolDown;
+    private Number coolDown;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-simplescalingpolicyconfiguration.html#cfn-elasticmapreduce-instancegroupconfig-simplescalingpolicyconfiguration-scalingadjustment
      * 
      */
     @JsonProperty("ScalingAdjustment")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-simplescalingpolicyconfiguration.html#cfn-elasticmapreduce-instancegroupconfig-simplescalingpolicyconfiguration-scalingadjustment")
-    private Integer scalingAdjustment;
+    private Number scalingAdjustment;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-simplescalingpolicyconfiguration.html#cfn-elasticmapreduce-instancegroupconfig-simplescalingpolicyconfiguration-adjustmenttype
@@ -77,7 +77,7 @@ public class InstanceGroupConfigSimpleScalingPolicyConfiguration implements Prop
      * 
      */
     @JsonIgnore
-    public Integer getCoolDown() {
+    public Number getCoolDown() {
         return coolDown;
     }
 
@@ -86,11 +86,11 @@ public class InstanceGroupConfigSimpleScalingPolicyConfiguration implements Prop
      * 
      */
     @JsonIgnore
-    public void setCoolDown(Integer coolDown) {
+    public void setCoolDown(Number coolDown) {
         this.coolDown = coolDown;
     }
 
-    public InstanceGroupConfigSimpleScalingPolicyConfiguration withCoolDown(Integer coolDown) {
+    public InstanceGroupConfigSimpleScalingPolicyConfiguration withCoolDown(Number coolDown) {
         this.coolDown = coolDown;
         return this;
     }
@@ -100,7 +100,7 @@ public class InstanceGroupConfigSimpleScalingPolicyConfiguration implements Prop
      * 
      */
     @JsonIgnore
-    public Integer getScalingAdjustment() {
+    public Number getScalingAdjustment() {
         return scalingAdjustment;
     }
 
@@ -109,11 +109,11 @@ public class InstanceGroupConfigSimpleScalingPolicyConfiguration implements Prop
      * 
      */
     @JsonIgnore
-    public void setScalingAdjustment(Integer scalingAdjustment) {
+    public void setScalingAdjustment(Number scalingAdjustment) {
         this.scalingAdjustment = scalingAdjustment;
     }
 
-    public InstanceGroupConfigSimpleScalingPolicyConfiguration withScalingAdjustment(Integer scalingAdjustment) {
+    public InstanceGroupConfigSimpleScalingPolicyConfiguration withScalingAdjustment(Number scalingAdjustment) {
         this.scalingAdjustment = scalingAdjustment;
         return this;
     }

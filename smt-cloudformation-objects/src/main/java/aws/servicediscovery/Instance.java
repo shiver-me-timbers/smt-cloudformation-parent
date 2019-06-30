@@ -32,28 +32,28 @@ public class Instance {
      */
     @JsonProperty("InstanceAttributes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-instance.html#cfn-servicediscovery-instance-instanceattributes")
-    private Map<String, String> instanceAttributes;
+    private Map<String, CharSequence> instanceAttributes;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-instance.html#cfn-servicediscovery-instance-instanceid
      * 
      */
     @JsonProperty("InstanceId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-instance.html#cfn-servicediscovery-instance-instanceid")
-    private CharSequence instanceId;
+    private java.lang.CharSequence instanceId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-instance.html#cfn-servicediscovery-instance-serviceid
      * 
      */
     @JsonProperty("ServiceId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-instance.html#cfn-servicediscovery-instance-serviceid")
-    private CharSequence serviceId;
+    private java.lang.CharSequence serviceId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-instance.html#cfn-servicediscovery-instance-instanceattributes
      * 
      */
     @JsonIgnore
-    public Map<String, String> getInstanceAttributes() {
+    public Map<String, CharSequence> getInstanceAttributes() {
         return instanceAttributes;
     }
 
@@ -62,11 +62,11 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public void setInstanceAttributes(Map<String, String> instanceAttributes) {
+    public void setInstanceAttributes(Map<String, CharSequence> instanceAttributes) {
         this.instanceAttributes = instanceAttributes;
     }
 
-    public Instance withInstanceAttributes(Map<String, String> instanceAttributes) {
+    public Instance withInstanceAttributes(Map<String, CharSequence> instanceAttributes) {
         this.instanceAttributes = instanceAttributes;
         return this;
     }
@@ -76,7 +76,7 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public CharSequence getInstanceId() {
+    public java.lang.CharSequence getInstanceId() {
         return instanceId;
     }
 
@@ -85,11 +85,11 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public void setInstanceId(CharSequence instanceId) {
+    public void setInstanceId(java.lang.CharSequence instanceId) {
         this.instanceId = instanceId;
     }
 
-    public Instance withInstanceId(CharSequence instanceId) {
+    public Instance withInstanceId(java.lang.CharSequence instanceId) {
         this.instanceId = instanceId;
         return this;
     }
@@ -99,7 +99,7 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public CharSequence getServiceId() {
+    public java.lang.CharSequence getServiceId() {
         return serviceId;
     }
 
@@ -108,11 +108,11 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public void setServiceId(CharSequence serviceId) {
+    public void setServiceId(java.lang.CharSequence serviceId) {
         this.serviceId = serviceId;
     }
 
-    public Instance withServiceId(CharSequence serviceId) {
+    public Instance withServiceId(java.lang.CharSequence serviceId) {
         this.serviceId = serviceId;
         return this;
     }

@@ -42,7 +42,7 @@ public class WebACLRule implements Property<WebACLRule>
      */
     @JsonProperty("Priority")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-webacl-rule.html#cfn-wafregional-webacl-rule-priority")
-    private Integer priority;
+    private Number priority;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-webacl-rule.html#cfn-wafregional-webacl-rule-ruleid
      * 
@@ -83,7 +83,7 @@ public class WebACLRule implements Property<WebACLRule>
      * 
      */
     @JsonIgnore
-    public Integer getPriority() {
+    public Number getPriority() {
         return priority;
     }
 
@@ -92,11 +92,11 @@ public class WebACLRule implements Property<WebACLRule>
      * 
      */
     @JsonIgnore
-    public void setPriority(Integer priority) {
+    public void setPriority(Number priority) {
         this.priority = priority;
     }
 
-    public WebACLRule withPriority(Integer priority) {
+    public WebACLRule withPriority(Number priority) {
         this.priority = priority;
         return this;
     }

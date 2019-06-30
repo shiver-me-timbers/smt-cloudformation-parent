@@ -60,7 +60,7 @@ public class ProjectArtifacts implements Property<ProjectArtifacts>
      */
     @JsonProperty("OverrideArtifactName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-overrideartifactname")
-    private Boolean overrideArtifactName;
+    private CharSequence overrideArtifactName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-packaging
      * 
@@ -74,7 +74,7 @@ public class ProjectArtifacts implements Property<ProjectArtifacts>
      */
     @JsonProperty("EncryptionDisabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-encryptiondisabled")
-    private Boolean encryptionDisabled;
+    private CharSequence encryptionDisabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-location
      * 
@@ -171,7 +171,7 @@ public class ProjectArtifacts implements Property<ProjectArtifacts>
      * 
      */
     @JsonIgnore
-    public Boolean getOverrideArtifactName() {
+    public CharSequence getOverrideArtifactName() {
         return overrideArtifactName;
     }
 
@@ -180,11 +180,11 @@ public class ProjectArtifacts implements Property<ProjectArtifacts>
      * 
      */
     @JsonIgnore
-    public void setOverrideArtifactName(Boolean overrideArtifactName) {
+    public void setOverrideArtifactName(CharSequence overrideArtifactName) {
         this.overrideArtifactName = overrideArtifactName;
     }
 
-    public ProjectArtifacts withOverrideArtifactName(Boolean overrideArtifactName) {
+    public ProjectArtifacts withOverrideArtifactName(CharSequence overrideArtifactName) {
         this.overrideArtifactName = overrideArtifactName;
         return this;
     }
@@ -217,7 +217,7 @@ public class ProjectArtifacts implements Property<ProjectArtifacts>
      * 
      */
     @JsonIgnore
-    public Boolean getEncryptionDisabled() {
+    public CharSequence getEncryptionDisabled() {
         return encryptionDisabled;
     }
 
@@ -226,11 +226,11 @@ public class ProjectArtifacts implements Property<ProjectArtifacts>
      * 
      */
     @JsonIgnore
-    public void setEncryptionDisabled(Boolean encryptionDisabled) {
+    public void setEncryptionDisabled(CharSequence encryptionDisabled) {
         this.encryptionDisabled = encryptionDisabled;
     }
 
-    public ProjectArtifacts withEncryptionDisabled(Boolean encryptionDisabled) {
+    public ProjectArtifacts withEncryptionDisabled(CharSequence encryptionDisabled) {
         this.encryptionDisabled = encryptionDisabled;
         return this;
     }

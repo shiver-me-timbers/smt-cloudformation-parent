@@ -33,7 +33,7 @@ public class DistributionLogging implements Property<DistributionLogging>
      */
     @JsonProperty("IncludeCookies")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-logging.html#cfn-cloudfront-distribution-logging-includecookies")
-    private Boolean includeCookies;
+    private CharSequence includeCookies;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-logging.html#cfn-cloudfront-distribution-logging-bucket
      * 
@@ -54,7 +54,7 @@ public class DistributionLogging implements Property<DistributionLogging>
      * 
      */
     @JsonIgnore
-    public Boolean getIncludeCookies() {
+    public CharSequence getIncludeCookies() {
         return includeCookies;
     }
 
@@ -63,11 +63,11 @@ public class DistributionLogging implements Property<DistributionLogging>
      * 
      */
     @JsonIgnore
-    public void setIncludeCookies(Boolean includeCookies) {
+    public void setIncludeCookies(CharSequence includeCookies) {
         this.includeCookies = includeCookies;
     }
 
-    public DistributionLogging withIncludeCookies(Boolean includeCookies) {
+    public DistributionLogging withIncludeCookies(CharSequence includeCookies) {
         this.includeCookies = includeCookies;
         return this;
     }

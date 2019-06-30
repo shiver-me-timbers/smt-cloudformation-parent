@@ -1,15 +1,19 @@
 {
   "Boolean": {
-    "type": "boolean"
+    "type": "boolean",
+    "javaType": "java.lang.CharSequence"
   },
   "Integer": {
-    "type": "integer"
+    "type": "integer",
+    "javaType": "java.lang.Number"
   },
   "Double": {
-    "type": "number"
+    "type": "number",
+    "javaType": "java.lang.Number"
   },
   "Long": {
-    "type": "integer"
+    "type": "integer",
+    "javaType": "java.lang.Number"
   },
   "String": {
     "type": "string",
@@ -20,10 +24,11 @@
     "javaType": "java.lang.Object"
   },
   "Timestamp": {
-    "type": "string"
+    "type": "string",
+    "javaType": "java.lang.CharSequence"
   },
   "Map": {
     "type": "object",
-    "javaType": "java.util.Map<String, String>"
+    "javaType": "java.util.Map<String, CharSequence>"
   }
 }

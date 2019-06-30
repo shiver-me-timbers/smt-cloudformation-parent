@@ -47,7 +47,7 @@ public class EC2FleetSpotOptionsRequest implements Property<EC2FleetSpotOptionsR
      */
     @JsonProperty("InstancePoolsToUseCount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-spotoptionsrequest.html#cfn-ec2-ec2fleet-spotoptionsrequest-instancepoolstousecount")
-    private Integer instancePoolsToUseCount;
+    private Number instancePoolsToUseCount;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-spotoptionsrequest.html#cfn-ec2-ec2fleet-spotoptionsrequest-allocationstrategy
@@ -100,7 +100,7 @@ public class EC2FleetSpotOptionsRequest implements Property<EC2FleetSpotOptionsR
      * 
      */
     @JsonIgnore
-    public Integer getInstancePoolsToUseCount() {
+    public Number getInstancePoolsToUseCount() {
         return instancePoolsToUseCount;
     }
 
@@ -109,11 +109,11 @@ public class EC2FleetSpotOptionsRequest implements Property<EC2FleetSpotOptionsR
      * 
      */
     @JsonIgnore
-    public void setInstancePoolsToUseCount(Integer instancePoolsToUseCount) {
+    public void setInstancePoolsToUseCount(Number instancePoolsToUseCount) {
         this.instancePoolsToUseCount = instancePoolsToUseCount;
     }
 
-    public EC2FleetSpotOptionsRequest withInstancePoolsToUseCount(Integer instancePoolsToUseCount) {
+    public EC2FleetSpotOptionsRequest withInstancePoolsToUseCount(Number instancePoolsToUseCount) {
         this.instancePoolsToUseCount = instancePoolsToUseCount;
         return this;
     }

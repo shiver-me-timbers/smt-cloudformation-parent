@@ -39,7 +39,7 @@ public class DatasetDeltaTime implements Property<DatasetDeltaTime>
      */
     @JsonProperty("OffsetSeconds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-deltatime.html#cfn-iotanalytics-dataset-deltatime-offsetseconds")
-    private Integer offsetSeconds;
+    private Number offsetSeconds;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-deltatime.html#cfn-iotanalytics-dataset-deltatime-timeexpression
@@ -69,7 +69,7 @@ public class DatasetDeltaTime implements Property<DatasetDeltaTime>
      * 
      */
     @JsonIgnore
-    public Integer getOffsetSeconds() {
+    public Number getOffsetSeconds() {
         return offsetSeconds;
     }
 
@@ -78,11 +78,11 @@ public class DatasetDeltaTime implements Property<DatasetDeltaTime>
      * 
      */
     @JsonIgnore
-    public void setOffsetSeconds(Integer offsetSeconds) {
+    public void setOffsetSeconds(Number offsetSeconds) {
         this.offsetSeconds = offsetSeconds;
     }
 
-    public DatasetDeltaTime withOffsetSeconds(Integer offsetSeconds) {
+    public DatasetDeltaTime withOffsetSeconds(Number offsetSeconds) {
         this.offsetSeconds = offsetSeconds;
         return this;
     }

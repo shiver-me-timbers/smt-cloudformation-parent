@@ -69,14 +69,14 @@ public class DBCluster {
      */
     @JsonProperty("BacktrackWindow")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-backtrackwindow")
-    private Integer backtrackWindow;
+    private Number backtrackWindow;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-backuprententionperiod
      * 
      */
     @JsonProperty("BackupRetentionPeriod")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-backuprententionperiod")
-    private Integer backupRetentionPeriod;
+    private Number backupRetentionPeriod;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-dbclusteridentifier
      * 
@@ -111,7 +111,7 @@ public class DBCluster {
      */
     @JsonProperty("DeletionProtection")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-deletionprotection")
-    private Boolean deletionProtection;
+    private CharSequence deletionProtection;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-enablecloudwatchlogsexports
      * 
@@ -126,7 +126,7 @@ public class DBCluster {
      */
     @JsonProperty("EnableIAMDatabaseAuthentication")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-enableiamdatabaseauthentication")
-    private Boolean enableIAMDatabaseAuthentication;
+    private CharSequence enableIAMDatabaseAuthentication;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-engine
      * 
@@ -175,7 +175,7 @@ public class DBCluster {
      */
     @JsonProperty("Port")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-port")
-    private Integer port;
+    private Number port;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-preferredbackupwindow
      * 
@@ -226,7 +226,7 @@ public class DBCluster {
      */
     @JsonProperty("StorageEncrypted")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-storageencrypted")
-    private Boolean storageEncrypted;
+    private CharSequence storageEncrypted;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-tags
      * 
@@ -271,7 +271,7 @@ public class DBCluster {
      * 
      */
     @JsonIgnore
-    public Integer getBacktrackWindow() {
+    public Number getBacktrackWindow() {
         return backtrackWindow;
     }
 
@@ -280,11 +280,11 @@ public class DBCluster {
      * 
      */
     @JsonIgnore
-    public void setBacktrackWindow(Integer backtrackWindow) {
+    public void setBacktrackWindow(Number backtrackWindow) {
         this.backtrackWindow = backtrackWindow;
     }
 
-    public DBCluster withBacktrackWindow(Integer backtrackWindow) {
+    public DBCluster withBacktrackWindow(Number backtrackWindow) {
         this.backtrackWindow = backtrackWindow;
         return this;
     }
@@ -294,7 +294,7 @@ public class DBCluster {
      * 
      */
     @JsonIgnore
-    public Integer getBackupRetentionPeriod() {
+    public Number getBackupRetentionPeriod() {
         return backupRetentionPeriod;
     }
 
@@ -303,11 +303,11 @@ public class DBCluster {
      * 
      */
     @JsonIgnore
-    public void setBackupRetentionPeriod(Integer backupRetentionPeriod) {
+    public void setBackupRetentionPeriod(Number backupRetentionPeriod) {
         this.backupRetentionPeriod = backupRetentionPeriod;
     }
 
-    public DBCluster withBackupRetentionPeriod(Integer backupRetentionPeriod) {
+    public DBCluster withBackupRetentionPeriod(Number backupRetentionPeriod) {
         this.backupRetentionPeriod = backupRetentionPeriod;
         return this;
     }
@@ -409,7 +409,7 @@ public class DBCluster {
      * 
      */
     @JsonIgnore
-    public Boolean getDeletionProtection() {
+    public CharSequence getDeletionProtection() {
         return deletionProtection;
     }
 
@@ -418,11 +418,11 @@ public class DBCluster {
      * 
      */
     @JsonIgnore
-    public void setDeletionProtection(Boolean deletionProtection) {
+    public void setDeletionProtection(CharSequence deletionProtection) {
         this.deletionProtection = deletionProtection;
     }
 
-    public DBCluster withDeletionProtection(Boolean deletionProtection) {
+    public DBCluster withDeletionProtection(CharSequence deletionProtection) {
         this.deletionProtection = deletionProtection;
         return this;
     }
@@ -455,7 +455,7 @@ public class DBCluster {
      * 
      */
     @JsonIgnore
-    public Boolean getEnableIAMDatabaseAuthentication() {
+    public CharSequence getEnableIAMDatabaseAuthentication() {
         return enableIAMDatabaseAuthentication;
     }
 
@@ -464,11 +464,11 @@ public class DBCluster {
      * 
      */
     @JsonIgnore
-    public void setEnableIAMDatabaseAuthentication(Boolean enableIAMDatabaseAuthentication) {
+    public void setEnableIAMDatabaseAuthentication(CharSequence enableIAMDatabaseAuthentication) {
         this.enableIAMDatabaseAuthentication = enableIAMDatabaseAuthentication;
     }
 
-    public DBCluster withEnableIAMDatabaseAuthentication(Boolean enableIAMDatabaseAuthentication) {
+    public DBCluster withEnableIAMDatabaseAuthentication(CharSequence enableIAMDatabaseAuthentication) {
         this.enableIAMDatabaseAuthentication = enableIAMDatabaseAuthentication;
         return this;
     }
@@ -616,7 +616,7 @@ public class DBCluster {
      * 
      */
     @JsonIgnore
-    public Integer getPort() {
+    public Number getPort() {
         return port;
     }
 
@@ -625,11 +625,11 @@ public class DBCluster {
      * 
      */
     @JsonIgnore
-    public void setPort(Integer port) {
+    public void setPort(Number port) {
         this.port = port;
     }
 
-    public DBCluster withPort(Integer port) {
+    public DBCluster withPort(Number port) {
         this.port = port;
         return this;
     }
@@ -781,7 +781,7 @@ public class DBCluster {
      * 
      */
     @JsonIgnore
-    public Boolean getStorageEncrypted() {
+    public CharSequence getStorageEncrypted() {
         return storageEncrypted;
     }
 
@@ -790,11 +790,11 @@ public class DBCluster {
      * 
      */
     @JsonIgnore
-    public void setStorageEncrypted(Boolean storageEncrypted) {
+    public void setStorageEncrypted(CharSequence storageEncrypted) {
         this.storageEncrypted = storageEncrypted;
     }
 
-    public DBCluster withStorageEncrypted(Boolean storageEncrypted) {
+    public DBCluster withStorageEncrypted(CharSequence storageEncrypted) {
         this.storageEncrypted = storageEncrypted;
         return this;
     }

@@ -39,7 +39,7 @@ public class StackApplicationSettings implements Property<StackApplicationSettin
      */
     @JsonProperty("Enabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-stack-applicationsettings.html#cfn-appstream-stack-applicationsettings-enabled")
-    private Boolean enabled;
+    private CharSequence enabled;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-stack-applicationsettings.html#cfn-appstream-stack-applicationsettings-settingsgroup
@@ -69,7 +69,7 @@ public class StackApplicationSettings implements Property<StackApplicationSettin
      * 
      */
     @JsonIgnore
-    public Boolean getEnabled() {
+    public CharSequence getEnabled() {
         return enabled;
     }
 
@@ -78,11 +78,11 @@ public class StackApplicationSettings implements Property<StackApplicationSettin
      * 
      */
     @JsonIgnore
-    public void setEnabled(Boolean enabled) {
+    public void setEnabled(CharSequence enabled) {
         this.enabled = enabled;
     }
 
-    public StackApplicationSettings withEnabled(Boolean enabled) {
+    public StackApplicationSettings withEnabled(CharSequence enabled) {
         this.enabled = enabled;
         return this;
     }

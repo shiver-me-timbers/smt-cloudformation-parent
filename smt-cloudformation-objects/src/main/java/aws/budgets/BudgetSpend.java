@@ -32,7 +32,7 @@ public class BudgetSpend implements Property<BudgetSpend>
      */
     @JsonProperty("Amount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-spend.html#cfn-budgets-budget-spend-amount")
-    private Double amount;
+    private Number amount;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-spend.html#cfn-budgets-budget-spend-unit
      * 
@@ -46,7 +46,7 @@ public class BudgetSpend implements Property<BudgetSpend>
      * 
      */
     @JsonIgnore
-    public Double getAmount() {
+    public Number getAmount() {
         return amount;
     }
 
@@ -55,11 +55,11 @@ public class BudgetSpend implements Property<BudgetSpend>
      * 
      */
     @JsonIgnore
-    public void setAmount(Double amount) {
+    public void setAmount(Number amount) {
         this.amount = amount;
     }
 
-    public BudgetSpend withAmount(Double amount) {
+    public BudgetSpend withAmount(Number amount) {
         this.amount = amount;
         return this;
     }

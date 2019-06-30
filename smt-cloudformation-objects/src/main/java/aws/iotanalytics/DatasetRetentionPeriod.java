@@ -32,21 +32,21 @@ public class DatasetRetentionPeriod implements Property<DatasetRetentionPeriod>
      */
     @JsonProperty("NumberOfDays")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-retentionperiod.html#cfn-iotanalytics-dataset-retentionperiod-numberofdays")
-    private Integer numberOfDays;
+    private Number numberOfDays;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-retentionperiod.html#cfn-iotanalytics-dataset-retentionperiod-unlimited
      * 
      */
     @JsonProperty("Unlimited")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-retentionperiod.html#cfn-iotanalytics-dataset-retentionperiod-unlimited")
-    private Boolean unlimited;
+    private CharSequence unlimited;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-retentionperiod.html#cfn-iotanalytics-dataset-retentionperiod-numberofdays
      * 
      */
     @JsonIgnore
-    public Integer getNumberOfDays() {
+    public Number getNumberOfDays() {
         return numberOfDays;
     }
 
@@ -55,11 +55,11 @@ public class DatasetRetentionPeriod implements Property<DatasetRetentionPeriod>
      * 
      */
     @JsonIgnore
-    public void setNumberOfDays(Integer numberOfDays) {
+    public void setNumberOfDays(Number numberOfDays) {
         this.numberOfDays = numberOfDays;
     }
 
-    public DatasetRetentionPeriod withNumberOfDays(Integer numberOfDays) {
+    public DatasetRetentionPeriod withNumberOfDays(Number numberOfDays) {
         this.numberOfDays = numberOfDays;
         return this;
     }
@@ -69,7 +69,7 @@ public class DatasetRetentionPeriod implements Property<DatasetRetentionPeriod>
      * 
      */
     @JsonIgnore
-    public Boolean getUnlimited() {
+    public CharSequence getUnlimited() {
         return unlimited;
     }
 
@@ -78,11 +78,11 @@ public class DatasetRetentionPeriod implements Property<DatasetRetentionPeriod>
      * 
      */
     @JsonIgnore
-    public void setUnlimited(Boolean unlimited) {
+    public void setUnlimited(CharSequence unlimited) {
         this.unlimited = unlimited;
     }
 
-    public DatasetRetentionPeriod withUnlimited(Boolean unlimited) {
+    public DatasetRetentionPeriod withUnlimited(CharSequence unlimited) {
         this.unlimited = unlimited;
         return this;
     }

@@ -46,14 +46,14 @@ public class Key {
      */
     @JsonProperty("EnableKeyRotation")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-enablekeyrotation")
-    private Boolean enableKeyRotation;
+    private CharSequence enableKeyRotation;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-enabled
      * 
      */
     @JsonProperty("Enabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-enabled")
-    private Boolean enabled;
+    private CharSequence enabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-keypolicy
      * 
@@ -74,7 +74,7 @@ public class Key {
      */
     @JsonProperty("PendingWindowInDays")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-pendingwindowindays")
-    private Integer pendingWindowInDays;
+    private Number pendingWindowInDays;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-tags
      * 
@@ -111,7 +111,7 @@ public class Key {
      * 
      */
     @JsonIgnore
-    public Boolean getEnableKeyRotation() {
+    public CharSequence getEnableKeyRotation() {
         return enableKeyRotation;
     }
 
@@ -120,11 +120,11 @@ public class Key {
      * 
      */
     @JsonIgnore
-    public void setEnableKeyRotation(Boolean enableKeyRotation) {
+    public void setEnableKeyRotation(CharSequence enableKeyRotation) {
         this.enableKeyRotation = enableKeyRotation;
     }
 
-    public Key withEnableKeyRotation(Boolean enableKeyRotation) {
+    public Key withEnableKeyRotation(CharSequence enableKeyRotation) {
         this.enableKeyRotation = enableKeyRotation;
         return this;
     }
@@ -134,7 +134,7 @@ public class Key {
      * 
      */
     @JsonIgnore
-    public Boolean getEnabled() {
+    public CharSequence getEnabled() {
         return enabled;
     }
 
@@ -143,11 +143,11 @@ public class Key {
      * 
      */
     @JsonIgnore
-    public void setEnabled(Boolean enabled) {
+    public void setEnabled(CharSequence enabled) {
         this.enabled = enabled;
     }
 
-    public Key withEnabled(Boolean enabled) {
+    public Key withEnabled(CharSequence enabled) {
         this.enabled = enabled;
         return this;
     }
@@ -203,7 +203,7 @@ public class Key {
      * 
      */
     @JsonIgnore
-    public Integer getPendingWindowInDays() {
+    public Number getPendingWindowInDays() {
         return pendingWindowInDays;
     }
 
@@ -212,11 +212,11 @@ public class Key {
      * 
      */
     @JsonIgnore
-    public void setPendingWindowInDays(Integer pendingWindowInDays) {
+    public void setPendingWindowInDays(Number pendingWindowInDays) {
         this.pendingWindowInDays = pendingWindowInDays;
     }
 
-    public Key withPendingWindowInDays(Integer pendingWindowInDays) {
+    public Key withPendingWindowInDays(Number pendingWindowInDays) {
         this.pendingWindowInDays = pendingWindowInDays;
         return this;
     }

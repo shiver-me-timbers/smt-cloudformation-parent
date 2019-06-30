@@ -56,7 +56,7 @@ public class App {
      */
     @JsonProperty("Attributes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-attributes")
-    private Map<String, String> attributes;
+    private Map<String, CharSequence> attributes;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-datasources
      * 
@@ -85,7 +85,7 @@ public class App {
      */
     @JsonProperty("EnableSsl")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-enablessl")
-    private Boolean enableSsl;
+    private CharSequence enableSsl;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-environment
      * 
@@ -163,7 +163,7 @@ public class App {
      * 
      */
     @JsonIgnore
-    public Map<String, String> getAttributes() {
+    public Map<String, CharSequence> getAttributes() {
         return attributes;
     }
 
@@ -172,11 +172,11 @@ public class App {
      * 
      */
     @JsonIgnore
-    public void setAttributes(Map<String, String> attributes) {
+    public void setAttributes(Map<String, CharSequence> attributes) {
         this.attributes = attributes;
     }
 
-    public App withAttributes(Map<String, String> attributes) {
+    public App withAttributes(Map<String, CharSequence> attributes) {
         this.attributes = attributes;
         return this;
     }
@@ -255,7 +255,7 @@ public class App {
      * 
      */
     @JsonIgnore
-    public Boolean getEnableSsl() {
+    public CharSequence getEnableSsl() {
         return enableSsl;
     }
 
@@ -264,11 +264,11 @@ public class App {
      * 
      */
     @JsonIgnore
-    public void setEnableSsl(Boolean enableSsl) {
+    public void setEnableSsl(CharSequence enableSsl) {
         this.enableSsl = enableSsl;
     }
 
-    public App withEnableSsl(Boolean enableSsl) {
+    public App withEnableSsl(CharSequence enableSsl) {
         this.enableSsl = enableSsl;
         return this;
     }

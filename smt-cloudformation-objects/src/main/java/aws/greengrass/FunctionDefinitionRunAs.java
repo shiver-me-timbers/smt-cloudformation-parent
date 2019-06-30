@@ -32,21 +32,21 @@ public class FunctionDefinitionRunAs implements Property<FunctionDefinitionRunAs
      */
     @JsonProperty("Uid")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-runas.html#cfn-greengrass-functiondefinition-runas-uid")
-    private Integer uid;
+    private Number uid;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-runas.html#cfn-greengrass-functiondefinition-runas-gid
      * 
      */
     @JsonProperty("Gid")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-runas.html#cfn-greengrass-functiondefinition-runas-gid")
-    private Integer gid;
+    private Number gid;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-runas.html#cfn-greengrass-functiondefinition-runas-uid
      * 
      */
     @JsonIgnore
-    public Integer getUid() {
+    public Number getUid() {
         return uid;
     }
 
@@ -55,11 +55,11 @@ public class FunctionDefinitionRunAs implements Property<FunctionDefinitionRunAs
      * 
      */
     @JsonIgnore
-    public void setUid(Integer uid) {
+    public void setUid(Number uid) {
         this.uid = uid;
     }
 
-    public FunctionDefinitionRunAs withUid(Integer uid) {
+    public FunctionDefinitionRunAs withUid(Number uid) {
         this.uid = uid;
         return this;
     }
@@ -69,7 +69,7 @@ public class FunctionDefinitionRunAs implements Property<FunctionDefinitionRunAs
      * 
      */
     @JsonIgnore
-    public Integer getGid() {
+    public Number getGid() {
         return gid;
     }
 
@@ -78,11 +78,11 @@ public class FunctionDefinitionRunAs implements Property<FunctionDefinitionRunAs
      * 
      */
     @JsonIgnore
-    public void setGid(Integer gid) {
+    public void setGid(Number gid) {
         this.gid = gid;
     }
 
-    public FunctionDefinitionRunAs withGid(Integer gid) {
+    public FunctionDefinitionRunAs withGid(Number gid) {
         this.gid = gid;
         return this;
     }

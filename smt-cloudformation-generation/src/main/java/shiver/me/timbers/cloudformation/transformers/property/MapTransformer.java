@@ -3,6 +3,7 @@ package shiver.me.timbers.cloudformation.transformers.property;
 import shiver.me.timbers.cloudformation.CloudformationProperty;
 import shiver.me.timbers.cloudformation.CloudformationType;
 import shiver.me.timbers.cloudformation.types.ClassTypeConverter;
+import shiver.me.timbers.cloudformation.types.PrimitiveTypeConverter;
 import shiver.me.timbers.cloudformation.types.TypeException;
 
 import java.util.Map;
@@ -11,9 +12,11 @@ import static java.lang.String.format;
 
 public class MapTransformer implements PropertyTransformer {
 
+    private final PrimitiveTypeConverter primitiveTypeConverter;
     private final ClassTypeConverter classTypeConverter;
 
-    public MapTransformer(ClassTypeConverter classTypeConverter) {
+    public MapTransformer(PrimitiveTypeConverter primitiveTypeConverter, ClassTypeConverter classTypeConverter) {
+        this.primitiveTypeConverter = primitiveTypeConverter;
         this.classTypeConverter = classTypeConverter;
     }
 
@@ -41,7 +44,7 @@ public class MapTransformer implements PropertyTransformer {
     ) {
         final String primitiveItemType = cloudformationProperty.getPrimitiveItemType();
         if (primitiveItemType != null) {
-            return toMapType(primitiveItemType);
+            return toMapType(primitiveTypeConverter.convert(primitiveItemType).get("javaType").toString());
         }
         final String itemType = cloudformationProperty.getItemType();
         if (itemType != null) {

@@ -57,7 +57,7 @@ public class NotebookInstance {
      */
     @JsonProperty("VolumeSizeInGB")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-volumesizeingb")
-    private Integer volumeSizeInGB;
+    private Number volumeSizeInGB;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-directinternetaccess
      * 
@@ -166,7 +166,7 @@ public class NotebookInstance {
      * 
      */
     @JsonIgnore
-    public Integer getVolumeSizeInGB() {
+    public Number getVolumeSizeInGB() {
         return volumeSizeInGB;
     }
 
@@ -175,11 +175,11 @@ public class NotebookInstance {
      * 
      */
     @JsonIgnore
-    public void setVolumeSizeInGB(Integer volumeSizeInGB) {
+    public void setVolumeSizeInGB(Number volumeSizeInGB) {
         this.volumeSizeInGB = volumeSizeInGB;
     }
 
-    public NotebookInstance withVolumeSizeInGB(Integer volumeSizeInGB) {
+    public NotebookInstance withVolumeSizeInGB(Number volumeSizeInGB) {
         this.volumeSizeInGB = volumeSizeInGB;
         return this;
     }

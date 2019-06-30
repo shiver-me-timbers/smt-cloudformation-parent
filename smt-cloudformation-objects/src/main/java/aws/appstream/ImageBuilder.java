@@ -66,7 +66,7 @@ public class ImageBuilder {
      */
     @JsonProperty("EnableDefaultInternetAccess")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-imagebuilder.html#cfn-appstream-imagebuilder-enabledefaultinternetaccess")
-    private Boolean enableDefaultInternetAccess;
+    private CharSequence enableDefaultInternetAccess;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-imagebuilder.html#cfn-appstream-imagebuilder-displayname
      * 
@@ -197,7 +197,7 @@ public class ImageBuilder {
      * 
      */
     @JsonIgnore
-    public Boolean getEnableDefaultInternetAccess() {
+    public CharSequence getEnableDefaultInternetAccess() {
         return enableDefaultInternetAccess;
     }
 
@@ -206,11 +206,11 @@ public class ImageBuilder {
      * 
      */
     @JsonIgnore
-    public void setEnableDefaultInternetAccess(Boolean enableDefaultInternetAccess) {
+    public void setEnableDefaultInternetAccess(CharSequence enableDefaultInternetAccess) {
         this.enableDefaultInternetAccess = enableDefaultInternetAccess;
     }
 
-    public ImageBuilder withEnableDefaultInternetAccess(Boolean enableDefaultInternetAccess) {
+    public ImageBuilder withEnableDefaultInternetAccess(CharSequence enableDefaultInternetAccess) {
         this.enableDefaultInternetAccess = enableDefaultInternetAccess;
         return this;
     }

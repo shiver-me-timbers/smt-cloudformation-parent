@@ -98,7 +98,7 @@ public class Instance {
      */
     @JsonProperty("EbsOptimized")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-ebsoptimized")
-    private Boolean ebsOptimized;
+    private CharSequence ebsOptimized;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-elasticips
      * 
@@ -120,7 +120,7 @@ public class Instance {
      */
     @JsonProperty("InstallUpdatesOnBoot")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-installupdatesonboot")
-    private Boolean installUpdatesOnBoot;
+    private CharSequence installUpdatesOnBoot;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-instancetype
      * 
@@ -345,7 +345,7 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public Boolean getEbsOptimized() {
+    public CharSequence getEbsOptimized() {
         return ebsOptimized;
     }
 
@@ -354,11 +354,11 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public void setEbsOptimized(Boolean ebsOptimized) {
+    public void setEbsOptimized(CharSequence ebsOptimized) {
         this.ebsOptimized = ebsOptimized;
     }
 
-    public Instance withEbsOptimized(Boolean ebsOptimized) {
+    public Instance withEbsOptimized(CharSequence ebsOptimized) {
         this.ebsOptimized = ebsOptimized;
         return this;
     }
@@ -414,7 +414,7 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public Boolean getInstallUpdatesOnBoot() {
+    public CharSequence getInstallUpdatesOnBoot() {
         return installUpdatesOnBoot;
     }
 
@@ -423,11 +423,11 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public void setInstallUpdatesOnBoot(Boolean installUpdatesOnBoot) {
+    public void setInstallUpdatesOnBoot(CharSequence installUpdatesOnBoot) {
         this.installUpdatesOnBoot = installUpdatesOnBoot;
     }
 
-    public Instance withInstallUpdatesOnBoot(Boolean installUpdatesOnBoot) {
+    public Instance withInstallUpdatesOnBoot(CharSequence installUpdatesOnBoot) {
         this.installUpdatesOnBoot = installUpdatesOnBoot;
         return this;
     }

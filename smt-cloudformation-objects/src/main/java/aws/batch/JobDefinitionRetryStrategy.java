@@ -31,14 +31,14 @@ public class JobDefinitionRetryStrategy implements Property<JobDefinitionRetrySt
      */
     @JsonProperty("Attempts")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-retrystrategy.html#cfn-batch-jobdefinition-retrystrategy-attempts")
-    private Integer attempts;
+    private Number attempts;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-retrystrategy.html#cfn-batch-jobdefinition-retrystrategy-attempts
      * 
      */
     @JsonIgnore
-    public Integer getAttempts() {
+    public Number getAttempts() {
         return attempts;
     }
 
@@ -47,11 +47,11 @@ public class JobDefinitionRetryStrategy implements Property<JobDefinitionRetrySt
      * 
      */
     @JsonIgnore
-    public void setAttempts(Integer attempts) {
+    public void setAttempts(Number attempts) {
         this.attempts = attempts;
     }
 
-    public JobDefinitionRetryStrategy withAttempts(Integer attempts) {
+    public JobDefinitionRetryStrategy withAttempts(Number attempts) {
         this.attempts = attempts;
         return this;
     }

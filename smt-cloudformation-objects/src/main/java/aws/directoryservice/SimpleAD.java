@@ -37,7 +37,7 @@ public class SimpleAD {
      */
     @JsonProperty("CreateAlias")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-createalias")
-    private Boolean createAlias;
+    private CharSequence createAlias;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-description
      * 
@@ -51,7 +51,7 @@ public class SimpleAD {
      */
     @JsonProperty("EnableSso")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-enablesso")
-    private Boolean enableSso;
+    private CharSequence enableSso;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-name
      * 
@@ -95,7 +95,7 @@ public class SimpleAD {
      * 
      */
     @JsonIgnore
-    public Boolean getCreateAlias() {
+    public CharSequence getCreateAlias() {
         return createAlias;
     }
 
@@ -104,11 +104,11 @@ public class SimpleAD {
      * 
      */
     @JsonIgnore
-    public void setCreateAlias(Boolean createAlias) {
+    public void setCreateAlias(CharSequence createAlias) {
         this.createAlias = createAlias;
     }
 
-    public SimpleAD withCreateAlias(Boolean createAlias) {
+    public SimpleAD withCreateAlias(CharSequence createAlias) {
         this.createAlias = createAlias;
         return this;
     }
@@ -141,7 +141,7 @@ public class SimpleAD {
      * 
      */
     @JsonIgnore
-    public Boolean getEnableSso() {
+    public CharSequence getEnableSso() {
         return enableSso;
     }
 
@@ -150,11 +150,11 @@ public class SimpleAD {
      * 
      */
     @JsonIgnore
-    public void setEnableSso(Boolean enableSso) {
+    public void setEnableSso(CharSequence enableSso) {
         this.enableSso = enableSso;
     }
 
-    public SimpleAD withEnableSso(Boolean enableSso) {
+    public SimpleAD withEnableSso(CharSequence enableSso) {
         this.enableSso = enableSso;
         return this;
     }

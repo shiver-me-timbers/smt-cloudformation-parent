@@ -48,14 +48,14 @@ public class GraphQLApiOpenIDConnectConfig implements Property<GraphQLApiOpenIDC
      */
     @JsonProperty("AuthTTL")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-openidconnectconfig.html#cfn-appsync-graphqlapi-openidconnectconfig-authttl")
-    private Double authTTL;
+    private Number authTTL;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-openidconnectconfig.html#cfn-appsync-graphqlapi-openidconnectconfig-iatttl
      * 
      */
     @JsonProperty("IatTTL")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-openidconnectconfig.html#cfn-appsync-graphqlapi-openidconnectconfig-iatttl")
-    private Double iatTTL;
+    private Number iatTTL;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-openidconnectconfig.html#cfn-appsync-graphqlapi-openidconnectconfig-issuer
@@ -108,7 +108,7 @@ public class GraphQLApiOpenIDConnectConfig implements Property<GraphQLApiOpenIDC
      * 
      */
     @JsonIgnore
-    public Double getAuthTTL() {
+    public Number getAuthTTL() {
         return authTTL;
     }
 
@@ -117,11 +117,11 @@ public class GraphQLApiOpenIDConnectConfig implements Property<GraphQLApiOpenIDC
      * 
      */
     @JsonIgnore
-    public void setAuthTTL(Double authTTL) {
+    public void setAuthTTL(Number authTTL) {
         this.authTTL = authTTL;
     }
 
-    public GraphQLApiOpenIDConnectConfig withAuthTTL(Double authTTL) {
+    public GraphQLApiOpenIDConnectConfig withAuthTTL(Number authTTL) {
         this.authTTL = authTTL;
         return this;
     }
@@ -131,7 +131,7 @@ public class GraphQLApiOpenIDConnectConfig implements Property<GraphQLApiOpenIDC
      * 
      */
     @JsonIgnore
-    public Double getIatTTL() {
+    public Number getIatTTL() {
         return iatTTL;
     }
 
@@ -140,11 +140,11 @@ public class GraphQLApiOpenIDConnectConfig implements Property<GraphQLApiOpenIDC
      * 
      */
     @JsonIgnore
-    public void setIatTTL(Double iatTTL) {
+    public void setIatTTL(Number iatTTL) {
         this.iatTTL = iatTTL;
     }
 
-    public GraphQLApiOpenIDConnectConfig withIatTTL(Double iatTTL) {
+    public GraphQLApiOpenIDConnectConfig withIatTTL(Number iatTTL) {
         this.iatTTL = iatTTL;
         return this;
     }

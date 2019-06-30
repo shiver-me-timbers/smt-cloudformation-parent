@@ -40,14 +40,14 @@ public class ClusterSimpleScalingPolicyConfiguration implements Property<Cluster
      */
     @JsonProperty("CoolDown")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-simplescalingpolicyconfiguration.html#cfn-elasticmapreduce-cluster-simplescalingpolicyconfiguration-cooldown")
-    private Integer coolDown;
+    private Number coolDown;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-simplescalingpolicyconfiguration.html#cfn-elasticmapreduce-cluster-simplescalingpolicyconfiguration-scalingadjustment
      * 
      */
     @JsonProperty("ScalingAdjustment")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-simplescalingpolicyconfiguration.html#cfn-elasticmapreduce-cluster-simplescalingpolicyconfiguration-scalingadjustment")
-    private Integer scalingAdjustment;
+    private Number scalingAdjustment;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-simplescalingpolicyconfiguration.html#cfn-elasticmapreduce-cluster-simplescalingpolicyconfiguration-adjustmenttype
@@ -77,7 +77,7 @@ public class ClusterSimpleScalingPolicyConfiguration implements Property<Cluster
      * 
      */
     @JsonIgnore
-    public Integer getCoolDown() {
+    public Number getCoolDown() {
         return coolDown;
     }
 
@@ -86,11 +86,11 @@ public class ClusterSimpleScalingPolicyConfiguration implements Property<Cluster
      * 
      */
     @JsonIgnore
-    public void setCoolDown(Integer coolDown) {
+    public void setCoolDown(Number coolDown) {
         this.coolDown = coolDown;
     }
 
-    public ClusterSimpleScalingPolicyConfiguration withCoolDown(Integer coolDown) {
+    public ClusterSimpleScalingPolicyConfiguration withCoolDown(Number coolDown) {
         this.coolDown = coolDown;
         return this;
     }
@@ -100,7 +100,7 @@ public class ClusterSimpleScalingPolicyConfiguration implements Property<Cluster
      * 
      */
     @JsonIgnore
-    public Integer getScalingAdjustment() {
+    public Number getScalingAdjustment() {
         return scalingAdjustment;
     }
 
@@ -109,11 +109,11 @@ public class ClusterSimpleScalingPolicyConfiguration implements Property<Cluster
      * 
      */
     @JsonIgnore
-    public void setScalingAdjustment(Integer scalingAdjustment) {
+    public void setScalingAdjustment(Number scalingAdjustment) {
         this.scalingAdjustment = scalingAdjustment;
     }
 
-    public ClusterSimpleScalingPolicyConfiguration withScalingAdjustment(Integer scalingAdjustment) {
+    public ClusterSimpleScalingPolicyConfiguration withScalingAdjustment(Number scalingAdjustment) {
         this.scalingAdjustment = scalingAdjustment;
         return this;
     }

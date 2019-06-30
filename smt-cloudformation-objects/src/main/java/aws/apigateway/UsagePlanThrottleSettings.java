@@ -32,21 +32,21 @@ public class UsagePlanThrottleSettings implements Property<UsagePlanThrottleSett
      */
     @JsonProperty("BurstLimit")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-throttlesettings.html#cfn-apigateway-usageplan-throttlesettings-burstlimit")
-    private Integer burstLimit;
+    private Number burstLimit;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-throttlesettings.html#cfn-apigateway-usageplan-throttlesettings-ratelimit
      * 
      */
     @JsonProperty("RateLimit")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-throttlesettings.html#cfn-apigateway-usageplan-throttlesettings-ratelimit")
-    private Double rateLimit;
+    private Number rateLimit;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-throttlesettings.html#cfn-apigateway-usageplan-throttlesettings-burstlimit
      * 
      */
     @JsonIgnore
-    public Integer getBurstLimit() {
+    public Number getBurstLimit() {
         return burstLimit;
     }
 
@@ -55,11 +55,11 @@ public class UsagePlanThrottleSettings implements Property<UsagePlanThrottleSett
      * 
      */
     @JsonIgnore
-    public void setBurstLimit(Integer burstLimit) {
+    public void setBurstLimit(Number burstLimit) {
         this.burstLimit = burstLimit;
     }
 
-    public UsagePlanThrottleSettings withBurstLimit(Integer burstLimit) {
+    public UsagePlanThrottleSettings withBurstLimit(Number burstLimit) {
         this.burstLimit = burstLimit;
         return this;
     }
@@ -69,7 +69,7 @@ public class UsagePlanThrottleSettings implements Property<UsagePlanThrottleSett
      * 
      */
     @JsonIgnore
-    public Double getRateLimit() {
+    public Number getRateLimit() {
         return rateLimit;
     }
 
@@ -78,11 +78,11 @@ public class UsagePlanThrottleSettings implements Property<UsagePlanThrottleSett
      * 
      */
     @JsonIgnore
-    public void setRateLimit(Double rateLimit) {
+    public void setRateLimit(Number rateLimit) {
         this.rateLimit = rateLimit;
     }
 
-    public UsagePlanThrottleSettings withRateLimit(Double rateLimit) {
+    public UsagePlanThrottleSettings withRateLimit(Number rateLimit) {
         this.rateLimit = rateLimit;
         return this;
     }

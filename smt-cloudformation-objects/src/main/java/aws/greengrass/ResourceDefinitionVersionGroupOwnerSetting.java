@@ -32,7 +32,7 @@ public class ResourceDefinitionVersionGroupOwnerSetting implements Property<Reso
      */
     @JsonProperty("AutoAddGroupOwner")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-groupownersetting.html#cfn-greengrass-resourcedefinitionversion-groupownersetting-autoaddgroupowner")
-    private Boolean autoAddGroupOwner;
+    private CharSequence autoAddGroupOwner;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-groupownersetting.html#cfn-greengrass-resourcedefinitionversion-groupownersetting-groupowner
      * 
@@ -46,7 +46,7 @@ public class ResourceDefinitionVersionGroupOwnerSetting implements Property<Reso
      * 
      */
     @JsonIgnore
-    public Boolean getAutoAddGroupOwner() {
+    public CharSequence getAutoAddGroupOwner() {
         return autoAddGroupOwner;
     }
 
@@ -55,11 +55,11 @@ public class ResourceDefinitionVersionGroupOwnerSetting implements Property<Reso
      * 
      */
     @JsonIgnore
-    public void setAutoAddGroupOwner(Boolean autoAddGroupOwner) {
+    public void setAutoAddGroupOwner(CharSequence autoAddGroupOwner) {
         this.autoAddGroupOwner = autoAddGroupOwner;
     }
 
-    public ResourceDefinitionVersionGroupOwnerSetting withAutoAddGroupOwner(Boolean autoAddGroupOwner) {
+    public ResourceDefinitionVersionGroupOwnerSetting withAutoAddGroupOwner(CharSequence autoAddGroupOwner) {
         this.autoAddGroupOwner = autoAddGroupOwner;
         return this;
     }

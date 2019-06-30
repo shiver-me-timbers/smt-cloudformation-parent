@@ -32,21 +32,21 @@ public class ChannelRetentionPeriod implements Property<ChannelRetentionPeriod>
      */
     @JsonProperty("NumberOfDays")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-channel-retentionperiod.html#cfn-iotanalytics-channel-retentionperiod-numberofdays")
-    private Integer numberOfDays;
+    private Number numberOfDays;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-channel-retentionperiod.html#cfn-iotanalytics-channel-retentionperiod-unlimited
      * 
      */
     @JsonProperty("Unlimited")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-channel-retentionperiod.html#cfn-iotanalytics-channel-retentionperiod-unlimited")
-    private Boolean unlimited;
+    private CharSequence unlimited;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-channel-retentionperiod.html#cfn-iotanalytics-channel-retentionperiod-numberofdays
      * 
      */
     @JsonIgnore
-    public Integer getNumberOfDays() {
+    public Number getNumberOfDays() {
         return numberOfDays;
     }
 
@@ -55,11 +55,11 @@ public class ChannelRetentionPeriod implements Property<ChannelRetentionPeriod>
      * 
      */
     @JsonIgnore
-    public void setNumberOfDays(Integer numberOfDays) {
+    public void setNumberOfDays(Number numberOfDays) {
         this.numberOfDays = numberOfDays;
     }
 
-    public ChannelRetentionPeriod withNumberOfDays(Integer numberOfDays) {
+    public ChannelRetentionPeriod withNumberOfDays(Number numberOfDays) {
         this.numberOfDays = numberOfDays;
         return this;
     }
@@ -69,7 +69,7 @@ public class ChannelRetentionPeriod implements Property<ChannelRetentionPeriod>
      * 
      */
     @JsonIgnore
-    public Boolean getUnlimited() {
+    public CharSequence getUnlimited() {
         return unlimited;
     }
 
@@ -78,11 +78,11 @@ public class ChannelRetentionPeriod implements Property<ChannelRetentionPeriod>
      * 
      */
     @JsonIgnore
-    public void setUnlimited(Boolean unlimited) {
+    public void setUnlimited(CharSequence unlimited) {
         this.unlimited = unlimited;
     }
 
-    public ChannelRetentionPeriod withUnlimited(Boolean unlimited) {
+    public ChannelRetentionPeriod withUnlimited(CharSequence unlimited) {
         this.unlimited = unlimited;
         return this;
     }

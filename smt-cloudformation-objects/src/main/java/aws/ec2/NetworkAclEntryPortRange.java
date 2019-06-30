@@ -32,21 +32,21 @@ public class NetworkAclEntryPortRange implements Property<NetworkAclEntryPortRan
      */
     @JsonProperty("From")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-portrange.html#cfn-ec2-networkaclentry-portrange-from")
-    private Integer from;
+    private Number from;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-portrange.html#cfn-ec2-networkaclentry-portrange-to
      * 
      */
     @JsonProperty("To")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-portrange.html#cfn-ec2-networkaclentry-portrange-to")
-    private Integer to;
+    private Number to;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-portrange.html#cfn-ec2-networkaclentry-portrange-from
      * 
      */
     @JsonIgnore
-    public Integer getFrom() {
+    public Number getFrom() {
         return from;
     }
 
@@ -55,11 +55,11 @@ public class NetworkAclEntryPortRange implements Property<NetworkAclEntryPortRan
      * 
      */
     @JsonIgnore
-    public void setFrom(Integer from) {
+    public void setFrom(Number from) {
         this.from = from;
     }
 
-    public NetworkAclEntryPortRange withFrom(Integer from) {
+    public NetworkAclEntryPortRange withFrom(Number from) {
         this.from = from;
         return this;
     }
@@ -69,7 +69,7 @@ public class NetworkAclEntryPortRange implements Property<NetworkAclEntryPortRan
      * 
      */
     @JsonIgnore
-    public Integer getTo() {
+    public Number getTo() {
         return to;
     }
 
@@ -78,11 +78,11 @@ public class NetworkAclEntryPortRange implements Property<NetworkAclEntryPortRan
      * 
      */
     @JsonIgnore
-    public void setTo(Integer to) {
+    public void setTo(Number to) {
         this.to = to;
     }
 
-    public NetworkAclEntryPortRange withTo(Integer to) {
+    public NetworkAclEntryPortRange withTo(Number to) {
         this.to = to;
         return this;
     }

@@ -41,84 +41,84 @@ public class BudgetCostTypes implements Property<BudgetCostTypes>
      */
     @JsonProperty("IncludeSupport")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includesupport")
-    private Boolean includeSupport;
+    private CharSequence includeSupport;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includeothersubscription
      * 
      */
     @JsonProperty("IncludeOtherSubscription")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includeothersubscription")
-    private Boolean includeOtherSubscription;
+    private CharSequence includeOtherSubscription;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includetax
      * 
      */
     @JsonProperty("IncludeTax")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includetax")
-    private Boolean includeTax;
+    private CharSequence includeTax;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includesubscription
      * 
      */
     @JsonProperty("IncludeSubscription")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includesubscription")
-    private Boolean includeSubscription;
+    private CharSequence includeSubscription;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-useblended
      * 
      */
     @JsonProperty("UseBlended")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-useblended")
-    private Boolean useBlended;
+    private CharSequence useBlended;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includeupfront
      * 
      */
     @JsonProperty("IncludeUpfront")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includeupfront")
-    private Boolean includeUpfront;
+    private CharSequence includeUpfront;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includediscount
      * 
      */
     @JsonProperty("IncludeDiscount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includediscount")
-    private Boolean includeDiscount;
+    private CharSequence includeDiscount;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includecredit
      * 
      */
     @JsonProperty("IncludeCredit")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includecredit")
-    private Boolean includeCredit;
+    private CharSequence includeCredit;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includerecurring
      * 
      */
     @JsonProperty("IncludeRecurring")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includerecurring")
-    private Boolean includeRecurring;
+    private CharSequence includeRecurring;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-useamortized
      * 
      */
     @JsonProperty("UseAmortized")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-useamortized")
-    private Boolean useAmortized;
+    private CharSequence useAmortized;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includerefund
      * 
      */
     @JsonProperty("IncludeRefund")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includerefund")
-    private Boolean includeRefund;
+    private CharSequence includeRefund;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includesupport
      * 
      */
     @JsonIgnore
-    public Boolean getIncludeSupport() {
+    public CharSequence getIncludeSupport() {
         return includeSupport;
     }
 
@@ -127,11 +127,11 @@ public class BudgetCostTypes implements Property<BudgetCostTypes>
      * 
      */
     @JsonIgnore
-    public void setIncludeSupport(Boolean includeSupport) {
+    public void setIncludeSupport(CharSequence includeSupport) {
         this.includeSupport = includeSupport;
     }
 
-    public BudgetCostTypes withIncludeSupport(Boolean includeSupport) {
+    public BudgetCostTypes withIncludeSupport(CharSequence includeSupport) {
         this.includeSupport = includeSupport;
         return this;
     }
@@ -141,7 +141,7 @@ public class BudgetCostTypes implements Property<BudgetCostTypes>
      * 
      */
     @JsonIgnore
-    public Boolean getIncludeOtherSubscription() {
+    public CharSequence getIncludeOtherSubscription() {
         return includeOtherSubscription;
     }
 
@@ -150,11 +150,11 @@ public class BudgetCostTypes implements Property<BudgetCostTypes>
      * 
      */
     @JsonIgnore
-    public void setIncludeOtherSubscription(Boolean includeOtherSubscription) {
+    public void setIncludeOtherSubscription(CharSequence includeOtherSubscription) {
         this.includeOtherSubscription = includeOtherSubscription;
     }
 
-    public BudgetCostTypes withIncludeOtherSubscription(Boolean includeOtherSubscription) {
+    public BudgetCostTypes withIncludeOtherSubscription(CharSequence includeOtherSubscription) {
         this.includeOtherSubscription = includeOtherSubscription;
         return this;
     }
@@ -164,7 +164,7 @@ public class BudgetCostTypes implements Property<BudgetCostTypes>
      * 
      */
     @JsonIgnore
-    public Boolean getIncludeTax() {
+    public CharSequence getIncludeTax() {
         return includeTax;
     }
 
@@ -173,11 +173,11 @@ public class BudgetCostTypes implements Property<BudgetCostTypes>
      * 
      */
     @JsonIgnore
-    public void setIncludeTax(Boolean includeTax) {
+    public void setIncludeTax(CharSequence includeTax) {
         this.includeTax = includeTax;
     }
 
-    public BudgetCostTypes withIncludeTax(Boolean includeTax) {
+    public BudgetCostTypes withIncludeTax(CharSequence includeTax) {
         this.includeTax = includeTax;
         return this;
     }
@@ -187,7 +187,7 @@ public class BudgetCostTypes implements Property<BudgetCostTypes>
      * 
      */
     @JsonIgnore
-    public Boolean getIncludeSubscription() {
+    public CharSequence getIncludeSubscription() {
         return includeSubscription;
     }
 
@@ -196,11 +196,11 @@ public class BudgetCostTypes implements Property<BudgetCostTypes>
      * 
      */
     @JsonIgnore
-    public void setIncludeSubscription(Boolean includeSubscription) {
+    public void setIncludeSubscription(CharSequence includeSubscription) {
         this.includeSubscription = includeSubscription;
     }
 
-    public BudgetCostTypes withIncludeSubscription(Boolean includeSubscription) {
+    public BudgetCostTypes withIncludeSubscription(CharSequence includeSubscription) {
         this.includeSubscription = includeSubscription;
         return this;
     }
@@ -210,7 +210,7 @@ public class BudgetCostTypes implements Property<BudgetCostTypes>
      * 
      */
     @JsonIgnore
-    public Boolean getUseBlended() {
+    public CharSequence getUseBlended() {
         return useBlended;
     }
 
@@ -219,11 +219,11 @@ public class BudgetCostTypes implements Property<BudgetCostTypes>
      * 
      */
     @JsonIgnore
-    public void setUseBlended(Boolean useBlended) {
+    public void setUseBlended(CharSequence useBlended) {
         this.useBlended = useBlended;
     }
 
-    public BudgetCostTypes withUseBlended(Boolean useBlended) {
+    public BudgetCostTypes withUseBlended(CharSequence useBlended) {
         this.useBlended = useBlended;
         return this;
     }
@@ -233,7 +233,7 @@ public class BudgetCostTypes implements Property<BudgetCostTypes>
      * 
      */
     @JsonIgnore
-    public Boolean getIncludeUpfront() {
+    public CharSequence getIncludeUpfront() {
         return includeUpfront;
     }
 
@@ -242,11 +242,11 @@ public class BudgetCostTypes implements Property<BudgetCostTypes>
      * 
      */
     @JsonIgnore
-    public void setIncludeUpfront(Boolean includeUpfront) {
+    public void setIncludeUpfront(CharSequence includeUpfront) {
         this.includeUpfront = includeUpfront;
     }
 
-    public BudgetCostTypes withIncludeUpfront(Boolean includeUpfront) {
+    public BudgetCostTypes withIncludeUpfront(CharSequence includeUpfront) {
         this.includeUpfront = includeUpfront;
         return this;
     }
@@ -256,7 +256,7 @@ public class BudgetCostTypes implements Property<BudgetCostTypes>
      * 
      */
     @JsonIgnore
-    public Boolean getIncludeDiscount() {
+    public CharSequence getIncludeDiscount() {
         return includeDiscount;
     }
 
@@ -265,11 +265,11 @@ public class BudgetCostTypes implements Property<BudgetCostTypes>
      * 
      */
     @JsonIgnore
-    public void setIncludeDiscount(Boolean includeDiscount) {
+    public void setIncludeDiscount(CharSequence includeDiscount) {
         this.includeDiscount = includeDiscount;
     }
 
-    public BudgetCostTypes withIncludeDiscount(Boolean includeDiscount) {
+    public BudgetCostTypes withIncludeDiscount(CharSequence includeDiscount) {
         this.includeDiscount = includeDiscount;
         return this;
     }
@@ -279,7 +279,7 @@ public class BudgetCostTypes implements Property<BudgetCostTypes>
      * 
      */
     @JsonIgnore
-    public Boolean getIncludeCredit() {
+    public CharSequence getIncludeCredit() {
         return includeCredit;
     }
 
@@ -288,11 +288,11 @@ public class BudgetCostTypes implements Property<BudgetCostTypes>
      * 
      */
     @JsonIgnore
-    public void setIncludeCredit(Boolean includeCredit) {
+    public void setIncludeCredit(CharSequence includeCredit) {
         this.includeCredit = includeCredit;
     }
 
-    public BudgetCostTypes withIncludeCredit(Boolean includeCredit) {
+    public BudgetCostTypes withIncludeCredit(CharSequence includeCredit) {
         this.includeCredit = includeCredit;
         return this;
     }
@@ -302,7 +302,7 @@ public class BudgetCostTypes implements Property<BudgetCostTypes>
      * 
      */
     @JsonIgnore
-    public Boolean getIncludeRecurring() {
+    public CharSequence getIncludeRecurring() {
         return includeRecurring;
     }
 
@@ -311,11 +311,11 @@ public class BudgetCostTypes implements Property<BudgetCostTypes>
      * 
      */
     @JsonIgnore
-    public void setIncludeRecurring(Boolean includeRecurring) {
+    public void setIncludeRecurring(CharSequence includeRecurring) {
         this.includeRecurring = includeRecurring;
     }
 
-    public BudgetCostTypes withIncludeRecurring(Boolean includeRecurring) {
+    public BudgetCostTypes withIncludeRecurring(CharSequence includeRecurring) {
         this.includeRecurring = includeRecurring;
         return this;
     }
@@ -325,7 +325,7 @@ public class BudgetCostTypes implements Property<BudgetCostTypes>
      * 
      */
     @JsonIgnore
-    public Boolean getUseAmortized() {
+    public CharSequence getUseAmortized() {
         return useAmortized;
     }
 
@@ -334,11 +334,11 @@ public class BudgetCostTypes implements Property<BudgetCostTypes>
      * 
      */
     @JsonIgnore
-    public void setUseAmortized(Boolean useAmortized) {
+    public void setUseAmortized(CharSequence useAmortized) {
         this.useAmortized = useAmortized;
     }
 
-    public BudgetCostTypes withUseAmortized(Boolean useAmortized) {
+    public BudgetCostTypes withUseAmortized(CharSequence useAmortized) {
         this.useAmortized = useAmortized;
         return this;
     }
@@ -348,7 +348,7 @@ public class BudgetCostTypes implements Property<BudgetCostTypes>
      * 
      */
     @JsonIgnore
-    public Boolean getIncludeRefund() {
+    public CharSequence getIncludeRefund() {
         return includeRefund;
     }
 
@@ -357,11 +357,11 @@ public class BudgetCostTypes implements Property<BudgetCostTypes>
      * 
      */
     @JsonIgnore
-    public void setIncludeRefund(Boolean includeRefund) {
+    public void setIncludeRefund(CharSequence includeRefund) {
         this.includeRefund = includeRefund;
     }
 
-    public BudgetCostTypes withIncludeRefund(Boolean includeRefund) {
+    public BudgetCostTypes withIncludeRefund(CharSequence includeRefund) {
         this.includeRefund = includeRefund;
         return this;
     }

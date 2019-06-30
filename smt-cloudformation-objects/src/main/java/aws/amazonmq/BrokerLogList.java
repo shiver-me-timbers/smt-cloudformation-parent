@@ -32,21 +32,21 @@ public class BrokerLogList implements Property<BrokerLogList>
      */
     @JsonProperty("Audit")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-loglist.html#cfn-amazonmq-broker-loglist-audit")
-    private Boolean audit;
+    private CharSequence audit;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-loglist.html#cfn-amazonmq-broker-loglist-general
      * 
      */
     @JsonProperty("General")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-loglist.html#cfn-amazonmq-broker-loglist-general")
-    private Boolean general;
+    private CharSequence general;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-loglist.html#cfn-amazonmq-broker-loglist-audit
      * 
      */
     @JsonIgnore
-    public Boolean getAudit() {
+    public CharSequence getAudit() {
         return audit;
     }
 
@@ -55,11 +55,11 @@ public class BrokerLogList implements Property<BrokerLogList>
      * 
      */
     @JsonIgnore
-    public void setAudit(Boolean audit) {
+    public void setAudit(CharSequence audit) {
         this.audit = audit;
     }
 
-    public BrokerLogList withAudit(Boolean audit) {
+    public BrokerLogList withAudit(CharSequence audit) {
         this.audit = audit;
         return this;
     }
@@ -69,7 +69,7 @@ public class BrokerLogList implements Property<BrokerLogList>
      * 
      */
     @JsonIgnore
-    public Boolean getGeneral() {
+    public CharSequence getGeneral() {
         return general;
     }
 
@@ -78,11 +78,11 @@ public class BrokerLogList implements Property<BrokerLogList>
      * 
      */
     @JsonIgnore
-    public void setGeneral(Boolean general) {
+    public void setGeneral(CharSequence general) {
         this.general = general;
     }
 
-    public BrokerLogList withGeneral(Boolean general) {
+    public BrokerLogList withGeneral(CharSequence general) {
         this.general = general;
         return this;
     }

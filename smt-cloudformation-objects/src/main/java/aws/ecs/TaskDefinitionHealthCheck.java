@@ -46,28 +46,28 @@ public class TaskDefinitionHealthCheck implements Property<TaskDefinitionHealthC
      */
     @JsonProperty("Interval")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html#cfn-ecs-taskdefinition-healthcheck-interval")
-    private Integer interval;
+    private Number interval;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html#cfn-ecs-taskdefinition-healthcheck-retries
      * 
      */
     @JsonProperty("Retries")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html#cfn-ecs-taskdefinition-healthcheck-retries")
-    private Integer retries;
+    private Number retries;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html#cfn-ecs-taskdefinition-healthcheck-startperiod
      * 
      */
     @JsonProperty("StartPeriod")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html#cfn-ecs-taskdefinition-healthcheck-startperiod")
-    private Integer startPeriod;
+    private Number startPeriod;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html#cfn-ecs-taskdefinition-healthcheck-timeout
      * 
      */
     @JsonProperty("Timeout")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html#cfn-ecs-taskdefinition-healthcheck-timeout")
-    private Integer timeout;
+    private Number timeout;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html#cfn-ecs-taskdefinition-healthcheck-command
@@ -97,7 +97,7 @@ public class TaskDefinitionHealthCheck implements Property<TaskDefinitionHealthC
      * 
      */
     @JsonIgnore
-    public Integer getInterval() {
+    public Number getInterval() {
         return interval;
     }
 
@@ -106,11 +106,11 @@ public class TaskDefinitionHealthCheck implements Property<TaskDefinitionHealthC
      * 
      */
     @JsonIgnore
-    public void setInterval(Integer interval) {
+    public void setInterval(Number interval) {
         this.interval = interval;
     }
 
-    public TaskDefinitionHealthCheck withInterval(Integer interval) {
+    public TaskDefinitionHealthCheck withInterval(Number interval) {
         this.interval = interval;
         return this;
     }
@@ -120,7 +120,7 @@ public class TaskDefinitionHealthCheck implements Property<TaskDefinitionHealthC
      * 
      */
     @JsonIgnore
-    public Integer getRetries() {
+    public Number getRetries() {
         return retries;
     }
 
@@ -129,11 +129,11 @@ public class TaskDefinitionHealthCheck implements Property<TaskDefinitionHealthC
      * 
      */
     @JsonIgnore
-    public void setRetries(Integer retries) {
+    public void setRetries(Number retries) {
         this.retries = retries;
     }
 
-    public TaskDefinitionHealthCheck withRetries(Integer retries) {
+    public TaskDefinitionHealthCheck withRetries(Number retries) {
         this.retries = retries;
         return this;
     }
@@ -143,7 +143,7 @@ public class TaskDefinitionHealthCheck implements Property<TaskDefinitionHealthC
      * 
      */
     @JsonIgnore
-    public Integer getStartPeriod() {
+    public Number getStartPeriod() {
         return startPeriod;
     }
 
@@ -152,11 +152,11 @@ public class TaskDefinitionHealthCheck implements Property<TaskDefinitionHealthC
      * 
      */
     @JsonIgnore
-    public void setStartPeriod(Integer startPeriod) {
+    public void setStartPeriod(Number startPeriod) {
         this.startPeriod = startPeriod;
     }
 
-    public TaskDefinitionHealthCheck withStartPeriod(Integer startPeriod) {
+    public TaskDefinitionHealthCheck withStartPeriod(Number startPeriod) {
         this.startPeriod = startPeriod;
         return this;
     }
@@ -166,7 +166,7 @@ public class TaskDefinitionHealthCheck implements Property<TaskDefinitionHealthC
      * 
      */
     @JsonIgnore
-    public Integer getTimeout() {
+    public Number getTimeout() {
         return timeout;
     }
 
@@ -175,11 +175,11 @@ public class TaskDefinitionHealthCheck implements Property<TaskDefinitionHealthC
      * 
      */
     @JsonIgnore
-    public void setTimeout(Integer timeout) {
+    public void setTimeout(Number timeout) {
         this.timeout = timeout;
     }
 
-    public TaskDefinitionHealthCheck withTimeout(Integer timeout) {
+    public TaskDefinitionHealthCheck withTimeout(Number timeout) {
         this.timeout = timeout;
         return this;
     }

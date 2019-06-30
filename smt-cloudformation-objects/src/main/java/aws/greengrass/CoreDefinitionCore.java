@@ -34,7 +34,7 @@ public class CoreDefinitionCore implements Property<CoreDefinitionCore>
      */
     @JsonProperty("SyncShadow")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-coredefinition-core.html#cfn-greengrass-coredefinition-core-syncshadow")
-    private Boolean syncShadow;
+    private CharSequence syncShadow;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-coredefinition-core.html#cfn-greengrass-coredefinition-core-thingarn
      * 
@@ -62,7 +62,7 @@ public class CoreDefinitionCore implements Property<CoreDefinitionCore>
      * 
      */
     @JsonIgnore
-    public Boolean getSyncShadow() {
+    public CharSequence getSyncShadow() {
         return syncShadow;
     }
 
@@ -71,11 +71,11 @@ public class CoreDefinitionCore implements Property<CoreDefinitionCore>
      * 
      */
     @JsonIgnore
-    public void setSyncShadow(Boolean syncShadow) {
+    public void setSyncShadow(CharSequence syncShadow) {
         this.syncShadow = syncShadow;
     }
 
-    public CoreDefinitionCore withSyncShadow(Boolean syncShadow) {
+    public CoreDefinitionCore withSyncShadow(CharSequence syncShadow) {
         this.syncShadow = syncShadow;
         return this;
     }

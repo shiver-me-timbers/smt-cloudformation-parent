@@ -37,14 +37,14 @@ public class LayerVolumeConfiguration implements Property<LayerVolumeConfigurati
      */
     @JsonProperty("Encrypted")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volumeconfiguration-encrypted")
-    private Boolean encrypted;
+    private CharSequence encrypted;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-iops
      * 
      */
     @JsonProperty("Iops")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-iops")
-    private Integer iops;
+    private Number iops;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-mountpoint
      * 
@@ -58,21 +58,21 @@ public class LayerVolumeConfiguration implements Property<LayerVolumeConfigurati
      */
     @JsonProperty("NumberOfDisks")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-numberofdisks")
-    private Integer numberOfDisks;
+    private Number numberOfDisks;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-raidlevel
      * 
      */
     @JsonProperty("RaidLevel")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-raidlevel")
-    private Integer raidLevel;
+    private Number raidLevel;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-size
      * 
      */
     @JsonProperty("Size")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-size")
-    private Integer size;
+    private Number size;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-volumetype
      * 
@@ -86,7 +86,7 @@ public class LayerVolumeConfiguration implements Property<LayerVolumeConfigurati
      * 
      */
     @JsonIgnore
-    public Boolean getEncrypted() {
+    public CharSequence getEncrypted() {
         return encrypted;
     }
 
@@ -95,11 +95,11 @@ public class LayerVolumeConfiguration implements Property<LayerVolumeConfigurati
      * 
      */
     @JsonIgnore
-    public void setEncrypted(Boolean encrypted) {
+    public void setEncrypted(CharSequence encrypted) {
         this.encrypted = encrypted;
     }
 
-    public LayerVolumeConfiguration withEncrypted(Boolean encrypted) {
+    public LayerVolumeConfiguration withEncrypted(CharSequence encrypted) {
         this.encrypted = encrypted;
         return this;
     }
@@ -109,7 +109,7 @@ public class LayerVolumeConfiguration implements Property<LayerVolumeConfigurati
      * 
      */
     @JsonIgnore
-    public Integer getIops() {
+    public Number getIops() {
         return iops;
     }
 
@@ -118,11 +118,11 @@ public class LayerVolumeConfiguration implements Property<LayerVolumeConfigurati
      * 
      */
     @JsonIgnore
-    public void setIops(Integer iops) {
+    public void setIops(Number iops) {
         this.iops = iops;
     }
 
-    public LayerVolumeConfiguration withIops(Integer iops) {
+    public LayerVolumeConfiguration withIops(Number iops) {
         this.iops = iops;
         return this;
     }
@@ -155,7 +155,7 @@ public class LayerVolumeConfiguration implements Property<LayerVolumeConfigurati
      * 
      */
     @JsonIgnore
-    public Integer getNumberOfDisks() {
+    public Number getNumberOfDisks() {
         return numberOfDisks;
     }
 
@@ -164,11 +164,11 @@ public class LayerVolumeConfiguration implements Property<LayerVolumeConfigurati
      * 
      */
     @JsonIgnore
-    public void setNumberOfDisks(Integer numberOfDisks) {
+    public void setNumberOfDisks(Number numberOfDisks) {
         this.numberOfDisks = numberOfDisks;
     }
 
-    public LayerVolumeConfiguration withNumberOfDisks(Integer numberOfDisks) {
+    public LayerVolumeConfiguration withNumberOfDisks(Number numberOfDisks) {
         this.numberOfDisks = numberOfDisks;
         return this;
     }
@@ -178,7 +178,7 @@ public class LayerVolumeConfiguration implements Property<LayerVolumeConfigurati
      * 
      */
     @JsonIgnore
-    public Integer getRaidLevel() {
+    public Number getRaidLevel() {
         return raidLevel;
     }
 
@@ -187,11 +187,11 @@ public class LayerVolumeConfiguration implements Property<LayerVolumeConfigurati
      * 
      */
     @JsonIgnore
-    public void setRaidLevel(Integer raidLevel) {
+    public void setRaidLevel(Number raidLevel) {
         this.raidLevel = raidLevel;
     }
 
-    public LayerVolumeConfiguration withRaidLevel(Integer raidLevel) {
+    public LayerVolumeConfiguration withRaidLevel(Number raidLevel) {
         this.raidLevel = raidLevel;
         return this;
     }
@@ -201,7 +201,7 @@ public class LayerVolumeConfiguration implements Property<LayerVolumeConfigurati
      * 
      */
     @JsonIgnore
-    public Integer getSize() {
+    public Number getSize() {
         return size;
     }
 
@@ -210,11 +210,11 @@ public class LayerVolumeConfiguration implements Property<LayerVolumeConfigurati
      * 
      */
     @JsonIgnore
-    public void setSize(Integer size) {
+    public void setSize(Number size) {
         this.size = size;
     }
 
-    public LayerVolumeConfiguration withSize(Integer size) {
+    public LayerVolumeConfiguration withSize(Number size) {
         this.size = size;
         return this;
     }

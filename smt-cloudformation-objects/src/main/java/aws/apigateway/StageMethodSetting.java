@@ -40,28 +40,28 @@ public class StageMethodSetting implements Property<StageMethodSetting>
      */
     @JsonProperty("CacheDataEncrypted")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-stage-methodsetting.html#cfn-apigateway-stage-methodsetting-cachedataencrypted")
-    private Boolean cacheDataEncrypted;
+    private CharSequence cacheDataEncrypted;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-stage-methodsetting.html#cfn-apigateway-stage-methodsetting-cachettlinseconds
      * 
      */
     @JsonProperty("CacheTtlInSeconds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-stage-methodsetting.html#cfn-apigateway-stage-methodsetting-cachettlinseconds")
-    private Integer cacheTtlInSeconds;
+    private Number cacheTtlInSeconds;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-stage-methodsetting.html#cfn-apigateway-stage-methodsetting-cachingenabled
      * 
      */
     @JsonProperty("CachingEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-stage-methodsetting.html#cfn-apigateway-stage-methodsetting-cachingenabled")
-    private Boolean cachingEnabled;
+    private CharSequence cachingEnabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-stage-methodsetting.html#cfn-apigateway-stage-methodsetting-datatraceenabled
      * 
      */
     @JsonProperty("DataTraceEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-stage-methodsetting.html#cfn-apigateway-stage-methodsetting-datatraceenabled")
-    private Boolean dataTraceEnabled;
+    private CharSequence dataTraceEnabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-stage-methodsetting.html#cfn-apigateway-stage-methodsetting-httpmethod
      * 
@@ -82,7 +82,7 @@ public class StageMethodSetting implements Property<StageMethodSetting>
      */
     @JsonProperty("MetricsEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-stage-methodsetting.html#cfn-apigateway-stage-methodsetting-metricsenabled")
-    private Boolean metricsEnabled;
+    private CharSequence metricsEnabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-stage-methodsetting.html#cfn-apigateway-stage-methodsetting-resourcepath
      * 
@@ -96,21 +96,21 @@ public class StageMethodSetting implements Property<StageMethodSetting>
      */
     @JsonProperty("ThrottlingBurstLimit")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-stage-methodsetting.html#cfn-apigateway-stage-methodsetting-throttlingburstlimit")
-    private Integer throttlingBurstLimit;
+    private Number throttlingBurstLimit;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-stage-methodsetting.html#cfn-apigateway-stage-methodsetting-throttlingratelimit
      * 
      */
     @JsonProperty("ThrottlingRateLimit")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-stage-methodsetting.html#cfn-apigateway-stage-methodsetting-throttlingratelimit")
-    private Double throttlingRateLimit;
+    private Number throttlingRateLimit;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-stage-methodsetting.html#cfn-apigateway-stage-methodsetting-cachedataencrypted
      * 
      */
     @JsonIgnore
-    public Boolean getCacheDataEncrypted() {
+    public CharSequence getCacheDataEncrypted() {
         return cacheDataEncrypted;
     }
 
@@ -119,11 +119,11 @@ public class StageMethodSetting implements Property<StageMethodSetting>
      * 
      */
     @JsonIgnore
-    public void setCacheDataEncrypted(Boolean cacheDataEncrypted) {
+    public void setCacheDataEncrypted(CharSequence cacheDataEncrypted) {
         this.cacheDataEncrypted = cacheDataEncrypted;
     }
 
-    public StageMethodSetting withCacheDataEncrypted(Boolean cacheDataEncrypted) {
+    public StageMethodSetting withCacheDataEncrypted(CharSequence cacheDataEncrypted) {
         this.cacheDataEncrypted = cacheDataEncrypted;
         return this;
     }
@@ -133,7 +133,7 @@ public class StageMethodSetting implements Property<StageMethodSetting>
      * 
      */
     @JsonIgnore
-    public Integer getCacheTtlInSeconds() {
+    public Number getCacheTtlInSeconds() {
         return cacheTtlInSeconds;
     }
 
@@ -142,11 +142,11 @@ public class StageMethodSetting implements Property<StageMethodSetting>
      * 
      */
     @JsonIgnore
-    public void setCacheTtlInSeconds(Integer cacheTtlInSeconds) {
+    public void setCacheTtlInSeconds(Number cacheTtlInSeconds) {
         this.cacheTtlInSeconds = cacheTtlInSeconds;
     }
 
-    public StageMethodSetting withCacheTtlInSeconds(Integer cacheTtlInSeconds) {
+    public StageMethodSetting withCacheTtlInSeconds(Number cacheTtlInSeconds) {
         this.cacheTtlInSeconds = cacheTtlInSeconds;
         return this;
     }
@@ -156,7 +156,7 @@ public class StageMethodSetting implements Property<StageMethodSetting>
      * 
      */
     @JsonIgnore
-    public Boolean getCachingEnabled() {
+    public CharSequence getCachingEnabled() {
         return cachingEnabled;
     }
 
@@ -165,11 +165,11 @@ public class StageMethodSetting implements Property<StageMethodSetting>
      * 
      */
     @JsonIgnore
-    public void setCachingEnabled(Boolean cachingEnabled) {
+    public void setCachingEnabled(CharSequence cachingEnabled) {
         this.cachingEnabled = cachingEnabled;
     }
 
-    public StageMethodSetting withCachingEnabled(Boolean cachingEnabled) {
+    public StageMethodSetting withCachingEnabled(CharSequence cachingEnabled) {
         this.cachingEnabled = cachingEnabled;
         return this;
     }
@@ -179,7 +179,7 @@ public class StageMethodSetting implements Property<StageMethodSetting>
      * 
      */
     @JsonIgnore
-    public Boolean getDataTraceEnabled() {
+    public CharSequence getDataTraceEnabled() {
         return dataTraceEnabled;
     }
 
@@ -188,11 +188,11 @@ public class StageMethodSetting implements Property<StageMethodSetting>
      * 
      */
     @JsonIgnore
-    public void setDataTraceEnabled(Boolean dataTraceEnabled) {
+    public void setDataTraceEnabled(CharSequence dataTraceEnabled) {
         this.dataTraceEnabled = dataTraceEnabled;
     }
 
-    public StageMethodSetting withDataTraceEnabled(Boolean dataTraceEnabled) {
+    public StageMethodSetting withDataTraceEnabled(CharSequence dataTraceEnabled) {
         this.dataTraceEnabled = dataTraceEnabled;
         return this;
     }
@@ -248,7 +248,7 @@ public class StageMethodSetting implements Property<StageMethodSetting>
      * 
      */
     @JsonIgnore
-    public Boolean getMetricsEnabled() {
+    public CharSequence getMetricsEnabled() {
         return metricsEnabled;
     }
 
@@ -257,11 +257,11 @@ public class StageMethodSetting implements Property<StageMethodSetting>
      * 
      */
     @JsonIgnore
-    public void setMetricsEnabled(Boolean metricsEnabled) {
+    public void setMetricsEnabled(CharSequence metricsEnabled) {
         this.metricsEnabled = metricsEnabled;
     }
 
-    public StageMethodSetting withMetricsEnabled(Boolean metricsEnabled) {
+    public StageMethodSetting withMetricsEnabled(CharSequence metricsEnabled) {
         this.metricsEnabled = metricsEnabled;
         return this;
     }
@@ -294,7 +294,7 @@ public class StageMethodSetting implements Property<StageMethodSetting>
      * 
      */
     @JsonIgnore
-    public Integer getThrottlingBurstLimit() {
+    public Number getThrottlingBurstLimit() {
         return throttlingBurstLimit;
     }
 
@@ -303,11 +303,11 @@ public class StageMethodSetting implements Property<StageMethodSetting>
      * 
      */
     @JsonIgnore
-    public void setThrottlingBurstLimit(Integer throttlingBurstLimit) {
+    public void setThrottlingBurstLimit(Number throttlingBurstLimit) {
         this.throttlingBurstLimit = throttlingBurstLimit;
     }
 
-    public StageMethodSetting withThrottlingBurstLimit(Integer throttlingBurstLimit) {
+    public StageMethodSetting withThrottlingBurstLimit(Number throttlingBurstLimit) {
         this.throttlingBurstLimit = throttlingBurstLimit;
         return this;
     }
@@ -317,7 +317,7 @@ public class StageMethodSetting implements Property<StageMethodSetting>
      * 
      */
     @JsonIgnore
-    public Double getThrottlingRateLimit() {
+    public Number getThrottlingRateLimit() {
         return throttlingRateLimit;
     }
 
@@ -326,11 +326,11 @@ public class StageMethodSetting implements Property<StageMethodSetting>
      * 
      */
     @JsonIgnore
-    public void setThrottlingRateLimit(Double throttlingRateLimit) {
+    public void setThrottlingRateLimit(Number throttlingRateLimit) {
         this.throttlingRateLimit = throttlingRateLimit;
     }
 
-    public StageMethodSetting withThrottlingRateLimit(Double throttlingRateLimit) {
+    public StageMethodSetting withThrottlingRateLimit(Number throttlingRateLimit) {
         this.throttlingRateLimit = throttlingRateLimit;
         return this;
     }

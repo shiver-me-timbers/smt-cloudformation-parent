@@ -31,7 +31,7 @@ public class AccessKey {
      */
     @JsonProperty("Serial")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html#cfn-iam-accesskey-serial")
-    private Integer serial;
+    private Number serial;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html#cfn-iam-accesskey-status
      * 
@@ -52,7 +52,7 @@ public class AccessKey {
      * 
      */
     @JsonIgnore
-    public Integer getSerial() {
+    public Number getSerial() {
         return serial;
     }
 
@@ -61,11 +61,11 @@ public class AccessKey {
      * 
      */
     @JsonIgnore
-    public void setSerial(Integer serial) {
+    public void setSerial(Number serial) {
         this.serial = serial;
     }
 
-    public AccessKey withSerial(Integer serial) {
+    public AccessKey withSerial(Number serial) {
         this.serial = serial;
         return this;
     }

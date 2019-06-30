@@ -31,14 +31,14 @@ public class ApplicationApplicationSnapshotConfiguration implements Property<App
      */
     @JsonProperty("SnapshotsEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-applicationsnapshotconfiguration.html#cfn-kinesisanalyticsv2-application-applicationsnapshotconfiguration-snapshotsenabled")
-    private Boolean snapshotsEnabled;
+    private CharSequence snapshotsEnabled;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-applicationsnapshotconfiguration.html#cfn-kinesisanalyticsv2-application-applicationsnapshotconfiguration-snapshotsenabled
      * 
      */
     @JsonIgnore
-    public Boolean getSnapshotsEnabled() {
+    public CharSequence getSnapshotsEnabled() {
         return snapshotsEnabled;
     }
 
@@ -47,11 +47,11 @@ public class ApplicationApplicationSnapshotConfiguration implements Property<App
      * 
      */
     @JsonIgnore
-    public void setSnapshotsEnabled(Boolean snapshotsEnabled) {
+    public void setSnapshotsEnabled(CharSequence snapshotsEnabled) {
         this.snapshotsEnabled = snapshotsEnabled;
     }
 
-    public ApplicationApplicationSnapshotConfiguration withSnapshotsEnabled(Boolean snapshotsEnabled) {
+    public ApplicationApplicationSnapshotConfiguration withSnapshotsEnabled(CharSequence snapshotsEnabled) {
         this.snapshotsEnabled = snapshotsEnabled;
         return this;
     }

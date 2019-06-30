@@ -47,7 +47,7 @@ public class TopicRuleSqsAction implements Property<TopicRuleSqsAction>
      */
     @JsonProperty("UseBase64")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-sqsaction.html#cfn-iot-topicrule-sqsaction-usebase64")
-    private Boolean useBase64;
+    private CharSequence useBase64;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-sqsaction.html#cfn-iot-topicrule-sqsaction-queueurl
@@ -100,7 +100,7 @@ public class TopicRuleSqsAction implements Property<TopicRuleSqsAction>
      * 
      */
     @JsonIgnore
-    public Boolean getUseBase64() {
+    public CharSequence getUseBase64() {
         return useBase64;
     }
 
@@ -109,11 +109,11 @@ public class TopicRuleSqsAction implements Property<TopicRuleSqsAction>
      * 
      */
     @JsonIgnore
-    public void setUseBase64(Boolean useBase64) {
+    public void setUseBase64(CharSequence useBase64) {
         this.useBase64 = useBase64;
     }
 
-    public TopicRuleSqsAction withUseBase64(Boolean useBase64) {
+    public TopicRuleSqsAction withUseBase64(CharSequence useBase64) {
         this.useBase64 = useBase64;
         return this;
     }

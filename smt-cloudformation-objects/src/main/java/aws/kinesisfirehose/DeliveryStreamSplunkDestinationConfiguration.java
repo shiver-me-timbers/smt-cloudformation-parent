@@ -48,7 +48,7 @@ public class DeliveryStreamSplunkDestinationConfiguration implements Property<De
      */
     @JsonProperty("HECAcknowledgmentTimeoutInSeconds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration-hecacknowledgmenttimeoutinseconds")
-    private Integer hECAcknowledgmentTimeoutInSeconds;
+    private Number hECAcknowledgmentTimeoutInSeconds;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration-hecendpoint
      * 
@@ -137,7 +137,7 @@ public class DeliveryStreamSplunkDestinationConfiguration implements Property<De
      * 
      */
     @JsonIgnore
-    public Integer getHECAcknowledgmentTimeoutInSeconds() {
+    public Number getHECAcknowledgmentTimeoutInSeconds() {
         return hECAcknowledgmentTimeoutInSeconds;
     }
 
@@ -146,11 +146,11 @@ public class DeliveryStreamSplunkDestinationConfiguration implements Property<De
      * 
      */
     @JsonIgnore
-    public void setHECAcknowledgmentTimeoutInSeconds(Integer hECAcknowledgmentTimeoutInSeconds) {
+    public void setHECAcknowledgmentTimeoutInSeconds(Number hECAcknowledgmentTimeoutInSeconds) {
         this.hECAcknowledgmentTimeoutInSeconds = hECAcknowledgmentTimeoutInSeconds;
     }
 
-    public DeliveryStreamSplunkDestinationConfiguration withHECAcknowledgmentTimeoutInSeconds(Integer hECAcknowledgmentTimeoutInSeconds) {
+    public DeliveryStreamSplunkDestinationConfiguration withHECAcknowledgmentTimeoutInSeconds(Number hECAcknowledgmentTimeoutInSeconds) {
         this.hECAcknowledgmentTimeoutInSeconds = hECAcknowledgmentTimeoutInSeconds;
         return this;
     }

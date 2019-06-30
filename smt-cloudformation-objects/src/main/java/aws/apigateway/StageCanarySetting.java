@@ -42,21 +42,21 @@ public class StageCanarySetting implements Property<StageCanarySetting>
      */
     @JsonProperty("PercentTraffic")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-canarysetting.html#cfn-apigateway-stage-canarysetting-percenttraffic")
-    private Double percentTraffic;
+    private Number percentTraffic;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-canarysetting.html#cfn-apigateway-stage-canarysetting-stagevariableoverrides
      * 
      */
     @JsonProperty("StageVariableOverrides")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-canarysetting.html#cfn-apigateway-stage-canarysetting-stagevariableoverrides")
-    private Map<String, String> stageVariableOverrides;
+    private Map<String, CharSequence> stageVariableOverrides;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-canarysetting.html#cfn-apigateway-stage-canarysetting-usestagecache
      * 
      */
     @JsonProperty("UseStageCache")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-canarysetting.html#cfn-apigateway-stage-canarysetting-usestagecache")
-    private Boolean useStageCache;
+    private CharSequence useStageCache;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-canarysetting.html#cfn-apigateway-stage-canarysetting-deploymentid
@@ -86,7 +86,7 @@ public class StageCanarySetting implements Property<StageCanarySetting>
      * 
      */
     @JsonIgnore
-    public Double getPercentTraffic() {
+    public Number getPercentTraffic() {
         return percentTraffic;
     }
 
@@ -95,11 +95,11 @@ public class StageCanarySetting implements Property<StageCanarySetting>
      * 
      */
     @JsonIgnore
-    public void setPercentTraffic(Double percentTraffic) {
+    public void setPercentTraffic(Number percentTraffic) {
         this.percentTraffic = percentTraffic;
     }
 
-    public StageCanarySetting withPercentTraffic(Double percentTraffic) {
+    public StageCanarySetting withPercentTraffic(Number percentTraffic) {
         this.percentTraffic = percentTraffic;
         return this;
     }
@@ -109,7 +109,7 @@ public class StageCanarySetting implements Property<StageCanarySetting>
      * 
      */
     @JsonIgnore
-    public Map<String, String> getStageVariableOverrides() {
+    public Map<String, CharSequence> getStageVariableOverrides() {
         return stageVariableOverrides;
     }
 
@@ -118,11 +118,11 @@ public class StageCanarySetting implements Property<StageCanarySetting>
      * 
      */
     @JsonIgnore
-    public void setStageVariableOverrides(Map<String, String> stageVariableOverrides) {
+    public void setStageVariableOverrides(Map<String, CharSequence> stageVariableOverrides) {
         this.stageVariableOverrides = stageVariableOverrides;
     }
 
-    public StageCanarySetting withStageVariableOverrides(Map<String, String> stageVariableOverrides) {
+    public StageCanarySetting withStageVariableOverrides(Map<String, CharSequence> stageVariableOverrides) {
         this.stageVariableOverrides = stageVariableOverrides;
         return this;
     }
@@ -132,7 +132,7 @@ public class StageCanarySetting implements Property<StageCanarySetting>
      * 
      */
     @JsonIgnore
-    public Boolean getUseStageCache() {
+    public CharSequence getUseStageCache() {
         return useStageCache;
     }
 
@@ -141,11 +141,11 @@ public class StageCanarySetting implements Property<StageCanarySetting>
      * 
      */
     @JsonIgnore
-    public void setUseStageCache(Boolean useStageCache) {
+    public void setUseStageCache(CharSequence useStageCache) {
         this.useStageCache = useStageCache;
     }
 
-    public StageCanarySetting withUseStageCache(Boolean useStageCache) {
+    public StageCanarySetting withUseStageCache(CharSequence useStageCache) {
         this.useStageCache = useStageCache;
         return this;
     }

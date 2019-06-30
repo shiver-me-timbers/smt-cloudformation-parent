@@ -1,6 +1,6 @@
 package aws.fn;
 
-import aws.StringProperty;
+import aws.PrimitiveProperty;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
@@ -9,7 +9,7 @@ import static aws.Strings.toStrings;
 import static java.lang.String.format;
 import static java.util.Arrays.asList;
 
-public class Join extends StringProperty implements StringFunction {
+public class Join extends PrimitiveProperty implements StringFunction {
 
     @JsonProperty("Fn::Join")
     private final List<Object> values;

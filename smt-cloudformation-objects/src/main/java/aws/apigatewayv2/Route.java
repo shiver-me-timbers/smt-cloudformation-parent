@@ -84,7 +84,7 @@ public class Route {
      */
     @JsonProperty("ApiKeyRequired")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-route.html#cfn-apigatewayv2-route-apikeyrequired")
-    private Boolean apiKeyRequired;
+    private CharSequence apiKeyRequired;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-route.html#cfn-apigatewayv2-route-routekey
      * 
@@ -264,7 +264,7 @@ public class Route {
      * 
      */
     @JsonIgnore
-    public Boolean getApiKeyRequired() {
+    public CharSequence getApiKeyRequired() {
         return apiKeyRequired;
     }
 
@@ -273,11 +273,11 @@ public class Route {
      * 
      */
     @JsonIgnore
-    public void setApiKeyRequired(Boolean apiKeyRequired) {
+    public void setApiKeyRequired(CharSequence apiKeyRequired) {
         this.apiKeyRequired = apiKeyRequired;
     }
 
-    public Route withApiKeyRequired(Boolean apiKeyRequired) {
+    public Route withApiKeyRequired(CharSequence apiKeyRequired) {
         this.apiKeyRequired = apiKeyRequired;
         return this;
     }

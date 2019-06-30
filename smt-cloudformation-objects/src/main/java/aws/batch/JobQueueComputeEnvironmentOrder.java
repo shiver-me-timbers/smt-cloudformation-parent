@@ -39,7 +39,7 @@ public class JobQueueComputeEnvironmentOrder implements Property<JobQueueCompute
      */
     @JsonProperty("Order")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobqueue-computeenvironmentorder.html#cfn-batch-jobqueue-computeenvironmentorder-order")
-    private Integer order;
+    private Number order;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobqueue-computeenvironmentorder.html#cfn-batch-jobqueue-computeenvironmentorder-computeenvironment
@@ -69,7 +69,7 @@ public class JobQueueComputeEnvironmentOrder implements Property<JobQueueCompute
      * 
      */
     @JsonIgnore
-    public Integer getOrder() {
+    public Number getOrder() {
         return order;
     }
 
@@ -78,11 +78,11 @@ public class JobQueueComputeEnvironmentOrder implements Property<JobQueueCompute
      * 
      */
     @JsonIgnore
-    public void setOrder(Integer order) {
+    public void setOrder(Number order) {
         this.order = order;
     }
 
-    public JobQueueComputeEnvironmentOrder withOrder(Integer order) {
+    public JobQueueComputeEnvironmentOrder withOrder(Number order) {
         this.order = order;
         return this;
     }

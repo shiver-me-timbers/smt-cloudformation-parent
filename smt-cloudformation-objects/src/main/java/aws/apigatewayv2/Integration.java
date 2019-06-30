@@ -104,7 +104,7 @@ public class Integration {
      */
     @JsonProperty("TimeoutInMillis")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-timeoutinmillis")
-    private Integer timeoutInMillis;
+    private Number timeoutInMillis;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-contenthandlingstrategy
      * 
@@ -339,7 +339,7 @@ public class Integration {
      * 
      */
     @JsonIgnore
-    public Integer getTimeoutInMillis() {
+    public Number getTimeoutInMillis() {
         return timeoutInMillis;
     }
 
@@ -348,11 +348,11 @@ public class Integration {
      * 
      */
     @JsonIgnore
-    public void setTimeoutInMillis(Integer timeoutInMillis) {
+    public void setTimeoutInMillis(Number timeoutInMillis) {
         this.timeoutInMillis = timeoutInMillis;
     }
 
-    public Integration withTimeoutInMillis(Integer timeoutInMillis) {
+    public Integration withTimeoutInMillis(Number timeoutInMillis) {
         this.timeoutInMillis = timeoutInMillis;
         return this;
     }

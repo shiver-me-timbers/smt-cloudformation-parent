@@ -66,14 +66,14 @@ public class HealthCheckHealthCheckConfig implements Property<HealthCheckHealthC
      */
     @JsonProperty("EnableSNI")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-enablesni")
-    private Boolean enableSNI;
+    private CharSequence enableSNI;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-failurethreshold
      * 
      */
     @JsonProperty("FailureThreshold")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-failurethreshold")
-    private Integer failureThreshold;
+    private Number failureThreshold;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-fullyqualifieddomainname
      * 
@@ -87,7 +87,7 @@ public class HealthCheckHealthCheckConfig implements Property<HealthCheckHealthC
      */
     @JsonProperty("HealthThreshold")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-healththreshold")
-    private Integer healthThreshold;
+    private Number healthThreshold;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-ipaddress
      * 
@@ -108,21 +108,21 @@ public class HealthCheckHealthCheckConfig implements Property<HealthCheckHealthC
      */
     @JsonProperty("Inverted")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-inverted")
-    private Boolean inverted;
+    private CharSequence inverted;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-measurelatency
      * 
      */
     @JsonProperty("MeasureLatency")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-measurelatency")
-    private Boolean measureLatency;
+    private CharSequence measureLatency;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-port
      * 
      */
     @JsonProperty("Port")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-port")
-    private Integer port;
+    private Number port;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-regions
      * 
@@ -137,7 +137,7 @@ public class HealthCheckHealthCheckConfig implements Property<HealthCheckHealthC
      */
     @JsonProperty("RequestInterval")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-requestinterval")
-    private Integer requestInterval;
+    private Number requestInterval;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-resourcepath
      * 
@@ -215,7 +215,7 @@ public class HealthCheckHealthCheckConfig implements Property<HealthCheckHealthC
      * 
      */
     @JsonIgnore
-    public Boolean getEnableSNI() {
+    public CharSequence getEnableSNI() {
         return enableSNI;
     }
 
@@ -224,11 +224,11 @@ public class HealthCheckHealthCheckConfig implements Property<HealthCheckHealthC
      * 
      */
     @JsonIgnore
-    public void setEnableSNI(Boolean enableSNI) {
+    public void setEnableSNI(CharSequence enableSNI) {
         this.enableSNI = enableSNI;
     }
 
-    public HealthCheckHealthCheckConfig withEnableSNI(Boolean enableSNI) {
+    public HealthCheckHealthCheckConfig withEnableSNI(CharSequence enableSNI) {
         this.enableSNI = enableSNI;
         return this;
     }
@@ -238,7 +238,7 @@ public class HealthCheckHealthCheckConfig implements Property<HealthCheckHealthC
      * 
      */
     @JsonIgnore
-    public Integer getFailureThreshold() {
+    public Number getFailureThreshold() {
         return failureThreshold;
     }
 
@@ -247,11 +247,11 @@ public class HealthCheckHealthCheckConfig implements Property<HealthCheckHealthC
      * 
      */
     @JsonIgnore
-    public void setFailureThreshold(Integer failureThreshold) {
+    public void setFailureThreshold(Number failureThreshold) {
         this.failureThreshold = failureThreshold;
     }
 
-    public HealthCheckHealthCheckConfig withFailureThreshold(Integer failureThreshold) {
+    public HealthCheckHealthCheckConfig withFailureThreshold(Number failureThreshold) {
         this.failureThreshold = failureThreshold;
         return this;
     }
@@ -284,7 +284,7 @@ public class HealthCheckHealthCheckConfig implements Property<HealthCheckHealthC
      * 
      */
     @JsonIgnore
-    public Integer getHealthThreshold() {
+    public Number getHealthThreshold() {
         return healthThreshold;
     }
 
@@ -293,11 +293,11 @@ public class HealthCheckHealthCheckConfig implements Property<HealthCheckHealthC
      * 
      */
     @JsonIgnore
-    public void setHealthThreshold(Integer healthThreshold) {
+    public void setHealthThreshold(Number healthThreshold) {
         this.healthThreshold = healthThreshold;
     }
 
-    public HealthCheckHealthCheckConfig withHealthThreshold(Integer healthThreshold) {
+    public HealthCheckHealthCheckConfig withHealthThreshold(Number healthThreshold) {
         this.healthThreshold = healthThreshold;
         return this;
     }
@@ -353,7 +353,7 @@ public class HealthCheckHealthCheckConfig implements Property<HealthCheckHealthC
      * 
      */
     @JsonIgnore
-    public Boolean getInverted() {
+    public CharSequence getInverted() {
         return inverted;
     }
 
@@ -362,11 +362,11 @@ public class HealthCheckHealthCheckConfig implements Property<HealthCheckHealthC
      * 
      */
     @JsonIgnore
-    public void setInverted(Boolean inverted) {
+    public void setInverted(CharSequence inverted) {
         this.inverted = inverted;
     }
 
-    public HealthCheckHealthCheckConfig withInverted(Boolean inverted) {
+    public HealthCheckHealthCheckConfig withInverted(CharSequence inverted) {
         this.inverted = inverted;
         return this;
     }
@@ -376,7 +376,7 @@ public class HealthCheckHealthCheckConfig implements Property<HealthCheckHealthC
      * 
      */
     @JsonIgnore
-    public Boolean getMeasureLatency() {
+    public CharSequence getMeasureLatency() {
         return measureLatency;
     }
 
@@ -385,11 +385,11 @@ public class HealthCheckHealthCheckConfig implements Property<HealthCheckHealthC
      * 
      */
     @JsonIgnore
-    public void setMeasureLatency(Boolean measureLatency) {
+    public void setMeasureLatency(CharSequence measureLatency) {
         this.measureLatency = measureLatency;
     }
 
-    public HealthCheckHealthCheckConfig withMeasureLatency(Boolean measureLatency) {
+    public HealthCheckHealthCheckConfig withMeasureLatency(CharSequence measureLatency) {
         this.measureLatency = measureLatency;
         return this;
     }
@@ -399,7 +399,7 @@ public class HealthCheckHealthCheckConfig implements Property<HealthCheckHealthC
      * 
      */
     @JsonIgnore
-    public Integer getPort() {
+    public Number getPort() {
         return port;
     }
 
@@ -408,11 +408,11 @@ public class HealthCheckHealthCheckConfig implements Property<HealthCheckHealthC
      * 
      */
     @JsonIgnore
-    public void setPort(Integer port) {
+    public void setPort(Number port) {
         this.port = port;
     }
 
-    public HealthCheckHealthCheckConfig withPort(Integer port) {
+    public HealthCheckHealthCheckConfig withPort(Number port) {
         this.port = port;
         return this;
     }
@@ -445,7 +445,7 @@ public class HealthCheckHealthCheckConfig implements Property<HealthCheckHealthC
      * 
      */
     @JsonIgnore
-    public Integer getRequestInterval() {
+    public Number getRequestInterval() {
         return requestInterval;
     }
 
@@ -454,11 +454,11 @@ public class HealthCheckHealthCheckConfig implements Property<HealthCheckHealthC
      * 
      */
     @JsonIgnore
-    public void setRequestInterval(Integer requestInterval) {
+    public void setRequestInterval(Number requestInterval) {
         this.requestInterval = requestInterval;
     }
 
-    public HealthCheckHealthCheckConfig withRequestInterval(Integer requestInterval) {
+    public HealthCheckHealthCheckConfig withRequestInterval(Number requestInterval) {
         this.requestInterval = requestInterval;
         return this;
     }

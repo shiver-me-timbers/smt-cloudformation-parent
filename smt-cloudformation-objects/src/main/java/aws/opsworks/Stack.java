@@ -68,7 +68,7 @@ public class Stack {
      */
     @JsonProperty("Attributes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-attributes")
-    private Map<String, String> attributes;
+    private Map<String, CharSequence> attributes;
     /**
      * StackChefConfiguration
      * <p>
@@ -92,7 +92,7 @@ public class Stack {
      */
     @JsonProperty("ClonePermissions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-clonepermissions")
-    private Boolean clonePermissions;
+    private CharSequence clonePermissions;
     /**
      * StackStackConfigurationManager
      * <p>
@@ -224,14 +224,14 @@ public class Stack {
      */
     @JsonProperty("UseCustomCookbooks")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#usecustcookbooks")
-    private Boolean useCustomCookbooks;
+    private CharSequence useCustomCookbooks;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-useopsworkssecuritygroups
      * 
      */
     @JsonProperty("UseOpsworksSecurityGroups")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-useopsworkssecuritygroups")
-    private Boolean useOpsworksSecurityGroups;
+    private CharSequence useOpsworksSecurityGroups;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-vpcid
      * 
@@ -268,7 +268,7 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public Map<String, String> getAttributes() {
+    public Map<String, CharSequence> getAttributes() {
         return attributes;
     }
 
@@ -277,11 +277,11 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public void setAttributes(Map<String, String> attributes) {
+    public void setAttributes(Map<String, CharSequence> attributes) {
         this.attributes = attributes;
     }
 
-    public Stack withAttributes(Map<String, String> attributes) {
+    public Stack withAttributes(Map<String, CharSequence> attributes) {
         this.attributes = attributes;
         return this;
     }
@@ -341,7 +341,7 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public Boolean getClonePermissions() {
+    public CharSequence getClonePermissions() {
         return clonePermissions;
     }
 
@@ -350,11 +350,11 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public void setClonePermissions(Boolean clonePermissions) {
+    public void setClonePermissions(CharSequence clonePermissions) {
         this.clonePermissions = clonePermissions;
     }
 
-    public Stack withClonePermissions(Boolean clonePermissions) {
+    public Stack withClonePermissions(CharSequence clonePermissions) {
         this.clonePermissions = clonePermissions;
         return this;
     }
@@ -763,7 +763,7 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public Boolean getUseCustomCookbooks() {
+    public CharSequence getUseCustomCookbooks() {
         return useCustomCookbooks;
     }
 
@@ -772,11 +772,11 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public void setUseCustomCookbooks(Boolean useCustomCookbooks) {
+    public void setUseCustomCookbooks(CharSequence useCustomCookbooks) {
         this.useCustomCookbooks = useCustomCookbooks;
     }
 
-    public Stack withUseCustomCookbooks(Boolean useCustomCookbooks) {
+    public Stack withUseCustomCookbooks(CharSequence useCustomCookbooks) {
         this.useCustomCookbooks = useCustomCookbooks;
         return this;
     }
@@ -786,7 +786,7 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public Boolean getUseOpsworksSecurityGroups() {
+    public CharSequence getUseOpsworksSecurityGroups() {
         return useOpsworksSecurityGroups;
     }
 
@@ -795,11 +795,11 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public void setUseOpsworksSecurityGroups(Boolean useOpsworksSecurityGroups) {
+    public void setUseOpsworksSecurityGroups(CharSequence useOpsworksSecurityGroups) {
         this.useOpsworksSecurityGroups = useOpsworksSecurityGroups;
     }
 
-    public Stack withUseOpsworksSecurityGroups(Boolean useOpsworksSecurityGroups) {
+    public Stack withUseOpsworksSecurityGroups(CharSequence useOpsworksSecurityGroups) {
         this.useOpsworksSecurityGroups = useOpsworksSecurityGroups;
         return this;
     }

@@ -50,7 +50,7 @@ public class LifecycleHook {
      */
     @JsonProperty("HeartbeatTimeout")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-as-lifecyclehook-heartbeattimeout")
-    private Integer heartbeatTimeout;
+    private Number heartbeatTimeout;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-autoscaling-lifecyclehook-lifecyclehookname
      * 
@@ -138,7 +138,7 @@ public class LifecycleHook {
      * 
      */
     @JsonIgnore
-    public Integer getHeartbeatTimeout() {
+    public Number getHeartbeatTimeout() {
         return heartbeatTimeout;
     }
 
@@ -147,11 +147,11 @@ public class LifecycleHook {
      * 
      */
     @JsonIgnore
-    public void setHeartbeatTimeout(Integer heartbeatTimeout) {
+    public void setHeartbeatTimeout(Number heartbeatTimeout) {
         this.heartbeatTimeout = heartbeatTimeout;
     }
 
-    public LifecycleHook withHeartbeatTimeout(Integer heartbeatTimeout) {
+    public LifecycleHook withHeartbeatTimeout(Number heartbeatTimeout) {
         this.heartbeatTimeout = heartbeatTimeout;
         return this;
     }

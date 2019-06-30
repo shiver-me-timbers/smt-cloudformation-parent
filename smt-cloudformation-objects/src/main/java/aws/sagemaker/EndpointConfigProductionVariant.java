@@ -50,7 +50,7 @@ public class EndpointConfigProductionVariant implements Property<EndpointConfigP
      */
     @JsonProperty("InitialInstanceCount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-endpointconfig-productionvariant.html#cfn-sagemaker-endpointconfig-productionvariant-initialinstancecount")
-    private Integer initialInstanceCount;
+    private Number initialInstanceCount;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-endpointconfig-productionvariant.html#cfn-sagemaker-endpointconfig-productionvariant-instancetype
      * 
@@ -71,7 +71,7 @@ public class EndpointConfigProductionVariant implements Property<EndpointConfigP
      */
     @JsonProperty("InitialVariantWeight")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-endpointconfig-productionvariant.html#cfn-sagemaker-endpointconfig-productionvariant-initialvariantweight")
-    private Double initialVariantWeight;
+    private Number initialVariantWeight;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-endpointconfig-productionvariant.html#cfn-sagemaker-endpointconfig-productionvariant-modelname
@@ -124,7 +124,7 @@ public class EndpointConfigProductionVariant implements Property<EndpointConfigP
      * 
      */
     @JsonIgnore
-    public Integer getInitialInstanceCount() {
+    public Number getInitialInstanceCount() {
         return initialInstanceCount;
     }
 
@@ -133,11 +133,11 @@ public class EndpointConfigProductionVariant implements Property<EndpointConfigP
      * 
      */
     @JsonIgnore
-    public void setInitialInstanceCount(Integer initialInstanceCount) {
+    public void setInitialInstanceCount(Number initialInstanceCount) {
         this.initialInstanceCount = initialInstanceCount;
     }
 
-    public EndpointConfigProductionVariant withInitialInstanceCount(Integer initialInstanceCount) {
+    public EndpointConfigProductionVariant withInitialInstanceCount(Number initialInstanceCount) {
         this.initialInstanceCount = initialInstanceCount;
         return this;
     }
@@ -193,7 +193,7 @@ public class EndpointConfigProductionVariant implements Property<EndpointConfigP
      * 
      */
     @JsonIgnore
-    public Double getInitialVariantWeight() {
+    public Number getInitialVariantWeight() {
         return initialVariantWeight;
     }
 
@@ -202,11 +202,11 @@ public class EndpointConfigProductionVariant implements Property<EndpointConfigP
      * 
      */
     @JsonIgnore
-    public void setInitialVariantWeight(Double initialVariantWeight) {
+    public void setInitialVariantWeight(Number initialVariantWeight) {
         this.initialVariantWeight = initialVariantWeight;
     }
 
-    public EndpointConfigProductionVariant withInitialVariantWeight(Double initialVariantWeight) {
+    public EndpointConfigProductionVariant withInitialVariantWeight(Number initialVariantWeight) {
         this.initialVariantWeight = initialVariantWeight;
         return this;
     }

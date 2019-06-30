@@ -37,7 +37,7 @@ public class Detector {
      */
     @JsonProperty("Enable")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-detector.html#cfn-guardduty-detector-enable")
-    private Boolean enable;
+    private CharSequence enable;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-detector.html#cfn-guardduty-detector-findingpublishingfrequency
@@ -67,7 +67,7 @@ public class Detector {
      * 
      */
     @JsonIgnore
-    public Boolean getEnable() {
+    public CharSequence getEnable() {
         return enable;
     }
 
@@ -76,11 +76,11 @@ public class Detector {
      * 
      */
     @JsonIgnore
-    public void setEnable(Boolean enable) {
+    public void setEnable(CharSequence enable) {
         this.enable = enable;
     }
 
-    public Detector withEnable(Boolean enable) {
+    public Detector withEnable(CharSequence enable) {
         this.enable = enable;
         return this;
     }

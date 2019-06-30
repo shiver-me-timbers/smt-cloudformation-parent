@@ -44,7 +44,7 @@ public class PartitionStorageDescriptor implements Property<PartitionStorageDesc
      */
     @JsonProperty("StoredAsSubDirectories")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-storedassubdirectories")
-    private Boolean storedAsSubDirectories;
+    private CharSequence storedAsSubDirectories;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-parameters
      * 
@@ -81,7 +81,7 @@ public class PartitionStorageDescriptor implements Property<PartitionStorageDesc
      */
     @JsonProperty("NumberOfBuckets")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-numberofbuckets")
-    private Integer numberOfBuckets;
+    private Number numberOfBuckets;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-outputformat
      * 
@@ -118,7 +118,7 @@ public class PartitionStorageDescriptor implements Property<PartitionStorageDesc
      */
     @JsonProperty("Compressed")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-compressed")
-    private Boolean compressed;
+    private CharSequence compressed;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-location
      * 
@@ -132,7 +132,7 @@ public class PartitionStorageDescriptor implements Property<PartitionStorageDesc
      * 
      */
     @JsonIgnore
-    public Boolean getStoredAsSubDirectories() {
+    public CharSequence getStoredAsSubDirectories() {
         return storedAsSubDirectories;
     }
 
@@ -141,11 +141,11 @@ public class PartitionStorageDescriptor implements Property<PartitionStorageDesc
      * 
      */
     @JsonIgnore
-    public void setStoredAsSubDirectories(Boolean storedAsSubDirectories) {
+    public void setStoredAsSubDirectories(CharSequence storedAsSubDirectories) {
         this.storedAsSubDirectories = storedAsSubDirectories;
     }
 
-    public PartitionStorageDescriptor withStoredAsSubDirectories(Boolean storedAsSubDirectories) {
+    public PartitionStorageDescriptor withStoredAsSubDirectories(CharSequence storedAsSubDirectories) {
         this.storedAsSubDirectories = storedAsSubDirectories;
         return this;
     }
@@ -251,7 +251,7 @@ public class PartitionStorageDescriptor implements Property<PartitionStorageDesc
      * 
      */
     @JsonIgnore
-    public Integer getNumberOfBuckets() {
+    public Number getNumberOfBuckets() {
         return numberOfBuckets;
     }
 
@@ -260,11 +260,11 @@ public class PartitionStorageDescriptor implements Property<PartitionStorageDesc
      * 
      */
     @JsonIgnore
-    public void setNumberOfBuckets(Integer numberOfBuckets) {
+    public void setNumberOfBuckets(Number numberOfBuckets) {
         this.numberOfBuckets = numberOfBuckets;
     }
 
-    public PartitionStorageDescriptor withNumberOfBuckets(Integer numberOfBuckets) {
+    public PartitionStorageDescriptor withNumberOfBuckets(Number numberOfBuckets) {
         this.numberOfBuckets = numberOfBuckets;
         return this;
     }
@@ -370,7 +370,7 @@ public class PartitionStorageDescriptor implements Property<PartitionStorageDesc
      * 
      */
     @JsonIgnore
-    public Boolean getCompressed() {
+    public CharSequence getCompressed() {
         return compressed;
     }
 
@@ -379,11 +379,11 @@ public class PartitionStorageDescriptor implements Property<PartitionStorageDesc
      * 
      */
     @JsonIgnore
-    public void setCompressed(Boolean compressed) {
+    public void setCompressed(CharSequence compressed) {
         this.compressed = compressed;
     }
 
-    public PartitionStorageDescriptor withCompressed(Boolean compressed) {
+    public PartitionStorageDescriptor withCompressed(CharSequence compressed) {
         this.compressed = compressed;
         return this;
     }

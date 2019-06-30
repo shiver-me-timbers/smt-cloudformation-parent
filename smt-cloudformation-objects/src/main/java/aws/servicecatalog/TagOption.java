@@ -31,7 +31,7 @@ public class TagOption {
      */
     @JsonProperty("Active")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoption.html#cfn-servicecatalog-tagoption-active")
-    private Boolean active;
+    private CharSequence active;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoption.html#cfn-servicecatalog-tagoption-value
      * 
@@ -52,7 +52,7 @@ public class TagOption {
      * 
      */
     @JsonIgnore
-    public Boolean getActive() {
+    public CharSequence getActive() {
         return active;
     }
 
@@ -61,11 +61,11 @@ public class TagOption {
      * 
      */
     @JsonIgnore
-    public void setActive(Boolean active) {
+    public void setActive(CharSequence active) {
         this.active = active;
     }
 
-    public TagOption withActive(Boolean active) {
+    public TagOption withActive(CharSequence active) {
         this.active = active;
         return this;
     }

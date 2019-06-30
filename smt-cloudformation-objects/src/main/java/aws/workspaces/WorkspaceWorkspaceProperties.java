@@ -42,7 +42,7 @@ public class WorkspaceWorkspaceProperties implements Property<WorkspaceWorkspace
      */
     @JsonProperty("RootVolumeSizeGib")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-workspaces-workspace-workspaceproperties.html#cfn-workspaces-workspace-workspaceproperties-rootvolumesizegib")
-    private Integer rootVolumeSizeGib;
+    private Number rootVolumeSizeGib;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-workspaces-workspace-workspaceproperties.html#cfn-workspaces-workspace-workspaceproperties-runningmode
      * 
@@ -56,14 +56,14 @@ public class WorkspaceWorkspaceProperties implements Property<WorkspaceWorkspace
      */
     @JsonProperty("RunningModeAutoStopTimeoutInMinutes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-workspaces-workspace-workspaceproperties.html#cfn-workspaces-workspace-workspaceproperties-runningmodeautostoptimeoutinminutes")
-    private Integer runningModeAutoStopTimeoutInMinutes;
+    private Number runningModeAutoStopTimeoutInMinutes;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-workspaces-workspace-workspaceproperties.html#cfn-workspaces-workspace-workspaceproperties-uservolumesizegib
      * 
      */
     @JsonProperty("UserVolumeSizeGib")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-workspaces-workspace-workspaceproperties.html#cfn-workspaces-workspace-workspaceproperties-uservolumesizegib")
-    private Integer userVolumeSizeGib;
+    private Number userVolumeSizeGib;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-workspaces-workspace-workspaceproperties.html#cfn-workspaces-workspace-workspaceproperties-computetypename
@@ -93,7 +93,7 @@ public class WorkspaceWorkspaceProperties implements Property<WorkspaceWorkspace
      * 
      */
     @JsonIgnore
-    public Integer getRootVolumeSizeGib() {
+    public Number getRootVolumeSizeGib() {
         return rootVolumeSizeGib;
     }
 
@@ -102,11 +102,11 @@ public class WorkspaceWorkspaceProperties implements Property<WorkspaceWorkspace
      * 
      */
     @JsonIgnore
-    public void setRootVolumeSizeGib(Integer rootVolumeSizeGib) {
+    public void setRootVolumeSizeGib(Number rootVolumeSizeGib) {
         this.rootVolumeSizeGib = rootVolumeSizeGib;
     }
 
-    public WorkspaceWorkspaceProperties withRootVolumeSizeGib(Integer rootVolumeSizeGib) {
+    public WorkspaceWorkspaceProperties withRootVolumeSizeGib(Number rootVolumeSizeGib) {
         this.rootVolumeSizeGib = rootVolumeSizeGib;
         return this;
     }
@@ -139,7 +139,7 @@ public class WorkspaceWorkspaceProperties implements Property<WorkspaceWorkspace
      * 
      */
     @JsonIgnore
-    public Integer getRunningModeAutoStopTimeoutInMinutes() {
+    public Number getRunningModeAutoStopTimeoutInMinutes() {
         return runningModeAutoStopTimeoutInMinutes;
     }
 
@@ -148,11 +148,11 @@ public class WorkspaceWorkspaceProperties implements Property<WorkspaceWorkspace
      * 
      */
     @JsonIgnore
-    public void setRunningModeAutoStopTimeoutInMinutes(Integer runningModeAutoStopTimeoutInMinutes) {
+    public void setRunningModeAutoStopTimeoutInMinutes(Number runningModeAutoStopTimeoutInMinutes) {
         this.runningModeAutoStopTimeoutInMinutes = runningModeAutoStopTimeoutInMinutes;
     }
 
-    public WorkspaceWorkspaceProperties withRunningModeAutoStopTimeoutInMinutes(Integer runningModeAutoStopTimeoutInMinutes) {
+    public WorkspaceWorkspaceProperties withRunningModeAutoStopTimeoutInMinutes(Number runningModeAutoStopTimeoutInMinutes) {
         this.runningModeAutoStopTimeoutInMinutes = runningModeAutoStopTimeoutInMinutes;
         return this;
     }
@@ -162,7 +162,7 @@ public class WorkspaceWorkspaceProperties implements Property<WorkspaceWorkspace
      * 
      */
     @JsonIgnore
-    public Integer getUserVolumeSizeGib() {
+    public Number getUserVolumeSizeGib() {
         return userVolumeSizeGib;
     }
 
@@ -171,11 +171,11 @@ public class WorkspaceWorkspaceProperties implements Property<WorkspaceWorkspace
      * 
      */
     @JsonIgnore
-    public void setUserVolumeSizeGib(Integer userVolumeSizeGib) {
+    public void setUserVolumeSizeGib(Number userVolumeSizeGib) {
         this.userVolumeSizeGib = userVolumeSizeGib;
     }
 
-    public WorkspaceWorkspaceProperties withUserVolumeSizeGib(Integer userVolumeSizeGib) {
+    public WorkspaceWorkspaceProperties withUserVolumeSizeGib(Number userVolumeSizeGib) {
         this.userVolumeSizeGib = userVolumeSizeGib;
         return this;
     }

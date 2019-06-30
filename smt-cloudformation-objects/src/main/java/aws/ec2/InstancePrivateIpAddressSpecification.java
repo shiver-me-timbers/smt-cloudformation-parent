@@ -32,7 +32,7 @@ public class InstancePrivateIpAddressSpecification implements Property<InstanceP
      */
     @JsonProperty("Primary")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-interface-privateipspec.html#cfn-ec2-networkinterface-privateipspecification-primary")
-    private Boolean primary;
+    private CharSequence primary;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-interface-privateipspec.html#cfn-ec2-networkinterface-privateipspecification-privateipaddress
      * 
@@ -46,7 +46,7 @@ public class InstancePrivateIpAddressSpecification implements Property<InstanceP
      * 
      */
     @JsonIgnore
-    public Boolean getPrimary() {
+    public CharSequence getPrimary() {
         return primary;
     }
 
@@ -55,11 +55,11 @@ public class InstancePrivateIpAddressSpecification implements Property<InstanceP
      * 
      */
     @JsonIgnore
-    public void setPrimary(Boolean primary) {
+    public void setPrimary(CharSequence primary) {
         this.primary = primary;
     }
 
-    public InstancePrivateIpAddressSpecification withPrimary(Boolean primary) {
+    public InstancePrivateIpAddressSpecification withPrimary(CharSequence primary) {
         this.primary = primary;
         return this;
     }

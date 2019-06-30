@@ -54,7 +54,7 @@ public class ProjectEnvironment implements Property<ProjectEnvironment>
      */
     @JsonProperty("PrivilegedMode")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-privilegedmode")
-    private Boolean privilegedMode;
+    private CharSequence privilegedMode;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-imagepullcredentialstype
      * 
@@ -144,7 +144,7 @@ public class ProjectEnvironment implements Property<ProjectEnvironment>
      * 
      */
     @JsonIgnore
-    public Boolean getPrivilegedMode() {
+    public CharSequence getPrivilegedMode() {
         return privilegedMode;
     }
 
@@ -153,11 +153,11 @@ public class ProjectEnvironment implements Property<ProjectEnvironment>
      * 
      */
     @JsonIgnore
-    public void setPrivilegedMode(Boolean privilegedMode) {
+    public void setPrivilegedMode(CharSequence privilegedMode) {
         this.privilegedMode = privilegedMode;
     }
 
-    public ProjectEnvironment withPrivilegedMode(Boolean privilegedMode) {
+    public ProjectEnvironment withPrivilegedMode(CharSequence privilegedMode) {
         this.privilegedMode = privilegedMode;
         return this;
     }

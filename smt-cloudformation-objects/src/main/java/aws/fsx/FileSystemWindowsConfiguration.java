@@ -50,14 +50,14 @@ public class FileSystemWindowsConfiguration implements Property<FileSystemWindow
      */
     @JsonProperty("ThroughputCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration.html#cfn-fsx-filesystem-windowsconfiguration-throughputcapacity")
-    private Integer throughputCapacity;
+    private Number throughputCapacity;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration.html#cfn-fsx-filesystem-windowsconfiguration-copytagstobackups
      * 
      */
     @JsonProperty("CopyTagsToBackups")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration.html#cfn-fsx-filesystem-windowsconfiguration-copytagstobackups")
-    private Boolean copyTagsToBackups;
+    private CharSequence copyTagsToBackups;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration.html#cfn-fsx-filesystem-windowsconfiguration-dailyautomaticbackupstarttime
      * 
@@ -71,7 +71,7 @@ public class FileSystemWindowsConfiguration implements Property<FileSystemWindow
      */
     @JsonProperty("AutomaticBackupRetentionDays")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration.html#cfn-fsx-filesystem-windowsconfiguration-automaticbackupretentiondays")
-    private Integer automaticBackupRetentionDays;
+    private Number automaticBackupRetentionDays;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration.html#cfn-fsx-filesystem-windowsconfiguration-weeklymaintenancestarttime
@@ -124,7 +124,7 @@ public class FileSystemWindowsConfiguration implements Property<FileSystemWindow
      * 
      */
     @JsonIgnore
-    public Integer getThroughputCapacity() {
+    public Number getThroughputCapacity() {
         return throughputCapacity;
     }
 
@@ -133,11 +133,11 @@ public class FileSystemWindowsConfiguration implements Property<FileSystemWindow
      * 
      */
     @JsonIgnore
-    public void setThroughputCapacity(Integer throughputCapacity) {
+    public void setThroughputCapacity(Number throughputCapacity) {
         this.throughputCapacity = throughputCapacity;
     }
 
-    public FileSystemWindowsConfiguration withThroughputCapacity(Integer throughputCapacity) {
+    public FileSystemWindowsConfiguration withThroughputCapacity(Number throughputCapacity) {
         this.throughputCapacity = throughputCapacity;
         return this;
     }
@@ -147,7 +147,7 @@ public class FileSystemWindowsConfiguration implements Property<FileSystemWindow
      * 
      */
     @JsonIgnore
-    public Boolean getCopyTagsToBackups() {
+    public CharSequence getCopyTagsToBackups() {
         return copyTagsToBackups;
     }
 
@@ -156,11 +156,11 @@ public class FileSystemWindowsConfiguration implements Property<FileSystemWindow
      * 
      */
     @JsonIgnore
-    public void setCopyTagsToBackups(Boolean copyTagsToBackups) {
+    public void setCopyTagsToBackups(CharSequence copyTagsToBackups) {
         this.copyTagsToBackups = copyTagsToBackups;
     }
 
-    public FileSystemWindowsConfiguration withCopyTagsToBackups(Boolean copyTagsToBackups) {
+    public FileSystemWindowsConfiguration withCopyTagsToBackups(CharSequence copyTagsToBackups) {
         this.copyTagsToBackups = copyTagsToBackups;
         return this;
     }
@@ -193,7 +193,7 @@ public class FileSystemWindowsConfiguration implements Property<FileSystemWindow
      * 
      */
     @JsonIgnore
-    public Integer getAutomaticBackupRetentionDays() {
+    public Number getAutomaticBackupRetentionDays() {
         return automaticBackupRetentionDays;
     }
 
@@ -202,11 +202,11 @@ public class FileSystemWindowsConfiguration implements Property<FileSystemWindow
      * 
      */
     @JsonIgnore
-    public void setAutomaticBackupRetentionDays(Integer automaticBackupRetentionDays) {
+    public void setAutomaticBackupRetentionDays(Number automaticBackupRetentionDays) {
         this.automaticBackupRetentionDays = automaticBackupRetentionDays;
     }
 
-    public FileSystemWindowsConfiguration withAutomaticBackupRetentionDays(Integer automaticBackupRetentionDays) {
+    public FileSystemWindowsConfiguration withAutomaticBackupRetentionDays(Number automaticBackupRetentionDays) {
         this.automaticBackupRetentionDays = automaticBackupRetentionDays;
         return this;
     }

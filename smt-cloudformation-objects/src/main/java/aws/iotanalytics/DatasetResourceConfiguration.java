@@ -32,7 +32,7 @@ public class DatasetResourceConfiguration implements Property<DatasetResourceCon
      */
     @JsonProperty("VolumeSizeInGB")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-resourceconfiguration.html#cfn-iotanalytics-dataset-resourceconfiguration-volumesizeingb")
-    private Integer volumeSizeInGB;
+    private Number volumeSizeInGB;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-resourceconfiguration.html#cfn-iotanalytics-dataset-resourceconfiguration-computetype
      * 
@@ -46,7 +46,7 @@ public class DatasetResourceConfiguration implements Property<DatasetResourceCon
      * 
      */
     @JsonIgnore
-    public Integer getVolumeSizeInGB() {
+    public Number getVolumeSizeInGB() {
         return volumeSizeInGB;
     }
 
@@ -55,11 +55,11 @@ public class DatasetResourceConfiguration implements Property<DatasetResourceCon
      * 
      */
     @JsonIgnore
-    public void setVolumeSizeInGB(Integer volumeSizeInGB) {
+    public void setVolumeSizeInGB(Number volumeSizeInGB) {
         this.volumeSizeInGB = volumeSizeInGB;
     }
 
-    public DatasetResourceConfiguration withVolumeSizeInGB(Integer volumeSizeInGB) {
+    public DatasetResourceConfiguration withVolumeSizeInGB(Number volumeSizeInGB) {
         this.volumeSizeInGB = volumeSizeInGB;
         return this;
     }

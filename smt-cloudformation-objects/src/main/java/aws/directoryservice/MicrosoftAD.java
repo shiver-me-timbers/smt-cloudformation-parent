@@ -36,7 +36,7 @@ public class MicrosoftAD {
      */
     @JsonProperty("CreateAlias")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-createalias")
-    private Boolean createAlias;
+    private CharSequence createAlias;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-edition
      * 
@@ -50,7 +50,7 @@ public class MicrosoftAD {
      */
     @JsonProperty("EnableSso")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-enablesso")
-    private Boolean enableSso;
+    private CharSequence enableSso;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-name
      * 
@@ -87,7 +87,7 @@ public class MicrosoftAD {
      * 
      */
     @JsonIgnore
-    public Boolean getCreateAlias() {
+    public CharSequence getCreateAlias() {
         return createAlias;
     }
 
@@ -96,11 +96,11 @@ public class MicrosoftAD {
      * 
      */
     @JsonIgnore
-    public void setCreateAlias(Boolean createAlias) {
+    public void setCreateAlias(CharSequence createAlias) {
         this.createAlias = createAlias;
     }
 
-    public MicrosoftAD withCreateAlias(Boolean createAlias) {
+    public MicrosoftAD withCreateAlias(CharSequence createAlias) {
         this.createAlias = createAlias;
         return this;
     }
@@ -133,7 +133,7 @@ public class MicrosoftAD {
      * 
      */
     @JsonIgnore
-    public Boolean getEnableSso() {
+    public CharSequence getEnableSso() {
         return enableSso;
     }
 
@@ -142,11 +142,11 @@ public class MicrosoftAD {
      * 
      */
     @JsonIgnore
-    public void setEnableSso(Boolean enableSso) {
+    public void setEnableSso(CharSequence enableSso) {
         this.enableSso = enableSso;
     }
 
-    public MicrosoftAD withEnableSso(Boolean enableSso) {
+    public MicrosoftAD withEnableSso(CharSequence enableSso) {
         this.enableSso = enableSso;
         return this;
     }

@@ -65,14 +65,14 @@ public class LaunchTemplateNetworkInterface implements Property<LaunchTemplateNe
      */
     @JsonProperty("SecondaryPrivateIpAddressCount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-secondaryprivateipaddresscount")
-    private Integer secondaryPrivateIpAddressCount;
+    private Number secondaryPrivateIpAddressCount;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-ipv6addresscount
      * 
      */
     @JsonProperty("Ipv6AddressCount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-ipv6addresscount")
-    private Integer ipv6AddressCount;
+    private Number ipv6AddressCount;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-groups
      * 
@@ -86,7 +86,7 @@ public class LaunchTemplateNetworkInterface implements Property<LaunchTemplateNe
      */
     @JsonProperty("DeviceIndex")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-deviceindex")
-    private Integer deviceIndex;
+    private Number deviceIndex;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-subnetid
      * 
@@ -107,7 +107,7 @@ public class LaunchTemplateNetworkInterface implements Property<LaunchTemplateNe
      */
     @JsonProperty("AssociatePublicIpAddress")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-associatepublicipaddress")
-    private Boolean associatePublicIpAddress;
+    private CharSequence associatePublicIpAddress;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-networkinterfaceid
      * 
@@ -121,7 +121,7 @@ public class LaunchTemplateNetworkInterface implements Property<LaunchTemplateNe
      */
     @JsonProperty("DeleteOnTermination")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-deleteontermination")
-    private Boolean deleteOnTermination;
+    private CharSequence deleteOnTermination;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-description
@@ -197,7 +197,7 @@ public class LaunchTemplateNetworkInterface implements Property<LaunchTemplateNe
      * 
      */
     @JsonIgnore
-    public Integer getSecondaryPrivateIpAddressCount() {
+    public Number getSecondaryPrivateIpAddressCount() {
         return secondaryPrivateIpAddressCount;
     }
 
@@ -206,11 +206,11 @@ public class LaunchTemplateNetworkInterface implements Property<LaunchTemplateNe
      * 
      */
     @JsonIgnore
-    public void setSecondaryPrivateIpAddressCount(Integer secondaryPrivateIpAddressCount) {
+    public void setSecondaryPrivateIpAddressCount(Number secondaryPrivateIpAddressCount) {
         this.secondaryPrivateIpAddressCount = secondaryPrivateIpAddressCount;
     }
 
-    public LaunchTemplateNetworkInterface withSecondaryPrivateIpAddressCount(Integer secondaryPrivateIpAddressCount) {
+    public LaunchTemplateNetworkInterface withSecondaryPrivateIpAddressCount(Number secondaryPrivateIpAddressCount) {
         this.secondaryPrivateIpAddressCount = secondaryPrivateIpAddressCount;
         return this;
     }
@@ -220,7 +220,7 @@ public class LaunchTemplateNetworkInterface implements Property<LaunchTemplateNe
      * 
      */
     @JsonIgnore
-    public Integer getIpv6AddressCount() {
+    public Number getIpv6AddressCount() {
         return ipv6AddressCount;
     }
 
@@ -229,11 +229,11 @@ public class LaunchTemplateNetworkInterface implements Property<LaunchTemplateNe
      * 
      */
     @JsonIgnore
-    public void setIpv6AddressCount(Integer ipv6AddressCount) {
+    public void setIpv6AddressCount(Number ipv6AddressCount) {
         this.ipv6AddressCount = ipv6AddressCount;
     }
 
-    public LaunchTemplateNetworkInterface withIpv6AddressCount(Integer ipv6AddressCount) {
+    public LaunchTemplateNetworkInterface withIpv6AddressCount(Number ipv6AddressCount) {
         this.ipv6AddressCount = ipv6AddressCount;
         return this;
     }
@@ -266,7 +266,7 @@ public class LaunchTemplateNetworkInterface implements Property<LaunchTemplateNe
      * 
      */
     @JsonIgnore
-    public Integer getDeviceIndex() {
+    public Number getDeviceIndex() {
         return deviceIndex;
     }
 
@@ -275,11 +275,11 @@ public class LaunchTemplateNetworkInterface implements Property<LaunchTemplateNe
      * 
      */
     @JsonIgnore
-    public void setDeviceIndex(Integer deviceIndex) {
+    public void setDeviceIndex(Number deviceIndex) {
         this.deviceIndex = deviceIndex;
     }
 
-    public LaunchTemplateNetworkInterface withDeviceIndex(Integer deviceIndex) {
+    public LaunchTemplateNetworkInterface withDeviceIndex(Number deviceIndex) {
         this.deviceIndex = deviceIndex;
         return this;
     }
@@ -335,7 +335,7 @@ public class LaunchTemplateNetworkInterface implements Property<LaunchTemplateNe
      * 
      */
     @JsonIgnore
-    public Boolean getAssociatePublicIpAddress() {
+    public CharSequence getAssociatePublicIpAddress() {
         return associatePublicIpAddress;
     }
 
@@ -344,11 +344,11 @@ public class LaunchTemplateNetworkInterface implements Property<LaunchTemplateNe
      * 
      */
     @JsonIgnore
-    public void setAssociatePublicIpAddress(Boolean associatePublicIpAddress) {
+    public void setAssociatePublicIpAddress(CharSequence associatePublicIpAddress) {
         this.associatePublicIpAddress = associatePublicIpAddress;
     }
 
-    public LaunchTemplateNetworkInterface withAssociatePublicIpAddress(Boolean associatePublicIpAddress) {
+    public LaunchTemplateNetworkInterface withAssociatePublicIpAddress(CharSequence associatePublicIpAddress) {
         this.associatePublicIpAddress = associatePublicIpAddress;
         return this;
     }
@@ -381,7 +381,7 @@ public class LaunchTemplateNetworkInterface implements Property<LaunchTemplateNe
      * 
      */
     @JsonIgnore
-    public Boolean getDeleteOnTermination() {
+    public CharSequence getDeleteOnTermination() {
         return deleteOnTermination;
     }
 
@@ -390,11 +390,11 @@ public class LaunchTemplateNetworkInterface implements Property<LaunchTemplateNe
      * 
      */
     @JsonIgnore
-    public void setDeleteOnTermination(Boolean deleteOnTermination) {
+    public void setDeleteOnTermination(CharSequence deleteOnTermination) {
         this.deleteOnTermination = deleteOnTermination;
     }
 
-    public LaunchTemplateNetworkInterface withDeleteOnTermination(Boolean deleteOnTermination) {
+    public LaunchTemplateNetworkInterface withDeleteOnTermination(CharSequence deleteOnTermination) {
         this.deleteOnTermination = deleteOnTermination;
         return this;
     }

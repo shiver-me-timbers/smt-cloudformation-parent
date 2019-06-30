@@ -44,7 +44,7 @@ public class InstanceFleetConfigConfiguration implements Property<InstanceFleetC
      */
     @JsonProperty("ConfigurationProperties")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-configuration.html#cfn-elasticmapreduce-instancefleetconfig-configuration-configurationproperties")
-    private Map<String, String> configurationProperties;
+    private Map<String, CharSequence> configurationProperties;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-configuration.html#cfn-elasticmapreduce-instancefleetconfig-configuration-configurations
      * 
@@ -82,7 +82,7 @@ public class InstanceFleetConfigConfiguration implements Property<InstanceFleetC
      * 
      */
     @JsonIgnore
-    public Map<String, String> getConfigurationProperties() {
+    public Map<String, CharSequence> getConfigurationProperties() {
         return configurationProperties;
     }
 
@@ -91,11 +91,11 @@ public class InstanceFleetConfigConfiguration implements Property<InstanceFleetC
      * 
      */
     @JsonIgnore
-    public void setConfigurationProperties(Map<String, String> configurationProperties) {
+    public void setConfigurationProperties(Map<String, CharSequence> configurationProperties) {
         this.configurationProperties = configurationProperties;
     }
 
-    public InstanceFleetConfigConfiguration withConfigurationProperties(Map<String, String> configurationProperties) {
+    public InstanceFleetConfigConfiguration withConfigurationProperties(Map<String, CharSequence> configurationProperties) {
         this.configurationProperties = configurationProperties;
         return this;
     }

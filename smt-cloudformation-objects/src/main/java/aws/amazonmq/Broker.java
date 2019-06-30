@@ -84,7 +84,7 @@ public class Broker {
      */
     @JsonProperty("AutoMinorVersionUpgrade")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-autominorversionupgrade")
-    private Boolean autoMinorVersionUpgrade;
+    private CharSequence autoMinorVersionUpgrade;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-users
      * 
@@ -135,7 +135,7 @@ public class Broker {
      */
     @JsonProperty("PubliclyAccessible")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-publiclyaccessible")
-    private Boolean publiclyAccessible;
+    private CharSequence publiclyAccessible;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-tags
      * 
@@ -272,7 +272,7 @@ public class Broker {
      * 
      */
     @JsonIgnore
-    public Boolean getAutoMinorVersionUpgrade() {
+    public CharSequence getAutoMinorVersionUpgrade() {
         return autoMinorVersionUpgrade;
     }
 
@@ -281,11 +281,11 @@ public class Broker {
      * 
      */
     @JsonIgnore
-    public void setAutoMinorVersionUpgrade(Boolean autoMinorVersionUpgrade) {
+    public void setAutoMinorVersionUpgrade(CharSequence autoMinorVersionUpgrade) {
         this.autoMinorVersionUpgrade = autoMinorVersionUpgrade;
     }
 
-    public Broker withAutoMinorVersionUpgrade(Boolean autoMinorVersionUpgrade) {
+    public Broker withAutoMinorVersionUpgrade(CharSequence autoMinorVersionUpgrade) {
         this.autoMinorVersionUpgrade = autoMinorVersionUpgrade;
         return this;
     }
@@ -437,7 +437,7 @@ public class Broker {
      * 
      */
     @JsonIgnore
-    public Boolean getPubliclyAccessible() {
+    public CharSequence getPubliclyAccessible() {
         return publiclyAccessible;
     }
 
@@ -446,11 +446,11 @@ public class Broker {
      * 
      */
     @JsonIgnore
-    public void setPubliclyAccessible(Boolean publiclyAccessible) {
+    public void setPubliclyAccessible(CharSequence publiclyAccessible) {
         this.publiclyAccessible = publiclyAccessible;
     }
 
-    public Broker withPubliclyAccessible(Boolean publiclyAccessible) {
+    public Broker withPubliclyAccessible(CharSequence publiclyAccessible) {
         this.publiclyAccessible = publiclyAccessible;
         return this;
     }

@@ -114,14 +114,14 @@ public class Function {
      */
     @JsonProperty("MemorySize")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-memorysize")
-    private Integer memorySize;
+    private Number memorySize;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-reservedconcurrentexecutions
      * 
      */
     @JsonProperty("ReservedConcurrentExecutions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-reservedconcurrentexecutions")
-    private Integer reservedConcurrentExecutions;
+    private Number reservedConcurrentExecutions;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-role
      * 
@@ -149,7 +149,7 @@ public class Function {
      */
     @JsonProperty("Timeout")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-timeout")
-    private Integer timeout;
+    private Number timeout;
     /**
      * FunctionTracingConfig
      * <p>
@@ -370,7 +370,7 @@ public class Function {
      * 
      */
     @JsonIgnore
-    public Integer getMemorySize() {
+    public Number getMemorySize() {
         return memorySize;
     }
 
@@ -379,11 +379,11 @@ public class Function {
      * 
      */
     @JsonIgnore
-    public void setMemorySize(Integer memorySize) {
+    public void setMemorySize(Number memorySize) {
         this.memorySize = memorySize;
     }
 
-    public Function withMemorySize(Integer memorySize) {
+    public Function withMemorySize(Number memorySize) {
         this.memorySize = memorySize;
         return this;
     }
@@ -393,7 +393,7 @@ public class Function {
      * 
      */
     @JsonIgnore
-    public Integer getReservedConcurrentExecutions() {
+    public Number getReservedConcurrentExecutions() {
         return reservedConcurrentExecutions;
     }
 
@@ -402,11 +402,11 @@ public class Function {
      * 
      */
     @JsonIgnore
-    public void setReservedConcurrentExecutions(Integer reservedConcurrentExecutions) {
+    public void setReservedConcurrentExecutions(Number reservedConcurrentExecutions) {
         this.reservedConcurrentExecutions = reservedConcurrentExecutions;
     }
 
-    public Function withReservedConcurrentExecutions(Integer reservedConcurrentExecutions) {
+    public Function withReservedConcurrentExecutions(Number reservedConcurrentExecutions) {
         this.reservedConcurrentExecutions = reservedConcurrentExecutions;
         return this;
     }
@@ -485,7 +485,7 @@ public class Function {
      * 
      */
     @JsonIgnore
-    public Integer getTimeout() {
+    public Number getTimeout() {
         return timeout;
     }
 
@@ -494,11 +494,11 @@ public class Function {
      * 
      */
     @JsonIgnore
-    public void setTimeout(Integer timeout) {
+    public void setTimeout(Number timeout) {
         this.timeout = timeout;
     }
 
-    public Function withTimeout(Integer timeout) {
+    public Function withTimeout(Number timeout) {
         this.timeout = timeout;
         return this;
     }

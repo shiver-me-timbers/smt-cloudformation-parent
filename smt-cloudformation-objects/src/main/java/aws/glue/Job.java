@@ -62,7 +62,7 @@ public class Job {
      */
     @JsonProperty("MaxRetries")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-maxretries")
-    private Double maxRetries;
+    private Number maxRetries;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-description
      * 
@@ -92,7 +92,7 @@ public class Job {
      */
     @JsonProperty("AllocatedCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-allocatedcapacity")
-    private Double allocatedCapacity;
+    private Number allocatedCapacity;
     /**
      * JobExecutionProperty
      * <p>
@@ -188,7 +188,7 @@ public class Job {
      * 
      */
     @JsonIgnore
-    public Double getMaxRetries() {
+    public Number getMaxRetries() {
         return maxRetries;
     }
 
@@ -197,11 +197,11 @@ public class Job {
      * 
      */
     @JsonIgnore
-    public void setMaxRetries(Double maxRetries) {
+    public void setMaxRetries(Number maxRetries) {
         this.maxRetries = maxRetries;
     }
 
-    public Job withMaxRetries(Double maxRetries) {
+    public Job withMaxRetries(Number maxRetries) {
         this.maxRetries = maxRetries;
         return this;
     }
@@ -284,7 +284,7 @@ public class Job {
      * 
      */
     @JsonIgnore
-    public Double getAllocatedCapacity() {
+    public Number getAllocatedCapacity() {
         return allocatedCapacity;
     }
 
@@ -293,11 +293,11 @@ public class Job {
      * 
      */
     @JsonIgnore
-    public void setAllocatedCapacity(Double allocatedCapacity) {
+    public void setAllocatedCapacity(Number allocatedCapacity) {
         this.allocatedCapacity = allocatedCapacity;
     }
 
-    public Job withAllocatedCapacity(Double allocatedCapacity) {
+    public Job withAllocatedCapacity(Number allocatedCapacity) {
         this.allocatedCapacity = allocatedCapacity;
         return this;
     }

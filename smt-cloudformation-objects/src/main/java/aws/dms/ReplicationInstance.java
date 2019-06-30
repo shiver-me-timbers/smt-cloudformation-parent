@@ -81,7 +81,7 @@ public class ReplicationInstance {
      */
     @JsonProperty("AutoMinorVersionUpgrade")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-autominorversionupgrade")
-    private Boolean autoMinorVersionUpgrade;
+    private CharSequence autoMinorVersionUpgrade;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-replicationsubnetgroupidentifier
      * 
@@ -95,7 +95,7 @@ public class ReplicationInstance {
      */
     @JsonProperty("AllocatedStorage")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-allocatedstorage")
-    private Integer allocatedStorage;
+    private Number allocatedStorage;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-vpcsecuritygroupids
      * 
@@ -109,7 +109,7 @@ public class ReplicationInstance {
      */
     @JsonProperty("AllowMajorVersionUpgrade")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-allowmajorversionupgrade")
-    private Boolean allowMajorVersionUpgrade;
+    private CharSequence allowMajorVersionUpgrade;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-replicationinstanceclass
      * 
@@ -123,14 +123,14 @@ public class ReplicationInstance {
      */
     @JsonProperty("PubliclyAccessible")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-publiclyaccessible")
-    private Boolean publiclyAccessible;
+    private CharSequence publiclyAccessible;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-multiaz
      * 
      */
     @JsonProperty("MultiAZ")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-multiaz")
-    private Boolean multiAZ;
+    private CharSequence multiAZ;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-tags
      * 
@@ -259,7 +259,7 @@ public class ReplicationInstance {
      * 
      */
     @JsonIgnore
-    public Boolean getAutoMinorVersionUpgrade() {
+    public CharSequence getAutoMinorVersionUpgrade() {
         return autoMinorVersionUpgrade;
     }
 
@@ -268,11 +268,11 @@ public class ReplicationInstance {
      * 
      */
     @JsonIgnore
-    public void setAutoMinorVersionUpgrade(Boolean autoMinorVersionUpgrade) {
+    public void setAutoMinorVersionUpgrade(CharSequence autoMinorVersionUpgrade) {
         this.autoMinorVersionUpgrade = autoMinorVersionUpgrade;
     }
 
-    public ReplicationInstance withAutoMinorVersionUpgrade(Boolean autoMinorVersionUpgrade) {
+    public ReplicationInstance withAutoMinorVersionUpgrade(CharSequence autoMinorVersionUpgrade) {
         this.autoMinorVersionUpgrade = autoMinorVersionUpgrade;
         return this;
     }
@@ -305,7 +305,7 @@ public class ReplicationInstance {
      * 
      */
     @JsonIgnore
-    public Integer getAllocatedStorage() {
+    public Number getAllocatedStorage() {
         return allocatedStorage;
     }
 
@@ -314,11 +314,11 @@ public class ReplicationInstance {
      * 
      */
     @JsonIgnore
-    public void setAllocatedStorage(Integer allocatedStorage) {
+    public void setAllocatedStorage(Number allocatedStorage) {
         this.allocatedStorage = allocatedStorage;
     }
 
-    public ReplicationInstance withAllocatedStorage(Integer allocatedStorage) {
+    public ReplicationInstance withAllocatedStorage(Number allocatedStorage) {
         this.allocatedStorage = allocatedStorage;
         return this;
     }
@@ -351,7 +351,7 @@ public class ReplicationInstance {
      * 
      */
     @JsonIgnore
-    public Boolean getAllowMajorVersionUpgrade() {
+    public CharSequence getAllowMajorVersionUpgrade() {
         return allowMajorVersionUpgrade;
     }
 
@@ -360,11 +360,11 @@ public class ReplicationInstance {
      * 
      */
     @JsonIgnore
-    public void setAllowMajorVersionUpgrade(Boolean allowMajorVersionUpgrade) {
+    public void setAllowMajorVersionUpgrade(CharSequence allowMajorVersionUpgrade) {
         this.allowMajorVersionUpgrade = allowMajorVersionUpgrade;
     }
 
-    public ReplicationInstance withAllowMajorVersionUpgrade(Boolean allowMajorVersionUpgrade) {
+    public ReplicationInstance withAllowMajorVersionUpgrade(CharSequence allowMajorVersionUpgrade) {
         this.allowMajorVersionUpgrade = allowMajorVersionUpgrade;
         return this;
     }
@@ -397,7 +397,7 @@ public class ReplicationInstance {
      * 
      */
     @JsonIgnore
-    public Boolean getPubliclyAccessible() {
+    public CharSequence getPubliclyAccessible() {
         return publiclyAccessible;
     }
 
@@ -406,11 +406,11 @@ public class ReplicationInstance {
      * 
      */
     @JsonIgnore
-    public void setPubliclyAccessible(Boolean publiclyAccessible) {
+    public void setPubliclyAccessible(CharSequence publiclyAccessible) {
         this.publiclyAccessible = publiclyAccessible;
     }
 
-    public ReplicationInstance withPubliclyAccessible(Boolean publiclyAccessible) {
+    public ReplicationInstance withPubliclyAccessible(CharSequence publiclyAccessible) {
         this.publiclyAccessible = publiclyAccessible;
         return this;
     }
@@ -420,7 +420,7 @@ public class ReplicationInstance {
      * 
      */
     @JsonIgnore
-    public Boolean getMultiAZ() {
+    public CharSequence getMultiAZ() {
         return multiAZ;
     }
 
@@ -429,11 +429,11 @@ public class ReplicationInstance {
      * 
      */
     @JsonIgnore
-    public void setMultiAZ(Boolean multiAZ) {
+    public void setMultiAZ(CharSequence multiAZ) {
         this.multiAZ = multiAZ;
     }
 
-    public ReplicationInstance withMultiAZ(Boolean multiAZ) {
+    public ReplicationInstance withMultiAZ(CharSequence multiAZ) {
         this.multiAZ = multiAZ;
         return this;
     }

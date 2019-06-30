@@ -32,14 +32,14 @@ public class ThingAttributePayload implements Property<ThingAttributePayload>
      */
     @JsonProperty("Attributes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-thing-attributepayload.html#cfn-iot-thing-attributepayload-attributes")
-    private Map<String, String> attributes;
+    private Map<String, CharSequence> attributes;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-thing-attributepayload.html#cfn-iot-thing-attributepayload-attributes
      * 
      */
     @JsonIgnore
-    public Map<String, String> getAttributes() {
+    public Map<String, CharSequence> getAttributes() {
         return attributes;
     }
 
@@ -48,11 +48,11 @@ public class ThingAttributePayload implements Property<ThingAttributePayload>
      * 
      */
     @JsonIgnore
-    public void setAttributes(Map<String, String> attributes) {
+    public void setAttributes(Map<String, CharSequence> attributes) {
         this.attributes = attributes;
     }
 
-    public ThingAttributePayload withAttributes(Map<String, String> attributes) {
+    public ThingAttributePayload withAttributes(Map<String, CharSequence> attributes) {
         this.attributes = attributes;
         return this;
     }

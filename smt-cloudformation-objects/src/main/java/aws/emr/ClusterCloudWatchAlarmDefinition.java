@@ -57,7 +57,7 @@ public class ClusterCloudWatchAlarmDefinition implements Property<ClusterCloudWa
      */
     @JsonProperty("EvaluationPeriods")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-evaluationperiods")
-    private Integer evaluationPeriods;
+    private Number evaluationPeriods;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-metricname
      * 
@@ -78,7 +78,7 @@ public class ClusterCloudWatchAlarmDefinition implements Property<ClusterCloudWa
      */
     @JsonProperty("Period")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-period")
-    private Integer period;
+    private Number period;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-statistic
      * 
@@ -92,7 +92,7 @@ public class ClusterCloudWatchAlarmDefinition implements Property<ClusterCloudWa
      */
     @JsonProperty("Threshold")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-threshold")
-    private Double threshold;
+    private Number threshold;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-unit
      * 
@@ -152,7 +152,7 @@ public class ClusterCloudWatchAlarmDefinition implements Property<ClusterCloudWa
      * 
      */
     @JsonIgnore
-    public Integer getEvaluationPeriods() {
+    public Number getEvaluationPeriods() {
         return evaluationPeriods;
     }
 
@@ -161,11 +161,11 @@ public class ClusterCloudWatchAlarmDefinition implements Property<ClusterCloudWa
      * 
      */
     @JsonIgnore
-    public void setEvaluationPeriods(Integer evaluationPeriods) {
+    public void setEvaluationPeriods(Number evaluationPeriods) {
         this.evaluationPeriods = evaluationPeriods;
     }
 
-    public ClusterCloudWatchAlarmDefinition withEvaluationPeriods(Integer evaluationPeriods) {
+    public ClusterCloudWatchAlarmDefinition withEvaluationPeriods(Number evaluationPeriods) {
         this.evaluationPeriods = evaluationPeriods;
         return this;
     }
@@ -221,7 +221,7 @@ public class ClusterCloudWatchAlarmDefinition implements Property<ClusterCloudWa
      * 
      */
     @JsonIgnore
-    public Integer getPeriod() {
+    public Number getPeriod() {
         return period;
     }
 
@@ -230,11 +230,11 @@ public class ClusterCloudWatchAlarmDefinition implements Property<ClusterCloudWa
      * 
      */
     @JsonIgnore
-    public void setPeriod(Integer period) {
+    public void setPeriod(Number period) {
         this.period = period;
     }
 
-    public ClusterCloudWatchAlarmDefinition withPeriod(Integer period) {
+    public ClusterCloudWatchAlarmDefinition withPeriod(Number period) {
         this.period = period;
         return this;
     }
@@ -267,7 +267,7 @@ public class ClusterCloudWatchAlarmDefinition implements Property<ClusterCloudWa
      * 
      */
     @JsonIgnore
-    public Double getThreshold() {
+    public Number getThreshold() {
         return threshold;
     }
 
@@ -276,11 +276,11 @@ public class ClusterCloudWatchAlarmDefinition implements Property<ClusterCloudWa
      * 
      */
     @JsonIgnore
-    public void setThreshold(Double threshold) {
+    public void setThreshold(Number threshold) {
         this.threshold = threshold;
     }
 
-    public ClusterCloudWatchAlarmDefinition withThreshold(Double threshold) {
+    public ClusterCloudWatchAlarmDefinition withThreshold(Number threshold) {
         this.threshold = threshold;
         return this;
     }

@@ -32,21 +32,21 @@ public class DeliveryStreamBufferingHints implements Property<DeliveryStreamBuff
      */
     @JsonProperty("IntervalInSeconds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-bufferinghints.html#cfn-kinesisfirehose-deliverystream-bufferinghints-intervalinseconds")
-    private Integer intervalInSeconds;
+    private Number intervalInSeconds;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-bufferinghints.html#cfn-kinesisfirehose-deliverystream-bufferinghints-sizeinmbs
      * 
      */
     @JsonProperty("SizeInMBs")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-bufferinghints.html#cfn-kinesisfirehose-deliverystream-bufferinghints-sizeinmbs")
-    private Integer sizeInMBs;
+    private Number sizeInMBs;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-bufferinghints.html#cfn-kinesisfirehose-deliverystream-bufferinghints-intervalinseconds
      * 
      */
     @JsonIgnore
-    public Integer getIntervalInSeconds() {
+    public Number getIntervalInSeconds() {
         return intervalInSeconds;
     }
 
@@ -55,11 +55,11 @@ public class DeliveryStreamBufferingHints implements Property<DeliveryStreamBuff
      * 
      */
     @JsonIgnore
-    public void setIntervalInSeconds(Integer intervalInSeconds) {
+    public void setIntervalInSeconds(Number intervalInSeconds) {
         this.intervalInSeconds = intervalInSeconds;
     }
 
-    public DeliveryStreamBufferingHints withIntervalInSeconds(Integer intervalInSeconds) {
+    public DeliveryStreamBufferingHints withIntervalInSeconds(Number intervalInSeconds) {
         this.intervalInSeconds = intervalInSeconds;
         return this;
     }
@@ -69,7 +69,7 @@ public class DeliveryStreamBufferingHints implements Property<DeliveryStreamBuff
      * 
      */
     @JsonIgnore
-    public Integer getSizeInMBs() {
+    public Number getSizeInMBs() {
         return sizeInMBs;
     }
 
@@ -78,11 +78,11 @@ public class DeliveryStreamBufferingHints implements Property<DeliveryStreamBuff
      * 
      */
     @JsonIgnore
-    public void setSizeInMBs(Integer sizeInMBs) {
+    public void setSizeInMBs(Number sizeInMBs) {
         this.sizeInMBs = sizeInMBs;
     }
 
-    public DeliveryStreamBufferingHints withSizeInMBs(Integer sizeInMBs) {
+    public DeliveryStreamBufferingHints withSizeInMBs(Number sizeInMBs) {
         this.sizeInMBs = sizeInMBs;
         return this;
     }

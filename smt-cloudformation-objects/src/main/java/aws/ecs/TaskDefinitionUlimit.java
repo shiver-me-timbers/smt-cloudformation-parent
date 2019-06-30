@@ -33,7 +33,7 @@ public class TaskDefinitionUlimit implements Property<TaskDefinitionUlimit>
      */
     @JsonProperty("HardLimit")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-ulimit.html#cfn-ecs-taskdefinition-containerdefinition-ulimit-hardlimit")
-    private Integer hardLimit;
+    private Number hardLimit;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-ulimit.html#cfn-ecs-taskdefinition-containerdefinition-ulimit-name
      * 
@@ -47,14 +47,14 @@ public class TaskDefinitionUlimit implements Property<TaskDefinitionUlimit>
      */
     @JsonProperty("SoftLimit")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-ulimit.html#cfn-ecs-taskdefinition-containerdefinition-ulimit-softlimit")
-    private Integer softLimit;
+    private Number softLimit;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-ulimit.html#cfn-ecs-taskdefinition-containerdefinition-ulimit-hardlimit
      * 
      */
     @JsonIgnore
-    public Integer getHardLimit() {
+    public Number getHardLimit() {
         return hardLimit;
     }
 
@@ -63,11 +63,11 @@ public class TaskDefinitionUlimit implements Property<TaskDefinitionUlimit>
      * 
      */
     @JsonIgnore
-    public void setHardLimit(Integer hardLimit) {
+    public void setHardLimit(Number hardLimit) {
         this.hardLimit = hardLimit;
     }
 
-    public TaskDefinitionUlimit withHardLimit(Integer hardLimit) {
+    public TaskDefinitionUlimit withHardLimit(Number hardLimit) {
         this.hardLimit = hardLimit;
         return this;
     }
@@ -100,7 +100,7 @@ public class TaskDefinitionUlimit implements Property<TaskDefinitionUlimit>
      * 
      */
     @JsonIgnore
-    public Integer getSoftLimit() {
+    public Number getSoftLimit() {
         return softLimit;
     }
 
@@ -109,11 +109,11 @@ public class TaskDefinitionUlimit implements Property<TaskDefinitionUlimit>
      * 
      */
     @JsonIgnore
-    public void setSoftLimit(Integer softLimit) {
+    public void setSoftLimit(Number softLimit) {
         this.softLimit = softLimit;
     }
 
-    public TaskDefinitionUlimit withSoftLimit(Integer softLimit) {
+    public TaskDefinitionUlimit withSoftLimit(Number softLimit) {
         this.softLimit = softLimit;
         return this;
     }

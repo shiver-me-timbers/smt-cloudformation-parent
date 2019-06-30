@@ -35,7 +35,7 @@ public class VPNGateway {
      */
     @JsonProperty("AmazonSideAsn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-gateway.html#cfn-ec2-vpngateway-amazonsideasn")
-    private Integer amazonSideAsn;
+    private Number amazonSideAsn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-gateway.html#cfn-ec2-vpngateway-tags
      * 
@@ -56,7 +56,7 @@ public class VPNGateway {
      * 
      */
     @JsonIgnore
-    public Integer getAmazonSideAsn() {
+    public Number getAmazonSideAsn() {
         return amazonSideAsn;
     }
 
@@ -65,11 +65,11 @@ public class VPNGateway {
      * 
      */
     @JsonIgnore
-    public void setAmazonSideAsn(Integer amazonSideAsn) {
+    public void setAmazonSideAsn(Number amazonSideAsn) {
         this.amazonSideAsn = amazonSideAsn;
     }
 
-    public VPNGateway withAmazonSideAsn(Integer amazonSideAsn) {
+    public VPNGateway withAmazonSideAsn(Number amazonSideAsn) {
         this.amazonSideAsn = amazonSideAsn;
         return this;
     }

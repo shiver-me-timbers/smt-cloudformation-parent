@@ -73,7 +73,7 @@ public class UserPoolUser {
      */
     @JsonProperty("ForceAliasCreation")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-forcealiascreation")
-    private Boolean forceAliasCreation;
+    private CharSequence forceAliasCreation;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-userattributes
      * 
@@ -202,7 +202,7 @@ public class UserPoolUser {
      * 
      */
     @JsonIgnore
-    public Boolean getForceAliasCreation() {
+    public CharSequence getForceAliasCreation() {
         return forceAliasCreation;
     }
 
@@ -211,11 +211,11 @@ public class UserPoolUser {
      * 
      */
     @JsonIgnore
-    public void setForceAliasCreation(Boolean forceAliasCreation) {
+    public void setForceAliasCreation(CharSequence forceAliasCreation) {
         this.forceAliasCreation = forceAliasCreation;
     }
 
-    public UserPoolUser withForceAliasCreation(Boolean forceAliasCreation) {
+    public UserPoolUser withForceAliasCreation(CharSequence forceAliasCreation) {
         this.forceAliasCreation = forceAliasCreation;
         return this;
     }

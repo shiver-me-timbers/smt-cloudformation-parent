@@ -35,42 +35,42 @@ public class UserPoolPasswordPolicy implements Property<UserPoolPasswordPolicy>
      */
     @JsonProperty("RequireNumbers")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html#cfn-cognito-userpool-passwordpolicy-requirenumbers")
-    private Boolean requireNumbers;
+    private CharSequence requireNumbers;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html#cfn-cognito-userpool-passwordpolicy-minimumlength
      * 
      */
     @JsonProperty("MinimumLength")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html#cfn-cognito-userpool-passwordpolicy-minimumlength")
-    private Integer minimumLength;
+    private Number minimumLength;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html#cfn-cognito-userpool-passwordpolicy-requireuppercase
      * 
      */
     @JsonProperty("RequireUppercase")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html#cfn-cognito-userpool-passwordpolicy-requireuppercase")
-    private Boolean requireUppercase;
+    private CharSequence requireUppercase;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html#cfn-cognito-userpool-passwordpolicy-requirelowercase
      * 
      */
     @JsonProperty("RequireLowercase")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html#cfn-cognito-userpool-passwordpolicy-requirelowercase")
-    private Boolean requireLowercase;
+    private CharSequence requireLowercase;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html#cfn-cognito-userpool-passwordpolicy-requiresymbols
      * 
      */
     @JsonProperty("RequireSymbols")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html#cfn-cognito-userpool-passwordpolicy-requiresymbols")
-    private Boolean requireSymbols;
+    private CharSequence requireSymbols;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html#cfn-cognito-userpool-passwordpolicy-requirenumbers
      * 
      */
     @JsonIgnore
-    public Boolean getRequireNumbers() {
+    public CharSequence getRequireNumbers() {
         return requireNumbers;
     }
 
@@ -79,11 +79,11 @@ public class UserPoolPasswordPolicy implements Property<UserPoolPasswordPolicy>
      * 
      */
     @JsonIgnore
-    public void setRequireNumbers(Boolean requireNumbers) {
+    public void setRequireNumbers(CharSequence requireNumbers) {
         this.requireNumbers = requireNumbers;
     }
 
-    public UserPoolPasswordPolicy withRequireNumbers(Boolean requireNumbers) {
+    public UserPoolPasswordPolicy withRequireNumbers(CharSequence requireNumbers) {
         this.requireNumbers = requireNumbers;
         return this;
     }
@@ -93,7 +93,7 @@ public class UserPoolPasswordPolicy implements Property<UserPoolPasswordPolicy>
      * 
      */
     @JsonIgnore
-    public Integer getMinimumLength() {
+    public Number getMinimumLength() {
         return minimumLength;
     }
 
@@ -102,11 +102,11 @@ public class UserPoolPasswordPolicy implements Property<UserPoolPasswordPolicy>
      * 
      */
     @JsonIgnore
-    public void setMinimumLength(Integer minimumLength) {
+    public void setMinimumLength(Number minimumLength) {
         this.minimumLength = minimumLength;
     }
 
-    public UserPoolPasswordPolicy withMinimumLength(Integer minimumLength) {
+    public UserPoolPasswordPolicy withMinimumLength(Number minimumLength) {
         this.minimumLength = minimumLength;
         return this;
     }
@@ -116,7 +116,7 @@ public class UserPoolPasswordPolicy implements Property<UserPoolPasswordPolicy>
      * 
      */
     @JsonIgnore
-    public Boolean getRequireUppercase() {
+    public CharSequence getRequireUppercase() {
         return requireUppercase;
     }
 
@@ -125,11 +125,11 @@ public class UserPoolPasswordPolicy implements Property<UserPoolPasswordPolicy>
      * 
      */
     @JsonIgnore
-    public void setRequireUppercase(Boolean requireUppercase) {
+    public void setRequireUppercase(CharSequence requireUppercase) {
         this.requireUppercase = requireUppercase;
     }
 
-    public UserPoolPasswordPolicy withRequireUppercase(Boolean requireUppercase) {
+    public UserPoolPasswordPolicy withRequireUppercase(CharSequence requireUppercase) {
         this.requireUppercase = requireUppercase;
         return this;
     }
@@ -139,7 +139,7 @@ public class UserPoolPasswordPolicy implements Property<UserPoolPasswordPolicy>
      * 
      */
     @JsonIgnore
-    public Boolean getRequireLowercase() {
+    public CharSequence getRequireLowercase() {
         return requireLowercase;
     }
 
@@ -148,11 +148,11 @@ public class UserPoolPasswordPolicy implements Property<UserPoolPasswordPolicy>
      * 
      */
     @JsonIgnore
-    public void setRequireLowercase(Boolean requireLowercase) {
+    public void setRequireLowercase(CharSequence requireLowercase) {
         this.requireLowercase = requireLowercase;
     }
 
-    public UserPoolPasswordPolicy withRequireLowercase(Boolean requireLowercase) {
+    public UserPoolPasswordPolicy withRequireLowercase(CharSequence requireLowercase) {
         this.requireLowercase = requireLowercase;
         return this;
     }
@@ -162,7 +162,7 @@ public class UserPoolPasswordPolicy implements Property<UserPoolPasswordPolicy>
      * 
      */
     @JsonIgnore
-    public Boolean getRequireSymbols() {
+    public CharSequence getRequireSymbols() {
         return requireSymbols;
     }
 
@@ -171,11 +171,11 @@ public class UserPoolPasswordPolicy implements Property<UserPoolPasswordPolicy>
      * 
      */
     @JsonIgnore
-    public void setRequireSymbols(Boolean requireSymbols) {
+    public void setRequireSymbols(CharSequence requireSymbols) {
         this.requireSymbols = requireSymbols;
     }
 
-    public UserPoolPasswordPolicy withRequireSymbols(Boolean requireSymbols) {
+    public UserPoolPasswordPolicy withRequireSymbols(CharSequence requireSymbols) {
         this.requireSymbols = requireSymbols;
         return this;
     }

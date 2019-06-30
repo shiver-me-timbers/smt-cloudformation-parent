@@ -39,7 +39,7 @@ public class ListenerAuthenticateCognitoConfig implements Property<ListenerAuthe
      */
     @JsonProperty("AuthenticationRequestExtraParams")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticatecognitoconfig.html#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-authenticationrequestextraparams")
-    private Map<String, String> authenticationRequestExtraParams;
+    private Map<String, CharSequence> authenticationRequestExtraParams;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticatecognitoconfig.html#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-onunauthenticatedrequest
      * 
@@ -67,7 +67,7 @@ public class ListenerAuthenticateCognitoConfig implements Property<ListenerAuthe
      */
     @JsonProperty("SessionTimeout")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticatecognitoconfig.html#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-sessiontimeout")
-    private Integer sessionTimeout;
+    private Number sessionTimeout;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticatecognitoconfig.html#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-userpoolarn
      * 
@@ -95,7 +95,7 @@ public class ListenerAuthenticateCognitoConfig implements Property<ListenerAuthe
      * 
      */
     @JsonIgnore
-    public Map<String, String> getAuthenticationRequestExtraParams() {
+    public Map<String, CharSequence> getAuthenticationRequestExtraParams() {
         return authenticationRequestExtraParams;
     }
 
@@ -104,11 +104,11 @@ public class ListenerAuthenticateCognitoConfig implements Property<ListenerAuthe
      * 
      */
     @JsonIgnore
-    public void setAuthenticationRequestExtraParams(Map<String, String> authenticationRequestExtraParams) {
+    public void setAuthenticationRequestExtraParams(Map<String, CharSequence> authenticationRequestExtraParams) {
         this.authenticationRequestExtraParams = authenticationRequestExtraParams;
     }
 
-    public ListenerAuthenticateCognitoConfig withAuthenticationRequestExtraParams(Map<String, String> authenticationRequestExtraParams) {
+    public ListenerAuthenticateCognitoConfig withAuthenticationRequestExtraParams(Map<String, CharSequence> authenticationRequestExtraParams) {
         this.authenticationRequestExtraParams = authenticationRequestExtraParams;
         return this;
     }
@@ -187,7 +187,7 @@ public class ListenerAuthenticateCognitoConfig implements Property<ListenerAuthe
      * 
      */
     @JsonIgnore
-    public Integer getSessionTimeout() {
+    public Number getSessionTimeout() {
         return sessionTimeout;
     }
 
@@ -196,11 +196,11 @@ public class ListenerAuthenticateCognitoConfig implements Property<ListenerAuthe
      * 
      */
     @JsonIgnore
-    public void setSessionTimeout(Integer sessionTimeout) {
+    public void setSessionTimeout(Number sessionTimeout) {
         this.sessionTimeout = sessionTimeout;
     }
 
-    public ListenerAuthenticateCognitoConfig withSessionTimeout(Integer sessionTimeout) {
+    public ListenerAuthenticateCognitoConfig withSessionTimeout(Number sessionTimeout) {
         this.sessionTimeout = sessionTimeout;
         return this;
     }

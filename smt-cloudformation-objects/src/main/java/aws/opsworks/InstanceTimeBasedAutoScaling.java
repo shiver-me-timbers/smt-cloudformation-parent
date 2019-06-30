@@ -38,56 +38,56 @@ public class InstanceTimeBasedAutoScaling implements Property<InstanceTimeBasedA
      */
     @JsonProperty("Friday")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-friday")
-    private Map<String, String> friday;
+    private Map<String, CharSequence> friday;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-monday
      * 
      */
     @JsonProperty("Monday")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-monday")
-    private Map<String, String> monday;
+    private Map<String, CharSequence> monday;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-saturday
      * 
      */
     @JsonProperty("Saturday")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-saturday")
-    private Map<String, String> saturday;
+    private Map<String, CharSequence> saturday;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-sunday
      * 
      */
     @JsonProperty("Sunday")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-sunday")
-    private Map<String, String> sunday;
+    private Map<String, CharSequence> sunday;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-thursday
      * 
      */
     @JsonProperty("Thursday")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-thursday")
-    private Map<String, String> thursday;
+    private Map<String, CharSequence> thursday;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-tuesday
      * 
      */
     @JsonProperty("Tuesday")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-tuesday")
-    private Map<String, String> tuesday;
+    private Map<String, CharSequence> tuesday;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-wednesday
      * 
      */
     @JsonProperty("Wednesday")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-wednesday")
-    private Map<String, String> wednesday;
+    private Map<String, CharSequence> wednesday;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-friday
      * 
      */
     @JsonIgnore
-    public Map<String, String> getFriday() {
+    public Map<String, CharSequence> getFriday() {
         return friday;
     }
 
@@ -96,11 +96,11 @@ public class InstanceTimeBasedAutoScaling implements Property<InstanceTimeBasedA
      * 
      */
     @JsonIgnore
-    public void setFriday(Map<String, String> friday) {
+    public void setFriday(Map<String, CharSequence> friday) {
         this.friday = friday;
     }
 
-    public InstanceTimeBasedAutoScaling withFriday(Map<String, String> friday) {
+    public InstanceTimeBasedAutoScaling withFriday(Map<String, CharSequence> friday) {
         this.friday = friday;
         return this;
     }
@@ -110,7 +110,7 @@ public class InstanceTimeBasedAutoScaling implements Property<InstanceTimeBasedA
      * 
      */
     @JsonIgnore
-    public Map<String, String> getMonday() {
+    public Map<String, CharSequence> getMonday() {
         return monday;
     }
 
@@ -119,11 +119,11 @@ public class InstanceTimeBasedAutoScaling implements Property<InstanceTimeBasedA
      * 
      */
     @JsonIgnore
-    public void setMonday(Map<String, String> monday) {
+    public void setMonday(Map<String, CharSequence> monday) {
         this.monday = monday;
     }
 
-    public InstanceTimeBasedAutoScaling withMonday(Map<String, String> monday) {
+    public InstanceTimeBasedAutoScaling withMonday(Map<String, CharSequence> monday) {
         this.monday = monday;
         return this;
     }
@@ -133,7 +133,7 @@ public class InstanceTimeBasedAutoScaling implements Property<InstanceTimeBasedA
      * 
      */
     @JsonIgnore
-    public Map<String, String> getSaturday() {
+    public Map<String, CharSequence> getSaturday() {
         return saturday;
     }
 
@@ -142,11 +142,11 @@ public class InstanceTimeBasedAutoScaling implements Property<InstanceTimeBasedA
      * 
      */
     @JsonIgnore
-    public void setSaturday(Map<String, String> saturday) {
+    public void setSaturday(Map<String, CharSequence> saturday) {
         this.saturday = saturday;
     }
 
-    public InstanceTimeBasedAutoScaling withSaturday(Map<String, String> saturday) {
+    public InstanceTimeBasedAutoScaling withSaturday(Map<String, CharSequence> saturday) {
         this.saturday = saturday;
         return this;
     }
@@ -156,7 +156,7 @@ public class InstanceTimeBasedAutoScaling implements Property<InstanceTimeBasedA
      * 
      */
     @JsonIgnore
-    public Map<String, String> getSunday() {
+    public Map<String, CharSequence> getSunday() {
         return sunday;
     }
 
@@ -165,11 +165,11 @@ public class InstanceTimeBasedAutoScaling implements Property<InstanceTimeBasedA
      * 
      */
     @JsonIgnore
-    public void setSunday(Map<String, String> sunday) {
+    public void setSunday(Map<String, CharSequence> sunday) {
         this.sunday = sunday;
     }
 
-    public InstanceTimeBasedAutoScaling withSunday(Map<String, String> sunday) {
+    public InstanceTimeBasedAutoScaling withSunday(Map<String, CharSequence> sunday) {
         this.sunday = sunday;
         return this;
     }
@@ -179,7 +179,7 @@ public class InstanceTimeBasedAutoScaling implements Property<InstanceTimeBasedA
      * 
      */
     @JsonIgnore
-    public Map<String, String> getThursday() {
+    public Map<String, CharSequence> getThursday() {
         return thursday;
     }
 
@@ -188,11 +188,11 @@ public class InstanceTimeBasedAutoScaling implements Property<InstanceTimeBasedA
      * 
      */
     @JsonIgnore
-    public void setThursday(Map<String, String> thursday) {
+    public void setThursday(Map<String, CharSequence> thursday) {
         this.thursday = thursday;
     }
 
-    public InstanceTimeBasedAutoScaling withThursday(Map<String, String> thursday) {
+    public InstanceTimeBasedAutoScaling withThursday(Map<String, CharSequence> thursday) {
         this.thursday = thursday;
         return this;
     }
@@ -202,7 +202,7 @@ public class InstanceTimeBasedAutoScaling implements Property<InstanceTimeBasedA
      * 
      */
     @JsonIgnore
-    public Map<String, String> getTuesday() {
+    public Map<String, CharSequence> getTuesday() {
         return tuesday;
     }
 
@@ -211,11 +211,11 @@ public class InstanceTimeBasedAutoScaling implements Property<InstanceTimeBasedA
      * 
      */
     @JsonIgnore
-    public void setTuesday(Map<String, String> tuesday) {
+    public void setTuesday(Map<String, CharSequence> tuesday) {
         this.tuesday = tuesday;
     }
 
-    public InstanceTimeBasedAutoScaling withTuesday(Map<String, String> tuesday) {
+    public InstanceTimeBasedAutoScaling withTuesday(Map<String, CharSequence> tuesday) {
         this.tuesday = tuesday;
         return this;
     }
@@ -225,7 +225,7 @@ public class InstanceTimeBasedAutoScaling implements Property<InstanceTimeBasedA
      * 
      */
     @JsonIgnore
-    public Map<String, String> getWednesday() {
+    public Map<String, CharSequence> getWednesday() {
         return wednesday;
     }
 
@@ -234,11 +234,11 @@ public class InstanceTimeBasedAutoScaling implements Property<InstanceTimeBasedA
      * 
      */
     @JsonIgnore
-    public void setWednesday(Map<String, String> wednesday) {
+    public void setWednesday(Map<String, CharSequence> wednesday) {
         this.wednesday = wednesday;
     }
 
-    public InstanceTimeBasedAutoScaling withWednesday(Map<String, String> wednesday) {
+    public InstanceTimeBasedAutoScaling withWednesday(Map<String, CharSequence> wednesday) {
         this.wednesday = wednesday;
         return this;
     }

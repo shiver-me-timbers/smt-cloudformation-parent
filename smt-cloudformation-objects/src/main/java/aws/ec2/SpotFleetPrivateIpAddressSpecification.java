@@ -32,7 +32,7 @@ public class SpotFleetPrivateIpAddressSpecification implements Property<SpotFlee
      */
     @JsonProperty("Primary")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces-privateipaddresses.html#cfn-ec2-spotfleet-privateipaddressspecification-primary")
-    private Boolean primary;
+    private CharSequence primary;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces-privateipaddresses.html#cfn-ec2-spotfleet-privateipaddressspecification-privateipaddress
      * 
@@ -46,7 +46,7 @@ public class SpotFleetPrivateIpAddressSpecification implements Property<SpotFlee
      * 
      */
     @JsonIgnore
-    public Boolean getPrimary() {
+    public CharSequence getPrimary() {
         return primary;
     }
 
@@ -55,11 +55,11 @@ public class SpotFleetPrivateIpAddressSpecification implements Property<SpotFlee
      * 
      */
     @JsonIgnore
-    public void setPrimary(Boolean primary) {
+    public void setPrimary(CharSequence primary) {
         this.primary = primary;
     }
 
-    public SpotFleetPrivateIpAddressSpecification withPrimary(Boolean primary) {
+    public SpotFleetPrivateIpAddressSpecification withPrimary(CharSequence primary) {
         this.primary = primary;
         return this;
     }

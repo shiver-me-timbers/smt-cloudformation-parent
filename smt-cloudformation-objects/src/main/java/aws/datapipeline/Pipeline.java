@@ -38,7 +38,7 @@ public class Pipeline {
      */
     @JsonProperty("Activate")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-activate")
-    private Boolean activate;
+    private CharSequence activate;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-description
      * 
@@ -87,7 +87,7 @@ public class Pipeline {
      * 
      */
     @JsonIgnore
-    public Boolean getActivate() {
+    public CharSequence getActivate() {
         return activate;
     }
 
@@ -96,11 +96,11 @@ public class Pipeline {
      * 
      */
     @JsonIgnore
-    public void setActivate(Boolean activate) {
+    public void setActivate(CharSequence activate) {
         this.activate = activate;
     }
 
-    public Pipeline withActivate(Boolean activate) {
+    public Pipeline withActivate(CharSequence activate) {
         this.activate = activate;
         return this;
     }

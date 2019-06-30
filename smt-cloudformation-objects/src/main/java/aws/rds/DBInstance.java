@@ -91,14 +91,14 @@ public class DBInstance {
      */
     @JsonProperty("AllowMajorVersionUpgrade")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-allowmajorversionupgrade")
-    private Boolean allowMajorVersionUpgrade;
+    private CharSequence allowMajorVersionUpgrade;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-autominorversionupgrade
      * 
      */
     @JsonProperty("AutoMinorVersionUpgrade")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-autominorversionupgrade")
-    private Boolean autoMinorVersionUpgrade;
+    private CharSequence autoMinorVersionUpgrade;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-availabilityzone
      * 
@@ -126,7 +126,7 @@ public class DBInstance {
      */
     @JsonProperty("CopyTagsToSnapshot")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-copytagstosnapshot")
-    private Boolean copyTagsToSnapshot;
+    private CharSequence copyTagsToSnapshot;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbclusteridentifier
      * 
@@ -189,14 +189,14 @@ public class DBInstance {
      */
     @JsonProperty("DeleteAutomatedBackups")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-deleteautomatedbackups")
-    private Boolean deleteAutomatedBackups;
+    private CharSequence deleteAutomatedBackups;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-deletionprotection
      * 
      */
     @JsonProperty("DeletionProtection")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-deletionprotection")
-    private Boolean deletionProtection;
+    private CharSequence deletionProtection;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-domain
      * 
@@ -225,14 +225,14 @@ public class DBInstance {
      */
     @JsonProperty("EnableIAMDatabaseAuthentication")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-enableiamdatabaseauthentication")
-    private Boolean enableIAMDatabaseAuthentication;
+    private CharSequence enableIAMDatabaseAuthentication;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-enableperformanceinsights
      * 
      */
     @JsonProperty("EnablePerformanceInsights")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-enableperformanceinsights")
-    private Boolean enablePerformanceInsights;
+    private CharSequence enablePerformanceInsights;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-engine
      * 
@@ -253,7 +253,7 @@ public class DBInstance {
      */
     @JsonProperty("Iops")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-iops")
-    private Integer iops;
+    private Number iops;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-kmskeyid
      * 
@@ -288,7 +288,7 @@ public class DBInstance {
      */
     @JsonProperty("MonitoringInterval")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-monitoringinterval")
-    private Integer monitoringInterval;
+    private Number monitoringInterval;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-monitoringrolearn
      * 
@@ -302,7 +302,7 @@ public class DBInstance {
      */
     @JsonProperty("MultiAZ")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-multiaz")
-    private Boolean multiAZ;
+    private CharSequence multiAZ;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-optiongroupname
      * 
@@ -323,7 +323,7 @@ public class DBInstance {
      */
     @JsonProperty("PerformanceInsightsRetentionPeriod")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-performanceinsightsretentionperiod")
-    private Integer performanceInsightsRetentionPeriod;
+    private Number performanceInsightsRetentionPeriod;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-port
      * 
@@ -359,14 +359,14 @@ public class DBInstance {
      */
     @JsonProperty("PromotionTier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-promotiontier")
-    private Integer promotionTier;
+    private Number promotionTier;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-publiclyaccessible
      * 
      */
     @JsonProperty("PubliclyAccessible")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-publiclyaccessible")
-    private Boolean publiclyAccessible;
+    private CharSequence publiclyAccessible;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-sourcedbinstanceidentifier
      * 
@@ -387,7 +387,7 @@ public class DBInstance {
      */
     @JsonProperty("StorageEncrypted")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-storageencrypted")
-    private Boolean storageEncrypted;
+    private CharSequence storageEncrypted;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-storagetype
      * 
@@ -415,7 +415,7 @@ public class DBInstance {
      */
     @JsonProperty("UseDefaultProcessorFeatures")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-usedefaultprocessorfeatures")
-    private Boolean useDefaultProcessorFeatures;
+    private CharSequence useDefaultProcessorFeatures;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-vpcsecuritygroups
      * 
@@ -452,7 +452,7 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public Boolean getAllowMajorVersionUpgrade() {
+    public CharSequence getAllowMajorVersionUpgrade() {
         return allowMajorVersionUpgrade;
     }
 
@@ -461,11 +461,11 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public void setAllowMajorVersionUpgrade(Boolean allowMajorVersionUpgrade) {
+    public void setAllowMajorVersionUpgrade(CharSequence allowMajorVersionUpgrade) {
         this.allowMajorVersionUpgrade = allowMajorVersionUpgrade;
     }
 
-    public DBInstance withAllowMajorVersionUpgrade(Boolean allowMajorVersionUpgrade) {
+    public DBInstance withAllowMajorVersionUpgrade(CharSequence allowMajorVersionUpgrade) {
         this.allowMajorVersionUpgrade = allowMajorVersionUpgrade;
         return this;
     }
@@ -475,7 +475,7 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public Boolean getAutoMinorVersionUpgrade() {
+    public CharSequence getAutoMinorVersionUpgrade() {
         return autoMinorVersionUpgrade;
     }
 
@@ -484,11 +484,11 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public void setAutoMinorVersionUpgrade(Boolean autoMinorVersionUpgrade) {
+    public void setAutoMinorVersionUpgrade(CharSequence autoMinorVersionUpgrade) {
         this.autoMinorVersionUpgrade = autoMinorVersionUpgrade;
     }
 
-    public DBInstance withAutoMinorVersionUpgrade(Boolean autoMinorVersionUpgrade) {
+    public DBInstance withAutoMinorVersionUpgrade(CharSequence autoMinorVersionUpgrade) {
         this.autoMinorVersionUpgrade = autoMinorVersionUpgrade;
         return this;
     }
@@ -567,7 +567,7 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public Boolean getCopyTagsToSnapshot() {
+    public CharSequence getCopyTagsToSnapshot() {
         return copyTagsToSnapshot;
     }
 
@@ -576,11 +576,11 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public void setCopyTagsToSnapshot(Boolean copyTagsToSnapshot) {
+    public void setCopyTagsToSnapshot(CharSequence copyTagsToSnapshot) {
         this.copyTagsToSnapshot = copyTagsToSnapshot;
     }
 
-    public DBInstance withCopyTagsToSnapshot(Boolean copyTagsToSnapshot) {
+    public DBInstance withCopyTagsToSnapshot(CharSequence copyTagsToSnapshot) {
         this.copyTagsToSnapshot = copyTagsToSnapshot;
         return this;
     }
@@ -774,7 +774,7 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public Boolean getDeleteAutomatedBackups() {
+    public CharSequence getDeleteAutomatedBackups() {
         return deleteAutomatedBackups;
     }
 
@@ -783,11 +783,11 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public void setDeleteAutomatedBackups(Boolean deleteAutomatedBackups) {
+    public void setDeleteAutomatedBackups(CharSequence deleteAutomatedBackups) {
         this.deleteAutomatedBackups = deleteAutomatedBackups;
     }
 
-    public DBInstance withDeleteAutomatedBackups(Boolean deleteAutomatedBackups) {
+    public DBInstance withDeleteAutomatedBackups(CharSequence deleteAutomatedBackups) {
         this.deleteAutomatedBackups = deleteAutomatedBackups;
         return this;
     }
@@ -797,7 +797,7 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public Boolean getDeletionProtection() {
+    public CharSequence getDeletionProtection() {
         return deletionProtection;
     }
 
@@ -806,11 +806,11 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public void setDeletionProtection(Boolean deletionProtection) {
+    public void setDeletionProtection(CharSequence deletionProtection) {
         this.deletionProtection = deletionProtection;
     }
 
-    public DBInstance withDeletionProtection(Boolean deletionProtection) {
+    public DBInstance withDeletionProtection(CharSequence deletionProtection) {
         this.deletionProtection = deletionProtection;
         return this;
     }
@@ -889,7 +889,7 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public Boolean getEnableIAMDatabaseAuthentication() {
+    public CharSequence getEnableIAMDatabaseAuthentication() {
         return enableIAMDatabaseAuthentication;
     }
 
@@ -898,11 +898,11 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public void setEnableIAMDatabaseAuthentication(Boolean enableIAMDatabaseAuthentication) {
+    public void setEnableIAMDatabaseAuthentication(CharSequence enableIAMDatabaseAuthentication) {
         this.enableIAMDatabaseAuthentication = enableIAMDatabaseAuthentication;
     }
 
-    public DBInstance withEnableIAMDatabaseAuthentication(Boolean enableIAMDatabaseAuthentication) {
+    public DBInstance withEnableIAMDatabaseAuthentication(CharSequence enableIAMDatabaseAuthentication) {
         this.enableIAMDatabaseAuthentication = enableIAMDatabaseAuthentication;
         return this;
     }
@@ -912,7 +912,7 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public Boolean getEnablePerformanceInsights() {
+    public CharSequence getEnablePerformanceInsights() {
         return enablePerformanceInsights;
     }
 
@@ -921,11 +921,11 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public void setEnablePerformanceInsights(Boolean enablePerformanceInsights) {
+    public void setEnablePerformanceInsights(CharSequence enablePerformanceInsights) {
         this.enablePerformanceInsights = enablePerformanceInsights;
     }
 
-    public DBInstance withEnablePerformanceInsights(Boolean enablePerformanceInsights) {
+    public DBInstance withEnablePerformanceInsights(CharSequence enablePerformanceInsights) {
         this.enablePerformanceInsights = enablePerformanceInsights;
         return this;
     }
@@ -981,7 +981,7 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public Integer getIops() {
+    public Number getIops() {
         return iops;
     }
 
@@ -990,11 +990,11 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public void setIops(Integer iops) {
+    public void setIops(Number iops) {
         this.iops = iops;
     }
 
-    public DBInstance withIops(Integer iops) {
+    public DBInstance withIops(Number iops) {
         this.iops = iops;
         return this;
     }
@@ -1096,7 +1096,7 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public Integer getMonitoringInterval() {
+    public Number getMonitoringInterval() {
         return monitoringInterval;
     }
 
@@ -1105,11 +1105,11 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public void setMonitoringInterval(Integer monitoringInterval) {
+    public void setMonitoringInterval(Number monitoringInterval) {
         this.monitoringInterval = monitoringInterval;
     }
 
-    public DBInstance withMonitoringInterval(Integer monitoringInterval) {
+    public DBInstance withMonitoringInterval(Number monitoringInterval) {
         this.monitoringInterval = monitoringInterval;
         return this;
     }
@@ -1142,7 +1142,7 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public Boolean getMultiAZ() {
+    public CharSequence getMultiAZ() {
         return multiAZ;
     }
 
@@ -1151,11 +1151,11 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public void setMultiAZ(Boolean multiAZ) {
+    public void setMultiAZ(CharSequence multiAZ) {
         this.multiAZ = multiAZ;
     }
 
-    public DBInstance withMultiAZ(Boolean multiAZ) {
+    public DBInstance withMultiAZ(CharSequence multiAZ) {
         this.multiAZ = multiAZ;
         return this;
     }
@@ -1211,7 +1211,7 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public Integer getPerformanceInsightsRetentionPeriod() {
+    public Number getPerformanceInsightsRetentionPeriod() {
         return performanceInsightsRetentionPeriod;
     }
 
@@ -1220,11 +1220,11 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public void setPerformanceInsightsRetentionPeriod(Integer performanceInsightsRetentionPeriod) {
+    public void setPerformanceInsightsRetentionPeriod(Number performanceInsightsRetentionPeriod) {
         this.performanceInsightsRetentionPeriod = performanceInsightsRetentionPeriod;
     }
 
-    public DBInstance withPerformanceInsightsRetentionPeriod(Integer performanceInsightsRetentionPeriod) {
+    public DBInstance withPerformanceInsightsRetentionPeriod(Number performanceInsightsRetentionPeriod) {
         this.performanceInsightsRetentionPeriod = performanceInsightsRetentionPeriod;
         return this;
     }
@@ -1326,7 +1326,7 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public Integer getPromotionTier() {
+    public Number getPromotionTier() {
         return promotionTier;
     }
 
@@ -1335,11 +1335,11 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public void setPromotionTier(Integer promotionTier) {
+    public void setPromotionTier(Number promotionTier) {
         this.promotionTier = promotionTier;
     }
 
-    public DBInstance withPromotionTier(Integer promotionTier) {
+    public DBInstance withPromotionTier(Number promotionTier) {
         this.promotionTier = promotionTier;
         return this;
     }
@@ -1349,7 +1349,7 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public Boolean getPubliclyAccessible() {
+    public CharSequence getPubliclyAccessible() {
         return publiclyAccessible;
     }
 
@@ -1358,11 +1358,11 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public void setPubliclyAccessible(Boolean publiclyAccessible) {
+    public void setPubliclyAccessible(CharSequence publiclyAccessible) {
         this.publiclyAccessible = publiclyAccessible;
     }
 
-    public DBInstance withPubliclyAccessible(Boolean publiclyAccessible) {
+    public DBInstance withPubliclyAccessible(CharSequence publiclyAccessible) {
         this.publiclyAccessible = publiclyAccessible;
         return this;
     }
@@ -1418,7 +1418,7 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public Boolean getStorageEncrypted() {
+    public CharSequence getStorageEncrypted() {
         return storageEncrypted;
     }
 
@@ -1427,11 +1427,11 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public void setStorageEncrypted(Boolean storageEncrypted) {
+    public void setStorageEncrypted(CharSequence storageEncrypted) {
         this.storageEncrypted = storageEncrypted;
     }
 
-    public DBInstance withStorageEncrypted(Boolean storageEncrypted) {
+    public DBInstance withStorageEncrypted(CharSequence storageEncrypted) {
         this.storageEncrypted = storageEncrypted;
         return this;
     }
@@ -1510,7 +1510,7 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public Boolean getUseDefaultProcessorFeatures() {
+    public CharSequence getUseDefaultProcessorFeatures() {
         return useDefaultProcessorFeatures;
     }
 
@@ -1519,11 +1519,11 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public void setUseDefaultProcessorFeatures(Boolean useDefaultProcessorFeatures) {
+    public void setUseDefaultProcessorFeatures(CharSequence useDefaultProcessorFeatures) {
         this.useDefaultProcessorFeatures = useDefaultProcessorFeatures;
     }
 
-    public DBInstance withUseDefaultProcessorFeatures(Boolean useDefaultProcessorFeatures) {
+    public DBInstance withUseDefaultProcessorFeatures(CharSequence useDefaultProcessorFeatures) {
         this.useDefaultProcessorFeatures = useDefaultProcessorFeatures;
         return this;
     }

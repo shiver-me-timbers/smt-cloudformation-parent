@@ -55,14 +55,14 @@ public class TaskDefinitionLinuxParameters implements Property<TaskDefinitionLin
      */
     @JsonProperty("InitProcessEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-initprocessenabled")
-    private Boolean initProcessEnabled;
+    private CharSequence initProcessEnabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-sharedmemorysize
      * 
      */
     @JsonProperty("SharedMemorySize")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-sharedmemorysize")
-    private Integer sharedMemorySize;
+    private Number sharedMemorySize;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-tmpfs
      * 
@@ -127,7 +127,7 @@ public class TaskDefinitionLinuxParameters implements Property<TaskDefinitionLin
      * 
      */
     @JsonIgnore
-    public Boolean getInitProcessEnabled() {
+    public CharSequence getInitProcessEnabled() {
         return initProcessEnabled;
     }
 
@@ -136,11 +136,11 @@ public class TaskDefinitionLinuxParameters implements Property<TaskDefinitionLin
      * 
      */
     @JsonIgnore
-    public void setInitProcessEnabled(Boolean initProcessEnabled) {
+    public void setInitProcessEnabled(CharSequence initProcessEnabled) {
         this.initProcessEnabled = initProcessEnabled;
     }
 
-    public TaskDefinitionLinuxParameters withInitProcessEnabled(Boolean initProcessEnabled) {
+    public TaskDefinitionLinuxParameters withInitProcessEnabled(CharSequence initProcessEnabled) {
         this.initProcessEnabled = initProcessEnabled;
         return this;
     }
@@ -150,7 +150,7 @@ public class TaskDefinitionLinuxParameters implements Property<TaskDefinitionLin
      * 
      */
     @JsonIgnore
-    public Integer getSharedMemorySize() {
+    public Number getSharedMemorySize() {
         return sharedMemorySize;
     }
 
@@ -159,11 +159,11 @@ public class TaskDefinitionLinuxParameters implements Property<TaskDefinitionLin
      * 
      */
     @JsonIgnore
-    public void setSharedMemorySize(Integer sharedMemorySize) {
+    public void setSharedMemorySize(Number sharedMemorySize) {
         this.sharedMemorySize = sharedMemorySize;
     }
 
-    public TaskDefinitionLinuxParameters withSharedMemorySize(Integer sharedMemorySize) {
+    public TaskDefinitionLinuxParameters withSharedMemorySize(Number sharedMemorySize) {
         this.sharedMemorySize = sharedMemorySize;
         return this;
     }

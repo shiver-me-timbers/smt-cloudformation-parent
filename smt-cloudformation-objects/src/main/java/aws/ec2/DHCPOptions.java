@@ -64,7 +64,7 @@ public class DHCPOptions {
      */
     @JsonProperty("NetbiosNodeType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-netbiosnodetype")
-    private Integer netbiosNodeType;
+    private Number netbiosNodeType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-ntpservers
      * 
@@ -154,7 +154,7 @@ public class DHCPOptions {
      * 
      */
     @JsonIgnore
-    public Integer getNetbiosNodeType() {
+    public Number getNetbiosNodeType() {
         return netbiosNodeType;
     }
 
@@ -163,11 +163,11 @@ public class DHCPOptions {
      * 
      */
     @JsonIgnore
-    public void setNetbiosNodeType(Integer netbiosNodeType) {
+    public void setNetbiosNodeType(Number netbiosNodeType) {
         this.netbiosNodeType = netbiosNodeType;
     }
 
-    public DHCPOptions withNetbiosNodeType(Integer netbiosNodeType) {
+    public DHCPOptions withNetbiosNodeType(Number netbiosNodeType) {
         this.netbiosNodeType = netbiosNodeType;
         return this;
     }

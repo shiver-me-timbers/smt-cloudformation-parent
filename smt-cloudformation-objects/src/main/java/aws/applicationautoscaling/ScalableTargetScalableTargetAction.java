@@ -32,21 +32,21 @@ public class ScalableTargetScalableTargetAction implements Property<ScalableTarg
      */
     @JsonProperty("MaxCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scalabletargetaction.html#cfn-applicationautoscaling-scalabletarget-scalabletargetaction-maxcapacity")
-    private Integer maxCapacity;
+    private Number maxCapacity;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scalabletargetaction.html#cfn-applicationautoscaling-scalabletarget-scalabletargetaction-mincapacity
      * 
      */
     @JsonProperty("MinCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scalabletargetaction.html#cfn-applicationautoscaling-scalabletarget-scalabletargetaction-mincapacity")
-    private Integer minCapacity;
+    private Number minCapacity;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scalabletargetaction.html#cfn-applicationautoscaling-scalabletarget-scalabletargetaction-maxcapacity
      * 
      */
     @JsonIgnore
-    public Integer getMaxCapacity() {
+    public Number getMaxCapacity() {
         return maxCapacity;
     }
 
@@ -55,11 +55,11 @@ public class ScalableTargetScalableTargetAction implements Property<ScalableTarg
      * 
      */
     @JsonIgnore
-    public void setMaxCapacity(Integer maxCapacity) {
+    public void setMaxCapacity(Number maxCapacity) {
         this.maxCapacity = maxCapacity;
     }
 
-    public ScalableTargetScalableTargetAction withMaxCapacity(Integer maxCapacity) {
+    public ScalableTargetScalableTargetAction withMaxCapacity(Number maxCapacity) {
         this.maxCapacity = maxCapacity;
         return this;
     }
@@ -69,7 +69,7 @@ public class ScalableTargetScalableTargetAction implements Property<ScalableTarg
      * 
      */
     @JsonIgnore
-    public Integer getMinCapacity() {
+    public Number getMinCapacity() {
         return minCapacity;
     }
 
@@ -78,11 +78,11 @@ public class ScalableTargetScalableTargetAction implements Property<ScalableTarg
      * 
      */
     @JsonIgnore
-    public void setMinCapacity(Integer minCapacity) {
+    public void setMinCapacity(Number minCapacity) {
         this.minCapacity = minCapacity;
     }
 
-    public ScalableTargetScalableTargetAction withMinCapacity(Integer minCapacity) {
+    public ScalableTargetScalableTargetAction withMinCapacity(Number minCapacity) {
         this.minCapacity = minCapacity;
         return this;
     }

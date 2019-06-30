@@ -51,7 +51,7 @@ public class Domain {
      */
     @JsonProperty("AdvancedOptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-advancedoptions")
-    private Map<String, String> advancedOptions;
+    private Map<String, CharSequence> advancedOptions;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-domainname
      * 
@@ -156,7 +156,7 @@ public class Domain {
      * 
      */
     @JsonIgnore
-    public Map<String, String> getAdvancedOptions() {
+    public Map<String, CharSequence> getAdvancedOptions() {
         return advancedOptions;
     }
 
@@ -165,11 +165,11 @@ public class Domain {
      * 
      */
     @JsonIgnore
-    public void setAdvancedOptions(Map<String, String> advancedOptions) {
+    public void setAdvancedOptions(Map<String, CharSequence> advancedOptions) {
         this.advancedOptions = advancedOptions;
     }
 
-    public Domain withAdvancedOptions(Map<String, String> advancedOptions) {
+    public Domain withAdvancedOptions(Map<String, CharSequence> advancedOptions) {
         this.advancedOptions = advancedOptions;
         return this;
     }

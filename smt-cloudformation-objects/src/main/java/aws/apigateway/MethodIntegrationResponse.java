@@ -43,14 +43,14 @@ public class MethodIntegrationResponse implements Property<MethodIntegrationResp
      */
     @JsonProperty("ResponseParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration-integrationresponse.html#cfn-apigateway-method-integration-integrationresponse-responseparameters")
-    private Map<String, String> responseParameters;
+    private Map<String, CharSequence> responseParameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration-integrationresponse.html#cfn-apigateway-method-integration-integrationresponse-responsetemplates
      * 
      */
     @JsonProperty("ResponseTemplates")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration-integrationresponse.html#cfn-apigateway-method-integration-integrationresponse-responsetemplates")
-    private Map<String, String> responseTemplates;
+    private Map<String, CharSequence> responseTemplates;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration-integrationresponse.html#cfn-apigateway-method-integration-integrationresponse-selectionpattern
      * 
@@ -94,7 +94,7 @@ public class MethodIntegrationResponse implements Property<MethodIntegrationResp
      * 
      */
     @JsonIgnore
-    public Map<String, String> getResponseParameters() {
+    public Map<String, CharSequence> getResponseParameters() {
         return responseParameters;
     }
 
@@ -103,11 +103,11 @@ public class MethodIntegrationResponse implements Property<MethodIntegrationResp
      * 
      */
     @JsonIgnore
-    public void setResponseParameters(Map<String, String> responseParameters) {
+    public void setResponseParameters(Map<String, CharSequence> responseParameters) {
         this.responseParameters = responseParameters;
     }
 
-    public MethodIntegrationResponse withResponseParameters(Map<String, String> responseParameters) {
+    public MethodIntegrationResponse withResponseParameters(Map<String, CharSequence> responseParameters) {
         this.responseParameters = responseParameters;
         return this;
     }
@@ -117,7 +117,7 @@ public class MethodIntegrationResponse implements Property<MethodIntegrationResp
      * 
      */
     @JsonIgnore
-    public Map<String, String> getResponseTemplates() {
+    public Map<String, CharSequence> getResponseTemplates() {
         return responseTemplates;
     }
 
@@ -126,11 +126,11 @@ public class MethodIntegrationResponse implements Property<MethodIntegrationResp
      * 
      */
     @JsonIgnore
-    public void setResponseTemplates(Map<String, String> responseTemplates) {
+    public void setResponseTemplates(Map<String, CharSequence> responseTemplates) {
         this.responseTemplates = responseTemplates;
     }
 
-    public MethodIntegrationResponse withResponseTemplates(Map<String, String> responseTemplates) {
+    public MethodIntegrationResponse withResponseTemplates(Map<String, CharSequence> responseTemplates) {
         this.responseTemplates = responseTemplates;
         return this;
     }

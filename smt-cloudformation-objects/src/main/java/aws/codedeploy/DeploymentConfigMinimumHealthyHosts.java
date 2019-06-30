@@ -39,7 +39,7 @@ public class DeploymentConfigMinimumHealthyHosts implements Property<DeploymentC
      */
     @JsonProperty("Value")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentconfig-minimumhealthyhosts.html#cfn-codedeploy-deploymentconfig-minimumhealthyhosts-value")
-    private Integer value;
+    private Number value;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentconfig-minimumhealthyhosts.html#cfn-codedeploy-deploymentconfig-minimumhealthyhosts-type
@@ -69,7 +69,7 @@ public class DeploymentConfigMinimumHealthyHosts implements Property<DeploymentC
      * 
      */
     @JsonIgnore
-    public Integer getValue() {
+    public Number getValue() {
         return value;
     }
 
@@ -78,11 +78,11 @@ public class DeploymentConfigMinimumHealthyHosts implements Property<DeploymentC
      * 
      */
     @JsonIgnore
-    public void setValue(Integer value) {
+    public void setValue(Number value) {
         this.value = value;
     }
 
-    public DeploymentConfigMinimumHealthyHosts withValue(Integer value) {
+    public DeploymentConfigMinimumHealthyHosts withValue(Number value) {
         this.value = value;
         return this;
     }

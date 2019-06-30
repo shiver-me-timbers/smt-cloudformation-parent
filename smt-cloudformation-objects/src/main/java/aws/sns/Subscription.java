@@ -63,7 +63,7 @@ public class Subscription {
      */
     @JsonProperty("RawMessageDelivery")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-rawmessagedelivery")
-    private Boolean rawMessageDelivery;
+    private CharSequence rawMessageDelivery;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-region
      * 
@@ -176,7 +176,7 @@ public class Subscription {
      * 
      */
     @JsonIgnore
-    public Boolean getRawMessageDelivery() {
+    public CharSequence getRawMessageDelivery() {
         return rawMessageDelivery;
     }
 
@@ -185,11 +185,11 @@ public class Subscription {
      * 
      */
     @JsonIgnore
-    public void setRawMessageDelivery(Boolean rawMessageDelivery) {
+    public void setRawMessageDelivery(CharSequence rawMessageDelivery) {
         this.rawMessageDelivery = rawMessageDelivery;
     }
 
-    public Subscription withRawMessageDelivery(Boolean rawMessageDelivery) {
+    public Subscription withRawMessageDelivery(CharSequence rawMessageDelivery) {
         this.rawMessageDelivery = rawMessageDelivery;
         return this;
     }

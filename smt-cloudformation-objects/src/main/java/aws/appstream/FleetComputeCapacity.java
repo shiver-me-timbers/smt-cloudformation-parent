@@ -31,14 +31,14 @@ public class FleetComputeCapacity implements Property<FleetComputeCapacity>
      */
     @JsonProperty("DesiredInstances")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-fleet-computecapacity.html#cfn-appstream-fleet-computecapacity-desiredinstances")
-    private Integer desiredInstances;
+    private Number desiredInstances;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-fleet-computecapacity.html#cfn-appstream-fleet-computecapacity-desiredinstances
      * 
      */
     @JsonIgnore
-    public Integer getDesiredInstances() {
+    public Number getDesiredInstances() {
         return desiredInstances;
     }
 
@@ -47,11 +47,11 @@ public class FleetComputeCapacity implements Property<FleetComputeCapacity>
      * 
      */
     @JsonIgnore
-    public void setDesiredInstances(Integer desiredInstances) {
+    public void setDesiredInstances(Number desiredInstances) {
         this.desiredInstances = desiredInstances;
     }
 
-    public FleetComputeCapacity withDesiredInstances(Integer desiredInstances) {
+    public FleetComputeCapacity withDesiredInstances(Number desiredInstances) {
         this.desiredInstances = desiredInstances;
         return this;
     }

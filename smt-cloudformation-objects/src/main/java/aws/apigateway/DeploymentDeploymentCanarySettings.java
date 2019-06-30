@@ -34,28 +34,28 @@ public class DeploymentDeploymentCanarySettings implements Property<DeploymentDe
      */
     @JsonProperty("PercentTraffic")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html#cfn-apigateway-deployment-deploymentcanarysettings-percenttraffic")
-    private Double percentTraffic;
+    private Number percentTraffic;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html#cfn-apigateway-deployment-deploymentcanarysettings-stagevariableoverrides
      * 
      */
     @JsonProperty("StageVariableOverrides")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html#cfn-apigateway-deployment-deploymentcanarysettings-stagevariableoverrides")
-    private Map<String, String> stageVariableOverrides;
+    private Map<String, CharSequence> stageVariableOverrides;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html#cfn-apigateway-deployment-deploymentcanarysettings-usestagecache
      * 
      */
     @JsonProperty("UseStageCache")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html#cfn-apigateway-deployment-deploymentcanarysettings-usestagecache")
-    private Boolean useStageCache;
+    private CharSequence useStageCache;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html#cfn-apigateway-deployment-deploymentcanarysettings-percenttraffic
      * 
      */
     @JsonIgnore
-    public Double getPercentTraffic() {
+    public Number getPercentTraffic() {
         return percentTraffic;
     }
 
@@ -64,11 +64,11 @@ public class DeploymentDeploymentCanarySettings implements Property<DeploymentDe
      * 
      */
     @JsonIgnore
-    public void setPercentTraffic(Double percentTraffic) {
+    public void setPercentTraffic(Number percentTraffic) {
         this.percentTraffic = percentTraffic;
     }
 
-    public DeploymentDeploymentCanarySettings withPercentTraffic(Double percentTraffic) {
+    public DeploymentDeploymentCanarySettings withPercentTraffic(Number percentTraffic) {
         this.percentTraffic = percentTraffic;
         return this;
     }
@@ -78,7 +78,7 @@ public class DeploymentDeploymentCanarySettings implements Property<DeploymentDe
      * 
      */
     @JsonIgnore
-    public Map<String, String> getStageVariableOverrides() {
+    public Map<String, CharSequence> getStageVariableOverrides() {
         return stageVariableOverrides;
     }
 
@@ -87,11 +87,11 @@ public class DeploymentDeploymentCanarySettings implements Property<DeploymentDe
      * 
      */
     @JsonIgnore
-    public void setStageVariableOverrides(Map<String, String> stageVariableOverrides) {
+    public void setStageVariableOverrides(Map<String, CharSequence> stageVariableOverrides) {
         this.stageVariableOverrides = stageVariableOverrides;
     }
 
-    public DeploymentDeploymentCanarySettings withStageVariableOverrides(Map<String, String> stageVariableOverrides) {
+    public DeploymentDeploymentCanarySettings withStageVariableOverrides(Map<String, CharSequence> stageVariableOverrides) {
         this.stageVariableOverrides = stageVariableOverrides;
         return this;
     }
@@ -101,7 +101,7 @@ public class DeploymentDeploymentCanarySettings implements Property<DeploymentDe
      * 
      */
     @JsonIgnore
-    public Boolean getUseStageCache() {
+    public CharSequence getUseStageCache() {
         return useStageCache;
     }
 
@@ -110,11 +110,11 @@ public class DeploymentDeploymentCanarySettings implements Property<DeploymentDe
      * 
      */
     @JsonIgnore
-    public void setUseStageCache(Boolean useStageCache) {
+    public void setUseStageCache(CharSequence useStageCache) {
         this.useStageCache = useStageCache;
     }
 
-    public DeploymentDeploymentCanarySettings withUseStageCache(Boolean useStageCache) {
+    public DeploymentDeploymentCanarySettings withUseStageCache(CharSequence useStageCache) {
         this.useStageCache = useStageCache;
         return this;
     }

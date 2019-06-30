@@ -33,7 +33,7 @@ public class InstanceFleetConfigSpotProvisioningSpecification implements Propert
      */
     @JsonProperty("BlockDurationMinutes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-spotprovisioningspecification.html#cfn-elasticmapreduce-instancefleetconfig-spotprovisioningspecification-blockdurationminutes")
-    private Integer blockDurationMinutes;
+    private Number blockDurationMinutes;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-spotprovisioningspecification.html#cfn-elasticmapreduce-instancefleetconfig-spotprovisioningspecification-timeoutaction
      * 
@@ -47,14 +47,14 @@ public class InstanceFleetConfigSpotProvisioningSpecification implements Propert
      */
     @JsonProperty("TimeoutDurationMinutes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-spotprovisioningspecification.html#cfn-elasticmapreduce-instancefleetconfig-spotprovisioningspecification-timeoutdurationminutes")
-    private Integer timeoutDurationMinutes;
+    private Number timeoutDurationMinutes;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-spotprovisioningspecification.html#cfn-elasticmapreduce-instancefleetconfig-spotprovisioningspecification-blockdurationminutes
      * 
      */
     @JsonIgnore
-    public Integer getBlockDurationMinutes() {
+    public Number getBlockDurationMinutes() {
         return blockDurationMinutes;
     }
 
@@ -63,11 +63,11 @@ public class InstanceFleetConfigSpotProvisioningSpecification implements Propert
      * 
      */
     @JsonIgnore
-    public void setBlockDurationMinutes(Integer blockDurationMinutes) {
+    public void setBlockDurationMinutes(Number blockDurationMinutes) {
         this.blockDurationMinutes = blockDurationMinutes;
     }
 
-    public InstanceFleetConfigSpotProvisioningSpecification withBlockDurationMinutes(Integer blockDurationMinutes) {
+    public InstanceFleetConfigSpotProvisioningSpecification withBlockDurationMinutes(Number blockDurationMinutes) {
         this.blockDurationMinutes = blockDurationMinutes;
         return this;
     }
@@ -100,7 +100,7 @@ public class InstanceFleetConfigSpotProvisioningSpecification implements Propert
      * 
      */
     @JsonIgnore
-    public Integer getTimeoutDurationMinutes() {
+    public Number getTimeoutDurationMinutes() {
         return timeoutDurationMinutes;
     }
 
@@ -109,11 +109,11 @@ public class InstanceFleetConfigSpotProvisioningSpecification implements Propert
      * 
      */
     @JsonIgnore
-    public void setTimeoutDurationMinutes(Integer timeoutDurationMinutes) {
+    public void setTimeoutDurationMinutes(Number timeoutDurationMinutes) {
         this.timeoutDurationMinutes = timeoutDurationMinutes;
     }
 
-    public InstanceFleetConfigSpotProvisioningSpecification withTimeoutDurationMinutes(Integer timeoutDurationMinutes) {
+    public InstanceFleetConfigSpotProvisioningSpecification withTimeoutDurationMinutes(Number timeoutDurationMinutes) {
         this.timeoutDurationMinutes = timeoutDurationMinutes;
         return this;
     }

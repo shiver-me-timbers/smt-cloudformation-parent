@@ -36,49 +36,49 @@ public class LayerAutoScalingThresholds implements Property<LayerAutoScalingThre
      */
     @JsonProperty("CpuThreshold")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html#cfn-opsworks-layer-loadbasedautoscaling-autoscalingthresholds-cputhreshold")
-    private Double cpuThreshold;
+    private Number cpuThreshold;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html#cfn-opsworks-layer-loadbasedautoscaling-autoscalingthresholds-ignoremetricstime
      * 
      */
     @JsonProperty("IgnoreMetricsTime")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html#cfn-opsworks-layer-loadbasedautoscaling-autoscalingthresholds-ignoremetricstime")
-    private Integer ignoreMetricsTime;
+    private Number ignoreMetricsTime;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html#cfn-opsworks-layer-loadbasedautoscaling-autoscalingthresholds-instancecount
      * 
      */
     @JsonProperty("InstanceCount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html#cfn-opsworks-layer-loadbasedautoscaling-autoscalingthresholds-instancecount")
-    private Integer instanceCount;
+    private Number instanceCount;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html#cfn-opsworks-layer-loadbasedautoscaling-autoscalingthresholds-loadthreshold
      * 
      */
     @JsonProperty("LoadThreshold")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html#cfn-opsworks-layer-loadbasedautoscaling-autoscalingthresholds-loadthreshold")
-    private Double loadThreshold;
+    private Number loadThreshold;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html#cfn-opsworks-layer-loadbasedautoscaling-autoscalingthresholds-memorythreshold
      * 
      */
     @JsonProperty("MemoryThreshold")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html#cfn-opsworks-layer-loadbasedautoscaling-autoscalingthresholds-memorythreshold")
-    private Double memoryThreshold;
+    private Number memoryThreshold;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html#cfn-opsworks-layer-loadbasedautoscaling-autoscalingthresholds-thresholdwaittime
      * 
      */
     @JsonProperty("ThresholdsWaitTime")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html#cfn-opsworks-layer-loadbasedautoscaling-autoscalingthresholds-thresholdwaittime")
-    private Integer thresholdsWaitTime;
+    private Number thresholdsWaitTime;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html#cfn-opsworks-layer-loadbasedautoscaling-autoscalingthresholds-cputhreshold
      * 
      */
     @JsonIgnore
-    public Double getCpuThreshold() {
+    public Number getCpuThreshold() {
         return cpuThreshold;
     }
 
@@ -87,11 +87,11 @@ public class LayerAutoScalingThresholds implements Property<LayerAutoScalingThre
      * 
      */
     @JsonIgnore
-    public void setCpuThreshold(Double cpuThreshold) {
+    public void setCpuThreshold(Number cpuThreshold) {
         this.cpuThreshold = cpuThreshold;
     }
 
-    public LayerAutoScalingThresholds withCpuThreshold(Double cpuThreshold) {
+    public LayerAutoScalingThresholds withCpuThreshold(Number cpuThreshold) {
         this.cpuThreshold = cpuThreshold;
         return this;
     }
@@ -101,7 +101,7 @@ public class LayerAutoScalingThresholds implements Property<LayerAutoScalingThre
      * 
      */
     @JsonIgnore
-    public Integer getIgnoreMetricsTime() {
+    public Number getIgnoreMetricsTime() {
         return ignoreMetricsTime;
     }
 
@@ -110,11 +110,11 @@ public class LayerAutoScalingThresholds implements Property<LayerAutoScalingThre
      * 
      */
     @JsonIgnore
-    public void setIgnoreMetricsTime(Integer ignoreMetricsTime) {
+    public void setIgnoreMetricsTime(Number ignoreMetricsTime) {
         this.ignoreMetricsTime = ignoreMetricsTime;
     }
 
-    public LayerAutoScalingThresholds withIgnoreMetricsTime(Integer ignoreMetricsTime) {
+    public LayerAutoScalingThresholds withIgnoreMetricsTime(Number ignoreMetricsTime) {
         this.ignoreMetricsTime = ignoreMetricsTime;
         return this;
     }
@@ -124,7 +124,7 @@ public class LayerAutoScalingThresholds implements Property<LayerAutoScalingThre
      * 
      */
     @JsonIgnore
-    public Integer getInstanceCount() {
+    public Number getInstanceCount() {
         return instanceCount;
     }
 
@@ -133,11 +133,11 @@ public class LayerAutoScalingThresholds implements Property<LayerAutoScalingThre
      * 
      */
     @JsonIgnore
-    public void setInstanceCount(Integer instanceCount) {
+    public void setInstanceCount(Number instanceCount) {
         this.instanceCount = instanceCount;
     }
 
-    public LayerAutoScalingThresholds withInstanceCount(Integer instanceCount) {
+    public LayerAutoScalingThresholds withInstanceCount(Number instanceCount) {
         this.instanceCount = instanceCount;
         return this;
     }
@@ -147,7 +147,7 @@ public class LayerAutoScalingThresholds implements Property<LayerAutoScalingThre
      * 
      */
     @JsonIgnore
-    public Double getLoadThreshold() {
+    public Number getLoadThreshold() {
         return loadThreshold;
     }
 
@@ -156,11 +156,11 @@ public class LayerAutoScalingThresholds implements Property<LayerAutoScalingThre
      * 
      */
     @JsonIgnore
-    public void setLoadThreshold(Double loadThreshold) {
+    public void setLoadThreshold(Number loadThreshold) {
         this.loadThreshold = loadThreshold;
     }
 
-    public LayerAutoScalingThresholds withLoadThreshold(Double loadThreshold) {
+    public LayerAutoScalingThresholds withLoadThreshold(Number loadThreshold) {
         this.loadThreshold = loadThreshold;
         return this;
     }
@@ -170,7 +170,7 @@ public class LayerAutoScalingThresholds implements Property<LayerAutoScalingThre
      * 
      */
     @JsonIgnore
-    public Double getMemoryThreshold() {
+    public Number getMemoryThreshold() {
         return memoryThreshold;
     }
 
@@ -179,11 +179,11 @@ public class LayerAutoScalingThresholds implements Property<LayerAutoScalingThre
      * 
      */
     @JsonIgnore
-    public void setMemoryThreshold(Double memoryThreshold) {
+    public void setMemoryThreshold(Number memoryThreshold) {
         this.memoryThreshold = memoryThreshold;
     }
 
-    public LayerAutoScalingThresholds withMemoryThreshold(Double memoryThreshold) {
+    public LayerAutoScalingThresholds withMemoryThreshold(Number memoryThreshold) {
         this.memoryThreshold = memoryThreshold;
         return this;
     }
@@ -193,7 +193,7 @@ public class LayerAutoScalingThresholds implements Property<LayerAutoScalingThre
      * 
      */
     @JsonIgnore
-    public Integer getThresholdsWaitTime() {
+    public Number getThresholdsWaitTime() {
         return thresholdsWaitTime;
     }
 
@@ -202,11 +202,11 @@ public class LayerAutoScalingThresholds implements Property<LayerAutoScalingThre
      * 
      */
     @JsonIgnore
-    public void setThresholdsWaitTime(Integer thresholdsWaitTime) {
+    public void setThresholdsWaitTime(Number thresholdsWaitTime) {
         this.thresholdsWaitTime = thresholdsWaitTime;
     }
 
-    public LayerAutoScalingThresholds withThresholdsWaitTime(Integer thresholdsWaitTime) {
+    public LayerAutoScalingThresholds withThresholdsWaitTime(Number thresholdsWaitTime) {
         this.thresholdsWaitTime = thresholdsWaitTime;
         return this;
     }

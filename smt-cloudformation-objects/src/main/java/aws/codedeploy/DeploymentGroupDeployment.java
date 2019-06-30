@@ -40,7 +40,7 @@ public class DeploymentGroupDeployment implements Property<DeploymentGroupDeploy
      */
     @JsonProperty("IgnoreApplicationStopFailures")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment.html#cfn-properties-codedeploy-deploymentgroup-deployment-ignoreapplicationstopfailures")
-    private Boolean ignoreApplicationStopFailures;
+    private CharSequence ignoreApplicationStopFailures;
     /**
      * DeploymentGroupRevisionLocation
      * <p>
@@ -79,7 +79,7 @@ public class DeploymentGroupDeployment implements Property<DeploymentGroupDeploy
      * 
      */
     @JsonIgnore
-    public Boolean getIgnoreApplicationStopFailures() {
+    public CharSequence getIgnoreApplicationStopFailures() {
         return ignoreApplicationStopFailures;
     }
 
@@ -88,11 +88,11 @@ public class DeploymentGroupDeployment implements Property<DeploymentGroupDeploy
      * 
      */
     @JsonIgnore
-    public void setIgnoreApplicationStopFailures(Boolean ignoreApplicationStopFailures) {
+    public void setIgnoreApplicationStopFailures(CharSequence ignoreApplicationStopFailures) {
         this.ignoreApplicationStopFailures = ignoreApplicationStopFailures;
     }
 
-    public DeploymentGroupDeployment withIgnoreApplicationStopFailures(Boolean ignoreApplicationStopFailures) {
+    public DeploymentGroupDeployment withIgnoreApplicationStopFailures(CharSequence ignoreApplicationStopFailures) {
         this.ignoreApplicationStopFailures = ignoreApplicationStopFailures;
         return this;
     }

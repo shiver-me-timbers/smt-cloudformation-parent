@@ -42,7 +42,7 @@ public class ListenerAuthenticateOidcConfig implements Property<ListenerAuthenti
      */
     @JsonProperty("AuthenticationRequestExtraParams")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticateoidcconfig.html#cfn-elasticloadbalancingv2-listener-authenticateoidcconfig-authenticationrequestextraparams")
-    private Map<String, String> authenticationRequestExtraParams;
+    private Map<String, CharSequence> authenticationRequestExtraParams;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticateoidcconfig.html#cfn-elasticloadbalancingv2-listener-authenticateoidcconfig-authorizationendpoint
      * 
@@ -98,7 +98,7 @@ public class ListenerAuthenticateOidcConfig implements Property<ListenerAuthenti
      */
     @JsonProperty("SessionTimeout")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticateoidcconfig.html#cfn-elasticloadbalancingv2-listener-authenticateoidcconfig-sessiontimeout")
-    private Integer sessionTimeout;
+    private Number sessionTimeout;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticateoidcconfig.html#cfn-elasticloadbalancingv2-listener-authenticateoidcconfig-tokenendpoint
      * 
@@ -119,7 +119,7 @@ public class ListenerAuthenticateOidcConfig implements Property<ListenerAuthenti
      * 
      */
     @JsonIgnore
-    public Map<String, String> getAuthenticationRequestExtraParams() {
+    public Map<String, CharSequence> getAuthenticationRequestExtraParams() {
         return authenticationRequestExtraParams;
     }
 
@@ -128,11 +128,11 @@ public class ListenerAuthenticateOidcConfig implements Property<ListenerAuthenti
      * 
      */
     @JsonIgnore
-    public void setAuthenticationRequestExtraParams(Map<String, String> authenticationRequestExtraParams) {
+    public void setAuthenticationRequestExtraParams(Map<String, CharSequence> authenticationRequestExtraParams) {
         this.authenticationRequestExtraParams = authenticationRequestExtraParams;
     }
 
-    public ListenerAuthenticateOidcConfig withAuthenticationRequestExtraParams(Map<String, String> authenticationRequestExtraParams) {
+    public ListenerAuthenticateOidcConfig withAuthenticationRequestExtraParams(Map<String, CharSequence> authenticationRequestExtraParams) {
         this.authenticationRequestExtraParams = authenticationRequestExtraParams;
         return this;
     }
@@ -303,7 +303,7 @@ public class ListenerAuthenticateOidcConfig implements Property<ListenerAuthenti
      * 
      */
     @JsonIgnore
-    public Integer getSessionTimeout() {
+    public Number getSessionTimeout() {
         return sessionTimeout;
     }
 
@@ -312,11 +312,11 @@ public class ListenerAuthenticateOidcConfig implements Property<ListenerAuthenti
      * 
      */
     @JsonIgnore
-    public void setSessionTimeout(Integer sessionTimeout) {
+    public void setSessionTimeout(Number sessionTimeout) {
         this.sessionTimeout = sessionTimeout;
     }
 
-    public ListenerAuthenticateOidcConfig withSessionTimeout(Integer sessionTimeout) {
+    public ListenerAuthenticateOidcConfig withSessionTimeout(Number sessionTimeout) {
         this.sessionTimeout = sessionTimeout;
         return this;
     }

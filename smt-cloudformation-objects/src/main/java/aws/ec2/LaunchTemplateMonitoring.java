@@ -31,14 +31,14 @@ public class LaunchTemplateMonitoring implements Property<LaunchTemplateMonitori
      */
     @JsonProperty("Enabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-monitoring.html#cfn-ec2-launchtemplate-launchtemplatedata-monitoring-enabled")
-    private Boolean enabled;
+    private CharSequence enabled;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-monitoring.html#cfn-ec2-launchtemplate-launchtemplatedata-monitoring-enabled
      * 
      */
     @JsonIgnore
-    public Boolean getEnabled() {
+    public CharSequence getEnabled() {
         return enabled;
     }
 
@@ -47,11 +47,11 @@ public class LaunchTemplateMonitoring implements Property<LaunchTemplateMonitori
      * 
      */
     @JsonIgnore
-    public void setEnabled(Boolean enabled) {
+    public void setEnabled(CharSequence enabled) {
         this.enabled = enabled;
     }
 
-    public LaunchTemplateMonitoring withEnabled(Boolean enabled) {
+    public LaunchTemplateMonitoring withEnabled(CharSequence enabled) {
         this.enabled = enabled;
         return this;
     }

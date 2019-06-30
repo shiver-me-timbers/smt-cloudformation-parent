@@ -33,28 +33,28 @@ public class ApplicationMaxAgeRule implements Property<ApplicationMaxAgeRule>
      */
     @JsonProperty("DeleteSourceFromS3")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxagerule.html#cfn-elasticbeanstalk-application-maxagerule-deletesourcefroms3")
-    private Boolean deleteSourceFromS3;
+    private CharSequence deleteSourceFromS3;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxagerule.html#cfn-elasticbeanstalk-application-maxagerule-enabled
      * 
      */
     @JsonProperty("Enabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxagerule.html#cfn-elasticbeanstalk-application-maxagerule-enabled")
-    private Boolean enabled;
+    private CharSequence enabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxagerule.html#cfn-elasticbeanstalk-application-maxagerule-maxageindays
      * 
      */
     @JsonProperty("MaxAgeInDays")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxagerule.html#cfn-elasticbeanstalk-application-maxagerule-maxageindays")
-    private Integer maxAgeInDays;
+    private Number maxAgeInDays;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxagerule.html#cfn-elasticbeanstalk-application-maxagerule-deletesourcefroms3
      * 
      */
     @JsonIgnore
-    public Boolean getDeleteSourceFromS3() {
+    public CharSequence getDeleteSourceFromS3() {
         return deleteSourceFromS3;
     }
 
@@ -63,11 +63,11 @@ public class ApplicationMaxAgeRule implements Property<ApplicationMaxAgeRule>
      * 
      */
     @JsonIgnore
-    public void setDeleteSourceFromS3(Boolean deleteSourceFromS3) {
+    public void setDeleteSourceFromS3(CharSequence deleteSourceFromS3) {
         this.deleteSourceFromS3 = deleteSourceFromS3;
     }
 
-    public ApplicationMaxAgeRule withDeleteSourceFromS3(Boolean deleteSourceFromS3) {
+    public ApplicationMaxAgeRule withDeleteSourceFromS3(CharSequence deleteSourceFromS3) {
         this.deleteSourceFromS3 = deleteSourceFromS3;
         return this;
     }
@@ -77,7 +77,7 @@ public class ApplicationMaxAgeRule implements Property<ApplicationMaxAgeRule>
      * 
      */
     @JsonIgnore
-    public Boolean getEnabled() {
+    public CharSequence getEnabled() {
         return enabled;
     }
 
@@ -86,11 +86,11 @@ public class ApplicationMaxAgeRule implements Property<ApplicationMaxAgeRule>
      * 
      */
     @JsonIgnore
-    public void setEnabled(Boolean enabled) {
+    public void setEnabled(CharSequence enabled) {
         this.enabled = enabled;
     }
 
-    public ApplicationMaxAgeRule withEnabled(Boolean enabled) {
+    public ApplicationMaxAgeRule withEnabled(CharSequence enabled) {
         this.enabled = enabled;
         return this;
     }
@@ -100,7 +100,7 @@ public class ApplicationMaxAgeRule implements Property<ApplicationMaxAgeRule>
      * 
      */
     @JsonIgnore
-    public Integer getMaxAgeInDays() {
+    public Number getMaxAgeInDays() {
         return maxAgeInDays;
     }
 
@@ -109,11 +109,11 @@ public class ApplicationMaxAgeRule implements Property<ApplicationMaxAgeRule>
      * 
      */
     @JsonIgnore
-    public void setMaxAgeInDays(Integer maxAgeInDays) {
+    public void setMaxAgeInDays(Number maxAgeInDays) {
         this.maxAgeInDays = maxAgeInDays;
     }
 
-    public ApplicationMaxAgeRule withMaxAgeInDays(Integer maxAgeInDays) {
+    public ApplicationMaxAgeRule withMaxAgeInDays(Number maxAgeInDays) {
         this.maxAgeInDays = maxAgeInDays;
         return this;
     }

@@ -38,7 +38,7 @@ public class ApiKey {
      */
     @JsonProperty("Expires")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apikey.html#cfn-appsync-apikey-expires")
-    private Double expires;
+    private Number expires;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apikey.html#cfn-appsync-apikey-apiid
      * 
@@ -75,7 +75,7 @@ public class ApiKey {
      * 
      */
     @JsonIgnore
-    public Double getExpires() {
+    public Number getExpires() {
         return expires;
     }
 
@@ -84,11 +84,11 @@ public class ApiKey {
      * 
      */
     @JsonIgnore
-    public void setExpires(Double expires) {
+    public void setExpires(Number expires) {
         this.expires = expires;
     }
 
-    public ApiKey withExpires(Double expires) {
+    public ApiKey withExpires(Number expires) {
         this.expires = expires;
         return this;
     }

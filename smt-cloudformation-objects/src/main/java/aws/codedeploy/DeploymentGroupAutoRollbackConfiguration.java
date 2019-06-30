@@ -35,7 +35,7 @@ public class DeploymentGroupAutoRollbackConfiguration implements Property<Deploy
      */
     @JsonProperty("Enabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-autorollbackconfiguration.html#cfn-codedeploy-deploymentgroup-autorollbackconfiguration-enabled")
-    private Boolean enabled;
+    private CharSequence enabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-autorollbackconfiguration.html#cfn-codedeploy-deploymentgroup-autorollbackconfiguration-events
      * 
@@ -50,7 +50,7 @@ public class DeploymentGroupAutoRollbackConfiguration implements Property<Deploy
      * 
      */
     @JsonIgnore
-    public Boolean getEnabled() {
+    public CharSequence getEnabled() {
         return enabled;
     }
 
@@ -59,11 +59,11 @@ public class DeploymentGroupAutoRollbackConfiguration implements Property<Deploy
      * 
      */
     @JsonIgnore
-    public void setEnabled(Boolean enabled) {
+    public void setEnabled(CharSequence enabled) {
         this.enabled = enabled;
     }
 
-    public DeploymentGroupAutoRollbackConfiguration withEnabled(Boolean enabled) {
+    public DeploymentGroupAutoRollbackConfiguration withEnabled(CharSequence enabled) {
         this.enabled = enabled;
         return this;
     }

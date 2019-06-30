@@ -35,7 +35,7 @@ public class LoggerDefinitionVersionLogger implements Property<LoggerDefinitionV
      */
     @JsonProperty("Space")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-loggerdefinitionversion-logger.html#cfn-greengrass-loggerdefinitionversion-logger-space")
-    private Integer space;
+    private Number space;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-loggerdefinitionversion-logger.html#cfn-greengrass-loggerdefinitionversion-logger-type
      * 
@@ -70,7 +70,7 @@ public class LoggerDefinitionVersionLogger implements Property<LoggerDefinitionV
      * 
      */
     @JsonIgnore
-    public Integer getSpace() {
+    public Number getSpace() {
         return space;
     }
 
@@ -79,11 +79,11 @@ public class LoggerDefinitionVersionLogger implements Property<LoggerDefinitionV
      * 
      */
     @JsonIgnore
-    public void setSpace(Integer space) {
+    public void setSpace(Number space) {
         this.space = space;
     }
 
-    public LoggerDefinitionVersionLogger withSpace(Integer space) {
+    public LoggerDefinitionVersionLogger withSpace(Number space) {
         this.space = space;
         return this;
     }

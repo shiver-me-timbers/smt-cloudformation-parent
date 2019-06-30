@@ -41,14 +41,14 @@ public class EndpointElasticsearchSettings implements Property<EndpointElasticse
      */
     @JsonProperty("FullLoadErrorPercentage")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-elasticsearchsettings.html#cfn-dms-endpoint-elasticsearchsettings-fullloaderrorpercentage")
-    private Integer fullLoadErrorPercentage;
+    private Number fullLoadErrorPercentage;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-elasticsearchsettings.html#cfn-dms-endpoint-elasticsearchsettings-errorretryduration
      * 
      */
     @JsonProperty("ErrorRetryDuration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-elasticsearchsettings.html#cfn-dms-endpoint-elasticsearchsettings-errorretryduration")
-    private Integer errorRetryDuration;
+    private Number errorRetryDuration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-elasticsearchsettings.html#cfn-dms-endpoint-elasticsearchsettings-serviceaccessrolearn
      * 
@@ -85,7 +85,7 @@ public class EndpointElasticsearchSettings implements Property<EndpointElasticse
      * 
      */
     @JsonIgnore
-    public Integer getFullLoadErrorPercentage() {
+    public Number getFullLoadErrorPercentage() {
         return fullLoadErrorPercentage;
     }
 
@@ -94,11 +94,11 @@ public class EndpointElasticsearchSettings implements Property<EndpointElasticse
      * 
      */
     @JsonIgnore
-    public void setFullLoadErrorPercentage(Integer fullLoadErrorPercentage) {
+    public void setFullLoadErrorPercentage(Number fullLoadErrorPercentage) {
         this.fullLoadErrorPercentage = fullLoadErrorPercentage;
     }
 
-    public EndpointElasticsearchSettings withFullLoadErrorPercentage(Integer fullLoadErrorPercentage) {
+    public EndpointElasticsearchSettings withFullLoadErrorPercentage(Number fullLoadErrorPercentage) {
         this.fullLoadErrorPercentage = fullLoadErrorPercentage;
         return this;
     }
@@ -108,7 +108,7 @@ public class EndpointElasticsearchSettings implements Property<EndpointElasticse
      * 
      */
     @JsonIgnore
-    public Integer getErrorRetryDuration() {
+    public Number getErrorRetryDuration() {
         return errorRetryDuration;
     }
 
@@ -117,11 +117,11 @@ public class EndpointElasticsearchSettings implements Property<EndpointElasticse
      * 
      */
     @JsonIgnore
-    public void setErrorRetryDuration(Integer errorRetryDuration) {
+    public void setErrorRetryDuration(Number errorRetryDuration) {
         this.errorRetryDuration = errorRetryDuration;
     }
 
-    public EndpointElasticsearchSettings withErrorRetryDuration(Integer errorRetryDuration) {
+    public EndpointElasticsearchSettings withErrorRetryDuration(Number errorRetryDuration) {
         this.errorRetryDuration = errorRetryDuration;
         return this;
     }

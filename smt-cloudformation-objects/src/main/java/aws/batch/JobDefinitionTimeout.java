@@ -31,14 +31,14 @@ public class JobDefinitionTimeout implements Property<JobDefinitionTimeout>
      */
     @JsonProperty("AttemptDurationSeconds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-timeout.html#cfn-batch-jobdefinition-timeout-attemptdurationseconds")
-    private Integer attemptDurationSeconds;
+    private Number attemptDurationSeconds;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-timeout.html#cfn-batch-jobdefinition-timeout-attemptdurationseconds
      * 
      */
     @JsonIgnore
-    public Integer getAttemptDurationSeconds() {
+    public Number getAttemptDurationSeconds() {
         return attemptDurationSeconds;
     }
 
@@ -47,11 +47,11 @@ public class JobDefinitionTimeout implements Property<JobDefinitionTimeout>
      * 
      */
     @JsonIgnore
-    public void setAttemptDurationSeconds(Integer attemptDurationSeconds) {
+    public void setAttemptDurationSeconds(Number attemptDurationSeconds) {
         this.attemptDurationSeconds = attemptDurationSeconds;
     }
 
-    public JobDefinitionTimeout withAttemptDurationSeconds(Integer attemptDurationSeconds) {
+    public JobDefinitionTimeout withAttemptDurationSeconds(Number attemptDurationSeconds) {
         this.attemptDurationSeconds = attemptDurationSeconds;
         return this;
     }

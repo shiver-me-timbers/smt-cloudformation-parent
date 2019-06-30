@@ -84,7 +84,7 @@ public class AutoScalingGroup {
      */
     @JsonProperty("HealthCheckGracePeriod")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-healthcheckgraceperiod")
-    private Integer healthCheckGracePeriod;
+    private Number healthCheckGracePeriod;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-healthchecktype
      * 
@@ -308,7 +308,7 @@ public class AutoScalingGroup {
      * 
      */
     @JsonIgnore
-    public Integer getHealthCheckGracePeriod() {
+    public Number getHealthCheckGracePeriod() {
         return healthCheckGracePeriod;
     }
 
@@ -317,11 +317,11 @@ public class AutoScalingGroup {
      * 
      */
     @JsonIgnore
-    public void setHealthCheckGracePeriod(Integer healthCheckGracePeriod) {
+    public void setHealthCheckGracePeriod(Number healthCheckGracePeriod) {
         this.healthCheckGracePeriod = healthCheckGracePeriod;
     }
 
-    public AutoScalingGroup withHealthCheckGracePeriod(Integer healthCheckGracePeriod) {
+    public AutoScalingGroup withHealthCheckGracePeriod(Number healthCheckGracePeriod) {
         this.healthCheckGracePeriod = healthCheckGracePeriod;
         return this;
     }

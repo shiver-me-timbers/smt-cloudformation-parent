@@ -52,7 +52,7 @@ public class CloudformationSpecTransformer {
                 new PrimitiveTypeTransformer(primitiveTypeConverter),
                 new ClassTypeTransformer(classTypeConverter),
                 new ListTransformer(primitiveTypeConverter, classTypeConverter),
-                new MapTransformer(classTypeConverter)
+                new MapTransformer(primitiveTypeConverter, classTypeConverter)
             )),
             new ResourceTransformer(fileNames, javaTypes, metaDataApplier),
             new AttributesTransformer(fileNames, javaTypes, metaDataApplier),

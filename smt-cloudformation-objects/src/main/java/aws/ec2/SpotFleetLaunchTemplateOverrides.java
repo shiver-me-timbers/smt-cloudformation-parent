@@ -63,7 +63,7 @@ public class SpotFleetLaunchTemplateOverrides implements Property<SpotFleetLaunc
      */
     @JsonProperty("WeightedCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateoverrides.html#cfn-ec2-spotfleet-launchtemplateoverrides-weightedcapacity")
-    private Double weightedCapacity;
+    private Number weightedCapacity;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateoverrides.html#cfn-ec2-spotfleet-launchtemplateoverrides-availabilityzone
@@ -162,7 +162,7 @@ public class SpotFleetLaunchTemplateOverrides implements Property<SpotFleetLaunc
      * 
      */
     @JsonIgnore
-    public Double getWeightedCapacity() {
+    public Number getWeightedCapacity() {
         return weightedCapacity;
     }
 
@@ -171,11 +171,11 @@ public class SpotFleetLaunchTemplateOverrides implements Property<SpotFleetLaunc
      * 
      */
     @JsonIgnore
-    public void setWeightedCapacity(Double weightedCapacity) {
+    public void setWeightedCapacity(Number weightedCapacity) {
         this.weightedCapacity = weightedCapacity;
     }
 
-    public SpotFleetLaunchTemplateOverrides withWeightedCapacity(Double weightedCapacity) {
+    public SpotFleetLaunchTemplateOverrides withWeightedCapacity(Number weightedCapacity) {
         this.weightedCapacity = weightedCapacity;
         return this;
     }

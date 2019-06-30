@@ -47,7 +47,7 @@ public class DataSourceDynamoDBConfig implements Property<DataSourceDynamoDBConf
      */
     @JsonProperty("UseCallerCredentials")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-dynamodbconfig.html#cfn-appsync-datasource-dynamodbconfig-usecallercredentials")
-    private Boolean useCallerCredentials;
+    private CharSequence useCallerCredentials;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-dynamodbconfig.html#cfn-appsync-datasource-dynamodbconfig-tablename
@@ -100,7 +100,7 @@ public class DataSourceDynamoDBConfig implements Property<DataSourceDynamoDBConf
      * 
      */
     @JsonIgnore
-    public Boolean getUseCallerCredentials() {
+    public CharSequence getUseCallerCredentials() {
         return useCallerCredentials;
     }
 
@@ -109,11 +109,11 @@ public class DataSourceDynamoDBConfig implements Property<DataSourceDynamoDBConf
      * 
      */
     @JsonIgnore
-    public void setUseCallerCredentials(Boolean useCallerCredentials) {
+    public void setUseCallerCredentials(CharSequence useCallerCredentials) {
         this.useCallerCredentials = useCallerCredentials;
     }
 
-    public DataSourceDynamoDBConfig withUseCallerCredentials(Boolean useCallerCredentials) {
+    public DataSourceDynamoDBConfig withUseCallerCredentials(CharSequence useCallerCredentials) {
         this.useCallerCredentials = useCallerCredentials;
         return this;
     }

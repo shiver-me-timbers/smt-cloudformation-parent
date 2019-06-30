@@ -32,7 +32,7 @@ public class TaskDefinitionVolumeFrom implements Property<TaskDefinitionVolumeFr
      */
     @JsonProperty("ReadOnly")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-volumesfrom.html#cfn-ecs-taskdefinition-containerdefinition-volumesfrom-readonly")
-    private Boolean readOnly;
+    private CharSequence readOnly;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-volumesfrom.html#cfn-ecs-taskdefinition-containerdefinition-volumesfrom-sourcecontainer
      * 
@@ -46,7 +46,7 @@ public class TaskDefinitionVolumeFrom implements Property<TaskDefinitionVolumeFr
      * 
      */
     @JsonIgnore
-    public Boolean getReadOnly() {
+    public CharSequence getReadOnly() {
         return readOnly;
     }
 
@@ -55,11 +55,11 @@ public class TaskDefinitionVolumeFrom implements Property<TaskDefinitionVolumeFr
      * 
      */
     @JsonIgnore
-    public void setReadOnly(Boolean readOnly) {
+    public void setReadOnly(CharSequence readOnly) {
         this.readOnly = readOnly;
     }
 
-    public TaskDefinitionVolumeFrom withReadOnly(Boolean readOnly) {
+    public TaskDefinitionVolumeFrom withReadOnly(CharSequence readOnly) {
         this.readOnly = readOnly;
         return this;
     }

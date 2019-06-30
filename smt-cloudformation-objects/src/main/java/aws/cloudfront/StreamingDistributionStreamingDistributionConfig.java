@@ -71,7 +71,7 @@ public class StreamingDistributionStreamingDistributionConfig implements Propert
      */
     @JsonProperty("Enabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-streamingdistributionconfig.html#cfn-cloudfront-streamingdistribution-streamingdistributionconfig-enabled")
-    private Boolean enabled;
+    private CharSequence enabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-streamingdistributionconfig.html#cfn-cloudfront-streamingdistribution-streamingdistributionconfig-aliases
      * 
@@ -194,7 +194,7 @@ public class StreamingDistributionStreamingDistributionConfig implements Propert
      * 
      */
     @JsonIgnore
-    public Boolean getEnabled() {
+    public CharSequence getEnabled() {
         return enabled;
     }
 
@@ -203,11 +203,11 @@ public class StreamingDistributionStreamingDistributionConfig implements Propert
      * 
      */
     @JsonIgnore
-    public void setEnabled(Boolean enabled) {
+    public void setEnabled(CharSequence enabled) {
         this.enabled = enabled;
     }
 
-    public StreamingDistributionStreamingDistributionConfig withEnabled(Boolean enabled) {
+    public StreamingDistributionStreamingDistributionConfig withEnabled(CharSequence enabled) {
         this.enabled = enabled;
         return this;
     }

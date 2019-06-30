@@ -59,7 +59,7 @@ public class Stage {
      */
     @JsonProperty("CacheClusterEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-cacheclusterenabled")
-    private Boolean cacheClusterEnabled;
+    private CharSequence cacheClusterEnabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-cacheclustersize
      * 
@@ -139,14 +139,14 @@ public class Stage {
      */
     @JsonProperty("TracingEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-tracingenabled")
-    private Boolean tracingEnabled;
+    private CharSequence tracingEnabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-variables
      * 
      */
     @JsonProperty("Variables")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-variables")
-    private Map<String, String> variables;
+    private Map<String, CharSequence> variables;
 
     /**
      * StageAccessLogSetting
@@ -180,7 +180,7 @@ public class Stage {
      * 
      */
     @JsonIgnore
-    public Boolean getCacheClusterEnabled() {
+    public CharSequence getCacheClusterEnabled() {
         return cacheClusterEnabled;
     }
 
@@ -189,11 +189,11 @@ public class Stage {
      * 
      */
     @JsonIgnore
-    public void setCacheClusterEnabled(Boolean cacheClusterEnabled) {
+    public void setCacheClusterEnabled(CharSequence cacheClusterEnabled) {
         this.cacheClusterEnabled = cacheClusterEnabled;
     }
 
-    public Stage withCacheClusterEnabled(Boolean cacheClusterEnabled) {
+    public Stage withCacheClusterEnabled(CharSequence cacheClusterEnabled) {
         this.cacheClusterEnabled = cacheClusterEnabled;
         return this;
     }
@@ -437,7 +437,7 @@ public class Stage {
      * 
      */
     @JsonIgnore
-    public Boolean getTracingEnabled() {
+    public CharSequence getTracingEnabled() {
         return tracingEnabled;
     }
 
@@ -446,11 +446,11 @@ public class Stage {
      * 
      */
     @JsonIgnore
-    public void setTracingEnabled(Boolean tracingEnabled) {
+    public void setTracingEnabled(CharSequence tracingEnabled) {
         this.tracingEnabled = tracingEnabled;
     }
 
-    public Stage withTracingEnabled(Boolean tracingEnabled) {
+    public Stage withTracingEnabled(CharSequence tracingEnabled) {
         this.tracingEnabled = tracingEnabled;
         return this;
     }
@@ -460,7 +460,7 @@ public class Stage {
      * 
      */
     @JsonIgnore
-    public Map<String, String> getVariables() {
+    public Map<String, CharSequence> getVariables() {
         return variables;
     }
 
@@ -469,11 +469,11 @@ public class Stage {
      * 
      */
     @JsonIgnore
-    public void setVariables(Map<String, String> variables) {
+    public void setVariables(Map<String, CharSequence> variables) {
         this.variables = variables;
     }
 
-    public Stage withVariables(Map<String, String> variables) {
+    public Stage withVariables(Map<String, CharSequence> variables) {
         this.variables = variables;
         return this;
     }

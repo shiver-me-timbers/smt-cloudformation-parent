@@ -49,7 +49,7 @@ public class Stack {
      */
     @JsonProperty("Parameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html#cfn-cloudformation-stack-parameters")
-    private Map<String, String> parameters;
+    private Map<String, CharSequence> parameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html#cfn-cloudformation-stack-tags
      * 
@@ -70,7 +70,7 @@ public class Stack {
      */
     @JsonProperty("TimeoutInMinutes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html#cfn-cloudformation-stack-timeoutinminutes")
-    private Integer timeoutInMinutes;
+    private Number timeoutInMinutes;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html#cfn-cloudformation-stack-notificationarns
@@ -100,7 +100,7 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public Map<String, String> getParameters() {
+    public Map<String, CharSequence> getParameters() {
         return parameters;
     }
 
@@ -109,11 +109,11 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public void setParameters(Map<String, String> parameters) {
+    public void setParameters(Map<String, CharSequence> parameters) {
         this.parameters = parameters;
     }
 
-    public Stack withParameters(Map<String, String> parameters) {
+    public Stack withParameters(Map<String, CharSequence> parameters) {
         this.parameters = parameters;
         return this;
     }
@@ -169,7 +169,7 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public Integer getTimeoutInMinutes() {
+    public Number getTimeoutInMinutes() {
         return timeoutInMinutes;
     }
 
@@ -178,11 +178,11 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public void setTimeoutInMinutes(Integer timeoutInMinutes) {
+    public void setTimeoutInMinutes(Number timeoutInMinutes) {
         this.timeoutInMinutes = timeoutInMinutes;
     }
 
-    public Stack withTimeoutInMinutes(Integer timeoutInMinutes) {
+    public Stack withTimeoutInMinutes(Number timeoutInMinutes) {
         this.timeoutInMinutes = timeoutInMinutes;
         return this;
     }

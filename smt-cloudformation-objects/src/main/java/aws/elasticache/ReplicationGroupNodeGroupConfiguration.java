@@ -60,7 +60,7 @@ public class ReplicationGroupNodeGroupConfiguration implements Property<Replicat
      */
     @JsonProperty("ReplicaCount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-replicationgroup-nodegroupconfiguration.html#cfn-elasticache-replicationgroup-nodegroupconfiguration-replicacount")
-    private Integer replicaCount;
+    private Number replicaCount;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-replicationgroup-nodegroupconfiguration.html#cfn-elasticache-replicationgroup-nodegroupconfiguration-slots
      * 
@@ -143,7 +143,7 @@ public class ReplicationGroupNodeGroupConfiguration implements Property<Replicat
      * 
      */
     @JsonIgnore
-    public Integer getReplicaCount() {
+    public Number getReplicaCount() {
         return replicaCount;
     }
 
@@ -152,11 +152,11 @@ public class ReplicationGroupNodeGroupConfiguration implements Property<Replicat
      * 
      */
     @JsonIgnore
-    public void setReplicaCount(Integer replicaCount) {
+    public void setReplicaCount(Number replicaCount) {
         this.replicaCount = replicaCount;
     }
 
-    public ReplicationGroupNodeGroupConfiguration withReplicaCount(Integer replicaCount) {
+    public ReplicationGroupNodeGroupConfiguration withReplicaCount(Number replicaCount) {
         this.replicaCount = replicaCount;
         return this;
     }

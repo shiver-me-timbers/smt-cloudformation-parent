@@ -39,7 +39,7 @@ public class AliasVersionWeight implements Property<AliasVersionWeight>
      */
     @JsonProperty("FunctionWeight")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-versionweight.html#cfn-lambda-alias-versionweight-functionweight")
-    private Double functionWeight;
+    private Number functionWeight;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-versionweight.html#cfn-lambda-alias-versionweight-functionversion
@@ -69,7 +69,7 @@ public class AliasVersionWeight implements Property<AliasVersionWeight>
      * 
      */
     @JsonIgnore
-    public Double getFunctionWeight() {
+    public Number getFunctionWeight() {
         return functionWeight;
     }
 
@@ -78,11 +78,11 @@ public class AliasVersionWeight implements Property<AliasVersionWeight>
      * 
      */
     @JsonIgnore
-    public void setFunctionWeight(Double functionWeight) {
+    public void setFunctionWeight(Number functionWeight) {
         this.functionWeight = functionWeight;
     }
 
-    public AliasVersionWeight withFunctionWeight(Double functionWeight) {
+    public AliasVersionWeight withFunctionWeight(Number functionWeight) {
         this.functionWeight = functionWeight;
         return this;
     }

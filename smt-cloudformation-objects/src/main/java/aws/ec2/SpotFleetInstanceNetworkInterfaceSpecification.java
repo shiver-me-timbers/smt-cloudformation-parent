@@ -44,14 +44,14 @@ public class SpotFleetInstanceNetworkInterfaceSpecification implements Property<
      */
     @JsonProperty("AssociatePublicIpAddress")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-associatepublicipaddress")
-    private Boolean associatePublicIpAddress;
+    private CharSequence associatePublicIpAddress;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-deleteontermination
      * 
      */
     @JsonProperty("DeleteOnTermination")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-deleteontermination")
-    private Boolean deleteOnTermination;
+    private CharSequence deleteOnTermination;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-description
      * 
@@ -65,7 +65,7 @@ public class SpotFleetInstanceNetworkInterfaceSpecification implements Property<
      */
     @JsonProperty("DeviceIndex")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-deviceindex")
-    private Integer deviceIndex;
+    private Number deviceIndex;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-groups
      * 
@@ -80,7 +80,7 @@ public class SpotFleetInstanceNetworkInterfaceSpecification implements Property<
      */
     @JsonProperty("Ipv6AddressCount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-ipv6addresscount")
-    private Integer ipv6AddressCount;
+    private Number ipv6AddressCount;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-ipv6addresses
      * 
@@ -110,7 +110,7 @@ public class SpotFleetInstanceNetworkInterfaceSpecification implements Property<
      */
     @JsonProperty("SecondaryPrivateIpAddressCount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-secondaryprivateipaddresscount")
-    private Integer secondaryPrivateIpAddressCount;
+    private Number secondaryPrivateIpAddressCount;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-subnetid
      * 
@@ -124,7 +124,7 @@ public class SpotFleetInstanceNetworkInterfaceSpecification implements Property<
      * 
      */
     @JsonIgnore
-    public Boolean getAssociatePublicIpAddress() {
+    public CharSequence getAssociatePublicIpAddress() {
         return associatePublicIpAddress;
     }
 
@@ -133,11 +133,11 @@ public class SpotFleetInstanceNetworkInterfaceSpecification implements Property<
      * 
      */
     @JsonIgnore
-    public void setAssociatePublicIpAddress(Boolean associatePublicIpAddress) {
+    public void setAssociatePublicIpAddress(CharSequence associatePublicIpAddress) {
         this.associatePublicIpAddress = associatePublicIpAddress;
     }
 
-    public SpotFleetInstanceNetworkInterfaceSpecification withAssociatePublicIpAddress(Boolean associatePublicIpAddress) {
+    public SpotFleetInstanceNetworkInterfaceSpecification withAssociatePublicIpAddress(CharSequence associatePublicIpAddress) {
         this.associatePublicIpAddress = associatePublicIpAddress;
         return this;
     }
@@ -147,7 +147,7 @@ public class SpotFleetInstanceNetworkInterfaceSpecification implements Property<
      * 
      */
     @JsonIgnore
-    public Boolean getDeleteOnTermination() {
+    public CharSequence getDeleteOnTermination() {
         return deleteOnTermination;
     }
 
@@ -156,11 +156,11 @@ public class SpotFleetInstanceNetworkInterfaceSpecification implements Property<
      * 
      */
     @JsonIgnore
-    public void setDeleteOnTermination(Boolean deleteOnTermination) {
+    public void setDeleteOnTermination(CharSequence deleteOnTermination) {
         this.deleteOnTermination = deleteOnTermination;
     }
 
-    public SpotFleetInstanceNetworkInterfaceSpecification withDeleteOnTermination(Boolean deleteOnTermination) {
+    public SpotFleetInstanceNetworkInterfaceSpecification withDeleteOnTermination(CharSequence deleteOnTermination) {
         this.deleteOnTermination = deleteOnTermination;
         return this;
     }
@@ -193,7 +193,7 @@ public class SpotFleetInstanceNetworkInterfaceSpecification implements Property<
      * 
      */
     @JsonIgnore
-    public Integer getDeviceIndex() {
+    public Number getDeviceIndex() {
         return deviceIndex;
     }
 
@@ -202,11 +202,11 @@ public class SpotFleetInstanceNetworkInterfaceSpecification implements Property<
      * 
      */
     @JsonIgnore
-    public void setDeviceIndex(Integer deviceIndex) {
+    public void setDeviceIndex(Number deviceIndex) {
         this.deviceIndex = deviceIndex;
     }
 
-    public SpotFleetInstanceNetworkInterfaceSpecification withDeviceIndex(Integer deviceIndex) {
+    public SpotFleetInstanceNetworkInterfaceSpecification withDeviceIndex(Number deviceIndex) {
         this.deviceIndex = deviceIndex;
         return this;
     }
@@ -239,7 +239,7 @@ public class SpotFleetInstanceNetworkInterfaceSpecification implements Property<
      * 
      */
     @JsonIgnore
-    public Integer getIpv6AddressCount() {
+    public Number getIpv6AddressCount() {
         return ipv6AddressCount;
     }
 
@@ -248,11 +248,11 @@ public class SpotFleetInstanceNetworkInterfaceSpecification implements Property<
      * 
      */
     @JsonIgnore
-    public void setIpv6AddressCount(Integer ipv6AddressCount) {
+    public void setIpv6AddressCount(Number ipv6AddressCount) {
         this.ipv6AddressCount = ipv6AddressCount;
     }
 
-    public SpotFleetInstanceNetworkInterfaceSpecification withIpv6AddressCount(Integer ipv6AddressCount) {
+    public SpotFleetInstanceNetworkInterfaceSpecification withIpv6AddressCount(Number ipv6AddressCount) {
         this.ipv6AddressCount = ipv6AddressCount;
         return this;
     }
@@ -331,7 +331,7 @@ public class SpotFleetInstanceNetworkInterfaceSpecification implements Property<
      * 
      */
     @JsonIgnore
-    public Integer getSecondaryPrivateIpAddressCount() {
+    public Number getSecondaryPrivateIpAddressCount() {
         return secondaryPrivateIpAddressCount;
     }
 
@@ -340,11 +340,11 @@ public class SpotFleetInstanceNetworkInterfaceSpecification implements Property<
      * 
      */
     @JsonIgnore
-    public void setSecondaryPrivateIpAddressCount(Integer secondaryPrivateIpAddressCount) {
+    public void setSecondaryPrivateIpAddressCount(Number secondaryPrivateIpAddressCount) {
         this.secondaryPrivateIpAddressCount = secondaryPrivateIpAddressCount;
     }
 
-    public SpotFleetInstanceNetworkInterfaceSpecification withSecondaryPrivateIpAddressCount(Integer secondaryPrivateIpAddressCount) {
+    public SpotFleetInstanceNetworkInterfaceSpecification withSecondaryPrivateIpAddressCount(Number secondaryPrivateIpAddressCount) {
         this.secondaryPrivateIpAddressCount = secondaryPrivateIpAddressCount;
         return this;
     }

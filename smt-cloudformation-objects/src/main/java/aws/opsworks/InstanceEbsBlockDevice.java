@@ -35,14 +35,14 @@ public class InstanceEbsBlockDevice implements Property<InstanceEbsBlockDevice>
      */
     @JsonProperty("DeleteOnTermination")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-ebsblockdevice.html#cfn-opsworks-instance-ebsblockdevice-deleteontermination")
-    private Boolean deleteOnTermination;
+    private CharSequence deleteOnTermination;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-ebsblockdevice.html#cfn-opsworks-instance-ebsblockdevice-iops
      * 
      */
     @JsonProperty("Iops")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-ebsblockdevice.html#cfn-opsworks-instance-ebsblockdevice-iops")
-    private Integer iops;
+    private Number iops;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-ebsblockdevice.html#cfn-opsworks-instance-ebsblockdevice-snapshotid
      * 
@@ -56,7 +56,7 @@ public class InstanceEbsBlockDevice implements Property<InstanceEbsBlockDevice>
      */
     @JsonProperty("VolumeSize")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-ebsblockdevice.html#cfn-opsworks-instance-ebsblockdevice-volumesize")
-    private Integer volumeSize;
+    private Number volumeSize;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-ebsblockdevice.html#cfn-opsworks-instance-ebsblockdevice-volumetype
      * 
@@ -70,7 +70,7 @@ public class InstanceEbsBlockDevice implements Property<InstanceEbsBlockDevice>
      * 
      */
     @JsonIgnore
-    public Boolean getDeleteOnTermination() {
+    public CharSequence getDeleteOnTermination() {
         return deleteOnTermination;
     }
 
@@ -79,11 +79,11 @@ public class InstanceEbsBlockDevice implements Property<InstanceEbsBlockDevice>
      * 
      */
     @JsonIgnore
-    public void setDeleteOnTermination(Boolean deleteOnTermination) {
+    public void setDeleteOnTermination(CharSequence deleteOnTermination) {
         this.deleteOnTermination = deleteOnTermination;
     }
 
-    public InstanceEbsBlockDevice withDeleteOnTermination(Boolean deleteOnTermination) {
+    public InstanceEbsBlockDevice withDeleteOnTermination(CharSequence deleteOnTermination) {
         this.deleteOnTermination = deleteOnTermination;
         return this;
     }
@@ -93,7 +93,7 @@ public class InstanceEbsBlockDevice implements Property<InstanceEbsBlockDevice>
      * 
      */
     @JsonIgnore
-    public Integer getIops() {
+    public Number getIops() {
         return iops;
     }
 
@@ -102,11 +102,11 @@ public class InstanceEbsBlockDevice implements Property<InstanceEbsBlockDevice>
      * 
      */
     @JsonIgnore
-    public void setIops(Integer iops) {
+    public void setIops(Number iops) {
         this.iops = iops;
     }
 
-    public InstanceEbsBlockDevice withIops(Integer iops) {
+    public InstanceEbsBlockDevice withIops(Number iops) {
         this.iops = iops;
         return this;
     }
@@ -139,7 +139,7 @@ public class InstanceEbsBlockDevice implements Property<InstanceEbsBlockDevice>
      * 
      */
     @JsonIgnore
-    public Integer getVolumeSize() {
+    public Number getVolumeSize() {
         return volumeSize;
     }
 
@@ -148,11 +148,11 @@ public class InstanceEbsBlockDevice implements Property<InstanceEbsBlockDevice>
      * 
      */
     @JsonIgnore
-    public void setVolumeSize(Integer volumeSize) {
+    public void setVolumeSize(Number volumeSize) {
         this.volumeSize = volumeSize;
     }
 
-    public InstanceEbsBlockDevice withVolumeSize(Integer volumeSize) {
+    public InstanceEbsBlockDevice withVolumeSize(Number volumeSize) {
         this.volumeSize = volumeSize;
         return this;
     }

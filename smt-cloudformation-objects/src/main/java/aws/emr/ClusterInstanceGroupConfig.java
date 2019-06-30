@@ -74,7 +74,7 @@ public class ClusterInstanceGroupConfig implements Property<ClusterInstanceGroup
      */
     @JsonProperty("InstanceCount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-instancecount")
-    private Integer instanceCount;
+    private Number instanceCount;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-instancetype
      * 
@@ -202,7 +202,7 @@ public class ClusterInstanceGroupConfig implements Property<ClusterInstanceGroup
      * 
      */
     @JsonIgnore
-    public Integer getInstanceCount() {
+    public Number getInstanceCount() {
         return instanceCount;
     }
 
@@ -211,11 +211,11 @@ public class ClusterInstanceGroupConfig implements Property<ClusterInstanceGroup
      * 
      */
     @JsonIgnore
-    public void setInstanceCount(Integer instanceCount) {
+    public void setInstanceCount(Number instanceCount) {
         this.instanceCount = instanceCount;
     }
 
-    public ClusterInstanceGroupConfig withInstanceCount(Integer instanceCount) {
+    public ClusterInstanceGroupConfig withInstanceCount(Number instanceCount) {
         this.instanceCount = instanceCount;
         return this;
     }

@@ -60,7 +60,7 @@ public class Cluster {
      */
     @JsonProperty("ReplicationFactor")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-replicationfactor")
-    private Integer replicationFactor;
+    private Number replicationFactor;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-parametergroupname
      * 
@@ -187,7 +187,7 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public Integer getReplicationFactor() {
+    public Number getReplicationFactor() {
         return replicationFactor;
     }
 
@@ -196,11 +196,11 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public void setReplicationFactor(Integer replicationFactor) {
+    public void setReplicationFactor(Number replicationFactor) {
         this.replicationFactor = replicationFactor;
     }
 
-    public Cluster withReplicationFactor(Integer replicationFactor) {
+    public Cluster withReplicationFactor(Number replicationFactor) {
         this.replicationFactor = replicationFactor;
         return this;
     }

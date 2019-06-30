@@ -31,14 +31,14 @@ public class ProjectGitSubmodulesConfig implements Property<ProjectGitSubmodules
      */
     @JsonProperty("FetchSubmodules")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-gitsubmodulesconfig.html#cfn-codebuild-project-gitsubmodulesconfig-fetchsubmodules")
-    private Boolean fetchSubmodules;
+    private CharSequence fetchSubmodules;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-gitsubmodulesconfig.html#cfn-codebuild-project-gitsubmodulesconfig-fetchsubmodules
      * 
      */
     @JsonIgnore
-    public Boolean getFetchSubmodules() {
+    public CharSequence getFetchSubmodules() {
         return fetchSubmodules;
     }
 
@@ -47,11 +47,11 @@ public class ProjectGitSubmodulesConfig implements Property<ProjectGitSubmodules
      * 
      */
     @JsonIgnore
-    public void setFetchSubmodules(Boolean fetchSubmodules) {
+    public void setFetchSubmodules(CharSequence fetchSubmodules) {
         this.fetchSubmodules = fetchSubmodules;
     }
 
-    public ProjectGitSubmodulesConfig withFetchSubmodules(Boolean fetchSubmodules) {
+    public ProjectGitSubmodulesConfig withFetchSubmodules(CharSequence fetchSubmodules) {
         this.fetchSubmodules = fetchSubmodules;
         return this;
     }

@@ -36,14 +36,14 @@ public class DomainElasticsearchClusterConfig implements Property<DomainElastics
      */
     @JsonProperty("DedicatedMasterCount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-dedicatedmastercount")
-    private Integer dedicatedMasterCount;
+    private Number dedicatedMasterCount;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-dedicatedmasterenabled
      * 
      */
     @JsonProperty("DedicatedMasterEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-dedicatedmasterenabled")
-    private Boolean dedicatedMasterEnabled;
+    private CharSequence dedicatedMasterEnabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-dedicatedmastertype
      * 
@@ -57,7 +57,7 @@ public class DomainElasticsearchClusterConfig implements Property<DomainElastics
      */
     @JsonProperty("InstanceCount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-instancecount")
-    private Integer instanceCount;
+    private Number instanceCount;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-instnacetype
      * 
@@ -71,14 +71,14 @@ public class DomainElasticsearchClusterConfig implements Property<DomainElastics
      */
     @JsonProperty("ZoneAwarenessEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-zoneawarenessenabled")
-    private Boolean zoneAwarenessEnabled;
+    private CharSequence zoneAwarenessEnabled;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-dedicatedmastercount
      * 
      */
     @JsonIgnore
-    public Integer getDedicatedMasterCount() {
+    public Number getDedicatedMasterCount() {
         return dedicatedMasterCount;
     }
 
@@ -87,11 +87,11 @@ public class DomainElasticsearchClusterConfig implements Property<DomainElastics
      * 
      */
     @JsonIgnore
-    public void setDedicatedMasterCount(Integer dedicatedMasterCount) {
+    public void setDedicatedMasterCount(Number dedicatedMasterCount) {
         this.dedicatedMasterCount = dedicatedMasterCount;
     }
 
-    public DomainElasticsearchClusterConfig withDedicatedMasterCount(Integer dedicatedMasterCount) {
+    public DomainElasticsearchClusterConfig withDedicatedMasterCount(Number dedicatedMasterCount) {
         this.dedicatedMasterCount = dedicatedMasterCount;
         return this;
     }
@@ -101,7 +101,7 @@ public class DomainElasticsearchClusterConfig implements Property<DomainElastics
      * 
      */
     @JsonIgnore
-    public Boolean getDedicatedMasterEnabled() {
+    public CharSequence getDedicatedMasterEnabled() {
         return dedicatedMasterEnabled;
     }
 
@@ -110,11 +110,11 @@ public class DomainElasticsearchClusterConfig implements Property<DomainElastics
      * 
      */
     @JsonIgnore
-    public void setDedicatedMasterEnabled(Boolean dedicatedMasterEnabled) {
+    public void setDedicatedMasterEnabled(CharSequence dedicatedMasterEnabled) {
         this.dedicatedMasterEnabled = dedicatedMasterEnabled;
     }
 
-    public DomainElasticsearchClusterConfig withDedicatedMasterEnabled(Boolean dedicatedMasterEnabled) {
+    public DomainElasticsearchClusterConfig withDedicatedMasterEnabled(CharSequence dedicatedMasterEnabled) {
         this.dedicatedMasterEnabled = dedicatedMasterEnabled;
         return this;
     }
@@ -147,7 +147,7 @@ public class DomainElasticsearchClusterConfig implements Property<DomainElastics
      * 
      */
     @JsonIgnore
-    public Integer getInstanceCount() {
+    public Number getInstanceCount() {
         return instanceCount;
     }
 
@@ -156,11 +156,11 @@ public class DomainElasticsearchClusterConfig implements Property<DomainElastics
      * 
      */
     @JsonIgnore
-    public void setInstanceCount(Integer instanceCount) {
+    public void setInstanceCount(Number instanceCount) {
         this.instanceCount = instanceCount;
     }
 
-    public DomainElasticsearchClusterConfig withInstanceCount(Integer instanceCount) {
+    public DomainElasticsearchClusterConfig withInstanceCount(Number instanceCount) {
         this.instanceCount = instanceCount;
         return this;
     }
@@ -193,7 +193,7 @@ public class DomainElasticsearchClusterConfig implements Property<DomainElastics
      * 
      */
     @JsonIgnore
-    public Boolean getZoneAwarenessEnabled() {
+    public CharSequence getZoneAwarenessEnabled() {
         return zoneAwarenessEnabled;
     }
 
@@ -202,11 +202,11 @@ public class DomainElasticsearchClusterConfig implements Property<DomainElastics
      * 
      */
     @JsonIgnore
-    public void setZoneAwarenessEnabled(Boolean zoneAwarenessEnabled) {
+    public void setZoneAwarenessEnabled(CharSequence zoneAwarenessEnabled) {
         this.zoneAwarenessEnabled = zoneAwarenessEnabled;
     }
 
-    public DomainElasticsearchClusterConfig withZoneAwarenessEnabled(Boolean zoneAwarenessEnabled) {
+    public DomainElasticsearchClusterConfig withZoneAwarenessEnabled(CharSequence zoneAwarenessEnabled) {
         this.zoneAwarenessEnabled = zoneAwarenessEnabled;
         return this;
     }

@@ -51,7 +51,7 @@ public class TaskDefinitionTmpfs implements Property<TaskDefinitionTmpfs>
      */
     @JsonProperty("Size")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-tmpfs.html#cfn-ecs-taskdefinition-tmpfs-size")
-    private Integer size;
+    private Number size;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-tmpfs.html#cfn-ecs-taskdefinition-tmpfs-containerpath
@@ -104,7 +104,7 @@ public class TaskDefinitionTmpfs implements Property<TaskDefinitionTmpfs>
      * 
      */
     @JsonIgnore
-    public Integer getSize() {
+    public Number getSize() {
         return size;
     }
 
@@ -113,11 +113,11 @@ public class TaskDefinitionTmpfs implements Property<TaskDefinitionTmpfs>
      * 
      */
     @JsonIgnore
-    public void setSize(Integer size) {
+    public void setSize(Number size) {
         this.size = size;
     }
 
-    public TaskDefinitionTmpfs withSize(Integer size) {
+    public TaskDefinitionTmpfs withSize(Number size) {
         this.size = size;
         return this;
     }

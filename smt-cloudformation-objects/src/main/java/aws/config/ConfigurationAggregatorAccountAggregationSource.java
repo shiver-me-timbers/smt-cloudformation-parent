@@ -35,7 +35,7 @@ public class ConfigurationAggregatorAccountAggregationSource implements Property
      */
     @JsonProperty("AllAwsRegions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-accountaggregationsource.html#cfn-config-configurationaggregator-accountaggregationsource-allawsregions")
-    private Boolean allAwsRegions;
+    private CharSequence allAwsRegions;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-accountaggregationsource.html#cfn-config-configurationaggregator-accountaggregationsource-awsregions
      * 
@@ -56,7 +56,7 @@ public class ConfigurationAggregatorAccountAggregationSource implements Property
      * 
      */
     @JsonIgnore
-    public Boolean getAllAwsRegions() {
+    public CharSequence getAllAwsRegions() {
         return allAwsRegions;
     }
 
@@ -65,11 +65,11 @@ public class ConfigurationAggregatorAccountAggregationSource implements Property
      * 
      */
     @JsonIgnore
-    public void setAllAwsRegions(Boolean allAwsRegions) {
+    public void setAllAwsRegions(CharSequence allAwsRegions) {
         this.allAwsRegions = allAwsRegions;
     }
 
-    public ConfigurationAggregatorAccountAggregationSource withAllAwsRegions(Boolean allAwsRegions) {
+    public ConfigurationAggregatorAccountAggregationSource withAllAwsRegions(CharSequence allAwsRegions) {
         this.allAwsRegions = allAwsRegions;
         return this;
     }

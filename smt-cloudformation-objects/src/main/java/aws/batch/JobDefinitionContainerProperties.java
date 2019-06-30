@@ -53,14 +53,14 @@ public class JobDefinitionContainerProperties implements Property<JobDefinitionC
      */
     @JsonProperty("Memory")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-memory")
-    private Integer memory;
+    private Number memory;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-privileged
      * 
      */
     @JsonProperty("Privileged")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-privileged")
-    private Boolean privileged;
+    private CharSequence privileged;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-jobrolearn
      * 
@@ -74,14 +74,14 @@ public class JobDefinitionContainerProperties implements Property<JobDefinitionC
      */
     @JsonProperty("ReadonlyRootFilesystem")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-readonlyrootfilesystem")
-    private Boolean readonlyRootFilesystem;
+    private CharSequence readonlyRootFilesystem;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-vcpus
      * 
      */
     @JsonProperty("Vcpus")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-vcpus")
-    private Integer vcpus;
+    private Number vcpus;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-image
      * 
@@ -167,7 +167,7 @@ public class JobDefinitionContainerProperties implements Property<JobDefinitionC
      * 
      */
     @JsonIgnore
-    public Integer getMemory() {
+    public Number getMemory() {
         return memory;
     }
 
@@ -176,11 +176,11 @@ public class JobDefinitionContainerProperties implements Property<JobDefinitionC
      * 
      */
     @JsonIgnore
-    public void setMemory(Integer memory) {
+    public void setMemory(Number memory) {
         this.memory = memory;
     }
 
-    public JobDefinitionContainerProperties withMemory(Integer memory) {
+    public JobDefinitionContainerProperties withMemory(Number memory) {
         this.memory = memory;
         return this;
     }
@@ -190,7 +190,7 @@ public class JobDefinitionContainerProperties implements Property<JobDefinitionC
      * 
      */
     @JsonIgnore
-    public Boolean getPrivileged() {
+    public CharSequence getPrivileged() {
         return privileged;
     }
 
@@ -199,11 +199,11 @@ public class JobDefinitionContainerProperties implements Property<JobDefinitionC
      * 
      */
     @JsonIgnore
-    public void setPrivileged(Boolean privileged) {
+    public void setPrivileged(CharSequence privileged) {
         this.privileged = privileged;
     }
 
-    public JobDefinitionContainerProperties withPrivileged(Boolean privileged) {
+    public JobDefinitionContainerProperties withPrivileged(CharSequence privileged) {
         this.privileged = privileged;
         return this;
     }
@@ -236,7 +236,7 @@ public class JobDefinitionContainerProperties implements Property<JobDefinitionC
      * 
      */
     @JsonIgnore
-    public Boolean getReadonlyRootFilesystem() {
+    public CharSequence getReadonlyRootFilesystem() {
         return readonlyRootFilesystem;
     }
 
@@ -245,11 +245,11 @@ public class JobDefinitionContainerProperties implements Property<JobDefinitionC
      * 
      */
     @JsonIgnore
-    public void setReadonlyRootFilesystem(Boolean readonlyRootFilesystem) {
+    public void setReadonlyRootFilesystem(CharSequence readonlyRootFilesystem) {
         this.readonlyRootFilesystem = readonlyRootFilesystem;
     }
 
-    public JobDefinitionContainerProperties withReadonlyRootFilesystem(Boolean readonlyRootFilesystem) {
+    public JobDefinitionContainerProperties withReadonlyRootFilesystem(CharSequence readonlyRootFilesystem) {
         this.readonlyRootFilesystem = readonlyRootFilesystem;
         return this;
     }
@@ -259,7 +259,7 @@ public class JobDefinitionContainerProperties implements Property<JobDefinitionC
      * 
      */
     @JsonIgnore
-    public Integer getVcpus() {
+    public Number getVcpus() {
         return vcpus;
     }
 
@@ -268,11 +268,11 @@ public class JobDefinitionContainerProperties implements Property<JobDefinitionC
      * 
      */
     @JsonIgnore
-    public void setVcpus(Integer vcpus) {
+    public void setVcpus(Number vcpus) {
         this.vcpus = vcpus;
     }
 
-    public JobDefinitionContainerProperties withVcpus(Integer vcpus) {
+    public JobDefinitionContainerProperties withVcpus(Number vcpus) {
         this.vcpus = vcpus;
         return this;
     }

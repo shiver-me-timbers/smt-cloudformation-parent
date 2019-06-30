@@ -41,7 +41,7 @@ public class ClusterEbsBlockDeviceConfig implements Property<ClusterEbsBlockDevi
      */
     @JsonProperty("VolumesPerInstance")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-ebsblockdeviceconfig.html#cfn-elasticmapreduce-cluster-ebsblockdeviceconfig-volumesperinstance")
-    private Integer volumesPerInstance;
+    private Number volumesPerInstance;
 
     /**
      * ClusterVolumeSpecification
@@ -75,7 +75,7 @@ public class ClusterEbsBlockDeviceConfig implements Property<ClusterEbsBlockDevi
      * 
      */
     @JsonIgnore
-    public Integer getVolumesPerInstance() {
+    public Number getVolumesPerInstance() {
         return volumesPerInstance;
     }
 
@@ -84,11 +84,11 @@ public class ClusterEbsBlockDeviceConfig implements Property<ClusterEbsBlockDevi
      * 
      */
     @JsonIgnore
-    public void setVolumesPerInstance(Integer volumesPerInstance) {
+    public void setVolumesPerInstance(Number volumesPerInstance) {
         this.volumesPerInstance = volumesPerInstance;
     }
 
-    public ClusterEbsBlockDeviceConfig withVolumesPerInstance(Integer volumesPerInstance) {
+    public ClusterEbsBlockDeviceConfig withVolumesPerInstance(Number volumesPerInstance) {
         this.volumesPerInstance = volumesPerInstance;
         return this;
     }

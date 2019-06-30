@@ -45,7 +45,7 @@ public class NetworkAclEntry {
      */
     @JsonProperty("Egress")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-egress")
-    private Boolean egress;
+    private CharSequence egress;
     /**
      * NetworkAclEntryIcmp
      * <p>
@@ -84,7 +84,7 @@ public class NetworkAclEntry {
      */
     @JsonProperty("Protocol")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-protocol")
-    private Integer protocol;
+    private Number protocol;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-ruleaction
      * 
@@ -98,7 +98,7 @@ public class NetworkAclEntry {
      */
     @JsonProperty("RuleNumber")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-rulenumber")
-    private Integer ruleNumber;
+    private Number ruleNumber;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-cidrblock
@@ -128,7 +128,7 @@ public class NetworkAclEntry {
      * 
      */
     @JsonIgnore
-    public Boolean getEgress() {
+    public CharSequence getEgress() {
         return egress;
     }
 
@@ -137,11 +137,11 @@ public class NetworkAclEntry {
      * 
      */
     @JsonIgnore
-    public void setEgress(Boolean egress) {
+    public void setEgress(CharSequence egress) {
         this.egress = egress;
     }
 
-    public NetworkAclEntry withEgress(Boolean egress) {
+    public NetworkAclEntry withEgress(CharSequence egress) {
         this.egress = egress;
         return this;
     }
@@ -251,7 +251,7 @@ public class NetworkAclEntry {
      * 
      */
     @JsonIgnore
-    public Integer getProtocol() {
+    public Number getProtocol() {
         return protocol;
     }
 
@@ -260,11 +260,11 @@ public class NetworkAclEntry {
      * 
      */
     @JsonIgnore
-    public void setProtocol(Integer protocol) {
+    public void setProtocol(Number protocol) {
         this.protocol = protocol;
     }
 
-    public NetworkAclEntry withProtocol(Integer protocol) {
+    public NetworkAclEntry withProtocol(Number protocol) {
         this.protocol = protocol;
         return this;
     }
@@ -297,7 +297,7 @@ public class NetworkAclEntry {
      * 
      */
     @JsonIgnore
-    public Integer getRuleNumber() {
+    public Number getRuleNumber() {
         return ruleNumber;
     }
 
@@ -306,11 +306,11 @@ public class NetworkAclEntry {
      * 
      */
     @JsonIgnore
-    public void setRuleNumber(Integer ruleNumber) {
+    public void setRuleNumber(Number ruleNumber) {
         this.ruleNumber = ruleNumber;
     }
 
-    public NetworkAclEntry withRuleNumber(Integer ruleNumber) {
+    public NetworkAclEntry withRuleNumber(Number ruleNumber) {
         this.ruleNumber = ruleNumber;
         return this;
     }
