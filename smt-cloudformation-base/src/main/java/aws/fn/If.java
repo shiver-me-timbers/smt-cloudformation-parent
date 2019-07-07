@@ -36,7 +36,7 @@ public class If<T> extends PrimitiveProperty implements ConditionFunction, Strin
     @Override
     public T toType() {
         throw new UnsupportedOperationException(
-            "The type instance of an if is indeterminate before the template has been processed by Cloudformation."
+            "The type instance of an 'If' is indeterminate before the template has been processed by Cloudformation."
         );
     }
 }

@@ -31,7 +31,7 @@ public class HasOutputsTest {
         given(named3.getName()).willReturn(name3);
 
         // When
-        new HasOutputs<Object, HasName>() {
+        new HasOutputs<HasOutputs, HasName>() {
             @Override
             public Map getOutputs() {
                 return map;
@@ -57,7 +57,7 @@ public class HasOutputsTest {
         final Setter<Map<String, HasName>> setter = mock(Setter.class);
 
         // When
-        new HasOutputs<Object, HasName>() {
+        new HasOutputs<HasOutputs, HasName>() {
             @Override
             public Map<String, HasName> getOutputs() {
                 return null;

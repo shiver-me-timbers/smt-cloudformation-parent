@@ -1,8 +1,10 @@
 package aws;
 
-import java.util.Arrays;
+import java.util.Collection;
 import java.util.LinkedHashMap;
 import java.util.Map;
+
+import static java.util.Arrays.asList;
 
 public class Names {
 
@@ -17,12 +19,15 @@ public class Names {
         return getter.get();
     }
 
-    @SafeVarargs
-    public static <T extends HasName> void withNamedMap(Map<String, T> map, T... values) {
+    public static <T extends HasName> void withNamedMap(Map<String, T> map, Collection<T> values) {
         withNamedMap(map, value -> value, values);
     }
 
-    public static <T extends HasName, O> void withNamedMap(Map<String, O> map, Retriever<T, O> retriever, T... values) {
-        Arrays.stream(values).forEach(value -> map.put(value.getName(), retriever.get(value)));
+    public static <T extends HasName, O> void withNamedMap(
+        Map<String, O> map,
+        Retriever<T, O> retriever,
+        Collection<T> values
+    ) {
+        values.forEach(value -> map.put(value.getName(), retriever.get(value)));
     }
 }

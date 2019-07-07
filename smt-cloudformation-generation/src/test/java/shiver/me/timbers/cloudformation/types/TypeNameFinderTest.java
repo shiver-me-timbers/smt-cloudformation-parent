@@ -143,4 +143,38 @@ public class TypeNameFinderTest {
             equalTo(format("Could not find type for resource (%s) and property (%s),", resourceName, propertyType))
         );
     }
+
+    @Test
+    public void Can_fail_to_find_a_property_type_with_property_type() {
+
+        final String resourceName = someString();
+
+        final String packageName = someString();
+        final String resourceClassName = someString();
+
+        final String propertyType = someString();
+
+        // Given
+        given(javaTypes.extractPackage(resourceName)).willReturn(packageName);
+        given(javaTypes.extractResourceClassName(resourceName)).willReturn(resourceClassName);
+
+        // When
+        final Throwable actual = catchThrowable(
+            () -> new TypeNameFinder(
+                new HashMap<String, PropertyType>() {{
+                    put(someString(), mock(PropertyType.class));
+                    put(format("%s::%s%s", packageName, resourceClassName, someString()), mock(PropertyType.class));
+                    put(someString(), mock(PropertyType.class));
+                }},
+                javaTypes
+            ).find(resourceName, propertyType)
+        );
+
+        // Then
+        assertThat(actual, instanceOf(TypeException.class));
+        assertThat(
+            actual.getMessage(),
+            equalTo(format("Could not find type for resource (%s) and property (%s),", resourceName, propertyType))
+        );
+    }
 }

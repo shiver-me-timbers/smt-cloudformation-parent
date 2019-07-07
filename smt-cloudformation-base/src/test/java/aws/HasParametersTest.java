@@ -31,7 +31,7 @@ public class HasParametersTest {
         given(named3.getName()).willReturn(name3);
 
         // When
-        new HasParameters<Object, HasName>() {
+        new HasParameters<HasParameters, HasName>() {
             @Override
             public Map getParameters() {
                 return map;
@@ -57,7 +57,7 @@ public class HasParametersTest {
         final Setter<Map<String, HasName>> setter = mock(Setter.class);
 
         // When
-        new HasParameters<Object, HasName>() {
+        new HasParameters<HasParameters, HasName>() {
             @Override
             public Map<String, HasName> getParameters() {
                 return null;

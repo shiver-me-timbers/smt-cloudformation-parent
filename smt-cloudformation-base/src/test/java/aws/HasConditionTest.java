@@ -22,7 +22,7 @@ public class HasConditionTest {
         given(condition.getName()).willReturn(name);
 
         // When
-        ((HasCondition<Object>) retriever::get).withCondition(condition);
+        ((HasCondition<HasCondition>) retriever::get).withCondition(condition);
 
         // Then
         then(retriever).should().get(name);

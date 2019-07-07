@@ -9,6 +9,8 @@ import org.jsonschema2pojo.Schema;
 import org.jsonschema2pojo.SchemaStore;
 import org.jsonschema2pojo.rules.Rule;
 import org.jsonschema2pojo.rules.RuleFactory;
+import org.jsonschema2pojo.rules.SchemaRule;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.Collection;
@@ -25,11 +27,19 @@ import static shiver.me.timbers.data.random.RandomThings.someThing;
 
 public class CustomSchemaRuleTest {
 
+    private RuleFactory ruleFactory;
+    private Rule<JClassContainer, JType> schemaRule;
+
+    @Before
+    public void setUp() {
+        ruleFactory = mock(RuleFactory.class);
+        schemaRule = new CustomSchemaRule(ruleFactory);
+    }
+
     @Test
     @SuppressWarnings("unchecked")
     public void Can_have_the_java_type_take_precedence_over_a_ref() {
 
-        final RuleFactory ruleFactory = mock(RuleFactory.class);
         final String nodeName = someString();
         final JsonNode schemaNode = mock(JsonNode.class);
         final JClassContainer generatableType = mock(JClassContainer.class);
@@ -50,7 +60,7 @@ public class CustomSchemaRuleTest {
         given(refType.fullName()).willReturn(someString());
 
         // When
-        final JType actual = new CustomSchemaRule(ruleFactory).apply(nodeName, schemaNode, generatableType, schema);
+        final JType actual = schemaRule.apply(nodeName, schemaNode, generatableType, schema);
 
         // Then
         assertThat(actual, is(expected));

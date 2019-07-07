@@ -4,7 +4,9 @@ import org.junit.Test;
 
 import java.util.Map;
 
+import static java.util.Arrays.asList;
 import static java.util.Collections.emptyMap;
+import static java.util.Collections.singletonList;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.BDDMockito.then;
 import static org.mockito.Mockito.mock;
@@ -31,7 +33,7 @@ public class HasResourcesTest {
         given(named3.getName()).willReturn(name3);
 
         // When
-        new HasResources<Object, HasName>() {
+        new HasResources<HasResources, HasName>() {
             @Override
             public Map getResources() {
                 return map;
@@ -51,13 +53,13 @@ public class HasResourcesTest {
 
     @Test
     @SuppressWarnings("unchecked")
-    public void Can_add_new_resources() {
+    public void Can_add_resources_when_no_current_resources_exist() {
 
         // Given
         final Setter<Map<String, HasName>> setter = mock(Setter.class);
 
         // When
-        new HasResources<Object, HasName>() {
+        new HasResources<HasResources, HasName>() {
             @Override
             public Map<String, HasName> getResources() {
                 return null;
@@ -71,5 +73,42 @@ public class HasResourcesTest {
 
         // Then
         then(setter).should().set(emptyMap());
+    }
+
+    @Test
+    @SuppressWarnings("unchecked")
+    public void Can_add_resources_lists() {
+
+        final Map<String, HasName> map = mock(Map.class);
+        final HasName named1 = mock(HasName.class);
+        final HasName named2 = mock(HasName.class);
+        final HasName named3 = mock(HasName.class);
+
+        final String name1 = someString();
+        final String name2 = someString();
+        final String name3 = someString();
+
+        // Given
+        given(named1.getName()).willReturn(name1);
+        given(named2.getName()).willReturn(name2);
+        given(named3.getName()).willReturn(name3);
+
+        // When
+        new HasResources<HasResources, HasName>() {
+            @Override
+            public Map getResources() {
+                return map;
+            }
+
+            @Override
+            public void setResources(Map resources) {
+                throw new UnsupportedOperationException();
+            }
+        }.withResourceLists(singletonList(named1), asList(named2, named3));
+
+        // Then
+        then(map).should().put(name1, named1);
+        then(map).should().put(name2, named2);
+        then(map).should().put(name3, named3);
     }
 }

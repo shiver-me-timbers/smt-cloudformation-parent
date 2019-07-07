@@ -38,7 +38,7 @@ public class HasConditionsTest {
         given(condition3.getCondition()).willReturn(function3);
 
         // When
-        new HasConditions<Object>() {
+        new HasConditions<HasConditions>() {
             @Override
             public Map<String, ConditionFunction> getConditions() {
                 return map;
@@ -64,7 +64,7 @@ public class HasConditionsTest {
         final Retriever<Map<String, ConditionFunction>, ?> retriever = mock(Retriever.class);
 
         // When
-        new HasConditions<Object>() {
+        new HasConditions<HasConditions>() {
             @Override
             public Map<String, ConditionFunction> getConditions() {
                 return null;

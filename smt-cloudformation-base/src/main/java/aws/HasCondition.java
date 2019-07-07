@@ -1,6 +1,6 @@
 package aws;
 
-public interface HasCondition<T> {
+public interface HasCondition<T extends HasCondition> {
 
     void setCondition(String condition);
 

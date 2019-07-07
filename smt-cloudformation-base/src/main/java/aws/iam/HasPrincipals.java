@@ -9,7 +9,7 @@ import static java.util.Arrays.asList;
 import static java.util.Map.Entry;
 import static java.util.stream.Collectors.toMap;
 
-public interface HasPrincipals<T> {
+public interface HasPrincipals<T extends HasPrincipals> {
 
     static Entry<String, List<CharSequence>> principal(String name, CharSequence... targets) {
         return new SimpleEntry<>(name, asList(targets));
