@@ -1,0 +1,27 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoTEvents_DetectorModel.OnInput.schema.json",
+  "title" : "DetectorModelOnInput",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-oninput.html",
+  "type" : "object",
+  "javaType" : "aws.iotevents.DetectorModelOnInput",
+  "javaInterfaces" : [ "aws.Property<DetectorModelOnInput>" ],
+  "properties" : {
+    "Events" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-oninput.html#cfn-iotevents-detectormodel-oninput-events",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_IoTEvents_DetectorModel.TransitionEvent.schema.json",
+        "javaType" : "aws.Property<aws.iotevents.DetectorModelEvent>"
+      }
+    },
+    "TransitionEvents" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-oninput.html#cfn-iotevents-detectormodel-oninput-transitionevents",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_IoTEvents_DetectorModel.TransitionEvent.schema.json",
+        "javaType" : "aws.Property<aws.iotevents.DetectorModelTransitionEvent>"
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MediaLive_Channel.AudioSelector.schema.json",
+  "title" : "ChannelAudioSelector",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-audioselector.html",
+  "type" : "object",
+  "javaType" : "aws.medialive.ChannelAudioSelector",
+  "javaInterfaces" : [ "aws.Property<ChannelAudioSelector>" ],
+  "properties" : {
+    "SelectorSettings" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-audioselector.html#cfn-medialive-channel-audioselector-selectorsettings",
+      "$ref" : "AWS_MediaLive_Channel.AudioSelectorSettings.schema.json",
+      "javaType" : "aws.Property<aws.medialive.ChannelAudioSelectorSettings>"
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-audioselector.html#cfn-medialive-channel-audioselector-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

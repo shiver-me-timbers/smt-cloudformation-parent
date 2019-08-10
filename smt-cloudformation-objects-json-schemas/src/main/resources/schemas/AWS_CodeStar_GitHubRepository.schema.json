@@ -1,0 +1,45 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CodeStar_GitHubRepository.schema.json",
+  "title" : "GitHubRepository",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codestar-githubrepository.html",
+  "type" : "object",
+  "javaType" : "aws.codestar.GitHubRepository",
+  "properties" : {
+    "EnableIssues" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codestar-githubrepository.html#cfn-codestar-githubrepository-enableissues",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RepositoryName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codestar-githubrepository.html#cfn-codestar-githubrepository-repositoryname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RepositoryAccessToken" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codestar-githubrepository.html#cfn-codestar-githubrepository-repositoryaccesstoken",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RepositoryOwner" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codestar-githubrepository.html#cfn-codestar-githubrepository-repositoryowner",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "IsPrivate" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codestar-githubrepository.html#cfn-codestar-githubrepository-isprivate",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Code" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codestar-githubrepository.html#cfn-codestar-githubrepository-code",
+      "$ref" : "AWS_CodeStar_GitHubRepository.Code.schema.json",
+      "javaType" : "aws.Property<aws.codestar.GitHubRepositoryCode>"
+    },
+    "RepositoryDescription" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codestar-githubrepository.html#cfn-codestar-githubrepository-repositorydescription",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Cognito_UserPoolClient.AnalyticsConfiguration.schema.json",
+  "title" : "UserPoolClientAnalyticsConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpoolclient-analyticsconfiguration.html",
+  "type" : "object",
+  "javaType" : "aws.cognito.UserPoolClientAnalyticsConfiguration",
+  "javaInterfaces" : [ "aws.Property<UserPoolClientAnalyticsConfiguration>" ],
+  "properties" : {
+    "UserDataShared" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpoolclient-analyticsconfiguration.html#cfn-cognito-userpoolclient-analyticsconfiguration-userdatashared",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ExternalId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpoolclient-analyticsconfiguration.html#cfn-cognito-userpoolclient-analyticsconfiguration-externalid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ApplicationId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpoolclient-analyticsconfiguration.html#cfn-cognito-userpoolclient-analyticsconfiguration-applicationid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RoleArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpoolclient-analyticsconfiguration.html#cfn-cognito-userpoolclient-analyticsconfiguration-rolearn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

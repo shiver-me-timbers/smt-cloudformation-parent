@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Glue_SecurityConfigurationResource.schema.json",
+  "title" : "SecurityConfigurationResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-securityconfiguration.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.glue.SecurityConfigurationResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<SecurityConfigurationResource>", "aws.HasCondition<SecurityConfigurationResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Glue::SecurityConfiguration"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Glue_SecurityConfiguration.schema.json"
+    }
+  }
+}

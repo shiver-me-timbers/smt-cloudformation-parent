@@ -1,15 +1,14 @@
 
 package aws.codepipeline;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
@@ -24,12 +23,11 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "ArtifactStore",
-    "ArtifactStores",
     "DisableInboundStageTransitions",
-    "Name",
+    "Stages",
     "RestartExecutionOnUpdate",
     "RoleArn",
-    "Stages"
+    "Name"
 })
 public class Pipeline {
 
@@ -43,28 +41,19 @@ public class Pipeline {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html")
     private Property<PipelineArtifactStore> artifactStore;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-artifactstores
-     * 
-     */
-    @JsonProperty("ArtifactStores")
-    @JsonDeserialize(as = java.util.LinkedHashSet.class)
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-artifactstores")
-    private Set<Property<PipelineArtifactStoreMap>> artifactStores = new LinkedHashSet<Property<PipelineArtifactStoreMap>>();
-    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-disableinboundstagetransitions
      * 
      */
     @JsonProperty("DisableInboundStageTransitions")
-    @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-disableinboundstagetransitions")
-    private Set<Property<PipelineStageTransition>> disableInboundStageTransitions = new LinkedHashSet<Property<PipelineStageTransition>>();
+    private List<Property<PipelineStageTransition>> disableInboundStageTransitions = new ArrayList<Property<PipelineStageTransition>>();
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-name
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-stages
      * 
      */
-    @JsonProperty("Name")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-name")
-    private CharSequence name;
+    @JsonProperty("Stages")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-stages")
+    private List<Property<PipelineStageDeclaration>> stages = new ArrayList<Property<PipelineStageDeclaration>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-restartexecutiononupdate
      * 
@@ -80,13 +69,12 @@ public class Pipeline {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-rolearn")
     private CharSequence roleArn;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-stages
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-name
      * 
      */
-    @JsonProperty("Stages")
-    @JsonDeserialize(as = java.util.LinkedHashSet.class)
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-stages")
-    private Set<Property<PipelineStageDeclaration>> stages = new LinkedHashSet<Property<PipelineStageDeclaration>>();
+    @JsonProperty("Name")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-name")
+    private CharSequence name;
 
     /**
      * PipelineArtifactStore
@@ -116,34 +104,11 @@ public class Pipeline {
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-artifactstores
-     * 
-     */
-    @JsonIgnore
-    public Set<Property<PipelineArtifactStoreMap>> getArtifactStores() {
-        return artifactStores;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-artifactstores
-     * 
-     */
-    @JsonIgnore
-    public void setArtifactStores(Set<Property<PipelineArtifactStoreMap>> artifactStores) {
-        this.artifactStores = artifactStores;
-    }
-
-    public Pipeline withArtifactStores(Set<Property<PipelineArtifactStoreMap>> artifactStores) {
-        this.artifactStores = artifactStores;
-        return this;
-    }
-
-    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-disableinboundstagetransitions
      * 
      */
     @JsonIgnore
-    public Set<Property<PipelineStageTransition>> getDisableInboundStageTransitions() {
+    public List<Property<PipelineStageTransition>> getDisableInboundStageTransitions() {
         return disableInboundStageTransitions;
     }
 
@@ -152,35 +117,35 @@ public class Pipeline {
      * 
      */
     @JsonIgnore
-    public void setDisableInboundStageTransitions(Set<Property<PipelineStageTransition>> disableInboundStageTransitions) {
+    public void setDisableInboundStageTransitions(List<Property<PipelineStageTransition>> disableInboundStageTransitions) {
         this.disableInboundStageTransitions = disableInboundStageTransitions;
     }
 
-    public Pipeline withDisableInboundStageTransitions(Set<Property<PipelineStageTransition>> disableInboundStageTransitions) {
+    public Pipeline withDisableInboundStageTransitions(List<Property<PipelineStageTransition>> disableInboundStageTransitions) {
         this.disableInboundStageTransitions = disableInboundStageTransitions;
         return this;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-name
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-stages
      * 
      */
     @JsonIgnore
-    public CharSequence getName() {
-        return name;
+    public List<Property<PipelineStageDeclaration>> getStages() {
+        return stages;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-name
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-stages
      * 
      */
     @JsonIgnore
-    public void setName(CharSequence name) {
-        this.name = name;
+    public void setStages(List<Property<PipelineStageDeclaration>> stages) {
+        this.stages = stages;
     }
 
-    public Pipeline withName(CharSequence name) {
-        this.name = name;
+    public Pipeline withStages(List<Property<PipelineStageDeclaration>> stages) {
+        this.stages = stages;
         return this;
     }
 
@@ -231,36 +196,36 @@ public class Pipeline {
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-stages
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-name
      * 
      */
     @JsonIgnore
-    public Set<Property<PipelineStageDeclaration>> getStages() {
-        return stages;
+    public CharSequence getName() {
+        return name;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-stages
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-name
      * 
      */
     @JsonIgnore
-    public void setStages(Set<Property<PipelineStageDeclaration>> stages) {
-        this.stages = stages;
+    public void setName(CharSequence name) {
+        this.name = name;
     }
 
-    public Pipeline withStages(Set<Property<PipelineStageDeclaration>> stages) {
-        this.stages = stages;
+    public Pipeline withName(CharSequence name) {
+        this.name = name;
         return this;
     }
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("artifactStore", artifactStore).append("artifactStores", artifactStores).append("disableInboundStageTransitions", disableInboundStageTransitions).append("name", name).append("restartExecutionOnUpdate", restartExecutionOnUpdate).append("roleArn", roleArn).append("stages", stages).toString();
+        return new ToStringBuilder(this).append("artifactStore", artifactStore).append("disableInboundStageTransitions", disableInboundStageTransitions).append("stages", stages).append("restartExecutionOnUpdate", restartExecutionOnUpdate).append("roleArn", roleArn).append("name", name).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(artifactStore).append(roleArn).append(name).append(stages).append(artifactStores).append(restartExecutionOnUpdate).append(disableInboundStageTransitions).toHashCode();
+        return new HashCodeBuilder().append(artifactStore).append(roleArn).append(stages).append(name).append(restartExecutionOnUpdate).append(disableInboundStageTransitions).toHashCode();
     }
 
     @Override
@@ -272,7 +237,7 @@ public class Pipeline {
             return false;
         }
         Pipeline rhs = ((Pipeline) other);
-        return new EqualsBuilder().append(artifactStore, rhs.artifactStore).append(roleArn, rhs.roleArn).append(name, rhs.name).append(stages, rhs.stages).append(artifactStores, rhs.artifactStores).append(restartExecutionOnUpdate, rhs.restartExecutionOnUpdate).append(disableInboundStageTransitions, rhs.disableInboundStageTransitions).isEquals();
+        return new EqualsBuilder().append(artifactStore, rhs.artifactStore).append(roleArn, rhs.roleArn).append(stages, rhs.stages).append(name, rhs.name).append(restartExecutionOnUpdate, rhs.restartExecutionOnUpdate).append(disableInboundStageTransitions, rhs.disableInboundStageTransitions).isEquals();
     }
 
 }

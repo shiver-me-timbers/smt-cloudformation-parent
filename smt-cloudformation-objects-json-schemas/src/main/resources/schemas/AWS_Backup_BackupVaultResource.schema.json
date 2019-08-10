@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Backup_BackupVaultResource.schema.json",
+  "title" : "BackupVaultResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-backup-backupvault.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.backup.BackupVaultResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<BackupVaultResource>", "aws.HasCondition<BackupVaultResource>", "aws.HasAttributes<BackupVaultAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Backup::BackupVault"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Backup_BackupVault.schema.json"
+    }
+  }
+}

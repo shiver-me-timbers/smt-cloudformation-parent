@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AmazonMQ_Broker.EncryptionOptions.schema.json",
+  "title" : "BrokerEncryptionOptions",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-encryptionoptions.html",
+  "type" : "object",
+  "javaType" : "aws.amazonmq.BrokerEncryptionOptions",
+  "javaInterfaces" : [ "aws.Property<BrokerEncryptionOptions>" ],
+  "properties" : {
+    "KmsKeyId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-encryptionoptions.html#cfn-amazonmq-broker-encryptionoptions-kmskeyid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "UseAwsOwnedKey" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-encryptionoptions.html#cfn-amazonmq-broker-encryptionoptions-useawsownedkey",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

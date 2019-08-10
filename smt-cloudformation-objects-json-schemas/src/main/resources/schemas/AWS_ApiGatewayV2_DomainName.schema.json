@@ -18,6 +18,11 @@
         "$ref" : "AWS_ApiGatewayV2_DomainName.DomainNameConfiguration.schema.json",
         "javaType" : "aws.Property<aws.apigatewayv2.DomainNameDomainNameConfiguration>"
       }
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-domainname.html#cfn-apigatewayv2-domainname-tags",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     }
   }
 }

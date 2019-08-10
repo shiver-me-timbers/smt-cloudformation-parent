@@ -1,0 +1,9 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppSync_GraphQLApi.AdditionalAuthenticationProviders.schema.json",
+  "title" : "GraphQLApiAdditionalAuthenticationProviders",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-additionalauthenticationproviders.html",
+  "type" : "object",
+  "javaType" : "aws.appsync.GraphQLApiAdditionalAuthenticationProviders",
+  "javaInterfaces" : [ "aws.Property<GraphQLApiAdditionalAuthenticationProviders>" ]
+}

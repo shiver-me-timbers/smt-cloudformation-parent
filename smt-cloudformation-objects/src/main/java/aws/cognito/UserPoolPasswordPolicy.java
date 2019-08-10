@@ -22,6 +22,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "RequireNumbers",
     "MinimumLength",
+    "TemporaryPasswordValidityDays",
     "RequireUppercase",
     "RequireLowercase",
     "RequireSymbols"
@@ -43,6 +44,13 @@ public class UserPoolPasswordPolicy implements Property<UserPoolPasswordPolicy>
     @JsonProperty("MinimumLength")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html#cfn-cognito-userpool-passwordpolicy-minimumlength")
     private Number minimumLength;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html#cfn-cognito-userpool-passwordpolicy-temporarypasswordvaliditydays
+     * 
+     */
+    @JsonProperty("TemporaryPasswordValidityDays")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html#cfn-cognito-userpool-passwordpolicy-temporarypasswordvaliditydays")
+    private Number temporaryPasswordValidityDays;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html#cfn-cognito-userpool-passwordpolicy-requireuppercase
      * 
@@ -108,6 +116,29 @@ public class UserPoolPasswordPolicy implements Property<UserPoolPasswordPolicy>
 
     public UserPoolPasswordPolicy withMinimumLength(Number minimumLength) {
         this.minimumLength = minimumLength;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html#cfn-cognito-userpool-passwordpolicy-temporarypasswordvaliditydays
+     * 
+     */
+    @JsonIgnore
+    public Number getTemporaryPasswordValidityDays() {
+        return temporaryPasswordValidityDays;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html#cfn-cognito-userpool-passwordpolicy-temporarypasswordvaliditydays
+     * 
+     */
+    @JsonIgnore
+    public void setTemporaryPasswordValidityDays(Number temporaryPasswordValidityDays) {
+        this.temporaryPasswordValidityDays = temporaryPasswordValidityDays;
+    }
+
+    public UserPoolPasswordPolicy withTemporaryPasswordValidityDays(Number temporaryPasswordValidityDays) {
+        this.temporaryPasswordValidityDays = temporaryPasswordValidityDays;
         return this;
     }
 
@@ -182,12 +213,12 @@ public class UserPoolPasswordPolicy implements Property<UserPoolPasswordPolicy>
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("requireNumbers", requireNumbers).append("minimumLength", minimumLength).append("requireUppercase", requireUppercase).append("requireLowercase", requireLowercase).append("requireSymbols", requireSymbols).toString();
+        return new ToStringBuilder(this).append("requireNumbers", requireNumbers).append("minimumLength", minimumLength).append("temporaryPasswordValidityDays", temporaryPasswordValidityDays).append("requireUppercase", requireUppercase).append("requireLowercase", requireLowercase).append("requireSymbols", requireSymbols).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(requireNumbers).append(requireSymbols).append(minimumLength).append(requireUppercase).append(requireLowercase).toHashCode();
+        return new HashCodeBuilder().append(requireSymbols).append(minimumLength).append(requireNumbers).append(requireUppercase).append(temporaryPasswordValidityDays).append(requireLowercase).toHashCode();
     }
 
     @Override
@@ -199,7 +230,7 @@ public class UserPoolPasswordPolicy implements Property<UserPoolPasswordPolicy>
             return false;
         }
         UserPoolPasswordPolicy rhs = ((UserPoolPasswordPolicy) other);
-        return new EqualsBuilder().append(requireNumbers, rhs.requireNumbers).append(requireSymbols, rhs.requireSymbols).append(minimumLength, rhs.minimumLength).append(requireUppercase, rhs.requireUppercase).append(requireLowercase, rhs.requireLowercase).isEquals();
+        return new EqualsBuilder().append(requireSymbols, rhs.requireSymbols).append(minimumLength, rhs.minimumLength).append(requireNumbers, rhs.requireNumbers).append(requireUppercase, rhs.requireUppercase).append(temporaryPasswordValidityDays, rhs.temporaryPasswordValidityDays).append(requireLowercase, rhs.requireLowercase).isEquals();
     }
 
 }

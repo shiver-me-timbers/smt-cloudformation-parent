@@ -1,0 +1,38 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_PinpointEmail_Identity.schema.json",
+  "title" : "Identity",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpointemail-identity.html",
+  "type" : "object",
+  "javaType" : "aws.pinpointemail.Identity",
+  "properties" : {
+    "FeedbackForwardingEnabled" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpointemail-identity.html#cfn-pinpointemail-identity-feedbackforwardingenabled",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DkimSigningEnabled" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpointemail-identity.html#cfn-pinpointemail-identity-dkimsigningenabled",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpointemail-identity.html#cfn-pinpointemail-identity-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_PinpointEmail_Identity.Tags.schema.json",
+        "javaType" : "aws.Property<aws.pinpointemail.IdentityTags>"
+      }
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpointemail-identity.html#cfn-pinpointemail-identity-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "MailFromAttributes" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpointemail-identity.html#cfn-pinpointemail-identity-mailfromattributes",
+      "$ref" : "AWS_PinpointEmail_Identity.MailFromAttributes.schema.json",
+      "javaType" : "aws.Property<aws.pinpointemail.IdentityMailFromAttributes>"
+    }
+  }
+}

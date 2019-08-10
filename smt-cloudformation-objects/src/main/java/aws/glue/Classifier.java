@@ -22,6 +22,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "XMLClassifier",
     "JsonClassifier",
+    "CsvClassifier",
     "GrokClassifier"
 })
 public class Classifier {
@@ -44,6 +45,15 @@ public class Classifier {
     @JsonProperty("JsonClassifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-jsonclassifier.html")
     private Property<ClassifierJsonClassifier> jsonClassifier;
+    /**
+     * ClassifierCsvClassifier
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-csvclassifier.html
+     * 
+     */
+    @JsonProperty("CsvClassifier")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-csvclassifier.html")
+    private Property<ClassifierCsvClassifier> csvClassifier;
     /**
      * ClassifierGrokClassifier
      * <p>
@@ -109,6 +119,33 @@ public class Classifier {
     }
 
     /**
+     * ClassifierCsvClassifier
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-csvclassifier.html
+     * 
+     */
+    @JsonIgnore
+    public Property<ClassifierCsvClassifier> getCsvClassifier() {
+        return csvClassifier;
+    }
+
+    /**
+     * ClassifierCsvClassifier
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-csvclassifier.html
+     * 
+     */
+    @JsonIgnore
+    public void setCsvClassifier(Property<ClassifierCsvClassifier> csvClassifier) {
+        this.csvClassifier = csvClassifier;
+    }
+
+    public Classifier withCsvClassifier(Property<ClassifierCsvClassifier> csvClassifier) {
+        this.csvClassifier = csvClassifier;
+        return this;
+    }
+
+    /**
      * ClassifierGrokClassifier
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-grokclassifier.html
@@ -137,12 +174,12 @@ public class Classifier {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("xMLClassifier", xMLClassifier).append("jsonClassifier", jsonClassifier).append("grokClassifier", grokClassifier).toString();
+        return new ToStringBuilder(this).append("xMLClassifier", xMLClassifier).append("jsonClassifier", jsonClassifier).append("csvClassifier", csvClassifier).append("grokClassifier", grokClassifier).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(xMLClassifier).append(grokClassifier).append(jsonClassifier).toHashCode();
+        return new HashCodeBuilder().append(xMLClassifier).append(csvClassifier).append(grokClassifier).append(jsonClassifier).toHashCode();
     }
 
     @Override
@@ -154,7 +191,7 @@ public class Classifier {
             return false;
         }
         Classifier rhs = ((Classifier) other);
-        return new EqualsBuilder().append(xMLClassifier, rhs.xMLClassifier).append(grokClassifier, rhs.grokClassifier).append(jsonClassifier, rhs.jsonClassifier).isEquals();
+        return new EqualsBuilder().append(xMLClassifier, rhs.xMLClassifier).append(csvClassifier, rhs.csvClassifier).append(grokClassifier, rhs.grokClassifier).append(jsonClassifier, rhs.jsonClassifier).isEquals();
     }
 
 }

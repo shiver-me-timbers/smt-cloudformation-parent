@@ -1,0 +1,46 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_Campaign.MessageConfiguration.schema.json",
+  "title" : "CampaignMessageConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-messageconfiguration.html",
+  "type" : "object",
+  "javaType" : "aws.pinpoint.CampaignMessageConfiguration",
+  "javaInterfaces" : [ "aws.Property<CampaignMessageConfiguration>" ],
+  "properties" : {
+    "APNSMessage" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-messageconfiguration.html#cfn-pinpoint-campaign-messageconfiguration-apnsmessage",
+      "$ref" : "AWS_Pinpoint_Campaign.Message.schema.json",
+      "javaType" : "aws.Property<aws.pinpoint.CampaignMessage>"
+    },
+    "BaiduMessage" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-messageconfiguration.html#cfn-pinpoint-campaign-messageconfiguration-baidumessage",
+      "$ref" : "AWS_Pinpoint_Campaign.Message.schema.json",
+      "javaType" : "aws.Property<aws.pinpoint.CampaignMessage>"
+    },
+    "DefaultMessage" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-messageconfiguration.html#cfn-pinpoint-campaign-messageconfiguration-defaultmessage",
+      "$ref" : "AWS_Pinpoint_Campaign.Message.schema.json",
+      "javaType" : "aws.Property<aws.pinpoint.CampaignMessage>"
+    },
+    "EmailMessage" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-messageconfiguration.html#cfn-pinpoint-campaign-messageconfiguration-emailmessage",
+      "$ref" : "AWS_Pinpoint_Campaign.CampaignEmailMessage.schema.json",
+      "javaType" : "aws.Property<aws.pinpoint.CampaignCampaignEmailMessage>"
+    },
+    "GCMMessage" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-messageconfiguration.html#cfn-pinpoint-campaign-messageconfiguration-gcmmessage",
+      "$ref" : "AWS_Pinpoint_Campaign.Message.schema.json",
+      "javaType" : "aws.Property<aws.pinpoint.CampaignMessage>"
+    },
+    "SMSMessage" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-messageconfiguration.html#cfn-pinpoint-campaign-messageconfiguration-smsmessage",
+      "$ref" : "AWS_Pinpoint_Campaign.CampaignSmsMessage.schema.json",
+      "javaType" : "aws.Property<aws.pinpoint.CampaignCampaignSmsMessage>"
+    },
+    "ADMMessage" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-messageconfiguration.html#cfn-pinpoint-campaign-messageconfiguration-admmessage",
+      "$ref" : "AWS_Pinpoint_Campaign.Message.schema.json",
+      "javaType" : "aws.Property<aws.pinpoint.CampaignMessage>"
+    }
+  }
+}

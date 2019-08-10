@@ -112,7 +112,7 @@ public class DBInstance {
      */
     @JsonProperty("BackupRetentionPeriod")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-backupretentionperiod")
-    private CharSequence backupRetentionPeriod;
+    private Number backupRetentionPeriod;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-charactersetname
      * 
@@ -521,7 +521,7 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public CharSequence getBackupRetentionPeriod() {
+    public Number getBackupRetentionPeriod() {
         return backupRetentionPeriod;
     }
 
@@ -530,11 +530,11 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public void setBackupRetentionPeriod(CharSequence backupRetentionPeriod) {
+    public void setBackupRetentionPeriod(Number backupRetentionPeriod) {
         this.backupRetentionPeriod = backupRetentionPeriod;
     }
 
-    public DBInstance withBackupRetentionPeriod(CharSequence backupRetentionPeriod) {
+    public DBInstance withBackupRetentionPeriod(Number backupRetentionPeriod) {
         this.backupRetentionPeriod = backupRetentionPeriod;
         return this;
     }

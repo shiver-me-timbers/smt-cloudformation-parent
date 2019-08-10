@@ -1,0 +1,67 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MediaLive_Input.schema.json",
+  "title" : "Input",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-input.html",
+  "type" : "object",
+  "javaType" : "aws.medialive.Input",
+  "properties" : {
+    "Type" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-input.html#cfn-medialive-input-type",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Destinations" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-input.html#cfn-medialive-input-destinations",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_MediaLive_Input.InputDestinationRequest.schema.json",
+        "javaType" : "aws.Property<aws.medialive.InputInputDestinationRequest>"
+      }
+    },
+    "Vpc" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-input.html#cfn-medialive-input-vpc",
+      "$ref" : "AWS_MediaLive_Input.InputVpcRequest.schema.json",
+      "javaType" : "aws.Property<aws.medialive.InputInputVpcRequest>"
+    },
+    "MediaConnectFlows" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-input.html#cfn-medialive-input-mediaconnectflows",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_MediaLive_Input.MediaConnectFlowRequest.schema.json",
+        "javaType" : "aws.Property<aws.medialive.InputMediaConnectFlowRequest>"
+      }
+    },
+    "InputSecurityGroups" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-input.html#cfn-medialive-input-inputsecuritygroups",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    },
+    "Sources" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-input.html#cfn-medialive-input-sources",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_MediaLive_Input.InputSourceRequest.schema.json",
+        "javaType" : "aws.Property<aws.medialive.InputInputSourceRequest>"
+      }
+    },
+    "RoleArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-input.html#cfn-medialive-input-rolearn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-input.html#cfn-medialive-input-tags",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-input.html#cfn-medialive-input-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

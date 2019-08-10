@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MediaLive_Channel.VideoSelectorSettings.schema.json",
+  "title" : "ChannelVideoSelectorSettings",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-videoselectorsettings.html",
+  "type" : "object",
+  "javaType" : "aws.medialive.ChannelVideoSelectorSettings",
+  "javaInterfaces" : [ "aws.Property<ChannelVideoSelectorSettings>" ],
+  "properties" : {
+    "VideoSelectorProgramId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-videoselectorsettings.html#cfn-medialive-channel-videoselectorsettings-videoselectorprogramid",
+      "$ref" : "AWS_MediaLive_Channel.VideoSelectorProgramId.schema.json",
+      "javaType" : "aws.Property<aws.medialive.ChannelVideoSelectorProgramId>"
+    },
+    "VideoSelectorPid" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-videoselectorsettings.html#cfn-medialive-channel-videoselectorsettings-videoselectorpid",
+      "$ref" : "AWS_MediaLive_Channel.VideoSelectorPid.schema.json",
+      "javaType" : "aws.Property<aws.medialive.ChannelVideoSelectorPid>"
+    }
+  }
+}

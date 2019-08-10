@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_PinpointEmail_ConfigurationSetEventDestinationResource.schema.json",
+  "title" : "ConfigurationSetEventDestinationResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpointemail-configurationseteventdestination.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.pinpointemail.ConfigurationSetEventDestinationResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ConfigurationSetEventDestinationResource>", "aws.HasCondition<ConfigurationSetEventDestinationResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::PinpointEmail::ConfigurationSetEventDestination"
+    },
+    "Properties" : {
+      "$ref" : "AWS_PinpointEmail_ConfigurationSetEventDestination.schema.json"
+    }
+  }
+}

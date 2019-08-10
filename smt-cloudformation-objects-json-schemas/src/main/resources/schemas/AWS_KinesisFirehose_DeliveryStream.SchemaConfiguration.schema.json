@@ -1,0 +1,41 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_KinesisFirehose_DeliveryStream.SchemaConfiguration.schema.json",
+  "title" : "DeliveryStreamSchemaConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-schemaconfiguration.html",
+  "type" : "object",
+  "javaType" : "aws.kinesisfirehose.DeliveryStreamSchemaConfiguration",
+  "javaInterfaces" : [ "aws.Property<DeliveryStreamSchemaConfiguration>" ],
+  "properties" : {
+    "CatalogId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-schemaconfiguration.html#cfn-kinesisfirehose-deliverystream-schemaconfiguration-catalogid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DatabaseName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-schemaconfiguration.html#cfn-kinesisfirehose-deliverystream-schemaconfiguration-databasename",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Region" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-schemaconfiguration.html#cfn-kinesisfirehose-deliverystream-schemaconfiguration-region",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RoleARN" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-schemaconfiguration.html#cfn-kinesisfirehose-deliverystream-schemaconfiguration-rolearn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TableName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-schemaconfiguration.html#cfn-kinesisfirehose-deliverystream-schemaconfiguration-tablename",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "VersionId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-schemaconfiguration.html#cfn-kinesisfirehose-deliverystream-schemaconfiguration-versionid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

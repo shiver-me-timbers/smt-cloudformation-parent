@@ -51,6 +51,11 @@
       "type" : "integer",
       "javaType" : "java.lang.Number"
     },
+    "IdleDisconnectTimeoutInSeconds" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-idledisconnecttimeoutinseconds",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
     "DisconnectTimeoutInSeconds" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-disconnecttimeoutinseconds",
       "type" : "integer",

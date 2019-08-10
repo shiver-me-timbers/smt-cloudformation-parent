@@ -49,6 +49,11 @@
         "javaType" : "aws.Property<aws.ecs.TaskDefinitionTaskDefinitionPlacementConstraint>"
       }
     },
+    "ProxyConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-proxyconfiguration",
+      "$ref" : "AWS_ECS_TaskDefinition.ProxyConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.ecs.TaskDefinitionProxyConfiguration>"
+    },
     "RequiresCompatibilities" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-requirescompatibilities",
       "type" : "array",
@@ -56,6 +61,14 @@
       "items" : {
         "type" : "string",
         "javaType" : "java.lang.CharSequence"
+      }
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
       }
     },
     "TaskRoleArn" : {

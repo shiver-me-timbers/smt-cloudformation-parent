@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_KinesisFirehose_DeliveryStream.Serializer.schema.json",
+  "title" : "DeliveryStreamSerializer",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-serializer.html",
+  "type" : "object",
+  "javaType" : "aws.kinesisfirehose.DeliveryStreamSerializer",
+  "javaInterfaces" : [ "aws.Property<DeliveryStreamSerializer>" ],
+  "properties" : {
+    "OrcSerDe" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-serializer.html#cfn-kinesisfirehose-deliverystream-serializer-orcserde",
+      "$ref" : "AWS_KinesisFirehose_DeliveryStream.OrcSerDe.schema.json",
+      "javaType" : "aws.Property<aws.kinesisfirehose.DeliveryStreamOrcSerDe>"
+    },
+    "ParquetSerDe" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-serializer.html#cfn-kinesisfirehose-deliverystream-serializer-parquetserde",
+      "$ref" : "AWS_KinesisFirehose_DeliveryStream.ParquetSerDe.schema.json",
+      "javaType" : "aws.Property<aws.kinesisfirehose.DeliveryStreamParquetSerDe>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MediaLive_ChannelResource.schema.json",
+  "title" : "ChannelResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-channel.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.medialive.ChannelResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ChannelResource>", "aws.HasCondition<ChannelResource>", "aws.HasAttributes<ChannelAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::MediaLive::Channel"
+    },
+    "Properties" : {
+      "$ref" : "AWS_MediaLive_Channel.schema.json"
+    }
+  }
+}

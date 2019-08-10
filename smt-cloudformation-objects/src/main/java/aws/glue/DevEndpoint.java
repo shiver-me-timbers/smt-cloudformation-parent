@@ -27,8 +27,10 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "NumberOfNodes",
     "SubnetId",
     "ExtraPythonLibsS3Path",
+    "SecurityConfiguration",
     "SecurityGroupIds",
-    "RoleArn"
+    "RoleArn",
+    "Tags"
 })
 public class DevEndpoint {
 
@@ -75,6 +77,13 @@ public class DevEndpoint {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-extrapythonlibss3path")
     private CharSequence extraPythonLibsS3Path;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-securityconfiguration
+     * 
+     */
+    @JsonProperty("SecurityConfiguration")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-securityconfiguration")
+    private CharSequence securityConfiguration;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-securitygroupids
      * 
      */
@@ -88,6 +97,13 @@ public class DevEndpoint {
     @JsonProperty("RoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-rolearn")
     private CharSequence roleArn;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-tags")
+    private Object tags;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-extrajarss3path
@@ -228,6 +244,29 @@ public class DevEndpoint {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-securityconfiguration
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getSecurityConfiguration() {
+        return securityConfiguration;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-securityconfiguration
+     * 
+     */
+    @JsonIgnore
+    public void setSecurityConfiguration(CharSequence securityConfiguration) {
+        this.securityConfiguration = securityConfiguration;
+    }
+
+    public DevEndpoint withSecurityConfiguration(CharSequence securityConfiguration) {
+        this.securityConfiguration = securityConfiguration;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-securitygroupids
      * 
      */
@@ -273,14 +312,37 @@ public class DevEndpoint {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-tags
+     * 
+     */
+    @JsonIgnore
+    public Object getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(Object tags) {
+        this.tags = tags;
+    }
+
+    public DevEndpoint withTags(Object tags) {
+        this.tags = tags;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("extraJarsS3Path", extraJarsS3Path).append("endpointName", endpointName).append("publicKey", publicKey).append("numberOfNodes", numberOfNodes).append("subnetId", subnetId).append("extraPythonLibsS3Path", extraPythonLibsS3Path).append("securityGroupIds", securityGroupIds).append("roleArn", roleArn).toString();
+        return new ToStringBuilder(this).append("extraJarsS3Path", extraJarsS3Path).append("endpointName", endpointName).append("publicKey", publicKey).append("numberOfNodes", numberOfNodes).append("subnetId", subnetId).append("extraPythonLibsS3Path", extraPythonLibsS3Path).append("securityConfiguration", securityConfiguration).append("securityGroupIds", securityGroupIds).append("roleArn", roleArn).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(subnetId).append(extraJarsS3Path).append(securityGroupIds).append(roleArn).append(endpointName).append(publicKey).append(numberOfNodes).append(extraPythonLibsS3Path).toHashCode();
+        return new HashCodeBuilder().append(subnetId).append(extraJarsS3Path).append(securityGroupIds).append(roleArn).append(endpointName).append(publicKey).append(numberOfNodes).append(extraPythonLibsS3Path).append(securityConfiguration).append(tags).toHashCode();
     }
 
     @Override
@@ -292,7 +354,7 @@ public class DevEndpoint {
             return false;
         }
         DevEndpoint rhs = ((DevEndpoint) other);
-        return new EqualsBuilder().append(subnetId, rhs.subnetId).append(extraJarsS3Path, rhs.extraJarsS3Path).append(securityGroupIds, rhs.securityGroupIds).append(roleArn, rhs.roleArn).append(endpointName, rhs.endpointName).append(publicKey, rhs.publicKey).append(numberOfNodes, rhs.numberOfNodes).append(extraPythonLibsS3Path, rhs.extraPythonLibsS3Path).isEquals();
+        return new EqualsBuilder().append(subnetId, rhs.subnetId).append(extraJarsS3Path, rhs.extraJarsS3Path).append(securityGroupIds, rhs.securityGroupIds).append(roleArn, rhs.roleArn).append(endpointName, rhs.endpointName).append(publicKey, rhs.publicKey).append(numberOfNodes, rhs.numberOfNodes).append(extraPythonLibsS3Path, rhs.extraPythonLibsS3Path).append(securityConfiguration, rhs.securityConfiguration).append(tags, rhs.tags).isEquals();
     }
 
 }

@@ -1,0 +1,43 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Transfer_Server.schema.json",
+  "title" : "Server",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-server.html",
+  "type" : "object",
+  "javaType" : "aws.transfer.Server",
+  "properties" : {
+    "LoggingRole" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-server.html#cfn-transfer-server-loggingrole",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "IdentityProviderDetails" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-server.html#cfn-transfer-server-identityproviderdetails",
+      "$ref" : "AWS_Transfer_Server.IdentityProviderDetails.schema.json",
+      "javaType" : "aws.Property<aws.transfer.ServerIdentityProviderDetails>"
+    },
+    "EndpointType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-server.html#cfn-transfer-server-endpointtype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "EndpointDetails" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-server.html#cfn-transfer-server-endpointdetails",
+      "$ref" : "AWS_Transfer_Server.EndpointDetails.schema.json",
+      "javaType" : "aws.Property<aws.transfer.ServerEndpointDetails>"
+    },
+    "IdentityProviderType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-server.html#cfn-transfer-server-identityprovidertype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-server.html#cfn-transfer-server-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_Campaign.WriteTreatmentResource.schema.json",
+  "title" : "CampaignWriteTreatmentResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-writetreatmentresource.html",
+  "type" : "object",
+  "javaType" : "aws.pinpoint.CampaignWriteTreatmentResource",
+  "javaInterfaces" : [ "aws.Property<CampaignWriteTreatmentResource>" ],
+  "properties" : {
+    "TreatmentDescription" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-writetreatmentresource.html#cfn-pinpoint-campaign-writetreatmentresource-treatmentdescription",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "MessageConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-writetreatmentresource.html#cfn-pinpoint-campaign-writetreatmentresource-messageconfiguration",
+      "$ref" : "AWS_Pinpoint_Campaign.MessageConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.pinpoint.CampaignMessageConfiguration>"
+    },
+    "Schedule" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-writetreatmentresource.html#cfn-pinpoint-campaign-writetreatmentresource-schedule",
+      "$ref" : "AWS_Pinpoint_Campaign.Schedule.schema.json",
+      "javaType" : "aws.Property<aws.pinpoint.CampaignSchedule>"
+    },
+    "SizePercent" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-writetreatmentresource.html#cfn-pinpoint-campaign-writetreatmentresource-sizepercent",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "TreatmentName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-writetreatmentresource.html#cfn-pinpoint-campaign-writetreatmentresource-treatmentname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

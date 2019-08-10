@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoTEvents_DetectorModel.Lambda.schema.json",
+  "title" : "DetectorModelLambda",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-lambda.html",
+  "type" : "object",
+  "javaType" : "aws.iotevents.DetectorModelLambda",
+  "javaInterfaces" : [ "aws.Property<DetectorModelLambda>" ],
+  "properties" : {
+    "FunctionArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-lambda.html#cfn-iotevents-detectormodel-lambda-functionarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

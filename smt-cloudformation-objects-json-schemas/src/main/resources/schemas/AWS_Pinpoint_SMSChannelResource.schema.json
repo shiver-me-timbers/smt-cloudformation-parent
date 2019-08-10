@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_SMSChannelResource.schema.json",
+  "title" : "SMSChannelResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-smschannel.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.pinpoint.SMSChannelResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<SMSChannelResource>", "aws.HasCondition<SMSChannelResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Pinpoint::SMSChannel"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Pinpoint_SMSChannel.schema.json"
+    }
+  }
+}

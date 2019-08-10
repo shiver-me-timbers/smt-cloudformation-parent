@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.HasCondition;
 import aws.HasDependsOn;
 import aws.Resource;
@@ -32,7 +33,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class MountTargetResource
     extends Resource
-    implements HasCondition<MountTargetResource> , HasDependsOn<MountTargetResource>
+    implements HasAttributes<MountTargetAttributes> , HasCondition<MountTargetResource> , HasDependsOn<MountTargetResource>
 {
 
     @JsonProperty("Type")

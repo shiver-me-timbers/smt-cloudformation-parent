@@ -21,7 +21,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "JobName",
-    "Arguments"
+    "Arguments",
+    "SecurityConfiguration"
 })
 public class TriggerAction implements Property<TriggerAction>
 {
@@ -40,6 +41,13 @@ public class TriggerAction implements Property<TriggerAction>
     @JsonProperty("Arguments")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-arguments")
     private Object arguments;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-securityconfiguration
+     * 
+     */
+    @JsonProperty("SecurityConfiguration")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-securityconfiguration")
+    private CharSequence securityConfiguration;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-jobname
@@ -87,14 +95,37 @@ public class TriggerAction implements Property<TriggerAction>
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-securityconfiguration
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getSecurityConfiguration() {
+        return securityConfiguration;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-securityconfiguration
+     * 
+     */
+    @JsonIgnore
+    public void setSecurityConfiguration(CharSequence securityConfiguration) {
+        this.securityConfiguration = securityConfiguration;
+    }
+
+    public TriggerAction withSecurityConfiguration(CharSequence securityConfiguration) {
+        this.securityConfiguration = securityConfiguration;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("jobName", jobName).append("arguments", arguments).toString();
+        return new ToStringBuilder(this).append("jobName", jobName).append("arguments", arguments).append("securityConfiguration", securityConfiguration).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(jobName).append(arguments).toHashCode();
+        return new HashCodeBuilder().append(jobName).append(arguments).append(securityConfiguration).toHashCode();
     }
 
     @Override
@@ -106,7 +137,7 @@ public class TriggerAction implements Property<TriggerAction>
             return false;
         }
         TriggerAction rhs = ((TriggerAction) other);
-        return new EqualsBuilder().append(jobName, rhs.jobName).append(arguments, rhs.arguments).isEquals();
+        return new EqualsBuilder().append(jobName, rhs.jobName).append(arguments, rhs.arguments).append(securityConfiguration, rhs.securityConfiguration).isEquals();
     }
 
 }

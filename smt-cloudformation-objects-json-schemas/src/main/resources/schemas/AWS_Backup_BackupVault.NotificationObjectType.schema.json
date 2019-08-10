@@ -1,0 +1,24 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Backup_BackupVault.NotificationObjectType.schema.json",
+  "title" : "BackupVaultNotificationObjectType",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-backup-backupvault-notificationobjecttype.html",
+  "type" : "object",
+  "javaType" : "aws.backup.BackupVaultNotificationObjectType",
+  "javaInterfaces" : [ "aws.Property<BackupVaultNotificationObjectType>" ],
+  "properties" : {
+    "SNSTopicArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-backup-backupvault-notificationobjecttype.html#cfn-backup-backupvault-notificationobjecttype-snstopicarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "BackupVaultEvents" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-backup-backupvault-notificationobjecttype.html#cfn-backup-backupvault-notificationobjecttype-backupvaultevents",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    }
+  }
+}

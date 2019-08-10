@@ -26,6 +26,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Description",
     "Actions",
     "Schedule",
+    "Tags",
     "Name",
     "Predicate"
 })
@@ -59,6 +60,13 @@ public class Trigger {
     @JsonProperty("Schedule")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-schedule")
     private CharSequence schedule;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-tags")
+    private Object tags;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-name
      * 
@@ -169,6 +177,29 @@ public class Trigger {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-tags
+     * 
+     */
+    @JsonIgnore
+    public Object getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(Object tags) {
+        this.tags = tags;
+    }
+
+    public Trigger withTags(Object tags) {
+        this.tags = tags;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-name
      * 
      */
@@ -220,12 +251,12 @@ public class Trigger {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("type", type).append("description", description).append("actions", actions).append("schedule", schedule).append("name", name).append("predicate", predicate).toString();
+        return new ToStringBuilder(this).append("type", type).append("description", description).append("actions", actions).append("schedule", schedule).append("tags", tags).append("name", name).append("predicate", predicate).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(schedule).append(predicate).append(name).append(description).append(type).append(actions).toHashCode();
+        return new HashCodeBuilder().append(schedule).append(predicate).append(name).append(description).append(type).append(actions).append(tags).toHashCode();
     }
 
     @Override
@@ -237,7 +268,7 @@ public class Trigger {
             return false;
         }
         Trigger rhs = ((Trigger) other);
-        return new EqualsBuilder().append(schedule, rhs.schedule).append(predicate, rhs.predicate).append(name, rhs.name).append(description, rhs.description).append(type, rhs.type).append(actions, rhs.actions).isEquals();
+        return new EqualsBuilder().append(schedule, rhs.schedule).append(predicate, rhs.predicate).append(name, rhs.name).append(description, rhs.description).append(type, rhs.type).append(actions, rhs.actions).append(tags, rhs.tags).isEquals();
     }
 
 }

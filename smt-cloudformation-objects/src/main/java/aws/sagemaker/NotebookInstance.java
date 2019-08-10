@@ -23,27 +23,23 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
-    "RootAccess",
     "KmsKeyId",
     "VolumeSizeInGB",
+    "AdditionalCodeRepositories",
+    "DefaultCodeRepository",
     "DirectInternetAccess",
+    "AcceleratorTypes",
     "SubnetId",
+    "SecurityGroupIds",
+    "RoleArn",
+    "RootAccess",
     "NotebookInstanceName",
     "InstanceType",
     "LifecycleConfigName",
-    "SecurityGroupIds",
-    "RoleArn",
     "Tags"
 })
 public class NotebookInstance {
 
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-rootaccess
-     * 
-     */
-    @JsonProperty("RootAccess")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-rootaccess")
-    private CharSequence rootAccess;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-kmskeyid
      * 
@@ -59,6 +55,20 @@ public class NotebookInstance {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-volumesizeingb")
     private Number volumeSizeInGB;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-additionalcoderepositories
+     * 
+     */
+    @JsonProperty("AdditionalCodeRepositories")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-additionalcoderepositories")
+    private List<CharSequence> additionalCodeRepositories = new ArrayList<CharSequence>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-defaultcoderepository
+     * 
+     */
+    @JsonProperty("DefaultCodeRepository")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-defaultcoderepository")
+    private CharSequence defaultCodeRepository;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-directinternetaccess
      * 
      */
@@ -66,12 +76,40 @@ public class NotebookInstance {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-directinternetaccess")
     private CharSequence directInternetAccess;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-acceleratortypes
+     * 
+     */
+    @JsonProperty("AcceleratorTypes")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-acceleratortypes")
+    private List<CharSequence> acceleratorTypes = new ArrayList<CharSequence>();
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-subnetid
      * 
      */
     @JsonProperty("SubnetId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-subnetid")
     private CharSequence subnetId;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-securitygroupids
+     * 
+     */
+    @JsonProperty("SecurityGroupIds")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-securitygroupids")
+    private List<CharSequence> securityGroupIds = new ArrayList<CharSequence>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-rolearn
+     * 
+     */
+    @JsonProperty("RoleArn")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-rolearn")
+    private CharSequence roleArn;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-rootaccess
+     * 
+     */
+    @JsonProperty("RootAccess")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-rootaccess")
+    private CharSequence rootAccess;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-notebookinstancename
      * 
@@ -94,49 +132,12 @@ public class NotebookInstance {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-lifecycleconfigname")
     private CharSequence lifecycleConfigName;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-securitygroupids
-     * 
-     */
-    @JsonProperty("SecurityGroupIds")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-securitygroupids")
-    private List<CharSequence> securityGroupIds = new ArrayList<CharSequence>();
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-rolearn
-     * 
-     */
-    @JsonProperty("RoleArn")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-rolearn")
-    private CharSequence roleArn;
-    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-tags
      * 
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-tags")
     private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-rootaccess
-     * 
-     */
-    @JsonIgnore
-    public CharSequence getRootAccess() {
-        return rootAccess;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-rootaccess
-     * 
-     */
-    @JsonIgnore
-    public void setRootAccess(CharSequence rootAccess) {
-        this.rootAccess = rootAccess;
-    }
-
-    public NotebookInstance withRootAccess(CharSequence rootAccess) {
-        this.rootAccess = rootAccess;
-        return this;
-    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-kmskeyid
@@ -185,6 +186,52 @@ public class NotebookInstance {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-additionalcoderepositories
+     * 
+     */
+    @JsonIgnore
+    public List<CharSequence> getAdditionalCodeRepositories() {
+        return additionalCodeRepositories;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-additionalcoderepositories
+     * 
+     */
+    @JsonIgnore
+    public void setAdditionalCodeRepositories(List<CharSequence> additionalCodeRepositories) {
+        this.additionalCodeRepositories = additionalCodeRepositories;
+    }
+
+    public NotebookInstance withAdditionalCodeRepositories(List<CharSequence> additionalCodeRepositories) {
+        this.additionalCodeRepositories = additionalCodeRepositories;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-defaultcoderepository
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getDefaultCodeRepository() {
+        return defaultCodeRepository;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-defaultcoderepository
+     * 
+     */
+    @JsonIgnore
+    public void setDefaultCodeRepository(CharSequence defaultCodeRepository) {
+        this.defaultCodeRepository = defaultCodeRepository;
+    }
+
+    public NotebookInstance withDefaultCodeRepository(CharSequence defaultCodeRepository) {
+        this.defaultCodeRepository = defaultCodeRepository;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-directinternetaccess
      * 
      */
@@ -208,6 +255,29 @@ public class NotebookInstance {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-acceleratortypes
+     * 
+     */
+    @JsonIgnore
+    public List<CharSequence> getAcceleratorTypes() {
+        return acceleratorTypes;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-acceleratortypes
+     * 
+     */
+    @JsonIgnore
+    public void setAcceleratorTypes(List<CharSequence> acceleratorTypes) {
+        this.acceleratorTypes = acceleratorTypes;
+    }
+
+    public NotebookInstance withAcceleratorTypes(List<CharSequence> acceleratorTypes) {
+        this.acceleratorTypes = acceleratorTypes;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-subnetid
      * 
      */
@@ -227,6 +297,75 @@ public class NotebookInstance {
 
     public NotebookInstance withSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-securitygroupids
+     * 
+     */
+    @JsonIgnore
+    public List<CharSequence> getSecurityGroupIds() {
+        return securityGroupIds;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-securitygroupids
+     * 
+     */
+    @JsonIgnore
+    public void setSecurityGroupIds(List<CharSequence> securityGroupIds) {
+        this.securityGroupIds = securityGroupIds;
+    }
+
+    public NotebookInstance withSecurityGroupIds(List<CharSequence> securityGroupIds) {
+        this.securityGroupIds = securityGroupIds;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-rolearn
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getRoleArn() {
+        return roleArn;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-rolearn
+     * 
+     */
+    @JsonIgnore
+    public void setRoleArn(CharSequence roleArn) {
+        this.roleArn = roleArn;
+    }
+
+    public NotebookInstance withRoleArn(CharSequence roleArn) {
+        this.roleArn = roleArn;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-rootaccess
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getRootAccess() {
+        return rootAccess;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-rootaccess
+     * 
+     */
+    @JsonIgnore
+    public void setRootAccess(CharSequence rootAccess) {
+        this.rootAccess = rootAccess;
+    }
+
+    public NotebookInstance withRootAccess(CharSequence rootAccess) {
+        this.rootAccess = rootAccess;
         return this;
     }
 
@@ -300,52 +439,6 @@ public class NotebookInstance {
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-securitygroupids
-     * 
-     */
-    @JsonIgnore
-    public List<CharSequence> getSecurityGroupIds() {
-        return securityGroupIds;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-securitygroupids
-     * 
-     */
-    @JsonIgnore
-    public void setSecurityGroupIds(List<CharSequence> securityGroupIds) {
-        this.securityGroupIds = securityGroupIds;
-    }
-
-    public NotebookInstance withSecurityGroupIds(List<CharSequence> securityGroupIds) {
-        this.securityGroupIds = securityGroupIds;
-        return this;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-rolearn
-     * 
-     */
-    @JsonIgnore
-    public CharSequence getRoleArn() {
-        return roleArn;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-rolearn
-     * 
-     */
-    @JsonIgnore
-    public void setRoleArn(CharSequence roleArn) {
-        this.roleArn = roleArn;
-    }
-
-    public NotebookInstance withRoleArn(CharSequence roleArn) {
-        this.roleArn = roleArn;
-        return this;
-    }
-
-    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-tags
      * 
      */
@@ -370,12 +463,12 @@ public class NotebookInstance {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("rootAccess", rootAccess).append("kmsKeyId", kmsKeyId).append("volumeSizeInGB", volumeSizeInGB).append("directInternetAccess", directInternetAccess).append("subnetId", subnetId).append("notebookInstanceName", notebookInstanceName).append("instanceType", instanceType).append("lifecycleConfigName", lifecycleConfigName).append("securityGroupIds", securityGroupIds).append("roleArn", roleArn).append("tags", tags).toString();
+        return new ToStringBuilder(this).append("kmsKeyId", kmsKeyId).append("volumeSizeInGB", volumeSizeInGB).append("additionalCodeRepositories", additionalCodeRepositories).append("defaultCodeRepository", defaultCodeRepository).append("directInternetAccess", directInternetAccess).append("acceleratorTypes", acceleratorTypes).append("subnetId", subnetId).append("securityGroupIds", securityGroupIds).append("roleArn", roleArn).append("rootAccess", rootAccess).append("notebookInstanceName", notebookInstanceName).append("instanceType", instanceType).append("lifecycleConfigName", lifecycleConfigName).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(subnetId).append(lifecycleConfigName).append(volumeSizeInGB).append(rootAccess).append(securityGroupIds).append(roleArn).append(instanceType).append(notebookInstanceName).append(kmsKeyId).append(directInternetAccess).append(tags).toHashCode();
+        return new HashCodeBuilder().append(subnetId).append(lifecycleConfigName).append(additionalCodeRepositories).append(volumeSizeInGB).append(rootAccess).append(instanceType).append(directInternetAccess).append(acceleratorTypes).append(tags).append(defaultCodeRepository).append(securityGroupIds).append(roleArn).append(notebookInstanceName).append(kmsKeyId).toHashCode();
     }
 
     @Override
@@ -387,7 +480,7 @@ public class NotebookInstance {
             return false;
         }
         NotebookInstance rhs = ((NotebookInstance) other);
-        return new EqualsBuilder().append(subnetId, rhs.subnetId).append(lifecycleConfigName, rhs.lifecycleConfigName).append(volumeSizeInGB, rhs.volumeSizeInGB).append(rootAccess, rhs.rootAccess).append(securityGroupIds, rhs.securityGroupIds).append(roleArn, rhs.roleArn).append(instanceType, rhs.instanceType).append(notebookInstanceName, rhs.notebookInstanceName).append(kmsKeyId, rhs.kmsKeyId).append(directInternetAccess, rhs.directInternetAccess).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(subnetId, rhs.subnetId).append(lifecycleConfigName, rhs.lifecycleConfigName).append(additionalCodeRepositories, rhs.additionalCodeRepositories).append(volumeSizeInGB, rhs.volumeSizeInGB).append(rootAccess, rhs.rootAccess).append(instanceType, rhs.instanceType).append(directInternetAccess, rhs.directInternetAccess).append(acceleratorTypes, rhs.acceleratorTypes).append(tags, rhs.tags).append(defaultCodeRepository, rhs.defaultCodeRepository).append(securityGroupIds, rhs.securityGroupIds).append(roleArn, rhs.roleArn).append(notebookInstanceName, rhs.notebookInstanceName).append(kmsKeyId, rhs.kmsKeyId).isEquals();
     }
 
 }

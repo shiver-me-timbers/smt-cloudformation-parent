@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CodeStar_GitHubRepositoryResource.schema.json",
+  "title" : "GitHubRepositoryResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codestar-githubrepository.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.codestar.GitHubRepositoryResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<GitHubRepositoryResource>", "aws.HasCondition<GitHubRepositoryResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::CodeStar::GitHubRepository"
+    },
+    "Properties" : {
+      "$ref" : "AWS_CodeStar_GitHubRepository.schema.json"
+    }
+  }
+}

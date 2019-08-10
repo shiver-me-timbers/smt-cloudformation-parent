@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MediaLive_Channel.InputAttachment.schema.json",
+  "title" : "ChannelInputAttachment",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-inputattachment.html",
+  "type" : "object",
+  "javaType" : "aws.medialive.ChannelInputAttachment",
+  "javaInterfaces" : [ "aws.Property<ChannelInputAttachment>" ],
+  "properties" : {
+    "InputAttachmentName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-inputattachment.html#cfn-medialive-channel-inputattachment-inputattachmentname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "InputId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-inputattachment.html#cfn-medialive-channel-inputattachment-inputid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "InputSettings" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-inputattachment.html#cfn-medialive-channel-inputattachment-inputsettings",
+      "$ref" : "AWS_MediaLive_Channel.HlsInputSettings.schema.json",
+      "javaType" : "aws.Property<aws.medialive.ChannelInputSettings>"
+    }
+  }
+}

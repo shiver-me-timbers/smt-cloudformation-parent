@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MSK_ClusterResource.schema.json",
+  "title" : "ClusterResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-msk-cluster.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.msk.ClusterResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ClusterResource>", "aws.HasCondition<ClusterResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::MSK::Cluster"
+    },
+    "Properties" : {
+      "$ref" : "AWS_MSK_Cluster.schema.json"
+    }
+  }
+}

@@ -25,6 +25,15 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "LifecyclePolicies" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-elasticfilesystem-filesystem-lifecyclepolicies",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "$ref" : "AWS_EFS_FileSystem.LifecyclePolicy.schema.json",
+        "javaType" : "aws.Property<aws.efs.FileSystemLifecyclePolicy>"
+      }
+    },
     "PerformanceMode" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-performancemode",
       "type" : "string",

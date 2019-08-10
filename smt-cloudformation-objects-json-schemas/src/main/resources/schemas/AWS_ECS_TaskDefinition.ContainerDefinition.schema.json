@@ -21,6 +21,15 @@
       "type" : "integer",
       "javaType" : "java.lang.Number"
     },
+    "DependsOn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-dependson",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "$ref" : "AWS_ECS_TaskDefinition.ContainerDependency.schema.json",
+        "javaType" : "aws.Property<aws.ecs.TaskDefinitionContainerDependency>"
+      }
+    },
     "DisableNetworking" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-disablenetworking",
       "type" : "boolean",
@@ -171,6 +180,34 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-repositorycredentials",
       "$ref" : "AWS_ECS_TaskDefinition.RepositoryCredentials.schema.json",
       "javaType" : "aws.Property<aws.ecs.TaskDefinitionRepositoryCredentials>"
+    },
+    "ResourceRequirements" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-resourcerequirements",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "$ref" : "AWS_ECS_TaskDefinition.ResourceRequirement.schema.json",
+        "javaType" : "aws.Property<aws.ecs.TaskDefinitionResourceRequirement>"
+      }
+    },
+    "Secrets" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-secrets",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "$ref" : "AWS_ECS_TaskDefinition.Secret.schema.json",
+        "javaType" : "aws.Property<aws.ecs.TaskDefinitionSecret>"
+      }
+    },
+    "StartTimeout" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-starttimeout",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "StopTimeout" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-stoptimeout",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
     },
     "Ulimits" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-ulimits",

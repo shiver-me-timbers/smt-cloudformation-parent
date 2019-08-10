@@ -1,0 +1,37 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_Segment.Groups.schema.json",
+  "title" : "SegmentGroups",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-segmentgroups-groups.html",
+  "type" : "object",
+  "javaType" : "aws.pinpoint.SegmentGroups",
+  "javaInterfaces" : [ "aws.Property<SegmentGroups>" ],
+  "properties" : {
+    "Type" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-segmentgroups-groups.html#cfn-pinpoint-segment-segmentgroups-groups-type",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SourceType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-segmentgroups-groups.html#cfn-pinpoint-segment-segmentgroups-groups-sourcetype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Dimensions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-segmentgroups-groups.html#cfn-pinpoint-segment-segmentgroups-groups-dimensions",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_Pinpoint_Segment.SegmentDimensions.schema.json",
+        "javaType" : "aws.Property<aws.pinpoint.SegmentSegmentDimensions>"
+      }
+    },
+    "SourceSegments" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-segmentgroups-groups.html#cfn-pinpoint-segment-segmentgroups-groups-sourcesegments",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_Pinpoint_Segment.SourceSegments.schema.json",
+        "javaType" : "aws.Property<aws.pinpoint.SegmentSourceSegments>"
+      }
+    }
+  }
+}

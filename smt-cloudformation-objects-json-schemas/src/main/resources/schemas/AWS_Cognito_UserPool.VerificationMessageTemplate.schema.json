@@ -1,0 +1,41 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Cognito_UserPool.VerificationMessageTemplate.schema.json",
+  "title" : "UserPoolVerificationMessageTemplate",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-verificationmessagetemplate.html",
+  "type" : "object",
+  "javaType" : "aws.cognito.UserPoolVerificationMessageTemplate",
+  "javaInterfaces" : [ "aws.Property<UserPoolVerificationMessageTemplate>" ],
+  "properties" : {
+    "EmailMessageByLink" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-verificationmessagetemplate.html#cfn-cognito-userpool-verificationmessagetemplate-emailmessagebylink",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "EmailMessage" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-verificationmessagetemplate.html#cfn-cognito-userpool-verificationmessagetemplate-emailmessage",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SmsMessage" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-verificationmessagetemplate.html#cfn-cognito-userpool-verificationmessagetemplate-smsmessage",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "EmailSubject" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-verificationmessagetemplate.html#cfn-cognito-userpool-verificationmessagetemplate-emailsubject",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DefaultEmailOption" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-verificationmessagetemplate.html#cfn-cognito-userpool-verificationmessagetemplate-defaultemailoption",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "EmailSubjectByLink" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-verificationmessagetemplate.html#cfn-cognito-userpool-verificationmessagetemplate-emailsubjectbylink",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

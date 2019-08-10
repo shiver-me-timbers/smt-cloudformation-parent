@@ -19,6 +19,11 @@
         "javaType" : "aws.Property<aws.servicecatalog.CloudFormationProvisionedProductProvisioningParameter>"
       }
     },
+    "ProvisioningPreferences" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningpreferences",
+      "$ref" : "AWS_ServiceCatalog_CloudFormationProvisionedProduct.ProvisioningPreferences.schema.json",
+      "javaType" : "aws.Property<aws.servicecatalog.CloudFormationProvisionedProductProvisioningPreferences>"
+    },
     "ProductName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-productname",
       "type" : "string",

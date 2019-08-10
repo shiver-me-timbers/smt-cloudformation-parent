@@ -16,8 +16,18 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "Policies" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-policies",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "AllowedPattern" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-allowedpattern",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Tier" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-tier",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },

@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_DLM_LifecyclePolicy.Parameters.schema.json",
+  "title" : "LifecyclePolicyParameters",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-parameters.html",
+  "type" : "object",
+  "javaType" : "aws.dlm.LifecyclePolicyParameters",
+  "javaInterfaces" : [ "aws.Property<LifecyclePolicyParameters>" ],
+  "properties" : {
+    "ExcludeBootVolume" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-parameters.html#cfn-dlm-lifecyclepolicy-parameters-excludebootvolume",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

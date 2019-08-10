@@ -30,7 +30,9 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Schedule",
     "DatabaseName",
     "Targets",
+    "CrawlerSecurityConfiguration",
     "TablePrefix",
+    "Tags",
     "Name"
 })
 public class Crawler {
@@ -98,12 +100,26 @@ public class Crawler {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-targets.html")
     private Property<CrawlerTargets> targets;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-crawlersecurityconfiguration
+     * 
+     */
+    @JsonProperty("CrawlerSecurityConfiguration")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-crawlersecurityconfiguration")
+    private CharSequence crawlerSecurityConfiguration;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-tableprefix
      * 
      */
     @JsonProperty("TablePrefix")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-tableprefix")
     private CharSequence tablePrefix;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-tags")
+    private Object tags;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-name
      * 
@@ -309,6 +325,29 @@ public class Crawler {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-crawlersecurityconfiguration
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getCrawlerSecurityConfiguration() {
+        return crawlerSecurityConfiguration;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-crawlersecurityconfiguration
+     * 
+     */
+    @JsonIgnore
+    public void setCrawlerSecurityConfiguration(CharSequence crawlerSecurityConfiguration) {
+        this.crawlerSecurityConfiguration = crawlerSecurityConfiguration;
+    }
+
+    public Crawler withCrawlerSecurityConfiguration(CharSequence crawlerSecurityConfiguration) {
+        this.crawlerSecurityConfiguration = crawlerSecurityConfiguration;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-tableprefix
      * 
      */
@@ -328,6 +367,29 @@ public class Crawler {
 
     public Crawler withTablePrefix(CharSequence tablePrefix) {
         this.tablePrefix = tablePrefix;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-tags
+     * 
+     */
+    @JsonIgnore
+    public Object getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(Object tags) {
+        this.tags = tags;
+    }
+
+    public Crawler withTags(Object tags) {
+        this.tags = tags;
         return this;
     }
 
@@ -356,12 +418,12 @@ public class Crawler {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("role", role).append("classifiers", classifiers).append("description", description).append("schemaChangePolicy", schemaChangePolicy).append("configuration", configuration).append("schedule", schedule).append("databaseName", databaseName).append("targets", targets).append("tablePrefix", tablePrefix).append("name", name).toString();
+        return new ToStringBuilder(this).append("role", role).append("classifiers", classifiers).append("description", description).append("schemaChangePolicy", schemaChangePolicy).append("configuration", configuration).append("schedule", schedule).append("databaseName", databaseName).append("targets", targets).append("crawlerSecurityConfiguration", crawlerSecurityConfiguration).append("tablePrefix", tablePrefix).append("tags", tags).append("name", name).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(schedule).append(role).append(databaseName).append(configuration).append(tablePrefix).append(schemaChangePolicy).append(classifiers).append(name).append(description).append(targets).toHashCode();
+        return new HashCodeBuilder().append(role).append(databaseName).append(configuration).append(schemaChangePolicy).append(description).append(targets).append(crawlerSecurityConfiguration).append(tags).append(schedule).append(tablePrefix).append(classifiers).append(name).toHashCode();
     }
 
     @Override
@@ -373,7 +435,7 @@ public class Crawler {
             return false;
         }
         Crawler rhs = ((Crawler) other);
-        return new EqualsBuilder().append(schedule, rhs.schedule).append(role, rhs.role).append(databaseName, rhs.databaseName).append(configuration, rhs.configuration).append(tablePrefix, rhs.tablePrefix).append(schemaChangePolicy, rhs.schemaChangePolicy).append(classifiers, rhs.classifiers).append(name, rhs.name).append(description, rhs.description).append(targets, rhs.targets).isEquals();
+        return new EqualsBuilder().append(role, rhs.role).append(databaseName, rhs.databaseName).append(configuration, rhs.configuration).append(schemaChangePolicy, rhs.schemaChangePolicy).append(description, rhs.description).append(targets, rhs.targets).append(crawlerSecurityConfiguration, rhs.crawlerSecurityConfiguration).append(tags, rhs.tags).append(schedule, rhs.schedule).append(tablePrefix, rhs.tablePrefix).append(classifiers, rhs.classifiers).append(name, rhs.name).isEquals();
     }
 
 }

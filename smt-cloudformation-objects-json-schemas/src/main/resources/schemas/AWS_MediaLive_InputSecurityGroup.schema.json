@@ -1,0 +1,23 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MediaLive_InputSecurityGroup.schema.json",
+  "title" : "InputSecurityGroup",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-inputsecuritygroup.html",
+  "type" : "object",
+  "javaType" : "aws.medialive.InputSecurityGroup",
+  "properties" : {
+    "WhitelistRules" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-inputsecuritygroup.html#cfn-medialive-inputsecuritygroup-whitelistrules",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_MediaLive_InputSecurityGroup.InputWhitelistRuleCidr.schema.json",
+        "javaType" : "aws.Property<aws.medialive.InputSecurityGroupInputWhitelistRuleCidr>"
+      }
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-inputsecuritygroup.html#cfn-medialive-inputsecuritygroup-tags",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
+    }
+  }
+}

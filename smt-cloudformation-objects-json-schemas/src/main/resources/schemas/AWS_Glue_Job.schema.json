@@ -6,16 +6,6 @@
   "type" : "object",
   "javaType" : "aws.glue.Job",
   "properties" : {
-    "Role" : {
-      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-role",
-      "type" : "string",
-      "javaType" : "java.lang.CharSequence"
-    },
-    "DefaultArguments" : {
-      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-defaultarguments",
-      "type" : "object",
-      "javaType" : "java.lang.Object"
-    },
     "Connections" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-connections",
       "$ref" : "AWS_Glue_Job.ConnectionsList.schema.json",
@@ -31,6 +21,31 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "AllocatedCapacity" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-allocatedcapacity",
+      "type" : "number",
+      "javaType" : "java.lang.Number"
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Role" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-role",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DefaultArguments" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-defaultarguments",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
+    },
+    "WorkerType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-workertype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "LogUri" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-loguri",
       "type" : "string",
@@ -41,20 +56,35 @@
       "$ref" : "AWS_Glue_Job.JobCommand.schema.json",
       "javaType" : "aws.Property<aws.glue.JobJobCommand>"
     },
-    "AllocatedCapacity" : {
-      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-allocatedcapacity",
-      "type" : "number",
-      "javaType" : "java.lang.Number"
+    "GlueVersion" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-glueversion",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
     },
     "ExecutionProperty" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-executionproperty",
       "$ref" : "AWS_Glue_Job.ExecutionProperty.schema.json",
       "javaType" : "aws.Property<aws.glue.JobExecutionProperty>"
     },
-    "Name" : {
-      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-name",
+    "SecurityConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-securityconfiguration",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
+    },
+    "NumberOfWorkers" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-numberofworkers",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-tags",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
+    },
+    "MaxCapacity" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-maxcapacity",
+      "type" : "number",
+      "javaType" : "java.lang.Number"
     }
   }
 }

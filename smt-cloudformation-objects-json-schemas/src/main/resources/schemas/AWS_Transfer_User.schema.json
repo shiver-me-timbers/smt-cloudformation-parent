@@ -1,0 +1,51 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Transfer_User.schema.json",
+  "title" : "User",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-user.html",
+  "type" : "object",
+  "javaType" : "aws.transfer.User",
+  "properties" : {
+    "Policy" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-user.html#cfn-transfer-user-policy",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Role" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-user.html#cfn-transfer-user-role",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "HomeDirectory" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-user.html#cfn-transfer-user-homedirectory",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ServerId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-user.html#cfn-transfer-user-serverid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "UserName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-user.html#cfn-transfer-user-username",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SshPublicKeys" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-user.html#cfn-transfer-user-sshpublickeys",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_Transfer_User.SshPublicKey.schema.json",
+        "javaType" : "aws.Property<aws.transfer.UserSshPublicKey>"
+      }
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-user.html#cfn-transfer-user-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
+      }
+    }
+  }
+}

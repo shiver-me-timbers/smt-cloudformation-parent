@@ -1,0 +1,25 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ElasticLoadBalancingV2_ListenerRule.HttpHeaderConfig.schema.json",
+  "title" : "ListenerRuleHttpHeaderConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-httpheaderconfig.html",
+  "type" : "object",
+  "javaType" : "aws.elasticloadbalancingv2.ListenerRuleHttpHeaderConfig",
+  "javaInterfaces" : [ "aws.Property<ListenerRuleHttpHeaderConfig>" ],
+  "properties" : {
+    "HttpHeaderName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-httpheaderconfig.html#cfn-elasticloadbalancingv2-listenerrule-httpheaderconfig-httpheadername",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Values" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-httpheaderconfig.html#cfn-elasticloadbalancingv2-listenerrule-httpheaderconfig-values",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    }
+  }
+}

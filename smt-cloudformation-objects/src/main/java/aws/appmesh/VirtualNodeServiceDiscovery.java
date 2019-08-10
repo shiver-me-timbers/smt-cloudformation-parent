@@ -20,7 +20,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
-    "DNS"
+    "DNS",
+    "AWSCloudMap"
 })
 public class VirtualNodeServiceDiscovery implements Property<VirtualNodeServiceDiscovery>
 {
@@ -34,6 +35,15 @@ public class VirtualNodeServiceDiscovery implements Property<VirtualNodeServiceD
     @JsonProperty("DNS")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-dnsservicediscovery.html")
     private Property<VirtualNodeDnsServiceDiscovery> dNS;
+    /**
+     * VirtualNodeAwsCloudMapServiceDiscovery
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-awscloudmapservicediscovery.html
+     * 
+     */
+    @JsonProperty("AWSCloudMap")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-awscloudmapservicediscovery.html")
+    private Property<VirtualNodeAwsCloudMapServiceDiscovery> aWSCloudMap;
 
     /**
      * VirtualNodeDnsServiceDiscovery
@@ -62,14 +72,41 @@ public class VirtualNodeServiceDiscovery implements Property<VirtualNodeServiceD
         return this;
     }
 
+    /**
+     * VirtualNodeAwsCloudMapServiceDiscovery
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-awscloudmapservicediscovery.html
+     * 
+     */
+    @JsonIgnore
+    public Property<VirtualNodeAwsCloudMapServiceDiscovery> getAWSCloudMap() {
+        return aWSCloudMap;
+    }
+
+    /**
+     * VirtualNodeAwsCloudMapServiceDiscovery
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-awscloudmapservicediscovery.html
+     * 
+     */
+    @JsonIgnore
+    public void setAWSCloudMap(Property<VirtualNodeAwsCloudMapServiceDiscovery> aWSCloudMap) {
+        this.aWSCloudMap = aWSCloudMap;
+    }
+
+    public VirtualNodeServiceDiscovery withAWSCloudMap(Property<VirtualNodeAwsCloudMapServiceDiscovery> aWSCloudMap) {
+        this.aWSCloudMap = aWSCloudMap;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("dNS", dNS).toString();
+        return new ToStringBuilder(this).append("dNS", dNS).append("aWSCloudMap", aWSCloudMap).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(dNS).toHashCode();
+        return new HashCodeBuilder().append(dNS).append(aWSCloudMap).toHashCode();
     }
 
     @Override
@@ -81,7 +118,7 @@ public class VirtualNodeServiceDiscovery implements Property<VirtualNodeServiceD
             return false;
         }
         VirtualNodeServiceDiscovery rhs = ((VirtualNodeServiceDiscovery) other);
-        return new EqualsBuilder().append(dNS, rhs.dNS).isEquals();
+        return new EqualsBuilder().append(dNS, rhs.dNS).append(aWSCloudMap, rhs.aWSCloudMap).isEquals();
     }
 
 }

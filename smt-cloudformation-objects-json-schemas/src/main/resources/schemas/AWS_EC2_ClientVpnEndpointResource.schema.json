@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_ClientVpnEndpointResource.schema.json",
+  "title" : "ClientVpnEndpointResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.ec2.ClientVpnEndpointResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ClientVpnEndpointResource>", "aws.HasCondition<ClientVpnEndpointResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::ClientVpnEndpoint"
+    },
+    "Properties" : {
+      "$ref" : "AWS_EC2_ClientVpnEndpoint.schema.json"
+    }
+  }
+}

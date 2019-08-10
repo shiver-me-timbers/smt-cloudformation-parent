@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Backup_BackupSelectionAttributes.schema.json",
+  "title" : "BackupSelectionAttributes",
+  "type" : "string",
+  "enum" : [ "BackupPlanId", "SelectionId" ],
+  "javaType" : "aws.backup.BackupSelectionAttributes"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_APNSSandboxChannelResource.schema.json",
+  "title" : "APNSSandboxChannelResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-apnssandboxchannel.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.pinpoint.APNSSandboxChannelResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<APNSSandboxChannelResource>", "aws.HasCondition<APNSSandboxChannelResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Pinpoint::APNSSandboxChannel"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Pinpoint_APNSSandboxChannel.schema.json"
+    }
+  }
+}

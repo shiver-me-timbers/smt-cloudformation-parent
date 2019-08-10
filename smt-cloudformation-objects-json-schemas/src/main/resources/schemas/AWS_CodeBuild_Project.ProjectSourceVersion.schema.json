@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CodeBuild_Project.ProjectSourceVersion.schema.json",
+  "title" : "ProjectProjectSourceVersion",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projectsourceversion.html",
+  "type" : "object",
+  "javaType" : "aws.codebuild.ProjectProjectSourceVersion",
+  "javaInterfaces" : [ "aws.Property<ProjectProjectSourceVersion>" ],
+  "properties" : {
+    "SourceIdentifier" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projectsourceversion.html#cfn-codebuild-project-projectsourceversion-sourceidentifier",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SourceVersion" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projectsourceversion.html#cfn-codebuild-project-projectsourceversion-sourceversion",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

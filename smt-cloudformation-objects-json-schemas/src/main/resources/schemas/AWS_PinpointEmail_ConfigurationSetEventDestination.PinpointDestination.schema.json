@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_PinpointEmail_ConfigurationSetEventDestination.PinpointDestination.schema.json",
+  "title" : "ConfigurationSetEventDestinationPinpointDestination",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpointemail-configurationseteventdestination-pinpointdestination.html",
+  "type" : "object",
+  "javaType" : "aws.pinpointemail.ConfigurationSetEventDestinationPinpointDestination",
+  "javaInterfaces" : [ "aws.Property<ConfigurationSetEventDestinationPinpointDestination>" ],
+  "properties" : {
+    "ApplicationArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpointemail-configurationseteventdestination-pinpointdestination.html#cfn-pinpointemail-configurationseteventdestination-pinpointdestination-applicationarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

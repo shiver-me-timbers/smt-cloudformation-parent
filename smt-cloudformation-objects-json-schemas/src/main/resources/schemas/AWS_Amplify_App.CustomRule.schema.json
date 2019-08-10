@@ -1,0 +1,31 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Amplify_App.CustomRule.schema.json",
+  "title" : "AppCustomRule",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-customrule.html",
+  "type" : "object",
+  "javaType" : "aws.amplify.AppCustomRule",
+  "javaInterfaces" : [ "aws.Property<AppCustomRule>" ],
+  "properties" : {
+    "Condition" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-customrule.html#cfn-amplify-app-customrule-condition",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Status" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-customrule.html#cfn-amplify-app-customrule-status",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Target" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-customrule.html#cfn-amplify-app-customrule-target",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Source" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-customrule.html#cfn-amplify-app-customrule-source",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

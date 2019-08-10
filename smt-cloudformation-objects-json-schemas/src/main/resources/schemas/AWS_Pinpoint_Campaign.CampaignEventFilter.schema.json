@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_Campaign.CampaignEventFilter.schema.json",
+  "title" : "CampaignCampaignEventFilter",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-campaigneventfilter.html",
+  "type" : "object",
+  "javaType" : "aws.pinpoint.CampaignCampaignEventFilter",
+  "javaInterfaces" : [ "aws.Property<CampaignCampaignEventFilter>" ],
+  "properties" : {
+    "FilterType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-campaigneventfilter.html#cfn-pinpoint-campaign-campaigneventfilter-filtertype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Dimensions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-campaigneventfilter.html#cfn-pinpoint-campaign-campaigneventfilter-dimensions",
+      "$ref" : "AWS_Pinpoint_Campaign.EventDimensions.schema.json",
+      "javaType" : "aws.Property<aws.pinpoint.CampaignEventDimensions>"
+    }
+  }
+}

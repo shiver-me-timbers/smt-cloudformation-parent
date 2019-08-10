@@ -20,21 +20,28 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "Type",
     "EncryptionKey",
-    "Location",
-    "Type"
+    "Location"
 })
 public class PipelineArtifactStore implements Property<PipelineArtifactStore>
 {
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html#cfn-codepipeline-pipeline-artifactstore-type
+     * 
+     */
+    @JsonProperty("Type")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html#cfn-codepipeline-pipeline-artifactstore-type")
+    private CharSequence type;
+    /**
      * PipelineEncryptionKey
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore-encryptionkey.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-encryptionkey.html
      * 
      */
     @JsonProperty("EncryptionKey")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore-encryptionkey.html")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-encryptionkey.html")
     private Property<PipelineEncryptionKey> encryptionKey;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html#cfn-codepipeline-pipeline-artifactstore-location
@@ -43,18 +50,34 @@ public class PipelineArtifactStore implements Property<PipelineArtifactStore>
     @JsonProperty("Location")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html#cfn-codepipeline-pipeline-artifactstore-location")
     private CharSequence location;
+
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html#cfn-codepipeline-pipeline-artifactstore-type
      * 
      */
-    @JsonProperty("Type")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html#cfn-codepipeline-pipeline-artifactstore-type")
-    private CharSequence type;
+    @JsonIgnore
+    public CharSequence getType() {
+        return type;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html#cfn-codepipeline-pipeline-artifactstore-type
+     * 
+     */
+    @JsonIgnore
+    public void setType(CharSequence type) {
+        this.type = type;
+    }
+
+    public PipelineArtifactStore withType(CharSequence type) {
+        this.type = type;
+        return this;
+    }
 
     /**
      * PipelineEncryptionKey
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore-encryptionkey.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-encryptionkey.html
      * 
      */
     @JsonIgnore
@@ -65,7 +88,7 @@ public class PipelineArtifactStore implements Property<PipelineArtifactStore>
     /**
      * PipelineEncryptionKey
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore-encryptionkey.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-encryptionkey.html
      * 
      */
     @JsonIgnore
@@ -101,32 +124,9 @@ public class PipelineArtifactStore implements Property<PipelineArtifactStore>
         return this;
     }
 
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html#cfn-codepipeline-pipeline-artifactstore-type
-     * 
-     */
-    @JsonIgnore
-    public CharSequence getType() {
-        return type;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html#cfn-codepipeline-pipeline-artifactstore-type
-     * 
-     */
-    @JsonIgnore
-    public void setType(CharSequence type) {
-        this.type = type;
-    }
-
-    public PipelineArtifactStore withType(CharSequence type) {
-        this.type = type;
-        return this;
-    }
-
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("encryptionKey", encryptionKey).append("location", location).append("type", type).toString();
+        return new ToStringBuilder(this).append("type", type).append("encryptionKey", encryptionKey).append("location", location).toString();
     }
 
     @Override

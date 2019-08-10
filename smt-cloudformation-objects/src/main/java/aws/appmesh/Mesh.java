@@ -4,6 +4,7 @@ package aws.appmesh;
 import java.util.ArrayList;
 import java.util.List;
 import aws.Property;
+import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -50,7 +51,7 @@ public class Mesh {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-mesh.html#cfn-appmesh-mesh-tags")
-    private List<Property<MeshTagRef>> tags = new ArrayList<Property<MeshTagRef>>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-mesh.html#cfn-appmesh-mesh-meshname
@@ -107,7 +108,7 @@ public class Mesh {
      * 
      */
     @JsonIgnore
-    public List<Property<MeshTagRef>> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -116,11 +117,11 @@ public class Mesh {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Property<MeshTagRef>> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public Mesh withTags(List<Property<MeshTagRef>> tags) {
+    public Mesh withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

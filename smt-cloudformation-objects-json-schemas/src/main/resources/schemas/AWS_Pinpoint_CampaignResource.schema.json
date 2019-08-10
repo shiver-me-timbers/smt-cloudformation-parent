@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_CampaignResource.schema.json",
+  "title" : "CampaignResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.pinpoint.CampaignResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<CampaignResource>", "aws.HasCondition<CampaignResource>", "aws.HasAttributes<CampaignAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Pinpoint::Campaign"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Pinpoint_Campaign.schema.json"
+    }
+  }
+}

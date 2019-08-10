@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_EventStreamResource.schema.json",
+  "title" : "EventStreamResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-eventstream.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.pinpoint.EventStreamResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<EventStreamResource>", "aws.HasCondition<EventStreamResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Pinpoint::EventStream"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Pinpoint_EventStream.schema.json"
+    }
+  }
+}

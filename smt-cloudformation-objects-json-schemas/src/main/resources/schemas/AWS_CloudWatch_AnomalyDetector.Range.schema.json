@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CloudWatch_AnomalyDetector.Range.schema.json",
+  "title" : "AnomalyDetectorRange",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-anomalydetector-range.html",
+  "type" : "object",
+  "javaType" : "aws.cloudwatch.AnomalyDetectorRange",
+  "javaInterfaces" : [ "aws.Property<AnomalyDetectorRange>" ],
+  "properties" : {
+    "EndTime" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-anomalydetector-range.html#cfn-cloudwatch-anomalydetector-range-endtime",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "StartTime" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-anomalydetector-range.html#cfn-cloudwatch-anomalydetector-range-starttime",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

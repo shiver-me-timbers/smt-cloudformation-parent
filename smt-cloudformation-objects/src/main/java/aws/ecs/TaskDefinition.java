@@ -1,9 +1,12 @@
 
 package aws.ecs;
 
+import java.util.ArrayList;
 import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Set;
 import aws.Property;
+import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -30,7 +33,9 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Memory",
     "NetworkMode",
     "PlacementConstraints",
+    "ProxyConfiguration",
     "RequiresCompatibilities",
+    "Tags",
     "TaskRoleArn",
     "Volumes"
 })
@@ -88,6 +93,15 @@ public class TaskDefinition {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-placementconstraints")
     private Set<Property<TaskDefinitionTaskDefinitionPlacementConstraint>> placementConstraints = new LinkedHashSet<Property<TaskDefinitionTaskDefinitionPlacementConstraint>>();
     /**
+     * TaskDefinitionProxyConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-proxyconfiguration.html
+     * 
+     */
+    @JsonProperty("ProxyConfiguration")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-proxyconfiguration.html")
+    private Property<TaskDefinitionProxyConfiguration> proxyConfiguration;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-requirescompatibilities
      * 
      */
@@ -95,6 +109,13 @@ public class TaskDefinition {
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-requirescompatibilities")
     private Set<CharSequence> requiresCompatibilities = new LinkedHashSet<CharSequence>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-tags")
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-taskrolearn
      * 
@@ -273,6 +294,33 @@ public class TaskDefinition {
     }
 
     /**
+     * TaskDefinitionProxyConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-proxyconfiguration.html
+     * 
+     */
+    @JsonIgnore
+    public Property<TaskDefinitionProxyConfiguration> getProxyConfiguration() {
+        return proxyConfiguration;
+    }
+
+    /**
+     * TaskDefinitionProxyConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-proxyconfiguration.html
+     * 
+     */
+    @JsonIgnore
+    public void setProxyConfiguration(Property<TaskDefinitionProxyConfiguration> proxyConfiguration) {
+        this.proxyConfiguration = proxyConfiguration;
+    }
+
+    public TaskDefinition withProxyConfiguration(Property<TaskDefinitionProxyConfiguration> proxyConfiguration) {
+        this.proxyConfiguration = proxyConfiguration;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-requirescompatibilities
      * 
      */
@@ -292,6 +340,29 @@ public class TaskDefinition {
 
     public TaskDefinition withRequiresCompatibilities(Set<CharSequence> requiresCompatibilities) {
         this.requiresCompatibilities = requiresCompatibilities;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-tags
+     * 
+     */
+    @JsonIgnore
+    public List<Property<Tag>> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+    }
+
+    public TaskDefinition withTags(List<Property<Tag>> tags) {
+        this.tags = tags;
         return this;
     }
 
@@ -343,12 +414,12 @@ public class TaskDefinition {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("containerDefinitions", containerDefinitions).append("cpu", cpu).append("executionRoleArn", executionRoleArn).append("family", family).append("memory", memory).append("networkMode", networkMode).append("placementConstraints", placementConstraints).append("requiresCompatibilities", requiresCompatibilities).append("taskRoleArn", taskRoleArn).append("volumes", volumes).toString();
+        return new ToStringBuilder(this).append("containerDefinitions", containerDefinitions).append("cpu", cpu).append("executionRoleArn", executionRoleArn).append("family", family).append("memory", memory).append("networkMode", networkMode).append("placementConstraints", placementConstraints).append("proxyConfiguration", proxyConfiguration).append("requiresCompatibilities", requiresCompatibilities).append("tags", tags).append("taskRoleArn", taskRoleArn).append("volumes", volumes).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(networkMode).append(placementConstraints).append(memory).append(executionRoleArn).append(taskRoleArn).append(volumes).append(cpu).append(family).append(requiresCompatibilities).append(containerDefinitions).toHashCode();
+        return new HashCodeBuilder().append(networkMode).append(placementConstraints).append(memory).append(volumes).append(cpu).append(tags).append(executionRoleArn).append(taskRoleArn).append(family).append(requiresCompatibilities).append(containerDefinitions).append(proxyConfiguration).toHashCode();
     }
 
     @Override
@@ -360,7 +431,7 @@ public class TaskDefinition {
             return false;
         }
         TaskDefinition rhs = ((TaskDefinition) other);
-        return new EqualsBuilder().append(networkMode, rhs.networkMode).append(placementConstraints, rhs.placementConstraints).append(memory, rhs.memory).append(executionRoleArn, rhs.executionRoleArn).append(taskRoleArn, rhs.taskRoleArn).append(volumes, rhs.volumes).append(cpu, rhs.cpu).append(family, rhs.family).append(requiresCompatibilities, rhs.requiresCompatibilities).append(containerDefinitions, rhs.containerDefinitions).isEquals();
+        return new EqualsBuilder().append(networkMode, rhs.networkMode).append(placementConstraints, rhs.placementConstraints).append(memory, rhs.memory).append(volumes, rhs.volumes).append(cpu, rhs.cpu).append(tags, rhs.tags).append(executionRoleArn, rhs.executionRoleArn).append(taskRoleArn, rhs.taskRoleArn).append(family, rhs.family).append(requiresCompatibilities, rhs.requiresCompatibilities).append(containerDefinitions, rhs.containerDefinitions).append(proxyConfiguration, rhs.proxyConfiguration).isEquals();
     }
 
 }

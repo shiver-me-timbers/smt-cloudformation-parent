@@ -26,6 +26,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "Command",
     "Cpu",
+    "DependsOn",
     "DisableNetworking",
     "DnsSearchDomains",
     "DnsServers",
@@ -49,6 +50,10 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Privileged",
     "ReadonlyRootFilesystem",
     "RepositoryCredentials",
+    "ResourceRequirements",
+    "Secrets",
+    "StartTimeout",
+    "StopTimeout",
     "Ulimits",
     "User",
     "VolumesFrom",
@@ -72,6 +77,14 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
     @JsonProperty("Cpu")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-cpu")
     private Number cpu;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-dependson
+     * 
+     */
+    @JsonProperty("DependsOn")
+    @JsonDeserialize(as = java.util.LinkedHashSet.class)
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-dependson")
+    private Set<Property<TaskDefinitionContainerDependency>> dependsOn = new LinkedHashSet<Property<TaskDefinitionContainerDependency>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-disablenetworking
      * 
@@ -251,6 +264,36 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-repositorycredentials.html")
     private Property<TaskDefinitionRepositoryCredentials> repositoryCredentials;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-resourcerequirements
+     * 
+     */
+    @JsonProperty("ResourceRequirements")
+    @JsonDeserialize(as = java.util.LinkedHashSet.class)
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-resourcerequirements")
+    private Set<Property<TaskDefinitionResourceRequirement>> resourceRequirements = new LinkedHashSet<Property<TaskDefinitionResourceRequirement>>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-secrets
+     * 
+     */
+    @JsonProperty("Secrets")
+    @JsonDeserialize(as = java.util.LinkedHashSet.class)
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-secrets")
+    private Set<Property<TaskDefinitionSecret>> secrets = new LinkedHashSet<Property<TaskDefinitionSecret>>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-starttimeout
+     * 
+     */
+    @JsonProperty("StartTimeout")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-starttimeout")
+    private Number startTimeout;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-stoptimeout
+     * 
+     */
+    @JsonProperty("StopTimeout")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-stoptimeout")
+    private Number stopTimeout;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-ulimits
      * 
      */
@@ -324,6 +367,29 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
 
     public TaskDefinitionContainerDefinition withCpu(Number cpu) {
         this.cpu = cpu;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-dependson
+     * 
+     */
+    @JsonIgnore
+    public Set<Property<TaskDefinitionContainerDependency>> getDependsOn() {
+        return dependsOn;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-dependson
+     * 
+     */
+    @JsonIgnore
+    public void setDependsOn(Set<Property<TaskDefinitionContainerDependency>> dependsOn) {
+        this.dependsOn = dependsOn;
+    }
+
+    public TaskDefinitionContainerDefinition withDependsOn(Set<Property<TaskDefinitionContainerDependency>> dependsOn) {
+        this.dependsOn = dependsOn;
         return this;
     }
 
@@ -873,6 +939,98 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-resourcerequirements
+     * 
+     */
+    @JsonIgnore
+    public Set<Property<TaskDefinitionResourceRequirement>> getResourceRequirements() {
+        return resourceRequirements;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-resourcerequirements
+     * 
+     */
+    @JsonIgnore
+    public void setResourceRequirements(Set<Property<TaskDefinitionResourceRequirement>> resourceRequirements) {
+        this.resourceRequirements = resourceRequirements;
+    }
+
+    public TaskDefinitionContainerDefinition withResourceRequirements(Set<Property<TaskDefinitionResourceRequirement>> resourceRequirements) {
+        this.resourceRequirements = resourceRequirements;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-secrets
+     * 
+     */
+    @JsonIgnore
+    public Set<Property<TaskDefinitionSecret>> getSecrets() {
+        return secrets;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-secrets
+     * 
+     */
+    @JsonIgnore
+    public void setSecrets(Set<Property<TaskDefinitionSecret>> secrets) {
+        this.secrets = secrets;
+    }
+
+    public TaskDefinitionContainerDefinition withSecrets(Set<Property<TaskDefinitionSecret>> secrets) {
+        this.secrets = secrets;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-starttimeout
+     * 
+     */
+    @JsonIgnore
+    public Number getStartTimeout() {
+        return startTimeout;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-starttimeout
+     * 
+     */
+    @JsonIgnore
+    public void setStartTimeout(Number startTimeout) {
+        this.startTimeout = startTimeout;
+    }
+
+    public TaskDefinitionContainerDefinition withStartTimeout(Number startTimeout) {
+        this.startTimeout = startTimeout;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-stoptimeout
+     * 
+     */
+    @JsonIgnore
+    public Number getStopTimeout() {
+        return stopTimeout;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-stoptimeout
+     * 
+     */
+    @JsonIgnore
+    public void setStopTimeout(Number stopTimeout) {
+        this.stopTimeout = stopTimeout;
+    }
+
+    public TaskDefinitionContainerDefinition withStopTimeout(Number stopTimeout) {
+        this.stopTimeout = stopTimeout;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-ulimits
      * 
      */
@@ -966,12 +1124,12 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
 
     @Override
     public java.lang.String toString() {
-        return new ToStringBuilder(this).append("command", command).append("cpu", cpu).append("disableNetworking", disableNetworking).append("dnsSearchDomains", dnsSearchDomains).append("dnsServers", dnsServers).append("dockerLabels", dockerLabels).append("dockerSecurityOptions", dockerSecurityOptions).append("entryPoint", entryPoint).append("environment", environment).append("essential", essential).append("extraHosts", extraHosts).append("healthCheck", healthCheck).append("hostname", hostname).append("image", image).append("links", links).append("linuxParameters", linuxParameters).append("logConfiguration", logConfiguration).append("memory", memory).append("memoryReservation", memoryReservation).append("mountPoints", mountPoints).append("name", name).append("portMappings", portMappings).append("privileged", privileged).append("readonlyRootFilesystem", readonlyRootFilesystem).append("repositoryCredentials", repositoryCredentials).append("ulimits", ulimits).append("user", user).append("volumesFrom", volumesFrom).append("workingDirectory", workingDirectory).toString();
+        return new ToStringBuilder(this).append("command", command).append("cpu", cpu).append("dependsOn", dependsOn).append("disableNetworking", disableNetworking).append("dnsSearchDomains", dnsSearchDomains).append("dnsServers", dnsServers).append("dockerLabels", dockerLabels).append("dockerSecurityOptions", dockerSecurityOptions).append("entryPoint", entryPoint).append("environment", environment).append("essential", essential).append("extraHosts", extraHosts).append("healthCheck", healthCheck).append("hostname", hostname).append("image", image).append("links", links).append("linuxParameters", linuxParameters).append("logConfiguration", logConfiguration).append("memory", memory).append("memoryReservation", memoryReservation).append("mountPoints", mountPoints).append("name", name).append("portMappings", portMappings).append("privileged", privileged).append("readonlyRootFilesystem", readonlyRootFilesystem).append("repositoryCredentials", repositoryCredentials).append("resourceRequirements", resourceRequirements).append("secrets", secrets).append("startTimeout", startTimeout).append("stopTimeout", stopTimeout).append("ulimits", ulimits).append("user", user).append("volumesFrom", volumesFrom).append("workingDirectory", workingDirectory).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(volumesFrom).append(memory).append(workingDirectory).append(memoryReservation).append(portMappings).append(disableNetworking).append(hostname).append(readonlyRootFilesystem).append(extraHosts).append(dockerSecurityOptions).append(links).append(dnsServers).append(linuxParameters).append(dockerLabels).append(image).append(cpu).append(logConfiguration).append(command).append(privileged).append(environment).append(ulimits).append(healthCheck).append(mountPoints).append(name).append(entryPoint).append(repositoryCredentials).append(user).append(dnsSearchDomains).append(essential).toHashCode();
+        return new HashCodeBuilder().append(volumesFrom).append(memory).append(workingDirectory).append(memoryReservation).append(portMappings).append(disableNetworking).append(hostname).append(readonlyRootFilesystem).append(extraHosts).append(dockerSecurityOptions).append(links).append(dnsServers).append(linuxParameters).append(dockerLabels).append(image).append(dependsOn).append(stopTimeout).append(cpu).append(logConfiguration).append(secrets).append(command).append(privileged).append(resourceRequirements).append(environment).append(ulimits).append(startTimeout).append(healthCheck).append(mountPoints).append(name).append(entryPoint).append(repositoryCredentials).append(user).append(dnsSearchDomains).append(essential).toHashCode();
     }
 
     @Override
@@ -983,7 +1141,7 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
             return false;
         }
         TaskDefinitionContainerDefinition rhs = ((TaskDefinitionContainerDefinition) other);
-        return new EqualsBuilder().append(volumesFrom, rhs.volumesFrom).append(memory, rhs.memory).append(workingDirectory, rhs.workingDirectory).append(memoryReservation, rhs.memoryReservation).append(portMappings, rhs.portMappings).append(disableNetworking, rhs.disableNetworking).append(hostname, rhs.hostname).append(readonlyRootFilesystem, rhs.readonlyRootFilesystem).append(extraHosts, rhs.extraHosts).append(dockerSecurityOptions, rhs.dockerSecurityOptions).append(links, rhs.links).append(dnsServers, rhs.dnsServers).append(linuxParameters, rhs.linuxParameters).append(dockerLabels, rhs.dockerLabels).append(image, rhs.image).append(cpu, rhs.cpu).append(logConfiguration, rhs.logConfiguration).append(command, rhs.command).append(privileged, rhs.privileged).append(environment, rhs.environment).append(ulimits, rhs.ulimits).append(healthCheck, rhs.healthCheck).append(mountPoints, rhs.mountPoints).append(name, rhs.name).append(entryPoint, rhs.entryPoint).append(repositoryCredentials, rhs.repositoryCredentials).append(user, rhs.user).append(dnsSearchDomains, rhs.dnsSearchDomains).append(essential, rhs.essential).isEquals();
+        return new EqualsBuilder().append(volumesFrom, rhs.volumesFrom).append(memory, rhs.memory).append(workingDirectory, rhs.workingDirectory).append(memoryReservation, rhs.memoryReservation).append(portMappings, rhs.portMappings).append(disableNetworking, rhs.disableNetworking).append(hostname, rhs.hostname).append(readonlyRootFilesystem, rhs.readonlyRootFilesystem).append(extraHosts, rhs.extraHosts).append(dockerSecurityOptions, rhs.dockerSecurityOptions).append(links, rhs.links).append(dnsServers, rhs.dnsServers).append(linuxParameters, rhs.linuxParameters).append(dockerLabels, rhs.dockerLabels).append(image, rhs.image).append(dependsOn, rhs.dependsOn).append(stopTimeout, rhs.stopTimeout).append(cpu, rhs.cpu).append(logConfiguration, rhs.logConfiguration).append(secrets, rhs.secrets).append(command, rhs.command).append(privileged, rhs.privileged).append(resourceRequirements, rhs.resourceRequirements).append(environment, rhs.environment).append(ulimits, rhs.ulimits).append(startTimeout, rhs.startTimeout).append(healthCheck, rhs.healthCheck).append(mountPoints, rhs.mountPoints).append(name, rhs.name).append(entryPoint, rhs.entryPoint).append(repositoryCredentials, rhs.repositoryCredentials).append(user, rhs.user).append(dnsSearchDomains, rhs.dnsSearchDomains).append(essential, rhs.essential).isEquals();
     }
 
 }

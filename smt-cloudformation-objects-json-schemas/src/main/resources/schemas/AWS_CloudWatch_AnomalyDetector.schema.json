@@ -1,0 +1,38 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CloudWatch_AnomalyDetector.schema.json",
+  "title" : "AnomalyDetector",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-anomalydetector.html",
+  "type" : "object",
+  "javaType" : "aws.cloudwatch.AnomalyDetector",
+  "properties" : {
+    "MetricName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-anomalydetector.html#cfn-cloudwatch-anomalydetector-metricname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Stat" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-anomalydetector.html#cfn-cloudwatch-anomalydetector-stat",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Configuration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-anomalydetector.html#cfn-cloudwatch-anomalydetector-configuration",
+      "$ref" : "AWS_CloudWatch_AnomalyDetector.Configuration.schema.json",
+      "javaType" : "aws.Property<aws.cloudwatch.AnomalyDetectorConfiguration>"
+    },
+    "Dimensions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-anomalydetector.html#cfn-cloudwatch-anomalydetector-dimensions",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_CloudWatch_AnomalyDetector.Dimension.schema.json",
+        "javaType" : "aws.Property<aws.cloudwatch.AnomalyDetectorDimension>"
+      }
+    },
+    "Namespace" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-anomalydetector.html#cfn-cloudwatch-anomalydetector-namespace",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

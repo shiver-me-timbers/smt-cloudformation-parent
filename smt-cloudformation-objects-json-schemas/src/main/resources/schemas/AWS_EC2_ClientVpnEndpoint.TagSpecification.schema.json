@@ -1,0 +1,24 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_ClientVpnEndpoint.TagSpecification.schema.json",
+  "title" : "ClientVpnEndpointTagSpecification",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-clientvpnendpoint-tagspecification.html",
+  "type" : "object",
+  "javaType" : "aws.ec2.ClientVpnEndpointTagSpecification",
+  "javaInterfaces" : [ "aws.Property<ClientVpnEndpointTagSpecification>" ],
+  "properties" : {
+    "ResourceType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-clientvpnendpoint-tagspecification.html#cfn-ec2-clientvpnendpoint-tagspecification-resourcetype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-clientvpnendpoint-tagspecification.html#cfn-ec2-clientvpnendpoint-tagspecification-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
+      }
+    }
+  }
+}

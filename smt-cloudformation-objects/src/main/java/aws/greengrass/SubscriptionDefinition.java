@@ -21,6 +21,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "InitialVersion",
+    "Tags",
     "Name"
 })
 public class SubscriptionDefinition {
@@ -34,6 +35,13 @@ public class SubscriptionDefinition {
     @JsonProperty("InitialVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-subscriptiondefinition-subscriptiondefinitionversion.html")
     private Property<SubscriptionDefinitionSubscriptionDefinitionVersion> initialVersion;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-subscriptiondefinition.html#cfn-greengrass-subscriptiondefinition-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-subscriptiondefinition.html#cfn-greengrass-subscriptiondefinition-tags")
+    private Object tags;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-subscriptiondefinition.html#cfn-greengrass-subscriptiondefinition-name
      * 
@@ -70,6 +78,29 @@ public class SubscriptionDefinition {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-subscriptiondefinition.html#cfn-greengrass-subscriptiondefinition-tags
+     * 
+     */
+    @JsonIgnore
+    public Object getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-subscriptiondefinition.html#cfn-greengrass-subscriptiondefinition-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(Object tags) {
+        this.tags = tags;
+    }
+
+    public SubscriptionDefinition withTags(Object tags) {
+        this.tags = tags;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-subscriptiondefinition.html#cfn-greengrass-subscriptiondefinition-name
      * 
      */
@@ -94,12 +125,12 @@ public class SubscriptionDefinition {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("initialVersion", initialVersion).append("name", name).toString();
+        return new ToStringBuilder(this).append("initialVersion", initialVersion).append("tags", tags).append("name", name).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(initialVersion).append(name).toHashCode();
+        return new HashCodeBuilder().append(initialVersion).append(name).append(tags).toHashCode();
     }
 
     @Override
@@ -111,7 +142,7 @@ public class SubscriptionDefinition {
             return false;
         }
         SubscriptionDefinition rhs = ((SubscriptionDefinition) other);
-        return new EqualsBuilder().append(initialVersion, rhs.initialVersion).append(name, rhs.name).isEquals();
+        return new EqualsBuilder().append(initialVersion, rhs.initialVersion).append(name, rhs.name).append(tags, rhs.tags).isEquals();
     }
 
 }

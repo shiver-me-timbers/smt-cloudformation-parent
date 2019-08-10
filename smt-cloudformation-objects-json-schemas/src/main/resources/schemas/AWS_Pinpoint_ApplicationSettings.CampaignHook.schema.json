@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_ApplicationSettings.CampaignHook.schema.json",
+  "title" : "ApplicationSettingsCampaignHook",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-applicationsettings-campaignhook.html",
+  "type" : "object",
+  "javaType" : "aws.pinpoint.ApplicationSettingsCampaignHook",
+  "javaInterfaces" : [ "aws.Property<ApplicationSettingsCampaignHook>" ],
+  "properties" : {
+    "Mode" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-applicationsettings-campaignhook.html#cfn-pinpoint-applicationsettings-campaignhook-mode",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "WebUrl" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-applicationsettings-campaignhook.html#cfn-pinpoint-applicationsettings-campaignhook-weburl",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "LambdaFunctionName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-applicationsettings-campaignhook.html#cfn-pinpoint-applicationsettings-campaignhook-lambdafunctionname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

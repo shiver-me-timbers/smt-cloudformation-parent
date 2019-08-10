@@ -4,6 +4,7 @@ package aws.appmesh;
 import java.util.ArrayList;
 import java.util.List;
 import aws.Property;
+import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -58,7 +59,7 @@ public class VirtualRouter {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualrouter.html#cfn-appmesh-virtualrouter-tags")
-    private List<Property<VirtualRouterTagRef>> tags = new ArrayList<Property<VirtualRouterTagRef>>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualrouter.html#cfn-appmesh-virtualrouter-meshname
@@ -138,7 +139,7 @@ public class VirtualRouter {
      * 
      */
     @JsonIgnore
-    public List<Property<VirtualRouterTagRef>> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -147,11 +148,11 @@ public class VirtualRouter {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Property<VirtualRouterTagRef>> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public VirtualRouter withTags(List<Property<VirtualRouterTagRef>> tags) {
+    public VirtualRouter withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

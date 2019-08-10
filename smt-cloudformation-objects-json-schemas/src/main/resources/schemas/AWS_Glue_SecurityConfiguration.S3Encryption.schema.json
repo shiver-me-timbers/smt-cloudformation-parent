@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Glue_SecurityConfiguration.S3Encryption.schema.json",
+  "title" : "SecurityConfigurationS3Encryption",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-securityconfiguration-s3encryption.html",
+  "type" : "object",
+  "javaType" : "aws.glue.SecurityConfigurationS3Encryption",
+  "javaInterfaces" : [ "aws.Property<SecurityConfigurationS3Encryption>" ],
+  "properties" : {
+    "KmsKeyArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-securityconfiguration-s3encryption.html#cfn-glue-securityconfiguration-s3encryption-kmskeyarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "S3EncryptionMode" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-securityconfiguration-s3encryption.html#cfn-glue-securityconfiguration-s3encryption-s3encryptionmode",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

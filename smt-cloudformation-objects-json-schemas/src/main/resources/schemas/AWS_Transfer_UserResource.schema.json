@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Transfer_UserResource.schema.json",
+  "title" : "UserResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-user.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.transfer.UserResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<UserResource>", "aws.HasCondition<UserResource>", "aws.HasAttributes<UserAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Transfer::User"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Transfer_User.schema.json"
+    }
+  }
+}

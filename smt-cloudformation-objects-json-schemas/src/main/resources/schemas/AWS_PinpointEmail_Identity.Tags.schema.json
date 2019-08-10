@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_PinpointEmail_Identity.Tags.schema.json",
+  "title" : "IdentityTags",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpointemail-identity-tags.html",
+  "type" : "object",
+  "javaType" : "aws.pinpointemail.IdentityTags",
+  "javaInterfaces" : [ "aws.Property<IdentityTags>" ],
+  "properties" : {
+    "Value" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpointemail-identity-tags.html#cfn-pinpointemail-identity-tags-value",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Key" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpointemail-identity-tags.html#cfn-pinpointemail-identity-tags-key",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

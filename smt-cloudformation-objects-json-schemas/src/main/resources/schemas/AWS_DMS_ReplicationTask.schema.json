@@ -16,8 +16,18 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "CdcStartPosition" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-cdcstartposition",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "ReplicationTaskIdentifier" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-replicationtaskidentifier",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "CdcStopPosition" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-cdcstopposition",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },

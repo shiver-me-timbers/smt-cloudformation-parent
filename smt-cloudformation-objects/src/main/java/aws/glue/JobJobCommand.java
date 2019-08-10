@@ -20,12 +20,20 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "PythonVersion",
     "ScriptLocation",
     "Name"
 })
 public class JobJobCommand implements Property<JobJobCommand>
 {
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-jobcommand.html#cfn-glue-job-jobcommand-pythonversion
+     * 
+     */
+    @JsonProperty("PythonVersion")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-jobcommand.html#cfn-glue-job-jobcommand-pythonversion")
+    private CharSequence pythonVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-jobcommand.html#cfn-glue-job-jobcommand-scriptlocation
      * 
@@ -40,6 +48,29 @@ public class JobJobCommand implements Property<JobJobCommand>
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-jobcommand.html#cfn-glue-job-jobcommand-name")
     private CharSequence name;
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-jobcommand.html#cfn-glue-job-jobcommand-pythonversion
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getPythonVersion() {
+        return pythonVersion;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-jobcommand.html#cfn-glue-job-jobcommand-pythonversion
+     * 
+     */
+    @JsonIgnore
+    public void setPythonVersion(CharSequence pythonVersion) {
+        this.pythonVersion = pythonVersion;
+    }
+
+    public JobJobCommand withPythonVersion(CharSequence pythonVersion) {
+        this.pythonVersion = pythonVersion;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-jobcommand.html#cfn-glue-job-jobcommand-scriptlocation
@@ -89,12 +120,12 @@ public class JobJobCommand implements Property<JobJobCommand>
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("scriptLocation", scriptLocation).append("name", name).toString();
+        return new ToStringBuilder(this).append("pythonVersion", pythonVersion).append("scriptLocation", scriptLocation).append("name", name).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(name).append(scriptLocation).toHashCode();
+        return new HashCodeBuilder().append(pythonVersion).append(name).append(scriptLocation).toHashCode();
     }
 
     @Override
@@ -106,7 +137,7 @@ public class JobJobCommand implements Property<JobJobCommand>
             return false;
         }
         JobJobCommand rhs = ((JobJobCommand) other);
-        return new EqualsBuilder().append(name, rhs.name).append(scriptLocation, rhs.scriptLocation).isEquals();
+        return new EqualsBuilder().append(pythonVersion, rhs.pythonVersion).append(name, rhs.name).append(scriptLocation, rhs.scriptLocation).isEquals();
     }
 
 }

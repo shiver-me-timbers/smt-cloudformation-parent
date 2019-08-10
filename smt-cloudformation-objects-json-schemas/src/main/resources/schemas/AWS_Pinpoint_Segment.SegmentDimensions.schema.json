@@ -1,0 +1,41 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_Segment.SegmentDimensions.schema.json",
+  "title" : "SegmentSegmentDimensions",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-segmentdimensions.html",
+  "type" : "object",
+  "javaType" : "aws.pinpoint.SegmentSegmentDimensions",
+  "javaInterfaces" : [ "aws.Property<SegmentSegmentDimensions>" ],
+  "properties" : {
+    "Demographic" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-segmentdimensions.html#cfn-pinpoint-segment-segmentdimensions-demographic",
+      "$ref" : "AWS_Pinpoint_Segment.Demographic.schema.json",
+      "javaType" : "aws.Property<aws.pinpoint.SegmentDemographic>"
+    },
+    "Metrics" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-segmentdimensions.html#cfn-pinpoint-segment-segmentdimensions-metrics",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
+    },
+    "Attributes" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-segmentdimensions.html#cfn-pinpoint-segment-segmentdimensions-attributes",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
+    },
+    "Behavior" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-segmentdimensions.html#cfn-pinpoint-segment-segmentdimensions-behavior",
+      "$ref" : "AWS_Pinpoint_Segment.Behavior.schema.json",
+      "javaType" : "aws.Property<aws.pinpoint.SegmentBehavior>"
+    },
+    "UserAttributes" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-segmentdimensions.html#cfn-pinpoint-segment-segmentdimensions-userattributes",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
+    },
+    "Location" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-segmentdimensions.html#cfn-pinpoint-segment-segmentdimensions-location",
+      "$ref" : "AWS_Pinpoint_Segment.Location.schema.json",
+      "javaType" : "aws.Property<aws.pinpoint.SegmentLocation>"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoTEvents_DetectorModel.schema.json",
+  "title" : "DetectorModel",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotevents-detectormodel.html",
+  "type" : "object",
+  "javaType" : "aws.iotevents.DetectorModel",
+  "properties" : {
+    "DetectorModelDefinition" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotevents-detectormodel.html#cfn-iotevents-detectormodel-detectormodeldefinition",
+      "$ref" : "AWS_IoTEvents_DetectorModel.DetectorModelDefinition.schema.json",
+      "javaType" : "aws.Property<aws.iotevents.DetectorModelDetectorModelDefinition>"
+    },
+    "DetectorModelName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotevents-detectormodel.html#cfn-iotevents-detectormodel-detectormodelname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DetectorModelDescription" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotevents-detectormodel.html#cfn-iotevents-detectormodel-detectormodeldescription",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Key" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotevents-detectormodel.html#cfn-iotevents-detectormodel-key",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RoleArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotevents-detectormodel.html#cfn-iotevents-detectormodel-rolearn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotevents-detectormodel.html#cfn-iotevents-detectormodel-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
+      }
+    }
+  }
+}

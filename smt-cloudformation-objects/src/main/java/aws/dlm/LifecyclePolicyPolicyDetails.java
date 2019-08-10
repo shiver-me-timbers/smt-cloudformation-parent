@@ -25,6 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "ResourceTypes",
     "Schedules",
+    "PolicyType",
+    "Parameters",
     "TargetTags"
 })
 public class LifecyclePolicyPolicyDetails implements Property<LifecyclePolicyPolicyDetails>
@@ -44,6 +46,22 @@ public class LifecyclePolicyPolicyDetails implements Property<LifecyclePolicyPol
     @JsonProperty("Schedules")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-policydetails.html#cfn-dlm-lifecyclepolicy-policydetails-schedules")
     private List<Property<LifecyclePolicySchedule>> schedules = new ArrayList<Property<LifecyclePolicySchedule>>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-policydetails.html#cfn-dlm-lifecyclepolicy-policydetails-policytype
+     * 
+     */
+    @JsonProperty("PolicyType")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-policydetails.html#cfn-dlm-lifecyclepolicy-policydetails-policytype")
+    private CharSequence policyType;
+    /**
+     * LifecyclePolicyParameters
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-parameters.html
+     * 
+     */
+    @JsonProperty("Parameters")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-parameters.html")
+    private Property<LifecyclePolicyParameters> parameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-policydetails.html#cfn-dlm-lifecyclepolicy-policydetails-targettags
      * 
@@ -99,6 +117,56 @@ public class LifecyclePolicyPolicyDetails implements Property<LifecyclePolicyPol
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-policydetails.html#cfn-dlm-lifecyclepolicy-policydetails-policytype
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getPolicyType() {
+        return policyType;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-policydetails.html#cfn-dlm-lifecyclepolicy-policydetails-policytype
+     * 
+     */
+    @JsonIgnore
+    public void setPolicyType(CharSequence policyType) {
+        this.policyType = policyType;
+    }
+
+    public LifecyclePolicyPolicyDetails withPolicyType(CharSequence policyType) {
+        this.policyType = policyType;
+        return this;
+    }
+
+    /**
+     * LifecyclePolicyParameters
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-parameters.html
+     * 
+     */
+    @JsonIgnore
+    public Property<LifecyclePolicyParameters> getParameters() {
+        return parameters;
+    }
+
+    /**
+     * LifecyclePolicyParameters
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-parameters.html
+     * 
+     */
+    @JsonIgnore
+    public void setParameters(Property<LifecyclePolicyParameters> parameters) {
+        this.parameters = parameters;
+    }
+
+    public LifecyclePolicyPolicyDetails withParameters(Property<LifecyclePolicyParameters> parameters) {
+        this.parameters = parameters;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-policydetails.html#cfn-dlm-lifecyclepolicy-policydetails-targettags
      * 
      */
@@ -123,12 +191,12 @@ public class LifecyclePolicyPolicyDetails implements Property<LifecyclePolicyPol
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("resourceTypes", resourceTypes).append("schedules", schedules).append("targetTags", targetTags).toString();
+        return new ToStringBuilder(this).append("resourceTypes", resourceTypes).append("schedules", schedules).append("policyType", policyType).append("parameters", parameters).append("targetTags", targetTags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(resourceTypes).append(targetTags).append(schedules).toHashCode();
+        return new HashCodeBuilder().append(resourceTypes).append(targetTags).append(parameters).append(schedules).append(policyType).toHashCode();
     }
 
     @Override
@@ -140,7 +208,7 @@ public class LifecyclePolicyPolicyDetails implements Property<LifecyclePolicyPol
             return false;
         }
         LifecyclePolicyPolicyDetails rhs = ((LifecyclePolicyPolicyDetails) other);
-        return new EqualsBuilder().append(resourceTypes, rhs.resourceTypes).append(targetTags, rhs.targetTags).append(schedules, rhs.schedules).isEquals();
+        return new EqualsBuilder().append(resourceTypes, rhs.resourceTypes).append(targetTags, rhs.targetTags).append(parameters, rhs.parameters).append(schedules, rhs.schedules).append(policyType, rhs.policyType).isEquals();
     }
 
 }

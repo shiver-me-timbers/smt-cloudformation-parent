@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MediaStore_ContainerResource.schema.json",
+  "title" : "ContainerResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediastore-container.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.mediastore.ContainerResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ContainerResource>", "aws.HasCondition<ContainerResource>", "aws.HasAttributes<ContainerAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::MediaStore::Container"
+    },
+    "Properties" : {
+      "$ref" : "AWS_MediaStore_Container.schema.json"
+    }
+  }
+}

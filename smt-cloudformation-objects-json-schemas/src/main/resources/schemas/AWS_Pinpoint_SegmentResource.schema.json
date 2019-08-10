@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_SegmentResource.schema.json",
+  "title" : "SegmentResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-segment.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.pinpoint.SegmentResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<SegmentResource>", "aws.HasCondition<SegmentResource>", "aws.HasAttributes<SegmentAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Pinpoint::Segment"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Pinpoint_Segment.schema.json"
+    }
+  }
+}

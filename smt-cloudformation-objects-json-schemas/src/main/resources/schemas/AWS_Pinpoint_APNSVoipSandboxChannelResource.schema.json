@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_APNSVoipSandboxChannelResource.schema.json",
+  "title" : "APNSVoipSandboxChannelResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-apnsvoipsandboxchannel.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.pinpoint.APNSVoipSandboxChannelResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<APNSVoipSandboxChannelResource>", "aws.HasCondition<APNSVoipSandboxChannelResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Pinpoint::APNSVoipSandboxChannel"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Pinpoint_APNSVoipSandboxChannel.schema.json"
+    }
+  }
+}

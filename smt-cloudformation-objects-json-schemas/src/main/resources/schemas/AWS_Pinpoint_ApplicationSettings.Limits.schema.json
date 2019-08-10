@@ -1,0 +1,31 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_ApplicationSettings.Limits.schema.json",
+  "title" : "ApplicationSettingsLimits",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-applicationsettings-limits.html",
+  "type" : "object",
+  "javaType" : "aws.pinpoint.ApplicationSettingsLimits",
+  "javaInterfaces" : [ "aws.Property<ApplicationSettingsLimits>" ],
+  "properties" : {
+    "Daily" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-applicationsettings-limits.html#cfn-pinpoint-applicationsettings-limits-daily",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "MaximumDuration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-applicationsettings-limits.html#cfn-pinpoint-applicationsettings-limits-maximumduration",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "Total" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-applicationsettings-limits.html#cfn-pinpoint-applicationsettings-limits-total",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "MessagesPerSecond" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-applicationsettings-limits.html#cfn-pinpoint-applicationsettings-limits-messagespersecond",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    }
+  }
+}

@@ -21,6 +21,11 @@
       "type" : "integer",
       "javaType" : "java.lang.Number"
     },
+    "EnableECSManagedTags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-enableecsmanagedtags",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
     "HealthCheckGracePeriodSeconds" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-healthcheckgraceperiodseconds",
       "type" : "integer",
@@ -68,6 +73,11 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "PropagateTags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-propagatetags",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "Role" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-role",
       "type" : "string",
@@ -90,6 +100,14 @@
       "items" : {
         "$ref" : "AWS_ECS_Service.ServiceRegistry.schema.json",
         "javaType" : "aws.Property<aws.ecs.ServiceServiceRegistry>"
+      }
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
       }
     },
     "TaskDefinition" : {

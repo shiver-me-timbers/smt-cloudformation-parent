@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ElasticLoadBalancingV2_ListenerRule.QueryStringConfig.schema.json",
+  "title" : "ListenerRuleQueryStringConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-querystringconfig.html",
+  "type" : "object",
+  "javaType" : "aws.elasticloadbalancingv2.ListenerRuleQueryStringConfig",
+  "javaInterfaces" : [ "aws.Property<ListenerRuleQueryStringConfig>" ],
+  "properties" : {
+    "Values" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-querystringconfig.html#cfn-elasticloadbalancingv2-listenerrule-querystringconfig-values",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "$ref" : "AWS_ElasticLoadBalancingV2_ListenerRule.QueryStringKeyValue.schema.json",
+        "javaType" : "aws.Property<aws.elasticloadbalancingv2.ListenerRuleQueryStringKeyValue>"
+      }
+    }
+  }
+}

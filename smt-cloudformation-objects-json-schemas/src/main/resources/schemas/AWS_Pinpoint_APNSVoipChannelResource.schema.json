@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_APNSVoipChannelResource.schema.json",
+  "title" : "APNSVoipChannelResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-apnsvoipchannel.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.pinpoint.APNSVoipChannelResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<APNSVoipChannelResource>", "aws.HasCondition<APNSVoipChannelResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Pinpoint::APNSVoipChannel"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Pinpoint_APNSVoipChannel.schema.json"
+    }
+  }
+}

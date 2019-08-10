@@ -1,0 +1,42 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MSK_Cluster.BrokerNodeGroupInfo.schema.json",
+  "title" : "ClusterBrokerNodeGroupInfo",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-brokernodegroupinfo.html",
+  "type" : "object",
+  "javaType" : "aws.msk.ClusterBrokerNodeGroupInfo",
+  "javaInterfaces" : [ "aws.Property<ClusterBrokerNodeGroupInfo>" ],
+  "properties" : {
+    "SecurityGroups" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-brokernodegroupinfo.html#cfn-msk-cluster-brokernodegroupinfo-securitygroups",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    },
+    "ClientSubnets" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-brokernodegroupinfo.html#cfn-msk-cluster-brokernodegroupinfo-clientsubnets",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    },
+    "StorageInfo" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-brokernodegroupinfo.html#cfn-msk-cluster-brokernodegroupinfo-storageinfo",
+      "$ref" : "AWS_MSK_Cluster.StorageInfo.schema.json",
+      "javaType" : "aws.Property<aws.msk.ClusterStorageInfo>"
+    },
+    "BrokerAZDistribution" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-brokernodegroupinfo.html#cfn-msk-cluster-brokernodegroupinfo-brokerazdistribution",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "InstanceType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-brokernodegroupinfo.html#cfn-msk-cluster-brokernodegroupinfo-instancetype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

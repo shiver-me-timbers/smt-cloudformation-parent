@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WAFRegional_RegexPatternSetResource.schema.json",
+  "title" : "RegexPatternSetResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-regexpatternset.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.wafregional.RegexPatternSetResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<RegexPatternSetResource>", "aws.HasCondition<RegexPatternSetResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::WAFRegional::RegexPatternSet"
+    },
+    "Properties" : {
+      "$ref" : "AWS_WAFRegional_RegexPatternSet.schema.json"
+    }
+  }
+}

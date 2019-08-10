@@ -1,15 +1,14 @@
 
 package aws.codepipeline;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
@@ -18,7 +17,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 /**
  * PipelineActionDeclaration
  * <p>
- * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html
+ * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiondeclaration.html
  * 
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
@@ -26,11 +25,10 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "ActionTypeId",
     "Configuration",
     "InputArtifacts",
-    "Name",
     "OutputArtifacts",
-    "Region",
     "RoleArn",
-    "RunOrder"
+    "RunOrder",
+    "Name"
 })
 public class PipelineActionDeclaration implements Property<PipelineActionDeclaration>
 {
@@ -38,68 +36,59 @@ public class PipelineActionDeclaration implements Property<PipelineActionDeclara
     /**
      * PipelineActionTypeId
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiontypeid.html
      * 
      */
     @JsonProperty("ActionTypeId")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiontypeid.html")
     private Property<PipelineActionTypeId> actionTypeId;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-configuration
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiondeclaration.html#cfn-codepipeline-pipeline-actiondeclaration-configuration
      * 
      */
     @JsonProperty("Configuration")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-configuration")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiondeclaration.html#cfn-codepipeline-pipeline-actiondeclaration-configuration")
     private Object configuration;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-inputartifacts
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiondeclaration.html#cfn-codepipeline-pipeline-actiondeclaration-inputartifacts
      * 
      */
     @JsonProperty("InputArtifacts")
-    @JsonDeserialize(as = java.util.LinkedHashSet.class)
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-inputartifacts")
-    private Set<Property<PipelineInputArtifact>> inputArtifacts = new LinkedHashSet<Property<PipelineInputArtifact>>();
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiondeclaration.html#cfn-codepipeline-pipeline-actiondeclaration-inputartifacts")
+    private List<Property<PipelineInputArtifact>> inputArtifacts = new ArrayList<Property<PipelineInputArtifact>>();
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-name
-     * 
-     */
-    @JsonProperty("Name")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-name")
-    private CharSequence name;
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-outputartifacts
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiondeclaration.html#cfn-codepipeline-pipeline-actiondeclaration-outputartifacts
      * 
      */
     @JsonProperty("OutputArtifacts")
-    @JsonDeserialize(as = java.util.LinkedHashSet.class)
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-outputartifacts")
-    private Set<Property<PipelineOutputArtifact>> outputArtifacts = new LinkedHashSet<Property<PipelineOutputArtifact>>();
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiondeclaration.html#cfn-codepipeline-pipeline-actiondeclaration-outputartifacts")
+    private List<Property<PipelineOutputArtifact>> outputArtifacts = new ArrayList<Property<PipelineOutputArtifact>>();
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-region
-     * 
-     */
-    @JsonProperty("Region")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-region")
-    private CharSequence region;
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-rolearn
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiondeclaration.html#cfn-codepipeline-pipeline-actiondeclaration-rolearn
      * 
      */
     @JsonProperty("RoleArn")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-rolearn")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiondeclaration.html#cfn-codepipeline-pipeline-actiondeclaration-rolearn")
     private CharSequence roleArn;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-runorder
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiondeclaration.html#cfn-codepipeline-pipeline-actiondeclaration-runorder
      * 
      */
     @JsonProperty("RunOrder")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-runorder")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiondeclaration.html#cfn-codepipeline-pipeline-actiondeclaration-runorder")
     private Number runOrder;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiondeclaration.html#cfn-codepipeline-pipeline-actiondeclaration-name
+     * 
+     */
+    @JsonProperty("Name")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiondeclaration.html#cfn-codepipeline-pipeline-actiondeclaration-name")
+    private CharSequence name;
 
     /**
      * PipelineActionTypeId
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiontypeid.html
      * 
      */
     @JsonIgnore
@@ -110,7 +99,7 @@ public class PipelineActionDeclaration implements Property<PipelineActionDeclara
     /**
      * PipelineActionTypeId
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiontypeid.html
      * 
      */
     @JsonIgnore
@@ -124,7 +113,7 @@ public class PipelineActionDeclaration implements Property<PipelineActionDeclara
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-configuration
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiondeclaration.html#cfn-codepipeline-pipeline-actiondeclaration-configuration
      * 
      */
     @JsonIgnore
@@ -133,7 +122,7 @@ public class PipelineActionDeclaration implements Property<PipelineActionDeclara
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-configuration
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiondeclaration.html#cfn-codepipeline-pipeline-actiondeclaration-configuration
      * 
      */
     @JsonIgnore
@@ -147,99 +136,53 @@ public class PipelineActionDeclaration implements Property<PipelineActionDeclara
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-inputartifacts
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiondeclaration.html#cfn-codepipeline-pipeline-actiondeclaration-inputartifacts
      * 
      */
     @JsonIgnore
-    public Set<Property<PipelineInputArtifact>> getInputArtifacts() {
+    public List<Property<PipelineInputArtifact>> getInputArtifacts() {
         return inputArtifacts;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-inputartifacts
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiondeclaration.html#cfn-codepipeline-pipeline-actiondeclaration-inputartifacts
      * 
      */
     @JsonIgnore
-    public void setInputArtifacts(Set<Property<PipelineInputArtifact>> inputArtifacts) {
+    public void setInputArtifacts(List<Property<PipelineInputArtifact>> inputArtifacts) {
         this.inputArtifacts = inputArtifacts;
     }
 
-    public PipelineActionDeclaration withInputArtifacts(Set<Property<PipelineInputArtifact>> inputArtifacts) {
+    public PipelineActionDeclaration withInputArtifacts(List<Property<PipelineInputArtifact>> inputArtifacts) {
         this.inputArtifacts = inputArtifacts;
         return this;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-name
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiondeclaration.html#cfn-codepipeline-pipeline-actiondeclaration-outputartifacts
      * 
      */
     @JsonIgnore
-    public CharSequence getName() {
-        return name;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-name
-     * 
-     */
-    @JsonIgnore
-    public void setName(CharSequence name) {
-        this.name = name;
-    }
-
-    public PipelineActionDeclaration withName(CharSequence name) {
-        this.name = name;
-        return this;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-outputartifacts
-     * 
-     */
-    @JsonIgnore
-    public Set<Property<PipelineOutputArtifact>> getOutputArtifacts() {
+    public List<Property<PipelineOutputArtifact>> getOutputArtifacts() {
         return outputArtifacts;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-outputartifacts
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiondeclaration.html#cfn-codepipeline-pipeline-actiondeclaration-outputartifacts
      * 
      */
     @JsonIgnore
-    public void setOutputArtifacts(Set<Property<PipelineOutputArtifact>> outputArtifacts) {
+    public void setOutputArtifacts(List<Property<PipelineOutputArtifact>> outputArtifacts) {
         this.outputArtifacts = outputArtifacts;
     }
 
-    public PipelineActionDeclaration withOutputArtifacts(Set<Property<PipelineOutputArtifact>> outputArtifacts) {
+    public PipelineActionDeclaration withOutputArtifacts(List<Property<PipelineOutputArtifact>> outputArtifacts) {
         this.outputArtifacts = outputArtifacts;
         return this;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-region
-     * 
-     */
-    @JsonIgnore
-    public CharSequence getRegion() {
-        return region;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-region
-     * 
-     */
-    @JsonIgnore
-    public void setRegion(CharSequence region) {
-        this.region = region;
-    }
-
-    public PipelineActionDeclaration withRegion(CharSequence region) {
-        this.region = region;
-        return this;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-rolearn
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiondeclaration.html#cfn-codepipeline-pipeline-actiondeclaration-rolearn
      * 
      */
     @JsonIgnore
@@ -248,7 +191,7 @@ public class PipelineActionDeclaration implements Property<PipelineActionDeclara
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-rolearn
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiondeclaration.html#cfn-codepipeline-pipeline-actiondeclaration-rolearn
      * 
      */
     @JsonIgnore
@@ -262,7 +205,7 @@ public class PipelineActionDeclaration implements Property<PipelineActionDeclara
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-runorder
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiondeclaration.html#cfn-codepipeline-pipeline-actiondeclaration-runorder
      * 
      */
     @JsonIgnore
@@ -271,7 +214,7 @@ public class PipelineActionDeclaration implements Property<PipelineActionDeclara
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-runorder
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiondeclaration.html#cfn-codepipeline-pipeline-actiondeclaration-runorder
      * 
      */
     @JsonIgnore
@@ -284,14 +227,37 @@ public class PipelineActionDeclaration implements Property<PipelineActionDeclara
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiondeclaration.html#cfn-codepipeline-pipeline-actiondeclaration-name
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getName() {
+        return name;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiondeclaration.html#cfn-codepipeline-pipeline-actiondeclaration-name
+     * 
+     */
+    @JsonIgnore
+    public void setName(CharSequence name) {
+        this.name = name;
+    }
+
+    public PipelineActionDeclaration withName(CharSequence name) {
+        this.name = name;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("actionTypeId", actionTypeId).append("configuration", configuration).append("inputArtifacts", inputArtifacts).append("name", name).append("outputArtifacts", outputArtifacts).append("region", region).append("roleArn", roleArn).append("runOrder", runOrder).toString();
+        return new ToStringBuilder(this).append("actionTypeId", actionTypeId).append("configuration", configuration).append("inputArtifacts", inputArtifacts).append("outputArtifacts", outputArtifacts).append("roleArn", roleArn).append("runOrder", runOrder).append("name", name).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(runOrder).append(actionTypeId).append(configuration).append(outputArtifacts).append(roleArn).append(name).append(region).append(inputArtifacts).toHashCode();
+        return new HashCodeBuilder().append(runOrder).append(actionTypeId).append(configuration).append(outputArtifacts).append(roleArn).append(name).append(inputArtifacts).toHashCode();
     }
 
     @Override
@@ -303,7 +269,7 @@ public class PipelineActionDeclaration implements Property<PipelineActionDeclara
             return false;
         }
         PipelineActionDeclaration rhs = ((PipelineActionDeclaration) other);
-        return new EqualsBuilder().append(runOrder, rhs.runOrder).append(actionTypeId, rhs.actionTypeId).append(configuration, rhs.configuration).append(outputArtifacts, rhs.outputArtifacts).append(roleArn, rhs.roleArn).append(name, rhs.name).append(region, rhs.region).append(inputArtifacts, rhs.inputArtifacts).isEquals();
+        return new EqualsBuilder().append(runOrder, rhs.runOrder).append(actionTypeId, rhs.actionTypeId).append(configuration, rhs.configuration).append(outputArtifacts, rhs.outputArtifacts).append(roleArn, rhs.roleArn).append(name, rhs.name).append(inputArtifacts, rhs.inputArtifacts).isEquals();
     }
 
 }

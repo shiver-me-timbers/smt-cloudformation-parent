@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Transfer_Server.IdentityProviderDetails.schema.json",
+  "title" : "ServerIdentityProviderDetails",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-transfer-server-identityproviderdetails.html",
+  "type" : "object",
+  "javaType" : "aws.transfer.ServerIdentityProviderDetails",
+  "javaInterfaces" : [ "aws.Property<ServerIdentityProviderDetails>" ],
+  "properties" : {
+    "InvocationRole" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-transfer-server-identityproviderdetails.html#cfn-transfer-server-identityproviderdetails-invocationrole",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Url" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-transfer-server-identityproviderdetails.html#cfn-transfer-server-identityproviderdetails-url",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

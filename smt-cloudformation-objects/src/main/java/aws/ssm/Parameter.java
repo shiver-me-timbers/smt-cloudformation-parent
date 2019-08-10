@@ -21,7 +21,9 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "Type",
     "Description",
+    "Policies",
     "AllowedPattern",
+    "Tier",
     "Value",
     "Tags",
     "Name"
@@ -43,12 +45,26 @@ public class Parameter {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-description")
     private CharSequence description;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-policies
+     * 
+     */
+    @JsonProperty("Policies")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-policies")
+    private CharSequence policies;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-allowedpattern
      * 
      */
     @JsonProperty("AllowedPattern")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-allowedpattern")
     private CharSequence allowedPattern;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-tier
+     * 
+     */
+    @JsonProperty("Tier")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-tier")
+    private CharSequence tier;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-value
      * 
@@ -118,6 +134,29 @@ public class Parameter {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-policies
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getPolicies() {
+        return policies;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-policies
+     * 
+     */
+    @JsonIgnore
+    public void setPolicies(CharSequence policies) {
+        this.policies = policies;
+    }
+
+    public Parameter withPolicies(CharSequence policies) {
+        this.policies = policies;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-allowedpattern
      * 
      */
@@ -137,6 +176,29 @@ public class Parameter {
 
     public Parameter withAllowedPattern(CharSequence allowedPattern) {
         this.allowedPattern = allowedPattern;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-tier
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getTier() {
+        return tier;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-tier
+     * 
+     */
+    @JsonIgnore
+    public void setTier(CharSequence tier) {
+        this.tier = tier;
+    }
+
+    public Parameter withTier(CharSequence tier) {
+        this.tier = tier;
         return this;
     }
 
@@ -211,12 +273,12 @@ public class Parameter {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("type", type).append("description", description).append("allowedPattern", allowedPattern).append("value", value).append("tags", tags).append("name", name).toString();
+        return new ToStringBuilder(this).append("type", type).append("description", description).append("policies", policies).append("allowedPattern", allowedPattern).append("tier", tier).append("value", value).append("tags", tags).append("name", name).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(name).append(description).append(type).append(allowedPattern).append(value).append(tags).toHashCode();
+        return new HashCodeBuilder().append(tier).append(policies).append(name).append(description).append(type).append(allowedPattern).append(value).append(tags).toHashCode();
     }
 
     @Override
@@ -228,7 +290,7 @@ public class Parameter {
             return false;
         }
         Parameter rhs = ((Parameter) other);
-        return new EqualsBuilder().append(name, rhs.name).append(description, rhs.description).append(type, rhs.type).append(allowedPattern, rhs.allowedPattern).append(value, rhs.value).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(tier, rhs.tier).append(policies, rhs.policies).append(name, rhs.name).append(description, rhs.description).append(type, rhs.type).append(allowedPattern, rhs.allowedPattern).append(value, rhs.value).append(tags, rhs.tags).isEquals();
     }
 
 }

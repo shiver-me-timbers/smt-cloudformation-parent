@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_ClientVpnTargetNetworkAssociation.schema.json",
+  "title" : "ClientVpnTargetNetworkAssociation",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpntargetnetworkassociation.html",
+  "type" : "object",
+  "javaType" : "aws.ec2.ClientVpnTargetNetworkAssociation",
+  "properties" : {
+    "ClientVpnEndpointId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpntargetnetworkassociation.html#cfn-ec2-clientvpntargetnetworkassociation-clientvpnendpointid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SubnetId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpntargetnetworkassociation.html#cfn-ec2-clientvpntargetnetworkassociation-subnetid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

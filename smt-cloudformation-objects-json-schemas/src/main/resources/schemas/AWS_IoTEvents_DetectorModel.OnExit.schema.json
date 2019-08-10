@@ -1,0 +1,19 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoTEvents_DetectorModel.OnExit.schema.json",
+  "title" : "DetectorModelOnExit",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-onexit.html",
+  "type" : "object",
+  "javaType" : "aws.iotevents.DetectorModelOnExit",
+  "javaInterfaces" : [ "aws.Property<DetectorModelOnExit>" ],
+  "properties" : {
+    "Events" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-onexit.html#cfn-iotevents-detectormodel-onexit-events",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_IoTEvents_DetectorModel.TransitionEvent.schema.json",
+        "javaType" : "aws.Property<aws.iotevents.DetectorModelEvent>"
+      }
+    }
+  }
+}

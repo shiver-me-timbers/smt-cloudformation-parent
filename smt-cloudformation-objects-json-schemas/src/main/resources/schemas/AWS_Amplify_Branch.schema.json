@@ -1,0 +1,61 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Amplify_Branch.schema.json",
+  "title" : "Branch",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html",
+  "type" : "object",
+  "javaType" : "aws.amplify.Branch",
+  "properties" : {
+    "Description" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html#cfn-amplify-branch-description",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "EnvironmentVariables" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html#cfn-amplify-branch-environmentvariables",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_Amplify_Branch.EnvironmentVariable.schema.json",
+        "javaType" : "aws.Property<aws.amplify.BranchEnvironmentVariable>"
+      }
+    },
+    "AppId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html#cfn-amplify-branch-appid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "EnableAutoBuild" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html#cfn-amplify-branch-enableautobuild",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "BuildSpec" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html#cfn-amplify-branch-buildspec",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Stage" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html#cfn-amplify-branch-stage",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "BranchName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html#cfn-amplify-branch-branchname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "BasicAuthConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html#cfn-amplify-branch-basicauthconfig",
+      "$ref" : "AWS_Amplify_Branch.BasicAuthConfig.schema.json",
+      "javaType" : "aws.Property<aws.amplify.BranchBasicAuthConfig>"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html#cfn-amplify-branch-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
+      }
+    }
+  }
+}

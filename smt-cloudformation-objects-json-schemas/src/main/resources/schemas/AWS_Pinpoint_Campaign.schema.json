@@ -1,0 +1,83 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_Campaign.schema.json",
+  "title" : "Campaign",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html",
+  "type" : "object",
+  "javaType" : "aws.pinpoint.Campaign",
+  "properties" : {
+    "Description" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html#cfn-pinpoint-campaign-description",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SegmentId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html#cfn-pinpoint-campaign-segmentid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "IsPaused" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html#cfn-pinpoint-campaign-ispaused",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "AdditionalTreatments" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html#cfn-pinpoint-campaign-additionaltreatments",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_Pinpoint_Campaign.WriteTreatmentResource.schema.json",
+        "javaType" : "aws.Property<aws.pinpoint.CampaignWriteTreatmentResource>"
+      }
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html#cfn-pinpoint-campaign-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SegmentVersion" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html#cfn-pinpoint-campaign-segmentversion",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "TreatmentDescription" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html#cfn-pinpoint-campaign-treatmentdescription",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "MessageConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html#cfn-pinpoint-campaign-messageconfiguration",
+      "$ref" : "AWS_Pinpoint_Campaign.MessageConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.pinpoint.CampaignMessageConfiguration>"
+    },
+    "Limits" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html#cfn-pinpoint-campaign-limits",
+      "$ref" : "AWS_Pinpoint_Campaign.Limits.schema.json",
+      "javaType" : "aws.Property<aws.pinpoint.CampaignLimits>"
+    },
+    "HoldoutPercent" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html#cfn-pinpoint-campaign-holdoutpercent",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "Schedule" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html#cfn-pinpoint-campaign-schedule",
+      "$ref" : "AWS_Pinpoint_Campaign.Schedule.schema.json",
+      "javaType" : "aws.Property<aws.pinpoint.CampaignSchedule>"
+    },
+    "ApplicationId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html#cfn-pinpoint-campaign-applicationid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "CampaignHook" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html#cfn-pinpoint-campaign-campaignhook",
+      "$ref" : "AWS_Pinpoint_Campaign.CampaignHook.schema.json",
+      "javaType" : "aws.Property<aws.pinpoint.CampaignCampaignHook>"
+    },
+    "TreatmentName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html#cfn-pinpoint-campaign-treatmentname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

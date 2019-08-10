@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_PinpointEmail_ConfigurationSet.TrackingOptions.schema.json",
+  "title" : "ConfigurationSetTrackingOptions",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpointemail-configurationset-trackingoptions.html",
+  "type" : "object",
+  "javaType" : "aws.pinpointemail.ConfigurationSetTrackingOptions",
+  "javaInterfaces" : [ "aws.Property<ConfigurationSetTrackingOptions>" ],
+  "properties" : {
+    "CustomRedirectDomain" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpointemail-configurationset-trackingoptions.html#cfn-pinpointemail-configurationset-trackingoptions-customredirectdomain",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

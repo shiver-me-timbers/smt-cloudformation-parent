@@ -25,6 +25,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "PathId",
     "ProvisioningParameters",
+    "ProvisioningPreferences",
     "ProductName",
     "ProvisioningArtifactName",
     "NotificationArns",
@@ -50,6 +51,15 @@ public class CloudFormationProvisionedProduct {
     @JsonProperty("ProvisioningParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningparameters")
     private List<Property<CloudFormationProvisionedProductProvisioningParameter>> provisioningParameters = new ArrayList<Property<CloudFormationProvisionedProductProvisioningParameter>>();
+    /**
+     * CloudFormationProvisionedProductProvisioningPreferences
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicecatalog-cloudformationprovisionedproduct-provisioningpreferences.html
+     * 
+     */
+    @JsonProperty("ProvisioningPreferences")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicecatalog-cloudformationprovisionedproduct-provisioningpreferences.html")
+    private Property<CloudFormationProvisionedProductProvisioningPreferences> provisioningPreferences;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-productname
      * 
@@ -150,6 +160,33 @@ public class CloudFormationProvisionedProduct {
 
     public CloudFormationProvisionedProduct withProvisioningParameters(List<Property<CloudFormationProvisionedProductProvisioningParameter>> provisioningParameters) {
         this.provisioningParameters = provisioningParameters;
+        return this;
+    }
+
+    /**
+     * CloudFormationProvisionedProductProvisioningPreferences
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicecatalog-cloudformationprovisionedproduct-provisioningpreferences.html
+     * 
+     */
+    @JsonIgnore
+    public Property<CloudFormationProvisionedProductProvisioningPreferences> getProvisioningPreferences() {
+        return provisioningPreferences;
+    }
+
+    /**
+     * CloudFormationProvisionedProductProvisioningPreferences
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicecatalog-cloudformationprovisionedproduct-provisioningpreferences.html
+     * 
+     */
+    @JsonIgnore
+    public void setProvisioningPreferences(Property<CloudFormationProvisionedProductProvisioningPreferences> provisioningPreferences) {
+        this.provisioningPreferences = provisioningPreferences;
+    }
+
+    public CloudFormationProvisionedProduct withProvisioningPreferences(Property<CloudFormationProvisionedProductProvisioningPreferences> provisioningPreferences) {
+        this.provisioningPreferences = provisioningPreferences;
         return this;
     }
 
@@ -339,12 +376,12 @@ public class CloudFormationProvisionedProduct {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("pathId", pathId).append("provisioningParameters", provisioningParameters).append("productName", productName).append("provisioningArtifactName", provisioningArtifactName).append("notificationArns", notificationArns).append("acceptLanguage", acceptLanguage).append("productId", productId).append("tags", tags).append("provisionedProductName", provisionedProductName).append("provisioningArtifactId", provisioningArtifactId).toString();
+        return new ToStringBuilder(this).append("pathId", pathId).append("provisioningParameters", provisioningParameters).append("provisioningPreferences", provisioningPreferences).append("productName", productName).append("provisioningArtifactName", provisioningArtifactName).append("notificationArns", notificationArns).append("acceptLanguage", acceptLanguage).append("productId", productId).append("tags", tags).append("provisionedProductName", provisionedProductName).append("provisioningArtifactId", provisioningArtifactId).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(acceptLanguage).append(notificationArns).append(productId).append(provisionedProductName).append(provisioningArtifactId).append(provisioningArtifactName).append(pathId).append(provisioningParameters).append(productName).append(tags).toHashCode();
+        return new HashCodeBuilder().append(provisioningPreferences).append(acceptLanguage).append(notificationArns).append(productId).append(provisionedProductName).append(provisioningArtifactId).append(provisioningArtifactName).append(pathId).append(provisioningParameters).append(productName).append(tags).toHashCode();
     }
 
     @Override
@@ -356,7 +393,7 @@ public class CloudFormationProvisionedProduct {
             return false;
         }
         CloudFormationProvisionedProduct rhs = ((CloudFormationProvisionedProduct) other);
-        return new EqualsBuilder().append(acceptLanguage, rhs.acceptLanguage).append(notificationArns, rhs.notificationArns).append(productId, rhs.productId).append(provisionedProductName, rhs.provisionedProductName).append(provisioningArtifactId, rhs.provisioningArtifactId).append(provisioningArtifactName, rhs.provisioningArtifactName).append(pathId, rhs.pathId).append(provisioningParameters, rhs.provisioningParameters).append(productName, rhs.productName).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(provisioningPreferences, rhs.provisioningPreferences).append(acceptLanguage, rhs.acceptLanguage).append(notificationArns, rhs.notificationArns).append(productId, rhs.productId).append(provisionedProductName, rhs.provisionedProductName).append(provisioningArtifactId, rhs.provisioningArtifactId).append(provisioningArtifactName, rhs.provisioningArtifactName).append(pathId, rhs.pathId).append(provisioningParameters, rhs.provisioningParameters).append(productName, rhs.productName).append(tags, rhs.tags).isEquals();
     }
 
 }

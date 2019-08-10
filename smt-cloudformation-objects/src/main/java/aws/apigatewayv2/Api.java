@@ -24,6 +24,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Version",
     "ProtocolType",
     "DisableSchemaValidation",
+    "Tags",
     "Name",
     "ApiKeySelectionExpression"
 })
@@ -64,6 +65,13 @@ public class Api {
     @JsonProperty("DisableSchemaValidation")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html#cfn-apigatewayv2-api-disableschemavalidation")
     private CharSequence disableSchemaValidation;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html#cfn-apigatewayv2-api-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html#cfn-apigatewayv2-api-tags")
+    private Object tags;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html#cfn-apigatewayv2-api-name
      * 
@@ -195,6 +203,29 @@ public class Api {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html#cfn-apigatewayv2-api-tags
+     * 
+     */
+    @JsonIgnore
+    public Object getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html#cfn-apigatewayv2-api-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(Object tags) {
+        this.tags = tags;
+    }
+
+    public Api withTags(Object tags) {
+        this.tags = tags;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html#cfn-apigatewayv2-api-name
      * 
      */
@@ -242,12 +273,12 @@ public class Api {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("routeSelectionExpression", routeSelectionExpression).append("description", description).append("version", version).append("protocolType", protocolType).append("disableSchemaValidation", disableSchemaValidation).append("name", name).append("apiKeySelectionExpression", apiKeySelectionExpression).toString();
+        return new ToStringBuilder(this).append("routeSelectionExpression", routeSelectionExpression).append("description", description).append("version", version).append("protocolType", protocolType).append("disableSchemaValidation", disableSchemaValidation).append("tags", tags).append("name", name).append("apiKeySelectionExpression", apiKeySelectionExpression).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(disableSchemaValidation).append(apiKeySelectionExpression).append(routeSelectionExpression).append(name).append(description).append(protocolType).append(version).toHashCode();
+        return new HashCodeBuilder().append(disableSchemaValidation).append(apiKeySelectionExpression).append(routeSelectionExpression).append(name).append(description).append(protocolType).append(version).append(tags).toHashCode();
     }
 
     @Override
@@ -259,7 +290,7 @@ public class Api {
             return false;
         }
         Api rhs = ((Api) other);
-        return new EqualsBuilder().append(disableSchemaValidation, rhs.disableSchemaValidation).append(apiKeySelectionExpression, rhs.apiKeySelectionExpression).append(routeSelectionExpression, rhs.routeSelectionExpression).append(name, rhs.name).append(description, rhs.description).append(protocolType, rhs.protocolType).append(version, rhs.version).isEquals();
+        return new EqualsBuilder().append(disableSchemaValidation, rhs.disableSchemaValidation).append(apiKeySelectionExpression, rhs.apiKeySelectionExpression).append(routeSelectionExpression, rhs.routeSelectionExpression).append(name, rhs.name).append(description, rhs.description).append(protocolType, rhs.protocolType).append(version, rhs.version).append(tags, rhs.tags).isEquals();
     }
 
 }

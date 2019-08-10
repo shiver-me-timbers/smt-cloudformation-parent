@@ -1,0 +1,52 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Amplify_App.AutoBranchCreationConfig.schema.json",
+  "title" : "AppAutoBranchCreationConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-autobranchcreationconfig.html",
+  "type" : "object",
+  "javaType" : "aws.amplify.AppAutoBranchCreationConfig",
+  "javaInterfaces" : [ "aws.Property<AppAutoBranchCreationConfig>" ],
+  "properties" : {
+    "EnvironmentVariables" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-autobranchcreationconfig.html#cfn-amplify-app-autobranchcreationconfig-environmentvariables",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_Amplify_App.EnvironmentVariable.schema.json",
+        "javaType" : "aws.Property<aws.amplify.AppEnvironmentVariable>"
+      }
+    },
+    "EnableAutoBranchCreation" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-autobranchcreationconfig.html#cfn-amplify-app-autobranchcreationconfig-enableautobranchcreation",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "AutoBranchCreationPatterns" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-autobranchcreationconfig.html#cfn-amplify-app-autobranchcreationconfig-autobranchcreationpatterns",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    },
+    "EnableAutoBuild" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-autobranchcreationconfig.html#cfn-amplify-app-autobranchcreationconfig-enableautobuild",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "BuildSpec" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-autobranchcreationconfig.html#cfn-amplify-app-autobranchcreationconfig-buildspec",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Stage" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-autobranchcreationconfig.html#cfn-amplify-app-autobranchcreationconfig-stage",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "BasicAuthConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-autobranchcreationconfig.html#cfn-amplify-app-autobranchcreationconfig-basicauthconfig",
+      "$ref" : "AWS_Amplify_App.BasicAuthConfig.schema.json",
+      "javaType" : "aws.Property<aws.amplify.AppBasicAuthConfig>"
+    }
+  }
+}

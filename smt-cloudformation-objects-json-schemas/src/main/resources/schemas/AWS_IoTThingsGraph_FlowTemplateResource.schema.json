@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoTThingsGraph_FlowTemplateResource.schema.json",
+  "title" : "FlowTemplateResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotthingsgraph-flowtemplate.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.iotthingsgraph.FlowTemplateResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<FlowTemplateResource>", "aws.HasCondition<FlowTemplateResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::IoTThingsGraph::FlowTemplate"
+    },
+    "Properties" : {
+      "$ref" : "AWS_IoTThingsGraph_FlowTemplate.schema.json"
+    }
+  }
+}

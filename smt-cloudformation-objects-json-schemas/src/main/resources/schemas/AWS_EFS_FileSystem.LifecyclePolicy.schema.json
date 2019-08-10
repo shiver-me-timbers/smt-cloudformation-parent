@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EFS_FileSystem.LifecyclePolicy.schema.json",
+  "title" : "FileSystemLifecyclePolicy",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticfilesystem-filesystem-lifecyclepolicy.html",
+  "type" : "object",
+  "javaType" : "aws.efs.FileSystemLifecyclePolicy",
+  "javaInterfaces" : [ "aws.Property<FileSystemLifecyclePolicy>" ],
+  "properties" : {
+    "TransitionToIA" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticfilesystem-filesystem-lifecyclepolicy.html#cfn-elasticfilesystem-filesystem-lifecyclepolicy-transitiontoia",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

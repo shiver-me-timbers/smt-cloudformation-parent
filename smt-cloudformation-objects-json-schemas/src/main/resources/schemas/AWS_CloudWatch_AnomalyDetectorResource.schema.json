@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CloudWatch_AnomalyDetectorResource.schema.json",
+  "title" : "AnomalyDetectorResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-anomalydetector.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.cloudwatch.AnomalyDetectorResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<AnomalyDetectorResource>", "aws.HasCondition<AnomalyDetectorResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::CloudWatch::AnomalyDetector"
+    },
+    "Properties" : {
+      "$ref" : "AWS_CloudWatch_AnomalyDetector.schema.json"
+    }
+  }
+}

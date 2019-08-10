@@ -26,13 +26,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "PrivateIpAddress",
     "PrivateIpAddresses",
     "SecondaryPrivateIpAddressCount",
-    "Ipv6AddressCount",
-    "Groups",
     "DeviceIndex",
     "SubnetId",
     "Ipv6Addresses",
     "AssociatePublicIpAddress",
     "NetworkInterfaceId",
+    "InterfaceType",
+    "Ipv6AddressCount",
+    "Groups",
     "DeleteOnTermination"
 })
 public class LaunchTemplateNetworkInterface implements Property<LaunchTemplateNetworkInterface>
@@ -66,20 +67,6 @@ public class LaunchTemplateNetworkInterface implements Property<LaunchTemplateNe
     @JsonProperty("SecondaryPrivateIpAddressCount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-secondaryprivateipaddresscount")
     private Number secondaryPrivateIpAddressCount;
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-ipv6addresscount
-     * 
-     */
-    @JsonProperty("Ipv6AddressCount")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-ipv6addresscount")
-    private Number ipv6AddressCount;
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-groups
-     * 
-     */
-    @JsonProperty("Groups")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-groups")
-    private List<CharSequence> groups = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-deviceindex
      * 
@@ -115,6 +102,27 @@ public class LaunchTemplateNetworkInterface implements Property<LaunchTemplateNe
     @JsonProperty("NetworkInterfaceId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-networkinterfaceid")
     private CharSequence networkInterfaceId;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-interfacetype
+     * 
+     */
+    @JsonProperty("InterfaceType")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-interfacetype")
+    private CharSequence interfaceType;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-ipv6addresscount
+     * 
+     */
+    @JsonProperty("Ipv6AddressCount")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-ipv6addresscount")
+    private Number ipv6AddressCount;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-groups
+     * 
+     */
+    @JsonProperty("Groups")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-groups")
+    private List<CharSequence> groups = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-deleteontermination
      * 
@@ -212,52 +220,6 @@ public class LaunchTemplateNetworkInterface implements Property<LaunchTemplateNe
 
     public LaunchTemplateNetworkInterface withSecondaryPrivateIpAddressCount(Number secondaryPrivateIpAddressCount) {
         this.secondaryPrivateIpAddressCount = secondaryPrivateIpAddressCount;
-        return this;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-ipv6addresscount
-     * 
-     */
-    @JsonIgnore
-    public Number getIpv6AddressCount() {
-        return ipv6AddressCount;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-ipv6addresscount
-     * 
-     */
-    @JsonIgnore
-    public void setIpv6AddressCount(Number ipv6AddressCount) {
-        this.ipv6AddressCount = ipv6AddressCount;
-    }
-
-    public LaunchTemplateNetworkInterface withIpv6AddressCount(Number ipv6AddressCount) {
-        this.ipv6AddressCount = ipv6AddressCount;
-        return this;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-groups
-     * 
-     */
-    @JsonIgnore
-    public List<CharSequence> getGroups() {
-        return groups;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-groups
-     * 
-     */
-    @JsonIgnore
-    public void setGroups(List<CharSequence> groups) {
-        this.groups = groups;
-    }
-
-    public LaunchTemplateNetworkInterface withGroups(List<CharSequence> groups) {
-        this.groups = groups;
         return this;
     }
 
@@ -377,6 +339,75 @@ public class LaunchTemplateNetworkInterface implements Property<LaunchTemplateNe
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-interfacetype
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getInterfaceType() {
+        return interfaceType;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-interfacetype
+     * 
+     */
+    @JsonIgnore
+    public void setInterfaceType(CharSequence interfaceType) {
+        this.interfaceType = interfaceType;
+    }
+
+    public LaunchTemplateNetworkInterface withInterfaceType(CharSequence interfaceType) {
+        this.interfaceType = interfaceType;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-ipv6addresscount
+     * 
+     */
+    @JsonIgnore
+    public Number getIpv6AddressCount() {
+        return ipv6AddressCount;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-ipv6addresscount
+     * 
+     */
+    @JsonIgnore
+    public void setIpv6AddressCount(Number ipv6AddressCount) {
+        this.ipv6AddressCount = ipv6AddressCount;
+    }
+
+    public LaunchTemplateNetworkInterface withIpv6AddressCount(Number ipv6AddressCount) {
+        this.ipv6AddressCount = ipv6AddressCount;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-groups
+     * 
+     */
+    @JsonIgnore
+    public List<CharSequence> getGroups() {
+        return groups;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-groups
+     * 
+     */
+    @JsonIgnore
+    public void setGroups(List<CharSequence> groups) {
+        this.groups = groups;
+    }
+
+    public LaunchTemplateNetworkInterface withGroups(List<CharSequence> groups) {
+        this.groups = groups;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-deleteontermination
      * 
      */
@@ -401,12 +432,12 @@ public class LaunchTemplateNetworkInterface implements Property<LaunchTemplateNe
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("description", description).append("privateIpAddress", privateIpAddress).append("privateIpAddresses", privateIpAddresses).append("secondaryPrivateIpAddressCount", secondaryPrivateIpAddressCount).append("ipv6AddressCount", ipv6AddressCount).append("groups", groups).append("deviceIndex", deviceIndex).append("subnetId", subnetId).append("ipv6Addresses", ipv6Addresses).append("associatePublicIpAddress", associatePublicIpAddress).append("networkInterfaceId", networkInterfaceId).append("deleteOnTermination", deleteOnTermination).toString();
+        return new ToStringBuilder(this).append("description", description).append("privateIpAddress", privateIpAddress).append("privateIpAddresses", privateIpAddresses).append("secondaryPrivateIpAddressCount", secondaryPrivateIpAddressCount).append("deviceIndex", deviceIndex).append("subnetId", subnetId).append("ipv6Addresses", ipv6Addresses).append("associatePublicIpAddress", associatePublicIpAddress).append("networkInterfaceId", networkInterfaceId).append("interfaceType", interfaceType).append("ipv6AddressCount", ipv6AddressCount).append("groups", groups).append("deleteOnTermination", deleteOnTermination).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(privateIpAddresses).append(subnetId).append(networkInterfaceId).append(description).append(groups).append(ipv6Addresses).append(deleteOnTermination).append(deviceIndex).append(privateIpAddress).append(ipv6AddressCount).append(associatePublicIpAddress).append(secondaryPrivateIpAddressCount).toHashCode();
+        return new HashCodeBuilder().append(privateIpAddresses).append(subnetId).append(networkInterfaceId).append(description).append(groups).append(ipv6Addresses).append(deleteOnTermination).append(deviceIndex).append(privateIpAddress).append(interfaceType).append(ipv6AddressCount).append(associatePublicIpAddress).append(secondaryPrivateIpAddressCount).toHashCode();
     }
 
     @Override
@@ -418,7 +449,7 @@ public class LaunchTemplateNetworkInterface implements Property<LaunchTemplateNe
             return false;
         }
         LaunchTemplateNetworkInterface rhs = ((LaunchTemplateNetworkInterface) other);
-        return new EqualsBuilder().append(privateIpAddresses, rhs.privateIpAddresses).append(subnetId, rhs.subnetId).append(networkInterfaceId, rhs.networkInterfaceId).append(description, rhs.description).append(groups, rhs.groups).append(ipv6Addresses, rhs.ipv6Addresses).append(deleteOnTermination, rhs.deleteOnTermination).append(deviceIndex, rhs.deviceIndex).append(privateIpAddress, rhs.privateIpAddress).append(ipv6AddressCount, rhs.ipv6AddressCount).append(associatePublicIpAddress, rhs.associatePublicIpAddress).append(secondaryPrivateIpAddressCount, rhs.secondaryPrivateIpAddressCount).isEquals();
+        return new EqualsBuilder().append(privateIpAddresses, rhs.privateIpAddresses).append(subnetId, rhs.subnetId).append(networkInterfaceId, rhs.networkInterfaceId).append(description, rhs.description).append(groups, rhs.groups).append(ipv6Addresses, rhs.ipv6Addresses).append(deleteOnTermination, rhs.deleteOnTermination).append(deviceIndex, rhs.deviceIndex).append(privateIpAddress, rhs.privateIpAddress).append(interfaceType, rhs.interfaceType).append(ipv6AddressCount, rhs.ipv6AddressCount).append(associatePublicIpAddress, rhs.associatePublicIpAddress).append(secondaryPrivateIpAddressCount, rhs.secondaryPrivateIpAddressCount).isEquals();
     }
 
 }

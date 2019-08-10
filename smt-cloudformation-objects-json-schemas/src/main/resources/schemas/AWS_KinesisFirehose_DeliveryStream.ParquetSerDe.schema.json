@@ -1,0 +1,41 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_KinesisFirehose_DeliveryStream.ParquetSerDe.schema.json",
+  "title" : "DeliveryStreamParquetSerDe",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-parquetserde.html",
+  "type" : "object",
+  "javaType" : "aws.kinesisfirehose.DeliveryStreamParquetSerDe",
+  "javaInterfaces" : [ "aws.Property<DeliveryStreamParquetSerDe>" ],
+  "properties" : {
+    "BlockSizeBytes" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-parquetserde.html#cfn-kinesisfirehose-deliverystream-parquetserde-blocksizebytes",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "Compression" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-parquetserde.html#cfn-kinesisfirehose-deliverystream-parquetserde-compression",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "EnableDictionaryCompression" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-parquetserde.html#cfn-kinesisfirehose-deliverystream-parquetserde-enabledictionarycompression",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "MaxPaddingBytes" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-parquetserde.html#cfn-kinesisfirehose-deliverystream-parquetserde-maxpaddingbytes",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "PageSizeBytes" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-parquetserde.html#cfn-kinesisfirehose-deliverystream-parquetserde-pagesizebytes",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "WriterVersion" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-parquetserde.html#cfn-kinesisfirehose-deliverystream-parquetserde-writerversion",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

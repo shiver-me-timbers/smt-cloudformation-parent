@@ -1,9 +1,12 @@
 
 package aws.ecs;
 
+import java.util.ArrayList;
 import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Set;
 import aws.Property;
+import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -26,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Cluster",
     "DeploymentConfiguration",
     "DesiredCount",
+    "EnableECSManagedTags",
     "HealthCheckGracePeriodSeconds",
     "LaunchType",
     "LoadBalancers",
@@ -33,10 +37,12 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "PlacementConstraints",
     "PlacementStrategies",
     "PlatformVersion",
+    "PropagateTags",
     "Role",
     "SchedulingStrategy",
     "ServiceName",
     "ServiceRegistries",
+    "Tags",
     "TaskDefinition"
 })
 public class Service {
@@ -64,6 +70,13 @@ public class Service {
     @JsonProperty("DesiredCount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-desiredcount")
     private Number desiredCount;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-enableecsmanagedtags
+     * 
+     */
+    @JsonProperty("EnableECSManagedTags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-enableecsmanagedtags")
+    private CharSequence enableECSManagedTags;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-healthcheckgraceperiodseconds
      * 
@@ -119,6 +132,13 @@ public class Service {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-platformversion")
     private CharSequence platformVersion;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-propagatetags
+     * 
+     */
+    @JsonProperty("PropagateTags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-propagatetags")
+    private CharSequence propagateTags;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-role
      * 
      */
@@ -147,6 +167,13 @@ public class Service {
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-serviceregistries")
     private Set<Property<ServiceServiceRegistry>> serviceRegistries = new LinkedHashSet<Property<ServiceServiceRegistry>>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-tags")
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-taskdefinition
      * 
@@ -225,6 +252,29 @@ public class Service {
 
     public Service withDesiredCount(Number desiredCount) {
         this.desiredCount = desiredCount;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-enableecsmanagedtags
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getEnableECSManagedTags() {
+        return enableECSManagedTags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-enableecsmanagedtags
+     * 
+     */
+    @JsonIgnore
+    public void setEnableECSManagedTags(CharSequence enableECSManagedTags) {
+        this.enableECSManagedTags = enableECSManagedTags;
+    }
+
+    public Service withEnableECSManagedTags(CharSequence enableECSManagedTags) {
+        this.enableECSManagedTags = enableECSManagedTags;
         return this;
     }
 
@@ -394,6 +444,29 @@ public class Service {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-propagatetags
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getPropagateTags() {
+        return propagateTags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-propagatetags
+     * 
+     */
+    @JsonIgnore
+    public void setPropagateTags(CharSequence propagateTags) {
+        this.propagateTags = propagateTags;
+    }
+
+    public Service withPropagateTags(CharSequence propagateTags) {
+        this.propagateTags = propagateTags;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-role
      * 
      */
@@ -486,6 +559,29 @@ public class Service {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-tags
+     * 
+     */
+    @JsonIgnore
+    public List<Property<Tag>> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+    }
+
+    public Service withTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-taskdefinition
      * 
      */
@@ -510,12 +606,12 @@ public class Service {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("cluster", cluster).append("deploymentConfiguration", deploymentConfiguration).append("desiredCount", desiredCount).append("healthCheckGracePeriodSeconds", healthCheckGracePeriodSeconds).append("launchType", launchType).append("loadBalancers", loadBalancers).append("networkConfiguration", networkConfiguration).append("placementConstraints", placementConstraints).append("placementStrategies", placementStrategies).append("platformVersion", platformVersion).append("role", role).append("schedulingStrategy", schedulingStrategy).append("serviceName", serviceName).append("serviceRegistries", serviceRegistries).append("taskDefinition", taskDefinition).toString();
+        return new ToStringBuilder(this).append("cluster", cluster).append("deploymentConfiguration", deploymentConfiguration).append("desiredCount", desiredCount).append("enableECSManagedTags", enableECSManagedTags).append("healthCheckGracePeriodSeconds", healthCheckGracePeriodSeconds).append("launchType", launchType).append("loadBalancers", loadBalancers).append("networkConfiguration", networkConfiguration).append("placementConstraints", placementConstraints).append("placementStrategies", placementStrategies).append("platformVersion", platformVersion).append("propagateTags", propagateTags).append("role", role).append("schedulingStrategy", schedulingStrategy).append("serviceName", serviceName).append("serviceRegistries", serviceRegistries).append("tags", tags).append("taskDefinition", taskDefinition).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(cluster).append(placementConstraints).append(role).append(networkConfiguration).append(desiredCount).append(loadBalancers).append(serviceRegistries).append(serviceName).append(deploymentConfiguration).append(schedulingStrategy).append(platformVersion).append(taskDefinition).append(healthCheckGracePeriodSeconds).append(launchType).append(placementStrategies).toHashCode();
+        return new HashCodeBuilder().append(cluster).append(placementConstraints).append(role).append(propagateTags).append(networkConfiguration).append(desiredCount).append(loadBalancers).append(serviceRegistries).append(serviceName).append(tags).append(deploymentConfiguration).append(schedulingStrategy).append(platformVersion).append(enableECSManagedTags).append(taskDefinition).append(healthCheckGracePeriodSeconds).append(launchType).append(placementStrategies).toHashCode();
     }
 
     @Override
@@ -527,7 +623,7 @@ public class Service {
             return false;
         }
         Service rhs = ((Service) other);
-        return new EqualsBuilder().append(cluster, rhs.cluster).append(placementConstraints, rhs.placementConstraints).append(role, rhs.role).append(networkConfiguration, rhs.networkConfiguration).append(desiredCount, rhs.desiredCount).append(loadBalancers, rhs.loadBalancers).append(serviceRegistries, rhs.serviceRegistries).append(serviceName, rhs.serviceName).append(deploymentConfiguration, rhs.deploymentConfiguration).append(schedulingStrategy, rhs.schedulingStrategy).append(platformVersion, rhs.platformVersion).append(taskDefinition, rhs.taskDefinition).append(healthCheckGracePeriodSeconds, rhs.healthCheckGracePeriodSeconds).append(launchType, rhs.launchType).append(placementStrategies, rhs.placementStrategies).isEquals();
+        return new EqualsBuilder().append(cluster, rhs.cluster).append(placementConstraints, rhs.placementConstraints).append(role, rhs.role).append(propagateTags, rhs.propagateTags).append(networkConfiguration, rhs.networkConfiguration).append(desiredCount, rhs.desiredCount).append(loadBalancers, rhs.loadBalancers).append(serviceRegistries, rhs.serviceRegistries).append(serviceName, rhs.serviceName).append(tags, rhs.tags).append(deploymentConfiguration, rhs.deploymentConfiguration).append(schedulingStrategy, rhs.schedulingStrategy).append(platformVersion, rhs.platformVersion).append(enableECSManagedTags, rhs.enableECSManagedTags).append(taskDefinition, rhs.taskDefinition).append(healthCheckGracePeriodSeconds, rhs.healthCheckGracePeriodSeconds).append(launchType, rhs.launchType).append(placementStrategies, rhs.placementStrategies).isEquals();
     }
 
 }

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WAFRegional_RateBasedRuleResource.schema.json",
+  "title" : "RateBasedRuleResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-ratebasedrule.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.wafregional.RateBasedRuleResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<RateBasedRuleResource>", "aws.HasCondition<RateBasedRuleResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::WAFRegional::RateBasedRule"
+    },
+    "Properties" : {
+      "$ref" : "AWS_WAFRegional_RateBasedRule.schema.json"
+    }
+  }
+}

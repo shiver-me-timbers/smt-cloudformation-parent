@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_PinpointEmail_IdentityAttributes.schema.json",
+  "title" : "IdentityAttributes",
+  "type" : "string",
+  "enum" : [ "IdentityDNSRecordName3", "IdentityDNSRecordName1", "IdentityDNSRecordName2", "IdentityDNSRecordValue3", "IdentityDNSRecordValue2", "IdentityDNSRecordValue1" ],
+  "javaType" : "aws.pinpointemail.IdentityAttributes"
+}

@@ -1,0 +1,30 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_SMSChannel.schema.json",
+  "title" : "SMSChannel",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-smschannel.html",
+  "type" : "object",
+  "javaType" : "aws.pinpoint.SMSChannel",
+  "properties" : {
+    "ShortCode" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-smschannel.html#cfn-pinpoint-smschannel-shortcode",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Enabled" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-smschannel.html#cfn-pinpoint-smschannel-enabled",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ApplicationId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-smschannel.html#cfn-pinpoint-smschannel-applicationid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SenderId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-smschannel.html#cfn-pinpoint-smschannel-senderid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Amplify_BranchResource.schema.json",
+  "title" : "BranchResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.amplify.BranchResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<BranchResource>", "aws.HasCondition<BranchResource>", "aws.HasAttributes<BranchAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Amplify::Branch"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Amplify_Branch.schema.json"
+    }
+  }
+}

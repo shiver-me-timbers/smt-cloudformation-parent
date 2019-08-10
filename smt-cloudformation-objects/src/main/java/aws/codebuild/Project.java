@@ -27,6 +27,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "VpcConfig",
     "SecondarySources",
     "EncryptionKey",
+    "SourceVersion",
     "Triggers",
     "SecondaryArtifacts",
     "Source",
@@ -37,6 +38,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "ServiceRole",
     "QueuedTimeoutInMinutes",
     "Environment",
+    "SecondarySourceVersions",
     "Tags",
     "TimeoutInMinutes",
     "Cache"
@@ -73,6 +75,13 @@ public class Project {
     @JsonProperty("EncryptionKey")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-encryptionkey")
     private CharSequence encryptionKey;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-sourceversion
+     * 
+     */
+    @JsonProperty("SourceVersion")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-sourceversion")
+    private CharSequence sourceVersion;
     /**
      * ProjectProjectTriggers
      * <p>
@@ -153,6 +162,13 @@ public class Project {
     @JsonProperty("Environment")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html")
     private Property<ProjectEnvironment> environment;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-secondarysourceversions
+     * 
+     */
+    @JsonProperty("SecondarySourceVersions")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-secondarysourceversions")
+    private List<Property<ProjectProjectSourceVersion>> secondarySourceVersions = new ArrayList<Property<ProjectProjectSourceVersion>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-tags
      * 
@@ -270,6 +286,29 @@ public class Project {
 
     public Project withEncryptionKey(CharSequence encryptionKey) {
         this.encryptionKey = encryptionKey;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-sourceversion
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getSourceVersion() {
+        return sourceVersion;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-sourceversion
+     * 
+     */
+    @JsonIgnore
+    public void setSourceVersion(CharSequence sourceVersion) {
+        this.sourceVersion = sourceVersion;
+    }
+
+    public Project withSourceVersion(CharSequence sourceVersion) {
+        this.sourceVersion = sourceVersion;
         return this;
     }
 
@@ -524,6 +563,29 @@ public class Project {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-secondarysourceversions
+     * 
+     */
+    @JsonIgnore
+    public List<Property<ProjectProjectSourceVersion>> getSecondarySourceVersions() {
+        return secondarySourceVersions;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-secondarysourceversions
+     * 
+     */
+    @JsonIgnore
+    public void setSecondarySourceVersions(List<Property<ProjectProjectSourceVersion>> secondarySourceVersions) {
+        this.secondarySourceVersions = secondarySourceVersions;
+    }
+
+    public Project withSecondarySourceVersions(List<Property<ProjectProjectSourceVersion>> secondarySourceVersions) {
+        this.secondarySourceVersions = secondarySourceVersions;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-tags
      * 
      */
@@ -598,12 +660,12 @@ public class Project {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("description", description).append("vpcConfig", vpcConfig).append("secondarySources", secondarySources).append("encryptionKey", encryptionKey).append("triggers", triggers).append("secondaryArtifacts", secondaryArtifacts).append("source", source).append("name", name).append("artifacts", artifacts).append("badgeEnabled", badgeEnabled).append("logsConfig", logsConfig).append("serviceRole", serviceRole).append("queuedTimeoutInMinutes", queuedTimeoutInMinutes).append("environment", environment).append("tags", tags).append("timeoutInMinutes", timeoutInMinutes).append("cache", cache).toString();
+        return new ToStringBuilder(this).append("description", description).append("vpcConfig", vpcConfig).append("secondarySources", secondarySources).append("encryptionKey", encryptionKey).append("sourceVersion", sourceVersion).append("triggers", triggers).append("secondaryArtifacts", secondaryArtifacts).append("source", source).append("name", name).append("artifacts", artifacts).append("badgeEnabled", badgeEnabled).append("logsConfig", logsConfig).append("serviceRole", serviceRole).append("queuedTimeoutInMinutes", queuedTimeoutInMinutes).append("environment", environment).append("secondarySourceVersions", secondarySourceVersions).append("tags", tags).append("timeoutInMinutes", timeoutInMinutes).append("cache", cache).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(logsConfig).append(cache).append(secondarySources).append(serviceRole).append(description).append(encryptionKey).append(source).append(triggers).append(secondaryArtifacts).append(tags).append(environment).append(vpcConfig).append(name).append(timeoutInMinutes).append(queuedTimeoutInMinutes).append(badgeEnabled).append(artifacts).toHashCode();
+        return new HashCodeBuilder().append(logsConfig).append(cache).append(secondarySources).append(sourceVersion).append(serviceRole).append(description).append(encryptionKey).append(source).append(triggers).append(secondarySourceVersions).append(secondaryArtifacts).append(tags).append(environment).append(vpcConfig).append(name).append(timeoutInMinutes).append(queuedTimeoutInMinutes).append(badgeEnabled).append(artifacts).toHashCode();
     }
 
     @Override
@@ -615,7 +677,7 @@ public class Project {
             return false;
         }
         Project rhs = ((Project) other);
-        return new EqualsBuilder().append(logsConfig, rhs.logsConfig).append(cache, rhs.cache).append(secondarySources, rhs.secondarySources).append(serviceRole, rhs.serviceRole).append(description, rhs.description).append(encryptionKey, rhs.encryptionKey).append(source, rhs.source).append(triggers, rhs.triggers).append(secondaryArtifacts, rhs.secondaryArtifacts).append(tags, rhs.tags).append(environment, rhs.environment).append(vpcConfig, rhs.vpcConfig).append(name, rhs.name).append(timeoutInMinutes, rhs.timeoutInMinutes).append(queuedTimeoutInMinutes, rhs.queuedTimeoutInMinutes).append(badgeEnabled, rhs.badgeEnabled).append(artifacts, rhs.artifacts).isEquals();
+        return new EqualsBuilder().append(logsConfig, rhs.logsConfig).append(cache, rhs.cache).append(secondarySources, rhs.secondarySources).append(sourceVersion, rhs.sourceVersion).append(serviceRole, rhs.serviceRole).append(description, rhs.description).append(encryptionKey, rhs.encryptionKey).append(source, rhs.source).append(triggers, rhs.triggers).append(secondarySourceVersions, rhs.secondarySourceVersions).append(secondaryArtifacts, rhs.secondaryArtifacts).append(tags, rhs.tags).append(environment, rhs.environment).append(vpcConfig, rhs.vpcConfig).append(name, rhs.name).append(timeoutInMinutes, rhs.timeoutInMinutes).append(queuedTimeoutInMinutes, rhs.queuedTimeoutInMinutes).append(badgeEnabled, rhs.badgeEnabled).append(artifacts, rhs.artifacts).isEquals();
     }
 
 }

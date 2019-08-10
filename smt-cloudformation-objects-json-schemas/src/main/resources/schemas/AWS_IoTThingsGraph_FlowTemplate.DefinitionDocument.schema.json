@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoTThingsGraph_FlowTemplate.DefinitionDocument.schema.json",
+  "title" : "FlowTemplateDefinitionDocument",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotthingsgraph-flowtemplate-definitiondocument.html",
+  "type" : "object",
+  "javaType" : "aws.iotthingsgraph.FlowTemplateDefinitionDocument",
+  "javaInterfaces" : [ "aws.Property<FlowTemplateDefinitionDocument>" ],
+  "properties" : {
+    "Language" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotthingsgraph-flowtemplate-definitiondocument.html#cfn-iotthingsgraph-flowtemplate-definitiondocument-language",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Text" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotthingsgraph-flowtemplate-definitiondocument.html#cfn-iotthingsgraph-flowtemplate-definitiondocument-text",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

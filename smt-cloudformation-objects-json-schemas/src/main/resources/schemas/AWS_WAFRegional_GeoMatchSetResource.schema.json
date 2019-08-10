@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WAFRegional_GeoMatchSetResource.schema.json",
+  "title" : "GeoMatchSetResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-geomatchset.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.wafregional.GeoMatchSetResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<GeoMatchSetResource>", "aws.HasCondition<GeoMatchSetResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::WAFRegional::GeoMatchSet"
+    },
+    "Properties" : {
+      "$ref" : "AWS_WAFRegional_GeoMatchSet.schema.json"
+    }
+  }
+}

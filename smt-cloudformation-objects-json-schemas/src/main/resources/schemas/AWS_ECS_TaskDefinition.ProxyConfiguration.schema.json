@@ -1,0 +1,30 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ECS_TaskDefinition.ProxyConfiguration.schema.json",
+  "title" : "TaskDefinitionProxyConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-proxyconfiguration.html",
+  "type" : "object",
+  "javaType" : "aws.ecs.TaskDefinitionProxyConfiguration",
+  "javaInterfaces" : [ "aws.Property<TaskDefinitionProxyConfiguration>" ],
+  "properties" : {
+    "ContainerName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-proxyconfiguration.html#cfn-ecs-taskdefinition-proxyconfiguration-containername",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ProxyConfigurationProperties" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-proxyconfiguration.html#cfn-ecs-taskdefinition-proxyconfiguration-proxyconfigurationproperties",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "$ref" : "AWS_ECS_TaskDefinition.KeyValuePair.schema.json",
+        "javaType" : "aws.Property<aws.ecs.TaskDefinitionKeyValuePair>"
+      }
+    },
+    "Type" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-proxyconfiguration.html#cfn-ecs-taskdefinition-proxyconfiguration-type",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_ClientVpnRouteResource.schema.json",
+  "title" : "ClientVpnRouteResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnroute.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.ec2.ClientVpnRouteResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ClientVpnRouteResource>", "aws.HasCondition<ClientVpnRouteResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::ClientVpnRoute"
+    },
+    "Properties" : {
+      "$ref" : "AWS_EC2_ClientVpnRoute.schema.json"
+    }
+  }
+}

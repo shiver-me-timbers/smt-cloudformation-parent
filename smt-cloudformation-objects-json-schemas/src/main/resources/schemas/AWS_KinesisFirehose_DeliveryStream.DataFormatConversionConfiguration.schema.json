@@ -1,0 +1,31 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_KinesisFirehose_DeliveryStream.DataFormatConversionConfiguration.schema.json",
+  "title" : "DeliveryStreamDataFormatConversionConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-dataformatconversionconfiguration.html",
+  "type" : "object",
+  "javaType" : "aws.kinesisfirehose.DeliveryStreamDataFormatConversionConfiguration",
+  "javaInterfaces" : [ "aws.Property<DeliveryStreamDataFormatConversionConfiguration>" ],
+  "properties" : {
+    "Enabled" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-dataformatconversionconfiguration.html#cfn-kinesisfirehose-deliverystream-dataformatconversionconfiguration-enabled",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "InputFormatConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-dataformatconversionconfiguration.html#cfn-kinesisfirehose-deliverystream-dataformatconversionconfiguration-inputformatconfiguration",
+      "$ref" : "AWS_KinesisFirehose_DeliveryStream.InputFormatConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.kinesisfirehose.DeliveryStreamInputFormatConfiguration>"
+    },
+    "OutputFormatConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-dataformatconversionconfiguration.html#cfn-kinesisfirehose-deliverystream-dataformatconversionconfiguration-outputformatconfiguration",
+      "$ref" : "AWS_KinesisFirehose_DeliveryStream.OutputFormatConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.kinesisfirehose.DeliveryStreamOutputFormatConfiguration>"
+    },
+    "SchemaConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-dataformatconversionconfiguration.html#cfn-kinesisfirehose-deliverystream-dataformatconversionconfiguration-schemaconfiguration",
+      "$ref" : "AWS_KinesisFirehose_DeliveryStream.SchemaConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.kinesisfirehose.DeliveryStreamSchemaConfiguration>"
+    }
+  }
+}

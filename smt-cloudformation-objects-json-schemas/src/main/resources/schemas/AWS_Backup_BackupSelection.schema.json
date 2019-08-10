@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Backup_BackupSelection.schema.json",
+  "title" : "BackupSelection",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-backup-backupselection.html",
+  "type" : "object",
+  "javaType" : "aws.backup.BackupSelection",
+  "properties" : {
+    "BackupSelection" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-backup-backupselection.html#cfn-backup-backupselection-backupselection",
+      "$ref" : "AWS_Backup_BackupSelection.BackupSelectionResourceType.schema.json",
+      "javaType" : "aws.Property<aws.backup.BackupSelectionBackupSelectionResourceType>"
+    },
+    "BackupPlanId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-backup-backupselection.html#cfn-backup-backupselection-backupplanid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

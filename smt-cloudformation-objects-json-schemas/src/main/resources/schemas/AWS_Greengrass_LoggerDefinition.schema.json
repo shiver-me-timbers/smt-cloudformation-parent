@@ -11,6 +11,11 @@
       "$ref" : "AWS_Greengrass_LoggerDefinition.LoggerDefinitionVersion.schema.json",
       "javaType" : "aws.Property<aws.greengrass.LoggerDefinitionLoggerDefinitionVersion>"
     },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-loggerdefinition.html#cfn-greengrass-loggerdefinition-tags",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
+    },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-loggerdefinition.html#cfn-greengrass-loggerdefinition-name",
       "type" : "string",

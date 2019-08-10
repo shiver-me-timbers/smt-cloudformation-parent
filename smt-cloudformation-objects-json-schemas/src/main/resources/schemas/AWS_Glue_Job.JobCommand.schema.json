@@ -7,6 +7,11 @@
   "javaType" : "aws.glue.JobJobCommand",
   "javaInterfaces" : [ "aws.Property<JobJobCommand>" ],
   "properties" : {
+    "PythonVersion" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-jobcommand.html#cfn-glue-job-jobcommand-pythonversion",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "ScriptLocation" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-jobcommand.html#cfn-glue-job-jobcommand-scriptlocation",
       "type" : "string",

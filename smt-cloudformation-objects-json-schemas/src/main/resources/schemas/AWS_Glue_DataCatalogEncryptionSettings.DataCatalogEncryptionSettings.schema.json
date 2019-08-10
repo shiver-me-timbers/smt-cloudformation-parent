@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Glue_DataCatalogEncryptionSettings.DataCatalogEncryptionSettings.schema.json",
+  "title" : "DataCatalogEncryptionSettingsDataCatalogEncryptionSettings",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-datacatalogencryptionsettings-datacatalogencryptionsettings.html",
+  "type" : "object",
+  "javaType" : "aws.glue.DataCatalogEncryptionSettingsDataCatalogEncryptionSettings",
+  "javaInterfaces" : [ "aws.Property<DataCatalogEncryptionSettingsDataCatalogEncryptionSettings>" ],
+  "properties" : {
+    "ConnectionPasswordEncryption" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-datacatalogencryptionsettings-datacatalogencryptionsettings.html#cfn-glue-datacatalogencryptionsettings-datacatalogencryptionsettings-connectionpasswordencryption",
+      "$ref" : "AWS_Glue_DataCatalogEncryptionSettings.ConnectionPasswordEncryption.schema.json",
+      "javaType" : "aws.Property<aws.glue.DataCatalogEncryptionSettingsConnectionPasswordEncryption>"
+    },
+    "EncryptionAtRest" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-datacatalogencryptionsettings-datacatalogencryptionsettings.html#cfn-glue-datacatalogencryptionsettings-datacatalogencryptionsettings-encryptionatrest",
+      "$ref" : "AWS_Glue_DataCatalogEncryptionSettings.EncryptionAtRest.schema.json",
+      "javaType" : "aws.Property<aws.glue.DataCatalogEncryptionSettingsEncryptionAtRest>"
+    }
+  }
+}

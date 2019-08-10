@@ -73,6 +73,16 @@
       "$ref" : "AWS_S3_Bucket.NotificationConfiguration.schema.json",
       "javaType" : "aws.Property<aws.s3.BucketNotificationConfiguration>"
     },
+    "ObjectLockConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-objectlockconfiguration",
+      "$ref" : "AWS_S3_Bucket.ObjectLockConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.s3.BucketObjectLockConfiguration>"
+    },
+    "ObjectLockEnabled" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-objectlockenabled",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
     "PublicAccessBlockConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-publicaccessblockconfiguration",
       "$ref" : "AWS_S3_Bucket.PublicAccessBlockConfiguration.schema.json",

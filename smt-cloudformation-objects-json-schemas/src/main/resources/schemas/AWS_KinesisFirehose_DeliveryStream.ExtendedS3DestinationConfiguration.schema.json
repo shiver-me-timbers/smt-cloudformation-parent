@@ -27,10 +27,20 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "DataFormatConversionConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-dataformatconversionconfiguration",
+      "$ref" : "AWS_KinesisFirehose_DeliveryStream.DataFormatConversionConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.kinesisfirehose.DeliveryStreamDataFormatConversionConfiguration>"
+    },
     "EncryptionConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-encryptionconfiguration",
       "$ref" : "AWS_KinesisFirehose_DeliveryStream.EncryptionConfiguration.schema.json",
       "javaType" : "aws.Property<aws.kinesisfirehose.DeliveryStreamEncryptionConfiguration>"
+    },
+    "ErrorOutputPrefix" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-erroroutputprefix",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
     },
     "Prefix" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-prefix",

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_PinpointEmail_DedicatedIpPoolResource.schema.json",
+  "title" : "DedicatedIpPoolResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpointemail-dedicatedippool.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.pinpointemail.DedicatedIpPoolResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<DedicatedIpPoolResource>", "aws.HasCondition<DedicatedIpPoolResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::PinpointEmail::DedicatedIpPool"
+    },
+    "Properties" : {
+      "$ref" : "AWS_PinpointEmail_DedicatedIpPool.schema.json"
+    }
+  }
+}

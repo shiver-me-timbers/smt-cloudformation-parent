@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ElasticLoadBalancingV2_ListenerRule.SourceIpConfig.schema.json",
+  "title" : "ListenerRuleSourceIpConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-sourceipconfig.html",
+  "type" : "object",
+  "javaType" : "aws.elasticloadbalancingv2.ListenerRuleSourceIpConfig",
+  "javaInterfaces" : [ "aws.Property<ListenerRuleSourceIpConfig>" ],
+  "properties" : {
+    "Values" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-sourceipconfig.html#cfn-elasticloadbalancingv2-listenerrule-sourceipconfig-values",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    }
+  }
+}

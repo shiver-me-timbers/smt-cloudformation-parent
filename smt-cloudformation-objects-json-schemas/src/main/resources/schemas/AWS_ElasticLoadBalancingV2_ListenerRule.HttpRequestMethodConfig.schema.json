@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ElasticLoadBalancingV2_ListenerRule.HttpRequestMethodConfig.schema.json",
+  "title" : "ListenerRuleHttpRequestMethodConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-httprequestmethodconfig.html",
+  "type" : "object",
+  "javaType" : "aws.elasticloadbalancingv2.ListenerRuleHttpRequestMethodConfig",
+  "javaInterfaces" : [ "aws.Property<ListenerRuleHttpRequestMethodConfig>" ],
+  "properties" : {
+    "Values" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-httprequestmethodconfig.html#cfn-elasticloadbalancingv2-listenerrule-httprequestmethodconfig-values",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    }
+  }
+}

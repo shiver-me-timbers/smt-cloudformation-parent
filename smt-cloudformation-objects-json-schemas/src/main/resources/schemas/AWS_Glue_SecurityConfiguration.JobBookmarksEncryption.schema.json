@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Glue_SecurityConfiguration.JobBookmarksEncryption.schema.json",
+  "title" : "SecurityConfigurationJobBookmarksEncryption",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-securityconfiguration-jobbookmarksencryption.html",
+  "type" : "object",
+  "javaType" : "aws.glue.SecurityConfigurationJobBookmarksEncryption",
+  "javaInterfaces" : [ "aws.Property<SecurityConfigurationJobBookmarksEncryption>" ],
+  "properties" : {
+    "KmsKeyArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-securityconfiguration-jobbookmarksencryption.html#cfn-glue-securityconfiguration-jobbookmarksencryption-kmskeyarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "JobBookmarksEncryptionMode" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-securityconfiguration-jobbookmarksencryption.html#cfn-glue-securityconfiguration-jobbookmarksencryption-jobbookmarksencryptionmode",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

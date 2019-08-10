@@ -1,0 +1,23 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_PinpointEmail_DedicatedIpPool.schema.json",
+  "title" : "DedicatedIpPool",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpointemail-dedicatedippool.html",
+  "type" : "object",
+  "javaType" : "aws.pinpointemail.DedicatedIpPool",
+  "properties" : {
+    "PoolName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpointemail-dedicatedippool.html#cfn-pinpointemail-dedicatedippool-poolname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpointemail-dedicatedippool.html#cfn-pinpointemail-dedicatedippool-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_PinpointEmail_DedicatedIpPool.Tags.schema.json",
+        "javaType" : "aws.Property<aws.pinpointemail.DedicatedIpPoolTags>"
+      }
+    }
+  }
+}

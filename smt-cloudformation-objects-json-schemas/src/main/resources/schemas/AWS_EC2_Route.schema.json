@@ -46,6 +46,11 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "TransitGatewayId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-transitgatewayid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "VpcPeeringConnectionId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-vpcpeeringconnectionid",
       "type" : "string",

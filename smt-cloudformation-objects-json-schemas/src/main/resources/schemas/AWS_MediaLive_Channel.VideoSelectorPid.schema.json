@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MediaLive_Channel.VideoSelectorPid.schema.json",
+  "title" : "ChannelVideoSelectorPid",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-videoselectorpid.html",
+  "type" : "object",
+  "javaType" : "aws.medialive.ChannelVideoSelectorPid",
+  "javaInterfaces" : [ "aws.Property<ChannelVideoSelectorPid>" ],
+  "properties" : {
+    "Pid" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-videoselectorpid.html#cfn-medialive-channel-videoselectorpid-pid",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    }
+  }
+}

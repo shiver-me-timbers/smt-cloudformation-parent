@@ -16,6 +16,11 @@
       "$ref" : "AWS_AppSync_GraphQLApi.UserPoolConfig.schema.json",
       "javaType" : "aws.Property<aws.appsync.GraphQLApiUserPoolConfig>"
     },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html#cfn-appsync-graphqlapi-tags",
+      "$ref" : "AWS_AppSync_GraphQLApi.Tags.schema.json",
+      "javaType" : "aws.Property<aws.appsync.GraphQLApiTags>"
+    },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html#cfn-appsync-graphqlapi-name",
       "type" : "string",
@@ -30,6 +35,11 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html#cfn-appsync-graphqlapi-logconfig",
       "$ref" : "AWS_AppSync_GraphQLApi.LogConfig.schema.json",
       "javaType" : "aws.Property<aws.appsync.GraphQLApiLogConfig>"
+    },
+    "AdditionalAuthenticationProviders" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html#cfn-appsync-graphqlapi-additionalauthenticationproviders",
+      "$ref" : "AWS_AppSync_GraphQLApi.AdditionalAuthenticationProviders.schema.json",
+      "javaType" : "aws.Property<aws.appsync.GraphQLApiAdditionalAuthenticationProviders>"
     }
   }
 }

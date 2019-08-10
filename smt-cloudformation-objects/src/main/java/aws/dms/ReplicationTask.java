@@ -25,7 +25,9 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "ReplicationTaskSettings",
     "TableMappings",
+    "CdcStartPosition",
     "ReplicationTaskIdentifier",
+    "CdcStopPosition",
     "SourceEndpointArn",
     "MigrationType",
     "TargetEndpointArn",
@@ -50,12 +52,26 @@ public class ReplicationTask {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-tablemappings")
     private CharSequence tableMappings;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-cdcstartposition
+     * 
+     */
+    @JsonProperty("CdcStartPosition")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-cdcstartposition")
+    private CharSequence cdcStartPosition;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-replicationtaskidentifier
      * 
      */
     @JsonProperty("ReplicationTaskIdentifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-replicationtaskidentifier")
     private CharSequence replicationTaskIdentifier;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-cdcstopposition
+     * 
+     */
+    @JsonProperty("CdcStopPosition")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-cdcstopposition")
+    private CharSequence cdcStopPosition;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-sourceendpointarn
      * 
@@ -146,6 +162,29 @@ public class ReplicationTask {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-cdcstartposition
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getCdcStartPosition() {
+        return cdcStartPosition;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-cdcstartposition
+     * 
+     */
+    @JsonIgnore
+    public void setCdcStartPosition(CharSequence cdcStartPosition) {
+        this.cdcStartPosition = cdcStartPosition;
+    }
+
+    public ReplicationTask withCdcStartPosition(CharSequence cdcStartPosition) {
+        this.cdcStartPosition = cdcStartPosition;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-replicationtaskidentifier
      * 
      */
@@ -165,6 +204,29 @@ public class ReplicationTask {
 
     public ReplicationTask withReplicationTaskIdentifier(CharSequence replicationTaskIdentifier) {
         this.replicationTaskIdentifier = replicationTaskIdentifier;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-cdcstopposition
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getCdcStopPosition() {
+        return cdcStopPosition;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-cdcstopposition
+     * 
+     */
+    @JsonIgnore
+    public void setCdcStopPosition(CharSequence cdcStopPosition) {
+        this.cdcStopPosition = cdcStopPosition;
+    }
+
+    public ReplicationTask withCdcStopPosition(CharSequence cdcStopPosition) {
+        this.cdcStopPosition = cdcStopPosition;
         return this;
     }
 
@@ -308,12 +370,12 @@ public class ReplicationTask {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("replicationTaskSettings", replicationTaskSettings).append("tableMappings", tableMappings).append("replicationTaskIdentifier", replicationTaskIdentifier).append("sourceEndpointArn", sourceEndpointArn).append("migrationType", migrationType).append("targetEndpointArn", targetEndpointArn).append("replicationInstanceArn", replicationInstanceArn).append("tags", tags).append("cdcStartTime", cdcStartTime).toString();
+        return new ToStringBuilder(this).append("replicationTaskSettings", replicationTaskSettings).append("tableMappings", tableMappings).append("cdcStartPosition", cdcStartPosition).append("replicationTaskIdentifier", replicationTaskIdentifier).append("cdcStopPosition", cdcStopPosition).append("sourceEndpointArn", sourceEndpointArn).append("migrationType", migrationType).append("targetEndpointArn", targetEndpointArn).append("replicationInstanceArn", replicationInstanceArn).append("tags", tags).append("cdcStartTime", cdcStartTime).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(targetEndpointArn).append(tableMappings).append(replicationInstanceArn).append(cdcStartTime).append(migrationType).append(replicationTaskIdentifier).append(sourceEndpointArn).append(replicationTaskSettings).append(tags).toHashCode();
+        return new HashCodeBuilder().append(cdcStartPosition).append(targetEndpointArn).append(tableMappings).append(replicationInstanceArn).append(cdcStopPosition).append(cdcStartTime).append(migrationType).append(replicationTaskIdentifier).append(sourceEndpointArn).append(replicationTaskSettings).append(tags).toHashCode();
     }
 
     @Override
@@ -325,7 +387,7 @@ public class ReplicationTask {
             return false;
         }
         ReplicationTask rhs = ((ReplicationTask) other);
-        return new EqualsBuilder().append(targetEndpointArn, rhs.targetEndpointArn).append(tableMappings, rhs.tableMappings).append(replicationInstanceArn, rhs.replicationInstanceArn).append(cdcStartTime, rhs.cdcStartTime).append(migrationType, rhs.migrationType).append(replicationTaskIdentifier, rhs.replicationTaskIdentifier).append(sourceEndpointArn, rhs.sourceEndpointArn).append(replicationTaskSettings, rhs.replicationTaskSettings).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(cdcStartPosition, rhs.cdcStartPosition).append(targetEndpointArn, rhs.targetEndpointArn).append(tableMappings, rhs.tableMappings).append(replicationInstanceArn, rhs.replicationInstanceArn).append(cdcStopPosition, rhs.cdcStopPosition).append(cdcStartTime, rhs.cdcStartTime).append(migrationType, rhs.migrationType).append(replicationTaskIdentifier, rhs.replicationTaskIdentifier).append(sourceEndpointArn, rhs.sourceEndpointArn).append(replicationTaskSettings, rhs.replicationTaskSettings).append(tags, rhs.tags).isEquals();
     }
 
 }

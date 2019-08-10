@@ -26,6 +26,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Encrypted",
     "FileSystemTags",
     "KmsKeyId",
+    "LifecyclePolicies",
     "PerformanceMode",
     "ProvisionedThroughputInMibps",
     "ThroughputMode"
@@ -54,6 +55,14 @@ public class FileSystem {
     @JsonProperty("KmsKeyId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-kmskeyid")
     private CharSequence kmsKeyId;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-elasticfilesystem-filesystem-lifecyclepolicies
+     * 
+     */
+    @JsonProperty("LifecyclePolicies")
+    @JsonDeserialize(as = java.util.LinkedHashSet.class)
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-elasticfilesystem-filesystem-lifecyclepolicies")
+    private Set<Property<FileSystemLifecyclePolicy>> lifecyclePolicies = new LinkedHashSet<Property<FileSystemLifecyclePolicy>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-performancemode
      * 
@@ -146,6 +155,29 @@ public class FileSystem {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-elasticfilesystem-filesystem-lifecyclepolicies
+     * 
+     */
+    @JsonIgnore
+    public Set<Property<FileSystemLifecyclePolicy>> getLifecyclePolicies() {
+        return lifecyclePolicies;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-elasticfilesystem-filesystem-lifecyclepolicies
+     * 
+     */
+    @JsonIgnore
+    public void setLifecyclePolicies(Set<Property<FileSystemLifecyclePolicy>> lifecyclePolicies) {
+        this.lifecyclePolicies = lifecyclePolicies;
+    }
+
+    public FileSystem withLifecyclePolicies(Set<Property<FileSystemLifecyclePolicy>> lifecyclePolicies) {
+        this.lifecyclePolicies = lifecyclePolicies;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-performancemode
      * 
      */
@@ -216,12 +248,12 @@ public class FileSystem {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("encrypted", encrypted).append("fileSystemTags", fileSystemTags).append("kmsKeyId", kmsKeyId).append("performanceMode", performanceMode).append("provisionedThroughputInMibps", provisionedThroughputInMibps).append("throughputMode", throughputMode).toString();
+        return new ToStringBuilder(this).append("encrypted", encrypted).append("fileSystemTags", fileSystemTags).append("kmsKeyId", kmsKeyId).append("lifecyclePolicies", lifecyclePolicies).append("performanceMode", performanceMode).append("provisionedThroughputInMibps", provisionedThroughputInMibps).append("throughputMode", throughputMode).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(encrypted).append(performanceMode).append(throughputMode).append(provisionedThroughputInMibps).append(kmsKeyId).append(fileSystemTags).toHashCode();
+        return new HashCodeBuilder().append(encrypted).append(lifecyclePolicies).append(performanceMode).append(throughputMode).append(provisionedThroughputInMibps).append(kmsKeyId).append(fileSystemTags).toHashCode();
     }
 
     @Override
@@ -233,7 +265,7 @@ public class FileSystem {
             return false;
         }
         FileSystem rhs = ((FileSystem) other);
-        return new EqualsBuilder().append(encrypted, rhs.encrypted).append(performanceMode, rhs.performanceMode).append(throughputMode, rhs.throughputMode).append(provisionedThroughputInMibps, rhs.provisionedThroughputInMibps).append(kmsKeyId, rhs.kmsKeyId).append(fileSystemTags, rhs.fileSystemTags).isEquals();
+        return new EqualsBuilder().append(encrypted, rhs.encrypted).append(lifecyclePolicies, rhs.lifecyclePolicies).append(performanceMode, rhs.performanceMode).append(throughputMode, rhs.throughputMode).append(provisionedThroughputInMibps, rhs.provisionedThroughputInMibps).append(kmsKeyId, rhs.kmsKeyId).append(fileSystemTags, rhs.fileSystemTags).isEquals();
     }
 
 }

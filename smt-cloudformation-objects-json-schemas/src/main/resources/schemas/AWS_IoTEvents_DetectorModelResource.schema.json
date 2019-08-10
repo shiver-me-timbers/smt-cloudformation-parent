@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoTEvents_DetectorModelResource.schema.json",
+  "title" : "DetectorModelResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotevents-detectormodel.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.iotevents.DetectorModelResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<DetectorModelResource>", "aws.HasCondition<DetectorModelResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::IoTEvents::DetectorModel"
+    },
+    "Properties" : {
+      "$ref" : "AWS_IoTEvents_DetectorModel.schema.json"
+    }
+  }
+}

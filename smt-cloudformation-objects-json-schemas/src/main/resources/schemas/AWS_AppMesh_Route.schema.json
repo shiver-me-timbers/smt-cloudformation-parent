@@ -30,8 +30,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-route.html#cfn-appmesh-route-tags",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_AppMesh_Route.TagRef.schema.json",
-        "javaType" : "aws.Property<aws.appmesh.RouteTagRef>"
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
       }
     }
   }

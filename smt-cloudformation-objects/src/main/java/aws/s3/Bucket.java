@@ -37,6 +37,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "LoggingConfiguration",
     "MetricsConfigurations",
     "NotificationConfiguration",
+    "ObjectLockConfiguration",
+    "ObjectLockEnabled",
     "PublicAccessBlockConfiguration",
     "ReplicationConfiguration",
     "Tags",
@@ -137,6 +139,22 @@ public class Bucket {
     @JsonProperty("NotificationConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig.html")
     private Property<BucketNotificationConfiguration> notificationConfiguration;
+    /**
+     * BucketObjectLockConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-objectlockconfiguration.html
+     * 
+     */
+    @JsonProperty("ObjectLockConfiguration")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-objectlockconfiguration.html")
+    private Property<BucketObjectLockConfiguration> objectLockConfiguration;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-objectlockenabled
+     * 
+     */
+    @JsonProperty("ObjectLockEnabled")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-objectlockenabled")
+    private CharSequence objectLockEnabled;
     /**
      * BucketPublicAccessBlockConfiguration
      * <p>
@@ -459,6 +477,56 @@ public class Bucket {
     }
 
     /**
+     * BucketObjectLockConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-objectlockconfiguration.html
+     * 
+     */
+    @JsonIgnore
+    public Property<BucketObjectLockConfiguration> getObjectLockConfiguration() {
+        return objectLockConfiguration;
+    }
+
+    /**
+     * BucketObjectLockConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-objectlockconfiguration.html
+     * 
+     */
+    @JsonIgnore
+    public void setObjectLockConfiguration(Property<BucketObjectLockConfiguration> objectLockConfiguration) {
+        this.objectLockConfiguration = objectLockConfiguration;
+    }
+
+    public Bucket withObjectLockConfiguration(Property<BucketObjectLockConfiguration> objectLockConfiguration) {
+        this.objectLockConfiguration = objectLockConfiguration;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-objectlockenabled
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getObjectLockEnabled() {
+        return objectLockEnabled;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-objectlockenabled
+     * 
+     */
+    @JsonIgnore
+    public void setObjectLockEnabled(CharSequence objectLockEnabled) {
+        this.objectLockEnabled = objectLockEnabled;
+    }
+
+    public Bucket withObjectLockEnabled(CharSequence objectLockEnabled) {
+        this.objectLockEnabled = objectLockEnabled;
+        return this;
+    }
+
+    /**
      * BucketPublicAccessBlockConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-publicaccessblockconfiguration.html
@@ -591,12 +659,12 @@ public class Bucket {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("accelerateConfiguration", accelerateConfiguration).append("accessControl", accessControl).append("analyticsConfigurations", analyticsConfigurations).append("bucketEncryption", bucketEncryption).append("bucketName", bucketName).append("corsConfiguration", corsConfiguration).append("inventoryConfigurations", inventoryConfigurations).append("lifecycleConfiguration", lifecycleConfiguration).append("loggingConfiguration", loggingConfiguration).append("metricsConfigurations", metricsConfigurations).append("notificationConfiguration", notificationConfiguration).append("publicAccessBlockConfiguration", publicAccessBlockConfiguration).append("replicationConfiguration", replicationConfiguration).append("tags", tags).append("versioningConfiguration", versioningConfiguration).append("websiteConfiguration", websiteConfiguration).toString();
+        return new ToStringBuilder(this).append("accelerateConfiguration", accelerateConfiguration).append("accessControl", accessControl).append("analyticsConfigurations", analyticsConfigurations).append("bucketEncryption", bucketEncryption).append("bucketName", bucketName).append("corsConfiguration", corsConfiguration).append("inventoryConfigurations", inventoryConfigurations).append("lifecycleConfiguration", lifecycleConfiguration).append("loggingConfiguration", loggingConfiguration).append("metricsConfigurations", metricsConfigurations).append("notificationConfiguration", notificationConfiguration).append("objectLockConfiguration", objectLockConfiguration).append("objectLockEnabled", objectLockEnabled).append("publicAccessBlockConfiguration", publicAccessBlockConfiguration).append("replicationConfiguration", replicationConfiguration).append("tags", tags).append("versioningConfiguration", versioningConfiguration).append("websiteConfiguration", websiteConfiguration).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(accessControl).append(bucketName).append(accelerateConfiguration).append(analyticsConfigurations).append(notificationConfiguration).append(bucketEncryption).append(publicAccessBlockConfiguration).append(loggingConfiguration).append(metricsConfigurations).append(replicationConfiguration).append(tags).append(corsConfiguration).append(lifecycleConfiguration).append(inventoryConfigurations).append(versioningConfiguration).append(websiteConfiguration).toHashCode();
+        return new HashCodeBuilder().append(accessControl).append(bucketName).append(objectLockConfiguration).append(accelerateConfiguration).append(analyticsConfigurations).append(notificationConfiguration).append(bucketEncryption).append(objectLockEnabled).append(publicAccessBlockConfiguration).append(loggingConfiguration).append(metricsConfigurations).append(replicationConfiguration).append(tags).append(corsConfiguration).append(lifecycleConfiguration).append(inventoryConfigurations).append(versioningConfiguration).append(websiteConfiguration).toHashCode();
     }
 
     @Override
@@ -608,7 +676,7 @@ public class Bucket {
             return false;
         }
         Bucket rhs = ((Bucket) other);
-        return new EqualsBuilder().append(accessControl, rhs.accessControl).append(bucketName, rhs.bucketName).append(accelerateConfiguration, rhs.accelerateConfiguration).append(analyticsConfigurations, rhs.analyticsConfigurations).append(notificationConfiguration, rhs.notificationConfiguration).append(bucketEncryption, rhs.bucketEncryption).append(publicAccessBlockConfiguration, rhs.publicAccessBlockConfiguration).append(loggingConfiguration, rhs.loggingConfiguration).append(metricsConfigurations, rhs.metricsConfigurations).append(replicationConfiguration, rhs.replicationConfiguration).append(tags, rhs.tags).append(corsConfiguration, rhs.corsConfiguration).append(lifecycleConfiguration, rhs.lifecycleConfiguration).append(inventoryConfigurations, rhs.inventoryConfigurations).append(versioningConfiguration, rhs.versioningConfiguration).append(websiteConfiguration, rhs.websiteConfiguration).isEquals();
+        return new EqualsBuilder().append(accessControl, rhs.accessControl).append(bucketName, rhs.bucketName).append(objectLockConfiguration, rhs.objectLockConfiguration).append(accelerateConfiguration, rhs.accelerateConfiguration).append(analyticsConfigurations, rhs.analyticsConfigurations).append(notificationConfiguration, rhs.notificationConfiguration).append(bucketEncryption, rhs.bucketEncryption).append(objectLockEnabled, rhs.objectLockEnabled).append(publicAccessBlockConfiguration, rhs.publicAccessBlockConfiguration).append(loggingConfiguration, rhs.loggingConfiguration).append(metricsConfigurations, rhs.metricsConfigurations).append(replicationConfiguration, rhs.replicationConfiguration).append(tags, rhs.tags).append(corsConfiguration, rhs.corsConfiguration).append(lifecycleConfiguration, rhs.lifecycleConfiguration).append(inventoryConfigurations, rhs.inventoryConfigurations).append(versioningConfiguration, rhs.versioningConfiguration).append(websiteConfiguration, rhs.websiteConfiguration).isEquals();
     }
 
 }

@@ -1,0 +1,29 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoTEvents_DetectorModel.Event.schema.json",
+  "title" : "DetectorModelEvent",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-event.html",
+  "type" : "object",
+  "javaType" : "aws.iotevents.DetectorModelEvent",
+  "javaInterfaces" : [ "aws.Property<DetectorModelEvent>" ],
+  "properties" : {
+    "Condition" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-event.html#cfn-iotevents-detectormodel-event-condition",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Actions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-event.html#cfn-iotevents-detectormodel-event-actions",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_IoTEvents_DetectorModel.Action.schema.json",
+        "javaType" : "aws.Property<aws.iotevents.DetectorModelAction>"
+      }
+    },
+    "EventName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-event.html#cfn-iotevents-detectormodel-event-eventname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

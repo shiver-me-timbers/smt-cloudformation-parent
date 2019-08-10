@@ -11,6 +11,11 @@
       "$ref" : "AWS_Greengrass_SubscriptionDefinition.SubscriptionDefinitionVersion.schema.json",
       "javaType" : "aws.Property<aws.greengrass.SubscriptionDefinitionSubscriptionDefinitionVersion>"
     },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-subscriptiondefinition.html#cfn-greengrass-subscriptiondefinition-tags",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
+    },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-subscriptiondefinition.html#cfn-greengrass-subscriptiondefinition-name",
       "type" : "string",

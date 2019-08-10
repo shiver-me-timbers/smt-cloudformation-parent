@@ -24,12 +24,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "UserPoolTags",
     "Policies",
+    "VerificationMessageTemplate",
     "MfaConfiguration",
     "Schema",
     "AdminCreateUserConfig",
     "SmsAuthenticationMessage",
     "UserPoolName",
     "SmsVerificationMessage",
+    "UserPoolAddOns",
     "EmailConfiguration",
     "SmsConfiguration",
     "AliasAttributes",
@@ -58,6 +60,15 @@ public class UserPool {
     @JsonProperty("Policies")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-policies.html")
     private Property<UserPoolPolicies> policies;
+    /**
+     * UserPoolVerificationMessageTemplate
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-verificationmessagetemplate.html
+     * 
+     */
+    @JsonProperty("VerificationMessageTemplate")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-verificationmessagetemplate.html")
+    private Property<UserPoolVerificationMessageTemplate> verificationMessageTemplate;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-mfaconfiguration
      * 
@@ -102,6 +113,15 @@ public class UserPool {
     @JsonProperty("SmsVerificationMessage")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-smsverificationmessage")
     private CharSequence smsVerificationMessage;
+    /**
+     * UserPoolUserPoolAddOns
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-userpooladdons.html
+     * 
+     */
+    @JsonProperty("UserPoolAddOns")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-userpooladdons.html")
+    private Property<UserPoolUserPoolAddOns> userPoolAddOns;
     /**
      * UserPoolEmailConfiguration
      * <p>
@@ -221,6 +241,33 @@ public class UserPool {
 
     public UserPool withPolicies(Property<UserPoolPolicies> policies) {
         this.policies = policies;
+        return this;
+    }
+
+    /**
+     * UserPoolVerificationMessageTemplate
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-verificationmessagetemplate.html
+     * 
+     */
+    @JsonIgnore
+    public Property<UserPoolVerificationMessageTemplate> getVerificationMessageTemplate() {
+        return verificationMessageTemplate;
+    }
+
+    /**
+     * UserPoolVerificationMessageTemplate
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-verificationmessagetemplate.html
+     * 
+     */
+    @JsonIgnore
+    public void setVerificationMessageTemplate(Property<UserPoolVerificationMessageTemplate> verificationMessageTemplate) {
+        this.verificationMessageTemplate = verificationMessageTemplate;
+    }
+
+    public UserPool withVerificationMessageTemplate(Property<UserPoolVerificationMessageTemplate> verificationMessageTemplate) {
+        this.verificationMessageTemplate = verificationMessageTemplate;
         return this;
     }
 
@@ -363,6 +410,33 @@ public class UserPool {
 
     public UserPool withSmsVerificationMessage(CharSequence smsVerificationMessage) {
         this.smsVerificationMessage = smsVerificationMessage;
+        return this;
+    }
+
+    /**
+     * UserPoolUserPoolAddOns
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-userpooladdons.html
+     * 
+     */
+    @JsonIgnore
+    public Property<UserPoolUserPoolAddOns> getUserPoolAddOns() {
+        return userPoolAddOns;
+    }
+
+    /**
+     * UserPoolUserPoolAddOns
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-userpooladdons.html
+     * 
+     */
+    @JsonIgnore
+    public void setUserPoolAddOns(Property<UserPoolUserPoolAddOns> userPoolAddOns) {
+        this.userPoolAddOns = userPoolAddOns;
+    }
+
+    public UserPool withUserPoolAddOns(Property<UserPoolUserPoolAddOns> userPoolAddOns) {
+        this.userPoolAddOns = userPoolAddOns;
         return this;
     }
 
@@ -591,12 +665,12 @@ public class UserPool {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("userPoolTags", userPoolTags).append("policies", policies).append("mfaConfiguration", mfaConfiguration).append("schema", schema).append("adminCreateUserConfig", adminCreateUserConfig).append("smsAuthenticationMessage", smsAuthenticationMessage).append("userPoolName", userPoolName).append("smsVerificationMessage", smsVerificationMessage).append("emailConfiguration", emailConfiguration).append("smsConfiguration", smsConfiguration).append("aliasAttributes", aliasAttributes).append("emailVerificationSubject", emailVerificationSubject).append("lambdaConfig", lambdaConfig).append("usernameAttributes", usernameAttributes).append("autoVerifiedAttributes", autoVerifiedAttributes).append("deviceConfiguration", deviceConfiguration).append("emailVerificationMessage", emailVerificationMessage).toString();
+        return new ToStringBuilder(this).append("userPoolTags", userPoolTags).append("policies", policies).append("verificationMessageTemplate", verificationMessageTemplate).append("mfaConfiguration", mfaConfiguration).append("schema", schema).append("adminCreateUserConfig", adminCreateUserConfig).append("smsAuthenticationMessage", smsAuthenticationMessage).append("userPoolName", userPoolName).append("smsVerificationMessage", smsVerificationMessage).append("userPoolAddOns", userPoolAddOns).append("emailConfiguration", emailConfiguration).append("smsConfiguration", smsConfiguration).append("aliasAttributes", aliasAttributes).append("emailVerificationSubject", emailVerificationSubject).append("lambdaConfig", lambdaConfig).append("usernameAttributes", usernameAttributes).append("autoVerifiedAttributes", autoVerifiedAttributes).append("deviceConfiguration", deviceConfiguration).append("emailVerificationMessage", emailVerificationMessage).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(schema).append(userPoolName).append(usernameAttributes).append(autoVerifiedAttributes).append(policies).append(smsVerificationMessage).append(deviceConfiguration).append(emailVerificationSubject).append(mfaConfiguration).append(lambdaConfig).append(emailVerificationMessage).append(emailConfiguration).append(userPoolTags).append(adminCreateUserConfig).append(smsAuthenticationMessage).append(smsConfiguration).append(aliasAttributes).toHashCode();
+        return new HashCodeBuilder().append(schema).append(userPoolName).append(verificationMessageTemplate).append(usernameAttributes).append(autoVerifiedAttributes).append(policies).append(smsVerificationMessage).append(deviceConfiguration).append(emailVerificationSubject).append(mfaConfiguration).append(lambdaConfig).append(emailVerificationMessage).append(emailConfiguration).append(userPoolTags).append(adminCreateUserConfig).append(smsAuthenticationMessage).append(smsConfiguration).append(aliasAttributes).append(userPoolAddOns).toHashCode();
     }
 
     @Override
@@ -608,7 +682,7 @@ public class UserPool {
             return false;
         }
         UserPool rhs = ((UserPool) other);
-        return new EqualsBuilder().append(schema, rhs.schema).append(userPoolName, rhs.userPoolName).append(usernameAttributes, rhs.usernameAttributes).append(autoVerifiedAttributes, rhs.autoVerifiedAttributes).append(policies, rhs.policies).append(smsVerificationMessage, rhs.smsVerificationMessage).append(deviceConfiguration, rhs.deviceConfiguration).append(emailVerificationSubject, rhs.emailVerificationSubject).append(mfaConfiguration, rhs.mfaConfiguration).append(lambdaConfig, rhs.lambdaConfig).append(emailVerificationMessage, rhs.emailVerificationMessage).append(emailConfiguration, rhs.emailConfiguration).append(userPoolTags, rhs.userPoolTags).append(adminCreateUserConfig, rhs.adminCreateUserConfig).append(smsAuthenticationMessage, rhs.smsAuthenticationMessage).append(smsConfiguration, rhs.smsConfiguration).append(aliasAttributes, rhs.aliasAttributes).isEquals();
+        return new EqualsBuilder().append(schema, rhs.schema).append(userPoolName, rhs.userPoolName).append(verificationMessageTemplate, rhs.verificationMessageTemplate).append(usernameAttributes, rhs.usernameAttributes).append(autoVerifiedAttributes, rhs.autoVerifiedAttributes).append(policies, rhs.policies).append(smsVerificationMessage, rhs.smsVerificationMessage).append(deviceConfiguration, rhs.deviceConfiguration).append(emailVerificationSubject, rhs.emailVerificationSubject).append(mfaConfiguration, rhs.mfaConfiguration).append(lambdaConfig, rhs.lambdaConfig).append(emailVerificationMessage, rhs.emailVerificationMessage).append(emailConfiguration, rhs.emailConfiguration).append(userPoolTags, rhs.userPoolTags).append(adminCreateUserConfig, rhs.adminCreateUserConfig).append(smsAuthenticationMessage, rhs.smsAuthenticationMessage).append(smsConfiguration, rhs.smsConfiguration).append(aliasAttributes, rhs.aliasAttributes).append(userPoolAddOns, rhs.userPoolAddOns).isEquals();
     }
 
 }

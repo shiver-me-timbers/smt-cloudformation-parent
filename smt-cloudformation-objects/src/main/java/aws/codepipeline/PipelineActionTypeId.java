@@ -15,73 +15,50 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 /**
  * PipelineActionTypeId
  * <p>
- * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html
+ * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiontypeid.html
  * 
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
-    "Category",
     "Owner",
-    "Provider",
-    "Version"
+    "Category",
+    "Version",
+    "Provider"
 })
 public class PipelineActionTypeId implements Property<PipelineActionTypeId>
 {
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-category
-     * 
-     */
-    @JsonProperty("Category")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-category")
-    private CharSequence category;
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-owner
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiontypeid.html#cfn-codepipeline-pipeline-actiontypeid-owner
      * 
      */
     @JsonProperty("Owner")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-owner")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiontypeid.html#cfn-codepipeline-pipeline-actiontypeid-owner")
     private CharSequence owner;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-provider
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiontypeid.html#cfn-codepipeline-pipeline-actiontypeid-category
      * 
      */
-    @JsonProperty("Provider")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-provider")
-    private CharSequence provider;
+    @JsonProperty("Category")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiontypeid.html#cfn-codepipeline-pipeline-actiontypeid-category")
+    private CharSequence category;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-version
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiontypeid.html#cfn-codepipeline-pipeline-actiontypeid-version
      * 
      */
     @JsonProperty("Version")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-version")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiontypeid.html#cfn-codepipeline-pipeline-actiontypeid-version")
     private CharSequence version;
-
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-category
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiontypeid.html#cfn-codepipeline-pipeline-actiontypeid-provider
      * 
      */
-    @JsonIgnore
-    public CharSequence getCategory() {
-        return category;
-    }
+    @JsonProperty("Provider")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiontypeid.html#cfn-codepipeline-pipeline-actiontypeid-provider")
+    private CharSequence provider;
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-category
-     * 
-     */
-    @JsonIgnore
-    public void setCategory(CharSequence category) {
-        this.category = category;
-    }
-
-    public PipelineActionTypeId withCategory(CharSequence category) {
-        this.category = category;
-        return this;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-owner
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiontypeid.html#cfn-codepipeline-pipeline-actiontypeid-owner
      * 
      */
     @JsonIgnore
@@ -90,7 +67,7 @@ public class PipelineActionTypeId implements Property<PipelineActionTypeId>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-owner
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiontypeid.html#cfn-codepipeline-pipeline-actiontypeid-owner
      * 
      */
     @JsonIgnore
@@ -104,30 +81,30 @@ public class PipelineActionTypeId implements Property<PipelineActionTypeId>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-provider
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiontypeid.html#cfn-codepipeline-pipeline-actiontypeid-category
      * 
      */
     @JsonIgnore
-    public CharSequence getProvider() {
-        return provider;
+    public CharSequence getCategory() {
+        return category;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-provider
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiontypeid.html#cfn-codepipeline-pipeline-actiontypeid-category
      * 
      */
     @JsonIgnore
-    public void setProvider(CharSequence provider) {
-        this.provider = provider;
+    public void setCategory(CharSequence category) {
+        this.category = category;
     }
 
-    public PipelineActionTypeId withProvider(CharSequence provider) {
-        this.provider = provider;
+    public PipelineActionTypeId withCategory(CharSequence category) {
+        this.category = category;
         return this;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-version
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiontypeid.html#cfn-codepipeline-pipeline-actiontypeid-version
      * 
      */
     @JsonIgnore
@@ -136,7 +113,7 @@ public class PipelineActionTypeId implements Property<PipelineActionTypeId>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-version
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiontypeid.html#cfn-codepipeline-pipeline-actiontypeid-version
      * 
      */
     @JsonIgnore
@@ -149,14 +126,37 @@ public class PipelineActionTypeId implements Property<PipelineActionTypeId>
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiontypeid.html#cfn-codepipeline-pipeline-actiontypeid-provider
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getProvider() {
+        return provider;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-actiontypeid.html#cfn-codepipeline-pipeline-actiontypeid-provider
+     * 
+     */
+    @JsonIgnore
+    public void setProvider(CharSequence provider) {
+        this.provider = provider;
+    }
+
+    public PipelineActionTypeId withProvider(CharSequence provider) {
+        this.provider = provider;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("category", category).append("owner", owner).append("provider", provider).append("version", version).toString();
+        return new ToStringBuilder(this).append("owner", owner).append("category", category).append("version", version).append("provider", provider).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(owner).append(category).append(provider).append(version).toHashCode();
+        return new HashCodeBuilder().append(owner).append(category).append(version).append(provider).toHashCode();
     }
 
     @Override
@@ -168,7 +168,7 @@ public class PipelineActionTypeId implements Property<PipelineActionTypeId>
             return false;
         }
         PipelineActionTypeId rhs = ((PipelineActionTypeId) other);
-        return new EqualsBuilder().append(owner, rhs.owner).append(category, rhs.category).append(provider, rhs.provider).append(version, rhs.version).isEquals();
+        return new EqualsBuilder().append(owner, rhs.owner).append(category, rhs.category).append(version, rhs.version).append(provider, rhs.provider).isEquals();
     }
 
 }

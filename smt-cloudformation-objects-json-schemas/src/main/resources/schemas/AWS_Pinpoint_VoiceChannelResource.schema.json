@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_VoiceChannelResource.schema.json",
+  "title" : "VoiceChannelResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-voicechannel.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.pinpoint.VoiceChannelResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<VoiceChannelResource>", "aws.HasCondition<VoiceChannelResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Pinpoint::VoiceChannel"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Pinpoint_VoiceChannel.schema.json"
+    }
+  }
+}

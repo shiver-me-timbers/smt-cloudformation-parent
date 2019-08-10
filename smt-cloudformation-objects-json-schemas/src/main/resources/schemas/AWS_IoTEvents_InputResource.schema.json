@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoTEvents_InputResource.schema.json",
+  "title" : "InputResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotevents-input.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.iotevents.InputResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<InputResource>", "aws.HasCondition<InputResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::IoTEvents::Input"
+    },
+    "Properties" : {
+      "$ref" : "AWS_IoTEvents_Input.schema.json"
+    }
+  }
+}

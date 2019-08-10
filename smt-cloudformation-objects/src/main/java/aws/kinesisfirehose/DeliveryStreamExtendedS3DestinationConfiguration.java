@@ -24,7 +24,9 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "BufferingHints",
     "CloudWatchLoggingOptions",
     "CompressionFormat",
+    "DataFormatConversionConfiguration",
     "EncryptionConfiguration",
+    "ErrorOutputPrefix",
     "Prefix",
     "ProcessingConfiguration",
     "RoleARN",
@@ -67,6 +69,15 @@ public class DeliveryStreamExtendedS3DestinationConfiguration implements Propert
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-compressionformat")
     private CharSequence compressionFormat;
     /**
+     * DeliveryStreamDataFormatConversionConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-dataformatconversionconfiguration.html
+     * 
+     */
+    @JsonProperty("DataFormatConversionConfiguration")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-dataformatconversionconfiguration.html")
+    private Property<DeliveryStreamDataFormatConversionConfiguration> dataFormatConversionConfiguration;
+    /**
      * DeliveryStreamEncryptionConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-encryptionconfiguration.html
@@ -75,6 +86,13 @@ public class DeliveryStreamExtendedS3DestinationConfiguration implements Propert
     @JsonProperty("EncryptionConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-encryptionconfiguration.html")
     private Property<DeliveryStreamEncryptionConfiguration> encryptionConfiguration;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-erroroutputprefix
+     * 
+     */
+    @JsonProperty("ErrorOutputPrefix")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-erroroutputprefix")
+    private CharSequence errorOutputPrefix;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-prefix
      * 
@@ -216,6 +234,33 @@ public class DeliveryStreamExtendedS3DestinationConfiguration implements Propert
     }
 
     /**
+     * DeliveryStreamDataFormatConversionConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-dataformatconversionconfiguration.html
+     * 
+     */
+    @JsonIgnore
+    public Property<DeliveryStreamDataFormatConversionConfiguration> getDataFormatConversionConfiguration() {
+        return dataFormatConversionConfiguration;
+    }
+
+    /**
+     * DeliveryStreamDataFormatConversionConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-dataformatconversionconfiguration.html
+     * 
+     */
+    @JsonIgnore
+    public void setDataFormatConversionConfiguration(Property<DeliveryStreamDataFormatConversionConfiguration> dataFormatConversionConfiguration) {
+        this.dataFormatConversionConfiguration = dataFormatConversionConfiguration;
+    }
+
+    public DeliveryStreamExtendedS3DestinationConfiguration withDataFormatConversionConfiguration(Property<DeliveryStreamDataFormatConversionConfiguration> dataFormatConversionConfiguration) {
+        this.dataFormatConversionConfiguration = dataFormatConversionConfiguration;
+        return this;
+    }
+
+    /**
      * DeliveryStreamEncryptionConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-encryptionconfiguration.html
@@ -239,6 +284,29 @@ public class DeliveryStreamExtendedS3DestinationConfiguration implements Propert
 
     public DeliveryStreamExtendedS3DestinationConfiguration withEncryptionConfiguration(Property<DeliveryStreamEncryptionConfiguration> encryptionConfiguration) {
         this.encryptionConfiguration = encryptionConfiguration;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-erroroutputprefix
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getErrorOutputPrefix() {
+        return errorOutputPrefix;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-erroroutputprefix
+     * 
+     */
+    @JsonIgnore
+    public void setErrorOutputPrefix(CharSequence errorOutputPrefix) {
+        this.errorOutputPrefix = errorOutputPrefix;
+    }
+
+    public DeliveryStreamExtendedS3DestinationConfiguration withErrorOutputPrefix(CharSequence errorOutputPrefix) {
+        this.errorOutputPrefix = errorOutputPrefix;
         return this;
     }
 
@@ -367,12 +435,12 @@ public class DeliveryStreamExtendedS3DestinationConfiguration implements Propert
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("bucketARN", bucketARN).append("bufferingHints", bufferingHints).append("cloudWatchLoggingOptions", cloudWatchLoggingOptions).append("compressionFormat", compressionFormat).append("encryptionConfiguration", encryptionConfiguration).append("prefix", prefix).append("processingConfiguration", processingConfiguration).append("roleARN", roleARN).append("s3BackupConfiguration", s3BackupConfiguration).append("s3BackupMode", s3BackupMode).toString();
+        return new ToStringBuilder(this).append("bucketARN", bucketARN).append("bufferingHints", bufferingHints).append("cloudWatchLoggingOptions", cloudWatchLoggingOptions).append("compressionFormat", compressionFormat).append("dataFormatConversionConfiguration", dataFormatConversionConfiguration).append("encryptionConfiguration", encryptionConfiguration).append("errorOutputPrefix", errorOutputPrefix).append("prefix", prefix).append("processingConfiguration", processingConfiguration).append("roleARN", roleARN).append("s3BackupConfiguration", s3BackupConfiguration).append("s3BackupMode", s3BackupMode).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(cloudWatchLoggingOptions).append(processingConfiguration).append(bucketARN).append(prefix).append(roleARN).append(s3BackupConfiguration).append(compressionFormat).append(encryptionConfiguration).append(s3BackupMode).append(bufferingHints).toHashCode();
+        return new HashCodeBuilder().append(cloudWatchLoggingOptions).append(processingConfiguration).append(prefix).append(s3BackupConfiguration).append(compressionFormat).append(errorOutputPrefix).append(dataFormatConversionConfiguration).append(bucketARN).append(roleARN).append(encryptionConfiguration).append(s3BackupMode).append(bufferingHints).toHashCode();
     }
 
     @Override
@@ -384,7 +452,7 @@ public class DeliveryStreamExtendedS3DestinationConfiguration implements Propert
             return false;
         }
         DeliveryStreamExtendedS3DestinationConfiguration rhs = ((DeliveryStreamExtendedS3DestinationConfiguration) other);
-        return new EqualsBuilder().append(cloudWatchLoggingOptions, rhs.cloudWatchLoggingOptions).append(processingConfiguration, rhs.processingConfiguration).append(bucketARN, rhs.bucketARN).append(prefix, rhs.prefix).append(roleARN, rhs.roleARN).append(s3BackupConfiguration, rhs.s3BackupConfiguration).append(compressionFormat, rhs.compressionFormat).append(encryptionConfiguration, rhs.encryptionConfiguration).append(s3BackupMode, rhs.s3BackupMode).append(bufferingHints, rhs.bufferingHints).isEquals();
+        return new EqualsBuilder().append(cloudWatchLoggingOptions, rhs.cloudWatchLoggingOptions).append(processingConfiguration, rhs.processingConfiguration).append(prefix, rhs.prefix).append(s3BackupConfiguration, rhs.s3BackupConfiguration).append(compressionFormat, rhs.compressionFormat).append(errorOutputPrefix, rhs.errorOutputPrefix).append(dataFormatConversionConfiguration, rhs.dataFormatConversionConfiguration).append(bucketARN, rhs.bucketARN).append(roleARN, rhs.roleARN).append(encryptionConfiguration, rhs.encryptionConfiguration).append(s3BackupMode, rhs.s3BackupMode).append(bufferingHints, rhs.bufferingHints).isEquals();
     }
 
 }

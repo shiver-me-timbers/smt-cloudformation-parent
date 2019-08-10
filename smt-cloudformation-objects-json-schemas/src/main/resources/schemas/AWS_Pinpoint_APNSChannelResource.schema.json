@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_APNSChannelResource.schema.json",
+  "title" : "APNSChannelResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-apnschannel.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.pinpoint.APNSChannelResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<APNSChannelResource>", "aws.HasCondition<APNSChannelResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Pinpoint::APNSChannel"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Pinpoint_APNSChannel.schema.json"
+    }
+  }
+}

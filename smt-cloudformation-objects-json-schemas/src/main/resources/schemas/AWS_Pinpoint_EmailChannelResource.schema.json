@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_EmailChannelResource.schema.json",
+  "title" : "EmailChannelResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-emailchannel.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.pinpoint.EmailChannelResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<EmailChannelResource>", "aws.HasCondition<EmailChannelResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Pinpoint::EmailChannel"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Pinpoint_EmailChannel.schema.json"
+    }
+  }
+}

@@ -2,18 +2,18 @@
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_CodePipeline_Pipeline.BlockerDeclaration.schema.json",
   "title" : "PipelineBlockerDeclaration",
-  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-blockers.html",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-blockerdeclaration.html",
   "type" : "object",
   "javaType" : "aws.codepipeline.PipelineBlockerDeclaration",
   "javaInterfaces" : [ "aws.Property<PipelineBlockerDeclaration>" ],
   "properties" : {
-    "Name" : {
-      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-blockers.html#cfn-codepipeline-pipeline-stages-blockers-name",
+    "Type" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-blockerdeclaration.html#cfn-codepipeline-pipeline-blockerdeclaration-type",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
-    "Type" : {
-      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-blockers.html#cfn-codepipeline-pipeline-stages-blockers-type",
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-blockerdeclaration.html#cfn-codepipeline-pipeline-blockerdeclaration-name",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     }

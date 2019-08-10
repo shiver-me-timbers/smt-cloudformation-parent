@@ -35,6 +35,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "DeploymentMode",
     "EngineType",
     "PubliclyAccessible",
+    "EncryptionOptions",
     "Tags"
 })
 public class Broker {
@@ -136,6 +137,15 @@ public class Broker {
     @JsonProperty("PubliclyAccessible")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-publiclyaccessible")
     private CharSequence publiclyAccessible;
+    /**
+     * BrokerEncryptionOptions
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-encryptionoptions.html
+     * 
+     */
+    @JsonProperty("EncryptionOptions")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-encryptionoptions.html")
+    private Property<BrokerEncryptionOptions> encryptionOptions;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-tags
      * 
@@ -456,6 +466,33 @@ public class Broker {
     }
 
     /**
+     * BrokerEncryptionOptions
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-encryptionoptions.html
+     * 
+     */
+    @JsonIgnore
+    public Property<BrokerEncryptionOptions> getEncryptionOptions() {
+        return encryptionOptions;
+    }
+
+    /**
+     * BrokerEncryptionOptions
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-encryptionoptions.html
+     * 
+     */
+    @JsonIgnore
+    public void setEncryptionOptions(Property<BrokerEncryptionOptions> encryptionOptions) {
+        this.encryptionOptions = encryptionOptions;
+    }
+
+    public Broker withEncryptionOptions(Property<BrokerEncryptionOptions> encryptionOptions) {
+        this.encryptionOptions = encryptionOptions;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-tags
      * 
      */
@@ -480,12 +517,12 @@ public class Broker {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("securityGroups", securityGroups).append("engineVersion", engineVersion).append("configuration", configuration).append("maintenanceWindowStartTime", maintenanceWindowStartTime).append("hostInstanceType", hostInstanceType).append("autoMinorVersionUpgrade", autoMinorVersionUpgrade).append("users", users).append("logs", logs).append("subnetIds", subnetIds).append("brokerName", brokerName).append("deploymentMode", deploymentMode).append("engineType", engineType).append("publiclyAccessible", publiclyAccessible).append("tags", tags).toString();
+        return new ToStringBuilder(this).append("securityGroups", securityGroups).append("engineVersion", engineVersion).append("configuration", configuration).append("maintenanceWindowStartTime", maintenanceWindowStartTime).append("hostInstanceType", hostInstanceType).append("autoMinorVersionUpgrade", autoMinorVersionUpgrade).append("users", users).append("logs", logs).append("subnetIds", subnetIds).append("brokerName", brokerName).append("deploymentMode", deploymentMode).append("engineType", engineType).append("publiclyAccessible", publiclyAccessible).append("encryptionOptions", encryptionOptions).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(engineVersion).append(deploymentMode).append(maintenanceWindowStartTime).append(configuration).append(engineType).append(hostInstanceType).append(users).append(tags).append(publiclyAccessible).append(securityGroups).append(brokerName).append(logs).append(autoMinorVersionUpgrade).append(subnetIds).toHashCode();
+        return new HashCodeBuilder().append(engineVersion).append(deploymentMode).append(maintenanceWindowStartTime).append(configuration).append(engineType).append(hostInstanceType).append(users).append(tags).append(publiclyAccessible).append(encryptionOptions).append(securityGroups).append(brokerName).append(logs).append(autoMinorVersionUpgrade).append(subnetIds).toHashCode();
     }
 
     @Override
@@ -497,7 +534,7 @@ public class Broker {
             return false;
         }
         Broker rhs = ((Broker) other);
-        return new EqualsBuilder().append(engineVersion, rhs.engineVersion).append(deploymentMode, rhs.deploymentMode).append(maintenanceWindowStartTime, rhs.maintenanceWindowStartTime).append(configuration, rhs.configuration).append(engineType, rhs.engineType).append(hostInstanceType, rhs.hostInstanceType).append(users, rhs.users).append(tags, rhs.tags).append(publiclyAccessible, rhs.publiclyAccessible).append(securityGroups, rhs.securityGroups).append(brokerName, rhs.brokerName).append(logs, rhs.logs).append(autoMinorVersionUpgrade, rhs.autoMinorVersionUpgrade).append(subnetIds, rhs.subnetIds).isEquals();
+        return new EqualsBuilder().append(engineVersion, rhs.engineVersion).append(deploymentMode, rhs.deploymentMode).append(maintenanceWindowStartTime, rhs.maintenanceWindowStartTime).append(configuration, rhs.configuration).append(engineType, rhs.engineType).append(hostInstanceType, rhs.hostInstanceType).append(users, rhs.users).append(tags, rhs.tags).append(publiclyAccessible, rhs.publiclyAccessible).append(encryptionOptions, rhs.encryptionOptions).append(securityGroups, rhs.securityGroups).append(brokerName, rhs.brokerName).append(logs, rhs.logs).append(autoMinorVersionUpgrade, rhs.autoMinorVersionUpgrade).append(subnetIds, rhs.subnetIds).isEquals();
     }
 
 }

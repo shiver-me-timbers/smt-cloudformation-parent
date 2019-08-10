@@ -21,6 +21,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "AutoPlacement",
     "AvailabilityZone",
+    "HostRecovery",
     "InstanceType"
 })
 public class Host {
@@ -39,6 +40,13 @@ public class Host {
     @JsonProperty("AvailabilityZone")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-host.html#cfn-ec2-host-availabilityzone")
     private CharSequence availabilityZone;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-host.html#cfn-ec2-host-hostrecovery
+     * 
+     */
+    @JsonProperty("HostRecovery")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-host.html#cfn-ec2-host-hostrecovery")
+    private CharSequence hostRecovery;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-host.html#cfn-ec2-host-instancetype
      * 
@@ -94,6 +102,29 @@ public class Host {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-host.html#cfn-ec2-host-hostrecovery
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getHostRecovery() {
+        return hostRecovery;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-host.html#cfn-ec2-host-hostrecovery
+     * 
+     */
+    @JsonIgnore
+    public void setHostRecovery(CharSequence hostRecovery) {
+        this.hostRecovery = hostRecovery;
+    }
+
+    public Host withHostRecovery(CharSequence hostRecovery) {
+        this.hostRecovery = hostRecovery;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-host.html#cfn-ec2-host-instancetype
      * 
      */
@@ -118,12 +149,12 @@ public class Host {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("autoPlacement", autoPlacement).append("availabilityZone", availabilityZone).append("instanceType", instanceType).toString();
+        return new ToStringBuilder(this).append("autoPlacement", autoPlacement).append("availabilityZone", availabilityZone).append("hostRecovery", hostRecovery).append("instanceType", instanceType).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(autoPlacement).append(availabilityZone).append(instanceType).toHashCode();
+        return new HashCodeBuilder().append(hostRecovery).append(autoPlacement).append(availabilityZone).append(instanceType).toHashCode();
     }
 
     @Override
@@ -135,7 +166,7 @@ public class Host {
             return false;
         }
         Host rhs = ((Host) other);
-        return new EqualsBuilder().append(autoPlacement, rhs.autoPlacement).append(availabilityZone, rhs.availabilityZone).append(instanceType, rhs.instanceType).isEquals();
+        return new EqualsBuilder().append(hostRecovery, rhs.hostRecovery).append(autoPlacement, rhs.autoPlacement).append(availabilityZone, rhs.availabilityZone).append(instanceType, rhs.instanceType).isEquals();
     }
 
 }

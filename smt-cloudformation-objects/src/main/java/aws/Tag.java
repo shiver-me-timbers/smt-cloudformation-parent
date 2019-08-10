@@ -14,57 +14,34 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 /**
  * Tag
  * <p>
- * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-tag.html
+ * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html
  * 
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
-    "Value",
-    "Key"
+    "Key",
+    "Value"
 })
 public class Tag implements Property<Tag>
 {
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-tag.html#cfn-iotanalytics-datastore-tag-value
-     * 
-     */
-    @JsonProperty("Value")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-tag.html#cfn-iotanalytics-datastore-tag-value")
-    private CharSequence value;
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-tag.html#cfn-iotanalytics-datastore-tag-key
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-key
      * 
      */
     @JsonProperty("Key")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-tag.html#cfn-iotanalytics-datastore-tag-key")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-key")
     private CharSequence key;
-
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-tag.html#cfn-iotanalytics-datastore-tag-value
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-value
      * 
      */
-    @JsonIgnore
-    public CharSequence getValue() {
-        return value;
-    }
+    @JsonProperty("Value")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-value")
+    private CharSequence value;
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-tag.html#cfn-iotanalytics-datastore-tag-value
-     * 
-     */
-    @JsonIgnore
-    public void setValue(CharSequence value) {
-        this.value = value;
-    }
-
-    public Tag withValue(CharSequence value) {
-        this.value = value;
-        return this;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-tag.html#cfn-iotanalytics-datastore-tag-key
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-key
      * 
      */
     @JsonIgnore
@@ -73,7 +50,7 @@ public class Tag implements Property<Tag>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-tag.html#cfn-iotanalytics-datastore-tag-key
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-key
      * 
      */
     @JsonIgnore
@@ -86,9 +63,32 @@ public class Tag implements Property<Tag>
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-value
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getValue() {
+        return value;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-value
+     * 
+     */
+    @JsonIgnore
+    public void setValue(CharSequence value) {
+        this.value = value;
+    }
+
+    public Tag withValue(CharSequence value) {
+        this.value = value;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("value", value).append("key", key).toString();
+        return new ToStringBuilder(this).append("key", key).append("value", value).toString();
     }
 
     @Override

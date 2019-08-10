@@ -12,6 +12,11 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "DisableTemplateValidation" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicecatalog-cloudformationproduct-provisioningartifactproperties.html#cfn-servicecatalog-cloudformationproduct-provisioningartifactproperties-disabletemplatevalidation",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
     "Info" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicecatalog-cloudformationproduct-provisioningartifactproperties.html#cfn-servicecatalog-cloudformationproduct-provisioningartifactproperties-info",
       "type" : "object",

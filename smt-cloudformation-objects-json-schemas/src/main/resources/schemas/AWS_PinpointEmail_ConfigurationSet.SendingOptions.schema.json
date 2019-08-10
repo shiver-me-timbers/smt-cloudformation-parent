@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_PinpointEmail_ConfigurationSet.SendingOptions.schema.json",
+  "title" : "ConfigurationSetSendingOptions",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpointemail-configurationset-sendingoptions.html",
+  "type" : "object",
+  "javaType" : "aws.pinpointemail.ConfigurationSetSendingOptions",
+  "javaInterfaces" : [ "aws.Property<ConfigurationSetSendingOptions>" ],
+  "properties" : {
+    "SendingEnabled" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpointemail-configurationset-sendingoptions.html#cfn-pinpointemail-configurationset-sendingoptions-sendingenabled",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

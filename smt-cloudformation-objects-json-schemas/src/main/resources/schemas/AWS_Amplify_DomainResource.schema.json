@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Amplify_DomainResource.schema.json",
+  "title" : "DomainResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-domain.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.amplify.DomainResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<DomainResource>", "aws.HasCondition<DomainResource>", "aws.HasAttributes<DomainAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Amplify::Domain"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Amplify_Domain.schema.json"
+    }
+  }
+}

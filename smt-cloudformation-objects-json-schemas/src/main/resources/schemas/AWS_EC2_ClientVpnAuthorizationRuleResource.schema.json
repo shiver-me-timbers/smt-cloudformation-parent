@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_ClientVpnAuthorizationRuleResource.schema.json",
+  "title" : "ClientVpnAuthorizationRuleResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnauthorizationrule.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.ec2.ClientVpnAuthorizationRuleResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ClientVpnAuthorizationRuleResource>", "aws.HasCondition<ClientVpnAuthorizationRuleResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::ClientVpnAuthorizationRule"
+    },
+    "Properties" : {
+      "$ref" : "AWS_EC2_ClientVpnAuthorizationRule.schema.json"
+    }
+  }
+}

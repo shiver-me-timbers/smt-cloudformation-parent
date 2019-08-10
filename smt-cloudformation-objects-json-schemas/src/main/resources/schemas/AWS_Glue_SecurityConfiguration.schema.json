@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Glue_SecurityConfiguration.schema.json",
+  "title" : "SecurityConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-securityconfiguration.html",
+  "type" : "object",
+  "javaType" : "aws.glue.SecurityConfiguration",
+  "properties" : {
+    "EncryptionConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-securityconfiguration.html#cfn-glue-securityconfiguration-encryptionconfiguration",
+      "$ref" : "AWS_Glue_SecurityConfiguration.EncryptionConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.glue.SecurityConfigurationEncryptionConfiguration>"
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-securityconfiguration.html#cfn-glue-securityconfiguration-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

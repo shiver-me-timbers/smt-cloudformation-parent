@@ -1,0 +1,35 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Backup_BackupVault.schema.json",
+  "title" : "BackupVault",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-backup-backupvault.html",
+  "type" : "object",
+  "javaType" : "aws.backup.BackupVault",
+  "properties" : {
+    "BackupVaultTags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-backup-backupvault.html#cfn-backup-backupvault-backupvaulttags",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
+    },
+    "BackupVaultName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-backup-backupvault.html#cfn-backup-backupvault-backupvaultname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "EncryptionKeyArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-backup-backupvault.html#cfn-backup-backupvault-encryptionkeyarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Notifications" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-backup-backupvault.html#cfn-backup-backupvault-notifications",
+      "$ref" : "AWS_Backup_BackupVault.NotificationObjectType.schema.json",
+      "javaType" : "aws.Property<aws.backup.BackupVaultNotificationObjectType>"
+    },
+    "AccessPolicy" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-backup-backupvault.html#cfn-backup-backupvault-accesspolicy",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
+    }
+  }
+}

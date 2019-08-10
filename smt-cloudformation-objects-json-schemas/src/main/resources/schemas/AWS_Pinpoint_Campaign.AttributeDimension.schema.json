@@ -1,0 +1,24 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_Campaign.AttributeDimension.schema.json",
+  "title" : "CampaignAttributeDimension",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-attributedimension.html",
+  "type" : "object",
+  "javaType" : "aws.pinpoint.CampaignAttributeDimension",
+  "javaInterfaces" : [ "aws.Property<CampaignAttributeDimension>" ],
+  "properties" : {
+    "AttributeType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-attributedimension.html#cfn-pinpoint-campaign-attributedimension-attributetype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Values" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-attributedimension.html#cfn-pinpoint-campaign-attributedimension-values",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    }
+  }
+}

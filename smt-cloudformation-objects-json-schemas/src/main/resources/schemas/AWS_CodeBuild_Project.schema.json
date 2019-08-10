@@ -29,6 +29,11 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "SourceVersion" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-sourceversion",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "Triggers" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-triggers",
       "$ref" : "AWS_CodeBuild_Project.ProjectTriggers.schema.json",
@@ -81,6 +86,14 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-environment",
       "$ref" : "AWS_CodeBuild_Project.Environment.schema.json",
       "javaType" : "aws.Property<aws.codebuild.ProjectEnvironment>"
+    },
+    "SecondarySourceVersions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-secondarysourceversions",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_CodeBuild_Project.ProjectSourceVersion.schema.json",
+        "javaType" : "aws.Property<aws.codebuild.ProjectProjectSourceVersion>"
+      }
     },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-tags",

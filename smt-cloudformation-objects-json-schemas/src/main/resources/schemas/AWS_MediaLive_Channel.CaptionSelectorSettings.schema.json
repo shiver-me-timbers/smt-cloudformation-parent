@@ -1,0 +1,41 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MediaLive_Channel.CaptionSelectorSettings.schema.json",
+  "title" : "ChannelCaptionSelectorSettings",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-captionselectorsettings.html",
+  "type" : "object",
+  "javaType" : "aws.medialive.ChannelCaptionSelectorSettings",
+  "javaInterfaces" : [ "aws.Property<ChannelCaptionSelectorSettings>" ],
+  "properties" : {
+    "DvbSubSourceSettings" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-captionselectorsettings.html#cfn-medialive-channel-captionselectorsettings-dvbsubsourcesettings",
+      "$ref" : "AWS_MediaLive_Channel.DvbSubSourceSettings.schema.json",
+      "javaType" : "aws.Property<aws.medialive.ChannelDvbSubSourceSettings>"
+    },
+    "Scte27SourceSettings" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-captionselectorsettings.html#cfn-medialive-channel-captionselectorsettings-scte27sourcesettings",
+      "$ref" : "AWS_MediaLive_Channel.Scte27SourceSettings.schema.json",
+      "javaType" : "aws.Property<aws.medialive.ChannelScte27SourceSettings>"
+    },
+    "AribSourceSettings" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-captionselectorsettings.html#cfn-medialive-channel-captionselectorsettings-aribsourcesettings",
+      "$ref" : "AWS_MediaLive_Channel.AribSourceSettings.schema.json",
+      "javaType" : "aws.Property<aws.medialive.ChannelAribSourceSettings>"
+    },
+    "EmbeddedSourceSettings" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-captionselectorsettings.html#cfn-medialive-channel-captionselectorsettings-embeddedsourcesettings",
+      "$ref" : "AWS_MediaLive_Channel.EmbeddedSourceSettings.schema.json",
+      "javaType" : "aws.Property<aws.medialive.ChannelEmbeddedSourceSettings>"
+    },
+    "Scte20SourceSettings" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-captionselectorsettings.html#cfn-medialive-channel-captionselectorsettings-scte20sourcesettings",
+      "$ref" : "AWS_MediaLive_Channel.Scte20SourceSettings.schema.json",
+      "javaType" : "aws.Property<aws.medialive.ChannelScte20SourceSettings>"
+    },
+    "TeletextSourceSettings" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-captionselectorsettings.html#cfn-medialive-channel-captionselectorsettings-teletextsourcesettings",
+      "$ref" : "AWS_MediaLive_Channel.TeletextSourceSettings.schema.json",
+      "javaType" : "aws.Property<aws.medialive.ChannelTeletextSourceSettings>"
+    }
+  }
+}

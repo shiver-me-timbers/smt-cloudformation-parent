@@ -4,6 +4,7 @@ package aws.appmesh;
 import java.util.ArrayList;
 import java.util.List;
 import aws.Property;
+import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -66,7 +67,7 @@ public class Route {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-route.html#cfn-appmesh-route-tags")
-    private List<Property<RouteTagRef>> tags = new ArrayList<Property<RouteTagRef>>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-route.html#cfn-appmesh-route-meshname
@@ -169,7 +170,7 @@ public class Route {
      * 
      */
     @JsonIgnore
-    public List<Property<RouteTagRef>> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -178,11 +179,11 @@ public class Route {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Property<RouteTagRef>> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public Route withTags(List<Property<RouteTagRef>> tags) {
+    public Route withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

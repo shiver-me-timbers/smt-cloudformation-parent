@@ -27,6 +27,16 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "PreTokenGeneration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-pretokengeneration",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "UserMigration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-usermigration",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "PostAuthentication" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-postauthentication",
       "type" : "string",

@@ -15,57 +15,34 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 /**
  * PipelineBlockerDeclaration
  * <p>
- * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-blockers.html
+ * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-blockerdeclaration.html
  * 
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
-    "Name",
-    "Type"
+    "Type",
+    "Name"
 })
 public class PipelineBlockerDeclaration implements Property<PipelineBlockerDeclaration>
 {
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-blockers.html#cfn-codepipeline-pipeline-stages-blockers-name
-     * 
-     */
-    @JsonProperty("Name")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-blockers.html#cfn-codepipeline-pipeline-stages-blockers-name")
-    private CharSequence name;
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-blockers.html#cfn-codepipeline-pipeline-stages-blockers-type
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-blockerdeclaration.html#cfn-codepipeline-pipeline-blockerdeclaration-type
      * 
      */
     @JsonProperty("Type")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-blockers.html#cfn-codepipeline-pipeline-stages-blockers-type")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-blockerdeclaration.html#cfn-codepipeline-pipeline-blockerdeclaration-type")
     private CharSequence type;
-
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-blockers.html#cfn-codepipeline-pipeline-stages-blockers-name
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-blockerdeclaration.html#cfn-codepipeline-pipeline-blockerdeclaration-name
      * 
      */
-    @JsonIgnore
-    public CharSequence getName() {
-        return name;
-    }
+    @JsonProperty("Name")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-blockerdeclaration.html#cfn-codepipeline-pipeline-blockerdeclaration-name")
+    private CharSequence name;
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-blockers.html#cfn-codepipeline-pipeline-stages-blockers-name
-     * 
-     */
-    @JsonIgnore
-    public void setName(CharSequence name) {
-        this.name = name;
-    }
-
-    public PipelineBlockerDeclaration withName(CharSequence name) {
-        this.name = name;
-        return this;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-blockers.html#cfn-codepipeline-pipeline-stages-blockers-type
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-blockerdeclaration.html#cfn-codepipeline-pipeline-blockerdeclaration-type
      * 
      */
     @JsonIgnore
@@ -74,7 +51,7 @@ public class PipelineBlockerDeclaration implements Property<PipelineBlockerDecla
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-blockers.html#cfn-codepipeline-pipeline-stages-blockers-type
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-blockerdeclaration.html#cfn-codepipeline-pipeline-blockerdeclaration-type
      * 
      */
     @JsonIgnore
@@ -87,14 +64,37 @@ public class PipelineBlockerDeclaration implements Property<PipelineBlockerDecla
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-blockerdeclaration.html#cfn-codepipeline-pipeline-blockerdeclaration-name
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getName() {
+        return name;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-blockerdeclaration.html#cfn-codepipeline-pipeline-blockerdeclaration-name
+     * 
+     */
+    @JsonIgnore
+    public void setName(CharSequence name) {
+        this.name = name;
+    }
+
+    public PipelineBlockerDeclaration withName(CharSequence name) {
+        this.name = name;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("name", name).append("type", type).toString();
+        return new ToStringBuilder(this).append("type", type).append("name", name).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(name).append(type).toHashCode();
+        return new HashCodeBuilder().append(type).append(name).toHashCode();
     }
 
     @Override
@@ -106,7 +106,7 @@ public class PipelineBlockerDeclaration implements Property<PipelineBlockerDecla
             return false;
         }
         PipelineBlockerDeclaration rhs = ((PipelineBlockerDeclaration) other);
-        return new EqualsBuilder().append(name, rhs.name).append(type, rhs.type).isEquals();
+        return new EqualsBuilder().append(type, rhs.type).append(name, rhs.name).isEquals();
     }
 
 }

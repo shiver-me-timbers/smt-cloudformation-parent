@@ -4,7 +4,6 @@ package aws.dlm;
 import java.util.ArrayList;
 import java.util.List;
 import aws.Property;
-import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,6 +24,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "TagsToAdd",
     "CreateRule",
+    "VariableTags",
     "RetainRule",
     "Name",
     "CopyTags"
@@ -38,7 +38,7 @@ public class LifecyclePolicySchedule implements Property<LifecyclePolicySchedule
      */
     @JsonProperty("TagsToAdd")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-schedule.html#cfn-dlm-lifecyclepolicy-schedule-tagstoadd")
-    private List<Property<Tag>> tagsToAdd = new ArrayList<Property<Tag>>();
+    private List<Property<aws.Tag>> tagsToAdd = new ArrayList<Property<aws.Tag>>();
     /**
      * LifecyclePolicyCreateRule
      * <p>
@@ -48,6 +48,13 @@ public class LifecyclePolicySchedule implements Property<LifecyclePolicySchedule
     @JsonProperty("CreateRule")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-createrule.html")
     private Property<LifecyclePolicyCreateRule> createRule;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-schedule.html#cfn-dlm-lifecyclepolicy-schedule-variabletags
+     * 
+     */
+    @JsonProperty("VariableTags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-schedule.html#cfn-dlm-lifecyclepolicy-schedule-variabletags")
+    private List<Property<aws.Tag>> variableTags = new ArrayList<Property<aws.Tag>>();
     /**
      * LifecyclePolicyRetainRule
      * <p>
@@ -77,7 +84,7 @@ public class LifecyclePolicySchedule implements Property<LifecyclePolicySchedule
      * 
      */
     @JsonIgnore
-    public List<Property<Tag>> getTagsToAdd() {
+    public List<Property<aws.Tag>> getTagsToAdd() {
         return tagsToAdd;
     }
 
@@ -86,11 +93,11 @@ public class LifecyclePolicySchedule implements Property<LifecyclePolicySchedule
      * 
      */
     @JsonIgnore
-    public void setTagsToAdd(List<Property<Tag>> tagsToAdd) {
+    public void setTagsToAdd(List<Property<aws.Tag>> tagsToAdd) {
         this.tagsToAdd = tagsToAdd;
     }
 
-    public LifecyclePolicySchedule withTagsToAdd(List<Property<Tag>> tagsToAdd) {
+    public LifecyclePolicySchedule withTagsToAdd(List<Property<aws.Tag>> tagsToAdd) {
         this.tagsToAdd = tagsToAdd;
         return this;
     }
@@ -119,6 +126,29 @@ public class LifecyclePolicySchedule implements Property<LifecyclePolicySchedule
 
     public LifecyclePolicySchedule withCreateRule(Property<LifecyclePolicyCreateRule> createRule) {
         this.createRule = createRule;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-schedule.html#cfn-dlm-lifecyclepolicy-schedule-variabletags
+     * 
+     */
+    @JsonIgnore
+    public List<Property<aws.Tag>> getVariableTags() {
+        return variableTags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-schedule.html#cfn-dlm-lifecyclepolicy-schedule-variabletags
+     * 
+     */
+    @JsonIgnore
+    public void setVariableTags(List<Property<aws.Tag>> variableTags) {
+        this.variableTags = variableTags;
+    }
+
+    public LifecyclePolicySchedule withVariableTags(List<Property<aws.Tag>> variableTags) {
+        this.variableTags = variableTags;
         return this;
     }
 
@@ -197,12 +227,12 @@ public class LifecyclePolicySchedule implements Property<LifecyclePolicySchedule
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("tagsToAdd", tagsToAdd).append("createRule", createRule).append("retainRule", retainRule).append("name", name).append("copyTags", copyTags).toString();
+        return new ToStringBuilder(this).append("tagsToAdd", tagsToAdd).append("createRule", createRule).append("variableTags", variableTags).append("retainRule", retainRule).append("name", name).append("copyTags", copyTags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(name).append(copyTags).append(tagsToAdd).append(createRule).append(retainRule).toHashCode();
+        return new HashCodeBuilder().append(createRule).append(variableTags).append(name).append(copyTags).append(tagsToAdd).append(retainRule).toHashCode();
     }
 
     @Override
@@ -214,7 +244,7 @@ public class LifecyclePolicySchedule implements Property<LifecyclePolicySchedule
             return false;
         }
         LifecyclePolicySchedule rhs = ((LifecyclePolicySchedule) other);
-        return new EqualsBuilder().append(name, rhs.name).append(copyTags, rhs.copyTags).append(tagsToAdd, rhs.tagsToAdd).append(createRule, rhs.createRule).append(retainRule, rhs.retainRule).isEquals();
+        return new EqualsBuilder().append(createRule, rhs.createRule).append(variableTags, rhs.variableTags).append(name, rhs.name).append(copyTags, rhs.copyTags).append(tagsToAdd, rhs.tagsToAdd).append(retainRule, rhs.retainRule).isEquals();
     }
 
 }

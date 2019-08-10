@@ -27,6 +27,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "NatGatewayId",
     "NetworkInterfaceId",
     "RouteTableId",
+    "TransitGatewayId",
     "VpcPeeringConnectionId"
 })
 public class Route {
@@ -87,6 +88,13 @@ public class Route {
     @JsonProperty("RouteTableId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-routetableid")
     private CharSequence routeTableId;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-transitgatewayid
+     * 
+     */
+    @JsonProperty("TransitGatewayId")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-transitgatewayid")
+    private CharSequence transitGatewayId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-vpcpeeringconnectionid
      * 
@@ -280,6 +288,29 @@ public class Route {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-transitgatewayid
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getTransitGatewayId() {
+        return transitGatewayId;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-transitgatewayid
+     * 
+     */
+    @JsonIgnore
+    public void setTransitGatewayId(CharSequence transitGatewayId) {
+        this.transitGatewayId = transitGatewayId;
+    }
+
+    public Route withTransitGatewayId(CharSequence transitGatewayId) {
+        this.transitGatewayId = transitGatewayId;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-vpcpeeringconnectionid
      * 
      */
@@ -304,12 +335,12 @@ public class Route {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("destinationCidrBlock", destinationCidrBlock).append("destinationIpv6CidrBlock", destinationIpv6CidrBlock).append("egressOnlyInternetGatewayId", egressOnlyInternetGatewayId).append("gatewayId", gatewayId).append("instanceId", instanceId).append("natGatewayId", natGatewayId).append("networkInterfaceId", networkInterfaceId).append("routeTableId", routeTableId).append("vpcPeeringConnectionId", vpcPeeringConnectionId).toString();
+        return new ToStringBuilder(this).append("destinationCidrBlock", destinationCidrBlock).append("destinationIpv6CidrBlock", destinationIpv6CidrBlock).append("egressOnlyInternetGatewayId", egressOnlyInternetGatewayId).append("gatewayId", gatewayId).append("instanceId", instanceId).append("natGatewayId", natGatewayId).append("networkInterfaceId", networkInterfaceId).append("routeTableId", routeTableId).append("transitGatewayId", transitGatewayId).append("vpcPeeringConnectionId", vpcPeeringConnectionId).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(destinationCidrBlock).append(networkInterfaceId).append(destinationIpv6CidrBlock).append(instanceId).append(routeTableId).append(natGatewayId).append(vpcPeeringConnectionId).append(egressOnlyInternetGatewayId).append(gatewayId).toHashCode();
+        return new HashCodeBuilder().append(destinationCidrBlock).append(networkInterfaceId).append(destinationIpv6CidrBlock).append(instanceId).append(transitGatewayId).append(routeTableId).append(natGatewayId).append(vpcPeeringConnectionId).append(egressOnlyInternetGatewayId).append(gatewayId).toHashCode();
     }
 
     @Override
@@ -321,7 +352,7 @@ public class Route {
             return false;
         }
         Route rhs = ((Route) other);
-        return new EqualsBuilder().append(destinationCidrBlock, rhs.destinationCidrBlock).append(networkInterfaceId, rhs.networkInterfaceId).append(destinationIpv6CidrBlock, rhs.destinationIpv6CidrBlock).append(instanceId, rhs.instanceId).append(routeTableId, rhs.routeTableId).append(natGatewayId, rhs.natGatewayId).append(vpcPeeringConnectionId, rhs.vpcPeeringConnectionId).append(egressOnlyInternetGatewayId, rhs.egressOnlyInternetGatewayId).append(gatewayId, rhs.gatewayId).isEquals();
+        return new EqualsBuilder().append(destinationCidrBlock, rhs.destinationCidrBlock).append(networkInterfaceId, rhs.networkInterfaceId).append(destinationIpv6CidrBlock, rhs.destinationIpv6CidrBlock).append(instanceId, rhs.instanceId).append(transitGatewayId, rhs.transitGatewayId).append(routeTableId, rhs.routeTableId).append(natGatewayId, rhs.natGatewayId).append(vpcPeeringConnectionId, rhs.vpcPeeringConnectionId).append(egressOnlyInternetGatewayId, rhs.egressOnlyInternetGatewayId).append(gatewayId, rhs.gatewayId).isEquals();
     }
 
 }

@@ -24,6 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "PreAuthentication",
     "DefineAuthChallenge",
     "PreSignUp",
+    "PreTokenGeneration",
+    "UserMigration",
     "PostAuthentication",
     "PostConfirmation",
     "CustomMessage",
@@ -60,6 +62,20 @@ public class UserPoolLambdaConfig implements Property<UserPoolLambdaConfig>
     @JsonProperty("PreSignUp")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-presignup")
     private CharSequence preSignUp;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-pretokengeneration
+     * 
+     */
+    @JsonProperty("PreTokenGeneration")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-pretokengeneration")
+    private CharSequence preTokenGeneration;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-usermigration
+     * 
+     */
+    @JsonProperty("UserMigration")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-usermigration")
+    private CharSequence userMigration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-postauthentication
      * 
@@ -182,6 +198,52 @@ public class UserPoolLambdaConfig implements Property<UserPoolLambdaConfig>
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-pretokengeneration
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getPreTokenGeneration() {
+        return preTokenGeneration;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-pretokengeneration
+     * 
+     */
+    @JsonIgnore
+    public void setPreTokenGeneration(CharSequence preTokenGeneration) {
+        this.preTokenGeneration = preTokenGeneration;
+    }
+
+    public UserPoolLambdaConfig withPreTokenGeneration(CharSequence preTokenGeneration) {
+        this.preTokenGeneration = preTokenGeneration;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-usermigration
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getUserMigration() {
+        return userMigration;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-usermigration
+     * 
+     */
+    @JsonIgnore
+    public void setUserMigration(CharSequence userMigration) {
+        this.userMigration = userMigration;
+    }
+
+    public UserPoolLambdaConfig withUserMigration(CharSequence userMigration) {
+        this.userMigration = userMigration;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-postauthentication
      * 
      */
@@ -275,12 +337,12 @@ public class UserPoolLambdaConfig implements Property<UserPoolLambdaConfig>
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("createAuthChallenge", createAuthChallenge).append("preAuthentication", preAuthentication).append("defineAuthChallenge", defineAuthChallenge).append("preSignUp", preSignUp).append("postAuthentication", postAuthentication).append("postConfirmation", postConfirmation).append("customMessage", customMessage).append("verifyAuthChallengeResponse", verifyAuthChallengeResponse).toString();
+        return new ToStringBuilder(this).append("createAuthChallenge", createAuthChallenge).append("preAuthentication", preAuthentication).append("defineAuthChallenge", defineAuthChallenge).append("preSignUp", preSignUp).append("preTokenGeneration", preTokenGeneration).append("userMigration", userMigration).append("postAuthentication", postAuthentication).append("postConfirmation", postConfirmation).append("customMessage", customMessage).append("verifyAuthChallengeResponse", verifyAuthChallengeResponse).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(postAuthentication).append(createAuthChallenge).append(customMessage).append(verifyAuthChallengeResponse).append(postConfirmation).append(preSignUp).append(preAuthentication).append(defineAuthChallenge).toHashCode();
+        return new HashCodeBuilder().append(postAuthentication).append(userMigration).append(createAuthChallenge).append(preTokenGeneration).append(customMessage).append(verifyAuthChallengeResponse).append(postConfirmation).append(preSignUp).append(preAuthentication).append(defineAuthChallenge).toHashCode();
     }
 
     @Override
@@ -292,7 +354,7 @@ public class UserPoolLambdaConfig implements Property<UserPoolLambdaConfig>
             return false;
         }
         UserPoolLambdaConfig rhs = ((UserPoolLambdaConfig) other);
-        return new EqualsBuilder().append(postAuthentication, rhs.postAuthentication).append(createAuthChallenge, rhs.createAuthChallenge).append(customMessage, rhs.customMessage).append(verifyAuthChallengeResponse, rhs.verifyAuthChallengeResponse).append(postConfirmation, rhs.postConfirmation).append(preSignUp, rhs.preSignUp).append(preAuthentication, rhs.preAuthentication).append(defineAuthChallenge, rhs.defineAuthChallenge).isEquals();
+        return new EqualsBuilder().append(postAuthentication, rhs.postAuthentication).append(userMigration, rhs.userMigration).append(createAuthChallenge, rhs.createAuthChallenge).append(preTokenGeneration, rhs.preTokenGeneration).append(customMessage, rhs.customMessage).append(verifyAuthChallengeResponse, rhs.verifyAuthChallengeResponse).append(postConfirmation, rhs.postConfirmation).append(preSignUp, rhs.preSignUp).append(preAuthentication, rhs.preAuthentication).append(defineAuthChallenge, rhs.defineAuthChallenge).isEquals();
     }
 
 }

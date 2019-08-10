@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Backup_BackupPlanResource.schema.json",
+  "title" : "BackupPlanResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-backup-backupplan.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.backup.BackupPlanResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<BackupPlanResource>", "aws.HasCondition<BackupPlanResource>", "aws.HasAttributes<BackupPlanAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Backup::BackupPlan"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Backup_BackupPlan.schema.json"
+    }
+  }
+}

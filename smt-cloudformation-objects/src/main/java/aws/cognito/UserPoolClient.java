@@ -3,6 +3,7 @@ package aws.cognito;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -21,16 +22,33 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "AnalyticsConfiguration",
     "GenerateSecret",
+    "CallbackURLs",
+    "AllowedOAuthScopes",
+    "ReadAttributes",
+    "AllowedOAuthFlowsUserPoolClient",
+    "DefaultRedirectURI",
+    "SupportedIdentityProviders",
     "ClientName",
     "UserPoolId",
+    "AllowedOAuthFlows",
     "ExplicitAuthFlows",
+    "LogoutURLs",
     "RefreshTokenValidity",
-    "ReadAttributes",
     "WriteAttributes"
 })
 public class UserPoolClient {
 
+    /**
+     * UserPoolClientAnalyticsConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpoolclient-analyticsconfiguration.html
+     * 
+     */
+    @JsonProperty("AnalyticsConfiguration")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpoolclient-analyticsconfiguration.html")
+    private Property<UserPoolClientAnalyticsConfiguration> analyticsConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-generatesecret
      * 
@@ -38,6 +56,48 @@ public class UserPoolClient {
     @JsonProperty("GenerateSecret")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-generatesecret")
     private CharSequence generateSecret;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-callbackurls
+     * 
+     */
+    @JsonProperty("CallbackURLs")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-callbackurls")
+    private List<CharSequence> callbackURLs = new ArrayList<CharSequence>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-allowedoauthscopes
+     * 
+     */
+    @JsonProperty("AllowedOAuthScopes")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-allowedoauthscopes")
+    private List<CharSequence> allowedOAuthScopes = new ArrayList<CharSequence>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-readattributes
+     * 
+     */
+    @JsonProperty("ReadAttributes")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-readattributes")
+    private List<CharSequence> readAttributes = new ArrayList<CharSequence>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-allowedoauthflowsuserpoolclient
+     * 
+     */
+    @JsonProperty("AllowedOAuthFlowsUserPoolClient")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-allowedoauthflowsuserpoolclient")
+    private CharSequence allowedOAuthFlowsUserPoolClient;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-defaultredirecturi
+     * 
+     */
+    @JsonProperty("DefaultRedirectURI")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-defaultredirecturi")
+    private CharSequence defaultRedirectURI;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-supportedidentityproviders
+     * 
+     */
+    @JsonProperty("SupportedIdentityProviders")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-supportedidentityproviders")
+    private List<CharSequence> supportedIdentityProviders = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-clientname
      * 
@@ -53,12 +113,26 @@ public class UserPoolClient {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-userpoolid")
     private CharSequence userPoolId;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-allowedoauthflows
+     * 
+     */
+    @JsonProperty("AllowedOAuthFlows")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-allowedoauthflows")
+    private List<CharSequence> allowedOAuthFlows = new ArrayList<CharSequence>();
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-explicitauthflows
      * 
      */
     @JsonProperty("ExplicitAuthFlows")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-explicitauthflows")
     private List<CharSequence> explicitAuthFlows = new ArrayList<CharSequence>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-logouturls
+     * 
+     */
+    @JsonProperty("LogoutURLs")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-logouturls")
+    private List<CharSequence> logoutURLs = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-refreshtokenvalidity
      * 
@@ -67,19 +141,39 @@ public class UserPoolClient {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-refreshtokenvalidity")
     private Number refreshTokenValidity;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-readattributes
-     * 
-     */
-    @JsonProperty("ReadAttributes")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-readattributes")
-    private List<CharSequence> readAttributes = new ArrayList<CharSequence>();
-    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-writeattributes
      * 
      */
     @JsonProperty("WriteAttributes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-writeattributes")
     private List<CharSequence> writeAttributes = new ArrayList<CharSequence>();
+
+    /**
+     * UserPoolClientAnalyticsConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpoolclient-analyticsconfiguration.html
+     * 
+     */
+    @JsonIgnore
+    public Property<UserPoolClientAnalyticsConfiguration> getAnalyticsConfiguration() {
+        return analyticsConfiguration;
+    }
+
+    /**
+     * UserPoolClientAnalyticsConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpoolclient-analyticsconfiguration.html
+     * 
+     */
+    @JsonIgnore
+    public void setAnalyticsConfiguration(Property<UserPoolClientAnalyticsConfiguration> analyticsConfiguration) {
+        this.analyticsConfiguration = analyticsConfiguration;
+    }
+
+    public UserPoolClient withAnalyticsConfiguration(Property<UserPoolClientAnalyticsConfiguration> analyticsConfiguration) {
+        this.analyticsConfiguration = analyticsConfiguration;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-generatesecret
@@ -101,6 +195,144 @@ public class UserPoolClient {
 
     public UserPoolClient withGenerateSecret(CharSequence generateSecret) {
         this.generateSecret = generateSecret;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-callbackurls
+     * 
+     */
+    @JsonIgnore
+    public List<CharSequence> getCallbackURLs() {
+        return callbackURLs;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-callbackurls
+     * 
+     */
+    @JsonIgnore
+    public void setCallbackURLs(List<CharSequence> callbackURLs) {
+        this.callbackURLs = callbackURLs;
+    }
+
+    public UserPoolClient withCallbackURLs(List<CharSequence> callbackURLs) {
+        this.callbackURLs = callbackURLs;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-allowedoauthscopes
+     * 
+     */
+    @JsonIgnore
+    public List<CharSequence> getAllowedOAuthScopes() {
+        return allowedOAuthScopes;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-allowedoauthscopes
+     * 
+     */
+    @JsonIgnore
+    public void setAllowedOAuthScopes(List<CharSequence> allowedOAuthScopes) {
+        this.allowedOAuthScopes = allowedOAuthScopes;
+    }
+
+    public UserPoolClient withAllowedOAuthScopes(List<CharSequence> allowedOAuthScopes) {
+        this.allowedOAuthScopes = allowedOAuthScopes;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-readattributes
+     * 
+     */
+    @JsonIgnore
+    public List<CharSequence> getReadAttributes() {
+        return readAttributes;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-readattributes
+     * 
+     */
+    @JsonIgnore
+    public void setReadAttributes(List<CharSequence> readAttributes) {
+        this.readAttributes = readAttributes;
+    }
+
+    public UserPoolClient withReadAttributes(List<CharSequence> readAttributes) {
+        this.readAttributes = readAttributes;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-allowedoauthflowsuserpoolclient
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getAllowedOAuthFlowsUserPoolClient() {
+        return allowedOAuthFlowsUserPoolClient;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-allowedoauthflowsuserpoolclient
+     * 
+     */
+    @JsonIgnore
+    public void setAllowedOAuthFlowsUserPoolClient(CharSequence allowedOAuthFlowsUserPoolClient) {
+        this.allowedOAuthFlowsUserPoolClient = allowedOAuthFlowsUserPoolClient;
+    }
+
+    public UserPoolClient withAllowedOAuthFlowsUserPoolClient(CharSequence allowedOAuthFlowsUserPoolClient) {
+        this.allowedOAuthFlowsUserPoolClient = allowedOAuthFlowsUserPoolClient;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-defaultredirecturi
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getDefaultRedirectURI() {
+        return defaultRedirectURI;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-defaultredirecturi
+     * 
+     */
+    @JsonIgnore
+    public void setDefaultRedirectURI(CharSequence defaultRedirectURI) {
+        this.defaultRedirectURI = defaultRedirectURI;
+    }
+
+    public UserPoolClient withDefaultRedirectURI(CharSequence defaultRedirectURI) {
+        this.defaultRedirectURI = defaultRedirectURI;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-supportedidentityproviders
+     * 
+     */
+    @JsonIgnore
+    public List<CharSequence> getSupportedIdentityProviders() {
+        return supportedIdentityProviders;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-supportedidentityproviders
+     * 
+     */
+    @JsonIgnore
+    public void setSupportedIdentityProviders(List<CharSequence> supportedIdentityProviders) {
+        this.supportedIdentityProviders = supportedIdentityProviders;
+    }
+
+    public UserPoolClient withSupportedIdentityProviders(List<CharSequence> supportedIdentityProviders) {
+        this.supportedIdentityProviders = supportedIdentityProviders;
         return this;
     }
 
@@ -151,6 +383,29 @@ public class UserPoolClient {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-allowedoauthflows
+     * 
+     */
+    @JsonIgnore
+    public List<CharSequence> getAllowedOAuthFlows() {
+        return allowedOAuthFlows;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-allowedoauthflows
+     * 
+     */
+    @JsonIgnore
+    public void setAllowedOAuthFlows(List<CharSequence> allowedOAuthFlows) {
+        this.allowedOAuthFlows = allowedOAuthFlows;
+    }
+
+    public UserPoolClient withAllowedOAuthFlows(List<CharSequence> allowedOAuthFlows) {
+        this.allowedOAuthFlows = allowedOAuthFlows;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-explicitauthflows
      * 
      */
@@ -174,6 +429,29 @@ public class UserPoolClient {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-logouturls
+     * 
+     */
+    @JsonIgnore
+    public List<CharSequence> getLogoutURLs() {
+        return logoutURLs;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-logouturls
+     * 
+     */
+    @JsonIgnore
+    public void setLogoutURLs(List<CharSequence> logoutURLs) {
+        this.logoutURLs = logoutURLs;
+    }
+
+    public UserPoolClient withLogoutURLs(List<CharSequence> logoutURLs) {
+        this.logoutURLs = logoutURLs;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-refreshtokenvalidity
      * 
      */
@@ -193,29 +471,6 @@ public class UserPoolClient {
 
     public UserPoolClient withRefreshTokenValidity(Number refreshTokenValidity) {
         this.refreshTokenValidity = refreshTokenValidity;
-        return this;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-readattributes
-     * 
-     */
-    @JsonIgnore
-    public List<CharSequence> getReadAttributes() {
-        return readAttributes;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-readattributes
-     * 
-     */
-    @JsonIgnore
-    public void setReadAttributes(List<CharSequence> readAttributes) {
-        this.readAttributes = readAttributes;
-    }
-
-    public UserPoolClient withReadAttributes(List<CharSequence> readAttributes) {
-        this.readAttributes = readAttributes;
         return this;
     }
 
@@ -244,12 +499,12 @@ public class UserPoolClient {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("generateSecret", generateSecret).append("clientName", clientName).append("userPoolId", userPoolId).append("explicitAuthFlows", explicitAuthFlows).append("refreshTokenValidity", refreshTokenValidity).append("readAttributes", readAttributes).append("writeAttributes", writeAttributes).toString();
+        return new ToStringBuilder(this).append("analyticsConfiguration", analyticsConfiguration).append("generateSecret", generateSecret).append("callbackURLs", callbackURLs).append("allowedOAuthScopes", allowedOAuthScopes).append("readAttributes", readAttributes).append("allowedOAuthFlowsUserPoolClient", allowedOAuthFlowsUserPoolClient).append("defaultRedirectURI", defaultRedirectURI).append("supportedIdentityProviders", supportedIdentityProviders).append("clientName", clientName).append("userPoolId", userPoolId).append("allowedOAuthFlows", allowedOAuthFlows).append("explicitAuthFlows", explicitAuthFlows).append("logoutURLs", logoutURLs).append("refreshTokenValidity", refreshTokenValidity).append("writeAttributes", writeAttributes).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(explicitAuthFlows).append(clientName).append(refreshTokenValidity).append(readAttributes).append(generateSecret).append(userPoolId).append(writeAttributes).toHashCode();
+        return new HashCodeBuilder().append(clientName).append(logoutURLs).append(callbackURLs).append(allowedOAuthScopes).append(writeAttributes).append(defaultRedirectURI).append(explicitAuthFlows).append(supportedIdentityProviders).append(allowedOAuthFlowsUserPoolClient).append(refreshTokenValidity).append(analyticsConfiguration).append(readAttributes).append(allowedOAuthFlows).append(generateSecret).append(userPoolId).toHashCode();
     }
 
     @Override
@@ -261,7 +516,7 @@ public class UserPoolClient {
             return false;
         }
         UserPoolClient rhs = ((UserPoolClient) other);
-        return new EqualsBuilder().append(explicitAuthFlows, rhs.explicitAuthFlows).append(clientName, rhs.clientName).append(refreshTokenValidity, rhs.refreshTokenValidity).append(readAttributes, rhs.readAttributes).append(generateSecret, rhs.generateSecret).append(userPoolId, rhs.userPoolId).append(writeAttributes, rhs.writeAttributes).isEquals();
+        return new EqualsBuilder().append(clientName, rhs.clientName).append(logoutURLs, rhs.logoutURLs).append(callbackURLs, rhs.callbackURLs).append(allowedOAuthScopes, rhs.allowedOAuthScopes).append(writeAttributes, rhs.writeAttributes).append(defaultRedirectURI, rhs.defaultRedirectURI).append(explicitAuthFlows, rhs.explicitAuthFlows).append(supportedIdentityProviders, rhs.supportedIdentityProviders).append(allowedOAuthFlowsUserPoolClient, rhs.allowedOAuthFlowsUserPoolClient).append(refreshTokenValidity, rhs.refreshTokenValidity).append(analyticsConfiguration, rhs.analyticsConfiguration).append(readAttributes, rhs.readAttributes).append(allowedOAuthFlows, rhs.allowedOAuthFlows).append(generateSecret, rhs.generateSecret).append(userPoolId, rhs.userPoolId).isEquals();
     }
 
 }

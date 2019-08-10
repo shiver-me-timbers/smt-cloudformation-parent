@@ -1,0 +1,35 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_ApplicationSettings.schema.json",
+  "title" : "ApplicationSettings",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-applicationsettings.html",
+  "type" : "object",
+  "javaType" : "aws.pinpoint.ApplicationSettings",
+  "properties" : {
+    "QuietTime" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-applicationsettings.html#cfn-pinpoint-applicationsettings-quiettime",
+      "$ref" : "AWS_Pinpoint_ApplicationSettings.QuietTime.schema.json",
+      "javaType" : "aws.Property<aws.pinpoint.ApplicationSettingsQuietTime>"
+    },
+    "Limits" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-applicationsettings.html#cfn-pinpoint-applicationsettings-limits",
+      "$ref" : "AWS_Pinpoint_ApplicationSettings.Limits.schema.json",
+      "javaType" : "aws.Property<aws.pinpoint.ApplicationSettingsLimits>"
+    },
+    "ApplicationId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-applicationsettings.html#cfn-pinpoint-applicationsettings-applicationid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "CampaignHook" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-applicationsettings.html#cfn-pinpoint-applicationsettings-campaignhook",
+      "$ref" : "AWS_Pinpoint_ApplicationSettings.CampaignHook.schema.json",
+      "javaType" : "aws.Property<aws.pinpoint.ApplicationSettingsCampaignHook>"
+    },
+    "CloudWatchMetricsEnabled" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-applicationsettings.html#cfn-pinpoint-applicationsettings-cloudwatchmetricsenabled",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

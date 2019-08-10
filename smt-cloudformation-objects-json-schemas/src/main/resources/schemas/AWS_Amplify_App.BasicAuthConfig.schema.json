@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Amplify_App.BasicAuthConfig.schema.json",
+  "title" : "AppBasicAuthConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-basicauthconfig.html",
+  "type" : "object",
+  "javaType" : "aws.amplify.AppBasicAuthConfig",
+  "javaInterfaces" : [ "aws.Property<AppBasicAuthConfig>" ],
+  "properties" : {
+    "Username" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-basicauthconfig.html#cfn-amplify-app-basicauthconfig-username",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "EnableBasicAuth" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-basicauthconfig.html#cfn-amplify-app-basicauthconfig-enablebasicauth",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Password" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-basicauthconfig.html#cfn-amplify-app-basicauthconfig-password",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

@@ -1,6 +1,10 @@
 
 package aws.ecs;
 
+import java.util.ArrayList;
+import java.util.List;
+import aws.Property;
+import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -19,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
-    "ClusterName"
+    "ClusterName",
+    "Tags"
 })
 public class Cluster {
 
@@ -30,6 +35,13 @@ public class Cluster {
     @JsonProperty("ClusterName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#cfn-ecs-cluster-clustername")
     private CharSequence clusterName;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#cfn-ecs-cluster-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#cfn-ecs-cluster-tags")
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#cfn-ecs-cluster-clustername
@@ -54,14 +66,37 @@ public class Cluster {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#cfn-ecs-cluster-tags
+     * 
+     */
+    @JsonIgnore
+    public List<Property<Tag>> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#cfn-ecs-cluster-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+    }
+
+    public Cluster withTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("clusterName", clusterName).toString();
+        return new ToStringBuilder(this).append("clusterName", clusterName).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(clusterName).toHashCode();
+        return new HashCodeBuilder().append(clusterName).append(tags).toHashCode();
     }
 
     @Override
@@ -73,7 +108,7 @@ public class Cluster {
             return false;
         }
         Cluster rhs = ((Cluster) other);
-        return new EqualsBuilder().append(clusterName, rhs.clusterName).isEquals();
+        return new EqualsBuilder().append(clusterName, rhs.clusterName).append(tags, rhs.tags).isEquals();
     }
 
 }

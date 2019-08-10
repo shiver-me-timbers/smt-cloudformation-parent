@@ -1,0 +1,62 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MediaLive_Channel.InputSettings.schema.json",
+  "title" : "ChannelInputSettings",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-inputsettings.html",
+  "type" : "object",
+  "javaType" : "aws.medialive.ChannelInputSettings",
+  "javaInterfaces" : [ "aws.Property<ChannelInputSettings>" ],
+  "properties" : {
+    "DeblockFilter" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-inputsettings.html#cfn-medialive-channel-inputsettings-deblockfilter",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "FilterStrength" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-inputsettings.html#cfn-medialive-channel-inputsettings-filterstrength",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "InputFilter" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-inputsettings.html#cfn-medialive-channel-inputsettings-inputfilter",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SourceEndBehavior" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-inputsettings.html#cfn-medialive-channel-inputsettings-sourceendbehavior",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "VideoSelector" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-inputsettings.html#cfn-medialive-channel-inputsettings-videoselector",
+      "$ref" : "AWS_MediaLive_Channel.VideoSelector.schema.json",
+      "javaType" : "aws.Property<aws.medialive.ChannelVideoSelector>"
+    },
+    "AudioSelectors" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-inputsettings.html#cfn-medialive-channel-inputsettings-audioselectors",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_MediaLive_Channel.AudioSelector.schema.json",
+        "javaType" : "aws.Property<aws.medialive.ChannelAudioSelector>"
+      }
+    },
+    "CaptionSelectors" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-inputsettings.html#cfn-medialive-channel-inputsettings-captionselectors",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_MediaLive_Channel.CaptionSelector.schema.json",
+        "javaType" : "aws.Property<aws.medialive.ChannelCaptionSelector>"
+      }
+    },
+    "DenoiseFilter" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-inputsettings.html#cfn-medialive-channel-inputsettings-denoisefilter",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "NetworkInputSettings" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-inputsettings.html#cfn-medialive-channel-inputsettings-networkinputsettings",
+      "$ref" : "AWS_MediaLive_Channel.NetworkInputSettings.schema.json",
+      "javaType" : "aws.Property<aws.medialive.ChannelNetworkInputSettings>"
+    }
+  }
+}

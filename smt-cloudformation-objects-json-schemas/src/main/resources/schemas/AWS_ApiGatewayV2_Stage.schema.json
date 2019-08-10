@@ -50,6 +50,11 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html#cfn-apigatewayv2-stage-defaultroutesettings",
       "$ref" : "AWS_ApiGatewayV2_Stage.RouteSettings.schema.json",
       "javaType" : "aws.Property<aws.apigatewayv2.StageRouteSettings>"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html#cfn-apigatewayv2-stage-tags",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     }
   }
 }

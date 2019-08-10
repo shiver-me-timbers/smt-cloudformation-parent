@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MediaLive_Channel.Scte27SourceSettings.schema.json",
+  "title" : "ChannelScte27SourceSettings",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-scte27sourcesettings.html",
+  "type" : "object",
+  "javaType" : "aws.medialive.ChannelScte27SourceSettings",
+  "javaInterfaces" : [ "aws.Property<ChannelScte27SourceSettings>" ],
+  "properties" : {
+    "Pid" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-scte27sourcesettings.html#cfn-medialive-channel-scte27sourcesettings-pid",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    }
+  }
+}

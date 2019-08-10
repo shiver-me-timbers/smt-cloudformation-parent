@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Transfer_ServerResource.schema.json",
+  "title" : "ServerResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-server.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.transfer.ServerResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ServerResource>", "aws.HasCondition<ServerResource>", "aws.HasAttributes<ServerAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Transfer::Server"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Transfer_Server.schema.json"
+    }
+  }
+}

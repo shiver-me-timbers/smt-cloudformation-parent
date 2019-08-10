@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_GCMChannelResource.schema.json",
+  "title" : "GCMChannelResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-gcmchannel.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.pinpoint.GCMChannelResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<GCMChannelResource>", "aws.HasCondition<GCMChannelResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Pinpoint::GCMChannel"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Pinpoint_GCMChannel.schema.json"
+    }
+  }
+}

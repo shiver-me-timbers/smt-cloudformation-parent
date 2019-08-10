@@ -12,6 +12,36 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "HostHeaderConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-conditions.html#cfn-elasticloadbalancingv2-listenerrule-rulecondition-hostheaderconfig",
+      "$ref" : "AWS_ElasticLoadBalancingV2_ListenerRule.HostHeaderConfig.schema.json",
+      "javaType" : "aws.Property<aws.elasticloadbalancingv2.ListenerRuleHostHeaderConfig>"
+    },
+    "HttpHeaderConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-conditions.html#cfn-elasticloadbalancingv2-listenerrule-rulecondition-httpheaderconfig",
+      "$ref" : "AWS_ElasticLoadBalancingV2_ListenerRule.HttpHeaderConfig.schema.json",
+      "javaType" : "aws.Property<aws.elasticloadbalancingv2.ListenerRuleHttpHeaderConfig>"
+    },
+    "HttpRequestMethodConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-conditions.html#cfn-elasticloadbalancingv2-listenerrule-rulecondition-httprequestmethodconfig",
+      "$ref" : "AWS_ElasticLoadBalancingV2_ListenerRule.HttpRequestMethodConfig.schema.json",
+      "javaType" : "aws.Property<aws.elasticloadbalancingv2.ListenerRuleHttpRequestMethodConfig>"
+    },
+    "PathPatternConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-conditions.html#cfn-elasticloadbalancingv2-listenerrule-rulecondition-pathpatternconfig",
+      "$ref" : "AWS_ElasticLoadBalancingV2_ListenerRule.PathPatternConfig.schema.json",
+      "javaType" : "aws.Property<aws.elasticloadbalancingv2.ListenerRulePathPatternConfig>"
+    },
+    "QueryStringConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-conditions.html#cfn-elasticloadbalancingv2-listenerrule-rulecondition-querystringconfig",
+      "$ref" : "AWS_ElasticLoadBalancingV2_ListenerRule.QueryStringConfig.schema.json",
+      "javaType" : "aws.Property<aws.elasticloadbalancingv2.ListenerRuleQueryStringConfig>"
+    },
+    "SourceIpConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-conditions.html#cfn-elasticloadbalancingv2-listenerrule-rulecondition-sourceipconfig",
+      "$ref" : "AWS_ElasticLoadBalancingV2_ListenerRule.SourceIpConfig.schema.json",
+      "javaType" : "aws.Property<aws.elasticloadbalancingv2.ListenerRuleSourceIpConfig>"
+    },
     "Values" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-conditions.html#cfn-elasticloadbalancingv2-listenerrule-conditions-values",
       "type" : "array",

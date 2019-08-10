@@ -28,7 +28,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "StageName",
     "StageVariables",
     "ApiId",
-    "DefaultRouteSettings"
+    "DefaultRouteSettings",
+    "Tags"
 })
 public class Stage {
 
@@ -99,6 +100,13 @@ public class Stage {
     @JsonProperty("DefaultRouteSettings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-stage-routesettings.html")
     private Property<StageRouteSettings> defaultRouteSettings;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html#cfn-apigatewayv2-stage-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html#cfn-apigatewayv2-stage-tags")
+    private Object tags;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html#cfn-apigatewayv2-stage-clientcertificateid
@@ -315,14 +323,37 @@ public class Stage {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html#cfn-apigatewayv2-stage-tags
+     * 
+     */
+    @JsonIgnore
+    public Object getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html#cfn-apigatewayv2-stage-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(Object tags) {
+        this.tags = tags;
+    }
+
+    public Stage withTags(Object tags) {
+        this.tags = tags;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("clientCertificateId", clientCertificateId).append("deploymentId", deploymentId).append("description", description).append("accessLogSettings", accessLogSettings).append("routeSettings", routeSettings).append("stageName", stageName).append("stageVariables", stageVariables).append("apiId", apiId).append("defaultRouteSettings", defaultRouteSettings).toString();
+        return new ToStringBuilder(this).append("clientCertificateId", clientCertificateId).append("deploymentId", deploymentId).append("description", description).append("accessLogSettings", accessLogSettings).append("routeSettings", routeSettings).append("stageName", stageName).append("stageVariables", stageVariables).append("apiId", apiId).append("defaultRouteSettings", defaultRouteSettings).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(stageName).append(clientCertificateId).append(routeSettings).append(deploymentId).append(description).append(defaultRouteSettings).append(stageVariables).append(apiId).append(accessLogSettings).toHashCode();
+        return new HashCodeBuilder().append(stageName).append(clientCertificateId).append(routeSettings).append(deploymentId).append(description).append(defaultRouteSettings).append(stageVariables).append(apiId).append(accessLogSettings).append(tags).toHashCode();
     }
 
     @Override
@@ -334,7 +365,7 @@ public class Stage {
             return false;
         }
         Stage rhs = ((Stage) other);
-        return new EqualsBuilder().append(stageName, rhs.stageName).append(clientCertificateId, rhs.clientCertificateId).append(routeSettings, rhs.routeSettings).append(deploymentId, rhs.deploymentId).append(description, rhs.description).append(defaultRouteSettings, rhs.defaultRouteSettings).append(stageVariables, rhs.stageVariables).append(apiId, rhs.apiId).append(accessLogSettings, rhs.accessLogSettings).isEquals();
+        return new EqualsBuilder().append(stageName, rhs.stageName).append(clientCertificateId, rhs.clientCertificateId).append(routeSettings, rhs.routeSettings).append(deploymentId, rhs.deploymentId).append(description, rhs.description).append(defaultRouteSettings, rhs.defaultRouteSettings).append(stageVariables, rhs.stageVariables).append(apiId, rhs.apiId).append(accessLogSettings, rhs.accessLogSettings).append(tags, rhs.tags).isEquals();
     }
 
 }

@@ -22,9 +22,11 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "OpenIDConnectConfig",
     "UserPoolConfig",
+    "Tags",
     "Name",
     "AuthenticationType",
-    "LogConfig"
+    "LogConfig",
+    "AdditionalAuthenticationProviders"
 })
 public class GraphQLApi {
 
@@ -46,6 +48,15 @@ public class GraphQLApi {
     @JsonProperty("UserPoolConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-userpoolconfig.html")
     private Property<GraphQLApiUserPoolConfig> userPoolConfig;
+    /**
+     * GraphQLApiTags
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-tags.html
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-tags.html")
+    private Property<GraphQLApiTags> tags;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html#cfn-appsync-graphqlapi-name
      * 
@@ -69,6 +80,15 @@ public class GraphQLApi {
     @JsonProperty("LogConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html")
     private Property<GraphQLApiLogConfig> logConfig;
+    /**
+     * GraphQLApiAdditionalAuthenticationProviders
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-additionalauthenticationproviders.html
+     * 
+     */
+    @JsonProperty("AdditionalAuthenticationProviders")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-additionalauthenticationproviders.html")
+    private Property<GraphQLApiAdditionalAuthenticationProviders> additionalAuthenticationProviders;
 
     /**
      * GraphQLApiOpenIDConnectConfig
@@ -121,6 +141,33 @@ public class GraphQLApi {
 
     public GraphQLApi withUserPoolConfig(Property<GraphQLApiUserPoolConfig> userPoolConfig) {
         this.userPoolConfig = userPoolConfig;
+        return this;
+    }
+
+    /**
+     * GraphQLApiTags
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-tags.html
+     * 
+     */
+    @JsonIgnore
+    public Property<GraphQLApiTags> getTags() {
+        return tags;
+    }
+
+    /**
+     * GraphQLApiTags
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-tags.html
+     * 
+     */
+    @JsonIgnore
+    public void setTags(Property<GraphQLApiTags> tags) {
+        this.tags = tags;
+    }
+
+    public GraphQLApi withTags(Property<GraphQLApiTags> tags) {
+        this.tags = tags;
         return this;
     }
 
@@ -197,14 +244,41 @@ public class GraphQLApi {
         return this;
     }
 
+    /**
+     * GraphQLApiAdditionalAuthenticationProviders
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-additionalauthenticationproviders.html
+     * 
+     */
+    @JsonIgnore
+    public Property<GraphQLApiAdditionalAuthenticationProviders> getAdditionalAuthenticationProviders() {
+        return additionalAuthenticationProviders;
+    }
+
+    /**
+     * GraphQLApiAdditionalAuthenticationProviders
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-additionalauthenticationproviders.html
+     * 
+     */
+    @JsonIgnore
+    public void setAdditionalAuthenticationProviders(Property<GraphQLApiAdditionalAuthenticationProviders> additionalAuthenticationProviders) {
+        this.additionalAuthenticationProviders = additionalAuthenticationProviders;
+    }
+
+    public GraphQLApi withAdditionalAuthenticationProviders(Property<GraphQLApiAdditionalAuthenticationProviders> additionalAuthenticationProviders) {
+        this.additionalAuthenticationProviders = additionalAuthenticationProviders;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("openIDConnectConfig", openIDConnectConfig).append("userPoolConfig", userPoolConfig).append("name", name).append("authenticationType", authenticationType).append("logConfig", logConfig).toString();
+        return new ToStringBuilder(this).append("openIDConnectConfig", openIDConnectConfig).append("userPoolConfig", userPoolConfig).append("tags", tags).append("name", name).append("authenticationType", authenticationType).append("logConfig", logConfig).append("additionalAuthenticationProviders", additionalAuthenticationProviders).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(name).append(logConfig).append(authenticationType).append(openIDConnectConfig).append(userPoolConfig).toHashCode();
+        return new HashCodeBuilder().append(additionalAuthenticationProviders).append(logConfig).append(openIDConnectConfig).append(userPoolConfig).append(name).append(authenticationType).append(tags).toHashCode();
     }
 
     @Override
@@ -216,7 +290,7 @@ public class GraphQLApi {
             return false;
         }
         GraphQLApi rhs = ((GraphQLApi) other);
-        return new EqualsBuilder().append(name, rhs.name).append(logConfig, rhs.logConfig).append(authenticationType, rhs.authenticationType).append(openIDConnectConfig, rhs.openIDConnectConfig).append(userPoolConfig, rhs.userPoolConfig).isEquals();
+        return new EqualsBuilder().append(additionalAuthenticationProviders, rhs.additionalAuthenticationProviders).append(logConfig, rhs.logConfig).append(openIDConnectConfig, rhs.openIDConnectConfig).append(userPoolConfig, rhs.userPoolConfig).append(name, rhs.name).append(authenticationType, rhs.authenticationType).append(tags, rhs.tags).isEquals();
     }
 
 }

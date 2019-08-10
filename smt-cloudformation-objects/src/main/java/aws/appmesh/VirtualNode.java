@@ -4,6 +4,7 @@ package aws.appmesh;
 import java.util.ArrayList;
 import java.util.List;
 import aws.Property;
+import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -58,7 +59,7 @@ public class VirtualNode {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualnode.html#cfn-appmesh-virtualnode-tags")
-    private List<Property<VirtualNodeTagRef>> tags = new ArrayList<Property<VirtualNodeTagRef>>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualnode.html#cfn-appmesh-virtualnode-meshname
@@ -138,7 +139,7 @@ public class VirtualNode {
      * 
      */
     @JsonIgnore
-    public List<Property<VirtualNodeTagRef>> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -147,11 +148,11 @@ public class VirtualNode {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Property<VirtualNodeTagRef>> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public VirtualNode withTags(List<Property<VirtualNodeTagRef>> tags) {
+    public VirtualNode withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

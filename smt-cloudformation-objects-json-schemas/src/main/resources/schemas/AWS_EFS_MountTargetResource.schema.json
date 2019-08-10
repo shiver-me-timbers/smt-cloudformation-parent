@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.efs.MountTargetResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<MountTargetResource>", "aws.HasCondition<MountTargetResource>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<MountTargetResource>", "aws.HasCondition<MountTargetResource>", "aws.HasAttributes<MountTargetAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

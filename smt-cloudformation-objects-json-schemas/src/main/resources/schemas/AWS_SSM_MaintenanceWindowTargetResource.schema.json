@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SSM_MaintenanceWindowTargetResource.schema.json",
+  "title" : "MaintenanceWindowTargetResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtarget.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.ssm.MaintenanceWindowTargetResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<MaintenanceWindowTargetResource>", "aws.HasCondition<MaintenanceWindowTargetResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::SSM::MaintenanceWindowTarget"
+    },
+    "Properties" : {
+      "$ref" : "AWS_SSM_MaintenanceWindowTarget.schema.json"
+    }
+  }
+}

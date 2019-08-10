@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Backup_BackupVaultAttributes.schema.json",
+  "title" : "BackupVaultAttributes",
+  "type" : "string",
+  "enum" : [ "BackupVaultName", "BackupVaultArn" ],
+  "javaType" : "aws.backup.BackupVaultAttributes"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MediaLive_InputResource.schema.json",
+  "title" : "InputResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-input.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.medialive.InputResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<InputResource>", "aws.HasCondition<InputResource>", "aws.HasAttributes<InputAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::MediaLive::Input"
+    },
+    "Properties" : {
+      "$ref" : "AWS_MediaLive_Input.schema.json"
+    }
+  }
+}

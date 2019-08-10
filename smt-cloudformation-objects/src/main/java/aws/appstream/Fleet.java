@@ -32,6 +32,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Name",
     "ImageName",
     "MaxUserDurationInSeconds",
+    "IdleDisconnectTimeoutInSeconds",
     "DisconnectTimeoutInSeconds",
     "DisplayName",
     "InstanceType",
@@ -109,6 +110,13 @@ public class Fleet {
     @JsonProperty("MaxUserDurationInSeconds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-maxuserdurationinseconds")
     private Number maxUserDurationInSeconds;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-idledisconnecttimeoutinseconds
+     * 
+     */
+    @JsonProperty("IdleDisconnectTimeoutInSeconds")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-idledisconnecttimeoutinseconds")
+    private Number idleDisconnectTimeoutInSeconds;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-disconnecttimeoutinseconds
      * 
@@ -365,6 +373,29 @@ public class Fleet {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-idledisconnecttimeoutinseconds
+     * 
+     */
+    @JsonIgnore
+    public Number getIdleDisconnectTimeoutInSeconds() {
+        return idleDisconnectTimeoutInSeconds;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-idledisconnecttimeoutinseconds
+     * 
+     */
+    @JsonIgnore
+    public void setIdleDisconnectTimeoutInSeconds(Number idleDisconnectTimeoutInSeconds) {
+        this.idleDisconnectTimeoutInSeconds = idleDisconnectTimeoutInSeconds;
+    }
+
+    public Fleet withIdleDisconnectTimeoutInSeconds(Number idleDisconnectTimeoutInSeconds) {
+        this.idleDisconnectTimeoutInSeconds = idleDisconnectTimeoutInSeconds;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-disconnecttimeoutinseconds
      * 
      */
@@ -481,12 +512,12 @@ public class Fleet {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("description", description).append("computeCapacity", computeCapacity).append("vpcConfig", vpcConfig).append("fleetType", fleetType).append("enableDefaultInternetAccess", enableDefaultInternetAccess).append("domainJoinInfo", domainJoinInfo).append("name", name).append("imageName", imageName).append("maxUserDurationInSeconds", maxUserDurationInSeconds).append("disconnectTimeoutInSeconds", disconnectTimeoutInSeconds).append("displayName", displayName).append("instanceType", instanceType).append("tags", tags).append("imageArn", imageArn).toString();
+        return new ToStringBuilder(this).append("description", description).append("computeCapacity", computeCapacity).append("vpcConfig", vpcConfig).append("fleetType", fleetType).append("enableDefaultInternetAccess", enableDefaultInternetAccess).append("domainJoinInfo", domainJoinInfo).append("name", name).append("imageName", imageName).append("maxUserDurationInSeconds", maxUserDurationInSeconds).append("idleDisconnectTimeoutInSeconds", idleDisconnectTimeoutInSeconds).append("disconnectTimeoutInSeconds", disconnectTimeoutInSeconds).append("displayName", displayName).append("instanceType", instanceType).append("tags", tags).append("imageArn", imageArn).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(maxUserDurationInSeconds).append(imageArn).append(imageName).append(enableDefaultInternetAccess).append(displayName).append(instanceType).append(description).append(tags).append(domainJoinInfo).append(computeCapacity).append(fleetType).append(vpcConfig).append(name).append(disconnectTimeoutInSeconds).toHashCode();
+        return new HashCodeBuilder().append(maxUserDurationInSeconds).append(imageArn).append(imageName).append(enableDefaultInternetAccess).append(displayName).append(instanceType).append(description).append(tags).append(domainJoinInfo).append(computeCapacity).append(fleetType).append(vpcConfig).append(name).append(idleDisconnectTimeoutInSeconds).append(disconnectTimeoutInSeconds).toHashCode();
     }
 
     @Override
@@ -498,7 +529,7 @@ public class Fleet {
             return false;
         }
         Fleet rhs = ((Fleet) other);
-        return new EqualsBuilder().append(maxUserDurationInSeconds, rhs.maxUserDurationInSeconds).append(imageArn, rhs.imageArn).append(imageName, rhs.imageName).append(enableDefaultInternetAccess, rhs.enableDefaultInternetAccess).append(displayName, rhs.displayName).append(instanceType, rhs.instanceType).append(description, rhs.description).append(tags, rhs.tags).append(domainJoinInfo, rhs.domainJoinInfo).append(computeCapacity, rhs.computeCapacity).append(fleetType, rhs.fleetType).append(vpcConfig, rhs.vpcConfig).append(name, rhs.name).append(disconnectTimeoutInSeconds, rhs.disconnectTimeoutInSeconds).isEquals();
+        return new EqualsBuilder().append(maxUserDurationInSeconds, rhs.maxUserDurationInSeconds).append(imageArn, rhs.imageArn).append(imageName, rhs.imageName).append(enableDefaultInternetAccess, rhs.enableDefaultInternetAccess).append(displayName, rhs.displayName).append(instanceType, rhs.instanceType).append(description, rhs.description).append(tags, rhs.tags).append(domainJoinInfo, rhs.domainJoinInfo).append(computeCapacity, rhs.computeCapacity).append(fleetType, rhs.fleetType).append(vpcConfig, rhs.vpcConfig).append(name, rhs.name).append(idleDisconnectTimeoutInSeconds, rhs.idleDisconnectTimeoutInSeconds).append(disconnectTimeoutInSeconds, rhs.disconnectTimeoutInSeconds).isEquals();
     }
 
 }

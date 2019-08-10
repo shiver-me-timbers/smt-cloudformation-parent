@@ -25,6 +25,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "User",
     "Memory",
     "Privileged",
+    "LinuxParameters",
     "JobRoleArn",
     "ReadonlyRootFilesystem",
     "Vcpus",
@@ -61,6 +62,15 @@ public class JobDefinitionContainerProperties implements Property<JobDefinitionC
     @JsonProperty("Privileged")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-privileged")
     private CharSequence privileged;
+    /**
+     * JobDefinitionLinuxParameters
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties-linuxparameters.html
+     * 
+     */
+    @JsonProperty("LinuxParameters")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties-linuxparameters.html")
+    private Property<JobDefinitionLinuxParameters> linuxParameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-jobrolearn
      * 
@@ -205,6 +215,33 @@ public class JobDefinitionContainerProperties implements Property<JobDefinitionC
 
     public JobDefinitionContainerProperties withPrivileged(CharSequence privileged) {
         this.privileged = privileged;
+        return this;
+    }
+
+    /**
+     * JobDefinitionLinuxParameters
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties-linuxparameters.html
+     * 
+     */
+    @JsonIgnore
+    public Property<JobDefinitionLinuxParameters> getLinuxParameters() {
+        return linuxParameters;
+    }
+
+    /**
+     * JobDefinitionLinuxParameters
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties-linuxparameters.html
+     * 
+     */
+    @JsonIgnore
+    public void setLinuxParameters(Property<JobDefinitionLinuxParameters> linuxParameters) {
+        this.linuxParameters = linuxParameters;
+    }
+
+    public JobDefinitionContainerProperties withLinuxParameters(Property<JobDefinitionLinuxParameters> linuxParameters) {
+        this.linuxParameters = linuxParameters;
         return this;
     }
 
@@ -463,12 +500,12 @@ public class JobDefinitionContainerProperties implements Property<JobDefinitionC
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("user", user).append("memory", memory).append("privileged", privileged).append("jobRoleArn", jobRoleArn).append("readonlyRootFilesystem", readonlyRootFilesystem).append("vcpus", vcpus).append("image", image).append("resourceRequirements", resourceRequirements).append("mountPoints", mountPoints).append("volumes", volumes).append("command", command).append("environment", environment).append("ulimits", ulimits).append("instanceType", instanceType).toString();
+        return new ToStringBuilder(this).append("user", user).append("memory", memory).append("privileged", privileged).append("linuxParameters", linuxParameters).append("jobRoleArn", jobRoleArn).append("readonlyRootFilesystem", readonlyRootFilesystem).append("vcpus", vcpus).append("image", image).append("resourceRequirements", resourceRequirements).append("mountPoints", mountPoints).append("volumes", volumes).append("command", command).append("environment", environment).append("ulimits", ulimits).append("instanceType", instanceType).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(image).append(memory).append(instanceType).append(volumes).append(vcpus).append(command).append(privileged).append(resourceRequirements).append(environment).append(ulimits).append(readonlyRootFilesystem).append(mountPoints).append(jobRoleArn).append(user).toHashCode();
+        return new HashCodeBuilder().append(image).append(memory).append(instanceType).append(volumes).append(vcpus).append(command).append(privileged).append(resourceRequirements).append(environment).append(ulimits).append(readonlyRootFilesystem).append(mountPoints).append(jobRoleArn).append(user).append(linuxParameters).toHashCode();
     }
 
     @Override
@@ -480,7 +517,7 @@ public class JobDefinitionContainerProperties implements Property<JobDefinitionC
             return false;
         }
         JobDefinitionContainerProperties rhs = ((JobDefinitionContainerProperties) other);
-        return new EqualsBuilder().append(image, rhs.image).append(memory, rhs.memory).append(instanceType, rhs.instanceType).append(volumes, rhs.volumes).append(vcpus, rhs.vcpus).append(command, rhs.command).append(privileged, rhs.privileged).append(resourceRequirements, rhs.resourceRequirements).append(environment, rhs.environment).append(ulimits, rhs.ulimits).append(readonlyRootFilesystem, rhs.readonlyRootFilesystem).append(mountPoints, rhs.mountPoints).append(jobRoleArn, rhs.jobRoleArn).append(user, rhs.user).isEquals();
+        return new EqualsBuilder().append(image, rhs.image).append(memory, rhs.memory).append(instanceType, rhs.instanceType).append(volumes, rhs.volumes).append(vcpus, rhs.vcpus).append(command, rhs.command).append(privileged, rhs.privileged).append(resourceRequirements, rhs.resourceRequirements).append(environment, rhs.environment).append(ulimits, rhs.ulimits).append(readonlyRootFilesystem, rhs.readonlyRootFilesystem).append(mountPoints, rhs.mountPoints).append(jobRoleArn, rhs.jobRoleArn).append(user, rhs.user).append(linuxParameters, rhs.linuxParameters).isEquals();
     }
 
 }

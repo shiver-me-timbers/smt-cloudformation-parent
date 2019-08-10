@@ -1,0 +1,65 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_KinesisFirehose_DeliveryStream.OrcSerDe.schema.json",
+  "title" : "DeliveryStreamOrcSerDe",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-orcserde.html",
+  "type" : "object",
+  "javaType" : "aws.kinesisfirehose.DeliveryStreamOrcSerDe",
+  "javaInterfaces" : [ "aws.Property<DeliveryStreamOrcSerDe>" ],
+  "properties" : {
+    "BlockSizeBytes" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-orcserde.html#cfn-kinesisfirehose-deliverystream-orcserde-blocksizebytes",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "BloomFilterColumns" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-orcserde.html#cfn-kinesisfirehose-deliverystream-orcserde-bloomfiltercolumns",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    },
+    "BloomFilterFalsePositiveProbability" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-orcserde.html#cfn-kinesisfirehose-deliverystream-orcserde-bloomfilterfalsepositiveprobability",
+      "type" : "number",
+      "javaType" : "java.lang.Number"
+    },
+    "Compression" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-orcserde.html#cfn-kinesisfirehose-deliverystream-orcserde-compression",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DictionaryKeyThreshold" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-orcserde.html#cfn-kinesisfirehose-deliverystream-orcserde-dictionarykeythreshold",
+      "type" : "number",
+      "javaType" : "java.lang.Number"
+    },
+    "EnablePadding" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-orcserde.html#cfn-kinesisfirehose-deliverystream-orcserde-enablepadding",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "FormatVersion" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-orcserde.html#cfn-kinesisfirehose-deliverystream-orcserde-formatversion",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "PaddingTolerance" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-orcserde.html#cfn-kinesisfirehose-deliverystream-orcserde-paddingtolerance",
+      "type" : "number",
+      "javaType" : "java.lang.Number"
+    },
+    "RowIndexStride" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-orcserde.html#cfn-kinesisfirehose-deliverystream-orcserde-rowindexstride",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "StripeSizeBytes" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-orcserde.html#cfn-kinesisfirehose-deliverystream-orcserde-stripesizebytes",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    }
+  }
+}

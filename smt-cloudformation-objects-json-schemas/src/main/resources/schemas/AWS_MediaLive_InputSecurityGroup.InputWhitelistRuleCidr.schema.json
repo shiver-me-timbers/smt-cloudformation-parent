@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MediaLive_InputSecurityGroup.InputWhitelistRuleCidr.schema.json",
+  "title" : "InputSecurityGroupInputWhitelistRuleCidr",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-inputsecuritygroup-inputwhitelistrulecidr.html",
+  "type" : "object",
+  "javaType" : "aws.medialive.InputSecurityGroupInputWhitelistRuleCidr",
+  "javaInterfaces" : [ "aws.Property<InputSecurityGroupInputWhitelistRuleCidr>" ],
+  "properties" : {
+    "Cidr" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-inputsecuritygroup-inputwhitelistrulecidr.html#cfn-medialive-inputsecuritygroup-inputwhitelistrulecidr-cidr",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

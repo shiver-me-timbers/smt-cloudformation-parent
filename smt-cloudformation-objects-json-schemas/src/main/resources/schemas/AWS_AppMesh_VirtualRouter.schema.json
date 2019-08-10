@@ -25,8 +25,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualrouter.html#cfn-appmesh-virtualrouter-tags",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_AppMesh_VirtualRouter.TagRef.schema.json",
-        "javaType" : "aws.Property<aws.appmesh.VirtualRouterTagRef>"
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
       }
     }
   }

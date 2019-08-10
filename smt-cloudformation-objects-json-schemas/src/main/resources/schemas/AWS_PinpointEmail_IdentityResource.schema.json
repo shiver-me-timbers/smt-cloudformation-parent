@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_PinpointEmail_IdentityResource.schema.json",
+  "title" : "IdentityResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpointemail-identity.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.pinpointemail.IdentityResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<IdentityResource>", "aws.HasCondition<IdentityResource>", "aws.HasAttributes<IdentityAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::PinpointEmail::Identity"
+    },
+    "Properties" : {
+      "$ref" : "AWS_PinpointEmail_Identity.schema.json"
+    }
+  }
+}

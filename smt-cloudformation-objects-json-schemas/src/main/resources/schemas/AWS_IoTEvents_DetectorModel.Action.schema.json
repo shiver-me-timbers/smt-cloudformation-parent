@@ -1,0 +1,61 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoTEvents_DetectorModel.Action.schema.json",
+  "title" : "DetectorModelAction",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-action.html",
+  "type" : "object",
+  "javaType" : "aws.iotevents.DetectorModelAction",
+  "javaInterfaces" : [ "aws.Property<DetectorModelAction>" ],
+  "properties" : {
+    "IotEvents" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-action.html#cfn-iotevents-detectormodel-action-iotevents",
+      "$ref" : "AWS_IoTEvents_DetectorModel.IotEvents.schema.json",
+      "javaType" : "aws.Property<aws.iotevents.DetectorModelIotEvents>"
+    },
+    "ResetTimer" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-action.html#cfn-iotevents-detectormodel-action-resettimer",
+      "$ref" : "AWS_IoTEvents_DetectorModel.ResetTimer.schema.json",
+      "javaType" : "aws.Property<aws.iotevents.DetectorModelResetTimer>"
+    },
+    "Sqs" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-action.html#cfn-iotevents-detectormodel-action-sqs",
+      "$ref" : "AWS_IoTEvents_DetectorModel.Sqs.schema.json",
+      "javaType" : "aws.Property<aws.iotevents.DetectorModelSqs>"
+    },
+    "Firehose" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-action.html#cfn-iotevents-detectormodel-action-firehose",
+      "$ref" : "AWS_IoTEvents_DetectorModel.Firehose.schema.json",
+      "javaType" : "aws.Property<aws.iotevents.DetectorModelFirehose>"
+    },
+    "Sns" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-action.html#cfn-iotevents-detectormodel-action-sns",
+      "$ref" : "AWS_IoTEvents_DetectorModel.Sns.schema.json",
+      "javaType" : "aws.Property<aws.iotevents.DetectorModelSns>"
+    },
+    "IotTopicPublish" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-action.html#cfn-iotevents-detectormodel-action-iottopicpublish",
+      "$ref" : "AWS_IoTEvents_DetectorModel.IotTopicPublish.schema.json",
+      "javaType" : "aws.Property<aws.iotevents.DetectorModelIotTopicPublish>"
+    },
+    "SetTimer" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-action.html#cfn-iotevents-detectormodel-action-settimer",
+      "$ref" : "AWS_IoTEvents_DetectorModel.SetTimer.schema.json",
+      "javaType" : "aws.Property<aws.iotevents.DetectorModelSetTimer>"
+    },
+    "ClearTimer" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-action.html#cfn-iotevents-detectormodel-action-cleartimer",
+      "$ref" : "AWS_IoTEvents_DetectorModel.ClearTimer.schema.json",
+      "javaType" : "aws.Property<aws.iotevents.DetectorModelClearTimer>"
+    },
+    "Lambda" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-action.html#cfn-iotevents-detectormodel-action-lambda",
+      "$ref" : "AWS_IoTEvents_DetectorModel.Lambda.schema.json",
+      "javaType" : "aws.Property<aws.iotevents.DetectorModelLambda>"
+    },
+    "SetVariable" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-action.html#cfn-iotevents-detectormodel-action-setvariable",
+      "$ref" : "AWS_IoTEvents_DetectorModel.SetVariable.schema.json",
+      "javaType" : "aws.Property<aws.iotevents.DetectorModelSetVariable>"
+    }
+  }
+}

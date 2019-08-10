@@ -29,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "CustomerGatewayId",
     "StaticRoutesOnly",
     "Tags",
+    "TransitGatewayId",
     "Type",
     "VpnGatewayId",
     "VpnTunnelOptionsSpecifications"
@@ -56,6 +57,13 @@ public class VPNConnection {
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-tags")
     private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-transitgatewayid
+     * 
+     */
+    @JsonProperty("TransitGatewayId")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-transitgatewayid")
+    private CharSequence transitGatewayId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-type
      * 
@@ -149,6 +157,29 @@ public class VPNConnection {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-transitgatewayid
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getTransitGatewayId() {
+        return transitGatewayId;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-transitgatewayid
+     * 
+     */
+    @JsonIgnore
+    public void setTransitGatewayId(CharSequence transitGatewayId) {
+        this.transitGatewayId = transitGatewayId;
+    }
+
+    public VPNConnection withTransitGatewayId(CharSequence transitGatewayId) {
+        this.transitGatewayId = transitGatewayId;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-type
      * 
      */
@@ -219,12 +250,12 @@ public class VPNConnection {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("customerGatewayId", customerGatewayId).append("staticRoutesOnly", staticRoutesOnly).append("tags", tags).append("type", type).append("vpnGatewayId", vpnGatewayId).append("vpnTunnelOptionsSpecifications", vpnTunnelOptionsSpecifications).toString();
+        return new ToStringBuilder(this).append("customerGatewayId", customerGatewayId).append("staticRoutesOnly", staticRoutesOnly).append("tags", tags).append("transitGatewayId", transitGatewayId).append("type", type).append("vpnGatewayId", vpnGatewayId).append("vpnTunnelOptionsSpecifications", vpnTunnelOptionsSpecifications).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(customerGatewayId).append(vpnTunnelOptionsSpecifications).append(vpnGatewayId).append(type).append(staticRoutesOnly).append(tags).toHashCode();
+        return new HashCodeBuilder().append(customerGatewayId).append(vpnTunnelOptionsSpecifications).append(transitGatewayId).append(vpnGatewayId).append(type).append(staticRoutesOnly).append(tags).toHashCode();
     }
 
     @Override
@@ -236,7 +267,7 @@ public class VPNConnection {
             return false;
         }
         VPNConnection rhs = ((VPNConnection) other);
-        return new EqualsBuilder().append(customerGatewayId, rhs.customerGatewayId).append(vpnTunnelOptionsSpecifications, rhs.vpnTunnelOptionsSpecifications).append(vpnGatewayId, rhs.vpnGatewayId).append(type, rhs.type).append(staticRoutesOnly, rhs.staticRoutesOnly).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(customerGatewayId, rhs.customerGatewayId).append(vpnTunnelOptionsSpecifications, rhs.vpnTunnelOptionsSpecifications).append(transitGatewayId, rhs.transitGatewayId).append(vpnGatewayId, rhs.vpnGatewayId).append(type, rhs.type).append(staticRoutesOnly, rhs.staticRoutesOnly).append(tags, rhs.tags).isEquals();
     }
 
 }

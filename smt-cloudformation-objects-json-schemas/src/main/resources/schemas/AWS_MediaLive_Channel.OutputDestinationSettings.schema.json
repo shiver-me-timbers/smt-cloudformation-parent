@@ -1,0 +1,31 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MediaLive_Channel.OutputDestinationSettings.schema.json",
+  "title" : "ChannelOutputDestinationSettings",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-outputdestinationsettings.html",
+  "type" : "object",
+  "javaType" : "aws.medialive.ChannelOutputDestinationSettings",
+  "javaInterfaces" : [ "aws.Property<ChannelOutputDestinationSettings>" ],
+  "properties" : {
+    "StreamName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-outputdestinationsettings.html#cfn-medialive-channel-outputdestinationsettings-streamname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Username" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-outputdestinationsettings.html#cfn-medialive-channel-outputdestinationsettings-username",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "PasswordParam" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-outputdestinationsettings.html#cfn-medialive-channel-outputdestinationsettings-passwordparam",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Url" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-outputdestinationsettings.html#cfn-medialive-channel-outputdestinationsettings-url",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

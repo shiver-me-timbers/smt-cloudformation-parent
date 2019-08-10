@@ -22,6 +22,11 @@
       "type" : "boolean",
       "javaType" : "java.lang.CharSequence"
     },
+    "LinuxParameters" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-linuxparameters",
+      "$ref" : "AWS_Batch_JobDefinition.LinuxParameters.schema.json",
+      "javaType" : "aws.Property<aws.batch.JobDefinitionLinuxParameters>"
+    },
     "JobRoleArn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-jobrolearn",
       "type" : "string",

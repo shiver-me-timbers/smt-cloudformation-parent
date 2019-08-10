@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_KinesisFirehose_DeliveryStream.InputFormatConfiguration.schema.json",
+  "title" : "DeliveryStreamInputFormatConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-inputformatconfiguration.html",
+  "type" : "object",
+  "javaType" : "aws.kinesisfirehose.DeliveryStreamInputFormatConfiguration",
+  "javaInterfaces" : [ "aws.Property<DeliveryStreamInputFormatConfiguration>" ],
+  "properties" : {
+    "Deserializer" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-inputformatconfiguration.html#cfn-kinesisfirehose-deliverystream-inputformatconfiguration-deserializer",
+      "$ref" : "AWS_KinesisFirehose_DeliveryStream.Deserializer.schema.json",
+      "javaType" : "aws.Property<aws.kinesisfirehose.DeliveryStreamDeserializer>"
+    }
+  }
+}

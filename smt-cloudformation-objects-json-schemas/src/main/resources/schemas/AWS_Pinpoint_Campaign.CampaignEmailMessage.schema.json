@@ -1,0 +1,31 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_Campaign.CampaignEmailMessage.schema.json",
+  "title" : "CampaignCampaignEmailMessage",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-campaignemailmessage.html",
+  "type" : "object",
+  "javaType" : "aws.pinpoint.CampaignCampaignEmailMessage",
+  "javaInterfaces" : [ "aws.Property<CampaignCampaignEmailMessage>" ],
+  "properties" : {
+    "FromAddress" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-campaignemailmessage.html#cfn-pinpoint-campaign-campaignemailmessage-fromaddress",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "HtmlBody" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-campaignemailmessage.html#cfn-pinpoint-campaign-campaignemailmessage-htmlbody",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Title" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-campaignemailmessage.html#cfn-pinpoint-campaign-campaignemailmessage-title",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Body" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-campaignemailmessage.html#cfn-pinpoint-campaign-campaignemailmessage-body",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

@@ -23,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "DomainName",
-    "DomainNameConfigurations"
+    "DomainNameConfigurations",
+    "Tags"
 })
 public class DomainName {
 
@@ -41,6 +42,13 @@ public class DomainName {
     @JsonProperty("DomainNameConfigurations")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-domainname.html#cfn-apigatewayv2-domainname-domainnameconfigurations")
     private List<Property<DomainNameDomainNameConfiguration>> domainNameConfigurations = new ArrayList<Property<DomainNameDomainNameConfiguration>>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-domainname.html#cfn-apigatewayv2-domainname-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-domainname.html#cfn-apigatewayv2-domainname-tags")
+    private Object tags;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-domainname.html#cfn-apigatewayv2-domainname-domainname
@@ -88,14 +96,37 @@ public class DomainName {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-domainname.html#cfn-apigatewayv2-domainname-tags
+     * 
+     */
+    @JsonIgnore
+    public Object getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-domainname.html#cfn-apigatewayv2-domainname-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(Object tags) {
+        this.tags = tags;
+    }
+
+    public DomainName withTags(Object tags) {
+        this.tags = tags;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("domainName", domainName).append("domainNameConfigurations", domainNameConfigurations).toString();
+        return new ToStringBuilder(this).append("domainName", domainName).append("domainNameConfigurations", domainNameConfigurations).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(domainNameConfigurations).append(domainName).toHashCode();
+        return new HashCodeBuilder().append(domainNameConfigurations).append(domainName).append(tags).toHashCode();
     }
 
     @Override
@@ -107,7 +138,7 @@ public class DomainName {
             return false;
         }
         DomainName rhs = ((DomainName) other);
-        return new EqualsBuilder().append(domainNameConfigurations, rhs.domainNameConfigurations).append(domainName, rhs.domainName).isEquals();
+        return new EqualsBuilder().append(domainNameConfigurations, rhs.domainNameConfigurations).append(domainName, rhs.domainName).append(tags, rhs.tags).isEquals();
     }
 
 }

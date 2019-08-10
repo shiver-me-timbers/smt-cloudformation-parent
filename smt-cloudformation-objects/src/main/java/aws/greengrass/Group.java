@@ -22,6 +22,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "InitialVersion",
     "RoleArn",
+    "Tags",
     "Name"
 })
 public class Group {
@@ -42,6 +43,13 @@ public class Group {
     @JsonProperty("RoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html#cfn-greengrass-group-rolearn")
     private CharSequence roleArn;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html#cfn-greengrass-group-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html#cfn-greengrass-group-tags")
+    private Object tags;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html#cfn-greengrass-group-name
      * 
@@ -101,6 +109,29 @@ public class Group {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html#cfn-greengrass-group-tags
+     * 
+     */
+    @JsonIgnore
+    public Object getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html#cfn-greengrass-group-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(Object tags) {
+        this.tags = tags;
+    }
+
+    public Group withTags(Object tags) {
+        this.tags = tags;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html#cfn-greengrass-group-name
      * 
      */
@@ -125,12 +156,12 @@ public class Group {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("initialVersion", initialVersion).append("roleArn", roleArn).append("name", name).toString();
+        return new ToStringBuilder(this).append("initialVersion", initialVersion).append("roleArn", roleArn).append("tags", tags).append("name", name).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(initialVersion).append(name).append(roleArn).toHashCode();
+        return new HashCodeBuilder().append(initialVersion).append(name).append(roleArn).append(tags).toHashCode();
     }
 
     @Override
@@ -142,7 +173,7 @@ public class Group {
             return false;
         }
         Group rhs = ((Group) other);
-        return new EqualsBuilder().append(initialVersion, rhs.initialVersion).append(name, rhs.name).append(roleArn, rhs.roleArn).isEquals();
+        return new EqualsBuilder().append(initialVersion, rhs.initialVersion).append(name, rhs.name).append(roleArn, rhs.roleArn).append(tags, rhs.tags).isEquals();
     }
 
 }

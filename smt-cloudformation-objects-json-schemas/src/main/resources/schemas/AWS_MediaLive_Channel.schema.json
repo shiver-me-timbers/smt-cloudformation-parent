@@ -1,0 +1,61 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MediaLive_Channel.schema.json",
+  "title" : "Channel",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-channel.html",
+  "type" : "object",
+  "javaType" : "aws.medialive.Channel",
+  "properties" : {
+    "InputAttachments" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-channel.html#cfn-medialive-channel-inputattachments",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_MediaLive_Channel.InputAttachment.schema.json",
+        "javaType" : "aws.Property<aws.medialive.ChannelInputAttachment>"
+      }
+    },
+    "InputSpecification" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-channel.html#cfn-medialive-channel-inputspecification",
+      "$ref" : "AWS_MediaLive_Channel.InputSpecification.schema.json",
+      "javaType" : "aws.Property<aws.medialive.ChannelInputSpecification>"
+    },
+    "ChannelClass" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-channel.html#cfn-medialive-channel-channelclass",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "EncoderSettings" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-channel.html#cfn-medialive-channel-encodersettings",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
+    },
+    "Destinations" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-channel.html#cfn-medialive-channel-destinations",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_MediaLive_Channel.OutputDestination.schema.json",
+        "javaType" : "aws.Property<aws.medialive.ChannelOutputDestination>"
+      }
+    },
+    "LogLevel" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-channel.html#cfn-medialive-channel-loglevel",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RoleArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-channel.html#cfn-medialive-channel-rolearn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-channel.html#cfn-medialive-channel-tags",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-channel.html#cfn-medialive-channel-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

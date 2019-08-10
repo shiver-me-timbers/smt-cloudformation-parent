@@ -16,6 +16,11 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-arguments",
       "type" : "object",
       "javaType" : "java.lang.Object"
+    },
+    "SecurityConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-securityconfiguration",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
     }
   }
 }

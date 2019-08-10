@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MediaLive_Channel.VideoSelectorProgramId.schema.json",
+  "title" : "ChannelVideoSelectorProgramId",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-videoselectorprogramid.html",
+  "type" : "object",
+  "javaType" : "aws.medialive.ChannelVideoSelectorProgramId",
+  "javaInterfaces" : [ "aws.Property<ChannelVideoSelectorProgramId>" ],
+  "properties" : {
+    "ProgramId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-videoselectorprogramid.html#cfn-medialive-channel-videoselectorprogramid-programid",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    }
+  }
+}

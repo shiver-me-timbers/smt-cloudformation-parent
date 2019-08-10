@@ -1,0 +1,64 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_ClientVpnEndpoint.schema.json",
+  "title" : "ClientVpnEndpoint",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html",
+  "type" : "object",
+  "javaType" : "aws.ec2.ClientVpnEndpoint",
+  "properties" : {
+    "ClientCidrBlock" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html#cfn-ec2-clientvpnendpoint-clientcidrblock",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ConnectionLogOptions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html#cfn-ec2-clientvpnendpoint-connectionlogoptions",
+      "$ref" : "AWS_EC2_ClientVpnEndpoint.ConnectionLogOptions.schema.json",
+      "javaType" : "aws.Property<aws.ec2.ClientVpnEndpointConnectionLogOptions>"
+    },
+    "SplitTunnel" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html#cfn-ec2-clientvpnendpoint-splittunnel",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Description" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html#cfn-ec2-clientvpnendpoint-description",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TagSpecifications" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html#cfn-ec2-clientvpnendpoint-tagspecifications",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_EC2_ClientVpnEndpoint.TagSpecification.schema.json",
+        "javaType" : "aws.Property<aws.ec2.ClientVpnEndpointTagSpecification>"
+      }
+    },
+    "AuthenticationOptions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html#cfn-ec2-clientvpnendpoint-authenticationoptions",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_EC2_ClientVpnEndpoint.ClientAuthenticationRequest.schema.json",
+        "javaType" : "aws.Property<aws.ec2.ClientVpnEndpointClientAuthenticationRequest>"
+      }
+    },
+    "ServerCertificateArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html#cfn-ec2-clientvpnendpoint-servercertificatearn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DnsServers" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html#cfn-ec2-clientvpnendpoint-dnsservers",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    },
+    "TransportProtocol" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html#cfn-ec2-clientvpnendpoint-transportprotocol",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

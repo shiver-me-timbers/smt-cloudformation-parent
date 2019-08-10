@@ -1,7 +1,10 @@
 
 package aws.ecr;
 
+import java.util.ArrayList;
+import java.util.List;
 import aws.Property;
+import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "LifecyclePolicy",
     "RepositoryName",
-    "RepositoryPolicyText"
+    "RepositoryPolicyText",
+    "Tags"
 })
 public class Repository {
 
@@ -49,6 +53,13 @@ public class Repository {
     @JsonProperty("RepositoryPolicyText")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html#cfn-ecr-repository-repositorypolicytext")
     private Object repositoryPolicyText;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html#cfn-ecr-repository-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html#cfn-ecr-repository-tags")
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
      * RepositoryLifecyclePolicy
@@ -123,14 +134,37 @@ public class Repository {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html#cfn-ecr-repository-tags
+     * 
+     */
+    @JsonIgnore
+    public List<Property<Tag>> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html#cfn-ecr-repository-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+    }
+
+    public Repository withTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("lifecyclePolicy", lifecyclePolicy).append("repositoryName", repositoryName).append("repositoryPolicyText", repositoryPolicyText).toString();
+        return new ToStringBuilder(this).append("lifecyclePolicy", lifecyclePolicy).append("repositoryName", repositoryName).append("repositoryPolicyText", repositoryPolicyText).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(repositoryPolicyText).append(lifecyclePolicy).append(repositoryName).toHashCode();
+        return new HashCodeBuilder().append(repositoryPolicyText).append(lifecyclePolicy).append(repositoryName).append(tags).toHashCode();
     }
 
     @Override
@@ -142,7 +176,7 @@ public class Repository {
             return false;
         }
         Repository rhs = ((Repository) other);
-        return new EqualsBuilder().append(repositoryPolicyText, rhs.repositoryPolicyText).append(lifecyclePolicy, rhs.lifecyclePolicy).append(repositoryName, rhs.repositoryName).isEquals();
+        return new EqualsBuilder().append(repositoryPolicyText, rhs.repositoryPolicyText).append(lifecyclePolicy, rhs.lifecyclePolicy).append(repositoryName, rhs.repositoryName).append(tags, rhs.tags).isEquals();
     }
 
 }

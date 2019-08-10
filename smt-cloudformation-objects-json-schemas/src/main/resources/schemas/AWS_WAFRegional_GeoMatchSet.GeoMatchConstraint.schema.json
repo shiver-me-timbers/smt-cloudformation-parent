@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WAFRegional_GeoMatchSet.GeoMatchConstraint.schema.json",
+  "title" : "GeoMatchSetGeoMatchConstraint",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-geomatchset-geomatchconstraint.html",
+  "type" : "object",
+  "javaType" : "aws.wafregional.GeoMatchSetGeoMatchConstraint",
+  "javaInterfaces" : [ "aws.Property<GeoMatchSetGeoMatchConstraint>" ],
+  "properties" : {
+    "Type" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-geomatchset-geomatchconstraint.html#cfn-wafregional-geomatchset-geomatchconstraint-type",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Value" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-geomatchset-geomatchconstraint.html#cfn-wafregional-geomatchset-geomatchconstraint-value",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

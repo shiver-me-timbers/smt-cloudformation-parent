@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MSK_Cluster.EncryptionInfo.schema.json",
+  "title" : "ClusterEncryptionInfo",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-encryptioninfo.html",
+  "type" : "object",
+  "javaType" : "aws.msk.ClusterEncryptionInfo",
+  "javaInterfaces" : [ "aws.Property<ClusterEncryptionInfo>" ],
+  "properties" : {
+    "EncryptionAtRest" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-encryptioninfo.html#cfn-msk-cluster-encryptioninfo-encryptionatrest",
+      "$ref" : "AWS_MSK_Cluster.EncryptionAtRest.schema.json",
+      "javaType" : "aws.Property<aws.msk.ClusterEncryptionAtRest>"
+    },
+    "EncryptionInTransit" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-encryptioninfo.html#cfn-msk-cluster-encryptioninfo-encryptionintransit",
+      "$ref" : "AWS_MSK_Cluster.EncryptionInTransit.schema.json",
+      "javaType" : "aws.Property<aws.msk.ClusterEncryptionInTransit>"
+    }
+  }
+}

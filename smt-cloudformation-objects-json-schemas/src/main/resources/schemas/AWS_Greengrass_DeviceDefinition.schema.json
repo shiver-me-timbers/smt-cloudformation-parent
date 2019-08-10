@@ -11,6 +11,11 @@
       "$ref" : "AWS_Greengrass_DeviceDefinition.DeviceDefinitionVersion.schema.json",
       "javaType" : "aws.Property<aws.greengrass.DeviceDefinitionDeviceDefinitionVersion>"
     },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-devicedefinition.html#cfn-greengrass-devicedefinition-tags",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
+    },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-devicedefinition.html#cfn-greengrass-devicedefinition-name",
       "type" : "string",

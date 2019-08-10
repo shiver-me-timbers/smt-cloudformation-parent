@@ -1,0 +1,55 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MSK_Cluster.schema.json",
+  "title" : "Cluster",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-msk-cluster.html",
+  "type" : "object",
+  "javaType" : "aws.msk.Cluster",
+  "properties" : {
+    "BrokerNodeGroupInfo" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-msk-cluster.html#cfn-msk-cluster-brokernodegroupinfo",
+      "$ref" : "AWS_MSK_Cluster.BrokerNodeGroupInfo.schema.json",
+      "javaType" : "aws.Property<aws.msk.ClusterBrokerNodeGroupInfo>"
+    },
+    "EnhancedMonitoring" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-msk-cluster.html#cfn-msk-cluster-enhancedmonitoring",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "KafkaVersion" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-msk-cluster.html#cfn-msk-cluster-kafkaversion",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "NumberOfBrokerNodes" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-msk-cluster.html#cfn-msk-cluster-numberofbrokernodes",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "EncryptionInfo" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-msk-cluster.html#cfn-msk-cluster-encryptioninfo",
+      "$ref" : "AWS_MSK_Cluster.EncryptionInfo.schema.json",
+      "javaType" : "aws.Property<aws.msk.ClusterEncryptionInfo>"
+    },
+    "ClusterName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-msk-cluster.html#cfn-msk-cluster-clustername",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ClientAuthentication" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-msk-cluster.html#cfn-msk-cluster-clientauthentication",
+      "$ref" : "AWS_MSK_Cluster.ClientAuthentication.schema.json",
+      "javaType" : "aws.Property<aws.msk.ClusterClientAuthentication>"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-msk-cluster.html#cfn-msk-cluster-tags",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
+    },
+    "ConfigurationInfo" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-msk-cluster.html#cfn-msk-cluster-configurationinfo",
+      "$ref" : "AWS_MSK_Cluster.ConfigurationInfo.schema.json",
+      "javaType" : "aws.Property<aws.msk.ClusterConfigurationInfo>"
+    }
+  }
+}

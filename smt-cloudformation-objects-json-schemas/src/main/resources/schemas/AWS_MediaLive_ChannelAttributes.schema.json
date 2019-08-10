@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MediaLive_ChannelAttributes.schema.json",
+  "title" : "ChannelAttributes",
+  "type" : "string",
+  "enum" : [ "Arn", "Inputs" ],
+  "javaType" : "aws.medialive.ChannelAttributes"
+}

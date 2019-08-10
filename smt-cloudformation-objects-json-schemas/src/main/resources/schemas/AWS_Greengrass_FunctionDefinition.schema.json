@@ -11,6 +11,11 @@
       "$ref" : "AWS_Greengrass_FunctionDefinition.FunctionDefinitionVersion.schema.json",
       "javaType" : "aws.Property<aws.greengrass.FunctionDefinitionFunctionDefinitionVersion>"
     },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-functiondefinition.html#cfn-greengrass-functiondefinition-tags",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
+    },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-functiondefinition.html#cfn-greengrass-functiondefinition-name",
       "type" : "string",

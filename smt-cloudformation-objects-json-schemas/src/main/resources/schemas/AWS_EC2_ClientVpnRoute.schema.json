@@ -1,0 +1,30 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_ClientVpnRoute.schema.json",
+  "title" : "ClientVpnRoute",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnroute.html",
+  "type" : "object",
+  "javaType" : "aws.ec2.ClientVpnRoute",
+  "properties" : {
+    "ClientVpnEndpointId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnroute.html#cfn-ec2-clientvpnroute-clientvpnendpointid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TargetVpcSubnetId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnroute.html#cfn-ec2-clientvpnroute-targetvpcsubnetid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Description" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnroute.html#cfn-ec2-clientvpnroute-description",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DestinationCidrBlock" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnroute.html#cfn-ec2-clientvpnroute-destinationcidrblock",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_AppResource.schema.json",
+  "title" : "AppResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-app.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.pinpoint.AppResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<AppResource>", "aws.HasCondition<AppResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Pinpoint::App"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Pinpoint_App.schema.json"
+    }
+  }
+}

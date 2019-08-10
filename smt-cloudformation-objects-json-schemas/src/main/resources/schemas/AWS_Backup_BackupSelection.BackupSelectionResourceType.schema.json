@@ -1,0 +1,37 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Backup_BackupSelection.BackupSelectionResourceType.schema.json",
+  "title" : "BackupSelectionBackupSelectionResourceType",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-backup-backupselection-backupselectionresourcetype.html",
+  "type" : "object",
+  "javaType" : "aws.backup.BackupSelectionBackupSelectionResourceType",
+  "javaInterfaces" : [ "aws.Property<BackupSelectionBackupSelectionResourceType>" ],
+  "properties" : {
+    "ListOfTags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-backup-backupselection-backupselectionresourcetype.html#cfn-backup-backupselection-backupselectionresourcetype-listoftags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_Backup_BackupSelection.ConditionResourceType.schema.json",
+        "javaType" : "aws.Property<aws.backup.BackupSelectionConditionResourceType>"
+      }
+    },
+    "SelectionName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-backup-backupselection-backupselectionresourcetype.html#cfn-backup-backupselection-backupselectionresourcetype-selectionname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "IamRoleArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-backup-backupselection-backupselectionresourcetype.html#cfn-backup-backupselection-backupselectionresourcetype-iamrolearn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Resources" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-backup-backupselection-backupselectionresourcetype.html#cfn-backup-backupselection-backupselectionresourcetype-resources",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    }
+  }
+}

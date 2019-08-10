@@ -22,7 +22,9 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "SpotInstanceType",
     "InstanceInterruptionBehavior",
-    "MaxPrice"
+    "MaxPrice",
+    "BlockDurationMinutes",
+    "ValidUntil"
 })
 public class LaunchTemplateSpotOptions implements Property<LaunchTemplateSpotOptions>
 {
@@ -48,6 +50,20 @@ public class LaunchTemplateSpotOptions implements Property<LaunchTemplateSpotOpt
     @JsonProperty("MaxPrice")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions-maxprice")
     private CharSequence maxPrice;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions-blockdurationminutes
+     * 
+     */
+    @JsonProperty("BlockDurationMinutes")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions-blockdurationminutes")
+    private Number blockDurationMinutes;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions-validuntil
+     * 
+     */
+    @JsonProperty("ValidUntil")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions-validuntil")
+    private CharSequence validUntil;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions-spotinstancetype
@@ -118,14 +134,60 @@ public class LaunchTemplateSpotOptions implements Property<LaunchTemplateSpotOpt
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions-blockdurationminutes
+     * 
+     */
+    @JsonIgnore
+    public Number getBlockDurationMinutes() {
+        return blockDurationMinutes;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions-blockdurationminutes
+     * 
+     */
+    @JsonIgnore
+    public void setBlockDurationMinutes(Number blockDurationMinutes) {
+        this.blockDurationMinutes = blockDurationMinutes;
+    }
+
+    public LaunchTemplateSpotOptions withBlockDurationMinutes(Number blockDurationMinutes) {
+        this.blockDurationMinutes = blockDurationMinutes;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions-validuntil
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getValidUntil() {
+        return validUntil;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions-validuntil
+     * 
+     */
+    @JsonIgnore
+    public void setValidUntil(CharSequence validUntil) {
+        this.validUntil = validUntil;
+    }
+
+    public LaunchTemplateSpotOptions withValidUntil(CharSequence validUntil) {
+        this.validUntil = validUntil;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("spotInstanceType", spotInstanceType).append("instanceInterruptionBehavior", instanceInterruptionBehavior).append("maxPrice", maxPrice).toString();
+        return new ToStringBuilder(this).append("spotInstanceType", spotInstanceType).append("instanceInterruptionBehavior", instanceInterruptionBehavior).append("maxPrice", maxPrice).append("blockDurationMinutes", blockDurationMinutes).append("validUntil", validUntil).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(instanceInterruptionBehavior).append(spotInstanceType).append(maxPrice).toHashCode();
+        return new HashCodeBuilder().append(instanceInterruptionBehavior).append(validUntil).append(blockDurationMinutes).append(spotInstanceType).append(maxPrice).toHashCode();
     }
 
     @Override
@@ -137,7 +199,7 @@ public class LaunchTemplateSpotOptions implements Property<LaunchTemplateSpotOpt
             return false;
         }
         LaunchTemplateSpotOptions rhs = ((LaunchTemplateSpotOptions) other);
-        return new EqualsBuilder().append(instanceInterruptionBehavior, rhs.instanceInterruptionBehavior).append(spotInstanceType, rhs.spotInstanceType).append(maxPrice, rhs.maxPrice).isEquals();
+        return new EqualsBuilder().append(instanceInterruptionBehavior, rhs.instanceInterruptionBehavior).append(validUntil, rhs.validUntil).append(blockDurationMinutes, rhs.blockDurationMinutes).append(spotInstanceType, rhs.spotInstanceType).append(maxPrice, rhs.maxPrice).isEquals();
     }
 
 }
