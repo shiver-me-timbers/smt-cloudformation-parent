@@ -34,7 +34,7 @@ public class GroupPolicy implements Property<GroupPolicy>
      */
     @JsonProperty("PolicyDocument")
     @JsonPropertyDescription("https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html")
-    private PolicyDocument policyDocument;
+    private Property<PolicyDocument> policyDocument;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-policy.html#cfn-iam-policies-policyname
      * 
@@ -50,7 +50,7 @@ public class GroupPolicy implements Property<GroupPolicy>
      * 
      */
     @JsonIgnore
-    public PolicyDocument getPolicyDocument() {
+    public Property<PolicyDocument> getPolicyDocument() {
         return policyDocument;
     }
 
@@ -61,11 +61,11 @@ public class GroupPolicy implements Property<GroupPolicy>
      * 
      */
     @JsonIgnore
-    public void setPolicyDocument(PolicyDocument policyDocument) {
+    public void setPolicyDocument(Property<PolicyDocument> policyDocument) {
         this.policyDocument = policyDocument;
     }
 
-    public GroupPolicy withPolicyDocument(PolicyDocument policyDocument) {
+    public GroupPolicy withPolicyDocument(Property<PolicyDocument> policyDocument) {
         this.policyDocument = policyDocument;
         return this;
     }

@@ -5,7 +5,7 @@
   "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html",
   "type": "object",
   "javaType": "aws.iam.PolicyDocument",
-  "javaInterfaces": ["aws.iam.HasStatements<PolicyDocument, Statement>"],
+  "javaInterfaces": ["aws.Property<PolicyDocument>" ,"aws.iam.HasStatements<PolicyDocument, aws.Property<Statement>>"],
   "properties": {
     "Version": {
       "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_version.html",
@@ -14,13 +14,15 @@
     },
     "Id": {
       "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_id.html",
-      "type": "string"
+      "type": "string",
+      "javaType" : "java.lang.CharSequence"
     },
     "Statement": {
       "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_statement.html",
       "type": "array",
       "items": {
-        "$ref": "#/definitions/Statement"
+        "$ref": "#/definitions/Statement",
+        "javaType" : "aws.Property<Statement>"
       }
     }
   },
@@ -32,24 +34,29 @@
         "aws.iam.HasActions<Statement>",
         "aws.iam.HasNotActions<Statement>",
         "aws.iam.HasNotResources<Statement>",
-        "aws.iam.HasResources<Statement>"
+        "aws.iam.HasResources<Statement>",
+        "aws.Property<Statement>"
       ],
       "properties": {
         "Sid": {
           "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_sid.html",
-          "type": "string"
+          "type": "string",
+          "javaType" : "java.lang.CharSequence"
         },
         "Effect": {
           "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_effect.html",
-          "$ref": "Effect.schema.json"
+          "$ref": "#/definitions/Effect",
+          "javaType" : "aws.Property<Effect>"
         },
         "Principal": {
           "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html",
-          "$ref": "#/definitions/Principal"
+          "$ref": "#/definitions/Principal",
+          "javaType" : "aws.Property<Principal>"
         },
         "NotPrincipal": {
           "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notprincipal.html",
-          "$ref": "#/definitions/Principal"
+          "$ref": "#/definitions/Principal",
+          "javaType" : "aws.Property<Principal>"
         },
         "Action": {
           "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_action.html",
@@ -69,29 +76,41 @@
         },
         "Condition": {
           "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html",
-          "$ref": "#/definitions/Condition"
+          "$ref": "#/definitions/Condition",
+          "javaType" : "aws.Property<aws.iam.Condition>"
         }
       }
     },
+    "Effect": {
+      "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_effect.html",
+      "type": "string",
+      "javaType": "aws.iam.Effect",
+      "javaInterfaces": ["aws.Property<Effect>"],
+      "enum": ["Allow", "Deny"]
+    },
     "Principal": {
+      "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html",
       "type": "object",
+      "javaType": "aws.iam.Principal",
       "additionalProperties": {
         "type": "array",
         "items": {
           "type": "string"
         }
-      },
-      "javaType": "java.util.Map<String, java.util.List<CharSequence>>"
+      }
     },
     "Strings": {
+      "description": "Simple array of strings.",
       "type": "array",
+      "javaType": "java.util.List<CharSequence>",
       "items": {
         "type": "string"
-      },
-      "javaType": "java.util.List<CharSequence>"
+      }
     },
     "Condition": {
+      "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html",
       "type": "object",
+      "javaType": "aws.iam.Condition",
       "additionalProperties": {
         "type": "object",
         "additionalProperties": {
@@ -100,8 +119,7 @@
             "type": "string"
           }
         }
-      },
-      "javaType": "java.util.Map<String, java.util.Map<String, java.util.List<CharSequence>>>"
+      }
     }
   }
 }

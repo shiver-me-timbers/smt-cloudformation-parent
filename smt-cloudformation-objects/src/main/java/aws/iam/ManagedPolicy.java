@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -71,7 +72,7 @@ public class ManagedPolicy {
      */
     @JsonProperty("PolicyDocument")
     @JsonPropertyDescription("https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html")
-    private PolicyDocument policyDocument;
+    private Property<PolicyDocument> policyDocument;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-roles
      * 
@@ -186,7 +187,7 @@ public class ManagedPolicy {
      * 
      */
     @JsonIgnore
-    public PolicyDocument getPolicyDocument() {
+    public Property<PolicyDocument> getPolicyDocument() {
         return policyDocument;
     }
 
@@ -197,11 +198,11 @@ public class ManagedPolicy {
      * 
      */
     @JsonIgnore
-    public void setPolicyDocument(PolicyDocument policyDocument) {
+    public void setPolicyDocument(Property<PolicyDocument> policyDocument) {
         this.policyDocument = policyDocument;
     }
 
-    public ManagedPolicy withPolicyDocument(PolicyDocument policyDocument) {
+    public ManagedPolicy withPolicyDocument(Property<PolicyDocument> policyDocument) {
         this.policyDocument = policyDocument;
         return this;
     }

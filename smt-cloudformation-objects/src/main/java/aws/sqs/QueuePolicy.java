@@ -3,6 +3,7 @@ package aws.sqs;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import aws.iam.PolicyDocument;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -35,7 +36,7 @@ public class QueuePolicy {
      */
     @JsonProperty("PolicyDocument")
     @JsonPropertyDescription("https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html")
-    private PolicyDocument policyDocument;
+    private Property<PolicyDocument> policyDocument;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-policy.html#cfn-sqs-queuepolicy-queues
      * 
@@ -51,7 +52,7 @@ public class QueuePolicy {
      * 
      */
     @JsonIgnore
-    public PolicyDocument getPolicyDocument() {
+    public Property<PolicyDocument> getPolicyDocument() {
         return policyDocument;
     }
 
@@ -62,11 +63,11 @@ public class QueuePolicy {
      * 
      */
     @JsonIgnore
-    public void setPolicyDocument(PolicyDocument policyDocument) {
+    public void setPolicyDocument(Property<PolicyDocument> policyDocument) {
         this.policyDocument = policyDocument;
     }
 
-    public QueuePolicy withPolicyDocument(PolicyDocument policyDocument) {
+    public QueuePolicy withPolicyDocument(Property<PolicyDocument> policyDocument) {
         this.policyDocument = policyDocument;
         return this;
     }

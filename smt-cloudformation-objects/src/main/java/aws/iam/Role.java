@@ -43,7 +43,7 @@ public class Role {
      */
     @JsonProperty("AssumeRolePolicyDocument")
     @JsonPropertyDescription("https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html")
-    private PolicyDocument assumeRolePolicyDocument;
+    private Property<PolicyDocument> assumeRolePolicyDocument;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-managepolicyarns
      * 
@@ -95,7 +95,7 @@ public class Role {
      * 
      */
     @JsonIgnore
-    public PolicyDocument getAssumeRolePolicyDocument() {
+    public Property<PolicyDocument> getAssumeRolePolicyDocument() {
         return assumeRolePolicyDocument;
     }
 
@@ -106,11 +106,11 @@ public class Role {
      * 
      */
     @JsonIgnore
-    public void setAssumeRolePolicyDocument(PolicyDocument assumeRolePolicyDocument) {
+    public void setAssumeRolePolicyDocument(Property<PolicyDocument> assumeRolePolicyDocument) {
         this.assumeRolePolicyDocument = assumeRolePolicyDocument;
     }
 
-    public Role withAssumeRolePolicyDocument(PolicyDocument assumeRolePolicyDocument) {
+    public Role withAssumeRolePolicyDocument(Property<PolicyDocument> assumeRolePolicyDocument) {
         this.assumeRolePolicyDocument = assumeRolePolicyDocument;
         return this;
     }

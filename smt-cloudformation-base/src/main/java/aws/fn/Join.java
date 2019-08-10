@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
-import static aws.Strings.toStrings;
+import static aws.StringLists.toStringList;
 import static java.lang.String.format;
 import static java.util.Arrays.asList;
 
@@ -19,7 +19,7 @@ public class Join extends PrimitiveProperty implements StringFunction {
     }
 
     public Join(String delimiter, List<CharSequence> strings) {
-        super(format("{ \"Fn::Join\" : [ \"%s\", [%s] ] }", delimiter, toStrings(strings)));
+        super(format("{ \"Fn::Join\" : [ \"%s\", [%s] ] }", delimiter, toStringList(strings)));
         this.values = asList(delimiter, strings);
     }
 }

@@ -4,16 +4,15 @@ import org.junit.Test;
 
 import java.util.List;
 
-import static aws.Strings.toStrings;
 import static org.hamcrest.Matchers.contains;
 import static org.junit.Assert.assertThat;
 import static shiver.me.timbers.data.random.RandomThings.someThing;
 
-public class StringsTest {
+public class StringListsTest {
 
     @Test
     public void Instantiation_for_coverage() {
-        new Strings();
+        new StringLists();
     }
 
     @Test
@@ -25,7 +24,7 @@ public class StringsTest {
         final Object object3 = someThing();
 
         // When
-        final List<String> actual = toStrings(object1, object2, object3);
+        final List<String> actual = StringLists.toStringList(object1, object2, object3);
 
         // Then
         assertThat(actual, contains(object1.toString(), object2.toString(), object3.toString()));

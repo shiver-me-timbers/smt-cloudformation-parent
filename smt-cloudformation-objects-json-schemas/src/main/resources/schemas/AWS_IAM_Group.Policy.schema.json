@@ -9,7 +9,8 @@
   "properties" : {
     "PolicyDocument" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-policy.html#cfn-iam-policies-policydocument",
-      "$ref" : "PolicyDocument.schema.json"
+      "$ref" : "PolicyDocument.schema.json",
+      "javaType" : "aws.Property<aws.iam.PolicyDocument>"
     },
     "PolicyName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-policy.html#cfn-iam-policies-policyname",

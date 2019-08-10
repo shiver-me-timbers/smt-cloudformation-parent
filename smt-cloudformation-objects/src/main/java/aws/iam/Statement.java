@@ -3,7 +3,7 @@ package aws.iam;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +25,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "NotResource",
     "Condition"
 })
-public class Statement implements HasActions<Statement> , HasNotActions<Statement> , HasNotResources<Statement> , HasPrincipals<Statement> , HasResources<Statement>
+public class Statement implements Property<Statement> , HasActions<Statement> , HasNotActions<Statement> , HasNotResources<Statement> , HasPrincipals<Statement> , HasResources<Statement>
 {
 
     /**
@@ -34,36 +34,70 @@ public class Statement implements HasActions<Statement> , HasNotActions<Statemen
      */
     @JsonProperty("Sid")
     @JsonPropertyDescription("https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_sid.html")
-    private java.lang.String sid;
+    private java.lang.CharSequence sid;
     /**
-     * Effect
-     * <p>
-     * 
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_effect.html
      * 
      */
     @JsonProperty("Effect")
-    private Effect effect;
+    @JsonPropertyDescription("https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_effect.html")
+    private Property<Effect> effect;
+    /**
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html
+     * 
+     */
     @JsonProperty("Principal")
-    private Map<String, List<CharSequence>> principal;
+    @JsonPropertyDescription("https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html")
+    private Property<Principal> principal;
+    /**
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html
+     * 
+     */
     @JsonProperty("NotPrincipal")
-    private Map<String, List<CharSequence>> notPrincipal;
+    @JsonPropertyDescription("https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html")
+    private Property<Principal> notPrincipal;
+    /**
+     * Simple array of strings.
+     * 
+     */
     @JsonProperty("Action")
+    @JsonPropertyDescription("Simple array of strings.")
     private List<CharSequence> action = new ArrayList<CharSequence>();
+    /**
+     * Simple array of strings.
+     * 
+     */
     @JsonProperty("NotAction")
+    @JsonPropertyDescription("Simple array of strings.")
     private List<CharSequence> notAction = new ArrayList<CharSequence>();
+    /**
+     * Simple array of strings.
+     * 
+     */
     @JsonProperty("Resource")
+    @JsonPropertyDescription("Simple array of strings.")
     private List<CharSequence> resource = new ArrayList<CharSequence>();
+    /**
+     * Simple array of strings.
+     * 
+     */
     @JsonProperty("NotResource")
+    @JsonPropertyDescription("Simple array of strings.")
     private List<CharSequence> notResource = new ArrayList<CharSequence>();
+    /**
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html
+     * 
+     */
     @JsonProperty("Condition")
-    private Map<String, Map<String, List<CharSequence>>> condition;
+    @JsonPropertyDescription("https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html")
+    private Property<Condition> condition;
 
     /**
      * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_sid.html
      * 
      */
     @JsonIgnore
-    public java.lang.String getSid() {
+    public java.lang.CharSequence getSid() {
         return sid;
     }
 
@@ -72,77 +106,97 @@ public class Statement implements HasActions<Statement> , HasNotActions<Statemen
      * 
      */
     @JsonIgnore
-    public void setSid(java.lang.String sid) {
+    public void setSid(java.lang.CharSequence sid) {
         this.sid = sid;
     }
 
-    public Statement withSid(java.lang.String sid) {
+    public Statement withSid(java.lang.CharSequence sid) {
         this.sid = sid;
         return this;
     }
 
     /**
-     * Effect
-     * <p>
-     * 
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_effect.html
      * 
      */
     @JsonIgnore
-    public Effect getEffect() {
+    public Property<Effect> getEffect() {
         return effect;
     }
 
     /**
-     * Effect
-     * <p>
-     * 
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_effect.html
      * 
      */
     @JsonIgnore
-    public void setEffect(Effect effect) {
+    public void setEffect(Property<Effect> effect) {
         this.effect = effect;
     }
 
-    public Statement withEffect(Effect effect) {
+    public Statement withEffect(Property<Effect> effect) {
         this.effect = effect;
         return this;
     }
 
+    /**
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html
+     * 
+     */
     @JsonIgnore
-    public Map<String, List<CharSequence>> getPrincipal() {
+    public Property<Principal> getPrincipal() {
         return principal;
     }
 
+    /**
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html
+     * 
+     */
     @JsonIgnore
-    public void setPrincipal(Map<String, List<CharSequence>> principal) {
+    public void setPrincipal(Property<Principal> principal) {
         this.principal = principal;
     }
 
-    public Statement withPrincipal(Map<String, List<CharSequence>> principal) {
+    public Statement withPrincipal(Property<Principal> principal) {
         this.principal = principal;
         return this;
     }
 
+    /**
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html
+     * 
+     */
     @JsonIgnore
-    public Map<String, List<CharSequence>> getNotPrincipal() {
+    public Property<Principal> getNotPrincipal() {
         return notPrincipal;
     }
 
+    /**
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html
+     * 
+     */
     @JsonIgnore
-    public void setNotPrincipal(Map<String, List<CharSequence>> notPrincipal) {
+    public void setNotPrincipal(Property<Principal> notPrincipal) {
         this.notPrincipal = notPrincipal;
     }
 
-    public Statement withNotPrincipal(Map<String, List<CharSequence>> notPrincipal) {
+    public Statement withNotPrincipal(Property<Principal> notPrincipal) {
         this.notPrincipal = notPrincipal;
         return this;
     }
 
+    /**
+     * Simple array of strings.
+     * 
+     */
     @JsonIgnore
     public List<CharSequence> getAction() {
         return action;
     }
 
+    /**
+     * Simple array of strings.
+     * 
+     */
     @JsonIgnore
     public void setAction(List<CharSequence> action) {
         this.action = action;
@@ -153,11 +207,19 @@ public class Statement implements HasActions<Statement> , HasNotActions<Statemen
         return this;
     }
 
+    /**
+     * Simple array of strings.
+     * 
+     */
     @JsonIgnore
     public List<CharSequence> getNotAction() {
         return notAction;
     }
 
+    /**
+     * Simple array of strings.
+     * 
+     */
     @JsonIgnore
     public void setNotAction(List<CharSequence> notAction) {
         this.notAction = notAction;
@@ -168,11 +230,19 @@ public class Statement implements HasActions<Statement> , HasNotActions<Statemen
         return this;
     }
 
+    /**
+     * Simple array of strings.
+     * 
+     */
     @JsonIgnore
     public List<CharSequence> getResource() {
         return resource;
     }
 
+    /**
+     * Simple array of strings.
+     * 
+     */
     @JsonIgnore
     public void setResource(List<CharSequence> resource) {
         this.resource = resource;
@@ -183,11 +253,19 @@ public class Statement implements HasActions<Statement> , HasNotActions<Statemen
         return this;
     }
 
+    /**
+     * Simple array of strings.
+     * 
+     */
     @JsonIgnore
     public List<CharSequence> getNotResource() {
         return notResource;
     }
 
+    /**
+     * Simple array of strings.
+     * 
+     */
     @JsonIgnore
     public void setNotResource(List<CharSequence> notResource) {
         this.notResource = notResource;
@@ -198,23 +276,31 @@ public class Statement implements HasActions<Statement> , HasNotActions<Statemen
         return this;
     }
 
+    /**
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html
+     * 
+     */
     @JsonIgnore
-    public Map<String, Map<String, List<CharSequence>>> getCondition() {
+    public Property<Condition> getCondition() {
         return condition;
     }
 
+    /**
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html
+     * 
+     */
     @JsonIgnore
-    public void setCondition(Map<String, Map<String, List<CharSequence>>> condition) {
+    public void setCondition(Property<Condition> condition) {
         this.condition = condition;
     }
 
-    public Statement withCondition(Map<String, Map<String, List<CharSequence>>> condition) {
+    public Statement withCondition(Property<Condition> condition) {
         this.condition = condition;
         return this;
     }
 
     @Override
-    public java.lang.String toString() {
+    public String toString() {
         return new ToStringBuilder(this).append("sid", sid).append("effect", effect).append("principal", principal).append("notPrincipal", notPrincipal).append("action", action).append("notAction", notAction).append("resource", resource).append("notResource", notResource).append("condition", condition).toString();
     }
 

@@ -1,6 +1,7 @@
 
 package aws.iot;
 
+import aws.Property;
 import aws.iam.PolicyDocument;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -33,7 +34,7 @@ public class Policy {
      */
     @JsonProperty("PolicyDocument")
     @JsonPropertyDescription("https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html")
-    private PolicyDocument policyDocument;
+    private Property<PolicyDocument> policyDocument;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-policy.html#cfn-iot-policy-policyname
      * 
@@ -49,7 +50,7 @@ public class Policy {
      * 
      */
     @JsonIgnore
-    public PolicyDocument getPolicyDocument() {
+    public Property<PolicyDocument> getPolicyDocument() {
         return policyDocument;
     }
 
@@ -60,11 +61,11 @@ public class Policy {
      * 
      */
     @JsonIgnore
-    public void setPolicyDocument(PolicyDocument policyDocument) {
+    public void setPolicyDocument(Property<PolicyDocument> policyDocument) {
         this.policyDocument = policyDocument;
     }
 
-    public Policy withPolicyDocument(PolicyDocument policyDocument) {
+    public Policy withPolicyDocument(Property<PolicyDocument> policyDocument) {
         this.policyDocument = policyDocument;
         return this;
     }

@@ -3,13 +3,11 @@ package aws;
 import org.hamcrest.Matcher;
 import org.junit.Test;
 
-import java.util.Collections;
 import java.util.Map;
-import java.util.stream.Stream;
 
-import static java.util.Collections.*;
+import static java.util.Collections.singletonList;
 import static java.util.stream.Collectors.toMap;
-import static java.util.stream.Stream.*;
+import static java.util.stream.Stream.of;
 import static org.hamcrest.Matchers.allOf;
 import static org.hamcrest.Matchers.hasEntry;
 import static org.junit.Assert.assertThat;

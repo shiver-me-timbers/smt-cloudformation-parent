@@ -3,10 +3,13 @@ package aws.iam;
 
 import java.util.HashMap;
 import java.util.Map;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-public enum Effect {
+public enum Effect
+    implements Property<Effect>
+{
 
     ALLOW("Allow"),
     DENY("Deny");

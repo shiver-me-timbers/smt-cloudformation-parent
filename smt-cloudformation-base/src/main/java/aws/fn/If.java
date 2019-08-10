@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
-import static aws.Strings.toStrings;
+import static aws.StringLists.toStringList;
 import static aws.parameters.PseudoParameter.NoValue;
 import static java.lang.String.format;
 import static java.util.Arrays.asList;
@@ -28,7 +28,7 @@ public class If<T> extends PrimitiveProperty implements ConditionFunction, Strin
     private If(List<Object> values) {
         super(format(
             "{ \"Fn::If\" : [ %s ] }",
-            toStrings(values).stream().map(string -> "\"" + string + "\"").collect(joining(","))
+            toStringList(values).stream().map(string -> "\"" + string + "\"").collect(joining(","))
         ));
         this.values = values;
     }

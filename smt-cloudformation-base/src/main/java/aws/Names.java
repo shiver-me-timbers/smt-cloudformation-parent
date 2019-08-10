@@ -4,8 +4,6 @@ import java.util.Collection;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import static java.util.Arrays.asList;
-
 public class Names {
 
     public static <T> Map<String, T> getMap(

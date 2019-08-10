@@ -3,6 +3,7 @@ package aws.iam;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +26,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Id",
     "Statement"
 })
-public class PolicyDocument implements HasStatements<PolicyDocument, Statement>
+public class PolicyDocument implements Property<PolicyDocument> , HasStatements<PolicyDocument, Property<Statement>>
 {
 
     /**
@@ -41,14 +42,14 @@ public class PolicyDocument implements HasStatements<PolicyDocument, Statement>
      */
     @JsonProperty("Id")
     @JsonPropertyDescription("https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_id.html")
-    private String id;
+    private CharSequence id;
     /**
      * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_statement.html
      * 
      */
     @JsonProperty("Statement")
     @JsonPropertyDescription("https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_statement.html")
-    private List<aws.iam.Statement> statement = new ArrayList<aws.iam.Statement>();
+    private List<Property<Statement>> statement = new ArrayList<Property<Statement>>();
 
     /**
      * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_version.html
@@ -78,7 +79,7 @@ public class PolicyDocument implements HasStatements<PolicyDocument, Statement>
      * 
      */
     @JsonIgnore
-    public String getId() {
+    public CharSequence getId() {
         return id;
     }
 
@@ -87,11 +88,11 @@ public class PolicyDocument implements HasStatements<PolicyDocument, Statement>
      * 
      */
     @JsonIgnore
-    public void setId(String id) {
+    public void setId(CharSequence id) {
         this.id = id;
     }
 
-    public PolicyDocument withId(String id) {
+    public PolicyDocument withId(CharSequence id) {
         this.id = id;
         return this;
     }
@@ -101,7 +102,7 @@ public class PolicyDocument implements HasStatements<PolicyDocument, Statement>
      * 
      */
     @JsonIgnore
-    public List<aws.iam.Statement> getStatement() {
+    public List<Property<Statement>> getStatement() {
         return statement;
     }
 
@@ -110,11 +111,11 @@ public class PolicyDocument implements HasStatements<PolicyDocument, Statement>
      * 
      */
     @JsonIgnore
-    public void setStatement(List<aws.iam.Statement> statement) {
+    public void setStatement(List<Property<Statement>> statement) {
         this.statement = statement;
     }
 
-    public PolicyDocument withStatement(List<aws.iam.Statement> statement) {
+    public PolicyDocument withStatement(List<Property<Statement>> statement) {
         this.statement = statement;
         return this;
     }

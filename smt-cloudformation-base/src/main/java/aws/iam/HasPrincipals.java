@@ -1,8 +1,9 @@
 package aws.iam;
 
+import aws.Property;
+
 import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
 
 import static java.util.AbstractMap.SimpleEntry;
 import static java.util.Arrays.asList;
@@ -16,8 +17,8 @@ public interface HasPrincipals<T extends HasPrincipals> {
     }
 
     default T withPrincipals(Entry<String, List<CharSequence>>... principals) {
-        return withPrincipal(Arrays.stream(principals).collect(toMap(Entry::getKey, Entry::getValue)));
+        return withPrincipal(new Principal(Arrays.stream(principals).collect(toMap(Entry::getKey, Entry::getValue))));
     }
 
-    T withPrincipal(Map<String, List<CharSequence>> principal);
+    T withPrincipal(Property<Principal> principal);
 }

@@ -75,6 +75,7 @@ public class PrimitiveTypeTransformerTest {
 
         // Then
         then(property).should().put("$ref", "PolicyDocument.schema.json");
+        then(property).should().put("javaType", "aws.Property<aws.iam.PolicyDocument>");
     }
 
     @Test

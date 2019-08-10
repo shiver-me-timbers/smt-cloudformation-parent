@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
-import static aws.Strings.toStrings;
+import static aws.StringLists.toStringList;
 import static java.lang.String.format;
 import static java.util.Arrays.asList;
 
@@ -19,7 +19,7 @@ public class Select extends PrimitiveProperty implements StringFunction {
     }
 
     public Select(int index, List<String> strings) {
-        super(format("{ \"Fn::Select\" : [ \"%s\", [%s] ] }", index, toStrings(strings)));
+        super(format("{ \"Fn::Select\" : [ \"%s\", [%s] ] }", index, toStringList(strings)));
         this.values = asList(String.valueOf(index), strings);
     }
 
