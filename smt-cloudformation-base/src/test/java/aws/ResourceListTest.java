@@ -71,9 +71,8 @@ public class ResourceListTest {
         given(resource2.getName()).willReturn(name2);
         given(resource3.getName()).willReturn(name3);
         given(resource4.getName()).willReturn(name4);
-        list.withResources(resource1)
-            .withResourceLists(singletonList(resource2), singletonList(resource3))
-            .setResources(of(resource4).collect(toMap(HasName::getName, res -> res)));
+        list.withResources(resource1, resource2)
+            .setResources(of(resource3, resource4).collect(toMap(HasName::getName, res -> res)));
 
         // When
         final Map actual = list.getResources();

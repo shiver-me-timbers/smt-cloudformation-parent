@@ -74,41 +74,4 @@ public class HasResourcesTest {
         // Then
         then(setter).should().set(emptyMap());
     }
-
-    @Test
-    @SuppressWarnings("unchecked")
-    public void Can_add_resources_lists() {
-
-        final Map<String, HasName> map = mock(Map.class);
-        final HasName named1 = mock(HasName.class);
-        final HasName named2 = mock(HasName.class);
-        final HasName named3 = mock(HasName.class);
-
-        final String name1 = someString();
-        final String name2 = someString();
-        final String name3 = someString();
-
-        // Given
-        given(named1.getName()).willReturn(name1);
-        given(named2.getName()).willReturn(name2);
-        given(named3.getName()).willReturn(name3);
-
-        // When
-        new HasResources<HasResources, HasName>() {
-            @Override
-            public Map getResources() {
-                return map;
-            }
-
-            @Override
-            public void setResources(Map resources) {
-                throw new UnsupportedOperationException();
-            }
-        }.withResourceLists(singletonList(named1), asList(named2, named3));
-
-        // Then
-        then(map).should().put(name1, named1);
-        then(map).should().put(name2, named2);
-        then(map).should().put(name3, named3);
-    }
 }

@@ -24,15 +24,4 @@ public interface HasResources<T extends HasResources, R extends HasName> {
         withNamedMap(getMap(this::getResources, this::setResources), resources);
         return (T) this;
     }
-
-    @SuppressWarnings("unchecked")
-    default T withResourceLists(List<R>... resources) {
-        return withResourceLists(asList(resources));
-    }
-
-    @SuppressWarnings("unchecked")
-    default T withResourceLists(Collection<List<R>> resourceLists) {
-        resourceLists.forEach(res -> withNamedMap(getMap(this::getResources, this::setResources), res));
-        return (T) this;
-    }
 }

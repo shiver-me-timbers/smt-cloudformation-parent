@@ -37,11 +37,4 @@ public class ResourceList<T extends ResourceList, R extends HasName> extends Arr
         addAll(resources);
         return (T) this;
     }
-
-    @SuppressWarnings("unchecked")
-    @Override
-    public T withResourceLists(Collection<List<R>> resourceLists) {
-        resourceLists.forEach(this::addAll);
-        return (T) this;
-    }
 }
