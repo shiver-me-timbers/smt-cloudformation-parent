@@ -62,7 +62,7 @@
     "RequestParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-requestparameters",
       "type" : "object",
-      "javaType" : "java.util.Map<String, java.lang.CharSequence>"
+      "javaType" : "java.util.Map<String, java.lang.Boolean>"
     },
     "RequestValidatorId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-requestvalidatorid",

@@ -43,6 +43,10 @@ public class MapTransformer implements PropertyTransformer {
         CloudformationProperty cloudformationProperty
     ) {
         final String primitiveItemType = cloudformationProperty.getPrimitiveItemType();
+        if ("Boolean".equals(primitiveItemType)) {
+            // In Maps we want Booleans to be Booleans not CharSequences.
+            return toMapType("java.lang.Boolean");
+        }
         if (primitiveItemType != null) {
             return toMapType(primitiveTypeConverter.convert(primitiveItemType).get("javaType").toString());
         }

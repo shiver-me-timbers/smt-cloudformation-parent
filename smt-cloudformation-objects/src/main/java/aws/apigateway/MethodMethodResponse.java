@@ -41,7 +41,7 @@ public class MethodMethodResponse implements Property<MethodMethodResponse>
      */
     @JsonProperty("ResponseParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-methodresponse.html#cfn-apigateway-method-methodresponse-responseparameters")
-    private Map<String, CharSequence> responseParameters;
+    private Map<String, Boolean> responseParameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-methodresponse.html#cfn-apigateway-method-methodresponse-statuscode
      * 
@@ -78,7 +78,7 @@ public class MethodMethodResponse implements Property<MethodMethodResponse>
      * 
      */
     @JsonIgnore
-    public Map<String, CharSequence> getResponseParameters() {
+    public Map<String, Boolean> getResponseParameters() {
         return responseParameters;
     }
 
@@ -87,11 +87,11 @@ public class MethodMethodResponse implements Property<MethodMethodResponse>
      * 
      */
     @JsonIgnore
-    public void setResponseParameters(Map<String, CharSequence> responseParameters) {
+    public void setResponseParameters(Map<String, Boolean> responseParameters) {
         this.responseParameters = responseParameters;
     }
 
-    public MethodMethodResponse withResponseParameters(Map<String, CharSequence> responseParameters) {
+    public MethodMethodResponse withResponseParameters(Map<String, Boolean> responseParameters) {
         this.responseParameters = responseParameters;
         return this;
     }

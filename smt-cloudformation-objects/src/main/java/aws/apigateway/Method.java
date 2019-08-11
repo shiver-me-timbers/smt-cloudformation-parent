@@ -113,7 +113,7 @@ public class Method {
      */
     @JsonProperty("RequestParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-requestparameters")
-    private Map<String, CharSequence> requestParameters;
+    private Map<String, Boolean> requestParameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-requestvalidatorid
      * 
@@ -352,7 +352,7 @@ public class Method {
      * 
      */
     @JsonIgnore
-    public Map<String, CharSequence> getRequestParameters() {
+    public Map<String, Boolean> getRequestParameters() {
         return requestParameters;
     }
 
@@ -361,11 +361,11 @@ public class Method {
      * 
      */
     @JsonIgnore
-    public void setRequestParameters(Map<String, CharSequence> requestParameters) {
+    public void setRequestParameters(Map<String, Boolean> requestParameters) {
         this.requestParameters = requestParameters;
     }
 
-    public Method withRequestParameters(Map<String, CharSequence> requestParameters) {
+    public Method withRequestParameters(Map<String, Boolean> requestParameters) {
         this.requestParameters = requestParameters;
         return this;
     }

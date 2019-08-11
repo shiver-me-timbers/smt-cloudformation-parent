@@ -20,6 +20,7 @@ import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verifyZeroInteractions;
 import static shiver.me.timbers.data.random.RandomStrings.someString;
 
 public class MapTransformerTest {
@@ -58,6 +59,26 @@ public class MapTransformerTest {
         // Then
         assertThat(actual, hasEntry("type", "object"));
         assertThat(actual, hasEntry("javaType", format("java.util.Map<String, %s>", mappedType)));
+    }
+
+    @Test
+    @SuppressWarnings("unchecked")
+    public void Can_transform_a_boolean_typed_map() {
+
+        final CloudformationProperty cloudformationProperty = mock(CloudformationProperty.class);
+
+        final Map<String, Object> actual = new HashMap<>();
+
+        // Given
+        given(cloudformationProperty.getPrimitiveItemType()).willReturn("Boolean");
+
+        // When
+        transformer.transform(someString(), mock(CloudformationType.class), someString(), cloudformationProperty, actual);
+
+        // Then
+        verifyZeroInteractions(primitiveTypeConverter);
+        assertThat(actual, hasEntry("type", "object"));
+        assertThat(actual, hasEntry("javaType", "java.util.Map<String, java.lang.Boolean>"));
     }
 
     @Test

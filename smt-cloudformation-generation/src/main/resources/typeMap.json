@@ -29,6 +29,6 @@
   },
   "Map": {
     "type": "object",
-    "javaType": "java.util.Map<String, CharSequence>"
+    "javaType": "java.util.Map<String, Object>"
   }
 }
