@@ -41,7 +41,8 @@ reusable components.
 
 ## How
 
-All the objects in this library can be serialised using the Jackson JSON library, including the 
+All the objects in this library can be serialised using the [Jackson JSON library](https://github.com/FasterXML/jackson), 
+including the 
 [Intrinsic Functions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html).
 
 So all that is required is to create a new [Template](smt-cloudformation-objects/src/main/java/aws/Template.java) object 
