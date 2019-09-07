@@ -1,5 +1,6 @@
 package aws.fn;
 
+import aws.Condition;
 import aws.HasAttributes;
 import aws.HasName;
 
@@ -88,11 +89,11 @@ public class Functions {
         return new Not(condition);
     }
 
-    public static <T> If<T> fnIf(String condition, T trueValue, T falseValue) {
+    public static <T> If<T> fnIf(Condition condition, T trueValue, T falseValue) {
         return new If<>(condition, trueValue, falseValue);
     }
 
-    public static <T> If<T> fnIf(String condition, T trueValue) {
+    public static <T> If<T> fnIf(Condition condition, T trueValue) {
         return new If<>(condition, trueValue);
     }
 

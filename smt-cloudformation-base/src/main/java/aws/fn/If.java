@@ -1,5 +1,6 @@
 package aws.fn;
 
+import aws.Condition;
 import aws.PrimitiveProperty;
 import aws.Property;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -16,6 +17,14 @@ public class If<T> extends PrimitiveProperty implements ConditionFunction, Strin
 
     @JsonProperty("Fn::If")
     private final List<Object> values;
+
+    public If(Condition condition, T trueValue, T falseValue) {
+        this(condition.getName(), trueValue, falseValue);
+    }
+
+    public If(Condition condition, T trueValue) {
+        this(condition.getName(), trueValue);
+    }
 
     public If(String condition, T trueValue, T falseValue) {
         this(asList(condition, trueValue, falseValue));

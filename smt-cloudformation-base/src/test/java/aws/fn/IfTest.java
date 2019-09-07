@@ -1,5 +1,6 @@
 package aws.fn;
 
+import aws.Condition;
 import org.junit.Test;
 
 import static aws.fn.Functions.fnIf;
@@ -8,6 +9,8 @@ import static org.assertj.core.api.Assertions.catchThrowableOfType;
 import static org.hamcrest.Matchers.contains;
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;
+import static org.mockito.BDDMockito.given;
+import static org.mockito.Mockito.mock;
 import static shiver.me.timbers.data.random.RandomIntegers.someInteger;
 import static shiver.me.timbers.data.random.RandomStrings.someString;
 import static shiver.me.timbers.matchers.Matchers.hasFieldThat;
@@ -17,42 +20,52 @@ public class IfTest {
     @Test
     public void Can_create_an_if_function() {
 
-        // Given
-        final String condition = someString();
+        final Condition condition = mock(Condition.class);
         final Integer trueValue = someInteger();
         final Integer falseValue = someInteger();
+
+        final String conditionName = someString();
+
+        // Given
+        given(condition.getName()).willReturn(conditionName);
 
         // When
         final If<Integer> actual = fnIf(condition, trueValue, falseValue);
 
         // Then
-        assertThat(actual, hasFieldThat("values", contains(condition, trueValue, falseValue)));
+        assertThat(actual, hasFieldThat("values", contains(conditionName, trueValue, falseValue)));
     }
 
     @Test
     public void Can_create_an_if_function_with_only_a_true_value() {
 
-        // Given
-        final String condition = someString();
+        final Condition condition = mock(Condition.class);
         final Integer trueValue = someInteger();
+        final Integer falseValue = someInteger();
+
+        final String conditionName = someString();
+
+        // Given
+        given(condition.getName()).willReturn(conditionName);
 
         // When
         final If<Integer> actual = fnIf(condition, trueValue);
 
         // Then
-        assertThat(actual, hasFieldThat("values", contains(condition, trueValue, NoValue)));
+        assertThat(actual, hasFieldThat("values", contains(conditionName, trueValue, NoValue)));
     }
 
     @Test
     public void Cannot_get_the_property_type_of_an_if() {
 
+        final Condition condition = mock(Condition.class);
+
         // Given
-        final String condition = someString();
-        final Integer trueValue = someInteger();
+        given(condition.getName()).willReturn(someString());
 
         // When
         final UnsupportedOperationException actual = catchThrowableOfType(
-            () -> fnIf(condition, trueValue).toType(),
+            () -> fnIf(condition, someInteger()).toType(),
             UnsupportedOperationException.class
         );
 
