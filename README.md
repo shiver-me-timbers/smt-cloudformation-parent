@@ -87,10 +87,9 @@ public class S3Template extends Template {
 ### Intrinsic Functions
 
 All of the CloudFormation [Intrinsic Functions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html)
-have also been mapped exception for [Transform](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-transform.html).
-Transform hasn't been mapped because the functionality it provides can now be solved through Java and this library 
-instead. If at any time new functions are added and you find that they are not supported by this library please raise an 
-issue.
+have also been mapped, except for [Transform](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-transform.html).
+Transform is excluded because the functionality it provides can now be solved through Java and this library instead. If 
+at any time new functions are added and you find that they are not supported by this library please raise an issue.
 
 #### Fn::Base64
 
