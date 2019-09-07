@@ -50,7 +50,7 @@ and populate it with the details and resources you need.
 
 ### Creating a Template object
 
-A simple way to create new template object is to extend the `Template` class. The following class can be serialised to 
+A simple way to create new a template object is to extend the `Template` class. The following class can be serialised to 
 JSON with the Jackson library and it will produce a valid CloudFormation template. 
 
 ```java
