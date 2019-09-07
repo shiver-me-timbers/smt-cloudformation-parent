@@ -27,17 +27,17 @@ mapping.
 
 ## Why
 
-CloudFormation templates can be quite difficult to create because each resources component can be quite complex so 
-requires a lot of back and forth from the template and the resource documentation. Then if a small syntax mistake is 
-made it will not be found until the template is run which is a slow feedback loop.
+CloudFormation templates can be rather difficult to create because of the need to go back and forth from the template 
+and the resource documentation. Also small syntax mistakes will not be found until the template is run which is a slow 
+feedback loop.
 
 Having all the CloudFormation constructs mapped into type safe Java objects allows the resources to have a level of self 
-documentation and much easier discovery through IDE autocompletion. It also provides realtime validation, because it is 
-impossible to create an invalid temple, it won't compile.
+documentation and much easier discovery through IDE autocompletion. It also provides realtime validation through the 
+type safety of the Java objects.
 
-Lastly, the objects can be used to create high order constructs that can be shared and reused as Java libraries. This 
-makes maintaining your templates much more manageable as they can be simplified by encapsulating their complexity into 
-simpler reusable components.
+Lastly, the objects can be used to create higher order constructs that can be shared and reused as Java libraries. This 
+improves the maintenance of your templates as they can be simplified by encapsulating their complexity into simpler 
+reusable components.
 
 ## How
 
