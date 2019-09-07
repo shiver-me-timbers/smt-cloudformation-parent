@@ -1,0 +1,60 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Glue_MLTransform.schema.json",
+  "title" : "MLTransform",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html",
+  "type" : "object",
+  "javaType" : "aws.glue.MLTransform",
+  "properties" : {
+    "Role" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html#cfn-glue-mltransform-role",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "MaxRetries" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html#cfn-glue-mltransform-maxretries",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "WorkerType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html#cfn-glue-mltransform-workertype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Description" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html#cfn-glue-mltransform-description",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Timeout" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html#cfn-glue-mltransform-timeout",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "TransformParameters" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html#cfn-glue-mltransform-transformparameters",
+      "$ref" : "AWS_Glue_MLTransform.TransformParameters.schema.json",
+      "javaType" : "aws.Property<aws.glue.MLTransformTransformParameters>"
+    },
+    "InputRecordTables" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html#cfn-glue-mltransform-inputrecordtables",
+      "$ref" : "AWS_Glue_MLTransform.InputRecordTables.schema.json",
+      "javaType" : "aws.Property<aws.glue.MLTransformInputRecordTables>"
+    },
+    "NumberOfWorkers" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html#cfn-glue-mltransform-numberofworkers",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html#cfn-glue-mltransform-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "MaxCapacity" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html#cfn-glue-mltransform-maxcapacity",
+      "type" : "number",
+      "javaType" : "java.lang.Number"
+    }
+  }
+}

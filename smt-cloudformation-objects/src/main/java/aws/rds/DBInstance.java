@@ -28,6 +28,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "AllocatedStorage",
     "AllowMajorVersionUpgrade",
+    "AssociatedRoles",
     "AutoMinorVersionUpgrade",
     "AvailabilityZone",
     "BackupRetentionPeriod",
@@ -92,6 +93,14 @@ public class DBInstance {
     @JsonProperty("AllowMajorVersionUpgrade")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-allowmajorversionupgrade")
     private CharSequence allowMajorVersionUpgrade;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-associatedroles
+     * 
+     */
+    @JsonProperty("AssociatedRoles")
+    @JsonDeserialize(as = java.util.LinkedHashSet.class)
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-associatedroles")
+    private Set<Property<DBInstanceDBInstanceRole>> associatedRoles = new LinkedHashSet<Property<DBInstanceDBInstanceRole>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-autominorversionupgrade
      * 
@@ -467,6 +476,29 @@ public class DBInstance {
 
     public DBInstance withAllowMajorVersionUpgrade(CharSequence allowMajorVersionUpgrade) {
         this.allowMajorVersionUpgrade = allowMajorVersionUpgrade;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-associatedroles
+     * 
+     */
+    @JsonIgnore
+    public Set<Property<DBInstanceDBInstanceRole>> getAssociatedRoles() {
+        return associatedRoles;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-associatedroles
+     * 
+     */
+    @JsonIgnore
+    public void setAssociatedRoles(Set<Property<DBInstanceDBInstanceRole>> associatedRoles) {
+        this.associatedRoles = associatedRoles;
+    }
+
+    public DBInstance withAssociatedRoles(Set<Property<DBInstanceDBInstanceRole>> associatedRoles) {
+        this.associatedRoles = associatedRoles;
         return this;
     }
 
@@ -1553,12 +1585,12 @@ public class DBInstance {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("allocatedStorage", allocatedStorage).append("allowMajorVersionUpgrade", allowMajorVersionUpgrade).append("autoMinorVersionUpgrade", autoMinorVersionUpgrade).append("availabilityZone", availabilityZone).append("backupRetentionPeriod", backupRetentionPeriod).append("characterSetName", characterSetName).append("copyTagsToSnapshot", copyTagsToSnapshot).append("dBClusterIdentifier", dBClusterIdentifier).append("dBInstanceClass", dBInstanceClass).append("dBInstanceIdentifier", dBInstanceIdentifier).append("dBName", dBName).append("dBParameterGroupName", dBParameterGroupName).append("dBSecurityGroups", dBSecurityGroups).append("dBSnapshotIdentifier", dBSnapshotIdentifier).append("dBSubnetGroupName", dBSubnetGroupName).append("deleteAutomatedBackups", deleteAutomatedBackups).append("deletionProtection", deletionProtection).append("domain", domain).append("domainIAMRoleName", domainIAMRoleName).append("enableCloudwatchLogsExports", enableCloudwatchLogsExports).append("enableIAMDatabaseAuthentication", enableIAMDatabaseAuthentication).append("enablePerformanceInsights", enablePerformanceInsights).append("engine", engine).append("engineVersion", engineVersion).append("iops", iops).append("kmsKeyId", kmsKeyId).append("licenseModel", licenseModel).append("masterUserPassword", masterUserPassword).append("masterUsername", masterUsername).append("monitoringInterval", monitoringInterval).append("monitoringRoleArn", monitoringRoleArn).append("multiAZ", multiAZ).append("optionGroupName", optionGroupName).append("performanceInsightsKMSKeyId", performanceInsightsKMSKeyId).append("performanceInsightsRetentionPeriod", performanceInsightsRetentionPeriod).append("port", port).append("preferredBackupWindow", preferredBackupWindow).append("preferredMaintenanceWindow", preferredMaintenanceWindow).append("processorFeatures", processorFeatures).append("promotionTier", promotionTier).append("publiclyAccessible", publiclyAccessible).append("sourceDBInstanceIdentifier", sourceDBInstanceIdentifier).append("sourceRegion", sourceRegion).append("storageEncrypted", storageEncrypted).append("storageType", storageType).append("tags", tags).append("timezone", timezone).append("useDefaultProcessorFeatures", useDefaultProcessorFeatures).append("vPCSecurityGroups", vPCSecurityGroups).toString();
+        return new ToStringBuilder(this).append("allocatedStorage", allocatedStorage).append("allowMajorVersionUpgrade", allowMajorVersionUpgrade).append("associatedRoles", associatedRoles).append("autoMinorVersionUpgrade", autoMinorVersionUpgrade).append("availabilityZone", availabilityZone).append("backupRetentionPeriod", backupRetentionPeriod).append("characterSetName", characterSetName).append("copyTagsToSnapshot", copyTagsToSnapshot).append("dBClusterIdentifier", dBClusterIdentifier).append("dBInstanceClass", dBInstanceClass).append("dBInstanceIdentifier", dBInstanceIdentifier).append("dBName", dBName).append("dBParameterGroupName", dBParameterGroupName).append("dBSecurityGroups", dBSecurityGroups).append("dBSnapshotIdentifier", dBSnapshotIdentifier).append("dBSubnetGroupName", dBSubnetGroupName).append("deleteAutomatedBackups", deleteAutomatedBackups).append("deletionProtection", deletionProtection).append("domain", domain).append("domainIAMRoleName", domainIAMRoleName).append("enableCloudwatchLogsExports", enableCloudwatchLogsExports).append("enableIAMDatabaseAuthentication", enableIAMDatabaseAuthentication).append("enablePerformanceInsights", enablePerformanceInsights).append("engine", engine).append("engineVersion", engineVersion).append("iops", iops).append("kmsKeyId", kmsKeyId).append("licenseModel", licenseModel).append("masterUserPassword", masterUserPassword).append("masterUsername", masterUsername).append("monitoringInterval", monitoringInterval).append("monitoringRoleArn", monitoringRoleArn).append("multiAZ", multiAZ).append("optionGroupName", optionGroupName).append("performanceInsightsKMSKeyId", performanceInsightsKMSKeyId).append("performanceInsightsRetentionPeriod", performanceInsightsRetentionPeriod).append("port", port).append("preferredBackupWindow", preferredBackupWindow).append("preferredMaintenanceWindow", preferredMaintenanceWindow).append("processorFeatures", processorFeatures).append("promotionTier", promotionTier).append("publiclyAccessible", publiclyAccessible).append("sourceDBInstanceIdentifier", sourceDBInstanceIdentifier).append("sourceRegion", sourceRegion).append("storageEncrypted", storageEncrypted).append("storageType", storageType).append("tags", tags).append("timezone", timezone).append("useDefaultProcessorFeatures", useDefaultProcessorFeatures).append("vPCSecurityGroups", vPCSecurityGroups).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(allocatedStorage).append(enablePerformanceInsights).append(availabilityZone).append(deleteAutomatedBackups).append(dBSubnetGroupName).append(dBSecurityGroups).append(iops).append(performanceInsightsKMSKeyId).append(vPCSecurityGroups).append(dBSnapshotIdentifier).append(optionGroupName).append(performanceInsightsRetentionPeriod).append(engineVersion).append(masterUsername).append(dBInstanceClass).append(processorFeatures).append(tags).append(enableIAMDatabaseAuthentication).append(port).append(dBParameterGroupName).append(domain).append(monitoringInterval).append(backupRetentionPeriod).append(useDefaultProcessorFeatures).append(domainIAMRoleName).append(promotionTier).append(kmsKeyId).append(dBClusterIdentifier).append(enableCloudwatchLogsExports).append(timezone).append(preferredBackupWindow).append(deletionProtection).append(dBInstanceIdentifier).append(engine).append(sourceDBInstanceIdentifier).append(publiclyAccessible).append(masterUserPassword).append(allowMajorVersionUpgrade).append(dBName).append(multiAZ).append(characterSetName).append(monitoringRoleArn).append(storageEncrypted).append(licenseModel).append(preferredMaintenanceWindow).append(sourceRegion).append(storageType).append(autoMinorVersionUpgrade).append(copyTagsToSnapshot).toHashCode();
+        return new HashCodeBuilder().append(allocatedStorage).append(enablePerformanceInsights).append(associatedRoles).append(availabilityZone).append(deleteAutomatedBackups).append(dBSubnetGroupName).append(dBSecurityGroups).append(iops).append(performanceInsightsKMSKeyId).append(vPCSecurityGroups).append(dBSnapshotIdentifier).append(optionGroupName).append(performanceInsightsRetentionPeriod).append(engineVersion).append(masterUsername).append(dBInstanceClass).append(processorFeatures).append(tags).append(enableIAMDatabaseAuthentication).append(port).append(dBParameterGroupName).append(domain).append(monitoringInterval).append(backupRetentionPeriod).append(useDefaultProcessorFeatures).append(domainIAMRoleName).append(promotionTier).append(kmsKeyId).append(dBClusterIdentifier).append(enableCloudwatchLogsExports).append(timezone).append(preferredBackupWindow).append(deletionProtection).append(dBInstanceIdentifier).append(engine).append(sourceDBInstanceIdentifier).append(publiclyAccessible).append(masterUserPassword).append(allowMajorVersionUpgrade).append(dBName).append(multiAZ).append(characterSetName).append(monitoringRoleArn).append(storageEncrypted).append(licenseModel).append(preferredMaintenanceWindow).append(sourceRegion).append(storageType).append(autoMinorVersionUpgrade).append(copyTagsToSnapshot).toHashCode();
     }
 
     @Override
@@ -1570,7 +1602,7 @@ public class DBInstance {
             return false;
         }
         DBInstance rhs = ((DBInstance) other);
-        return new EqualsBuilder().append(allocatedStorage, rhs.allocatedStorage).append(enablePerformanceInsights, rhs.enablePerformanceInsights).append(availabilityZone, rhs.availabilityZone).append(deleteAutomatedBackups, rhs.deleteAutomatedBackups).append(dBSubnetGroupName, rhs.dBSubnetGroupName).append(dBSecurityGroups, rhs.dBSecurityGroups).append(iops, rhs.iops).append(performanceInsightsKMSKeyId, rhs.performanceInsightsKMSKeyId).append(vPCSecurityGroups, rhs.vPCSecurityGroups).append(dBSnapshotIdentifier, rhs.dBSnapshotIdentifier).append(optionGroupName, rhs.optionGroupName).append(performanceInsightsRetentionPeriod, rhs.performanceInsightsRetentionPeriod).append(engineVersion, rhs.engineVersion).append(masterUsername, rhs.masterUsername).append(dBInstanceClass, rhs.dBInstanceClass).append(processorFeatures, rhs.processorFeatures).append(tags, rhs.tags).append(enableIAMDatabaseAuthentication, rhs.enableIAMDatabaseAuthentication).append(port, rhs.port).append(dBParameterGroupName, rhs.dBParameterGroupName).append(domain, rhs.domain).append(monitoringInterval, rhs.monitoringInterval).append(backupRetentionPeriod, rhs.backupRetentionPeriod).append(useDefaultProcessorFeatures, rhs.useDefaultProcessorFeatures).append(domainIAMRoleName, rhs.domainIAMRoleName).append(promotionTier, rhs.promotionTier).append(kmsKeyId, rhs.kmsKeyId).append(dBClusterIdentifier, rhs.dBClusterIdentifier).append(enableCloudwatchLogsExports, rhs.enableCloudwatchLogsExports).append(timezone, rhs.timezone).append(preferredBackupWindow, rhs.preferredBackupWindow).append(deletionProtection, rhs.deletionProtection).append(dBInstanceIdentifier, rhs.dBInstanceIdentifier).append(engine, rhs.engine).append(sourceDBInstanceIdentifier, rhs.sourceDBInstanceIdentifier).append(publiclyAccessible, rhs.publiclyAccessible).append(masterUserPassword, rhs.masterUserPassword).append(allowMajorVersionUpgrade, rhs.allowMajorVersionUpgrade).append(dBName, rhs.dBName).append(multiAZ, rhs.multiAZ).append(characterSetName, rhs.characterSetName).append(monitoringRoleArn, rhs.monitoringRoleArn).append(storageEncrypted, rhs.storageEncrypted).append(licenseModel, rhs.licenseModel).append(preferredMaintenanceWindow, rhs.preferredMaintenanceWindow).append(sourceRegion, rhs.sourceRegion).append(storageType, rhs.storageType).append(autoMinorVersionUpgrade, rhs.autoMinorVersionUpgrade).append(copyTagsToSnapshot, rhs.copyTagsToSnapshot).isEquals();
+        return new EqualsBuilder().append(allocatedStorage, rhs.allocatedStorage).append(enablePerformanceInsights, rhs.enablePerformanceInsights).append(associatedRoles, rhs.associatedRoles).append(availabilityZone, rhs.availabilityZone).append(deleteAutomatedBackups, rhs.deleteAutomatedBackups).append(dBSubnetGroupName, rhs.dBSubnetGroupName).append(dBSecurityGroups, rhs.dBSecurityGroups).append(iops, rhs.iops).append(performanceInsightsKMSKeyId, rhs.performanceInsightsKMSKeyId).append(vPCSecurityGroups, rhs.vPCSecurityGroups).append(dBSnapshotIdentifier, rhs.dBSnapshotIdentifier).append(optionGroupName, rhs.optionGroupName).append(performanceInsightsRetentionPeriod, rhs.performanceInsightsRetentionPeriod).append(engineVersion, rhs.engineVersion).append(masterUsername, rhs.masterUsername).append(dBInstanceClass, rhs.dBInstanceClass).append(processorFeatures, rhs.processorFeatures).append(tags, rhs.tags).append(enableIAMDatabaseAuthentication, rhs.enableIAMDatabaseAuthentication).append(port, rhs.port).append(dBParameterGroupName, rhs.dBParameterGroupName).append(domain, rhs.domain).append(monitoringInterval, rhs.monitoringInterval).append(backupRetentionPeriod, rhs.backupRetentionPeriod).append(useDefaultProcessorFeatures, rhs.useDefaultProcessorFeatures).append(domainIAMRoleName, rhs.domainIAMRoleName).append(promotionTier, rhs.promotionTier).append(kmsKeyId, rhs.kmsKeyId).append(dBClusterIdentifier, rhs.dBClusterIdentifier).append(enableCloudwatchLogsExports, rhs.enableCloudwatchLogsExports).append(timezone, rhs.timezone).append(preferredBackupWindow, rhs.preferredBackupWindow).append(deletionProtection, rhs.deletionProtection).append(dBInstanceIdentifier, rhs.dBInstanceIdentifier).append(engine, rhs.engine).append(sourceDBInstanceIdentifier, rhs.sourceDBInstanceIdentifier).append(publiclyAccessible, rhs.publiclyAccessible).append(masterUserPassword, rhs.masterUserPassword).append(allowMajorVersionUpgrade, rhs.allowMajorVersionUpgrade).append(dBName, rhs.dBName).append(multiAZ, rhs.multiAZ).append(characterSetName, rhs.characterSetName).append(monitoringRoleArn, rhs.monitoringRoleArn).append(storageEncrypted, rhs.storageEncrypted).append(licenseModel, rhs.licenseModel).append(preferredMaintenanceWindow, rhs.preferredMaintenanceWindow).append(sourceRegion, rhs.sourceRegion).append(storageType, rhs.storageType).append(autoMinorVersionUpgrade, rhs.autoMinorVersionUpgrade).append(copyTagsToSnapshot, rhs.copyTagsToSnapshot).isEquals();
     }
 
 }

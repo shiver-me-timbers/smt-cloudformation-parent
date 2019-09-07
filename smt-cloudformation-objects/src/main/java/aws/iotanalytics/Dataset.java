@@ -25,7 +25,9 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "Actions",
     "DatasetName",
+    "ContentDeliveryRules",
     "Triggers",
+    "VersioningConfiguration",
     "RetentionPeriod",
     "Tags"
 })
@@ -46,12 +48,28 @@ public class Dataset {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html#cfn-iotanalytics-dataset-datasetname")
     private CharSequence datasetName;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html#cfn-iotanalytics-dataset-contentdeliveryrules
+     * 
+     */
+    @JsonProperty("ContentDeliveryRules")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html#cfn-iotanalytics-dataset-contentdeliveryrules")
+    private List<Property<DatasetDatasetContentDeliveryRule>> contentDeliveryRules = new ArrayList<Property<DatasetDatasetContentDeliveryRule>>();
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html#cfn-iotanalytics-dataset-triggers
      * 
      */
     @JsonProperty("Triggers")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html#cfn-iotanalytics-dataset-triggers")
     private List<Property<DatasetTrigger>> triggers = new ArrayList<Property<DatasetTrigger>>();
+    /**
+     * DatasetVersioningConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-versioningconfiguration.html
+     * 
+     */
+    @JsonProperty("VersioningConfiguration")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-versioningconfiguration.html")
+    private Property<DatasetVersioningConfiguration> versioningConfiguration;
     /**
      * DatasetRetentionPeriod
      * <p>
@@ -116,6 +134,29 @@ public class Dataset {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html#cfn-iotanalytics-dataset-contentdeliveryrules
+     * 
+     */
+    @JsonIgnore
+    public List<Property<DatasetDatasetContentDeliveryRule>> getContentDeliveryRules() {
+        return contentDeliveryRules;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html#cfn-iotanalytics-dataset-contentdeliveryrules
+     * 
+     */
+    @JsonIgnore
+    public void setContentDeliveryRules(List<Property<DatasetDatasetContentDeliveryRule>> contentDeliveryRules) {
+        this.contentDeliveryRules = contentDeliveryRules;
+    }
+
+    public Dataset withContentDeliveryRules(List<Property<DatasetDatasetContentDeliveryRule>> contentDeliveryRules) {
+        this.contentDeliveryRules = contentDeliveryRules;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html#cfn-iotanalytics-dataset-triggers
      * 
      */
@@ -135,6 +176,33 @@ public class Dataset {
 
     public Dataset withTriggers(List<Property<DatasetTrigger>> triggers) {
         this.triggers = triggers;
+        return this;
+    }
+
+    /**
+     * DatasetVersioningConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-versioningconfiguration.html
+     * 
+     */
+    @JsonIgnore
+    public Property<DatasetVersioningConfiguration> getVersioningConfiguration() {
+        return versioningConfiguration;
+    }
+
+    /**
+     * DatasetVersioningConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-versioningconfiguration.html
+     * 
+     */
+    @JsonIgnore
+    public void setVersioningConfiguration(Property<DatasetVersioningConfiguration> versioningConfiguration) {
+        this.versioningConfiguration = versioningConfiguration;
+    }
+
+    public Dataset withVersioningConfiguration(Property<DatasetVersioningConfiguration> versioningConfiguration) {
+        this.versioningConfiguration = versioningConfiguration;
         return this;
     }
 
@@ -190,12 +258,12 @@ public class Dataset {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("actions", actions).append("datasetName", datasetName).append("triggers", triggers).append("retentionPeriod", retentionPeriod).append("tags", tags).toString();
+        return new ToStringBuilder(this).append("actions", actions).append("datasetName", datasetName).append("contentDeliveryRules", contentDeliveryRules).append("triggers", triggers).append("versioningConfiguration", versioningConfiguration).append("retentionPeriod", retentionPeriod).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(datasetName).append(triggers).append(actions).append(retentionPeriod).append(tags).toHashCode();
+        return new HashCodeBuilder().append(versioningConfiguration).append(contentDeliveryRules).append(datasetName).append(triggers).append(actions).append(retentionPeriod).append(tags).toHashCode();
     }
 
     @Override
@@ -207,7 +275,7 @@ public class Dataset {
             return false;
         }
         Dataset rhs = ((Dataset) other);
-        return new EqualsBuilder().append(datasetName, rhs.datasetName).append(triggers, rhs.triggers).append(actions, rhs.actions).append(retentionPeriod, rhs.retentionPeriod).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(versioningConfiguration, rhs.versioningConfiguration).append(contentDeliveryRules, rhs.contentDeliveryRules).append(datasetName, rhs.datasetName).append(triggers, rhs.triggers).append(actions, rhs.actions).append(retentionPeriod, rhs.retentionPeriod).append(tags, rhs.tags).isEquals();
     }
 
 }

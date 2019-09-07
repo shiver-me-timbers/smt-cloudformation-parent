@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ManagedBlockchain_NodeAttributes.schema.json",
+  "title" : "NodeAttributes",
+  "type" : "string",
+  "enum" : [ "MemberId", "NodeId", "Arn", "NetworkId" ],
+  "javaType" : "aws.managedblockchain.NodeAttributes"
+}

@@ -43,6 +43,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Period",
     "Statistic",
     "Threshold",
+    "ThresholdMetricId",
     "TreatMissingData",
     "Unit"
 })
@@ -175,6 +176,13 @@ public class Alarm {
     @JsonProperty("Threshold")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-threshold")
     private Number threshold;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-dynamic-threshold
+     * 
+     */
+    @JsonProperty("ThresholdMetricId")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-dynamic-threshold")
+    private CharSequence thresholdMetricId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-treatmissingdata
      * 
@@ -605,6 +613,29 @@ public class Alarm {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-dynamic-threshold
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getThresholdMetricId() {
+        return thresholdMetricId;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-dynamic-threshold
+     * 
+     */
+    @JsonIgnore
+    public void setThresholdMetricId(CharSequence thresholdMetricId) {
+        this.thresholdMetricId = thresholdMetricId;
+    }
+
+    public Alarm withThresholdMetricId(CharSequence thresholdMetricId) {
+        this.thresholdMetricId = thresholdMetricId;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-treatmissingdata
      * 
      */
@@ -652,12 +683,12 @@ public class Alarm {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("actionsEnabled", actionsEnabled).append("alarmActions", alarmActions).append("alarmDescription", alarmDescription).append("alarmName", alarmName).append("comparisonOperator", comparisonOperator).append("datapointsToAlarm", datapointsToAlarm).append("dimensions", dimensions).append("evaluateLowSampleCountPercentile", evaluateLowSampleCountPercentile).append("evaluationPeriods", evaluationPeriods).append("extendedStatistic", extendedStatistic).append("insufficientDataActions", insufficientDataActions).append("metricName", metricName).append("metrics", metrics).append("namespace", namespace).append("oKActions", oKActions).append("period", period).append("statistic", statistic).append("threshold", threshold).append("treatMissingData", treatMissingData).append("unit", unit).toString();
+        return new ToStringBuilder(this).append("actionsEnabled", actionsEnabled).append("alarmActions", alarmActions).append("alarmDescription", alarmDescription).append("alarmName", alarmName).append("comparisonOperator", comparisonOperator).append("datapointsToAlarm", datapointsToAlarm).append("dimensions", dimensions).append("evaluateLowSampleCountPercentile", evaluateLowSampleCountPercentile).append("evaluationPeriods", evaluationPeriods).append("extendedStatistic", extendedStatistic).append("insufficientDataActions", insufficientDataActions).append("metricName", metricName).append("metrics", metrics).append("namespace", namespace).append("oKActions", oKActions).append("period", period).append("statistic", statistic).append("threshold", threshold).append("thresholdMetricId", thresholdMetricId).append("treatMissingData", treatMissingData).append("unit", unit).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(period).append(statistic).append(metricName).append(comparisonOperator).append(extendedStatistic).append(treatMissingData).append(evaluateLowSampleCountPercentile).append(alarmName).append(threshold).append(evaluationPeriods).append(insufficientDataActions).append(alarmDescription).append(unit).append(actionsEnabled).append(namespace).append(datapointsToAlarm).append(metrics).append(oKActions).append(alarmActions).append(dimensions).toHashCode();
+        return new HashCodeBuilder().append(period).append(statistic).append(metricName).append(thresholdMetricId).append(comparisonOperator).append(extendedStatistic).append(treatMissingData).append(evaluateLowSampleCountPercentile).append(alarmName).append(threshold).append(evaluationPeriods).append(insufficientDataActions).append(alarmDescription).append(unit).append(actionsEnabled).append(namespace).append(datapointsToAlarm).append(metrics).append(oKActions).append(alarmActions).append(dimensions).toHashCode();
     }
 
     @Override
@@ -669,7 +700,7 @@ public class Alarm {
             return false;
         }
         Alarm rhs = ((Alarm) other);
-        return new EqualsBuilder().append(period, rhs.period).append(statistic, rhs.statistic).append(metricName, rhs.metricName).append(comparisonOperator, rhs.comparisonOperator).append(extendedStatistic, rhs.extendedStatistic).append(treatMissingData, rhs.treatMissingData).append(evaluateLowSampleCountPercentile, rhs.evaluateLowSampleCountPercentile).append(alarmName, rhs.alarmName).append(threshold, rhs.threshold).append(evaluationPeriods, rhs.evaluationPeriods).append(insufficientDataActions, rhs.insufficientDataActions).append(alarmDescription, rhs.alarmDescription).append(unit, rhs.unit).append(actionsEnabled, rhs.actionsEnabled).append(namespace, rhs.namespace).append(datapointsToAlarm, rhs.datapointsToAlarm).append(metrics, rhs.metrics).append(oKActions, rhs.oKActions).append(alarmActions, rhs.alarmActions).append(dimensions, rhs.dimensions).isEquals();
+        return new EqualsBuilder().append(period, rhs.period).append(statistic, rhs.statistic).append(metricName, rhs.metricName).append(thresholdMetricId, rhs.thresholdMetricId).append(comparisonOperator, rhs.comparisonOperator).append(extendedStatistic, rhs.extendedStatistic).append(treatMissingData, rhs.treatMissingData).append(evaluateLowSampleCountPercentile, rhs.evaluateLowSampleCountPercentile).append(alarmName, rhs.alarmName).append(threshold, rhs.threshold).append(evaluationPeriods, rhs.evaluationPeriods).append(insufficientDataActions, rhs.insufficientDataActions).append(alarmDescription, rhs.alarmDescription).append(unit, rhs.unit).append(actionsEnabled, rhs.actionsEnabled).append(namespace, rhs.namespace).append(datapointsToAlarm, rhs.datapointsToAlarm).append(metrics, rhs.metrics).append(oKActions, rhs.oKActions).append(alarmActions, rhs.alarmActions).append(dimensions, rhs.dimensions).isEquals();
     }
 
 }

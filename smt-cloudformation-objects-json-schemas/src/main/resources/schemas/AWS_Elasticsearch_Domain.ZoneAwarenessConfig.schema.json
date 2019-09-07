@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Elasticsearch_Domain.ZoneAwarenessConfig.schema.json",
+  "title" : "DomainZoneAwarenessConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-zoneawarenessconfig.html",
+  "type" : "object",
+  "javaType" : "aws.elasticsearch.DomainZoneAwarenessConfig",
+  "javaInterfaces" : [ "aws.Property<DomainZoneAwarenessConfig>" ],
+  "properties" : {
+    "AvailabilityZoneCount" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-zoneawarenessconfig.html#cfn-elasticsearch-domain-zoneawarenessconfig-availabilityzonecount",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    }
+  }
+}

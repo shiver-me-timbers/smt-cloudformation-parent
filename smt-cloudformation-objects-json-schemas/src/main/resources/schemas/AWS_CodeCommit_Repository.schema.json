@@ -19,10 +19,23 @@
         "javaType" : "aws.Property<aws.codecommit.RepositoryRepositoryTrigger>"
       }
     },
+    "Code" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html#cfn-codecommit-repository-code",
+      "$ref" : "AWS_CodeCommit_Repository.Code.schema.json",
+      "javaType" : "aws.Property<aws.codecommit.RepositoryCode>"
+    },
     "RepositoryDescription" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html#cfn-codecommit-repository-repositorydescription",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html#cfn-codecommit-repository-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
+      }
     }
   }
 }

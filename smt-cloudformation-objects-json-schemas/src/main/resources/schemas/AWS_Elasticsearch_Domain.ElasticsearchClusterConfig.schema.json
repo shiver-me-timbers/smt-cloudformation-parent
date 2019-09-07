@@ -32,6 +32,11 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "ZoneAwarenessConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticsearchclusterconfig-zoneawarenessconfig",
+      "$ref" : "AWS_Elasticsearch_Domain.ZoneAwarenessConfig.schema.json",
+      "javaType" : "aws.Property<aws.elasticsearch.DomainZoneAwarenessConfig>"
+    },
     "ZoneAwarenessEnabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-zoneawarenessenabled",
       "type" : "boolean",

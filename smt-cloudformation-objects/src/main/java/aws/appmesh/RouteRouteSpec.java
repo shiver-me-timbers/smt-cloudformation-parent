@@ -21,6 +21,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "HttpRoute",
+    "Priority",
     "TcpRoute"
 })
 public class RouteRouteSpec implements Property<RouteRouteSpec>
@@ -35,6 +36,13 @@ public class RouteRouteSpec implements Property<RouteRouteSpec>
     @JsonProperty("HttpRoute")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-httproute.html")
     private Property<RouteHttpRoute> httpRoute;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-routespec.html#cfn-appmesh-route-routespec-priority
+     * 
+     */
+    @JsonProperty("Priority")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-routespec.html#cfn-appmesh-route-routespec-priority")
+    private Number priority;
     /**
      * RouteTcpRoute
      * <p>
@@ -73,6 +81,29 @@ public class RouteRouteSpec implements Property<RouteRouteSpec>
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-routespec.html#cfn-appmesh-route-routespec-priority
+     * 
+     */
+    @JsonIgnore
+    public Number getPriority() {
+        return priority;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-routespec.html#cfn-appmesh-route-routespec-priority
+     * 
+     */
+    @JsonIgnore
+    public void setPriority(Number priority) {
+        this.priority = priority;
+    }
+
+    public RouteRouteSpec withPriority(Number priority) {
+        this.priority = priority;
+        return this;
+    }
+
+    /**
      * RouteTcpRoute
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-tcproute.html
@@ -101,12 +132,12 @@ public class RouteRouteSpec implements Property<RouteRouteSpec>
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("httpRoute", httpRoute).append("tcpRoute", tcpRoute).toString();
+        return new ToStringBuilder(this).append("httpRoute", httpRoute).append("priority", priority).append("tcpRoute", tcpRoute).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(httpRoute).append(tcpRoute).toHashCode();
+        return new HashCodeBuilder().append(priority).append(httpRoute).append(tcpRoute).toHashCode();
     }
 
     @Override
@@ -118,7 +149,7 @@ public class RouteRouteSpec implements Property<RouteRouteSpec>
             return false;
         }
         RouteRouteSpec rhs = ((RouteRouteSpec) other);
-        return new EqualsBuilder().append(httpRoute, rhs.httpRoute).append(tcpRoute, rhs.tcpRoute).isEquals();
+        return new EqualsBuilder().append(priority, rhs.priority).append(httpRoute, rhs.httpRoute).append(tcpRoute, rhs.tcpRoute).isEquals();
     }
 
 }

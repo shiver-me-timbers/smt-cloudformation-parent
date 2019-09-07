@@ -23,6 +23,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "DeleteOnTermination",
     "Encrypted",
     "Iops",
+    "KmsKeyId",
     "SnapshotId",
     "VolumeSize",
     "VolumeType"
@@ -51,6 +52,13 @@ public class InstanceEbs implements Property<InstanceEbs>
     @JsonProperty("Iops")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-iops")
     private Number iops;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-instance-ebs-kmskeyid
+     * 
+     */
+    @JsonProperty("KmsKeyId")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-instance-ebs-kmskeyid")
+    private CharSequence kmsKeyId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-snapshotid
      * 
@@ -143,6 +151,29 @@ public class InstanceEbs implements Property<InstanceEbs>
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-instance-ebs-kmskeyid
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getKmsKeyId() {
+        return kmsKeyId;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-instance-ebs-kmskeyid
+     * 
+     */
+    @JsonIgnore
+    public void setKmsKeyId(CharSequence kmsKeyId) {
+        this.kmsKeyId = kmsKeyId;
+    }
+
+    public InstanceEbs withKmsKeyId(CharSequence kmsKeyId) {
+        this.kmsKeyId = kmsKeyId;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-snapshotid
      * 
      */
@@ -213,12 +244,12 @@ public class InstanceEbs implements Property<InstanceEbs>
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("deleteOnTermination", deleteOnTermination).append("encrypted", encrypted).append("iops", iops).append("snapshotId", snapshotId).append("volumeSize", volumeSize).append("volumeType", volumeType).toString();
+        return new ToStringBuilder(this).append("deleteOnTermination", deleteOnTermination).append("encrypted", encrypted).append("iops", iops).append("kmsKeyId", kmsKeyId).append("snapshotId", snapshotId).append("volumeSize", volumeSize).append("volumeType", volumeType).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(volumeType).append(snapshotId).append(encrypted).append(iops).append(deleteOnTermination).append(volumeSize).toHashCode();
+        return new HashCodeBuilder().append(volumeType).append(snapshotId).append(encrypted).append(iops).append(deleteOnTermination).append(kmsKeyId).append(volumeSize).toHashCode();
     }
 
     @Override
@@ -230,7 +261,7 @@ public class InstanceEbs implements Property<InstanceEbs>
             return false;
         }
         InstanceEbs rhs = ((InstanceEbs) other);
-        return new EqualsBuilder().append(volumeType, rhs.volumeType).append(snapshotId, rhs.snapshotId).append(encrypted, rhs.encrypted).append(iops, rhs.iops).append(deleteOnTermination, rhs.deleteOnTermination).append(volumeSize, rhs.volumeSize).isEquals();
+        return new EqualsBuilder().append(volumeType, rhs.volumeType).append(snapshotId, rhs.snapshotId).append(encrypted, rhs.encrypted).append(iops, rhs.iops).append(deleteOnTermination, rhs.deleteOnTermination).append(kmsKeyId, rhs.kmsKeyId).append(volumeSize, rhs.volumeSize).isEquals();
     }
 
 }

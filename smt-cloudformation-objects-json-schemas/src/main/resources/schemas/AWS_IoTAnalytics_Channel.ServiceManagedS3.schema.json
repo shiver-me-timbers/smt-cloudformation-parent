@@ -1,0 +1,10 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoTAnalytics_Channel.ServiceManagedS3.schema.json",
+  "title" : "ChannelServiceManagedS3",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-channel-servicemanageds3.html",
+  "type" : "object",
+  "javaType" : "aws.iotanalytics.ChannelServiceManagedS3",
+  "javaInterfaces" : [ "aws.Property<ChannelServiceManagedS3>" ],
+  "properties" : { }
+}

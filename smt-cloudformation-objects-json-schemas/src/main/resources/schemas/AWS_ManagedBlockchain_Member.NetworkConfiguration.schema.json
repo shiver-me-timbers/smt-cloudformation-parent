@@ -1,0 +1,41 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ManagedBlockchain_Member.NetworkConfiguration.schema.json",
+  "title" : "MemberNetworkConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-managedblockchain-member-networkconfiguration.html",
+  "type" : "object",
+  "javaType" : "aws.managedblockchain.MemberNetworkConfiguration",
+  "javaInterfaces" : [ "aws.Property<MemberNetworkConfiguration>" ],
+  "properties" : {
+    "Description" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-managedblockchain-member-networkconfiguration.html#cfn-managedblockchain-member-networkconfiguration-description",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "FrameworkVersion" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-managedblockchain-member-networkconfiguration.html#cfn-managedblockchain-member-networkconfiguration-frameworkversion",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "VotingPolicy" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-managedblockchain-member-networkconfiguration.html#cfn-managedblockchain-member-networkconfiguration-votingpolicy",
+      "$ref" : "AWS_ManagedBlockchain_Member.VotingPolicy.schema.json",
+      "javaType" : "aws.Property<aws.managedblockchain.MemberVotingPolicy>"
+    },
+    "Framework" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-managedblockchain-member-networkconfiguration.html#cfn-managedblockchain-member-networkconfiguration-framework",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-managedblockchain-member-networkconfiguration.html#cfn-managedblockchain-member-networkconfiguration-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "NetworkFrameworkConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-managedblockchain-member-networkconfiguration.html#cfn-managedblockchain-member-networkconfiguration-networkframeworkconfiguration",
+      "$ref" : "AWS_ManagedBlockchain_Member.NetworkFrameworkConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.managedblockchain.MemberNetworkFrameworkConfiguration>"
+    }
+  }
+}

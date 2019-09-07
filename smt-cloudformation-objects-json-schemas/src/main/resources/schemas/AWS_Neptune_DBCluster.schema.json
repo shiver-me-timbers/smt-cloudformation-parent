@@ -84,6 +84,14 @@
         "$ref" : "Tag.schema.json",
         "javaType" : "aws.Property<aws.Tag>"
       }
+    },
+    "EnableCloudwatchLogsExports" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-enablecloudwatchlogsexports",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
     }
   }
 }

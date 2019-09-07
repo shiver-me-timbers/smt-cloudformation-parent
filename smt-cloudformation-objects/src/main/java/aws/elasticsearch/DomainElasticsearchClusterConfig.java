@@ -25,6 +25,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "DedicatedMasterType",
     "InstanceCount",
     "InstanceType",
+    "ZoneAwarenessConfig",
     "ZoneAwarenessEnabled"
 })
 public class DomainElasticsearchClusterConfig implements Property<DomainElasticsearchClusterConfig>
@@ -65,6 +66,15 @@ public class DomainElasticsearchClusterConfig implements Property<DomainElastics
     @JsonProperty("InstanceType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-instnacetype")
     private CharSequence instanceType;
+    /**
+     * DomainZoneAwarenessConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-zoneawarenessconfig.html
+     * 
+     */
+    @JsonProperty("ZoneAwarenessConfig")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-zoneawarenessconfig.html")
+    private Property<DomainZoneAwarenessConfig> zoneAwarenessConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-zoneawarenessenabled
      * 
@@ -189,6 +199,33 @@ public class DomainElasticsearchClusterConfig implements Property<DomainElastics
     }
 
     /**
+     * DomainZoneAwarenessConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-zoneawarenessconfig.html
+     * 
+     */
+    @JsonIgnore
+    public Property<DomainZoneAwarenessConfig> getZoneAwarenessConfig() {
+        return zoneAwarenessConfig;
+    }
+
+    /**
+     * DomainZoneAwarenessConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-zoneawarenessconfig.html
+     * 
+     */
+    @JsonIgnore
+    public void setZoneAwarenessConfig(Property<DomainZoneAwarenessConfig> zoneAwarenessConfig) {
+        this.zoneAwarenessConfig = zoneAwarenessConfig;
+    }
+
+    public DomainElasticsearchClusterConfig withZoneAwarenessConfig(Property<DomainZoneAwarenessConfig> zoneAwarenessConfig) {
+        this.zoneAwarenessConfig = zoneAwarenessConfig;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-zoneawarenessenabled
      * 
      */
@@ -213,12 +250,12 @@ public class DomainElasticsearchClusterConfig implements Property<DomainElastics
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("dedicatedMasterCount", dedicatedMasterCount).append("dedicatedMasterEnabled", dedicatedMasterEnabled).append("dedicatedMasterType", dedicatedMasterType).append("instanceCount", instanceCount).append("instanceType", instanceType).append("zoneAwarenessEnabled", zoneAwarenessEnabled).toString();
+        return new ToStringBuilder(this).append("dedicatedMasterCount", dedicatedMasterCount).append("dedicatedMasterEnabled", dedicatedMasterEnabled).append("dedicatedMasterType", dedicatedMasterType).append("instanceCount", instanceCount).append("instanceType", instanceType).append("zoneAwarenessConfig", zoneAwarenessConfig).append("zoneAwarenessEnabled", zoneAwarenessEnabled).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(instanceCount).append(instanceType).append(zoneAwarenessEnabled).append(dedicatedMasterType).append(dedicatedMasterEnabled).append(dedicatedMasterCount).toHashCode();
+        return new HashCodeBuilder().append(zoneAwarenessConfig).append(instanceCount).append(instanceType).append(zoneAwarenessEnabled).append(dedicatedMasterType).append(dedicatedMasterEnabled).append(dedicatedMasterCount).toHashCode();
     }
 
     @Override
@@ -230,7 +267,7 @@ public class DomainElasticsearchClusterConfig implements Property<DomainElastics
             return false;
         }
         DomainElasticsearchClusterConfig rhs = ((DomainElasticsearchClusterConfig) other);
-        return new EqualsBuilder().append(instanceCount, rhs.instanceCount).append(instanceType, rhs.instanceType).append(zoneAwarenessEnabled, rhs.zoneAwarenessEnabled).append(dedicatedMasterType, rhs.dedicatedMasterType).append(dedicatedMasterEnabled, rhs.dedicatedMasterEnabled).append(dedicatedMasterCount, rhs.dedicatedMasterCount).isEquals();
+        return new EqualsBuilder().append(zoneAwarenessConfig, rhs.zoneAwarenessConfig).append(instanceCount, rhs.instanceCount).append(instanceType, rhs.instanceType).append(zoneAwarenessEnabled, rhs.zoneAwarenessEnabled).append(dedicatedMasterType, rhs.dedicatedMasterType).append(dedicatedMasterEnabled, rhs.dedicatedMasterEnabled).append(dedicatedMasterCount, rhs.dedicatedMasterCount).isEquals();
     }
 
 }

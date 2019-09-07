@@ -12,6 +12,11 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "ExcludeVerboseContent" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html#cfn-appsync-graphqlapi-logconfig-excludeverbosecontent",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
     "FieldLogLevel" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html#cfn-appsync-graphqlapi-logconfig-fieldloglevel",
       "type" : "string",

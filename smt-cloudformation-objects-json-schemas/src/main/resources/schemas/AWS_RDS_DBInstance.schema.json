@@ -16,6 +16,15 @@
       "type" : "boolean",
       "javaType" : "java.lang.CharSequence"
     },
+    "AssociatedRoles" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-associatedroles",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "$ref" : "AWS_RDS_DBInstance.DBInstanceRole.schema.json",
+        "javaType" : "aws.Property<aws.rds.DBInstanceDBInstanceRole>"
+      }
+    },
     "AutoMinorVersionUpgrade" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-autominorversionupgrade",
       "type" : "boolean",

@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_LakeFormation_DataLakeSettings.DataLakePrincipal.schema.json",
+  "title" : "DataLakeSettingsDataLakePrincipal",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lakeformation-datalakesettings-datalakeprincipal.html",
+  "type" : "object",
+  "javaType" : "aws.lakeformation.DataLakeSettingsDataLakePrincipal",
+  "javaInterfaces" : [ "aws.Property<DataLakeSettingsDataLakePrincipal>" ],
+  "properties" : {
+    "DataLakePrincipalIdentifier" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lakeformation-datalakesettings-datalakeprincipal.html#cfn-lakeformation-datalakesettings-datalakeprincipal-datalakeprincipalidentifier",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

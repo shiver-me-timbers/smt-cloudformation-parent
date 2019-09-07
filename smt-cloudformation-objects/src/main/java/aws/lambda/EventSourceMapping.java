@@ -23,6 +23,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Enabled",
     "EventSourceArn",
     "FunctionName",
+    "MaximumBatchingWindowInSeconds",
     "StartingPosition"
 })
 public class EventSourceMapping {
@@ -55,6 +56,13 @@ public class EventSourceMapping {
     @JsonProperty("FunctionName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-functionname")
     private CharSequence functionName;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-maximumbatchingwindowinseconds
+     * 
+     */
+    @JsonProperty("MaximumBatchingWindowInSeconds")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-maximumbatchingwindowinseconds")
+    private Number maximumBatchingWindowInSeconds;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-startingposition
      * 
@@ -156,6 +164,29 @@ public class EventSourceMapping {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-maximumbatchingwindowinseconds
+     * 
+     */
+    @JsonIgnore
+    public Number getMaximumBatchingWindowInSeconds() {
+        return maximumBatchingWindowInSeconds;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-maximumbatchingwindowinseconds
+     * 
+     */
+    @JsonIgnore
+    public void setMaximumBatchingWindowInSeconds(Number maximumBatchingWindowInSeconds) {
+        this.maximumBatchingWindowInSeconds = maximumBatchingWindowInSeconds;
+    }
+
+    public EventSourceMapping withMaximumBatchingWindowInSeconds(Number maximumBatchingWindowInSeconds) {
+        this.maximumBatchingWindowInSeconds = maximumBatchingWindowInSeconds;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-startingposition
      * 
      */
@@ -180,12 +211,12 @@ public class EventSourceMapping {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("batchSize", batchSize).append("enabled", enabled).append("eventSourceArn", eventSourceArn).append("functionName", functionName).append("startingPosition", startingPosition).toString();
+        return new ToStringBuilder(this).append("batchSize", batchSize).append("enabled", enabled).append("eventSourceArn", eventSourceArn).append("functionName", functionName).append("maximumBatchingWindowInSeconds", maximumBatchingWindowInSeconds).append("startingPosition", startingPosition).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(batchSize).append(startingPosition).append(eventSourceArn).append(functionName).append(enabled).toHashCode();
+        return new HashCodeBuilder().append(maximumBatchingWindowInSeconds).append(eventSourceArn).append(functionName).append(batchSize).append(startingPosition).append(enabled).toHashCode();
     }
 
     @Override
@@ -197,7 +228,7 @@ public class EventSourceMapping {
             return false;
         }
         EventSourceMapping rhs = ((EventSourceMapping) other);
-        return new EqualsBuilder().append(batchSize, rhs.batchSize).append(startingPosition, rhs.startingPosition).append(eventSourceArn, rhs.eventSourceArn).append(functionName, rhs.functionName).append(enabled, rhs.enabled).isEquals();
+        return new EqualsBuilder().append(maximumBatchingWindowInSeconds, rhs.maximumBatchingWindowInSeconds).append(eventSourceArn, rhs.eventSourceArn).append(functionName, rhs.functionName).append(batchSize, rhs.batchSize).append(startingPosition, rhs.startingPosition).append(enabled, rhs.enabled).isEquals();
     }
 
 }

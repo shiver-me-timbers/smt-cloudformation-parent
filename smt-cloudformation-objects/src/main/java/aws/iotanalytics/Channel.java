@@ -24,6 +24,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "ChannelName",
+    "ChannelStorage",
     "RetentionPeriod",
     "Tags"
 })
@@ -36,6 +37,15 @@ public class Channel {
     @JsonProperty("ChannelName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-channel.html#cfn-iotanalytics-channel-channelname")
     private CharSequence channelName;
+    /**
+     * ChannelChannelStorage
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-channel-channelstorage.html
+     * 
+     */
+    @JsonProperty("ChannelStorage")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-channel-channelstorage.html")
+    private Property<ChannelChannelStorage> channelStorage;
     /**
      * ChannelRetentionPeriod
      * <p>
@@ -73,6 +83,33 @@ public class Channel {
 
     public Channel withChannelName(CharSequence channelName) {
         this.channelName = channelName;
+        return this;
+    }
+
+    /**
+     * ChannelChannelStorage
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-channel-channelstorage.html
+     * 
+     */
+    @JsonIgnore
+    public Property<ChannelChannelStorage> getChannelStorage() {
+        return channelStorage;
+    }
+
+    /**
+     * ChannelChannelStorage
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-channel-channelstorage.html
+     * 
+     */
+    @JsonIgnore
+    public void setChannelStorage(Property<ChannelChannelStorage> channelStorage) {
+        this.channelStorage = channelStorage;
+    }
+
+    public Channel withChannelStorage(Property<ChannelChannelStorage> channelStorage) {
+        this.channelStorage = channelStorage;
         return this;
     }
 
@@ -128,12 +165,12 @@ public class Channel {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("channelName", channelName).append("retentionPeriod", retentionPeriod).append("tags", tags).toString();
+        return new ToStringBuilder(this).append("channelName", channelName).append("channelStorage", channelStorage).append("retentionPeriod", retentionPeriod).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(channelName).append(retentionPeriod).append(tags).toHashCode();
+        return new HashCodeBuilder().append(channelName).append(channelStorage).append(retentionPeriod).append(tags).toHashCode();
     }
 
     @Override
@@ -145,7 +182,7 @@ public class Channel {
             return false;
         }
         Channel rhs = ((Channel) other);
-        return new EqualsBuilder().append(channelName, rhs.channelName).append(retentionPeriod, rhs.retentionPeriod).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(channelName, rhs.channelName).append(channelStorage, rhs.channelStorage).append(retentionPeriod, rhs.retentionPeriod).append(tags, rhs.tags).isEquals();
     }
 
 }

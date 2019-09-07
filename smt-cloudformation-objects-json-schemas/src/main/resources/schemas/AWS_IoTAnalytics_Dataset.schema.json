@@ -19,6 +19,14 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "ContentDeliveryRules" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html#cfn-iotanalytics-dataset-contentdeliveryrules",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_IoTAnalytics_Dataset.DatasetContentDeliveryRule.schema.json",
+        "javaType" : "aws.Property<aws.iotanalytics.DatasetDatasetContentDeliveryRule>"
+      }
+    },
     "Triggers" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html#cfn-iotanalytics-dataset-triggers",
       "type" : "array",
@@ -26,6 +34,11 @@
         "$ref" : "AWS_IoTAnalytics_Dataset.Trigger.schema.json",
         "javaType" : "aws.Property<aws.iotanalytics.DatasetTrigger>"
       }
+    },
+    "VersioningConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html#cfn-iotanalytics-dataset-versioningconfiguration",
+      "$ref" : "AWS_IoTAnalytics_Dataset.VersioningConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.iotanalytics.DatasetVersioningConfiguration>"
     },
     "RetentionPeriod" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html#cfn-iotanalytics-dataset-retentionperiod",

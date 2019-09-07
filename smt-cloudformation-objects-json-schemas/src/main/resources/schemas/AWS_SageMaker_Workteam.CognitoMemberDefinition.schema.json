@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SageMaker_Workteam.CognitoMemberDefinition.schema.json",
+  "title" : "WorkteamCognitoMemberDefinition",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-workteam-cognitomemberdefinition.html",
+  "type" : "object",
+  "javaType" : "aws.sagemaker.WorkteamCognitoMemberDefinition",
+  "javaInterfaces" : [ "aws.Property<WorkteamCognitoMemberDefinition>" ],
+  "properties" : {
+    "CognitoUserPool" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-workteam-cognitomemberdefinition.html#cfn-sagemaker-workteam-cognitomemberdefinition-cognitouserpool",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "CognitoClientId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-workteam-cognitomemberdefinition.html#cfn-sagemaker-workteam-cognitomemberdefinition-cognitoclientid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "CognitoUserGroup" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-workteam-cognitomemberdefinition.html#cfn-sagemaker-workteam-cognitomemberdefinition-cognitousergroup",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

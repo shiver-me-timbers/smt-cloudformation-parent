@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ApplicationAutoScaling_ScalableTarget.SuspendedState.schema.json",
+  "title" : "ScalableTargetSuspendedState",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-suspendedstate.html",
+  "type" : "object",
+  "javaType" : "aws.applicationautoscaling.ScalableTargetSuspendedState",
+  "javaInterfaces" : [ "aws.Property<ScalableTargetSuspendedState>" ],
+  "properties" : {
+    "DynamicScalingInSuspended" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-suspendedstate.html#cfn-applicationautoscaling-scalabletarget-suspendedstate-dynamicscalinginsuspended",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DynamicScalingOutSuspended" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-suspendedstate.html#cfn-applicationautoscaling-scalabletarget-suspendedstate-dynamicscalingoutsuspended",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ScheduledScalingSuspended" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-suspendedstate.html#cfn-applicationautoscaling-scalabletarget-suspendedstate-scheduledscalingsuspended",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

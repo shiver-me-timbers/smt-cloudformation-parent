@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ManagedBlockchain_NodeResource.schema.json",
+  "title" : "NodeResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-managedblockchain-node.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.managedblockchain.NodeResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<NodeResource>", "aws.HasCondition<NodeResource>", "aws.HasAttributes<NodeAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ManagedBlockchain::Node"
+    },
+    "Properties" : {
+      "$ref" : "AWS_ManagedBlockchain_Node.schema.json"
+    }
+  }
+}

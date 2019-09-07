@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Config_OrganizationConfigRuleResource.schema.json",
+  "title" : "OrganizationConfigRuleResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-organizationconfigrule.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.config.OrganizationConfigRuleResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<OrganizationConfigRuleResource>", "aws.HasCondition<OrganizationConfigRuleResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Config::OrganizationConfigRule"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Config_OrganizationConfigRule.schema.json"
+    }
+  }
+}

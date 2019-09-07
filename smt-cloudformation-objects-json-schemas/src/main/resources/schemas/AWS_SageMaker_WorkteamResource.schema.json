@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SageMaker_WorkteamResource.schema.json",
+  "title" : "WorkteamResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-workteam.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.sagemaker.WorkteamResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<WorkteamResource>", "aws.HasCondition<WorkteamResource>", "aws.HasAttributes<WorkteamAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::SageMaker::Workteam"
+    },
+    "Properties" : {
+      "$ref" : "AWS_SageMaker_Workteam.schema.json"
+    }
+  }
+}

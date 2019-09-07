@@ -11,21 +11,28 @@
       "$ref" : "AWS_CodePipeline_Pipeline.ArtifactStore.schema.json",
       "javaType" : "aws.Property<aws.codepipeline.PipelineArtifactStore>"
     },
+    "ArtifactStores" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-artifactstores",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "$ref" : "AWS_CodePipeline_Pipeline.ArtifactStoreMap.schema.json",
+        "javaType" : "aws.Property<aws.codepipeline.PipelineArtifactStoreMap>"
+      }
+    },
     "DisableInboundStageTransitions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-disableinboundstagetransitions",
       "type" : "array",
+      "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_CodePipeline_Pipeline.StageTransition.schema.json",
         "javaType" : "aws.Property<aws.codepipeline.PipelineStageTransition>"
       }
     },
-    "Stages" : {
-      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-stages",
-      "type" : "array",
-      "items" : {
-        "$ref" : "AWS_CodePipeline_Pipeline.StageDeclaration.schema.json",
-        "javaType" : "aws.Property<aws.codepipeline.PipelineStageDeclaration>"
-      }
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
     },
     "RestartExecutionOnUpdate" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-restartexecutiononupdate",
@@ -37,10 +44,14 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
-    "Name" : {
-      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-name",
-      "type" : "string",
-      "javaType" : "java.lang.CharSequence"
+    "Stages" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-stages",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "$ref" : "AWS_CodePipeline_Pipeline.StageDeclaration.schema.json",
+        "javaType" : "aws.Property<aws.codepipeline.PipelineStageDeclaration>"
+      }
     }
   }
 }

@@ -114,6 +114,11 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "Interactive" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-interactive",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
     "Links" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-links",
       "type" : "array",
@@ -171,6 +176,11 @@
       "type" : "boolean",
       "javaType" : "java.lang.CharSequence"
     },
+    "PseudoTerminal" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-pseudoterminal",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
     "ReadonlyRootFilesystem" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-readonlyrootfilesystem",
       "type" : "boolean",
@@ -208,6 +218,15 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-stoptimeout",
       "type" : "integer",
       "javaType" : "java.lang.Number"
+    },
+    "SystemControls" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-systemcontrols",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "$ref" : "AWS_ECS_TaskDefinition.SystemControl.schema.json",
+        "javaType" : "aws.Property<aws.ecs.TaskDefinitionSystemControl>"
+      }
     },
     "Ulimits" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-ulimits",

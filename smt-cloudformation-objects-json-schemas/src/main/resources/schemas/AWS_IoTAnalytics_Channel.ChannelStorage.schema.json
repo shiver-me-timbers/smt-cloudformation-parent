@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoTAnalytics_Channel.ChannelStorage.schema.json",
+  "title" : "ChannelChannelStorage",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-channel-channelstorage.html",
+  "type" : "object",
+  "javaType" : "aws.iotanalytics.ChannelChannelStorage",
+  "javaInterfaces" : [ "aws.Property<ChannelChannelStorage>" ],
+  "properties" : {
+    "CustomerManagedS3" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-channel-channelstorage.html#cfn-iotanalytics-channel-channelstorage-customermanageds3",
+      "$ref" : "AWS_IoTAnalytics_Channel.CustomerManagedS3.schema.json",
+      "javaType" : "aws.Property<aws.iotanalytics.ChannelCustomerManagedS3>"
+    },
+    "ServiceManagedS3" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-channel-channelstorage.html#cfn-iotanalytics-channel-channelstorage-servicemanageds3",
+      "$ref" : "AWS_IoTAnalytics_Channel.ServiceManagedS3.schema.json",
+      "javaType" : "aws.Property<aws.iotanalytics.ChannelServiceManagedS3>"
+    }
+  }
+}

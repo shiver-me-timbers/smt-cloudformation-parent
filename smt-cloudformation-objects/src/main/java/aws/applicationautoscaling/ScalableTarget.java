@@ -29,7 +29,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "RoleARN",
     "ScalableDimension",
     "ScheduledActions",
-    "ServiceNamespace"
+    "ServiceNamespace",
+    "SuspendedState"
 })
 public class ScalableTarget {
 
@@ -83,6 +84,15 @@ public class ScalableTarget {
     @JsonProperty("ServiceNamespace")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-servicenamespace")
     private CharSequence serviceNamespace;
+    /**
+     * ScalableTargetSuspendedState
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-suspendedstate.html
+     * 
+     */
+    @JsonProperty("SuspendedState")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-suspendedstate.html")
+    private Property<ScalableTargetSuspendedState> suspendedState;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-maxcapacity
@@ -245,14 +255,41 @@ public class ScalableTarget {
         return this;
     }
 
+    /**
+     * ScalableTargetSuspendedState
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-suspendedstate.html
+     * 
+     */
+    @JsonIgnore
+    public Property<ScalableTargetSuspendedState> getSuspendedState() {
+        return suspendedState;
+    }
+
+    /**
+     * ScalableTargetSuspendedState
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-suspendedstate.html
+     * 
+     */
+    @JsonIgnore
+    public void setSuspendedState(Property<ScalableTargetSuspendedState> suspendedState) {
+        this.suspendedState = suspendedState;
+    }
+
+    public ScalableTarget withSuspendedState(Property<ScalableTargetSuspendedState> suspendedState) {
+        this.suspendedState = suspendedState;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("maxCapacity", maxCapacity).append("minCapacity", minCapacity).append("resourceId", resourceId).append("roleARN", roleARN).append("scalableDimension", scalableDimension).append("scheduledActions", scheduledActions).append("serviceNamespace", serviceNamespace).toString();
+        return new ToStringBuilder(this).append("maxCapacity", maxCapacity).append("minCapacity", minCapacity).append("resourceId", resourceId).append("roleARN", roleARN).append("scalableDimension", scalableDimension).append("scheduledActions", scheduledActions).append("serviceNamespace", serviceNamespace).append("suspendedState", suspendedState).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(scheduledActions).append(resourceId).append(scalableDimension).append(roleARN).append(maxCapacity).append(minCapacity).append(serviceNamespace).toHashCode();
+        return new HashCodeBuilder().append(scheduledActions).append(suspendedState).append(resourceId).append(scalableDimension).append(roleARN).append(maxCapacity).append(minCapacity).append(serviceNamespace).toHashCode();
     }
 
     @Override
@@ -264,7 +301,7 @@ public class ScalableTarget {
             return false;
         }
         ScalableTarget rhs = ((ScalableTarget) other);
-        return new EqualsBuilder().append(scheduledActions, rhs.scheduledActions).append(resourceId, rhs.resourceId).append(scalableDimension, rhs.scalableDimension).append(roleARN, rhs.roleARN).append(maxCapacity, rhs.maxCapacity).append(minCapacity, rhs.minCapacity).append(serviceNamespace, rhs.serviceNamespace).isEquals();
+        return new EqualsBuilder().append(scheduledActions, rhs.scheduledActions).append(suspendedState, rhs.suspendedState).append(resourceId, rhs.resourceId).append(scalableDimension, rhs.scalableDimension).append(roleARN, rhs.roleARN).append(maxCapacity, rhs.maxCapacity).append(minCapacity, rhs.minCapacity).append(serviceNamespace, rhs.serviceNamespace).isEquals();
     }
 
 }

@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SageMaker_Workteam.NotificationConfiguration.schema.json",
+  "title" : "WorkteamNotificationConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-workteam-notificationconfiguration.html",
+  "type" : "object",
+  "javaType" : "aws.sagemaker.WorkteamNotificationConfiguration",
+  "javaInterfaces" : [ "aws.Property<WorkteamNotificationConfiguration>" ],
+  "properties" : {
+    "NotificationTopicArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-workteam-notificationconfiguration.html#cfn-sagemaker-workteam-notificationconfiguration-notificationtopicarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

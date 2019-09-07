@@ -2,18 +2,18 @@
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_CodePipeline_Pipeline.StageTransition.schema.json",
   "title" : "PipelineStageTransition",
-  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stagetransition.html",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-disableinboundstagetransitions.html",
   "type" : "object",
   "javaType" : "aws.codepipeline.PipelineStageTransition",
   "javaInterfaces" : [ "aws.Property<PipelineStageTransition>" ],
   "properties" : {
-    "StageName" : {
-      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stagetransition.html#cfn-codepipeline-pipeline-stagetransition-stagename",
+    "Reason" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-disableinboundstagetransitions.html#cfn-codepipeline-pipeline-disableinboundstagetransitions-reason",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
-    "Reason" : {
-      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stagetransition.html#cfn-codepipeline-pipeline-stagetransition-reason",
+    "StageName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-disableinboundstagetransitions.html#cfn-codepipeline-pipeline-disableinboundstagetransitions-stagename",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     }

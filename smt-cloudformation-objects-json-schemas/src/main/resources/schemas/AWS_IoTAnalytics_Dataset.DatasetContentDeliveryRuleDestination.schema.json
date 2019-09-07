@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoTAnalytics_Dataset.DatasetContentDeliveryRuleDestination.schema.json",
+  "title" : "DatasetDatasetContentDeliveryRuleDestination",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-datasetcontentdeliveryruledestination.html",
+  "type" : "object",
+  "javaType" : "aws.iotanalytics.DatasetDatasetContentDeliveryRuleDestination",
+  "javaInterfaces" : [ "aws.Property<DatasetDatasetContentDeliveryRuleDestination>" ],
+  "properties" : {
+    "IotEventsDestinationConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-datasetcontentdeliveryruledestination.html#cfn-iotanalytics-dataset-datasetcontentdeliveryruledestination-ioteventsdestinationconfiguration",
+      "$ref" : "AWS_IoTAnalytics_Dataset.IotEventsDestinationConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.iotanalytics.DatasetIotEventsDestinationConfiguration>"
+    },
+    "S3DestinationConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-datasetcontentdeliveryruledestination.html#cfn-iotanalytics-dataset-datasetcontentdeliveryruledestination-s3destinationconfiguration",
+      "$ref" : "AWS_IoTAnalytics_Dataset.S3DestinationConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.iotanalytics.DatasetS3DestinationConfiguration>"
+    }
+  }
+}

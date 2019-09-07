@@ -30,8 +30,10 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Cpu",
     "ExecutionRoleArn",
     "Family",
+    "IpcMode",
     "Memory",
     "NetworkMode",
+    "PidMode",
     "PlacementConstraints",
     "ProxyConfiguration",
     "RequiresCompatibilities",
@@ -71,6 +73,13 @@ public class TaskDefinition {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-family")
     private CharSequence family;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-ipcmode
+     * 
+     */
+    @JsonProperty("IpcMode")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-ipcmode")
+    private CharSequence ipcMode;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-memory
      * 
      */
@@ -84,6 +93,13 @@ public class TaskDefinition {
     @JsonProperty("NetworkMode")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-networkmode")
     private CharSequence networkMode;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-pidmode
+     * 
+     */
+    @JsonProperty("PidMode")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-pidmode")
+    private CharSequence pidMode;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-placementconstraints
      * 
@@ -225,6 +241,29 @@ public class TaskDefinition {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-ipcmode
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getIpcMode() {
+        return ipcMode;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-ipcmode
+     * 
+     */
+    @JsonIgnore
+    public void setIpcMode(CharSequence ipcMode) {
+        this.ipcMode = ipcMode;
+    }
+
+    public TaskDefinition withIpcMode(CharSequence ipcMode) {
+        this.ipcMode = ipcMode;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-memory
      * 
      */
@@ -267,6 +306,29 @@ public class TaskDefinition {
 
     public TaskDefinition withNetworkMode(CharSequence networkMode) {
         this.networkMode = networkMode;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-pidmode
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getPidMode() {
+        return pidMode;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-pidmode
+     * 
+     */
+    @JsonIgnore
+    public void setPidMode(CharSequence pidMode) {
+        this.pidMode = pidMode;
+    }
+
+    public TaskDefinition withPidMode(CharSequence pidMode) {
+        this.pidMode = pidMode;
         return this;
     }
 
@@ -414,12 +476,12 @@ public class TaskDefinition {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("containerDefinitions", containerDefinitions).append("cpu", cpu).append("executionRoleArn", executionRoleArn).append("family", family).append("memory", memory).append("networkMode", networkMode).append("placementConstraints", placementConstraints).append("proxyConfiguration", proxyConfiguration).append("requiresCompatibilities", requiresCompatibilities).append("tags", tags).append("taskRoleArn", taskRoleArn).append("volumes", volumes).toString();
+        return new ToStringBuilder(this).append("containerDefinitions", containerDefinitions).append("cpu", cpu).append("executionRoleArn", executionRoleArn).append("family", family).append("ipcMode", ipcMode).append("memory", memory).append("networkMode", networkMode).append("pidMode", pidMode).append("placementConstraints", placementConstraints).append("proxyConfiguration", proxyConfiguration).append("requiresCompatibilities", requiresCompatibilities).append("tags", tags).append("taskRoleArn", taskRoleArn).append("volumes", volumes).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(networkMode).append(placementConstraints).append(memory).append(volumes).append(cpu).append(tags).append(executionRoleArn).append(taskRoleArn).append(family).append(requiresCompatibilities).append(containerDefinitions).append(proxyConfiguration).toHashCode();
+        return new HashCodeBuilder().append(networkMode).append(placementConstraints).append(pidMode).append(memory).append(volumes).append(cpu).append(tags).append(executionRoleArn).append(taskRoleArn).append(ipcMode).append(family).append(requiresCompatibilities).append(containerDefinitions).append(proxyConfiguration).toHashCode();
     }
 
     @Override
@@ -431,7 +493,7 @@ public class TaskDefinition {
             return false;
         }
         TaskDefinition rhs = ((TaskDefinition) other);
-        return new EqualsBuilder().append(networkMode, rhs.networkMode).append(placementConstraints, rhs.placementConstraints).append(memory, rhs.memory).append(volumes, rhs.volumes).append(cpu, rhs.cpu).append(tags, rhs.tags).append(executionRoleArn, rhs.executionRoleArn).append(taskRoleArn, rhs.taskRoleArn).append(family, rhs.family).append(requiresCompatibilities, rhs.requiresCompatibilities).append(containerDefinitions, rhs.containerDefinitions).append(proxyConfiguration, rhs.proxyConfiguration).isEquals();
+        return new EqualsBuilder().append(networkMode, rhs.networkMode).append(placementConstraints, rhs.placementConstraints).append(pidMode, rhs.pidMode).append(memory, rhs.memory).append(volumes, rhs.volumes).append(cpu, rhs.cpu).append(tags, rhs.tags).append(executionRoleArn, rhs.executionRoleArn).append(taskRoleArn, rhs.taskRoleArn).append(ipcMode, rhs.ipcMode).append(family, rhs.family).append(requiresCompatibilities, rhs.requiresCompatibilities).append(containerDefinitions, rhs.containerDefinitions).append(proxyConfiguration, rhs.proxyConfiguration).isEquals();
     }
 
 }

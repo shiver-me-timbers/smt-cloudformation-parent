@@ -14,7 +14,7 @@
     },
     "UnusedAccountValidityDays" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-admincreateuserconfig.html#cfn-cognito-userpool-admincreateuserconfig-unusedaccountvaliditydays",
-      "type" : "number",
+      "type" : "integer",
       "javaType" : "java.lang.Number"
     },
     "AllowAdminCreateUserOnly" : {

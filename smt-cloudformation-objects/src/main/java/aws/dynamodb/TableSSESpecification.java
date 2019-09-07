@@ -20,11 +20,20 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
-    "SSEEnabled"
+    "KMSMasterKeyId",
+    "SSEEnabled",
+    "SSEType"
 })
 public class TableSSESpecification implements Property<TableSSESpecification>
 {
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-ssespecification.html#cfn-dynamodb-table-ssespecification-kmsmasterkeyid
+     * 
+     */
+    @JsonProperty("KMSMasterKeyId")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-ssespecification.html#cfn-dynamodb-table-ssespecification-kmsmasterkeyid")
+    private CharSequence kMSMasterKeyId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-ssespecification.html#cfn-dynamodb-table-ssespecification-sseenabled
      * 
@@ -32,6 +41,36 @@ public class TableSSESpecification implements Property<TableSSESpecification>
     @JsonProperty("SSEEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-ssespecification.html#cfn-dynamodb-table-ssespecification-sseenabled")
     private CharSequence sSEEnabled;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-ssespecification.html#cfn-dynamodb-table-ssespecification-ssetype
+     * 
+     */
+    @JsonProperty("SSEType")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-ssespecification.html#cfn-dynamodb-table-ssespecification-ssetype")
+    private CharSequence sSEType;
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-ssespecification.html#cfn-dynamodb-table-ssespecification-kmsmasterkeyid
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getKMSMasterKeyId() {
+        return kMSMasterKeyId;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-ssespecification.html#cfn-dynamodb-table-ssespecification-kmsmasterkeyid
+     * 
+     */
+    @JsonIgnore
+    public void setKMSMasterKeyId(CharSequence kMSMasterKeyId) {
+        this.kMSMasterKeyId = kMSMasterKeyId;
+    }
+
+    public TableSSESpecification withKMSMasterKeyId(CharSequence kMSMasterKeyId) {
+        this.kMSMasterKeyId = kMSMasterKeyId;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-ssespecification.html#cfn-dynamodb-table-ssespecification-sseenabled
@@ -56,14 +95,37 @@ public class TableSSESpecification implements Property<TableSSESpecification>
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-ssespecification.html#cfn-dynamodb-table-ssespecification-ssetype
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getSSEType() {
+        return sSEType;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-ssespecification.html#cfn-dynamodb-table-ssespecification-ssetype
+     * 
+     */
+    @JsonIgnore
+    public void setSSEType(CharSequence sSEType) {
+        this.sSEType = sSEType;
+    }
+
+    public TableSSESpecification withSSEType(CharSequence sSEType) {
+        this.sSEType = sSEType;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("sSEEnabled", sSEEnabled).toString();
+        return new ToStringBuilder(this).append("kMSMasterKeyId", kMSMasterKeyId).append("sSEEnabled", sSEEnabled).append("sSEType", sSEType).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(sSEEnabled).toHashCode();
+        return new HashCodeBuilder().append(kMSMasterKeyId).append(sSEEnabled).append(sSEType).toHashCode();
     }
 
     @Override
@@ -75,7 +137,7 @@ public class TableSSESpecification implements Property<TableSSESpecification>
             return false;
         }
         TableSSESpecification rhs = ((TableSSESpecification) other);
-        return new EqualsBuilder().append(sSEEnabled, rhs.sSEEnabled).isEquals();
+        return new EqualsBuilder().append(kMSMasterKeyId, rhs.kMSMasterKeyId).append(sSEEnabled, rhs.sSEEnabled).append(sSEType, rhs.sSEType).isEquals();
     }
 
 }

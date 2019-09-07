@@ -21,6 +21,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "CloudWatchLogsRoleArn",
+    "ExcludeVerboseContent",
     "FieldLogLevel"
 })
 public class GraphQLApiLogConfig implements Property<GraphQLApiLogConfig>
@@ -33,6 +34,13 @@ public class GraphQLApiLogConfig implements Property<GraphQLApiLogConfig>
     @JsonProperty("CloudWatchLogsRoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html#cfn-appsync-graphqlapi-logconfig-cloudwatchlogsrolearn")
     private CharSequence cloudWatchLogsRoleArn;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html#cfn-appsync-graphqlapi-logconfig-excludeverbosecontent
+     * 
+     */
+    @JsonProperty("ExcludeVerboseContent")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html#cfn-appsync-graphqlapi-logconfig-excludeverbosecontent")
+    private CharSequence excludeVerboseContent;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html#cfn-appsync-graphqlapi-logconfig-fieldloglevel
      * 
@@ -65,6 +73,29 @@ public class GraphQLApiLogConfig implements Property<GraphQLApiLogConfig>
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html#cfn-appsync-graphqlapi-logconfig-excludeverbosecontent
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getExcludeVerboseContent() {
+        return excludeVerboseContent;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html#cfn-appsync-graphqlapi-logconfig-excludeverbosecontent
+     * 
+     */
+    @JsonIgnore
+    public void setExcludeVerboseContent(CharSequence excludeVerboseContent) {
+        this.excludeVerboseContent = excludeVerboseContent;
+    }
+
+    public GraphQLApiLogConfig withExcludeVerboseContent(CharSequence excludeVerboseContent) {
+        this.excludeVerboseContent = excludeVerboseContent;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html#cfn-appsync-graphqlapi-logconfig-fieldloglevel
      * 
      */
@@ -89,12 +120,12 @@ public class GraphQLApiLogConfig implements Property<GraphQLApiLogConfig>
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("cloudWatchLogsRoleArn", cloudWatchLogsRoleArn).append("fieldLogLevel", fieldLogLevel).toString();
+        return new ToStringBuilder(this).append("cloudWatchLogsRoleArn", cloudWatchLogsRoleArn).append("excludeVerboseContent", excludeVerboseContent).append("fieldLogLevel", fieldLogLevel).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(cloudWatchLogsRoleArn).append(fieldLogLevel).toHashCode();
+        return new HashCodeBuilder().append(cloudWatchLogsRoleArn).append(excludeVerboseContent).append(fieldLogLevel).toHashCode();
     }
 
     @Override
@@ -106,7 +137,7 @@ public class GraphQLApiLogConfig implements Property<GraphQLApiLogConfig>
             return false;
         }
         GraphQLApiLogConfig rhs = ((GraphQLApiLogConfig) other);
-        return new EqualsBuilder().append(cloudWatchLogsRoleArn, rhs.cloudWatchLogsRoleArn).append(fieldLogLevel, rhs.fieldLogLevel).isEquals();
+        return new EqualsBuilder().append(cloudWatchLogsRoleArn, rhs.cloudWatchLogsRoleArn).append(excludeVerboseContent, rhs.excludeVerboseContent).append(fieldLogLevel, rhs.fieldLogLevel).isEquals();
     }
 
 }

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_Instance.CpuOptions.schema.json",
+  "title" : "InstanceCpuOptions",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-cpuoptions.html",
+  "type" : "object",
+  "javaType" : "aws.ec2.InstanceCpuOptions",
+  "javaInterfaces" : [ "aws.Property<InstanceCpuOptions>" ],
+  "properties" : {
+    "CoreCount" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-cpuoptions.html#cfn-ec2-instance-cpuoptions-corecount",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "ThreadsPerCore" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-cpuoptions.html#cfn-ec2-instance-cpuoptions-threadspercore",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    }
+  }
+}

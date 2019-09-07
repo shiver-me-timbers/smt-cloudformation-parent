@@ -23,12 +23,22 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "DatastoreStorage",
     "DatastoreName",
     "RetentionPeriod",
     "Tags"
 })
 public class Datastore {
 
+    /**
+     * DatastoreDatastoreStorage
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-datastorestorage.html
+     * 
+     */
+    @JsonProperty("DatastoreStorage")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-datastorestorage.html")
+    private Property<DatastoreDatastoreStorage> datastoreStorage;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-datastore.html#cfn-iotanalytics-datastore-datastorename
      * 
@@ -52,6 +62,33 @@ public class Datastore {
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-datastore.html#cfn-iotanalytics-datastore-tags")
     private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
+
+    /**
+     * DatastoreDatastoreStorage
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-datastorestorage.html
+     * 
+     */
+    @JsonIgnore
+    public Property<DatastoreDatastoreStorage> getDatastoreStorage() {
+        return datastoreStorage;
+    }
+
+    /**
+     * DatastoreDatastoreStorage
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-datastorestorage.html
+     * 
+     */
+    @JsonIgnore
+    public void setDatastoreStorage(Property<DatastoreDatastoreStorage> datastoreStorage) {
+        this.datastoreStorage = datastoreStorage;
+    }
+
+    public Datastore withDatastoreStorage(Property<DatastoreDatastoreStorage> datastoreStorage) {
+        this.datastoreStorage = datastoreStorage;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-datastore.html#cfn-iotanalytics-datastore-datastorename
@@ -128,12 +165,12 @@ public class Datastore {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("datastoreName", datastoreName).append("retentionPeriod", retentionPeriod).append("tags", tags).toString();
+        return new ToStringBuilder(this).append("datastoreStorage", datastoreStorage).append("datastoreName", datastoreName).append("retentionPeriod", retentionPeriod).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(datastoreName).append(retentionPeriod).append(tags).toHashCode();
+        return new HashCodeBuilder().append(datastoreName).append(datastoreStorage).append(retentionPeriod).append(tags).toHashCode();
     }
 
     @Override
@@ -145,7 +182,7 @@ public class Datastore {
             return false;
         }
         Datastore rhs = ((Datastore) other);
-        return new EqualsBuilder().append(datastoreName, rhs.datastoreName).append(retentionPeriod, rhs.retentionPeriod).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(datastoreName, rhs.datastoreName).append(datastoreStorage, rhs.datastoreStorage).append(retentionPeriod, rhs.retentionPeriod).append(tags, rhs.tags).isEquals();
     }
 
 }

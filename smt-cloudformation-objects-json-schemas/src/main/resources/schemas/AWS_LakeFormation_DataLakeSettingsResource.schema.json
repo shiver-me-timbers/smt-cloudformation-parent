@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_LakeFormation_DataLakeSettingsResource.schema.json",
+  "title" : "DataLakeSettingsResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lakeformation-datalakesettings.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.lakeformation.DataLakeSettingsResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<DataLakeSettingsResource>", "aws.HasCondition<DataLakeSettingsResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::LakeFormation::DataLakeSettings"
+    },
+    "Properties" : {
+      "$ref" : "AWS_LakeFormation_DataLakeSettings.schema.json"
+    }
+  }
+}

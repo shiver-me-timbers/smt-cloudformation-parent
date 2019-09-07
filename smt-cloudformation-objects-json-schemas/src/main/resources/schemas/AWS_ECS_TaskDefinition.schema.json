@@ -30,6 +30,11 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "IpcMode" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-ipcmode",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "Memory" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-memory",
       "type" : "string",
@@ -37,6 +42,11 @@
     },
     "NetworkMode" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-networkmode",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "PidMode" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-pidmode",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },

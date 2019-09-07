@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ManagedBlockchain_Member.ApprovalThresholdPolicy.schema.json",
+  "title" : "MemberApprovalThresholdPolicy",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-managedblockchain-member-approvalthresholdpolicy.html",
+  "type" : "object",
+  "javaType" : "aws.managedblockchain.MemberApprovalThresholdPolicy",
+  "javaInterfaces" : [ "aws.Property<MemberApprovalThresholdPolicy>" ],
+  "properties" : {
+    "ThresholdComparator" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-managedblockchain-member-approvalthresholdpolicy.html#cfn-managedblockchain-member-approvalthresholdpolicy-thresholdcomparator",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ThresholdPercentage" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-managedblockchain-member-approvalthresholdpolicy.html#cfn-managedblockchain-member-approvalthresholdpolicy-thresholdpercentage",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "ProposalDurationInHours" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-managedblockchain-member-approvalthresholdpolicy.html#cfn-managedblockchain-member-approvalthresholdpolicy-proposaldurationinhours",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    }
+  }
+}

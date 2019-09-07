@@ -36,7 +36,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "VpcSecurityGroupIds",
     "DBClusterParameterGroupName",
     "BackupRetentionPeriod",
-    "Tags"
+    "Tags",
+    "EnableCloudwatchLogsExports"
 })
 public class DBCluster {
 
@@ -138,6 +139,13 @@ public class DBCluster {
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-tags")
     private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-enablecloudwatchlogsexports
+     * 
+     */
+    @JsonProperty("EnableCloudwatchLogsExports")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-enablecloudwatchlogsexports")
+    private List<CharSequence> enableCloudwatchLogsExports = new ArrayList<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-storageencrypted
@@ -461,14 +469,37 @@ public class DBCluster {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-enablecloudwatchlogsexports
+     * 
+     */
+    @JsonIgnore
+    public List<CharSequence> getEnableCloudwatchLogsExports() {
+        return enableCloudwatchLogsExports;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-enablecloudwatchlogsexports
+     * 
+     */
+    @JsonIgnore
+    public void setEnableCloudwatchLogsExports(List<CharSequence> enableCloudwatchLogsExports) {
+        this.enableCloudwatchLogsExports = enableCloudwatchLogsExports;
+    }
+
+    public DBCluster withEnableCloudwatchLogsExports(List<CharSequence> enableCloudwatchLogsExports) {
+        this.enableCloudwatchLogsExports = enableCloudwatchLogsExports;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("storageEncrypted", storageEncrypted).append("kmsKeyId", kmsKeyId).append("availabilityZones", availabilityZones).append("snapshotIdentifier", snapshotIdentifier).append("port", port).append("dBClusterIdentifier", dBClusterIdentifier).append("preferredMaintenanceWindow", preferredMaintenanceWindow).append("iamAuthEnabled", iamAuthEnabled).append("dBSubnetGroupName", dBSubnetGroupName).append("preferredBackupWindow", preferredBackupWindow).append("vpcSecurityGroupIds", vpcSecurityGroupIds).append("dBClusterParameterGroupName", dBClusterParameterGroupName).append("backupRetentionPeriod", backupRetentionPeriod).append("tags", tags).toString();
+        return new ToStringBuilder(this).append("storageEncrypted", storageEncrypted).append("kmsKeyId", kmsKeyId).append("availabilityZones", availabilityZones).append("snapshotIdentifier", snapshotIdentifier).append("port", port).append("dBClusterIdentifier", dBClusterIdentifier).append("preferredMaintenanceWindow", preferredMaintenanceWindow).append("iamAuthEnabled", iamAuthEnabled).append("dBSubnetGroupName", dBSubnetGroupName).append("preferredBackupWindow", preferredBackupWindow).append("vpcSecurityGroupIds", vpcSecurityGroupIds).append("dBClusterParameterGroupName", dBClusterParameterGroupName).append("backupRetentionPeriod", backupRetentionPeriod).append("tags", tags).append("enableCloudwatchLogsExports", enableCloudwatchLogsExports).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(vpcSecurityGroupIds).append(iamAuthEnabled).append(availabilityZones).append(snapshotIdentifier).append(storageEncrypted).append(preferredBackupWindow).append(dBSubnetGroupName).append(tags).append(dBClusterParameterGroupName).append(port).append(preferredMaintenanceWindow).append(backupRetentionPeriod).append(kmsKeyId).append(dBClusterIdentifier).toHashCode();
+        return new HashCodeBuilder().append(vpcSecurityGroupIds).append(iamAuthEnabled).append(availabilityZones).append(snapshotIdentifier).append(storageEncrypted).append(preferredBackupWindow).append(dBSubnetGroupName).append(tags).append(dBClusterParameterGroupName).append(port).append(preferredMaintenanceWindow).append(backupRetentionPeriod).append(kmsKeyId).append(dBClusterIdentifier).append(enableCloudwatchLogsExports).toHashCode();
     }
 
     @Override
@@ -480,7 +511,7 @@ public class DBCluster {
             return false;
         }
         DBCluster rhs = ((DBCluster) other);
-        return new EqualsBuilder().append(vpcSecurityGroupIds, rhs.vpcSecurityGroupIds).append(iamAuthEnabled, rhs.iamAuthEnabled).append(availabilityZones, rhs.availabilityZones).append(snapshotIdentifier, rhs.snapshotIdentifier).append(storageEncrypted, rhs.storageEncrypted).append(preferredBackupWindow, rhs.preferredBackupWindow).append(dBSubnetGroupName, rhs.dBSubnetGroupName).append(tags, rhs.tags).append(dBClusterParameterGroupName, rhs.dBClusterParameterGroupName).append(port, rhs.port).append(preferredMaintenanceWindow, rhs.preferredMaintenanceWindow).append(backupRetentionPeriod, rhs.backupRetentionPeriod).append(kmsKeyId, rhs.kmsKeyId).append(dBClusterIdentifier, rhs.dBClusterIdentifier).isEquals();
+        return new EqualsBuilder().append(vpcSecurityGroupIds, rhs.vpcSecurityGroupIds).append(iamAuthEnabled, rhs.iamAuthEnabled).append(availabilityZones, rhs.availabilityZones).append(snapshotIdentifier, rhs.snapshotIdentifier).append(storageEncrypted, rhs.storageEncrypted).append(preferredBackupWindow, rhs.preferredBackupWindow).append(dBSubnetGroupName, rhs.dBSubnetGroupName).append(tags, rhs.tags).append(dBClusterParameterGroupName, rhs.dBClusterParameterGroupName).append(port, rhs.port).append(preferredMaintenanceWindow, rhs.preferredMaintenanceWindow).append(backupRetentionPeriod, rhs.backupRetentionPeriod).append(kmsKeyId, rhs.kmsKeyId).append(dBClusterIdentifier, rhs.dBClusterIdentifier).append(enableCloudwatchLogsExports, rhs.enableCloudwatchLogsExports).isEquals();
     }
 
 }

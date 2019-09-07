@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ManagedBlockchain_Member.VotingPolicy.schema.json",
+  "title" : "MemberVotingPolicy",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-managedblockchain-member-votingpolicy.html",
+  "type" : "object",
+  "javaType" : "aws.managedblockchain.MemberVotingPolicy",
+  "javaInterfaces" : [ "aws.Property<MemberVotingPolicy>" ],
+  "properties" : {
+    "ApprovalThresholdPolicy" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-managedblockchain-member-votingpolicy.html#cfn-managedblockchain-member-votingpolicy-approvalthresholdpolicy",
+      "$ref" : "AWS_ManagedBlockchain_Member.ApprovalThresholdPolicy.schema.json",
+      "javaType" : "aws.Property<aws.managedblockchain.MemberApprovalThresholdPolicy>"
+    }
+  }
+}

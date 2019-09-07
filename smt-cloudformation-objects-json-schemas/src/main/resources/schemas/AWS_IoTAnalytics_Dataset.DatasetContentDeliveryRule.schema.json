@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoTAnalytics_Dataset.DatasetContentDeliveryRule.schema.json",
+  "title" : "DatasetDatasetContentDeliveryRule",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-datasetcontentdeliveryrule.html",
+  "type" : "object",
+  "javaType" : "aws.iotanalytics.DatasetDatasetContentDeliveryRule",
+  "javaInterfaces" : [ "aws.Property<DatasetDatasetContentDeliveryRule>" ],
+  "properties" : {
+    "Destination" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-datasetcontentdeliveryrule.html#cfn-iotanalytics-dataset-datasetcontentdeliveryrule-destination",
+      "$ref" : "AWS_IoTAnalytics_Dataset.DatasetContentDeliveryRuleDestination.schema.json",
+      "javaType" : "aws.Property<aws.iotanalytics.DatasetDatasetContentDeliveryRuleDestination>"
+    },
+    "EntryName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-datasetcontentdeliveryrule.html#cfn-iotanalytics-dataset-datasetcontentdeliveryrule-entryname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

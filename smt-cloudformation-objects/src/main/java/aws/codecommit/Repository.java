@@ -4,6 +4,7 @@ package aws.codecommit;
 import java.util.ArrayList;
 import java.util.List;
 import aws.Property;
+import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,9 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "RepositoryName",
     "Triggers",
-    "RepositoryDescription"
+    "Code",
+    "RepositoryDescription",
+    "Tags"
 })
 public class Repository {
 
@@ -43,12 +46,28 @@ public class Repository {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html#cfn-codecommit-repository-triggers")
     private List<Property<RepositoryRepositoryTrigger>> triggers = new ArrayList<Property<RepositoryRepositoryTrigger>>();
     /**
+     * RepositoryCode
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codecommit-repository-code.html
+     * 
+     */
+    @JsonProperty("Code")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codecommit-repository-code.html")
+    private Property<RepositoryCode> code;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html#cfn-codecommit-repository-repositorydescription
      * 
      */
     @JsonProperty("RepositoryDescription")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html#cfn-codecommit-repository-repositorydescription")
     private CharSequence repositoryDescription;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html#cfn-codecommit-repository-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html#cfn-codecommit-repository-tags")
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html#cfn-codecommit-repository-repositoryname
@@ -97,6 +116,33 @@ public class Repository {
     }
 
     /**
+     * RepositoryCode
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codecommit-repository-code.html
+     * 
+     */
+    @JsonIgnore
+    public Property<RepositoryCode> getCode() {
+        return code;
+    }
+
+    /**
+     * RepositoryCode
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codecommit-repository-code.html
+     * 
+     */
+    @JsonIgnore
+    public void setCode(Property<RepositoryCode> code) {
+        this.code = code;
+    }
+
+    public Repository withCode(Property<RepositoryCode> code) {
+        this.code = code;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html#cfn-codecommit-repository-repositorydescription
      * 
      */
@@ -119,14 +165,37 @@ public class Repository {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html#cfn-codecommit-repository-tags
+     * 
+     */
+    @JsonIgnore
+    public List<Property<Tag>> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html#cfn-codecommit-repository-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+    }
+
+    public Repository withTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("repositoryName", repositoryName).append("triggers", triggers).append("repositoryDescription", repositoryDescription).toString();
+        return new ToStringBuilder(this).append("repositoryName", repositoryName).append("triggers", triggers).append("code", code).append("repositoryDescription", repositoryDescription).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(repositoryDescription).append(repositoryName).append(triggers).toHashCode();
+        return new HashCodeBuilder().append(repositoryDescription).append(code).append(repositoryName).append(triggers).append(tags).toHashCode();
     }
 
     @Override
@@ -138,7 +207,7 @@ public class Repository {
             return false;
         }
         Repository rhs = ((Repository) other);
-        return new EqualsBuilder().append(repositoryDescription, rhs.repositoryDescription).append(repositoryName, rhs.repositoryName).append(triggers, rhs.triggers).isEquals();
+        return new EqualsBuilder().append(repositoryDescription, rhs.repositoryDescription).append(code, rhs.code).append(repositoryName, rhs.repositoryName).append(triggers, rhs.triggers).append(tags, rhs.tags).isEquals();
     }
 
 }

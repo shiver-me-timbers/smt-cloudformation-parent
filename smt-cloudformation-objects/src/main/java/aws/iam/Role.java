@@ -6,6 +6,7 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 import aws.Property;
+import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -26,12 +27,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "AssumeRolePolicyDocument",
+    "Description",
     "ManagedPolicyArns",
     "MaxSessionDuration",
     "Path",
     "PermissionsBoundary",
     "Policies",
-    "RoleName"
+    "RoleName",
+    "Tags"
 })
 public class Role {
 
@@ -44,6 +47,13 @@ public class Role {
     @JsonProperty("AssumeRolePolicyDocument")
     @JsonPropertyDescription("https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html")
     private Property<PolicyDocument> assumeRolePolicyDocument;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-description
+     * 
+     */
+    @JsonProperty("Description")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-description")
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-managepolicyarns
      * 
@@ -87,6 +97,13 @@ public class Role {
     @JsonProperty("RoleName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-rolename")
     private CharSequence roleName;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-tags")
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
      * Resource
@@ -112,6 +129,29 @@ public class Role {
 
     public Role withAssumeRolePolicyDocument(Property<PolicyDocument> assumeRolePolicyDocument) {
         this.assumeRolePolicyDocument = assumeRolePolicyDocument;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-description
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getDescription() {
+        return description;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-description
+     * 
+     */
+    @JsonIgnore
+    public void setDescription(CharSequence description) {
+        this.description = description;
+    }
+
+    public Role withDescription(CharSequence description) {
+        this.description = description;
         return this;
     }
 
@@ -253,14 +293,37 @@ public class Role {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-tags
+     * 
+     */
+    @JsonIgnore
+    public List<Property<Tag>> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+    }
+
+    public Role withTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("assumeRolePolicyDocument", assumeRolePolicyDocument).append("managedPolicyArns", managedPolicyArns).append("maxSessionDuration", maxSessionDuration).append("path", path).append("permissionsBoundary", permissionsBoundary).append("policies", policies).append("roleName", roleName).toString();
+        return new ToStringBuilder(this).append("assumeRolePolicyDocument", assumeRolePolicyDocument).append("description", description).append("managedPolicyArns", managedPolicyArns).append("maxSessionDuration", maxSessionDuration).append("path", path).append("permissionsBoundary", permissionsBoundary).append("policies", policies).append("roleName", roleName).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(path).append(permissionsBoundary).append(assumeRolePolicyDocument).append(managedPolicyArns).append(maxSessionDuration).append(policies).append(roleName).toHashCode();
+        return new HashCodeBuilder().append(path).append(permissionsBoundary).append(assumeRolePolicyDocument).append(managedPolicyArns).append(maxSessionDuration).append(policies).append(roleName).append(description).append(tags).toHashCode();
     }
 
     @Override
@@ -272,7 +335,7 @@ public class Role {
             return false;
         }
         Role rhs = ((Role) other);
-        return new EqualsBuilder().append(path, rhs.path).append(permissionsBoundary, rhs.permissionsBoundary).append(assumeRolePolicyDocument, rhs.assumeRolePolicyDocument).append(managedPolicyArns, rhs.managedPolicyArns).append(maxSessionDuration, rhs.maxSessionDuration).append(policies, rhs.policies).append(roleName, rhs.roleName).isEquals();
+        return new EqualsBuilder().append(path, rhs.path).append(permissionsBoundary, rhs.permissionsBoundary).append(assumeRolePolicyDocument, rhs.assumeRolePolicyDocument).append(managedPolicyArns, rhs.managedPolicyArns).append(maxSessionDuration, rhs.maxSessionDuration).append(policies, rhs.policies).append(roleName, rhs.roleName).append(description, rhs.description).append(tags, rhs.tags).isEquals();
     }
 
 }

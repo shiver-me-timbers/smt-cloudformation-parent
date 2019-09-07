@@ -36,6 +36,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "CacheSubnetGroupName",
     "Engine",
     "EngineVersion",
+    "KmsKeyId",
     "NodeGroupConfiguration",
     "NotificationTopicArn",
     "NumCacheClusters",
@@ -129,6 +130,13 @@ public class ReplicationGroup {
     @JsonProperty("EngineVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-engineversion")
     private CharSequence engineVersion;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-kmskeyid
+     * 
+     */
+    @JsonProperty("KmsKeyId")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-kmskeyid")
+    private CharSequence kmsKeyId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-nodegroupconfiguration
      * 
@@ -494,6 +502,29 @@ public class ReplicationGroup {
 
     public ReplicationGroup withEngineVersion(CharSequence engineVersion) {
         this.engineVersion = engineVersion;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-kmskeyid
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getKmsKeyId() {
+        return kmsKeyId;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-kmskeyid
+     * 
+     */
+    @JsonIgnore
+    public void setKmsKeyId(CharSequence kmsKeyId) {
+        this.kmsKeyId = kmsKeyId;
+    }
+
+    public ReplicationGroup withKmsKeyId(CharSequence kmsKeyId) {
+        this.kmsKeyId = kmsKeyId;
         return this;
     }
 
@@ -936,12 +967,12 @@ public class ReplicationGroup {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("atRestEncryptionEnabled", atRestEncryptionEnabled).append("authToken", authToken).append("autoMinorVersionUpgrade", autoMinorVersionUpgrade).append("automaticFailoverEnabled", automaticFailoverEnabled).append("cacheNodeType", cacheNodeType).append("cacheParameterGroupName", cacheParameterGroupName).append("cacheSecurityGroupNames", cacheSecurityGroupNames).append("cacheSubnetGroupName", cacheSubnetGroupName).append("engine", engine).append("engineVersion", engineVersion).append("nodeGroupConfiguration", nodeGroupConfiguration).append("notificationTopicArn", notificationTopicArn).append("numCacheClusters", numCacheClusters).append("numNodeGroups", numNodeGroups).append("port", port).append("preferredCacheClusterAZs", preferredCacheClusterAZs).append("preferredMaintenanceWindow", preferredMaintenanceWindow).append("primaryClusterId", primaryClusterId).append("replicasPerNodeGroup", replicasPerNodeGroup).append("replicationGroupDescription", replicationGroupDescription).append("replicationGroupId", replicationGroupId).append("securityGroupIds", securityGroupIds).append("snapshotArns", snapshotArns).append("snapshotName", snapshotName).append("snapshotRetentionLimit", snapshotRetentionLimit).append("snapshotWindow", snapshotWindow).append("snapshottingClusterId", snapshottingClusterId).append("tags", tags).append("transitEncryptionEnabled", transitEncryptionEnabled).toString();
+        return new ToStringBuilder(this).append("atRestEncryptionEnabled", atRestEncryptionEnabled).append("authToken", authToken).append("autoMinorVersionUpgrade", autoMinorVersionUpgrade).append("automaticFailoverEnabled", automaticFailoverEnabled).append("cacheNodeType", cacheNodeType).append("cacheParameterGroupName", cacheParameterGroupName).append("cacheSecurityGroupNames", cacheSecurityGroupNames).append("cacheSubnetGroupName", cacheSubnetGroupName).append("engine", engine).append("engineVersion", engineVersion).append("kmsKeyId", kmsKeyId).append("nodeGroupConfiguration", nodeGroupConfiguration).append("notificationTopicArn", notificationTopicArn).append("numCacheClusters", numCacheClusters).append("numNodeGroups", numNodeGroups).append("port", port).append("preferredCacheClusterAZs", preferredCacheClusterAZs).append("preferredMaintenanceWindow", preferredMaintenanceWindow).append("primaryClusterId", primaryClusterId).append("replicasPerNodeGroup", replicasPerNodeGroup).append("replicationGroupDescription", replicationGroupDescription).append("replicationGroupId", replicationGroupId).append("securityGroupIds", securityGroupIds).append("snapshotArns", snapshotArns).append("snapshotName", snapshotName).append("snapshotRetentionLimit", snapshotRetentionLimit).append("snapshotWindow", snapshotWindow).append("snapshottingClusterId", snapshottingClusterId).append("tags", tags).append("transitEncryptionEnabled", transitEncryptionEnabled).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(replicationGroupDescription).append(cacheSubnetGroupName).append(primaryClusterId).append(atRestEncryptionEnabled).append(authToken).append(numNodeGroups).append(snapshotRetentionLimit).append(preferredCacheClusterAZs).append(engine).append(cacheSecurityGroupNames).append(securityGroupIds).append(snapshotName).append(automaticFailoverEnabled).append(engineVersion).append(snapshotWindow).append(snapshotArns).append(nodeGroupConfiguration).append(tags).append(snapshottingClusterId).append(cacheNodeType).append(numCacheClusters).append(replicasPerNodeGroup).append(port).append(notificationTopicArn).append(preferredMaintenanceWindow).append(transitEncryptionEnabled).append(replicationGroupId).append(autoMinorVersionUpgrade).append(cacheParameterGroupName).toHashCode();
+        return new HashCodeBuilder().append(replicationGroupDescription).append(cacheSubnetGroupName).append(primaryClusterId).append(atRestEncryptionEnabled).append(authToken).append(numNodeGroups).append(snapshotRetentionLimit).append(preferredCacheClusterAZs).append(engine).append(cacheSecurityGroupNames).append(securityGroupIds).append(snapshotName).append(automaticFailoverEnabled).append(engineVersion).append(snapshotWindow).append(snapshotArns).append(nodeGroupConfiguration).append(tags).append(snapshottingClusterId).append(cacheNodeType).append(numCacheClusters).append(replicasPerNodeGroup).append(port).append(notificationTopicArn).append(preferredMaintenanceWindow).append(kmsKeyId).append(transitEncryptionEnabled).append(replicationGroupId).append(autoMinorVersionUpgrade).append(cacheParameterGroupName).toHashCode();
     }
 
     @Override
@@ -953,7 +984,7 @@ public class ReplicationGroup {
             return false;
         }
         ReplicationGroup rhs = ((ReplicationGroup) other);
-        return new EqualsBuilder().append(replicationGroupDescription, rhs.replicationGroupDescription).append(cacheSubnetGroupName, rhs.cacheSubnetGroupName).append(primaryClusterId, rhs.primaryClusterId).append(atRestEncryptionEnabled, rhs.atRestEncryptionEnabled).append(authToken, rhs.authToken).append(numNodeGroups, rhs.numNodeGroups).append(snapshotRetentionLimit, rhs.snapshotRetentionLimit).append(preferredCacheClusterAZs, rhs.preferredCacheClusterAZs).append(engine, rhs.engine).append(cacheSecurityGroupNames, rhs.cacheSecurityGroupNames).append(securityGroupIds, rhs.securityGroupIds).append(snapshotName, rhs.snapshotName).append(automaticFailoverEnabled, rhs.automaticFailoverEnabled).append(engineVersion, rhs.engineVersion).append(snapshotWindow, rhs.snapshotWindow).append(snapshotArns, rhs.snapshotArns).append(nodeGroupConfiguration, rhs.nodeGroupConfiguration).append(tags, rhs.tags).append(snapshottingClusterId, rhs.snapshottingClusterId).append(cacheNodeType, rhs.cacheNodeType).append(numCacheClusters, rhs.numCacheClusters).append(replicasPerNodeGroup, rhs.replicasPerNodeGroup).append(port, rhs.port).append(notificationTopicArn, rhs.notificationTopicArn).append(preferredMaintenanceWindow, rhs.preferredMaintenanceWindow).append(transitEncryptionEnabled, rhs.transitEncryptionEnabled).append(replicationGroupId, rhs.replicationGroupId).append(autoMinorVersionUpgrade, rhs.autoMinorVersionUpgrade).append(cacheParameterGroupName, rhs.cacheParameterGroupName).isEquals();
+        return new EqualsBuilder().append(replicationGroupDescription, rhs.replicationGroupDescription).append(cacheSubnetGroupName, rhs.cacheSubnetGroupName).append(primaryClusterId, rhs.primaryClusterId).append(atRestEncryptionEnabled, rhs.atRestEncryptionEnabled).append(authToken, rhs.authToken).append(numNodeGroups, rhs.numNodeGroups).append(snapshotRetentionLimit, rhs.snapshotRetentionLimit).append(preferredCacheClusterAZs, rhs.preferredCacheClusterAZs).append(engine, rhs.engine).append(cacheSecurityGroupNames, rhs.cacheSecurityGroupNames).append(securityGroupIds, rhs.securityGroupIds).append(snapshotName, rhs.snapshotName).append(automaticFailoverEnabled, rhs.automaticFailoverEnabled).append(engineVersion, rhs.engineVersion).append(snapshotWindow, rhs.snapshotWindow).append(snapshotArns, rhs.snapshotArns).append(nodeGroupConfiguration, rhs.nodeGroupConfiguration).append(tags, rhs.tags).append(snapshottingClusterId, rhs.snapshottingClusterId).append(cacheNodeType, rhs.cacheNodeType).append(numCacheClusters, rhs.numCacheClusters).append(replicasPerNodeGroup, rhs.replicasPerNodeGroup).append(port, rhs.port).append(notificationTopicArn, rhs.notificationTopicArn).append(preferredMaintenanceWindow, rhs.preferredMaintenanceWindow).append(kmsKeyId, rhs.kmsKeyId).append(transitEncryptionEnabled, rhs.transitEncryptionEnabled).append(replicationGroupId, rhs.replicationGroupId).append(autoMinorVersionUpgrade, rhs.autoMinorVersionUpgrade).append(cacheParameterGroupName, rhs.cacheParameterGroupName).isEquals();
     }
 
 }

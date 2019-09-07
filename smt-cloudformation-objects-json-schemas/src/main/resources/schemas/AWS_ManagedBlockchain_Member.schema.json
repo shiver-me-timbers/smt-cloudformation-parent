@@ -1,0 +1,30 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ManagedBlockchain_Member.schema.json",
+  "title" : "Member",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-managedblockchain-member.html",
+  "type" : "object",
+  "javaType" : "aws.managedblockchain.Member",
+  "properties" : {
+    "MemberConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-managedblockchain-member.html#cfn-managedblockchain-member-memberconfiguration",
+      "$ref" : "AWS_ManagedBlockchain_Member.MemberConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.managedblockchain.MemberMemberConfiguration>"
+    },
+    "NetworkConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-managedblockchain-member.html#cfn-managedblockchain-member-networkconfiguration",
+      "$ref" : "AWS_ManagedBlockchain_Member.NetworkConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.managedblockchain.MemberNetworkConfiguration>"
+    },
+    "NetworkId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-managedblockchain-member.html#cfn-managedblockchain-member-networkid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "InvitationId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-managedblockchain-member.html#cfn-managedblockchain-member-invitationid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

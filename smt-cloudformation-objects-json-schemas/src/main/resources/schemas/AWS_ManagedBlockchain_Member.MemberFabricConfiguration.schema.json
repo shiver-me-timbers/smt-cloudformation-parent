@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ManagedBlockchain_Member.MemberFabricConfiguration.schema.json",
+  "title" : "MemberMemberFabricConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-managedblockchain-member-memberfabricconfiguration.html",
+  "type" : "object",
+  "javaType" : "aws.managedblockchain.MemberMemberFabricConfiguration",
+  "javaInterfaces" : [ "aws.Property<MemberMemberFabricConfiguration>" ],
+  "properties" : {
+    "AdminUsername" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-managedblockchain-member-memberfabricconfiguration.html#cfn-managedblockchain-member-memberfabricconfiguration-adminusername",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "AdminPassword" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-managedblockchain-member-memberfabricconfiguration.html#cfn-managedblockchain-member-memberfabricconfiguration-adminpassword",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

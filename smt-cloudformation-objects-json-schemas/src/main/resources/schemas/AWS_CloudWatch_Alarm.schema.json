@@ -112,6 +112,11 @@
       "type" : "number",
       "javaType" : "java.lang.Number"
     },
+    "ThresholdMetricId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-dynamic-threshold",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "TreatMissingData" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-treatmissingdata",
       "type" : "string",

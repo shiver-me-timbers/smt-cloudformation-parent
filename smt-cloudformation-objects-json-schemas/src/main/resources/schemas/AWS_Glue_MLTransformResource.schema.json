@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Glue_MLTransformResource.schema.json",
+  "title" : "MLTransformResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.glue.MLTransformResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<MLTransformResource>", "aws.HasCondition<MLTransformResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Glue::MLTransform"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Glue_MLTransform.schema.json"
+    }
+  }
+}

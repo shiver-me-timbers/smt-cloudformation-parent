@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_LakeFormation_Permissions.Resource.schema.json",
+  "title" : "PermissionsResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lakeformation-permissions-resource.html",
+  "type" : "object",
+  "javaType" : "aws.lakeformation.PermissionsResource",
+  "javaInterfaces" : [ "aws.Property<PermissionsResource>" ],
+  "properties" : {
+    "TableResource" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lakeformation-permissions-resource.html#cfn-lakeformation-permissions-resource-tableresource",
+      "$ref" : "AWS_LakeFormation_Permissions.TableResource.schema.json",
+      "javaType" : "aws.Property<aws.lakeformation.PermissionsTableResource>"
+    },
+    "DatabaseResource" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lakeformation-permissions-resource.html#cfn-lakeformation-permissions-resource-databaseresource",
+      "$ref" : "AWS_LakeFormation_Permissions.DatabaseResource.schema.json",
+      "javaType" : "aws.Property<aws.lakeformation.PermissionsDatabaseResource>"
+    }
+  }
+}

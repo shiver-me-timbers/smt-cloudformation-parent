@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CodeCommit_Repository.Code.schema.json",
+  "title" : "RepositoryCode",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codecommit-repository-code.html",
+  "type" : "object",
+  "javaType" : "aws.codecommit.RepositoryCode",
+  "javaInterfaces" : [ "aws.Property<RepositoryCode>" ],
+  "properties" : {
+    "S3" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codecommit-repository-code.html#cfn-codecommit-repository-code-s3",
+      "$ref" : "AWS_CodeCommit_Repository.S3.schema.json",
+      "javaType" : "aws.Property<aws.codecommit.RepositoryS3>"
+    }
+  }
+}

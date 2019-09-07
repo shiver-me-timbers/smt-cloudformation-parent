@@ -1,0 +1,31 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Glue_MLTransform.FindMatchesParameters.schema.json",
+  "title" : "MLTransformFindMatchesParameters",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-mltransform-transformparameters-findmatchesparameters.html",
+  "type" : "object",
+  "javaType" : "aws.glue.MLTransformFindMatchesParameters",
+  "javaInterfaces" : [ "aws.Property<MLTransformFindMatchesParameters>" ],
+  "properties" : {
+    "PrecisionRecallTradeoff" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-mltransform-transformparameters-findmatchesparameters.html#cfn-glue-mltransform-transformparameters-findmatchesparameters-precisionrecalltradeoff",
+      "type" : "number",
+      "javaType" : "java.lang.Number"
+    },
+    "EnforceProvidedLabels" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-mltransform-transformparameters-findmatchesparameters.html#cfn-glue-mltransform-transformparameters-findmatchesparameters-enforceprovidedlabels",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "PrimaryKeyColumnName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-mltransform-transformparameters-findmatchesparameters.html#cfn-glue-mltransform-transformparameters-findmatchesparameters-primarykeycolumnname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "AccuracyCostTradeoff" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-mltransform-transformparameters-findmatchesparameters.html#cfn-glue-mltransform-transformparameters-findmatchesparameters-accuracycosttradeoff",
+      "type" : "number",
+      "javaType" : "java.lang.Number"
+    }
+  }
+}
