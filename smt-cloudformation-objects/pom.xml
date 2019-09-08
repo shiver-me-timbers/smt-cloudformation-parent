@@ -30,6 +30,11 @@
 
     <name>${project.artifactId}</name>
 
+    <description>
+        This library is a complete mapping of the AWS CloudFormation Resource Specification into Java objects. The
+        objects have been generated directly from the specification so should be a direct one to one mapping.
+    </description>
+
     <profiles>
         <profile>
             <id>generate-java-classes</id>

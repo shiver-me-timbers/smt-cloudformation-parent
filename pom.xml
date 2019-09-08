@@ -34,7 +34,7 @@
     <name>${project.artifactId}</name>
 
     <description>
-        This library contains Java objects for building Cloudformation template components.
+        This project contains Java objects for building Cloudformation template components.
         These objects can then be serialised to a JSON or YAML template using the Jackson library.
     </description>
 
