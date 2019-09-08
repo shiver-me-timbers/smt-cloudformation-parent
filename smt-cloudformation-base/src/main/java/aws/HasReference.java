@@ -2,10 +2,14 @@ package aws;
 
 import aws.fn.Reference;
 
-public interface HasReference {
+/**
+ * A type that can be converted into a {@link Reference}.
+ */
+public interface HasReference extends HasName {
 
-    String getName();
-
+    /**
+     * @return the Reference representation of this object.
+     */
     default Reference ref() {
         return new Reference(getName());
     }

@@ -4,7 +4,10 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 
 import static com.fasterxml.jackson.annotation.JsonFormat.Shape.OBJECT;
 
-@JsonFormat(shape = OBJECT)
+/**
+ * A property that can be assigned to a {@link Number} value.
+ */
+@JsonFormat(shape = OBJECT) // We force object serialisation to stop Jackson using toString() instead.
 public abstract class NumberProperty extends Number {
 
     @Override

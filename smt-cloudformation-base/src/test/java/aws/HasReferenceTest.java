@@ -13,12 +13,12 @@ public class HasReferenceTest {
     public void Can_get_a_reference() {
 
         // Given
-        final String name = someString();
+        final String logicalName = someString();
 
         // When
-        final Reference actual = ((HasReference) () -> name).ref();
+        final Reference actual = ((HasReference) () -> logicalName).ref();
 
         // Then
-        assertThat(actual, hasField("name", name));
+        assertThat(actual, hasField("logicalName", logicalName));
     }
 }

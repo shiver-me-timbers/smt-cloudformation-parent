@@ -25,7 +25,7 @@ public class SelectTest {
         final Select actual = fnSelect(index, asList(string1, string2));
 
         // Then
-        assertThat(actual, hasFieldThat("values", contains(String.valueOf(index), asList(string1, string2))));
+        assertThat(actual, hasFieldThat("listOfStrings", contains(String.valueOf(index), asList(string1, string2))));
     }
 
     @Test
@@ -40,7 +40,7 @@ public class SelectTest {
         final Select actual = fnSelect(index, string1, string2);
 
         // Then
-        assertThat(actual, hasFieldThat("values", contains(String.valueOf(index), asList(string1, string2))));
+        assertThat(actual, hasFieldThat("listOfStrings", contains(String.valueOf(index), asList(string1, string2))));
     }
 
     @Test
@@ -54,6 +54,6 @@ public class SelectTest {
         final Select actual = fnSelect(index, function);
 
         // Then
-        assertThat(actual, hasFieldThat("values", contains(String.valueOf(index), function)));
+        assertThat(actual, hasFieldThat("listOfStrings", contains(String.valueOf(index), function)));
     }
 }

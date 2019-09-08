@@ -13,12 +13,12 @@ public class ImportValueTest {
     public void Can_create_a_base64_function() {
 
         // Given
-        final String value = someString();
+        final String sharedValueToImport = someString();
 
         // When
-        final ImportValue actual = fnImportValue(value);
+        final ImportValue actual = fnImportValue(sharedValueToImport);
 
         // Then
-        assertThat(actual, hasField("value", value));
+        assertThat(actual, hasField("sharedValueToImport", sharedValueToImport));
     }
 }

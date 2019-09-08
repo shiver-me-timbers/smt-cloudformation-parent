@@ -9,17 +9,30 @@ import static aws.StringLists.toStringList;
 import static java.lang.String.format;
 import static java.util.Arrays.asList;
 
+/**
+ * @see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-join.html">Fn::Join</a>
+ */
 public class Join extends PrimitiveProperty implements StringFunction {
 
     @JsonProperty("Fn::Join")
-    private final List<Object> values;
+    private final List<Object> listOfValues;
 
-    public Join(String delimiter, CharSequence... strings) {
-        this(delimiter, asList(strings));
+    /**
+     * @param delimiter    - The value you want to occur between fragments. The delimiter will occur between fragments
+     *                     only. It will not terminate the final value.
+     * @param listOfValues - The list of values you want combined.
+     */
+    public Join(String delimiter, CharSequence... listOfValues) {
+        this(delimiter, asList(listOfValues));
     }
 
-    public Join(String delimiter, List<CharSequence> strings) {
-        super(format("{ \"Fn::Join\" : [ \"%s\", [%s] ] }", delimiter, toStringList(strings)));
-        this.values = asList(delimiter, strings);
+    /**
+     * @param delimiter    - The value you want to occur between fragments. The delimiter will occur between fragments
+     *                     only. It will not terminate the final value.
+     * @param listOfValues - The list of values you want combined.
+     */
+    public Join(String delimiter, List<CharSequence> listOfValues) {
+        super(format("{ \"Fn::Join\" : [ \"%s\", [%s] ] }", delimiter, toStringList(listOfValues)));
+        this.listOfValues = asList(delimiter, listOfValues);
     }
 }

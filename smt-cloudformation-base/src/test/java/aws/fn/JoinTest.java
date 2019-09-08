@@ -23,7 +23,7 @@ public class JoinTest {
         final Join actual = fnJoin(delimiter, asList(string1, string2));
 
         // Then
-        assertThat(actual, hasFieldThat("values", contains(delimiter, asList(string1, string2))));
+        assertThat(actual, hasFieldThat("listOfValues", contains(delimiter, asList(string1, string2))));
     }
 
     @Test
@@ -38,6 +38,6 @@ public class JoinTest {
         final Join actual = fnJoin(delimiter, string1, string2);
 
         // Then
-        assertThat(actual, hasFieldThat("values", contains(delimiter, asList(string1, string2))));
+        assertThat(actual, hasFieldThat("listOfValues", contains(delimiter, asList(string1, string2))));
     }
 }

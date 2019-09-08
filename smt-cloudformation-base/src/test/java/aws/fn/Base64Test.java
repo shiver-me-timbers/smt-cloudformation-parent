@@ -13,12 +13,12 @@ public class Base64Test {
     public void Can_create_a_base64_function() {
 
         // Given
-        final String value = someString();
+        final String valueToEncode = someString();
 
         // When
-        final Base64 actual = fnBase64(value);
+        final Base64 actual = fnBase64(valueToEncode);
 
         // Then
-        assertThat(actual, hasField("value", value));
+        assertThat(actual, hasField("valueToEncode", valueToEncode));
     }
 }

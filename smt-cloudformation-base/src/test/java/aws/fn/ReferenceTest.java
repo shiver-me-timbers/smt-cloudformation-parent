@@ -13,12 +13,12 @@ public class ReferenceTest {
     public void Can_create_a_reference() {
 
         // Given
-        final String name = someString();
+        final String logicalName = someString();
 
         // When
-        final Reference actual = ref(name);
+        final Reference actual = ref(logicalName);
 
         // Then
-        assertThat(actual, hasField("name", name));
+        assertThat(actual, hasField("logicalName", logicalName));
     }
 }

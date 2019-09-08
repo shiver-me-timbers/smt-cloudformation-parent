@@ -11,6 +11,9 @@ import java.util.Map;
 
 import static shiver.me.timbers.cloudformation.files.Resources.toInputStream;
 
+/**
+ * Here be dragons.
+ */
 public class Main {
 
     @SuppressWarnings("unchecked")

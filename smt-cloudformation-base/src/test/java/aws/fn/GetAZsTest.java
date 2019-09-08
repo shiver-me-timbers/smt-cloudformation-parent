@@ -13,12 +13,12 @@ public class GetAZsTest {
     public void Can_create_a_GetAZs_function() {
 
         // Given
-        final String value = someString();
+        final String region = someString();
 
         // When
-        final GetAZs actual = fnGetAZs(value);
+        final GetAZs actual = fnGetAZs(region);
 
         // Then
-        assertThat(actual, hasField("value", value));
+        assertThat(actual, hasField("region", region));
     }
 }

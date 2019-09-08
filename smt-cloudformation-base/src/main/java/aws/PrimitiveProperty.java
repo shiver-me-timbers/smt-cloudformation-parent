@@ -1,5 +1,8 @@
 package aws;
 
+/**
+ * A property that can be assigned to any primitive value.
+ */
 public class PrimitiveProperty extends NumberProperty implements CharSequence {
 
     private final String string;

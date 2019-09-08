@@ -10,6 +10,9 @@ import java.util.EnumSet;
 
 import static java.lang.String.format;
 
+/**
+ * @see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameter-reference.html">Pseudo Parameters</a>
+ */
 public enum PseudoParameter implements CharSequence, HasReference {
     AccountId("AWS::AccountId"),
     NotificationARNs("AWS::NotificationARNs"),

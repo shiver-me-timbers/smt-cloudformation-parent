@@ -5,7 +5,6 @@ import org.junit.Test;
 
 import java.util.Map;
 
-import static java.util.Collections.singletonList;
 import static java.util.stream.Collectors.toMap;
 import static java.util.stream.Stream.of;
 import static org.hamcrest.Matchers.allOf;
