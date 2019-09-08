@@ -28,8 +28,8 @@ mapping.
 ## Why
 
 CloudFormation templates can be rather difficult to create because of the need to go back and forth from the template 
-and the resource documentation. Also small syntax mistakes will not be found until the template is run which is a slow 
-feedback loop.
+and the resource documentation. Also the feedback loop on small syntax errors is quite long because they will not be 
+found until the template is actually run.
 
 Having all the CloudFormation constructs mapped into type safe Java objects allows the resources to have a level of self 
 documentation and much easier discovery through IDE autocompletion. It also provides realtime validation through the 
