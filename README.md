@@ -17,7 +17,7 @@ smt-cloudformation-parent
 ===========
 [![Build Status](https://travis-ci.org/shiver-me-timbers/smt-cloudformation-parent.svg)](https://travis-ci.org/shiver-me-timbers/smt-cloudformation-parent)
 [![Coverage Status](https://coveralls.io/repos/shiver-me-timbers/smt-cloudformation-parent/badge.svg?branch=master&service=github)](https://coveralls.io/github/shiver-me-timbers/smt-cloudformation-parent?branch=master)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.shiver-me-timbers.aws.cloudformation/smt-cloudformation-parent/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.shiver-me-timbers.aws.cloudformation/smt-cloudformation-parent/)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.shiver-me-timbers.aws.cloudformation/smt-cloudformation-objects/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.shiver-me-timbers.aws.cloudformation/smt-cloudformation-objects/)
 
 ## What
 
