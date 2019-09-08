@@ -4,7 +4,7 @@
   "title" : "Version",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html",
   "type" : "object",
-  "javaType" : "aws.lambda.Version",
+  "javaType" : "shiver.me.timbers.aws.lambda.Version",
   "properties" : {
     "CodeSha256" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html#cfn-lambda-version-codesha256",

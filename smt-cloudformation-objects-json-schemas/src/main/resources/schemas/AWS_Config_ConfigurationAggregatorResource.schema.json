@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.config.ConfigurationAggregatorResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ConfigurationAggregatorResource>", "aws.HasCondition<ConfigurationAggregatorResource>" ],
+  "javaType" : "shiver.me.timbers.aws.config.ConfigurationAggregatorResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ConfigurationAggregatorResource>", "shiver.me.timbers.aws.HasCondition<ConfigurationAggregatorResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

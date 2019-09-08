@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.servicecatalog.TagOptionAssociationResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<TagOptionAssociationResource>", "aws.HasCondition<TagOptionAssociationResource>" ],
+  "javaType" : "shiver.me.timbers.aws.servicecatalog.TagOptionAssociationResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<TagOptionAssociationResource>", "shiver.me.timbers.aws.HasCondition<TagOptionAssociationResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

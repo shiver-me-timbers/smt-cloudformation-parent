@@ -4,5 +4,5 @@
   "title" : "AssessmentTemplateAttributes",
   "type" : "string",
   "enum" : [ "Arn" ],
-  "javaType" : "aws.inspector.AssessmentTemplateAttributes"
+  "javaType" : "shiver.me.timbers.aws.inspector.AssessmentTemplateAttributes"
 }

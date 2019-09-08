@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.pinpoint.AppResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<AppResource>", "aws.HasCondition<AppResource>" ],
+  "javaType" : "shiver.me.timbers.aws.pinpoint.AppResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<AppResource>", "shiver.me.timbers.aws.HasCondition<AppResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

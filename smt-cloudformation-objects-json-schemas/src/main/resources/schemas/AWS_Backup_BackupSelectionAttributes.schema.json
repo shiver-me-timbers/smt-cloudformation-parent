@@ -4,5 +4,5 @@
   "title" : "BackupSelectionAttributes",
   "type" : "string",
   "enum" : [ "BackupPlanId", "SelectionId" ],
-  "javaType" : "aws.backup.BackupSelectionAttributes"
+  "javaType" : "shiver.me.timbers.aws.backup.BackupSelectionAttributes"
 }

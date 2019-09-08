@@ -4,8 +4,8 @@
   "title" : "XssMatchSetFieldToMatch",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-xssmatchset-xssmatchtuple-fieldtomatch.html",
   "type" : "object",
-  "javaType" : "aws.waf.XssMatchSetFieldToMatch",
-  "javaInterfaces" : [ "aws.Property<XssMatchSetFieldToMatch>" ],
+  "javaType" : "shiver.me.timbers.aws.waf.XssMatchSetFieldToMatch",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<XssMatchSetFieldToMatch>" ],
   "properties" : {
     "Data" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-xssmatchset-xssmatchtuple-fieldtomatch.html#cfn-waf-xssmatchset-xssmatchtuple-fieldtomatch-data",

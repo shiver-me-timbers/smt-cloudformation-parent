@@ -4,5 +4,5 @@
   "title" : "FleetAttributes",
   "type" : "string",
   "enum" : [ "Arn" ],
-  "javaType" : "aws.robomaker.FleetAttributes"
+  "javaType" : "shiver.me.timbers.aws.robomaker.FleetAttributes"
 }

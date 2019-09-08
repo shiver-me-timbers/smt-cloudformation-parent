@@ -4,5 +4,5 @@
   "title" : "DistributionAttributes",
   "type" : "string",
   "enum" : [ "DomainName" ],
-  "javaType" : "aws.cloudfront.DistributionAttributes"
+  "javaType" : "shiver.me.timbers.aws.cloudfront.DistributionAttributes"
 }

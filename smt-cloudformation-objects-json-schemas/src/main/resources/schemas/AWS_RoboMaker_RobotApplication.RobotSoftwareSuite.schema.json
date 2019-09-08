@@ -4,8 +4,8 @@
   "title" : "RobotApplicationRobotSoftwareSuite",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-robotapplication-robotsoftwaresuite.html",
   "type" : "object",
-  "javaType" : "aws.robomaker.RobotApplicationRobotSoftwareSuite",
-  "javaInterfaces" : [ "aws.Property<RobotApplicationRobotSoftwareSuite>" ],
+  "javaType" : "shiver.me.timbers.aws.robomaker.RobotApplicationRobotSoftwareSuite",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<RobotApplicationRobotSoftwareSuite>" ],
   "properties" : {
     "Version" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-robotapplication-robotsoftwaresuite.html#cfn-robomaker-robotapplication-robotsoftwaresuite-version",

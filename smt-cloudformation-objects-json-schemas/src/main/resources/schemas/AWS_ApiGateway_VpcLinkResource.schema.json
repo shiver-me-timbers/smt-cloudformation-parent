@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.apigateway.VpcLinkResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<VpcLinkResource>", "aws.HasCondition<VpcLinkResource>" ],
+  "javaType" : "shiver.me.timbers.aws.apigateway.VpcLinkResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<VpcLinkResource>", "shiver.me.timbers.aws.HasCondition<VpcLinkResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

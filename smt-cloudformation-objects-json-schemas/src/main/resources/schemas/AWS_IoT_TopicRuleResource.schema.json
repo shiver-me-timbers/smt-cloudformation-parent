@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.iot.TopicRuleResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<TopicRuleResource>", "aws.HasCondition<TopicRuleResource>", "aws.HasAttributes<TopicRuleAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.iot.TopicRuleResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<TopicRuleResource>", "shiver.me.timbers.aws.HasCondition<TopicRuleResource>", "shiver.me.timbers.aws.HasAttributes<TopicRuleAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

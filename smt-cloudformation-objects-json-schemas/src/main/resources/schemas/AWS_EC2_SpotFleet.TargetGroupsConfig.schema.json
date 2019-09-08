@@ -4,8 +4,8 @@
   "title" : "SpotFleetTargetGroupsConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-targetgroupsconfig.html",
   "type" : "object",
-  "javaType" : "aws.ec2.SpotFleetTargetGroupsConfig",
-  "javaInterfaces" : [ "aws.Property<SpotFleetTargetGroupsConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.SpotFleetTargetGroupsConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<SpotFleetTargetGroupsConfig>" ],
   "properties" : {
     "TargetGroups" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-targetgroupsconfig.html#cfn-ec2-spotfleet-targetgroupsconfig-targetgroups",
@@ -13,7 +13,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_EC2_SpotFleet.TargetGroup.schema.json",
-        "javaType" : "aws.Property<aws.ec2.SpotFleetTargetGroup>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.SpotFleetTargetGroup>"
       }
     }
   }

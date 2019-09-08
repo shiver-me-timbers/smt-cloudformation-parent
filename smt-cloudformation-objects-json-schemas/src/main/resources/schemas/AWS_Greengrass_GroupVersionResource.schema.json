@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.greengrass.GroupVersionResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<GroupVersionResource>", "aws.HasCondition<GroupVersionResource>" ],
+  "javaType" : "shiver.me.timbers.aws.greengrass.GroupVersionResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<GroupVersionResource>", "shiver.me.timbers.aws.HasCondition<GroupVersionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

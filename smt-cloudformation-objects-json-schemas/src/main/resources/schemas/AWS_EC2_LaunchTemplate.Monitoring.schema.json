@@ -4,8 +4,8 @@
   "title" : "LaunchTemplateMonitoring",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-monitoring.html",
   "type" : "object",
-  "javaType" : "aws.ec2.LaunchTemplateMonitoring",
-  "javaInterfaces" : [ "aws.Property<LaunchTemplateMonitoring>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.LaunchTemplateMonitoring",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<LaunchTemplateMonitoring>" ],
   "properties" : {
     "Enabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-monitoring.html#cfn-ec2-launchtemplate-launchtemplatedata-monitoring-enabled",

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ssm.MaintenanceWindowTargetResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<MaintenanceWindowTargetResource>", "aws.HasCondition<MaintenanceWindowTargetResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ssm.MaintenanceWindowTargetResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<MaintenanceWindowTargetResource>", "shiver.me.timbers.aws.HasCondition<MaintenanceWindowTargetResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

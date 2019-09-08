@@ -4,13 +4,13 @@
   "title" : "VirtualRouterVirtualRouterListener",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualrouter-virtualrouterlistener.html",
   "type" : "object",
-  "javaType" : "aws.appmesh.VirtualRouterVirtualRouterListener",
-  "javaInterfaces" : [ "aws.Property<VirtualRouterVirtualRouterListener>" ],
+  "javaType" : "shiver.me.timbers.aws.appmesh.VirtualRouterVirtualRouterListener",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<VirtualRouterVirtualRouterListener>" ],
   "properties" : {
     "PortMapping" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualrouter-virtualrouterlistener.html#cfn-appmesh-virtualrouter-virtualrouterlistener-portmapping",
       "$ref" : "AWS_AppMesh_VirtualRouter.PortMapping.schema.json",
-      "javaType" : "aws.Property<aws.appmesh.VirtualRouterPortMapping>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appmesh.VirtualRouterPortMapping>"
     }
   }
 }

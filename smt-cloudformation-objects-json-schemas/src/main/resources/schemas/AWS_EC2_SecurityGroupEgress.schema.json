@@ -4,7 +4,7 @@
   "title" : "SecurityGroupEgress",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-security-group-egress.html",
   "type" : "object",
-  "javaType" : "aws.ec2.SecurityGroupEgress",
+  "javaType" : "shiver.me.timbers.aws.ec2.SecurityGroupEgress",
   "properties" : {
     "CidrIp" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-security-group-egress.html#cfn-ec2-securitygroupegress-cidrip",

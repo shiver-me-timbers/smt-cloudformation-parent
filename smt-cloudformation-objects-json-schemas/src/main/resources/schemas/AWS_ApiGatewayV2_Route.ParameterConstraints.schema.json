@@ -4,8 +4,8 @@
   "title" : "RouteParameterConstraints",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-route-parameterconstraints.html",
   "type" : "object",
-  "javaType" : "aws.apigatewayv2.RouteParameterConstraints",
-  "javaInterfaces" : [ "aws.Property<RouteParameterConstraints>" ],
+  "javaType" : "shiver.me.timbers.aws.apigatewayv2.RouteParameterConstraints",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<RouteParameterConstraints>" ],
   "properties" : {
     "Required" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-route-parameterconstraints.html#cfn-apigatewayv2-route-parameterconstraints-required",

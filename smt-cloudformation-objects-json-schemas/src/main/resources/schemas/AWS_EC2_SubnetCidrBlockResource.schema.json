@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.SubnetCidrBlockResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<SubnetCidrBlockResource>", "aws.HasCondition<SubnetCidrBlockResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.SubnetCidrBlockResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<SubnetCidrBlockResource>", "shiver.me.timbers.aws.HasCondition<SubnetCidrBlockResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -4,8 +4,8 @@
   "title" : "SpotFleetSpotFleetMonitoring",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-monitoring.html",
   "type" : "object",
-  "javaType" : "aws.ec2.SpotFleetSpotFleetMonitoring",
-  "javaInterfaces" : [ "aws.Property<SpotFleetSpotFleetMonitoring>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.SpotFleetSpotFleetMonitoring",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<SpotFleetSpotFleetMonitoring>" ],
   "properties" : {
     "Enabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-monitoring.html#cfn-ec2-spotfleet-spotfleetmonitoring-enabled",

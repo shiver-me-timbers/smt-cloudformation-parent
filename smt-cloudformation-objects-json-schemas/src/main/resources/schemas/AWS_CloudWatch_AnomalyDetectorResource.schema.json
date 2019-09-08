@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.cloudwatch.AnomalyDetectorResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<AnomalyDetectorResource>", "aws.HasCondition<AnomalyDetectorResource>" ],
+  "javaType" : "shiver.me.timbers.aws.cloudwatch.AnomalyDetectorResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<AnomalyDetectorResource>", "shiver.me.timbers.aws.HasCondition<AnomalyDetectorResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

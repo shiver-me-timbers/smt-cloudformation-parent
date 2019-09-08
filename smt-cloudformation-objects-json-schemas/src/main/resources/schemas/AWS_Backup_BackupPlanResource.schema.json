@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.backup.BackupPlanResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<BackupPlanResource>", "aws.HasCondition<BackupPlanResource>", "aws.HasAttributes<BackupPlanAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.backup.BackupPlanResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<BackupPlanResource>", "shiver.me.timbers.aws.HasCondition<BackupPlanResource>", "shiver.me.timbers.aws.HasAttributes<BackupPlanAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

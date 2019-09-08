@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.sns.SubscriptionResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<SubscriptionResource>", "aws.HasCondition<SubscriptionResource>" ],
+  "javaType" : "shiver.me.timbers.aws.sns.SubscriptionResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<SubscriptionResource>", "shiver.me.timbers.aws.HasCondition<SubscriptionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

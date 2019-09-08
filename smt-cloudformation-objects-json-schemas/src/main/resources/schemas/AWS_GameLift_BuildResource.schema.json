@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.gamelift.BuildResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<BuildResource>", "aws.HasCondition<BuildResource>" ],
+  "javaType" : "shiver.me.timbers.aws.gamelift.BuildResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<BuildResource>", "shiver.me.timbers.aws.HasCondition<BuildResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

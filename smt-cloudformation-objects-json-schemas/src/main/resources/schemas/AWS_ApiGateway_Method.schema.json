@@ -4,7 +4,7 @@
   "title" : "Method",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html",
   "type" : "object",
-  "javaType" : "aws.apigateway.Method",
+  "javaType" : "shiver.me.timbers.aws.apigateway.Method",
   "properties" : {
     "ApiKeyRequired" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-apikeyrequired",
@@ -38,7 +38,7 @@
     "Integration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-integration",
       "$ref" : "AWS_ApiGateway_Method.Integration.schema.json",
-      "javaType" : "aws.Property<aws.apigateway.MethodIntegration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.apigateway.MethodIntegration>"
     },
     "MethodResponses" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-methodresponses",
@@ -46,7 +46,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ApiGateway_Method.MethodResponse.schema.json",
-        "javaType" : "aws.Property<aws.apigateway.MethodMethodResponse>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.apigateway.MethodMethodResponse>"
       }
     },
     "OperationName" : {

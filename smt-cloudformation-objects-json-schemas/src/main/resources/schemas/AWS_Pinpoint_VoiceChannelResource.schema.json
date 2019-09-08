@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.pinpoint.VoiceChannelResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<VoiceChannelResource>", "aws.HasCondition<VoiceChannelResource>" ],
+  "javaType" : "shiver.me.timbers.aws.pinpoint.VoiceChannelResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<VoiceChannelResource>", "shiver.me.timbers.aws.HasCondition<VoiceChannelResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

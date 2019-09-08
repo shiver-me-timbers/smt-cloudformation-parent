@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.waf.ByteMatchSetResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ByteMatchSetResource>", "aws.HasCondition<ByteMatchSetResource>" ],
+  "javaType" : "shiver.me.timbers.aws.waf.ByteMatchSetResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ByteMatchSetResource>", "shiver.me.timbers.aws.HasCondition<ByteMatchSetResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

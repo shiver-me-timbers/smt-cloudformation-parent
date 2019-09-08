@@ -4,5 +4,5 @@
   "title" : "VPCEndpointAttributes",
   "type" : "string",
   "enum" : [ "CreationTimestamp", "DnsEntries", "NetworkInterfaceIds" ],
-  "javaType" : "aws.ec2.VPCEndpointAttributes"
+  "javaType" : "shiver.me.timbers.aws.ec2.VPCEndpointAttributes"
 }

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.greengrass.SubscriptionDefinitionVersionResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<SubscriptionDefinitionVersionResource>", "aws.HasCondition<SubscriptionDefinitionVersionResource>" ],
+  "javaType" : "shiver.me.timbers.aws.greengrass.SubscriptionDefinitionVersionResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<SubscriptionDefinitionVersionResource>", "shiver.me.timbers.aws.HasCondition<SubscriptionDefinitionVersionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

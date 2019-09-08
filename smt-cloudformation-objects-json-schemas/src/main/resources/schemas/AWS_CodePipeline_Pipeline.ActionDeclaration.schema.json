@@ -4,13 +4,13 @@
   "title" : "PipelineActionDeclaration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html",
   "type" : "object",
-  "javaType" : "aws.codepipeline.PipelineActionDeclaration",
-  "javaInterfaces" : [ "aws.Property<PipelineActionDeclaration>" ],
+  "javaType" : "shiver.me.timbers.aws.codepipeline.PipelineActionDeclaration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<PipelineActionDeclaration>" ],
   "properties" : {
     "ActionTypeId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid",
       "$ref" : "AWS_CodePipeline_Pipeline.ActionTypeId.schema.json",
-      "javaType" : "aws.Property<aws.codepipeline.PipelineActionTypeId>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codepipeline.PipelineActionTypeId>"
     },
     "Configuration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-configuration",
@@ -23,7 +23,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_CodePipeline_Pipeline.InputArtifact.schema.json",
-        "javaType" : "aws.Property<aws.codepipeline.PipelineInputArtifact>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codepipeline.PipelineInputArtifact>"
       }
     },
     "Name" : {
@@ -37,7 +37,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_CodePipeline_Pipeline.OutputArtifact.schema.json",
-        "javaType" : "aws.Property<aws.codepipeline.PipelineOutputArtifact>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codepipeline.PipelineOutputArtifact>"
       }
     },
     "Region" : {

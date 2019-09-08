@@ -4,18 +4,18 @@
   "title" : "DataCatalogEncryptionSettingsDataCatalogEncryptionSettings",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-datacatalogencryptionsettings-datacatalogencryptionsettings.html",
   "type" : "object",
-  "javaType" : "aws.glue.DataCatalogEncryptionSettingsDataCatalogEncryptionSettings",
-  "javaInterfaces" : [ "aws.Property<DataCatalogEncryptionSettingsDataCatalogEncryptionSettings>" ],
+  "javaType" : "shiver.me.timbers.aws.glue.DataCatalogEncryptionSettingsDataCatalogEncryptionSettings",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DataCatalogEncryptionSettingsDataCatalogEncryptionSettings>" ],
   "properties" : {
     "ConnectionPasswordEncryption" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-datacatalogencryptionsettings-datacatalogencryptionsettings.html#cfn-glue-datacatalogencryptionsettings-datacatalogencryptionsettings-connectionpasswordencryption",
       "$ref" : "AWS_Glue_DataCatalogEncryptionSettings.ConnectionPasswordEncryption.schema.json",
-      "javaType" : "aws.Property<aws.glue.DataCatalogEncryptionSettingsConnectionPasswordEncryption>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.glue.DataCatalogEncryptionSettingsConnectionPasswordEncryption>"
     },
     "EncryptionAtRest" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-datacatalogencryptionsettings-datacatalogencryptionsettings.html#cfn-glue-datacatalogencryptionsettings-datacatalogencryptionsettings-encryptionatrest",
       "$ref" : "AWS_Glue_DataCatalogEncryptionSettings.EncryptionAtRest.schema.json",
-      "javaType" : "aws.Property<aws.glue.DataCatalogEncryptionSettingsEncryptionAtRest>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.glue.DataCatalogEncryptionSettingsEncryptionAtRest>"
     }
   }
 }

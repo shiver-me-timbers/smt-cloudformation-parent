@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.rds.OptionGroupResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<OptionGroupResource>", "aws.HasCondition<OptionGroupResource>" ],
+  "javaType" : "shiver.me.timbers.aws.rds.OptionGroupResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<OptionGroupResource>", "shiver.me.timbers.aws.HasCondition<OptionGroupResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

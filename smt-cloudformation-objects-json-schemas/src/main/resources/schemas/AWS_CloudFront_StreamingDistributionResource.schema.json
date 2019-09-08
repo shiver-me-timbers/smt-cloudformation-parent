@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.cloudfront.StreamingDistributionResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<StreamingDistributionResource>", "aws.HasCondition<StreamingDistributionResource>", "aws.HasAttributes<StreamingDistributionAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.cloudfront.StreamingDistributionResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<StreamingDistributionResource>", "shiver.me.timbers.aws.HasCondition<StreamingDistributionResource>", "shiver.me.timbers.aws.HasAttributes<StreamingDistributionAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

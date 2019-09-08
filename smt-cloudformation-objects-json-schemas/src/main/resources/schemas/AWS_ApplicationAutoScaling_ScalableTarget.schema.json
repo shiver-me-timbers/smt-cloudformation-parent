@@ -4,7 +4,7 @@
   "title" : "ScalableTarget",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html",
   "type" : "object",
-  "javaType" : "aws.applicationautoscaling.ScalableTarget",
+  "javaType" : "shiver.me.timbers.aws.applicationautoscaling.ScalableTarget",
   "properties" : {
     "MaxCapacity" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-maxcapacity",
@@ -37,7 +37,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ApplicationAutoScaling_ScalableTarget.ScheduledAction.schema.json",
-        "javaType" : "aws.Property<aws.applicationautoscaling.ScalableTargetScheduledAction>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.applicationautoscaling.ScalableTargetScheduledAction>"
       }
     },
     "ServiceNamespace" : {
@@ -48,7 +48,7 @@
     "SuspendedState" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-suspendedstate",
       "$ref" : "AWS_ApplicationAutoScaling_ScalableTarget.SuspendedState.schema.json",
-      "javaType" : "aws.Property<aws.applicationautoscaling.ScalableTargetSuspendedState>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.applicationautoscaling.ScalableTargetSuspendedState>"
     }
   }
 }

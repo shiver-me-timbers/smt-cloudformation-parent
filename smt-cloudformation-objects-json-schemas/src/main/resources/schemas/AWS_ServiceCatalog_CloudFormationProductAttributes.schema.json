@@ -4,5 +4,5 @@
   "title" : "CloudFormationProductAttributes",
   "type" : "string",
   "enum" : [ "ProductName", "ProvisioningArtifactIds", "ProvisioningArtifactNames" ],
-  "javaType" : "aws.servicecatalog.CloudFormationProductAttributes"
+  "javaType" : "shiver.me.timbers.aws.servicecatalog.CloudFormationProductAttributes"
 }

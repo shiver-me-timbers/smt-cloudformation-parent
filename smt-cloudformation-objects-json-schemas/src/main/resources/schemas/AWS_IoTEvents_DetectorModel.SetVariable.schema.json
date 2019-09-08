@@ -4,8 +4,8 @@
   "title" : "DetectorModelSetVariable",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-setvariable.html",
   "type" : "object",
-  "javaType" : "aws.iotevents.DetectorModelSetVariable",
-  "javaInterfaces" : [ "aws.Property<DetectorModelSetVariable>" ],
+  "javaType" : "shiver.me.timbers.aws.iotevents.DetectorModelSetVariable",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DetectorModelSetVariable>" ],
   "properties" : {
     "VariableName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-setvariable.html#cfn-iotevents-detectormodel-setvariable-variablename",

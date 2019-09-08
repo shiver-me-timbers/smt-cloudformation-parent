@@ -4,8 +4,8 @@
   "title" : "UsagePlanQuotaSettings",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-quotasettings.html",
   "type" : "object",
-  "javaType" : "aws.apigateway.UsagePlanQuotaSettings",
-  "javaInterfaces" : [ "aws.Property<UsagePlanQuotaSettings>" ],
+  "javaType" : "shiver.me.timbers.aws.apigateway.UsagePlanQuotaSettings",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<UsagePlanQuotaSettings>" ],
   "properties" : {
     "Limit" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-quotasettings.html#cfn-apigateway-usageplan-quotasettings-limit",

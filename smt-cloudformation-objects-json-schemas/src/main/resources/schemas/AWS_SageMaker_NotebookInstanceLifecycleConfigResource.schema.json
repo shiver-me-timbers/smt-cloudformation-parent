@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.sagemaker.NotebookInstanceLifecycleConfigResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<NotebookInstanceLifecycleConfigResource>", "aws.HasCondition<NotebookInstanceLifecycleConfigResource>", "aws.HasAttributes<NotebookInstanceLifecycleConfigAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.sagemaker.NotebookInstanceLifecycleConfigResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<NotebookInstanceLifecycleConfigResource>", "shiver.me.timbers.aws.HasCondition<NotebookInstanceLifecycleConfigResource>", "shiver.me.timbers.aws.HasAttributes<NotebookInstanceLifecycleConfigAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

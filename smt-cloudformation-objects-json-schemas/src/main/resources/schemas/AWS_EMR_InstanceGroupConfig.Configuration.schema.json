@@ -4,8 +4,8 @@
   "title" : "InstanceGroupConfigConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-cluster-configuration.html",
   "type" : "object",
-  "javaType" : "aws.emr.InstanceGroupConfigConfiguration",
-  "javaInterfaces" : [ "aws.Property<InstanceGroupConfigConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.emr.InstanceGroupConfigConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<InstanceGroupConfigConfiguration>" ],
   "properties" : {
     "Classification" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-cluster-configuration.html#cfn-emr-cluster-configuration-classification",
@@ -23,7 +23,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_EMR_InstanceGroupConfig.EbsConfiguration.schema.json",
-        "javaType" : "aws.Property<aws.emr.InstanceGroupConfigConfiguration>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.emr.InstanceGroupConfigConfiguration>"
       }
     }
   }

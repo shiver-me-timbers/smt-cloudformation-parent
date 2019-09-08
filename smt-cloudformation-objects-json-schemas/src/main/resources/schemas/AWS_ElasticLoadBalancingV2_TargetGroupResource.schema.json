@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.elasticloadbalancingv2.TargetGroupResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<TargetGroupResource>", "aws.HasCondition<TargetGroupResource>", "aws.HasAttributes<TargetGroupAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.elasticloadbalancingv2.TargetGroupResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<TargetGroupResource>", "shiver.me.timbers.aws.HasCondition<TargetGroupResource>", "shiver.me.timbers.aws.HasAttributes<TargetGroupAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

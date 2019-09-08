@@ -4,7 +4,7 @@
   "title" : "Cluster",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html",
   "type" : "object",
-  "javaType" : "aws.redshift.Cluster",
+  "javaType" : "shiver.me.timbers.aws.redshift.Cluster",
   "properties" : {
     "AllowVersionUpgrade" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-allowversionupgrade",
@@ -96,7 +96,7 @@
     "LoggingProperties" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-loggingproperties",
       "$ref" : "AWS_Redshift_Cluster.LoggingProperties.schema.json",
-      "javaType" : "aws.Property<aws.redshift.ClusterLoggingProperties>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.redshift.ClusterLoggingProperties>"
     },
     "MasterUserPassword" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-masteruserpassword",
@@ -153,7 +153,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     },
     "VpcSecurityGroupIds" : {

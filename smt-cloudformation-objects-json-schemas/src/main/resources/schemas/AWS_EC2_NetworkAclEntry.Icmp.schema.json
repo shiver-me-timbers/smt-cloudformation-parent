@@ -4,8 +4,8 @@
   "title" : "NetworkAclEntryIcmp",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-icmp.html",
   "type" : "object",
-  "javaType" : "aws.ec2.NetworkAclEntryIcmp",
-  "javaInterfaces" : [ "aws.Property<NetworkAclEntryIcmp>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.NetworkAclEntryIcmp",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<NetworkAclEntryIcmp>" ],
   "properties" : {
     "Code" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-icmp.html#cfn-ec2-networkaclentry-icmp-code",

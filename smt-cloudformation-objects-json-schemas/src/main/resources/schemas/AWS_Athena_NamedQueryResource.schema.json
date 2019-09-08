@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.athena.NamedQueryResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<NamedQueryResource>", "aws.HasCondition<NamedQueryResource>" ],
+  "javaType" : "shiver.me.timbers.aws.athena.NamedQueryResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<NamedQueryResource>", "shiver.me.timbers.aws.HasCondition<NamedQueryResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

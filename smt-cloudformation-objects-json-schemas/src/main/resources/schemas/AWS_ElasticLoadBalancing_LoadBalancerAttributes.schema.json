@@ -4,5 +4,5 @@
   "title" : "LoadBalancerAttributes",
   "type" : "string",
   "enum" : [ "CanonicalHostedZoneName", "CanonicalHostedZoneNameID", "DNSName", "SourceSecurityGroup.GroupName", "SourceSecurityGroup.OwnerAlias" ],
-  "javaType" : "aws.elasticloadbalancing.LoadBalancerAttributes"
+  "javaType" : "shiver.me.timbers.aws.elasticloadbalancing.LoadBalancerAttributes"
 }

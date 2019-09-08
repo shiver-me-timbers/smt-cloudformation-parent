@@ -4,8 +4,8 @@
   "title" : "InstanceElasticGpuSpecification",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-elasticgpuspecification.html",
   "type" : "object",
-  "javaType" : "aws.ec2.InstanceElasticGpuSpecification",
-  "javaInterfaces" : [ "aws.Property<InstanceElasticGpuSpecification>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.InstanceElasticGpuSpecification",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<InstanceElasticGpuSpecification>" ],
   "properties" : {
     "Type" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-elasticgpuspecification.html#cfn-ec2-instance-elasticgpuspecification-type",

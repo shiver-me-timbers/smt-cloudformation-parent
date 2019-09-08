@@ -4,12 +4,12 @@
   "title" : "Role",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html",
   "type" : "object",
-  "javaType" : "aws.iam.Role",
+  "javaType" : "shiver.me.timbers.aws.iam.Role",
   "properties" : {
     "AssumeRolePolicyDocument" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-assumerolepolicydocument",
       "$ref" : "PolicyDocument.schema.json",
-      "javaType" : "aws.Property<aws.iam.PolicyDocument>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iam.PolicyDocument>"
     },
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-description",
@@ -45,7 +45,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_IAM_Role.Policy.schema.json",
-        "javaType" : "aws.Property<aws.iam.RolePolicy>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iam.RolePolicy>"
       }
     },
     "RoleName" : {
@@ -58,7 +58,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     }
   }

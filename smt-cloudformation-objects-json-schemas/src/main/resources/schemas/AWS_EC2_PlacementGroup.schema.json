@@ -4,7 +4,7 @@
   "title" : "PlacementGroup",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-placementgroup.html",
   "type" : "object",
-  "javaType" : "aws.ec2.PlacementGroup",
+  "javaType" : "shiver.me.timbers.aws.ec2.PlacementGroup",
   "properties" : {
     "Strategy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-placementgroup.html#cfn-ec2-placementgroup-strategy",

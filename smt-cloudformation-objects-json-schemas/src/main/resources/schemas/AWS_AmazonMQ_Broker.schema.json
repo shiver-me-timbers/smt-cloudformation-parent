@@ -4,7 +4,7 @@
   "title" : "Broker",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html",
   "type" : "object",
-  "javaType" : "aws.amazonmq.Broker",
+  "javaType" : "shiver.me.timbers.aws.amazonmq.Broker",
   "properties" : {
     "SecurityGroups" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-securitygroups",
@@ -22,12 +22,12 @@
     "Configuration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-configuration",
       "$ref" : "AWS_AmazonMQ_Broker.ConfigurationId.schema.json",
-      "javaType" : "aws.Property<aws.amazonmq.BrokerConfigurationId>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.amazonmq.BrokerConfigurationId>"
     },
     "MaintenanceWindowStartTime" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-maintenancewindowstarttime",
       "$ref" : "AWS_AmazonMQ_Broker.MaintenanceWindow.schema.json",
-      "javaType" : "aws.Property<aws.amazonmq.BrokerMaintenanceWindow>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.amazonmq.BrokerMaintenanceWindow>"
     },
     "HostInstanceType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-hostinstancetype",
@@ -44,13 +44,13 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_AmazonMQ_Broker.User.schema.json",
-        "javaType" : "aws.Property<aws.amazonmq.BrokerUser>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.amazonmq.BrokerUser>"
       }
     },
     "Logs" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-logs",
       "$ref" : "AWS_AmazonMQ_Broker.LogList.schema.json",
-      "javaType" : "aws.Property<aws.amazonmq.BrokerLogList>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.amazonmq.BrokerLogList>"
     },
     "SubnetIds" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-subnetids",
@@ -83,14 +83,14 @@
     "EncryptionOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-encryptionoptions",
       "$ref" : "AWS_AmazonMQ_Broker.EncryptionOptions.schema.json",
-      "javaType" : "aws.Property<aws.amazonmq.BrokerEncryptionOptions>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.amazonmq.BrokerEncryptionOptions>"
     },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-tags",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_AmazonMQ_Broker.TagsEntry.schema.json",
-        "javaType" : "aws.Property<aws.amazonmq.BrokerTagsEntry>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.amazonmq.BrokerTagsEntry>"
       }
     }
   }

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.appsync.GraphQLSchemaResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<GraphQLSchemaResource>", "aws.HasCondition<GraphQLSchemaResource>" ],
+  "javaType" : "shiver.me.timbers.aws.appsync.GraphQLSchemaResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<GraphQLSchemaResource>", "shiver.me.timbers.aws.HasCondition<GraphQLSchemaResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

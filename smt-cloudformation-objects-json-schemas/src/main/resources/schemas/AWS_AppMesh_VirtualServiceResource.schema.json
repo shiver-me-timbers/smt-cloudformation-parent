@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.appmesh.VirtualServiceResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<VirtualServiceResource>", "aws.HasCondition<VirtualServiceResource>", "aws.HasAttributes<VirtualServiceAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.appmesh.VirtualServiceResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<VirtualServiceResource>", "shiver.me.timbers.aws.HasCondition<VirtualServiceResource>", "shiver.me.timbers.aws.HasAttributes<VirtualServiceAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

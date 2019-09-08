@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.logs.DestinationResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<DestinationResource>", "aws.HasCondition<DestinationResource>", "aws.HasAttributes<DestinationAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.logs.DestinationResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<DestinationResource>", "shiver.me.timbers.aws.HasCondition<DestinationResource>", "shiver.me.timbers.aws.HasAttributes<DestinationAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -4,7 +4,7 @@
   "title" : "DatastoreServiceManagedS3",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-servicemanageds3.html",
   "type" : "object",
-  "javaType" : "aws.iotanalytics.DatastoreServiceManagedS3",
-  "javaInterfaces" : [ "aws.Property<DatastoreServiceManagedS3>" ],
+  "javaType" : "shiver.me.timbers.aws.iotanalytics.DatastoreServiceManagedS3",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DatastoreServiceManagedS3>" ],
   "properties" : { }
 }

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.medialive.InputSecurityGroupResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<InputSecurityGroupResource>", "aws.HasCondition<InputSecurityGroupResource>", "aws.HasAttributes<InputSecurityGroupAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.medialive.InputSecurityGroupResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<InputSecurityGroupResource>", "shiver.me.timbers.aws.HasCondition<InputSecurityGroupResource>", "shiver.me.timbers.aws.HasAttributes<InputSecurityGroupAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.cloudtrail.TrailResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<TrailResource>", "aws.HasCondition<TrailResource>", "aws.HasAttributes<TrailAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.cloudtrail.TrailResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<TrailResource>", "shiver.me.timbers.aws.HasCondition<TrailResource>", "shiver.me.timbers.aws.HasAttributes<TrailAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

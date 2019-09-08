@@ -4,8 +4,8 @@
   "title" : "FileSystemLustreConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-lustreconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.fsx.FileSystemLustreConfiguration",
-  "javaInterfaces" : [ "aws.Property<FileSystemLustreConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.fsx.FileSystemLustreConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<FileSystemLustreConfiguration>" ],
   "properties" : {
     "ImportPath" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-lustreconfiguration.html#cfn-fsx-filesystem-lustreconfiguration-importpath",

@@ -4,18 +4,18 @@
   "title" : "VirtualNodeServiceDiscovery",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-servicediscovery.html",
   "type" : "object",
-  "javaType" : "aws.appmesh.VirtualNodeServiceDiscovery",
-  "javaInterfaces" : [ "aws.Property<VirtualNodeServiceDiscovery>" ],
+  "javaType" : "shiver.me.timbers.aws.appmesh.VirtualNodeServiceDiscovery",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<VirtualNodeServiceDiscovery>" ],
   "properties" : {
     "DNS" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-servicediscovery.html#cfn-appmesh-virtualnode-servicediscovery-dns",
       "$ref" : "AWS_AppMesh_VirtualNode.DnsServiceDiscovery.schema.json",
-      "javaType" : "aws.Property<aws.appmesh.VirtualNodeDnsServiceDiscovery>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appmesh.VirtualNodeDnsServiceDiscovery>"
     },
     "AWSCloudMap" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-servicediscovery.html#cfn-appmesh-virtualnode-servicediscovery-awscloudmap",
       "$ref" : "AWS_AppMesh_VirtualNode.AwsCloudMapServiceDiscovery.schema.json",
-      "javaType" : "aws.Property<aws.appmesh.VirtualNodeAwsCloudMapServiceDiscovery>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appmesh.VirtualNodeAwsCloudMapServiceDiscovery>"
     }
   }
 }

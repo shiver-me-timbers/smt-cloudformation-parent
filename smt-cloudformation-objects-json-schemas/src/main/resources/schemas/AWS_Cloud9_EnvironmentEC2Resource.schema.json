@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.cloud9.EnvironmentEC2Resource",
-  "javaInterfaces" : [ "aws.HasDependsOn<EnvironmentEC2Resource>", "aws.HasCondition<EnvironmentEC2Resource>", "aws.HasAttributes<EnvironmentEC2Attributes>" ],
+  "javaType" : "shiver.me.timbers.aws.cloud9.EnvironmentEC2Resource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<EnvironmentEC2Resource>", "shiver.me.timbers.aws.HasCondition<EnvironmentEC2Resource>", "shiver.me.timbers.aws.HasAttributes<EnvironmentEC2Attributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

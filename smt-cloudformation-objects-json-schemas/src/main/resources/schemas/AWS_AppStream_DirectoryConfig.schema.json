@@ -4,7 +4,7 @@
   "title" : "DirectoryConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-directoryconfig.html",
   "type" : "object",
-  "javaType" : "aws.appstream.DirectoryConfig",
+  "javaType" : "shiver.me.timbers.aws.appstream.DirectoryConfig",
   "properties" : {
     "OrganizationalUnitDistinguishedNames" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-directoryconfig.html#cfn-appstream-directoryconfig-organizationalunitdistinguishednames",
@@ -17,7 +17,7 @@
     "ServiceAccountCredentials" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-directoryconfig.html#cfn-appstream-directoryconfig-serviceaccountcredentials",
       "$ref" : "AWS_AppStream_DirectoryConfig.ServiceAccountCredentials.schema.json",
-      "javaType" : "aws.Property<aws.appstream.DirectoryConfigServiceAccountCredentials>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appstream.DirectoryConfigServiceAccountCredentials>"
     },
     "DirectoryName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-directoryconfig.html#cfn-appstream-directoryconfig-directoryname",

@@ -4,7 +4,7 @@
   "title" : "ApplicationReferenceDataSource",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-applicationreferencedatasource.html",
   "type" : "object",
-  "javaType" : "aws.kinesisanalyticsv2.ApplicationReferenceDataSource",
+  "javaType" : "shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationReferenceDataSource",
   "properties" : {
     "ApplicationName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-applicationreferencedatasource.html#cfn-kinesisanalyticsv2-applicationreferencedatasource-applicationname",
@@ -14,7 +14,7 @@
     "ReferenceDataSource" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-applicationreferencedatasource.html#cfn-kinesisanalyticsv2-applicationreferencedatasource-referencedatasource",
       "$ref" : "AWS_KinesisAnalyticsV2_ApplicationReferenceDataSource.ReferenceDataSource.schema.json",
-      "javaType" : "aws.Property<aws.kinesisanalyticsv2.ApplicationReferenceDataSourceReferenceDataSource>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationReferenceDataSourceReferenceDataSource>"
     }
   }
 }

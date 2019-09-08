@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.appsync.ResolverResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ResolverResource>", "aws.HasCondition<ResolverResource>", "aws.HasAttributes<ResolverAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.appsync.ResolverResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ResolverResource>", "shiver.me.timbers.aws.HasCondition<ResolverResource>", "shiver.me.timbers.aws.HasAttributes<ResolverAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

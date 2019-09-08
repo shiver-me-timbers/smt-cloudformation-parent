@@ -4,8 +4,8 @@
   "title" : "AnomalyDetectorRange",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-anomalydetector-range.html",
   "type" : "object",
-  "javaType" : "aws.cloudwatch.AnomalyDetectorRange",
-  "javaInterfaces" : [ "aws.Property<AnomalyDetectorRange>" ],
+  "javaType" : "shiver.me.timbers.aws.cloudwatch.AnomalyDetectorRange",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<AnomalyDetectorRange>" ],
   "properties" : {
     "EndTime" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-anomalydetector-range.html#cfn-cloudwatch-anomalydetector-range-endtime",

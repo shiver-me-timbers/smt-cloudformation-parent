@@ -4,8 +4,8 @@
   "title" : "BackupPlanBackupRuleResourceType",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-backup-backupplan-backupruleresourcetype.html",
   "type" : "object",
-  "javaType" : "aws.backup.BackupPlanBackupRuleResourceType",
-  "javaInterfaces" : [ "aws.Property<BackupPlanBackupRuleResourceType>" ],
+  "javaType" : "shiver.me.timbers.aws.backup.BackupPlanBackupRuleResourceType",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BackupPlanBackupRuleResourceType>" ],
   "properties" : {
     "CompletionWindowMinutes" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-backup-backupplan-backupruleresourcetype.html#cfn-backup-backupplan-backupruleresourcetype-completionwindowminutes",
@@ -25,7 +25,7 @@
     "Lifecycle" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-backup-backupplan-backupruleresourcetype.html#cfn-backup-backupplan-backupruleresourcetype-lifecycle",
       "$ref" : "AWS_Backup_BackupPlan.LifecycleResourceType.schema.json",
-      "javaType" : "aws.Property<aws.backup.BackupPlanLifecycleResourceType>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.backup.BackupPlanLifecycleResourceType>"
     },
     "TargetBackupVault" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-backup-backupplan-backupruleresourcetype.html#cfn-backup-backupplan-backupruleresourcetype-targetbackupvault",

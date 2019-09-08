@@ -4,5 +4,5 @@
   "title" : "ModelAttributes",
   "type" : "string",
   "enum" : [ "ModelName" ],
-  "javaType" : "aws.sagemaker.ModelAttributes"
+  "javaType" : "shiver.me.timbers.aws.sagemaker.ModelAttributes"
 }

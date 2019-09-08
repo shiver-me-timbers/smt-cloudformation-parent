@@ -4,7 +4,7 @@
   "title" : "Authorizer",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-authorizer.html",
   "type" : "object",
-  "javaType" : "aws.apigatewayv2.Authorizer",
+  "javaType" : "shiver.me.timbers.aws.apigatewayv2.Authorizer",
   "properties" : {
     "IdentityValidationExpression" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-authorizer.html#cfn-apigatewayv2-authorizer-identityvalidationexpression",

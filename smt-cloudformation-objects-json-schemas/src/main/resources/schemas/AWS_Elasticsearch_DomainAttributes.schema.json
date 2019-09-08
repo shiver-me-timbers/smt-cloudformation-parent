@@ -4,5 +4,5 @@
   "title" : "DomainAttributes",
   "type" : "string",
   "enum" : [ "Arn", "DomainArn", "DomainEndpoint" ],
-  "javaType" : "aws.elasticsearch.DomainAttributes"
+  "javaType" : "shiver.me.timbers.aws.elasticsearch.DomainAttributes"
 }

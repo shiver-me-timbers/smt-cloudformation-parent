@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.neptune.DBInstanceResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<DBInstanceResource>", "aws.HasCondition<DBInstanceResource>", "aws.HasAttributes<DBInstanceAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.neptune.DBInstanceResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<DBInstanceResource>", "shiver.me.timbers.aws.HasCondition<DBInstanceResource>", "shiver.me.timbers.aws.HasAttributes<DBInstanceAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

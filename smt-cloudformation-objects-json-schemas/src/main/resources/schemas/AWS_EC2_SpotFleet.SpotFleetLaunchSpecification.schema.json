@@ -4,8 +4,8 @@
   "title" : "SpotFleetSpotFleetLaunchSpecification",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html",
   "type" : "object",
-  "javaType" : "aws.ec2.SpotFleetSpotFleetLaunchSpecification",
-  "javaInterfaces" : [ "aws.Property<SpotFleetSpotFleetLaunchSpecification>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.SpotFleetSpotFleetLaunchSpecification",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<SpotFleetSpotFleetLaunchSpecification>" ],
   "properties" : {
     "BlockDeviceMappings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-blockdevicemappings",
@@ -13,7 +13,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_EC2_SpotFleet.BlockDeviceMapping.schema.json",
-        "javaType" : "aws.Property<aws.ec2.SpotFleetBlockDeviceMapping>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.SpotFleetBlockDeviceMapping>"
       }
     },
     "EbsOptimized" : {
@@ -24,7 +24,7 @@
     "IamInstanceProfile" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-iaminstanceprofile",
       "$ref" : "AWS_EC2_SpotFleet.IamInstanceProfileSpecification.schema.json",
-      "javaType" : "aws.Property<aws.ec2.SpotFleetIamInstanceProfileSpecification>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.SpotFleetIamInstanceProfileSpecification>"
     },
     "ImageId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-imageid",
@@ -49,7 +49,7 @@
     "Monitoring" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-monitoring",
       "$ref" : "AWS_EC2_SpotFleet.SpotFleetMonitoring.schema.json",
-      "javaType" : "aws.Property<aws.ec2.SpotFleetSpotFleetMonitoring>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.SpotFleetSpotFleetMonitoring>"
     },
     "NetworkInterfaces" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-networkinterfaces",
@@ -57,13 +57,13 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_EC2_SpotFleet.InstanceNetworkInterfaceSpecification.schema.json",
-        "javaType" : "aws.Property<aws.ec2.SpotFleetInstanceNetworkInterfaceSpecification>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.SpotFleetInstanceNetworkInterfaceSpecification>"
       }
     },
     "Placement" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-placement",
       "$ref" : "AWS_EC2_SpotFleet.SpotPlacement.schema.json",
-      "javaType" : "aws.Property<aws.ec2.SpotFleetSpotPlacement>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.SpotFleetSpotPlacement>"
     },
     "RamdiskId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-ramdiskid",
@@ -76,7 +76,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_EC2_SpotFleet.GroupIdentifier.schema.json",
-        "javaType" : "aws.Property<aws.ec2.SpotFleetGroupIdentifier>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.SpotFleetGroupIdentifier>"
       }
     },
     "SpotPrice" : {
@@ -95,7 +95,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_EC2_SpotFleet.SpotFleetTagSpecification.schema.json",
-        "javaType" : "aws.Property<aws.ec2.SpotFleetSpotFleetTagSpecification>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.SpotFleetSpotFleetTagSpecification>"
       }
     },
     "UserData" : {

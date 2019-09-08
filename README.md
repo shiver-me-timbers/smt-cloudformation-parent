@@ -54,16 +54,16 @@ A simple way to create new a template object is to extend the `Template` class. 
 JSON with the Jackson library and it will produce a valid CloudFormation template. 
 
 ```java
-import aws.Output;
-import aws.Parameter;
-import aws.Template;
-import aws.s3.Bucket;
-import aws.s3.BucketResource;
+import shiver.me.timbers.aws.Output;
+import shiver.me.timbers.aws.Parameter;
+import shiver.me.timbers.aws.Template;
+import shiver.me.timbers.aws.s3.Bucket;
+import shiver.me.timbers.aws.s3.BucketResource;
 
-import static aws.fn.Functions.fnGetAtt;
-import static aws.s3.BucketAttributes.ARN;
-import static aws.s3.BucketAttributes.DOMAIN_NAME;
-import static aws.s3.BucketAttributes.WEBSITE_URL;
+import static shiver.me.timbers.aws.fn.Functions.fnGetAtt;
+import static shiver.me.timbers.aws.s3.BucketAttributes.ARN;
+import static shiver.me.timbers.aws.s3.BucketAttributes.DOMAIN_NAME;
+import static shiver.me.timbers.aws.s3.BucketAttributes.WEBSITE_URL;
 
 public class S3Template extends Template {
 
@@ -95,26 +95,26 @@ issue.
 #### Fn::Base64
 
 ```java
-aws.fn.Functions.fnBase64("some string")
+shiver.me.timbers.aws.fn.Functions.fnBase64("some string")
 ```
 
 #### Fn::Cidr
 
 ```java
-aws.fn.Functions.fnCidr("192.168.0.0/24", "6", "5")
+shiver.me.timbers.aws.fn.Functions.fnCidr("192.168.0.0/24", "6", "5")
 ```
 
 #### Condition Functions
 
 ```java
-import aws.Condition;
-import aws.Parameter;
-import aws.Template;
-import aws.s3.Bucket;
-import aws.s3.BucketResource;
+import shiver.me.timbers.aws.Condition;
+import shiver.me.timbers.aws.Parameter;
+import shiver.me.timbers.aws.Template;
+import shiver.me.timbers.aws.s3.Bucket;
+import shiver.me.timbers.aws.s3.BucketResource;
 
-import static aws.fn.Functions.fnEquals;
-import static aws.fn.Functions.fnIf;
+import static shiver.me.timbers.aws.fn.Functions.fnEquals;
+import static shiver.me.timbers.aws.fn.Functions.fnIf;
 
 public class S3Template extends Template {
 
@@ -136,16 +136,16 @@ public class S3Template extends Template {
 #### Fn::FindInMap
 
 ```java
-import aws.Parameter;
-import aws.Template;
-import aws.s3.Bucket;
-import aws.s3.BucketResource;
+import shiver.me.timbers.aws.Parameter;
+import shiver.me.timbers.aws.Template;
+import shiver.me.timbers.aws.s3.Bucket;
+import shiver.me.timbers.aws.s3.BucketResource;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import static aws.fn.Functions.fnFindInMap;
-import static aws.fn.Functions.ref;
+import static shiver.me.timbers.aws.fn.Functions.fnFindInMap;
+import static shiver.me.timbers.aws.fn.Functions.ref;
 import static java.util.Collections.singletonMap;
 
 public class S3Template extends Template {
@@ -170,49 +170,49 @@ public class S3Template extends Template {
 #### Fn::GetAtt
 
 ```java
-aws.fn.Functions.fnGetAtt(new BucketResource("S3Bucket"), BucketAttributes.ARN)
+shiver.me.timbers.aws.fn.Functions.fnGetAtt(new BucketResource("S3Bucket"), BucketAttributes.ARN)
 ```
 
 #### Fn::GetAZs
 
 ```java
-aws.fn.Functions.fnGetAZs(aws.fn.Functions.ref("AWS::Region"))
+shiver.me.timbers.aws.fn.Functions.fnGetAZs(shiver.me.timbers.aws.fn.Functions.ref("AWS::Region"))
 ```
 
 #### Fn::ImportValue
 
 ```java
-aws.fn.Functions.fnImportValue("ExportedValue")
+shiver.me.timbers.aws.fn.Functions.fnImportValue("ExportedValue")
 ```
 
 #### Fn::Join
 
 ```java
-aws.fn.Functions.fnJoin(":", "a", "b", "c")
+shiver.me.timbers.aws.fn.Functions.fnJoin(":", "a", "b", "c")
 ```
 
 #### Fn::Select
 
 ```java
-aws.fn.Functions.fnSelect(1, "apples", "grapes", "oranges", "mangoes")
+shiver.me.timbers.aws.fn.Functions.fnSelect(1, "apples", "grapes", "oranges", "mangoes")
 ```
 
 #### Fn::Split
 
 ```java
-aws.fn.Functions.fnSplit("|", "a|b|c")
+shiver.me.timbers.aws.fn.Functions.fnSplit("|", "a|b|c")
 ```
 
 #### Fn::Sub
 
 ```java
-aws.fn.Functions.fnSub("www.${Domain}", singletonMap("Domain", ref("RootDomainName")))
+shiver.me.timbers.aws.fn.Functions.fnSub("www.${Domain}", singletonMap("Domain", ref("RootDomainName")))
 ```
 
 #### Ref
 
 ```java
-aws.fn.Functions.ref("AWS::Region")
+shiver.me.timbers.aws.fn.Functions.ref("AWS::Region")
 ```
 
 ### Idiosyncrasies

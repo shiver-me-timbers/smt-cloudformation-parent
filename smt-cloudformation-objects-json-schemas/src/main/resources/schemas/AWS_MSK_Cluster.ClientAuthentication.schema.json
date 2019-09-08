@@ -4,13 +4,13 @@
   "title" : "ClusterClientAuthentication",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-clientauthentication.html",
   "type" : "object",
-  "javaType" : "aws.msk.ClusterClientAuthentication",
-  "javaInterfaces" : [ "aws.Property<ClusterClientAuthentication>" ],
+  "javaType" : "shiver.me.timbers.aws.msk.ClusterClientAuthentication",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ClusterClientAuthentication>" ],
   "properties" : {
     "Tls" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-clientauthentication.html#cfn-msk-cluster-clientauthentication-tls",
       "$ref" : "AWS_MSK_Cluster.Tls.schema.json",
-      "javaType" : "aws.Property<aws.msk.ClusterTls>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.msk.ClusterTls>"
     }
   }
 }

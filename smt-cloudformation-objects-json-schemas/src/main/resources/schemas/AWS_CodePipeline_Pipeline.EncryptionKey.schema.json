@@ -4,8 +4,8 @@
   "title" : "PipelineEncryptionKey",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore-encryptionkey.html",
   "type" : "object",
-  "javaType" : "aws.codepipeline.PipelineEncryptionKey",
-  "javaInterfaces" : [ "aws.Property<PipelineEncryptionKey>" ],
+  "javaType" : "shiver.me.timbers.aws.codepipeline.PipelineEncryptionKey",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<PipelineEncryptionKey>" ],
   "properties" : {
     "Id" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore-encryptionkey.html#cfn-codepipeline-pipeline-artifactstore-encryptionkey-id",

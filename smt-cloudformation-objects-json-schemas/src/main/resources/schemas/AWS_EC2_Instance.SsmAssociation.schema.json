@@ -4,15 +4,15 @@
   "title" : "InstanceSsmAssociation",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-ssmassociations.html",
   "type" : "object",
-  "javaType" : "aws.ec2.InstanceSsmAssociation",
-  "javaInterfaces" : [ "aws.Property<InstanceSsmAssociation>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.InstanceSsmAssociation",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<InstanceSsmAssociation>" ],
   "properties" : {
     "AssociationParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-ssmassociations.html#cfn-ec2-instance-ssmassociations-associationparameters",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_EC2_Instance.AssociationParameter.schema.json",
-        "javaType" : "aws.Property<aws.ec2.InstanceAssociationParameter>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.InstanceAssociationParameter>"
       }
     },
     "DocumentName" : {

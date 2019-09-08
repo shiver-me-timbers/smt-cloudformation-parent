@@ -4,5 +4,5 @@
   "title" : "IdentityAttributes",
   "type" : "string",
   "enum" : [ "IdentityDNSRecordName3", "IdentityDNSRecordName1", "IdentityDNSRecordName2", "IdentityDNSRecordValue3", "IdentityDNSRecordValue2", "IdentityDNSRecordValue1" ],
-  "javaType" : "aws.pinpointemail.IdentityAttributes"
+  "javaType" : "shiver.me.timbers.aws.pinpointemail.IdentityAttributes"
 }

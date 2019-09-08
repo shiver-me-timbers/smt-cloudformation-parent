@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.VPCEndpointResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<VPCEndpointResource>", "aws.HasCondition<VPCEndpointResource>", "aws.HasAttributes<VPCEndpointAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.VPCEndpointResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<VPCEndpointResource>", "shiver.me.timbers.aws.HasCondition<VPCEndpointResource>", "shiver.me.timbers.aws.HasAttributes<VPCEndpointAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

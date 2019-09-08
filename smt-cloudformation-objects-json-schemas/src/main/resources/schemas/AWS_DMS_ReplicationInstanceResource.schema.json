@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.dms.ReplicationInstanceResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ReplicationInstanceResource>", "aws.HasCondition<ReplicationInstanceResource>", "aws.HasAttributes<ReplicationInstanceAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.dms.ReplicationInstanceResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ReplicationInstanceResource>", "shiver.me.timbers.aws.HasCondition<ReplicationInstanceResource>", "shiver.me.timbers.aws.HasAttributes<ReplicationInstanceAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.iot.ThingResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ThingResource>", "aws.HasCondition<ThingResource>" ],
+  "javaType" : "shiver.me.timbers.aws.iot.ThingResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ThingResource>", "shiver.me.timbers.aws.HasCondition<ThingResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

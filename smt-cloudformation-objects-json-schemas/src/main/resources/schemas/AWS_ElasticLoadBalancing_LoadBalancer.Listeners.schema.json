@@ -4,8 +4,8 @@
   "title" : "LoadBalancerListeners",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html",
   "type" : "object",
-  "javaType" : "aws.elasticloadbalancing.LoadBalancerListeners",
-  "javaInterfaces" : [ "aws.Property<LoadBalancerListeners>" ],
+  "javaType" : "shiver.me.timbers.aws.elasticloadbalancing.LoadBalancerListeners",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<LoadBalancerListeners>" ],
   "properties" : {
     "InstancePort" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-instanceport",

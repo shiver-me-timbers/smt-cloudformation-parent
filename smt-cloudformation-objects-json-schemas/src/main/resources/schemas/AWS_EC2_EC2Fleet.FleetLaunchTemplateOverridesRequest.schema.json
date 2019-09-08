@@ -4,8 +4,8 @@
   "title" : "EC2FleetFleetLaunchTemplateOverridesRequest",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.html",
   "type" : "object",
-  "javaType" : "aws.ec2.EC2FleetFleetLaunchTemplateOverridesRequest",
-  "javaInterfaces" : [ "aws.Property<EC2FleetFleetLaunchTemplateOverridesRequest>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.EC2FleetFleetLaunchTemplateOverridesRequest",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<EC2FleetFleetLaunchTemplateOverridesRequest>" ],
   "properties" : {
     "WeightedCapacity" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-weightedcapacity",

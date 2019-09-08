@@ -4,12 +4,12 @@
   "title" : "Bucket",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html",
   "type" : "object",
-  "javaType" : "aws.s3.Bucket",
+  "javaType" : "shiver.me.timbers.aws.s3.Bucket",
   "properties" : {
     "AccelerateConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-accelerateconfiguration",
       "$ref" : "AWS_S3_Bucket.AccelerateConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.s3.BucketAccelerateConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.BucketAccelerateConfiguration>"
     },
     "AccessControl" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-accesscontrol",
@@ -22,13 +22,13 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_S3_Bucket.AnalyticsConfiguration.schema.json",
-        "javaType" : "aws.Property<aws.s3.BucketAnalyticsConfiguration>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.BucketAnalyticsConfiguration>"
       }
     },
     "BucketEncryption" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-bucketencryption",
       "$ref" : "AWS_S3_Bucket.BucketEncryption.schema.json",
-      "javaType" : "aws.Property<aws.s3.BucketBucketEncryption>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.BucketBucketEncryption>"
     },
     "BucketName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-name",
@@ -38,7 +38,7 @@
     "CorsConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-crossoriginconfig",
       "$ref" : "AWS_S3_Bucket.CorsConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.s3.BucketCorsConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.BucketCorsConfiguration>"
     },
     "InventoryConfigurations" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-inventoryconfigurations",
@@ -46,18 +46,18 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_S3_Bucket.InventoryConfiguration.schema.json",
-        "javaType" : "aws.Property<aws.s3.BucketInventoryConfiguration>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.BucketInventoryConfiguration>"
       }
     },
     "LifecycleConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-lifecycleconfig",
       "$ref" : "AWS_S3_Bucket.LifecycleConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.s3.BucketLifecycleConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.BucketLifecycleConfiguration>"
     },
     "LoggingConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-loggingconfig",
       "$ref" : "AWS_S3_Bucket.LoggingConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.s3.BucketLoggingConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.BucketLoggingConfiguration>"
     },
     "MetricsConfigurations" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-metricsconfigurations",
@@ -65,18 +65,18 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_S3_Bucket.MetricsConfiguration.schema.json",
-        "javaType" : "aws.Property<aws.s3.BucketMetricsConfiguration>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.BucketMetricsConfiguration>"
       }
     },
     "NotificationConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-notification",
       "$ref" : "AWS_S3_Bucket.NotificationConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.s3.BucketNotificationConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.BucketNotificationConfiguration>"
     },
     "ObjectLockConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-objectlockconfiguration",
       "$ref" : "AWS_S3_Bucket.ObjectLockConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.s3.BucketObjectLockConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.BucketObjectLockConfiguration>"
     },
     "ObjectLockEnabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-objectlockenabled",
@@ -86,30 +86,30 @@
     "PublicAccessBlockConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-publicaccessblockconfiguration",
       "$ref" : "AWS_S3_Bucket.PublicAccessBlockConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.s3.BucketPublicAccessBlockConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.BucketPublicAccessBlockConfiguration>"
     },
     "ReplicationConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-replicationconfiguration",
       "$ref" : "AWS_S3_Bucket.ReplicationConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.s3.BucketReplicationConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.BucketReplicationConfiguration>"
     },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-tags",
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     },
     "VersioningConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-versioning",
       "$ref" : "AWS_S3_Bucket.VersioningConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.s3.BucketVersioningConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.BucketVersioningConfiguration>"
     },
     "WebsiteConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-websiteconfiguration",
       "$ref" : "AWS_S3_Bucket.WebsiteConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.s3.BucketWebsiteConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.BucketWebsiteConfiguration>"
     }
   }
 }

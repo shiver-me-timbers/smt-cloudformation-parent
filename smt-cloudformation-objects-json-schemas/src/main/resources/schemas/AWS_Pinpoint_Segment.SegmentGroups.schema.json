@@ -4,15 +4,15 @@
   "title" : "SegmentSegmentGroups",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-segmentgroups.html",
   "type" : "object",
-  "javaType" : "aws.pinpoint.SegmentSegmentGroups",
-  "javaInterfaces" : [ "aws.Property<SegmentSegmentGroups>" ],
+  "javaType" : "shiver.me.timbers.aws.pinpoint.SegmentSegmentGroups",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<SegmentSegmentGroups>" ],
   "properties" : {
     "Groups" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-segmentgroups.html#cfn-pinpoint-segment-segmentgroups-groups",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Pinpoint_Segment.Groups.schema.json",
-        "javaType" : "aws.Property<aws.pinpoint.SegmentGroups>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpoint.SegmentGroups>"
       }
     },
     "Include" : {

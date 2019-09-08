@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.servicediscovery.PublicDnsNamespaceResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<PublicDnsNamespaceResource>", "aws.HasCondition<PublicDnsNamespaceResource>", "aws.HasAttributes<PublicDnsNamespaceAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.servicediscovery.PublicDnsNamespaceResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<PublicDnsNamespaceResource>", "shiver.me.timbers.aws.HasCondition<PublicDnsNamespaceResource>", "shiver.me.timbers.aws.HasAttributes<PublicDnsNamespaceAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

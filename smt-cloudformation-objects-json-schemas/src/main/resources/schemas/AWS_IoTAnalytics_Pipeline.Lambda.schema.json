@@ -4,8 +4,8 @@
   "title" : "PipelineLambda",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-lambda.html",
   "type" : "object",
-  "javaType" : "aws.iotanalytics.PipelineLambda",
-  "javaInterfaces" : [ "aws.Property<PipelineLambda>" ],
+  "javaType" : "shiver.me.timbers.aws.iotanalytics.PipelineLambda",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<PipelineLambda>" ],
   "properties" : {
     "BatchSize" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-lambda.html#cfn-iotanalytics-pipeline-lambda-batchsize",

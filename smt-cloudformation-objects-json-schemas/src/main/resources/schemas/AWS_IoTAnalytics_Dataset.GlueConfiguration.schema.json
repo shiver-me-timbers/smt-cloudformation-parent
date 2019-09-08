@@ -4,8 +4,8 @@
   "title" : "DatasetGlueConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-glueconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.iotanalytics.DatasetGlueConfiguration",
-  "javaInterfaces" : [ "aws.Property<DatasetGlueConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.iotanalytics.DatasetGlueConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DatasetGlueConfiguration>" ],
   "properties" : {
     "TableName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-glueconfiguration.html#cfn-iotanalytics-dataset-glueconfiguration-tablename",

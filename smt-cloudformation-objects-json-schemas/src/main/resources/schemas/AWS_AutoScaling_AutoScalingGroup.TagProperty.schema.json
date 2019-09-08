@@ -4,8 +4,8 @@
   "title" : "AutoScalingGroupTagProperty",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-tags.html",
   "type" : "object",
-  "javaType" : "aws.autoscaling.AutoScalingGroupTagProperty",
-  "javaInterfaces" : [ "aws.Property<AutoScalingGroupTagProperty>" ],
+  "javaType" : "shiver.me.timbers.aws.autoscaling.AutoScalingGroupTagProperty",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<AutoScalingGroupTagProperty>" ],
   "properties" : {
     "Key" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-tags.html#cfn-as-tags-Key",

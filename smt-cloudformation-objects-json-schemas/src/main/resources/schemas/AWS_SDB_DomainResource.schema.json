@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.sdb.DomainResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<DomainResource>", "aws.HasCondition<DomainResource>" ],
+  "javaType" : "shiver.me.timbers.aws.sdb.DomainResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<DomainResource>", "shiver.me.timbers.aws.HasCondition<DomainResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

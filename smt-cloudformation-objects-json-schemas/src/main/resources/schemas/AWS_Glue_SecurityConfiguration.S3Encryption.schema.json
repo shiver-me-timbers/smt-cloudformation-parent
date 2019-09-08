@@ -4,8 +4,8 @@
   "title" : "SecurityConfigurationS3Encryption",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-securityconfiguration-s3encryption.html",
   "type" : "object",
-  "javaType" : "aws.glue.SecurityConfigurationS3Encryption",
-  "javaInterfaces" : [ "aws.Property<SecurityConfigurationS3Encryption>" ],
+  "javaType" : "shiver.me.timbers.aws.glue.SecurityConfigurationS3Encryption",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<SecurityConfigurationS3Encryption>" ],
   "properties" : {
     "KmsKeyArn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-securityconfiguration-s3encryption.html#cfn-glue-securityconfiguration-s3encryption-kmskeyarn",

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.apigatewayv2.ApiMappingResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ApiMappingResource>", "aws.HasCondition<ApiMappingResource>" ],
+  "javaType" : "shiver.me.timbers.aws.apigatewayv2.ApiMappingResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ApiMappingResource>", "shiver.me.timbers.aws.HasCondition<ApiMappingResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

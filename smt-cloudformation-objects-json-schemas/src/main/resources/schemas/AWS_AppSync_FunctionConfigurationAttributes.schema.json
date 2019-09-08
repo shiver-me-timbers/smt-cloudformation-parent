@@ -4,5 +4,5 @@
   "title" : "FunctionConfigurationAttributes",
   "type" : "string",
   "enum" : [ "FunctionId", "FunctionArn", "DataSourceName", "Name" ],
-  "javaType" : "aws.appsync.FunctionConfigurationAttributes"
+  "javaType" : "shiver.me.timbers.aws.appsync.FunctionConfigurationAttributes"
 }

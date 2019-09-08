@@ -4,8 +4,8 @@
   "title" : "CampaignSetDimension",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-setdimension.html",
   "type" : "object",
-  "javaType" : "aws.pinpoint.CampaignSetDimension",
-  "javaInterfaces" : [ "aws.Property<CampaignSetDimension>" ],
+  "javaType" : "shiver.me.timbers.aws.pinpoint.CampaignSetDimension",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<CampaignSetDimension>" ],
   "properties" : {
     "DimensionType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-setdimension.html#cfn-pinpoint-campaign-setdimension-dimensiontype",

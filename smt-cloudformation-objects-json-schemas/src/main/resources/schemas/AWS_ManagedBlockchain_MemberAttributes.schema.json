@@ -4,5 +4,5 @@
   "title" : "MemberAttributes",
   "type" : "string",
   "enum" : [ "MemberId", "NetworkId" ],
-  "javaType" : "aws.managedblockchain.MemberAttributes"
+  "javaType" : "shiver.me.timbers.aws.managedblockchain.MemberAttributes"
 }

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.glue.MLTransformResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<MLTransformResource>", "aws.HasCondition<MLTransformResource>" ],
+  "javaType" : "shiver.me.timbers.aws.glue.MLTransformResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<MLTransformResource>", "shiver.me.timbers.aws.HasCondition<MLTransformResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

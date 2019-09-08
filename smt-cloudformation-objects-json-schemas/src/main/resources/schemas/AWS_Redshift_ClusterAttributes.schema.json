@@ -4,5 +4,5 @@
   "title" : "ClusterAttributes",
   "type" : "string",
   "enum" : [ "Endpoint.Address", "Endpoint.Port" ],
-  "javaType" : "aws.redshift.ClusterAttributes"
+  "javaType" : "shiver.me.timbers.aws.redshift.ClusterAttributes"
 }

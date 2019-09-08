@@ -4,5 +4,5 @@
   "title" : "NotebookInstanceLifecycleConfigAttributes",
   "type" : "string",
   "enum" : [ "NotebookInstanceLifecycleConfigName" ],
-  "javaType" : "aws.sagemaker.NotebookInstanceLifecycleConfigAttributes"
+  "javaType" : "shiver.me.timbers.aws.sagemaker.NotebookInstanceLifecycleConfigAttributes"
 }

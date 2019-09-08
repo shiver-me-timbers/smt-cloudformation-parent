@@ -4,5 +4,5 @@
   "title" : "ClusterAttributes",
   "type" : "string",
   "enum" : [ "MasterPublicDNS" ],
-  "javaType" : "aws.emr.ClusterAttributes"
+  "javaType" : "shiver.me.timbers.aws.emr.ClusterAttributes"
 }

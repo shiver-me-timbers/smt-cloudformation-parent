@@ -4,5 +4,5 @@
   "title" : "MountTargetAttributes",
   "type" : "string",
   "enum" : [ "IpAddress" ],
-  "javaType" : "aws.efs.MountTargetAttributes"
+  "javaType" : "shiver.me.timbers.aws.efs.MountTargetAttributes"
 }

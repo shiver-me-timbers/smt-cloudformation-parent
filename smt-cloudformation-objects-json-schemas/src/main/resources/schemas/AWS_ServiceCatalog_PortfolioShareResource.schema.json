@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.servicecatalog.PortfolioShareResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<PortfolioShareResource>", "aws.HasCondition<PortfolioShareResource>" ],
+  "javaType" : "shiver.me.timbers.aws.servicecatalog.PortfolioShareResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<PortfolioShareResource>", "shiver.me.timbers.aws.HasCondition<PortfolioShareResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

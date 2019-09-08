@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.codepipeline.WebhookResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<WebhookResource>", "aws.HasCondition<WebhookResource>", "aws.HasAttributes<WebhookAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.codepipeline.WebhookResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<WebhookResource>", "shiver.me.timbers.aws.HasCondition<WebhookResource>", "shiver.me.timbers.aws.HasAttributes<WebhookAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

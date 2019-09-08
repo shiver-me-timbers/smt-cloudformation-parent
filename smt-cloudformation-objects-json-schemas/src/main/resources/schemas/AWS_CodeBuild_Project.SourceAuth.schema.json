@@ -4,8 +4,8 @@
   "title" : "ProjectSourceAuth",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-sourceauth.html",
   "type" : "object",
-  "javaType" : "aws.codebuild.ProjectSourceAuth",
-  "javaInterfaces" : [ "aws.Property<ProjectSourceAuth>" ],
+  "javaType" : "shiver.me.timbers.aws.codebuild.ProjectSourceAuth",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ProjectSourceAuth>" ],
   "properties" : {
     "Type" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-sourceauth.html#cfn-codebuild-project-sourceauth-type",

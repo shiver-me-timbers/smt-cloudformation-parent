@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.FlowLogResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<FlowLogResource>", "aws.HasCondition<FlowLogResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.FlowLogResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<FlowLogResource>", "shiver.me.timbers.aws.HasCondition<FlowLogResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.stepfunctions.StateMachineResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<StateMachineResource>", "aws.HasCondition<StateMachineResource>", "aws.HasAttributes<StateMachineAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.stepfunctions.StateMachineResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<StateMachineResource>", "shiver.me.timbers.aws.HasCondition<StateMachineResource>", "shiver.me.timbers.aws.HasAttributes<StateMachineAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

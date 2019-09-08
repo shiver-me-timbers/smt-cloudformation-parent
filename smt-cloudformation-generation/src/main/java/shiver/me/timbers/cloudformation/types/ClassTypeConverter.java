@@ -1,6 +1,6 @@
 package shiver.me.timbers.cloudformation.types;
 
-import aws.Property;
+import shiver.me.timbers.aws.Property;
 import shiver.me.timbers.cloudformation.files.FileNames;
 
 import java.util.HashMap;

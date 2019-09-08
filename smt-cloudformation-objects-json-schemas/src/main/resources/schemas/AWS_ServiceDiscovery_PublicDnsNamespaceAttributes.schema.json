@@ -4,5 +4,5 @@
   "title" : "PublicDnsNamespaceAttributes",
   "type" : "string",
   "enum" : [ "Id", "Arn" ],
-  "javaType" : "aws.servicediscovery.PublicDnsNamespaceAttributes"
+  "javaType" : "shiver.me.timbers.aws.servicediscovery.PublicDnsNamespaceAttributes"
 }

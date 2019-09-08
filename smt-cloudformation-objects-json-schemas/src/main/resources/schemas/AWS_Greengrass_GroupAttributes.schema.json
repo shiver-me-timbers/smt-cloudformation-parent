@@ -4,5 +4,5 @@
   "title" : "GroupAttributes",
   "type" : "string",
   "enum" : [ "RoleAttachedAt", "LatestVersionArn", "Id", "Arn", "RoleArn", "Name" ],
-  "javaType" : "aws.greengrass.GroupAttributes"
+  "javaType" : "shiver.me.timbers.aws.greengrass.GroupAttributes"
 }

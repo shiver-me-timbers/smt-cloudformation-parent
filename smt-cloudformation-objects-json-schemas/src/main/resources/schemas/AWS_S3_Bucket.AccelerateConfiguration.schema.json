@@ -4,8 +4,8 @@
   "title" : "BucketAccelerateConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-accelerateconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.s3.BucketAccelerateConfiguration",
-  "javaInterfaces" : [ "aws.Property<BucketAccelerateConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.s3.BucketAccelerateConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BucketAccelerateConfiguration>" ],
   "properties" : {
     "AccelerationStatus" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-accelerateconfiguration.html#cfn-s3-bucket-accelerateconfiguration-accelerationstatus",

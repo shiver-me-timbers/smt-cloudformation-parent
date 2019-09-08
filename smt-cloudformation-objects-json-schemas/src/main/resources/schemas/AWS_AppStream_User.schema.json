@@ -4,7 +4,7 @@
   "title" : "User",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-user.html",
   "type" : "object",
-  "javaType" : "aws.appstream.User",
+  "javaType" : "shiver.me.timbers.aws.appstream.User",
   "properties" : {
     "UserName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-user.html#cfn-appstream-user-username",

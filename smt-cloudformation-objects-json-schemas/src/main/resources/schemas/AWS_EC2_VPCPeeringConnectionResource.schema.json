@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.VPCPeeringConnectionResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<VPCPeeringConnectionResource>", "aws.HasCondition<VPCPeeringConnectionResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.VPCPeeringConnectionResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<VPCPeeringConnectionResource>", "shiver.me.timbers.aws.HasCondition<VPCPeeringConnectionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -4,8 +4,8 @@
   "title" : "ScalingPolicyPredefinedMetricSpecification",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-predefinedmetricspecification.html",
   "type" : "object",
-  "javaType" : "aws.autoscaling.ScalingPolicyPredefinedMetricSpecification",
-  "javaInterfaces" : [ "aws.Property<ScalingPolicyPredefinedMetricSpecification>" ],
+  "javaType" : "shiver.me.timbers.aws.autoscaling.ScalingPolicyPredefinedMetricSpecification",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ScalingPolicyPredefinedMetricSpecification>" ],
   "properties" : {
     "PredefinedMetricType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-predefinedmetricspecification.html#cfn-autoscaling-scalingpolicy-predefinedmetricspecification-predefinedmetrictype",

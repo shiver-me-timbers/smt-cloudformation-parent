@@ -4,14 +4,14 @@
   "title" : "JobQueue",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobqueue.html",
   "type" : "object",
-  "javaType" : "aws.batch.JobQueue",
+  "javaType" : "shiver.me.timbers.aws.batch.JobQueue",
   "properties" : {
     "ComputeEnvironmentOrder" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobqueue.html#cfn-batch-jobqueue-computeenvironmentorder",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Batch_JobQueue.ComputeEnvironmentOrder.schema.json",
-        "javaType" : "aws.Property<aws.batch.JobQueueComputeEnvironmentOrder>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.batch.JobQueueComputeEnvironmentOrder>"
       }
     },
     "Priority" : {

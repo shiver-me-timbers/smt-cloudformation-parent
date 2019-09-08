@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.pinpoint.CampaignResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<CampaignResource>", "aws.HasCondition<CampaignResource>", "aws.HasAttributes<CampaignAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.pinpoint.CampaignResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<CampaignResource>", "shiver.me.timbers.aws.HasCondition<CampaignResource>", "shiver.me.timbers.aws.HasAttributes<CampaignAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

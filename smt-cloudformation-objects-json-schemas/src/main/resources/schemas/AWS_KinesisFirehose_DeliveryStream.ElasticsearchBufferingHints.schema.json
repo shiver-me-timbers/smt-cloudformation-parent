@@ -4,8 +4,8 @@
   "title" : "DeliveryStreamElasticsearchBufferingHints",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchbufferinghints.html",
   "type" : "object",
-  "javaType" : "aws.kinesisfirehose.DeliveryStreamElasticsearchBufferingHints",
-  "javaInterfaces" : [ "aws.Property<DeliveryStreamElasticsearchBufferingHints>" ],
+  "javaType" : "shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamElasticsearchBufferingHints",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DeliveryStreamElasticsearchBufferingHints>" ],
   "properties" : {
     "IntervalInSeconds" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchbufferinghints.html#cfn-kinesisfirehose-deliverystream-elasticsearchbufferinghints-intervalinseconds",

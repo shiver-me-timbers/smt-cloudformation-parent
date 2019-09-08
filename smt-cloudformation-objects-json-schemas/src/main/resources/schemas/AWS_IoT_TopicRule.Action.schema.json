@@ -4,78 +4,78 @@
   "title" : "TopicRuleAction",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html",
   "type" : "object",
-  "javaType" : "aws.iot.TopicRuleAction",
-  "javaInterfaces" : [ "aws.Property<TopicRuleAction>" ],
+  "javaType" : "shiver.me.timbers.aws.iot.TopicRuleAction",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TopicRuleAction>" ],
   "properties" : {
     "CloudwatchAlarm" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-cloudwatchalarm",
       "$ref" : "AWS_IoT_TopicRule.CloudwatchAlarmAction.schema.json",
-      "javaType" : "aws.Property<aws.iot.TopicRuleCloudwatchAlarmAction>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iot.TopicRuleCloudwatchAlarmAction>"
     },
     "CloudwatchMetric" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-cloudwatchmetric",
       "$ref" : "AWS_IoT_TopicRule.CloudwatchMetricAction.schema.json",
-      "javaType" : "aws.Property<aws.iot.TopicRuleCloudwatchMetricAction>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iot.TopicRuleCloudwatchMetricAction>"
     },
     "DynamoDB" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-dynamodb",
       "$ref" : "AWS_IoT_TopicRule.DynamoDBAction.schema.json",
-      "javaType" : "aws.Property<aws.iot.TopicRuleDynamoDBAction>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iot.TopicRuleDynamoDBAction>"
     },
     "DynamoDBv2" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-dynamodbv2",
       "$ref" : "AWS_IoT_TopicRule.DynamoDBv2Action.schema.json",
-      "javaType" : "aws.Property<aws.iot.TopicRuleDynamoDBv2Action>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iot.TopicRuleDynamoDBv2Action>"
     },
     "Elasticsearch" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-elasticsearch",
       "$ref" : "AWS_IoT_TopicRule.ElasticsearchAction.schema.json",
-      "javaType" : "aws.Property<aws.iot.TopicRuleElasticsearchAction>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iot.TopicRuleElasticsearchAction>"
     },
     "Firehose" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-firehose",
       "$ref" : "AWS_IoT_TopicRule.FirehoseAction.schema.json",
-      "javaType" : "aws.Property<aws.iot.TopicRuleFirehoseAction>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iot.TopicRuleFirehoseAction>"
     },
     "IotAnalytics" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-iotanalytics",
       "$ref" : "AWS_IoT_TopicRule.IotAnalyticsAction.schema.json",
-      "javaType" : "aws.Property<aws.iot.TopicRuleIotAnalyticsAction>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iot.TopicRuleIotAnalyticsAction>"
     },
     "Kinesis" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-kinesis",
       "$ref" : "AWS_IoT_TopicRule.KinesisAction.schema.json",
-      "javaType" : "aws.Property<aws.iot.TopicRuleKinesisAction>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iot.TopicRuleKinesisAction>"
     },
     "Lambda" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-lambda",
       "$ref" : "AWS_IoT_TopicRule.LambdaAction.schema.json",
-      "javaType" : "aws.Property<aws.iot.TopicRuleLambdaAction>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iot.TopicRuleLambdaAction>"
     },
     "Republish" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-republish",
       "$ref" : "AWS_IoT_TopicRule.RepublishAction.schema.json",
-      "javaType" : "aws.Property<aws.iot.TopicRuleRepublishAction>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iot.TopicRuleRepublishAction>"
     },
     "S3" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-s3",
       "$ref" : "AWS_IoT_TopicRule.S3Action.schema.json",
-      "javaType" : "aws.Property<aws.iot.TopicRuleS3Action>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iot.TopicRuleS3Action>"
     },
     "Sns" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-sns",
       "$ref" : "AWS_IoT_TopicRule.SnsAction.schema.json",
-      "javaType" : "aws.Property<aws.iot.TopicRuleSnsAction>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iot.TopicRuleSnsAction>"
     },
     "Sqs" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-sqs",
       "$ref" : "AWS_IoT_TopicRule.SqsAction.schema.json",
-      "javaType" : "aws.Property<aws.iot.TopicRuleSqsAction>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iot.TopicRuleSqsAction>"
     },
     "StepFunctions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-stepfunctions",
       "$ref" : "AWS_IoT_TopicRule.StepFunctionsAction.schema.json",
-      "javaType" : "aws.Property<aws.iot.TopicRuleStepFunctionsAction>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iot.TopicRuleStepFunctionsAction>"
     }
   }
 }

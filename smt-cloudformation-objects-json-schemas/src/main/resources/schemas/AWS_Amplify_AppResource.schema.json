@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.amplify.AppResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<AppResource>", "aws.HasCondition<AppResource>", "aws.HasAttributes<AppAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.amplify.AppResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<AppResource>", "shiver.me.timbers.aws.HasCondition<AppResource>", "shiver.me.timbers.aws.HasAttributes<AppAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ecs.TaskDefinitionResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<TaskDefinitionResource>", "aws.HasCondition<TaskDefinitionResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ecs.TaskDefinitionResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<TaskDefinitionResource>", "shiver.me.timbers.aws.HasCondition<TaskDefinitionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

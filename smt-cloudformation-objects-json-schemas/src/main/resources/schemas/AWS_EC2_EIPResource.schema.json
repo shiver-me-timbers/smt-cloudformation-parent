@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.EIPResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<EIPResource>", "aws.HasCondition<EIPResource>", "aws.HasAttributes<EIPAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.EIPResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<EIPResource>", "shiver.me.timbers.aws.HasCondition<EIPResource>", "shiver.me.timbers.aws.HasAttributes<EIPAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

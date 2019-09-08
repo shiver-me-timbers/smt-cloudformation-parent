@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.wafregional.GeoMatchSetResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<GeoMatchSetResource>", "aws.HasCondition<GeoMatchSetResource>" ],
+  "javaType" : "shiver.me.timbers.aws.wafregional.GeoMatchSetResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<GeoMatchSetResource>", "shiver.me.timbers.aws.HasCondition<GeoMatchSetResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -4,5 +4,5 @@
   "title" : "ScalingPlanAttributes",
   "type" : "string",
   "enum" : [ "ScalingPlanName", "ScalingPlanVersion" ],
-  "javaType" : "aws.autoscalingplans.ScalingPlanAttributes"
+  "javaType" : "shiver.me.timbers.aws.autoscalingplans.ScalingPlanAttributes"
 }

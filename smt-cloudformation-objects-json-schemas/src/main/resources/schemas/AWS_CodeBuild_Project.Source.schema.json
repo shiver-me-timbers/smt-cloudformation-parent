@@ -4,8 +4,8 @@
   "title" : "ProjectSource",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html",
   "type" : "object",
-  "javaType" : "aws.codebuild.ProjectSource",
-  "javaInterfaces" : [ "aws.Property<ProjectSource>" ],
+  "javaType" : "shiver.me.timbers.aws.codebuild.ProjectSource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ProjectSource>" ],
   "properties" : {
     "Type" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-type",
@@ -20,7 +20,7 @@
     "Auth" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-auth",
       "$ref" : "AWS_CodeBuild_Project.SourceAuth.schema.json",
-      "javaType" : "aws.Property<aws.codebuild.ProjectSourceAuth>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codebuild.ProjectSourceAuth>"
     },
     "SourceIdentifier" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-sourceidentifier",
@@ -40,7 +40,7 @@
     "GitSubmodulesConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-gitsubmodulesconfig",
       "$ref" : "AWS_CodeBuild_Project.GitSubmodulesConfig.schema.json",
-      "javaType" : "aws.Property<aws.codebuild.ProjectGitSubmodulesConfig>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codebuild.ProjectGitSubmodulesConfig>"
     },
     "InsecureSsl" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-insecuressl",

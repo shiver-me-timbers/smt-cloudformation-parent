@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.cloudfront.DistributionResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<DistributionResource>", "aws.HasCondition<DistributionResource>", "aws.HasAttributes<DistributionAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.cloudfront.DistributionResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<DistributionResource>", "shiver.me.timbers.aws.HasCondition<DistributionResource>", "shiver.me.timbers.aws.HasAttributes<DistributionAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

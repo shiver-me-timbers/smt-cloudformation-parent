@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.config.DeliveryChannelResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<DeliveryChannelResource>", "aws.HasCondition<DeliveryChannelResource>" ],
+  "javaType" : "shiver.me.timbers.aws.config.DeliveryChannelResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<DeliveryChannelResource>", "shiver.me.timbers.aws.HasCondition<DeliveryChannelResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

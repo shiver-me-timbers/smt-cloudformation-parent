@@ -4,5 +4,5 @@
   "title" : "DestinationAttributes",
   "type" : "string",
   "enum" : [ "Arn" ],
-  "javaType" : "aws.logs.DestinationAttributes"
+  "javaType" : "shiver.me.timbers.aws.logs.DestinationAttributes"
 }

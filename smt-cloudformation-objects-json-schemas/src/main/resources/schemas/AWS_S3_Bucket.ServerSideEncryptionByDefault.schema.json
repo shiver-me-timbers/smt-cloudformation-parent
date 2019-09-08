@@ -4,8 +4,8 @@
   "title" : "BucketServerSideEncryptionByDefault",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-serversideencryptionbydefault.html",
   "type" : "object",
-  "javaType" : "aws.s3.BucketServerSideEncryptionByDefault",
-  "javaInterfaces" : [ "aws.Property<BucketServerSideEncryptionByDefault>" ],
+  "javaType" : "shiver.me.timbers.aws.s3.BucketServerSideEncryptionByDefault",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BucketServerSideEncryptionByDefault>" ],
   "properties" : {
     "KMSMasterKeyID" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-serversideencryptionbydefault.html#cfn-s3-bucket-serversideencryptionbydefault-kmsmasterkeyid",

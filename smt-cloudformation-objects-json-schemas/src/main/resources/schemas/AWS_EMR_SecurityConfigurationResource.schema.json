@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.emr.SecurityConfigurationResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<SecurityConfigurationResource>", "aws.HasCondition<SecurityConfigurationResource>" ],
+  "javaType" : "shiver.me.timbers.aws.emr.SecurityConfigurationResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<SecurityConfigurationResource>", "shiver.me.timbers.aws.HasCondition<SecurityConfigurationResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

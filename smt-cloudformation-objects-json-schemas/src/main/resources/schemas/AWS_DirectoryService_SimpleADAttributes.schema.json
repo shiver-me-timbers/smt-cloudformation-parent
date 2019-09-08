@@ -4,5 +4,5 @@
   "title" : "SimpleADAttributes",
   "type" : "string",
   "enum" : [ "Alias", "DnsIpAddresses" ],
-  "javaType" : "aws.directoryservice.SimpleADAttributes"
+  "javaType" : "shiver.me.timbers.aws.directoryservice.SimpleADAttributes"
 }

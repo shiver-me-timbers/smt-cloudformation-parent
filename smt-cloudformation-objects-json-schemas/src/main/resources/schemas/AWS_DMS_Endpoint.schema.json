@@ -4,7 +4,7 @@
   "title" : "Endpoint",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html",
   "type" : "object",
-  "javaType" : "aws.dms.Endpoint",
+  "javaType" : "shiver.me.timbers.aws.dms.Endpoint",
   "properties" : {
     "KmsKeyId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-kmskeyid",
@@ -24,12 +24,12 @@
     "ElasticsearchSettings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-elasticsearchsettings",
       "$ref" : "AWS_DMS_Endpoint.ElasticsearchSettings.schema.json",
-      "javaType" : "aws.Property<aws.dms.EndpointElasticsearchSettings>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.dms.EndpointElasticsearchSettings>"
     },
     "S3Settings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-s3settings",
       "$ref" : "AWS_DMS_Endpoint.S3Settings.schema.json",
-      "javaType" : "aws.Property<aws.dms.EndpointS3Settings>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.dms.EndpointS3Settings>"
     },
     "EngineName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-enginename",
@@ -39,12 +39,12 @@
     "DynamoDbSettings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-dynamodbsettings",
       "$ref" : "AWS_DMS_Endpoint.DynamoDbSettings.schema.json",
-      "javaType" : "aws.Property<aws.dms.EndpointDynamoDbSettings>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.dms.EndpointDynamoDbSettings>"
     },
     "KinesisSettings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-kinesissettings",
       "$ref" : "AWS_DMS_Endpoint.KinesisSettings.schema.json",
-      "javaType" : "aws.Property<aws.dms.EndpointKinesisSettings>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.dms.EndpointKinesisSettings>"
     },
     "Username" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-username",
@@ -76,7 +76,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     },
     "EndpointIdentifier" : {
@@ -97,7 +97,7 @@
     "MongoDbSettings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-mongodbsettings",
       "$ref" : "AWS_DMS_Endpoint.MongoDbSettings.schema.json",
-      "javaType" : "aws.Property<aws.dms.EndpointMongoDbSettings>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.dms.EndpointMongoDbSettings>"
     }
   }
 }

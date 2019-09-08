@@ -4,5 +4,5 @@
   "title" : "PlacementAttributes",
   "type" : "string",
   "enum" : [ "PlacementName", "ProjectName" ],
-  "javaType" : "aws.iot1click.PlacementAttributes"
+  "javaType" : "shiver.me.timbers.aws.iot1click.PlacementAttributes"
 }

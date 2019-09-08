@@ -4,5 +4,5 @@
   "title" : "ApiKeyAttributes",
   "type" : "string",
   "enum" : [ "ApiKey", "Arn" ],
-  "javaType" : "aws.appsync.ApiKeyAttributes"
+  "javaType" : "shiver.me.timbers.aws.appsync.ApiKeyAttributes"
 }

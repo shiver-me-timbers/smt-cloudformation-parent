@@ -4,18 +4,18 @@
   "title" : "ApplicationReferenceDataSourceMappingParameters",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationreferencedatasource-mappingparameters.html",
   "type" : "object",
-  "javaType" : "aws.kinesisanalyticsv2.ApplicationReferenceDataSourceMappingParameters",
-  "javaInterfaces" : [ "aws.Property<ApplicationReferenceDataSourceMappingParameters>" ],
+  "javaType" : "shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationReferenceDataSourceMappingParameters",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ApplicationReferenceDataSourceMappingParameters>" ],
   "properties" : {
     "JSONMappingParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationreferencedatasource-mappingparameters.html#cfn-kinesisanalyticsv2-applicationreferencedatasource-mappingparameters-jsonmappingparameters",
       "$ref" : "AWS_KinesisAnalyticsV2_ApplicationReferenceDataSource.JSONMappingParameters.schema.json",
-      "javaType" : "aws.Property<aws.kinesisanalyticsv2.ApplicationReferenceDataSourceJSONMappingParameters>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationReferenceDataSourceJSONMappingParameters>"
     },
     "CSVMappingParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationreferencedatasource-mappingparameters.html#cfn-kinesisanalyticsv2-applicationreferencedatasource-mappingparameters-csvmappingparameters",
       "$ref" : "AWS_KinesisAnalyticsV2_ApplicationReferenceDataSource.CSVMappingParameters.schema.json",
-      "javaType" : "aws.Property<aws.kinesisanalyticsv2.ApplicationReferenceDataSourceCSVMappingParameters>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationReferenceDataSourceCSVMappingParameters>"
     }
   }
 }

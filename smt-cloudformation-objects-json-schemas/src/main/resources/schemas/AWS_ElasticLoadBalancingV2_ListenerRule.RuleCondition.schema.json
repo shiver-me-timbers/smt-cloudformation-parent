@@ -4,8 +4,8 @@
   "title" : "ListenerRuleRuleCondition",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-conditions.html",
   "type" : "object",
-  "javaType" : "aws.elasticloadbalancingv2.ListenerRuleRuleCondition",
-  "javaInterfaces" : [ "aws.Property<ListenerRuleRuleCondition>" ],
+  "javaType" : "shiver.me.timbers.aws.elasticloadbalancingv2.ListenerRuleRuleCondition",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ListenerRuleRuleCondition>" ],
   "properties" : {
     "Field" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-conditions.html#cfn-elasticloadbalancingv2-listenerrule-conditions-field",
@@ -15,32 +15,32 @@
     "HostHeaderConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-conditions.html#cfn-elasticloadbalancingv2-listenerrule-rulecondition-hostheaderconfig",
       "$ref" : "AWS_ElasticLoadBalancingV2_ListenerRule.HostHeaderConfig.schema.json",
-      "javaType" : "aws.Property<aws.elasticloadbalancingv2.ListenerRuleHostHeaderConfig>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.elasticloadbalancingv2.ListenerRuleHostHeaderConfig>"
     },
     "HttpHeaderConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-conditions.html#cfn-elasticloadbalancingv2-listenerrule-rulecondition-httpheaderconfig",
       "$ref" : "AWS_ElasticLoadBalancingV2_ListenerRule.HttpHeaderConfig.schema.json",
-      "javaType" : "aws.Property<aws.elasticloadbalancingv2.ListenerRuleHttpHeaderConfig>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.elasticloadbalancingv2.ListenerRuleHttpHeaderConfig>"
     },
     "HttpRequestMethodConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-conditions.html#cfn-elasticloadbalancingv2-listenerrule-rulecondition-httprequestmethodconfig",
       "$ref" : "AWS_ElasticLoadBalancingV2_ListenerRule.HttpRequestMethodConfig.schema.json",
-      "javaType" : "aws.Property<aws.elasticloadbalancingv2.ListenerRuleHttpRequestMethodConfig>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.elasticloadbalancingv2.ListenerRuleHttpRequestMethodConfig>"
     },
     "PathPatternConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-conditions.html#cfn-elasticloadbalancingv2-listenerrule-rulecondition-pathpatternconfig",
       "$ref" : "AWS_ElasticLoadBalancingV2_ListenerRule.PathPatternConfig.schema.json",
-      "javaType" : "aws.Property<aws.elasticloadbalancingv2.ListenerRulePathPatternConfig>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.elasticloadbalancingv2.ListenerRulePathPatternConfig>"
     },
     "QueryStringConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-conditions.html#cfn-elasticloadbalancingv2-listenerrule-rulecondition-querystringconfig",
       "$ref" : "AWS_ElasticLoadBalancingV2_ListenerRule.QueryStringConfig.schema.json",
-      "javaType" : "aws.Property<aws.elasticloadbalancingv2.ListenerRuleQueryStringConfig>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.elasticloadbalancingv2.ListenerRuleQueryStringConfig>"
     },
     "SourceIpConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-conditions.html#cfn-elasticloadbalancingv2-listenerrule-rulecondition-sourceipconfig",
       "$ref" : "AWS_ElasticLoadBalancingV2_ListenerRule.SourceIpConfig.schema.json",
-      "javaType" : "aws.Property<aws.elasticloadbalancingv2.ListenerRuleSourceIpConfig>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.elasticloadbalancingv2.ListenerRuleSourceIpConfig>"
     },
     "Values" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-conditions.html#cfn-elasticloadbalancingv2-listenerrule-conditions-values",

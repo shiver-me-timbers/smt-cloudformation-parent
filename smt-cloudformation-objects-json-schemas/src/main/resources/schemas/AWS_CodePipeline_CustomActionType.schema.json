@@ -4,7 +4,7 @@
   "title" : "CustomActionType",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html",
   "type" : "object",
-  "javaType" : "aws.codepipeline.CustomActionType",
+  "javaType" : "shiver.me.timbers.aws.codepipeline.CustomActionType",
   "properties" : {
     "Category" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-category",
@@ -17,18 +17,18 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_CodePipeline_CustomActionType.ConfigurationProperties.schema.json",
-        "javaType" : "aws.Property<aws.codepipeline.CustomActionTypeConfigurationProperties>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codepipeline.CustomActionTypeConfigurationProperties>"
       }
     },
     "InputArtifactDetails" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-inputartifactdetails",
       "$ref" : "AWS_CodePipeline_CustomActionType.ArtifactDetails.schema.json",
-      "javaType" : "aws.Property<aws.codepipeline.CustomActionTypeArtifactDetails>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codepipeline.CustomActionTypeArtifactDetails>"
     },
     "OutputArtifactDetails" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-outputartifactdetails",
       "$ref" : "AWS_CodePipeline_CustomActionType.ArtifactDetails.schema.json",
-      "javaType" : "aws.Property<aws.codepipeline.CustomActionTypeArtifactDetails>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codepipeline.CustomActionTypeArtifactDetails>"
     },
     "Provider" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-provider",
@@ -38,7 +38,7 @@
     "Settings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-settings",
       "$ref" : "AWS_CodePipeline_CustomActionType.Settings.schema.json",
-      "javaType" : "aws.Property<aws.codepipeline.CustomActionTypeSettings>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codepipeline.CustomActionTypeSettings>"
     },
     "Version" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-version",

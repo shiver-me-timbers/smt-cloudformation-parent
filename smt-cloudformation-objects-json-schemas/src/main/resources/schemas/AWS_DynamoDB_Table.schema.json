@@ -4,14 +4,14 @@
   "title" : "Table",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html",
   "type" : "object",
-  "javaType" : "aws.dynamodb.Table",
+  "javaType" : "shiver.me.timbers.aws.dynamodb.Table",
   "properties" : {
     "AttributeDefinitions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-attributedef",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_DynamoDB_Table.AttributeDefinition.schema.json",
-        "javaType" : "aws.Property<aws.dynamodb.TableAttributeDefinition>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.dynamodb.TableAttributeDefinition>"
       }
     },
     "BillingMode" : {
@@ -24,7 +24,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_DynamoDB_Table.GlobalSecondaryIndex.schema.json",
-        "javaType" : "aws.Property<aws.dynamodb.TableGlobalSecondaryIndex>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.dynamodb.TableGlobalSecondaryIndex>"
       }
     },
     "KeySchema" : {
@@ -33,7 +33,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_DynamoDB_Table.KeySchema.schema.json",
-        "javaType" : "aws.Property<aws.dynamodb.TableKeySchema>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.dynamodb.TableKeySchema>"
       }
     },
     "LocalSecondaryIndexes" : {
@@ -41,28 +41,28 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_DynamoDB_Table.LocalSecondaryIndex.schema.json",
-        "javaType" : "aws.Property<aws.dynamodb.TableLocalSecondaryIndex>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.dynamodb.TableLocalSecondaryIndex>"
       }
     },
     "PointInTimeRecoverySpecification" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-pointintimerecoveryspecification",
       "$ref" : "AWS_DynamoDB_Table.PointInTimeRecoverySpecification.schema.json",
-      "javaType" : "aws.Property<aws.dynamodb.TablePointInTimeRecoverySpecification>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.dynamodb.TablePointInTimeRecoverySpecification>"
     },
     "ProvisionedThroughput" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-provisionedthroughput",
       "$ref" : "AWS_DynamoDB_Table.ProvisionedThroughput.schema.json",
-      "javaType" : "aws.Property<aws.dynamodb.TableProvisionedThroughput>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.dynamodb.TableProvisionedThroughput>"
     },
     "SSESpecification" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-ssespecification",
       "$ref" : "AWS_DynamoDB_Table.SSESpecification.schema.json",
-      "javaType" : "aws.Property<aws.dynamodb.TableSSESpecification>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.dynamodb.TableSSESpecification>"
     },
     "StreamSpecification" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-streamspecification",
       "$ref" : "AWS_DynamoDB_Table.StreamSpecification.schema.json",
-      "javaType" : "aws.Property<aws.dynamodb.TableStreamSpecification>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.dynamodb.TableStreamSpecification>"
     },
     "TableName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-tablename",
@@ -74,13 +74,13 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     },
     "TimeToLiveSpecification" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-timetolivespecification",
       "$ref" : "AWS_DynamoDB_Table.TimeToLiveSpecification.schema.json",
-      "javaType" : "aws.Property<aws.dynamodb.TableTimeToLiveSpecification>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.dynamodb.TableTimeToLiveSpecification>"
     }
   }
 }

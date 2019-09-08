@@ -4,8 +4,8 @@
   "title" : "ApplicationPropertyGroup",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-propertygroup.html",
   "type" : "object",
-  "javaType" : "aws.kinesisanalyticsv2.ApplicationPropertyGroup",
-  "javaInterfaces" : [ "aws.Property<ApplicationPropertyGroup>" ],
+  "javaType" : "shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationPropertyGroup",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ApplicationPropertyGroup>" ],
   "properties" : {
     "PropertyMap" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-propertygroup.html#cfn-kinesisanalyticsv2-application-propertygroup-propertymap",

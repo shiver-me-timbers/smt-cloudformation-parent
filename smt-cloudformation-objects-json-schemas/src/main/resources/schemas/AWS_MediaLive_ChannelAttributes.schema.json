@@ -4,5 +4,5 @@
   "title" : "ChannelAttributes",
   "type" : "string",
   "enum" : [ "Arn", "Inputs" ],
-  "javaType" : "aws.medialive.ChannelAttributes"
+  "javaType" : "shiver.me.timbers.aws.medialive.ChannelAttributes"
 }

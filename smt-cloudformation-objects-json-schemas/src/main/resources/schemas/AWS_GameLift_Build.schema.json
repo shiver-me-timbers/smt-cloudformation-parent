@@ -4,7 +4,7 @@
   "title" : "Build",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-build.html",
   "type" : "object",
-  "javaType" : "aws.gamelift.Build",
+  "javaType" : "shiver.me.timbers.aws.gamelift.Build",
   "properties" : {
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-build.html#cfn-gamelift-build-name",
@@ -14,7 +14,7 @@
     "StorageLocation" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-build.html#cfn-gamelift-build-storagelocation",
       "$ref" : "AWS_GameLift_Build.S3Location.schema.json",
-      "javaType" : "aws.Property<aws.gamelift.BuildS3Location>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.gamelift.BuildS3Location>"
     },
     "Version" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-build.html#cfn-gamelift-build-version",

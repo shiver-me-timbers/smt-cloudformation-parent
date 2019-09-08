@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.opsworks.UserProfileResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<UserProfileResource>", "aws.HasCondition<UserProfileResource>", "aws.HasAttributes<UserProfileAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.opsworks.UserProfileResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<UserProfileResource>", "shiver.me.timbers.aws.HasCondition<UserProfileResource>", "shiver.me.timbers.aws.HasAttributes<UserProfileAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

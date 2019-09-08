@@ -4,5 +4,5 @@
   "title" : "PipelineAttributes",
   "type" : "string",
   "enum" : [ "Version" ],
-  "javaType" : "aws.codepipeline.PipelineAttributes"
+  "javaType" : "shiver.me.timbers.aws.codepipeline.PipelineAttributes"
 }

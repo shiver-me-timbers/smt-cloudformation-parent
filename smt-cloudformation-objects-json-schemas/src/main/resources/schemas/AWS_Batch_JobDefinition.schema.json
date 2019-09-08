@@ -4,7 +4,7 @@
   "title" : "JobDefinition",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html",
   "type" : "object",
-  "javaType" : "aws.batch.JobDefinition",
+  "javaType" : "shiver.me.timbers.aws.batch.JobDefinition",
   "properties" : {
     "Type" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-type",
@@ -19,17 +19,17 @@
     "NodeProperties" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-nodeproperties",
       "$ref" : "AWS_Batch_JobDefinition.NodeProperties.schema.json",
-      "javaType" : "aws.Property<aws.batch.JobDefinitionNodeProperties>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.batch.JobDefinitionNodeProperties>"
     },
     "Timeout" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-timeout",
       "$ref" : "AWS_Batch_JobDefinition.Timeout.schema.json",
-      "javaType" : "aws.Property<aws.batch.JobDefinitionTimeout>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.batch.JobDefinitionTimeout>"
     },
     "ContainerProperties" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-containerproperties",
       "$ref" : "AWS_Batch_JobDefinition.ContainerProperties.schema.json",
-      "javaType" : "aws.Property<aws.batch.JobDefinitionContainerProperties>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.batch.JobDefinitionContainerProperties>"
     },
     "JobDefinitionName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-jobdefinitionname",
@@ -39,7 +39,7 @@
     "RetryStrategy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-retrystrategy",
       "$ref" : "AWS_Batch_JobDefinition.RetryStrategy.schema.json",
-      "javaType" : "aws.Property<aws.batch.JobDefinitionRetryStrategy>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.batch.JobDefinitionRetryStrategy>"
     }
   }
 }

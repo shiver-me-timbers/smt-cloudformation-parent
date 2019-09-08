@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.waf.IPSetResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<IPSetResource>", "aws.HasCondition<IPSetResource>" ],
+  "javaType" : "shiver.me.timbers.aws.waf.IPSetResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<IPSetResource>", "shiver.me.timbers.aws.HasCondition<IPSetResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

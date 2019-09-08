@@ -4,20 +4,20 @@
   "title" : "FunctionDefinitionFunctionDefinitionVersion",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functiondefinitionversion.html",
   "type" : "object",
-  "javaType" : "aws.greengrass.FunctionDefinitionFunctionDefinitionVersion",
-  "javaInterfaces" : [ "aws.Property<FunctionDefinitionFunctionDefinitionVersion>" ],
+  "javaType" : "shiver.me.timbers.aws.greengrass.FunctionDefinitionFunctionDefinitionVersion",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<FunctionDefinitionFunctionDefinitionVersion>" ],
   "properties" : {
     "DefaultConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functiondefinitionversion.html#cfn-greengrass-functiondefinition-functiondefinitionversion-defaultconfig",
       "$ref" : "AWS_Greengrass_FunctionDefinitionVersion.DefaultConfig.schema.json",
-      "javaType" : "aws.Property<aws.greengrass.FunctionDefinitionDefaultConfig>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.greengrass.FunctionDefinitionDefaultConfig>"
     },
     "Functions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functiondefinitionversion.html#cfn-greengrass-functiondefinition-functiondefinitionversion-functions",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Greengrass_FunctionDefinitionVersion.Function.schema.json",
-        "javaType" : "aws.Property<aws.greengrass.FunctionDefinitionFunction>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.greengrass.FunctionDefinitionFunction>"
       }
     }
   }

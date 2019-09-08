@@ -4,8 +4,8 @@
   "title" : "FleetIpPermission",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-ec2inboundpermission.html",
   "type" : "object",
-  "javaType" : "aws.gamelift.FleetIpPermission",
-  "javaInterfaces" : [ "aws.Property<FleetIpPermission>" ],
+  "javaType" : "shiver.me.timbers.aws.gamelift.FleetIpPermission",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<FleetIpPermission>" ],
   "properties" : {
     "FromPort" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-ec2inboundpermission.html#cfn-gamelift-fleet-ec2inboundpermissions-fromport",

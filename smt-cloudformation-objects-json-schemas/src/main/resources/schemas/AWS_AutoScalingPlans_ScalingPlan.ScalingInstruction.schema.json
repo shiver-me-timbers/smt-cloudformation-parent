@@ -4,8 +4,8 @@
   "title" : "ScalingPlanScalingInstruction",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html",
   "type" : "object",
-  "javaType" : "aws.autoscalingplans.ScalingPlanScalingInstruction",
-  "javaInterfaces" : [ "aws.Property<ScalingPlanScalingInstruction>" ],
+  "javaType" : "shiver.me.timbers.aws.autoscalingplans.ScalingPlanScalingInstruction",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ScalingPlanScalingInstruction>" ],
   "properties" : {
     "DisableDynamicScaling" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-disabledynamicscaling",
@@ -42,7 +42,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_AutoScalingPlans_ScalingPlan.TargetTrackingConfiguration.schema.json",
-        "javaType" : "aws.Property<aws.autoscalingplans.ScalingPlanTargetTrackingConfiguration>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.autoscalingplans.ScalingPlanTargetTrackingConfiguration>"
       }
     },
     "PredictiveScalingMaxCapacityBuffer" : {
@@ -53,12 +53,12 @@
     "CustomizedLoadMetricSpecification" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-customizedloadmetricspecification",
       "$ref" : "AWS_AutoScalingPlans_ScalingPlan.CustomizedLoadMetricSpecification.schema.json",
-      "javaType" : "aws.Property<aws.autoscalingplans.ScalingPlanCustomizedLoadMetricSpecification>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.autoscalingplans.ScalingPlanCustomizedLoadMetricSpecification>"
     },
     "PredefinedLoadMetricSpecification" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-predefinedloadmetricspecification",
       "$ref" : "AWS_AutoScalingPlans_ScalingPlan.PredefinedLoadMetricSpecification.schema.json",
-      "javaType" : "aws.Property<aws.autoscalingplans.ScalingPlanPredefinedLoadMetricSpecification>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.autoscalingplans.ScalingPlanPredefinedLoadMetricSpecification>"
     },
     "ResourceId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-resourceid",

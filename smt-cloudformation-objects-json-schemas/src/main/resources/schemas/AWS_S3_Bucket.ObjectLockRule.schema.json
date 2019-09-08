@@ -4,13 +4,13 @@
   "title" : "BucketObjectLockRule",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-objectlockrule.html",
   "type" : "object",
-  "javaType" : "aws.s3.BucketObjectLockRule",
-  "javaInterfaces" : [ "aws.Property<BucketObjectLockRule>" ],
+  "javaType" : "shiver.me.timbers.aws.s3.BucketObjectLockRule",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BucketObjectLockRule>" ],
   "properties" : {
     "DefaultRetention" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-objectlockrule.html#cfn-s3-bucket-objectlockrule-defaultretention",
       "$ref" : "AWS_S3_Bucket.DefaultRetention.schema.json",
-      "javaType" : "aws.Property<aws.s3.BucketDefaultRetention>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.BucketDefaultRetention>"
     }
   }
 }

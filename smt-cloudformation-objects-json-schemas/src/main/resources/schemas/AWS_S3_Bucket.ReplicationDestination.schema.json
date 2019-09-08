@@ -4,13 +4,13 @@
   "title" : "BucketReplicationDestination",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules-destination.html",
   "type" : "object",
-  "javaType" : "aws.s3.BucketReplicationDestination",
-  "javaInterfaces" : [ "aws.Property<BucketReplicationDestination>" ],
+  "javaType" : "shiver.me.timbers.aws.s3.BucketReplicationDestination",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BucketReplicationDestination>" ],
   "properties" : {
     "AccessControlTranslation" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules-destination.html#cfn-s3-bucket-replicationdestination-accesscontroltranslation",
       "$ref" : "AWS_S3_Bucket.AccessControlTranslation.schema.json",
-      "javaType" : "aws.Property<aws.s3.BucketAccessControlTranslation>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.BucketAccessControlTranslation>"
     },
     "Account" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules-destination.html#cfn-s3-bucket-replicationdestination-account",
@@ -25,7 +25,7 @@
     "EncryptionConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules-destination.html#cfn-s3-bucket-replicationdestination-encryptionconfiguration",
       "$ref" : "AWS_S3_Bucket.EncryptionConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.s3.BucketEncryptionConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.BucketEncryptionConfiguration>"
     },
     "StorageClass" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules-destination.html#cfn-s3-bucket-replicationconfiguration-rules-destination-storageclass",

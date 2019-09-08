@@ -4,17 +4,17 @@
   "title" : "Permissions",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lakeformation-permissions.html",
   "type" : "object",
-  "javaType" : "aws.lakeformation.Permissions",
+  "javaType" : "shiver.me.timbers.aws.lakeformation.Permissions",
   "properties" : {
     "DataLakePrincipal" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lakeformation-permissions.html#cfn-lakeformation-permissions-datalakeprincipal",
       "$ref" : "AWS_LakeFormation_Permissions.DataLakePrincipal.schema.json",
-      "javaType" : "aws.Property<aws.lakeformation.PermissionsDataLakePrincipal>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.lakeformation.PermissionsDataLakePrincipal>"
     },
     "Resource" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lakeformation-permissions.html#cfn-lakeformation-permissions-resource",
       "$ref" : "AWS_LakeFormation_Permissions.DatabaseResource.schema.json",
-      "javaType" : "aws.Property<aws.lakeformation.PermissionsResource>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.lakeformation.PermissionsResource>"
     },
     "Permissions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lakeformation-permissions.html#cfn-lakeformation-permissions-permissions",

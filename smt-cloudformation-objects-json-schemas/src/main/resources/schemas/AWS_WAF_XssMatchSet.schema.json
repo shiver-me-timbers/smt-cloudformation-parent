@@ -4,7 +4,7 @@
   "title" : "XssMatchSet",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-xssmatchset.html",
   "type" : "object",
-  "javaType" : "aws.waf.XssMatchSet",
+  "javaType" : "shiver.me.timbers.aws.waf.XssMatchSet",
   "properties" : {
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-xssmatchset.html#cfn-waf-xssmatchset-name",
@@ -17,7 +17,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_WAF_XssMatchSet.XssMatchTuple.schema.json",
-        "javaType" : "aws.Property<aws.waf.XssMatchSetXssMatchTuple>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.waf.XssMatchSetXssMatchTuple>"
       }
     }
   }

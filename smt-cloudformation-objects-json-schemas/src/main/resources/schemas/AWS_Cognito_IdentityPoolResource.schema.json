@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.cognito.IdentityPoolResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<IdentityPoolResource>", "aws.HasCondition<IdentityPoolResource>", "aws.HasAttributes<IdentityPoolAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.cognito.IdentityPoolResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<IdentityPoolResource>", "shiver.me.timbers.aws.HasCondition<IdentityPoolResource>", "shiver.me.timbers.aws.HasAttributes<IdentityPoolAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

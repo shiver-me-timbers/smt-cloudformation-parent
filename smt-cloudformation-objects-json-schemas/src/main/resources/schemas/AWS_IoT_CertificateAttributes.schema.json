@@ -4,5 +4,5 @@
   "title" : "CertificateAttributes",
   "type" : "string",
   "enum" : [ "Arn" ],
-  "javaType" : "aws.iot.CertificateAttributes"
+  "javaType" : "shiver.me.timbers.aws.iot.CertificateAttributes"
 }

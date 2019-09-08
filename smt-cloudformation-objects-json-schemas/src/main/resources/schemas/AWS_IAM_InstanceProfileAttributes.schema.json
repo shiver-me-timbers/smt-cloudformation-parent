@@ -4,5 +4,5 @@
   "title" : "InstanceProfileAttributes",
   "type" : "string",
   "enum" : [ "Arn" ],
-  "javaType" : "aws.iam.InstanceProfileAttributes"
+  "javaType" : "shiver.me.timbers.aws.iam.InstanceProfileAttributes"
 }

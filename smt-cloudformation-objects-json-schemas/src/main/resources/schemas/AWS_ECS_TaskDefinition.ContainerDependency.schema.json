@@ -4,8 +4,8 @@
   "title" : "TaskDefinitionContainerDependency",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdependency.html",
   "type" : "object",
-  "javaType" : "aws.ecs.TaskDefinitionContainerDependency",
-  "javaInterfaces" : [ "aws.Property<TaskDefinitionContainerDependency>" ],
+  "javaType" : "shiver.me.timbers.aws.ecs.TaskDefinitionContainerDependency",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TaskDefinitionContainerDependency>" ],
   "properties" : {
     "Condition" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdependency.html#cfn-ecs-taskdefinition-containerdependency-condition",

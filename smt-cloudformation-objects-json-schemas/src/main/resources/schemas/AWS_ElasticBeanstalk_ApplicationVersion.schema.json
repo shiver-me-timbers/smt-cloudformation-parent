@@ -4,7 +4,7 @@
   "title" : "ApplicationVersion",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-version.html",
   "type" : "object",
-  "javaType" : "aws.elasticbeanstalk.ApplicationVersion",
+  "javaType" : "shiver.me.timbers.aws.elasticbeanstalk.ApplicationVersion",
   "properties" : {
     "ApplicationName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-version.html#cfn-elasticbeanstalk-applicationversion-applicationname",
@@ -19,7 +19,7 @@
     "SourceBundle" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-version.html#cfn-elasticbeanstalk-applicationversion-sourcebundle",
       "$ref" : "AWS_ElasticBeanstalk_ApplicationVersion.SourceBundle.schema.json",
-      "javaType" : "aws.Property<aws.elasticbeanstalk.ApplicationVersionSourceBundle>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.elasticbeanstalk.ApplicationVersionSourceBundle>"
     }
   }
 }

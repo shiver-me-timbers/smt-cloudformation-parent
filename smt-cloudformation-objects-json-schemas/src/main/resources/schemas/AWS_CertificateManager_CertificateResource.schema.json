@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.certificatemanager.CertificateResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<CertificateResource>", "aws.HasCondition<CertificateResource>" ],
+  "javaType" : "shiver.me.timbers.aws.certificatemanager.CertificateResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<CertificateResource>", "shiver.me.timbers.aws.HasCondition<CertificateResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

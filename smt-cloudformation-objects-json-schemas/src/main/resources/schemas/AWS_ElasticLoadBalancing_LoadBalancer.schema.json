@@ -4,12 +4,12 @@
   "title" : "LoadBalancer",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html",
   "type" : "object",
-  "javaType" : "aws.elasticloadbalancing.LoadBalancer",
+  "javaType" : "shiver.me.timbers.aws.elasticloadbalancing.LoadBalancer",
   "properties" : {
     "AccessLoggingPolicy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-accessloggingpolicy",
       "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.AccessLoggingPolicy.schema.json",
-      "javaType" : "aws.Property<aws.elasticloadbalancing.LoadBalancerAccessLoggingPolicy>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.elasticloadbalancing.LoadBalancerAccessLoggingPolicy>"
     },
     "AppCookieStickinessPolicy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-appcookiestickinesspolicy",
@@ -17,7 +17,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.AppCookieStickinessPolicy.schema.json",
-        "javaType" : "aws.Property<aws.elasticloadbalancing.LoadBalancerAppCookieStickinessPolicy>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.elasticloadbalancing.LoadBalancerAppCookieStickinessPolicy>"
       }
     },
     "AvailabilityZones" : {
@@ -32,12 +32,12 @@
     "ConnectionDrainingPolicy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-connectiondrainingpolicy",
       "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.ConnectionDrainingPolicy.schema.json",
-      "javaType" : "aws.Property<aws.elasticloadbalancing.LoadBalancerConnectionDrainingPolicy>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.elasticloadbalancing.LoadBalancerConnectionDrainingPolicy>"
     },
     "ConnectionSettings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-connectionsettings",
       "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.ConnectionSettings.schema.json",
-      "javaType" : "aws.Property<aws.elasticloadbalancing.LoadBalancerConnectionSettings>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.elasticloadbalancing.LoadBalancerConnectionSettings>"
     },
     "CrossZone" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-crosszone",
@@ -47,7 +47,7 @@
     "HealthCheck" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-healthcheck",
       "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.HealthCheck.schema.json",
-      "javaType" : "aws.Property<aws.elasticloadbalancing.LoadBalancerHealthCheck>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.elasticloadbalancing.LoadBalancerHealthCheck>"
     },
     "Instances" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-instances",
@@ -64,7 +64,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.LBCookieStickinessPolicy.schema.json",
-        "javaType" : "aws.Property<aws.elasticloadbalancing.LoadBalancerLBCookieStickinessPolicy>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.elasticloadbalancing.LoadBalancerLBCookieStickinessPolicy>"
       }
     },
     "Listeners" : {
@@ -73,7 +73,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.Listeners.schema.json",
-        "javaType" : "aws.Property<aws.elasticloadbalancing.LoadBalancerListeners>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.elasticloadbalancing.LoadBalancerListeners>"
       }
     },
     "LoadBalancerName" : {
@@ -87,7 +87,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.Policies.schema.json",
-        "javaType" : "aws.Property<aws.elasticloadbalancing.LoadBalancerPolicies>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.elasticloadbalancing.LoadBalancerPolicies>"
       }
     },
     "Scheme" : {
@@ -118,7 +118,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     }
   }

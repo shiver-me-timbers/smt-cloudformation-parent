@@ -4,18 +4,18 @@
   "title" : "RemediationConfigurationRemediationParameterValue",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-remediationconfiguration-remediationparametervalue.html",
   "type" : "object",
-  "javaType" : "aws.config.RemediationConfigurationRemediationParameterValue",
-  "javaInterfaces" : [ "aws.Property<RemediationConfigurationRemediationParameterValue>" ],
+  "javaType" : "shiver.me.timbers.aws.config.RemediationConfigurationRemediationParameterValue",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<RemediationConfigurationRemediationParameterValue>" ],
   "properties" : {
     "ResourceValue" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-remediationconfiguration-remediationparametervalue.html#cfn-config-remediationconfiguration-remediationparametervalue-resourcevalue",
       "$ref" : "AWS_Config_RemediationConfiguration.ResourceValue.schema.json",
-      "javaType" : "aws.Property<aws.config.RemediationConfigurationResourceValue>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.config.RemediationConfigurationResourceValue>"
     },
     "StaticValue" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-remediationconfiguration-remediationparametervalue.html#cfn-config-remediationconfiguration-remediationparametervalue-staticvalue",
       "$ref" : "AWS_Config_RemediationConfiguration.StaticValue.schema.json",
-      "javaType" : "aws.Property<aws.config.RemediationConfigurationStaticValue>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.config.RemediationConfigurationStaticValue>"
     }
   }
 }

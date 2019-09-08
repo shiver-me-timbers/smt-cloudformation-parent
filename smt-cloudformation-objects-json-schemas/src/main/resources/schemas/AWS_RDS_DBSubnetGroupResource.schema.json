@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.rds.DBSubnetGroupResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<DBSubnetGroupResource>", "aws.HasCondition<DBSubnetGroupResource>" ],
+  "javaType" : "shiver.me.timbers.aws.rds.DBSubnetGroupResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<DBSubnetGroupResource>", "shiver.me.timbers.aws.HasCondition<DBSubnetGroupResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

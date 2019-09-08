@@ -4,5 +4,5 @@
   "title" : "ServiceAttributes",
   "type" : "string",
   "enum" : [ "Name" ],
-  "javaType" : "aws.ecs.ServiceAttributes"
+  "javaType" : "shiver.me.timbers.aws.ecs.ServiceAttributes"
 }

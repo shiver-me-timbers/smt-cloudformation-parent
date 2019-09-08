@@ -4,8 +4,8 @@
   "title" : "DeploymentMethodSetting",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription-methodsetting.html",
   "type" : "object",
-  "javaType" : "aws.apigateway.DeploymentMethodSetting",
-  "javaInterfaces" : [ "aws.Property<DeploymentMethodSetting>" ],
+  "javaType" : "shiver.me.timbers.aws.apigateway.DeploymentMethodSetting",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DeploymentMethodSetting>" ],
   "properties" : {
     "CacheDataEncrypted" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription-methodsetting.html#cfn-apigateway-deployment-stagedescription-methodsetting-cachedataencrypted",

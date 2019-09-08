@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.pinpoint.SegmentResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<SegmentResource>", "aws.HasCondition<SegmentResource>", "aws.HasAttributes<SegmentAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.pinpoint.SegmentResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<SegmentResource>", "shiver.me.timbers.aws.HasCondition<SegmentResource>", "shiver.me.timbers.aws.HasAttributes<SegmentAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

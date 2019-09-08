@@ -4,8 +4,8 @@
   "title" : "ClusterSpotProvisioningSpecification",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-spotprovisioningspecification.html",
   "type" : "object",
-  "javaType" : "aws.emr.ClusterSpotProvisioningSpecification",
-  "javaInterfaces" : [ "aws.Property<ClusterSpotProvisioningSpecification>" ],
+  "javaType" : "shiver.me.timbers.aws.emr.ClusterSpotProvisioningSpecification",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ClusterSpotProvisioningSpecification>" ],
   "properties" : {
     "BlockDurationMinutes" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-spotprovisioningspecification.html#cfn-elasticmapreduce-cluster-spotprovisioningspecification-blockdurationminutes",

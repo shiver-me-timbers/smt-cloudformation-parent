@@ -4,38 +4,38 @@
   "title" : "SegmentDemographic",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-segmentdimensions-demographic.html",
   "type" : "object",
-  "javaType" : "aws.pinpoint.SegmentDemographic",
-  "javaInterfaces" : [ "aws.Property<SegmentDemographic>" ],
+  "javaType" : "shiver.me.timbers.aws.pinpoint.SegmentDemographic",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<SegmentDemographic>" ],
   "properties" : {
     "AppVersion" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-segmentdimensions-demographic.html#cfn-pinpoint-segment-segmentdimensions-demographic-appversion",
       "$ref" : "AWS_Pinpoint_Segment.SetDimension.schema.json",
-      "javaType" : "aws.Property<aws.pinpoint.SegmentSetDimension>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpoint.SegmentSetDimension>"
     },
     "DeviceType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-segmentdimensions-demographic.html#cfn-pinpoint-segment-segmentdimensions-demographic-devicetype",
       "$ref" : "AWS_Pinpoint_Segment.SetDimension.schema.json",
-      "javaType" : "aws.Property<aws.pinpoint.SegmentSetDimension>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpoint.SegmentSetDimension>"
     },
     "Platform" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-segmentdimensions-demographic.html#cfn-pinpoint-segment-segmentdimensions-demographic-platform",
       "$ref" : "AWS_Pinpoint_Segment.SetDimension.schema.json",
-      "javaType" : "aws.Property<aws.pinpoint.SegmentSetDimension>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpoint.SegmentSetDimension>"
     },
     "Channel" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-segmentdimensions-demographic.html#cfn-pinpoint-segment-segmentdimensions-demographic-channel",
       "$ref" : "AWS_Pinpoint_Segment.SetDimension.schema.json",
-      "javaType" : "aws.Property<aws.pinpoint.SegmentSetDimension>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpoint.SegmentSetDimension>"
     },
     "Model" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-segmentdimensions-demographic.html#cfn-pinpoint-segment-segmentdimensions-demographic-model",
       "$ref" : "AWS_Pinpoint_Segment.SetDimension.schema.json",
-      "javaType" : "aws.Property<aws.pinpoint.SegmentSetDimension>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpoint.SegmentSetDimension>"
     },
     "Make" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-segmentdimensions-demographic.html#cfn-pinpoint-segment-segmentdimensions-demographic-make",
       "$ref" : "AWS_Pinpoint_Segment.SetDimension.schema.json",
-      "javaType" : "aws.Property<aws.pinpoint.SegmentSetDimension>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpoint.SegmentSetDimension>"
     }
   }
 }

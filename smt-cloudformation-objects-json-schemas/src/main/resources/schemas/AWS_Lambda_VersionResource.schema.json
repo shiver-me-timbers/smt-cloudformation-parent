@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.lambda.VersionResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<VersionResource>", "aws.HasCondition<VersionResource>", "aws.HasAttributes<VersionAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.lambda.VersionResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<VersionResource>", "shiver.me.timbers.aws.HasCondition<VersionResource>", "shiver.me.timbers.aws.HasAttributes<VersionAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

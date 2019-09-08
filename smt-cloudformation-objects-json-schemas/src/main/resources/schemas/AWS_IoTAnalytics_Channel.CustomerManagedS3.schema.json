@@ -4,8 +4,8 @@
   "title" : "ChannelCustomerManagedS3",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-channel-customermanageds3.html",
   "type" : "object",
-  "javaType" : "aws.iotanalytics.ChannelCustomerManagedS3",
-  "javaInterfaces" : [ "aws.Property<ChannelCustomerManagedS3>" ],
+  "javaType" : "shiver.me.timbers.aws.iotanalytics.ChannelCustomerManagedS3",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ChannelCustomerManagedS3>" ],
   "properties" : {
     "Bucket" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-channel-customermanageds3.html#cfn-iotanalytics-channel-customermanageds3-bucket",

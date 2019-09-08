@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.fsx.FileSystemResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<FileSystemResource>", "aws.HasCondition<FileSystemResource>" ],
+  "javaType" : "shiver.me.timbers.aws.fsx.FileSystemResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<FileSystemResource>", "shiver.me.timbers.aws.HasCondition<FileSystemResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

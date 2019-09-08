@@ -4,5 +4,5 @@
   "title" : "SubnetAttributes",
   "type" : "string",
   "enum" : [ "AvailabilityZone", "Ipv6CidrBlocks", "NetworkAclAssociationId", "VpcId" ],
-  "javaType" : "aws.ec2.SubnetAttributes"
+  "javaType" : "shiver.me.timbers.aws.ec2.SubnetAttributes"
 }

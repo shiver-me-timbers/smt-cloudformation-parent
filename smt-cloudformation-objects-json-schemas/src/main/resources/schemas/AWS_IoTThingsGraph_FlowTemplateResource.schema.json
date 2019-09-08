@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.iotthingsgraph.FlowTemplateResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<FlowTemplateResource>", "aws.HasCondition<FlowTemplateResource>" ],
+  "javaType" : "shiver.me.timbers.aws.iotthingsgraph.FlowTemplateResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<FlowTemplateResource>", "shiver.me.timbers.aws.HasCondition<FlowTemplateResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

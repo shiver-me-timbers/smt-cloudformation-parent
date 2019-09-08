@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.appsync.FunctionConfigurationResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<FunctionConfigurationResource>", "aws.HasCondition<FunctionConfigurationResource>", "aws.HasAttributes<FunctionConfigurationAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.appsync.FunctionConfigurationResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<FunctionConfigurationResource>", "shiver.me.timbers.aws.HasCondition<FunctionConfigurationResource>", "shiver.me.timbers.aws.HasAttributes<FunctionConfigurationAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

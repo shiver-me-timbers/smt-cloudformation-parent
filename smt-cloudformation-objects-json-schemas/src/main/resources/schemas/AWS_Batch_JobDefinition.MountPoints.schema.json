@@ -4,8 +4,8 @@
   "title" : "JobDefinitionMountPoints",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-mountpoints.html",
   "type" : "object",
-  "javaType" : "aws.batch.JobDefinitionMountPoints",
-  "javaInterfaces" : [ "aws.Property<JobDefinitionMountPoints>" ],
+  "javaType" : "shiver.me.timbers.aws.batch.JobDefinitionMountPoints",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<JobDefinitionMountPoints>" ],
   "properties" : {
     "ReadOnly" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-mountpoints.html#cfn-batch-jobdefinition-mountpoints-readonly",

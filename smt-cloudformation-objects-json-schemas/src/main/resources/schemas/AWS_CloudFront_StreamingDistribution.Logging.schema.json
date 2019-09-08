@@ -4,8 +4,8 @@
   "title" : "StreamingDistributionLogging",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-logging.html",
   "type" : "object",
-  "javaType" : "aws.cloudfront.StreamingDistributionLogging",
-  "javaInterfaces" : [ "aws.Property<StreamingDistributionLogging>" ],
+  "javaType" : "shiver.me.timbers.aws.cloudfront.StreamingDistributionLogging",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<StreamingDistributionLogging>" ],
   "properties" : {
     "Bucket" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-logging.html#cfn-cloudfront-streamingdistribution-logging-bucket",

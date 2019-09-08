@@ -4,8 +4,8 @@
   "title" : "FunctionDefinitionVersionEnvironment",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-environment.html",
   "type" : "object",
-  "javaType" : "aws.greengrass.FunctionDefinitionVersionEnvironment",
-  "javaInterfaces" : [ "aws.Property<FunctionDefinitionVersionEnvironment>" ],
+  "javaType" : "shiver.me.timbers.aws.greengrass.FunctionDefinitionVersionEnvironment",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<FunctionDefinitionVersionEnvironment>" ],
   "properties" : {
     "Variables" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-environment.html#cfn-greengrass-functiondefinitionversion-environment-variables",
@@ -15,14 +15,14 @@
     "Execution" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-environment.html#cfn-greengrass-functiondefinitionversion-environment-execution",
       "$ref" : "AWS_Greengrass_FunctionDefinitionVersion.Execution.schema.json",
-      "javaType" : "aws.Property<aws.greengrass.FunctionDefinitionVersionExecution>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.greengrass.FunctionDefinitionVersionExecution>"
     },
     "ResourceAccessPolicies" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-environment.html#cfn-greengrass-functiondefinitionversion-environment-resourceaccesspolicies",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Greengrass_FunctionDefinitionVersion.ResourceAccessPolicy.schema.json",
-        "javaType" : "aws.Property<aws.greengrass.FunctionDefinitionVersionResourceAccessPolicy>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.greengrass.FunctionDefinitionVersionResourceAccessPolicy>"
       }
     },
     "AccessSysfs" : {

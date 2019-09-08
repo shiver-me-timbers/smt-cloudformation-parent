@@ -4,8 +4,8 @@
   "title" : "RemediationConfigurationResourceValue",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-remediationconfiguration-resourcevalue.html",
   "type" : "object",
-  "javaType" : "aws.config.RemediationConfigurationResourceValue",
-  "javaInterfaces" : [ "aws.Property<RemediationConfigurationResourceValue>" ],
+  "javaType" : "shiver.me.timbers.aws.config.RemediationConfigurationResourceValue",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<RemediationConfigurationResourceValue>" ],
   "properties" : {
     "Value" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-remediationconfiguration-resourcevalue.html#cfn-config-remediationconfiguration-resourcevalue-value",

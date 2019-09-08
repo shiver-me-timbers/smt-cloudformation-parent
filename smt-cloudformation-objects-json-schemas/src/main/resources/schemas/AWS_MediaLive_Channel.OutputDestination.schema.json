@@ -4,8 +4,8 @@
   "title" : "ChannelOutputDestination",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-outputdestination.html",
   "type" : "object",
-  "javaType" : "aws.medialive.ChannelOutputDestination",
-  "javaInterfaces" : [ "aws.Property<ChannelOutputDestination>" ],
+  "javaType" : "shiver.me.timbers.aws.medialive.ChannelOutputDestination",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ChannelOutputDestination>" ],
   "properties" : {
     "Id" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-outputdestination.html#cfn-medialive-channel-outputdestination-id",
@@ -17,7 +17,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_MediaLive_Channel.MediaPackageOutputDestinationSettings.schema.json",
-        "javaType" : "aws.Property<aws.medialive.ChannelOutputDestinationSettings>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.medialive.ChannelOutputDestinationSettings>"
       }
     },
     "MediaPackageSettings" : {
@@ -25,7 +25,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_MediaLive_Channel.MediaPackageOutputDestinationSettings.schema.json",
-        "javaType" : "aws.Property<aws.medialive.ChannelMediaPackageOutputDestinationSettings>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.medialive.ChannelMediaPackageOutputDestinationSettings>"
       }
     }
   }

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.pinpoint.APNSChannelResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<APNSChannelResource>", "aws.HasCondition<APNSChannelResource>" ],
+  "javaType" : "shiver.me.timbers.aws.pinpoint.APNSChannelResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<APNSChannelResource>", "shiver.me.timbers.aws.HasCondition<APNSChannelResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

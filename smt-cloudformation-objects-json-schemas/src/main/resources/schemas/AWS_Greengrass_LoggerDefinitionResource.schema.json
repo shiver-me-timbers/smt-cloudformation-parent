@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.greengrass.LoggerDefinitionResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<LoggerDefinitionResource>", "aws.HasCondition<LoggerDefinitionResource>", "aws.HasAttributes<LoggerDefinitionAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.greengrass.LoggerDefinitionResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<LoggerDefinitionResource>", "shiver.me.timbers.aws.HasCondition<LoggerDefinitionResource>", "shiver.me.timbers.aws.HasAttributes<LoggerDefinitionAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.pinpoint.BaiduChannelResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<BaiduChannelResource>", "aws.HasCondition<BaiduChannelResource>" ],
+  "javaType" : "shiver.me.timbers.aws.pinpoint.BaiduChannelResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<BaiduChannelResource>", "shiver.me.timbers.aws.HasCondition<BaiduChannelResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

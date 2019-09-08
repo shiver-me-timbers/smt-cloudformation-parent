@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.VPCGatewayAttachmentResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<VPCGatewayAttachmentResource>", "aws.HasCondition<VPCGatewayAttachmentResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.VPCGatewayAttachmentResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<VPCGatewayAttachmentResource>", "shiver.me.timbers.aws.HasCondition<VPCGatewayAttachmentResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

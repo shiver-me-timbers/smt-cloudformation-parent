@@ -4,5 +4,5 @@
   "title" : "CampaignAttributes",
   "type" : "string",
   "enum" : [ "CampaignId" ],
-  "javaType" : "aws.pinpoint.CampaignAttributes"
+  "javaType" : "shiver.me.timbers.aws.pinpoint.CampaignAttributes"
 }

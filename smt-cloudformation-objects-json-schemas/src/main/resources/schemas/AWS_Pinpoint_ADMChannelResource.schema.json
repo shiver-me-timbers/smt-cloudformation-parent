@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.pinpoint.ADMChannelResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ADMChannelResource>", "aws.HasCondition<ADMChannelResource>" ],
+  "javaType" : "shiver.me.timbers.aws.pinpoint.ADMChannelResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ADMChannelResource>", "shiver.me.timbers.aws.HasCondition<ADMChannelResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -4,5 +4,5 @@
   "title" : "UserPoolClientAttributes",
   "type" : "string",
   "enum" : [ "ClientSecret", "Name" ],
-  "javaType" : "aws.cognito.UserPoolClientAttributes"
+  "javaType" : "shiver.me.timbers.aws.cognito.UserPoolClientAttributes"
 }

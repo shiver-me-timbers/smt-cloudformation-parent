@@ -4,8 +4,8 @@
   "title" : "InstanceNetworkInterface",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html",
   "type" : "object",
-  "javaType" : "aws.ec2.InstanceNetworkInterface",
-  "javaInterfaces" : [ "aws.Property<InstanceNetworkInterface>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.InstanceNetworkInterface",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<InstanceNetworkInterface>" ],
   "properties" : {
     "AssociatePublicIpAddress" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-associatepubip",
@@ -45,7 +45,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_EC2_Instance.InstanceIpv6Address.schema.json",
-        "javaType" : "aws.Property<aws.ec2.InstanceInstanceIpv6Address>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.InstanceInstanceIpv6Address>"
       }
     },
     "NetworkInterfaceId" : {
@@ -63,7 +63,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_EC2_Instance.PrivateIpAddressSpecification.schema.json",
-        "javaType" : "aws.Property<aws.ec2.InstancePrivateIpAddressSpecification>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.InstancePrivateIpAddressSpecification>"
       }
     },
     "SecondaryPrivateIpAddressCount" : {

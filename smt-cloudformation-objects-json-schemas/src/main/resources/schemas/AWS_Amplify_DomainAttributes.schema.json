@@ -4,5 +4,5 @@
   "title" : "DomainAttributes",
   "type" : "string",
   "enum" : [ "DomainName", "StatusReason", "Arn", "DomainStatus", "CertificateRecord" ],
-  "javaType" : "aws.amplify.DomainAttributes"
+  "javaType" : "shiver.me.timbers.aws.amplify.DomainAttributes"
 }

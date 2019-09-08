@@ -4,8 +4,8 @@
   "title" : "ChannelNetworkInputSettings",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-networkinputsettings.html",
   "type" : "object",
-  "javaType" : "aws.medialive.ChannelNetworkInputSettings",
-  "javaInterfaces" : [ "aws.Property<ChannelNetworkInputSettings>" ],
+  "javaType" : "shiver.me.timbers.aws.medialive.ChannelNetworkInputSettings",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ChannelNetworkInputSettings>" ],
   "properties" : {
     "ServerValidation" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-networkinputsettings.html#cfn-medialive-channel-networkinputsettings-servervalidation",
@@ -15,7 +15,7 @@
     "HlsInputSettings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-networkinputsettings.html#cfn-medialive-channel-networkinputsettings-hlsinputsettings",
       "$ref" : "AWS_MediaLive_Channel.HlsInputSettings.schema.json",
-      "javaType" : "aws.Property<aws.medialive.ChannelHlsInputSettings>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.medialive.ChannelHlsInputSettings>"
     }
   }
 }

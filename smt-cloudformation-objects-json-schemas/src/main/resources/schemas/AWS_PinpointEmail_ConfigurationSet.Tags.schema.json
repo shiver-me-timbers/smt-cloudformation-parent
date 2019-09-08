@@ -4,8 +4,8 @@
   "title" : "ConfigurationSetTags",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpointemail-configurationset-tags.html",
   "type" : "object",
-  "javaType" : "aws.pinpointemail.ConfigurationSetTags",
-  "javaInterfaces" : [ "aws.Property<ConfigurationSetTags>" ],
+  "javaType" : "shiver.me.timbers.aws.pinpointemail.ConfigurationSetTags",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ConfigurationSetTags>" ],
   "properties" : {
     "Value" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpointemail-configurationset-tags.html#cfn-pinpointemail-configurationset-tags-value",

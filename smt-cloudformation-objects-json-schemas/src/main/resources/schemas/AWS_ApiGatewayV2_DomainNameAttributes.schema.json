@@ -4,5 +4,5 @@
   "title" : "DomainNameAttributes",
   "type" : "string",
   "enum" : [ "RegionalHostedZoneId", "RegionalDomainName" ],
-  "javaType" : "aws.apigatewayv2.DomainNameAttributes"
+  "javaType" : "shiver.me.timbers.aws.apigatewayv2.DomainNameAttributes"
 }

@@ -4,8 +4,8 @@
   "title" : "InstanceGroupConfigVolumeSpecification",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration-ebsblockdeviceconfig-volumespecification.html",
   "type" : "object",
-  "javaType" : "aws.emr.InstanceGroupConfigVolumeSpecification",
-  "javaInterfaces" : [ "aws.Property<InstanceGroupConfigVolumeSpecification>" ],
+  "javaType" : "shiver.me.timbers.aws.emr.InstanceGroupConfigVolumeSpecification",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<InstanceGroupConfigVolumeSpecification>" ],
   "properties" : {
     "Iops" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration-ebsblockdeviceconfig-volumespecification.html#cfn-emr-ebsconfiguration-ebsblockdeviceconfig-volumespecification-iops",

@@ -4,8 +4,8 @@
   "title" : "MLTransformFindMatchesParameters",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-mltransform-transformparameters-findmatchesparameters.html",
   "type" : "object",
-  "javaType" : "aws.glue.MLTransformFindMatchesParameters",
-  "javaInterfaces" : [ "aws.Property<MLTransformFindMatchesParameters>" ],
+  "javaType" : "shiver.me.timbers.aws.glue.MLTransformFindMatchesParameters",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<MLTransformFindMatchesParameters>" ],
   "properties" : {
     "PrecisionRecallTradeoff" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-mltransform-transformparameters-findmatchesparameters.html#cfn-glue-mltransform-transformparameters-findmatchesparameters-precisionrecalltradeoff",

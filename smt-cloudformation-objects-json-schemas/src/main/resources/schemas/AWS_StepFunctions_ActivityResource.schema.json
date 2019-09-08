@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.stepfunctions.ActivityResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ActivityResource>", "aws.HasCondition<ActivityResource>", "aws.HasAttributes<ActivityAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.stepfunctions.ActivityResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ActivityResource>", "shiver.me.timbers.aws.HasCondition<ActivityResource>", "shiver.me.timbers.aws.HasAttributes<ActivityAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

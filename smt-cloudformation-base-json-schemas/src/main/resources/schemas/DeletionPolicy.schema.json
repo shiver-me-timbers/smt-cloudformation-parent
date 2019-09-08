@@ -9,5 +9,5 @@
     "Retain",
     "Snapshot"
   ],
-  "javaType": "aws.DeletionPolicy"
+  "javaType": "shiver.me.timbers.aws.DeletionPolicy"
 }

@@ -4,15 +4,15 @@
   "title" : "SubscriptionDefinitionSubscriptionDefinitionVersion",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-subscriptiondefinition-subscriptiondefinitionversion.html",
   "type" : "object",
-  "javaType" : "aws.greengrass.SubscriptionDefinitionSubscriptionDefinitionVersion",
-  "javaInterfaces" : [ "aws.Property<SubscriptionDefinitionSubscriptionDefinitionVersion>" ],
+  "javaType" : "shiver.me.timbers.aws.greengrass.SubscriptionDefinitionSubscriptionDefinitionVersion",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<SubscriptionDefinitionSubscriptionDefinitionVersion>" ],
   "properties" : {
     "Subscriptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-subscriptiondefinition-subscriptiondefinitionversion.html#cfn-greengrass-subscriptiondefinition-subscriptiondefinitionversion-subscriptions",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Greengrass_SubscriptionDefinition.Subscription.schema.json",
-        "javaType" : "aws.Property<aws.greengrass.SubscriptionDefinitionSubscription>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.greengrass.SubscriptionDefinitionSubscription>"
       }
     }
   }

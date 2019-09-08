@@ -4,7 +4,7 @@
   "title" : "PortfolioProductAssociation",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioproductassociation.html",
   "type" : "object",
-  "javaType" : "aws.servicecatalog.PortfolioProductAssociation",
+  "javaType" : "shiver.me.timbers.aws.servicecatalog.PortfolioProductAssociation",
   "properties" : {
     "SourcePortfolioId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioproductassociation.html#cfn-servicecatalog-portfolioproductassociation-sourceportfolioid",

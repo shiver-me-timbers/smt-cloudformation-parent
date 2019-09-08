@@ -4,8 +4,8 @@
   "title" : "ChannelCaptionSelector",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-captionselector.html",
   "type" : "object",
-  "javaType" : "aws.medialive.ChannelCaptionSelector",
-  "javaInterfaces" : [ "aws.Property<ChannelCaptionSelector>" ],
+  "javaType" : "shiver.me.timbers.aws.medialive.ChannelCaptionSelector",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ChannelCaptionSelector>" ],
   "properties" : {
     "LanguageCode" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-captionselector.html#cfn-medialive-channel-captionselector-languagecode",
@@ -15,7 +15,7 @@
     "SelectorSettings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-captionselector.html#cfn-medialive-channel-captionselector-selectorsettings",
       "$ref" : "AWS_MediaLive_Channel.CaptionSelectorSettings.schema.json",
-      "javaType" : "aws.Property<aws.medialive.ChannelCaptionSelectorSettings>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.medialive.ChannelCaptionSelectorSettings>"
     },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-captionselector.html#cfn-medialive-channel-captionselector-name",

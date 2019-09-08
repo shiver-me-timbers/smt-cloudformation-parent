@@ -4,8 +4,8 @@
   "title" : "DataSourceAwsIamConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-awsiamconfig.html",
   "type" : "object",
-  "javaType" : "aws.appsync.DataSourceAwsIamConfig",
-  "javaInterfaces" : [ "aws.Property<DataSourceAwsIamConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.appsync.DataSourceAwsIamConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DataSourceAwsIamConfig>" ],
   "properties" : {
     "SigningRegion" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-awsiamconfig.html#cfn-appsync-datasource-awsiamconfig-signingregion",

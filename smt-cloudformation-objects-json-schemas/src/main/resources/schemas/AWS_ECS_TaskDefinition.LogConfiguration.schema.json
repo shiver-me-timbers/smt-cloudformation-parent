@@ -4,8 +4,8 @@
   "title" : "TaskDefinitionLogConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-logconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.ecs.TaskDefinitionLogConfiguration",
-  "javaInterfaces" : [ "aws.Property<TaskDefinitionLogConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.ecs.TaskDefinitionLogConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TaskDefinitionLogConfiguration>" ],
   "properties" : {
     "LogDriver" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-logconfiguration.html#cfn-ecs-taskdefinition-containerdefinition-logconfiguration-logdriver",
@@ -23,7 +23,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ECS_TaskDefinition.Secret.schema.json",
-        "javaType" : "aws.Property<aws.ecs.TaskDefinitionSecret>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecs.TaskDefinitionSecret>"
       }
     }
   }

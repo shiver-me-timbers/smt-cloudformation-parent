@@ -4,8 +4,8 @@
   "title" : "TopicRuleElasticsearchAction",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-elasticsearchaction.html",
   "type" : "object",
-  "javaType" : "aws.iot.TopicRuleElasticsearchAction",
-  "javaInterfaces" : [ "aws.Property<TopicRuleElasticsearchAction>" ],
+  "javaType" : "shiver.me.timbers.aws.iot.TopicRuleElasticsearchAction",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TopicRuleElasticsearchAction>" ],
   "properties" : {
     "Endpoint" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-elasticsearchaction.html#cfn-iot-topicrule-elasticsearchaction-endpoint",

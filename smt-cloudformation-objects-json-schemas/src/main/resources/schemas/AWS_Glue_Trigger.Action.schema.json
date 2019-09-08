@@ -4,8 +4,8 @@
   "title" : "TriggerAction",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html",
   "type" : "object",
-  "javaType" : "aws.glue.TriggerAction",
-  "javaInterfaces" : [ "aws.Property<TriggerAction>" ],
+  "javaType" : "shiver.me.timbers.aws.glue.TriggerAction",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TriggerAction>" ],
   "properties" : {
     "JobName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-jobname",

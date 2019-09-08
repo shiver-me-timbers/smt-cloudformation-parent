@@ -4,8 +4,8 @@
   "title" : "MaintenanceWindowTaskMaintenanceWindowLambdaParameters",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters.html",
   "type" : "object",
-  "javaType" : "aws.ssm.MaintenanceWindowTaskMaintenanceWindowLambdaParameters",
-  "javaInterfaces" : [ "aws.Property<MaintenanceWindowTaskMaintenanceWindowLambdaParameters>" ],
+  "javaType" : "shiver.me.timbers.aws.ssm.MaintenanceWindowTaskMaintenanceWindowLambdaParameters",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<MaintenanceWindowTaskMaintenanceWindowLambdaParameters>" ],
   "properties" : {
     "ClientContext" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-clientcontext",

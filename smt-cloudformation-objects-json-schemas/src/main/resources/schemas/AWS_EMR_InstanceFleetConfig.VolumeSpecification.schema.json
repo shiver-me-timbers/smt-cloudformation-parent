@@ -4,8 +4,8 @@
   "title" : "InstanceFleetConfigVolumeSpecification",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-volumespecification.html",
   "type" : "object",
-  "javaType" : "aws.emr.InstanceFleetConfigVolumeSpecification",
-  "javaInterfaces" : [ "aws.Property<InstanceFleetConfigVolumeSpecification>" ],
+  "javaType" : "shiver.me.timbers.aws.emr.InstanceFleetConfigVolumeSpecification",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<InstanceFleetConfigVolumeSpecification>" ],
   "properties" : {
     "Iops" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-volumespecification.html#cfn-elasticmapreduce-instancefleetconfig-volumespecification-iops",

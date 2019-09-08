@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.autoscaling.LifecycleHookResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<LifecycleHookResource>", "aws.HasCondition<LifecycleHookResource>" ],
+  "javaType" : "shiver.me.timbers.aws.autoscaling.LifecycleHookResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<LifecycleHookResource>", "shiver.me.timbers.aws.HasCondition<LifecycleHookResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

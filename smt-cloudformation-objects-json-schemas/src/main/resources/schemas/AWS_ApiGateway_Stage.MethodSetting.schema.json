@@ -4,8 +4,8 @@
   "title" : "StageMethodSetting",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-stage-methodsetting.html",
   "type" : "object",
-  "javaType" : "aws.apigateway.StageMethodSetting",
-  "javaInterfaces" : [ "aws.Property<StageMethodSetting>" ],
+  "javaType" : "shiver.me.timbers.aws.apigateway.StageMethodSetting",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<StageMethodSetting>" ],
   "properties" : {
     "CacheDataEncrypted" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-stage-methodsetting.html#cfn-apigateway-stage-methodsetting-cachedataencrypted",

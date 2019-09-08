@@ -4,7 +4,7 @@
   "title" : "ImageBuilder",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-imagebuilder.html",
   "type" : "object",
-  "javaType" : "aws.appstream.ImageBuilder",
+  "javaType" : "shiver.me.timbers.aws.appstream.ImageBuilder",
   "properties" : {
     "ImageName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-imagebuilder.html#cfn-appstream-imagebuilder-imagename",
@@ -19,7 +19,7 @@
     "VpcConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-imagebuilder.html#cfn-appstream-imagebuilder-vpcconfig",
       "$ref" : "AWS_AppStream_ImageBuilder.VpcConfig.schema.json",
-      "javaType" : "aws.Property<aws.appstream.ImageBuilderVpcConfig>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appstream.ImageBuilderVpcConfig>"
     },
     "EnableDefaultInternetAccess" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-imagebuilder.html#cfn-appstream-imagebuilder-enabledefaultinternetaccess",
@@ -34,7 +34,7 @@
     "DomainJoinInfo" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-imagebuilder.html#cfn-appstream-imagebuilder-domainjoininfo",
       "$ref" : "AWS_AppStream_ImageBuilder.DomainJoinInfo.schema.json",
-      "javaType" : "aws.Property<aws.appstream.ImageBuilderDomainJoinInfo>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appstream.ImageBuilderDomainJoinInfo>"
     },
     "AppstreamAgentVersion" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-imagebuilder.html#cfn-appstream-imagebuilder-appstreamagentversion",
@@ -51,7 +51,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     },
     "Name" : {

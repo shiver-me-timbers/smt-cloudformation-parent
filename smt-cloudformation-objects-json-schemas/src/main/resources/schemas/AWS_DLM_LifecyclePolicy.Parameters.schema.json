@@ -4,8 +4,8 @@
   "title" : "LifecyclePolicyParameters",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-parameters.html",
   "type" : "object",
-  "javaType" : "aws.dlm.LifecyclePolicyParameters",
-  "javaInterfaces" : [ "aws.Property<LifecyclePolicyParameters>" ],
+  "javaType" : "shiver.me.timbers.aws.dlm.LifecyclePolicyParameters",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<LifecyclePolicyParameters>" ],
   "properties" : {
     "ExcludeBootVolume" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-parameters.html#cfn-dlm-lifecyclepolicy-parameters-excludebootvolume",

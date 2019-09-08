@@ -4,8 +4,8 @@
   "title" : "TaskDefinitionVolumeFrom",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-volumesfrom.html",
   "type" : "object",
-  "javaType" : "aws.ecs.TaskDefinitionVolumeFrom",
-  "javaInterfaces" : [ "aws.Property<TaskDefinitionVolumeFrom>" ],
+  "javaType" : "shiver.me.timbers.aws.ecs.TaskDefinitionVolumeFrom",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TaskDefinitionVolumeFrom>" ],
   "properties" : {
     "ReadOnly" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-volumesfrom.html#cfn-ecs-taskdefinition-containerdefinition-volumesfrom-readonly",

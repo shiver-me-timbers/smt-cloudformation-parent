@@ -4,5 +4,5 @@
   "title" : "FunctionDefinitionAttributes",
   "type" : "string",
   "enum" : [ "LatestVersionArn", "Id", "Arn", "Name" ],
-  "javaType" : "aws.greengrass.FunctionDefinitionAttributes"
+  "javaType" : "shiver.me.timbers.aws.greengrass.FunctionDefinitionAttributes"
 }

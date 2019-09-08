@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.NetworkInterfacePermissionResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<NetworkInterfacePermissionResource>", "aws.HasCondition<NetworkInterfacePermissionResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.NetworkInterfacePermissionResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<NetworkInterfacePermissionResource>", "shiver.me.timbers.aws.HasCondition<NetworkInterfacePermissionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

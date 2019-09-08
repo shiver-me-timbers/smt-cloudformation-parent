@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.route53.RecordSetGroupResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<RecordSetGroupResource>", "aws.HasCondition<RecordSetGroupResource>" ],
+  "javaType" : "shiver.me.timbers.aws.route53.RecordSetGroupResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<RecordSetGroupResource>", "shiver.me.timbers.aws.HasCondition<RecordSetGroupResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.appstream.StackResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<StackResource>", "aws.HasCondition<StackResource>" ],
+  "javaType" : "shiver.me.timbers.aws.appstream.StackResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<StackResource>", "shiver.me.timbers.aws.HasCondition<StackResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

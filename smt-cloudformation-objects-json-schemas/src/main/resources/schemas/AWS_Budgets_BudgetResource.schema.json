@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.budgets.BudgetResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<BudgetResource>", "aws.HasCondition<BudgetResource>" ],
+  "javaType" : "shiver.me.timbers.aws.budgets.BudgetResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<BudgetResource>", "shiver.me.timbers.aws.HasCondition<BudgetResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

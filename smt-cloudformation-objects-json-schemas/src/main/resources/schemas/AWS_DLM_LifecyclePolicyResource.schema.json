@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.dlm.LifecyclePolicyResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<LifecyclePolicyResource>", "aws.HasCondition<LifecyclePolicyResource>", "aws.HasAttributes<LifecyclePolicyAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.dlm.LifecyclePolicyResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<LifecyclePolicyResource>", "shiver.me.timbers.aws.HasCondition<LifecyclePolicyResource>", "shiver.me.timbers.aws.HasAttributes<LifecyclePolicyAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -4,8 +4,8 @@
   "title" : "MaintenanceWindowTaskMaintenanceWindowStepFunctionsParameters",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters.html",
   "type" : "object",
-  "javaType" : "aws.ssm.MaintenanceWindowTaskMaintenanceWindowStepFunctionsParameters",
-  "javaInterfaces" : [ "aws.Property<MaintenanceWindowTaskMaintenanceWindowStepFunctionsParameters>" ],
+  "javaType" : "shiver.me.timbers.aws.ssm.MaintenanceWindowTaskMaintenanceWindowStepFunctionsParameters",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<MaintenanceWindowTaskMaintenanceWindowStepFunctionsParameters>" ],
   "properties" : {
     "Input" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters-input",

@@ -4,5 +4,5 @@
   "title" : "PortfolioAttributes",
   "type" : "string",
   "enum" : [ "PortfolioName" ],
-  "javaType" : "aws.servicecatalog.PortfolioAttributes"
+  "javaType" : "shiver.me.timbers.aws.servicecatalog.PortfolioAttributes"
 }

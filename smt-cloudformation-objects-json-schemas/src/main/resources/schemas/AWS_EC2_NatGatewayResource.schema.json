@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.NatGatewayResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<NatGatewayResource>", "aws.HasCondition<NatGatewayResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.NatGatewayResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<NatGatewayResource>", "shiver.me.timbers.aws.HasCondition<NatGatewayResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

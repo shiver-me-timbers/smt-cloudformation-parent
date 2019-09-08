@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.TransitGatewayAttachmentResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<TransitGatewayAttachmentResource>", "aws.HasCondition<TransitGatewayAttachmentResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.TransitGatewayAttachmentResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<TransitGatewayAttachmentResource>", "shiver.me.timbers.aws.HasCondition<TransitGatewayAttachmentResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

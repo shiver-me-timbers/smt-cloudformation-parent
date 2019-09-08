@@ -4,13 +4,13 @@
   "title" : "WebACLActivatedRule",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-webacl-rules.html",
   "type" : "object",
-  "javaType" : "aws.waf.WebACLActivatedRule",
-  "javaInterfaces" : [ "aws.Property<WebACLActivatedRule>" ],
+  "javaType" : "shiver.me.timbers.aws.waf.WebACLActivatedRule",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<WebACLActivatedRule>" ],
   "properties" : {
     "Action" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-webacl-rules.html#cfn-waf-webacl-rules-action",
       "$ref" : "AWS_WAF_WebACL.WafAction.schema.json",
-      "javaType" : "aws.Property<aws.waf.WebACLWafAction>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.waf.WebACLWafAction>"
     },
     "Priority" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-webacl-rules.html#cfn-waf-webacl-rules-priority",

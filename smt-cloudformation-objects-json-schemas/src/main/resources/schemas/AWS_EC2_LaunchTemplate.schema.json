@@ -4,7 +4,7 @@
   "title" : "LaunchTemplate",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-launchtemplate.html",
   "type" : "object",
-  "javaType" : "aws.ec2.LaunchTemplate",
+  "javaType" : "shiver.me.timbers.aws.ec2.LaunchTemplate",
   "properties" : {
     "LaunchTemplateName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-launchtemplate.html#cfn-ec2-launchtemplate-launchtemplatename",
@@ -14,7 +14,7 @@
     "LaunchTemplateData" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-launchtemplate.html#cfn-ec2-launchtemplate-launchtemplatedata",
       "$ref" : "AWS_EC2_LaunchTemplate.LaunchTemplateData.schema.json",
-      "javaType" : "aws.Property<aws.ec2.LaunchTemplateLaunchTemplateData>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.LaunchTemplateLaunchTemplateData>"
     }
   }
 }

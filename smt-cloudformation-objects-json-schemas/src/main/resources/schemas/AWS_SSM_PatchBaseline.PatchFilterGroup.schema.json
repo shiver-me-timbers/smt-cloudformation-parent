@@ -4,15 +4,15 @@
   "title" : "PatchBaselinePatchFilterGroup",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfiltergroup.html",
   "type" : "object",
-  "javaType" : "aws.ssm.PatchBaselinePatchFilterGroup",
-  "javaInterfaces" : [ "aws.Property<PatchBaselinePatchFilterGroup>" ],
+  "javaType" : "shiver.me.timbers.aws.ssm.PatchBaselinePatchFilterGroup",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<PatchBaselinePatchFilterGroup>" ],
   "properties" : {
     "PatchFilters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfiltergroup.html#cfn-ssm-patchbaseline-patchfiltergroup-patchfilters",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_SSM_PatchBaseline.PatchFilter.schema.json",
-        "javaType" : "aws.Property<aws.ssm.PatchBaselinePatchFilter>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ssm.PatchBaselinePatchFilter>"
       }
     }
   }

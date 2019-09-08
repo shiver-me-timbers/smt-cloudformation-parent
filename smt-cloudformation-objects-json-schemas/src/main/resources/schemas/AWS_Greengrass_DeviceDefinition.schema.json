@@ -4,12 +4,12 @@
   "title" : "DeviceDefinition",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-devicedefinition.html",
   "type" : "object",
-  "javaType" : "aws.greengrass.DeviceDefinition",
+  "javaType" : "shiver.me.timbers.aws.greengrass.DeviceDefinition",
   "properties" : {
     "InitialVersion" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-devicedefinition.html#cfn-greengrass-devicedefinition-initialversion",
       "$ref" : "AWS_Greengrass_DeviceDefinition.DeviceDefinitionVersion.schema.json",
-      "javaType" : "aws.Property<aws.greengrass.DeviceDefinitionDeviceDefinitionVersion>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.greengrass.DeviceDefinitionDeviceDefinitionVersion>"
     },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-devicedefinition.html#cfn-greengrass-devicedefinition-tags",

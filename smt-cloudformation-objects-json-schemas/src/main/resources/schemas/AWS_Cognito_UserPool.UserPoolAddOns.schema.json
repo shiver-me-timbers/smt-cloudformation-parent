@@ -4,8 +4,8 @@
   "title" : "UserPoolUserPoolAddOns",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-userpooladdons.html",
   "type" : "object",
-  "javaType" : "aws.cognito.UserPoolUserPoolAddOns",
-  "javaInterfaces" : [ "aws.Property<UserPoolUserPoolAddOns>" ],
+  "javaType" : "shiver.me.timbers.aws.cognito.UserPoolUserPoolAddOns",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<UserPoolUserPoolAddOns>" ],
   "properties" : {
     "AdvancedSecurityMode" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-userpooladdons.html#cfn-cognito-userpool-userpooladdons-advancedsecuritymode",

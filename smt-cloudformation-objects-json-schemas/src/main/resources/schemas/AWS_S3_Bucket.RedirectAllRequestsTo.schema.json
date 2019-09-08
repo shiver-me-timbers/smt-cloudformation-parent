@@ -4,8 +4,8 @@
   "title" : "BucketRedirectAllRequestsTo",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-redirectallrequeststo.html",
   "type" : "object",
-  "javaType" : "aws.s3.BucketRedirectAllRequestsTo",
-  "javaInterfaces" : [ "aws.Property<BucketRedirectAllRequestsTo>" ],
+  "javaType" : "shiver.me.timbers.aws.s3.BucketRedirectAllRequestsTo",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BucketRedirectAllRequestsTo>" ],
   "properties" : {
     "HostName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-redirectallrequeststo.html#cfn-s3-websiteconfiguration-redirectallrequeststo-hostname",

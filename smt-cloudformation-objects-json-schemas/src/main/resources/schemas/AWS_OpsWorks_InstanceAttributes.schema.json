@@ -4,5 +4,5 @@
   "title" : "InstanceAttributes",
   "type" : "string",
   "enum" : [ "AvailabilityZone", "PrivateDnsName", "PrivateIp", "PublicDnsName", "PublicIp" ],
-  "javaType" : "aws.opsworks.InstanceAttributes"
+  "javaType" : "shiver.me.timbers.aws.opsworks.InstanceAttributes"
 }

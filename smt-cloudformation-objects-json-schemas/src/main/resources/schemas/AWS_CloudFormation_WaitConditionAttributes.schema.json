@@ -4,5 +4,5 @@
   "title" : "WaitConditionAttributes",
   "type" : "string",
   "enum" : [ "Data" ],
-  "javaType" : "aws.cloudformation.WaitConditionAttributes"
+  "javaType" : "shiver.me.timbers.aws.cloudformation.WaitConditionAttributes"
 }

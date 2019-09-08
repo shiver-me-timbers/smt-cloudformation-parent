@@ -4,7 +4,7 @@
   "title" : "Dashboard",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-dashboard.html",
   "type" : "object",
-  "javaType" : "aws.cloudwatch.Dashboard",
+  "javaType" : "shiver.me.timbers.aws.cloudwatch.Dashboard",
   "properties" : {
     "DashboardName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-dashboard.html#cfn-cloudwatch-dashboard-dashboardname",

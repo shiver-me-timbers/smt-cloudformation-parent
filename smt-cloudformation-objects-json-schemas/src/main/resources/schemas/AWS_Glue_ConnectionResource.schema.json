@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.glue.ConnectionResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ConnectionResource>", "aws.HasCondition<ConnectionResource>" ],
+  "javaType" : "shiver.me.timbers.aws.glue.ConnectionResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ConnectionResource>", "shiver.me.timbers.aws.HasCondition<ConnectionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

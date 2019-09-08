@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.CapacityReservationResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<CapacityReservationResource>", "aws.HasCondition<CapacityReservationResource>", "aws.HasAttributes<CapacityReservationAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.CapacityReservationResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<CapacityReservationResource>", "shiver.me.timbers.aws.HasCondition<CapacityReservationResource>", "shiver.me.timbers.aws.HasAttributes<CapacityReservationAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

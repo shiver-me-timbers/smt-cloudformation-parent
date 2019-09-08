@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.efs.MountTargetResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<MountTargetResource>", "aws.HasCondition<MountTargetResource>", "aws.HasAttributes<MountTargetAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.efs.MountTargetResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<MountTargetResource>", "shiver.me.timbers.aws.HasCondition<MountTargetResource>", "shiver.me.timbers.aws.HasAttributes<MountTargetAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

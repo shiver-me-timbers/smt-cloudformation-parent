@@ -4,5 +4,5 @@
   "title" : "UserProfileAttributes",
   "type" : "string",
   "enum" : [ "SshUsername" ],
-  "javaType" : "aws.opsworks.UserProfileAttributes"
+  "javaType" : "shiver.me.timbers.aws.opsworks.UserProfileAttributes"
 }

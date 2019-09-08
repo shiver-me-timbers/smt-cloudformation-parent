@@ -4,7 +4,7 @@
   "title" : "PortfolioPrincipalAssociation",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioprincipalassociation.html",
   "type" : "object",
-  "javaType" : "aws.servicecatalog.PortfolioPrincipalAssociation",
+  "javaType" : "shiver.me.timbers.aws.servicecatalog.PortfolioPrincipalAssociation",
   "properties" : {
     "PrincipalARN" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioprincipalassociation.html#cfn-servicecatalog-portfolioprincipalassociation-principalarn",

@@ -4,12 +4,12 @@
   "title" : "VPCEndpoint",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html",
   "type" : "object",
-  "javaType" : "aws.ec2.VPCEndpoint",
+  "javaType" : "shiver.me.timbers.aws.ec2.VPCEndpoint",
   "properties" : {
     "PolicyDocument" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-policydocument",
       "$ref" : "PolicyDocument.schema.json",
-      "javaType" : "aws.Property<aws.iam.PolicyDocument>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iam.PolicyDocument>"
     },
     "PrivateDnsEnabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-privatednsenabled",

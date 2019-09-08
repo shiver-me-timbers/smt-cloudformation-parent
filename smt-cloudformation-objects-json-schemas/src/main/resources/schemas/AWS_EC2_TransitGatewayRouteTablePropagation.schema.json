@@ -4,7 +4,7 @@
   "title" : "TransitGatewayRouteTablePropagation",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgatewayroutetablepropagation.html",
   "type" : "object",
-  "javaType" : "aws.ec2.TransitGatewayRouteTablePropagation",
+  "javaType" : "shiver.me.timbers.aws.ec2.TransitGatewayRouteTablePropagation",
   "properties" : {
     "TransitGatewayRouteTableId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgatewayroutetablepropagation.html#cfn-ec2-transitgatewayroutetablepropagation-transitgatewayroutetableid",

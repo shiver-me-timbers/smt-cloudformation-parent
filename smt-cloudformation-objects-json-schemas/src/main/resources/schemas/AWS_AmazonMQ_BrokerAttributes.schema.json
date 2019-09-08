@@ -4,5 +4,5 @@
   "title" : "BrokerAttributes",
   "type" : "string",
   "enum" : [ "IpAddresses", "OpenWireEndpoints", "ConfigurationRevision", "StompEndpoints", "MqttEndpoints", "AmqpEndpoints", "Arn", "ConfigurationId", "WssEndpoints" ],
-  "javaType" : "aws.amazonmq.BrokerAttributes"
+  "javaType" : "shiver.me.timbers.aws.amazonmq.BrokerAttributes"
 }

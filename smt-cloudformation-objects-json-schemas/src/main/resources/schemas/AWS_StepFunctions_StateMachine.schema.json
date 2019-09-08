@@ -4,7 +4,7 @@
   "title" : "StateMachine",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html",
   "type" : "object",
-  "javaType" : "aws.stepfunctions.StateMachine",
+  "javaType" : "shiver.me.timbers.aws.stepfunctions.StateMachine",
   "properties" : {
     "DefinitionString" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html#cfn-stepfunctions-statemachine-definitionstring",
@@ -26,7 +26,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_StepFunctions_StateMachine.TagsEntry.schema.json",
-        "javaType" : "aws.Property<aws.stepfunctions.StateMachineTagsEntry>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.stepfunctions.StateMachineTagsEntry>"
       }
     }
   }

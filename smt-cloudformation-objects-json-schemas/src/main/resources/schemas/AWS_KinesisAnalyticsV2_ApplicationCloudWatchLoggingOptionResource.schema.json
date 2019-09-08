@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.kinesisanalyticsv2.ApplicationCloudWatchLoggingOptionResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ApplicationCloudWatchLoggingOptionResource>", "aws.HasCondition<ApplicationCloudWatchLoggingOptionResource>" ],
+  "javaType" : "shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationCloudWatchLoggingOptionResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ApplicationCloudWatchLoggingOptionResource>", "shiver.me.timbers.aws.HasCondition<ApplicationCloudWatchLoggingOptionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -4,12 +4,12 @@
   "title" : "Stack",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html",
   "type" : "object",
-  "javaType" : "aws.appstream.Stack",
+  "javaType" : "shiver.me.timbers.aws.appstream.Stack",
   "properties" : {
     "ApplicationSettings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-applicationsettings",
       "$ref" : "AWS_AppStream_Stack.ApplicationSettings.schema.json",
-      "javaType" : "aws.Property<aws.appstream.StackApplicationSettings>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appstream.StackApplicationSettings>"
     },
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-description",
@@ -21,7 +21,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_AppStream_Stack.StorageConnector.schema.json",
-        "javaType" : "aws.Property<aws.appstream.StackStorageConnector>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appstream.StackStorageConnector>"
       }
     },
     "DeleteStorageConnectors" : {
@@ -34,7 +34,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_AppStream_Stack.UserSetting.schema.json",
-        "javaType" : "aws.Property<aws.appstream.StackUserSetting>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appstream.StackUserSetting>"
       }
     },
     "AttributesToDelete" : {
@@ -60,7 +60,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     },
     "Name" : {

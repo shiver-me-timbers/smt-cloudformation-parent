@@ -4,8 +4,8 @@
   "title" : "JobQueueComputeEnvironmentOrder",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobqueue-computeenvironmentorder.html",
   "type" : "object",
-  "javaType" : "aws.batch.JobQueueComputeEnvironmentOrder",
-  "javaInterfaces" : [ "aws.Property<JobQueueComputeEnvironmentOrder>" ],
+  "javaType" : "shiver.me.timbers.aws.batch.JobQueueComputeEnvironmentOrder",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<JobQueueComputeEnvironmentOrder>" ],
   "properties" : {
     "ComputeEnvironment" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobqueue-computeenvironmentorder.html#cfn-batch-jobqueue-computeenvironmentorder-computeenvironment",

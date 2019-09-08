@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.apigatewayv2.DomainNameResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<DomainNameResource>", "aws.HasCondition<DomainNameResource>", "aws.HasAttributes<DomainNameAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.apigatewayv2.DomainNameResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<DomainNameResource>", "shiver.me.timbers.aws.HasCondition<DomainNameResource>", "shiver.me.timbers.aws.HasAttributes<DomainNameAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

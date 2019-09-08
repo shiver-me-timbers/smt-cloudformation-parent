@@ -4,8 +4,8 @@
   "title" : "ProjectEnvironment",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html",
   "type" : "object",
-  "javaType" : "aws.codebuild.ProjectEnvironment",
-  "javaInterfaces" : [ "aws.Property<ProjectEnvironment>" ],
+  "javaType" : "shiver.me.timbers.aws.codebuild.ProjectEnvironment",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ProjectEnvironment>" ],
   "properties" : {
     "Type" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-type",
@@ -17,7 +17,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_CodeBuild_Project.EnvironmentVariable.schema.json",
-        "javaType" : "aws.Property<aws.codebuild.ProjectEnvironmentVariable>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codebuild.ProjectEnvironmentVariable>"
       }
     },
     "PrivilegedMode" : {
@@ -38,7 +38,7 @@
     "RegistryCredential" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-registrycredential",
       "$ref" : "AWS_CodeBuild_Project.RegistryCredential.schema.json",
-      "javaType" : "aws.Property<aws.codebuild.ProjectRegistryCredential>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codebuild.ProjectRegistryCredential>"
     },
     "ComputeType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-computetype",

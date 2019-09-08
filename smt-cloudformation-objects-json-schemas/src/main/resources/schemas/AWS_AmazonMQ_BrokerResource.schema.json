@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.amazonmq.BrokerResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<BrokerResource>", "aws.HasCondition<BrokerResource>", "aws.HasAttributes<BrokerAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.amazonmq.BrokerResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<BrokerResource>", "shiver.me.timbers.aws.HasCondition<BrokerResource>", "shiver.me.timbers.aws.HasAttributes<BrokerAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

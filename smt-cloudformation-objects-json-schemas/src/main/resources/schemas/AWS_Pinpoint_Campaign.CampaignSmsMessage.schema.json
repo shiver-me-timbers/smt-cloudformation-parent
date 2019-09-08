@@ -4,8 +4,8 @@
   "title" : "CampaignCampaignSmsMessage",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-campaignsmsmessage.html",
   "type" : "object",
-  "javaType" : "aws.pinpoint.CampaignCampaignSmsMessage",
-  "javaInterfaces" : [ "aws.Property<CampaignCampaignSmsMessage>" ],
+  "javaType" : "shiver.me.timbers.aws.pinpoint.CampaignCampaignSmsMessage",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<CampaignCampaignSmsMessage>" ],
   "properties" : {
     "SenderId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-campaignsmsmessage.html#cfn-pinpoint-campaign-campaignsmsmessage-senderid",

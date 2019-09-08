@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.codestar.GitHubRepositoryResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<GitHubRepositoryResource>", "aws.HasCondition<GitHubRepositoryResource>" ],
+  "javaType" : "shiver.me.timbers.aws.codestar.GitHubRepositoryResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<GitHubRepositoryResource>", "shiver.me.timbers.aws.HasCondition<GitHubRepositoryResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

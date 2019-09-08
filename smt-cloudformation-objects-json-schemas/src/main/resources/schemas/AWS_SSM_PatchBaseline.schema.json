@@ -4,7 +4,7 @@
   "title" : "PatchBaseline",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html",
   "type" : "object",
-  "javaType" : "aws.ssm.PatchBaseline",
+  "javaType" : "shiver.me.timbers.aws.ssm.PatchBaseline",
   "properties" : {
     "OperatingSystem" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-operatingsystem",
@@ -19,14 +19,14 @@
     "ApprovalRules" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-approvalrules",
       "$ref" : "AWS_SSM_PatchBaseline.RuleGroup.schema.json",
-      "javaType" : "aws.Property<aws.ssm.PatchBaselineRuleGroup>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ssm.PatchBaselineRuleGroup>"
     },
     "Sources" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-sources",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_SSM_PatchBaseline.PatchSource.schema.json",
-        "javaType" : "aws.Property<aws.ssm.PatchBaselinePatchSource>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ssm.PatchBaselinePatchSource>"
       }
     },
     "Name" : {
@@ -76,14 +76,14 @@
     "GlobalFilters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-globalfilters",
       "$ref" : "AWS_SSM_PatchBaseline.PatchFilterGroup.schema.json",
-      "javaType" : "aws.Property<aws.ssm.PatchBaselinePatchFilterGroup>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ssm.PatchBaselinePatchFilterGroup>"
     },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-tags",
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     }
   }

@@ -4,8 +4,8 @@
   "title" : "IdentityPoolCognitoStreams",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitostreams.html",
   "type" : "object",
-  "javaType" : "aws.cognito.IdentityPoolCognitoStreams",
-  "javaInterfaces" : [ "aws.Property<IdentityPoolCognitoStreams>" ],
+  "javaType" : "shiver.me.timbers.aws.cognito.IdentityPoolCognitoStreams",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<IdentityPoolCognitoStreams>" ],
   "properties" : {
     "StreamingStatus" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitostreams.html#cfn-cognito-identitypool-cognitostreams-streamingstatus",

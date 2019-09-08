@@ -4,8 +4,8 @@
   "title" : "PipelineInputArtifact",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-inputartifacts.html",
   "type" : "object",
-  "javaType" : "aws.codepipeline.PipelineInputArtifact",
-  "javaInterfaces" : [ "aws.Property<PipelineInputArtifact>" ],
+  "javaType" : "shiver.me.timbers.aws.codepipeline.PipelineInputArtifact",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<PipelineInputArtifact>" ],
   "properties" : {
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-inputartifacts.html#cfn-codepipeline-pipeline-stages-actions-inputartifacts-name",

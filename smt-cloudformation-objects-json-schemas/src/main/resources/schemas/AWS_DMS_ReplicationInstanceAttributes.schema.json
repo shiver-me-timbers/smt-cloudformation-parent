@@ -4,5 +4,5 @@
   "title" : "ReplicationInstanceAttributes",
   "type" : "string",
   "enum" : [ "ReplicationInstancePublicIpAddresses", "ReplicationInstancePrivateIpAddresses" ],
-  "javaType" : "aws.dms.ReplicationInstanceAttributes"
+  "javaType" : "shiver.me.timbers.aws.dms.ReplicationInstanceAttributes"
 }

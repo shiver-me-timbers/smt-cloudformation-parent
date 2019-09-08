@@ -4,8 +4,8 @@
   "title" : "StepHadoopJarStepConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-hadoopjarstepconfig.html",
   "type" : "object",
-  "javaType" : "aws.emr.StepHadoopJarStepConfig",
-  "javaInterfaces" : [ "aws.Property<StepHadoopJarStepConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.emr.StepHadoopJarStepConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<StepHadoopJarStepConfig>" ],
   "properties" : {
     "Args" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-hadoopjarstepconfig.html#cfn-elasticmapreduce-step-hadoopjarstepconfig-args",
@@ -32,7 +32,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_EMR_Step.KeyValue.schema.json",
-        "javaType" : "aws.Property<aws.emr.StepKeyValue>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.emr.StepKeyValue>"
       }
     }
   }

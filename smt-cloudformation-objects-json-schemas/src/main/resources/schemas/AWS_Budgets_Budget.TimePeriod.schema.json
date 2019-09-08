@@ -4,8 +4,8 @@
   "title" : "BudgetTimePeriod",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-timeperiod.html",
   "type" : "object",
-  "javaType" : "aws.budgets.BudgetTimePeriod",
-  "javaInterfaces" : [ "aws.Property<BudgetTimePeriod>" ],
+  "javaType" : "shiver.me.timbers.aws.budgets.BudgetTimePeriod",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BudgetTimePeriod>" ],
   "properties" : {
     "Start" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-timeperiod.html#cfn-budgets-budget-timeperiod-start",

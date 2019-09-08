@@ -46,13 +46,13 @@ public class ResourceTransformer implements TypeTransformer {
             schema.put(
                 "javaInterfaces",
                 new ArrayList<>(asList(
-                    format("aws.HasDependsOn<%s>", resourceClassName),
-                    format("aws.HasCondition<%s>", resourceClassName)
+                    format("shiver.me.timbers.aws.HasDependsOn<%s>", resourceClassName),
+                    format("shiver.me.timbers.aws.HasCondition<%s>", resourceClassName)
                 ))
             );
             if (((ResourceType) cloudformationType).getAttributes() != null) {
                 ((List<String>) schema.get("javaInterfaces")).add(
-                    format("aws.HasAttributes<%sAttributes>", javaTypes.extractClassName(typeName))
+                    format("shiver.me.timbers.aws.HasAttributes<%sAttributes>", javaTypes.extractClassName(typeName))
                 );
             }
             schema.put("properties", new LinkedHashMap<String, Object>() {{

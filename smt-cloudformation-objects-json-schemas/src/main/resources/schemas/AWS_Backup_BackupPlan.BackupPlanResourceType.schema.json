@@ -4,8 +4,8 @@
   "title" : "BackupPlanBackupPlanResourceType",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-backup-backupplan-backupplanresourcetype.html",
   "type" : "object",
-  "javaType" : "aws.backup.BackupPlanBackupPlanResourceType",
-  "javaInterfaces" : [ "aws.Property<BackupPlanBackupPlanResourceType>" ],
+  "javaType" : "shiver.me.timbers.aws.backup.BackupPlanBackupPlanResourceType",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BackupPlanBackupPlanResourceType>" ],
   "properties" : {
     "BackupPlanName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-backup-backupplan-backupplanresourcetype.html#cfn-backup-backupplan-backupplanresourcetype-backupplanname",
@@ -17,7 +17,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Backup_BackupPlan.BackupRuleResourceType.schema.json",
-        "javaType" : "aws.Property<aws.backup.BackupPlanBackupRuleResourceType>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.backup.BackupPlanBackupRuleResourceType>"
       }
     }
   }

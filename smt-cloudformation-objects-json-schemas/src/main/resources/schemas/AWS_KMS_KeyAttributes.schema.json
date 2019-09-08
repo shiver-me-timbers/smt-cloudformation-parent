@@ -4,5 +4,5 @@
   "title" : "KeyAttributes",
   "type" : "string",
   "enum" : [ "Arn" ],
-  "javaType" : "aws.kms.KeyAttributes"
+  "javaType" : "shiver.me.timbers.aws.kms.KeyAttributes"
 }

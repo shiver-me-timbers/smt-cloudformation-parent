@@ -4,8 +4,8 @@
   "title" : "CrawlerSchemaChangePolicy",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schemachangepolicy.html",
   "type" : "object",
-  "javaType" : "aws.glue.CrawlerSchemaChangePolicy",
-  "javaInterfaces" : [ "aws.Property<CrawlerSchemaChangePolicy>" ],
+  "javaType" : "shiver.me.timbers.aws.glue.CrawlerSchemaChangePolicy",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<CrawlerSchemaChangePolicy>" ],
   "properties" : {
     "UpdateBehavior" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schemachangepolicy.html#cfn-glue-crawler-schemachangepolicy-updatebehavior",

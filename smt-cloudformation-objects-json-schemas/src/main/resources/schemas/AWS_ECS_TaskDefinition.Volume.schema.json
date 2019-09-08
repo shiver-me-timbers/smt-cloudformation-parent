@@ -4,18 +4,18 @@
   "title" : "TaskDefinitionVolume",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-volumes.html",
   "type" : "object",
-  "javaType" : "aws.ecs.TaskDefinitionVolume",
-  "javaInterfaces" : [ "aws.Property<TaskDefinitionVolume>" ],
+  "javaType" : "shiver.me.timbers.aws.ecs.TaskDefinitionVolume",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TaskDefinitionVolume>" ],
   "properties" : {
     "DockerVolumeConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-volumes.html#cfn-ecs-taskdefinition-volume-dockervolumeconfiguration",
       "$ref" : "AWS_ECS_TaskDefinition.DockerVolumeConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.ecs.TaskDefinitionDockerVolumeConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecs.TaskDefinitionDockerVolumeConfiguration>"
     },
     "Host" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-volumes.html#cfn-ecs-taskdefinition-volumes-host",
       "$ref" : "AWS_ECS_TaskDefinition.HostVolumeProperties.schema.json",
-      "javaType" : "aws.Property<aws.ecs.TaskDefinitionHostVolumeProperties>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecs.TaskDefinitionHostVolumeProperties>"
     },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-volumes.html#cfn-ecs-taskdefinition-volumes-name",

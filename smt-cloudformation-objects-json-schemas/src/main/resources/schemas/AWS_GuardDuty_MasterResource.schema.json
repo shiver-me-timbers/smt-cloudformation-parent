@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.guardduty.MasterResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<MasterResource>", "aws.HasCondition<MasterResource>" ],
+  "javaType" : "shiver.me.timbers.aws.guardduty.MasterResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<MasterResource>", "shiver.me.timbers.aws.HasCondition<MasterResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

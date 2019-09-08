@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.codebuild.ProjectResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ProjectResource>", "aws.HasCondition<ProjectResource>", "aws.HasAttributes<ProjectAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.codebuild.ProjectResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ProjectResource>", "shiver.me.timbers.aws.HasCondition<ProjectResource>", "shiver.me.timbers.aws.HasAttributes<ProjectAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

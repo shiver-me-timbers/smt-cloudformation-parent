@@ -4,5 +4,5 @@
   "title" : "BackupVaultAttributes",
   "type" : "string",
   "enum" : [ "BackupVaultName", "BackupVaultArn" ],
-  "javaType" : "aws.backup.BackupVaultAttributes"
+  "javaType" : "shiver.me.timbers.aws.backup.BackupVaultAttributes"
 }

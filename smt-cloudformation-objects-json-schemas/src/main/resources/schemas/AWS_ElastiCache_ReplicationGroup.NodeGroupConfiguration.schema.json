@@ -4,8 +4,8 @@
   "title" : "ReplicationGroupNodeGroupConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-replicationgroup-nodegroupconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.elasticache.ReplicationGroupNodeGroupConfiguration",
-  "javaInterfaces" : [ "aws.Property<ReplicationGroupNodeGroupConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.elasticache.ReplicationGroupNodeGroupConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ReplicationGroupNodeGroupConfiguration>" ],
   "properties" : {
     "NodeGroupId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-replicationgroup-nodegroupconfiguration.html#cfn-elasticache-replicationgroup-nodegroupconfiguration-nodegroupid",

@@ -4,7 +4,7 @@
   "title" : "Branch",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html",
   "type" : "object",
-  "javaType" : "aws.amplify.Branch",
+  "javaType" : "shiver.me.timbers.aws.amplify.Branch",
   "properties" : {
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html#cfn-amplify-branch-description",
@@ -16,7 +16,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Amplify_Branch.EnvironmentVariable.schema.json",
-        "javaType" : "aws.Property<aws.amplify.BranchEnvironmentVariable>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.amplify.BranchEnvironmentVariable>"
       }
     },
     "AppId" : {
@@ -47,14 +47,14 @@
     "BasicAuthConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html#cfn-amplify-branch-basicauthconfig",
       "$ref" : "AWS_Amplify_Branch.BasicAuthConfig.schema.json",
-      "javaType" : "aws.Property<aws.amplify.BranchBasicAuthConfig>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.amplify.BranchBasicAuthConfig>"
     },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html#cfn-amplify-branch-tags",
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     }
   }

@@ -4,5 +4,5 @@
   "title" : "ClusterAttributes",
   "type" : "string",
   "enum" : [ "Arn" ],
-  "javaType" : "aws.ecs.ClusterAttributes"
+  "javaType" : "shiver.me.timbers.aws.ecs.ClusterAttributes"
 }

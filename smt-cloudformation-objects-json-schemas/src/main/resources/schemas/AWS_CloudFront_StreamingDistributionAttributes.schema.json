@@ -4,5 +4,5 @@
   "title" : "StreamingDistributionAttributes",
   "type" : "string",
   "enum" : [ "DomainName" ],
-  "javaType" : "aws.cloudfront.StreamingDistributionAttributes"
+  "javaType" : "shiver.me.timbers.aws.cloudfront.StreamingDistributionAttributes"
 }

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.VPCEndpointServicePermissionsResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<VPCEndpointServicePermissionsResource>", "aws.HasCondition<VPCEndpointServicePermissionsResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.VPCEndpointServicePermissionsResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<VPCEndpointServicePermissionsResource>", "shiver.me.timbers.aws.HasCondition<VPCEndpointServicePermissionsResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

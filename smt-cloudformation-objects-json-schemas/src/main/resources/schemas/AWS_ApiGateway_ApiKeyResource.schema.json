@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.apigateway.ApiKeyResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ApiKeyResource>", "aws.HasCondition<ApiKeyResource>" ],
+  "javaType" : "shiver.me.timbers.aws.apigateway.ApiKeyResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ApiKeyResource>", "shiver.me.timbers.aws.HasCondition<ApiKeyResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

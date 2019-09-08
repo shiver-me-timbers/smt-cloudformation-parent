@@ -4,8 +4,8 @@
   "title" : "ChannelDvbSubSourceSettings",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-dvbsubsourcesettings.html",
   "type" : "object",
-  "javaType" : "aws.medialive.ChannelDvbSubSourceSettings",
-  "javaInterfaces" : [ "aws.Property<ChannelDvbSubSourceSettings>" ],
+  "javaType" : "shiver.me.timbers.aws.medialive.ChannelDvbSubSourceSettings",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ChannelDvbSubSourceSettings>" ],
   "properties" : {
     "Pid" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-dvbsubsourcesettings.html#cfn-medialive-channel-dvbsubsourcesettings-pid",

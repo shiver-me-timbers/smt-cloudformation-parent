@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.opsworks.LayerResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<LayerResource>", "aws.HasCondition<LayerResource>" ],
+  "javaType" : "shiver.me.timbers.aws.opsworks.LayerResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<LayerResource>", "shiver.me.timbers.aws.HasCondition<LayerResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

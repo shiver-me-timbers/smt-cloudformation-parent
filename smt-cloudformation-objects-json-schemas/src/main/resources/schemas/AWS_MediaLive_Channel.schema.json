@@ -4,20 +4,20 @@
   "title" : "Channel",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-channel.html",
   "type" : "object",
-  "javaType" : "aws.medialive.Channel",
+  "javaType" : "shiver.me.timbers.aws.medialive.Channel",
   "properties" : {
     "InputAttachments" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-channel.html#cfn-medialive-channel-inputattachments",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_MediaLive_Channel.InputAttachment.schema.json",
-        "javaType" : "aws.Property<aws.medialive.ChannelInputAttachment>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.medialive.ChannelInputAttachment>"
       }
     },
     "InputSpecification" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-channel.html#cfn-medialive-channel-inputspecification",
       "$ref" : "AWS_MediaLive_Channel.InputSpecification.schema.json",
-      "javaType" : "aws.Property<aws.medialive.ChannelInputSpecification>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.medialive.ChannelInputSpecification>"
     },
     "ChannelClass" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-channel.html#cfn-medialive-channel-channelclass",
@@ -34,7 +34,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_MediaLive_Channel.OutputDestination.schema.json",
-        "javaType" : "aws.Property<aws.medialive.ChannelOutputDestination>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.medialive.ChannelOutputDestination>"
       }
     },
     "LogLevel" : {

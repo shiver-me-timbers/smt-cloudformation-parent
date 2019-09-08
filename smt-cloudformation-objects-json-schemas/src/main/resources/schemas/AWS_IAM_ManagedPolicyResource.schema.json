@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.iam.ManagedPolicyResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ManagedPolicyResource>", "aws.HasCondition<ManagedPolicyResource>" ],
+  "javaType" : "shiver.me.timbers.aws.iam.ManagedPolicyResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ManagedPolicyResource>", "shiver.me.timbers.aws.HasCondition<ManagedPolicyResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

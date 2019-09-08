@@ -4,13 +4,13 @@
   "title" : "ChannelVideoSelector",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-videoselector.html",
   "type" : "object",
-  "javaType" : "aws.medialive.ChannelVideoSelector",
-  "javaInterfaces" : [ "aws.Property<ChannelVideoSelector>" ],
+  "javaType" : "shiver.me.timbers.aws.medialive.ChannelVideoSelector",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ChannelVideoSelector>" ],
   "properties" : {
     "SelectorSettings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-videoselector.html#cfn-medialive-channel-videoselector-selectorsettings",
       "$ref" : "AWS_MediaLive_Channel.VideoSelectorSettings.schema.json",
-      "javaType" : "aws.Property<aws.medialive.ChannelVideoSelectorSettings>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.medialive.ChannelVideoSelectorSettings>"
     },
     "ColorSpace" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-videoselector.html#cfn-medialive-channel-videoselector-colorspace",

@@ -4,5 +4,5 @@
   "title" : "RepositoryAttributes",
   "type" : "string",
   "enum" : [ "CloneUrlHttp", "CloneUrlSsh", "Arn", "Name" ],
-  "javaType" : "aws.codecommit.RepositoryAttributes"
+  "javaType" : "shiver.me.timbers.aws.codecommit.RepositoryAttributes"
 }

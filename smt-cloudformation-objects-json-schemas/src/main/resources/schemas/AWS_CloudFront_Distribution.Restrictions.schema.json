@@ -4,13 +4,13 @@
   "title" : "DistributionRestrictions",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-restrictions.html",
   "type" : "object",
-  "javaType" : "aws.cloudfront.DistributionRestrictions",
-  "javaInterfaces" : [ "aws.Property<DistributionRestrictions>" ],
+  "javaType" : "shiver.me.timbers.aws.cloudfront.DistributionRestrictions",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DistributionRestrictions>" ],
   "properties" : {
     "GeoRestriction" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-restrictions.html#cfn-cloudfront-distribution-restrictions-georestriction",
       "$ref" : "AWS_CloudFront_Distribution.GeoRestriction.schema.json",
-      "javaType" : "aws.Property<aws.cloudfront.DistributionGeoRestriction>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cloudfront.DistributionGeoRestriction>"
     }
   }
 }

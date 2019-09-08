@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.guardduty.DetectorResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<DetectorResource>", "aws.HasCondition<DetectorResource>" ],
+  "javaType" : "shiver.me.timbers.aws.guardduty.DetectorResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<DetectorResource>", "shiver.me.timbers.aws.HasCondition<DetectorResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -4,33 +4,33 @@
   "title" : "ApplicationApplicationConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-applicationconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.kinesisanalyticsv2.ApplicationApplicationConfiguration",
-  "javaInterfaces" : [ "aws.Property<ApplicationApplicationConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationApplicationConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ApplicationApplicationConfiguration>" ],
   "properties" : {
     "ApplicationCodeConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-applicationconfiguration.html#cfn-kinesisanalyticsv2-application-applicationconfiguration-applicationcodeconfiguration",
       "$ref" : "AWS_KinesisAnalyticsV2_Application.ApplicationCodeConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.kinesisanalyticsv2.ApplicationApplicationCodeConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationApplicationCodeConfiguration>"
     },
     "EnvironmentProperties" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-applicationconfiguration.html#cfn-kinesisanalyticsv2-application-applicationconfiguration-environmentproperties",
       "$ref" : "AWS_KinesisAnalyticsV2_Application.EnvironmentProperties.schema.json",
-      "javaType" : "aws.Property<aws.kinesisanalyticsv2.ApplicationEnvironmentProperties>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationEnvironmentProperties>"
     },
     "FlinkApplicationConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-applicationconfiguration.html#cfn-kinesisanalyticsv2-application-applicationconfiguration-flinkapplicationconfiguration",
       "$ref" : "AWS_KinesisAnalyticsV2_Application.FlinkApplicationConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.kinesisanalyticsv2.ApplicationFlinkApplicationConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationFlinkApplicationConfiguration>"
     },
     "SqlApplicationConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-applicationconfiguration.html#cfn-kinesisanalyticsv2-application-applicationconfiguration-sqlapplicationconfiguration",
       "$ref" : "AWS_KinesisAnalyticsV2_Application.SqlApplicationConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.kinesisanalyticsv2.ApplicationSqlApplicationConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationSqlApplicationConfiguration>"
     },
     "ApplicationSnapshotConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-applicationconfiguration.html#cfn-kinesisanalyticsv2-application-applicationconfiguration-applicationsnapshotconfiguration",
       "$ref" : "AWS_KinesisAnalyticsV2_Application.ApplicationSnapshotConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.kinesisanalyticsv2.ApplicationApplicationSnapshotConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationApplicationSnapshotConfiguration>"
     }
   }
 }

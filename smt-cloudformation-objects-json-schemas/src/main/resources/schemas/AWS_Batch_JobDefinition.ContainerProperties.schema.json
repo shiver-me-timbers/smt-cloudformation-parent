@@ -4,8 +4,8 @@
   "title" : "JobDefinitionContainerProperties",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html",
   "type" : "object",
-  "javaType" : "aws.batch.JobDefinitionContainerProperties",
-  "javaInterfaces" : [ "aws.Property<JobDefinitionContainerProperties>" ],
+  "javaType" : "shiver.me.timbers.aws.batch.JobDefinitionContainerProperties",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<JobDefinitionContainerProperties>" ],
   "properties" : {
     "User" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-user",
@@ -25,7 +25,7 @@
     "LinuxParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-linuxparameters",
       "$ref" : "AWS_Batch_JobDefinition.LinuxParameters.schema.json",
-      "javaType" : "aws.Property<aws.batch.JobDefinitionLinuxParameters>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.batch.JobDefinitionLinuxParameters>"
     },
     "JobRoleArn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-jobrolearn",
@@ -52,7 +52,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Batch_JobDefinition.ResourceRequirement.schema.json",
-        "javaType" : "aws.Property<aws.batch.JobDefinitionResourceRequirement>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.batch.JobDefinitionResourceRequirement>"
       }
     },
     "MountPoints" : {
@@ -60,7 +60,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Batch_JobDefinition.MountPoints.schema.json",
-        "javaType" : "aws.Property<aws.batch.JobDefinitionMountPoints>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.batch.JobDefinitionMountPoints>"
       }
     },
     "Volumes" : {
@@ -68,7 +68,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Batch_JobDefinition.Volumes.schema.json",
-        "javaType" : "aws.Property<aws.batch.JobDefinitionVolumes>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.batch.JobDefinitionVolumes>"
       }
     },
     "Command" : {
@@ -84,7 +84,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Batch_JobDefinition.Environment.schema.json",
-        "javaType" : "aws.Property<aws.batch.JobDefinitionEnvironment>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.batch.JobDefinitionEnvironment>"
       }
     },
     "Ulimits" : {
@@ -92,7 +92,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Batch_JobDefinition.Ulimit.schema.json",
-        "javaType" : "aws.Property<aws.batch.JobDefinitionUlimit>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.batch.JobDefinitionUlimit>"
       }
     },
     "InstanceType" : {

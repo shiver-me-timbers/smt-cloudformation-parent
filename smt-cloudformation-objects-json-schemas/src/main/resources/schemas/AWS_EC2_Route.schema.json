@@ -4,7 +4,7 @@
   "title" : "Route",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html",
   "type" : "object",
-  "javaType" : "aws.ec2.Route",
+  "javaType" : "shiver.me.timbers.aws.ec2.Route",
   "properties" : {
     "DestinationCidrBlock" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-destinationcidrblock",

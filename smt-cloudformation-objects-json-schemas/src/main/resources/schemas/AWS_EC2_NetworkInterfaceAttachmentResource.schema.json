@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.NetworkInterfaceAttachmentResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<NetworkInterfaceAttachmentResource>", "aws.HasCondition<NetworkInterfaceAttachmentResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.NetworkInterfaceAttachmentResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<NetworkInterfaceAttachmentResource>", "shiver.me.timbers.aws.HasCondition<NetworkInterfaceAttachmentResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

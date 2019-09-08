@@ -4,8 +4,8 @@
   "title" : "EC2FleetTagSpecification",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-tagspecification.html",
   "type" : "object",
-  "javaType" : "aws.ec2.EC2FleetTagSpecification",
-  "javaInterfaces" : [ "aws.Property<EC2FleetTagSpecification>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.EC2FleetTagSpecification",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<EC2FleetTagSpecification>" ],
   "properties" : {
     "ResourceType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-tagspecification.html#cfn-ec2-ec2fleet-tagspecification-resourcetype",
@@ -17,7 +17,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_EC2_EC2Fleet.TagRequest.schema.json",
-        "javaType" : "aws.Property<aws.ec2.EC2FleetTagRequest>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.EC2FleetTagRequest>"
       }
     }
   }

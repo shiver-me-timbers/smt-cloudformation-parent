@@ -4,5 +4,5 @@
   "title" : "ServerAttributes",
   "type" : "string",
   "enum" : [ "ServerId", "Arn" ],
-  "javaType" : "aws.transfer.ServerAttributes"
+  "javaType" : "shiver.me.timbers.aws.transfer.ServerAttributes"
 }

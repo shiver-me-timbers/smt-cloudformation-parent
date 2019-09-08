@@ -4,5 +4,5 @@
   "title" : "ResolverAttributes",
   "type" : "string",
   "enum" : [ "TypeName", "ResolverArn", "FieldName" ],
-  "javaType" : "aws.appsync.ResolverAttributes"
+  "javaType" : "shiver.me.timbers.aws.appsync.ResolverAttributes"
 }

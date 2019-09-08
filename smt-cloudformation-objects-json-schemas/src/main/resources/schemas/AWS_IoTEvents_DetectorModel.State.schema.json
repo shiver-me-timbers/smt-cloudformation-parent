@@ -4,18 +4,18 @@
   "title" : "DetectorModelState",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-state.html",
   "type" : "object",
-  "javaType" : "aws.iotevents.DetectorModelState",
-  "javaInterfaces" : [ "aws.Property<DetectorModelState>" ],
+  "javaType" : "shiver.me.timbers.aws.iotevents.DetectorModelState",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DetectorModelState>" ],
   "properties" : {
     "OnInput" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-state.html#cfn-iotevents-detectormodel-state-oninput",
       "$ref" : "AWS_IoTEvents_DetectorModel.OnInput.schema.json",
-      "javaType" : "aws.Property<aws.iotevents.DetectorModelOnInput>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotevents.DetectorModelOnInput>"
     },
     "OnExit" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-state.html#cfn-iotevents-detectormodel-state-onexit",
       "$ref" : "AWS_IoTEvents_DetectorModel.OnExit.schema.json",
-      "javaType" : "aws.Property<aws.iotevents.DetectorModelOnExit>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotevents.DetectorModelOnExit>"
     },
     "StateName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-state.html#cfn-iotevents-detectormodel-state-statename",
@@ -25,7 +25,7 @@
     "OnEnter" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-state.html#cfn-iotevents-detectormodel-state-onenter",
       "$ref" : "AWS_IoTEvents_DetectorModel.OnEnter.schema.json",
-      "javaType" : "aws.Property<aws.iotevents.DetectorModelOnEnter>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotevents.DetectorModelOnEnter>"
     }
   }
 }

@@ -4,8 +4,8 @@
   "title" : "ConfigurationSetTrackingOptions",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpointemail-configurationset-trackingoptions.html",
   "type" : "object",
-  "javaType" : "aws.pinpointemail.ConfigurationSetTrackingOptions",
-  "javaInterfaces" : [ "aws.Property<ConfigurationSetTrackingOptions>" ],
+  "javaType" : "shiver.me.timbers.aws.pinpointemail.ConfigurationSetTrackingOptions",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ConfigurationSetTrackingOptions>" ],
   "properties" : {
     "CustomRedirectDomain" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpointemail-configurationset-trackingoptions.html#cfn-pinpointemail-configurationset-trackingoptions-customredirectdomain",

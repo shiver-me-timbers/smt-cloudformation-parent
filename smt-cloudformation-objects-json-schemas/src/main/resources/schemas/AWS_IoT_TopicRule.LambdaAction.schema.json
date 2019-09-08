@@ -4,8 +4,8 @@
   "title" : "TopicRuleLambdaAction",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-lambdaaction.html",
   "type" : "object",
-  "javaType" : "aws.iot.TopicRuleLambdaAction",
-  "javaInterfaces" : [ "aws.Property<TopicRuleLambdaAction>" ],
+  "javaType" : "shiver.me.timbers.aws.iot.TopicRuleLambdaAction",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TopicRuleLambdaAction>" ],
   "properties" : {
     "FunctionArn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-lambdaaction.html#cfn-iot-topicrule-lambdaaction-functionarn",

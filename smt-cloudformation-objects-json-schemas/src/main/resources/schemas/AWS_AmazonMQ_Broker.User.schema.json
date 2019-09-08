@@ -4,8 +4,8 @@
   "title" : "BrokerUser",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-user.html",
   "type" : "object",
-  "javaType" : "aws.amazonmq.BrokerUser",
-  "javaInterfaces" : [ "aws.Property<BrokerUser>" ],
+  "javaType" : "shiver.me.timbers.aws.amazonmq.BrokerUser",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BrokerUser>" ],
   "properties" : {
     "Username" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-user.html#cfn-amazonmq-broker-user-username",

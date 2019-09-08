@@ -4,5 +4,5 @@
   "title" : "DeviceAttributes",
   "type" : "string",
   "enum" : [ "DeviceId", "Enabled", "Arn" ],
-  "javaType" : "aws.iot1click.DeviceAttributes"
+  "javaType" : "shiver.me.timbers.aws.iot1click.DeviceAttributes"
 }

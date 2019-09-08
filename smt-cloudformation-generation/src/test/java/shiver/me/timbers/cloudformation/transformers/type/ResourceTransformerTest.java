@@ -78,8 +78,8 @@ public class ResourceTransformerTest {
         assertThat(
             actualValue,
             hasEntry("javaInterfaces", asList(
-                format("aws.HasDependsOn<%s>", resourceClassName),
-                format("aws.HasCondition<%s>", resourceClassName)
+                format("shiver.me.timbers.aws.HasDependsOn<%s>", resourceClassName),
+                format("shiver.me.timbers.aws.HasCondition<%s>", resourceClassName)
             ))
         );
         assertThat(actualValue, hasEntry("properties", new LinkedHashMap<String, Object>() {{
@@ -124,9 +124,9 @@ public class ResourceTransformerTest {
         assertThat(
             actualValue,
             hasEntry("javaInterfaces", asList(
-                format("aws.HasDependsOn<%s>", resourceClassName),
-                format("aws.HasCondition<%s>", resourceClassName),
-                format("aws.HasAttributes<%sAttributes>", className)
+                format("shiver.me.timbers.aws.HasDependsOn<%s>", resourceClassName),
+                format("shiver.me.timbers.aws.HasCondition<%s>", resourceClassName),
+                format("shiver.me.timbers.aws.HasAttributes<%sAttributes>", className)
             ))
         );
     }

@@ -4,12 +4,12 @@
   "title" : "DocumentationPart",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationpart.html",
   "type" : "object",
-  "javaType" : "aws.apigateway.DocumentationPart",
+  "javaType" : "shiver.me.timbers.aws.apigateway.DocumentationPart",
   "properties" : {
     "Location" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationpart.html#cfn-apigateway-documentationpart-location",
       "$ref" : "AWS_ApiGateway_DocumentationPart.Location.schema.json",
-      "javaType" : "aws.Property<aws.apigateway.DocumentationPartLocation>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.apigateway.DocumentationPartLocation>"
     },
     "Properties" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationpart.html#cfn-apigateway-documentationpart-properties",

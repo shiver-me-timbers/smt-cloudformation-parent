@@ -4,5 +4,5 @@
   "title" : "WorkteamAttributes",
   "type" : "string",
   "enum" : [ "WorkteamName" ],
-  "javaType" : "aws.sagemaker.WorkteamAttributes"
+  "javaType" : "shiver.me.timbers.aws.sagemaker.WorkteamAttributes"
 }

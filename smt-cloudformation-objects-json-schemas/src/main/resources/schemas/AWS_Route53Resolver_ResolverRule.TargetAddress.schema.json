@@ -4,8 +4,8 @@
   "title" : "ResolverRuleTargetAddress",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53resolver-resolverrule-targetaddress.html",
   "type" : "object",
-  "javaType" : "aws.route53resolver.ResolverRuleTargetAddress",
-  "javaInterfaces" : [ "aws.Property<ResolverRuleTargetAddress>" ],
+  "javaType" : "shiver.me.timbers.aws.route53resolver.ResolverRuleTargetAddress",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ResolverRuleTargetAddress>" ],
   "properties" : {
     "Ip" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53resolver-resolverrule-targetaddress.html#cfn-route53resolver-resolverrule-targetaddress-ip",

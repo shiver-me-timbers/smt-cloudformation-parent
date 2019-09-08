@@ -4,8 +4,8 @@
   "title" : "AutoScalingGroupInstancesDistribution",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-mixedinstancespolicy-instancesdistribution.html",
   "type" : "object",
-  "javaType" : "aws.autoscaling.AutoScalingGroupInstancesDistribution",
-  "javaInterfaces" : [ "aws.Property<AutoScalingGroupInstancesDistribution>" ],
+  "javaType" : "shiver.me.timbers.aws.autoscaling.AutoScalingGroupInstancesDistribution",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<AutoScalingGroupInstancesDistribution>" ],
   "properties" : {
     "OnDemandAllocationStrategy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-mixedinstancespolicy-instancesdistribution.html#cfn-autoscaling-autoscalinggroup-instancesdistribution-ondemandallocationstrategy",

@@ -4,13 +4,13 @@
   "title" : "XssMatchSetXssMatchTuple",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-xssmatchset-xssmatchtuple.html",
   "type" : "object",
-  "javaType" : "aws.waf.XssMatchSetXssMatchTuple",
-  "javaInterfaces" : [ "aws.Property<XssMatchSetXssMatchTuple>" ],
+  "javaType" : "shiver.me.timbers.aws.waf.XssMatchSetXssMatchTuple",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<XssMatchSetXssMatchTuple>" ],
   "properties" : {
     "FieldToMatch" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-xssmatchset-xssmatchtuple.html#cfn-waf-xssmatchset-xssmatchtuple-fieldtomatch",
       "$ref" : "AWS_WAF_XssMatchSet.FieldToMatch.schema.json",
-      "javaType" : "aws.Property<aws.waf.XssMatchSetFieldToMatch>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.waf.XssMatchSetFieldToMatch>"
     },
     "TextTransformation" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-xssmatchset-xssmatchtuple.html#cfn-waf-xssmatchset-xssmatchtuple-texttransformation",

@@ -4,8 +4,8 @@
   "title" : "DeploymentGroupLoadBalancerInfo",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-loadbalancerinfo.html",
   "type" : "object",
-  "javaType" : "aws.codedeploy.DeploymentGroupLoadBalancerInfo",
-  "javaInterfaces" : [ "aws.Property<DeploymentGroupLoadBalancerInfo>" ],
+  "javaType" : "shiver.me.timbers.aws.codedeploy.DeploymentGroupLoadBalancerInfo",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DeploymentGroupLoadBalancerInfo>" ],
   "properties" : {
     "ElbInfoList" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-loadbalancerinfo.html#cfn-codedeploy-deploymentgroup-loadbalancerinfo-elbinfolist",
@@ -13,7 +13,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_CodeDeploy_DeploymentGroup.ELBInfo.schema.json",
-        "javaType" : "aws.Property<aws.codedeploy.DeploymentGroupELBInfo>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codedeploy.DeploymentGroupELBInfo>"
       }
     },
     "TargetGroupInfoList" : {
@@ -22,7 +22,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_CodeDeploy_DeploymentGroup.TargetGroupInfo.schema.json",
-        "javaType" : "aws.Property<aws.codedeploy.DeploymentGroupTargetGroupInfo>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codedeploy.DeploymentGroupTargetGroupInfo>"
       }
     }
   }

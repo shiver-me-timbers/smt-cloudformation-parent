@@ -4,17 +4,17 @@
   "title" : "ApplicationSettings",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-applicationsettings.html",
   "type" : "object",
-  "javaType" : "aws.pinpoint.ApplicationSettings",
+  "javaType" : "shiver.me.timbers.aws.pinpoint.ApplicationSettings",
   "properties" : {
     "QuietTime" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-applicationsettings.html#cfn-pinpoint-applicationsettings-quiettime",
       "$ref" : "AWS_Pinpoint_ApplicationSettings.QuietTime.schema.json",
-      "javaType" : "aws.Property<aws.pinpoint.ApplicationSettingsQuietTime>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpoint.ApplicationSettingsQuietTime>"
     },
     "Limits" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-applicationsettings.html#cfn-pinpoint-applicationsettings-limits",
       "$ref" : "AWS_Pinpoint_ApplicationSettings.Limits.schema.json",
-      "javaType" : "aws.Property<aws.pinpoint.ApplicationSettingsLimits>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpoint.ApplicationSettingsLimits>"
     },
     "ApplicationId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-applicationsettings.html#cfn-pinpoint-applicationsettings-applicationid",
@@ -24,7 +24,7 @@
     "CampaignHook" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-applicationsettings.html#cfn-pinpoint-applicationsettings-campaignhook",
       "$ref" : "AWS_Pinpoint_ApplicationSettings.CampaignHook.schema.json",
-      "javaType" : "aws.Property<aws.pinpoint.ApplicationSettingsCampaignHook>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpoint.ApplicationSettingsCampaignHook>"
     },
     "CloudWatchMetricsEnabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-applicationsettings.html#cfn-pinpoint-applicationsettings-cloudwatchmetricsenabled",

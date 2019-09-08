@@ -4,8 +4,8 @@
   "title" : "ClassifierXMLClassifier",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html",
   "type" : "object",
-  "javaType" : "aws.glue.ClassifierXMLClassifier",
-  "javaInterfaces" : [ "aws.Property<ClassifierXMLClassifier>" ],
+  "javaType" : "shiver.me.timbers.aws.glue.ClassifierXMLClassifier",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ClassifierXMLClassifier>" ],
   "properties" : {
     "RowTag" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html#cfn-glue-classifier-xmlclassifier-rowtag",

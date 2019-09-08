@@ -4,8 +4,8 @@
   "title" : "ConfigurationTemplateSourceConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-configurationtemplate-sourceconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.elasticbeanstalk.ConfigurationTemplateSourceConfiguration",
-  "javaInterfaces" : [ "aws.Property<ConfigurationTemplateSourceConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.elasticbeanstalk.ConfigurationTemplateSourceConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ConfigurationTemplateSourceConfiguration>" ],
   "properties" : {
     "ApplicationName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-configurationtemplate-sourceconfiguration.html#cfn-elasticbeanstalk-configurationtemplate-sourceconfiguration-applicationname",

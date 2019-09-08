@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.InternetGatewayResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<InternetGatewayResource>", "aws.HasCondition<InternetGatewayResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.InternetGatewayResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<InternetGatewayResource>", "shiver.me.timbers.aws.HasCondition<InternetGatewayResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

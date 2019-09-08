@@ -4,12 +4,12 @@
   "title" : "SecurityConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-securityconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.glue.SecurityConfiguration",
+  "javaType" : "shiver.me.timbers.aws.glue.SecurityConfiguration",
   "properties" : {
     "EncryptionConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-securityconfiguration.html#cfn-glue-securityconfiguration-encryptionconfiguration",
       "$ref" : "AWS_Glue_SecurityConfiguration.EncryptionConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.glue.SecurityConfigurationEncryptionConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.glue.SecurityConfigurationEncryptionConfiguration>"
     },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-securityconfiguration.html#cfn-glue-securityconfiguration-name",

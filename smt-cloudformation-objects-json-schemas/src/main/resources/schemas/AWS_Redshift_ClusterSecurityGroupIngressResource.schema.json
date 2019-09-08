@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.redshift.ClusterSecurityGroupIngressResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ClusterSecurityGroupIngressResource>", "aws.HasCondition<ClusterSecurityGroupIngressResource>" ],
+  "javaType" : "shiver.me.timbers.aws.redshift.ClusterSecurityGroupIngressResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ClusterSecurityGroupIngressResource>", "shiver.me.timbers.aws.HasCondition<ClusterSecurityGroupIngressResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

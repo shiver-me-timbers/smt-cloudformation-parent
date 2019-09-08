@@ -4,8 +4,11 @@
   "title": "Resource",
   "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html",
   "type": "object",
-  "javaType": "aws.iam.PolicyDocument",
-  "javaInterfaces": ["aws.Property<PolicyDocument>" ,"aws.iam.HasStatements<PolicyDocument, aws.Property<Statement>>"],
+  "javaType": "shiver.me.timbers.aws.iam.PolicyDocument",
+  "javaInterfaces": [
+    "shiver.me.timbers.aws.Property<PolicyDocument>",
+    "shiver.me.timbers.aws.iam.HasStatements<PolicyDocument, shiver.me.timbers.aws.Property<Statement>>"
+  ],
   "properties": {
     "Version": {
       "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_version.html",
@@ -15,14 +18,14 @@
     "Id": {
       "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_id.html",
       "type": "string",
-      "javaType" : "java.lang.CharSequence"
+      "javaType": "java.lang.CharSequence"
     },
     "Statement": {
       "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_statement.html",
       "type": "array",
       "items": {
         "$ref": "#/definitions/Statement",
-        "javaType" : "aws.Property<Statement>"
+        "javaType": "shiver.me.timbers.aws.Property<Statement>"
       }
     }
   },
@@ -30,33 +33,33 @@
     "Statement": {
       "type": "object",
       "javaInterfaces": [
-        "aws.iam.HasPrincipals<Statement>",
-        "aws.iam.HasActions<Statement>",
-        "aws.iam.HasNotActions<Statement>",
-        "aws.iam.HasNotResources<Statement>",
-        "aws.iam.HasResources<Statement>",
-        "aws.Property<Statement>"
+        "shiver.me.timbers.aws.iam.HasPrincipals<Statement>",
+        "shiver.me.timbers.aws.iam.HasActions<Statement>",
+        "shiver.me.timbers.aws.iam.HasNotActions<Statement>",
+        "shiver.me.timbers.aws.iam.HasNotResources<Statement>",
+        "shiver.me.timbers.aws.iam.HasResources<Statement>",
+        "shiver.me.timbers.aws.Property<Statement>"
       ],
       "properties": {
         "Sid": {
           "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_sid.html",
           "type": "string",
-          "javaType" : "java.lang.CharSequence"
+          "javaType": "java.lang.CharSequence"
         },
         "Effect": {
           "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_effect.html",
           "$ref": "#/definitions/Effect",
-          "javaType" : "aws.Property<Effect>"
+          "javaType": "shiver.me.timbers.aws.Property<Effect>"
         },
         "Principal": {
           "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html",
           "$ref": "#/definitions/Principal",
-          "javaType" : "aws.Property<Principal>"
+          "javaType": "shiver.me.timbers.aws.Property<Principal>"
         },
         "NotPrincipal": {
           "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notprincipal.html",
           "$ref": "#/definitions/Principal",
-          "javaType" : "aws.Property<Principal>"
+          "javaType": "shiver.me.timbers.aws.Property<Principal>"
         },
         "Action": {
           "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_action.html",
@@ -77,21 +80,21 @@
         "Condition": {
           "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html",
           "$ref": "#/definitions/Condition",
-          "javaType" : "aws.Property<aws.iam.Condition>"
+          "javaType": "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iam.Condition>"
         }
       }
     },
     "Effect": {
       "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_effect.html",
       "type": "string",
-      "javaType": "aws.iam.Effect",
-      "javaInterfaces": ["aws.Property<Effect>"],
+      "javaType": "shiver.me.timbers.aws.iam.Effect",
+      "javaInterfaces": ["shiver.me.timbers.aws.Property<Effect>"],
       "enum": ["Allow", "Deny"]
     },
     "Principal": {
       "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html",
       "type": "object",
-      "javaType": "aws.iam.Principal",
+      "javaType": "shiver.me.timbers.aws.iam.Principal",
       "additionalProperties": {
         "type": "array",
         "items": {
@@ -110,7 +113,7 @@
     "Condition": {
       "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html",
       "type": "object",
-      "javaType": "aws.iam.Condition",
+      "javaType": "shiver.me.timbers.aws.iam.Condition",
       "additionalProperties": {
         "type": "object",
         "additionalProperties": {

@@ -4,7 +4,7 @@
   "title" : "ApiKey",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html",
   "type" : "object",
-  "javaType" : "aws.apigateway.ApiKey",
+  "javaType" : "shiver.me.timbers.aws.apigateway.ApiKey",
   "properties" : {
     "CustomerId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-customerid",
@@ -37,7 +37,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ApiGateway_ApiKey.StageKey.schema.json",
-        "javaType" : "aws.Property<aws.apigateway.ApiKeyStageKey>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.apigateway.ApiKeyStageKey>"
       }
     },
     "Value" : {

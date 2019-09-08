@@ -4,8 +4,8 @@
   "title" : "PipelineOutputArtifact",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-outputartifacts.html",
   "type" : "object",
-  "javaType" : "aws.codepipeline.PipelineOutputArtifact",
-  "javaInterfaces" : [ "aws.Property<PipelineOutputArtifact>" ],
+  "javaType" : "shiver.me.timbers.aws.codepipeline.PipelineOutputArtifact",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<PipelineOutputArtifact>" ],
   "properties" : {
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-outputartifacts.html#cfn-codepipeline-pipeline-stages-actions-outputartifacts-name",

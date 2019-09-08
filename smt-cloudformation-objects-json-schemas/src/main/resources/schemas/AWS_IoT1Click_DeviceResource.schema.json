@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.iot1click.DeviceResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<DeviceResource>", "aws.HasCondition<DeviceResource>", "aws.HasAttributes<DeviceAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.iot1click.DeviceResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<DeviceResource>", "shiver.me.timbers.aws.HasCondition<DeviceResource>", "shiver.me.timbers.aws.HasAttributes<DeviceAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -4,13 +4,13 @@
   "title" : "DeploymentStageDescription",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html",
   "type" : "object",
-  "javaType" : "aws.apigateway.DeploymentStageDescription",
-  "javaInterfaces" : [ "aws.Property<DeploymentStageDescription>" ],
+  "javaType" : "shiver.me.timbers.aws.apigateway.DeploymentStageDescription",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DeploymentStageDescription>" ],
   "properties" : {
     "AccessLogSetting" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-accesslogsetting",
       "$ref" : "AWS_ApiGateway_Deployment.AccessLogSetting.schema.json",
-      "javaType" : "aws.Property<aws.apigateway.DeploymentAccessLogSetting>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.apigateway.DeploymentAccessLogSetting>"
     },
     "CacheClusterEnabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-cacheclusterenabled",
@@ -40,7 +40,7 @@
     "CanarySetting" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-canarysetting",
       "$ref" : "AWS_ApiGateway_Deployment.CanarySetting.schema.json",
-      "javaType" : "aws.Property<aws.apigateway.DeploymentCanarySetting>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.apigateway.DeploymentCanarySetting>"
     },
     "ClientCertificateId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-clientcertificateid",
@@ -73,7 +73,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ApiGateway_Deployment.MethodSetting.schema.json",
-        "javaType" : "aws.Property<aws.apigateway.DeploymentMethodSetting>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.apigateway.DeploymentMethodSetting>"
       }
     },
     "MetricsEnabled" : {
@@ -86,7 +86,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     },
     "ThrottlingBurstLimit" : {

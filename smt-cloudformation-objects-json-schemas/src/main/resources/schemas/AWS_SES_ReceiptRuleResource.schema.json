@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ses.ReceiptRuleResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ReceiptRuleResource>", "aws.HasCondition<ReceiptRuleResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ses.ReceiptRuleResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ReceiptRuleResource>", "shiver.me.timbers.aws.HasCondition<ReceiptRuleResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

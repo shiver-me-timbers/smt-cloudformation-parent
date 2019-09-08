@@ -4,5 +4,5 @@
   "title" : "CapacityReservationAttributes",
   "type" : "string",
   "enum" : [ "Tenancy", "AvailableInstanceCount", "AvailabilityZone", "TotalInstanceCount", "InstanceType" ],
-  "javaType" : "aws.ec2.CapacityReservationAttributes"
+  "javaType" : "shiver.me.timbers.aws.ec2.CapacityReservationAttributes"
 }

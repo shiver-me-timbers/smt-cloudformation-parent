@@ -4,8 +4,8 @@
   "title" : "TopicRuleSqsAction",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-sqsaction.html",
   "type" : "object",
-  "javaType" : "aws.iot.TopicRuleSqsAction",
-  "javaInterfaces" : [ "aws.Property<TopicRuleSqsAction>" ],
+  "javaType" : "shiver.me.timbers.aws.iot.TopicRuleSqsAction",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TopicRuleSqsAction>" ],
   "properties" : {
     "QueueUrl" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-sqsaction.html#cfn-iot-topicrule-sqsaction-queueurl",

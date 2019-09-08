@@ -4,8 +4,8 @@
   "title" : "ListenerRuleRedirectConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-redirectconfig.html",
   "type" : "object",
-  "javaType" : "aws.elasticloadbalancingv2.ListenerRuleRedirectConfig",
-  "javaInterfaces" : [ "aws.Property<ListenerRuleRedirectConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.elasticloadbalancingv2.ListenerRuleRedirectConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ListenerRuleRedirectConfig>" ],
   "properties" : {
     "Host" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-redirectconfig.html#cfn-elasticloadbalancingv2-listenerrule-redirectconfig-host",

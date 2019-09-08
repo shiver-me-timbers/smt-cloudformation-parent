@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.SpotFleetResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<SpotFleetResource>", "aws.HasCondition<SpotFleetResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.SpotFleetResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<SpotFleetResource>", "shiver.me.timbers.aws.HasCondition<SpotFleetResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

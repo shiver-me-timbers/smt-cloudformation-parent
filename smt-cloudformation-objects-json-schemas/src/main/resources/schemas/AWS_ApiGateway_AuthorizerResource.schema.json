@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.apigateway.AuthorizerResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<AuthorizerResource>", "aws.HasCondition<AuthorizerResource>" ],
+  "javaType" : "shiver.me.timbers.aws.apigateway.AuthorizerResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<AuthorizerResource>", "shiver.me.timbers.aws.HasCondition<AuthorizerResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

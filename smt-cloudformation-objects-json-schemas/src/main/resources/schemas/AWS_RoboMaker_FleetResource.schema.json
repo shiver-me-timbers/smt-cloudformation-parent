@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.robomaker.FleetResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<FleetResource>", "aws.HasCondition<FleetResource>", "aws.HasAttributes<FleetAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.robomaker.FleetResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<FleetResource>", "shiver.me.timbers.aws.HasCondition<FleetResource>", "shiver.me.timbers.aws.HasAttributes<FleetAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

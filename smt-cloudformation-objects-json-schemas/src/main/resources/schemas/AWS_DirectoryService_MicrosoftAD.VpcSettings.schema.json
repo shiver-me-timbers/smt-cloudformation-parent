@@ -4,8 +4,8 @@
   "title" : "MicrosoftADVpcSettings",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-microsoftad-vpcsettings.html",
   "type" : "object",
-  "javaType" : "aws.directoryservice.MicrosoftADVpcSettings",
-  "javaInterfaces" : [ "aws.Property<MicrosoftADVpcSettings>" ],
+  "javaType" : "shiver.me.timbers.aws.directoryservice.MicrosoftADVpcSettings",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<MicrosoftADVpcSettings>" ],
   "properties" : {
     "SubnetIds" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-microsoftad-vpcsettings.html#cfn-directoryservice-microsoftad-vpcsettings-subnetids",

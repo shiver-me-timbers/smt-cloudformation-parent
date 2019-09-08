@@ -4,8 +4,8 @@
   "title" : "FleetDomainJoinInfo",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-fleet-domainjoininfo.html",
   "type" : "object",
-  "javaType" : "aws.appstream.FleetDomainJoinInfo",
-  "javaInterfaces" : [ "aws.Property<FleetDomainJoinInfo>" ],
+  "javaType" : "shiver.me.timbers.aws.appstream.FleetDomainJoinInfo",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<FleetDomainJoinInfo>" ],
   "properties" : {
     "OrganizationalUnitDistinguishedName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-fleet-domainjoininfo.html#cfn-appstream-fleet-domainjoininfo-organizationalunitdistinguishedname",

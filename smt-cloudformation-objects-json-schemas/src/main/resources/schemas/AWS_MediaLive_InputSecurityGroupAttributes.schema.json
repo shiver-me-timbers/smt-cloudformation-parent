@@ -4,5 +4,5 @@
   "title" : "InputSecurityGroupAttributes",
   "type" : "string",
   "enum" : [ "Arn" ],
-  "javaType" : "aws.medialive.InputSecurityGroupAttributes"
+  "javaType" : "shiver.me.timbers.aws.medialive.InputSecurityGroupAttributes"
 }

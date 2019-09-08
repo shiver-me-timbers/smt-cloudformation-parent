@@ -4,7 +4,7 @@
   "title" : "FunctionConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-functionconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.appsync.FunctionConfiguration",
+  "javaType" : "shiver.me.timbers.aws.appsync.FunctionConfiguration",
   "properties" : {
     "ResponseMappingTemplateS3Location" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-functionconfiguration.html#cfn-appsync-functionconfiguration-responsemappingtemplates3location",

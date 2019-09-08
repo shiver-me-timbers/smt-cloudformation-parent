@@ -4,8 +4,8 @@
   "title" : "ListenerRuleAuthenticateCognitoConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-authenticatecognitoconfig.html",
   "type" : "object",
-  "javaType" : "aws.elasticloadbalancingv2.ListenerRuleAuthenticateCognitoConfig",
-  "javaInterfaces" : [ "aws.Property<ListenerRuleAuthenticateCognitoConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.elasticloadbalancingv2.ListenerRuleAuthenticateCognitoConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ListenerRuleAuthenticateCognitoConfig>" ],
   "properties" : {
     "AuthenticationRequestExtraParams" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-authenticatecognitoconfig.html#cfn-elasticloadbalancingv2-listenerrule-authenticatecognitoconfig-authenticationrequestextraparams",

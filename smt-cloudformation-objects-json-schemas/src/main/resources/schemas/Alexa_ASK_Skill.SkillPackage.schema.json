@@ -4,8 +4,8 @@
   "title" : "SkillSkillPackage",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ask-skill-skillpackage.html",
   "type" : "object",
-  "javaType" : "alexa.ask.SkillSkillPackage",
-  "javaInterfaces" : [ "aws.Property<SkillSkillPackage>" ],
+  "javaType" : "shiver.me.timbers.alexa.ask.SkillSkillPackage",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<SkillSkillPackage>" ],
   "properties" : {
     "S3BucketRole" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ask-skill-skillpackage.html#cfn-ask-skill-skillpackage-s3bucketrole",
@@ -30,7 +30,7 @@
     "Overrides" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ask-skill-skillpackage.html#cfn-ask-skill-skillpackage-overrides",
       "$ref" : "Alexa_ASK_Skill.Overrides.schema.json",
-      "javaType" : "aws.Property<alexa.ask.SkillOverrides>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.alexa.ask.SkillOverrides>"
     }
   }
 }

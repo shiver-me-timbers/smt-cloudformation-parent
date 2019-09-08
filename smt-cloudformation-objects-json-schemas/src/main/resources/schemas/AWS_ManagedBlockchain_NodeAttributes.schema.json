@@ -4,5 +4,5 @@
   "title" : "NodeAttributes",
   "type" : "string",
   "enum" : [ "MemberId", "NodeId", "Arn", "NetworkId" ],
-  "javaType" : "aws.managedblockchain.NodeAttributes"
+  "javaType" : "shiver.me.timbers.aws.managedblockchain.NodeAttributes"
 }

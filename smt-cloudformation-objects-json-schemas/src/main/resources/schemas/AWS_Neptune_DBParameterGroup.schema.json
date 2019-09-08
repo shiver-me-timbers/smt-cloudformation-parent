@@ -4,7 +4,7 @@
   "title" : "DBParameterGroup",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbparametergroup.html",
   "type" : "object",
-  "javaType" : "aws.neptune.DBParameterGroup",
+  "javaType" : "shiver.me.timbers.aws.neptune.DBParameterGroup",
   "properties" : {
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbparametergroup.html#cfn-neptune-dbparametergroup-description",
@@ -26,7 +26,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     },
     "Name" : {

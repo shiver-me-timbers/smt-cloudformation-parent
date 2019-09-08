@@ -4,5 +4,5 @@
   "title" : "ResolverRuleAttributes",
   "type" : "string",
   "enum" : [ "ResolverEndpointId", "DomainName", "ResolverRuleId", "Arn", "TargetIps", "Name" ],
-  "javaType" : "aws.route53resolver.ResolverRuleAttributes"
+  "javaType" : "shiver.me.timbers.aws.route53resolver.ResolverRuleAttributes"
 }

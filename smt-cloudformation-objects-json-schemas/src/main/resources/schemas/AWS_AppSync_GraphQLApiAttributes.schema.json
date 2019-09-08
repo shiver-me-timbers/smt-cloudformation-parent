@@ -4,5 +4,5 @@
   "title" : "GraphQLApiAttributes",
   "type" : "string",
   "enum" : [ "GraphQLUrl", "Arn", "ApiId" ],
-  "javaType" : "aws.appsync.GraphQLApiAttributes"
+  "javaType" : "shiver.me.timbers.aws.appsync.GraphQLApiAttributes"
 }

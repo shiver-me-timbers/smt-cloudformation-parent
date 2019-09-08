@@ -4,19 +4,19 @@
   "title" : "Webhook",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html",
   "type" : "object",
-  "javaType" : "aws.codepipeline.Webhook",
+  "javaType" : "shiver.me.timbers.aws.codepipeline.Webhook",
   "properties" : {
     "AuthenticationConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-authenticationconfiguration",
       "$ref" : "AWS_CodePipeline_Webhook.WebhookAuthConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.codepipeline.WebhookWebhookAuthConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codepipeline.WebhookWebhookAuthConfiguration>"
     },
     "Filters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-filters",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_CodePipeline_Webhook.WebhookFilterRule.schema.json",
-        "javaType" : "aws.Property<aws.codepipeline.WebhookWebhookFilterRule>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codepipeline.WebhookWebhookFilterRule>"
       }
     },
     "Authentication" : {

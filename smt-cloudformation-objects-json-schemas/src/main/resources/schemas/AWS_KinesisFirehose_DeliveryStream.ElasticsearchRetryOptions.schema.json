@@ -4,8 +4,8 @@
   "title" : "DeliveryStreamElasticsearchRetryOptions",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchretryoptions.html",
   "type" : "object",
-  "javaType" : "aws.kinesisfirehose.DeliveryStreamElasticsearchRetryOptions",
-  "javaInterfaces" : [ "aws.Property<DeliveryStreamElasticsearchRetryOptions>" ],
+  "javaType" : "shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamElasticsearchRetryOptions",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DeliveryStreamElasticsearchRetryOptions>" ],
   "properties" : {
     "DurationInSeconds" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchretryoptions.html#cfn-kinesisfirehose-deliverystream-elasticsearchretryoptions-durationinseconds",

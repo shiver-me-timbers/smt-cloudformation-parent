@@ -4,5 +4,5 @@
   "title" : "SubnetNetworkAclAssociationAttributes",
   "type" : "string",
   "enum" : [ "AssociationId" ],
-  "javaType" : "aws.ec2.SubnetNetworkAclAssociationAttributes"
+  "javaType" : "shiver.me.timbers.aws.ec2.SubnetNetworkAclAssociationAttributes"
 }

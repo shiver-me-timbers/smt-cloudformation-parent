@@ -4,8 +4,8 @@
   "title" : "RuleRunCommandTarget",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-runcommandtarget.html",
   "type" : "object",
-  "javaType" : "aws.events.RuleRunCommandTarget",
-  "javaInterfaces" : [ "aws.Property<RuleRunCommandTarget>" ],
+  "javaType" : "shiver.me.timbers.aws.events.RuleRunCommandTarget",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<RuleRunCommandTarget>" ],
   "properties" : {
     "Key" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-runcommandtarget.html#cfn-events-rule-runcommandtarget-key",

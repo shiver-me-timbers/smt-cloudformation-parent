@@ -4,8 +4,8 @@
   "title" : "BackupSelectionConditionResourceType",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-backup-backupselection-conditionresourcetype.html",
   "type" : "object",
-  "javaType" : "aws.backup.BackupSelectionConditionResourceType",
-  "javaInterfaces" : [ "aws.Property<BackupSelectionConditionResourceType>" ],
+  "javaType" : "shiver.me.timbers.aws.backup.BackupSelectionConditionResourceType",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BackupSelectionConditionResourceType>" ],
   "properties" : {
     "ConditionValue" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-backup-backupselection-conditionresourcetype.html#cfn-backup-backupselection-conditionresourcetype-conditionvalue",

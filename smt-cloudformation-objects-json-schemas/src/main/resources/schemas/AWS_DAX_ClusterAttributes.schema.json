@@ -4,5 +4,5 @@
   "title" : "ClusterAttributes",
   "type" : "string",
   "enum" : [ "ClusterDiscoveryEndpoint", "Arn" ],
-  "javaType" : "aws.dax.ClusterAttributes"
+  "javaType" : "shiver.me.timbers.aws.dax.ClusterAttributes"
 }

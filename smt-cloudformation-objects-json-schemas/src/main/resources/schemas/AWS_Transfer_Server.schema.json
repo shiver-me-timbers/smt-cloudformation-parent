@@ -4,7 +4,7 @@
   "title" : "Server",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-server.html",
   "type" : "object",
-  "javaType" : "aws.transfer.Server",
+  "javaType" : "shiver.me.timbers.aws.transfer.Server",
   "properties" : {
     "LoggingRole" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-server.html#cfn-transfer-server-loggingrole",
@@ -14,7 +14,7 @@
     "IdentityProviderDetails" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-server.html#cfn-transfer-server-identityproviderdetails",
       "$ref" : "AWS_Transfer_Server.IdentityProviderDetails.schema.json",
-      "javaType" : "aws.Property<aws.transfer.ServerIdentityProviderDetails>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.transfer.ServerIdentityProviderDetails>"
     },
     "EndpointType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-server.html#cfn-transfer-server-endpointtype",
@@ -24,7 +24,7 @@
     "EndpointDetails" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-server.html#cfn-transfer-server-endpointdetails",
       "$ref" : "AWS_Transfer_Server.EndpointDetails.schema.json",
-      "javaType" : "aws.Property<aws.transfer.ServerEndpointDetails>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.transfer.ServerEndpointDetails>"
     },
     "IdentityProviderType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-server.html#cfn-transfer-server-identityprovidertype",
@@ -36,7 +36,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     }
   }

@@ -4,8 +4,8 @@
   "title" : "DistributionViewerCertificate",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html",
   "type" : "object",
-  "javaType" : "aws.cloudfront.DistributionViewerCertificate",
-  "javaInterfaces" : [ "aws.Property<DistributionViewerCertificate>" ],
+  "javaType" : "shiver.me.timbers.aws.cloudfront.DistributionViewerCertificate",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DistributionViewerCertificate>" ],
   "properties" : {
     "IamCertificateId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html#cfn-cloudfront-distribution-viewercertificate-iamcertificateid",

@@ -4,8 +4,8 @@
   "title" : "DeviceDefinitionVersionDevice",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-devicedefinitionversion-device.html",
   "type" : "object",
-  "javaType" : "aws.greengrass.DeviceDefinitionVersionDevice",
-  "javaInterfaces" : [ "aws.Property<DeviceDefinitionVersionDevice>" ],
+  "javaType" : "shiver.me.timbers.aws.greengrass.DeviceDefinitionVersionDevice",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DeviceDefinitionVersionDevice>" ],
   "properties" : {
     "SyncShadow" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-devicedefinitionversion-device.html#cfn-greengrass-devicedefinitionversion-device-syncshadow",

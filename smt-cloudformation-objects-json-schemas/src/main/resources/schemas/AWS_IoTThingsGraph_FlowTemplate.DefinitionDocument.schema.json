@@ -4,8 +4,8 @@
   "title" : "FlowTemplateDefinitionDocument",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotthingsgraph-flowtemplate-definitiondocument.html",
   "type" : "object",
-  "javaType" : "aws.iotthingsgraph.FlowTemplateDefinitionDocument",
-  "javaInterfaces" : [ "aws.Property<FlowTemplateDefinitionDocument>" ],
+  "javaType" : "shiver.me.timbers.aws.iotthingsgraph.FlowTemplateDefinitionDocument",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<FlowTemplateDefinitionDocument>" ],
   "properties" : {
     "Language" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotthingsgraph-flowtemplate-definitiondocument.html#cfn-iotthingsgraph-flowtemplate-definitiondocument-language",

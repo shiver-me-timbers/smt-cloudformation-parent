@@ -4,8 +4,8 @@
   "title" : "DomainNameEndpointConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-domainname-endpointconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.apigateway.DomainNameEndpointConfiguration",
-  "javaInterfaces" : [ "aws.Property<DomainNameEndpointConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.apigateway.DomainNameEndpointConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DomainNameEndpointConfiguration>" ],
   "properties" : {
     "Types" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-domainname-endpointconfiguration.html#cfn-apigateway-domainname-endpointconfiguration-types",

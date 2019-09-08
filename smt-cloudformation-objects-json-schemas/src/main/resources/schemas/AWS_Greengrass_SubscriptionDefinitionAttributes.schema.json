@@ -4,5 +4,5 @@
   "title" : "SubscriptionDefinitionAttributes",
   "type" : "string",
   "enum" : [ "LatestVersionArn", "Id", "Arn", "Name" ],
-  "javaType" : "aws.greengrass.SubscriptionDefinitionAttributes"
+  "javaType" : "shiver.me.timbers.aws.greengrass.SubscriptionDefinitionAttributes"
 }

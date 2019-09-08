@@ -4,8 +4,8 @@
   "title" : "DBSecurityGroupIngress",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group-rule.html",
   "type" : "object",
-  "javaType" : "aws.rds.DBSecurityGroupIngress",
-  "javaInterfaces" : [ "aws.Property<DBSecurityGroupIngress>" ],
+  "javaType" : "shiver.me.timbers.aws.rds.DBSecurityGroupIngress",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DBSecurityGroupIngress>" ],
   "properties" : {
     "CIDRIP" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group-rule.html#cfn-rds-securitygroup-cidrip",

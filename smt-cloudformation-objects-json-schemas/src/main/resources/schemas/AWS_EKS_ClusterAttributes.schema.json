@@ -4,5 +4,5 @@
   "title" : "ClusterAttributes",
   "type" : "string",
   "enum" : [ "Endpoint", "Arn", "CertificateAuthorityData" ],
-  "javaType" : "aws.eks.ClusterAttributes"
+  "javaType" : "shiver.me.timbers.aws.eks.ClusterAttributes"
 }

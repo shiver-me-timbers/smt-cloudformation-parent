@@ -4,8 +4,8 @@
   "title" : "GraphQLApiOpenIDConnectConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-openidconnectconfig.html",
   "type" : "object",
-  "javaType" : "aws.appsync.GraphQLApiOpenIDConnectConfig",
-  "javaInterfaces" : [ "aws.Property<GraphQLApiOpenIDConnectConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.appsync.GraphQLApiOpenIDConnectConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<GraphQLApiOpenIDConnectConfig>" ],
   "properties" : {
     "Issuer" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-openidconnectconfig.html#cfn-appsync-graphqlapi-openidconnectconfig-issuer",

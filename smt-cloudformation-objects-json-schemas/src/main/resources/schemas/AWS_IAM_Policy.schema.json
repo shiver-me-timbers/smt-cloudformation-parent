@@ -4,7 +4,7 @@
   "title" : "Policy",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html",
   "type" : "object",
-  "javaType" : "aws.iam.Policy",
+  "javaType" : "shiver.me.timbers.aws.iam.Policy",
   "properties" : {
     "Groups" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html#cfn-iam-policy-groups",
@@ -17,7 +17,7 @@
     "PolicyDocument" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html#cfn-iam-policy-policydocument",
       "$ref" : "PolicyDocument.schema.json",
-      "javaType" : "aws.Property<aws.iam.PolicyDocument>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iam.PolicyDocument>"
     },
     "PolicyName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html#cfn-iam-policy-policyname",

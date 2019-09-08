@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.lambda.LayerVersionPermissionResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<LayerVersionPermissionResource>", "aws.HasCondition<LayerVersionPermissionResource>" ],
+  "javaType" : "shiver.me.timbers.aws.lambda.LayerVersionPermissionResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<LayerVersionPermissionResource>", "shiver.me.timbers.aws.HasCondition<LayerVersionPermissionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

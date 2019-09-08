@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.managedblockchain.NodeResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<NodeResource>", "aws.HasCondition<NodeResource>", "aws.HasAttributes<NodeAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.managedblockchain.NodeResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<NodeResource>", "shiver.me.timbers.aws.HasCondition<NodeResource>", "shiver.me.timbers.aws.HasAttributes<NodeAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

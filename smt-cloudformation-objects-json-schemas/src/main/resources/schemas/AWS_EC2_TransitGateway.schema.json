@@ -4,7 +4,7 @@
   "title" : "TransitGateway",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgateway.html",
   "type" : "object",
-  "javaType" : "aws.ec2.TransitGateway",
+  "javaType" : "shiver.me.timbers.aws.ec2.TransitGateway",
   "properties" : {
     "DefaultRouteTablePropagation" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgateway.html#cfn-ec2-transitgateway-defaultroutetablepropagation",
@@ -46,7 +46,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     }
   }

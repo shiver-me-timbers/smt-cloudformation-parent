@@ -4,8 +4,8 @@
   "title" : "ClusterResourcesVpcConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-eks-cluster-resourcesvpcconfig.html",
   "type" : "object",
-  "javaType" : "aws.eks.ClusterResourcesVpcConfig",
-  "javaInterfaces" : [ "aws.Property<ClusterResourcesVpcConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.eks.ClusterResourcesVpcConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ClusterResourcesVpcConfig>" ],
   "properties" : {
     "SecurityGroupIds" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-eks-cluster-resourcesvpcconfig.html#cfn-eks-cluster-resourcesvpcconfig-securitygroupids",

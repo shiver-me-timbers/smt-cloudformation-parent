@@ -4,8 +4,8 @@
   "title" : "ResourceDefinitionSageMakerMachineLearningModelResourceData",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-sagemakermachinelearningmodelresourcedata.html",
   "type" : "object",
-  "javaType" : "aws.greengrass.ResourceDefinitionSageMakerMachineLearningModelResourceData",
-  "javaInterfaces" : [ "aws.Property<ResourceDefinitionSageMakerMachineLearningModelResourceData>" ],
+  "javaType" : "shiver.me.timbers.aws.greengrass.ResourceDefinitionSageMakerMachineLearningModelResourceData",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ResourceDefinitionSageMakerMachineLearningModelResourceData>" ],
   "properties" : {
     "DestinationPath" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-sagemakermachinelearningmodelresourcedata.html#cfn-greengrass-resourcedefinition-sagemakermachinelearningmodelresourcedata-destinationpath",

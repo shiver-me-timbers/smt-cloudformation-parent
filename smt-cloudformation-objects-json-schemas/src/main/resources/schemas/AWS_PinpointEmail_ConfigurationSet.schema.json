@@ -4,34 +4,34 @@
   "title" : "ConfigurationSet",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpointemail-configurationset.html",
   "type" : "object",
-  "javaType" : "aws.pinpointemail.ConfigurationSet",
+  "javaType" : "shiver.me.timbers.aws.pinpointemail.ConfigurationSet",
   "properties" : {
     "SendingOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpointemail-configurationset.html#cfn-pinpointemail-configurationset-sendingoptions",
       "$ref" : "AWS_PinpointEmail_ConfigurationSet.SendingOptions.schema.json",
-      "javaType" : "aws.Property<aws.pinpointemail.ConfigurationSetSendingOptions>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpointemail.ConfigurationSetSendingOptions>"
     },
     "TrackingOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpointemail-configurationset.html#cfn-pinpointemail-configurationset-trackingoptions",
       "$ref" : "AWS_PinpointEmail_ConfigurationSet.TrackingOptions.schema.json",
-      "javaType" : "aws.Property<aws.pinpointemail.ConfigurationSetTrackingOptions>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpointemail.ConfigurationSetTrackingOptions>"
     },
     "ReputationOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpointemail-configurationset.html#cfn-pinpointemail-configurationset-reputationoptions",
       "$ref" : "AWS_PinpointEmail_ConfigurationSet.ReputationOptions.schema.json",
-      "javaType" : "aws.Property<aws.pinpointemail.ConfigurationSetReputationOptions>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpointemail.ConfigurationSetReputationOptions>"
     },
     "DeliveryOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpointemail-configurationset.html#cfn-pinpointemail-configurationset-deliveryoptions",
       "$ref" : "AWS_PinpointEmail_ConfigurationSet.DeliveryOptions.schema.json",
-      "javaType" : "aws.Property<aws.pinpointemail.ConfigurationSetDeliveryOptions>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpointemail.ConfigurationSetDeliveryOptions>"
     },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpointemail-configurationset.html#cfn-pinpointemail-configurationset-tags",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_PinpointEmail_ConfigurationSet.Tags.schema.json",
-        "javaType" : "aws.Property<aws.pinpointemail.ConfigurationSetTags>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpointemail.ConfigurationSetTags>"
       }
     },
     "Name" : {

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.kinesisanalyticsv2.ApplicationReferenceDataSourceResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ApplicationReferenceDataSourceResource>", "aws.HasCondition<ApplicationReferenceDataSourceResource>" ],
+  "javaType" : "shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationReferenceDataSourceResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ApplicationReferenceDataSourceResource>", "shiver.me.timbers.aws.HasCondition<ApplicationReferenceDataSourceResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

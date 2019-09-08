@@ -4,5 +4,5 @@
   "title" : "ConfigurationAttributes",
   "type" : "string",
   "enum" : [ "Revision", "Id", "Arn" ],
-  "javaType" : "aws.amazonmq.ConfigurationAttributes"
+  "javaType" : "shiver.me.timbers.aws.amazonmq.ConfigurationAttributes"
 }

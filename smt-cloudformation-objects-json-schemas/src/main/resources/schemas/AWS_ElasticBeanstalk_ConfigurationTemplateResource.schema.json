@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.elasticbeanstalk.ConfigurationTemplateResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ConfigurationTemplateResource>", "aws.HasCondition<ConfigurationTemplateResource>" ],
+  "javaType" : "shiver.me.timbers.aws.elasticbeanstalk.ConfigurationTemplateResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ConfigurationTemplateResource>", "shiver.me.timbers.aws.HasCondition<ConfigurationTemplateResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -4,5 +4,5 @@
   "title" : "VirtualRouterAttributes",
   "type" : "string",
   "enum" : [ "Uid", "MeshName", "VirtualRouterName", "Arn" ],
-  "javaType" : "aws.appmesh.VirtualRouterAttributes"
+  "javaType" : "shiver.me.timbers.aws.appmesh.VirtualRouterAttributes"
 }

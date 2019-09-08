@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.apigateway.RequestValidatorResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<RequestValidatorResource>", "aws.HasCondition<RequestValidatorResource>" ],
+  "javaType" : "shiver.me.timbers.aws.apigateway.RequestValidatorResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<RequestValidatorResource>", "shiver.me.timbers.aws.HasCondition<RequestValidatorResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

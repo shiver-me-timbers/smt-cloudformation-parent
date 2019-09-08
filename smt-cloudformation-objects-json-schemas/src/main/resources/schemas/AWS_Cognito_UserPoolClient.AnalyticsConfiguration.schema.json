@@ -4,8 +4,8 @@
   "title" : "UserPoolClientAnalyticsConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpoolclient-analyticsconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.cognito.UserPoolClientAnalyticsConfiguration",
-  "javaInterfaces" : [ "aws.Property<UserPoolClientAnalyticsConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.cognito.UserPoolClientAnalyticsConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<UserPoolClientAnalyticsConfiguration>" ],
   "properties" : {
     "UserDataShared" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpoolclient-analyticsconfiguration.html#cfn-cognito-userpoolclient-analyticsconfiguration-userdatashared",

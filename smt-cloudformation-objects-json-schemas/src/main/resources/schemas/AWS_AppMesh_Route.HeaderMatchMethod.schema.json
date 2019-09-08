@@ -4,8 +4,8 @@
   "title" : "RouteHeaderMatchMethod",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-headermatchmethod.html",
   "type" : "object",
-  "javaType" : "aws.appmesh.RouteHeaderMatchMethod",
-  "javaInterfaces" : [ "aws.Property<RouteHeaderMatchMethod>" ],
+  "javaType" : "shiver.me.timbers.aws.appmesh.RouteHeaderMatchMethod",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<RouteHeaderMatchMethod>" ],
   "properties" : {
     "Suffix" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-headermatchmethod.html#cfn-appmesh-route-headermatchmethod-suffix",
@@ -30,7 +30,7 @@
     "Range" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-headermatchmethod.html#cfn-appmesh-route-headermatchmethod-range",
       "$ref" : "AWS_AppMesh_Route.MatchRange.schema.json",
-      "javaType" : "aws.Property<aws.appmesh.RouteMatchRange>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appmesh.RouteMatchRange>"
     }
   }
 }

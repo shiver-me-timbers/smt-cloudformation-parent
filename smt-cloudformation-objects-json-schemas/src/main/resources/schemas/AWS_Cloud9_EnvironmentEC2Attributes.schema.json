@@ -4,5 +4,5 @@
   "title" : "EnvironmentEC2Attributes",
   "type" : "string",
   "enum" : [ "Arn", "Name" ],
-  "javaType" : "aws.cloud9.EnvironmentEC2Attributes"
+  "javaType" : "shiver.me.timbers.aws.cloud9.EnvironmentEC2Attributes"
 }

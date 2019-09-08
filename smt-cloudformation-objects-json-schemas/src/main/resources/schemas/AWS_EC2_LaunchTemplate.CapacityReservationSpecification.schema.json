@@ -4,18 +4,18 @@
   "title" : "LaunchTemplateCapacityReservationSpecification",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-capacityreservationspecification.html",
   "type" : "object",
-  "javaType" : "aws.ec2.LaunchTemplateCapacityReservationSpecification",
-  "javaInterfaces" : [ "aws.Property<LaunchTemplateCapacityReservationSpecification>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.LaunchTemplateCapacityReservationSpecification",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<LaunchTemplateCapacityReservationSpecification>" ],
   "properties" : {
     "CapacityReservationPreference" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-capacityreservationspecification.html#cfn-ec2-launchtemplate-launchtemplatedata-capacityreservationspecification-capacityreservationpreference",
       "$ref" : "AWS_EC2_LaunchTemplate.CapacityReservationPreference.schema.json",
-      "javaType" : "aws.Property<aws.ec2.LaunchTemplateCapacityReservationPreference>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.LaunchTemplateCapacityReservationPreference>"
     },
     "CapacityReservationTarget" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-capacityreservationspecification.html#cfn-ec2-launchtemplate-launchtemplatedata-capacityreservationspecification-capacityreservationtarget",
       "$ref" : "AWS_EC2_LaunchTemplate.CapacityReservationTarget.schema.json",
-      "javaType" : "aws.Property<aws.ec2.LaunchTemplateCapacityReservationTarget>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.LaunchTemplateCapacityReservationTarget>"
     }
   }
 }

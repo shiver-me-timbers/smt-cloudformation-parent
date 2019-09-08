@@ -7,7 +7,7 @@
   "extends": {
     "$ref": "Named.schema.json"
   },
-  "javaType": "aws.Output",
+  "javaType": "shiver.me.timbers.aws.Output",
   "properties": {
     "Description": {
       "type": "string"

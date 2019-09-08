@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.TransitGatewayRouteResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<TransitGatewayRouteResource>", "aws.HasCondition<TransitGatewayRouteResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.TransitGatewayRouteResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<TransitGatewayRouteResource>", "shiver.me.timbers.aws.HasCondition<TransitGatewayRouteResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

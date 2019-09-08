@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.elasticache.CacheClusterResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<CacheClusterResource>", "aws.HasCondition<CacheClusterResource>", "aws.HasAttributes<CacheClusterAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.elasticache.CacheClusterResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<CacheClusterResource>", "shiver.me.timbers.aws.HasCondition<CacheClusterResource>", "shiver.me.timbers.aws.HasAttributes<CacheClusterAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

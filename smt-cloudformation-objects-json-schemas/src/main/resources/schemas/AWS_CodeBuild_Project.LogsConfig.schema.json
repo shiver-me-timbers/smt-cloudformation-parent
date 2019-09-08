@@ -4,18 +4,18 @@
   "title" : "ProjectLogsConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-logsconfig.html",
   "type" : "object",
-  "javaType" : "aws.codebuild.ProjectLogsConfig",
-  "javaInterfaces" : [ "aws.Property<ProjectLogsConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.codebuild.ProjectLogsConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ProjectLogsConfig>" ],
   "properties" : {
     "CloudWatchLogs" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-logsconfig.html#cfn-codebuild-project-logsconfig-cloudwatchlogs",
       "$ref" : "AWS_CodeBuild_Project.CloudWatchLogsConfig.schema.json",
-      "javaType" : "aws.Property<aws.codebuild.ProjectCloudWatchLogsConfig>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codebuild.ProjectCloudWatchLogsConfig>"
     },
     "S3Logs" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-logsconfig.html#cfn-codebuild-project-logsconfig-s3logs",
       "$ref" : "AWS_CodeBuild_Project.S3LogsConfig.schema.json",
-      "javaType" : "aws.Property<aws.codebuild.ProjectS3LogsConfig>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codebuild.ProjectS3LogsConfig>"
     }
   }
 }

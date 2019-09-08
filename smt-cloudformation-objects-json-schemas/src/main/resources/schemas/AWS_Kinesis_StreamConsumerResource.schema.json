@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.kinesis.StreamConsumerResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<StreamConsumerResource>", "aws.HasCondition<StreamConsumerResource>", "aws.HasAttributes<StreamConsumerAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.kinesis.StreamConsumerResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<StreamConsumerResource>", "shiver.me.timbers.aws.HasCondition<StreamConsumerResource>", "shiver.me.timbers.aws.HasAttributes<StreamConsumerAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

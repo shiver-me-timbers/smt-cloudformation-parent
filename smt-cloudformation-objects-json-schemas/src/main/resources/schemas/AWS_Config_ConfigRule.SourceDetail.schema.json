@@ -4,8 +4,8 @@
   "title" : "ConfigRuleSourceDetail",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source-sourcedetails.html",
   "type" : "object",
-  "javaType" : "aws.config.ConfigRuleSourceDetail",
-  "javaInterfaces" : [ "aws.Property<ConfigRuleSourceDetail>" ],
+  "javaType" : "shiver.me.timbers.aws.config.ConfigRuleSourceDetail",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ConfigRuleSourceDetail>" ],
   "properties" : {
     "EventSource" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source-sourcedetails.html#cfn-config-configrule-source-sourcedetail-eventsource",

@@ -4,5 +4,5 @@
   "title" : "DBClusterAttributes",
   "type" : "string",
   "enum" : [ "ClusterResourceId", "Endpoint", "Port", "ReadEndpoint" ],
-  "javaType" : "aws.neptune.DBClusterAttributes"
+  "javaType" : "shiver.me.timbers.aws.neptune.DBClusterAttributes"
 }

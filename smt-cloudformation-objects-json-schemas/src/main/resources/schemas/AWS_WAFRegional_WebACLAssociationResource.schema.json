@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.wafregional.WebACLAssociationResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<WebACLAssociationResource>", "aws.HasCondition<WebACLAssociationResource>" ],
+  "javaType" : "shiver.me.timbers.aws.wafregional.WebACLAssociationResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<WebACLAssociationResource>", "shiver.me.timbers.aws.HasCondition<WebACLAssociationResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -4,8 +4,8 @@
   "title" : "ClusterBrokerNodeGroupInfo",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-brokernodegroupinfo.html",
   "type" : "object",
-  "javaType" : "aws.msk.ClusterBrokerNodeGroupInfo",
-  "javaInterfaces" : [ "aws.Property<ClusterBrokerNodeGroupInfo>" ],
+  "javaType" : "shiver.me.timbers.aws.msk.ClusterBrokerNodeGroupInfo",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ClusterBrokerNodeGroupInfo>" ],
   "properties" : {
     "SecurityGroups" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-brokernodegroupinfo.html#cfn-msk-cluster-brokernodegroupinfo-securitygroups",
@@ -26,7 +26,7 @@
     "StorageInfo" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-brokernodegroupinfo.html#cfn-msk-cluster-brokernodegroupinfo-storageinfo",
       "$ref" : "AWS_MSK_Cluster.StorageInfo.schema.json",
-      "javaType" : "aws.Property<aws.msk.ClusterStorageInfo>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.msk.ClusterStorageInfo>"
     },
     "BrokerAZDistribution" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-brokernodegroupinfo.html#cfn-msk-cluster-brokernodegroupinfo-brokerazdistribution",

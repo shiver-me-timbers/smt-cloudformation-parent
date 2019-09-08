@@ -4,5 +4,5 @@
   "title" : "DeliveryStreamAttributes",
   "type" : "string",
   "enum" : [ "Arn" ],
-  "javaType" : "aws.kinesisfirehose.DeliveryStreamAttributes"
+  "javaType" : "shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamAttributes"
 }

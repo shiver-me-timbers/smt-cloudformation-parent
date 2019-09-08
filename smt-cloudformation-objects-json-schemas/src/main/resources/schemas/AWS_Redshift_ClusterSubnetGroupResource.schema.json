@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.redshift.ClusterSubnetGroupResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ClusterSubnetGroupResource>", "aws.HasCondition<ClusterSubnetGroupResource>" ],
+  "javaType" : "shiver.me.timbers.aws.redshift.ClusterSubnetGroupResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ClusterSubnetGroupResource>", "shiver.me.timbers.aws.HasCondition<ClusterSubnetGroupResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -4,8 +4,8 @@
   "title" : "ChannelInputSettings",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-inputsettings.html",
   "type" : "object",
-  "javaType" : "aws.medialive.ChannelInputSettings",
-  "javaInterfaces" : [ "aws.Property<ChannelInputSettings>" ],
+  "javaType" : "shiver.me.timbers.aws.medialive.ChannelInputSettings",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ChannelInputSettings>" ],
   "properties" : {
     "DeblockFilter" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-inputsettings.html#cfn-medialive-channel-inputsettings-deblockfilter",
@@ -30,14 +30,14 @@
     "VideoSelector" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-inputsettings.html#cfn-medialive-channel-inputsettings-videoselector",
       "$ref" : "AWS_MediaLive_Channel.VideoSelector.schema.json",
-      "javaType" : "aws.Property<aws.medialive.ChannelVideoSelector>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.medialive.ChannelVideoSelector>"
     },
     "AudioSelectors" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-inputsettings.html#cfn-medialive-channel-inputsettings-audioselectors",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_MediaLive_Channel.AudioSelector.schema.json",
-        "javaType" : "aws.Property<aws.medialive.ChannelAudioSelector>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.medialive.ChannelAudioSelector>"
       }
     },
     "CaptionSelectors" : {
@@ -45,7 +45,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_MediaLive_Channel.CaptionSelector.schema.json",
-        "javaType" : "aws.Property<aws.medialive.ChannelCaptionSelector>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.medialive.ChannelCaptionSelector>"
       }
     },
     "DenoiseFilter" : {
@@ -56,7 +56,7 @@
     "NetworkInputSettings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-inputsettings.html#cfn-medialive-channel-inputsettings-networkinputsettings",
       "$ref" : "AWS_MediaLive_Channel.NetworkInputSettings.schema.json",
-      "javaType" : "aws.Property<aws.medialive.ChannelNetworkInputSettings>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.medialive.ChannelNetworkInputSettings>"
     }
   }
 }

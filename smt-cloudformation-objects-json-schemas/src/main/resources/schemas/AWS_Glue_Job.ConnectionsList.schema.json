@@ -4,8 +4,8 @@
   "title" : "JobConnectionsList",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-connectionslist.html",
   "type" : "object",
-  "javaType" : "aws.glue.JobConnectionsList",
-  "javaInterfaces" : [ "aws.Property<JobConnectionsList>" ],
+  "javaType" : "shiver.me.timbers.aws.glue.JobConnectionsList",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<JobConnectionsList>" ],
   "properties" : {
     "Connections" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-connectionslist.html#cfn-glue-job-connectionslist-connections",

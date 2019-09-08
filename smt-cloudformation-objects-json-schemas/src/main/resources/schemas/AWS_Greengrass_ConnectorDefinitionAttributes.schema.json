@@ -4,5 +4,5 @@
   "title" : "ConnectorDefinitionAttributes",
   "type" : "string",
   "enum" : [ "LatestVersionArn", "Id", "Arn", "Name" ],
-  "javaType" : "aws.greengrass.ConnectorDefinitionAttributes"
+  "javaType" : "shiver.me.timbers.aws.greengrass.ConnectorDefinitionAttributes"
 }

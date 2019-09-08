@@ -4,7 +4,7 @@
   "title" : "Configuration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html",
   "type" : "object",
-  "javaType" : "aws.amazonmq.Configuration",
+  "javaType" : "shiver.me.timbers.aws.amazonmq.Configuration",
   "properties" : {
     "EngineVersion" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-engineversion",
@@ -31,7 +31,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_AmazonMQ_Configuration.TagsEntry.schema.json",
-        "javaType" : "aws.Property<aws.amazonmq.ConfigurationTagsEntry>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.amazonmq.ConfigurationTagsEntry>"
       }
     },
     "Name" : {

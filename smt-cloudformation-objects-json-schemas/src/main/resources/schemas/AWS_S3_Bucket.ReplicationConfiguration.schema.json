@@ -4,8 +4,8 @@
   "title" : "BucketReplicationConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.s3.BucketReplicationConfiguration",
-  "javaInterfaces" : [ "aws.Property<BucketReplicationConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.s3.BucketReplicationConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BucketReplicationConfiguration>" ],
   "properties" : {
     "Role" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration.html#cfn-s3-bucket-replicationconfiguration-role",
@@ -18,7 +18,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_S3_Bucket.ReplicationRule.schema.json",
-        "javaType" : "aws.Property<aws.s3.BucketReplicationRule>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.BucketReplicationRule>"
       }
     }
   }

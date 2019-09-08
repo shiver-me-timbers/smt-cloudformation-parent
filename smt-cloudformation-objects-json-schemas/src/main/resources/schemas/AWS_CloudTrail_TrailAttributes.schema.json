@@ -4,5 +4,5 @@
   "title" : "TrailAttributes",
   "type" : "string",
   "enum" : [ "Arn", "SnsTopicArn" ],
-  "javaType" : "aws.cloudtrail.TrailAttributes"
+  "javaType" : "shiver.me.timbers.aws.cloudtrail.TrailAttributes"
 }

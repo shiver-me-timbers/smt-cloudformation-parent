@@ -4,8 +4,8 @@
   "title" : "ProjectCloudWatchLogsConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-cloudwatchlogsconfig.html",
   "type" : "object",
-  "javaType" : "aws.codebuild.ProjectCloudWatchLogsConfig",
-  "javaInterfaces" : [ "aws.Property<ProjectCloudWatchLogsConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.codebuild.ProjectCloudWatchLogsConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ProjectCloudWatchLogsConfig>" ],
   "properties" : {
     "Status" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-cloudwatchlogsconfig.html#cfn-codebuild-project-cloudwatchlogsconfig-status",

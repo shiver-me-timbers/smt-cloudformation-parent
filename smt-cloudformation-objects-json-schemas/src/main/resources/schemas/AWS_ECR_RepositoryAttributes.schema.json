@@ -4,5 +4,5 @@
   "title" : "RepositoryAttributes",
   "type" : "string",
   "enum" : [ "Arn" ],
-  "javaType" : "aws.ecr.RepositoryAttributes"
+  "javaType" : "shiver.me.timbers.aws.ecr.RepositoryAttributes"
 }

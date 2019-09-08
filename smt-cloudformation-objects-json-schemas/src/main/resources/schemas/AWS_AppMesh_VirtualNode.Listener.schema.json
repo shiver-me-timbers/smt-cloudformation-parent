@@ -4,18 +4,18 @@
   "title" : "VirtualNodeListener",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-listener.html",
   "type" : "object",
-  "javaType" : "aws.appmesh.VirtualNodeListener",
-  "javaInterfaces" : [ "aws.Property<VirtualNodeListener>" ],
+  "javaType" : "shiver.me.timbers.aws.appmesh.VirtualNodeListener",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<VirtualNodeListener>" ],
   "properties" : {
     "HealthCheck" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-listener.html#cfn-appmesh-virtualnode-listener-healthcheck",
       "$ref" : "AWS_AppMesh_VirtualNode.HealthCheck.schema.json",
-      "javaType" : "aws.Property<aws.appmesh.VirtualNodeHealthCheck>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appmesh.VirtualNodeHealthCheck>"
     },
     "PortMapping" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-listener.html#cfn-appmesh-virtualnode-listener-portmapping",
       "$ref" : "AWS_AppMesh_VirtualNode.PortMapping.schema.json",
-      "javaType" : "aws.Property<aws.appmesh.VirtualNodePortMapping>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appmesh.VirtualNodePortMapping>"
     }
   }
 }

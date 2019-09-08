@@ -4,8 +4,8 @@
   "title" : "JobDefinitionUlimit",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-ulimit.html",
   "type" : "object",
-  "javaType" : "aws.batch.JobDefinitionUlimit",
-  "javaInterfaces" : [ "aws.Property<JobDefinitionUlimit>" ],
+  "javaType" : "shiver.me.timbers.aws.batch.JobDefinitionUlimit",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<JobDefinitionUlimit>" ],
   "properties" : {
     "SoftLimit" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-ulimit.html#cfn-batch-jobdefinition-ulimit-softlimit",

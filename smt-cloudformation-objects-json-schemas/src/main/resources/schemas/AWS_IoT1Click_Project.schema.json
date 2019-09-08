@@ -4,7 +4,7 @@
   "title" : "Project",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-project.html",
   "type" : "object",
-  "javaType" : "aws.iot1click.Project",
+  "javaType" : "shiver.me.timbers.aws.iot1click.Project",
   "properties" : {
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-project.html#cfn-iot1click-project-description",
@@ -14,7 +14,7 @@
     "PlacementTemplate" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-project.html#cfn-iot1click-project-placementtemplate",
       "$ref" : "AWS_IoT1Click_Project.PlacementTemplate.schema.json",
-      "javaType" : "aws.Property<aws.iot1click.ProjectPlacementTemplate>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iot1click.ProjectPlacementTemplate>"
     },
     "ProjectName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-project.html#cfn-iot1click-project-projectname",

@@ -4,8 +4,8 @@
   "title" : "DeliveryStreamDataFormatConversionConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-dataformatconversionconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.kinesisfirehose.DeliveryStreamDataFormatConversionConfiguration",
-  "javaInterfaces" : [ "aws.Property<DeliveryStreamDataFormatConversionConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamDataFormatConversionConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DeliveryStreamDataFormatConversionConfiguration>" ],
   "properties" : {
     "Enabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-dataformatconversionconfiguration.html#cfn-kinesisfirehose-deliverystream-dataformatconversionconfiguration-enabled",
@@ -15,17 +15,17 @@
     "InputFormatConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-dataformatconversionconfiguration.html#cfn-kinesisfirehose-deliverystream-dataformatconversionconfiguration-inputformatconfiguration",
       "$ref" : "AWS_KinesisFirehose_DeliveryStream.InputFormatConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.kinesisfirehose.DeliveryStreamInputFormatConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamInputFormatConfiguration>"
     },
     "OutputFormatConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-dataformatconversionconfiguration.html#cfn-kinesisfirehose-deliverystream-dataformatconversionconfiguration-outputformatconfiguration",
       "$ref" : "AWS_KinesisFirehose_DeliveryStream.OutputFormatConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.kinesisfirehose.DeliveryStreamOutputFormatConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamOutputFormatConfiguration>"
     },
     "SchemaConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-dataformatconversionconfiguration.html#cfn-kinesisfirehose-deliverystream-dataformatconversionconfiguration-schemaconfiguration",
       "$ref" : "AWS_KinesisFirehose_DeliveryStream.SchemaConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.kinesisfirehose.DeliveryStreamSchemaConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamSchemaConfiguration>"
     }
   }
 }

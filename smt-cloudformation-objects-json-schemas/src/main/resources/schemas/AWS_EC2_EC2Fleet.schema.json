@@ -4,17 +4,17 @@
   "title" : "EC2Fleet",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html",
   "type" : "object",
-  "javaType" : "aws.ec2.EC2Fleet",
+  "javaType" : "shiver.me.timbers.aws.ec2.EC2Fleet",
   "properties" : {
     "TargetCapacitySpecification" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-targetcapacityspecification",
       "$ref" : "AWS_EC2_EC2Fleet.TargetCapacitySpecificationRequest.schema.json",
-      "javaType" : "aws.Property<aws.ec2.EC2FleetTargetCapacitySpecificationRequest>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.EC2FleetTargetCapacitySpecificationRequest>"
     },
     "OnDemandOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-ondemandoptions",
       "$ref" : "AWS_EC2_EC2Fleet.OnDemandOptionsRequest.schema.json",
-      "javaType" : "aws.Property<aws.ec2.EC2FleetOnDemandOptionsRequest>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.EC2FleetOnDemandOptionsRequest>"
     },
     "Type" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-type",
@@ -31,13 +31,13 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_EC2_EC2Fleet.TagSpecification.schema.json",
-        "javaType" : "aws.Property<aws.ec2.EC2FleetTagSpecification>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.EC2FleetTagSpecification>"
       }
     },
     "SpotOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-spotoptions",
       "$ref" : "AWS_EC2_EC2Fleet.SpotOptionsRequest.schema.json",
-      "javaType" : "aws.Property<aws.ec2.EC2FleetSpotOptionsRequest>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.EC2FleetSpotOptionsRequest>"
     },
     "ValidFrom" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-validfrom",
@@ -54,7 +54,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_EC2_EC2Fleet.FleetLaunchTemplateConfigRequest.schema.json",
-        "javaType" : "aws.Property<aws.ec2.EC2FleetFleetLaunchTemplateConfigRequest>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.EC2FleetFleetLaunchTemplateConfigRequest>"
       }
     },
     "TerminateInstancesWithExpiration" : {

@@ -4,8 +4,8 @@
   "title" : "TaskDefinitionProxyConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-proxyconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.ecs.TaskDefinitionProxyConfiguration",
-  "javaInterfaces" : [ "aws.Property<TaskDefinitionProxyConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.ecs.TaskDefinitionProxyConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TaskDefinitionProxyConfiguration>" ],
   "properties" : {
     "ContainerName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-proxyconfiguration.html#cfn-ecs-taskdefinition-proxyconfiguration-containername",
@@ -18,7 +18,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ECS_TaskDefinition.KeyValuePair.schema.json",
-        "javaType" : "aws.Property<aws.ecs.TaskDefinitionKeyValuePair>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecs.TaskDefinitionKeyValuePair>"
       }
     },
     "Type" : {

@@ -4,5 +4,5 @@
   "title" : "NetworkInterfaceAttributes",
   "type" : "string",
   "enum" : [ "PrimaryPrivateIpAddress", "SecondaryPrivateIpAddresses" ],
-  "javaType" : "aws.ec2.NetworkInterfaceAttributes"
+  "javaType" : "shiver.me.timbers.aws.ec2.NetworkInterfaceAttributes"
 }

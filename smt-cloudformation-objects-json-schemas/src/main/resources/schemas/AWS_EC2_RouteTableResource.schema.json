@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.RouteTableResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<RouteTableResource>", "aws.HasCondition<RouteTableResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.RouteTableResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<RouteTableResource>", "shiver.me.timbers.aws.HasCondition<RouteTableResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.apigateway.ModelResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ModelResource>", "aws.HasCondition<ModelResource>" ],
+  "javaType" : "shiver.me.timbers.aws.apigateway.ModelResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ModelResource>", "shiver.me.timbers.aws.HasCondition<ModelResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

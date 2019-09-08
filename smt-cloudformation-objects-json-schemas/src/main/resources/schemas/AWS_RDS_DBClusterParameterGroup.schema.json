@@ -4,7 +4,7 @@
   "title" : "DBClusterParameterGroup",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbclusterparametergroup.html",
   "type" : "object",
-  "javaType" : "aws.rds.DBClusterParameterGroup",
+  "javaType" : "shiver.me.timbers.aws.rds.DBClusterParameterGroup",
   "properties" : {
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbclusterparametergroup.html#cfn-rds-dbclusterparametergroup-description",
@@ -26,7 +26,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     }
   }

@@ -4,8 +4,8 @@
   "title" : "TopicRuleIotAnalyticsAction",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-iotanalyticsaction.html",
   "type" : "object",
-  "javaType" : "aws.iot.TopicRuleIotAnalyticsAction",
-  "javaInterfaces" : [ "aws.Property<TopicRuleIotAnalyticsAction>" ],
+  "javaType" : "shiver.me.timbers.aws.iot.TopicRuleIotAnalyticsAction",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TopicRuleIotAnalyticsAction>" ],
   "properties" : {
     "ChannelName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-iotanalyticsaction.html#cfn-iot-topicrule-iotanalyticsaction-channelname",

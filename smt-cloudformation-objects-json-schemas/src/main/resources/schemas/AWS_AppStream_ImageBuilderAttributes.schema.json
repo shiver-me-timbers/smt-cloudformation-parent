@@ -4,5 +4,5 @@
   "title" : "ImageBuilderAttributes",
   "type" : "string",
   "enum" : [ "StreamingUrl" ],
-  "javaType" : "aws.appstream.ImageBuilderAttributes"
+  "javaType" : "shiver.me.timbers.aws.appstream.ImageBuilderAttributes"
 }

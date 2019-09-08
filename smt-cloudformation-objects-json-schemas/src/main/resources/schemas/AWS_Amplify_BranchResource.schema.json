@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.amplify.BranchResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<BranchResource>", "aws.HasCondition<BranchResource>", "aws.HasAttributes<BranchAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.amplify.BranchResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<BranchResource>", "shiver.me.timbers.aws.HasCondition<BranchResource>", "shiver.me.timbers.aws.HasAttributes<BranchAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

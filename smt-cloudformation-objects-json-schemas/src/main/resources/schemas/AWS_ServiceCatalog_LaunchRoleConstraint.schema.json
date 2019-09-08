@@ -4,7 +4,7 @@
   "title" : "LaunchRoleConstraint",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchroleconstraint.html",
   "type" : "object",
-  "javaType" : "aws.servicecatalog.LaunchRoleConstraint",
+  "javaType" : "shiver.me.timbers.aws.servicecatalog.LaunchRoleConstraint",
   "properties" : {
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchroleconstraint.html#cfn-servicecatalog-launchroleconstraint-description",

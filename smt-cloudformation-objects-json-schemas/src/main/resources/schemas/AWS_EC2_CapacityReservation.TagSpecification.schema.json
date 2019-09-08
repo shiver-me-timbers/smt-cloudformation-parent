@@ -4,8 +4,8 @@
   "title" : "CapacityReservationTagSpecification",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-capacityreservation-tagspecification.html",
   "type" : "object",
-  "javaType" : "aws.ec2.CapacityReservationTagSpecification",
-  "javaInterfaces" : [ "aws.Property<CapacityReservationTagSpecification>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.CapacityReservationTagSpecification",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<CapacityReservationTagSpecification>" ],
   "properties" : {
     "ResourceType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-capacityreservation-tagspecification.html#cfn-ec2-capacityreservation-tagspecification-resourcetype",
@@ -17,7 +17,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     }
   }

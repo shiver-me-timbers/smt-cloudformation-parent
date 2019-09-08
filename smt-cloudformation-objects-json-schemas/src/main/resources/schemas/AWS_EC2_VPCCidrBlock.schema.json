@@ -4,7 +4,7 @@
   "title" : "VPCCidrBlock",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpccidrblock.html",
   "type" : "object",
-  "javaType" : "aws.ec2.VPCCidrBlock",
+  "javaType" : "shiver.me.timbers.aws.ec2.VPCCidrBlock",
   "properties" : {
     "AmazonProvidedIpv6CidrBlock" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpccidrblock.html#cfn-ec2-vpccidrblock-amazonprovidedipv6cidrblock",

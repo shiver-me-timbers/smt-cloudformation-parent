@@ -4,5 +4,5 @@
   "title" : "RuleAttributes",
   "type" : "string",
   "enum" : [ "Arn" ],
-  "javaType" : "aws.events.RuleAttributes"
+  "javaType" : "shiver.me.timbers.aws.events.RuleAttributes"
 }

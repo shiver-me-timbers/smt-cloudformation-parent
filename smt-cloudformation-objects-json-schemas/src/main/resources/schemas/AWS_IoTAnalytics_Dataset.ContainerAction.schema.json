@@ -4,15 +4,15 @@
   "title" : "DatasetContainerAction",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-containeraction.html",
   "type" : "object",
-  "javaType" : "aws.iotanalytics.DatasetContainerAction",
-  "javaInterfaces" : [ "aws.Property<DatasetContainerAction>" ],
+  "javaType" : "shiver.me.timbers.aws.iotanalytics.DatasetContainerAction",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DatasetContainerAction>" ],
   "properties" : {
     "Variables" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-containeraction.html#cfn-iotanalytics-dataset-containeraction-variables",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_IoTAnalytics_Dataset.Variable.schema.json",
-        "javaType" : "aws.Property<aws.iotanalytics.DatasetVariable>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotanalytics.DatasetVariable>"
       }
     },
     "ExecutionRoleArn" : {
@@ -28,7 +28,7 @@
     "ResourceConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-containeraction.html#cfn-iotanalytics-dataset-containeraction-resourceconfiguration",
       "$ref" : "AWS_IoTAnalytics_Dataset.ResourceConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.iotanalytics.DatasetResourceConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotanalytics.DatasetResourceConfiguration>"
     }
   }
 }

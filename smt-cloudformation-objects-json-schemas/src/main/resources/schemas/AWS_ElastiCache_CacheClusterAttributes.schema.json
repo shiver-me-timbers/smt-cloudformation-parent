@@ -4,5 +4,5 @@
   "title" : "CacheClusterAttributes",
   "type" : "string",
   "enum" : [ "ConfigurationEndpoint.Address", "ConfigurationEndpoint.Port", "RedisEndpoint.Address", "RedisEndpoint.Port" ],
-  "javaType" : "aws.elasticache.CacheClusterAttributes"
+  "javaType" : "shiver.me.timbers.aws.elasticache.CacheClusterAttributes"
 }

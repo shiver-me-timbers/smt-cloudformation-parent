@@ -4,8 +4,8 @@
   "title" : "BucketDefaultRetention",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-defaultretention.html",
   "type" : "object",
-  "javaType" : "aws.s3.BucketDefaultRetention",
-  "javaInterfaces" : [ "aws.Property<BucketDefaultRetention>" ],
+  "javaType" : "shiver.me.timbers.aws.s3.BucketDefaultRetention",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BucketDefaultRetention>" ],
   "properties" : {
     "Days" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-defaultretention.html#cfn-s3-bucket-defaultretention-days",

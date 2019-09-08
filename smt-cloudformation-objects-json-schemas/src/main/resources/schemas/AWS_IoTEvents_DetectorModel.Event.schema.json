@@ -4,8 +4,8 @@
   "title" : "DetectorModelEvent",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-event.html",
   "type" : "object",
-  "javaType" : "aws.iotevents.DetectorModelEvent",
-  "javaInterfaces" : [ "aws.Property<DetectorModelEvent>" ],
+  "javaType" : "shiver.me.timbers.aws.iotevents.DetectorModelEvent",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DetectorModelEvent>" ],
   "properties" : {
     "Condition" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-event.html#cfn-iotevents-detectormodel-event-condition",
@@ -17,7 +17,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_IoTEvents_DetectorModel.Action.schema.json",
-        "javaType" : "aws.Property<aws.iotevents.DetectorModelAction>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotevents.DetectorModelAction>"
       }
     },
     "EventName" : {

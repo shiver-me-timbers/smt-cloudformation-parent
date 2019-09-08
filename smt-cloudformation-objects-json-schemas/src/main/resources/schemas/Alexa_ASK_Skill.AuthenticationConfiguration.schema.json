@@ -4,8 +4,8 @@
   "title" : "SkillAuthenticationConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ask-skill-authenticationconfiguration.html",
   "type" : "object",
-  "javaType" : "alexa.ask.SkillAuthenticationConfiguration",
-  "javaInterfaces" : [ "aws.Property<SkillAuthenticationConfiguration>" ],
+  "javaType" : "shiver.me.timbers.alexa.ask.SkillAuthenticationConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<SkillAuthenticationConfiguration>" ],
   "properties" : {
     "RefreshToken" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ask-skill-authenticationconfiguration.html#cfn-ask-skill-authenticationconfiguration-refreshtoken",

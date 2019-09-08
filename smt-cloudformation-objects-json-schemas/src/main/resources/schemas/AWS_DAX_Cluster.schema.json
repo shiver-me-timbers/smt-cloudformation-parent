@@ -4,12 +4,12 @@
   "title" : "Cluster",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html",
   "type" : "object",
-  "javaType" : "aws.dax.Cluster",
+  "javaType" : "shiver.me.timbers.aws.dax.Cluster",
   "properties" : {
     "SSESpecification" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-ssespecification",
       "$ref" : "AWS_DAX_Cluster.SSESpecification.schema.json",
-      "javaType" : "aws.Property<aws.dax.ClusterSSESpecification>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.dax.ClusterSSESpecification>"
     },
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-description",

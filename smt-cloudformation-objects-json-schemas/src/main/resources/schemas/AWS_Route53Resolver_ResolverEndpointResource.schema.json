@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.route53resolver.ResolverEndpointResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ResolverEndpointResource>", "aws.HasCondition<ResolverEndpointResource>", "aws.HasAttributes<ResolverEndpointAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.route53resolver.ResolverEndpointResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ResolverEndpointResource>", "shiver.me.timbers.aws.HasCondition<ResolverEndpointResource>", "shiver.me.timbers.aws.HasAttributes<ResolverEndpointAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

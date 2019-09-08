@@ -4,8 +4,8 @@
   "title" : "TableProjection",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-projectionobject.html",
   "type" : "object",
-  "javaType" : "aws.dynamodb.TableProjection",
-  "javaInterfaces" : [ "aws.Property<TableProjection>" ],
+  "javaType" : "shiver.me.timbers.aws.dynamodb.TableProjection",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TableProjection>" ],
   "properties" : {
     "NonKeyAttributes" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-projectionobject.html#cfn-dynamodb-projectionobj-nonkeyatt",

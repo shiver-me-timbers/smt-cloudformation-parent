@@ -4,7 +4,7 @@
   "title" : "Stack",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html",
   "type" : "object",
-  "javaType" : "aws.opsworks.Stack",
+  "javaType" : "shiver.me.timbers.aws.opsworks.Stack",
   "properties" : {
     "AgentVersion" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-agentversion",
@@ -19,7 +19,7 @@
     "ChefConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-chefconfiguration",
       "$ref" : "AWS_OpsWorks_Stack.ChefConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.opsworks.StackChefConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.opsworks.StackChefConfiguration>"
     },
     "CloneAppIds" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-cloneappids",
@@ -38,12 +38,12 @@
     "ConfigurationManager" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-configmanager",
       "$ref" : "AWS_OpsWorks_Stack.StackConfigurationManager.schema.json",
-      "javaType" : "aws.Property<aws.opsworks.StackStackConfigurationManager>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.opsworks.StackStackConfigurationManager>"
     },
     "CustomCookbooksSource" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-custcookbooksource",
       "$ref" : "AWS_OpsWorks_Stack.Source.schema.json",
-      "javaType" : "aws.Property<aws.opsworks.StackSource>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.opsworks.StackSource>"
     },
     "CustomJson" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-custjson",
@@ -91,7 +91,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_OpsWorks_Stack.ElasticIp.schema.json",
-        "javaType" : "aws.Property<aws.opsworks.StackElasticIp>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.opsworks.StackElasticIp>"
       }
     },
     "HostnameTheme" : {
@@ -110,7 +110,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_OpsWorks_Stack.RdsDbInstance.schema.json",
-        "javaType" : "aws.Property<aws.opsworks.StackRdsDbInstance>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.opsworks.StackRdsDbInstance>"
       }
     },
     "ServiceRoleArn" : {
@@ -128,7 +128,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     },
     "UseCustomCookbooks" : {

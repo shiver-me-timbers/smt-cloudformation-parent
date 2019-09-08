@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.apigatewayv2.RouteResponseResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<RouteResponseResource>", "aws.HasCondition<RouteResponseResource>" ],
+  "javaType" : "shiver.me.timbers.aws.apigatewayv2.RouteResponseResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<RouteResponseResource>", "shiver.me.timbers.aws.HasCondition<RouteResponseResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

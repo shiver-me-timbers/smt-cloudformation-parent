@@ -4,5 +4,5 @@
   "title" : "CloudFrontOriginAccessIdentityAttributes",
   "type" : "string",
   "enum" : [ "S3CanonicalUserId" ],
-  "javaType" : "aws.cloudfront.CloudFrontOriginAccessIdentityAttributes"
+  "javaType" : "shiver.me.timbers.aws.cloudfront.CloudFrontOriginAccessIdentityAttributes"
 }

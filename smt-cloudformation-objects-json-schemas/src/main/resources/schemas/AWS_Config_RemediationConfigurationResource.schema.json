@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.config.RemediationConfigurationResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<RemediationConfigurationResource>", "aws.HasCondition<RemediationConfigurationResource>" ],
+  "javaType" : "shiver.me.timbers.aws.config.RemediationConfigurationResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<RemediationConfigurationResource>", "shiver.me.timbers.aws.HasCondition<RemediationConfigurationResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

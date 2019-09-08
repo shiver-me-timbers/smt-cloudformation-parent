@@ -4,7 +4,7 @@
   "title" : "LayerVersionPermission",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-layerversionpermission.html",
   "type" : "object",
-  "javaType" : "aws.lambda.LayerVersionPermission",
+  "javaType" : "shiver.me.timbers.aws.lambda.LayerVersionPermission",
   "properties" : {
     "Action" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-layerversionpermission.html#cfn-lambda-layerversionpermission-action",

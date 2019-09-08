@@ -4,8 +4,8 @@
   "title" : "StreamStreamEncryption",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesis-stream-streamencryption.html",
   "type" : "object",
-  "javaType" : "aws.kinesis.StreamStreamEncryption",
-  "javaInterfaces" : [ "aws.Property<StreamStreamEncryption>" ],
+  "javaType" : "shiver.me.timbers.aws.kinesis.StreamStreamEncryption",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<StreamStreamEncryption>" ],
   "properties" : {
     "EncryptionType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesis-stream-streamencryption.html#cfn-kinesis-stream-streamencryption-encryptiontype",

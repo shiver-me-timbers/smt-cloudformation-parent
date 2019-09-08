@@ -4,7 +4,7 @@
   "title" : "AcceptedPortfolioShare",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-acceptedportfolioshare.html",
   "type" : "object",
-  "javaType" : "aws.servicecatalog.AcceptedPortfolioShare",
+  "javaType" : "shiver.me.timbers.aws.servicecatalog.AcceptedPortfolioShare",
   "properties" : {
     "AcceptLanguage" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-acceptedportfolioshare.html#cfn-servicecatalog-acceptedportfolioshare-acceptlanguage",

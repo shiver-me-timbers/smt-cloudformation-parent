@@ -4,8 +4,8 @@
   "title" : "DeploymentConfigMinimumHealthyHosts",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentconfig-minimumhealthyhosts.html",
   "type" : "object",
-  "javaType" : "aws.codedeploy.DeploymentConfigMinimumHealthyHosts",
-  "javaInterfaces" : [ "aws.Property<DeploymentConfigMinimumHealthyHosts>" ],
+  "javaType" : "shiver.me.timbers.aws.codedeploy.DeploymentConfigMinimumHealthyHosts",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DeploymentConfigMinimumHealthyHosts>" ],
   "properties" : {
     "Type" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentconfig-minimumhealthyhosts.html#cfn-codedeploy-deploymentconfig-minimumhealthyhosts-type",

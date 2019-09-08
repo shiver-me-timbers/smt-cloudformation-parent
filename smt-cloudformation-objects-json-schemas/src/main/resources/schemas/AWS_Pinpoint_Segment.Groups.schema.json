@@ -4,8 +4,8 @@
   "title" : "SegmentGroups",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-segmentgroups-groups.html",
   "type" : "object",
-  "javaType" : "aws.pinpoint.SegmentGroups",
-  "javaInterfaces" : [ "aws.Property<SegmentGroups>" ],
+  "javaType" : "shiver.me.timbers.aws.pinpoint.SegmentGroups",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<SegmentGroups>" ],
   "properties" : {
     "Type" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-segmentgroups-groups.html#cfn-pinpoint-segment-segmentgroups-groups-type",
@@ -22,7 +22,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Pinpoint_Segment.SegmentDimensions.schema.json",
-        "javaType" : "aws.Property<aws.pinpoint.SegmentSegmentDimensions>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpoint.SegmentSegmentDimensions>"
       }
     },
     "SourceSegments" : {
@@ -30,7 +30,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Pinpoint_Segment.SourceSegments.schema.json",
-        "javaType" : "aws.Property<aws.pinpoint.SegmentSourceSegments>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpoint.SegmentSourceSegments>"
       }
     }
   }

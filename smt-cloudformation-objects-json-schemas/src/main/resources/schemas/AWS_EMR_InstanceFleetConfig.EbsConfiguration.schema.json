@@ -4,8 +4,8 @@
   "title" : "InstanceFleetConfigEbsConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-ebsconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.emr.InstanceFleetConfigEbsConfiguration",
-  "javaInterfaces" : [ "aws.Property<InstanceFleetConfigEbsConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.emr.InstanceFleetConfigEbsConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<InstanceFleetConfigEbsConfiguration>" ],
   "properties" : {
     "EbsBlockDeviceConfigs" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-ebsconfiguration.html#cfn-elasticmapreduce-instancefleetconfig-ebsconfiguration-ebsblockdeviceconfigs",
@@ -13,7 +13,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_EMR_InstanceFleetConfig.EbsBlockDeviceConfig.schema.json",
-        "javaType" : "aws.Property<aws.emr.InstanceFleetConfigEbsBlockDeviceConfig>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.emr.InstanceFleetConfigEbsBlockDeviceConfig>"
       }
     },
     "EbsOptimized" : {

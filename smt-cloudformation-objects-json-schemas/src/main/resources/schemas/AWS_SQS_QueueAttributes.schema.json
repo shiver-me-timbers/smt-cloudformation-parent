@@ -4,5 +4,5 @@
   "title" : "QueueAttributes",
   "type" : "string",
   "enum" : [ "Arn", "QueueName" ],
-  "javaType" : "aws.sqs.QueueAttributes"
+  "javaType" : "shiver.me.timbers.aws.sqs.QueueAttributes"
 }

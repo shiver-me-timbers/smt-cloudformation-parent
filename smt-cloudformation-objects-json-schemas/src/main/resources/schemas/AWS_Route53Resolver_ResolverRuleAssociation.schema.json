@@ -4,7 +4,7 @@
   "title" : "ResolverRuleAssociation",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverruleassociation.html",
   "type" : "object",
-  "javaType" : "aws.route53resolver.ResolverRuleAssociation",
+  "javaType" : "shiver.me.timbers.aws.route53resolver.ResolverRuleAssociation",
   "properties" : {
     "VPCId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverruleassociation.html#cfn-route53resolver-resolverruleassociation-vpcid",

@@ -4,5 +4,5 @@
   "title" : "EnvironmentAttributes",
   "type" : "string",
   "enum" : [ "EndpointURL" ],
-  "javaType" : "aws.elasticbeanstalk.EnvironmentAttributes"
+  "javaType" : "shiver.me.timbers.aws.elasticbeanstalk.EnvironmentAttributes"
 }

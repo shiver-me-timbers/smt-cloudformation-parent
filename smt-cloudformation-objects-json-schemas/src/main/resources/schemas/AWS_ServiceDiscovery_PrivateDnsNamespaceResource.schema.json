@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.servicediscovery.PrivateDnsNamespaceResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<PrivateDnsNamespaceResource>", "aws.HasCondition<PrivateDnsNamespaceResource>", "aws.HasAttributes<PrivateDnsNamespaceAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.servicediscovery.PrivateDnsNamespaceResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<PrivateDnsNamespaceResource>", "shiver.me.timbers.aws.HasCondition<PrivateDnsNamespaceResource>", "shiver.me.timbers.aws.HasAttributes<PrivateDnsNamespaceAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

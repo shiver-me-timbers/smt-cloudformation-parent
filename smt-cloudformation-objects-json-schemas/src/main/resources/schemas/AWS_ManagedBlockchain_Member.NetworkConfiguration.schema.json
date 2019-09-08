@@ -4,8 +4,8 @@
   "title" : "MemberNetworkConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-managedblockchain-member-networkconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.managedblockchain.MemberNetworkConfiguration",
-  "javaInterfaces" : [ "aws.Property<MemberNetworkConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.managedblockchain.MemberNetworkConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<MemberNetworkConfiguration>" ],
   "properties" : {
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-managedblockchain-member-networkconfiguration.html#cfn-managedblockchain-member-networkconfiguration-description",
@@ -20,7 +20,7 @@
     "VotingPolicy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-managedblockchain-member-networkconfiguration.html#cfn-managedblockchain-member-networkconfiguration-votingpolicy",
       "$ref" : "AWS_ManagedBlockchain_Member.VotingPolicy.schema.json",
-      "javaType" : "aws.Property<aws.managedblockchain.MemberVotingPolicy>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.managedblockchain.MemberVotingPolicy>"
     },
     "Framework" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-managedblockchain-member-networkconfiguration.html#cfn-managedblockchain-member-networkconfiguration-framework",
@@ -35,7 +35,7 @@
     "NetworkFrameworkConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-managedblockchain-member-networkconfiguration.html#cfn-managedblockchain-member-networkconfiguration-networkframeworkconfiguration",
       "$ref" : "AWS_ManagedBlockchain_Member.NetworkFrameworkConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.managedblockchain.MemberNetworkFrameworkConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.managedblockchain.MemberNetworkFrameworkConfiguration>"
     }
   }
 }

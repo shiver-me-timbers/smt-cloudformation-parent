@@ -4,8 +4,8 @@
   "title" : "ApplicationOutputLambdaOutput",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationoutput-lambdaoutput.html",
   "type" : "object",
-  "javaType" : "aws.kinesisanalyticsv2.ApplicationOutputLambdaOutput",
-  "javaInterfaces" : [ "aws.Property<ApplicationOutputLambdaOutput>" ],
+  "javaType" : "shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationOutputLambdaOutput",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ApplicationOutputLambdaOutput>" ],
   "properties" : {
     "ResourceARN" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationoutput-lambdaoutput.html#cfn-kinesisanalyticsv2-applicationoutput-lambdaoutput-resourcearn",

@@ -4,13 +4,13 @@
   "title" : "BucketSourceSelectionCriteria",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-sourceselectioncriteria.html",
   "type" : "object",
-  "javaType" : "aws.s3.BucketSourceSelectionCriteria",
-  "javaInterfaces" : [ "aws.Property<BucketSourceSelectionCriteria>" ],
+  "javaType" : "shiver.me.timbers.aws.s3.BucketSourceSelectionCriteria",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BucketSourceSelectionCriteria>" ],
   "properties" : {
     "SseKmsEncryptedObjects" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-sourceselectioncriteria.html#cfn-s3-bucket-sourceselectioncriteria-ssekmsencryptedobjects",
       "$ref" : "AWS_S3_Bucket.SseKmsEncryptedObjects.schema.json",
-      "javaType" : "aws.Property<aws.s3.BucketSseKmsEncryptedObjects>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.BucketSseKmsEncryptedObjects>"
     }
   }
 }

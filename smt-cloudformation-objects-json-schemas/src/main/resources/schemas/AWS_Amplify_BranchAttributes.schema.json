@@ -4,5 +4,5 @@
   "title" : "BranchAttributes",
   "type" : "string",
   "enum" : [ "BranchName", "Arn" ],
-  "javaType" : "aws.amplify.BranchAttributes"
+  "javaType" : "shiver.me.timbers.aws.amplify.BranchAttributes"
 }

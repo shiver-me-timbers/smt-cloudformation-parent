@@ -4,8 +4,8 @@
   "title" : "SimulationApplicationSourceConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-simulationapplication-sourceconfig.html",
   "type" : "object",
-  "javaType" : "aws.robomaker.SimulationApplicationSourceConfig",
-  "javaInterfaces" : [ "aws.Property<SimulationApplicationSourceConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.robomaker.SimulationApplicationSourceConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<SimulationApplicationSourceConfig>" ],
   "properties" : {
     "S3Bucket" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-simulationapplication-sourceconfig.html#cfn-robomaker-simulationapplication-sourceconfig-s3bucket",

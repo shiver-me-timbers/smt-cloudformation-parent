@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.VPCEndpointConnectionNotificationResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<VPCEndpointConnectionNotificationResource>", "aws.HasCondition<VPCEndpointConnectionNotificationResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.VPCEndpointConnectionNotificationResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<VPCEndpointConnectionNotificationResource>", "shiver.me.timbers.aws.HasCondition<VPCEndpointConnectionNotificationResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

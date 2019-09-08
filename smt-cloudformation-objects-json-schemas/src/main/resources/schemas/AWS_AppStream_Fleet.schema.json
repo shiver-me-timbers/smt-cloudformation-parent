@@ -4,7 +4,7 @@
   "title" : "Fleet",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html",
   "type" : "object",
-  "javaType" : "aws.appstream.Fleet",
+  "javaType" : "shiver.me.timbers.aws.appstream.Fleet",
   "properties" : {
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-description",
@@ -14,12 +14,12 @@
     "ComputeCapacity" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-computecapacity",
       "$ref" : "AWS_AppStream_Fleet.ComputeCapacity.schema.json",
-      "javaType" : "aws.Property<aws.appstream.FleetComputeCapacity>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appstream.FleetComputeCapacity>"
     },
     "VpcConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-vpcconfig",
       "$ref" : "AWS_AppStream_Fleet.VpcConfig.schema.json",
-      "javaType" : "aws.Property<aws.appstream.FleetVpcConfig>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appstream.FleetVpcConfig>"
     },
     "FleetType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-fleettype",
@@ -34,7 +34,7 @@
     "DomainJoinInfo" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-domainjoininfo",
       "$ref" : "AWS_AppStream_Fleet.DomainJoinInfo.schema.json",
-      "javaType" : "aws.Property<aws.appstream.FleetDomainJoinInfo>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appstream.FleetDomainJoinInfo>"
     },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-name",
@@ -76,7 +76,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     },
     "ImageArn" : {

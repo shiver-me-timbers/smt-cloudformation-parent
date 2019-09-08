@@ -4,23 +4,23 @@
   "title" : "SecurityConfigurationEncryptionConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-securityconfiguration-encryptionconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.glue.SecurityConfigurationEncryptionConfiguration",
-  "javaInterfaces" : [ "aws.Property<SecurityConfigurationEncryptionConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.glue.SecurityConfigurationEncryptionConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<SecurityConfigurationEncryptionConfiguration>" ],
   "properties" : {
     "S3Encryptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-securityconfiguration-encryptionconfiguration.html#cfn-glue-securityconfiguration-encryptionconfiguration-s3encryptions",
       "$ref" : "AWS_Glue_SecurityConfiguration.S3Encryptions.schema.json",
-      "javaType" : "aws.Property<aws.glue.SecurityConfigurationS3Encryptions>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.glue.SecurityConfigurationS3Encryptions>"
     },
     "CloudWatchEncryption" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-securityconfiguration-encryptionconfiguration.html#cfn-glue-securityconfiguration-encryptionconfiguration-cloudwatchencryption",
       "$ref" : "AWS_Glue_SecurityConfiguration.CloudWatchEncryption.schema.json",
-      "javaType" : "aws.Property<aws.glue.SecurityConfigurationCloudWatchEncryption>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.glue.SecurityConfigurationCloudWatchEncryption>"
     },
     "JobBookmarksEncryption" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-securityconfiguration-encryptionconfiguration.html#cfn-glue-securityconfiguration-encryptionconfiguration-jobbookmarksencryption",
       "$ref" : "AWS_Glue_SecurityConfiguration.JobBookmarksEncryption.schema.json",
-      "javaType" : "aws.Property<aws.glue.SecurityConfigurationJobBookmarksEncryption>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.glue.SecurityConfigurationJobBookmarksEncryption>"
     }
   }
 }

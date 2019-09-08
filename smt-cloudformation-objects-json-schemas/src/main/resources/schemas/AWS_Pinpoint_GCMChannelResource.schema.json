@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.pinpoint.GCMChannelResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<GCMChannelResource>", "aws.HasCondition<GCMChannelResource>" ],
+  "javaType" : "shiver.me.timbers.aws.pinpoint.GCMChannelResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<GCMChannelResource>", "shiver.me.timbers.aws.HasCondition<GCMChannelResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

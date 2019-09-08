@@ -4,8 +4,8 @@
   "title" : "SimulationApplicationRobotSoftwareSuite",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-simulationapplication-robotsoftwaresuite.html",
   "type" : "object",
-  "javaType" : "aws.robomaker.SimulationApplicationRobotSoftwareSuite",
-  "javaInterfaces" : [ "aws.Property<SimulationApplicationRobotSoftwareSuite>" ],
+  "javaType" : "shiver.me.timbers.aws.robomaker.SimulationApplicationRobotSoftwareSuite",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<SimulationApplicationRobotSoftwareSuite>" ],
   "properties" : {
     "Version" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-simulationapplication-robotsoftwaresuite.html#cfn-robomaker-simulationapplication-robotsoftwaresuite-version",

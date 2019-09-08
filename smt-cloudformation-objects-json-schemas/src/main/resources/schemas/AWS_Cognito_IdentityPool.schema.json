@@ -4,19 +4,19 @@
   "title" : "IdentityPool",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html",
   "type" : "object",
-  "javaType" : "aws.cognito.IdentityPool",
+  "javaType" : "shiver.me.timbers.aws.cognito.IdentityPool",
   "properties" : {
     "PushSync" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-pushsync",
       "$ref" : "AWS_Cognito_IdentityPool.PushSync.schema.json",
-      "javaType" : "aws.Property<aws.cognito.IdentityPoolPushSync>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cognito.IdentityPoolPushSync>"
     },
     "CognitoIdentityProviders" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-cognitoidentityproviders",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Cognito_IdentityPool.CognitoIdentityProvider.schema.json",
-        "javaType" : "aws.Property<aws.cognito.IdentityPoolCognitoIdentityProvider>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cognito.IdentityPoolCognitoIdentityProvider>"
       }
     },
     "CognitoEvents" : {
@@ -32,7 +32,7 @@
     "CognitoStreams" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-cognitostreams",
       "$ref" : "AWS_Cognito_IdentityPool.CognitoStreams.schema.json",
-      "javaType" : "aws.Property<aws.cognito.IdentityPoolCognitoStreams>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cognito.IdentityPoolCognitoStreams>"
     },
     "IdentityPoolName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-identitypoolname",

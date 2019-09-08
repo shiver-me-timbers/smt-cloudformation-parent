@@ -4,5 +4,5 @@
   "title" : "TopicAttributes",
   "type" : "string",
   "enum" : [ "TopicName" ],
-  "javaType" : "aws.sns.TopicAttributes"
+  "javaType" : "shiver.me.timbers.aws.sns.TopicAttributes"
 }

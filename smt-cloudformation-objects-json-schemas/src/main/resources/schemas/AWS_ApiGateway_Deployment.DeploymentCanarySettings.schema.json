@@ -4,8 +4,8 @@
   "title" : "DeploymentDeploymentCanarySettings",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html",
   "type" : "object",
-  "javaType" : "aws.apigateway.DeploymentDeploymentCanarySettings",
-  "javaInterfaces" : [ "aws.Property<DeploymentDeploymentCanarySettings>" ],
+  "javaType" : "shiver.me.timbers.aws.apigateway.DeploymentDeploymentCanarySettings",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DeploymentDeploymentCanarySettings>" ],
   "properties" : {
     "PercentTraffic" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html#cfn-apigateway-deployment-deploymentcanarysettings-percenttraffic",

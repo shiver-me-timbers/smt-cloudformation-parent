@@ -4,8 +4,8 @@
   "title" : "ClusterConfigurationInfo",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-configurationinfo.html",
   "type" : "object",
-  "javaType" : "aws.msk.ClusterConfigurationInfo",
-  "javaInterfaces" : [ "aws.Property<ClusterConfigurationInfo>" ],
+  "javaType" : "shiver.me.timbers.aws.msk.ClusterConfigurationInfo",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ClusterConfigurationInfo>" ],
   "properties" : {
     "Revision" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-configurationinfo.html#cfn-msk-cluster-configurationinfo-revision",

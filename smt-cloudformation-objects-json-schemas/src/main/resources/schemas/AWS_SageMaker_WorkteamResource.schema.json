@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.sagemaker.WorkteamResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<WorkteamResource>", "aws.HasCondition<WorkteamResource>", "aws.HasAttributes<WorkteamAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.sagemaker.WorkteamResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<WorkteamResource>", "shiver.me.timbers.aws.HasCondition<WorkteamResource>", "shiver.me.timbers.aws.HasAttributes<WorkteamAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -4,8 +4,8 @@
   "title" : "DeploymentGroupEC2TagSet",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-ec2tagset.html",
   "type" : "object",
-  "javaType" : "aws.codedeploy.DeploymentGroupEC2TagSet",
-  "javaInterfaces" : [ "aws.Property<DeploymentGroupEC2TagSet>" ],
+  "javaType" : "shiver.me.timbers.aws.codedeploy.DeploymentGroupEC2TagSet",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DeploymentGroupEC2TagSet>" ],
   "properties" : {
     "Ec2TagSetList" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-ec2tagset.html#cfn-codedeploy-deploymentgroup-ec2tagset-ec2tagsetlist",
@@ -13,7 +13,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_CodeDeploy_DeploymentGroup.EC2TagSetListObject.schema.json",
-        "javaType" : "aws.Property<aws.codedeploy.DeploymentGroupEC2TagSetListObject>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codedeploy.DeploymentGroupEC2TagSetListObject>"
       }
     }
   }

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.cognito.IdentityPoolRoleAttachmentResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<IdentityPoolRoleAttachmentResource>", "aws.HasCondition<IdentityPoolRoleAttachmentResource>" ],
+  "javaType" : "shiver.me.timbers.aws.cognito.IdentityPoolRoleAttachmentResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<IdentityPoolRoleAttachmentResource>", "shiver.me.timbers.aws.HasCondition<IdentityPoolRoleAttachmentResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -4,8 +4,8 @@
   "title" : "ScalableTargetScheduledAction",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html",
   "type" : "object",
-  "javaType" : "aws.applicationautoscaling.ScalableTargetScheduledAction",
-  "javaInterfaces" : [ "aws.Property<ScalableTargetScheduledAction>" ],
+  "javaType" : "shiver.me.timbers.aws.applicationautoscaling.ScalableTargetScheduledAction",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ScalableTargetScheduledAction>" ],
   "properties" : {
     "EndTime" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-endtime",
@@ -15,7 +15,7 @@
     "ScalableTargetAction" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-scalabletargetaction",
       "$ref" : "AWS_ApplicationAutoScaling_ScalableTarget.ScalableTargetAction.schema.json",
-      "javaType" : "aws.Property<aws.applicationautoscaling.ScalableTargetScalableTargetAction>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.applicationautoscaling.ScalableTargetScalableTargetAction>"
     },
     "Schedule" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-schedule",

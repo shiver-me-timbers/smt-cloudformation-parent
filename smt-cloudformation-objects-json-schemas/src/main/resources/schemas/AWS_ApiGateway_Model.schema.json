@@ -4,7 +4,7 @@
   "title" : "Model",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-model.html",
   "type" : "object",
-  "javaType" : "aws.apigateway.Model",
+  "javaType" : "shiver.me.timbers.aws.apigateway.Model",
   "properties" : {
     "ContentType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-model.html#cfn-apigateway-model-contenttype",

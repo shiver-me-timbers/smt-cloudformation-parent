@@ -4,7 +4,7 @@
   "title" : "Project",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html",
   "type" : "object",
-  "javaType" : "aws.codebuild.Project",
+  "javaType" : "shiver.me.timbers.aws.codebuild.Project",
   "properties" : {
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-description",
@@ -14,14 +14,14 @@
     "VpcConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-vpcconfig",
       "$ref" : "AWS_CodeBuild_Project.VpcConfig.schema.json",
-      "javaType" : "aws.Property<aws.codebuild.ProjectVpcConfig>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codebuild.ProjectVpcConfig>"
     },
     "SecondarySources" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-secondarysources",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_CodeBuild_Project.Source.schema.json",
-        "javaType" : "aws.Property<aws.codebuild.ProjectSource>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codebuild.ProjectSource>"
       }
     },
     "EncryptionKey" : {
@@ -37,20 +37,20 @@
     "Triggers" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-triggers",
       "$ref" : "AWS_CodeBuild_Project.ProjectTriggers.schema.json",
-      "javaType" : "aws.Property<aws.codebuild.ProjectProjectTriggers>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codebuild.ProjectProjectTriggers>"
     },
     "SecondaryArtifacts" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-secondaryartifacts",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_CodeBuild_Project.Artifacts.schema.json",
-        "javaType" : "aws.Property<aws.codebuild.ProjectArtifacts>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codebuild.ProjectArtifacts>"
       }
     },
     "Source" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-source",
       "$ref" : "AWS_CodeBuild_Project.Source.schema.json",
-      "javaType" : "aws.Property<aws.codebuild.ProjectSource>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codebuild.ProjectSource>"
     },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-name",
@@ -60,7 +60,7 @@
     "Artifacts" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-artifacts",
       "$ref" : "AWS_CodeBuild_Project.Artifacts.schema.json",
-      "javaType" : "aws.Property<aws.codebuild.ProjectArtifacts>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codebuild.ProjectArtifacts>"
     },
     "BadgeEnabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-badgeenabled",
@@ -70,7 +70,7 @@
     "LogsConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-logsconfig",
       "$ref" : "AWS_CodeBuild_Project.LogsConfig.schema.json",
-      "javaType" : "aws.Property<aws.codebuild.ProjectLogsConfig>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codebuild.ProjectLogsConfig>"
     },
     "ServiceRole" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-servicerole",
@@ -85,14 +85,14 @@
     "Environment" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-environment",
       "$ref" : "AWS_CodeBuild_Project.Environment.schema.json",
-      "javaType" : "aws.Property<aws.codebuild.ProjectEnvironment>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codebuild.ProjectEnvironment>"
     },
     "SecondarySourceVersions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-secondarysourceversions",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_CodeBuild_Project.ProjectSourceVersion.schema.json",
-        "javaType" : "aws.Property<aws.codebuild.ProjectProjectSourceVersion>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codebuild.ProjectProjectSourceVersion>"
       }
     },
     "Tags" : {
@@ -100,7 +100,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     },
     "TimeoutInMinutes" : {
@@ -111,7 +111,7 @@
     "Cache" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-cache",
       "$ref" : "AWS_CodeBuild_Project.ProjectCache.schema.json",
-      "javaType" : "aws.Property<aws.codebuild.ProjectProjectCache>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codebuild.ProjectProjectCache>"
     }
   }
 }

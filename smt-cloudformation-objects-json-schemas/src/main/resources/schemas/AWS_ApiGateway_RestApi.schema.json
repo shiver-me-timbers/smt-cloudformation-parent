@@ -4,7 +4,7 @@
   "title" : "RestApi",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html",
   "type" : "object",
-  "javaType" : "aws.apigateway.RestApi",
+  "javaType" : "shiver.me.timbers.aws.apigateway.RestApi",
   "properties" : {
     "ApiKeySourceType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-apikeysourcetype",
@@ -28,7 +28,7 @@
     "BodyS3Location" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-bodys3location",
       "$ref" : "AWS_ApiGateway_RestApi.S3Location.schema.json",
-      "javaType" : "aws.Property<aws.apigateway.RestApiS3Location>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.apigateway.RestApiS3Location>"
     },
     "CloneFrom" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-clonefrom",
@@ -43,7 +43,7 @@
     "EndpointConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-endpointconfiguration",
       "$ref" : "AWS_ApiGateway_RestApi.EndpointConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.apigateway.RestApiEndpointConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.apigateway.RestApiEndpointConfiguration>"
     },
     "FailOnWarnings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-failonwarnings",

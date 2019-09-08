@@ -4,8 +4,8 @@
   "title" : "InstanceBlockDeviceMapping",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-mapping.html",
   "type" : "object",
-  "javaType" : "aws.ec2.InstanceBlockDeviceMapping",
-  "javaInterfaces" : [ "aws.Property<InstanceBlockDeviceMapping>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.InstanceBlockDeviceMapping",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<InstanceBlockDeviceMapping>" ],
   "properties" : {
     "DeviceName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-mapping.html#cfn-ec2-blockdev-mapping-devicename",
@@ -15,12 +15,12 @@
     "Ebs" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-mapping.html#cfn-ec2-blockdev-mapping-ebs",
       "$ref" : "AWS_EC2_Instance.Ebs.schema.json",
-      "javaType" : "aws.Property<aws.ec2.InstanceEbs>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.InstanceEbs>"
     },
     "NoDevice" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-mapping.html#cfn-ec2-blockdev-mapping-nodevice",
       "$ref" : "AWS_EC2_Instance.NoDevice.schema.json",
-      "javaType" : "aws.Property<aws.ec2.InstanceNoDevice>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.InstanceNoDevice>"
     },
     "VirtualName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-mapping.html#cfn-ec2-blockdev-mapping-virtualname",

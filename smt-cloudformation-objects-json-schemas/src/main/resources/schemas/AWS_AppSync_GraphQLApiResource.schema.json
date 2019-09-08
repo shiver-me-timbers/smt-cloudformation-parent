@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.appsync.GraphQLApiResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<GraphQLApiResource>", "aws.HasCondition<GraphQLApiResource>", "aws.HasAttributes<GraphQLApiAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.appsync.GraphQLApiResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<GraphQLApiResource>", "shiver.me.timbers.aws.HasCondition<GraphQLApiResource>", "shiver.me.timbers.aws.HasAttributes<GraphQLApiAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -4,5 +4,5 @@
   "title" : "ContainerAttributes",
   "type" : "string",
   "enum" : [ "Endpoint" ],
-  "javaType" : "aws.mediastore.ContainerAttributes"
+  "javaType" : "shiver.me.timbers.aws.mediastore.ContainerAttributes"
 }

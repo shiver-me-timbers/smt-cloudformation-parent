@@ -4,8 +4,8 @@
   "title" : "DeploymentGroupEC2TagFilter",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-ec2tagfilter.html",
   "type" : "object",
-  "javaType" : "aws.codedeploy.DeploymentGroupEC2TagFilter",
-  "javaInterfaces" : [ "aws.Property<DeploymentGroupEC2TagFilter>" ],
+  "javaType" : "shiver.me.timbers.aws.codedeploy.DeploymentGroupEC2TagFilter",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DeploymentGroupEC2TagFilter>" ],
   "properties" : {
     "Key" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-ec2tagfilter.html#cfn-codedeploy-deploymentgroup-ec2tagfilter-key",

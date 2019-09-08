@@ -4,5 +4,5 @@
   "title" : "UserAttributes",
   "type" : "string",
   "enum" : [ "ServerId", "UserName", "Arn" ],
-  "javaType" : "aws.transfer.UserAttributes"
+  "javaType" : "shiver.me.timbers.aws.transfer.UserAttributes"
 }

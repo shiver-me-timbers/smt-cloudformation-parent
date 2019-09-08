@@ -4,7 +4,7 @@
   "title" : "BaiduChannel",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-baiduchannel.html",
   "type" : "object",
-  "javaType" : "aws.pinpoint.BaiduChannel",
+  "javaType" : "shiver.me.timbers.aws.pinpoint.BaiduChannel",
   "properties" : {
     "SecretKey" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-baiduchannel.html#cfn-pinpoint-baiduchannel-secretkey",

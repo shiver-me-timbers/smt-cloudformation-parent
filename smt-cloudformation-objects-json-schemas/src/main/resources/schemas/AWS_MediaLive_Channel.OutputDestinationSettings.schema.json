@@ -4,8 +4,8 @@
   "title" : "ChannelOutputDestinationSettings",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-outputdestinationsettings.html",
   "type" : "object",
-  "javaType" : "aws.medialive.ChannelOutputDestinationSettings",
-  "javaInterfaces" : [ "aws.Property<ChannelOutputDestinationSettings>" ],
+  "javaType" : "shiver.me.timbers.aws.medialive.ChannelOutputDestinationSettings",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ChannelOutputDestinationSettings>" ],
   "properties" : {
     "StreamName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-outputdestinationsettings.html#cfn-medialive-channel-outputdestinationsettings-streamname",

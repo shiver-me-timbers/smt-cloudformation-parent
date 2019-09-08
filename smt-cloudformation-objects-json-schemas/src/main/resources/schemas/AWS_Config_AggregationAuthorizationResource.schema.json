@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.config.AggregationAuthorizationResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<AggregationAuthorizationResource>", "aws.HasCondition<AggregationAuthorizationResource>" ],
+  "javaType" : "shiver.me.timbers.aws.config.AggregationAuthorizationResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<AggregationAuthorizationResource>", "shiver.me.timbers.aws.HasCondition<AggregationAuthorizationResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

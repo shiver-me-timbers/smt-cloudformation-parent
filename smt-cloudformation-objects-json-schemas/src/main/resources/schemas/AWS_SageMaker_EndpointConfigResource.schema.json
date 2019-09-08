@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.sagemaker.EndpointConfigResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<EndpointConfigResource>", "aws.HasCondition<EndpointConfigResource>", "aws.HasAttributes<EndpointConfigAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.sagemaker.EndpointConfigResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<EndpointConfigResource>", "shiver.me.timbers.aws.HasCondition<EndpointConfigResource>", "shiver.me.timbers.aws.HasAttributes<EndpointConfigAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

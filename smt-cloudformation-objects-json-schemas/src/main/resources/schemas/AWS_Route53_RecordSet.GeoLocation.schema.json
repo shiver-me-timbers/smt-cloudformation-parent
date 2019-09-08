@@ -4,8 +4,8 @@
   "title" : "RecordSetGeoLocation",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset-geolocation.html",
   "type" : "object",
-  "javaType" : "aws.route53.RecordSetGeoLocation",
-  "javaInterfaces" : [ "aws.Property<RecordSetGeoLocation>" ],
+  "javaType" : "shiver.me.timbers.aws.route53.RecordSetGeoLocation",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<RecordSetGeoLocation>" ],
   "properties" : {
     "ContinentCode" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset-geolocation.html#cfn-route53-recordset-geolocation-continentcode",

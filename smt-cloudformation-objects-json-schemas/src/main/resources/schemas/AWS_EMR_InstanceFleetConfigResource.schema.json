@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.emr.InstanceFleetConfigResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<InstanceFleetConfigResource>", "aws.HasCondition<InstanceFleetConfigResource>" ],
+  "javaType" : "shiver.me.timbers.aws.emr.InstanceFleetConfigResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<InstanceFleetConfigResource>", "shiver.me.timbers.aws.HasCondition<InstanceFleetConfigResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

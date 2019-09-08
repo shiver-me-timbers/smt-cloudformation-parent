@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.cloudwatch.AlarmResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<AlarmResource>", "aws.HasCondition<AlarmResource>", "aws.HasAttributes<AlarmAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.cloudwatch.AlarmResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<AlarmResource>", "shiver.me.timbers.aws.HasCondition<AlarmResource>", "shiver.me.timbers.aws.HasAttributes<AlarmAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

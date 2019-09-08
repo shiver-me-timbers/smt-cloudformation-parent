@@ -4,8 +4,8 @@
   "title" : "ClientVpnEndpointCertificateAuthenticationRequest",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-clientvpnendpoint-certificateauthenticationrequest.html",
   "type" : "object",
-  "javaType" : "aws.ec2.ClientVpnEndpointCertificateAuthenticationRequest",
-  "javaInterfaces" : [ "aws.Property<ClientVpnEndpointCertificateAuthenticationRequest>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.ClientVpnEndpointCertificateAuthenticationRequest",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ClientVpnEndpointCertificateAuthenticationRequest>" ],
   "properties" : {
     "ClientRootCertificateChainArn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-clientvpnendpoint-certificateauthenticationrequest.html#cfn-ec2-clientvpnendpoint-certificateauthenticationrequest-clientrootcertificatechainarn",

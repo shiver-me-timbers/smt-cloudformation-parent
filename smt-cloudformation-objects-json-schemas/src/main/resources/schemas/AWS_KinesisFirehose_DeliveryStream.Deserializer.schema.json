@@ -4,18 +4,18 @@
   "title" : "DeliveryStreamDeserializer",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-deserializer.html",
   "type" : "object",
-  "javaType" : "aws.kinesisfirehose.DeliveryStreamDeserializer",
-  "javaInterfaces" : [ "aws.Property<DeliveryStreamDeserializer>" ],
+  "javaType" : "shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamDeserializer",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DeliveryStreamDeserializer>" ],
   "properties" : {
     "HiveJsonSerDe" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-deserializer.html#cfn-kinesisfirehose-deliverystream-deserializer-hivejsonserde",
       "$ref" : "AWS_KinesisFirehose_DeliveryStream.HiveJsonSerDe.schema.json",
-      "javaType" : "aws.Property<aws.kinesisfirehose.DeliveryStreamHiveJsonSerDe>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamHiveJsonSerDe>"
     },
     "OpenXJsonSerDe" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-deserializer.html#cfn-kinesisfirehose-deliverystream-deserializer-openxjsonserde",
       "$ref" : "AWS_KinesisFirehose_DeliveryStream.OpenXJsonSerDe.schema.json",
-      "javaType" : "aws.Property<aws.kinesisfirehose.DeliveryStreamOpenXJsonSerDe>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamOpenXJsonSerDe>"
     }
   }
 }

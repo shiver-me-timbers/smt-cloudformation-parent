@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.greengrass.ConnectorDefinitionResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ConnectorDefinitionResource>", "aws.HasCondition<ConnectorDefinitionResource>", "aws.HasAttributes<ConnectorDefinitionAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.greengrass.ConnectorDefinitionResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ConnectorDefinitionResource>", "shiver.me.timbers.aws.HasCondition<ConnectorDefinitionResource>", "shiver.me.timbers.aws.HasAttributes<ConnectorDefinitionAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

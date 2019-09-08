@@ -4,13 +4,13 @@
   "title" : "TaskDefinitionLinuxParameters",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html",
   "type" : "object",
-  "javaType" : "aws.ecs.TaskDefinitionLinuxParameters",
-  "javaInterfaces" : [ "aws.Property<TaskDefinitionLinuxParameters>" ],
+  "javaType" : "shiver.me.timbers.aws.ecs.TaskDefinitionLinuxParameters",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TaskDefinitionLinuxParameters>" ],
   "properties" : {
     "Capabilities" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-capabilities",
       "$ref" : "AWS_ECS_TaskDefinition.KernelCapabilities.schema.json",
-      "javaType" : "aws.Property<aws.ecs.TaskDefinitionKernelCapabilities>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecs.TaskDefinitionKernelCapabilities>"
     },
     "Devices" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-devices",
@@ -18,7 +18,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ECS_TaskDefinition.Device.schema.json",
-        "javaType" : "aws.Property<aws.ecs.TaskDefinitionDevice>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecs.TaskDefinitionDevice>"
       }
     },
     "InitProcessEnabled" : {
@@ -37,7 +37,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ECS_TaskDefinition.Tmpfs.schema.json",
-        "javaType" : "aws.Property<aws.ecs.TaskDefinitionTmpfs>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecs.TaskDefinitionTmpfs>"
       }
     }
   }

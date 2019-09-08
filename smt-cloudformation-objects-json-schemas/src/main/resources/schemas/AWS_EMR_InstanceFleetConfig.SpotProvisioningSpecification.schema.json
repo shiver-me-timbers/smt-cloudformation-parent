@@ -4,8 +4,8 @@
   "title" : "InstanceFleetConfigSpotProvisioningSpecification",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-spotprovisioningspecification.html",
   "type" : "object",
-  "javaType" : "aws.emr.InstanceFleetConfigSpotProvisioningSpecification",
-  "javaInterfaces" : [ "aws.Property<InstanceFleetConfigSpotProvisioningSpecification>" ],
+  "javaType" : "shiver.me.timbers.aws.emr.InstanceFleetConfigSpotProvisioningSpecification",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<InstanceFleetConfigSpotProvisioningSpecification>" ],
   "properties" : {
     "BlockDurationMinutes" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-spotprovisioningspecification.html#cfn-elasticmapreduce-instancefleetconfig-spotprovisioningspecification-blockdurationminutes",

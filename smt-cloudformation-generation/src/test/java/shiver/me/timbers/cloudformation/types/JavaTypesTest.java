@@ -12,13 +12,15 @@ import static shiver.me.timbers.data.random.RandomStrings.someString;
 
 public class JavaTypesTest {
 
+    private String basePackage;
     private String defaultPackageName;
     private JavaTypes types;
 
     @Before
     public void setUp() {
+        basePackage = someString();
         defaultPackageName = someString();
-        types = new JavaTypes(defaultPackageName);
+        types = new JavaTypes(basePackage, defaultPackageName);
     }
 
     @Test
@@ -75,7 +77,7 @@ public class JavaTypesTest {
         final String actual = types.parsePackage(format("%s::%s", packageName, someAlphaString(8)));
 
         // Then
-        assertThat(actual, equalTo(packageName.replaceAll("::", ".").toLowerCase()));
+        assertThat(actual, equalTo(basePackage + "." + packageName.replaceAll("::", ".").toLowerCase()));
     }
 
     @Test
@@ -85,6 +87,6 @@ public class JavaTypesTest {
         final String actual = types.parsePackage(someAlphaString(8));
 
         // Then
-        assertThat(actual, equalTo(defaultPackageName));
+        assertThat(actual, equalTo(basePackage + "." + defaultPackageName));
     }
 }

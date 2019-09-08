@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.ClientVpnTargetNetworkAssociationResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ClientVpnTargetNetworkAssociationResource>", "aws.HasCondition<ClientVpnTargetNetworkAssociationResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.ClientVpnTargetNetworkAssociationResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ClientVpnTargetNetworkAssociationResource>", "shiver.me.timbers.aws.HasCondition<ClientVpnTargetNetworkAssociationResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.amazonmq.ConfigurationAssociationResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ConfigurationAssociationResource>", "aws.HasCondition<ConfigurationAssociationResource>" ],
+  "javaType" : "shiver.me.timbers.aws.amazonmq.ConfigurationAssociationResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ConfigurationAssociationResource>", "shiver.me.timbers.aws.HasCondition<ConfigurationAssociationResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -4,7 +4,7 @@
   "title" : "EventSubscription",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-eventsubscription.html",
   "type" : "object",
-  "javaType" : "aws.rds.EventSubscription",
+  "javaType" : "shiver.me.timbers.aws.rds.EventSubscription",
   "properties" : {
     "Enabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-eventsubscription.html#cfn-rds-eventsubscription-enabled",

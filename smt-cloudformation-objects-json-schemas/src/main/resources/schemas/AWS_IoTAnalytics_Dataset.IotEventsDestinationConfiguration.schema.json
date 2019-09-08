@@ -4,8 +4,8 @@
   "title" : "DatasetIotEventsDestinationConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-ioteventsdestinationconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.iotanalytics.DatasetIotEventsDestinationConfiguration",
-  "javaInterfaces" : [ "aws.Property<DatasetIotEventsDestinationConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.iotanalytics.DatasetIotEventsDestinationConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DatasetIotEventsDestinationConfiguration>" ],
   "properties" : {
     "InputName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-ioteventsdestinationconfiguration.html#cfn-iotanalytics-dataset-ioteventsdestinationconfiguration-inputname",

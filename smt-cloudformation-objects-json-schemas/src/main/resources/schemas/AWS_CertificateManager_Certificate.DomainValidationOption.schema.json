@@ -4,8 +4,8 @@
   "title" : "CertificateDomainValidationOption",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-certificatemanager-certificate-domainvalidationoption.html",
   "type" : "object",
-  "javaType" : "aws.certificatemanager.CertificateDomainValidationOption",
-  "javaInterfaces" : [ "aws.Property<CertificateDomainValidationOption>" ],
+  "javaType" : "shiver.me.timbers.aws.certificatemanager.CertificateDomainValidationOption",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<CertificateDomainValidationOption>" ],
   "properties" : {
     "DomainName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-certificatemanager-certificate-domainvalidationoption.html#cfn-certificatemanager-certificate-domainvalidationoptions-domainname",

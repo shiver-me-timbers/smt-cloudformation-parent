@@ -4,7 +4,7 @@
   "title" : "FileSystem",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html",
   "type" : "object",
-  "javaType" : "aws.fsx.FileSystem",
+  "javaType" : "shiver.me.timbers.aws.fsx.FileSystem",
   "properties" : {
     "KmsKeyId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html#cfn-fsx-filesystem-kmskeyid",
@@ -24,7 +24,7 @@
     "LustreConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html#cfn-fsx-filesystem-lustreconfiguration",
       "$ref" : "AWS_FSx_FileSystem.LustreConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.fsx.FileSystemLustreConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.fsx.FileSystemLustreConfiguration>"
     },
     "BackupId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html#cfn-fsx-filesystem-backupid",
@@ -52,13 +52,13 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     },
     "WindowsConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html#cfn-fsx-filesystem-windowsconfiguration",
       "$ref" : "AWS_FSx_FileSystem.WindowsConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.fsx.FileSystemWindowsConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.fsx.FileSystemWindowsConfiguration>"
     }
   }
 }

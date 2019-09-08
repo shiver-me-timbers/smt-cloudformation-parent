@@ -4,8 +4,8 @@
   "title" : "TableKeySchema",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-keyschema.html",
   "type" : "object",
-  "javaType" : "aws.dynamodb.TableKeySchema",
-  "javaInterfaces" : [ "aws.Property<TableKeySchema>" ],
+  "javaType" : "shiver.me.timbers.aws.dynamodb.TableKeySchema",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TableKeySchema>" ],
   "properties" : {
     "AttributeName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-keyschema.html#aws-properties-dynamodb-keyschema-attributename",

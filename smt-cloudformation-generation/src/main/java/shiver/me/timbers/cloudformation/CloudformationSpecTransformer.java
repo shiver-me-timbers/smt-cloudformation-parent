@@ -30,11 +30,12 @@ import static java.util.stream.Collectors.toMap;
 public class CloudformationSpecTransformer {
 
     public static CloudformationSpecTransformer instance(
+        String basePackage,
         String defaultPackageName,
         Map<String, Map<String, Object>> typeMap,
         Map<String, PropertyType> properties
     ) {
-        final JavaTypes javaTypes = new JavaTypes(defaultPackageName);
+        final JavaTypes javaTypes = new JavaTypes(basePackage, defaultPackageName);
         final FileNames fileNames = new FileNames();
         final MetaDataApplier metaDataApplier = new MetaDataApplier();
         final PrimitiveTypeConverter primitiveTypeConverter = new PrimitiveTypeConverter(typeMap);

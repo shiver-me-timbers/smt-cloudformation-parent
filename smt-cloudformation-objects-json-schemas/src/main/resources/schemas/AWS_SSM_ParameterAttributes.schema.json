@@ -4,5 +4,5 @@
   "title" : "ParameterAttributes",
   "type" : "string",
   "enum" : [ "Type", "Value" ],
-  "javaType" : "aws.ssm.ParameterAttributes"
+  "javaType" : "shiver.me.timbers.aws.ssm.ParameterAttributes"
 }

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.guardduty.ThreatIntelSetResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ThreatIntelSetResource>", "aws.HasCondition<ThreatIntelSetResource>" ],
+  "javaType" : "shiver.me.timbers.aws.guardduty.ThreatIntelSetResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ThreatIntelSetResource>", "shiver.me.timbers.aws.HasCondition<ThreatIntelSetResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

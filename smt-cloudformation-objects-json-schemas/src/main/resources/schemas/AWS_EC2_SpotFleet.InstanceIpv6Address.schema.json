@@ -4,8 +4,8 @@
   "title" : "SpotFleetInstanceIpv6Address",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-instanceipv6address.html",
   "type" : "object",
-  "javaType" : "aws.ec2.SpotFleetInstanceIpv6Address",
-  "javaInterfaces" : [ "aws.Property<SpotFleetInstanceIpv6Address>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.SpotFleetInstanceIpv6Address",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<SpotFleetInstanceIpv6Address>" ],
   "properties" : {
     "Ipv6Address" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-instanceipv6address.html#cfn-ec2-spotfleet-instanceipv6address-ipv6address",

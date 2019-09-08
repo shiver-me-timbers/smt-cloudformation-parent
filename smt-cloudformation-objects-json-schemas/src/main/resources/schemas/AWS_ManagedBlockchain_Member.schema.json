@@ -4,17 +4,17 @@
   "title" : "Member",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-managedblockchain-member.html",
   "type" : "object",
-  "javaType" : "aws.managedblockchain.Member",
+  "javaType" : "shiver.me.timbers.aws.managedblockchain.Member",
   "properties" : {
     "MemberConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-managedblockchain-member.html#cfn-managedblockchain-member-memberconfiguration",
       "$ref" : "AWS_ManagedBlockchain_Member.MemberConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.managedblockchain.MemberMemberConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.managedblockchain.MemberMemberConfiguration>"
     },
     "NetworkConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-managedblockchain-member.html#cfn-managedblockchain-member-networkconfiguration",
       "$ref" : "AWS_ManagedBlockchain_Member.NetworkConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.managedblockchain.MemberNetworkConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.managedblockchain.MemberNetworkConfiguration>"
     },
     "NetworkId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-managedblockchain-member.html#cfn-managedblockchain-member-networkid",

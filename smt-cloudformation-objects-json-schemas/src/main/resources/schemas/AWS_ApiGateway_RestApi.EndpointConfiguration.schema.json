@@ -4,8 +4,8 @@
   "title" : "RestApiEndpointConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-restapi-endpointconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.apigateway.RestApiEndpointConfiguration",
-  "javaInterfaces" : [ "aws.Property<RestApiEndpointConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.apigateway.RestApiEndpointConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<RestApiEndpointConfiguration>" ],
   "properties" : {
     "Types" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-restapi-endpointconfiguration.html#cfn-apigateway-restapi-endpointconfiguration-types",

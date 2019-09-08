@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.cloudformation.MacroResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<MacroResource>", "aws.HasCondition<MacroResource>" ],
+  "javaType" : "shiver.me.timbers.aws.cloudformation.MacroResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<MacroResource>", "shiver.me.timbers.aws.HasCondition<MacroResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

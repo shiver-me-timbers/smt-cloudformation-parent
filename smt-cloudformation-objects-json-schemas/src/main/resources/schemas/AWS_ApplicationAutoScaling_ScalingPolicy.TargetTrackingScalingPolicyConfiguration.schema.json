@@ -4,13 +4,13 @@
   "title" : "ScalingPolicyTargetTrackingScalingPolicyConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.applicationautoscaling.ScalingPolicyTargetTrackingScalingPolicyConfiguration",
-  "javaInterfaces" : [ "aws.Property<ScalingPolicyTargetTrackingScalingPolicyConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.applicationautoscaling.ScalingPolicyTargetTrackingScalingPolicyConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ScalingPolicyTargetTrackingScalingPolicyConfiguration>" ],
   "properties" : {
     "CustomizedMetricSpecification" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration-customizedmetricspecification",
       "$ref" : "AWS_ApplicationAutoScaling_ScalingPolicy.CustomizedMetricSpecification.schema.json",
-      "javaType" : "aws.Property<aws.applicationautoscaling.ScalingPolicyCustomizedMetricSpecification>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.applicationautoscaling.ScalingPolicyCustomizedMetricSpecification>"
     },
     "DisableScaleIn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration-disablescalein",
@@ -20,7 +20,7 @@
     "PredefinedMetricSpecification" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration-predefinedmetricspecification",
       "$ref" : "AWS_ApplicationAutoScaling_ScalingPolicy.PredefinedMetricSpecification.schema.json",
-      "javaType" : "aws.Property<aws.applicationautoscaling.ScalingPolicyPredefinedMetricSpecification>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.applicationautoscaling.ScalingPolicyPredefinedMetricSpecification>"
     },
     "ScaleInCooldown" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration-scaleincooldown",

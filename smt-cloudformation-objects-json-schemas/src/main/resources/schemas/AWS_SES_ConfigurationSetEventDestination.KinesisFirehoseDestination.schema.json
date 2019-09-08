@@ -4,8 +4,8 @@
   "title" : "ConfigurationSetEventDestinationKinesisFirehoseDestination",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-kinesisfirehosedestination.html",
   "type" : "object",
-  "javaType" : "aws.ses.ConfigurationSetEventDestinationKinesisFirehoseDestination",
-  "javaInterfaces" : [ "aws.Property<ConfigurationSetEventDestinationKinesisFirehoseDestination>" ],
+  "javaType" : "shiver.me.timbers.aws.ses.ConfigurationSetEventDestinationKinesisFirehoseDestination",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ConfigurationSetEventDestinationKinesisFirehoseDestination>" ],
   "properties" : {
     "IAMRoleARN" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-kinesisfirehosedestination.html#cfn-ses-configurationseteventdestination-kinesisfirehosedestination-iamrolearn",

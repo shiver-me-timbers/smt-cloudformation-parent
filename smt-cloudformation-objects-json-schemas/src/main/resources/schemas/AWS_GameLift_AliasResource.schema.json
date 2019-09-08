@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.gamelift.AliasResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<AliasResource>", "aws.HasCondition<AliasResource>" ],
+  "javaType" : "shiver.me.timbers.aws.gamelift.AliasResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<AliasResource>", "shiver.me.timbers.aws.HasCondition<AliasResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

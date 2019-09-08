@@ -4,8 +4,8 @@
   "title" : "ClusterSSESpecification",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dax-cluster-ssespecification.html",
   "type" : "object",
-  "javaType" : "aws.dax.ClusterSSESpecification",
-  "javaInterfaces" : [ "aws.Property<ClusterSSESpecification>" ],
+  "javaType" : "shiver.me.timbers.aws.dax.ClusterSSESpecification",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ClusterSSESpecification>" ],
   "properties" : {
     "SSEEnabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dax-cluster-ssespecification.html#cfn-dax-cluster-ssespecification-sseenabled",

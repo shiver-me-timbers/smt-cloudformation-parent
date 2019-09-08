@@ -6,9 +6,11 @@ import static java.util.stream.Collectors.joining;
 
 public class JavaTypes {
 
+    private final String basePackage;
     private final String defaultPackageName;
 
-    public JavaTypes(String defaultPackageName) {
+    public JavaTypes(String basePackage, String defaultPackageName) {
+        this.basePackage = basePackage;
         this.defaultPackageName = defaultPackageName;
     }
 
@@ -31,9 +33,9 @@ public class JavaTypes {
     public String parsePackage(String key) {
         final String resourcePackage = extractPackage(key);
         if (resourcePackage.isEmpty()) {
-            return defaultPackageName;
+            return addBasePackage(defaultPackageName);
         }
-        return resourcePackage.replaceAll("::", ".").toLowerCase();
+        return addBasePackage(resourcePackage.replaceAll("::", ".").toLowerCase());
     }
 
     public String extractPackage(String key) {
@@ -44,5 +46,9 @@ public class JavaTypes {
     private String takeLast(String string, String delimiter) {
         final String[] split = string.split(delimiter);
         return split[split.length - 1];
+    }
+
+    private String addBasePackage(String packageName) {
+        return basePackage + "." + packageName;
     }
 }

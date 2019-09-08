@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.cloudwatch.DashboardResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<DashboardResource>", "aws.HasCondition<DashboardResource>" ],
+  "javaType" : "shiver.me.timbers.aws.cloudwatch.DashboardResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<DashboardResource>", "shiver.me.timbers.aws.HasCondition<DashboardResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

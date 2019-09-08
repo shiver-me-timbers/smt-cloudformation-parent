@@ -4,8 +4,8 @@
   "title" : "BucketTopicConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-topicconfig.html",
   "type" : "object",
-  "javaType" : "aws.s3.BucketTopicConfiguration",
-  "javaInterfaces" : [ "aws.Property<BucketTopicConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.s3.BucketTopicConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BucketTopicConfiguration>" ],
   "properties" : {
     "Event" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-topicconfig.html#cfn-s3-bucket-notificationconfig-topicconfig-event",
@@ -15,7 +15,7 @@
     "Filter" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-topicconfig.html#cfn-s3-bucket-notificationconfig-topicconfig-filter",
       "$ref" : "AWS_S3_Bucket.NotificationFilter.schema.json",
-      "javaType" : "aws.Property<aws.s3.BucketNotificationFilter>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.BucketNotificationFilter>"
     },
     "Topic" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-topicconfig.html#cfn-s3-bucket-notificationconfig-topicconfig-topic",

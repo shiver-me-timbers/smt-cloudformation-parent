@@ -4,7 +4,7 @@
   "title" : "ConfigurationAssociation",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configurationassociation.html",
   "type" : "object",
-  "javaType" : "aws.amazonmq.ConfigurationAssociation",
+  "javaType" : "shiver.me.timbers.aws.amazonmq.ConfigurationAssociation",
   "properties" : {
     "Broker" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configurationassociation.html#cfn-amazonmq-configurationassociation-broker",
@@ -14,7 +14,7 @@
     "Configuration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configurationassociation.html#cfn-amazonmq-configurationassociation-configuration",
       "$ref" : "AWS_AmazonMQ_ConfigurationAssociation.ConfigurationId.schema.json",
-      "javaType" : "aws.Property<aws.amazonmq.ConfigurationAssociationConfigurationId>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.amazonmq.ConfigurationAssociationConfigurationId>"
     }
   }
 }

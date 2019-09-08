@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.logs.MetricFilterResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<MetricFilterResource>", "aws.HasCondition<MetricFilterResource>" ],
+  "javaType" : "shiver.me.timbers.aws.logs.MetricFilterResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<MetricFilterResource>", "shiver.me.timbers.aws.HasCondition<MetricFilterResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

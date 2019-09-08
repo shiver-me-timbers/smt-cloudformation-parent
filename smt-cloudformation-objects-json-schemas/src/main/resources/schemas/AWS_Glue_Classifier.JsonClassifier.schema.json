@@ -4,8 +4,8 @@
   "title" : "ClassifierJsonClassifier",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-jsonclassifier.html",
   "type" : "object",
-  "javaType" : "aws.glue.ClassifierJsonClassifier",
-  "javaInterfaces" : [ "aws.Property<ClassifierJsonClassifier>" ],
+  "javaType" : "shiver.me.timbers.aws.glue.ClassifierJsonClassifier",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ClassifierJsonClassifier>" ],
   "properties" : {
     "JsonPath" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-jsonclassifier.html#cfn-glue-classifier-jsonclassifier-jsonpath",

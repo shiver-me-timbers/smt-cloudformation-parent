@@ -4,13 +4,13 @@
   "title" : "DistributionDistributionConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html",
   "type" : "object",
-  "javaType" : "aws.cloudfront.DistributionDistributionConfig",
-  "javaInterfaces" : [ "aws.Property<DistributionDistributionConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.cloudfront.DistributionDistributionConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DistributionDistributionConfig>" ],
   "properties" : {
     "Logging" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-logging",
       "$ref" : "AWS_CloudFront_Distribution.Logging.schema.json",
-      "javaType" : "aws.Property<aws.cloudfront.DistributionLogging>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cloudfront.DistributionLogging>"
     },
     "Comment" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-comment",
@@ -27,13 +27,13 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_CloudFront_Distribution.Origin.schema.json",
-        "javaType" : "aws.Property<aws.cloudfront.DistributionOrigin>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cloudfront.DistributionOrigin>"
       }
     },
     "ViewerCertificate" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-viewercertificate",
       "$ref" : "AWS_CloudFront_Distribution.ViewerCertificate.schema.json",
-      "javaType" : "aws.Property<aws.cloudfront.DistributionViewerCertificate>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cloudfront.DistributionViewerCertificate>"
     },
     "PriceClass" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-priceclass",
@@ -43,14 +43,14 @@
     "DefaultCacheBehavior" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-defaultcachebehavior",
       "$ref" : "AWS_CloudFront_Distribution.DefaultCacheBehavior.schema.json",
-      "javaType" : "aws.Property<aws.cloudfront.DistributionDefaultCacheBehavior>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cloudfront.DistributionDefaultCacheBehavior>"
     },
     "CustomErrorResponses" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-customerrorresponses",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_CloudFront_Distribution.CustomErrorResponse.schema.json",
-        "javaType" : "aws.Property<aws.cloudfront.DistributionCustomErrorResponse>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cloudfront.DistributionCustomErrorResponse>"
       }
     },
     "Enabled" : {
@@ -84,14 +84,14 @@
     "Restrictions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-restrictions",
       "$ref" : "AWS_CloudFront_Distribution.Restrictions.schema.json",
-      "javaType" : "aws.Property<aws.cloudfront.DistributionRestrictions>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cloudfront.DistributionRestrictions>"
     },
     "CacheBehaviors" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-cachebehaviors",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_CloudFront_Distribution.CacheBehavior.schema.json",
-        "javaType" : "aws.Property<aws.cloudfront.DistributionCacheBehavior>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cloudfront.DistributionCacheBehavior>"
       }
     }
   }

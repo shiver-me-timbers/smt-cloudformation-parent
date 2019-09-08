@@ -4,13 +4,13 @@
   "title" : "RepositoryCode",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codecommit-repository-code.html",
   "type" : "object",
-  "javaType" : "aws.codecommit.RepositoryCode",
-  "javaInterfaces" : [ "aws.Property<RepositoryCode>" ],
+  "javaType" : "shiver.me.timbers.aws.codecommit.RepositoryCode",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<RepositoryCode>" ],
   "properties" : {
     "S3" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codecommit-repository-code.html#cfn-codecommit-repository-code-s3",
       "$ref" : "AWS_CodeCommit_Repository.S3.schema.json",
-      "javaType" : "aws.Property<aws.codecommit.RepositoryS3>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codecommit.RepositoryS3>"
     }
   }
 }

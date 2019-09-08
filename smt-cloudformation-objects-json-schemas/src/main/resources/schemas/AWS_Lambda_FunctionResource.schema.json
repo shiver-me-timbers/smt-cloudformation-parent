@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.lambda.FunctionResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<FunctionResource>", "aws.HasCondition<FunctionResource>", "aws.HasAttributes<FunctionAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.lambda.FunctionResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<FunctionResource>", "shiver.me.timbers.aws.HasCondition<FunctionResource>", "shiver.me.timbers.aws.HasAttributes<FunctionAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

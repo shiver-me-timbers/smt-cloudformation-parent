@@ -4,5 +4,5 @@
   "title" : "TopicRuleAttributes",
   "type" : "string",
   "enum" : [ "Arn" ],
-  "javaType" : "aws.iot.TopicRuleAttributes"
+  "javaType" : "shiver.me.timbers.aws.iot.TopicRuleAttributes"
 }

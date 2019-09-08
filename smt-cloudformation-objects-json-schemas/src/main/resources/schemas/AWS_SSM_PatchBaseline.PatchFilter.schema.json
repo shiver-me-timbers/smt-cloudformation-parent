@@ -4,8 +4,8 @@
   "title" : "PatchBaselinePatchFilter",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfilter.html",
   "type" : "object",
-  "javaType" : "aws.ssm.PatchBaselinePatchFilter",
-  "javaInterfaces" : [ "aws.Property<PatchBaselinePatchFilter>" ],
+  "javaType" : "shiver.me.timbers.aws.ssm.PatchBaselinePatchFilter",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<PatchBaselinePatchFilter>" ],
   "properties" : {
     "Values" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfilter.html#cfn-ssm-patchbaseline-patchfilter-values",

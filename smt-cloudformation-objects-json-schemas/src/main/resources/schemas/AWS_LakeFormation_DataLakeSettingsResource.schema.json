@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.lakeformation.DataLakeSettingsResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<DataLakeSettingsResource>", "aws.HasCondition<DataLakeSettingsResource>" ],
+  "javaType" : "shiver.me.timbers.aws.lakeformation.DataLakeSettingsResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<DataLakeSettingsResource>", "shiver.me.timbers.aws.HasCondition<DataLakeSettingsResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -4,5 +4,5 @@
   "title" : "AccessKeyAttributes",
   "type" : "string",
   "enum" : [ "SecretAccessKey" ],
-  "javaType" : "aws.iam.AccessKeyAttributes"
+  "javaType" : "shiver.me.timbers.aws.iam.AccessKeyAttributes"
 }

@@ -4,8 +4,8 @@
   "title" : "DeliveryStreamParquetSerDe",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-parquetserde.html",
   "type" : "object",
-  "javaType" : "aws.kinesisfirehose.DeliveryStreamParquetSerDe",
-  "javaInterfaces" : [ "aws.Property<DeliveryStreamParquetSerDe>" ],
+  "javaType" : "shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamParquetSerDe",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DeliveryStreamParquetSerDe>" ],
   "properties" : {
     "BlockSizeBytes" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-parquetserde.html#cfn-kinesisfirehose-deliverystream-parquetserde-blocksizebytes",

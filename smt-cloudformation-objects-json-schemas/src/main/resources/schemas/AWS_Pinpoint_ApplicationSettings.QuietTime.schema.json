@@ -4,8 +4,8 @@
   "title" : "ApplicationSettingsQuietTime",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-applicationsettings-quiettime.html",
   "type" : "object",
-  "javaType" : "aws.pinpoint.ApplicationSettingsQuietTime",
-  "javaInterfaces" : [ "aws.Property<ApplicationSettingsQuietTime>" ],
+  "javaType" : "shiver.me.timbers.aws.pinpoint.ApplicationSettingsQuietTime",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ApplicationSettingsQuietTime>" ],
   "properties" : {
     "Start" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-applicationsettings-quiettime.html#cfn-pinpoint-applicationsettings-quiettime-start",

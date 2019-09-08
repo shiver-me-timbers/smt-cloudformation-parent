@@ -4,8 +4,8 @@
   "title" : "StackElasticIp",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-elasticip.html",
   "type" : "object",
-  "javaType" : "aws.opsworks.StackElasticIp",
-  "javaInterfaces" : [ "aws.Property<StackElasticIp>" ],
+  "javaType" : "shiver.me.timbers.aws.opsworks.StackElasticIp",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<StackElasticIp>" ],
   "properties" : {
     "Ip" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-elasticip.html#cfn-opsworks-stack-elasticip-ip",

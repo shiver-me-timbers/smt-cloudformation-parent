@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.servicediscovery.InstanceResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<InstanceResource>", "aws.HasCondition<InstanceResource>" ],
+  "javaType" : "shiver.me.timbers.aws.servicediscovery.InstanceResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<InstanceResource>", "shiver.me.timbers.aws.HasCondition<InstanceResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -4,7 +4,7 @@
   "title" : "IdentityPoolRoleAttachment",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypoolroleattachment.html",
   "type" : "object",
-  "javaType" : "aws.cognito.IdentityPoolRoleAttachment",
+  "javaType" : "shiver.me.timbers.aws.cognito.IdentityPoolRoleAttachment",
   "properties" : {
     "RoleMappings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypoolroleattachment.html#cfn-cognito-identitypoolroleattachment-rolemappings",

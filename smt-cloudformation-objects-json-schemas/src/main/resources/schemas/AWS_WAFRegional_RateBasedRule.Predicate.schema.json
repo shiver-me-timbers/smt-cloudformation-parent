@@ -4,8 +4,8 @@
   "title" : "RateBasedRulePredicate",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-ratebasedrule-predicate.html",
   "type" : "object",
-  "javaType" : "aws.wafregional.RateBasedRulePredicate",
-  "javaInterfaces" : [ "aws.Property<RateBasedRulePredicate>" ],
+  "javaType" : "shiver.me.timbers.aws.wafregional.RateBasedRulePredicate",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<RateBasedRulePredicate>" ],
   "properties" : {
     "Type" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-ratebasedrule-predicate.html#cfn-wafregional-ratebasedrule-predicate-type",

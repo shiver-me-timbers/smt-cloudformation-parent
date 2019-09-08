@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.apigateway.UsagePlanResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<UsagePlanResource>", "aws.HasCondition<UsagePlanResource>" ],
+  "javaType" : "shiver.me.timbers.aws.apigateway.UsagePlanResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<UsagePlanResource>", "shiver.me.timbers.aws.HasCondition<UsagePlanResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

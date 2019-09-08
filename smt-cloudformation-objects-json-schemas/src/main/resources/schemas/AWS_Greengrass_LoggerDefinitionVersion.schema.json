@@ -4,7 +4,7 @@
   "title" : "LoggerDefinitionVersion",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-loggerdefinitionversion.html",
   "type" : "object",
-  "javaType" : "aws.greengrass.LoggerDefinitionVersion",
+  "javaType" : "shiver.me.timbers.aws.greengrass.LoggerDefinitionVersion",
   "properties" : {
     "LoggerDefinitionId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-loggerdefinitionversion.html#cfn-greengrass-loggerdefinitionversion-loggerdefinitionid",
@@ -16,7 +16,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Greengrass_LoggerDefinitionVersion.Logger.schema.json",
-        "javaType" : "aws.Property<aws.greengrass.LoggerDefinitionVersionLogger>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.greengrass.LoggerDefinitionVersionLogger>"
       }
     }
   }

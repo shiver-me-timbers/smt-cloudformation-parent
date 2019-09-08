@@ -1,0 +1,114 @@
+
+package shiver.me.timbers.aws.ec2;
+
+import java.util.ArrayList;
+import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyDescription;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import org.apache.commons.lang.builder.EqualsBuilder;
+import org.apache.commons.lang.builder.HashCodeBuilder;
+import org.apache.commons.lang.builder.ToStringBuilder;
+import shiver.me.timbers.aws.Property;
+import shiver.me.timbers.aws.Tag;
+
+
+/**
+ * NetworkAcl
+ * <p>
+ * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl.html
+ * 
+ */
+@JsonInclude(JsonInclude.Include.NON_EMPTY)
+@JsonPropertyOrder({
+    "Tags",
+    "VpcId"
+})
+public class NetworkAcl {
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl.html#cfn-ec2-networkacl-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl.html#cfn-ec2-networkacl-tags")
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl.html#cfn-ec2-networkacl-vpcid
+     * 
+     */
+    @JsonProperty("VpcId")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl.html#cfn-ec2-networkacl-vpcid")
+    private CharSequence vpcId;
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl.html#cfn-ec2-networkacl-tags
+     * 
+     */
+    @JsonIgnore
+    public List<Property<Tag>> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl.html#cfn-ec2-networkacl-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+    }
+
+    public NetworkAcl withTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl.html#cfn-ec2-networkacl-vpcid
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getVpcId() {
+        return vpcId;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl.html#cfn-ec2-networkacl-vpcid
+     * 
+     */
+    @JsonIgnore
+    public void setVpcId(CharSequence vpcId) {
+        this.vpcId = vpcId;
+    }
+
+    public NetworkAcl withVpcId(CharSequence vpcId) {
+        this.vpcId = vpcId;
+        return this;
+    }
+
+    @Override
+    public String toString() {
+        return new ToStringBuilder(this).append("tags", tags).append("vpcId", vpcId).toString();
+    }
+
+    @Override
+    public int hashCode() {
+        return new HashCodeBuilder().append(tags).append(vpcId).toHashCode();
+    }
+
+    @Override
+    public boolean equals(Object other) {
+        if (other == this) {
+            return true;
+        }
+        if ((other instanceof NetworkAcl) == false) {
+            return false;
+        }
+        NetworkAcl rhs = ((NetworkAcl) other);
+        return new EqualsBuilder().append(tags, rhs.tags).append(vpcId, rhs.vpcId).isEquals();
+    }
+
+}

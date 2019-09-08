@@ -4,7 +4,7 @@
   "title" : "Destination",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-destination.html",
   "type" : "object",
-  "javaType" : "aws.logs.Destination",
+  "javaType" : "shiver.me.timbers.aws.logs.Destination",
   "properties" : {
     "DestinationName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-destination.html#cfn-logs-destination-destinationname",

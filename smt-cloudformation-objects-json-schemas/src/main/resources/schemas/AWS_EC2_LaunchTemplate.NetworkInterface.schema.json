@@ -4,8 +4,8 @@
   "title" : "LaunchTemplateNetworkInterface",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html",
   "type" : "object",
-  "javaType" : "aws.ec2.LaunchTemplateNetworkInterface",
-  "javaInterfaces" : [ "aws.Property<LaunchTemplateNetworkInterface>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.LaunchTemplateNetworkInterface",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<LaunchTemplateNetworkInterface>" ],
   "properties" : {
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-networkinterface.html#cfn-ec2-launchtemplate-networkinterface-description",
@@ -22,7 +22,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_EC2_LaunchTemplate.PrivateIpAdd.schema.json",
-        "javaType" : "aws.Property<aws.ec2.LaunchTemplatePrivateIpAdd>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.LaunchTemplatePrivateIpAdd>"
       }
     },
     "SecondaryPrivateIpAddressCount" : {
@@ -45,7 +45,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_EC2_LaunchTemplate.Ipv6Add.schema.json",
-        "javaType" : "aws.Property<aws.ec2.LaunchTemplateIpv6Add>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.LaunchTemplateIpv6Add>"
       }
     },
     "AssociatePublicIpAddress" : {

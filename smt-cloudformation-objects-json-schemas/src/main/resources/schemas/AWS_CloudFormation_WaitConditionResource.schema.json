@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.cloudformation.WaitConditionResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<WaitConditionResource>", "aws.HasCondition<WaitConditionResource>", "aws.HasAttributes<WaitConditionAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.cloudformation.WaitConditionResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<WaitConditionResource>", "shiver.me.timbers.aws.HasCondition<WaitConditionResource>", "shiver.me.timbers.aws.HasAttributes<WaitConditionAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.transfer.UserResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<UserResource>", "aws.HasCondition<UserResource>", "aws.HasAttributes<UserAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.transfer.UserResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<UserResource>", "shiver.me.timbers.aws.HasCondition<UserResource>", "shiver.me.timbers.aws.HasAttributes<UserAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

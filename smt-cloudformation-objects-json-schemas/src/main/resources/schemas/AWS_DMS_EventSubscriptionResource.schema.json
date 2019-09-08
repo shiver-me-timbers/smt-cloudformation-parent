@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.dms.EventSubscriptionResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<EventSubscriptionResource>", "aws.HasCondition<EventSubscriptionResource>" ],
+  "javaType" : "shiver.me.timbers.aws.dms.EventSubscriptionResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<EventSubscriptionResource>", "shiver.me.timbers.aws.HasCondition<EventSubscriptionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

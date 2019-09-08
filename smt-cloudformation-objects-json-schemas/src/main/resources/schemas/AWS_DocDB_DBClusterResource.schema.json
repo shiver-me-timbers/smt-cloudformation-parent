@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.docdb.DBClusterResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<DBClusterResource>", "aws.HasCondition<DBClusterResource>", "aws.HasAttributes<DBClusterAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.docdb.DBClusterResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<DBClusterResource>", "shiver.me.timbers.aws.HasCondition<DBClusterResource>", "shiver.me.timbers.aws.HasAttributes<DBClusterAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

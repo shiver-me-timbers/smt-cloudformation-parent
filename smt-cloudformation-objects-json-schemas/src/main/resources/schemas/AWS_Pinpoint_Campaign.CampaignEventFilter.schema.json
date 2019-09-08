@@ -4,8 +4,8 @@
   "title" : "CampaignCampaignEventFilter",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-campaigneventfilter.html",
   "type" : "object",
-  "javaType" : "aws.pinpoint.CampaignCampaignEventFilter",
-  "javaInterfaces" : [ "aws.Property<CampaignCampaignEventFilter>" ],
+  "javaType" : "shiver.me.timbers.aws.pinpoint.CampaignCampaignEventFilter",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<CampaignCampaignEventFilter>" ],
   "properties" : {
     "FilterType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-campaigneventfilter.html#cfn-pinpoint-campaign-campaigneventfilter-filtertype",
@@ -15,7 +15,7 @@
     "Dimensions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-campaigneventfilter.html#cfn-pinpoint-campaign-campaigneventfilter-dimensions",
       "$ref" : "AWS_Pinpoint_Campaign.EventDimensions.schema.json",
-      "javaType" : "aws.Property<aws.pinpoint.CampaignEventDimensions>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpoint.CampaignEventDimensions>"
     }
   }
 }

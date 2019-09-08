@@ -4,8 +4,8 @@
   "title" : "AppDataSource",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-datasource.html",
   "type" : "object",
-  "javaType" : "aws.opsworks.AppDataSource",
-  "javaInterfaces" : [ "aws.Property<AppDataSource>" ],
+  "javaType" : "shiver.me.timbers.aws.opsworks.AppDataSource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<AppDataSource>" ],
   "properties" : {
     "Arn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-datasource.html#cfn-opsworks-app-datasource-arn",

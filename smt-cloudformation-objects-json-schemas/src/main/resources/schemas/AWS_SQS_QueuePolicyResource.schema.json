@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.sqs.QueuePolicyResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<QueuePolicyResource>", "aws.HasCondition<QueuePolicyResource>" ],
+  "javaType" : "shiver.me.timbers.aws.sqs.QueuePolicyResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<QueuePolicyResource>", "shiver.me.timbers.aws.HasCondition<QueuePolicyResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

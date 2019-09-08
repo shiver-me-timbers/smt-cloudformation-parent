@@ -23,6 +23,7 @@ public class Main {
         final CloudFormationResourceSpecification specification = objectMapper
             .readValue(stream, CloudFormationResourceSpecification.class);
         final Map<String, Object> jsonSchemas = CloudformationSpecTransformer.instance(
+            "shiver.me.timbers",
             "aws",
             objectMapper.readValue(toInputStream("typeMap.json"), Map.class),
             specification.getPropertyTypes()

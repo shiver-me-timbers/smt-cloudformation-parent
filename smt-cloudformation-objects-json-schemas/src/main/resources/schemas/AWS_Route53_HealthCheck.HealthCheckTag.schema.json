@@ -4,8 +4,8 @@
   "title" : "HealthCheckHealthCheckTag",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthchecktag.html",
   "type" : "object",
-  "javaType" : "aws.route53.HealthCheckHealthCheckTag",
-  "javaInterfaces" : [ "aws.Property<HealthCheckHealthCheckTag>" ],
+  "javaType" : "shiver.me.timbers.aws.route53.HealthCheckHealthCheckTag",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<HealthCheckHealthCheckTag>" ],
   "properties" : {
     "Key" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthchecktag.html#cfn-route53-healthchecktags-key",

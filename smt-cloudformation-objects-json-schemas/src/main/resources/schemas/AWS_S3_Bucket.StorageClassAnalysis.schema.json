@@ -4,13 +4,13 @@
   "title" : "BucketStorageClassAnalysis",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-storageclassanalysis.html",
   "type" : "object",
-  "javaType" : "aws.s3.BucketStorageClassAnalysis",
-  "javaInterfaces" : [ "aws.Property<BucketStorageClassAnalysis>" ],
+  "javaType" : "shiver.me.timbers.aws.s3.BucketStorageClassAnalysis",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BucketStorageClassAnalysis>" ],
   "properties" : {
     "DataExport" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-storageclassanalysis.html#cfn-s3-bucket-storageclassanalysis-dataexport",
       "$ref" : "AWS_S3_Bucket.DataExport.schema.json",
-      "javaType" : "aws.Property<aws.s3.BucketDataExport>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.BucketDataExport>"
     }
   }
 }

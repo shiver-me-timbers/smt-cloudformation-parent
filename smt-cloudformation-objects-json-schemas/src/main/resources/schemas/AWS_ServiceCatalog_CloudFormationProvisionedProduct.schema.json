@@ -4,7 +4,7 @@
   "title" : "CloudFormationProvisionedProduct",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html",
   "type" : "object",
-  "javaType" : "aws.servicecatalog.CloudFormationProvisionedProduct",
+  "javaType" : "shiver.me.timbers.aws.servicecatalog.CloudFormationProvisionedProduct",
   "properties" : {
     "PathId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-pathid",
@@ -16,13 +16,13 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_ServiceCatalog_CloudFormationProvisionedProduct.ProvisioningParameter.schema.json",
-        "javaType" : "aws.Property<aws.servicecatalog.CloudFormationProvisionedProductProvisioningParameter>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.servicecatalog.CloudFormationProvisionedProductProvisioningParameter>"
       }
     },
     "ProvisioningPreferences" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningpreferences",
       "$ref" : "AWS_ServiceCatalog_CloudFormationProvisionedProduct.ProvisioningPreferences.schema.json",
-      "javaType" : "aws.Property<aws.servicecatalog.CloudFormationProvisionedProductProvisioningPreferences>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.servicecatalog.CloudFormationProvisionedProductProvisioningPreferences>"
     },
     "ProductName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-productname",
@@ -57,7 +57,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     },
     "ProvisionedProductName" : {

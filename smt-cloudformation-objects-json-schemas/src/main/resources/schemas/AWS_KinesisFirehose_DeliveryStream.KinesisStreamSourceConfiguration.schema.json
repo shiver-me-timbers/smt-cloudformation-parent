@@ -4,8 +4,8 @@
   "title" : "DeliveryStreamKinesisStreamSourceConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.kinesisfirehose.DeliveryStreamKinesisStreamSourceConfiguration",
-  "javaInterfaces" : [ "aws.Property<DeliveryStreamKinesisStreamSourceConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamKinesisStreamSourceConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DeliveryStreamKinesisStreamSourceConfiguration>" ],
   "properties" : {
     "KinesisStreamARN" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration.html#cfn-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration-kinesisstreamarn",

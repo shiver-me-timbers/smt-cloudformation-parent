@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.elasticsearch.DomainResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<DomainResource>", "aws.HasCondition<DomainResource>", "aws.HasAttributes<DomainAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.elasticsearch.DomainResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<DomainResource>", "shiver.me.timbers.aws.HasCondition<DomainResource>", "shiver.me.timbers.aws.HasAttributes<DomainAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

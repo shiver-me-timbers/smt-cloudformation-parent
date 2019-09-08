@@ -4,7 +4,7 @@
   "title" : "AssessmentTarget",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttarget.html",
   "type" : "object",
-  "javaType" : "aws.inspector.AssessmentTarget",
+  "javaType" : "shiver.me.timbers.aws.inspector.AssessmentTarget",
   "properties" : {
     "AssessmentTargetName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttarget.html#cfn-inspector-assessmenttarget-assessmenttargetname",

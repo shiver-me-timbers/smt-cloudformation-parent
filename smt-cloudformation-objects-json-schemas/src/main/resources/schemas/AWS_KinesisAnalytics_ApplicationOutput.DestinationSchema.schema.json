@@ -4,8 +4,8 @@
   "title" : "ApplicationOutputDestinationSchema",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationoutput-destinationschema.html",
   "type" : "object",
-  "javaType" : "aws.kinesisanalytics.ApplicationOutputDestinationSchema",
-  "javaInterfaces" : [ "aws.Property<ApplicationOutputDestinationSchema>" ],
+  "javaType" : "shiver.me.timbers.aws.kinesisanalytics.ApplicationOutputDestinationSchema",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ApplicationOutputDestinationSchema>" ],
   "properties" : {
     "RecordFormatType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationoutput-destinationschema.html#cfn-kinesisanalytics-applicationoutput-destinationschema-recordformattype",

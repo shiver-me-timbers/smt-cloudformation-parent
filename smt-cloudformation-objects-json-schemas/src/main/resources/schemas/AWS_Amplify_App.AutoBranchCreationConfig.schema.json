@@ -4,15 +4,15 @@
   "title" : "AppAutoBranchCreationConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-autobranchcreationconfig.html",
   "type" : "object",
-  "javaType" : "aws.amplify.AppAutoBranchCreationConfig",
-  "javaInterfaces" : [ "aws.Property<AppAutoBranchCreationConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.amplify.AppAutoBranchCreationConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<AppAutoBranchCreationConfig>" ],
   "properties" : {
     "EnvironmentVariables" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-autobranchcreationconfig.html#cfn-amplify-app-autobranchcreationconfig-environmentvariables",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Amplify_App.EnvironmentVariable.schema.json",
-        "javaType" : "aws.Property<aws.amplify.AppEnvironmentVariable>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.amplify.AppEnvironmentVariable>"
       }
     },
     "EnableAutoBranchCreation" : {
@@ -46,7 +46,7 @@
     "BasicAuthConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-autobranchcreationconfig.html#cfn-amplify-app-autobranchcreationconfig-basicauthconfig",
       "$ref" : "AWS_Amplify_App.BasicAuthConfig.schema.json",
-      "javaType" : "aws.Property<aws.amplify.AppBasicAuthConfig>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.amplify.AppBasicAuthConfig>"
     }
   }
 }

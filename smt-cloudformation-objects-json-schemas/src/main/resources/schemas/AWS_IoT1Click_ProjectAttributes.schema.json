@@ -4,5 +4,5 @@
   "title" : "ProjectAttributes",
   "type" : "string",
   "enum" : [ "ProjectName", "Arn" ],
-  "javaType" : "aws.iot1click.ProjectAttributes"
+  "javaType" : "shiver.me.timbers.aws.iot1click.ProjectAttributes"
 }

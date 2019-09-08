@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.elasticloadbalancingv2.ListenerRuleResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ListenerRuleResource>", "aws.HasCondition<ListenerRuleResource>" ],
+  "javaType" : "shiver.me.timbers.aws.elasticloadbalancingv2.ListenerRuleResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ListenerRuleResource>", "shiver.me.timbers.aws.HasCondition<ListenerRuleResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

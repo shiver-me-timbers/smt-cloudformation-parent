@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.glue.CrawlerResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<CrawlerResource>", "aws.HasCondition<CrawlerResource>" ],
+  "javaType" : "shiver.me.timbers.aws.glue.CrawlerResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<CrawlerResource>", "shiver.me.timbers.aws.HasCondition<CrawlerResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

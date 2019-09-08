@@ -4,5 +4,5 @@
   "title" : "DBClusterAttributes",
   "type" : "string",
   "enum" : [ "Endpoint.Address", "Endpoint.Port", "ReadEndpoint.Address" ],
-  "javaType" : "aws.rds.DBClusterAttributes"
+  "javaType" : "shiver.me.timbers.aws.rds.DBClusterAttributes"
 }

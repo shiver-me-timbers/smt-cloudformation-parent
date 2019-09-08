@@ -4,7 +4,7 @@
   "title" : "EventStream",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-eventstream.html",
   "type" : "object",
-  "javaType" : "aws.pinpoint.EventStream",
+  "javaType" : "shiver.me.timbers.aws.pinpoint.EventStream",
   "properties" : {
     "ApplicationId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-eventstream.html#cfn-pinpoint-eventstream-applicationid",

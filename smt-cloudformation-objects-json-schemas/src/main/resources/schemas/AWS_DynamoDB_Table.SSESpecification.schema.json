@@ -4,8 +4,8 @@
   "title" : "TableSSESpecification",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-ssespecification.html",
   "type" : "object",
-  "javaType" : "aws.dynamodb.TableSSESpecification",
-  "javaInterfaces" : [ "aws.Property<TableSSESpecification>" ],
+  "javaType" : "shiver.me.timbers.aws.dynamodb.TableSSESpecification",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TableSSESpecification>" ],
   "properties" : {
     "KMSMasterKeyId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-ssespecification.html#cfn-dynamodb-table-ssespecification-kmsmasterkeyid",

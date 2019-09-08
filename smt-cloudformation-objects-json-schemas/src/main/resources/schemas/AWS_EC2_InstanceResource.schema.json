@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.InstanceResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<InstanceResource>", "aws.HasCondition<InstanceResource>", "aws.HasAttributes<InstanceAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.InstanceResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<InstanceResource>", "shiver.me.timbers.aws.HasCondition<InstanceResource>", "shiver.me.timbers.aws.HasAttributes<InstanceAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

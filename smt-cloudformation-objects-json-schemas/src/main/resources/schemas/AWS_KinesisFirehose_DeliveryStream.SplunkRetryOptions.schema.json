@@ -4,8 +4,8 @@
   "title" : "DeliveryStreamSplunkRetryOptions",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkretryoptions.html",
   "type" : "object",
-  "javaType" : "aws.kinesisfirehose.DeliveryStreamSplunkRetryOptions",
-  "javaInterfaces" : [ "aws.Property<DeliveryStreamSplunkRetryOptions>" ],
+  "javaType" : "shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamSplunkRetryOptions",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DeliveryStreamSplunkRetryOptions>" ],
   "properties" : {
     "DurationInSeconds" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkretryoptions.html#cfn-kinesisfirehose-deliverystream-splunkretryoptions-durationinseconds",

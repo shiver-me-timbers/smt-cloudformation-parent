@@ -4,7 +4,7 @@
   "title" : "FlowTemplate",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotthingsgraph-flowtemplate.html",
   "type" : "object",
-  "javaType" : "aws.iotthingsgraph.FlowTemplate",
+  "javaType" : "shiver.me.timbers.aws.iotthingsgraph.FlowTemplate",
   "properties" : {
     "CompatibleNamespaceVersion" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotthingsgraph-flowtemplate.html#cfn-iotthingsgraph-flowtemplate-compatiblenamespaceversion",
@@ -14,7 +14,7 @@
     "Definition" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotthingsgraph-flowtemplate.html#cfn-iotthingsgraph-flowtemplate-definition",
       "$ref" : "AWS_IoTThingsGraph_FlowTemplate.DefinitionDocument.schema.json",
-      "javaType" : "aws.Property<aws.iotthingsgraph.FlowTemplateDefinitionDocument>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotthingsgraph.FlowTemplateDefinitionDocument>"
     }
   }
 }

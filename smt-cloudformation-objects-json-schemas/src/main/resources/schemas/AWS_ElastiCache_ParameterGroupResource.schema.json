@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.elasticache.ParameterGroupResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ParameterGroupResource>", "aws.HasCondition<ParameterGroupResource>" ],
+  "javaType" : "shiver.me.timbers.aws.elasticache.ParameterGroupResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ParameterGroupResource>", "shiver.me.timbers.aws.HasCondition<ParameterGroupResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

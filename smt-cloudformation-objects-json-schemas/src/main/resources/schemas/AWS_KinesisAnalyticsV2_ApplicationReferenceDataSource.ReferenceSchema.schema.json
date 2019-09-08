@@ -4,8 +4,8 @@
   "title" : "ApplicationReferenceDataSourceReferenceSchema",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationreferencedatasource-referenceschema.html",
   "type" : "object",
-  "javaType" : "aws.kinesisanalyticsv2.ApplicationReferenceDataSourceReferenceSchema",
-  "javaInterfaces" : [ "aws.Property<ApplicationReferenceDataSourceReferenceSchema>" ],
+  "javaType" : "shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationReferenceDataSourceReferenceSchema",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ApplicationReferenceDataSourceReferenceSchema>" ],
   "properties" : {
     "RecordEncoding" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationreferencedatasource-referenceschema.html#cfn-kinesisanalyticsv2-applicationreferencedatasource-referenceschema-recordencoding",
@@ -17,13 +17,13 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_KinesisAnalyticsV2_ApplicationReferenceDataSource.RecordColumn.schema.json",
-        "javaType" : "aws.Property<aws.kinesisanalyticsv2.ApplicationReferenceDataSourceRecordColumn>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationReferenceDataSourceRecordColumn>"
       }
     },
     "RecordFormat" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationreferencedatasource-referenceschema.html#cfn-kinesisanalyticsv2-applicationreferencedatasource-referenceschema-recordformat",
       "$ref" : "AWS_KinesisAnalyticsV2_ApplicationReferenceDataSource.RecordFormat.schema.json",
-      "javaType" : "aws.Property<aws.kinesisanalyticsv2.ApplicationReferenceDataSourceRecordFormat>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationReferenceDataSourceRecordFormat>"
     }
   }
 }

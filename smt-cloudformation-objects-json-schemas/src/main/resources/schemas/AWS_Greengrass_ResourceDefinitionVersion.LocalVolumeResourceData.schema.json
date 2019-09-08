@@ -4,8 +4,8 @@
   "title" : "ResourceDefinitionVersionLocalVolumeResourceData",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-localvolumeresourcedata.html",
   "type" : "object",
-  "javaType" : "aws.greengrass.ResourceDefinitionVersionLocalVolumeResourceData",
-  "javaInterfaces" : [ "aws.Property<ResourceDefinitionVersionLocalVolumeResourceData>" ],
+  "javaType" : "shiver.me.timbers.aws.greengrass.ResourceDefinitionVersionLocalVolumeResourceData",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ResourceDefinitionVersionLocalVolumeResourceData>" ],
   "properties" : {
     "SourcePath" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-localvolumeresourcedata.html#cfn-greengrass-resourcedefinitionversion-localvolumeresourcedata-sourcepath",
@@ -20,7 +20,7 @@
     "GroupOwnerSetting" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-localvolumeresourcedata.html#cfn-greengrass-resourcedefinitionversion-localvolumeresourcedata-groupownersetting",
       "$ref" : "AWS_Greengrass_ResourceDefinitionVersion.GroupOwnerSetting.schema.json",
-      "javaType" : "aws.Property<aws.greengrass.ResourceDefinitionVersionGroupOwnerSetting>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.greengrass.ResourceDefinitionVersionGroupOwnerSetting>"
     }
   }
 }

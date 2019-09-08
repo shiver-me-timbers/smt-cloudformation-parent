@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ssm.DocumentResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<DocumentResource>", "aws.HasCondition<DocumentResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ssm.DocumentResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<DocumentResource>", "shiver.me.timbers.aws.HasCondition<DocumentResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

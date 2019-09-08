@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.servicediscovery.HttpNamespaceResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<HttpNamespaceResource>", "aws.HasCondition<HttpNamespaceResource>", "aws.HasAttributes<HttpNamespaceAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.servicediscovery.HttpNamespaceResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<HttpNamespaceResource>", "shiver.me.timbers.aws.HasCondition<HttpNamespaceResource>", "shiver.me.timbers.aws.HasAttributes<HttpNamespaceAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

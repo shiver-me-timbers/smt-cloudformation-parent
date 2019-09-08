@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.directoryservice.SimpleADResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<SimpleADResource>", "aws.HasCondition<SimpleADResource>", "aws.HasAttributes<SimpleADAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.directoryservice.SimpleADResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<SimpleADResource>", "shiver.me.timbers.aws.HasCondition<SimpleADResource>", "shiver.me.timbers.aws.HasAttributes<SimpleADAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

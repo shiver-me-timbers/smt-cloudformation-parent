@@ -4,8 +4,8 @@
   "title" : "StageAccessLogSettings",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-stage-accesslogsettings.html",
   "type" : "object",
-  "javaType" : "aws.apigatewayv2.StageAccessLogSettings",
-  "javaInterfaces" : [ "aws.Property<StageAccessLogSettings>" ],
+  "javaType" : "shiver.me.timbers.aws.apigatewayv2.StageAccessLogSettings",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<StageAccessLogSettings>" ],
   "properties" : {
     "Format" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-stage-accesslogsettings.html#cfn-apigatewayv2-stage-accesslogsettings-format",

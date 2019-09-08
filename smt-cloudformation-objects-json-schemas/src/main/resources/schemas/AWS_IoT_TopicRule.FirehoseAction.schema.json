@@ -4,8 +4,8 @@
   "title" : "TopicRuleFirehoseAction",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-firehoseaction.html",
   "type" : "object",
-  "javaType" : "aws.iot.TopicRuleFirehoseAction",
-  "javaInterfaces" : [ "aws.Property<TopicRuleFirehoseAction>" ],
+  "javaType" : "shiver.me.timbers.aws.iot.TopicRuleFirehoseAction",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TopicRuleFirehoseAction>" ],
   "properties" : {
     "DeliveryStreamName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-firehoseaction.html#cfn-iot-topicrule-firehoseaction-deliverystreamname",

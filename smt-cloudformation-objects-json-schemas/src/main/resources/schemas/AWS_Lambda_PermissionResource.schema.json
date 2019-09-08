@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.lambda.PermissionResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<PermissionResource>", "aws.HasCondition<PermissionResource>" ],
+  "javaType" : "shiver.me.timbers.aws.lambda.PermissionResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<PermissionResource>", "shiver.me.timbers.aws.HasCondition<PermissionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

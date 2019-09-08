@@ -4,15 +4,15 @@
   "title" : "PipelinePipelineObject",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-pipelineobjects.html",
   "type" : "object",
-  "javaType" : "aws.datapipeline.PipelinePipelineObject",
-  "javaInterfaces" : [ "aws.Property<PipelinePipelineObject>" ],
+  "javaType" : "shiver.me.timbers.aws.datapipeline.PipelinePipelineObject",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<PipelinePipelineObject>" ],
   "properties" : {
     "Fields" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-pipelineobjects.html#cfn-datapipeline-pipeline-pipelineobjects-fields",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_DataPipeline_Pipeline.Field.schema.json",
-        "javaType" : "aws.Property<aws.datapipeline.PipelineField>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.datapipeline.PipelineField>"
       }
     },
     "Id" : {

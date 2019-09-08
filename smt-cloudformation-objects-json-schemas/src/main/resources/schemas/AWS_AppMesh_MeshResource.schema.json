@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.appmesh.MeshResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<MeshResource>", "aws.HasCondition<MeshResource>", "aws.HasAttributes<MeshAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.appmesh.MeshResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<MeshResource>", "shiver.me.timbers.aws.HasCondition<MeshResource>", "shiver.me.timbers.aws.HasAttributes<MeshAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

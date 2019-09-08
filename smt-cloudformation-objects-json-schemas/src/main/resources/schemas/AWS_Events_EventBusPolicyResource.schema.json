@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.events.EventBusPolicyResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<EventBusPolicyResource>", "aws.HasCondition<EventBusPolicyResource>" ],
+  "javaType" : "shiver.me.timbers.aws.events.EventBusPolicyResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<EventBusPolicyResource>", "shiver.me.timbers.aws.HasCondition<EventBusPolicyResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

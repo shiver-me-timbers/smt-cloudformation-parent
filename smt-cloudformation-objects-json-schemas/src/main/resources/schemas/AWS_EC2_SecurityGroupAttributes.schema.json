@@ -4,5 +4,5 @@
   "title" : "SecurityGroupAttributes",
   "type" : "string",
   "enum" : [ "GroupId", "VpcId" ],
-  "javaType" : "aws.ec2.SecurityGroupAttributes"
+  "javaType" : "shiver.me.timbers.aws.ec2.SecurityGroupAttributes"
 }

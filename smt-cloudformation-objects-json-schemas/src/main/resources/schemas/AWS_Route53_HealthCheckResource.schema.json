@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.route53.HealthCheckResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<HealthCheckResource>", "aws.HasCondition<HealthCheckResource>" ],
+  "javaType" : "shiver.me.timbers.aws.route53.HealthCheckResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<HealthCheckResource>", "shiver.me.timbers.aws.HasCondition<HealthCheckResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

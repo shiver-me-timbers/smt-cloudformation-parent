@@ -4,8 +4,8 @@
   "title" : "CampaignSchedule",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-schedule.html",
   "type" : "object",
-  "javaType" : "aws.pinpoint.CampaignSchedule",
-  "javaInterfaces" : [ "aws.Property<CampaignSchedule>" ],
+  "javaType" : "shiver.me.timbers.aws.pinpoint.CampaignSchedule",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<CampaignSchedule>" ],
   "properties" : {
     "TimeZone" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-schedule.html#cfn-pinpoint-campaign-schedule-timezone",
@@ -15,7 +15,7 @@
     "QuietTime" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-schedule.html#cfn-pinpoint-campaign-schedule-quiettime",
       "$ref" : "AWS_Pinpoint_Campaign.QuietTime.schema.json",
-      "javaType" : "aws.Property<aws.pinpoint.CampaignQuietTime>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpoint.CampaignQuietTime>"
     },
     "EndTime" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-schedule.html#cfn-pinpoint-campaign-schedule-endtime",
@@ -35,7 +35,7 @@
     "EventFilter" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-schedule.html#cfn-pinpoint-campaign-schedule-eventfilter",
       "$ref" : "AWS_Pinpoint_Campaign.CampaignEventFilter.schema.json",
-      "javaType" : "aws.Property<aws.pinpoint.CampaignCampaignEventFilter>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpoint.CampaignCampaignEventFilter>"
     },
     "IsLocalTime" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-schedule.html#cfn-pinpoint-campaign-schedule-islocaltime",

@@ -4,8 +4,8 @@
   "title" : "DetectorModelIotTopicPublish",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-iottopicpublish.html",
   "type" : "object",
-  "javaType" : "aws.iotevents.DetectorModelIotTopicPublish",
-  "javaInterfaces" : [ "aws.Property<DetectorModelIotTopicPublish>" ],
+  "javaType" : "shiver.me.timbers.aws.iotevents.DetectorModelIotTopicPublish",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DetectorModelIotTopicPublish>" ],
   "properties" : {
     "MqttTopic" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-iottopicpublish.html#cfn-iotevents-detectormodel-iottopicpublish-mqtttopic",

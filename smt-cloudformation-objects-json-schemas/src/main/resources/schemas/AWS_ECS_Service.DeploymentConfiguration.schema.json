@@ -4,8 +4,8 @@
   "title" : "ServiceDeploymentConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-deploymentconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.ecs.ServiceDeploymentConfiguration",
-  "javaInterfaces" : [ "aws.Property<ServiceDeploymentConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.ecs.ServiceDeploymentConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ServiceDeploymentConfiguration>" ],
   "properties" : {
     "MaximumPercent" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-deploymentconfiguration.html#cfn-ecs-service-deploymentconfiguration-maximumpercent",

@@ -4,13 +4,13 @@
   "title" : "DataSourceAuthorizationConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-authorizationconfig.html",
   "type" : "object",
-  "javaType" : "aws.appsync.DataSourceAuthorizationConfig",
-  "javaInterfaces" : [ "aws.Property<DataSourceAuthorizationConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.appsync.DataSourceAuthorizationConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DataSourceAuthorizationConfig>" ],
   "properties" : {
     "AwsIamConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-authorizationconfig.html#cfn-appsync-datasource-authorizationconfig-awsiamconfig",
       "$ref" : "AWS_AppSync_DataSource.AwsIamConfig.schema.json",
-      "javaType" : "aws.Property<aws.appsync.DataSourceAwsIamConfig>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appsync.DataSourceAwsIamConfig>"
     },
     "AuthorizationType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-authorizationconfig.html#cfn-appsync-datasource-authorizationconfig-authorizationtype",

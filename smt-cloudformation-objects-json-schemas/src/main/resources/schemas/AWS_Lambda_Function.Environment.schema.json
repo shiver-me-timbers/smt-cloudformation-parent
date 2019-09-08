@@ -4,8 +4,8 @@
   "title" : "FunctionEnvironment",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-environment.html",
   "type" : "object",
-  "javaType" : "aws.lambda.FunctionEnvironment",
-  "javaInterfaces" : [ "aws.Property<FunctionEnvironment>" ],
+  "javaType" : "shiver.me.timbers.aws.lambda.FunctionEnvironment",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<FunctionEnvironment>" ],
   "properties" : {
     "Variables" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-environment.html#cfn-lambda-function-environment-variables",

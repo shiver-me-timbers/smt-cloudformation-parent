@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.apigateway.RestApiResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<RestApiResource>", "aws.HasCondition<RestApiResource>", "aws.HasAttributes<RestApiAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.apigateway.RestApiResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<RestApiResource>", "shiver.me.timbers.aws.HasCondition<RestApiResource>", "shiver.me.timbers.aws.HasAttributes<RestApiAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -4,8 +4,8 @@
   "title" : "HostedZoneVPC",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone-hostedzonevpcs.html",
   "type" : "object",
-  "javaType" : "aws.route53.HostedZoneVPC",
-  "javaInterfaces" : [ "aws.Property<HostedZoneVPC>" ],
+  "javaType" : "shiver.me.timbers.aws.route53.HostedZoneVPC",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<HostedZoneVPC>" ],
   "properties" : {
     "VPCId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone-hostedzonevpcs.html#cfn-route53-hostedzone-hostedzonevpcs-vpcid",

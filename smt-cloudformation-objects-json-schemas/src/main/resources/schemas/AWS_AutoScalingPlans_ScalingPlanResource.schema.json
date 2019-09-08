@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.autoscalingplans.ScalingPlanResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ScalingPlanResource>", "aws.HasCondition<ScalingPlanResource>", "aws.HasAttributes<ScalingPlanAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.autoscalingplans.ScalingPlanResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ScalingPlanResource>", "shiver.me.timbers.aws.HasCondition<ScalingPlanResource>", "shiver.me.timbers.aws.HasAttributes<ScalingPlanAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

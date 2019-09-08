@@ -4,8 +4,8 @@
   "title" : "RepositoryLifecyclePolicy",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecr-repository-lifecyclepolicy.html",
   "type" : "object",
-  "javaType" : "aws.ecr.RepositoryLifecyclePolicy",
-  "javaInterfaces" : [ "aws.Property<RepositoryLifecyclePolicy>" ],
+  "javaType" : "shiver.me.timbers.aws.ecr.RepositoryLifecyclePolicy",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<RepositoryLifecyclePolicy>" ],
   "properties" : {
     "LifecyclePolicyText" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecr-repository-lifecyclepolicy.html#cfn-ecr-repository-lifecyclepolicy-lifecyclepolicytext",

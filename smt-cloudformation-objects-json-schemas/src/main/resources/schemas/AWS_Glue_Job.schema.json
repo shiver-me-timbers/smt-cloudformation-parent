@@ -4,12 +4,12 @@
   "title" : "Job",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html",
   "type" : "object",
-  "javaType" : "aws.glue.Job",
+  "javaType" : "shiver.me.timbers.aws.glue.Job",
   "properties" : {
     "Connections" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-connections",
       "$ref" : "AWS_Glue_Job.ConnectionsList.schema.json",
-      "javaType" : "aws.Property<aws.glue.JobConnectionsList>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.glue.JobConnectionsList>"
     },
     "MaxRetries" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-maxretries",
@@ -54,7 +54,7 @@
     "Command" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-command",
       "$ref" : "AWS_Glue_Job.JobCommand.schema.json",
-      "javaType" : "aws.Property<aws.glue.JobJobCommand>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.glue.JobJobCommand>"
     },
     "GlueVersion" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-glueversion",
@@ -64,7 +64,7 @@
     "ExecutionProperty" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-executionproperty",
       "$ref" : "AWS_Glue_Job.ExecutionProperty.schema.json",
-      "javaType" : "aws.Property<aws.glue.JobExecutionProperty>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.glue.JobExecutionProperty>"
     },
     "SecurityConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-securityconfiguration",

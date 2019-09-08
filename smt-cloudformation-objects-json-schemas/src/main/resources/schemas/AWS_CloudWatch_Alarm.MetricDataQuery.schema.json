@@ -4,8 +4,8 @@
   "title" : "AlarmMetricDataQuery",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metricdataquery.html",
   "type" : "object",
-  "javaType" : "aws.cloudwatch.AlarmMetricDataQuery",
-  "javaInterfaces" : [ "aws.Property<AlarmMetricDataQuery>" ],
+  "javaType" : "shiver.me.timbers.aws.cloudwatch.AlarmMetricDataQuery",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<AlarmMetricDataQuery>" ],
   "properties" : {
     "Expression" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metricdataquery.html#cfn-cloudwatch-alarm-metricdataquery-expression",
@@ -25,7 +25,7 @@
     "MetricStat" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metricdataquery.html#cfn-cloudwatch-alarm-metricdataquery-metricstat",
       "$ref" : "AWS_CloudWatch_Alarm.MetricStat.schema.json",
-      "javaType" : "aws.Property<aws.cloudwatch.AlarmMetricStat>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cloudwatch.AlarmMetricStat>"
     },
     "ReturnData" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metricdataquery.html#cfn-cloudwatch-alarm-metricdataquery-returndata",

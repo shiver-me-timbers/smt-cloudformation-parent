@@ -4,8 +4,8 @@
   "title" : "PipelineStageDeclaration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages.html",
   "type" : "object",
-  "javaType" : "aws.codepipeline.PipelineStageDeclaration",
-  "javaInterfaces" : [ "aws.Property<PipelineStageDeclaration>" ],
+  "javaType" : "shiver.me.timbers.aws.codepipeline.PipelineStageDeclaration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<PipelineStageDeclaration>" ],
   "properties" : {
     "Actions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages.html#cfn-codepipeline-pipeline-stages-actions",
@@ -13,7 +13,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_CodePipeline_Pipeline.ActionDeclaration.schema.json",
-        "javaType" : "aws.Property<aws.codepipeline.PipelineActionDeclaration>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codepipeline.PipelineActionDeclaration>"
       }
     },
     "Blockers" : {
@@ -22,7 +22,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_CodePipeline_Pipeline.BlockerDeclaration.schema.json",
-        "javaType" : "aws.Property<aws.codepipeline.PipelineBlockerDeclaration>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codepipeline.PipelineBlockerDeclaration>"
       }
     },
     "Name" : {

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ssm.PatchBaselineResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<PatchBaselineResource>", "aws.HasCondition<PatchBaselineResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ssm.PatchBaselineResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<PatchBaselineResource>", "shiver.me.timbers.aws.HasCondition<PatchBaselineResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

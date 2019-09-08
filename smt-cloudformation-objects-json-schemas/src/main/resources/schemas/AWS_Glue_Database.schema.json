@@ -4,12 +4,12 @@
   "title" : "Database",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-database.html",
   "type" : "object",
-  "javaType" : "aws.glue.Database",
+  "javaType" : "shiver.me.timbers.aws.glue.Database",
   "properties" : {
     "DatabaseInput" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-database.html#cfn-glue-database-databaseinput",
       "$ref" : "AWS_Glue_Database.DatabaseInput.schema.json",
-      "javaType" : "aws.Property<aws.glue.DatabaseDatabaseInput>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.glue.DatabaseDatabaseInput>"
     },
     "CatalogId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-database.html#cfn-glue-database-catalogid",

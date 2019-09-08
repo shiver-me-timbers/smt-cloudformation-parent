@@ -4,5 +4,5 @@
   "title" : "BucketAttributes",
   "type" : "string",
   "enum" : [ "Arn", "DomainName", "DualStackDomainName", "RegionalDomainName", "WebsiteURL" ],
-  "javaType" : "aws.s3.BucketAttributes"
+  "javaType" : "shiver.me.timbers.aws.s3.BucketAttributes"
 }

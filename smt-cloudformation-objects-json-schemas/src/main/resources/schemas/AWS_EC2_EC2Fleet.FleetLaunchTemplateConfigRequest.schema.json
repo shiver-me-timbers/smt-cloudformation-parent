@@ -4,20 +4,20 @@
   "title" : "EC2FleetFleetLaunchTemplateConfigRequest",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateconfigrequest.html",
   "type" : "object",
-  "javaType" : "aws.ec2.EC2FleetFleetLaunchTemplateConfigRequest",
-  "javaInterfaces" : [ "aws.Property<EC2FleetFleetLaunchTemplateConfigRequest>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.EC2FleetFleetLaunchTemplateConfigRequest",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<EC2FleetFleetLaunchTemplateConfigRequest>" ],
   "properties" : {
     "LaunchTemplateSpecification" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateconfigrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateconfigrequest-launchtemplatespecification",
       "$ref" : "AWS_EC2_EC2Fleet.FleetLaunchTemplateSpecificationRequest.schema.json",
-      "javaType" : "aws.Property<aws.ec2.EC2FleetFleetLaunchTemplateSpecificationRequest>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.EC2FleetFleetLaunchTemplateSpecificationRequest>"
     },
     "Overrides" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateconfigrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateconfigrequest-overrides",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_EC2_EC2Fleet.FleetLaunchTemplateOverridesRequest.schema.json",
-        "javaType" : "aws.Property<aws.ec2.EC2FleetFleetLaunchTemplateOverridesRequest>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.EC2FleetFleetLaunchTemplateOverridesRequest>"
       }
     }
   }

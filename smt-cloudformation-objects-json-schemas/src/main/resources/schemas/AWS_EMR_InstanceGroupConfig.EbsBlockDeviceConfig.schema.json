@@ -4,13 +4,13 @@
   "title" : "InstanceGroupConfigEbsBlockDeviceConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration-ebsblockdeviceconfig.html",
   "type" : "object",
-  "javaType" : "aws.emr.InstanceGroupConfigEbsBlockDeviceConfig",
-  "javaInterfaces" : [ "aws.Property<InstanceGroupConfigEbsBlockDeviceConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.emr.InstanceGroupConfigEbsBlockDeviceConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<InstanceGroupConfigEbsBlockDeviceConfig>" ],
   "properties" : {
     "VolumeSpecification" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration-ebsblockdeviceconfig.html#cfn-emr-ebsconfiguration-ebsblockdeviceconfig-volumespecification",
       "$ref" : "AWS_EMR_InstanceGroupConfig.VolumeSpecification.schema.json",
-      "javaType" : "aws.Property<aws.emr.InstanceGroupConfigVolumeSpecification>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.emr.InstanceGroupConfigVolumeSpecification>"
     },
     "VolumesPerInstance" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration-ebsblockdeviceconfig.html#cfn-emr-ebsconfiguration-ebsblockdeviceconfig-volumesperinstance",

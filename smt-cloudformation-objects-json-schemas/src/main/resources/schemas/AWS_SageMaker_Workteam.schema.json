@@ -4,7 +4,7 @@
   "title" : "Workteam",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-workteam.html",
   "type" : "object",
-  "javaType" : "aws.sagemaker.Workteam",
+  "javaType" : "shiver.me.timbers.aws.sagemaker.Workteam",
   "properties" : {
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-workteam.html#cfn-sagemaker-workteam-description",
@@ -14,7 +14,7 @@
     "NotificationConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-workteam.html#cfn-sagemaker-workteam-notificationconfiguration",
       "$ref" : "AWS_SageMaker_Workteam.NotificationConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.sagemaker.WorkteamNotificationConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.sagemaker.WorkteamNotificationConfiguration>"
     },
     "WorkteamName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-workteam.html#cfn-sagemaker-workteam-workteamname",
@@ -26,7 +26,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_SageMaker_Workteam.CognitoMemberDefinition.schema.json",
-        "javaType" : "aws.Property<aws.sagemaker.WorkteamMemberDefinition>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.sagemaker.WorkteamMemberDefinition>"
       }
     },
     "Tags" : {
@@ -34,7 +34,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     }
   }

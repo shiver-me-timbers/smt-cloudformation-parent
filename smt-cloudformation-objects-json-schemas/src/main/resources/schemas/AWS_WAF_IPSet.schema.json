@@ -4,7 +4,7 @@
   "title" : "IPSet",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-ipset.html",
   "type" : "object",
-  "javaType" : "aws.waf.IPSet",
+  "javaType" : "shiver.me.timbers.aws.waf.IPSet",
   "properties" : {
     "IPSetDescriptors" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-ipset.html#cfn-waf-ipset-ipsetdescriptors",
@@ -12,7 +12,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_WAF_IPSet.IPSetDescriptor.schema.json",
-        "javaType" : "aws.Property<aws.waf.IPSetIPSetDescriptor>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.waf.IPSetIPSetDescriptor>"
       }
     },
     "Name" : {

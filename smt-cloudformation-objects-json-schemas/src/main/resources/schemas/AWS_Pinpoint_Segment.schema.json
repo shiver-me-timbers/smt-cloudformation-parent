@@ -4,17 +4,17 @@
   "title" : "Segment",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-segment.html",
   "type" : "object",
-  "javaType" : "aws.pinpoint.Segment",
+  "javaType" : "shiver.me.timbers.aws.pinpoint.Segment",
   "properties" : {
     "SegmentGroups" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-segment.html#cfn-pinpoint-segment-segmentgroups",
       "$ref" : "AWS_Pinpoint_Segment.SegmentGroups.schema.json",
-      "javaType" : "aws.Property<aws.pinpoint.SegmentSegmentGroups>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpoint.SegmentSegmentGroups>"
     },
     "Dimensions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-segment.html#cfn-pinpoint-segment-dimensions",
       "$ref" : "AWS_Pinpoint_Segment.SegmentDimensions.schema.json",
-      "javaType" : "aws.Property<aws.pinpoint.SegmentSegmentDimensions>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpoint.SegmentSegmentDimensions>"
     },
     "ApplicationId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-segment.html#cfn-pinpoint-segment-applicationid",

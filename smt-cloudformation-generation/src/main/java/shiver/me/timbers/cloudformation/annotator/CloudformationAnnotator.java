@@ -16,7 +16,7 @@ public class CloudformationAnnotator extends Jackson2Annotator {
 
     @Override
     public void propertyField(JFieldVar field, JDefinedClass clazz, String propertyName, JsonNode propertyNode) {
-        if ("aws.Named".equals(clazz.fullName()) && "name".equalsIgnoreCase(propertyName)) {
+        if ("shiver.me.timbers.aws.Named".equals(clazz.fullName()) && "name".equalsIgnoreCase(propertyName)) {
             field.annotate(JsonIgnore.class);
             return;
         }

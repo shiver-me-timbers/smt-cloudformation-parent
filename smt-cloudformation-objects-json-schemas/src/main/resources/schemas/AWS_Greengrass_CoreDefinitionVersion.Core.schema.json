@@ -4,8 +4,8 @@
   "title" : "CoreDefinitionVersionCore",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-coredefinitionversion-core.html",
   "type" : "object",
-  "javaType" : "aws.greengrass.CoreDefinitionVersionCore",
-  "javaInterfaces" : [ "aws.Property<CoreDefinitionVersionCore>" ],
+  "javaType" : "shiver.me.timbers.aws.greengrass.CoreDefinitionVersionCore",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<CoreDefinitionVersionCore>" ],
   "properties" : {
     "SyncShadow" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-coredefinitionversion-core.html#cfn-greengrass-coredefinitionversion-core-syncshadow",

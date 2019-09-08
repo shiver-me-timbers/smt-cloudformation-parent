@@ -4,8 +4,8 @@
   "title" : "InstanceGroupConfigEbsConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.emr.InstanceGroupConfigEbsConfiguration",
-  "javaInterfaces" : [ "aws.Property<InstanceGroupConfigEbsConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.emr.InstanceGroupConfigEbsConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<InstanceGroupConfigEbsConfiguration>" ],
   "properties" : {
     "EbsBlockDeviceConfigs" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration.html#cfn-emr-ebsconfiguration-ebsblockdeviceconfigs",
@@ -13,7 +13,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_EMR_InstanceGroupConfig.EbsBlockDeviceConfig.schema.json",
-        "javaType" : "aws.Property<aws.emr.InstanceGroupConfigEbsBlockDeviceConfig>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.emr.InstanceGroupConfigEbsBlockDeviceConfig>"
       }
     },
     "EbsOptimized" : {

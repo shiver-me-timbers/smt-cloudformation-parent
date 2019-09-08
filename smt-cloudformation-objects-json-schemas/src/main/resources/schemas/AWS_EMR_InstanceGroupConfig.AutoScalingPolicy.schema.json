@@ -4,13 +4,13 @@
   "title" : "InstanceGroupConfigAutoScalingPolicy",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-autoscalingpolicy.html",
   "type" : "object",
-  "javaType" : "aws.emr.InstanceGroupConfigAutoScalingPolicy",
-  "javaInterfaces" : [ "aws.Property<InstanceGroupConfigAutoScalingPolicy>" ],
+  "javaType" : "shiver.me.timbers.aws.emr.InstanceGroupConfigAutoScalingPolicy",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<InstanceGroupConfigAutoScalingPolicy>" ],
   "properties" : {
     "Constraints" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-autoscalingpolicy.html#cfn-elasticmapreduce-instancegroupconfig-autoscalingpolicy-constraints",
       "$ref" : "AWS_EMR_InstanceGroupConfig.ScalingConstraints.schema.json",
-      "javaType" : "aws.Property<aws.emr.InstanceGroupConfigScalingConstraints>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.emr.InstanceGroupConfigScalingConstraints>"
     },
     "Rules" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-autoscalingpolicy.html#cfn-elasticmapreduce-instancegroupconfig-autoscalingpolicy-rules",
@@ -18,7 +18,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_EMR_InstanceGroupConfig.ScalingRule.schema.json",
-        "javaType" : "aws.Property<aws.emr.InstanceGroupConfigScalingRule>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.emr.InstanceGroupConfigScalingRule>"
       }
     }
   }

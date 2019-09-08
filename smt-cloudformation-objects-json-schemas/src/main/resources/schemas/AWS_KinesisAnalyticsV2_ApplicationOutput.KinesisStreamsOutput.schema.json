@@ -4,8 +4,8 @@
   "title" : "ApplicationOutputKinesisStreamsOutput",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationoutput-kinesisstreamsoutput.html",
   "type" : "object",
-  "javaType" : "aws.kinesisanalyticsv2.ApplicationOutputKinesisStreamsOutput",
-  "javaInterfaces" : [ "aws.Property<ApplicationOutputKinesisStreamsOutput>" ],
+  "javaType" : "shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationOutputKinesisStreamsOutput",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ApplicationOutputKinesisStreamsOutput>" ],
   "properties" : {
     "ResourceARN" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationoutput-kinesisstreamsoutput.html#cfn-kinesisanalyticsv2-applicationoutput-kinesisstreamsoutput-resourcearn",

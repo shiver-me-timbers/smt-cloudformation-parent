@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.LaunchTemplateResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<LaunchTemplateResource>", "aws.HasCondition<LaunchTemplateResource>", "aws.HasAttributes<LaunchTemplateAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.LaunchTemplateResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<LaunchTemplateResource>", "shiver.me.timbers.aws.HasCondition<LaunchTemplateResource>", "shiver.me.timbers.aws.HasAttributes<LaunchTemplateAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -4,7 +4,7 @@
   "title" : "Domain",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html",
   "type" : "object",
-  "javaType" : "aws.elasticsearch.Domain",
+  "javaType" : "shiver.me.timbers.aws.elasticsearch.Domain",
   "properties" : {
     "AccessPolicies" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-accesspolicies",
@@ -24,12 +24,12 @@
     "EBSOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-ebsoptions",
       "$ref" : "AWS_Elasticsearch_Domain.EBSOptions.schema.json",
-      "javaType" : "aws.Property<aws.elasticsearch.DomainEBSOptions>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.elasticsearch.DomainEBSOptions>"
     },
     "ElasticsearchClusterConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-elasticsearchclusterconfig",
       "$ref" : "AWS_Elasticsearch_Domain.ElasticsearchClusterConfig.schema.json",
-      "javaType" : "aws.Property<aws.elasticsearch.DomainElasticsearchClusterConfig>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.elasticsearch.DomainElasticsearchClusterConfig>"
     },
     "ElasticsearchVersion" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-elasticsearchversion",
@@ -39,30 +39,30 @@
     "EncryptionAtRestOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-encryptionatrestoptions",
       "$ref" : "AWS_Elasticsearch_Domain.EncryptionAtRestOptions.schema.json",
-      "javaType" : "aws.Property<aws.elasticsearch.DomainEncryptionAtRestOptions>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.elasticsearch.DomainEncryptionAtRestOptions>"
     },
     "NodeToNodeEncryptionOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-nodetonodeencryptionoptions",
       "$ref" : "AWS_Elasticsearch_Domain.NodeToNodeEncryptionOptions.schema.json",
-      "javaType" : "aws.Property<aws.elasticsearch.DomainNodeToNodeEncryptionOptions>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.elasticsearch.DomainNodeToNodeEncryptionOptions>"
     },
     "SnapshotOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-snapshotoptions",
       "$ref" : "AWS_Elasticsearch_Domain.SnapshotOptions.schema.json",
-      "javaType" : "aws.Property<aws.elasticsearch.DomainSnapshotOptions>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.elasticsearch.DomainSnapshotOptions>"
     },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-tags",
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     },
     "VPCOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-vpcoptions",
       "$ref" : "AWS_Elasticsearch_Domain.VPCOptions.schema.json",
-      "javaType" : "aws.Property<aws.elasticsearch.DomainVPCOptions>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.elasticsearch.DomainVPCOptions>"
     }
   }
 }

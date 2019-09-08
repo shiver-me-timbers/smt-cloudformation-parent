@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.s3.BucketResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<BucketResource>", "aws.HasCondition<BucketResource>", "aws.HasAttributes<BucketAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.s3.BucketResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<BucketResource>", "shiver.me.timbers.aws.HasCondition<BucketResource>", "shiver.me.timbers.aws.HasAttributes<BucketAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

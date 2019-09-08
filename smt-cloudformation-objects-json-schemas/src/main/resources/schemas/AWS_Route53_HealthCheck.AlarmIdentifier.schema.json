@@ -4,8 +4,8 @@
   "title" : "HealthCheckAlarmIdentifier",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-alarmidentifier.html",
   "type" : "object",
-  "javaType" : "aws.route53.HealthCheckAlarmIdentifier",
-  "javaInterfaces" : [ "aws.Property<HealthCheckAlarmIdentifier>" ],
+  "javaType" : "shiver.me.timbers.aws.route53.HealthCheckAlarmIdentifier",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<HealthCheckAlarmIdentifier>" ],
   "properties" : {
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-alarmidentifier.html#cfn-route53-healthcheck-alarmidentifier-name",

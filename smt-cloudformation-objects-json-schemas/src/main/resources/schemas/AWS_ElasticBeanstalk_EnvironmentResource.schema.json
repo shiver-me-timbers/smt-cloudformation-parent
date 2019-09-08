@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.elasticbeanstalk.EnvironmentResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<EnvironmentResource>", "aws.HasCondition<EnvironmentResource>", "aws.HasAttributes<EnvironmentAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.elasticbeanstalk.EnvironmentResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<EnvironmentResource>", "shiver.me.timbers.aws.HasCondition<EnvironmentResource>", "shiver.me.timbers.aws.HasAttributes<EnvironmentAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

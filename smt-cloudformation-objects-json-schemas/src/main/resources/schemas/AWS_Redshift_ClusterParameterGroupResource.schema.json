@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.redshift.ClusterParameterGroupResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ClusterParameterGroupResource>", "aws.HasCondition<ClusterParameterGroupResource>" ],
+  "javaType" : "shiver.me.timbers.aws.redshift.ClusterParameterGroupResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ClusterParameterGroupResource>", "shiver.me.timbers.aws.HasCondition<ClusterParameterGroupResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

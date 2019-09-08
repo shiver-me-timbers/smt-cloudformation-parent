@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.greengrass.FunctionDefinitionResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<FunctionDefinitionResource>", "aws.HasCondition<FunctionDefinitionResource>", "aws.HasAttributes<FunctionDefinitionAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.greengrass.FunctionDefinitionResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<FunctionDefinitionResource>", "shiver.me.timbers.aws.HasCondition<FunctionDefinitionResource>", "shiver.me.timbers.aws.HasAttributes<FunctionDefinitionAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

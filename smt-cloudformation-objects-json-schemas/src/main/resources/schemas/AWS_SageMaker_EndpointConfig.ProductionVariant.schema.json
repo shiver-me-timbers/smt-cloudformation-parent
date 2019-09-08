@@ -4,8 +4,8 @@
   "title" : "EndpointConfigProductionVariant",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-endpointconfig-productionvariant.html",
   "type" : "object",
-  "javaType" : "aws.sagemaker.EndpointConfigProductionVariant",
-  "javaInterfaces" : [ "aws.Property<EndpointConfigProductionVariant>" ],
+  "javaType" : "shiver.me.timbers.aws.sagemaker.EndpointConfigProductionVariant",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<EndpointConfigProductionVariant>" ],
   "properties" : {
     "ModelName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-endpointconfig-productionvariant.html#cfn-sagemaker-endpointconfig-productionvariant-modelname",

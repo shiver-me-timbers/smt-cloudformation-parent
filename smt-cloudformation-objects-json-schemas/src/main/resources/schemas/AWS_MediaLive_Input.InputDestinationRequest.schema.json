@@ -4,8 +4,8 @@
   "title" : "InputInputDestinationRequest",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-input-inputdestinationrequest.html",
   "type" : "object",
-  "javaType" : "aws.medialive.InputInputDestinationRequest",
-  "javaInterfaces" : [ "aws.Property<InputInputDestinationRequest>" ],
+  "javaType" : "shiver.me.timbers.aws.medialive.InputInputDestinationRequest",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<InputInputDestinationRequest>" ],
   "properties" : {
     "StreamName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-input-inputdestinationrequest.html#cfn-medialive-input-inputdestinationrequest-streamname",

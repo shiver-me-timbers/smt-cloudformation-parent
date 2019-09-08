@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.appstream.DirectoryConfigResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<DirectoryConfigResource>", "aws.HasCondition<DirectoryConfigResource>" ],
+  "javaType" : "shiver.me.timbers.aws.appstream.DirectoryConfigResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<DirectoryConfigResource>", "shiver.me.timbers.aws.HasCondition<DirectoryConfigResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

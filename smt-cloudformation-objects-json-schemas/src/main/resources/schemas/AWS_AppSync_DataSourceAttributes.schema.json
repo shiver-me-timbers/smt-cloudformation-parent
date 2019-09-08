@@ -4,5 +4,5 @@
   "title" : "DataSourceAttributes",
   "type" : "string",
   "enum" : [ "DataSourceArn", "Name" ],
-  "javaType" : "aws.appsync.DataSourceAttributes"
+  "javaType" : "shiver.me.timbers.aws.appsync.DataSourceAttributes"
 }

@@ -4,5 +4,5 @@
   "title" : "ResourceShareAttributes",
   "type" : "string",
   "enum" : [ "Arn" ],
-  "javaType" : "aws.ram.ResourceShareAttributes"
+  "javaType" : "shiver.me.timbers.aws.ram.ResourceShareAttributes"
 }

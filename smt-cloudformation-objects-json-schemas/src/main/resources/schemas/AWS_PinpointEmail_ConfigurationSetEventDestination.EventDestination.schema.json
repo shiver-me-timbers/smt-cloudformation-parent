@@ -4,18 +4,18 @@
   "title" : "ConfigurationSetEventDestinationEventDestination",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpointemail-configurationseteventdestination-eventdestination.html",
   "type" : "object",
-  "javaType" : "aws.pinpointemail.ConfigurationSetEventDestinationEventDestination",
-  "javaInterfaces" : [ "aws.Property<ConfigurationSetEventDestinationEventDestination>" ],
+  "javaType" : "shiver.me.timbers.aws.pinpointemail.ConfigurationSetEventDestinationEventDestination",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ConfigurationSetEventDestinationEventDestination>" ],
   "properties" : {
     "SnsDestination" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpointemail-configurationseteventdestination-eventdestination.html#cfn-pinpointemail-configurationseteventdestination-eventdestination-snsdestination",
       "$ref" : "AWS_PinpointEmail_ConfigurationSetEventDestination.SnsDestination.schema.json",
-      "javaType" : "aws.Property<aws.pinpointemail.ConfigurationSetEventDestinationSnsDestination>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpointemail.ConfigurationSetEventDestinationSnsDestination>"
     },
     "CloudWatchDestination" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpointemail-configurationseteventdestination-eventdestination.html#cfn-pinpointemail-configurationseteventdestination-eventdestination-cloudwatchdestination",
       "$ref" : "AWS_PinpointEmail_ConfigurationSetEventDestination.CloudWatchDestination.schema.json",
-      "javaType" : "aws.Property<aws.pinpointemail.ConfigurationSetEventDestinationCloudWatchDestination>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpointemail.ConfigurationSetEventDestinationCloudWatchDestination>"
     },
     "Enabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpointemail-configurationseteventdestination-eventdestination.html#cfn-pinpointemail-configurationseteventdestination-eventdestination-enabled",
@@ -33,12 +33,12 @@
     "PinpointDestination" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpointemail-configurationseteventdestination-eventdestination.html#cfn-pinpointemail-configurationseteventdestination-eventdestination-pinpointdestination",
       "$ref" : "AWS_PinpointEmail_ConfigurationSetEventDestination.PinpointDestination.schema.json",
-      "javaType" : "aws.Property<aws.pinpointemail.ConfigurationSetEventDestinationPinpointDestination>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpointemail.ConfigurationSetEventDestinationPinpointDestination>"
     },
     "KinesisFirehoseDestination" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpointemail-configurationseteventdestination-eventdestination.html#cfn-pinpointemail-configurationseteventdestination-eventdestination-kinesisfirehosedestination",
       "$ref" : "AWS_PinpointEmail_ConfigurationSetEventDestination.KinesisFirehoseDestination.schema.json",
-      "javaType" : "aws.Property<aws.pinpointemail.ConfigurationSetEventDestinationKinesisFirehoseDestination>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpointemail.ConfigurationSetEventDestinationKinesisFirehoseDestination>"
     }
   }
 }

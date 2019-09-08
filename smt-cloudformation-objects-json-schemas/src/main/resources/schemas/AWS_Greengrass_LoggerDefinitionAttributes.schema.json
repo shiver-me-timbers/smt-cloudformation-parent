@@ -4,5 +4,5 @@
   "title" : "LoggerDefinitionAttributes",
   "type" : "string",
   "enum" : [ "LatestVersionArn", "Id", "Arn", "Name" ],
-  "javaType" : "aws.greengrass.LoggerDefinitionAttributes"
+  "javaType" : "shiver.me.timbers.aws.greengrass.LoggerDefinitionAttributes"
 }

@@ -4,8 +4,8 @@
   "title" : "DeploymentGroupTagFilter",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-tagfilter.html",
   "type" : "object",
-  "javaType" : "aws.codedeploy.DeploymentGroupTagFilter",
-  "javaInterfaces" : [ "aws.Property<DeploymentGroupTagFilter>" ],
+  "javaType" : "shiver.me.timbers.aws.codedeploy.DeploymentGroupTagFilter",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DeploymentGroupTagFilter>" ],
   "properties" : {
     "Key" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-tagfilter.html#cfn-codedeploy-deploymentgroup-tagfilter-key",

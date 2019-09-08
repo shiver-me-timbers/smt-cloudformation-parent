@@ -4,7 +4,7 @@
   "title" : "CapacityReservation",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-capacityreservation.html",
   "type" : "object",
-  "javaType" : "aws.ec2.CapacityReservation",
+  "javaType" : "shiver.me.timbers.aws.ec2.CapacityReservation",
   "properties" : {
     "Tenancy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-capacityreservation.html#cfn-ec2-capacityreservation-tenancy",
@@ -26,7 +26,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_EC2_CapacityReservation.TagSpecification.schema.json",
-        "javaType" : "aws.Property<aws.ec2.CapacityReservationTagSpecification>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.CapacityReservationTagSpecification>"
       }
     },
     "AvailabilityZone" : {

@@ -4,8 +4,8 @@
   "title" : "PartitionStorageDescriptor",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html",
   "type" : "object",
-  "javaType" : "aws.glue.PartitionStorageDescriptor",
-  "javaInterfaces" : [ "aws.Property<PartitionStorageDescriptor>" ],
+  "javaType" : "shiver.me.timbers.aws.glue.PartitionStorageDescriptor",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<PartitionStorageDescriptor>" ],
   "properties" : {
     "StoredAsSubDirectories" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-storedassubdirectories",
@@ -28,7 +28,7 @@
     "SkewedInfo" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-skewedinfo",
       "$ref" : "AWS_Glue_Partition.SkewedInfo.schema.json",
-      "javaType" : "aws.Property<aws.glue.PartitionSkewedInfo>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.glue.PartitionSkewedInfo>"
     },
     "InputFormat" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-inputformat",
@@ -50,20 +50,20 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Glue_Partition.Column.schema.json",
-        "javaType" : "aws.Property<aws.glue.PartitionColumn>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.glue.PartitionColumn>"
       }
     },
     "SerdeInfo" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-serdeinfo",
       "$ref" : "AWS_Glue_Partition.SerdeInfo.schema.json",
-      "javaType" : "aws.Property<aws.glue.PartitionSerdeInfo>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.glue.PartitionSerdeInfo>"
     },
     "SortColumns" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-sortcolumns",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Glue_Partition.Order.schema.json",
-        "javaType" : "aws.Property<aws.glue.PartitionOrder>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.glue.PartitionOrder>"
       }
     },
     "Compressed" : {

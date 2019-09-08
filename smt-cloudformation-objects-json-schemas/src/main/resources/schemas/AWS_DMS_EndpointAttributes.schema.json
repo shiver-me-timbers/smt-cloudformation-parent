@@ -4,5 +4,5 @@
   "title" : "EndpointAttributes",
   "type" : "string",
   "enum" : [ "ExternalId" ],
-  "javaType" : "aws.dms.EndpointAttributes"
+  "javaType" : "shiver.me.timbers.aws.dms.EndpointAttributes"
 }

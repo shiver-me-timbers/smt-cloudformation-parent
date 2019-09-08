@@ -4,8 +4,8 @@
   "title" : "TaskDefinitionContainerDefinition",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html",
   "type" : "object",
-  "javaType" : "aws.ecs.TaskDefinitionContainerDefinition",
-  "javaInterfaces" : [ "aws.Property<TaskDefinitionContainerDefinition>" ],
+  "javaType" : "shiver.me.timbers.aws.ecs.TaskDefinitionContainerDefinition",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TaskDefinitionContainerDefinition>" ],
   "properties" : {
     "Command" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-command",
@@ -27,7 +27,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ECS_TaskDefinition.ContainerDependency.schema.json",
-        "javaType" : "aws.Property<aws.ecs.TaskDefinitionContainerDependency>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecs.TaskDefinitionContainerDependency>"
       }
     },
     "DisableNetworking" : {
@@ -82,7 +82,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ECS_TaskDefinition.KeyValuePair.schema.json",
-        "javaType" : "aws.Property<aws.ecs.TaskDefinitionKeyValuePair>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecs.TaskDefinitionKeyValuePair>"
       }
     },
     "Essential" : {
@@ -96,13 +96,13 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ECS_TaskDefinition.HostEntry.schema.json",
-        "javaType" : "aws.Property<aws.ecs.TaskDefinitionHostEntry>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecs.TaskDefinitionHostEntry>"
       }
     },
     "HealthCheck" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-healthcheck",
       "$ref" : "AWS_ECS_TaskDefinition.HealthCheck.schema.json",
-      "javaType" : "aws.Property<aws.ecs.TaskDefinitionHealthCheck>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecs.TaskDefinitionHealthCheck>"
     },
     "Hostname" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-hostname",
@@ -131,12 +131,12 @@
     "LinuxParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-linuxparameters",
       "$ref" : "AWS_ECS_TaskDefinition.LinuxParameters.schema.json",
-      "javaType" : "aws.Property<aws.ecs.TaskDefinitionLinuxParameters>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecs.TaskDefinitionLinuxParameters>"
     },
     "LogConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-logconfiguration",
       "$ref" : "AWS_ECS_TaskDefinition.LogConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.ecs.TaskDefinitionLogConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecs.TaskDefinitionLogConfiguration>"
     },
     "Memory" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-memory",
@@ -154,7 +154,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ECS_TaskDefinition.MountPoint.schema.json",
-        "javaType" : "aws.Property<aws.ecs.TaskDefinitionMountPoint>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecs.TaskDefinitionMountPoint>"
       }
     },
     "Name" : {
@@ -168,7 +168,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ECS_TaskDefinition.PortMapping.schema.json",
-        "javaType" : "aws.Property<aws.ecs.TaskDefinitionPortMapping>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecs.TaskDefinitionPortMapping>"
       }
     },
     "Privileged" : {
@@ -189,7 +189,7 @@
     "RepositoryCredentials" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-repositorycredentials",
       "$ref" : "AWS_ECS_TaskDefinition.RepositoryCredentials.schema.json",
-      "javaType" : "aws.Property<aws.ecs.TaskDefinitionRepositoryCredentials>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecs.TaskDefinitionRepositoryCredentials>"
     },
     "ResourceRequirements" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-resourcerequirements",
@@ -197,7 +197,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ECS_TaskDefinition.ResourceRequirement.schema.json",
-        "javaType" : "aws.Property<aws.ecs.TaskDefinitionResourceRequirement>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecs.TaskDefinitionResourceRequirement>"
       }
     },
     "Secrets" : {
@@ -206,7 +206,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ECS_TaskDefinition.Secret.schema.json",
-        "javaType" : "aws.Property<aws.ecs.TaskDefinitionSecret>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecs.TaskDefinitionSecret>"
       }
     },
     "StartTimeout" : {
@@ -225,7 +225,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ECS_TaskDefinition.SystemControl.schema.json",
-        "javaType" : "aws.Property<aws.ecs.TaskDefinitionSystemControl>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecs.TaskDefinitionSystemControl>"
       }
     },
     "Ulimits" : {
@@ -234,7 +234,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ECS_TaskDefinition.Ulimit.schema.json",
-        "javaType" : "aws.Property<aws.ecs.TaskDefinitionUlimit>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecs.TaskDefinitionUlimit>"
       }
     },
     "User" : {
@@ -248,7 +248,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ECS_TaskDefinition.VolumeFrom.schema.json",
-        "javaType" : "aws.Property<aws.ecs.TaskDefinitionVolumeFrom>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecs.TaskDefinitionVolumeFrom>"
       }
     },
     "WorkingDirectory" : {

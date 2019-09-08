@@ -4,8 +4,8 @@
   "title" : "LoggerDefinitionLogger",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-loggerdefinition-logger.html",
   "type" : "object",
-  "javaType" : "aws.greengrass.LoggerDefinitionLogger",
-  "javaInterfaces" : [ "aws.Property<LoggerDefinitionLogger>" ],
+  "javaType" : "shiver.me.timbers.aws.greengrass.LoggerDefinitionLogger",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<LoggerDefinitionLogger>" ],
   "properties" : {
     "Space" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-loggerdefinition-logger.html#cfn-greengrass-loggerdefinition-logger-space",

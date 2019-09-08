@@ -4,8 +4,8 @@
   "title" : "DeploymentGroupOnPremisesTagSet",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-onpremisestagset.html",
   "type" : "object",
-  "javaType" : "aws.codedeploy.DeploymentGroupOnPremisesTagSet",
-  "javaInterfaces" : [ "aws.Property<DeploymentGroupOnPremisesTagSet>" ],
+  "javaType" : "shiver.me.timbers.aws.codedeploy.DeploymentGroupOnPremisesTagSet",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DeploymentGroupOnPremisesTagSet>" ],
   "properties" : {
     "OnPremisesTagSetList" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-onpremisestagset.html#cfn-codedeploy-deploymentgroup-onpremisestagset-onpremisestagsetlist",
@@ -13,7 +13,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_CodeDeploy_DeploymentGroup.OnPremisesTagSetListObject.schema.json",
-        "javaType" : "aws.Property<aws.codedeploy.DeploymentGroupOnPremisesTagSetListObject>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codedeploy.DeploymentGroupOnPremisesTagSetListObject>"
       }
     }
   }

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.securityhub.HubResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<HubResource>", "aws.HasCondition<HubResource>" ],
+  "javaType" : "shiver.me.timbers.aws.securityhub.HubResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<HubResource>", "shiver.me.timbers.aws.HasCondition<HubResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

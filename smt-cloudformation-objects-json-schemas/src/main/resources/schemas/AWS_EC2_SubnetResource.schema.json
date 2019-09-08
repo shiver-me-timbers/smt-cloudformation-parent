@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.SubnetResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<SubnetResource>", "aws.HasCondition<SubnetResource>", "aws.HasAttributes<SubnetAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.SubnetResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<SubnetResource>", "shiver.me.timbers.aws.HasCondition<SubnetResource>", "shiver.me.timbers.aws.HasAttributes<SubnetAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

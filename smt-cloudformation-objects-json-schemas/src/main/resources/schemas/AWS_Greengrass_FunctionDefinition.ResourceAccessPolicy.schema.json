@@ -4,8 +4,8 @@
   "title" : "FunctionDefinitionResourceAccessPolicy",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-resourceaccesspolicy.html",
   "type" : "object",
-  "javaType" : "aws.greengrass.FunctionDefinitionResourceAccessPolicy",
-  "javaInterfaces" : [ "aws.Property<FunctionDefinitionResourceAccessPolicy>" ],
+  "javaType" : "shiver.me.timbers.aws.greengrass.FunctionDefinitionResourceAccessPolicy",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<FunctionDefinitionResourceAccessPolicy>" ],
   "properties" : {
     "ResourceId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-resourceaccesspolicy.html#cfn-greengrass-functiondefinition-resourceaccesspolicy-resourceid",

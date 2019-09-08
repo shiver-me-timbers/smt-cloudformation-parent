@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ssm.ResourceDataSyncResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ResourceDataSyncResource>", "aws.HasCondition<ResourceDataSyncResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ssm.ResourceDataSyncResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ResourceDataSyncResource>", "shiver.me.timbers.aws.HasCondition<ResourceDataSyncResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

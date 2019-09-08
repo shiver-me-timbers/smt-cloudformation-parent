@@ -4,6 +4,6 @@
   "title" : "ProjectFilterGroup",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-filtergroup.html",
   "type" : "object",
-  "javaType" : "aws.codebuild.ProjectFilterGroup",
-  "javaInterfaces" : [ "aws.Property<ProjectFilterGroup>" ]
+  "javaType" : "shiver.me.timbers.aws.codebuild.ProjectFilterGroup",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ProjectFilterGroup>" ]
 }

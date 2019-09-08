@@ -4,5 +4,5 @@
   "title" : "LaunchTemplateAttributes",
   "type" : "string",
   "enum" : [ "LatestVersionNumber", "DefaultVersionNumber" ],
-  "javaType" : "aws.ec2.LaunchTemplateAttributes"
+  "javaType" : "shiver.me.timbers.aws.ec2.LaunchTemplateAttributes"
 }

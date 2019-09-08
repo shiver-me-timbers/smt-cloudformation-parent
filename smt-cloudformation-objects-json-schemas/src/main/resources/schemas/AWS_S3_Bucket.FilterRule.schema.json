@@ -4,8 +4,8 @@
   "title" : "BucketFilterRule",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfiguration-config-filter-s3key-rules.html",
   "type" : "object",
-  "javaType" : "aws.s3.BucketFilterRule",
-  "javaInterfaces" : [ "aws.Property<BucketFilterRule>" ],
+  "javaType" : "shiver.me.timbers.aws.s3.BucketFilterRule",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BucketFilterRule>" ],
   "properties" : {
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfiguration-config-filter-s3key-rules.html#cfn-s3-bucket-notificationconfiguraiton-config-filter-s3key-rules-name",

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.route53resolver.ResolverRuleAssociationResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ResolverRuleAssociationResource>", "aws.HasCondition<ResolverRuleAssociationResource>", "aws.HasAttributes<ResolverRuleAssociationAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.route53resolver.ResolverRuleAssociationResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ResolverRuleAssociationResource>", "shiver.me.timbers.aws.HasCondition<ResolverRuleAssociationResource>", "shiver.me.timbers.aws.HasAttributes<ResolverRuleAssociationAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

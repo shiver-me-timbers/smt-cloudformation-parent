@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.events.RuleResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<RuleResource>", "aws.HasCondition<RuleResource>", "aws.HasAttributes<RuleAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.events.RuleResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<RuleResource>", "shiver.me.timbers.aws.HasCondition<RuleResource>", "shiver.me.timbers.aws.HasAttributes<RuleAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

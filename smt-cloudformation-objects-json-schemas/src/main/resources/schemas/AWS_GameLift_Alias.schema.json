@@ -4,7 +4,7 @@
   "title" : "Alias",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-alias.html",
   "type" : "object",
-  "javaType" : "aws.gamelift.Alias",
+  "javaType" : "shiver.me.timbers.aws.gamelift.Alias",
   "properties" : {
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-alias.html#cfn-gamelift-alias-description",
@@ -19,7 +19,7 @@
     "RoutingStrategy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-alias.html#cfn-gamelift-alias-routingstrategy",
       "$ref" : "AWS_GameLift_Alias.RoutingStrategy.schema.json",
-      "javaType" : "aws.Property<aws.gamelift.AliasRoutingStrategy>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.gamelift.AliasRoutingStrategy>"
     }
   }
 }

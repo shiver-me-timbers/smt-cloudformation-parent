@@ -4,7 +4,7 @@
   "title" : "DomainName",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-domainname.html",
   "type" : "object",
-  "javaType" : "aws.apigatewayv2.DomainName",
+  "javaType" : "shiver.me.timbers.aws.apigatewayv2.DomainName",
   "properties" : {
     "DomainName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-domainname.html#cfn-apigatewayv2-domainname-domainname",
@@ -16,7 +16,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_ApiGatewayV2_DomainName.DomainNameConfiguration.schema.json",
-        "javaType" : "aws.Property<aws.apigatewayv2.DomainNameDomainNameConfiguration>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.apigatewayv2.DomainNameDomainNameConfiguration>"
       }
     },
     "Tags" : {

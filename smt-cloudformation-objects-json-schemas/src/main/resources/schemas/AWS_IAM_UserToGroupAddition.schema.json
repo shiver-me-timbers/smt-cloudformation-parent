@@ -4,7 +4,7 @@
   "title" : "UserToGroupAddition",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-addusertogroup.html",
   "type" : "object",
-  "javaType" : "aws.iam.UserToGroupAddition",
+  "javaType" : "shiver.me.timbers.aws.iam.UserToGroupAddition",
   "properties" : {
     "GroupName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-addusertogroup.html#cfn-iam-addusertogroup-groupname",

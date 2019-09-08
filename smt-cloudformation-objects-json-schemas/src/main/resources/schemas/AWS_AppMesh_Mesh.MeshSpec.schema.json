@@ -4,13 +4,13 @@
   "title" : "MeshMeshSpec",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-mesh-meshspec.html",
   "type" : "object",
-  "javaType" : "aws.appmesh.MeshMeshSpec",
-  "javaInterfaces" : [ "aws.Property<MeshMeshSpec>" ],
+  "javaType" : "shiver.me.timbers.aws.appmesh.MeshMeshSpec",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<MeshMeshSpec>" ],
   "properties" : {
     "EgressFilter" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-mesh-meshspec.html#cfn-appmesh-mesh-meshspec-egressfilter",
       "$ref" : "AWS_AppMesh_Mesh.EgressFilter.schema.json",
-      "javaType" : "aws.Property<aws.appmesh.MeshEgressFilter>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appmesh.MeshEgressFilter>"
     }
   }
 }

@@ -4,7 +4,7 @@
   "title" : "NamedQuery",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html",
   "type" : "object",
-  "javaType" : "aws.athena.NamedQuery",
+  "javaType" : "shiver.me.timbers.aws.athena.NamedQuery",
   "properties" : {
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html#cfn-athena-namedquery-description",

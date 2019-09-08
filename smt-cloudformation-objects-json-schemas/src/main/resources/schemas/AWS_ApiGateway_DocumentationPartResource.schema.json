@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.apigateway.DocumentationPartResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<DocumentationPartResource>", "aws.HasCondition<DocumentationPartResource>" ],
+  "javaType" : "shiver.me.timbers.aws.apigateway.DocumentationPartResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<DocumentationPartResource>", "shiver.me.timbers.aws.HasCondition<DocumentationPartResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -4,5 +4,5 @@
   "title" : "ResolverEndpointAttributes",
   "type" : "string",
   "enum" : [ "ResolverEndpointId", "IpAddressCount", "Arn", "Direction", "HostVPCId", "Name" ],
-  "javaType" : "aws.route53resolver.ResolverEndpointAttributes"
+  "javaType" : "shiver.me.timbers.aws.route53resolver.ResolverEndpointAttributes"
 }

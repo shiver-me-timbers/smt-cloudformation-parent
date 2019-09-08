@@ -4,8 +4,8 @@
   "title" : "FunctionVpcConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-vpcconfig.html",
   "type" : "object",
-  "javaType" : "aws.lambda.FunctionVpcConfig",
-  "javaInterfaces" : [ "aws.Property<FunctionVpcConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.lambda.FunctionVpcConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<FunctionVpcConfig>" ],
   "properties" : {
     "SecurityGroupIds" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-vpcconfig.html#cfn-lambda-function-vpcconfig-securitygroupids",

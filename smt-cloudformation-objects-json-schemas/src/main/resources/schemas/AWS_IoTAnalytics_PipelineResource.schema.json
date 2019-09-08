@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.iotanalytics.PipelineResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<PipelineResource>", "aws.HasCondition<PipelineResource>" ],
+  "javaType" : "shiver.me.timbers.aws.iotanalytics.PipelineResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<PipelineResource>", "shiver.me.timbers.aws.HasCondition<PipelineResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

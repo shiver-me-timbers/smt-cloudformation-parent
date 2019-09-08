@@ -4,8 +4,8 @@
   "title" : "AliasRoutingStrategy",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-alias-routingstrategy.html",
   "type" : "object",
-  "javaType" : "aws.gamelift.AliasRoutingStrategy",
-  "javaInterfaces" : [ "aws.Property<AliasRoutingStrategy>" ],
+  "javaType" : "shiver.me.timbers.aws.gamelift.AliasRoutingStrategy",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<AliasRoutingStrategy>" ],
   "properties" : {
     "FleetId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-alias-routingstrategy.html#cfn-gamelift-alias-routingstrategy-fleetid",

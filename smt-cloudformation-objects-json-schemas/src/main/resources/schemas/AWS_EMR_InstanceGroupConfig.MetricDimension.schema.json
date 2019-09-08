@@ -4,8 +4,8 @@
   "title" : "InstanceGroupConfigMetricDimension",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-metricdimension.html",
   "type" : "object",
-  "javaType" : "aws.emr.InstanceGroupConfigMetricDimension",
-  "javaInterfaces" : [ "aws.Property<InstanceGroupConfigMetricDimension>" ],
+  "javaType" : "shiver.me.timbers.aws.emr.InstanceGroupConfigMetricDimension",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<InstanceGroupConfigMetricDimension>" ],
   "properties" : {
     "Key" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-metricdimension.html#cfn-elasticmapreduce-instancegroupconfig-metricdimension-key",

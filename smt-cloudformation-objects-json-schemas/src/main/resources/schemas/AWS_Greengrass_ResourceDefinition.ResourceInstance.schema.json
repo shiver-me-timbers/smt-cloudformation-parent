@@ -4,13 +4,13 @@
   "title" : "ResourceDefinitionResourceInstance",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourceinstance.html",
   "type" : "object",
-  "javaType" : "aws.greengrass.ResourceDefinitionResourceInstance",
-  "javaInterfaces" : [ "aws.Property<ResourceDefinitionResourceInstance>" ],
+  "javaType" : "shiver.me.timbers.aws.greengrass.ResourceDefinitionResourceInstance",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ResourceDefinitionResourceInstance>" ],
   "properties" : {
     "ResourceDataContainer" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourceinstance.html#cfn-greengrass-resourcedefinition-resourceinstance-resourcedatacontainer",
       "$ref" : "AWS_Greengrass_ResourceDefinitionVersion.ResourceDataContainer.schema.json",
-      "javaType" : "aws.Property<aws.greengrass.ResourceDefinitionResourceDataContainer>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.greengrass.ResourceDefinitionResourceDataContainer>"
     },
     "Id" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourceinstance.html#cfn-greengrass-resourcedefinition-resourceinstance-id",

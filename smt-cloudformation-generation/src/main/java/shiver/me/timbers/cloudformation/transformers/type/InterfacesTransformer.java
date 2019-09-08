@@ -1,6 +1,6 @@
 package shiver.me.timbers.cloudformation.transformers.type;
 
-import aws.Property;
+import shiver.me.timbers.aws.Property;
 import shiver.me.timbers.cloudformation.CloudformationType;
 import shiver.me.timbers.cloudformation.ResourceType;
 import shiver.me.timbers.cloudformation.types.JavaTypes;

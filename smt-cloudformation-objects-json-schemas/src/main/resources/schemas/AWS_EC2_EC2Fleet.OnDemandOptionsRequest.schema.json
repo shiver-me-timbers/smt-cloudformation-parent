@@ -4,8 +4,8 @@
   "title" : "EC2FleetOnDemandOptionsRequest",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-ondemandoptionsrequest.html",
   "type" : "object",
-  "javaType" : "aws.ec2.EC2FleetOnDemandOptionsRequest",
-  "javaInterfaces" : [ "aws.Property<EC2FleetOnDemandOptionsRequest>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.EC2FleetOnDemandOptionsRequest",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<EC2FleetOnDemandOptionsRequest>" ],
   "properties" : {
     "AllocationStrategy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-ondemandoptionsrequest.html#cfn-ec2-ec2fleet-ondemandoptionsrequest-allocationstrategy",

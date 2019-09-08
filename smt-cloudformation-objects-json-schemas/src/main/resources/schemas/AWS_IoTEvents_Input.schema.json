@@ -4,12 +4,12 @@
   "title" : "Input",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotevents-input.html",
   "type" : "object",
-  "javaType" : "aws.iotevents.Input",
+  "javaType" : "shiver.me.timbers.aws.iotevents.Input",
   "properties" : {
     "InputDefinition" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotevents-input.html#cfn-iotevents-input-inputdefinition",
       "$ref" : "AWS_IoTEvents_Input.InputDefinition.schema.json",
-      "javaType" : "aws.Property<aws.iotevents.InputInputDefinition>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotevents.InputInputDefinition>"
     },
     "InputName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotevents-input.html#cfn-iotevents-input-inputname",
@@ -26,7 +26,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     }
   }

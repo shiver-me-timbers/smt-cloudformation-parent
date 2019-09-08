@@ -4,8 +4,8 @@
   "title" : "DomainEBSOptions",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html",
   "type" : "object",
-  "javaType" : "aws.elasticsearch.DomainEBSOptions",
-  "javaInterfaces" : [ "aws.Property<DomainEBSOptions>" ],
+  "javaType" : "shiver.me.timbers.aws.elasticsearch.DomainEBSOptions",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DomainEBSOptions>" ],
   "properties" : {
     "EBSEnabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html#cfn-elasticsearch-domain-ebsoptions-ebsenabled",

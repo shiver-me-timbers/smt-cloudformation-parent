@@ -4,18 +4,18 @@
   "title" : "BudgetBudgetData",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html",
   "type" : "object",
-  "javaType" : "aws.budgets.BudgetBudgetData",
-  "javaInterfaces" : [ "aws.Property<BudgetBudgetData>" ],
+  "javaType" : "shiver.me.timbers.aws.budgets.BudgetBudgetData",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BudgetBudgetData>" ],
   "properties" : {
     "BudgetLimit" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-budgetlimit",
       "$ref" : "AWS_Budgets_Budget.Spend.schema.json",
-      "javaType" : "aws.Property<aws.budgets.BudgetSpend>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.budgets.BudgetSpend>"
     },
     "TimePeriod" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-timeperiod",
       "$ref" : "AWS_Budgets_Budget.TimePeriod.schema.json",
-      "javaType" : "aws.Property<aws.budgets.BudgetTimePeriod>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.budgets.BudgetTimePeriod>"
     },
     "TimeUnit" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-timeunit",
@@ -35,7 +35,7 @@
     "CostTypes" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-costtypes",
       "$ref" : "AWS_Budgets_Budget.CostTypes.schema.json",
-      "javaType" : "aws.Property<aws.budgets.BudgetCostTypes>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.budgets.BudgetCostTypes>"
     },
     "BudgetType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-budgettype",

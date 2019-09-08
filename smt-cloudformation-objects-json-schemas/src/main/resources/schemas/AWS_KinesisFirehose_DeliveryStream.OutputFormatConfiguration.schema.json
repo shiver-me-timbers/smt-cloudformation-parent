@@ -4,13 +4,13 @@
   "title" : "DeliveryStreamOutputFormatConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-outputformatconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.kinesisfirehose.DeliveryStreamOutputFormatConfiguration",
-  "javaInterfaces" : [ "aws.Property<DeliveryStreamOutputFormatConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamOutputFormatConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DeliveryStreamOutputFormatConfiguration>" ],
   "properties" : {
     "Serializer" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-outputformatconfiguration.html#cfn-kinesisfirehose-deliverystream-outputformatconfiguration-serializer",
       "$ref" : "AWS_KinesisFirehose_DeliveryStream.Serializer.schema.json",
-      "javaType" : "aws.Property<aws.kinesisfirehose.DeliveryStreamSerializer>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamSerializer>"
     }
   }
 }

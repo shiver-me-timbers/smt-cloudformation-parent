@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.pinpoint.EmailChannelResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<EmailChannelResource>", "aws.HasCondition<EmailChannelResource>" ],
+  "javaType" : "shiver.me.timbers.aws.pinpoint.EmailChannelResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<EmailChannelResource>", "shiver.me.timbers.aws.HasCondition<EmailChannelResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

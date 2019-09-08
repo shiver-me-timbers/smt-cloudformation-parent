@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.glue.PartitionResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<PartitionResource>", "aws.HasCondition<PartitionResource>" ],
+  "javaType" : "shiver.me.timbers.aws.glue.PartitionResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<PartitionResource>", "shiver.me.timbers.aws.HasCondition<PartitionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

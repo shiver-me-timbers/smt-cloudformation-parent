@@ -4,8 +4,8 @@
   "title" : "DomainNodeToNodeEncryptionOptions",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-nodetonodeencryptionoptions.html",
   "type" : "object",
-  "javaType" : "aws.elasticsearch.DomainNodeToNodeEncryptionOptions",
-  "javaInterfaces" : [ "aws.Property<DomainNodeToNodeEncryptionOptions>" ],
+  "javaType" : "shiver.me.timbers.aws.elasticsearch.DomainNodeToNodeEncryptionOptions",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DomainNodeToNodeEncryptionOptions>" ],
   "properties" : {
     "Enabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-nodetonodeencryptionoptions.html#cfn-elasticsearch-domain-nodetonodeencryptionoptions-enabled",

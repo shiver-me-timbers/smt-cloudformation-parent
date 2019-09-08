@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.iot.PolicyPrincipalAttachmentResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<PolicyPrincipalAttachmentResource>", "aws.HasCondition<PolicyPrincipalAttachmentResource>" ],
+  "javaType" : "shiver.me.timbers.aws.iot.PolicyPrincipalAttachmentResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<PolicyPrincipalAttachmentResource>", "shiver.me.timbers.aws.HasCondition<PolicyPrincipalAttachmentResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

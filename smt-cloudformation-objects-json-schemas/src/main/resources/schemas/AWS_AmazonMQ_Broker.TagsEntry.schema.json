@@ -4,8 +4,8 @@
   "title" : "BrokerTagsEntry",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-tagsentry.html",
   "type" : "object",
-  "javaType" : "aws.amazonmq.BrokerTagsEntry",
-  "javaInterfaces" : [ "aws.Property<BrokerTagsEntry>" ],
+  "javaType" : "shiver.me.timbers.aws.amazonmq.BrokerTagsEntry",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BrokerTagsEntry>" ],
   "properties" : {
     "Value" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-tagsentry.html#cfn-amazonmq-broker-tagsentry-value",

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.iotanalytics.DatastoreResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<DatastoreResource>", "aws.HasCondition<DatastoreResource>" ],
+  "javaType" : "shiver.me.timbers.aws.iotanalytics.DatastoreResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<DatastoreResource>", "shiver.me.timbers.aws.HasCondition<DatastoreResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

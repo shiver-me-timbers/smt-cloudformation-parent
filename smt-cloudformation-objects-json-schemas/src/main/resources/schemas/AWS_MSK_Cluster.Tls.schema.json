@@ -4,8 +4,8 @@
   "title" : "ClusterTls",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-tls.html",
   "type" : "object",
-  "javaType" : "aws.msk.ClusterTls",
-  "javaInterfaces" : [ "aws.Property<ClusterTls>" ],
+  "javaType" : "shiver.me.timbers.aws.msk.ClusterTls",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ClusterTls>" ],
   "properties" : {
     "CertificateAuthorityArnList" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-tls.html#cfn-msk-cluster-tls-certificateauthorityarnlist",

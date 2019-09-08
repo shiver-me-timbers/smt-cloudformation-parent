@@ -4,7 +4,7 @@
   "title" : "FileSystem",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html",
   "type" : "object",
-  "javaType" : "aws.efs.FileSystem",
+  "javaType" : "shiver.me.timbers.aws.efs.FileSystem",
   "properties" : {
     "Encrypted" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-encrypted",
@@ -17,7 +17,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_EFS_FileSystem.ElasticFileSystemTag.schema.json",
-        "javaType" : "aws.Property<aws.efs.FileSystemElasticFileSystemTag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.efs.FileSystemElasticFileSystemTag>"
       }
     },
     "KmsKeyId" : {
@@ -31,7 +31,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_EFS_FileSystem.LifecyclePolicy.schema.json",
-        "javaType" : "aws.Property<aws.efs.FileSystemLifecyclePolicy>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.efs.FileSystemLifecyclePolicy>"
       }
     },
     "PerformanceMode" : {

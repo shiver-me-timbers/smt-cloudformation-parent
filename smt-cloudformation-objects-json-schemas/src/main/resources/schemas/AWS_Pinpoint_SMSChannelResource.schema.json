@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.pinpoint.SMSChannelResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<SMSChannelResource>", "aws.HasCondition<SMSChannelResource>" ],
+  "javaType" : "shiver.me.timbers.aws.pinpoint.SMSChannelResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<SMSChannelResource>", "shiver.me.timbers.aws.HasCondition<SMSChannelResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

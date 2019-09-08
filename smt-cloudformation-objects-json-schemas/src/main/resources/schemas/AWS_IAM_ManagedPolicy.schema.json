@@ -4,7 +4,7 @@
   "title" : "ManagedPolicy",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html",
   "type" : "object",
-  "javaType" : "aws.iam.ManagedPolicy",
+  "javaType" : "shiver.me.timbers.aws.iam.ManagedPolicy",
   "properties" : {
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-description",
@@ -33,7 +33,7 @@
     "PolicyDocument" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-policydocument",
       "$ref" : "PolicyDocument.schema.json",
-      "javaType" : "aws.Property<aws.iam.PolicyDocument>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iam.PolicyDocument>"
     },
     "Roles" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-roles",

@@ -4,5 +4,5 @@
   "title" : "RoleAttributes",
   "type" : "string",
   "enum" : [ "Arn", "RoleId" ],
-  "javaType" : "aws.iam.RoleAttributes"
+  "javaType" : "shiver.me.timbers.aws.iam.RoleAttributes"
 }

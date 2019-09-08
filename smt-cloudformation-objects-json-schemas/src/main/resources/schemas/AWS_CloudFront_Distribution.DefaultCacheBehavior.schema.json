@@ -4,8 +4,8 @@
   "title" : "DistributionDefaultCacheBehavior",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html",
   "type" : "object",
-  "javaType" : "aws.cloudfront.DistributionDefaultCacheBehavior",
-  "javaInterfaces" : [ "aws.Property<DistributionDefaultCacheBehavior>" ],
+  "javaType" : "shiver.me.timbers.aws.cloudfront.DistributionDefaultCacheBehavior",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DistributionDefaultCacheBehavior>" ],
   "properties" : {
     "Compress" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-compress",
@@ -17,7 +17,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_CloudFront_Distribution.LambdaFunctionAssociation.schema.json",
-        "javaType" : "aws.Property<aws.cloudfront.DistributionLambdaFunctionAssociation>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cloudfront.DistributionLambdaFunctionAssociation>"
       }
     },
     "TargetOriginId" : {
@@ -72,7 +72,7 @@
     "ForwardedValues" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-forwardedvalues",
       "$ref" : "AWS_CloudFront_Distribution.ForwardedValues.schema.json",
-      "javaType" : "aws.Property<aws.cloudfront.DistributionForwardedValues>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cloudfront.DistributionForwardedValues>"
     },
     "MinTTL" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-minttl",

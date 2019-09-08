@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.appstream.ImageBuilderResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ImageBuilderResource>", "aws.HasCondition<ImageBuilderResource>", "aws.HasAttributes<ImageBuilderAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.appstream.ImageBuilderResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ImageBuilderResource>", "shiver.me.timbers.aws.HasCondition<ImageBuilderResource>", "shiver.me.timbers.aws.HasAttributes<ImageBuilderAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

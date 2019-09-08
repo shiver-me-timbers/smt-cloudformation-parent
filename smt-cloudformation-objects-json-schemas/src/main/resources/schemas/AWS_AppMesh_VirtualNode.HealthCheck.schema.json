@@ -4,8 +4,8 @@
   "title" : "VirtualNodeHealthCheck",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-healthcheck.html",
   "type" : "object",
-  "javaType" : "aws.appmesh.VirtualNodeHealthCheck",
-  "javaInterfaces" : [ "aws.Property<VirtualNodeHealthCheck>" ],
+  "javaType" : "shiver.me.timbers.aws.appmesh.VirtualNodeHealthCheck",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<VirtualNodeHealthCheck>" ],
   "properties" : {
     "Path" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-healthcheck.html#cfn-appmesh-virtualnode-healthcheck-path",

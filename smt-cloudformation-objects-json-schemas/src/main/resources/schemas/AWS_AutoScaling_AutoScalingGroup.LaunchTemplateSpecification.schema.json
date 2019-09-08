@@ -4,8 +4,8 @@
   "title" : "AutoScalingGroupLaunchTemplateSpecification",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-launchtemplatespecification.html",
   "type" : "object",
-  "javaType" : "aws.autoscaling.AutoScalingGroupLaunchTemplateSpecification",
-  "javaInterfaces" : [ "aws.Property<AutoScalingGroupLaunchTemplateSpecification>" ],
+  "javaType" : "shiver.me.timbers.aws.autoscaling.AutoScalingGroupLaunchTemplateSpecification",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<AutoScalingGroupLaunchTemplateSpecification>" ],
   "properties" : {
     "LaunchTemplateId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-launchtemplatespecification.html#cfn-autoscaling-autoscalinggroup-launchtemplatespecification-launchtemplateid",

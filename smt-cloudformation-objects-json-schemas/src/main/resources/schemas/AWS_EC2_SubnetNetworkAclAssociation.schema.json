@@ -4,7 +4,7 @@
   "title" : "SubnetNetworkAclAssociation",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-network-acl-assoc.html",
   "type" : "object",
-  "javaType" : "aws.ec2.SubnetNetworkAclAssociation",
+  "javaType" : "shiver.me.timbers.aws.ec2.SubnetNetworkAclAssociation",
   "properties" : {
     "NetworkAclId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-network-acl-assoc.html#cfn-ec2-subnetnetworkaclassociation-networkaclid",

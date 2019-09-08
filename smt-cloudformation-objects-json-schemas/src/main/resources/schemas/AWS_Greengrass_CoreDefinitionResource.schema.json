@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.greengrass.CoreDefinitionResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<CoreDefinitionResource>", "aws.HasCondition<CoreDefinitionResource>", "aws.HasAttributes<CoreDefinitionAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.greengrass.CoreDefinitionResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<CoreDefinitionResource>", "shiver.me.timbers.aws.HasCondition<CoreDefinitionResource>", "shiver.me.timbers.aws.HasAttributes<CoreDefinitionAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

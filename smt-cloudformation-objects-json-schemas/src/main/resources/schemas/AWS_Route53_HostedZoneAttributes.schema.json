@@ -4,5 +4,5 @@
   "title" : "HostedZoneAttributes",
   "type" : "string",
   "enum" : [ "NameServers" ],
-  "javaType" : "aws.route53.HostedZoneAttributes"
+  "javaType" : "shiver.me.timbers.aws.route53.HostedZoneAttributes"
 }

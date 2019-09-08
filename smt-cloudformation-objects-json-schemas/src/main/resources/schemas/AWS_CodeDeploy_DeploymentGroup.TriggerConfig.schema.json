@@ -4,8 +4,8 @@
   "title" : "DeploymentGroupTriggerConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-triggerconfig.html",
   "type" : "object",
-  "javaType" : "aws.codedeploy.DeploymentGroupTriggerConfig",
-  "javaInterfaces" : [ "aws.Property<DeploymentGroupTriggerConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.codedeploy.DeploymentGroupTriggerConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DeploymentGroupTriggerConfig>" ],
   "properties" : {
     "TriggerEvents" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-triggerconfig.html#cfn-codedeploy-deploymentgroup-triggerconfig-triggerevents",

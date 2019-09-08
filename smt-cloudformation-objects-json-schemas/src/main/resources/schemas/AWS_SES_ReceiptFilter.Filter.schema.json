@@ -4,13 +4,13 @@
   "title" : "ReceiptFilterFilter",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptfilter-filter.html",
   "type" : "object",
-  "javaType" : "aws.ses.ReceiptFilterFilter",
-  "javaInterfaces" : [ "aws.Property<ReceiptFilterFilter>" ],
+  "javaType" : "shiver.me.timbers.aws.ses.ReceiptFilterFilter",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ReceiptFilterFilter>" ],
   "properties" : {
     "IpFilter" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptfilter-filter.html#cfn-ses-receiptfilter-filter-ipfilter",
       "$ref" : "AWS_SES_ReceiptFilter.IpFilter.schema.json",
-      "javaType" : "aws.Property<aws.ses.ReceiptFilterIpFilter>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ses.ReceiptFilterIpFilter>"
     },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptfilter-filter.html#cfn-ses-receiptfilter-filter-name",

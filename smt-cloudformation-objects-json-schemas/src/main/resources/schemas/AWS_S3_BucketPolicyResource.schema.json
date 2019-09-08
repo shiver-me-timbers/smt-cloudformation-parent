@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.s3.BucketPolicyResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<BucketPolicyResource>", "aws.HasCondition<BucketPolicyResource>" ],
+  "javaType" : "shiver.me.timbers.aws.s3.BucketPolicyResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<BucketPolicyResource>", "shiver.me.timbers.aws.HasCondition<BucketPolicyResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

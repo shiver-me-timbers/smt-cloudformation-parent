@@ -4,7 +4,7 @@
   "title" : "Instance",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html",
   "type" : "object",
-  "javaType" : "aws.opsworks.Instance",
+  "javaType" : "shiver.me.timbers.aws.opsworks.Instance",
   "properties" : {
     "AgentVersion" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-agentversion",
@@ -37,7 +37,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_OpsWorks_Instance.BlockDeviceMapping.schema.json",
-        "javaType" : "aws.Property<aws.opsworks.InstanceBlockDeviceMapping>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.opsworks.InstanceBlockDeviceMapping>"
       }
     },
     "EbsOptimized" : {
@@ -110,7 +110,7 @@
     "TimeBasedAutoScaling" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-timebasedautoscaling",
       "$ref" : "AWS_OpsWorks_Instance.TimeBasedAutoScaling.schema.json",
-      "javaType" : "aws.Property<aws.opsworks.InstanceTimeBasedAutoScaling>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.opsworks.InstanceTimeBasedAutoScaling>"
     },
     "VirtualizationType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-virtualizationtype",

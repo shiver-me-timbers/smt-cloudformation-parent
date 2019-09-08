@@ -4,5 +4,5 @@
   "title" : "StreamConsumerAttributes",
   "type" : "string",
   "enum" : [ "ConsumerCreationTimestamp", "ConsumerName", "ConsumerARN", "ConsumerStatus", "StreamARN" ],
-  "javaType" : "aws.kinesis.StreamConsumerAttributes"
+  "javaType" : "shiver.me.timbers.aws.kinesis.StreamConsumerAttributes"
 }

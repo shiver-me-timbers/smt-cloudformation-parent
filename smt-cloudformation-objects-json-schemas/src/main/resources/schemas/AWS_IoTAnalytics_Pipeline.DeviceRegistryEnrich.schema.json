@@ -4,8 +4,8 @@
   "title" : "PipelineDeviceRegistryEnrich",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-deviceregistryenrich.html",
   "type" : "object",
-  "javaType" : "aws.iotanalytics.PipelineDeviceRegistryEnrich",
-  "javaInterfaces" : [ "aws.Property<PipelineDeviceRegistryEnrich>" ],
+  "javaType" : "shiver.me.timbers.aws.iotanalytics.PipelineDeviceRegistryEnrich",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<PipelineDeviceRegistryEnrich>" ],
   "properties" : {
     "Attribute" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-deviceregistryenrich.html#cfn-iotanalytics-pipeline-deviceregistryenrich-attribute",

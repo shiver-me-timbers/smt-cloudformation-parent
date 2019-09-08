@@ -4,5 +4,5 @@
   "title" : "DBInstanceAttributes",
   "type" : "string",
   "enum" : [ "Endpoint", "Port" ],
-  "javaType" : "aws.neptune.DBInstanceAttributes"
+  "javaType" : "shiver.me.timbers.aws.neptune.DBInstanceAttributes"
 }

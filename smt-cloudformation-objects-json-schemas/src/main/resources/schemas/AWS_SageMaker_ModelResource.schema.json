@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.sagemaker.ModelResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ModelResource>", "aws.HasCondition<ModelResource>", "aws.HasAttributes<ModelAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.sagemaker.ModelResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ModelResource>", "shiver.me.timbers.aws.HasCondition<ModelResource>", "shiver.me.timbers.aws.HasAttributes<ModelAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

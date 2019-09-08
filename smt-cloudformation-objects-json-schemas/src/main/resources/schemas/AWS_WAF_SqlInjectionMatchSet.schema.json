@@ -4,7 +4,7 @@
   "title" : "SqlInjectionMatchSet",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-sqlinjectionmatchset.html",
   "type" : "object",
-  "javaType" : "aws.waf.SqlInjectionMatchSet",
+  "javaType" : "shiver.me.timbers.aws.waf.SqlInjectionMatchSet",
   "properties" : {
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-sqlinjectionmatchset.html#cfn-waf-sqlinjectionmatchset-name",
@@ -17,7 +17,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_WAF_SqlInjectionMatchSet.SqlInjectionMatchTuple.schema.json",
-        "javaType" : "aws.Property<aws.waf.SqlInjectionMatchSetSqlInjectionMatchTuple>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.waf.SqlInjectionMatchSetSqlInjectionMatchTuple>"
       }
     }
   }

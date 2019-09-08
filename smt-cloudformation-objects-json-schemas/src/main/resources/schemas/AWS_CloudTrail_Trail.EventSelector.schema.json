@@ -4,8 +4,8 @@
   "title" : "TrailEventSelector",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudtrail-trail-eventselector.html",
   "type" : "object",
-  "javaType" : "aws.cloudtrail.TrailEventSelector",
-  "javaInterfaces" : [ "aws.Property<TrailEventSelector>" ],
+  "javaType" : "shiver.me.timbers.aws.cloudtrail.TrailEventSelector",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TrailEventSelector>" ],
   "properties" : {
     "DataResources" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudtrail-trail-eventselector.html#cfn-cloudtrail-trail-eventselector-dataresources",
@@ -13,7 +13,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_CloudTrail_Trail.DataResource.schema.json",
-        "javaType" : "aws.Property<aws.cloudtrail.TrailDataResource>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cloudtrail.TrailDataResource>"
       }
     },
     "IncludeManagementEvents" : {

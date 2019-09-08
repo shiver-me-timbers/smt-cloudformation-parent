@@ -4,5 +4,5 @@
   "title" : "VersionAttributes",
   "type" : "string",
   "enum" : [ "Version" ],
-  "javaType" : "aws.lambda.VersionAttributes"
+  "javaType" : "shiver.me.timbers.aws.lambda.VersionAttributes"
 }

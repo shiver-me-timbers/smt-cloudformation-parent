@@ -4,5 +4,5 @@
   "title" : "DBClusterAttributes",
   "type" : "string",
   "enum" : [ "ClusterResourceId", "Endpoint", "Port", "ReadEndpoint" ],
-  "javaType" : "aws.docdb.DBClusterAttributes"
+  "javaType" : "shiver.me.timbers.aws.docdb.DBClusterAttributes"
 }

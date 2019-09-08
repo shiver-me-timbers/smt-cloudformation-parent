@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ses.TemplateResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<TemplateResource>", "aws.HasCondition<TemplateResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ses.TemplateResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<TemplateResource>", "shiver.me.timbers.aws.HasCondition<TemplateResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

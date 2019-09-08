@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.codedeploy.DeploymentConfigResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<DeploymentConfigResource>", "aws.HasCondition<DeploymentConfigResource>" ],
+  "javaType" : "shiver.me.timbers.aws.codedeploy.DeploymentConfigResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<DeploymentConfigResource>", "shiver.me.timbers.aws.HasCondition<DeploymentConfigResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

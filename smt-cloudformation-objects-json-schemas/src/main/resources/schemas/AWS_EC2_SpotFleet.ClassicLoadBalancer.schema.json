@@ -4,8 +4,8 @@
   "title" : "SpotFleetClassicLoadBalancer",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-classicloadbalancer.html",
   "type" : "object",
-  "javaType" : "aws.ec2.SpotFleetClassicLoadBalancer",
-  "javaInterfaces" : [ "aws.Property<SpotFleetClassicLoadBalancer>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.SpotFleetClassicLoadBalancer",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<SpotFleetClassicLoadBalancer>" ],
   "properties" : {
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-classicloadbalancer.html#cfn-ec2-spotfleet-classicloadbalancer-name",

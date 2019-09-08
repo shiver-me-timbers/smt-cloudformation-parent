@@ -4,8 +4,8 @@
   "title" : "UserPoolSchemaAttribute",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html",
   "type" : "object",
-  "javaType" : "aws.cognito.UserPoolSchemaAttribute",
-  "javaInterfaces" : [ "aws.Property<UserPoolSchemaAttribute>" ],
+  "javaType" : "shiver.me.timbers.aws.cognito.UserPoolSchemaAttribute",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<UserPoolSchemaAttribute>" ],
   "properties" : {
     "DeveloperOnlyAttribute" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-developeronlyattribute",
@@ -25,7 +25,7 @@
     "StringAttributeConstraints" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-stringattributeconstraints",
       "$ref" : "AWS_Cognito_UserPool.StringAttributeConstraints.schema.json",
-      "javaType" : "aws.Property<aws.cognito.UserPoolStringAttributeConstraints>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cognito.UserPoolStringAttributeConstraints>"
     },
     "Required" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-required",
@@ -35,7 +35,7 @@
     "NumberAttributeConstraints" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-numberattributeconstraints",
       "$ref" : "AWS_Cognito_UserPool.NumberAttributeConstraints.schema.json",
-      "javaType" : "aws.Property<aws.cognito.UserPoolNumberAttributeConstraints>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cognito.UserPoolNumberAttributeConstraints>"
     },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-name",

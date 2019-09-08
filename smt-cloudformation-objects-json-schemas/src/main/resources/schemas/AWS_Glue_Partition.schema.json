@@ -4,7 +4,7 @@
   "title" : "Partition",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-partition.html",
   "type" : "object",
-  "javaType" : "aws.glue.Partition",
+  "javaType" : "shiver.me.timbers.aws.glue.Partition",
   "properties" : {
     "TableName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-partition.html#cfn-glue-partition-tablename",
@@ -24,7 +24,7 @@
     "PartitionInput" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-partition.html#cfn-glue-partition-partitioninput",
       "$ref" : "AWS_Glue_Partition.PartitionInput.schema.json",
-      "javaType" : "aws.Property<aws.glue.PartitionPartitionInput>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.glue.PartitionPartitionInput>"
     }
   }
 }

@@ -4,5 +4,5 @@
   "title" : "MeshAttributes",
   "type" : "string",
   "enum" : [ "Uid", "MeshName", "Arn" ],
-  "javaType" : "aws.appmesh.MeshAttributes"
+  "javaType" : "shiver.me.timbers.aws.appmesh.MeshAttributes"
 }

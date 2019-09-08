@@ -4,8 +4,8 @@
   "title" : "DomainElasticsearchClusterConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html",
   "type" : "object",
-  "javaType" : "aws.elasticsearch.DomainElasticsearchClusterConfig",
-  "javaInterfaces" : [ "aws.Property<DomainElasticsearchClusterConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.elasticsearch.DomainElasticsearchClusterConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DomainElasticsearchClusterConfig>" ],
   "properties" : {
     "DedicatedMasterCount" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-dedicatedmastercount",
@@ -35,7 +35,7 @@
     "ZoneAwarenessConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticsearchclusterconfig-zoneawarenessconfig",
       "$ref" : "AWS_Elasticsearch_Domain.ZoneAwarenessConfig.schema.json",
-      "javaType" : "aws.Property<aws.elasticsearch.DomainZoneAwarenessConfig>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.elasticsearch.DomainZoneAwarenessConfig>"
     },
     "ZoneAwarenessEnabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-zoneawarenessenabled",

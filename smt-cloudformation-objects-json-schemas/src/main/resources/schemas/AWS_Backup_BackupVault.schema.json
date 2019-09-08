@@ -4,7 +4,7 @@
   "title" : "BackupVault",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-backup-backupvault.html",
   "type" : "object",
-  "javaType" : "aws.backup.BackupVault",
+  "javaType" : "shiver.me.timbers.aws.backup.BackupVault",
   "properties" : {
     "BackupVaultTags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-backup-backupvault.html#cfn-backup-backupvault-backupvaulttags",
@@ -24,7 +24,7 @@
     "Notifications" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-backup-backupvault.html#cfn-backup-backupvault-notifications",
       "$ref" : "AWS_Backup_BackupVault.NotificationObjectType.schema.json",
-      "javaType" : "aws.Property<aws.backup.BackupVaultNotificationObjectType>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.backup.BackupVaultNotificationObjectType>"
     },
     "AccessPolicy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-backup-backupvault.html#cfn-backup-backupvault-accesspolicy",

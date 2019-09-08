@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.mediastore.ContainerResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ContainerResource>", "aws.HasCondition<ContainerResource>", "aws.HasAttributes<ContainerAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.mediastore.ContainerResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ContainerResource>", "shiver.me.timbers.aws.HasCondition<ContainerResource>", "shiver.me.timbers.aws.HasAttributes<ContainerAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

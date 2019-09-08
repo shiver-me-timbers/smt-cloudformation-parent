@@ -4,7 +4,7 @@
   "title" : "AccessKey",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html",
   "type" : "object",
-  "javaType" : "aws.iam.AccessKey",
+  "javaType" : "shiver.me.timbers.aws.iam.AccessKey",
   "properties" : {
     "Serial" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html#cfn-iam-accesskey-serial",

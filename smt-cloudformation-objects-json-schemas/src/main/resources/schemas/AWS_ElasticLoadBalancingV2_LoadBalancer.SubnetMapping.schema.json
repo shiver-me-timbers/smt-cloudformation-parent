@@ -4,8 +4,8 @@
   "title" : "LoadBalancerSubnetMapping",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-loadbalancer-subnetmapping.html",
   "type" : "object",
-  "javaType" : "aws.elasticloadbalancingv2.LoadBalancerSubnetMapping",
-  "javaInterfaces" : [ "aws.Property<LoadBalancerSubnetMapping>" ],
+  "javaType" : "shiver.me.timbers.aws.elasticloadbalancingv2.LoadBalancerSubnetMapping",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<LoadBalancerSubnetMapping>" ],
   "properties" : {
     "AllocationId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-loadbalancer-subnetmapping.html#cfn-elasticloadbalancingv2-loadbalancer-subnetmapping-allocationid",

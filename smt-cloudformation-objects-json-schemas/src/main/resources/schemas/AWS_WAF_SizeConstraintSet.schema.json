@@ -4,7 +4,7 @@
   "title" : "SizeConstraintSet",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-sizeconstraintset.html",
   "type" : "object",
-  "javaType" : "aws.waf.SizeConstraintSet",
+  "javaType" : "shiver.me.timbers.aws.waf.SizeConstraintSet",
   "properties" : {
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-sizeconstraintset.html#cfn-waf-sizeconstraintset-name",
@@ -17,7 +17,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_WAF_SizeConstraintSet.SizeConstraint.schema.json",
-        "javaType" : "aws.Property<aws.waf.SizeConstraintSetSizeConstraint>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.waf.SizeConstraintSetSizeConstraint>"
       }
     }
   }

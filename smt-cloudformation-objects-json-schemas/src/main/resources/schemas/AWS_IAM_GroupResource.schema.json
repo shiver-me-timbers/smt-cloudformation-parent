@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.iam.GroupResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<GroupResource>", "aws.HasCondition<GroupResource>", "aws.HasAttributes<GroupAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.iam.GroupResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<GroupResource>", "shiver.me.timbers.aws.HasCondition<GroupResource>", "shiver.me.timbers.aws.HasAttributes<GroupAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.autoscaling.ScheduledActionResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ScheduledActionResource>", "aws.HasCondition<ScheduledActionResource>" ],
+  "javaType" : "shiver.me.timbers.aws.autoscaling.ScheduledActionResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ScheduledActionResource>", "shiver.me.timbers.aws.HasCondition<ScheduledActionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

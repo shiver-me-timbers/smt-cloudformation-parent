@@ -4,7 +4,7 @@
   "title" : "Fleet",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-fleet.html",
   "type" : "object",
-  "javaType" : "aws.robomaker.Fleet",
+  "javaType" : "shiver.me.timbers.aws.robomaker.Fleet",
   "properties" : {
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-fleet.html#cfn-robomaker-fleet-tags",

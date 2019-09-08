@@ -4,8 +4,8 @@
   "title" : "InstanceFleetConfigInstanceTypeConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html",
   "type" : "object",
-  "javaType" : "aws.emr.InstanceFleetConfigInstanceTypeConfig",
-  "javaInterfaces" : [ "aws.Property<InstanceFleetConfigInstanceTypeConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.emr.InstanceFleetConfigInstanceTypeConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<InstanceFleetConfigInstanceTypeConfig>" ],
   "properties" : {
     "BidPrice" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfig-bidprice",
@@ -23,13 +23,13 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_EMR_InstanceFleetConfig.EbsConfiguration.schema.json",
-        "javaType" : "aws.Property<aws.emr.InstanceFleetConfigConfiguration>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.emr.InstanceFleetConfigConfiguration>"
       }
     },
     "EbsConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfig-ebsconfiguration",
       "$ref" : "AWS_EMR_InstanceFleetConfig.EbsConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.emr.InstanceFleetConfigEbsConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.emr.InstanceFleetConfigEbsConfiguration>"
     },
     "InstanceType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfig-instancetype",

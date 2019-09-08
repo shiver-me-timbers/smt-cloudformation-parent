@@ -4,7 +4,7 @@
   "title" : "VirtualService",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualservice.html",
   "type" : "object",
-  "javaType" : "aws.appmesh.VirtualService",
+  "javaType" : "shiver.me.timbers.aws.appmesh.VirtualService",
   "properties" : {
     "MeshName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualservice.html#cfn-appmesh-virtualservice-meshname",
@@ -19,14 +19,14 @@
     "Spec" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualservice.html#cfn-appmesh-virtualservice-spec",
       "$ref" : "AWS_AppMesh_VirtualService.VirtualServiceSpec.schema.json",
-      "javaType" : "aws.Property<aws.appmesh.VirtualServiceVirtualServiceSpec>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appmesh.VirtualServiceVirtualServiceSpec>"
     },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualservice.html#cfn-appmesh-virtualservice-tags",
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     }
   }

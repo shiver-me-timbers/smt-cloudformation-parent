@@ -4,8 +4,8 @@
   "title" : "JobExecutionProperty",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-executionproperty.html",
   "type" : "object",
-  "javaType" : "aws.glue.JobExecutionProperty",
-  "javaInterfaces" : [ "aws.Property<JobExecutionProperty>" ],
+  "javaType" : "shiver.me.timbers.aws.glue.JobExecutionProperty",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<JobExecutionProperty>" ],
   "properties" : {
     "MaxConcurrentRuns" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-executionproperty.html#cfn-glue-job-executionproperty-maxconcurrentruns",

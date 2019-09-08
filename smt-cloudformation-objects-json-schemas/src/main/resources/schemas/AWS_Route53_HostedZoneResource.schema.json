@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.route53.HostedZoneResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<HostedZoneResource>", "aws.HasCondition<HostedZoneResource>", "aws.HasAttributes<HostedZoneAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.route53.HostedZoneResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<HostedZoneResource>", "shiver.me.timbers.aws.HasCondition<HostedZoneResource>", "shiver.me.timbers.aws.HasAttributes<HostedZoneAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

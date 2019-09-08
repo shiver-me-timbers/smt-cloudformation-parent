@@ -4,7 +4,7 @@
   "title" : "Group",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-group.html",
   "type" : "object",
-  "javaType" : "aws.iam.Group",
+  "javaType" : "shiver.me.timbers.aws.iam.Group",
   "properties" : {
     "GroupName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-group.html#cfn-iam-group-groupname",
@@ -31,7 +31,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_IAM_Group.Policy.schema.json",
-        "javaType" : "aws.Property<aws.iam.GroupPolicy>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iam.GroupPolicy>"
       }
     }
   }

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.elasticbeanstalk.ApplicationVersionResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ApplicationVersionResource>", "aws.HasCondition<ApplicationVersionResource>" ],
+  "javaType" : "shiver.me.timbers.aws.elasticbeanstalk.ApplicationVersionResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ApplicationVersionResource>", "shiver.me.timbers.aws.HasCondition<ApplicationVersionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

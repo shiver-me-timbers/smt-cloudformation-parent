@@ -4,8 +4,8 @@
   "title" : "OptionGroupOptionConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html",
   "type" : "object",
-  "javaType" : "aws.rds.OptionGroupOptionConfiguration",
-  "javaInterfaces" : [ "aws.Property<OptionGroupOptionConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.rds.OptionGroupOptionConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<OptionGroupOptionConfiguration>" ],
   "properties" : {
     "DBSecurityGroupMemberships" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-dbsecuritygroupmemberships",
@@ -26,7 +26,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_RDS_OptionGroup.OptionSetting.schema.json",
-        "javaType" : "aws.Property<aws.rds.OptionGroupOptionSetting>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.rds.OptionGroupOptionSetting>"
       }
     },
     "OptionVersion" : {

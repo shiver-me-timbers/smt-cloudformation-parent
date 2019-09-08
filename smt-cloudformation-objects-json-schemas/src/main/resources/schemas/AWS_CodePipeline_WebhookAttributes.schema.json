@@ -4,5 +4,5 @@
   "title" : "WebhookAttributes",
   "type" : "string",
   "enum" : [ "Url" ],
-  "javaType" : "aws.codepipeline.WebhookAttributes"
+  "javaType" : "shiver.me.timbers.aws.codepipeline.WebhookAttributes"
 }

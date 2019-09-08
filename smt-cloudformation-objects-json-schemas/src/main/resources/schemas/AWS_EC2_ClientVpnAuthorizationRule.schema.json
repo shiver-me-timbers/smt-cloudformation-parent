@@ -4,7 +4,7 @@
   "title" : "ClientVpnAuthorizationRule",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnauthorizationrule.html",
   "type" : "object",
-  "javaType" : "aws.ec2.ClientVpnAuthorizationRule",
+  "javaType" : "shiver.me.timbers.aws.ec2.ClientVpnAuthorizationRule",
   "properties" : {
     "ClientVpnEndpointId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnauthorizationrule.html#cfn-ec2-clientvpnauthorizationrule-clientvpnendpointid",

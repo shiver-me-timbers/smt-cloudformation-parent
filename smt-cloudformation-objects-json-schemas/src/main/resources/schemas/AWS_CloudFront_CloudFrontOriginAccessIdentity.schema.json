@@ -4,12 +4,12 @@
   "title" : "CloudFrontOriginAccessIdentity",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-cloudfrontoriginaccessidentity.html",
   "type" : "object",
-  "javaType" : "aws.cloudfront.CloudFrontOriginAccessIdentity",
+  "javaType" : "shiver.me.timbers.aws.cloudfront.CloudFrontOriginAccessIdentity",
   "properties" : {
     "CloudFrontOriginAccessIdentityConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-cloudfrontoriginaccessidentity.html#cfn-cloudfront-cloudfrontoriginaccessidentity-cloudfrontoriginaccessidentityconfig",
       "$ref" : "AWS_CloudFront_CloudFrontOriginAccessIdentity.CloudFrontOriginAccessIdentityConfig.schema.json",
-      "javaType" : "aws.Property<aws.cloudfront.CloudFrontOriginAccessIdentityCloudFrontOriginAccessIdentityConfig>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cloudfront.CloudFrontOriginAccessIdentityCloudFrontOriginAccessIdentityConfig>"
     }
   }
 }

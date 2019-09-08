@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.wafregional.RateBasedRuleResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<RateBasedRuleResource>", "aws.HasCondition<RateBasedRuleResource>" ],
+  "javaType" : "shiver.me.timbers.aws.wafregional.RateBasedRuleResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<RateBasedRuleResource>", "shiver.me.timbers.aws.HasCondition<RateBasedRuleResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

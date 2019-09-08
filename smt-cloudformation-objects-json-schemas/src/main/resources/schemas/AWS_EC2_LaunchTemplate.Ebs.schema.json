@@ -4,8 +4,8 @@
   "title" : "LaunchTemplateEbs",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-blockdevicemapping-ebs.html",
   "type" : "object",
-  "javaType" : "aws.ec2.LaunchTemplateEbs",
-  "javaInterfaces" : [ "aws.Property<LaunchTemplateEbs>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.LaunchTemplateEbs",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<LaunchTemplateEbs>" ],
   "properties" : {
     "SnapshotId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-blockdevicemapping-ebs.html#cfn-ec2-launchtemplate-blockdevicemapping-ebs-snapshotid",

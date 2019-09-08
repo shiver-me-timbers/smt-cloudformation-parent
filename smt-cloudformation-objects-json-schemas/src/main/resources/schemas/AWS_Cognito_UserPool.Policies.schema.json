@@ -4,13 +4,13 @@
   "title" : "UserPoolPolicies",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-policies.html",
   "type" : "object",
-  "javaType" : "aws.cognito.UserPoolPolicies",
-  "javaInterfaces" : [ "aws.Property<UserPoolPolicies>" ],
+  "javaType" : "shiver.me.timbers.aws.cognito.UserPoolPolicies",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<UserPoolPolicies>" ],
   "properties" : {
     "PasswordPolicy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-policies.html#cfn-cognito-userpool-policies-passwordpolicy",
       "$ref" : "AWS_Cognito_UserPool.PasswordPolicy.schema.json",
-      "javaType" : "aws.Property<aws.cognito.UserPoolPasswordPolicy>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cognito.UserPoolPasswordPolicy>"
     }
   }
 }

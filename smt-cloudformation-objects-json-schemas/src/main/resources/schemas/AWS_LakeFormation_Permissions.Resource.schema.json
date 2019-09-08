@@ -4,18 +4,18 @@
   "title" : "PermissionsResource",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lakeformation-permissions-resource.html",
   "type" : "object",
-  "javaType" : "aws.lakeformation.PermissionsResource",
-  "javaInterfaces" : [ "aws.Property<PermissionsResource>" ],
+  "javaType" : "shiver.me.timbers.aws.lakeformation.PermissionsResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<PermissionsResource>" ],
   "properties" : {
     "TableResource" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lakeformation-permissions-resource.html#cfn-lakeformation-permissions-resource-tableresource",
       "$ref" : "AWS_LakeFormation_Permissions.TableResource.schema.json",
-      "javaType" : "aws.Property<aws.lakeformation.PermissionsTableResource>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.lakeformation.PermissionsTableResource>"
     },
     "DatabaseResource" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lakeformation-permissions-resource.html#cfn-lakeformation-permissions-resource-databaseresource",
       "$ref" : "AWS_LakeFormation_Permissions.DatabaseResource.schema.json",
-      "javaType" : "aws.Property<aws.lakeformation.PermissionsDatabaseResource>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.lakeformation.PermissionsDatabaseResource>"
     }
   }
 }

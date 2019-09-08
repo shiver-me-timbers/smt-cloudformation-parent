@@ -4,8 +4,8 @@
   "title" : "LaunchTemplatePlacement",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html",
   "type" : "object",
-  "javaType" : "aws.ec2.LaunchTemplatePlacement",
-  "javaInterfaces" : [ "aws.Property<LaunchTemplatePlacement>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.LaunchTemplatePlacement",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<LaunchTemplatePlacement>" ],
   "properties" : {
     "GroupName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-groupname",

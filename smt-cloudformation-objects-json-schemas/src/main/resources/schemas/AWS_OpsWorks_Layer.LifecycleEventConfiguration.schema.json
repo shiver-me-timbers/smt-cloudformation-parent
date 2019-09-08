@@ -4,13 +4,13 @@
   "title" : "LayerLifecycleEventConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.opsworks.LayerLifecycleEventConfiguration",
-  "javaInterfaces" : [ "aws.Property<LayerLifecycleEventConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.opsworks.LayerLifecycleEventConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<LayerLifecycleEventConfiguration>" ],
   "properties" : {
     "ShutdownEventConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration.html#cfn-opsworks-layer-lifecycleconfiguration-shutdowneventconfiguration",
       "$ref" : "AWS_OpsWorks_Layer.ShutdownEventConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.opsworks.LayerShutdownEventConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.opsworks.LayerShutdownEventConfiguration>"
     }
   }
 }

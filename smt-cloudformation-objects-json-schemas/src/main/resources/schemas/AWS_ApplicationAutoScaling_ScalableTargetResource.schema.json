@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.applicationautoscaling.ScalableTargetResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ScalableTargetResource>", "aws.HasCondition<ScalableTargetResource>" ],
+  "javaType" : "shiver.me.timbers.aws.applicationautoscaling.ScalableTargetResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ScalableTargetResource>", "shiver.me.timbers.aws.HasCondition<ScalableTargetResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

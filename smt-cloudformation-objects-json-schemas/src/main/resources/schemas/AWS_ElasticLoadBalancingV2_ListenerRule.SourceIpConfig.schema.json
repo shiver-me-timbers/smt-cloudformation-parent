@@ -4,8 +4,8 @@
   "title" : "ListenerRuleSourceIpConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-sourceipconfig.html",
   "type" : "object",
-  "javaType" : "aws.elasticloadbalancingv2.ListenerRuleSourceIpConfig",
-  "javaInterfaces" : [ "aws.Property<ListenerRuleSourceIpConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.elasticloadbalancingv2.ListenerRuleSourceIpConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ListenerRuleSourceIpConfig>" ],
   "properties" : {
     "Values" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-sourceipconfig.html#cfn-elasticloadbalancingv2-listenerrule-sourceipconfig-values",

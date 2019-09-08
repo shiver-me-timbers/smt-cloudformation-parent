@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.servicediscovery.ServiceResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ServiceResource>", "aws.HasCondition<ServiceResource>", "aws.HasAttributes<ServiceAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.servicediscovery.ServiceResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ServiceResource>", "shiver.me.timbers.aws.HasCondition<ServiceResource>", "shiver.me.timbers.aws.HasAttributes<ServiceAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

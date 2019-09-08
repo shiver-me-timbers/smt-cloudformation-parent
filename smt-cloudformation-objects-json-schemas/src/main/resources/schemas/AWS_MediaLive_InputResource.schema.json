@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.medialive.InputResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<InputResource>", "aws.HasCondition<InputResource>", "aws.HasAttributes<InputAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.medialive.InputResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<InputResource>", "shiver.me.timbers.aws.HasCondition<InputResource>", "shiver.me.timbers.aws.HasAttributes<InputAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

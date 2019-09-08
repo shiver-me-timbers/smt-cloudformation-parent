@@ -4,8 +4,8 @@
   "title" : "ApplicationVersionSourceBundle",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-sourcebundle.html",
   "type" : "object",
-  "javaType" : "aws.elasticbeanstalk.ApplicationVersionSourceBundle",
-  "javaInterfaces" : [ "aws.Property<ApplicationVersionSourceBundle>" ],
+  "javaType" : "shiver.me.timbers.aws.elasticbeanstalk.ApplicationVersionSourceBundle",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ApplicationVersionSourceBundle>" ],
   "properties" : {
     "S3Bucket" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-sourcebundle.html#cfn-beanstalk-sourcebundle-s3bucket",

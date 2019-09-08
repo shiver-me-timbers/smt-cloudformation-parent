@@ -4,7 +4,7 @@
   "title" : "Node",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-managedblockchain-node.html",
   "type" : "object",
-  "javaType" : "aws.managedblockchain.Node",
+  "javaType" : "shiver.me.timbers.aws.managedblockchain.Node",
   "properties" : {
     "MemberId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-managedblockchain-node.html#cfn-managedblockchain-node-memberid",
@@ -19,7 +19,7 @@
     "NodeConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-managedblockchain-node.html#cfn-managedblockchain-node-nodeconfiguration",
       "$ref" : "AWS_ManagedBlockchain_Node.NodeConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.managedblockchain.NodeNodeConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.managedblockchain.NodeNodeConfiguration>"
     }
   }
 }

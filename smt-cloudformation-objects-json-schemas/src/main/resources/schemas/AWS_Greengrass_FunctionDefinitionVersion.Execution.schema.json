@@ -4,8 +4,8 @@
   "title" : "FunctionDefinitionVersionExecution",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-execution.html",
   "type" : "object",
-  "javaType" : "aws.greengrass.FunctionDefinitionVersionExecution",
-  "javaInterfaces" : [ "aws.Property<FunctionDefinitionVersionExecution>" ],
+  "javaType" : "shiver.me.timbers.aws.greengrass.FunctionDefinitionVersionExecution",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<FunctionDefinitionVersionExecution>" ],
   "properties" : {
     "IsolationMode" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-execution.html#cfn-greengrass-functiondefinitionversion-execution-isolationmode",
@@ -15,7 +15,7 @@
     "RunAs" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-execution.html#cfn-greengrass-functiondefinitionversion-execution-runas",
       "$ref" : "AWS_Greengrass_FunctionDefinitionVersion.RunAs.schema.json",
-      "javaType" : "aws.Property<aws.greengrass.FunctionDefinitionVersionRunAs>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.greengrass.FunctionDefinitionVersionRunAs>"
     }
   }
 }

@@ -4,14 +4,14 @@
   "title" : "InputSecurityGroup",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-inputsecuritygroup.html",
   "type" : "object",
-  "javaType" : "aws.medialive.InputSecurityGroup",
+  "javaType" : "shiver.me.timbers.aws.medialive.InputSecurityGroup",
   "properties" : {
     "WhitelistRules" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-inputsecuritygroup.html#cfn-medialive-inputsecuritygroup-whitelistrules",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_MediaLive_InputSecurityGroup.InputWhitelistRuleCidr.schema.json",
-        "javaType" : "aws.Property<aws.medialive.InputSecurityGroupInputWhitelistRuleCidr>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.medialive.InputSecurityGroupInputWhitelistRuleCidr>"
       }
     },
     "Tags" : {

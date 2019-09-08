@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "alexa.ask.SkillResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<SkillResource>", "aws.HasCondition<SkillResource>" ],
+  "javaType" : "shiver.me.timbers.alexa.ask.SkillResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<SkillResource>", "shiver.me.timbers.aws.HasCondition<SkillResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

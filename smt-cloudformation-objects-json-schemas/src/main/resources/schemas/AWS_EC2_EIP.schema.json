@@ -4,7 +4,7 @@
   "title" : "EIP",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip.html",
   "type" : "object",
-  "javaType" : "aws.ec2.EIP",
+  "javaType" : "shiver.me.timbers.aws.ec2.EIP",
   "properties" : {
     "Domain" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip.html#cfn-ec2-eip-domain",

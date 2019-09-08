@@ -4,5 +4,5 @@
   "title" : "DeviceDefinitionAttributes",
   "type" : "string",
   "enum" : [ "LatestVersionArn", "Id", "Arn", "Name" ],
-  "javaType" : "aws.greengrass.DeviceDefinitionAttributes"
+  "javaType" : "shiver.me.timbers.aws.greengrass.DeviceDefinitionAttributes"
 }

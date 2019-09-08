@@ -4,58 +4,58 @@
   "title" : "PipelineActivity",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-activity.html",
   "type" : "object",
-  "javaType" : "aws.iotanalytics.PipelineActivity",
-  "javaInterfaces" : [ "aws.Property<PipelineActivity>" ],
+  "javaType" : "shiver.me.timbers.aws.iotanalytics.PipelineActivity",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<PipelineActivity>" ],
   "properties" : {
     "SelectAttributes" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-activity.html#cfn-iotanalytics-pipeline-activity-selectattributes",
       "$ref" : "AWS_IoTAnalytics_Pipeline.SelectAttributes.schema.json",
-      "javaType" : "aws.Property<aws.iotanalytics.PipelineSelectAttributes>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotanalytics.PipelineSelectAttributes>"
     },
     "Datastore" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-activity.html#cfn-iotanalytics-pipeline-activity-datastore",
       "$ref" : "AWS_IoTAnalytics_Pipeline.Datastore.schema.json",
-      "javaType" : "aws.Property<aws.iotanalytics.PipelineDatastore>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotanalytics.PipelineDatastore>"
     },
     "Filter" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-activity.html#cfn-iotanalytics-pipeline-activity-filter",
       "$ref" : "AWS_IoTAnalytics_Pipeline.Filter.schema.json",
-      "javaType" : "aws.Property<aws.iotanalytics.PipelineFilter>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotanalytics.PipelineFilter>"
     },
     "AddAttributes" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-activity.html#cfn-iotanalytics-pipeline-activity-addattributes",
       "$ref" : "AWS_IoTAnalytics_Pipeline.AddAttributes.schema.json",
-      "javaType" : "aws.Property<aws.iotanalytics.PipelineAddAttributes>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotanalytics.PipelineAddAttributes>"
     },
     "Channel" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-activity.html#cfn-iotanalytics-pipeline-activity-channel",
       "$ref" : "AWS_IoTAnalytics_Pipeline.Channel.schema.json",
-      "javaType" : "aws.Property<aws.iotanalytics.PipelineChannel>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotanalytics.PipelineChannel>"
     },
     "DeviceShadowEnrich" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-activity.html#cfn-iotanalytics-pipeline-activity-deviceshadowenrich",
       "$ref" : "AWS_IoTAnalytics_Pipeline.DeviceShadowEnrich.schema.json",
-      "javaType" : "aws.Property<aws.iotanalytics.PipelineDeviceShadowEnrich>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotanalytics.PipelineDeviceShadowEnrich>"
     },
     "Math" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-activity.html#cfn-iotanalytics-pipeline-activity-math",
       "$ref" : "AWS_IoTAnalytics_Pipeline.Math.schema.json",
-      "javaType" : "aws.Property<aws.iotanalytics.PipelineMath>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotanalytics.PipelineMath>"
     },
     "Lambda" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-activity.html#cfn-iotanalytics-pipeline-activity-lambda",
       "$ref" : "AWS_IoTAnalytics_Pipeline.Lambda.schema.json",
-      "javaType" : "aws.Property<aws.iotanalytics.PipelineLambda>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotanalytics.PipelineLambda>"
     },
     "DeviceRegistryEnrich" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-activity.html#cfn-iotanalytics-pipeline-activity-deviceregistryenrich",
       "$ref" : "AWS_IoTAnalytics_Pipeline.DeviceRegistryEnrich.schema.json",
-      "javaType" : "aws.Property<aws.iotanalytics.PipelineDeviceRegistryEnrich>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotanalytics.PipelineDeviceRegistryEnrich>"
     },
     "RemoveAttributes" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-activity.html#cfn-iotanalytics-pipeline-activity-removeattributes",
       "$ref" : "AWS_IoTAnalytics_Pipeline.RemoveAttributes.schema.json",
-      "javaType" : "aws.Property<aws.iotanalytics.PipelineRemoveAttributes>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotanalytics.PipelineRemoveAttributes>"
     }
   }
 }

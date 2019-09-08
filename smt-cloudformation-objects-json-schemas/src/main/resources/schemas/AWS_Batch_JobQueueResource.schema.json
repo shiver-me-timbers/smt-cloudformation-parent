@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.batch.JobQueueResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<JobQueueResource>", "aws.HasCondition<JobQueueResource>" ],
+  "javaType" : "shiver.me.timbers.aws.batch.JobQueueResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<JobQueueResource>", "shiver.me.timbers.aws.HasCondition<JobQueueResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

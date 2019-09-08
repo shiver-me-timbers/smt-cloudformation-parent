@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.dms.EndpointResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<EndpointResource>", "aws.HasCondition<EndpointResource>", "aws.HasAttributes<EndpointAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.dms.EndpointResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<EndpointResource>", "shiver.me.timbers.aws.HasCondition<EndpointResource>", "shiver.me.timbers.aws.HasAttributes<EndpointAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

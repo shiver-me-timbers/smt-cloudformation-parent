@@ -4,8 +4,8 @@
   "title" : "ScalingPolicyStepScalingPolicyConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.applicationautoscaling.ScalingPolicyStepScalingPolicyConfiguration",
-  "javaInterfaces" : [ "aws.Property<ScalingPolicyStepScalingPolicyConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.applicationautoscaling.ScalingPolicyStepScalingPolicyConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ScalingPolicyStepScalingPolicyConfiguration>" ],
   "properties" : {
     "AdjustmentType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-adjustmenttype",
@@ -33,7 +33,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ApplicationAutoScaling_ScalingPolicy.StepAdjustment.schema.json",
-        "javaType" : "aws.Property<aws.applicationautoscaling.ScalingPolicyStepAdjustment>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.applicationautoscaling.ScalingPolicyStepAdjustment>"
       }
     }
   }

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.SubnetRouteTableAssociationResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<SubnetRouteTableAssociationResource>", "aws.HasCondition<SubnetRouteTableAssociationResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.SubnetRouteTableAssociationResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<SubnetRouteTableAssociationResource>", "shiver.me.timbers.aws.HasCondition<SubnetRouteTableAssociationResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

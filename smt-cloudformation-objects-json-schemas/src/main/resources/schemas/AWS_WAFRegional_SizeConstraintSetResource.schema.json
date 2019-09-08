@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.wafregional.SizeConstraintSetResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<SizeConstraintSetResource>", "aws.HasCondition<SizeConstraintSetResource>" ],
+  "javaType" : "shiver.me.timbers.aws.wafregional.SizeConstraintSetResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<SizeConstraintSetResource>", "shiver.me.timbers.aws.HasCondition<SizeConstraintSetResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

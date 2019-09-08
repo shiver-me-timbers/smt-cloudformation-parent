@@ -4,7 +4,7 @@
   "title" : "Channel",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-channel.html",
   "type" : "object",
-  "javaType" : "aws.iotanalytics.Channel",
+  "javaType" : "shiver.me.timbers.aws.iotanalytics.Channel",
   "properties" : {
     "ChannelName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-channel.html#cfn-iotanalytics-channel-channelname",
@@ -14,19 +14,19 @@
     "ChannelStorage" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-channel.html#cfn-iotanalytics-channel-channelstorage",
       "$ref" : "AWS_IoTAnalytics_Channel.ChannelStorage.schema.json",
-      "javaType" : "aws.Property<aws.iotanalytics.ChannelChannelStorage>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotanalytics.ChannelChannelStorage>"
     },
     "RetentionPeriod" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-channel.html#cfn-iotanalytics-channel-retentionperiod",
       "$ref" : "AWS_IoTAnalytics_Channel.RetentionPeriod.schema.json",
-      "javaType" : "aws.Property<aws.iotanalytics.ChannelRetentionPeriod>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotanalytics.ChannelRetentionPeriod>"
     },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-channel.html#cfn-iotanalytics-channel-tags",
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     }
   }

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.elasticloadbalancingv2.ListenerCertificateResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ListenerCertificateResource>", "aws.HasCondition<ListenerCertificateResource>" ],
+  "javaType" : "shiver.me.timbers.aws.elasticloadbalancingv2.ListenerCertificateResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ListenerCertificateResource>", "shiver.me.timbers.aws.HasCondition<ListenerCertificateResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

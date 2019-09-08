@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.dms.ReplicationTaskResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ReplicationTaskResource>", "aws.HasCondition<ReplicationTaskResource>" ],
+  "javaType" : "shiver.me.timbers.aws.dms.ReplicationTaskResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ReplicationTaskResource>", "shiver.me.timbers.aws.HasCondition<ReplicationTaskResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

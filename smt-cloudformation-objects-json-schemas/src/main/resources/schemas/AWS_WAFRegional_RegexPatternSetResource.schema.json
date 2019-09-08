@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.wafregional.RegexPatternSetResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<RegexPatternSetResource>", "aws.HasCondition<RegexPatternSetResource>" ],
+  "javaType" : "shiver.me.timbers.aws.wafregional.RegexPatternSetResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<RegexPatternSetResource>", "shiver.me.timbers.aws.HasCondition<RegexPatternSetResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.VPCResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<VPCResource>", "aws.HasCondition<VPCResource>", "aws.HasAttributes<VPCAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.VPCResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<VPCResource>", "shiver.me.timbers.aws.HasCondition<VPCResource>", "shiver.me.timbers.aws.HasAttributes<VPCAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

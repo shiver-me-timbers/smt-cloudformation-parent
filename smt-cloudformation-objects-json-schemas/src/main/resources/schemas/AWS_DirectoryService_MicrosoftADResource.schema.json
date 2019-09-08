@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.directoryservice.MicrosoftADResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<MicrosoftADResource>", "aws.HasCondition<MicrosoftADResource>", "aws.HasAttributes<MicrosoftADAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.directoryservice.MicrosoftADResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<MicrosoftADResource>", "shiver.me.timbers.aws.HasCondition<MicrosoftADResource>", "shiver.me.timbers.aws.HasAttributes<MicrosoftADAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -4,5 +4,5 @@
   "title" : "VirtualServiceAttributes",
   "type" : "string",
   "enum" : [ "Uid", "MeshName", "VirtualServiceName", "Arn" ],
-  "javaType" : "aws.appmesh.VirtualServiceAttributes"
+  "javaType" : "shiver.me.timbers.aws.appmesh.VirtualServiceAttributes"
 }

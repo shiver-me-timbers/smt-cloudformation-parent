@@ -4,8 +4,8 @@
   "title" : "BucketCorsRule",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html",
   "type" : "object",
-  "javaType" : "aws.s3.BucketCorsRule",
-  "javaInterfaces" : [ "aws.Property<BucketCorsRule>" ],
+  "javaType" : "shiver.me.timbers.aws.s3.BucketCorsRule",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BucketCorsRule>" ],
   "properties" : {
     "AllowedHeaders" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-allowedheaders",

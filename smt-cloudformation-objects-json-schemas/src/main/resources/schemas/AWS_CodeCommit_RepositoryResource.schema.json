@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.codecommit.RepositoryResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<RepositoryResource>", "aws.HasCondition<RepositoryResource>", "aws.HasAttributes<RepositoryAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.codecommit.RepositoryResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<RepositoryResource>", "shiver.me.timbers.aws.HasCondition<RepositoryResource>", "shiver.me.timbers.aws.HasAttributes<RepositoryAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -4,8 +4,8 @@
   "title" : "IdentityPoolCognitoIdentityProvider",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitoidentityprovider.html",
   "type" : "object",
-  "javaType" : "aws.cognito.IdentityPoolCognitoIdentityProvider",
-  "javaInterfaces" : [ "aws.Property<IdentityPoolCognitoIdentityProvider>" ],
+  "javaType" : "shiver.me.timbers.aws.cognito.IdentityPoolCognitoIdentityProvider",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<IdentityPoolCognitoIdentityProvider>" ],
   "properties" : {
     "ServerSideTokenCheck" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitoidentityprovider.html#cfn-cognito-identitypool-cognitoidentityprovider-serversidetokencheck",

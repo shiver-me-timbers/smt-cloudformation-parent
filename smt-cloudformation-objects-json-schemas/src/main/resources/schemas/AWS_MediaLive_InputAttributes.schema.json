@@ -4,5 +4,5 @@
   "title" : "InputAttributes",
   "type" : "string",
   "enum" : [ "Destinations", "Arn", "Sources" ],
-  "javaType" : "aws.medialive.InputAttributes"
+  "javaType" : "shiver.me.timbers.aws.medialive.InputAttributes"
 }

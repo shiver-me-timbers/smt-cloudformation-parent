@@ -4,7 +4,7 @@
   "title" : "Server",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html",
   "type" : "object",
-  "javaType" : "aws.opsworkscm.Server",
+  "javaType" : "shiver.me.timbers.aws.opsworkscm.Server",
   "properties" : {
     "KeyPair" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-keypair",
@@ -82,7 +82,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_OpsWorksCM_Server.EngineAttribute.schema.json",
-        "javaType" : "aws.Property<aws.opsworkscm.ServerEngineAttribute>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.opsworkscm.ServerEngineAttribute>"
       }
     },
     "BackupRetentionCount" : {

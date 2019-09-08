@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ssm.ParameterResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ParameterResource>", "aws.HasCondition<ParameterResource>", "aws.HasAttributes<ParameterAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.ssm.ParameterResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ParameterResource>", "shiver.me.timbers.aws.HasCondition<ParameterResource>", "shiver.me.timbers.aws.HasAttributes<ParameterAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

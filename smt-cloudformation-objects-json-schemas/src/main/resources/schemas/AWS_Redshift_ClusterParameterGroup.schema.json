@@ -4,7 +4,7 @@
   "title" : "ClusterParameterGroup",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clusterparametergroup.html",
   "type" : "object",
-  "javaType" : "aws.redshift.ClusterParameterGroup",
+  "javaType" : "shiver.me.timbers.aws.redshift.ClusterParameterGroup",
   "properties" : {
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clusterparametergroup.html#cfn-redshift-clusterparametergroup-description",
@@ -21,7 +21,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Redshift_ClusterParameterGroup.Parameter.schema.json",
-        "javaType" : "aws.Property<aws.redshift.ClusterParameterGroupParameter>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.redshift.ClusterParameterGroupParameter>"
       }
     },
     "Tags" : {
@@ -29,7 +29,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     }
   }

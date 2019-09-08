@@ -4,7 +4,7 @@
   "title" : "Application",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-application.html",
   "type" : "object",
-  "javaType" : "aws.kinesisanalyticsv2.Application",
+  "javaType" : "shiver.me.timbers.aws.kinesisanalyticsv2.Application",
   "properties" : {
     "ApplicationName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-application.html#cfn-kinesisanalyticsv2-application-applicationname",
@@ -19,7 +19,7 @@
     "ApplicationConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-application.html#cfn-kinesisanalyticsv2-application-applicationconfiguration",
       "$ref" : "AWS_KinesisAnalyticsV2_Application.FlinkApplicationConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.kinesisanalyticsv2.ApplicationApplicationConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationApplicationConfiguration>"
     },
     "ApplicationDescription" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-application.html#cfn-kinesisanalyticsv2-application-applicationdescription",

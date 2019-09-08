@@ -4,5 +4,5 @@
   "title" : "GroupAttributes",
   "type" : "string",
   "enum" : [ "Arn" ],
-  "javaType" : "aws.iam.GroupAttributes"
+  "javaType" : "shiver.me.timbers.aws.iam.GroupAttributes"
 }

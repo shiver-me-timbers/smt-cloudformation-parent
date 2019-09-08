@@ -4,8 +4,8 @@
   "title" : "HostedZoneHostedZoneConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-hostedzone-hostedzoneconfig.html",
   "type" : "object",
-  "javaType" : "aws.route53.HostedZoneHostedZoneConfig",
-  "javaInterfaces" : [ "aws.Property<HostedZoneHostedZoneConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.route53.HostedZoneHostedZoneConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<HostedZoneHostedZoneConfig>" ],
   "properties" : {
     "Comment" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-hostedzone-hostedzoneconfig.html#cfn-route53-hostedzone-hostedzoneconfig-comment",

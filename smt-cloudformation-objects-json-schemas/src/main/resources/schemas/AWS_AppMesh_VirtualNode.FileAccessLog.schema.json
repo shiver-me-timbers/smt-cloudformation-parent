@@ -4,8 +4,8 @@
   "title" : "VirtualNodeFileAccessLog",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-fileaccesslog.html",
   "type" : "object",
-  "javaType" : "aws.appmesh.VirtualNodeFileAccessLog",
-  "javaInterfaces" : [ "aws.Property<VirtualNodeFileAccessLog>" ],
+  "javaType" : "shiver.me.timbers.aws.appmesh.VirtualNodeFileAccessLog",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<VirtualNodeFileAccessLog>" ],
   "properties" : {
     "Path" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-fileaccesslog.html#cfn-appmesh-virtualnode-fileaccesslog-path",

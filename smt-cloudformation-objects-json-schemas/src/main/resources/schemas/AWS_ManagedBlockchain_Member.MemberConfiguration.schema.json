@@ -4,8 +4,8 @@
   "title" : "MemberMemberConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-managedblockchain-member-memberconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.managedblockchain.MemberMemberConfiguration",
-  "javaInterfaces" : [ "aws.Property<MemberMemberConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.managedblockchain.MemberMemberConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<MemberMemberConfiguration>" ],
   "properties" : {
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-managedblockchain-member-memberconfiguration.html#cfn-managedblockchain-member-memberconfiguration-description",
@@ -15,7 +15,7 @@
     "MemberFrameworkConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-managedblockchain-member-memberconfiguration.html#cfn-managedblockchain-member-memberconfiguration-memberframeworkconfiguration",
       "$ref" : "AWS_ManagedBlockchain_Member.MemberFrameworkConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.managedblockchain.MemberMemberFrameworkConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.managedblockchain.MemberMemberFrameworkConfiguration>"
     },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-managedblockchain-member-memberconfiguration.html#cfn-managedblockchain-member-memberconfiguration-name",

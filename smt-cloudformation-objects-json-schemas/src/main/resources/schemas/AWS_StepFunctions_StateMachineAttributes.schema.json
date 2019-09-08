@@ -4,5 +4,5 @@
   "title" : "StateMachineAttributes",
   "type" : "string",
   "enum" : [ "Name" ],
-  "javaType" : "aws.stepfunctions.StateMachineAttributes"
+  "javaType" : "shiver.me.timbers.aws.stepfunctions.StateMachineAttributes"
 }

@@ -4,5 +4,5 @@
   "title" : "DBInstanceAttributes",
   "type" : "string",
   "enum" : [ "Endpoint.Address", "Endpoint.Port" ],
-  "javaType" : "aws.rds.DBInstanceAttributes"
+  "javaType" : "shiver.me.timbers.aws.rds.DBInstanceAttributes"
 }

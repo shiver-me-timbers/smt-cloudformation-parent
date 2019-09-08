@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.autoscaling.AutoScalingGroupResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<AutoScalingGroupResource>", "aws.HasCondition<AutoScalingGroupResource>" ],
+  "javaType" : "shiver.me.timbers.aws.autoscaling.AutoScalingGroupResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<AutoScalingGroupResource>", "shiver.me.timbers.aws.HasCondition<AutoScalingGroupResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

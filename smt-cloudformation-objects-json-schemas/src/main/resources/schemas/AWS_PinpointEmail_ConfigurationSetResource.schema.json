@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.pinpointemail.ConfigurationSetResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ConfigurationSetResource>", "aws.HasCondition<ConfigurationSetResource>" ],
+  "javaType" : "shiver.me.timbers.aws.pinpointemail.ConfigurationSetResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ConfigurationSetResource>", "shiver.me.timbers.aws.HasCondition<ConfigurationSetResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

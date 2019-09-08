@@ -4,8 +4,8 @@
   "title" : "DeploymentGroupAlarmConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-alarmconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.codedeploy.DeploymentGroupAlarmConfiguration",
-  "javaInterfaces" : [ "aws.Property<DeploymentGroupAlarmConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.codedeploy.DeploymentGroupAlarmConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DeploymentGroupAlarmConfiguration>" ],
   "properties" : {
     "Alarms" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-alarmconfiguration.html#cfn-codedeploy-deploymentgroup-alarmconfiguration-alarms",
@@ -13,7 +13,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_CodeDeploy_DeploymentGroup.Alarm.schema.json",
-        "javaType" : "aws.Property<aws.codedeploy.DeploymentGroupAlarm>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codedeploy.DeploymentGroupAlarm>"
       }
     },
     "Enabled" : {

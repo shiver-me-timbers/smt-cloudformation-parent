@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.EC2FleetResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<EC2FleetResource>", "aws.HasCondition<EC2FleetResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.EC2FleetResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<EC2FleetResource>", "shiver.me.timbers.aws.HasCondition<EC2FleetResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

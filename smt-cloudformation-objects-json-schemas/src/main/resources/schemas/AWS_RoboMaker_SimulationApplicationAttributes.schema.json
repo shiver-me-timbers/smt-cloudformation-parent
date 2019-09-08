@@ -4,5 +4,5 @@
   "title" : "SimulationApplicationAttributes",
   "type" : "string",
   "enum" : [ "CurrentRevisionId", "Arn" ],
-  "javaType" : "aws.robomaker.SimulationApplicationAttributes"
+  "javaType" : "shiver.me.timbers.aws.robomaker.SimulationApplicationAttributes"
 }

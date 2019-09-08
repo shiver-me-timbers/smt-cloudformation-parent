@@ -4,5 +4,5 @@
   "title" : "TargetGroupAttributes",
   "type" : "string",
   "enum" : [ "LoadBalancerArns", "TargetGroupFullName", "TargetGroupName" ],
-  "javaType" : "aws.elasticloadbalancingv2.TargetGroupAttributes"
+  "javaType" : "shiver.me.timbers.aws.elasticloadbalancingv2.TargetGroupAttributes"
 }

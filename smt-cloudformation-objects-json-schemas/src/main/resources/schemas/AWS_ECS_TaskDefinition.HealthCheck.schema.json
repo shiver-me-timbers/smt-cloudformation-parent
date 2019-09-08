@@ -4,8 +4,8 @@
   "title" : "TaskDefinitionHealthCheck",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html",
   "type" : "object",
-  "javaType" : "aws.ecs.TaskDefinitionHealthCheck",
-  "javaInterfaces" : [ "aws.Property<TaskDefinitionHealthCheck>" ],
+  "javaType" : "shiver.me.timbers.aws.ecs.TaskDefinitionHealthCheck",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TaskDefinitionHealthCheck>" ],
   "properties" : {
     "Command" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html#cfn-ecs-taskdefinition-healthcheck-command",

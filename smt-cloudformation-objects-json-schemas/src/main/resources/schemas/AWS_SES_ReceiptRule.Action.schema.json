@@ -4,43 +4,43 @@
   "title" : "ReceiptRuleAction",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-action.html",
   "type" : "object",
-  "javaType" : "aws.ses.ReceiptRuleAction",
-  "javaInterfaces" : [ "aws.Property<ReceiptRuleAction>" ],
+  "javaType" : "shiver.me.timbers.aws.ses.ReceiptRuleAction",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ReceiptRuleAction>" ],
   "properties" : {
     "BounceAction" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-action.html#cfn-ses-receiptrule-action-bounceaction",
       "$ref" : "AWS_SES_ReceiptRule.BounceAction.schema.json",
-      "javaType" : "aws.Property<aws.ses.ReceiptRuleBounceAction>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ses.ReceiptRuleBounceAction>"
     },
     "S3Action" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-action.html#cfn-ses-receiptrule-action-s3action",
       "$ref" : "AWS_SES_ReceiptRule.S3Action.schema.json",
-      "javaType" : "aws.Property<aws.ses.ReceiptRuleS3Action>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ses.ReceiptRuleS3Action>"
     },
     "StopAction" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-action.html#cfn-ses-receiptrule-action-stopaction",
       "$ref" : "AWS_SES_ReceiptRule.StopAction.schema.json",
-      "javaType" : "aws.Property<aws.ses.ReceiptRuleStopAction>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ses.ReceiptRuleStopAction>"
     },
     "SNSAction" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-action.html#cfn-ses-receiptrule-action-snsaction",
       "$ref" : "AWS_SES_ReceiptRule.SNSAction.schema.json",
-      "javaType" : "aws.Property<aws.ses.ReceiptRuleSNSAction>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ses.ReceiptRuleSNSAction>"
     },
     "WorkmailAction" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-action.html#cfn-ses-receiptrule-action-workmailaction",
       "$ref" : "AWS_SES_ReceiptRule.WorkmailAction.schema.json",
-      "javaType" : "aws.Property<aws.ses.ReceiptRuleWorkmailAction>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ses.ReceiptRuleWorkmailAction>"
     },
     "AddHeaderAction" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-action.html#cfn-ses-receiptrule-action-addheaderaction",
       "$ref" : "AWS_SES_ReceiptRule.AddHeaderAction.schema.json",
-      "javaType" : "aws.Property<aws.ses.ReceiptRuleAddHeaderAction>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ses.ReceiptRuleAddHeaderAction>"
     },
     "LambdaAction" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-action.html#cfn-ses-receiptrule-action-lambdaaction",
       "$ref" : "AWS_SES_ReceiptRule.LambdaAction.schema.json",
-      "javaType" : "aws.Property<aws.ses.ReceiptRuleLambdaAction>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ses.ReceiptRuleLambdaAction>"
     }
   }
 }

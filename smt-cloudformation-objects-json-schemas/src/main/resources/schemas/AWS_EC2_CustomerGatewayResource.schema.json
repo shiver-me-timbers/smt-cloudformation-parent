@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.CustomerGatewayResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<CustomerGatewayResource>", "aws.HasCondition<CustomerGatewayResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.CustomerGatewayResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<CustomerGatewayResource>", "shiver.me.timbers.aws.HasCondition<CustomerGatewayResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

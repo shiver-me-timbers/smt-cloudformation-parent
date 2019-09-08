@@ -4,8 +4,8 @@
   "title" : "BucketLambdaConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-lambdaconfig.html",
   "type" : "object",
-  "javaType" : "aws.s3.BucketLambdaConfiguration",
-  "javaInterfaces" : [ "aws.Property<BucketLambdaConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.s3.BucketLambdaConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BucketLambdaConfiguration>" ],
   "properties" : {
     "Event" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-lambdaconfig.html#cfn-s3-bucket-notificationconfig-lambdaconfig-event",
@@ -15,7 +15,7 @@
     "Filter" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-lambdaconfig.html#cfn-s3-bucket-notificationconfig-lambdaconfig-filter",
       "$ref" : "AWS_S3_Bucket.NotificationFilter.schema.json",
-      "javaType" : "aws.Property<aws.s3.BucketNotificationFilter>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.BucketNotificationFilter>"
     },
     "Function" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-lambdaconfig.html#cfn-s3-bucket-notificationconfig-lambdaconfig-function",

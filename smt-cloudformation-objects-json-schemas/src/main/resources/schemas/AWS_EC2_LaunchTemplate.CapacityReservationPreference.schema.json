@@ -4,5 +4,5 @@
   "title" : "LaunchTemplateCapacityReservationPreference",
   "type" : "string",
   "javaType" : "java.lang.CharSequence",
-  "javaInterfaces" : [ "aws.Property<LaunchTemplateCapacityReservationPreference>" ]
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<LaunchTemplateCapacityReservationPreference>" ]
 }

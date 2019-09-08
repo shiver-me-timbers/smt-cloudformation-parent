@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.servicecatalog.LaunchTemplateConstraintResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<LaunchTemplateConstraintResource>", "aws.HasCondition<LaunchTemplateConstraintResource>" ],
+  "javaType" : "shiver.me.timbers.aws.servicecatalog.LaunchTemplateConstraintResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<LaunchTemplateConstraintResource>", "shiver.me.timbers.aws.HasCondition<LaunchTemplateConstraintResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

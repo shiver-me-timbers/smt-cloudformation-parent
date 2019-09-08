@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.iam.AccessKeyResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<AccessKeyResource>", "aws.HasCondition<AccessKeyResource>", "aws.HasAttributes<AccessKeyAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.iam.AccessKeyResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<AccessKeyResource>", "shiver.me.timbers.aws.HasCondition<AccessKeyResource>", "shiver.me.timbers.aws.HasAttributes<AccessKeyAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

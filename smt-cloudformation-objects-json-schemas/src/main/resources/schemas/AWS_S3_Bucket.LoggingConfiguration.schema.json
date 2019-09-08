@@ -4,8 +4,8 @@
   "title" : "BucketLoggingConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-loggingconfig.html",
   "type" : "object",
-  "javaType" : "aws.s3.BucketLoggingConfiguration",
-  "javaInterfaces" : [ "aws.Property<BucketLoggingConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.s3.BucketLoggingConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BucketLoggingConfiguration>" ],
   "properties" : {
     "DestinationBucketName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-loggingconfig.html#cfn-s3-bucket-loggingconfig-destinationbucketname",

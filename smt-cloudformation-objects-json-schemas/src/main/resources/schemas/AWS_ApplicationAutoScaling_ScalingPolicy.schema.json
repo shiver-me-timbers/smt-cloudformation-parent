@@ -4,7 +4,7 @@
   "title" : "ScalingPolicy",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html",
   "type" : "object",
-  "javaType" : "aws.applicationautoscaling.ScalingPolicy",
+  "javaType" : "shiver.me.timbers.aws.applicationautoscaling.ScalingPolicy",
   "properties" : {
     "PolicyName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-policyname",
@@ -39,12 +39,12 @@
     "StepScalingPolicyConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration",
       "$ref" : "AWS_ApplicationAutoScaling_ScalingPolicy.StepScalingPolicyConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.applicationautoscaling.ScalingPolicyStepScalingPolicyConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.applicationautoscaling.ScalingPolicyStepScalingPolicyConfiguration>"
     },
     "TargetTrackingScalingPolicyConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration",
       "$ref" : "AWS_ApplicationAutoScaling_ScalingPolicy.TargetTrackingScalingPolicyConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.applicationautoscaling.ScalingPolicyTargetTrackingScalingPolicyConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.applicationautoscaling.ScalingPolicyTargetTrackingScalingPolicyConfiguration>"
     }
   }
 }

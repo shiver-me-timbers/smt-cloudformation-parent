@@ -4,5 +4,5 @@
   "title" : "FunctionAttributes",
   "type" : "string",
   "enum" : [ "Arn" ],
-  "javaType" : "aws.lambda.FunctionAttributes"
+  "javaType" : "shiver.me.timbers.aws.lambda.FunctionAttributes"
 }

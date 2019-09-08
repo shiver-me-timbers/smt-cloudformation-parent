@@ -4,7 +4,7 @@
   "title" : "SubnetRouteTableAssociation",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-route-table-assoc.html",
   "type" : "object",
-  "javaType" : "aws.ec2.SubnetRouteTableAssociation",
+  "javaType" : "shiver.me.timbers.aws.ec2.SubnetRouteTableAssociation",
   "properties" : {
     "RouteTableId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-route-table-assoc.html#cfn-ec2-subnetroutetableassociation-routetableid",

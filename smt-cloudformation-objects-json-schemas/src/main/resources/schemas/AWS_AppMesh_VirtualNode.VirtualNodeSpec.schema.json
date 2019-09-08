@@ -4,20 +4,20 @@
   "title" : "VirtualNodeVirtualNodeSpec",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-virtualnodespec.html",
   "type" : "object",
-  "javaType" : "aws.appmesh.VirtualNodeVirtualNodeSpec",
-  "javaInterfaces" : [ "aws.Property<VirtualNodeVirtualNodeSpec>" ],
+  "javaType" : "shiver.me.timbers.aws.appmesh.VirtualNodeVirtualNodeSpec",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<VirtualNodeVirtualNodeSpec>" ],
   "properties" : {
     "Logging" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-virtualnodespec.html#cfn-appmesh-virtualnode-virtualnodespec-logging",
       "$ref" : "AWS_AppMesh_VirtualNode.Logging.schema.json",
-      "javaType" : "aws.Property<aws.appmesh.VirtualNodeLogging>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appmesh.VirtualNodeLogging>"
     },
     "Backends" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-virtualnodespec.html#cfn-appmesh-virtualnode-virtualnodespec-backends",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_AppMesh_VirtualNode.Backend.schema.json",
-        "javaType" : "aws.Property<aws.appmesh.VirtualNodeBackend>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appmesh.VirtualNodeBackend>"
       }
     },
     "Listeners" : {
@@ -25,13 +25,13 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_AppMesh_VirtualNode.Listener.schema.json",
-        "javaType" : "aws.Property<aws.appmesh.VirtualNodeListener>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appmesh.VirtualNodeListener>"
       }
     },
     "ServiceDiscovery" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-virtualnodespec.html#cfn-appmesh-virtualnode-virtualnodespec-servicediscovery",
       "$ref" : "AWS_AppMesh_VirtualNode.ServiceDiscovery.schema.json",
-      "javaType" : "aws.Property<aws.appmesh.VirtualNodeServiceDiscovery>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appmesh.VirtualNodeServiceDiscovery>"
     }
   }
 }

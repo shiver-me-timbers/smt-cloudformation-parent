@@ -4,8 +4,8 @@
   "title" : "ProjectS3LogsConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-s3logsconfig.html",
   "type" : "object",
-  "javaType" : "aws.codebuild.ProjectS3LogsConfig",
-  "javaInterfaces" : [ "aws.Property<ProjectS3LogsConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.codebuild.ProjectS3LogsConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ProjectS3LogsConfig>" ],
   "properties" : {
     "Status" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-s3logsconfig.html#cfn-codebuild-project-s3logsconfig-status",

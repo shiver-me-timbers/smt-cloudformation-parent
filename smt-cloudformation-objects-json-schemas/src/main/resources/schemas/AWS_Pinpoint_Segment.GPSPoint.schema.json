@@ -4,8 +4,8 @@
   "title" : "SegmentGPSPoint",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-segmentdimensions-location-gpspoint.html",
   "type" : "object",
-  "javaType" : "aws.pinpoint.SegmentGPSPoint",
-  "javaInterfaces" : [ "aws.Property<SegmentGPSPoint>" ],
+  "javaType" : "shiver.me.timbers.aws.pinpoint.SegmentGPSPoint",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<SegmentGPSPoint>" ],
   "properties" : {
     "RangeInKilometers" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-segmentdimensions-location-gpspoint.html#cfn-pinpoint-segment-segmentdimensions-location-gpspoint-rangeinkilometers",
@@ -15,7 +15,7 @@
     "Coordinates" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-segmentdimensions-location-gpspoint.html#cfn-pinpoint-segment-segmentdimensions-location-gpspoint-coordinates",
       "$ref" : "AWS_Pinpoint_Segment.Coordinates.schema.json",
-      "javaType" : "aws.Property<aws.pinpoint.SegmentCoordinates>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpoint.SegmentCoordinates>"
     }
   }
 }

@@ -4,7 +4,7 @@
   "title" : "Alias",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-alias.html",
   "type" : "object",
-  "javaType" : "aws.lambda.Alias",
+  "javaType" : "shiver.me.timbers.aws.lambda.Alias",
   "properties" : {
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-alias.html#cfn-lambda-alias-description",
@@ -29,7 +29,7 @@
     "RoutingConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-alias.html#cfn-lambda-alias-routingconfig",
       "$ref" : "AWS_Lambda_Alias.AliasRoutingConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.lambda.AliasAliasRoutingConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.lambda.AliasAliasRoutingConfiguration>"
     }
   }
 }

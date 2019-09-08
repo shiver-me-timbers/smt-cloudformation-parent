@@ -4,8 +4,8 @@
   "title" : "DatasetDeltaTime",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-deltatime.html",
   "type" : "object",
-  "javaType" : "aws.iotanalytics.DatasetDeltaTime",
-  "javaInterfaces" : [ "aws.Property<DatasetDeltaTime>" ],
+  "javaType" : "shiver.me.timbers.aws.iotanalytics.DatasetDeltaTime",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DatasetDeltaTime>" ],
   "properties" : {
     "TimeExpression" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-deltatime.html#cfn-iotanalytics-dataset-deltatime-timeexpression",

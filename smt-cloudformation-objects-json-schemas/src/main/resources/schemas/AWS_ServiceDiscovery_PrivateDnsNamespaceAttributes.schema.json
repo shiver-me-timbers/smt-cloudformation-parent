@@ -4,5 +4,5 @@
   "title" : "PrivateDnsNamespaceAttributes",
   "type" : "string",
   "enum" : [ "Id", "Arn" ],
-  "javaType" : "aws.servicediscovery.PrivateDnsNamespaceAttributes"
+  "javaType" : "shiver.me.timbers.aws.servicediscovery.PrivateDnsNamespaceAttributes"
 }

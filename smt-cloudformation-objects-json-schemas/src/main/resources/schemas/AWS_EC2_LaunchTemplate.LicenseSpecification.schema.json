@@ -4,8 +4,8 @@
   "title" : "LaunchTemplateLicenseSpecification",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-licensespecification.html",
   "type" : "object",
-  "javaType" : "aws.ec2.LaunchTemplateLicenseSpecification",
-  "javaInterfaces" : [ "aws.Property<LaunchTemplateLicenseSpecification>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.LaunchTemplateLicenseSpecification",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<LaunchTemplateLicenseSpecification>" ],
   "properties" : {
     "LicenseConfigurationArn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-licensespecification.html#cfn-ec2-launchtemplate-licensespecification-licenseconfigurationarn",

@@ -4,12 +4,12 @@
   "title" : "Repository",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html",
   "type" : "object",
-  "javaType" : "aws.ecr.Repository",
+  "javaType" : "shiver.me.timbers.aws.ecr.Repository",
   "properties" : {
     "LifecyclePolicy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html#cfn-ecr-repository-lifecyclepolicy",
       "$ref" : "AWS_ECR_Repository.LifecyclePolicy.schema.json",
-      "javaType" : "aws.Property<aws.ecr.RepositoryLifecyclePolicy>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecr.RepositoryLifecyclePolicy>"
     },
     "RepositoryName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html#cfn-ecr-repository-repositoryname",
@@ -26,7 +26,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     }
   }

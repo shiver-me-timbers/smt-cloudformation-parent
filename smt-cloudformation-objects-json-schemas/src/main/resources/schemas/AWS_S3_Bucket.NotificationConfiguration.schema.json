@@ -4,8 +4,8 @@
   "title" : "BucketNotificationConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig.html",
   "type" : "object",
-  "javaType" : "aws.s3.BucketNotificationConfiguration",
-  "javaInterfaces" : [ "aws.Property<BucketNotificationConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.s3.BucketNotificationConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BucketNotificationConfiguration>" ],
   "properties" : {
     "LambdaConfigurations" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig.html#cfn-s3-bucket-notificationconfig-lambdaconfig",
@@ -13,7 +13,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_S3_Bucket.LambdaConfiguration.schema.json",
-        "javaType" : "aws.Property<aws.s3.BucketLambdaConfiguration>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.BucketLambdaConfiguration>"
       }
     },
     "QueueConfigurations" : {
@@ -22,7 +22,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_S3_Bucket.QueueConfiguration.schema.json",
-        "javaType" : "aws.Property<aws.s3.BucketQueueConfiguration>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.BucketQueueConfiguration>"
       }
     },
     "TopicConfigurations" : {
@@ -31,7 +31,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_S3_Bucket.TopicConfiguration.schema.json",
-        "javaType" : "aws.Property<aws.s3.BucketTopicConfiguration>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.BucketTopicConfiguration>"
       }
     }
   }

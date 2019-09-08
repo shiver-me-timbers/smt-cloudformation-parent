@@ -4,7 +4,7 @@
   "title" : "Campaign",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html",
   "type" : "object",
-  "javaType" : "aws.pinpoint.Campaign",
+  "javaType" : "shiver.me.timbers.aws.pinpoint.Campaign",
   "properties" : {
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html#cfn-pinpoint-campaign-description",
@@ -26,7 +26,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Pinpoint_Campaign.WriteTreatmentResource.schema.json",
-        "javaType" : "aws.Property<aws.pinpoint.CampaignWriteTreatmentResource>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpoint.CampaignWriteTreatmentResource>"
       }
     },
     "Name" : {
@@ -47,12 +47,12 @@
     "MessageConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html#cfn-pinpoint-campaign-messageconfiguration",
       "$ref" : "AWS_Pinpoint_Campaign.MessageConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.pinpoint.CampaignMessageConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpoint.CampaignMessageConfiguration>"
     },
     "Limits" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html#cfn-pinpoint-campaign-limits",
       "$ref" : "AWS_Pinpoint_Campaign.Limits.schema.json",
-      "javaType" : "aws.Property<aws.pinpoint.CampaignLimits>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpoint.CampaignLimits>"
     },
     "HoldoutPercent" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html#cfn-pinpoint-campaign-holdoutpercent",
@@ -62,7 +62,7 @@
     "Schedule" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html#cfn-pinpoint-campaign-schedule",
       "$ref" : "AWS_Pinpoint_Campaign.Schedule.schema.json",
-      "javaType" : "aws.Property<aws.pinpoint.CampaignSchedule>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpoint.CampaignSchedule>"
     },
     "ApplicationId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html#cfn-pinpoint-campaign-applicationid",
@@ -72,7 +72,7 @@
     "CampaignHook" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html#cfn-pinpoint-campaign-campaignhook",
       "$ref" : "AWS_Pinpoint_Campaign.CampaignHook.schema.json",
-      "javaType" : "aws.Property<aws.pinpoint.CampaignCampaignHook>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpoint.CampaignCampaignHook>"
     },
     "TreatmentName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html#cfn-pinpoint-campaign-treatmentname",

@@ -4,8 +4,8 @@
   "title" : "TemplateTemplate",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html",
   "type" : "object",
-  "javaType" : "aws.ses.TemplateTemplate",
-  "javaInterfaces" : [ "aws.Property<TemplateTemplate>" ],
+  "javaType" : "shiver.me.timbers.aws.ses.TemplateTemplate",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TemplateTemplate>" ],
   "properties" : {
     "HtmlPart" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-htmlpart",

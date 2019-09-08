@@ -4,5 +4,5 @@
   "title" : "RestApiAttributes",
   "type" : "string",
   "enum" : [ "RootResourceId" ],
-  "javaType" : "aws.apigateway.RestApiAttributes"
+  "javaType" : "shiver.me.timbers.aws.apigateway.RestApiAttributes"
 }

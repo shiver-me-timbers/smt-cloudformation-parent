@@ -4,8 +4,8 @@
   "title" : "MLTransformTransformParameters",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-mltransform-transformparameters.html",
   "type" : "object",
-  "javaType" : "aws.glue.MLTransformTransformParameters",
-  "javaInterfaces" : [ "aws.Property<MLTransformTransformParameters>" ],
+  "javaType" : "shiver.me.timbers.aws.glue.MLTransformTransformParameters",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<MLTransformTransformParameters>" ],
   "properties" : {
     "TransformType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-mltransform-transformparameters.html#cfn-glue-mltransform-transformparameters-transformtype",
@@ -15,7 +15,7 @@
     "FindMatchesParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-mltransform-transformparameters.html#cfn-glue-mltransform-transformparameters-findmatchesparameters",
       "$ref" : "AWS_Glue_MLTransform.FindMatchesParameters.schema.json",
-      "javaType" : "aws.Property<aws.glue.MLTransformFindMatchesParameters>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.glue.MLTransformFindMatchesParameters>"
     }
   }
 }

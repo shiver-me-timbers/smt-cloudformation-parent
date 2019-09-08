@@ -4,5 +4,5 @@
   "title" : "UserAttributes",
   "type" : "string",
   "enum" : [ "Arn" ],
-  "javaType" : "aws.iam.UserAttributes"
+  "javaType" : "shiver.me.timbers.aws.iam.UserAttributes"
 }

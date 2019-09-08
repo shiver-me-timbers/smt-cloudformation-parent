@@ -4,8 +4,8 @@
   "title" : "PartitionSerdeInfo",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-serdeinfo.html",
   "type" : "object",
-  "javaType" : "aws.glue.PartitionSerdeInfo",
-  "javaInterfaces" : [ "aws.Property<PartitionSerdeInfo>" ],
+  "javaType" : "shiver.me.timbers.aws.glue.PartitionSerdeInfo",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<PartitionSerdeInfo>" ],
   "properties" : {
     "Parameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-serdeinfo.html#cfn-glue-partition-serdeinfo-parameters",

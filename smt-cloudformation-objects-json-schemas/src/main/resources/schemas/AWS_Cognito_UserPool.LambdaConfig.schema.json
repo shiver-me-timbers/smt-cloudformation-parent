@@ -4,8 +4,8 @@
   "title" : "UserPoolLambdaConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html",
   "type" : "object",
-  "javaType" : "aws.cognito.UserPoolLambdaConfig",
-  "javaInterfaces" : [ "aws.Property<UserPoolLambdaConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.cognito.UserPoolLambdaConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<UserPoolLambdaConfig>" ],
   "properties" : {
     "CreateAuthChallenge" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-createauthchallenge",

@@ -4,8 +4,8 @@
   "title" : "PatchBaselinePatchSource",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchsource.html",
   "type" : "object",
-  "javaType" : "aws.ssm.PatchBaselinePatchSource",
-  "javaInterfaces" : [ "aws.Property<PatchBaselinePatchSource>" ],
+  "javaType" : "shiver.me.timbers.aws.ssm.PatchBaselinePatchSource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<PatchBaselinePatchSource>" ],
   "properties" : {
     "Products" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchsource.html#cfn-ssm-patchbaseline-patchsource-products",

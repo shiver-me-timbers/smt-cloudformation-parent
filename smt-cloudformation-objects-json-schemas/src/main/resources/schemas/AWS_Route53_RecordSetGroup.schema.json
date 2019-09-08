@@ -4,7 +4,7 @@
   "title" : "RecordSetGroup",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html",
   "type" : "object",
-  "javaType" : "aws.route53.RecordSetGroup",
+  "javaType" : "shiver.me.timbers.aws.route53.RecordSetGroup",
   "properties" : {
     "Comment" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html#cfn-route53-recordsetgroup-comment",
@@ -27,7 +27,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_Route53_RecordSetGroup.RecordSet.schema.json",
-        "javaType" : "aws.Property<aws.route53.RecordSetGroupRecordSet>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.route53.RecordSetGroupRecordSet>"
       }
     }
   }

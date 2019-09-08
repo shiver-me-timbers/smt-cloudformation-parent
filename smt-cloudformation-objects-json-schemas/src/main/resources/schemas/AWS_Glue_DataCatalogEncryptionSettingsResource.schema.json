@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.glue.DataCatalogEncryptionSettingsResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<DataCatalogEncryptionSettingsResource>", "aws.HasCondition<DataCatalogEncryptionSettingsResource>" ],
+  "javaType" : "shiver.me.timbers.aws.glue.DataCatalogEncryptionSettingsResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<DataCatalogEncryptionSettingsResource>", "shiver.me.timbers.aws.HasCondition<DataCatalogEncryptionSettingsResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

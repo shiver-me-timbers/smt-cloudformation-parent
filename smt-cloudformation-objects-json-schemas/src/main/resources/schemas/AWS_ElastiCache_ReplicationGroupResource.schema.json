@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.elasticache.ReplicationGroupResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ReplicationGroupResource>", "aws.HasCondition<ReplicationGroupResource>", "aws.HasAttributes<ReplicationGroupAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.elasticache.ReplicationGroupResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ReplicationGroupResource>", "shiver.me.timbers.aws.HasCondition<ReplicationGroupResource>", "shiver.me.timbers.aws.HasAttributes<ReplicationGroupAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.SecurityGroupIngressResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<SecurityGroupIngressResource>", "aws.HasCondition<SecurityGroupIngressResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.SecurityGroupIngressResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<SecurityGroupIngressResource>", "shiver.me.timbers.aws.HasCondition<SecurityGroupIngressResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

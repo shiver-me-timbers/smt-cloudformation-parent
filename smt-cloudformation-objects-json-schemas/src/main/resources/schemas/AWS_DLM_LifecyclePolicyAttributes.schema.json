@@ -4,5 +4,5 @@
   "title" : "LifecyclePolicyAttributes",
   "type" : "string",
   "enum" : [ "Arn" ],
-  "javaType" : "aws.dlm.LifecyclePolicyAttributes"
+  "javaType" : "shiver.me.timbers.aws.dlm.LifecyclePolicyAttributes"
 }

@@ -4,8 +4,8 @@
   "title" : "FileSystemElasticFileSystemTag",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-efs-filesystem-filesystemtags.html",
   "type" : "object",
-  "javaType" : "aws.efs.FileSystemElasticFileSystemTag",
-  "javaInterfaces" : [ "aws.Property<FileSystemElasticFileSystemTag>" ],
+  "javaType" : "shiver.me.timbers.aws.efs.FileSystemElasticFileSystemTag",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<FileSystemElasticFileSystemTag>" ],
   "properties" : {
     "Key" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-efs-filesystem-filesystemtags.html#cfn-efs-filesystem-filesystemtags-key",

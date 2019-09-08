@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.sns.TopicResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<TopicResource>", "aws.HasCondition<TopicResource>", "aws.HasAttributes<TopicAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.sns.TopicResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<TopicResource>", "shiver.me.timbers.aws.HasCondition<TopicResource>", "shiver.me.timbers.aws.HasAttributes<TopicAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -4,7 +4,7 @@
   "title" : "DBCluster",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html",
   "type" : "object",
-  "javaType" : "aws.rds.DBCluster",
+  "javaType" : "shiver.me.timbers.aws.rds.DBCluster",
   "properties" : {
     "AssociatedRoles" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-associatedroles",
@@ -12,7 +12,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_RDS_DBCluster.DBClusterRole.schema.json",
-        "javaType" : "aws.Property<aws.rds.DBClusterDBClusterRole>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.rds.DBClusterDBClusterRole>"
       }
     },
     "AvailabilityZones" : {
@@ -131,7 +131,7 @@
     "ScalingConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-scalingconfiguration",
       "$ref" : "AWS_RDS_DBCluster.ScalingConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.rds.DBClusterScalingConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.rds.DBClusterScalingConfiguration>"
     },
     "SnapshotIdentifier" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-snapshotidentifier",
@@ -158,7 +158,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     },
     "UseLatestRestorableTime" : {

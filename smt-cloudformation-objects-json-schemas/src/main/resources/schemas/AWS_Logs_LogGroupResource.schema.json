@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.logs.LogGroupResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<LogGroupResource>", "aws.HasCondition<LogGroupResource>", "aws.HasAttributes<LogGroupAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.logs.LogGroupResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<LogGroupResource>", "shiver.me.timbers.aws.HasCondition<LogGroupResource>", "shiver.me.timbers.aws.HasAttributes<LogGroupAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

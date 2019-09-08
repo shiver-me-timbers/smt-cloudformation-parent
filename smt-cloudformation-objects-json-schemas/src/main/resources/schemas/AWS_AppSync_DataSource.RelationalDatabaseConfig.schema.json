@@ -4,13 +4,13 @@
   "title" : "DataSourceRelationalDatabaseConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-relationaldatabaseconfig.html",
   "type" : "object",
-  "javaType" : "aws.appsync.DataSourceRelationalDatabaseConfig",
-  "javaInterfaces" : [ "aws.Property<DataSourceRelationalDatabaseConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.appsync.DataSourceRelationalDatabaseConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DataSourceRelationalDatabaseConfig>" ],
   "properties" : {
     "RdsHttpEndpointConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-relationaldatabaseconfig.html#cfn-appsync-datasource-relationaldatabaseconfig-rdshttpendpointconfig",
       "$ref" : "AWS_AppSync_DataSource.RdsHttpEndpointConfig.schema.json",
-      "javaType" : "aws.Property<aws.appsync.DataSourceRdsHttpEndpointConfig>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appsync.DataSourceRdsHttpEndpointConfig>"
     },
     "RelationalDatabaseSourceType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-relationaldatabaseconfig.html#cfn-appsync-datasource-relationaldatabaseconfig-relationaldatabasesourcetype",

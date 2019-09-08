@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.NetworkAclEntryResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<NetworkAclEntryResource>", "aws.HasCondition<NetworkAclEntryResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.NetworkAclEntryResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<NetworkAclEntryResource>", "shiver.me.timbers.aws.HasCondition<NetworkAclEntryResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

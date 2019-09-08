@@ -4,8 +4,8 @@
   "title" : "InstanceCpuOptions",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-cpuoptions.html",
   "type" : "object",
-  "javaType" : "aws.ec2.InstanceCpuOptions",
-  "javaInterfaces" : [ "aws.Property<InstanceCpuOptions>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.InstanceCpuOptions",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<InstanceCpuOptions>" ],
   "properties" : {
     "CoreCount" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-cpuoptions.html#cfn-ec2-instance-cpuoptions-corecount",

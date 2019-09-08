@@ -4,7 +4,7 @@
   "title" : "TaskDefinition",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html",
   "type" : "object",
-  "javaType" : "aws.ecs.TaskDefinition",
+  "javaType" : "shiver.me.timbers.aws.ecs.TaskDefinition",
   "properties" : {
     "ContainerDefinitions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-containerdefinitions",
@@ -12,7 +12,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ECS_TaskDefinition.ContainerDefinition.schema.json",
-        "javaType" : "aws.Property<aws.ecs.TaskDefinitionContainerDefinition>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecs.TaskDefinitionContainerDefinition>"
       }
     },
     "Cpu" : {
@@ -56,13 +56,13 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ECS_TaskDefinition.TaskDefinitionPlacementConstraint.schema.json",
-        "javaType" : "aws.Property<aws.ecs.TaskDefinitionTaskDefinitionPlacementConstraint>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecs.TaskDefinitionTaskDefinitionPlacementConstraint>"
       }
     },
     "ProxyConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-proxyconfiguration",
       "$ref" : "AWS_ECS_TaskDefinition.ProxyConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.ecs.TaskDefinitionProxyConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecs.TaskDefinitionProxyConfiguration>"
     },
     "RequiresCompatibilities" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-requirescompatibilities",
@@ -78,7 +78,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     },
     "TaskRoleArn" : {
@@ -92,7 +92,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ECS_TaskDefinition.Volume.schema.json",
-        "javaType" : "aws.Property<aws.ecs.TaskDefinitionVolume>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecs.TaskDefinitionVolume>"
       }
     }
   }

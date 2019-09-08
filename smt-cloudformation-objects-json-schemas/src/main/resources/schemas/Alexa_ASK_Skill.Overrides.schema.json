@@ -4,8 +4,8 @@
   "title" : "SkillOverrides",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ask-skill-overrides.html",
   "type" : "object",
-  "javaType" : "alexa.ask.SkillOverrides",
-  "javaInterfaces" : [ "aws.Property<SkillOverrides>" ],
+  "javaType" : "shiver.me.timbers.alexa.ask.SkillOverrides",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<SkillOverrides>" ],
   "properties" : {
     "Manifest" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ask-skill-overrides.html#cfn-ask-skill-overrides-manifest",

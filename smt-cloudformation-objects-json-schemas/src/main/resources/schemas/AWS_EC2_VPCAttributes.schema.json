@@ -4,5 +4,5 @@
   "title" : "VPCAttributes",
   "type" : "string",
   "enum" : [ "CidrBlock", "CidrBlockAssociations", "DefaultNetworkAcl", "DefaultSecurityGroup", "Ipv6CidrBlocks" ],
-  "javaType" : "aws.ec2.VPCAttributes"
+  "javaType" : "shiver.me.timbers.aws.ec2.VPCAttributes"
 }

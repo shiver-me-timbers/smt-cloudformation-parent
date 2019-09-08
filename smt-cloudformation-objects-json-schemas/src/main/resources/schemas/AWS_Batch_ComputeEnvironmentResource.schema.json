@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.batch.ComputeEnvironmentResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ComputeEnvironmentResource>", "aws.HasCondition<ComputeEnvironmentResource>" ],
+  "javaType" : "shiver.me.timbers.aws.batch.ComputeEnvironmentResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ComputeEnvironmentResource>", "shiver.me.timbers.aws.HasCondition<ComputeEnvironmentResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

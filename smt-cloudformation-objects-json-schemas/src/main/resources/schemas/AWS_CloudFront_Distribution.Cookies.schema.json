@@ -4,8 +4,8 @@
   "title" : "DistributionCookies",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cookies.html",
   "type" : "object",
-  "javaType" : "aws.cloudfront.DistributionCookies",
-  "javaInterfaces" : [ "aws.Property<DistributionCookies>" ],
+  "javaType" : "shiver.me.timbers.aws.cloudfront.DistributionCookies",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DistributionCookies>" ],
   "properties" : {
     "WhitelistedNames" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cookies.html#cfn-cloudfront-distribution-cookies-whitelistednames",

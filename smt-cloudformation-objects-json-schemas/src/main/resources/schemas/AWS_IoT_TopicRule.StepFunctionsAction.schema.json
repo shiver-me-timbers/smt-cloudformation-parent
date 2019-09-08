@@ -4,8 +4,8 @@
   "title" : "TopicRuleStepFunctionsAction",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-stepfunctionsaction.html",
   "type" : "object",
-  "javaType" : "aws.iot.TopicRuleStepFunctionsAction",
-  "javaInterfaces" : [ "aws.Property<TopicRuleStepFunctionsAction>" ],
+  "javaType" : "shiver.me.timbers.aws.iot.TopicRuleStepFunctionsAction",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TopicRuleStepFunctionsAction>" ],
   "properties" : {
     "ExecutionNamePrefix" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-stepfunctionsaction.html#cfn-iot-topicrule-stepfunctionsaction-executionnameprefix",

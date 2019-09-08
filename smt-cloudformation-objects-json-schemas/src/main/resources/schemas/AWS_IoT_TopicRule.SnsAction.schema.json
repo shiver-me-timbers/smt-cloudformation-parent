@@ -4,8 +4,8 @@
   "title" : "TopicRuleSnsAction",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-snsaction.html",
   "type" : "object",
-  "javaType" : "aws.iot.TopicRuleSnsAction",
-  "javaInterfaces" : [ "aws.Property<TopicRuleSnsAction>" ],
+  "javaType" : "shiver.me.timbers.aws.iot.TopicRuleSnsAction",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TopicRuleSnsAction>" ],
   "properties" : {
     "MessageFormat" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-snsaction.html#cfn-iot-topicrule-snsaction-messageformat",

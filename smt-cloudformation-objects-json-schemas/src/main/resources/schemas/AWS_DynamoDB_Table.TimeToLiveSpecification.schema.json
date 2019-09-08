@@ -4,8 +4,8 @@
   "title" : "TableTimeToLiveSpecification",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-timetolivespecification.html",
   "type" : "object",
-  "javaType" : "aws.dynamodb.TableTimeToLiveSpecification",
-  "javaInterfaces" : [ "aws.Property<TableTimeToLiveSpecification>" ],
+  "javaType" : "shiver.me.timbers.aws.dynamodb.TableTimeToLiveSpecification",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TableTimeToLiveSpecification>" ],
   "properties" : {
     "AttributeName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-timetolivespecification.html#cfn-dynamodb-timetolivespecification-attributename",

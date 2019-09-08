@@ -4,5 +4,5 @@
   "title" : "ResolverRuleAssociationAttributes",
   "type" : "string",
   "enum" : [ "VPCId", "ResolverRuleId", "ResolverRuleAssociationId", "Name" ],
-  "javaType" : "aws.route53resolver.ResolverRuleAssociationAttributes"
+  "javaType" : "shiver.me.timbers.aws.route53resolver.ResolverRuleAssociationAttributes"
 }

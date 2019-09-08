@@ -4,5 +4,5 @@
   "title" : "AlarmAttributes",
   "type" : "string",
   "enum" : [ "Arn" ],
-  "javaType" : "aws.cloudwatch.AlarmAttributes"
+  "javaType" : "shiver.me.timbers.aws.cloudwatch.AlarmAttributes"
 }

@@ -4,15 +4,15 @@
   "title" : "MLTransformInputRecordTables",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-mltransform-inputrecordtables.html",
   "type" : "object",
-  "javaType" : "aws.glue.MLTransformInputRecordTables",
-  "javaInterfaces" : [ "aws.Property<MLTransformInputRecordTables>" ],
+  "javaType" : "shiver.me.timbers.aws.glue.MLTransformInputRecordTables",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<MLTransformInputRecordTables>" ],
   "properties" : {
     "GlueTables" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-mltransform-inputrecordtables.html#cfn-glue-mltransform-inputrecordtables-gluetables",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Glue_MLTransform.GlueTables.schema.json",
-        "javaType" : "aws.Property<aws.glue.MLTransformGlueTables>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.glue.MLTransformGlueTables>"
       }
     }
   }

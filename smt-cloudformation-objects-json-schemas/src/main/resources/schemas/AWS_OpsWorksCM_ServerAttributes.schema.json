@@ -4,5 +4,5 @@
   "title" : "ServerAttributes",
   "type" : "string",
   "enum" : [ "Endpoint", "Arn" ],
-  "javaType" : "aws.opsworkscm.ServerAttributes"
+  "javaType" : "shiver.me.timbers.aws.opsworkscm.ServerAttributes"
 }

@@ -4,7 +4,7 @@
   "title" : "Endpoint",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html",
   "type" : "object",
-  "javaType" : "aws.sagemaker.Endpoint",
+  "javaType" : "shiver.me.timbers.aws.sagemaker.Endpoint",
   "properties" : {
     "EndpointName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html#cfn-sagemaker-endpoint-endpointname",
@@ -21,7 +21,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     }
   }

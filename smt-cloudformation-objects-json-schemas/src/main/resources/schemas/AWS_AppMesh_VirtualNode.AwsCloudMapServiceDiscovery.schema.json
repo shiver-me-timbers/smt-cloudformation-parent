@@ -4,8 +4,8 @@
   "title" : "VirtualNodeAwsCloudMapServiceDiscovery",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-awscloudmapservicediscovery.html",
   "type" : "object",
-  "javaType" : "aws.appmesh.VirtualNodeAwsCloudMapServiceDiscovery",
-  "javaInterfaces" : [ "aws.Property<VirtualNodeAwsCloudMapServiceDiscovery>" ],
+  "javaType" : "shiver.me.timbers.aws.appmesh.VirtualNodeAwsCloudMapServiceDiscovery",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<VirtualNodeAwsCloudMapServiceDiscovery>" ],
   "properties" : {
     "NamespaceName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-awscloudmapservicediscovery.html#cfn-appmesh-virtualnode-awscloudmapservicediscovery-namespacename",
@@ -22,7 +22,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_AppMesh_VirtualNode.AwsCloudMapInstanceAttribute.schema.json",
-        "javaType" : "aws.Property<aws.appmesh.VirtualNodeAwsCloudMapInstanceAttribute>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appmesh.VirtualNodeAwsCloudMapInstanceAttribute>"
       }
     }
   }

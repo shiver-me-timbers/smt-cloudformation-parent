@@ -4,8 +4,8 @@
   "title" : "ChannelRetentionPeriod",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-channel-retentionperiod.html",
   "type" : "object",
-  "javaType" : "aws.iotanalytics.ChannelRetentionPeriod",
-  "javaInterfaces" : [ "aws.Property<ChannelRetentionPeriod>" ],
+  "javaType" : "shiver.me.timbers.aws.iotanalytics.ChannelRetentionPeriod",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ChannelRetentionPeriod>" ],
   "properties" : {
     "NumberOfDays" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-channel-retentionperiod.html#cfn-iotanalytics-channel-retentionperiod-numberofdays",

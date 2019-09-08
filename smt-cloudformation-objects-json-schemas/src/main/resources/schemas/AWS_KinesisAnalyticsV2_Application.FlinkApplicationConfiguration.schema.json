@@ -4,23 +4,23 @@
   "title" : "ApplicationFlinkApplicationConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-flinkapplicationconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.kinesisanalyticsv2.ApplicationFlinkApplicationConfiguration",
-  "javaInterfaces" : [ "aws.Property<ApplicationFlinkApplicationConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationFlinkApplicationConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ApplicationFlinkApplicationConfiguration>" ],
   "properties" : {
     "CheckpointConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-flinkapplicationconfiguration.html#cfn-kinesisanalyticsv2-application-flinkapplicationconfiguration-checkpointconfiguration",
       "$ref" : "AWS_KinesisAnalyticsV2_Application.CheckpointConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.kinesisanalyticsv2.ApplicationCheckpointConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationCheckpointConfiguration>"
     },
     "ParallelismConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-flinkapplicationconfiguration.html#cfn-kinesisanalyticsv2-application-flinkapplicationconfiguration-parallelismconfiguration",
       "$ref" : "AWS_KinesisAnalyticsV2_Application.ParallelismConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.kinesisanalyticsv2.ApplicationParallelismConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationParallelismConfiguration>"
     },
     "MonitoringConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-flinkapplicationconfiguration.html#cfn-kinesisanalyticsv2-application-flinkapplicationconfiguration-monitoringconfiguration",
       "$ref" : "AWS_KinesisAnalyticsV2_Application.MonitoringConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.kinesisanalyticsv2.ApplicationMonitoringConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationMonitoringConfiguration>"
     }
   }
 }

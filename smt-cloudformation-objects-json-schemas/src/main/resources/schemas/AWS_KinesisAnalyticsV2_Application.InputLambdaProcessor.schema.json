@@ -4,8 +4,8 @@
   "title" : "ApplicationInputLambdaProcessor",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-inputlambdaprocessor.html",
   "type" : "object",
-  "javaType" : "aws.kinesisanalyticsv2.ApplicationInputLambdaProcessor",
-  "javaInterfaces" : [ "aws.Property<ApplicationInputLambdaProcessor>" ],
+  "javaType" : "shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationInputLambdaProcessor",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ApplicationInputLambdaProcessor>" ],
   "properties" : {
     "ResourceARN" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-inputlambdaprocessor.html#cfn-kinesisanalyticsv2-application-inputlambdaprocessor-resourcearn",

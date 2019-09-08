@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.iot.CertificateResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<CertificateResource>", "aws.HasCondition<CertificateResource>", "aws.HasAttributes<CertificateAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.iot.CertificateResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<CertificateResource>", "shiver.me.timbers.aws.HasCondition<CertificateResource>", "shiver.me.timbers.aws.HasAttributes<CertificateAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

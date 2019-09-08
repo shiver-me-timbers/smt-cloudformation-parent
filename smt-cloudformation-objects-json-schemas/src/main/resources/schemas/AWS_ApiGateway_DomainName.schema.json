@@ -4,7 +4,7 @@
   "title" : "DomainName",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html",
   "type" : "object",
-  "javaType" : "aws.apigateway.DomainName",
+  "javaType" : "shiver.me.timbers.aws.apigateway.DomainName",
   "properties" : {
     "CertificateArn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-certificatearn",
@@ -19,7 +19,7 @@
     "EndpointConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-endpointconfiguration",
       "$ref" : "AWS_ApiGateway_DomainName.EndpointConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.apigateway.DomainNameEndpointConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.apigateway.DomainNameEndpointConfiguration>"
     },
     "RegionalCertificateArn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-regionalcertificatearn",

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.config.ConfigurationRecorderResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ConfigurationRecorderResource>", "aws.HasCondition<ConfigurationRecorderResource>" ],
+  "javaType" : "shiver.me.timbers.aws.config.ConfigurationRecorderResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ConfigurationRecorderResource>", "shiver.me.timbers.aws.HasCondition<ConfigurationRecorderResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

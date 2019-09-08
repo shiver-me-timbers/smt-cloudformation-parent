@@ -4,5 +4,5 @@
   "title" : "ReplicationGroupAttributes",
   "type" : "string",
   "enum" : [ "ConfigurationEndPoint.Address", "ConfigurationEndPoint.Port", "PrimaryEndPoint.Address", "PrimaryEndPoint.Port", "ReadEndPoint.Addresses", "ReadEndPoint.Addresses.List", "ReadEndPoint.Ports", "ReadEndPoint.Ports.List" ],
-  "javaType" : "aws.elasticache.ReplicationGroupAttributes"
+  "javaType" : "shiver.me.timbers.aws.elasticache.ReplicationGroupAttributes"
 }

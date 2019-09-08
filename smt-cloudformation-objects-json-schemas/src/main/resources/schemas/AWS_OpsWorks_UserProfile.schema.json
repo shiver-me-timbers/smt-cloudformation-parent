@@ -4,7 +4,7 @@
   "title" : "UserProfile",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-userprofile.html",
   "type" : "object",
-  "javaType" : "aws.opsworks.UserProfile",
+  "javaType" : "shiver.me.timbers.aws.opsworks.UserProfile",
   "properties" : {
     "AllowSelfManagement" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-userprofile.html#cfn-opsworks-userprofile-allowselfmanagement",

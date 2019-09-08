@@ -4,5 +4,5 @@
   "title" : "ConfigRuleAttributes",
   "type" : "string",
   "enum" : [ "Arn", "Compliance.Type", "ConfigRuleId" ],
-  "javaType" : "aws.config.ConfigRuleAttributes"
+  "javaType" : "shiver.me.timbers.aws.config.ConfigRuleAttributes"
 }

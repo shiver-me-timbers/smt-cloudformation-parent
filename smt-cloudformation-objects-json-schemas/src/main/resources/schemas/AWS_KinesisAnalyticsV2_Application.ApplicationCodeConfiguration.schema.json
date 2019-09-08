@@ -4,8 +4,8 @@
   "title" : "ApplicationApplicationCodeConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-applicationcodeconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.kinesisanalyticsv2.ApplicationApplicationCodeConfiguration",
-  "javaInterfaces" : [ "aws.Property<ApplicationApplicationCodeConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationApplicationCodeConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ApplicationApplicationCodeConfiguration>" ],
   "properties" : {
     "CodeContentType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-applicationcodeconfiguration.html#cfn-kinesisanalyticsv2-application-applicationcodeconfiguration-codecontenttype",
@@ -15,7 +15,7 @@
     "CodeContent" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-applicationcodeconfiguration.html#cfn-kinesisanalyticsv2-application-applicationcodeconfiguration-codecontent",
       "$ref" : "AWS_KinesisAnalyticsV2_Application.CodeContent.schema.json",
-      "javaType" : "aws.Property<aws.kinesisanalyticsv2.ApplicationCodeContent>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationCodeContent>"
     }
   }
 }

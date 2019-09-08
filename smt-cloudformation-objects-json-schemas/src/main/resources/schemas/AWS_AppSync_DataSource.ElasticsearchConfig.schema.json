@@ -4,8 +4,8 @@
   "title" : "DataSourceElasticsearchConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-elasticsearchconfig.html",
   "type" : "object",
-  "javaType" : "aws.appsync.DataSourceElasticsearchConfig",
-  "javaInterfaces" : [ "aws.Property<DataSourceElasticsearchConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.appsync.DataSourceElasticsearchConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DataSourceElasticsearchConfig>" ],
   "properties" : {
     "AwsRegion" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-elasticsearchconfig.html#cfn-appsync-datasource-elasticsearchconfig-awsregion",

@@ -4,5 +4,5 @@
   "title" : "DomainNameAttributes",
   "type" : "string",
   "enum" : [ "DistributionDomainName", "DistributionHostedZoneId", "RegionalDomainName", "RegionalHostedZoneId" ],
-  "javaType" : "aws.apigateway.DomainNameAttributes"
+  "javaType" : "shiver.me.timbers.aws.apigateway.DomainNameAttributes"
 }

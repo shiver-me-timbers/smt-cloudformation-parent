@@ -4,12 +4,12 @@
   "title" : "EventBusPolicy",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-eventbuspolicy.html",
   "type" : "object",
-  "javaType" : "aws.events.EventBusPolicy",
+  "javaType" : "shiver.me.timbers.aws.events.EventBusPolicy",
   "properties" : {
     "Condition" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-eventbuspolicy.html#cfn-events-eventbuspolicy-condition",
       "$ref" : "AWS_Events_EventBusPolicy.Condition.schema.json",
-      "javaType" : "aws.Property<aws.events.EventBusPolicyCondition>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.events.EventBusPolicyCondition>"
     },
     "Action" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-eventbuspolicy.html#cfn-events-eventbuspolicy-action",

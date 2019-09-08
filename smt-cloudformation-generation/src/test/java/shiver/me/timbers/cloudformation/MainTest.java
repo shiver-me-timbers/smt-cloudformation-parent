@@ -65,7 +65,7 @@ public class MainTest {
         given(objectMapper.readValue(specStream, CloudFormationResourceSpecification.class)).willReturn(specification);
         given(objectMapper.readValue(typeStream, Map.class)).willReturn(typeMap);
         given(specification.getPropertyTypes()).willReturn(cloudformationTypes);
-        given(CloudformationSpecTransformer.instance("aws", typeMap, cloudformationTypes))
+        given(CloudformationSpecTransformer.instance("shiver.me.timbers", "aws", typeMap, cloudformationTypes))
             .willReturn(transformer);
         given(transformer.transform(specification)).willReturn(jsonSchemas);
         given(FileNames.instance()).willReturn(fileNames);

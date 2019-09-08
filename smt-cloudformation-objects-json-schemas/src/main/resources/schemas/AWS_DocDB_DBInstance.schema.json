@@ -4,7 +4,7 @@
   "title" : "DBInstance",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbinstance.html",
   "type" : "object",
-  "javaType" : "aws.docdb.DBInstance",
+  "javaType" : "shiver.me.timbers.aws.docdb.DBInstance",
   "properties" : {
     "DBInstanceClass" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbinstance.html#cfn-docdb-dbinstance-dbinstanceclass",
@@ -41,7 +41,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     }
   }

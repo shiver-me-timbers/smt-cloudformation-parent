@@ -4,8 +4,8 @@
   "title" : "LaunchTemplateIamInstanceProfile",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-iaminstanceprofile.html",
   "type" : "object",
-  "javaType" : "aws.ec2.LaunchTemplateIamInstanceProfile",
-  "javaInterfaces" : [ "aws.Property<LaunchTemplateIamInstanceProfile>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.LaunchTemplateIamInstanceProfile",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<LaunchTemplateIamInstanceProfile>" ],
   "properties" : {
     "Arn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-iaminstanceprofile.html#cfn-ec2-launchtemplate-launchtemplatedata-iaminstanceprofile-arn",

@@ -4,12 +4,12 @@
   "title" : "Template",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-template.html",
   "type" : "object",
-  "javaType" : "aws.ses.Template",
+  "javaType" : "shiver.me.timbers.aws.ses.Template",
   "properties" : {
     "Template" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-template.html#cfn-ses-template-template",
       "$ref" : "AWS_SES_Template.Template.schema.json",
-      "javaType" : "aws.Property<aws.ses.TemplateTemplate>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ses.TemplateTemplate>"
     }
   }
 }

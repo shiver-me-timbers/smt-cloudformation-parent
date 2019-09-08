@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.lambda.EventSourceMappingResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<EventSourceMappingResource>", "aws.HasCondition<EventSourceMappingResource>" ],
+  "javaType" : "shiver.me.timbers.aws.lambda.EventSourceMappingResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<EventSourceMappingResource>", "shiver.me.timbers.aws.HasCondition<EventSourceMappingResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

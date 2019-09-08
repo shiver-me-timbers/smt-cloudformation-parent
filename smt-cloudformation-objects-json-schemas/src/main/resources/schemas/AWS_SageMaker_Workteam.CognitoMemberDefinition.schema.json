@@ -4,8 +4,8 @@
   "title" : "WorkteamCognitoMemberDefinition",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-workteam-cognitomemberdefinition.html",
   "type" : "object",
-  "javaType" : "aws.sagemaker.WorkteamCognitoMemberDefinition",
-  "javaInterfaces" : [ "aws.Property<WorkteamCognitoMemberDefinition>" ],
+  "javaType" : "shiver.me.timbers.aws.sagemaker.WorkteamCognitoMemberDefinition",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<WorkteamCognitoMemberDefinition>" ],
   "properties" : {
     "CognitoUserPool" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-workteam-cognitomemberdefinition.html#cfn-sagemaker-workteam-cognitomemberdefinition-cognitouserpool",

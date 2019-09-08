@@ -4,8 +4,8 @@
   "title" : "ResourceDefinitionVersionGroupOwnerSetting",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-groupownersetting.html",
   "type" : "object",
-  "javaType" : "aws.greengrass.ResourceDefinitionVersionGroupOwnerSetting",
-  "javaInterfaces" : [ "aws.Property<ResourceDefinitionVersionGroupOwnerSetting>" ],
+  "javaType" : "shiver.me.timbers.aws.greengrass.ResourceDefinitionVersionGroupOwnerSetting",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ResourceDefinitionVersionGroupOwnerSetting>" ],
   "properties" : {
     "AutoAddGroupOwner" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-groupownersetting.html#cfn-greengrass-resourcedefinitionversion-groupownersetting-autoaddgroupowner",

@@ -4,8 +4,8 @@
   "title" : "DetectorModelResetTimer",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-resettimer.html",
   "type" : "object",
-  "javaType" : "aws.iotevents.DetectorModelResetTimer",
-  "javaInterfaces" : [ "aws.Property<DetectorModelResetTimer>" ],
+  "javaType" : "shiver.me.timbers.aws.iotevents.DetectorModelResetTimer",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DetectorModelResetTimer>" ],
   "properties" : {
     "TimerName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-resettimer.html#cfn-iotevents-detectormodel-resettimer-timername",

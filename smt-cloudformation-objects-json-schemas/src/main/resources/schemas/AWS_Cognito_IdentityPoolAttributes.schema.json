@@ -4,5 +4,5 @@
   "title" : "IdentityPoolAttributes",
   "type" : "string",
   "enum" : [ "Name" ],
-  "javaType" : "aws.cognito.IdentityPoolAttributes"
+  "javaType" : "shiver.me.timbers.aws.cognito.IdentityPoolAttributes"
 }

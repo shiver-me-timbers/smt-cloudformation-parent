@@ -4,5 +4,5 @@
   "title" : "UserPoolAttributes",
   "type" : "string",
   "enum" : [ "ProviderName", "ProviderURL", "Arn" ],
-  "javaType" : "aws.cognito.UserPoolAttributes"
+  "javaType" : "shiver.me.timbers.aws.cognito.UserPoolAttributes"
 }

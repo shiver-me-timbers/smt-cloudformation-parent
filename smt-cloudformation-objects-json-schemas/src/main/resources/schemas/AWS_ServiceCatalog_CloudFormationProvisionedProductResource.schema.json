@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.servicecatalog.CloudFormationProvisionedProductResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<CloudFormationProvisionedProductResource>", "aws.HasCondition<CloudFormationProvisionedProductResource>", "aws.HasAttributes<CloudFormationProvisionedProductAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.servicecatalog.CloudFormationProvisionedProductResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<CloudFormationProvisionedProductResource>", "shiver.me.timbers.aws.HasCondition<CloudFormationProvisionedProductResource>", "shiver.me.timbers.aws.HasAttributes<CloudFormationProvisionedProductAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

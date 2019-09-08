@@ -4,8 +4,8 @@
   "title" : "AppBasicAuthConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-basicauthconfig.html",
   "type" : "object",
-  "javaType" : "aws.amplify.AppBasicAuthConfig",
-  "javaInterfaces" : [ "aws.Property<AppBasicAuthConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.amplify.AppBasicAuthConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<AppBasicAuthConfig>" ],
   "properties" : {
     "Username" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-basicauthconfig.html#cfn-amplify-app-basicauthconfig-username",

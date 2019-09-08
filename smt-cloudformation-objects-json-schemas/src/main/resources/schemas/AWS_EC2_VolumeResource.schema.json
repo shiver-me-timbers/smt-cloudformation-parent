@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.VolumeResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<VolumeResource>", "aws.HasCondition<VolumeResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.VolumeResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<VolumeResource>", "shiver.me.timbers.aws.HasCondition<VolumeResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -4,8 +4,8 @@
   "title" : "RuleRunCommandParameters",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-runcommandparameters.html",
   "type" : "object",
-  "javaType" : "aws.events.RuleRunCommandParameters",
-  "javaInterfaces" : [ "aws.Property<RuleRunCommandParameters>" ],
+  "javaType" : "shiver.me.timbers.aws.events.RuleRunCommandParameters",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<RuleRunCommandParameters>" ],
   "properties" : {
     "RunCommandTargets" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-runcommandparameters.html#cfn-events-rule-runcommandparameters-runcommandtargets",
@@ -13,7 +13,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_Events_Rule.RunCommandTarget.schema.json",
-        "javaType" : "aws.Property<aws.events.RuleRunCommandTarget>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.events.RuleRunCommandTarget>"
       }
     }
   }

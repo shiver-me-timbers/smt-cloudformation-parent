@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.pinpointemail.DedicatedIpPoolResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<DedicatedIpPoolResource>", "aws.HasCondition<DedicatedIpPoolResource>" ],
+  "javaType" : "shiver.me.timbers.aws.pinpointemail.DedicatedIpPoolResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<DedicatedIpPoolResource>", "shiver.me.timbers.aws.HasCondition<DedicatedIpPoolResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

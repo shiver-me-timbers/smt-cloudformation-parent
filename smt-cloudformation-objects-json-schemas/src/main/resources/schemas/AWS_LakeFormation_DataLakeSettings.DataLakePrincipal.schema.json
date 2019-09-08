@@ -4,8 +4,8 @@
   "title" : "DataLakeSettingsDataLakePrincipal",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lakeformation-datalakesettings-datalakeprincipal.html",
   "type" : "object",
-  "javaType" : "aws.lakeformation.DataLakeSettingsDataLakePrincipal",
-  "javaInterfaces" : [ "aws.Property<DataLakeSettingsDataLakePrincipal>" ],
+  "javaType" : "shiver.me.timbers.aws.lakeformation.DataLakeSettingsDataLakePrincipal",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DataLakeSettingsDataLakePrincipal>" ],
   "properties" : {
     "DataLakePrincipalIdentifier" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lakeformation-datalakesettings-datalakeprincipal.html#cfn-lakeformation-datalakesettings-datalakeprincipal-datalakeprincipalidentifier",

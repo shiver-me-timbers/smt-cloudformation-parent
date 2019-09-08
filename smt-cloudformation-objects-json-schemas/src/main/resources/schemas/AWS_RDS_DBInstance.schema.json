@@ -4,7 +4,7 @@
   "title" : "DBInstance",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html",
   "type" : "object",
-  "javaType" : "aws.rds.DBInstance",
+  "javaType" : "shiver.me.timbers.aws.rds.DBInstance",
   "properties" : {
     "AllocatedStorage" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-allocatedstorage",
@@ -22,7 +22,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_RDS_DBInstance.DBInstanceRole.schema.json",
-        "javaType" : "aws.Property<aws.rds.DBInstanceDBInstanceRole>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.rds.DBInstanceDBInstanceRole>"
       }
     },
     "AutoMinorVersionUpgrade" : {
@@ -218,7 +218,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_RDS_DBInstance.ProcessorFeature.schema.json",
-        "javaType" : "aws.Property<aws.rds.DBInstanceProcessorFeature>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.rds.DBInstanceProcessorFeature>"
       }
     },
     "PromotionTier" : {
@@ -256,7 +256,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     },
     "Timezone" : {

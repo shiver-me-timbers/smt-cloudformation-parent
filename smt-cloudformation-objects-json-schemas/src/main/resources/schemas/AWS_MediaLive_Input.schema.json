@@ -4,7 +4,7 @@
   "title" : "Input",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-input.html",
   "type" : "object",
-  "javaType" : "aws.medialive.Input",
+  "javaType" : "shiver.me.timbers.aws.medialive.Input",
   "properties" : {
     "Type" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-input.html#cfn-medialive-input-type",
@@ -16,20 +16,20 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_MediaLive_Input.InputDestinationRequest.schema.json",
-        "javaType" : "aws.Property<aws.medialive.InputInputDestinationRequest>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.medialive.InputInputDestinationRequest>"
       }
     },
     "Vpc" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-input.html#cfn-medialive-input-vpc",
       "$ref" : "AWS_MediaLive_Input.InputVpcRequest.schema.json",
-      "javaType" : "aws.Property<aws.medialive.InputInputVpcRequest>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.medialive.InputInputVpcRequest>"
     },
     "MediaConnectFlows" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-input.html#cfn-medialive-input-mediaconnectflows",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_MediaLive_Input.MediaConnectFlowRequest.schema.json",
-        "javaType" : "aws.Property<aws.medialive.InputMediaConnectFlowRequest>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.medialive.InputMediaConnectFlowRequest>"
       }
     },
     "InputSecurityGroups" : {
@@ -45,7 +45,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_MediaLive_Input.InputSourceRequest.schema.json",
-        "javaType" : "aws.Property<aws.medialive.InputInputSourceRequest>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.medialive.InputInputSourceRequest>"
       }
     },
     "RoleArn" : {

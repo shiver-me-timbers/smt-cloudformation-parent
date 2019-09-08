@@ -4,8 +4,8 @@
   "title" : "AssociationParameterValues",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-parametervalues.html",
   "type" : "object",
-  "javaType" : "aws.ssm.AssociationParameterValues",
-  "javaInterfaces" : [ "aws.Property<AssociationParameterValues>" ],
+  "javaType" : "shiver.me.timbers.aws.ssm.AssociationParameterValues",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<AssociationParameterValues>" ],
   "properties" : {
     "ParameterValues" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-parametervalues.html#cfn-ssm-association-parametervalues-parametervalues",

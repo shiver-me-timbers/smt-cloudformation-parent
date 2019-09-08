@@ -4,8 +4,8 @@
   "title" : "ApplicationKinesisFirehoseInput",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-kinesisfirehoseinput.html",
   "type" : "object",
-  "javaType" : "aws.kinesisanalyticsv2.ApplicationKinesisFirehoseInput",
-  "javaInterfaces" : [ "aws.Property<ApplicationKinesisFirehoseInput>" ],
+  "javaType" : "shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationKinesisFirehoseInput",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ApplicationKinesisFirehoseInput>" ],
   "properties" : {
     "ResourceARN" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-kinesisfirehoseinput.html#cfn-kinesisanalyticsv2-application-kinesisfirehoseinput-resourcearn",

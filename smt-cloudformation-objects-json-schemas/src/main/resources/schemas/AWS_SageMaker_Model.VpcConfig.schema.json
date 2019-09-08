@@ -4,8 +4,8 @@
   "title" : "ModelVpcConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-vpcconfig.html",
   "type" : "object",
-  "javaType" : "aws.sagemaker.ModelVpcConfig",
-  "javaInterfaces" : [ "aws.Property<ModelVpcConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.sagemaker.ModelVpcConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ModelVpcConfig>" ],
   "properties" : {
     "Subnets" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-vpcconfig.html#cfn-sagemaker-model-vpcconfig-subnets",

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.guardduty.FilterResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<FilterResource>", "aws.HasCondition<FilterResource>" ],
+  "javaType" : "shiver.me.timbers.aws.guardduty.FilterResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<FilterResource>", "shiver.me.timbers.aws.HasCondition<FilterResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

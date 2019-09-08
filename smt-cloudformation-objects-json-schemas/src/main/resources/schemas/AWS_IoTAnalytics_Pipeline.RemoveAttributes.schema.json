@@ -4,8 +4,8 @@
   "title" : "PipelineRemoveAttributes",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-removeattributes.html",
   "type" : "object",
-  "javaType" : "aws.iotanalytics.PipelineRemoveAttributes",
-  "javaInterfaces" : [ "aws.Property<PipelineRemoveAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.iotanalytics.PipelineRemoveAttributes",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<PipelineRemoveAttributes>" ],
   "properties" : {
     "Next" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-removeattributes.html#cfn-iotanalytics-pipeline-removeattributes-next",

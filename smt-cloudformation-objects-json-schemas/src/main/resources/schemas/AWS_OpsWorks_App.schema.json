@@ -4,12 +4,12 @@
   "title" : "App",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html",
   "type" : "object",
-  "javaType" : "aws.opsworks.App",
+  "javaType" : "shiver.me.timbers.aws.opsworks.App",
   "properties" : {
     "AppSource" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-appsource",
       "$ref" : "AWS_OpsWorks_App.DataSource.schema.json",
-      "javaType" : "aws.Property<aws.opsworks.AppSource>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.opsworks.AppSource>"
     },
     "Attributes" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-attributes",
@@ -22,7 +22,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_OpsWorks_App.DataSource.schema.json",
-        "javaType" : "aws.Property<aws.opsworks.AppDataSource>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.opsworks.AppDataSource>"
       }
     },
     "Description" : {
@@ -48,7 +48,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_OpsWorks_App.EnvironmentVariable.schema.json",
-        "javaType" : "aws.Property<aws.opsworks.AppEnvironmentVariable>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.opsworks.AppEnvironmentVariable>"
       }
     },
     "Name" : {
@@ -64,7 +64,7 @@
     "SslConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-sslconfiguration",
       "$ref" : "AWS_OpsWorks_App.SslConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.opsworks.AppSslConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.opsworks.AppSslConfiguration>"
     },
     "StackId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-stackid",

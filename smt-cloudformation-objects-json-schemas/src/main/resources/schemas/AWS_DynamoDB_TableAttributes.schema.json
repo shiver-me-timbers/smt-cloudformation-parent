@@ -4,5 +4,5 @@
   "title" : "TableAttributes",
   "type" : "string",
   "enum" : [ "Arn", "StreamArn" ],
-  "javaType" : "aws.dynamodb.TableAttributes"
+  "javaType" : "shiver.me.timbers.aws.dynamodb.TableAttributes"
 }

@@ -4,8 +4,8 @@
   "title" : "BucketRoutingRuleCondition",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-routingrulecondition.html",
   "type" : "object",
-  "javaType" : "aws.s3.BucketRoutingRuleCondition",
-  "javaInterfaces" : [ "aws.Property<BucketRoutingRuleCondition>" ],
+  "javaType" : "shiver.me.timbers.aws.s3.BucketRoutingRuleCondition",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BucketRoutingRuleCondition>" ],
   "properties" : {
     "HttpErrorCodeReturnedEquals" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-routingrulecondition.html#cfn-s3-websiteconfiguration-routingrules-routingrulecondition-httperrorcodereturnedequals",

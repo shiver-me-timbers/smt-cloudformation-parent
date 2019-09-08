@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.elasticloadbalancing.LoadBalancerResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<LoadBalancerResource>", "aws.HasCondition<LoadBalancerResource>", "aws.HasAttributes<LoadBalancerAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.elasticloadbalancing.LoadBalancerResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<LoadBalancerResource>", "shiver.me.timbers.aws.HasCondition<LoadBalancerResource>", "shiver.me.timbers.aws.HasAttributes<LoadBalancerAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

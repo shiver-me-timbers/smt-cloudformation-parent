@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.sqs.QueueResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<QueueResource>", "aws.HasCondition<QueueResource>", "aws.HasAttributes<QueueAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.sqs.QueueResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<QueueResource>", "shiver.me.timbers.aws.HasCondition<QueueResource>", "shiver.me.timbers.aws.HasAttributes<QueueAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

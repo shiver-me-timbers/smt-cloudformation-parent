@@ -4,13 +4,13 @@
   "title" : "LaunchTemplateBlockDeviceMapping",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-blockdevicemapping.html",
   "type" : "object",
-  "javaType" : "aws.ec2.LaunchTemplateBlockDeviceMapping",
-  "javaInterfaces" : [ "aws.Property<LaunchTemplateBlockDeviceMapping>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.LaunchTemplateBlockDeviceMapping",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<LaunchTemplateBlockDeviceMapping>" ],
   "properties" : {
     "Ebs" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-blockdevicemapping.html#cfn-ec2-launchtemplate-blockdevicemapping-ebs",
       "$ref" : "AWS_EC2_LaunchTemplate.Ebs.schema.json",
-      "javaType" : "aws.Property<aws.ec2.LaunchTemplateEbs>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.LaunchTemplateEbs>"
     },
     "NoDevice" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-blockdevicemapping.html#cfn-ec2-launchtemplate-blockdevicemapping-nodevice",

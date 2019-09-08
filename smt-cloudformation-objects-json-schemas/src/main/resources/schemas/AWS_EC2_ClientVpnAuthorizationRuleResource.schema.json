@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.ClientVpnAuthorizationRuleResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ClientVpnAuthorizationRuleResource>", "aws.HasCondition<ClientVpnAuthorizationRuleResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.ClientVpnAuthorizationRuleResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ClientVpnAuthorizationRuleResource>", "shiver.me.timbers.aws.HasCondition<ClientVpnAuthorizationRuleResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.glue.JobResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<JobResource>", "aws.HasCondition<JobResource>" ],
+  "javaType" : "shiver.me.timbers.aws.glue.JobResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<JobResource>", "shiver.me.timbers.aws.HasCondition<JobResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

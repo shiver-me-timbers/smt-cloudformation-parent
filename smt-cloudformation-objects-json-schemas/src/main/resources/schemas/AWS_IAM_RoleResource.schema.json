@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.iam.RoleResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<RoleResource>", "aws.HasCondition<RoleResource>", "aws.HasAttributes<RoleAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.iam.RoleResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<RoleResource>", "shiver.me.timbers.aws.HasCondition<RoleResource>", "shiver.me.timbers.aws.HasAttributes<RoleAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

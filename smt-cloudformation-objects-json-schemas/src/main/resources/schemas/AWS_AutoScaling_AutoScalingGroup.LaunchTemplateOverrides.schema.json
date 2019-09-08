@@ -4,8 +4,8 @@
   "title" : "AutoScalingGroupLaunchTemplateOverrides",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-mixedinstancespolicy-launchtemplateoverrides.html",
   "type" : "object",
-  "javaType" : "aws.autoscaling.AutoScalingGroupLaunchTemplateOverrides",
-  "javaInterfaces" : [ "aws.Property<AutoScalingGroupLaunchTemplateOverrides>" ],
+  "javaType" : "shiver.me.timbers.aws.autoscaling.AutoScalingGroupLaunchTemplateOverrides",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<AutoScalingGroupLaunchTemplateOverrides>" ],
   "properties" : {
     "InstanceType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-mixedinstancespolicy-launchtemplateoverrides.html#cfn-autoscaling-autoscalinggroup-launchtemplateoverrides-instancetype",

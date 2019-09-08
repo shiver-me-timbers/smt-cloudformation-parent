@@ -4,5 +4,5 @@
   "title" : "SegmentAttributes",
   "type" : "string",
   "enum" : [ "SegmentId" ],
-  "javaType" : "aws.pinpoint.SegmentAttributes"
+  "javaType" : "shiver.me.timbers.aws.pinpoint.SegmentAttributes"
 }

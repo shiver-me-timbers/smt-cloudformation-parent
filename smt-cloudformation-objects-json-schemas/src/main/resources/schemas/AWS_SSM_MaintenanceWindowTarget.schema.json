@@ -4,7 +4,7 @@
   "title" : "MaintenanceWindowTarget",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtarget.html",
   "type" : "object",
-  "javaType" : "aws.ssm.MaintenanceWindowTarget",
+  "javaType" : "shiver.me.timbers.aws.ssm.MaintenanceWindowTarget",
   "properties" : {
     "OwnerInformation" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtarget.html#cfn-ssm-maintenancewindowtarget-ownerinformation",
@@ -31,7 +31,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_SSM_MaintenanceWindowTarget.Targets.schema.json",
-        "javaType" : "aws.Property<aws.ssm.MaintenanceWindowTargetTargets>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ssm.MaintenanceWindowTargetTargets>"
       }
     },
     "Name" : {

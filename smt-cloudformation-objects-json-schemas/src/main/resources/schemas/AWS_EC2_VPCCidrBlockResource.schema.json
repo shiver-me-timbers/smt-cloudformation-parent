@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.VPCCidrBlockResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<VPCCidrBlockResource>", "aws.HasCondition<VPCCidrBlockResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.VPCCidrBlockResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<VPCCidrBlockResource>", "shiver.me.timbers.aws.HasCondition<VPCCidrBlockResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -4,8 +4,8 @@
   "title" : "BudgetSubscriber",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-subscriber.html",
   "type" : "object",
-  "javaType" : "aws.budgets.BudgetSubscriber",
-  "javaInterfaces" : [ "aws.Property<BudgetSubscriber>" ],
+  "javaType" : "shiver.me.timbers.aws.budgets.BudgetSubscriber",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BudgetSubscriber>" ],
   "properties" : {
     "SubscriptionType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-subscriber.html#cfn-budgets-budget-subscriber-subscriptiontype",

@@ -4,5 +4,5 @@
   "title" : "EndpointAttributes",
   "type" : "string",
   "enum" : [ "EndpointName" ],
-  "javaType" : "aws.sagemaker.EndpointAttributes"
+  "javaType" : "shiver.me.timbers.aws.sagemaker.EndpointAttributes"
 }

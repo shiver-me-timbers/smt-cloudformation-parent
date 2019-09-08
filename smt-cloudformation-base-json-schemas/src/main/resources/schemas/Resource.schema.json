@@ -7,8 +7,8 @@
   "extends": {
     "$ref": "Named.schema.json"
   },
-  "javaType": "aws.Resource",
-  "javaInterfaces": ["aws.HasReference"],
+  "javaType": "shiver.me.timbers.aws.Resource",
+  "javaInterfaces": ["shiver.me.timbers.aws.HasReference"],
   "properties": {
     "Type": {
       "type": "string"

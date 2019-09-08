@@ -4,7 +4,7 @@
   "title" : "CustomerGateway",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-customer-gateway.html",
   "type" : "object",
-  "javaType" : "aws.ec2.CustomerGateway",
+  "javaType" : "shiver.me.timbers.aws.ec2.CustomerGateway",
   "properties" : {
     "BgpAsn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-customer-gateway.html#cfn-ec2-customergateway-bgpasn",
@@ -21,7 +21,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     },
     "Type" : {

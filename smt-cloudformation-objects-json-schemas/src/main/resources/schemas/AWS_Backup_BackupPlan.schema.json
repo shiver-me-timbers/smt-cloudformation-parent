@@ -4,12 +4,12 @@
   "title" : "BackupPlan",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-backup-backupplan.html",
   "type" : "object",
-  "javaType" : "aws.backup.BackupPlan",
+  "javaType" : "shiver.me.timbers.aws.backup.BackupPlan",
   "properties" : {
     "BackupPlan" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-backup-backupplan.html#cfn-backup-backupplan-backupplan",
       "$ref" : "AWS_Backup_BackupPlan.BackupPlanResourceType.schema.json",
-      "javaType" : "aws.Property<aws.backup.BackupPlanBackupPlanResourceType>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.backup.BackupPlanBackupPlanResourceType>"
     },
     "BackupPlanTags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-backup-backupplan.html#cfn-backup-backupplan-backupplantags",

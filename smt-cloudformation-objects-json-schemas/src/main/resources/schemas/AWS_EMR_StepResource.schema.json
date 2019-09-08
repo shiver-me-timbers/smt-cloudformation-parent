@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.emr.StepResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<StepResource>", "aws.HasCondition<StepResource>" ],
+  "javaType" : "shiver.me.timbers.aws.emr.StepResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<StepResource>", "shiver.me.timbers.aws.HasCondition<StepResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

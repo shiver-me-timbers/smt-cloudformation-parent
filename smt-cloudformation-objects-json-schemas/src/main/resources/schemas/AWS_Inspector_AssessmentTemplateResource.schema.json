@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.inspector.AssessmentTemplateResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<AssessmentTemplateResource>", "aws.HasCondition<AssessmentTemplateResource>", "aws.HasAttributes<AssessmentTemplateAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.inspector.AssessmentTemplateResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<AssessmentTemplateResource>", "shiver.me.timbers.aws.HasCondition<AssessmentTemplateResource>", "shiver.me.timbers.aws.HasAttributes<AssessmentTemplateAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

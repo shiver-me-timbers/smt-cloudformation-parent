@@ -4,13 +4,13 @@
   "title" : "BucketServerSideEncryptionRule",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-serversideencryptionrule.html",
   "type" : "object",
-  "javaType" : "aws.s3.BucketServerSideEncryptionRule",
-  "javaInterfaces" : [ "aws.Property<BucketServerSideEncryptionRule>" ],
+  "javaType" : "shiver.me.timbers.aws.s3.BucketServerSideEncryptionRule",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BucketServerSideEncryptionRule>" ],
   "properties" : {
     "ServerSideEncryptionByDefault" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-serversideencryptionrule.html#cfn-s3-bucket-serversideencryptionrule-serversideencryptionbydefault",
       "$ref" : "AWS_S3_Bucket.ServerSideEncryptionByDefault.schema.json",
-      "javaType" : "aws.Property<aws.s3.BucketServerSideEncryptionByDefault>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.BucketServerSideEncryptionByDefault>"
     }
   }
 }

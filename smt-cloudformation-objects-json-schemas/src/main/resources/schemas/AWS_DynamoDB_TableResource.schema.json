@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.dynamodb.TableResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<TableResource>", "aws.HasCondition<TableResource>", "aws.HasAttributes<TableAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.dynamodb.TableResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<TableResource>", "shiver.me.timbers.aws.HasCondition<TableResource>", "shiver.me.timbers.aws.HasAttributes<TableAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

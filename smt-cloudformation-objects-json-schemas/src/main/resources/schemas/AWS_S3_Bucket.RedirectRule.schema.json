@@ -4,8 +4,8 @@
   "title" : "BucketRedirectRule",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-redirectrule.html",
   "type" : "object",
-  "javaType" : "aws.s3.BucketRedirectRule",
-  "javaInterfaces" : [ "aws.Property<BucketRedirectRule>" ],
+  "javaType" : "shiver.me.timbers.aws.s3.BucketRedirectRule",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BucketRedirectRule>" ],
   "properties" : {
     "HostName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-redirectrule.html#cfn-s3-websiteconfiguration-redirectrule-hostname",

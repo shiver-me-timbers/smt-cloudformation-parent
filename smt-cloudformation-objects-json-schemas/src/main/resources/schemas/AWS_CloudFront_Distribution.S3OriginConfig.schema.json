@@ -4,8 +4,8 @@
   "title" : "DistributionS3OriginConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-s3originconfig.html",
   "type" : "object",
-  "javaType" : "aws.cloudfront.DistributionS3OriginConfig",
-  "javaInterfaces" : [ "aws.Property<DistributionS3OriginConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.cloudfront.DistributionS3OriginConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DistributionS3OriginConfig>" ],
   "properties" : {
     "OriginAccessIdentity" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-s3originconfig.html#cfn-cloudfront-distribution-s3originconfig-originaccessidentity",

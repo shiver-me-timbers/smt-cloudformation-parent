@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.appsync.DataSourceResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<DataSourceResource>", "aws.HasCondition<DataSourceResource>", "aws.HasAttributes<DataSourceAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.appsync.DataSourceResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<DataSourceResource>", "shiver.me.timbers.aws.HasCondition<DataSourceResource>", "shiver.me.timbers.aws.HasAttributes<DataSourceAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

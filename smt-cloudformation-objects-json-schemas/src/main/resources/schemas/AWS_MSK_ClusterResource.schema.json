@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.msk.ClusterResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ClusterResource>", "aws.HasCondition<ClusterResource>" ],
+  "javaType" : "shiver.me.timbers.aws.msk.ClusterResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ClusterResource>", "shiver.me.timbers.aws.HasCondition<ClusterResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

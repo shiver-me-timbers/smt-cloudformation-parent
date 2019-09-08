@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.robomaker.RobotResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<RobotResource>", "aws.HasCondition<RobotResource>" ],
+  "javaType" : "shiver.me.timbers.aws.robomaker.RobotResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<RobotResource>", "shiver.me.timbers.aws.HasCondition<RobotResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

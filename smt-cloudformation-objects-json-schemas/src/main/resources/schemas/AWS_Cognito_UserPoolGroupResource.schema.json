@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.cognito.UserPoolGroupResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<UserPoolGroupResource>", "aws.HasCondition<UserPoolGroupResource>" ],
+  "javaType" : "shiver.me.timbers.aws.cognito.UserPoolGroupResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<UserPoolGroupResource>", "shiver.me.timbers.aws.HasCondition<UserPoolGroupResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

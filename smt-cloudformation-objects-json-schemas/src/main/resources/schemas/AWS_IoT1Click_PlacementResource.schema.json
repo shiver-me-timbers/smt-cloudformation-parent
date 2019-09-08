@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.iot1click.PlacementResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<PlacementResource>", "aws.HasCondition<PlacementResource>", "aws.HasAttributes<PlacementAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.iot1click.PlacementResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<PlacementResource>", "shiver.me.timbers.aws.HasCondition<PlacementResource>", "shiver.me.timbers.aws.HasAttributes<PlacementAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

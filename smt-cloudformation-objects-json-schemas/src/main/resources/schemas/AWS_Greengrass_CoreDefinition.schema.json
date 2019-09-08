@@ -4,12 +4,12 @@
   "title" : "CoreDefinition",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-coredefinition.html",
   "type" : "object",
-  "javaType" : "aws.greengrass.CoreDefinition",
+  "javaType" : "shiver.me.timbers.aws.greengrass.CoreDefinition",
   "properties" : {
     "InitialVersion" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-coredefinition.html#cfn-greengrass-coredefinition-initialversion",
       "$ref" : "AWS_Greengrass_CoreDefinition.CoreDefinitionVersion.schema.json",
-      "javaType" : "aws.Property<aws.greengrass.CoreDefinitionCoreDefinitionVersion>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.greengrass.CoreDefinitionCoreDefinitionVersion>"
     },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-coredefinition.html#cfn-greengrass-coredefinition-tags",

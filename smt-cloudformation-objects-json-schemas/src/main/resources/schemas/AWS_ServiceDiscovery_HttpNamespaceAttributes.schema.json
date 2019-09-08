@@ -4,5 +4,5 @@
   "title" : "HttpNamespaceAttributes",
   "type" : "string",
   "enum" : [ "Id", "Arn" ],
-  "javaType" : "aws.servicediscovery.HttpNamespaceAttributes"
+  "javaType" : "shiver.me.timbers.aws.servicediscovery.HttpNamespaceAttributes"
 }

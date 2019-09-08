@@ -4,7 +4,7 @@
   "title" : "VirtualRouter",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualrouter.html",
   "type" : "object",
-  "javaType" : "aws.appmesh.VirtualRouter",
+  "javaType" : "shiver.me.timbers.aws.appmesh.VirtualRouter",
   "properties" : {
     "MeshName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualrouter.html#cfn-appmesh-virtualrouter-meshname",
@@ -19,14 +19,14 @@
     "Spec" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualrouter.html#cfn-appmesh-virtualrouter-spec",
       "$ref" : "AWS_AppMesh_VirtualRouter.VirtualRouterSpec.schema.json",
-      "javaType" : "aws.Property<aws.appmesh.VirtualRouterVirtualRouterSpec>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appmesh.VirtualRouterVirtualRouterSpec>"
     },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualrouter.html#cfn-appmesh-virtualrouter-tags",
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     }
   }

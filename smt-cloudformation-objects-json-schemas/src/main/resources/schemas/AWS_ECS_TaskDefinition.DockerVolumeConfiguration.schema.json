@@ -4,8 +4,8 @@
   "title" : "TaskDefinitionDockerVolumeConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.ecs.TaskDefinitionDockerVolumeConfiguration",
-  "javaInterfaces" : [ "aws.Property<TaskDefinitionDockerVolumeConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.ecs.TaskDefinitionDockerVolumeConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TaskDefinitionDockerVolumeConfiguration>" ],
   "properties" : {
     "Autoprovision" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html#cfn-ecs-taskdefinition-dockervolumeconfiguration-autoprovision",

@@ -4,8 +4,8 @@
   "title" : "SegmentRecency",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-segmentdimensions-behavior-recency.html",
   "type" : "object",
-  "javaType" : "aws.pinpoint.SegmentRecency",
-  "javaInterfaces" : [ "aws.Property<SegmentRecency>" ],
+  "javaType" : "shiver.me.timbers.aws.pinpoint.SegmentRecency",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<SegmentRecency>" ],
   "properties" : {
     "Duration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-segmentdimensions-behavior-recency.html#cfn-pinpoint-segment-segmentdimensions-behavior-recency-duration",

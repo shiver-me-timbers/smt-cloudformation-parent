@@ -4,12 +4,12 @@
   "title" : "Stage",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html",
   "type" : "object",
-  "javaType" : "aws.apigateway.Stage",
+  "javaType" : "shiver.me.timbers.aws.apigateway.Stage",
   "properties" : {
     "AccessLogSetting" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-accesslogsetting",
       "$ref" : "AWS_ApiGateway_Stage.AccessLogSetting.schema.json",
-      "javaType" : "aws.Property<aws.apigateway.StageAccessLogSetting>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.apigateway.StageAccessLogSetting>"
     },
     "CacheClusterEnabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-cacheclusterenabled",
@@ -24,7 +24,7 @@
     "CanarySetting" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-canarysetting",
       "$ref" : "AWS_ApiGateway_Stage.CanarySetting.schema.json",
-      "javaType" : "aws.Property<aws.apigateway.StageCanarySetting>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.apigateway.StageCanarySetting>"
     },
     "ClientCertificateId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-clientcertificateid",
@@ -52,7 +52,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ApiGateway_Stage.MethodSetting.schema.json",
-        "javaType" : "aws.Property<aws.apigateway.StageMethodSetting>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.apigateway.StageMethodSetting>"
       }
     },
     "RestApiId" : {
@@ -70,7 +70,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     },
     "TracingEnabled" : {

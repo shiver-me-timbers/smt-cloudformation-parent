@@ -4,8 +4,8 @@
   "title" : "CloudFormationProvisionedProductProvisioningParameter",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicecatalog-cloudformationprovisionedproduct-provisioningparameter.html",
   "type" : "object",
-  "javaType" : "aws.servicecatalog.CloudFormationProvisionedProductProvisioningParameter",
-  "javaInterfaces" : [ "aws.Property<CloudFormationProvisionedProductProvisioningParameter>" ],
+  "javaType" : "shiver.me.timbers.aws.servicecatalog.CloudFormationProvisionedProductProvisioningParameter",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<CloudFormationProvisionedProductProvisioningParameter>" ],
   "properties" : {
     "Value" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicecatalog-cloudformationprovisionedproduct-provisioningparameter.html#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningparameter-value",

@@ -4,5 +4,5 @@
   "title" : "StreamAttributes",
   "type" : "string",
   "enum" : [ "Arn" ],
-  "javaType" : "aws.kinesis.StreamAttributes"
+  "javaType" : "shiver.me.timbers.aws.kinesis.StreamAttributes"
 }

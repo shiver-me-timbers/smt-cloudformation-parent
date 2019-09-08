@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.cloudformation.CustomResourceResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<CustomResourceResource>", "aws.HasCondition<CustomResourceResource>" ],
+  "javaType" : "shiver.me.timbers.aws.cloudformation.CustomResourceResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<CustomResourceResource>", "shiver.me.timbers.aws.HasCondition<CustomResourceResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

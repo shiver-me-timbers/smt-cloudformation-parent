@@ -4,19 +4,19 @@
   "title" : "StreamingDistribution",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-streamingdistribution.html",
   "type" : "object",
-  "javaType" : "aws.cloudfront.StreamingDistribution",
+  "javaType" : "shiver.me.timbers.aws.cloudfront.StreamingDistribution",
   "properties" : {
     "StreamingDistributionConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-streamingdistribution.html#cfn-cloudfront-streamingdistribution-streamingdistributionconfig",
       "$ref" : "AWS_CloudFront_StreamingDistribution.StreamingDistributionConfig.schema.json",
-      "javaType" : "aws.Property<aws.cloudfront.StreamingDistributionStreamingDistributionConfig>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cloudfront.StreamingDistributionStreamingDistributionConfig>"
     },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-streamingdistribution.html#cfn-cloudfront-streamingdistribution-tags",
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     }
   }

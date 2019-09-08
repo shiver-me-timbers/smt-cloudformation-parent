@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.servicecatalog.StackSetConstraintResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<StackSetConstraintResource>", "aws.HasCondition<StackSetConstraintResource>" ],
+  "javaType" : "shiver.me.timbers.aws.servicecatalog.StackSetConstraintResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<StackSetConstraintResource>", "shiver.me.timbers.aws.HasCondition<StackSetConstraintResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

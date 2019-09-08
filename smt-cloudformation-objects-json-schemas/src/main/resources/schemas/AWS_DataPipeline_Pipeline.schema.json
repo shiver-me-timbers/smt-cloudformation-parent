@@ -4,7 +4,7 @@
   "title" : "Pipeline",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html",
   "type" : "object",
-  "javaType" : "aws.datapipeline.Pipeline",
+  "javaType" : "shiver.me.timbers.aws.datapipeline.Pipeline",
   "properties" : {
     "Activate" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-activate",
@@ -26,7 +26,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_DataPipeline_Pipeline.ParameterObject.schema.json",
-        "javaType" : "aws.Property<aws.datapipeline.PipelineParameterObject>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.datapipeline.PipelineParameterObject>"
       }
     },
     "ParameterValues" : {
@@ -34,7 +34,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_DataPipeline_Pipeline.ParameterValue.schema.json",
-        "javaType" : "aws.Property<aws.datapipeline.PipelineParameterValue>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.datapipeline.PipelineParameterValue>"
       }
     },
     "PipelineObjects" : {
@@ -42,7 +42,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_DataPipeline_Pipeline.PipelineObject.schema.json",
-        "javaType" : "aws.Property<aws.datapipeline.PipelinePipelineObject>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.datapipeline.PipelinePipelineObject>"
       }
     },
     "PipelineTags" : {
@@ -50,7 +50,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_DataPipeline_Pipeline.PipelineTag.schema.json",
-        "javaType" : "aws.Property<aws.datapipeline.PipelinePipelineTag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.datapipeline.PipelinePipelineTag>"
       }
     }
   }

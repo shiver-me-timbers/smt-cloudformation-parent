@@ -4,5 +4,5 @@
   "title" : "EIPAttributes",
   "type" : "string",
   "enum" : [ "AllocationId" ],
-  "javaType" : "aws.ec2.EIPAttributes"
+  "javaType" : "shiver.me.timbers.aws.ec2.EIPAttributes"
 }

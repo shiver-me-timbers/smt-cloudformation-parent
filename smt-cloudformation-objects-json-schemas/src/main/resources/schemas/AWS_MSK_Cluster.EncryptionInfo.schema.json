@@ -4,18 +4,18 @@
   "title" : "ClusterEncryptionInfo",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-encryptioninfo.html",
   "type" : "object",
-  "javaType" : "aws.msk.ClusterEncryptionInfo",
-  "javaInterfaces" : [ "aws.Property<ClusterEncryptionInfo>" ],
+  "javaType" : "shiver.me.timbers.aws.msk.ClusterEncryptionInfo",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ClusterEncryptionInfo>" ],
   "properties" : {
     "EncryptionAtRest" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-encryptioninfo.html#cfn-msk-cluster-encryptioninfo-encryptionatrest",
       "$ref" : "AWS_MSK_Cluster.EncryptionAtRest.schema.json",
-      "javaType" : "aws.Property<aws.msk.ClusterEncryptionAtRest>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.msk.ClusterEncryptionAtRest>"
     },
     "EncryptionInTransit" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-encryptioninfo.html#cfn-msk-cluster-encryptioninfo-encryptionintransit",
       "$ref" : "AWS_MSK_Cluster.EncryptionInTransit.schema.json",
-      "javaType" : "aws.Property<aws.msk.ClusterEncryptionInTransit>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.msk.ClusterEncryptionInTransit>"
     }
   }
 }

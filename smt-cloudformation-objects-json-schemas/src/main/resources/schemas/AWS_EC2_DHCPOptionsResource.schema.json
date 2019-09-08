@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.DHCPOptionsResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<DHCPOptionsResource>", "aws.HasCondition<DHCPOptionsResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.DHCPOptionsResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<DHCPOptionsResource>", "shiver.me.timbers.aws.HasCondition<DHCPOptionsResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

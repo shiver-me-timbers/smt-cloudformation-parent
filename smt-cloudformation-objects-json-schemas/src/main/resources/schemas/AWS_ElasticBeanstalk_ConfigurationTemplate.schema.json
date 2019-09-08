@@ -4,7 +4,7 @@
   "title" : "ConfigurationTemplate",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html",
   "type" : "object",
-  "javaType" : "aws.elasticbeanstalk.ConfigurationTemplate",
+  "javaType" : "shiver.me.timbers.aws.elasticbeanstalk.ConfigurationTemplate",
   "properties" : {
     "ApplicationName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-applicationname",
@@ -26,7 +26,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_ElasticBeanstalk_ConfigurationTemplate.ConfigurationOptionSetting.schema.json",
-        "javaType" : "aws.Property<aws.elasticbeanstalk.ConfigurationTemplateConfigurationOptionSetting>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.elasticbeanstalk.ConfigurationTemplateConfigurationOptionSetting>"
       }
     },
     "PlatformArn" : {
@@ -42,7 +42,7 @@
     "SourceConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-sourceconfiguration",
       "$ref" : "AWS_ElasticBeanstalk_ConfigurationTemplate.SourceConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.elasticbeanstalk.ConfigurationTemplateSourceConfiguration>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.elasticbeanstalk.ConfigurationTemplateSourceConfiguration>"
     }
   }
 }

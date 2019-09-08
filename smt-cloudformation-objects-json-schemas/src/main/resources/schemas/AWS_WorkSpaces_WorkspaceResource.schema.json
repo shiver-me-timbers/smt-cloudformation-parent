@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.workspaces.WorkspaceResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<WorkspaceResource>", "aws.HasCondition<WorkspaceResource>" ],
+  "javaType" : "shiver.me.timbers.aws.workspaces.WorkspaceResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<WorkspaceResource>", "shiver.me.timbers.aws.HasCondition<WorkspaceResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

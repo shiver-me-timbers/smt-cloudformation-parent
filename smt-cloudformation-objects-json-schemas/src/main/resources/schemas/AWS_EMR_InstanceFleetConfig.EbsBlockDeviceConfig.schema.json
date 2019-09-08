@@ -4,13 +4,13 @@
   "title" : "InstanceFleetConfigEbsBlockDeviceConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-ebsblockdeviceconfig.html",
   "type" : "object",
-  "javaType" : "aws.emr.InstanceFleetConfigEbsBlockDeviceConfig",
-  "javaInterfaces" : [ "aws.Property<InstanceFleetConfigEbsBlockDeviceConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.emr.InstanceFleetConfigEbsBlockDeviceConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<InstanceFleetConfigEbsBlockDeviceConfig>" ],
   "properties" : {
     "VolumeSpecification" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-ebsblockdeviceconfig.html#cfn-elasticmapreduce-instancefleetconfig-ebsblockdeviceconfig-volumespecification",
       "$ref" : "AWS_EMR_InstanceFleetConfig.VolumeSpecification.schema.json",
-      "javaType" : "aws.Property<aws.emr.InstanceFleetConfigVolumeSpecification>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.emr.InstanceFleetConfigVolumeSpecification>"
     },
     "VolumesPerInstance" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-ebsblockdeviceconfig.html#cfn-elasticmapreduce-instancefleetconfig-ebsblockdeviceconfig-volumesperinstance",

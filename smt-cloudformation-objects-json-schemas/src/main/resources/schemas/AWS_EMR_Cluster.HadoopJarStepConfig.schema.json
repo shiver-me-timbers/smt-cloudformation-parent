@@ -4,8 +4,8 @@
   "title" : "ClusterHadoopJarStepConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-hadoopjarstepconfig.html",
   "type" : "object",
-  "javaType" : "aws.emr.ClusterHadoopJarStepConfig",
-  "javaInterfaces" : [ "aws.Property<ClusterHadoopJarStepConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.emr.ClusterHadoopJarStepConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ClusterHadoopJarStepConfig>" ],
   "properties" : {
     "Args" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-hadoopjarstepconfig.html#cfn-elasticmapreduce-cluster-hadoopjarstepconfig-args",
@@ -32,7 +32,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_EMR_Cluster.KeyValue.schema.json",
-        "javaType" : "aws.Property<aws.emr.ClusterKeyValue>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.emr.ClusterKeyValue>"
       }
     }
   }

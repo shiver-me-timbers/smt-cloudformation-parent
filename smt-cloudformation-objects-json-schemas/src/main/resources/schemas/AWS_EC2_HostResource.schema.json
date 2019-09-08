@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.HostResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<HostResource>", "aws.HasCondition<HostResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.HostResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<HostResource>", "shiver.me.timbers.aws.HasCondition<HostResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

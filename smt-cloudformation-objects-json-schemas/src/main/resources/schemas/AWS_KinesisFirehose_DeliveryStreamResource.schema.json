@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.kinesisfirehose.DeliveryStreamResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<DeliveryStreamResource>", "aws.HasCondition<DeliveryStreamResource>", "aws.HasAttributes<DeliveryStreamAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<DeliveryStreamResource>", "shiver.me.timbers.aws.HasCondition<DeliveryStreamResource>", "shiver.me.timbers.aws.HasAttributes<DeliveryStreamAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

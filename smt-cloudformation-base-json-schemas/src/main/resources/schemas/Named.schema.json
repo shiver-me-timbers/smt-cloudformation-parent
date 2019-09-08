@@ -4,8 +4,8 @@
   "title": "Named",
   "description": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html",
   "type": "object",
-  "javaType": "aws.Named",
-  "javaInterfaces": ["aws.HasName"],
+  "javaType": "shiver.me.timbers.aws.Named",
+  "javaInterfaces": ["shiver.me.timbers.aws.HasName"],
   "properties": {
     "Name": {
       "type": "string"

@@ -4,8 +4,8 @@
   "title" : "UserLoginProfile",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user-loginprofile.html",
   "type" : "object",
-  "javaType" : "aws.iam.UserLoginProfile",
-  "javaInterfaces" : [ "aws.Property<UserLoginProfile>" ],
+  "javaType" : "shiver.me.timbers.aws.iam.UserLoginProfile",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<UserLoginProfile>" ],
   "properties" : {
     "Password" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user-loginprofile.html#cfn-iam-user-loginprofile-password",

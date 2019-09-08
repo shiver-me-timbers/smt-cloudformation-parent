@@ -4,8 +4,8 @@
   "title" : "ApplicationRecordColumn",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-recordcolumn.html",
   "type" : "object",
-  "javaType" : "aws.kinesisanalytics.ApplicationRecordColumn",
-  "javaInterfaces" : [ "aws.Property<ApplicationRecordColumn>" ],
+  "javaType" : "shiver.me.timbers.aws.kinesisanalytics.ApplicationRecordColumn",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ApplicationRecordColumn>" ],
   "properties" : {
     "Mapping" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-recordcolumn.html#cfn-kinesisanalytics-application-recordcolumn-mapping",

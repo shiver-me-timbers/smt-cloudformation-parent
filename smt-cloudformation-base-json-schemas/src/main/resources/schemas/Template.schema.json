@@ -4,12 +4,12 @@
   "title": "Template",
   "description": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html",
   "type": "object",
-  "javaType": "aws.Template",
+  "javaType": "shiver.me.timbers.aws.Template",
   "javaInterfaces": [
-    "aws.HasParameters<Template, Parameter>",
-    "aws.HasConditions<Template>",
-    "aws.HasResources<Template, Resource>",
-    "aws.HasOutputs<Template, Output>"
+    "shiver.me.timbers.aws.HasParameters<Template, Parameter>",
+    "shiver.me.timbers.aws.HasConditions<Template>",
+    "shiver.me.timbers.aws.HasResources<Template, Resource>",
+    "shiver.me.timbers.aws.HasOutputs<Template, Output>"
   ],
   "properties": {
     "AWSTemplateFormatVersion": {
@@ -33,7 +33,7 @@
     },
     "Conditions": {
       "type": "object",
-      "javaType": "java.util.Map<String, aws.fn.ConditionFunction>"
+      "javaType": "java.util.Map<String, shiver.me.timbers.aws.fn.ConditionFunction>"
     },
     "Resources": {
       "type": "object",

@@ -4,8 +4,8 @@
   "title" : "PipelinePipelineTag",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-pipelinetags.html",
   "type" : "object",
-  "javaType" : "aws.datapipeline.PipelinePipelineTag",
-  "javaInterfaces" : [ "aws.Property<PipelinePipelineTag>" ],
+  "javaType" : "shiver.me.timbers.aws.datapipeline.PipelinePipelineTag",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<PipelinePipelineTag>" ],
   "properties" : {
     "Key" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-pipelinetags.html#cfn-datapipeline-pipeline-pipelinetags-key",

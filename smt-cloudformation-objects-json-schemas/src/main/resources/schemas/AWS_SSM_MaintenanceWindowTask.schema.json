@@ -4,7 +4,7 @@
   "title" : "MaintenanceWindowTask",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html",
   "type" : "object",
-  "javaType" : "aws.ssm.MaintenanceWindowTask",
+  "javaType" : "shiver.me.timbers.aws.ssm.MaintenanceWindowTask",
   "properties" : {
     "MaxErrors" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-maxerrors",
@@ -36,7 +36,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_SSM_MaintenanceWindowTask.Target.schema.json",
-        "javaType" : "aws.Property<aws.ssm.MaintenanceWindowTaskTarget>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ssm.MaintenanceWindowTaskTarget>"
       }
     },
     "Name" : {
@@ -52,7 +52,7 @@
     "TaskInvocationParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-taskinvocationparameters",
       "$ref" : "AWS_SSM_MaintenanceWindowTask.TaskInvocationParameters.schema.json",
-      "javaType" : "aws.Property<aws.ssm.MaintenanceWindowTaskTaskInvocationParameters>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ssm.MaintenanceWindowTaskTaskInvocationParameters>"
     },
     "WindowId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-windowid",
@@ -72,7 +72,7 @@
     "LoggingInfo" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-logginginfo",
       "$ref" : "AWS_SSM_MaintenanceWindowTask.LoggingInfo.schema.json",
-      "javaType" : "aws.Property<aws.ssm.MaintenanceWindowTaskLoggingInfo>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ssm.MaintenanceWindowTaskLoggingInfo>"
     }
   }
 }

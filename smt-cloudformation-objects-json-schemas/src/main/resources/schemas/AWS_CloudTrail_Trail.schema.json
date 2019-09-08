@@ -4,7 +4,7 @@
   "title" : "Trail",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html",
   "type" : "object",
-  "javaType" : "aws.cloudtrail.Trail",
+  "javaType" : "shiver.me.timbers.aws.cloudtrail.Trail",
   "properties" : {
     "CloudWatchLogsLogGroupArn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-cloudwatchlogsloggrouparn",
@@ -27,7 +27,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_CloudTrail_Trail.EventSelector.schema.json",
-        "javaType" : "aws.Property<aws.cloudtrail.TrailEventSelector>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cloudtrail.TrailEventSelector>"
       }
     },
     "IncludeGlobalServiceEvents" : {
@@ -70,7 +70,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     },
     "TrailName" : {

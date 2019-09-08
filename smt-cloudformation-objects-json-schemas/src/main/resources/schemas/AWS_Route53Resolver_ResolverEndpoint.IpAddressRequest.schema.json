@@ -4,8 +4,8 @@
   "title" : "ResolverEndpointIpAddressRequest",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53resolver-resolverendpoint-ipaddressrequest.html",
   "type" : "object",
-  "javaType" : "aws.route53resolver.ResolverEndpointIpAddressRequest",
-  "javaInterfaces" : [ "aws.Property<ResolverEndpointIpAddressRequest>" ],
+  "javaType" : "shiver.me.timbers.aws.route53resolver.ResolverEndpointIpAddressRequest",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ResolverEndpointIpAddressRequest>" ],
   "properties" : {
     "Ip" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53resolver-resolverendpoint-ipaddressrequest.html#cfn-route53resolver-resolverendpoint-ipaddressrequest-ip",

@@ -4,8 +4,8 @@
   "title" : "LaunchConfigurationBlockDevice",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig-blockdev-template.html",
   "type" : "object",
-  "javaType" : "aws.autoscaling.LaunchConfigurationBlockDevice",
-  "javaInterfaces" : [ "aws.Property<LaunchConfigurationBlockDevice>" ],
+  "javaType" : "shiver.me.timbers.aws.autoscaling.LaunchConfigurationBlockDevice",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<LaunchConfigurationBlockDevice>" ],
   "properties" : {
     "DeleteOnTermination" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig-blockdev-template.html#cfn-as-launchconfig-blockdev-template-deleteonterm",

@@ -4,8 +4,8 @@
   "title" : "PermissionsTableResource",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lakeformation-permissions-tableresource.html",
   "type" : "object",
-  "javaType" : "aws.lakeformation.PermissionsTableResource",
-  "javaInterfaces" : [ "aws.Property<PermissionsTableResource>" ],
+  "javaType" : "shiver.me.timbers.aws.lakeformation.PermissionsTableResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<PermissionsTableResource>" ],
   "properties" : {
     "DatabaseName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lakeformation-permissions-tableresource.html#cfn-lakeformation-permissions-tableresource-databasename",

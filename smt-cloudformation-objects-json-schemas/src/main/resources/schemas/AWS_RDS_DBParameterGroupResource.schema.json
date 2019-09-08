@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.rds.DBParameterGroupResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<DBParameterGroupResource>", "aws.HasCondition<DBParameterGroupResource>" ],
+  "javaType" : "shiver.me.timbers.aws.rds.DBParameterGroupResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<DBParameterGroupResource>", "shiver.me.timbers.aws.HasCondition<DBParameterGroupResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

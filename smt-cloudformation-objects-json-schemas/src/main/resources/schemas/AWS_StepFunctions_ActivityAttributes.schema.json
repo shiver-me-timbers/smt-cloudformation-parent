@@ -4,5 +4,5 @@
   "title" : "ActivityAttributes",
   "type" : "string",
   "enum" : [ "Name" ],
-  "javaType" : "aws.stepfunctions.ActivityAttributes"
+  "javaType" : "shiver.me.timbers.aws.stepfunctions.ActivityAttributes"
 }

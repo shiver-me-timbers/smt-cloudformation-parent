@@ -4,5 +4,5 @@
   "title" : "MicrosoftADAttributes",
   "type" : "string",
   "enum" : [ "Alias", "DnsIpAddresses" ],
-  "javaType" : "aws.directoryservice.MicrosoftADAttributes"
+  "javaType" : "shiver.me.timbers.aws.directoryservice.MicrosoftADAttributes"
 }

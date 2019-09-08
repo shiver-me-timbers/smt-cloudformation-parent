@@ -4,8 +4,8 @@
   "title" : "DetectorModelFirehose",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-firehose.html",
   "type" : "object",
-  "javaType" : "aws.iotevents.DetectorModelFirehose",
-  "javaInterfaces" : [ "aws.Property<DetectorModelFirehose>" ],
+  "javaType" : "shiver.me.timbers.aws.iotevents.DetectorModelFirehose",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DetectorModelFirehose>" ],
   "properties" : {
     "DeliveryStreamName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-firehose.html#cfn-iotevents-detectormodel-firehose-deliverystreamname",

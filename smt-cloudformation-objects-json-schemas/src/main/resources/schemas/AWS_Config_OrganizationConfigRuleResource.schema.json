@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.config.OrganizationConfigRuleResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<OrganizationConfigRuleResource>", "aws.HasCondition<OrganizationConfigRuleResource>" ],
+  "javaType" : "shiver.me.timbers.aws.config.OrganizationConfigRuleResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<OrganizationConfigRuleResource>", "shiver.me.timbers.aws.HasCondition<OrganizationConfigRuleResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

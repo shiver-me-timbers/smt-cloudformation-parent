@@ -4,8 +4,8 @@
   "title" : "RuleTarget",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html",
   "type" : "object",
-  "javaType" : "aws.events.RuleTarget",
-  "javaInterfaces" : [ "aws.Property<RuleTarget>" ],
+  "javaType" : "shiver.me.timbers.aws.events.RuleTarget",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<RuleTarget>" ],
   "properties" : {
     "Arn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-arn",
@@ -15,7 +15,7 @@
     "EcsParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-ecsparameters",
       "$ref" : "AWS_Events_Rule.EcsParameters.schema.json",
-      "javaType" : "aws.Property<aws.events.RuleEcsParameters>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.events.RuleEcsParameters>"
     },
     "Id" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-id",
@@ -35,12 +35,12 @@
     "InputTransformer" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-inputtransformer",
       "$ref" : "AWS_Events_Rule.InputTransformer.schema.json",
-      "javaType" : "aws.Property<aws.events.RuleInputTransformer>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.events.RuleInputTransformer>"
     },
     "KinesisParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-kinesisparameters",
       "$ref" : "AWS_Events_Rule.KinesisParameters.schema.json",
-      "javaType" : "aws.Property<aws.events.RuleKinesisParameters>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.events.RuleKinesisParameters>"
     },
     "RoleArn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-rolearn",
@@ -50,12 +50,12 @@
     "RunCommandParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-runcommandparameters",
       "$ref" : "AWS_Events_Rule.RunCommandParameters.schema.json",
-      "javaType" : "aws.Property<aws.events.RuleRunCommandParameters>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.events.RuleRunCommandParameters>"
     },
     "SqsParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-sqsparameters",
       "$ref" : "AWS_Events_Rule.SqsParameters.schema.json",
-      "javaType" : "aws.Property<aws.events.RuleSqsParameters>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.events.RuleSqsParameters>"
     }
   }
 }

@@ -4,5 +4,5 @@
   "title" : "NotebookInstanceAttributes",
   "type" : "string",
   "enum" : [ "NotebookInstanceName" ],
-  "javaType" : "aws.sagemaker.NotebookInstanceAttributes"
+  "javaType" : "shiver.me.timbers.aws.sagemaker.NotebookInstanceAttributes"
 }

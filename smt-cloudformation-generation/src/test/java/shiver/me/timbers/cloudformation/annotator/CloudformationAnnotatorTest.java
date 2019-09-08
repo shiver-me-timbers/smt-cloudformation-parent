@@ -44,7 +44,7 @@ public class CloudformationAnnotatorTest {
         final JsonNode node = mock(JsonNode.class);
 
         // Given
-        given(clazz.fullName()).willReturn("aws.Named");
+        given(clazz.fullName()).willReturn("shiver.me.timbers.aws.Named");
 
         // When
         annotator.propertyField(field, clazz, propertyName, node);
@@ -88,7 +88,7 @@ public class CloudformationAnnotatorTest {
         final JType type = mock(JType.class);
 
         // Given
-        given(clazz.fullName()).willReturn("aws.Named");
+        given(clazz.fullName()).willReturn("shiver.me.timbers.aws.Named");
         given(field.annotate(JsonProperty.class)).willReturn(mock(JAnnotationUse.class));
         given(field.type()).willReturn(type);
         given(type.erasure()).willReturn(mock(JType.class));

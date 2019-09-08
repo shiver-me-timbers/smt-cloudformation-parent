@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.PlacementGroupResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<PlacementGroupResource>", "aws.HasCondition<PlacementGroupResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.PlacementGroupResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<PlacementGroupResource>", "shiver.me.timbers.aws.HasCondition<PlacementGroupResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

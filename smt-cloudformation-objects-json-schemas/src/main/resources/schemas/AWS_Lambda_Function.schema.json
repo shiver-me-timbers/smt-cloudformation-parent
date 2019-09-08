@@ -4,17 +4,17 @@
   "title" : "Function",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html",
   "type" : "object",
-  "javaType" : "aws.lambda.Function",
+  "javaType" : "shiver.me.timbers.aws.lambda.Function",
   "properties" : {
     "Code" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-code",
       "$ref" : "AWS_Lambda_Function.Code.schema.json",
-      "javaType" : "aws.Property<aws.lambda.FunctionCode>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.lambda.FunctionCode>"
     },
     "DeadLetterConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-deadletterconfig",
       "$ref" : "AWS_Lambda_Function.DeadLetterConfig.schema.json",
-      "javaType" : "aws.Property<aws.lambda.FunctionDeadLetterConfig>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.lambda.FunctionDeadLetterConfig>"
     },
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-description",
@@ -24,7 +24,7 @@
     "Environment" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-environment",
       "$ref" : "AWS_Lambda_Function.Environment.schema.json",
-      "javaType" : "aws.Property<aws.lambda.FunctionEnvironment>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.lambda.FunctionEnvironment>"
     },
     "FunctionName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-functionname",
@@ -75,7 +75,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     },
     "Timeout" : {
@@ -86,12 +86,12 @@
     "TracingConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-tracingconfig",
       "$ref" : "AWS_Lambda_Function.TracingConfig.schema.json",
-      "javaType" : "aws.Property<aws.lambda.FunctionTracingConfig>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.lambda.FunctionTracingConfig>"
     },
     "VpcConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-vpcconfig",
       "$ref" : "AWS_Lambda_Function.VpcConfig.schema.json",
-      "javaType" : "aws.Property<aws.lambda.FunctionVpcConfig>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.lambda.FunctionVpcConfig>"
     }
   }
 }

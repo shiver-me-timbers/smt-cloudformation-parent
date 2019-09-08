@@ -4,8 +4,8 @@
   "title" : "InstanceGroupConfigCloudWatchAlarmDefinition",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-cloudwatchalarmdefinition.html",
   "type" : "object",
-  "javaType" : "aws.emr.InstanceGroupConfigCloudWatchAlarmDefinition",
-  "javaInterfaces" : [ "aws.Property<InstanceGroupConfigCloudWatchAlarmDefinition>" ],
+  "javaType" : "shiver.me.timbers.aws.emr.InstanceGroupConfigCloudWatchAlarmDefinition",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<InstanceGroupConfigCloudWatchAlarmDefinition>" ],
   "properties" : {
     "ComparisonOperator" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-instancegroupconfig-cloudwatchalarmdefinition-comparisonoperator",
@@ -18,7 +18,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_EMR_InstanceGroupConfig.MetricDimension.schema.json",
-        "javaType" : "aws.Property<aws.emr.InstanceGroupConfigMetricDimension>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.emr.InstanceGroupConfigMetricDimension>"
       }
     },
     "EvaluationPeriods" : {

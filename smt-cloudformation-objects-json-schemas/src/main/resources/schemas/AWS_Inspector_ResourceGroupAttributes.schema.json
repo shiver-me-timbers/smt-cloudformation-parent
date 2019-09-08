@@ -4,5 +4,5 @@
   "title" : "ResourceGroupAttributes",
   "type" : "string",
   "enum" : [ "Arn" ],
-  "javaType" : "aws.inspector.ResourceGroupAttributes"
+  "javaType" : "shiver.me.timbers.aws.inspector.ResourceGroupAttributes"
 }

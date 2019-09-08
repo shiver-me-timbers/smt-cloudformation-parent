@@ -4,5 +4,5 @@
   "title" : "CoreDefinitionAttributes",
   "type" : "string",
   "enum" : [ "LatestVersionArn", "Id", "Arn", "Name" ],
-  "javaType" : "aws.greengrass.CoreDefinitionAttributes"
+  "javaType" : "shiver.me.timbers.aws.greengrass.CoreDefinitionAttributes"
 }

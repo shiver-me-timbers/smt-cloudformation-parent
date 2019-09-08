@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.apigateway.BasePathMappingResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<BasePathMappingResource>", "aws.HasCondition<BasePathMappingResource>" ],
+  "javaType" : "shiver.me.timbers.aws.apigateway.BasePathMappingResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<BasePathMappingResource>", "shiver.me.timbers.aws.HasCondition<BasePathMappingResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

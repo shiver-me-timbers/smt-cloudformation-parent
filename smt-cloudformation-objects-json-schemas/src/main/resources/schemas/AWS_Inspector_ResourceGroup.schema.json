@@ -4,14 +4,14 @@
   "title" : "ResourceGroup",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-resourcegroup.html",
   "type" : "object",
-  "javaType" : "aws.inspector.ResourceGroup",
+  "javaType" : "shiver.me.timbers.aws.inspector.ResourceGroup",
   "properties" : {
     "ResourceGroupTags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-resourcegroup.html#cfn-inspector-resourcegroup-resourcegrouptags",
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     }
   }

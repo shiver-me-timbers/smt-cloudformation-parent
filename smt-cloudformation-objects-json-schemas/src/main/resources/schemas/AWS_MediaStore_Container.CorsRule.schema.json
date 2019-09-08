@@ -4,8 +4,8 @@
   "title" : "ContainerCorsRule",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediastore-container-corsrule.html",
   "type" : "object",
-  "javaType" : "aws.mediastore.ContainerCorsRule",
-  "javaInterfaces" : [ "aws.Property<ContainerCorsRule>" ],
+  "javaType" : "shiver.me.timbers.aws.mediastore.ContainerCorsRule",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ContainerCorsRule>" ],
   "properties" : {
     "AllowedMethods" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediastore-container-corsrule.html#cfn-mediastore-container-corsrule-allowedmethods",

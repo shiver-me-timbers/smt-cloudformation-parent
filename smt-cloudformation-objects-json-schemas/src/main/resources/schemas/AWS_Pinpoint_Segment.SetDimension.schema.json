@@ -4,8 +4,8 @@
   "title" : "SegmentSetDimension",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-setdimension.html",
   "type" : "object",
-  "javaType" : "aws.pinpoint.SegmentSetDimension",
-  "javaInterfaces" : [ "aws.Property<SegmentSetDimension>" ],
+  "javaType" : "shiver.me.timbers.aws.pinpoint.SegmentSetDimension",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<SegmentSetDimension>" ],
   "properties" : {
     "DimensionType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-setdimension.html#cfn-pinpoint-segment-setdimension-dimensiontype",

@@ -4,8 +4,8 @@
   "title" : "CloudFormationProvisionedProductProvisioningPreferences",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicecatalog-cloudformationprovisionedproduct-provisioningpreferences.html",
   "type" : "object",
-  "javaType" : "aws.servicecatalog.CloudFormationProvisionedProductProvisioningPreferences",
-  "javaInterfaces" : [ "aws.Property<CloudFormationProvisionedProductProvisioningPreferences>" ],
+  "javaType" : "shiver.me.timbers.aws.servicecatalog.CloudFormationProvisionedProductProvisioningPreferences",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<CloudFormationProvisionedProductProvisioningPreferences>" ],
   "properties" : {
     "StackSetAccounts" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicecatalog-cloudformationprovisionedproduct-provisioningpreferences.html#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningpreferences-stacksetaccounts",

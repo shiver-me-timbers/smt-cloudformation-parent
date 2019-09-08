@@ -4,14 +4,14 @@
   "title" : "EndpointConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpointconfig.html",
   "type" : "object",
-  "javaType" : "aws.sagemaker.EndpointConfig",
+  "javaType" : "shiver.me.timbers.aws.sagemaker.EndpointConfig",
   "properties" : {
     "ProductionVariants" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpointconfig.html#cfn-sagemaker-endpointconfig-productionvariants",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_SageMaker_EndpointConfig.ProductionVariant.schema.json",
-        "javaType" : "aws.Property<aws.sagemaker.EndpointConfigProductionVariant>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.sagemaker.EndpointConfigProductionVariant>"
       }
     },
     "KmsKeyId" : {
@@ -29,7 +29,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     }
   }

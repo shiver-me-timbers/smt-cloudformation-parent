@@ -4,13 +4,13 @@
   "title" : "ApplicationRecordFormat",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-recordformat.html",
   "type" : "object",
-  "javaType" : "aws.kinesisanalytics.ApplicationRecordFormat",
-  "javaInterfaces" : [ "aws.Property<ApplicationRecordFormat>" ],
+  "javaType" : "shiver.me.timbers.aws.kinesisanalytics.ApplicationRecordFormat",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ApplicationRecordFormat>" ],
   "properties" : {
     "MappingParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-recordformat.html#cfn-kinesisanalytics-application-recordformat-mappingparameters",
       "$ref" : "AWS_KinesisAnalytics_Application.CSVMappingParameters.schema.json",
-      "javaType" : "aws.Property<aws.kinesisanalytics.ApplicationMappingParameters>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.kinesisanalytics.ApplicationMappingParameters>"
     },
     "RecordFormatType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-recordformat.html#cfn-kinesisanalytics-application-recordformat-recordformattype",

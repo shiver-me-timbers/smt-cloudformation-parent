@@ -4,7 +4,7 @@
   "title" : "Crawler",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html",
   "type" : "object",
-  "javaType" : "aws.glue.Crawler",
+  "javaType" : "shiver.me.timbers.aws.glue.Crawler",
   "properties" : {
     "Role" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-role",
@@ -27,7 +27,7 @@
     "SchemaChangePolicy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-schemachangepolicy",
       "$ref" : "AWS_Glue_Crawler.SchemaChangePolicy.schema.json",
-      "javaType" : "aws.Property<aws.glue.CrawlerSchemaChangePolicy>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.glue.CrawlerSchemaChangePolicy>"
     },
     "Configuration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-configuration",
@@ -37,7 +37,7 @@
     "Schedule" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-schedule",
       "$ref" : "AWS_Glue_Crawler.Schedule.schema.json",
-      "javaType" : "aws.Property<aws.glue.CrawlerSchedule>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.glue.CrawlerSchedule>"
     },
     "DatabaseName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-databasename",
@@ -47,7 +47,7 @@
     "Targets" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-targets",
       "$ref" : "AWS_Glue_Crawler.Targets.schema.json",
-      "javaType" : "aws.Property<aws.glue.CrawlerTargets>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.glue.CrawlerTargets>"
     },
     "CrawlerSecurityConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-crawlersecurityconfiguration",

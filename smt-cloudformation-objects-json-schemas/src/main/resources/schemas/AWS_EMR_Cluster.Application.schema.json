@@ -4,8 +4,8 @@
   "title" : "ClusterApplication",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-application.html",
   "type" : "object",
-  "javaType" : "aws.emr.ClusterApplication",
-  "javaInterfaces" : [ "aws.Property<ClusterApplication>" ],
+  "javaType" : "shiver.me.timbers.aws.emr.ClusterApplication",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ClusterApplication>" ],
   "properties" : {
     "AdditionalInfo" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-application.html#cfn-elasticmapreduce-cluster-application-additionalinfo",

@@ -4,8 +4,8 @@
   "title" : "TableLocalSecondaryIndex",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-lsi.html",
   "type" : "object",
-  "javaType" : "aws.dynamodb.TableLocalSecondaryIndex",
-  "javaInterfaces" : [ "aws.Property<TableLocalSecondaryIndex>" ],
+  "javaType" : "shiver.me.timbers.aws.dynamodb.TableLocalSecondaryIndex",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TableLocalSecondaryIndex>" ],
   "properties" : {
     "IndexName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-lsi.html#cfn-dynamodb-lsi-indexname",
@@ -18,13 +18,13 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_DynamoDB_Table.KeySchema.schema.json",
-        "javaType" : "aws.Property<aws.dynamodb.TableKeySchema>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.dynamodb.TableKeySchema>"
       }
     },
     "Projection" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-lsi.html#cfn-dynamodb-lsi-projection",
       "$ref" : "AWS_DynamoDB_Table.Projection.schema.json",
-      "javaType" : "aws.Property<aws.dynamodb.TableProjection>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.dynamodb.TableProjection>"
     }
   }
 }

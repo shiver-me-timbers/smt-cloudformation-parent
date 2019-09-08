@@ -4,8 +4,8 @@
   "title" : "VPNConnectionVpnTunnelOptionsSpecification",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-vpnconnection-vpntunneloptionsspecification.html",
   "type" : "object",
-  "javaType" : "aws.ec2.VPNConnectionVpnTunnelOptionsSpecification",
-  "javaInterfaces" : [ "aws.Property<VPNConnectionVpnTunnelOptionsSpecification>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.VPNConnectionVpnTunnelOptionsSpecification",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<VPNConnectionVpnTunnelOptionsSpecification>" ],
   "properties" : {
     "PreSharedKey" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-vpnconnection-vpntunneloptionsspecification.html#cfn-ec2-vpnconnection-vpntunneloptionsspecification-presharedkey",

@@ -4,8 +4,8 @@
   "title" : "ConfigurationSetEventDestinationPinpointDestination",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpointemail-configurationseteventdestination-pinpointdestination.html",
   "type" : "object",
-  "javaType" : "aws.pinpointemail.ConfigurationSetEventDestinationPinpointDestination",
-  "javaInterfaces" : [ "aws.Property<ConfigurationSetEventDestinationPinpointDestination>" ],
+  "javaType" : "shiver.me.timbers.aws.pinpointemail.ConfigurationSetEventDestinationPinpointDestination",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ConfigurationSetEventDestinationPinpointDestination>" ],
   "properties" : {
     "ApplicationArn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpointemail-configurationseteventdestination-pinpointdestination.html#cfn-pinpointemail-configurationseteventdestination-pinpointdestination-applicationarn",

@@ -4,7 +4,7 @@
   "title" : "ListenerCertificate",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html",
   "type" : "object",
-  "javaType" : "aws.elasticloadbalancingv2.ListenerCertificate",
+  "javaType" : "shiver.me.timbers.aws.elasticloadbalancingv2.ListenerCertificate",
   "properties" : {
     "Certificates" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html#cfn-elasticloadbalancingv2-listenercertificate-certificates",
@@ -12,7 +12,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ElasticLoadBalancingV2_ListenerCertificate.Certificate.schema.json",
-        "javaType" : "aws.Property<aws.elasticloadbalancingv2.ListenerCertificateCertificate>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.elasticloadbalancingv2.ListenerCertificateCertificate>"
       }
     },
     "ListenerArn" : {

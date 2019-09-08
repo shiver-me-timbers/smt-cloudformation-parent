@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.emr.InstanceGroupConfigResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<InstanceGroupConfigResource>", "aws.HasCondition<InstanceGroupConfigResource>" ],
+  "javaType" : "shiver.me.timbers.aws.emr.InstanceGroupConfigResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<InstanceGroupConfigResource>", "shiver.me.timbers.aws.HasCondition<InstanceGroupConfigResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

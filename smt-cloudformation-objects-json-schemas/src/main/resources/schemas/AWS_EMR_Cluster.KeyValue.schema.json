@@ -4,8 +4,8 @@
   "title" : "ClusterKeyValue",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-keyvalue.html",
   "type" : "object",
-  "javaType" : "aws.emr.ClusterKeyValue",
-  "javaInterfaces" : [ "aws.Property<ClusterKeyValue>" ],
+  "javaType" : "shiver.me.timbers.aws.emr.ClusterKeyValue",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ClusterKeyValue>" ],
   "properties" : {
     "Key" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-keyvalue.html#cfn-elasticmapreduce-cluster-keyvalue-key",

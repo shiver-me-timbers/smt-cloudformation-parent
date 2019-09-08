@@ -4,8 +4,8 @@
   "title" : "SubscriptionDefinitionVersionSubscription",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-subscriptiondefinitionversion-subscription.html",
   "type" : "object",
-  "javaType" : "aws.greengrass.SubscriptionDefinitionVersionSubscription",
-  "javaInterfaces" : [ "aws.Property<SubscriptionDefinitionVersionSubscription>" ],
+  "javaType" : "shiver.me.timbers.aws.greengrass.SubscriptionDefinitionVersionSubscription",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<SubscriptionDefinitionVersionSubscription>" ],
   "properties" : {
     "Target" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-subscriptiondefinitionversion-subscription.html#cfn-greengrass-subscriptiondefinitionversion-subscription-target",

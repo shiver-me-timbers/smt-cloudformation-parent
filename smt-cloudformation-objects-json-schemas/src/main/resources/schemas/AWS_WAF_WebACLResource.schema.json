@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.waf.WebACLResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<WebACLResource>", "aws.HasCondition<WebACLResource>" ],
+  "javaType" : "shiver.me.timbers.aws.waf.WebACLResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<WebACLResource>", "shiver.me.timbers.aws.HasCondition<WebACLResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

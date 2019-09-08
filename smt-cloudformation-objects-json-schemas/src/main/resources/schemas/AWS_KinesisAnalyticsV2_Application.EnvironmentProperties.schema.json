@@ -4,15 +4,15 @@
   "title" : "ApplicationEnvironmentProperties",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-environmentproperties.html",
   "type" : "object",
-  "javaType" : "aws.kinesisanalyticsv2.ApplicationEnvironmentProperties",
-  "javaInterfaces" : [ "aws.Property<ApplicationEnvironmentProperties>" ],
+  "javaType" : "shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationEnvironmentProperties",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ApplicationEnvironmentProperties>" ],
   "properties" : {
     "PropertyGroups" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-environmentproperties.html#cfn-kinesisanalyticsv2-application-environmentproperties-propertygroups",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_KinesisAnalyticsV2_Application.PropertyGroup.schema.json",
-        "javaType" : "aws.Property<aws.kinesisanalyticsv2.ApplicationPropertyGroup>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.kinesisanalyticsv2.ApplicationPropertyGroup>"
       }
     }
   }

@@ -4,8 +4,8 @@
   "title" : "ConfigurationAggregatorAccountAggregationSource",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-accountaggregationsource.html",
   "type" : "object",
-  "javaType" : "aws.config.ConfigurationAggregatorAccountAggregationSource",
-  "javaInterfaces" : [ "aws.Property<ConfigurationAggregatorAccountAggregationSource>" ],
+  "javaType" : "shiver.me.timbers.aws.config.ConfigurationAggregatorAccountAggregationSource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ConfigurationAggregatorAccountAggregationSource>" ],
   "properties" : {
     "AllAwsRegions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-accountaggregationsource.html#cfn-config-configurationaggregator-accountaggregationsource-allawsregions",

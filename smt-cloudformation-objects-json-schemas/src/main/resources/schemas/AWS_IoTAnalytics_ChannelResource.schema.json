@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.iotanalytics.ChannelResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ChannelResource>", "aws.HasCondition<ChannelResource>" ],
+  "javaType" : "shiver.me.timbers.aws.iotanalytics.ChannelResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ChannelResource>", "shiver.me.timbers.aws.HasCondition<ChannelResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

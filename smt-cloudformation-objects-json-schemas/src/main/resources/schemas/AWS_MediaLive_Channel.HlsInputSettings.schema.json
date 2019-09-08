@@ -4,8 +4,8 @@
   "title" : "ChannelHlsInputSettings",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-hlsinputsettings.html",
   "type" : "object",
-  "javaType" : "aws.medialive.ChannelHlsInputSettings",
-  "javaInterfaces" : [ "aws.Property<ChannelHlsInputSettings>" ],
+  "javaType" : "shiver.me.timbers.aws.medialive.ChannelHlsInputSettings",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ChannelHlsInputSettings>" ],
   "properties" : {
     "BufferSegments" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-hlsinputsettings.html#cfn-medialive-channel-hlsinputsettings-buffersegments",

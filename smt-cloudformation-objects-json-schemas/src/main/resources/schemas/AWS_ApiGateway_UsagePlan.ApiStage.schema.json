@@ -4,8 +4,8 @@
   "title" : "UsagePlanApiStage",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-apistage.html",
   "type" : "object",
-  "javaType" : "aws.apigateway.UsagePlanApiStage",
-  "javaInterfaces" : [ "aws.Property<UsagePlanApiStage>" ],
+  "javaType" : "shiver.me.timbers.aws.apigateway.UsagePlanApiStage",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<UsagePlanApiStage>" ],
   "properties" : {
     "ApiId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-apistage.html#cfn-apigateway-usageplan-apistage-apiid",
@@ -20,7 +20,7 @@
     "Throttle" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-apistage.html#cfn-apigateway-usageplan-apistage-throttle",
       "type" : "object",
-      "javaType" : "java.util.Map<String, aws.Property<aws.apigateway.UsagePlanThrottleSettings>>"
+      "javaType" : "java.util.Map<String, shiver.me.timbers.aws.Property<shiver.me.timbers.aws.apigateway.UsagePlanThrottleSettings>>"
     }
   }
 }

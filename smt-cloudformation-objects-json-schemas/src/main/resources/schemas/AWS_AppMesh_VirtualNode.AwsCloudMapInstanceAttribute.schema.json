@@ -4,8 +4,8 @@
   "title" : "VirtualNodeAwsCloudMapInstanceAttribute",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-awscloudmapinstanceattribute.html",
   "type" : "object",
-  "javaType" : "aws.appmesh.VirtualNodeAwsCloudMapInstanceAttribute",
-  "javaInterfaces" : [ "aws.Property<VirtualNodeAwsCloudMapInstanceAttribute>" ],
+  "javaType" : "shiver.me.timbers.aws.appmesh.VirtualNodeAwsCloudMapInstanceAttribute",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<VirtualNodeAwsCloudMapInstanceAttribute>" ],
   "properties" : {
     "Value" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-awscloudmapinstanceattribute.html#cfn-appmesh-virtualnode-awscloudmapinstanceattribute-value",

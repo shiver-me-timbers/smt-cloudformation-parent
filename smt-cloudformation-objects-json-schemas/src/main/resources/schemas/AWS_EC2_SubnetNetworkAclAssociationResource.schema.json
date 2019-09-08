@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.SubnetNetworkAclAssociationResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<SubnetNetworkAclAssociationResource>", "aws.HasCondition<SubnetNetworkAclAssociationResource>", "aws.HasAttributes<SubnetNetworkAclAssociationAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.SubnetNetworkAclAssociationResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<SubnetNetworkAclAssociationResource>", "shiver.me.timbers.aws.HasCondition<SubnetNetworkAclAssociationResource>", "shiver.me.timbers.aws.HasAttributes<SubnetNetworkAclAssociationAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

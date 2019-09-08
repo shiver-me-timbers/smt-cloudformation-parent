@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.cloudfront.CloudFrontOriginAccessIdentityResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<CloudFrontOriginAccessIdentityResource>", "aws.HasCondition<CloudFrontOriginAccessIdentityResource>", "aws.HasAttributes<CloudFrontOriginAccessIdentityAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.cloudfront.CloudFrontOriginAccessIdentityResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<CloudFrontOriginAccessIdentityResource>", "shiver.me.timbers.aws.HasCondition<CloudFrontOriginAccessIdentityResource>", "shiver.me.timbers.aws.HasAttributes<CloudFrontOriginAccessIdentityAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -4,8 +4,8 @@
   "title" : "SegmentAttributeDimension",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-attributedimension.html",
   "type" : "object",
-  "javaType" : "aws.pinpoint.SegmentAttributeDimension",
-  "javaInterfaces" : [ "aws.Property<SegmentAttributeDimension>" ],
+  "javaType" : "shiver.me.timbers.aws.pinpoint.SegmentAttributeDimension",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<SegmentAttributeDimension>" ],
   "properties" : {
     "AttributeType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-segment-attributedimension.html#cfn-pinpoint-segment-attributedimension-attributetype",

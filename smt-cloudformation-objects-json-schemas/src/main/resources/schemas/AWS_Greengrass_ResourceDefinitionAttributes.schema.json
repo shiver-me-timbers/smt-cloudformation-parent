@@ -4,5 +4,5 @@
   "title" : "ResourceDefinitionAttributes",
   "type" : "string",
   "enum" : [ "LatestVersionArn", "Id", "Arn", "Name" ],
-  "javaType" : "aws.greengrass.ResourceDefinitionAttributes"
+  "javaType" : "shiver.me.timbers.aws.greengrass.ResourceDefinitionAttributes"
 }

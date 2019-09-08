@@ -4,5 +4,5 @@
   "title" : "VirtualNodeAttributes",
   "type" : "string",
   "enum" : [ "Uid", "MeshName", "Arn", "VirtualNodeName" ],
-  "javaType" : "aws.appmesh.VirtualNodeAttributes"
+  "javaType" : "shiver.me.timbers.aws.appmesh.VirtualNodeAttributes"
 }

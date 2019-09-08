@@ -4,8 +4,8 @@
   "title" : "AnomalyDetectorConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-anomalydetector-configuration.html",
   "type" : "object",
-  "javaType" : "aws.cloudwatch.AnomalyDetectorConfiguration",
-  "javaInterfaces" : [ "aws.Property<AnomalyDetectorConfiguration>" ],
+  "javaType" : "shiver.me.timbers.aws.cloudwatch.AnomalyDetectorConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<AnomalyDetectorConfiguration>" ],
   "properties" : {
     "MetricTimeZone" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-anomalydetector-configuration.html#cfn-cloudwatch-anomalydetector-configuration-metrictimezone",
@@ -17,7 +17,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_CloudWatch_AnomalyDetector.Range.schema.json",
-        "javaType" : "aws.Property<aws.cloudwatch.AnomalyDetectorRange>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cloudwatch.AnomalyDetectorRange>"
       }
     }
   }

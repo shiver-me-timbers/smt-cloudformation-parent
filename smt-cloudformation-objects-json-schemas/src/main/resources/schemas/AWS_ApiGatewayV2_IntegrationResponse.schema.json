@@ -4,7 +4,7 @@
   "title" : "IntegrationResponse",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integrationresponse.html",
   "type" : "object",
-  "javaType" : "aws.apigatewayv2.IntegrationResponse",
+  "javaType" : "shiver.me.timbers.aws.apigatewayv2.IntegrationResponse",
   "properties" : {
     "ResponseTemplates" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integrationresponse.html#cfn-apigatewayv2-integrationresponse-responsetemplates",

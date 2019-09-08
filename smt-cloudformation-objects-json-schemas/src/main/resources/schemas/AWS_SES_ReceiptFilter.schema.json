@@ -4,12 +4,12 @@
   "title" : "ReceiptFilter",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptfilter.html",
   "type" : "object",
-  "javaType" : "aws.ses.ReceiptFilter",
+  "javaType" : "shiver.me.timbers.aws.ses.ReceiptFilter",
   "properties" : {
     "Filter" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptfilter.html#cfn-ses-receiptfilter-filter",
       "$ref" : "AWS_SES_ReceiptFilter.Filter.schema.json",
-      "javaType" : "aws.Property<aws.ses.ReceiptFilterFilter>"
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ses.ReceiptFilterFilter>"
     }
   }
 }

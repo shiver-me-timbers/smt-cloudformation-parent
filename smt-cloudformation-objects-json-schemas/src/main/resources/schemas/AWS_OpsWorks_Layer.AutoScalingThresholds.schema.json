@@ -4,8 +4,8 @@
   "title" : "LayerAutoScalingThresholds",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html",
   "type" : "object",
-  "javaType" : "aws.opsworks.LayerAutoScalingThresholds",
-  "javaInterfaces" : [ "aws.Property<LayerAutoScalingThresholds>" ],
+  "javaType" : "shiver.me.timbers.aws.opsworks.LayerAutoScalingThresholds",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<LayerAutoScalingThresholds>" ],
   "properties" : {
     "CpuThreshold" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html#cfn-opsworks-layer-loadbasedautoscaling-autoscalingthresholds-cputhreshold",

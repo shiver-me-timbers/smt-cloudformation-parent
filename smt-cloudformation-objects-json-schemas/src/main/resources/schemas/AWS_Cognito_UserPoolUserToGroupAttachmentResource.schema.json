@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.cognito.UserPoolUserToGroupAttachmentResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<UserPoolUserToGroupAttachmentResource>", "aws.HasCondition<UserPoolUserToGroupAttachmentResource>" ],
+  "javaType" : "shiver.me.timbers.aws.cognito.UserPoolUserToGroupAttachmentResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<UserPoolUserToGroupAttachmentResource>", "shiver.me.timbers.aws.HasCondition<UserPoolUserToGroupAttachmentResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

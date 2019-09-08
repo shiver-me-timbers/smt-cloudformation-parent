@@ -4,8 +4,8 @@
   "title" : "DomainVPCOptions",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-vpcoptions.html",
   "type" : "object",
-  "javaType" : "aws.elasticsearch.DomainVPCOptions",
-  "javaInterfaces" : [ "aws.Property<DomainVPCOptions>" ],
+  "javaType" : "shiver.me.timbers.aws.elasticsearch.DomainVPCOptions",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DomainVPCOptions>" ],
   "properties" : {
     "SecurityGroupIds" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-vpcoptions.html#cfn-elasticsearch-domain-vpcoptions-securitygroupids",

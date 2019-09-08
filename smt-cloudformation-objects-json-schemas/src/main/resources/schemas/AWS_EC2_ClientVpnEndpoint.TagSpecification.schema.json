@@ -4,8 +4,8 @@
   "title" : "ClientVpnEndpointTagSpecification",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-clientvpnendpoint-tagspecification.html",
   "type" : "object",
-  "javaType" : "aws.ec2.ClientVpnEndpointTagSpecification",
-  "javaInterfaces" : [ "aws.Property<ClientVpnEndpointTagSpecification>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.ClientVpnEndpointTagSpecification",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ClientVpnEndpointTagSpecification>" ],
   "properties" : {
     "ResourceType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-clientvpnendpoint-tagspecification.html#cfn-ec2-clientvpnendpoint-tagspecification-resourcetype",
@@ -17,7 +17,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
-        "javaType" : "aws.Property<aws.Tag>"
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     }
   }

@@ -4,8 +4,8 @@
   "title" : "GraphQLApiLogConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html",
   "type" : "object",
-  "javaType" : "aws.appsync.GraphQLApiLogConfig",
-  "javaInterfaces" : [ "aws.Property<GraphQLApiLogConfig>" ],
+  "javaType" : "shiver.me.timbers.aws.appsync.GraphQLApiLogConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<GraphQLApiLogConfig>" ],
   "properties" : {
     "CloudWatchLogsRoleArn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html#cfn-appsync-graphqlapi-logconfig-cloudwatchlogsrolearn",

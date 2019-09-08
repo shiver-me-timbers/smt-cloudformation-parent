@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.kms.KeyResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<KeyResource>", "aws.HasCondition<KeyResource>", "aws.HasAttributes<KeyAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.kms.KeyResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<KeyResource>", "shiver.me.timbers.aws.HasCondition<KeyResource>", "shiver.me.timbers.aws.HasAttributes<KeyAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

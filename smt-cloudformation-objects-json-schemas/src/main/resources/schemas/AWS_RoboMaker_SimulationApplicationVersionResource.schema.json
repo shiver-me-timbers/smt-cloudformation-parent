@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.robomaker.SimulationApplicationVersionResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<SimulationApplicationVersionResource>", "aws.HasCondition<SimulationApplicationVersionResource>" ],
+  "javaType" : "shiver.me.timbers.aws.robomaker.SimulationApplicationVersionResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<SimulationApplicationVersionResource>", "shiver.me.timbers.aws.HasCondition<SimulationApplicationVersionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -4,7 +4,7 @@
   "title" : "Deployment",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-deployment.html",
   "type" : "object",
-  "javaType" : "aws.apigatewayv2.Deployment",
+  "javaType" : "shiver.me.timbers.aws.apigatewayv2.Deployment",
   "properties" : {
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-deployment.html#cfn-apigatewayv2-deployment-description",

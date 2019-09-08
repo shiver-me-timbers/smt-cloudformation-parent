@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.wafregional.SqlInjectionMatchSetResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<SqlInjectionMatchSetResource>", "aws.HasCondition<SqlInjectionMatchSetResource>" ],
+  "javaType" : "shiver.me.timbers.aws.wafregional.SqlInjectionMatchSetResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<SqlInjectionMatchSetResource>", "shiver.me.timbers.aws.HasCondition<SqlInjectionMatchSetResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

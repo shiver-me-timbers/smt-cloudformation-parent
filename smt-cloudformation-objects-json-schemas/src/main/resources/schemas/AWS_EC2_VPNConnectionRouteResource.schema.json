@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.ec2.VPNConnectionRouteResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<VPNConnectionRouteResource>", "aws.HasCondition<VPNConnectionRouteResource>" ],
+  "javaType" : "shiver.me.timbers.aws.ec2.VPNConnectionRouteResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<VPNConnectionRouteResource>", "shiver.me.timbers.aws.HasCondition<VPNConnectionRouteResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

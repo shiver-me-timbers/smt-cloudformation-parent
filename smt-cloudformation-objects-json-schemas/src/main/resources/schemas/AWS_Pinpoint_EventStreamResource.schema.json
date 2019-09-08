@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.pinpoint.EventStreamResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<EventStreamResource>", "aws.HasCondition<EventStreamResource>" ],
+  "javaType" : "shiver.me.timbers.aws.pinpoint.EventStreamResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<EventStreamResource>", "shiver.me.timbers.aws.HasCondition<EventStreamResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -4,5 +4,5 @@
   "title" : "UserSshPublicKey",
   "type" : "string",
   "javaType" : "java.lang.CharSequence",
-  "javaInterfaces" : [ "aws.Property<UserSshPublicKey>" ]
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<UserSshPublicKey>" ]
 }

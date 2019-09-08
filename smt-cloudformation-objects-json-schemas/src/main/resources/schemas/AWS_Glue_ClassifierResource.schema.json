@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.glue.ClassifierResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<ClassifierResource>", "aws.HasCondition<ClassifierResource>" ],
+  "javaType" : "shiver.me.timbers.aws.glue.ClassifierResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ClassifierResource>", "shiver.me.timbers.aws.HasCondition<ClassifierResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

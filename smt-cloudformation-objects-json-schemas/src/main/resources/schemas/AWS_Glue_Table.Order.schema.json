@@ -4,8 +4,8 @@
   "title" : "TableOrder",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-order.html",
   "type" : "object",
-  "javaType" : "aws.glue.TableOrder",
-  "javaInterfaces" : [ "aws.Property<TableOrder>" ],
+  "javaType" : "shiver.me.timbers.aws.glue.TableOrder",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TableOrder>" ],
   "properties" : {
     "Column" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-order.html#cfn-glue-table-order-column",

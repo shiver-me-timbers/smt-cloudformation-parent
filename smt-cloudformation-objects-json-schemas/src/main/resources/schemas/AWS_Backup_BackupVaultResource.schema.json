@@ -7,8 +7,8 @@
   "extends" : {
     "$ref" : "Resource.schema.json"
   },
-  "javaType" : "aws.backup.BackupVaultResource",
-  "javaInterfaces" : [ "aws.HasDependsOn<BackupVaultResource>", "aws.HasCondition<BackupVaultResource>", "aws.HasAttributes<BackupVaultAttributes>" ],
+  "javaType" : "shiver.me.timbers.aws.backup.BackupVaultResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<BackupVaultResource>", "shiver.me.timbers.aws.HasCondition<BackupVaultResource>", "shiver.me.timbers.aws.HasAttributes<BackupVaultAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

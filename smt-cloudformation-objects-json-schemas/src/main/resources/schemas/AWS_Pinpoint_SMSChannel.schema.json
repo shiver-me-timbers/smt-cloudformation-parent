@@ -4,7 +4,7 @@
   "title" : "SMSChannel",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-smschannel.html",
   "type" : "object",
-  "javaType" : "aws.pinpoint.SMSChannel",
+  "javaType" : "shiver.me.timbers.aws.pinpoint.SMSChannel",
   "properties" : {
     "ShortCode" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-smschannel.html#cfn-pinpoint-smschannel-shortcode",

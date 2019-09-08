@@ -4,8 +4,8 @@
   "title" : "PermissionsDataLakePrincipal",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lakeformation-permissions-datalakeprincipal.html",
   "type" : "object",
-  "javaType" : "aws.lakeformation.PermissionsDataLakePrincipal",
-  "javaInterfaces" : [ "aws.Property<PermissionsDataLakePrincipal>" ],
+  "javaType" : "shiver.me.timbers.aws.lakeformation.PermissionsDataLakePrincipal",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<PermissionsDataLakePrincipal>" ],
   "properties" : {
     "DataLakePrincipalIdentifier" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lakeformation-permissions-datalakeprincipal.html#cfn-lakeformation-permissions-datalakeprincipal-datalakeprincipalidentifier",
