@@ -1,0 +1,36 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Synthetics_Canary.Code.schema.json",
+  "title" : "CanaryCode",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-synthetics-canary-code.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.synthetics.CanaryCode",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<CanaryCode>" ],
+  "properties" : {
+    "S3Bucket" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-synthetics-canary-code.html#cfn-synthetics-canary-code-s3bucket",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "S3Key" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-synthetics-canary-code.html#cfn-synthetics-canary-code-s3key",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "S3ObjectVersion" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-synthetics-canary-code.html#cfn-synthetics-canary-code-s3objectversion",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Script" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-synthetics-canary-code.html#cfn-synthetics-canary-code-script",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Handler" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-synthetics-canary-code.html#cfn-synthetics-canary-code-handler",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

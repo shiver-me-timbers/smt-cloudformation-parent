@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_GameLift_Fleet.CertificateConfiguration.schema.json",
+  "title" : "FleetCertificateConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-certificateconfiguration.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.gamelift.FleetCertificateConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<FleetCertificateConfiguration>" ],
+  "properties" : {
+    "CertificateType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-certificateconfiguration.html#cfn-gamelift-fleet-certificateconfiguration-certificatetype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

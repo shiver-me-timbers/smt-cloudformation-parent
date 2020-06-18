@@ -11,6 +11,11 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "MetricPolicy" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediastore-container.html#cfn-mediastore-container-metricpolicy",
+      "$ref" : "AWS_MediaStore_Container.MetricPolicy.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.mediastore.ContainerMetricPolicy>"
+    },
     "ContainerName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediastore-container.html#cfn-mediastore-container-containername",
       "type" : "string",
@@ -33,6 +38,14 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediastore-container.html#cfn-mediastore-container-accessloggingenabled",
       "type" : "boolean",
       "javaType" : "java.lang.CharSequence"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediastore-container.html#cfn-mediastore-container-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "Tag.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
+      }
     }
   }
 }

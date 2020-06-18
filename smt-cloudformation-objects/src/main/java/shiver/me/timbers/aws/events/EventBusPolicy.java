@@ -20,6 +20,7 @@ import shiver.me.timbers.aws.Property;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "EventBusName",
     "Condition",
     "Action",
     "StatementId",
@@ -27,6 +28,13 @@ import shiver.me.timbers.aws.Property;
 })
 public class EventBusPolicy {
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-eventbuspolicy.html#cfn-events-eventbuspolicy-eventbusname
+     * 
+     */
+    @JsonProperty("EventBusName")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-eventbuspolicy.html#cfn-events-eventbuspolicy-eventbusname")
+    private CharSequence eventBusName;
     /**
      * EventBusPolicyCondition
      * <p>
@@ -57,6 +65,29 @@ public class EventBusPolicy {
     @JsonProperty("Principal")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-eventbuspolicy.html#cfn-events-eventbuspolicy-principal")
     private CharSequence principal;
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-eventbuspolicy.html#cfn-events-eventbuspolicy-eventbusname
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getEventBusName() {
+        return eventBusName;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-eventbuspolicy.html#cfn-events-eventbuspolicy-eventbusname
+     * 
+     */
+    @JsonIgnore
+    public void setEventBusName(CharSequence eventBusName) {
+        this.eventBusName = eventBusName;
+    }
+
+    public EventBusPolicy withEventBusName(CharSequence eventBusName) {
+        this.eventBusName = eventBusName;
+        return this;
+    }
 
     /**
      * EventBusPolicyCondition
@@ -156,12 +187,12 @@ public class EventBusPolicy {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("condition", condition).append("action", action).append("statementId", statementId).append("principal", principal).toString();
+        return new ToStringBuilder(this).append("eventBusName", eventBusName).append("condition", condition).append("action", action).append("statementId", statementId).append("principal", principal).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(statementId).append(principal).append(action).append(condition).toHashCode();
+        return new HashCodeBuilder().append(statementId).append(principal).append(action).append(condition).append(eventBusName).toHashCode();
     }
 
     @Override
@@ -173,7 +204,7 @@ public class EventBusPolicy {
             return false;
         }
         EventBusPolicy rhs = ((EventBusPolicy) other);
-        return new EqualsBuilder().append(statementId, rhs.statementId).append(principal, rhs.principal).append(action, rhs.action).append(condition, rhs.condition).isEquals();
+        return new EqualsBuilder().append(statementId, rhs.statementId).append(principal, rhs.principal).append(action, rhs.action).append(condition, rhs.condition).append(eventBusName, rhs.eventBusName).isEquals();
     }
 
 }

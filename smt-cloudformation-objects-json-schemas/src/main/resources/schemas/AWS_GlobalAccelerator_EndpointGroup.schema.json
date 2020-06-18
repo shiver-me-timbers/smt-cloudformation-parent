@@ -1,0 +1,58 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_GlobalAccelerator_EndpointGroup.schema.json",
+  "title" : "EndpointGroup",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-globalaccelerator-endpointgroup.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.globalaccelerator.EndpointGroup",
+  "properties" : {
+    "ListenerArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-globalaccelerator-endpointgroup.html#cfn-globalaccelerator-endpointgroup-listenerarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "EndpointGroupRegion" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-globalaccelerator-endpointgroup.html#cfn-globalaccelerator-endpointgroup-endpointgroupregion",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "EndpointConfigurations" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-globalaccelerator-endpointgroup.html#cfn-globalaccelerator-endpointgroup-endpointconfigurations",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_GlobalAccelerator_EndpointGroup.EndpointConfiguration.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.globalaccelerator.EndpointGroupEndpointConfiguration>"
+      }
+    },
+    "TrafficDialPercentage" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-globalaccelerator-endpointgroup.html#cfn-globalaccelerator-endpointgroup-trafficdialpercentage",
+      "type" : "number",
+      "javaType" : "java.lang.Number"
+    },
+    "HealthCheckPort" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-globalaccelerator-endpointgroup.html#cfn-globalaccelerator-endpointgroup-healthcheckport",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "HealthCheckProtocol" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-globalaccelerator-endpointgroup.html#cfn-globalaccelerator-endpointgroup-healthcheckprotocol",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "HealthCheckPath" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-globalaccelerator-endpointgroup.html#cfn-globalaccelerator-endpointgroup-healthcheckpath",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "HealthCheckIntervalSeconds" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-globalaccelerator-endpointgroup.html#cfn-globalaccelerator-endpointgroup-healthcheckintervalseconds",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "ThresholdCount" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-globalaccelerator-endpointgroup.html#cfn-globalaccelerator-endpointgroup-thresholdcount",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    }
+  }
+}

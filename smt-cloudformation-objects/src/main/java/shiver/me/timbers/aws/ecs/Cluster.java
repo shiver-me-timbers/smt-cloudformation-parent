@@ -23,11 +23,19 @@ import shiver.me.timbers.aws.Tag;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "Tags",
     "ClusterName",
-    "Tags"
+    "ClusterSettings"
 })
 public class Cluster {
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#cfn-ecs-cluster-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#cfn-ecs-cluster-tags")
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#cfn-ecs-cluster-clustername
      * 
@@ -36,12 +44,35 @@ public class Cluster {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#cfn-ecs-cluster-clustername")
     private CharSequence clusterName;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#cfn-ecs-cluster-clustersettings
+     * 
+     */
+    @JsonProperty("ClusterSettings")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#cfn-ecs-cluster-clustersettings")
+    private List<Property<ClusterClusterSettings>> clusterSettings = new ArrayList<Property<ClusterClusterSettings>>();
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#cfn-ecs-cluster-tags
      * 
      */
-    @JsonProperty("Tags")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#cfn-ecs-cluster-tags")
-    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
+    @JsonIgnore
+    public List<Property<Tag>> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#cfn-ecs-cluster-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+    }
+
+    public Cluster withTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#cfn-ecs-cluster-clustername
@@ -67,36 +98,36 @@ public class Cluster {
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#cfn-ecs-cluster-tags
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#cfn-ecs-cluster-clustersettings
      * 
      */
     @JsonIgnore
-    public List<Property<Tag>> getTags() {
-        return tags;
+    public List<Property<ClusterClusterSettings>> getClusterSettings() {
+        return clusterSettings;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#cfn-ecs-cluster-tags
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#cfn-ecs-cluster-clustersettings
      * 
      */
     @JsonIgnore
-    public void setTags(List<Property<Tag>> tags) {
-        this.tags = tags;
+    public void setClusterSettings(List<Property<ClusterClusterSettings>> clusterSettings) {
+        this.clusterSettings = clusterSettings;
     }
 
-    public Cluster withTags(List<Property<Tag>> tags) {
-        this.tags = tags;
+    public Cluster withClusterSettings(List<Property<ClusterClusterSettings>> clusterSettings) {
+        this.clusterSettings = clusterSettings;
         return this;
     }
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("clusterName", clusterName).append("tags", tags).toString();
+        return new ToStringBuilder(this).append("tags", tags).append("clusterName", clusterName).append("clusterSettings", clusterSettings).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(clusterName).append(tags).toHashCode();
+        return new HashCodeBuilder().append(clusterSettings).append(tags).append(clusterName).toHashCode();
     }
 
     @Override
@@ -108,7 +139,7 @@ public class Cluster {
             return false;
         }
         Cluster rhs = ((Cluster) other);
-        return new EqualsBuilder().append(clusterName, rhs.clusterName).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(clusterSettings, rhs.clusterSettings).append(tags, rhs.tags).append(clusterName, rhs.clusterName).isEquals();
     }
 
 }

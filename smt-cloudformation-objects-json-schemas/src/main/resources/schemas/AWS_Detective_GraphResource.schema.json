@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Detective_GraphResource.schema.json",
+  "title" : "GraphResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-detective-graph.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.detective.GraphResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<GraphResource>", "shiver.me.timbers.aws.HasCondition<GraphResource>", "shiver.me.timbers.aws.HasAttributes<GraphAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Detective::Graph"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Detective_Graph.schema.json"
+    }
+  }
+}

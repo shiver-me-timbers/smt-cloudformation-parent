@@ -26,6 +26,8 @@ import shiver.me.timbers.aws.Tag;
     "Description",
     "EnvironmentVariables",
     "AppId",
+    "PullRequestEnvironmentName",
+    "EnablePullRequestPreview",
     "EnableAutoBuild",
     "BuildSpec",
     "Stage",
@@ -56,6 +58,20 @@ public class Branch {
     @JsonProperty("AppId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html#cfn-amplify-branch-appid")
     private CharSequence appId;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html#cfn-amplify-branch-pullrequestenvironmentname
+     * 
+     */
+    @JsonProperty("PullRequestEnvironmentName")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html#cfn-amplify-branch-pullrequestenvironmentname")
+    private CharSequence pullRequestEnvironmentName;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html#cfn-amplify-branch-enablepullrequestpreview
+     * 
+     */
+    @JsonProperty("EnablePullRequestPreview")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html#cfn-amplify-branch-enablepullrequestpreview")
+    private CharSequence enablePullRequestPreview;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html#cfn-amplify-branch-enableautobuild
      * 
@@ -167,6 +183,52 @@ public class Branch {
 
     public Branch withAppId(CharSequence appId) {
         this.appId = appId;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html#cfn-amplify-branch-pullrequestenvironmentname
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getPullRequestEnvironmentName() {
+        return pullRequestEnvironmentName;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html#cfn-amplify-branch-pullrequestenvironmentname
+     * 
+     */
+    @JsonIgnore
+    public void setPullRequestEnvironmentName(CharSequence pullRequestEnvironmentName) {
+        this.pullRequestEnvironmentName = pullRequestEnvironmentName;
+    }
+
+    public Branch withPullRequestEnvironmentName(CharSequence pullRequestEnvironmentName) {
+        this.pullRequestEnvironmentName = pullRequestEnvironmentName;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html#cfn-amplify-branch-enablepullrequestpreview
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getEnablePullRequestPreview() {
+        return enablePullRequestPreview;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html#cfn-amplify-branch-enablepullrequestpreview
+     * 
+     */
+    @JsonIgnore
+    public void setEnablePullRequestPreview(CharSequence enablePullRequestPreview) {
+        this.enablePullRequestPreview = enablePullRequestPreview;
+    }
+
+    public Branch withEnablePullRequestPreview(CharSequence enablePullRequestPreview) {
+        this.enablePullRequestPreview = enablePullRequestPreview;
         return this;
     }
 
@@ -314,12 +376,12 @@ public class Branch {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("description", description).append("environmentVariables", environmentVariables).append("appId", appId).append("enableAutoBuild", enableAutoBuild).append("buildSpec", buildSpec).append("stage", stage).append("branchName", branchName).append("basicAuthConfig", basicAuthConfig).append("tags", tags).toString();
+        return new ToStringBuilder(this).append("description", description).append("environmentVariables", environmentVariables).append("appId", appId).append("pullRequestEnvironmentName", pullRequestEnvironmentName).append("enablePullRequestPreview", enablePullRequestPreview).append("enableAutoBuild", enableAutoBuild).append("buildSpec", buildSpec).append("stage", stage).append("branchName", branchName).append("basicAuthConfig", basicAuthConfig).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(enableAutoBuild).append(stage).append(environmentVariables).append(appId).append(buildSpec).append(description).append(branchName).append(basicAuthConfig).append(tags).toHashCode();
+        return new HashCodeBuilder().append(enableAutoBuild).append(stage).append(environmentVariables).append(appId).append(enablePullRequestPreview).append(buildSpec).append(description).append(branchName).append(basicAuthConfig).append(pullRequestEnvironmentName).append(tags).toHashCode();
     }
 
     @Override
@@ -331,7 +393,7 @@ public class Branch {
             return false;
         }
         Branch rhs = ((Branch) other);
-        return new EqualsBuilder().append(enableAutoBuild, rhs.enableAutoBuild).append(stage, rhs.stage).append(environmentVariables, rhs.environmentVariables).append(appId, rhs.appId).append(buildSpec, rhs.buildSpec).append(description, rhs.description).append(branchName, rhs.branchName).append(basicAuthConfig, rhs.basicAuthConfig).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(enableAutoBuild, rhs.enableAutoBuild).append(stage, rhs.stage).append(environmentVariables, rhs.environmentVariables).append(appId, rhs.appId).append(enablePullRequestPreview, rhs.enablePullRequestPreview).append(buildSpec, rhs.buildSpec).append(description, rhs.description).append(branchName, rhs.branchName).append(basicAuthConfig, rhs.basicAuthConfig).append(pullRequestEnvironmentName, rhs.pullRequestEnvironmentName).append(tags, rhs.tags).isEquals();
     }
 
 }

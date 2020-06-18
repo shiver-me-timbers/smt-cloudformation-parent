@@ -22,6 +22,7 @@ import shiver.me.timbers.aws.Property;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "MultiplexSettings",
     "Id",
     "Settings",
     "MediaPackageSettings"
@@ -29,6 +30,15 @@ import shiver.me.timbers.aws.Property;
 public class ChannelOutputDestination implements Property<ChannelOutputDestination>
 {
 
+    /**
+     * ChannelMultiplexProgramChannelDestinationSettings
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-multiplexprogramchanneldestinationsettings.html
+     * 
+     */
+    @JsonProperty("MultiplexSettings")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-multiplexprogramchanneldestinationsettings.html")
+    private Property<ChannelMultiplexProgramChannelDestinationSettings> multiplexSettings;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-outputdestination.html#cfn-medialive-channel-outputdestination-id
      * 
@@ -50,6 +60,33 @@ public class ChannelOutputDestination implements Property<ChannelOutputDestinati
     @JsonProperty("MediaPackageSettings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-outputdestination.html#cfn-medialive-channel-outputdestination-mediapackagesettings")
     private List<Property<ChannelMediaPackageOutputDestinationSettings>> mediaPackageSettings = new ArrayList<Property<ChannelMediaPackageOutputDestinationSettings>>();
+
+    /**
+     * ChannelMultiplexProgramChannelDestinationSettings
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-multiplexprogramchanneldestinationsettings.html
+     * 
+     */
+    @JsonIgnore
+    public Property<ChannelMultiplexProgramChannelDestinationSettings> getMultiplexSettings() {
+        return multiplexSettings;
+    }
+
+    /**
+     * ChannelMultiplexProgramChannelDestinationSettings
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-multiplexprogramchanneldestinationsettings.html
+     * 
+     */
+    @JsonIgnore
+    public void setMultiplexSettings(Property<ChannelMultiplexProgramChannelDestinationSettings> multiplexSettings) {
+        this.multiplexSettings = multiplexSettings;
+    }
+
+    public ChannelOutputDestination withMultiplexSettings(Property<ChannelMultiplexProgramChannelDestinationSettings> multiplexSettings) {
+        this.multiplexSettings = multiplexSettings;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-outputdestination.html#cfn-medialive-channel-outputdestination-id
@@ -122,12 +159,12 @@ public class ChannelOutputDestination implements Property<ChannelOutputDestinati
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("id", id).append("settings", settings).append("mediaPackageSettings", mediaPackageSettings).toString();
+        return new ToStringBuilder(this).append("multiplexSettings", multiplexSettings).append("id", id).append("settings", settings).append("mediaPackageSettings", mediaPackageSettings).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(mediaPackageSettings).append(settings).append(id).toHashCode();
+        return new HashCodeBuilder().append(mediaPackageSettings).append(multiplexSettings).append(settings).append(id).toHashCode();
     }
 
     @Override
@@ -139,7 +176,7 @@ public class ChannelOutputDestination implements Property<ChannelOutputDestinati
             return false;
         }
         ChannelOutputDestination rhs = ((ChannelOutputDestination) other);
-        return new EqualsBuilder().append(mediaPackageSettings, rhs.mediaPackageSettings).append(settings, rhs.settings).append(id, rhs.id).isEquals();
+        return new EqualsBuilder().append(mediaPackageSettings, rhs.mediaPackageSettings).append(multiplexSettings, rhs.multiplexSettings).append(settings, rhs.settings).append(id, rhs.id).isEquals();
     }
 
 }

@@ -11,6 +11,11 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "StartOnCreation" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-startoncreation",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-description",
       "type" : "string",
@@ -23,6 +28,11 @@
         "$ref" : "AWS_Glue_Trigger.Action.schema.json",
         "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.glue.TriggerAction>"
       }
+    },
+    "WorkflowName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-workflowname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
     },
     "Schedule" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-schedule",

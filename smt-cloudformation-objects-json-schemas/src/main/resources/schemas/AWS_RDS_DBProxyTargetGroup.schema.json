@@ -1,0 +1,36 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_RDS_DBProxyTargetGroup.schema.json",
+  "title" : "DBProxyTargetGroup",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbproxytargetgroup.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.rds.DBProxyTargetGroup",
+  "properties" : {
+    "DBProxyName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbproxytargetgroup.html#cfn-rds-dbproxytargetgroup-dbproxyname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ConnectionPoolConfigurationInfo" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbproxytargetgroup.html#cfn-rds-dbproxytargetgroup-connectionpoolconfigurationinfo",
+      "$ref" : "AWS_RDS_DBProxyTargetGroup.ConnectionPoolConfigurationInfoFormat.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.rds.DBProxyTargetGroupConnectionPoolConfigurationInfoFormat>"
+    },
+    "DBInstanceIdentifiers" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbproxytargetgroup.html#cfn-rds-dbproxytargetgroup-dbinstanceidentifiers",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    },
+    "DBClusterIdentifiers" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbproxytargetgroup.html#cfn-rds-dbproxytargetgroup-dbclusteridentifiers",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    }
+  }
+}

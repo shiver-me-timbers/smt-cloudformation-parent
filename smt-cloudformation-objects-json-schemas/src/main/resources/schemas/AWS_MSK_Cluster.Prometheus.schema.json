@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MSK_Cluster.Prometheus.schema.json",
+  "title" : "ClusterPrometheus",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-prometheus.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.msk.ClusterPrometheus",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ClusterPrometheus>" ],
+  "properties" : {
+    "JmxExporter" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-prometheus.html#cfn-msk-cluster-prometheus-jmxexporter",
+      "$ref" : "AWS_MSK_Cluster.JmxExporter.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.msk.ClusterJmxExporter>"
+    },
+    "NodeExporter" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-prometheus.html#cfn-msk-cluster-prometheus-nodeexporter",
+      "$ref" : "AWS_MSK_Cluster.NodeExporter.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.msk.ClusterNodeExporter>"
+    }
+  }
+}

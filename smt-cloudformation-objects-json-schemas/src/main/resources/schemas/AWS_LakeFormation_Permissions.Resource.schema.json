@@ -16,6 +16,16 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lakeformation-permissions-resource.html#cfn-lakeformation-permissions-resource-databaseresource",
       "$ref" : "AWS_LakeFormation_Permissions.DatabaseResource.schema.json",
       "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.lakeformation.PermissionsDatabaseResource>"
+    },
+    "DataLocationResource" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lakeformation-permissions-resource.html#cfn-lakeformation-permissions-resource-datalocationresource",
+      "$ref" : "AWS_LakeFormation_Permissions.DataLocationResource.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.lakeformation.PermissionsDataLocationResource>"
+    },
+    "TableWithColumnsResource" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lakeformation-permissions-resource.html#cfn-lakeformation-permissions-resource-tablewithcolumnsresource",
+      "$ref" : "AWS_LakeFormation_Permissions.TableWithColumnsResource.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.lakeformation.PermissionsTableWithColumnsResource>"
     }
   }
 }

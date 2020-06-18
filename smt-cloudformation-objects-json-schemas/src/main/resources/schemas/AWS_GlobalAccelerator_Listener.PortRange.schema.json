@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_GlobalAccelerator_Listener.PortRange.schema.json",
+  "title" : "ListenerPortRange",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-globalaccelerator-listener-portrange.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.globalaccelerator.ListenerPortRange",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ListenerPortRange>" ],
+  "properties" : {
+    "FromPort" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-globalaccelerator-listener-portrange.html#cfn-globalaccelerator-listener-portrange-fromport",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "ToPort" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-globalaccelerator-listener-portrange.html#cfn-globalaccelerator-listener-portrange-toport",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    }
+  }
+}

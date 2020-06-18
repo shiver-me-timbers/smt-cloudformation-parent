@@ -1,0 +1,24 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EKS_Cluster.EncryptionConfig.schema.json",
+  "title" : "ClusterEncryptionConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-eks-cluster-encryptionconfig.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.eks.ClusterEncryptionConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ClusterEncryptionConfig>" ],
+  "properties" : {
+    "Resources" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-eks-cluster-encryptionconfig.html#cfn-eks-cluster-encryptionconfig-resources",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    },
+    "Provider" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-eks-cluster-encryptionconfig.html#cfn-eks-cluster-encryptionconfig-provider",
+      "$ref" : "AWS_EKS_Cluster.Provider.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.eks.ClusterProvider>"
+    }
+  }
+}

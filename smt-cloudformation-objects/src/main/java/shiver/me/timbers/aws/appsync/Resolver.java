@@ -27,6 +27,8 @@ import shiver.me.timbers.aws.Property;
     "RequestMappingTemplate",
     "ResponseMappingTemplate",
     "Kind",
+    "CachingConfig",
+    "SyncConfig",
     "RequestMappingTemplateS3Location",
     "ApiId",
     "FieldName"
@@ -84,6 +86,24 @@ public class Resolver {
     @JsonProperty("Kind")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-kind")
     private CharSequence kind;
+    /**
+     * ResolverCachingConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-resolver-cachingconfig.html
+     * 
+     */
+    @JsonProperty("CachingConfig")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-resolver-cachingconfig.html")
+    private Property<ResolverCachingConfig> cachingConfig;
+    /**
+     * ResolverSyncConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-resolver-syncconfig.html
+     * 
+     */
+    @JsonProperty("SyncConfig")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-resolver-syncconfig.html")
+    private Property<ResolverSyncConfig> syncConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-requestmappingtemplates3location
      * 
@@ -272,6 +292,60 @@ public class Resolver {
     }
 
     /**
+     * ResolverCachingConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-resolver-cachingconfig.html
+     * 
+     */
+    @JsonIgnore
+    public Property<ResolverCachingConfig> getCachingConfig() {
+        return cachingConfig;
+    }
+
+    /**
+     * ResolverCachingConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-resolver-cachingconfig.html
+     * 
+     */
+    @JsonIgnore
+    public void setCachingConfig(Property<ResolverCachingConfig> cachingConfig) {
+        this.cachingConfig = cachingConfig;
+    }
+
+    public Resolver withCachingConfig(Property<ResolverCachingConfig> cachingConfig) {
+        this.cachingConfig = cachingConfig;
+        return this;
+    }
+
+    /**
+     * ResolverSyncConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-resolver-syncconfig.html
+     * 
+     */
+    @JsonIgnore
+    public Property<ResolverSyncConfig> getSyncConfig() {
+        return syncConfig;
+    }
+
+    /**
+     * ResolverSyncConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-resolver-syncconfig.html
+     * 
+     */
+    @JsonIgnore
+    public void setSyncConfig(Property<ResolverSyncConfig> syncConfig) {
+        this.syncConfig = syncConfig;
+    }
+
+    public Resolver withSyncConfig(Property<ResolverSyncConfig> syncConfig) {
+        this.syncConfig = syncConfig;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-requestmappingtemplates3location
      * 
      */
@@ -342,12 +416,12 @@ public class Resolver {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("responseMappingTemplateS3Location", responseMappingTemplateS3Location).append("typeName", typeName).append("pipelineConfig", pipelineConfig).append("dataSourceName", dataSourceName).append("requestMappingTemplate", requestMappingTemplate).append("responseMappingTemplate", responseMappingTemplate).append("kind", kind).append("requestMappingTemplateS3Location", requestMappingTemplateS3Location).append("apiId", apiId).append("fieldName", fieldName).toString();
+        return new ToStringBuilder(this).append("responseMappingTemplateS3Location", responseMappingTemplateS3Location).append("typeName", typeName).append("pipelineConfig", pipelineConfig).append("dataSourceName", dataSourceName).append("requestMappingTemplate", requestMappingTemplate).append("responseMappingTemplate", responseMappingTemplate).append("kind", kind).append("cachingConfig", cachingConfig).append("syncConfig", syncConfig).append("requestMappingTemplateS3Location", requestMappingTemplateS3Location).append("apiId", apiId).append("fieldName", fieldName).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(responseMappingTemplate).append(fieldName).append(requestMappingTemplateS3Location).append(pipelineConfig).append(kind).append(typeName).append(responseMappingTemplateS3Location).append(dataSourceName).append(requestMappingTemplate).append(apiId).toHashCode();
+        return new HashCodeBuilder().append(fieldName).append(pipelineConfig).append(kind).append(typeName).append(dataSourceName).append(requestMappingTemplate).append(responseMappingTemplate).append(requestMappingTemplateS3Location).append(responseMappingTemplateS3Location).append(syncConfig).append(cachingConfig).append(apiId).toHashCode();
     }
 
     @Override
@@ -359,7 +433,7 @@ public class Resolver {
             return false;
         }
         Resolver rhs = ((Resolver) other);
-        return new EqualsBuilder().append(responseMappingTemplate, rhs.responseMappingTemplate).append(fieldName, rhs.fieldName).append(requestMappingTemplateS3Location, rhs.requestMappingTemplateS3Location).append(pipelineConfig, rhs.pipelineConfig).append(kind, rhs.kind).append(typeName, rhs.typeName).append(responseMappingTemplateS3Location, rhs.responseMappingTemplateS3Location).append(dataSourceName, rhs.dataSourceName).append(requestMappingTemplate, rhs.requestMappingTemplate).append(apiId, rhs.apiId).isEquals();
+        return new EqualsBuilder().append(fieldName, rhs.fieldName).append(pipelineConfig, rhs.pipelineConfig).append(kind, rhs.kind).append(typeName, rhs.typeName).append(dataSourceName, rhs.dataSourceName).append(requestMappingTemplate, rhs.requestMappingTemplate).append(responseMappingTemplate, rhs.responseMappingTemplate).append(requestMappingTemplateS3Location, rhs.requestMappingTemplateS3Location).append(responseMappingTemplateS3Location, rhs.responseMappingTemplateS3Location).append(syncConfig, rhs.syncConfig).append(cachingConfig, rhs.cachingConfig).append(apiId, rhs.apiId).isEquals();
     }
 
 }

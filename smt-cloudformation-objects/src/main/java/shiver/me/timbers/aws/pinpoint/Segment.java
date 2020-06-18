@@ -23,6 +23,7 @@ import shiver.me.timbers.aws.Property;
     "SegmentGroups",
     "Dimensions",
     "ApplicationId",
+    "Tags",
     "Name"
 })
 public class Segment {
@@ -52,6 +53,13 @@ public class Segment {
     @JsonProperty("ApplicationId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-segment.html#cfn-pinpoint-segment-applicationid")
     private CharSequence applicationId;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-segment.html#cfn-pinpoint-segment-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-segment.html#cfn-pinpoint-segment-tags")
+    private Object tags;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-segment.html#cfn-pinpoint-segment-name
      * 
@@ -138,6 +146,29 @@ public class Segment {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-segment.html#cfn-pinpoint-segment-tags
+     * 
+     */
+    @JsonIgnore
+    public Object getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-segment.html#cfn-pinpoint-segment-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(Object tags) {
+        this.tags = tags;
+    }
+
+    public Segment withTags(Object tags) {
+        this.tags = tags;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-segment.html#cfn-pinpoint-segment-name
      * 
      */
@@ -162,12 +193,12 @@ public class Segment {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("segmentGroups", segmentGroups).append("dimensions", dimensions).append("applicationId", applicationId).append("name", name).toString();
+        return new ToStringBuilder(this).append("segmentGroups", segmentGroups).append("dimensions", dimensions).append("applicationId", applicationId).append("tags", tags).append("name", name).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(name).append(applicationId).append(segmentGroups).append(dimensions).toHashCode();
+        return new HashCodeBuilder().append(name).append(applicationId).append(segmentGroups).append(dimensions).append(tags).toHashCode();
     }
 
     @Override
@@ -179,7 +210,7 @@ public class Segment {
             return false;
         }
         Segment rhs = ((Segment) other);
-        return new EqualsBuilder().append(name, rhs.name).append(applicationId, rhs.applicationId).append(segmentGroups, rhs.segmentGroups).append(dimensions, rhs.dimensions).isEquals();
+        return new EqualsBuilder().append(name, rhs.name).append(applicationId, rhs.applicationId).append(segmentGroups, rhs.segmentGroups).append(dimensions, rhs.dimensions).append(tags, rhs.tags).isEquals();
     }
 
 }

@@ -11,10 +11,50 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "BodyS3Location" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html#cfn-apigatewayv2-api-bodys3location",
+      "$ref" : "AWS_ApiGatewayV2_Api.BodyS3Location.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.apigatewayv2.ApiBodyS3Location>"
+    },
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html#cfn-apigatewayv2-api-description",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
+    },
+    "BasePath" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html#cfn-apigatewayv2-api-basepath",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "FailOnWarnings" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html#cfn-apigatewayv2-api-failonwarnings",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DisableSchemaValidation" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html#cfn-apigatewayv2-api-disableschemavalidation",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html#cfn-apigatewayv2-api-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Target" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html#cfn-apigatewayv2-api-target",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "CredentialsArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html#cfn-apigatewayv2-api-credentialsarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "CorsConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html#cfn-apigatewayv2-api-corsconfiguration",
+      "$ref" : "AWS_ApiGatewayV2_Api.Cors.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.apigatewayv2.ApiCors>"
     },
     "Version" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html#cfn-apigatewayv2-api-version",
@@ -26,20 +66,20 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
-    "DisableSchemaValidation" : {
-      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html#cfn-apigatewayv2-api-disableschemavalidation",
-      "type" : "boolean",
+    "RouteKey" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html#cfn-apigatewayv2-api-routekey",
+      "type" : "string",
       "javaType" : "java.lang.CharSequence"
+    },
+    "Body" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html#cfn-apigatewayv2-api-body",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html#cfn-apigatewayv2-api-tags",
       "type" : "object",
       "javaType" : "java.lang.Object"
-    },
-    "Name" : {
-      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html#cfn-apigatewayv2-api-name",
-      "type" : "string",
-      "javaType" : "java.lang.CharSequence"
     },
     "ApiKeySelectionExpression" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html#cfn-apigatewayv2-api-apikeyselectionexpression",

@@ -1,0 +1,30 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_NetworkManager_CustomerGatewayAssociation.schema.json",
+  "title" : "CustomerGatewayAssociation",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkmanager-customergatewayassociation.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.networkmanager.CustomerGatewayAssociation",
+  "properties" : {
+    "GlobalNetworkId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkmanager-customergatewayassociation.html#cfn-networkmanager-customergatewayassociation-globalnetworkid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "CustomerGatewayArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkmanager-customergatewayassociation.html#cfn-networkmanager-customergatewayassociation-customergatewayarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DeviceId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkmanager-customergatewayassociation.html#cfn-networkmanager-customergatewayassociation-deviceid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "LinkId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkmanager-customergatewayassociation.html#cfn-networkmanager-customergatewayassociation-linkid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

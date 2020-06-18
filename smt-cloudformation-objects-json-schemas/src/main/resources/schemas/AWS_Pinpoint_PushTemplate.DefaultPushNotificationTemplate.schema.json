@@ -1,0 +1,36 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_PushTemplate.DefaultPushNotificationTemplate.schema.json",
+  "title" : "PushTemplateDefaultPushNotificationTemplate",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-pushtemplate-defaultpushnotificationtemplate.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.pinpoint.PushTemplateDefaultPushNotificationTemplate",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<PushTemplateDefaultPushNotificationTemplate>" ],
+  "properties" : {
+    "Action" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-pushtemplate-defaultpushnotificationtemplate.html#cfn-pinpoint-pushtemplate-defaultpushnotificationtemplate-action",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Title" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-pushtemplate-defaultpushnotificationtemplate.html#cfn-pinpoint-pushtemplate-defaultpushnotificationtemplate-title",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Sound" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-pushtemplate-defaultpushnotificationtemplate.html#cfn-pinpoint-pushtemplate-defaultpushnotificationtemplate-sound",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Body" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-pushtemplate-defaultpushnotificationtemplate.html#cfn-pinpoint-pushtemplate-defaultpushnotificationtemplate-body",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Url" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-pushtemplate-defaultpushnotificationtemplate.html#cfn-pinpoint-pushtemplate-defaultpushnotificationtemplate-url",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

@@ -20,7 +20,8 @@ import shiver.me.timbers.aws.Property;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
-    "TargetArn"
+    "TargetArn",
+    "Payload"
 })
 public class DetectorModelSns implements Property<DetectorModelSns>
 {
@@ -32,6 +33,15 @@ public class DetectorModelSns implements Property<DetectorModelSns>
     @JsonProperty("TargetArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-sns.html#cfn-iotevents-detectormodel-sns-targetarn")
     private CharSequence targetArn;
+    /**
+     * DetectorModelPayload
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-payload.html
+     * 
+     */
+    @JsonProperty("Payload")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-payload.html")
+    private Property<DetectorModelPayload> payload;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-sns.html#cfn-iotevents-detectormodel-sns-targetarn
@@ -56,14 +66,41 @@ public class DetectorModelSns implements Property<DetectorModelSns>
         return this;
     }
 
+    /**
+     * DetectorModelPayload
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-payload.html
+     * 
+     */
+    @JsonIgnore
+    public Property<DetectorModelPayload> getPayload() {
+        return payload;
+    }
+
+    /**
+     * DetectorModelPayload
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-payload.html
+     * 
+     */
+    @JsonIgnore
+    public void setPayload(Property<DetectorModelPayload> payload) {
+        this.payload = payload;
+    }
+
+    public DetectorModelSns withPayload(Property<DetectorModelPayload> payload) {
+        this.payload = payload;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("targetArn", targetArn).toString();
+        return new ToStringBuilder(this).append("targetArn", targetArn).append("payload", payload).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(targetArn).toHashCode();
+        return new HashCodeBuilder().append(payload).append(targetArn).toHashCode();
     }
 
     @Override
@@ -75,7 +112,7 @@ public class DetectorModelSns implements Property<DetectorModelSns>
             return false;
         }
         DetectorModelSns rhs = ((DetectorModelSns) other);
-        return new EqualsBuilder().append(targetArn, rhs.targetArn).isEquals();
+        return new EqualsBuilder().append(payload, rhs.payload).append(targetArn, rhs.targetArn).isEquals();
     }
 
 }

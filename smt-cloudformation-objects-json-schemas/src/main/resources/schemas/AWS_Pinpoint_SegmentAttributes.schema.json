@@ -3,6 +3,6 @@
   "$id" : "AWS_Pinpoint_SegmentAttributes.schema.json",
   "title" : "SegmentAttributes",
   "type" : "string",
-  "enum" : [ "SegmentId" ],
+  "enum" : [ "SegmentId", "Arn" ],
   "javaType" : "shiver.me.timbers.aws.pinpoint.SegmentAttributes"
 }

@@ -1,0 +1,43 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Config_ConformancePack.schema.json",
+  "title" : "ConformancePack",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-conformancepack.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.config.ConformancePack",
+  "properties" : {
+    "ConformancePackName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-conformancepack.html#cfn-config-conformancepack-conformancepackname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DeliveryS3Bucket" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-conformancepack.html#cfn-config-conformancepack-deliverys3bucket",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DeliveryS3KeyPrefix" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-conformancepack.html#cfn-config-conformancepack-deliverys3keyprefix",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TemplateBody" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-conformancepack.html#cfn-config-conformancepack-templatebody",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TemplateS3Uri" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-conformancepack.html#cfn-config-conformancepack-templates3uri",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ConformancePackInputParameters" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-conformancepack.html#cfn-config-conformancepack-conformancepackinputparameters",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_Config_ConformancePack.ConformancePackInputParameter.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.config.ConformancePackConformancePackInputParameter>"
+      }
+    }
+  }
+}

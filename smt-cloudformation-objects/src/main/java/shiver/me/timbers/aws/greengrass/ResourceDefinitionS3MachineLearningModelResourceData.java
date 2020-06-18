@@ -20,12 +20,22 @@ import shiver.me.timbers.aws.Property;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "OwnerSetting",
     "DestinationPath",
     "S3Uri"
 })
 public class ResourceDefinitionS3MachineLearningModelResourceData implements Property<ResourceDefinitionS3MachineLearningModelResourceData>
 {
 
+    /**
+     * ResourceDefinitionVersionResourceDownloadOwnerSetting
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-resourcedownloadownersetting.html
+     * 
+     */
+    @JsonProperty("OwnerSetting")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-resourcedownloadownersetting.html")
+    private Property<ResourceDefinitionResourceDownloadOwnerSetting> ownerSetting;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-s3machinelearningmodelresourcedata.html#cfn-greengrass-resourcedefinition-s3machinelearningmodelresourcedata-destinationpath
      * 
@@ -40,6 +50,33 @@ public class ResourceDefinitionS3MachineLearningModelResourceData implements Pro
     @JsonProperty("S3Uri")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-s3machinelearningmodelresourcedata.html#cfn-greengrass-resourcedefinition-s3machinelearningmodelresourcedata-s3uri")
     private CharSequence s3Uri;
+
+    /**
+     * ResourceDefinitionVersionResourceDownloadOwnerSetting
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-resourcedownloadownersetting.html
+     * 
+     */
+    @JsonIgnore
+    public Property<ResourceDefinitionResourceDownloadOwnerSetting> getOwnerSetting() {
+        return ownerSetting;
+    }
+
+    /**
+     * ResourceDefinitionVersionResourceDownloadOwnerSetting
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-resourcedownloadownersetting.html
+     * 
+     */
+    @JsonIgnore
+    public void setOwnerSetting(Property<ResourceDefinitionResourceDownloadOwnerSetting> ownerSetting) {
+        this.ownerSetting = ownerSetting;
+    }
+
+    public ResourceDefinitionS3MachineLearningModelResourceData withOwnerSetting(Property<ResourceDefinitionResourceDownloadOwnerSetting> ownerSetting) {
+        this.ownerSetting = ownerSetting;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-s3machinelearningmodelresourcedata.html#cfn-greengrass-resourcedefinition-s3machinelearningmodelresourcedata-destinationpath
@@ -89,12 +126,12 @@ public class ResourceDefinitionS3MachineLearningModelResourceData implements Pro
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("destinationPath", destinationPath).append("s3Uri", s3Uri).toString();
+        return new ToStringBuilder(this).append("ownerSetting", ownerSetting).append("destinationPath", destinationPath).append("s3Uri", s3Uri).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(destinationPath).append(s3Uri).toHashCode();
+        return new HashCodeBuilder().append(s3Uri).append(ownerSetting).append(destinationPath).toHashCode();
     }
 
     @Override
@@ -106,7 +143,7 @@ public class ResourceDefinitionS3MachineLearningModelResourceData implements Pro
             return false;
         }
         ResourceDefinitionS3MachineLearningModelResourceData rhs = ((ResourceDefinitionS3MachineLearningModelResourceData) other);
-        return new EqualsBuilder().append(destinationPath, rhs.destinationPath).append(s3Uri, rhs.s3Uri).isEquals();
+        return new EqualsBuilder().append(s3Uri, rhs.s3Uri).append(ownerSetting, rhs.ownerSetting).append(destinationPath, rhs.destinationPath).isEquals();
     }
 
 }

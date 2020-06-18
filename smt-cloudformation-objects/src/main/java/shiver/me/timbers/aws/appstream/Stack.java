@@ -23,29 +23,22 @@ import shiver.me.timbers.aws.Tag;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
-    "ApplicationSettings",
     "Description",
     "StorageConnectors",
     "DeleteStorageConnectors",
+    "EmbedHostDomains",
     "UserSettings",
     "AttributesToDelete",
-    "DisplayName",
     "RedirectURL",
-    "Tags",
     "Name",
-    "FeedbackURL"
+    "FeedbackURL",
+    "ApplicationSettings",
+    "DisplayName",
+    "Tags",
+    "AccessEndpoints"
 })
 public class Stack {
 
-    /**
-     * StackApplicationSettings
-     * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-stack-applicationsettings.html
-     * 
-     */
-    @JsonProperty("ApplicationSettings")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-stack-applicationsettings.html")
-    private Property<StackApplicationSettings> applicationSettings;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-description
      * 
@@ -68,6 +61,13 @@ public class Stack {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-deletestorageconnectors")
     private CharSequence deleteStorageConnectors;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-embedhostdomains
+     * 
+     */
+    @JsonProperty("EmbedHostDomains")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-embedhostdomains")
+    private List<CharSequence> embedHostDomains = new ArrayList<CharSequence>();
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-usersettings
      * 
      */
@@ -82,26 +82,12 @@ public class Stack {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-attributestodelete")
     private List<CharSequence> attributesToDelete = new ArrayList<CharSequence>();
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-displayname
-     * 
-     */
-    @JsonProperty("DisplayName")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-displayname")
-    private CharSequence displayName;
-    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-redirecturl
      * 
      */
     @JsonProperty("RedirectURL")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-redirecturl")
     private CharSequence redirectURL;
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-tags
-     * 
-     */
-    @JsonProperty("Tags")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-tags")
-    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-name
      * 
@@ -116,33 +102,36 @@ public class Stack {
     @JsonProperty("FeedbackURL")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-feedbackurl")
     private CharSequence feedbackURL;
-
     /**
      * StackApplicationSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-stack-applicationsettings.html
      * 
      */
-    @JsonIgnore
-    public Property<StackApplicationSettings> getApplicationSettings() {
-        return applicationSettings;
-    }
-
+    @JsonProperty("ApplicationSettings")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-stack-applicationsettings.html")
+    private Property<StackApplicationSettings> applicationSettings;
     /**
-     * StackApplicationSettings
-     * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-stack-applicationsettings.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-displayname
      * 
      */
-    @JsonIgnore
-    public void setApplicationSettings(Property<StackApplicationSettings> applicationSettings) {
-        this.applicationSettings = applicationSettings;
-    }
-
-    public Stack withApplicationSettings(Property<StackApplicationSettings> applicationSettings) {
-        this.applicationSettings = applicationSettings;
-        return this;
-    }
+    @JsonProperty("DisplayName")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-displayname")
+    private CharSequence displayName;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-tags")
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-accessendpoints
+     * 
+     */
+    @JsonProperty("AccessEndpoints")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-accessendpoints")
+    private List<Property<StackAccessEndpoint>> accessEndpoints = new ArrayList<Property<StackAccessEndpoint>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-description
@@ -214,6 +203,29 @@ public class Stack {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-embedhostdomains
+     * 
+     */
+    @JsonIgnore
+    public List<CharSequence> getEmbedHostDomains() {
+        return embedHostDomains;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-embedhostdomains
+     * 
+     */
+    @JsonIgnore
+    public void setEmbedHostDomains(List<CharSequence> embedHostDomains) {
+        this.embedHostDomains = embedHostDomains;
+    }
+
+    public Stack withEmbedHostDomains(List<CharSequence> embedHostDomains) {
+        this.embedHostDomains = embedHostDomains;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-usersettings
      * 
      */
@@ -260,29 +272,6 @@ public class Stack {
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-displayname
-     * 
-     */
-    @JsonIgnore
-    public CharSequence getDisplayName() {
-        return displayName;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-displayname
-     * 
-     */
-    @JsonIgnore
-    public void setDisplayName(CharSequence displayName) {
-        this.displayName = displayName;
-    }
-
-    public Stack withDisplayName(CharSequence displayName) {
-        this.displayName = displayName;
-        return this;
-    }
-
-    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-redirecturl
      * 
      */
@@ -302,29 +291,6 @@ public class Stack {
 
     public Stack withRedirectURL(CharSequence redirectURL) {
         this.redirectURL = redirectURL;
-        return this;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-tags
-     * 
-     */
-    @JsonIgnore
-    public List<Property<Tag>> getTags() {
-        return tags;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-tags
-     * 
-     */
-    @JsonIgnore
-    public void setTags(List<Property<Tag>> tags) {
-        this.tags = tags;
-    }
-
-    public Stack withTags(List<Property<Tag>> tags) {
-        this.tags = tags;
         return this;
     }
 
@@ -374,14 +340,110 @@ public class Stack {
         return this;
     }
 
+    /**
+     * StackApplicationSettings
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-stack-applicationsettings.html
+     * 
+     */
+    @JsonIgnore
+    public Property<StackApplicationSettings> getApplicationSettings() {
+        return applicationSettings;
+    }
+
+    /**
+     * StackApplicationSettings
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-stack-applicationsettings.html
+     * 
+     */
+    @JsonIgnore
+    public void setApplicationSettings(Property<StackApplicationSettings> applicationSettings) {
+        this.applicationSettings = applicationSettings;
+    }
+
+    public Stack withApplicationSettings(Property<StackApplicationSettings> applicationSettings) {
+        this.applicationSettings = applicationSettings;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-displayname
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getDisplayName() {
+        return displayName;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-displayname
+     * 
+     */
+    @JsonIgnore
+    public void setDisplayName(CharSequence displayName) {
+        this.displayName = displayName;
+    }
+
+    public Stack withDisplayName(CharSequence displayName) {
+        this.displayName = displayName;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-tags
+     * 
+     */
+    @JsonIgnore
+    public List<Property<Tag>> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+    }
+
+    public Stack withTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-accessendpoints
+     * 
+     */
+    @JsonIgnore
+    public List<Property<StackAccessEndpoint>> getAccessEndpoints() {
+        return accessEndpoints;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-accessendpoints
+     * 
+     */
+    @JsonIgnore
+    public void setAccessEndpoints(List<Property<StackAccessEndpoint>> accessEndpoints) {
+        this.accessEndpoints = accessEndpoints;
+    }
+
+    public Stack withAccessEndpoints(List<Property<StackAccessEndpoint>> accessEndpoints) {
+        this.accessEndpoints = accessEndpoints;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("applicationSettings", applicationSettings).append("description", description).append("storageConnectors", storageConnectors).append("deleteStorageConnectors", deleteStorageConnectors).append("userSettings", userSettings).append("attributesToDelete", attributesToDelete).append("displayName", displayName).append("redirectURL", redirectURL).append("tags", tags).append("name", name).append("feedbackURL", feedbackURL).toString();
+        return new ToStringBuilder(this).append("description", description).append("storageConnectors", storageConnectors).append("deleteStorageConnectors", deleteStorageConnectors).append("embedHostDomains", embedHostDomains).append("userSettings", userSettings).append("attributesToDelete", attributesToDelete).append("redirectURL", redirectURL).append("name", name).append("feedbackURL", feedbackURL).append("applicationSettings", applicationSettings).append("displayName", displayName).append("tags", tags).append("accessEndpoints", accessEndpoints).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(feedbackURL).append(userSettings).append(redirectURL).append(attributesToDelete).append(displayName).append(name).append(description).append(applicationSettings).append(deleteStorageConnectors).append(storageConnectors).append(tags).toHashCode();
+        return new HashCodeBuilder().append(redirectURL).append(attributesToDelete).append(displayName).append(embedHostDomains).append(accessEndpoints).append(description).append(tags).append(feedbackURL).append(userSettings).append(name).append(applicationSettings).append(deleteStorageConnectors).append(storageConnectors).toHashCode();
     }
 
     @Override
@@ -393,7 +455,7 @@ public class Stack {
             return false;
         }
         Stack rhs = ((Stack) other);
-        return new EqualsBuilder().append(feedbackURL, rhs.feedbackURL).append(userSettings, rhs.userSettings).append(redirectURL, rhs.redirectURL).append(attributesToDelete, rhs.attributesToDelete).append(displayName, rhs.displayName).append(name, rhs.name).append(description, rhs.description).append(applicationSettings, rhs.applicationSettings).append(deleteStorageConnectors, rhs.deleteStorageConnectors).append(storageConnectors, rhs.storageConnectors).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(redirectURL, rhs.redirectURL).append(attributesToDelete, rhs.attributesToDelete).append(displayName, rhs.displayName).append(embedHostDomains, rhs.embedHostDomains).append(accessEndpoints, rhs.accessEndpoints).append(description, rhs.description).append(tags, rhs.tags).append(feedbackURL, rhs.feedbackURL).append(userSettings, rhs.userSettings).append(name, rhs.name).append(applicationSettings, rhs.applicationSettings).append(deleteStorageConnectors, rhs.deleteStorageConnectors).append(storageConnectors, rhs.storageConnectors).isEquals();
     }
 
 }

@@ -1,0 +1,31 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ImageBuilder_ImageRecipe.InstanceBlockDeviceMapping.schema.json",
+  "title" : "ImageRecipeInstanceBlockDeviceMapping",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-imagebuilder-imagerecipe-instanceblockdevicemapping.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.imagebuilder.ImageRecipeInstanceBlockDeviceMapping",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ImageRecipeInstanceBlockDeviceMapping>" ],
+  "properties" : {
+    "DeviceName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-imagebuilder-imagerecipe-instanceblockdevicemapping.html#cfn-imagebuilder-imagerecipe-instanceblockdevicemapping-devicename",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "VirtualName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-imagebuilder-imagerecipe-instanceblockdevicemapping.html#cfn-imagebuilder-imagerecipe-instanceblockdevicemapping-virtualname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "NoDevice" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-imagebuilder-imagerecipe-instanceblockdevicemapping.html#cfn-imagebuilder-imagerecipe-instanceblockdevicemapping-nodevice",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Ebs" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-imagebuilder-imagerecipe-instanceblockdevicemapping.html#cfn-imagebuilder-imagerecipe-instanceblockdevicemapping-ebs",
+      "$ref" : "AWS_ImageBuilder_ImageRecipe.EbsInstanceBlockDeviceSpecification.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.imagebuilder.ImageRecipeEbsInstanceBlockDeviceSpecification>"
+    }
+  }
+}

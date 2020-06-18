@@ -26,11 +26,13 @@ import shiver.me.timbers.aws.Tag;
 @JsonPropertyOrder({
     "AccessPolicies",
     "AdvancedOptions",
+    "CognitoOptions",
     "DomainName",
     "EBSOptions",
     "ElasticsearchClusterConfig",
     "ElasticsearchVersion",
     "EncryptionAtRestOptions",
+    "LogPublishingOptions",
     "NodeToNodeEncryptionOptions",
     "SnapshotOptions",
     "Tags",
@@ -52,6 +54,15 @@ public class Domain {
     @JsonProperty("AdvancedOptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-advancedoptions")
     private Map<String, CharSequence> advancedOptions;
+    /**
+     * DomainCognitoOptions
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-cognitooptions.html
+     * 
+     */
+    @JsonProperty("CognitoOptions")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-cognitooptions.html")
+    private Property<DomainCognitoOptions> cognitoOptions;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-domainname
      * 
@@ -93,6 +104,13 @@ public class Domain {
     @JsonProperty("EncryptionAtRestOptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-encryptionatrestoptions.html")
     private Property<DomainEncryptionAtRestOptions> encryptionAtRestOptions;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-logpublishingoptions
+     * 
+     */
+    @JsonProperty("LogPublishingOptions")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-logpublishingoptions")
+    private Map<String, Property<DomainLogPublishingOption>> logPublishingOptions;
     /**
      * DomainNodeToNodeEncryptionOptions
      * <p>
@@ -171,6 +189,33 @@ public class Domain {
 
     public Domain withAdvancedOptions(Map<String, CharSequence> advancedOptions) {
         this.advancedOptions = advancedOptions;
+        return this;
+    }
+
+    /**
+     * DomainCognitoOptions
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-cognitooptions.html
+     * 
+     */
+    @JsonIgnore
+    public Property<DomainCognitoOptions> getCognitoOptions() {
+        return cognitoOptions;
+    }
+
+    /**
+     * DomainCognitoOptions
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-cognitooptions.html
+     * 
+     */
+    @JsonIgnore
+    public void setCognitoOptions(Property<DomainCognitoOptions> cognitoOptions) {
+        this.cognitoOptions = cognitoOptions;
+    }
+
+    public Domain withCognitoOptions(Property<DomainCognitoOptions> cognitoOptions) {
+        this.cognitoOptions = cognitoOptions;
         return this;
     }
 
@@ -302,6 +347,29 @@ public class Domain {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-logpublishingoptions
+     * 
+     */
+    @JsonIgnore
+    public Map<String, Property<DomainLogPublishingOption>> getLogPublishingOptions() {
+        return logPublishingOptions;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-logpublishingoptions
+     * 
+     */
+    @JsonIgnore
+    public void setLogPublishingOptions(Map<String, Property<DomainLogPublishingOption>> logPublishingOptions) {
+        this.logPublishingOptions = logPublishingOptions;
+    }
+
+    public Domain withLogPublishingOptions(Map<String, Property<DomainLogPublishingOption>> logPublishingOptions) {
+        this.logPublishingOptions = logPublishingOptions;
+        return this;
+    }
+
+    /**
      * DomainNodeToNodeEncryptionOptions
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-nodetonodeencryptionoptions.html
@@ -407,12 +475,12 @@ public class Domain {
 
     @Override
     public java.lang.String toString() {
-        return new ToStringBuilder(this).append("accessPolicies", accessPolicies).append("advancedOptions", advancedOptions).append("domainName", domainName).append("eBSOptions", eBSOptions).append("elasticsearchClusterConfig", elasticsearchClusterConfig).append("elasticsearchVersion", elasticsearchVersion).append("encryptionAtRestOptions", encryptionAtRestOptions).append("nodeToNodeEncryptionOptions", nodeToNodeEncryptionOptions).append("snapshotOptions", snapshotOptions).append("tags", tags).append("vPCOptions", vPCOptions).toString();
+        return new ToStringBuilder(this).append("accessPolicies", accessPolicies).append("advancedOptions", advancedOptions).append("cognitoOptions", cognitoOptions).append("domainName", domainName).append("eBSOptions", eBSOptions).append("elasticsearchClusterConfig", elasticsearchClusterConfig).append("elasticsearchVersion", elasticsearchVersion).append("encryptionAtRestOptions", encryptionAtRestOptions).append("logPublishingOptions", logPublishingOptions).append("nodeToNodeEncryptionOptions", nodeToNodeEncryptionOptions).append("snapshotOptions", snapshotOptions).append("tags", tags).append("vPCOptions", vPCOptions).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(elasticsearchVersion).append(nodeToNodeEncryptionOptions).append(accessPolicies).append(elasticsearchClusterConfig).append(advancedOptions).append(eBSOptions).append(domainName).append(snapshotOptions).append(encryptionAtRestOptions).append(tags).append(vPCOptions).toHashCode();
+        return new HashCodeBuilder().append(elasticsearchVersion).append(nodeToNodeEncryptionOptions).append(accessPolicies).append(advancedOptions).append(encryptionAtRestOptions).append(tags).append(elasticsearchClusterConfig).append(eBSOptions).append(domainName).append(cognitoOptions).append(snapshotOptions).append(logPublishingOptions).append(vPCOptions).toHashCode();
     }
 
     @Override
@@ -424,7 +492,7 @@ public class Domain {
             return false;
         }
         Domain rhs = ((Domain) other);
-        return new EqualsBuilder().append(elasticsearchVersion, rhs.elasticsearchVersion).append(nodeToNodeEncryptionOptions, rhs.nodeToNodeEncryptionOptions).append(accessPolicies, rhs.accessPolicies).append(elasticsearchClusterConfig, rhs.elasticsearchClusterConfig).append(advancedOptions, rhs.advancedOptions).append(eBSOptions, rhs.eBSOptions).append(domainName, rhs.domainName).append(snapshotOptions, rhs.snapshotOptions).append(encryptionAtRestOptions, rhs.encryptionAtRestOptions).append(tags, rhs.tags).append(vPCOptions, rhs.vPCOptions).isEquals();
+        return new EqualsBuilder().append(elasticsearchVersion, rhs.elasticsearchVersion).append(nodeToNodeEncryptionOptions, rhs.nodeToNodeEncryptionOptions).append(accessPolicies, rhs.accessPolicies).append(advancedOptions, rhs.advancedOptions).append(encryptionAtRestOptions, rhs.encryptionAtRestOptions).append(tags, rhs.tags).append(elasticsearchClusterConfig, rhs.elasticsearchClusterConfig).append(eBSOptions, rhs.eBSOptions).append(domainName, rhs.domainName).append(cognitoOptions, rhs.cognitoOptions).append(snapshotOptions, rhs.snapshotOptions).append(logPublishingOptions, rhs.logPublishingOptions).append(vPCOptions, rhs.vPCOptions).isEquals();
     }
 
 }

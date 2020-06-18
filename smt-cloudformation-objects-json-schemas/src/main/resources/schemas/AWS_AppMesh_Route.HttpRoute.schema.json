@@ -12,6 +12,11 @@
       "$ref" : "AWS_AppMesh_Route.HttpRouteAction.schema.json",
       "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appmesh.RouteHttpRouteAction>"
     },
+    "RetryPolicy" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-httproute.html#cfn-appmesh-route-httproute-retrypolicy",
+      "$ref" : "AWS_AppMesh_Route.HttpRetryPolicy.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appmesh.RouteHttpRetryPolicy>"
+    },
     "Match" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-httproute.html#cfn-appmesh-route-httproute-match",
       "$ref" : "AWS_AppMesh_Route.HttpRouteMatch.schema.json",

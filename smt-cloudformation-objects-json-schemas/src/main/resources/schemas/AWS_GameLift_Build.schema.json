@@ -11,6 +11,11 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "OperatingSystem" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-build.html#cfn-gamelift-build-operatingsystem",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "StorageLocation" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-build.html#cfn-gamelift-build-storagelocation",
       "$ref" : "AWS_GameLift_Build.S3Location.schema.json",

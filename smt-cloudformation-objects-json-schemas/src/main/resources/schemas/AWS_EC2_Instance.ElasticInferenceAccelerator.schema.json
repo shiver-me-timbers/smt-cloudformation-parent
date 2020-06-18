@@ -7,6 +7,11 @@
   "javaType" : "shiver.me.timbers.aws.ec2.InstanceElasticInferenceAccelerator",
   "javaInterfaces" : [ "shiver.me.timbers.aws.Property<InstanceElasticInferenceAccelerator>" ],
   "properties" : {
+    "Count" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-elasticinferenceaccelerator.html#cfn-ec2-instance-elasticinferenceaccelerator-count",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
     "Type" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-elasticinferenceaccelerator.html#cfn-ec2-instance-elasticinferenceaccelerator-type",
       "type" : "string",

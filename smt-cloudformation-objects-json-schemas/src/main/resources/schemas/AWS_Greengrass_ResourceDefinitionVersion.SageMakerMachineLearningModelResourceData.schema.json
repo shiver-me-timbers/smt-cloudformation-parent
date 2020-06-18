@@ -7,6 +7,11 @@
   "javaType" : "shiver.me.timbers.aws.greengrass.ResourceDefinitionVersionSageMakerMachineLearningModelResourceData",
   "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ResourceDefinitionVersionSageMakerMachineLearningModelResourceData>" ],
   "properties" : {
+    "OwnerSetting" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-sagemakermachinelearningmodelresourcedata.html#cfn-greengrass-resourcedefinitionversion-sagemakermachinelearningmodelresourcedata-ownersetting",
+      "$ref" : "AWS_Greengrass_ResourceDefinitionVersion.ResourceDownloadOwnerSetting.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.greengrass.ResourceDefinitionVersionResourceDownloadOwnerSetting>"
+    },
     "DestinationPath" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-sagemakermachinelearningmodelresourcedata.html#cfn-greengrass-resourcedefinitionversion-sagemakermachinelearningmodelresourcedata-destinationpath",
       "type" : "string",

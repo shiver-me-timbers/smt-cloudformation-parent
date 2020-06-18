@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Cognito_UserPoolRiskConfigurationAttachment.AccountTakeoverRiskConfigurationType.schema.json",
+  "title" : "UserPoolRiskConfigurationAttachmentAccountTakeoverRiskConfigurationType",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpoolriskconfigurationattachment-accounttakeoverriskconfigurationtype.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.cognito.UserPoolRiskConfigurationAttachmentAccountTakeoverRiskConfigurationType",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<UserPoolRiskConfigurationAttachmentAccountTakeoverRiskConfigurationType>" ],
+  "properties" : {
+    "Actions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpoolriskconfigurationattachment-accounttakeoverriskconfigurationtype.html#cfn-cognito-userpoolriskconfigurationattachment-accounttakeoverriskconfigurationtype-actions",
+      "$ref" : "AWS_Cognito_UserPoolRiskConfigurationAttachment.AccountTakeoverActionsType.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cognito.UserPoolRiskConfigurationAttachmentAccountTakeoverActionsType>"
+    },
+    "NotifyConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpoolriskconfigurationattachment-accounttakeoverriskconfigurationtype.html#cfn-cognito-userpoolriskconfigurationattachment-accounttakeoverriskconfigurationtype-notifyconfiguration",
+      "$ref" : "AWS_Cognito_UserPoolRiskConfigurationAttachment.NotifyConfigurationType.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cognito.UserPoolRiskConfigurationAttachmentNotifyConfigurationType>"
+    }
+  }
+}

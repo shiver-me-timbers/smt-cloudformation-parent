@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MSK_Cluster.JmxExporter.schema.json",
+  "title" : "ClusterJmxExporter",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-jmxexporter.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.msk.ClusterJmxExporter",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ClusterJmxExporter>" ],
+  "properties" : {
+    "EnabledInBroker" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-jmxexporter.html#cfn-msk-cluster-jmxexporter-enabledinbroker",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

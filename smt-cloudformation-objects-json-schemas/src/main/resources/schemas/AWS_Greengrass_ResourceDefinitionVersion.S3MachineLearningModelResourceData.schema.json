@@ -7,6 +7,11 @@
   "javaType" : "shiver.me.timbers.aws.greengrass.ResourceDefinitionVersionS3MachineLearningModelResourceData",
   "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ResourceDefinitionVersionS3MachineLearningModelResourceData>" ],
   "properties" : {
+    "OwnerSetting" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-s3machinelearningmodelresourcedata.html#cfn-greengrass-resourcedefinitionversion-s3machinelearningmodelresourcedata-ownersetting",
+      "$ref" : "AWS_Greengrass_ResourceDefinitionVersion.ResourceDownloadOwnerSetting.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.greengrass.ResourceDefinitionVersionResourceDownloadOwnerSetting>"
+    },
     "DestinationPath" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-s3machinelearningmodelresourcedata.html#cfn-greengrass-resourcedefinitionversion-s3machinelearningmodelresourcedata-destinationpath",
       "type" : "string",

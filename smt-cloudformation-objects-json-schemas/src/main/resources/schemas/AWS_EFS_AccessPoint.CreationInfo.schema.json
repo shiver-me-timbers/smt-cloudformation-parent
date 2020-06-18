@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EFS_AccessPoint.CreationInfo.schema.json",
+  "title" : "AccessPointCreationInfo",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-efs-accesspoint-creationinfo.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.efs.AccessPointCreationInfo",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<AccessPointCreationInfo>" ],
+  "properties" : {
+    "OwnerUid" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-efs-accesspoint-creationinfo.html#cfn-efs-accesspoint-creationinfo-owneruid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "OwnerGid" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-efs-accesspoint-creationinfo.html#cfn-efs-accesspoint-creationinfo-ownergid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Permissions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-efs-accesspoint-creationinfo.html#cfn-efs-accesspoint-creationinfo-permissions",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

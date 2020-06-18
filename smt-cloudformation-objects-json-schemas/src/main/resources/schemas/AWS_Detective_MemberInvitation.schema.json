@@ -1,0 +1,30 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Detective_MemberInvitation.schema.json",
+  "title" : "MemberInvitation",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-detective-memberinvitation.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.detective.MemberInvitation",
+  "properties" : {
+    "GraphArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-detective-memberinvitation.html#cfn-detective-memberinvitation-grapharn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "MemberId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-detective-memberinvitation.html#cfn-detective-memberinvitation-memberid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "MemberEmailAddress" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-detective-memberinvitation.html#cfn-detective-memberinvitation-memberemailaddress",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Message" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-detective-memberinvitation.html#cfn-detective-memberinvitation-message",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

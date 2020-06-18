@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppMesh_Route.GrpcRouteMetadata.schema.json",
+  "title" : "RouteGrpcRouteMetadata",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-grpcroutemetadata.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.appmesh.RouteGrpcRouteMetadata",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<RouteGrpcRouteMetadata>" ],
+  "properties" : {
+    "Invert" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-grpcroutemetadata.html#cfn-appmesh-route-grpcroutemetadata-invert",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-grpcroutemetadata.html#cfn-appmesh-route-grpcroutemetadata-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Match" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-grpcroutemetadata.html#cfn-appmesh-route-grpcroutemetadata-match",
+      "$ref" : "AWS_AppMesh_Route.GrpcRouteMetadataMatchMethod.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appmesh.RouteGrpcRouteMetadataMatchMethod>"
+    }
+  }
+}

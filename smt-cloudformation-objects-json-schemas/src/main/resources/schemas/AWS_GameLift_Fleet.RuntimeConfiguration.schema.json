@@ -1,0 +1,30 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_GameLift_Fleet.RuntimeConfiguration.schema.json",
+  "title" : "FleetRuntimeConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-runtimeconfiguration.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.gamelift.FleetRuntimeConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<FleetRuntimeConfiguration>" ],
+  "properties" : {
+    "GameSessionActivationTimeoutSeconds" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-runtimeconfiguration.html#cfn-gamelift-fleet-runtimeconfiguration-gamesessionactivationtimeoutseconds",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "MaxConcurrentGameSessionActivations" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-runtimeconfiguration.html#cfn-gamelift-fleet-runtimeconfiguration-maxconcurrentgamesessionactivations",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "ServerProcesses" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-runtimeconfiguration.html#cfn-gamelift-fleet-runtimeconfiguration-serverprocesses",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "$ref" : "AWS_GameLift_Fleet.ServerProcess.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.gamelift.FleetServerProcess>"
+      }
+    }
+  }
+}

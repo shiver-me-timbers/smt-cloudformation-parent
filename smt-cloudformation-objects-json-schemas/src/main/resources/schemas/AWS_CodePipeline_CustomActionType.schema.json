@@ -40,6 +40,14 @@
       "$ref" : "AWS_CodePipeline_CustomActionType.Settings.schema.json",
       "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codepipeline.CustomActionTypeSettings>"
     },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "Tag.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
+      }
+    },
     "Version" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-version",
       "type" : "string",

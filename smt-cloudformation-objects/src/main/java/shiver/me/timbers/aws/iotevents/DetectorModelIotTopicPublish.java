@@ -20,7 +20,8 @@ import shiver.me.timbers.aws.Property;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
-    "MqttTopic"
+    "MqttTopic",
+    "Payload"
 })
 public class DetectorModelIotTopicPublish implements Property<DetectorModelIotTopicPublish>
 {
@@ -32,6 +33,15 @@ public class DetectorModelIotTopicPublish implements Property<DetectorModelIotTo
     @JsonProperty("MqttTopic")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-iottopicpublish.html#cfn-iotevents-detectormodel-iottopicpublish-mqtttopic")
     private CharSequence mqttTopic;
+    /**
+     * DetectorModelPayload
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-payload.html
+     * 
+     */
+    @JsonProperty("Payload")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-payload.html")
+    private Property<DetectorModelPayload> payload;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-iottopicpublish.html#cfn-iotevents-detectormodel-iottopicpublish-mqtttopic
@@ -56,14 +66,41 @@ public class DetectorModelIotTopicPublish implements Property<DetectorModelIotTo
         return this;
     }
 
+    /**
+     * DetectorModelPayload
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-payload.html
+     * 
+     */
+    @JsonIgnore
+    public Property<DetectorModelPayload> getPayload() {
+        return payload;
+    }
+
+    /**
+     * DetectorModelPayload
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-payload.html
+     * 
+     */
+    @JsonIgnore
+    public void setPayload(Property<DetectorModelPayload> payload) {
+        this.payload = payload;
+    }
+
+    public DetectorModelIotTopicPublish withPayload(Property<DetectorModelPayload> payload) {
+        this.payload = payload;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("mqttTopic", mqttTopic).toString();
+        return new ToStringBuilder(this).append("mqttTopic", mqttTopic).append("payload", payload).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(mqttTopic).toHashCode();
+        return new HashCodeBuilder().append(payload).append(mqttTopic).toHashCode();
     }
 
     @Override
@@ -75,7 +112,7 @@ public class DetectorModelIotTopicPublish implements Property<DetectorModelIotTo
             return false;
         }
         DetectorModelIotTopicPublish rhs = ((DetectorModelIotTopicPublish) other);
-        return new EqualsBuilder().append(mqttTopic, rhs.mqttTopic).isEquals();
+        return new EqualsBuilder().append(payload, rhs.payload).append(mqttTopic, rhs.mqttTopic).isEquals();
     }
 
 }

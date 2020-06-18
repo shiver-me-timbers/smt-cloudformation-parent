@@ -20,12 +20,20 @@ import shiver.me.timbers.aws.Property;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "OutputS3Region",
     "OutputS3BucketName",
     "OutputS3KeyPrefix"
 })
 public class AssociationS3OutputLocation implements Property<AssociationS3OutputLocation>
 {
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-s3outputlocation.html#cfn-ssm-association-s3outputlocation-outputs3region
+     * 
+     */
+    @JsonProperty("OutputS3Region")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-s3outputlocation.html#cfn-ssm-association-s3outputlocation-outputs3region")
+    private CharSequence outputS3Region;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-s3outputlocation.html#cfn-ssm-association-s3outputlocation-outputs3bucketname
      * 
@@ -40,6 +48,29 @@ public class AssociationS3OutputLocation implements Property<AssociationS3Output
     @JsonProperty("OutputS3KeyPrefix")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-s3outputlocation.html#cfn-ssm-association-s3outputlocation-outputs3keyprefix")
     private CharSequence outputS3KeyPrefix;
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-s3outputlocation.html#cfn-ssm-association-s3outputlocation-outputs3region
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getOutputS3Region() {
+        return outputS3Region;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-s3outputlocation.html#cfn-ssm-association-s3outputlocation-outputs3region
+     * 
+     */
+    @JsonIgnore
+    public void setOutputS3Region(CharSequence outputS3Region) {
+        this.outputS3Region = outputS3Region;
+    }
+
+    public AssociationS3OutputLocation withOutputS3Region(CharSequence outputS3Region) {
+        this.outputS3Region = outputS3Region;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-s3outputlocation.html#cfn-ssm-association-s3outputlocation-outputs3bucketname
@@ -89,12 +120,12 @@ public class AssociationS3OutputLocation implements Property<AssociationS3Output
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("outputS3BucketName", outputS3BucketName).append("outputS3KeyPrefix", outputS3KeyPrefix).toString();
+        return new ToStringBuilder(this).append("outputS3Region", outputS3Region).append("outputS3BucketName", outputS3BucketName).append("outputS3KeyPrefix", outputS3KeyPrefix).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(outputS3KeyPrefix).append(outputS3BucketName).toHashCode();
+        return new HashCodeBuilder().append(outputS3BucketName).append(outputS3Region).append(outputS3KeyPrefix).toHashCode();
     }
 
     @Override
@@ -106,7 +137,7 @@ public class AssociationS3OutputLocation implements Property<AssociationS3Output
             return false;
         }
         AssociationS3OutputLocation rhs = ((AssociationS3OutputLocation) other);
-        return new EqualsBuilder().append(outputS3KeyPrefix, rhs.outputS3KeyPrefix).append(outputS3BucketName, rhs.outputS3BucketName).isEquals();
+        return new EqualsBuilder().append(outputS3BucketName, rhs.outputS3BucketName).append(outputS3Region, rhs.outputS3Region).append(outputS3KeyPrefix, rhs.outputS3KeyPrefix).isEquals();
     }
 
 }

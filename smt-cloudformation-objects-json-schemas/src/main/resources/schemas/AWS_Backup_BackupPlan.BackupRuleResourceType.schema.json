@@ -22,6 +22,14 @@
       "type" : "object",
       "javaType" : "java.lang.Object"
     },
+    "CopyActions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-backup-backupplan-backupruleresourcetype.html#cfn-backup-backupplan-backupruleresourcetype-copyactions",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_Backup_BackupPlan.CopyActionResourceType.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.backup.BackupPlanCopyActionResourceType>"
+      }
+    },
     "Lifecycle" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-backup-backupplan-backupruleresourcetype.html#cfn-backup-backupplan-backupruleresourcetype-lifecycle",
       "$ref" : "AWS_Backup_BackupPlan.LifecycleResourceType.schema.json",

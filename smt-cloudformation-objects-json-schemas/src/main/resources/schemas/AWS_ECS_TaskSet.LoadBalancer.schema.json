@@ -1,0 +1,31 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ECS_TaskSet.LoadBalancer.schema.json",
+  "title" : "TaskSetLoadBalancer",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskset-loadbalancer.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.ecs.TaskSetLoadBalancer",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TaskSetLoadBalancer>" ],
+  "properties" : {
+    "ContainerName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskset-loadbalancer.html#cfn-ecs-taskset-loadbalancer-containername",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ContainerPort" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskset-loadbalancer.html#cfn-ecs-taskset-loadbalancer-containerport",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "LoadBalancerName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskset-loadbalancer.html#cfn-ecs-taskset-loadbalancer-loadbalancername",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TargetGroupArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskset-loadbalancer.html#cfn-ecs-taskset-loadbalancer-targetgrouparn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

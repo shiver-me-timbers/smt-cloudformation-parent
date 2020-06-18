@@ -13,6 +13,7 @@ import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 import shiver.me.timbers.aws.CreationPolicy;
 import shiver.me.timbers.aws.DeletionPolicy;
+import shiver.me.timbers.aws.HasAttributes;
 import shiver.me.timbers.aws.HasCondition;
 import shiver.me.timbers.aws.HasDependsOn;
 import shiver.me.timbers.aws.Resource;
@@ -32,7 +33,7 @@ import shiver.me.timbers.aws.UpdatePolicy;
 })
 public class AssociationResource
     extends Resource
-    implements HasCondition<AssociationResource> , HasDependsOn<AssociationResource>
+    implements HasAttributes<AssociationAttributes> , HasCondition<AssociationResource> , HasDependsOn<AssociationResource>
 {
 
     @JsonProperty("Type")

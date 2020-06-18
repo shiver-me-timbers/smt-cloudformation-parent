@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppConfig_EnvironmentResource.schema.json",
+  "title" : "EnvironmentResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appconfig-environment.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.appconfig.EnvironmentResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<EnvironmentResource>", "shiver.me.timbers.aws.HasCondition<EnvironmentResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::AppConfig::Environment"
+    },
+    "Properties" : {
+      "$ref" : "AWS_AppConfig_Environment.schema.json"
+    }
+  }
+}

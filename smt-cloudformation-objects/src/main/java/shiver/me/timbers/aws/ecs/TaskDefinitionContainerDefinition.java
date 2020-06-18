@@ -36,6 +36,7 @@ import shiver.me.timbers.aws.Property;
     "Environment",
     "Essential",
     "ExtraHosts",
+    "FirelensConfiguration",
     "HealthCheck",
     "Hostname",
     "Image",
@@ -157,6 +158,15 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-extrahosts")
     private Set<Property<TaskDefinitionHostEntry>> extraHosts = new LinkedHashSet<Property<TaskDefinitionHostEntry>>();
+    /**
+     * TaskDefinitionFirelensConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-firelensconfiguration.html
+     * 
+     */
+    @JsonProperty("FirelensConfiguration")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-firelensconfiguration.html")
+    private Property<TaskDefinitionFirelensConfiguration> firelensConfiguration;
     /**
      * TaskDefinitionHealthCheck
      * <p>
@@ -622,6 +632,33 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
 
     public TaskDefinitionContainerDefinition withExtraHosts(Set<Property<TaskDefinitionHostEntry>> extraHosts) {
         this.extraHosts = extraHosts;
+        return this;
+    }
+
+    /**
+     * TaskDefinitionFirelensConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-firelensconfiguration.html
+     * 
+     */
+    @JsonIgnore
+    public Property<TaskDefinitionFirelensConfiguration> getFirelensConfiguration() {
+        return firelensConfiguration;
+    }
+
+    /**
+     * TaskDefinitionFirelensConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-firelensconfiguration.html
+     * 
+     */
+    @JsonIgnore
+    public void setFirelensConfiguration(Property<TaskDefinitionFirelensConfiguration> firelensConfiguration) {
+        this.firelensConfiguration = firelensConfiguration;
+    }
+
+    public TaskDefinitionContainerDefinition withFirelensConfiguration(Property<TaskDefinitionFirelensConfiguration> firelensConfiguration) {
+        this.firelensConfiguration = firelensConfiguration;
         return this;
     }
 
@@ -1218,12 +1255,12 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
 
     @Override
     public java.lang.String toString() {
-        return new ToStringBuilder(this).append("command", command).append("cpu", cpu).append("dependsOn", dependsOn).append("disableNetworking", disableNetworking).append("dnsSearchDomains", dnsSearchDomains).append("dnsServers", dnsServers).append("dockerLabels", dockerLabels).append("dockerSecurityOptions", dockerSecurityOptions).append("entryPoint", entryPoint).append("environment", environment).append("essential", essential).append("extraHosts", extraHosts).append("healthCheck", healthCheck).append("hostname", hostname).append("image", image).append("interactive", interactive).append("links", links).append("linuxParameters", linuxParameters).append("logConfiguration", logConfiguration).append("memory", memory).append("memoryReservation", memoryReservation).append("mountPoints", mountPoints).append("name", name).append("portMappings", portMappings).append("privileged", privileged).append("pseudoTerminal", pseudoTerminal).append("readonlyRootFilesystem", readonlyRootFilesystem).append("repositoryCredentials", repositoryCredentials).append("resourceRequirements", resourceRequirements).append("secrets", secrets).append("startTimeout", startTimeout).append("stopTimeout", stopTimeout).append("systemControls", systemControls).append("ulimits", ulimits).append("user", user).append("volumesFrom", volumesFrom).append("workingDirectory", workingDirectory).toString();
+        return new ToStringBuilder(this).append("command", command).append("cpu", cpu).append("dependsOn", dependsOn).append("disableNetworking", disableNetworking).append("dnsSearchDomains", dnsSearchDomains).append("dnsServers", dnsServers).append("dockerLabels", dockerLabels).append("dockerSecurityOptions", dockerSecurityOptions).append("entryPoint", entryPoint).append("environment", environment).append("essential", essential).append("extraHosts", extraHosts).append("firelensConfiguration", firelensConfiguration).append("healthCheck", healthCheck).append("hostname", hostname).append("image", image).append("interactive", interactive).append("links", links).append("linuxParameters", linuxParameters).append("logConfiguration", logConfiguration).append("memory", memory).append("memoryReservation", memoryReservation).append("mountPoints", mountPoints).append("name", name).append("portMappings", portMappings).append("privileged", privileged).append("pseudoTerminal", pseudoTerminal).append("readonlyRootFilesystem", readonlyRootFilesystem).append("repositoryCredentials", repositoryCredentials).append("resourceRequirements", resourceRequirements).append("secrets", secrets).append("startTimeout", startTimeout).append("stopTimeout", stopTimeout).append("systemControls", systemControls).append("ulimits", ulimits).append("user", user).append("volumesFrom", volumesFrom).append("workingDirectory", workingDirectory).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(volumesFrom).append(memory).append(workingDirectory).append(interactive).append(memoryReservation).append(portMappings).append(disableNetworking).append(hostname).append(readonlyRootFilesystem).append(pseudoTerminal).append(extraHosts).append(dockerSecurityOptions).append(links).append(dnsServers).append(linuxParameters).append(dockerLabels).append(image).append(dependsOn).append(stopTimeout).append(cpu).append(logConfiguration).append(secrets).append(command).append(systemControls).append(privileged).append(resourceRequirements).append(environment).append(ulimits).append(startTimeout).append(healthCheck).append(mountPoints).append(name).append(entryPoint).append(repositoryCredentials).append(user).append(dnsSearchDomains).append(essential).toHashCode();
+        return new HashCodeBuilder().append(volumesFrom).append(memory).append(workingDirectory).append(interactive).append(memoryReservation).append(portMappings).append(firelensConfiguration).append(disableNetworking).append(hostname).append(readonlyRootFilesystem).append(pseudoTerminal).append(extraHosts).append(dockerSecurityOptions).append(links).append(dnsServers).append(linuxParameters).append(dockerLabels).append(image).append(dependsOn).append(stopTimeout).append(cpu).append(logConfiguration).append(secrets).append(command).append(systemControls).append(privileged).append(resourceRequirements).append(environment).append(ulimits).append(startTimeout).append(healthCheck).append(mountPoints).append(name).append(entryPoint).append(repositoryCredentials).append(user).append(dnsSearchDomains).append(essential).toHashCode();
     }
 
     @Override
@@ -1235,7 +1272,7 @@ public class TaskDefinitionContainerDefinition implements Property<TaskDefinitio
             return false;
         }
         TaskDefinitionContainerDefinition rhs = ((TaskDefinitionContainerDefinition) other);
-        return new EqualsBuilder().append(volumesFrom, rhs.volumesFrom).append(memory, rhs.memory).append(workingDirectory, rhs.workingDirectory).append(interactive, rhs.interactive).append(memoryReservation, rhs.memoryReservation).append(portMappings, rhs.portMappings).append(disableNetworking, rhs.disableNetworking).append(hostname, rhs.hostname).append(readonlyRootFilesystem, rhs.readonlyRootFilesystem).append(pseudoTerminal, rhs.pseudoTerminal).append(extraHosts, rhs.extraHosts).append(dockerSecurityOptions, rhs.dockerSecurityOptions).append(links, rhs.links).append(dnsServers, rhs.dnsServers).append(linuxParameters, rhs.linuxParameters).append(dockerLabels, rhs.dockerLabels).append(image, rhs.image).append(dependsOn, rhs.dependsOn).append(stopTimeout, rhs.stopTimeout).append(cpu, rhs.cpu).append(logConfiguration, rhs.logConfiguration).append(secrets, rhs.secrets).append(command, rhs.command).append(systemControls, rhs.systemControls).append(privileged, rhs.privileged).append(resourceRequirements, rhs.resourceRequirements).append(environment, rhs.environment).append(ulimits, rhs.ulimits).append(startTimeout, rhs.startTimeout).append(healthCheck, rhs.healthCheck).append(mountPoints, rhs.mountPoints).append(name, rhs.name).append(entryPoint, rhs.entryPoint).append(repositoryCredentials, rhs.repositoryCredentials).append(user, rhs.user).append(dnsSearchDomains, rhs.dnsSearchDomains).append(essential, rhs.essential).isEquals();
+        return new EqualsBuilder().append(volumesFrom, rhs.volumesFrom).append(memory, rhs.memory).append(workingDirectory, rhs.workingDirectory).append(interactive, rhs.interactive).append(memoryReservation, rhs.memoryReservation).append(portMappings, rhs.portMappings).append(firelensConfiguration, rhs.firelensConfiguration).append(disableNetworking, rhs.disableNetworking).append(hostname, rhs.hostname).append(readonlyRootFilesystem, rhs.readonlyRootFilesystem).append(pseudoTerminal, rhs.pseudoTerminal).append(extraHosts, rhs.extraHosts).append(dockerSecurityOptions, rhs.dockerSecurityOptions).append(links, rhs.links).append(dnsServers, rhs.dnsServers).append(linuxParameters, rhs.linuxParameters).append(dockerLabels, rhs.dockerLabels).append(image, rhs.image).append(dependsOn, rhs.dependsOn).append(stopTimeout, rhs.stopTimeout).append(cpu, rhs.cpu).append(logConfiguration, rhs.logConfiguration).append(secrets, rhs.secrets).append(command, rhs.command).append(systemControls, rhs.systemControls).append(privileged, rhs.privileged).append(resourceRequirements, rhs.resourceRequirements).append(environment, rhs.environment).append(ulimits, rhs.ulimits).append(startTimeout, rhs.startTimeout).append(healthCheck, rhs.healthCheck).append(mountPoints, rhs.mountPoints).append(name, rhs.name).append(entryPoint, rhs.entryPoint).append(repositoryCredentials, rhs.repositoryCredentials).append(user, rhs.user).append(dnsSearchDomains, rhs.dnsSearchDomains).append(essential, rhs.essential).isEquals();
     }
 
 }

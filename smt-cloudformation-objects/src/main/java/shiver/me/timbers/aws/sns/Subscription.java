@@ -24,6 +24,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "FilterPolicy",
     "Protocol",
     "RawMessageDelivery",
+    "RedrivePolicy",
     "Region",
     "TopicArn"
 })
@@ -64,6 +65,13 @@ public class Subscription {
     @JsonProperty("RawMessageDelivery")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-rawmessagedelivery")
     private CharSequence rawMessageDelivery;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-redrivepolicy
+     * 
+     */
+    @JsonProperty("RedrivePolicy")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-redrivepolicy")
+    private Object redrivePolicy;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-region
      * 
@@ -195,6 +203,29 @@ public class Subscription {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-redrivepolicy
+     * 
+     */
+    @JsonIgnore
+    public Object getRedrivePolicy() {
+        return redrivePolicy;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-redrivepolicy
+     * 
+     */
+    @JsonIgnore
+    public void setRedrivePolicy(Object redrivePolicy) {
+        this.redrivePolicy = redrivePolicy;
+    }
+
+    public Subscription withRedrivePolicy(Object redrivePolicy) {
+        this.redrivePolicy = redrivePolicy;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-region
      * 
      */
@@ -242,12 +273,12 @@ public class Subscription {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("deliveryPolicy", deliveryPolicy).append("endpoint", endpoint).append("filterPolicy", filterPolicy).append("protocol", protocol).append("rawMessageDelivery", rawMessageDelivery).append("region", region).append("topicArn", topicArn).toString();
+        return new ToStringBuilder(this).append("deliveryPolicy", deliveryPolicy).append("endpoint", endpoint).append("filterPolicy", filterPolicy).append("protocol", protocol).append("rawMessageDelivery", rawMessageDelivery).append("redrivePolicy", redrivePolicy).append("region", region).append("topicArn", topicArn).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(deliveryPolicy).append(endpoint).append(protocol).append(filterPolicy).append(region).append(rawMessageDelivery).append(topicArn).toHashCode();
+        return new HashCodeBuilder().append(deliveryPolicy).append(endpoint).append(protocol).append(redrivePolicy).append(filterPolicy).append(region).append(rawMessageDelivery).append(topicArn).toHashCode();
     }
 
     @Override
@@ -259,7 +290,7 @@ public class Subscription {
             return false;
         }
         Subscription rhs = ((Subscription) other);
-        return new EqualsBuilder().append(deliveryPolicy, rhs.deliveryPolicy).append(endpoint, rhs.endpoint).append(protocol, rhs.protocol).append(filterPolicy, rhs.filterPolicy).append(region, rhs.region).append(rawMessageDelivery, rhs.rawMessageDelivery).append(topicArn, rhs.topicArn).isEquals();
+        return new EqualsBuilder().append(deliveryPolicy, rhs.deliveryPolicy).append(endpoint, rhs.endpoint).append(protocol, rhs.protocol).append(redrivePolicy, rhs.redrivePolicy).append(filterPolicy, rhs.filterPolicy).append(region, rhs.region).append(rawMessageDelivery, rhs.rawMessageDelivery).append(topicArn, rhs.topicArn).isEquals();
     }
 
 }

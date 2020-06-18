@@ -28,6 +28,8 @@ import shiver.me.timbers.aws.Tag;
     "Encrypted",
     "Iops",
     "KmsKeyId",
+    "MultiAttachEnabled",
+    "OutpostArn",
     "Size",
     "SnapshotId",
     "Tags",
@@ -70,6 +72,20 @@ public class Volume {
     @JsonProperty("KmsKeyId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volume.html#cfn-ec2-ebs-volume-kmskeyid")
     private CharSequence kmsKeyId;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volume.html#cfn-ec2-ebs-volume-multiattachenabled
+     * 
+     */
+    @JsonProperty("MultiAttachEnabled")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volume.html#cfn-ec2-ebs-volume-multiattachenabled")
+    private CharSequence multiAttachEnabled;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volume.html#cfn-ec2-ebs-volume-outpostarn
+     * 
+     */
+    @JsonProperty("OutpostArn")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volume.html#cfn-ec2-ebs-volume-outpostarn")
+    private CharSequence outpostArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volume.html#cfn-ec2-ebs-volume-size
      * 
@@ -215,6 +231,52 @@ public class Volume {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volume.html#cfn-ec2-ebs-volume-multiattachenabled
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getMultiAttachEnabled() {
+        return multiAttachEnabled;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volume.html#cfn-ec2-ebs-volume-multiattachenabled
+     * 
+     */
+    @JsonIgnore
+    public void setMultiAttachEnabled(CharSequence multiAttachEnabled) {
+        this.multiAttachEnabled = multiAttachEnabled;
+    }
+
+    public Volume withMultiAttachEnabled(CharSequence multiAttachEnabled) {
+        this.multiAttachEnabled = multiAttachEnabled;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volume.html#cfn-ec2-ebs-volume-outpostarn
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getOutpostArn() {
+        return outpostArn;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volume.html#cfn-ec2-ebs-volume-outpostarn
+     * 
+     */
+    @JsonIgnore
+    public void setOutpostArn(CharSequence outpostArn) {
+        this.outpostArn = outpostArn;
+    }
+
+    public Volume withOutpostArn(CharSequence outpostArn) {
+        this.outpostArn = outpostArn;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volume.html#cfn-ec2-ebs-volume-size
      * 
      */
@@ -308,12 +370,12 @@ public class Volume {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("autoEnableIO", autoEnableIO).append("availabilityZone", availabilityZone).append("encrypted", encrypted).append("iops", iops).append("kmsKeyId", kmsKeyId).append("size", size).append("snapshotId", snapshotId).append("tags", tags).append("volumeType", volumeType).toString();
+        return new ToStringBuilder(this).append("autoEnableIO", autoEnableIO).append("availabilityZone", availabilityZone).append("encrypted", encrypted).append("iops", iops).append("kmsKeyId", kmsKeyId).append("multiAttachEnabled", multiAttachEnabled).append("outpostArn", outpostArn).append("size", size).append("snapshotId", snapshotId).append("tags", tags).append("volumeType", volumeType).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(volumeType).append(snapshotId).append(encrypted).append(size).append(iops).append(kmsKeyId).append(autoEnableIO).append(availabilityZone).append(tags).toHashCode();
+        return new HashCodeBuilder().append(volumeType).append(snapshotId).append(encrypted).append(size).append(iops).append(outpostArn).append(kmsKeyId).append(autoEnableIO).append(availabilityZone).append(multiAttachEnabled).append(tags).toHashCode();
     }
 
     @Override
@@ -325,7 +387,7 @@ public class Volume {
             return false;
         }
         Volume rhs = ((Volume) other);
-        return new EqualsBuilder().append(volumeType, rhs.volumeType).append(snapshotId, rhs.snapshotId).append(encrypted, rhs.encrypted).append(size, rhs.size).append(iops, rhs.iops).append(kmsKeyId, rhs.kmsKeyId).append(autoEnableIO, rhs.autoEnableIO).append(availabilityZone, rhs.availabilityZone).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(volumeType, rhs.volumeType).append(snapshotId, rhs.snapshotId).append(encrypted, rhs.encrypted).append(size, rhs.size).append(iops, rhs.iops).append(outpostArn, rhs.outpostArn).append(kmsKeyId, rhs.kmsKeyId).append(autoEnableIO, rhs.autoEnableIO).append(availabilityZone, rhs.availabilityZone).append(multiAttachEnabled, rhs.multiAttachEnabled).append(tags, rhs.tags).isEquals();
     }
 
 }

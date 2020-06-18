@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CE_CostCategoryResource.schema.json",
+  "title" : "CostCategoryResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ce-costcategory.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.ce.CostCategoryResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<CostCategoryResource>", "shiver.me.timbers.aws.HasCondition<CostCategoryResource>", "shiver.me.timbers.aws.HasAttributes<CostCategoryAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::CE::CostCategory"
+    },
+    "Properties" : {
+      "$ref" : "AWS_CE_CostCategory.schema.json"
+    }
+  }
+}

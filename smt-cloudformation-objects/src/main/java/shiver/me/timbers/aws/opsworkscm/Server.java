@@ -12,6 +12,7 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 import shiver.me.timbers.aws.Property;
+import shiver.me.timbers.aws.Tag;
 
 
 /**
@@ -31,13 +32,17 @@ import shiver.me.timbers.aws.Property;
     "PreferredMaintenanceWindow",
     "AssociatePublicIpAddress",
     "InstanceProfileArn",
+    "CustomCertificate",
     "PreferredBackupWindow",
     "SecurityGroupIds",
     "SubnetIds",
+    "CustomDomain",
+    "CustomPrivateKey",
     "ServerName",
     "EngineAttributes",
     "BackupRetentionCount",
     "InstanceType",
+    "Tags",
     "Engine"
 })
 public class Server {
@@ -106,6 +111,13 @@ public class Server {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-instanceprofilearn")
     private CharSequence instanceProfileArn;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-customcertificate
+     * 
+     */
+    @JsonProperty("CustomCertificate")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-customcertificate")
+    private CharSequence customCertificate;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-preferredbackupwindow
      * 
      */
@@ -126,6 +138,20 @@ public class Server {
     @JsonProperty("SubnetIds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-subnetids")
     private List<CharSequence> subnetIds = new ArrayList<CharSequence>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-customdomain
+     * 
+     */
+    @JsonProperty("CustomDomain")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-customdomain")
+    private CharSequence customDomain;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-customprivatekey
+     * 
+     */
+    @JsonProperty("CustomPrivateKey")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-customprivatekey")
+    private CharSequence customPrivateKey;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-servername
      * 
@@ -154,6 +180,13 @@ public class Server {
     @JsonProperty("InstanceType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-instancetype")
     private CharSequence instanceType;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-tags")
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-engine
      * 
@@ -370,6 +403,29 @@ public class Server {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-customcertificate
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getCustomCertificate() {
+        return customCertificate;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-customcertificate
+     * 
+     */
+    @JsonIgnore
+    public void setCustomCertificate(CharSequence customCertificate) {
+        this.customCertificate = customCertificate;
+    }
+
+    public Server withCustomCertificate(CharSequence customCertificate) {
+        this.customCertificate = customCertificate;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-preferredbackupwindow
      * 
      */
@@ -435,6 +491,52 @@ public class Server {
 
     public Server withSubnetIds(List<CharSequence> subnetIds) {
         this.subnetIds = subnetIds;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-customdomain
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getCustomDomain() {
+        return customDomain;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-customdomain
+     * 
+     */
+    @JsonIgnore
+    public void setCustomDomain(CharSequence customDomain) {
+        this.customDomain = customDomain;
+    }
+
+    public Server withCustomDomain(CharSequence customDomain) {
+        this.customDomain = customDomain;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-customprivatekey
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getCustomPrivateKey() {
+        return customPrivateKey;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-customprivatekey
+     * 
+     */
+    @JsonIgnore
+    public void setCustomPrivateKey(CharSequence customPrivateKey) {
+        this.customPrivateKey = customPrivateKey;
+    }
+
+    public Server withCustomPrivateKey(CharSequence customPrivateKey) {
+        this.customPrivateKey = customPrivateKey;
         return this;
     }
 
@@ -531,6 +633,29 @@ public class Server {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-tags
+     * 
+     */
+    @JsonIgnore
+    public List<Property<Tag>> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+    }
+
+    public Server withTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-engine
      * 
      */
@@ -555,12 +680,12 @@ public class Server {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("keyPair", keyPair).append("engineVersion", engineVersion).append("serviceRoleArn", serviceRoleArn).append("disableAutomatedBackup", disableAutomatedBackup).append("backupId", backupId).append("engineModel", engineModel).append("preferredMaintenanceWindow", preferredMaintenanceWindow).append("associatePublicIpAddress", associatePublicIpAddress).append("instanceProfileArn", instanceProfileArn).append("preferredBackupWindow", preferredBackupWindow).append("securityGroupIds", securityGroupIds).append("subnetIds", subnetIds).append("serverName", serverName).append("engineAttributes", engineAttributes).append("backupRetentionCount", backupRetentionCount).append("instanceType", instanceType).append("engine", engine).toString();
+        return new ToStringBuilder(this).append("keyPair", keyPair).append("engineVersion", engineVersion).append("serviceRoleArn", serviceRoleArn).append("disableAutomatedBackup", disableAutomatedBackup).append("backupId", backupId).append("engineModel", engineModel).append("preferredMaintenanceWindow", preferredMaintenanceWindow).append("associatePublicIpAddress", associatePublicIpAddress).append("instanceProfileArn", instanceProfileArn).append("customCertificate", customCertificate).append("preferredBackupWindow", preferredBackupWindow).append("securityGroupIds", securityGroupIds).append("subnetIds", subnetIds).append("customDomain", customDomain).append("customPrivateKey", customPrivateKey).append("serverName", serverName).append("engineAttributes", engineAttributes).append("backupRetentionCount", backupRetentionCount).append("instanceType", instanceType).append("tags", tags).append("engine", engine).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(engineVersion).append(engineModel).append(engineAttributes).append(backupId).append(instanceType).append(serverName).append(instanceProfileArn).append(disableAutomatedBackup).append(preferredBackupWindow).append(engine).append(securityGroupIds).append(backupRetentionCount).append(preferredMaintenanceWindow).append(keyPair).append(associatePublicIpAddress).append(serviceRoleArn).append(subnetIds).toHashCode();
+        return new HashCodeBuilder().append(engineVersion).append(customCertificate).append(engineModel).append(engineAttributes).append(backupId).append(instanceType).append(serverName).append(instanceProfileArn).append(disableAutomatedBackup).append(preferredBackupWindow).append(customDomain).append(tags).append(engine).append(securityGroupIds).append(backupRetentionCount).append(preferredMaintenanceWindow).append(keyPair).append(associatePublicIpAddress).append(customPrivateKey).append(serviceRoleArn).append(subnetIds).toHashCode();
     }
 
     @Override
@@ -572,7 +697,7 @@ public class Server {
             return false;
         }
         Server rhs = ((Server) other);
-        return new EqualsBuilder().append(engineVersion, rhs.engineVersion).append(engineModel, rhs.engineModel).append(engineAttributes, rhs.engineAttributes).append(backupId, rhs.backupId).append(instanceType, rhs.instanceType).append(serverName, rhs.serverName).append(instanceProfileArn, rhs.instanceProfileArn).append(disableAutomatedBackup, rhs.disableAutomatedBackup).append(preferredBackupWindow, rhs.preferredBackupWindow).append(engine, rhs.engine).append(securityGroupIds, rhs.securityGroupIds).append(backupRetentionCount, rhs.backupRetentionCount).append(preferredMaintenanceWindow, rhs.preferredMaintenanceWindow).append(keyPair, rhs.keyPair).append(associatePublicIpAddress, rhs.associatePublicIpAddress).append(serviceRoleArn, rhs.serviceRoleArn).append(subnetIds, rhs.subnetIds).isEquals();
+        return new EqualsBuilder().append(engineVersion, rhs.engineVersion).append(customCertificate, rhs.customCertificate).append(engineModel, rhs.engineModel).append(engineAttributes, rhs.engineAttributes).append(backupId, rhs.backupId).append(instanceType, rhs.instanceType).append(serverName, rhs.serverName).append(instanceProfileArn, rhs.instanceProfileArn).append(disableAutomatedBackup, rhs.disableAutomatedBackup).append(preferredBackupWindow, rhs.preferredBackupWindow).append(customDomain, rhs.customDomain).append(tags, rhs.tags).append(engine, rhs.engine).append(securityGroupIds, rhs.securityGroupIds).append(backupRetentionCount, rhs.backupRetentionCount).append(preferredMaintenanceWindow, rhs.preferredMaintenanceWindow).append(keyPair, rhs.keyPair).append(associatePublicIpAddress, rhs.associatePublicIpAddress).append(customPrivateKey, rhs.customPrivateKey).append(serviceRoleArn, rhs.serviceRoleArn).append(subnetIds, rhs.subnetIds).isEquals();
     }
 
 }

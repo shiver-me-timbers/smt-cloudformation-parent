@@ -1,0 +1,39 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_RDS_DBProxyTargetGroup.ConnectionPoolConfigurationInfoFormat.schema.json",
+  "title" : "DBProxyTargetGroupConnectionPoolConfigurationInfoFormat",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbproxytargetgroup-connectionpoolconfigurationinfoformat.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.rds.DBProxyTargetGroupConnectionPoolConfigurationInfoFormat",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DBProxyTargetGroupConnectionPoolConfigurationInfoFormat>" ],
+  "properties" : {
+    "MaxConnectionsPercent" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbproxytargetgroup-connectionpoolconfigurationinfoformat.html#cfn-rds-dbproxytargetgroup-connectionpoolconfigurationinfoformat-maxconnectionspercent",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "MaxIdleConnectionsPercent" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbproxytargetgroup-connectionpoolconfigurationinfoformat.html#cfn-rds-dbproxytargetgroup-connectionpoolconfigurationinfoformat-maxidleconnectionspercent",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "ConnectionBorrowTimeout" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbproxytargetgroup-connectionpoolconfigurationinfoformat.html#cfn-rds-dbproxytargetgroup-connectionpoolconfigurationinfoformat-connectionborrowtimeout",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "SessionPinningFilters" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbproxytargetgroup-connectionpoolconfigurationinfoformat.html#cfn-rds-dbproxytargetgroup-connectionpoolconfigurationinfoformat-sessionpinningfilters",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    },
+    "InitQuery" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbproxytargetgroup-connectionpoolconfigurationinfoformat.html#cfn-rds-dbproxytargetgroup-connectionpoolconfigurationinfoformat-initquery",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

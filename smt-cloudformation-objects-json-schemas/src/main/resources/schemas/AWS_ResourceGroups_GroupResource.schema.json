@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ResourceGroups_GroupResource.schema.json",
+  "title" : "GroupResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-resourcegroups-group.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.resourcegroups.GroupResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<GroupResource>", "shiver.me.timbers.aws.HasCondition<GroupResource>", "shiver.me.timbers.aws.HasAttributes<GroupAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ResourceGroups::Group"
+    },
+    "Properties" : {
+      "$ref" : "AWS_ResourceGroups_Group.schema.json"
+    }
+  }
+}

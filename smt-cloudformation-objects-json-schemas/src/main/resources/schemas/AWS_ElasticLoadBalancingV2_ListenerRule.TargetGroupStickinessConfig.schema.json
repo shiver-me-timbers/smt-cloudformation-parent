@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ElasticLoadBalancingV2_ListenerRule.TargetGroupStickinessConfig.schema.json",
+  "title" : "ListenerRuleTargetGroupStickinessConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-targetgroupstickinessconfig.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.elasticloadbalancingv2.ListenerRuleTargetGroupStickinessConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ListenerRuleTargetGroupStickinessConfig>" ],
+  "properties" : {
+    "DurationSeconds" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-targetgroupstickinessconfig.html#cfn-elasticloadbalancingv2-listenerrule-targetgroupstickinessconfig-durationseconds",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "Enabled" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-targetgroupstickinessconfig.html#cfn-elasticloadbalancingv2-listenerrule-targetgroupstickinessconfig-enabled",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

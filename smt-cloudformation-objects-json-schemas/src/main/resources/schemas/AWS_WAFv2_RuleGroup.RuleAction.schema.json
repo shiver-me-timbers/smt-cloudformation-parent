@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WAFv2_RuleGroup.RuleAction.schema.json",
+  "title" : "RuleGroupRuleAction",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-ruleaction.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.wafv2.RuleGroupRuleAction",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<RuleGroupRuleAction>" ],
+  "properties" : {
+    "Allow" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-ruleaction.html#cfn-wafv2-rulegroup-ruleaction-allow",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
+    },
+    "Block" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-ruleaction.html#cfn-wafv2-rulegroup-ruleaction-block",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
+    },
+    "Count" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-ruleaction.html#cfn-wafv2-rulegroup-ruleaction-count",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
+    }
+  }
+}

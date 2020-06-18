@@ -1,0 +1,9 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Macie_FindingsFilter.Criterion.schema.json",
+  "title" : "FindingsFilterCriterion",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-macie-findingsfilter-criterion.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.macie.FindingsFilterCriterion",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<FindingsFilterCriterion>" ]
+}

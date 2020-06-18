@@ -1,0 +1,24 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MediaStore_Container.MetricPolicy.schema.json",
+  "title" : "ContainerMetricPolicy",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediastore-container-metricpolicy.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.mediastore.ContainerMetricPolicy",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ContainerMetricPolicy>" ],
+  "properties" : {
+    "ContainerLevelMetrics" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediastore-container-metricpolicy.html#cfn-mediastore-container-metricpolicy-containerlevelmetrics",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "MetricPolicyRules" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediastore-container-metricpolicy.html#cfn-mediastore-container-metricpolicy-metricpolicyrules",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_MediaStore_Container.MetricPolicyRule.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.mediastore.ContainerMetricPolicyRule>"
+      }
+    }
+  }
+}

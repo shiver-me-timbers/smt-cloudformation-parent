@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Config_OrganizationConformancePack.ConformancePackInputParameter.schema.json",
+  "title" : "OrganizationConformancePackConformancePackInputParameter",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-organizationconformancepack-conformancepackinputparameter.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.config.OrganizationConformancePackConformancePackInputParameter",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<OrganizationConformancePackConformancePackInputParameter>" ],
+  "properties" : {
+    "ParameterName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-organizationconformancepack-conformancepackinputparameter.html#cfn-config-organizationconformancepack-conformancepackinputparameter-parametername",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ParameterValue" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-organizationconformancepack-conformancepackinputparameter.html#cfn-config-organizationconformancepack-conformancepackinputparameter-parametervalue",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

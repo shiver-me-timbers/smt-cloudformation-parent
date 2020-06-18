@@ -10,6 +10,8 @@ public enum MeshAttributes {
 
     UID("Uid"),
     MESH_NAME("MeshName"),
+    MESH_OWNER("MeshOwner"),
+    RESOURCE_OWNER("ResourceOwner"),
     ARN("Arn");
     private final String value;
     private final static Map<String, MeshAttributes> CONSTANTS = new HashMap<String, MeshAttributes>();

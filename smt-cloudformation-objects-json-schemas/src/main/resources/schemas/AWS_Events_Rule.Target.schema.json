@@ -12,10 +12,20 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "BatchParameters" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-batchparameters",
+      "$ref" : "AWS_Events_Rule.BatchParameters.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.events.RuleBatchParameters>"
+    },
     "EcsParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-ecsparameters",
       "$ref" : "AWS_Events_Rule.EcsParameters.schema.json",
       "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.events.RuleEcsParameters>"
+    },
+    "HttpParameters" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-httpparameters",
+      "$ref" : "AWS_Events_Rule.HttpParameters.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.events.RuleHttpParameters>"
     },
     "Id" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-id",

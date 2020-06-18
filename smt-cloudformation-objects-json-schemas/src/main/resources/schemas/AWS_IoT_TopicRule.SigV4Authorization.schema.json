@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoT_TopicRule.SigV4Authorization.schema.json",
+  "title" : "TopicRuleSigV4Authorization",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-sigv4authorization.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.iot.TopicRuleSigV4Authorization",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TopicRuleSigV4Authorization>" ],
+  "properties" : {
+    "RoleArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-sigv4authorization.html#cfn-iot-topicrule-sigv4authorization-rolearn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ServiceName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-sigv4authorization.html#cfn-iot-topicrule-sigv4authorization-servicename",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SigningRegion" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-sigv4authorization.html#cfn-iot-topicrule-sigv4authorization-signingregion",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

@@ -8,7 +8,8 @@ import com.fasterxml.jackson.annotation.JsonValue;
 
 public enum CampaignAttributes {
 
-    CAMPAIGN_ID("CampaignId");
+    CAMPAIGN_ID("CampaignId"),
+    ARN("Arn");
     private final String value;
     private final static Map<String, CampaignAttributes> CONSTANTS = new HashMap<String, CampaignAttributes>();
 

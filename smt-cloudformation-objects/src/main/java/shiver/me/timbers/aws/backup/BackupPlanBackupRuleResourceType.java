@@ -1,6 +1,8 @@
 
 package shiver.me.timbers.aws.backup;
 
+import java.util.ArrayList;
+import java.util.List;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,6 +25,7 @@ import shiver.me.timbers.aws.Property;
     "CompletionWindowMinutes",
     "ScheduleExpression",
     "RecoveryPointTags",
+    "CopyActions",
     "Lifecycle",
     "TargetBackupVault",
     "StartWindowMinutes",
@@ -52,6 +55,13 @@ public class BackupPlanBackupRuleResourceType implements Property<BackupPlanBack
     @JsonProperty("RecoveryPointTags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-backup-backupplan-backupruleresourcetype.html#cfn-backup-backupplan-backupruleresourcetype-recoverypointtags")
     private Object recoveryPointTags;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-backup-backupplan-backupruleresourcetype.html#cfn-backup-backupplan-backupruleresourcetype-copyactions
+     * 
+     */
+    @JsonProperty("CopyActions")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-backup-backupplan-backupruleresourcetype.html#cfn-backup-backupplan-backupruleresourcetype-copyactions")
+    private List<Property<BackupPlanCopyActionResourceType>> copyActions = new ArrayList<Property<BackupPlanCopyActionResourceType>>();
     /**
      * BackupPlanLifecycleResourceType
      * <p>
@@ -153,6 +163,29 @@ public class BackupPlanBackupRuleResourceType implements Property<BackupPlanBack
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-backup-backupplan-backupruleresourcetype.html#cfn-backup-backupplan-backupruleresourcetype-copyactions
+     * 
+     */
+    @JsonIgnore
+    public List<Property<BackupPlanCopyActionResourceType>> getCopyActions() {
+        return copyActions;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-backup-backupplan-backupruleresourcetype.html#cfn-backup-backupplan-backupruleresourcetype-copyactions
+     * 
+     */
+    @JsonIgnore
+    public void setCopyActions(List<Property<BackupPlanCopyActionResourceType>> copyActions) {
+        this.copyActions = copyActions;
+    }
+
+    public BackupPlanBackupRuleResourceType withCopyActions(List<Property<BackupPlanCopyActionResourceType>> copyActions) {
+        this.copyActions = copyActions;
+        return this;
+    }
+
+    /**
      * BackupPlanLifecycleResourceType
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-backup-backupplan-lifecycleresourcetype.html
@@ -250,12 +283,12 @@ public class BackupPlanBackupRuleResourceType implements Property<BackupPlanBack
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("completionWindowMinutes", completionWindowMinutes).append("scheduleExpression", scheduleExpression).append("recoveryPointTags", recoveryPointTags).append("lifecycle", lifecycle).append("targetBackupVault", targetBackupVault).append("startWindowMinutes", startWindowMinutes).append("ruleName", ruleName).toString();
+        return new ToStringBuilder(this).append("completionWindowMinutes", completionWindowMinutes).append("scheduleExpression", scheduleExpression).append("recoveryPointTags", recoveryPointTags).append("copyActions", copyActions).append("lifecycle", lifecycle).append("targetBackupVault", targetBackupVault).append("startWindowMinutes", startWindowMinutes).append("ruleName", ruleName).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(lifecycle).append(targetBackupVault).append(startWindowMinutes).append(completionWindowMinutes).append(scheduleExpression).append(recoveryPointTags).append(ruleName).toHashCode();
+        return new HashCodeBuilder().append(lifecycle).append(targetBackupVault).append(startWindowMinutes).append(completionWindowMinutes).append(scheduleExpression).append(recoveryPointTags).append(copyActions).append(ruleName).toHashCode();
     }
 
     @Override
@@ -267,7 +300,7 @@ public class BackupPlanBackupRuleResourceType implements Property<BackupPlanBack
             return false;
         }
         BackupPlanBackupRuleResourceType rhs = ((BackupPlanBackupRuleResourceType) other);
-        return new EqualsBuilder().append(lifecycle, rhs.lifecycle).append(targetBackupVault, rhs.targetBackupVault).append(startWindowMinutes, rhs.startWindowMinutes).append(completionWindowMinutes, rhs.completionWindowMinutes).append(scheduleExpression, rhs.scheduleExpression).append(recoveryPointTags, rhs.recoveryPointTags).append(ruleName, rhs.ruleName).isEquals();
+        return new EqualsBuilder().append(lifecycle, rhs.lifecycle).append(targetBackupVault, rhs.targetBackupVault).append(startWindowMinutes, rhs.startWindowMinutes).append(completionWindowMinutes, rhs.completionWindowMinutes).append(scheduleExpression, rhs.scheduleExpression).append(recoveryPointTags, rhs.recoveryPointTags).append(copyActions, rhs.copyActions).append(ruleName, rhs.ruleName).isEquals();
     }
 
 }

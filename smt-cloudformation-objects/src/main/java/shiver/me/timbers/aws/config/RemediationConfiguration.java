@@ -9,6 +9,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+import shiver.me.timbers.aws.Property;
 
 
 /**
@@ -20,11 +21,15 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "TargetVersion",
+    "ExecutionControls",
     "Parameters",
     "TargetType",
     "ConfigRuleName",
     "ResourceType",
-    "TargetId"
+    "RetryAttemptSeconds",
+    "MaximumAutomaticAttempts",
+    "TargetId",
+    "Automatic"
 })
 public class RemediationConfiguration {
 
@@ -35,6 +40,15 @@ public class RemediationConfiguration {
     @JsonProperty("TargetVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-remediationconfiguration.html#cfn-config-remediationconfiguration-targetversion")
     private CharSequence targetVersion;
+    /**
+     * RemediationConfigurationExecutionControls
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-remediationconfiguration-executioncontrols.html
+     * 
+     */
+    @JsonProperty("ExecutionControls")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-remediationconfiguration-executioncontrols.html")
+    private Property<RemediationConfigurationExecutionControls> executionControls;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-remediationconfiguration.html#cfn-config-remediationconfiguration-parameters
      * 
@@ -64,12 +78,33 @@ public class RemediationConfiguration {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-remediationconfiguration.html#cfn-config-remediationconfiguration-resourcetype")
     private CharSequence resourceType;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-remediationconfiguration.html#cfn-config-remediationconfiguration-retryattemptseconds
+     * 
+     */
+    @JsonProperty("RetryAttemptSeconds")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-remediationconfiguration.html#cfn-config-remediationconfiguration-retryattemptseconds")
+    private Number retryAttemptSeconds;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-remediationconfiguration.html#cfn-config-remediationconfiguration-maximumautomaticattempts
+     * 
+     */
+    @JsonProperty("MaximumAutomaticAttempts")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-remediationconfiguration.html#cfn-config-remediationconfiguration-maximumautomaticattempts")
+    private Number maximumAutomaticAttempts;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-remediationconfiguration.html#cfn-config-remediationconfiguration-targetid
      * 
      */
     @JsonProperty("TargetId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-remediationconfiguration.html#cfn-config-remediationconfiguration-targetid")
     private CharSequence targetId;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-remediationconfiguration.html#cfn-config-remediationconfiguration-automatic
+     * 
+     */
+    @JsonProperty("Automatic")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-remediationconfiguration.html#cfn-config-remediationconfiguration-automatic")
+    private CharSequence automatic;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-remediationconfiguration.html#cfn-config-remediationconfiguration-targetversion
@@ -91,6 +126,33 @@ public class RemediationConfiguration {
 
     public RemediationConfiguration withTargetVersion(CharSequence targetVersion) {
         this.targetVersion = targetVersion;
+        return this;
+    }
+
+    /**
+     * RemediationConfigurationExecutionControls
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-remediationconfiguration-executioncontrols.html
+     * 
+     */
+    @JsonIgnore
+    public Property<RemediationConfigurationExecutionControls> getExecutionControls() {
+        return executionControls;
+    }
+
+    /**
+     * RemediationConfigurationExecutionControls
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-remediationconfiguration-executioncontrols.html
+     * 
+     */
+    @JsonIgnore
+    public void setExecutionControls(Property<RemediationConfigurationExecutionControls> executionControls) {
+        this.executionControls = executionControls;
+    }
+
+    public RemediationConfiguration withExecutionControls(Property<RemediationConfigurationExecutionControls> executionControls) {
+        this.executionControls = executionControls;
         return this;
     }
 
@@ -187,6 +249,52 @@ public class RemediationConfiguration {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-remediationconfiguration.html#cfn-config-remediationconfiguration-retryattemptseconds
+     * 
+     */
+    @JsonIgnore
+    public Number getRetryAttemptSeconds() {
+        return retryAttemptSeconds;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-remediationconfiguration.html#cfn-config-remediationconfiguration-retryattemptseconds
+     * 
+     */
+    @JsonIgnore
+    public void setRetryAttemptSeconds(Number retryAttemptSeconds) {
+        this.retryAttemptSeconds = retryAttemptSeconds;
+    }
+
+    public RemediationConfiguration withRetryAttemptSeconds(Number retryAttemptSeconds) {
+        this.retryAttemptSeconds = retryAttemptSeconds;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-remediationconfiguration.html#cfn-config-remediationconfiguration-maximumautomaticattempts
+     * 
+     */
+    @JsonIgnore
+    public Number getMaximumAutomaticAttempts() {
+        return maximumAutomaticAttempts;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-remediationconfiguration.html#cfn-config-remediationconfiguration-maximumautomaticattempts
+     * 
+     */
+    @JsonIgnore
+    public void setMaximumAutomaticAttempts(Number maximumAutomaticAttempts) {
+        this.maximumAutomaticAttempts = maximumAutomaticAttempts;
+    }
+
+    public RemediationConfiguration withMaximumAutomaticAttempts(Number maximumAutomaticAttempts) {
+        this.maximumAutomaticAttempts = maximumAutomaticAttempts;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-remediationconfiguration.html#cfn-config-remediationconfiguration-targetid
      * 
      */
@@ -209,14 +317,37 @@ public class RemediationConfiguration {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-remediationconfiguration.html#cfn-config-remediationconfiguration-automatic
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getAutomatic() {
+        return automatic;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-remediationconfiguration.html#cfn-config-remediationconfiguration-automatic
+     * 
+     */
+    @JsonIgnore
+    public void setAutomatic(CharSequence automatic) {
+        this.automatic = automatic;
+    }
+
+    public RemediationConfiguration withAutomatic(CharSequence automatic) {
+        this.automatic = automatic;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("targetVersion", targetVersion).append("parameters", parameters).append("targetType", targetType).append("configRuleName", configRuleName).append("resourceType", resourceType).append("targetId", targetId).toString();
+        return new ToStringBuilder(this).append("targetVersion", targetVersion).append("executionControls", executionControls).append("parameters", parameters).append("targetType", targetType).append("configRuleName", configRuleName).append("resourceType", resourceType).append("retryAttemptSeconds", retryAttemptSeconds).append("maximumAutomaticAttempts", maximumAutomaticAttempts).append("targetId", targetId).append("automatic", automatic).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(configRuleName).append(targetId).append(targetType).append(parameters).append(targetVersion).append(resourceType).toHashCode();
+        return new HashCodeBuilder().append(configRuleName).append(targetId).append(executionControls).append(retryAttemptSeconds).append(automatic).append(targetType).append(parameters).append(maximumAutomaticAttempts).append(targetVersion).append(resourceType).toHashCode();
     }
 
     @Override
@@ -228,7 +359,7 @@ public class RemediationConfiguration {
             return false;
         }
         RemediationConfiguration rhs = ((RemediationConfiguration) other);
-        return new EqualsBuilder().append(configRuleName, rhs.configRuleName).append(targetId, rhs.targetId).append(targetType, rhs.targetType).append(parameters, rhs.parameters).append(targetVersion, rhs.targetVersion).append(resourceType, rhs.resourceType).isEquals();
+        return new EqualsBuilder().append(configRuleName, rhs.configRuleName).append(targetId, rhs.targetId).append(executionControls, rhs.executionControls).append(retryAttemptSeconds, rhs.retryAttemptSeconds).append(automatic, rhs.automatic).append(targetType, rhs.targetType).append(parameters, rhs.parameters).append(maximumAutomaticAttempts, rhs.maximumAutomaticAttempts).append(targetVersion, rhs.targetVersion).append(resourceType, rhs.resourceType).isEquals();
     }
 
 }

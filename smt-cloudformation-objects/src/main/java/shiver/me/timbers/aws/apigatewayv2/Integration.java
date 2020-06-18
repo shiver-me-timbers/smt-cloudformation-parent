@@ -9,6 +9,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+import shiver.me.timbers.aws.Property;
 
 
 /**
@@ -25,10 +26,13 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "IntegrationMethod",
     "PassthroughBehavior",
     "RequestParameters",
+    "ConnectionId",
     "IntegrationUri",
+    "PayloadFormatVersion",
     "CredentialsArn",
     "RequestTemplates",
     "TimeoutInMillis",
+    "TlsConfig",
     "ContentHandlingStrategy",
     "ApiId",
     "IntegrationType"
@@ -78,12 +82,26 @@ public class Integration {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-requestparameters")
     private Object requestParameters;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-connectionid
+     * 
+     */
+    @JsonProperty("ConnectionId")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-connectionid")
+    private CharSequence connectionId;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-integrationuri
      * 
      */
     @JsonProperty("IntegrationUri")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-integrationuri")
     private CharSequence integrationUri;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-payloadformatversion
+     * 
+     */
+    @JsonProperty("PayloadFormatVersion")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-payloadformatversion")
+    private CharSequence payloadFormatVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-credentialsarn
      * 
@@ -105,6 +123,15 @@ public class Integration {
     @JsonProperty("TimeoutInMillis")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-timeoutinmillis")
     private Number timeoutInMillis;
+    /**
+     * IntegrationTlsConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-integration-tlsconfig.html
+     * 
+     */
+    @JsonProperty("TlsConfig")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-integration-tlsconfig.html")
+    private Property<IntegrationTlsConfig> tlsConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-contenthandlingstrategy
      * 
@@ -266,6 +293,29 @@ public class Integration {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-connectionid
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getConnectionId() {
+        return connectionId;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-connectionid
+     * 
+     */
+    @JsonIgnore
+    public void setConnectionId(CharSequence connectionId) {
+        this.connectionId = connectionId;
+    }
+
+    public Integration withConnectionId(CharSequence connectionId) {
+        this.connectionId = connectionId;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-integrationuri
      * 
      */
@@ -285,6 +335,29 @@ public class Integration {
 
     public Integration withIntegrationUri(CharSequence integrationUri) {
         this.integrationUri = integrationUri;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-payloadformatversion
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getPayloadFormatVersion() {
+        return payloadFormatVersion;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-payloadformatversion
+     * 
+     */
+    @JsonIgnore
+    public void setPayloadFormatVersion(CharSequence payloadFormatVersion) {
+        this.payloadFormatVersion = payloadFormatVersion;
+    }
+
+    public Integration withPayloadFormatVersion(CharSequence payloadFormatVersion) {
+        this.payloadFormatVersion = payloadFormatVersion;
         return this;
     }
 
@@ -354,6 +427,33 @@ public class Integration {
 
     public Integration withTimeoutInMillis(Number timeoutInMillis) {
         this.timeoutInMillis = timeoutInMillis;
+        return this;
+    }
+
+    /**
+     * IntegrationTlsConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-integration-tlsconfig.html
+     * 
+     */
+    @JsonIgnore
+    public Property<IntegrationTlsConfig> getTlsConfig() {
+        return tlsConfig;
+    }
+
+    /**
+     * IntegrationTlsConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-integration-tlsconfig.html
+     * 
+     */
+    @JsonIgnore
+    public void setTlsConfig(Property<IntegrationTlsConfig> tlsConfig) {
+        this.tlsConfig = tlsConfig;
+    }
+
+    public Integration withTlsConfig(Property<IntegrationTlsConfig> tlsConfig) {
+        this.tlsConfig = tlsConfig;
         return this;
     }
 
@@ -428,12 +528,12 @@ public class Integration {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("description", description).append("templateSelectionExpression", templateSelectionExpression).append("connectionType", connectionType).append("integrationMethod", integrationMethod).append("passthroughBehavior", passthroughBehavior).append("requestParameters", requestParameters).append("integrationUri", integrationUri).append("credentialsArn", credentialsArn).append("requestTemplates", requestTemplates).append("timeoutInMillis", timeoutInMillis).append("contentHandlingStrategy", contentHandlingStrategy).append("apiId", apiId).append("integrationType", integrationType).toString();
+        return new ToStringBuilder(this).append("description", description).append("templateSelectionExpression", templateSelectionExpression).append("connectionType", connectionType).append("integrationMethod", integrationMethod).append("passthroughBehavior", passthroughBehavior).append("requestParameters", requestParameters).append("connectionId", connectionId).append("integrationUri", integrationUri).append("payloadFormatVersion", payloadFormatVersion).append("credentialsArn", credentialsArn).append("requestTemplates", requestTemplates).append("timeoutInMillis", timeoutInMillis).append("tlsConfig", tlsConfig).append("contentHandlingStrategy", contentHandlingStrategy).append("apiId", apiId).append("integrationType", integrationType).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(integrationMethod).append(templateSelectionExpression).append(requestParameters).append(description).append(connectionType).append(credentialsArn).append(timeoutInMillis).append(contentHandlingStrategy).append(passthroughBehavior).append(requestTemplates).append(integrationType).append(integrationUri).append(apiId).toHashCode();
+        return new HashCodeBuilder().append(integrationMethod).append(templateSelectionExpression).append(requestParameters).append(description).append(payloadFormatVersion).append(connectionType).append(credentialsArn).append(timeoutInMillis).append(tlsConfig).append(contentHandlingStrategy).append(passthroughBehavior).append(requestTemplates).append(integrationType).append(connectionId).append(integrationUri).append(apiId).toHashCode();
     }
 
     @Override
@@ -445,7 +545,7 @@ public class Integration {
             return false;
         }
         Integration rhs = ((Integration) other);
-        return new EqualsBuilder().append(integrationMethod, rhs.integrationMethod).append(templateSelectionExpression, rhs.templateSelectionExpression).append(requestParameters, rhs.requestParameters).append(description, rhs.description).append(connectionType, rhs.connectionType).append(credentialsArn, rhs.credentialsArn).append(timeoutInMillis, rhs.timeoutInMillis).append(contentHandlingStrategy, rhs.contentHandlingStrategy).append(passthroughBehavior, rhs.passthroughBehavior).append(requestTemplates, rhs.requestTemplates).append(integrationType, rhs.integrationType).append(integrationUri, rhs.integrationUri).append(apiId, rhs.apiId).isEquals();
+        return new EqualsBuilder().append(integrationMethod, rhs.integrationMethod).append(templateSelectionExpression, rhs.templateSelectionExpression).append(requestParameters, rhs.requestParameters).append(description, rhs.description).append(payloadFormatVersion, rhs.payloadFormatVersion).append(connectionType, rhs.connectionType).append(credentialsArn, rhs.credentialsArn).append(timeoutInMillis, rhs.timeoutInMillis).append(tlsConfig, rhs.tlsConfig).append(contentHandlingStrategy, rhs.contentHandlingStrategy).append(passthroughBehavior, rhs.passthroughBehavior).append(requestTemplates, rhs.requestTemplates).append(integrationType, rhs.integrationType).append(connectionId, rhs.connectionId).append(integrationUri, rhs.integrationUri).append(apiId, rhs.apiId).isEquals();
     }
 
 }

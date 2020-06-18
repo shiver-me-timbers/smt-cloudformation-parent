@@ -30,6 +30,7 @@ import shiver.me.timbers.aws.Property;
     "PriceClass",
     "DefaultCacheBehavior",
     "CustomErrorResponses",
+    "OriginGroups",
     "Enabled",
     "Aliases",
     "IPV6Enabled",
@@ -103,6 +104,15 @@ public class DistributionDistributionConfig implements Property<DistributionDist
     @JsonProperty("CustomErrorResponses")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-customerrorresponses")
     private List<Property<DistributionCustomErrorResponse>> customErrorResponses = new ArrayList<Property<DistributionCustomErrorResponse>>();
+    /**
+     * DistributionOriginGroups
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origingroups.html
+     * 
+     */
+    @JsonProperty("OriginGroups")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origingroups.html")
+    private Property<DistributionOriginGroups> originGroups;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-enabled
      * 
@@ -352,6 +362,33 @@ public class DistributionDistributionConfig implements Property<DistributionDist
     }
 
     /**
+     * DistributionOriginGroups
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origingroups.html
+     * 
+     */
+    @JsonIgnore
+    public Property<DistributionOriginGroups> getOriginGroups() {
+        return originGroups;
+    }
+
+    /**
+     * DistributionOriginGroups
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origingroups.html
+     * 
+     */
+    @JsonIgnore
+    public void setOriginGroups(Property<DistributionOriginGroups> originGroups) {
+        this.originGroups = originGroups;
+    }
+
+    public DistributionDistributionConfig withOriginGroups(Property<DistributionOriginGroups> originGroups) {
+        this.originGroups = originGroups;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-enabled
      * 
      */
@@ -518,12 +555,12 @@ public class DistributionDistributionConfig implements Property<DistributionDist
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("logging", logging).append("comment", comment).append("defaultRootObject", defaultRootObject).append("origins", origins).append("viewerCertificate", viewerCertificate).append("priceClass", priceClass).append("defaultCacheBehavior", defaultCacheBehavior).append("customErrorResponses", customErrorResponses).append("enabled", enabled).append("aliases", aliases).append("iPV6Enabled", iPV6Enabled).append("webACLId", webACLId).append("httpVersion", httpVersion).append("restrictions", restrictions).append("cacheBehaviors", cacheBehaviors).toString();
+        return new ToStringBuilder(this).append("logging", logging).append("comment", comment).append("defaultRootObject", defaultRootObject).append("origins", origins).append("viewerCertificate", viewerCertificate).append("priceClass", priceClass).append("defaultCacheBehavior", defaultCacheBehavior).append("customErrorResponses", customErrorResponses).append("originGroups", originGroups).append("enabled", enabled).append("aliases", aliases).append("iPV6Enabled", iPV6Enabled).append("webACLId", webACLId).append("httpVersion", httpVersion).append("restrictions", restrictions).append("cacheBehaviors", cacheBehaviors).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(defaultCacheBehavior).append(customErrorResponses).append(aliases).append(viewerCertificate).append(cacheBehaviors).append(restrictions).append(enabled).append(httpVersion).append(priceClass).append(logging).append(origins).append(comment).append(defaultRootObject).append(webACLId).append(iPV6Enabled).toHashCode();
+        return new HashCodeBuilder().append(defaultCacheBehavior).append(customErrorResponses).append(aliases).append(viewerCertificate).append(cacheBehaviors).append(originGroups).append(restrictions).append(enabled).append(httpVersion).append(priceClass).append(logging).append(origins).append(comment).append(defaultRootObject).append(webACLId).append(iPV6Enabled).toHashCode();
     }
 
     @Override
@@ -535,7 +572,7 @@ public class DistributionDistributionConfig implements Property<DistributionDist
             return false;
         }
         DistributionDistributionConfig rhs = ((DistributionDistributionConfig) other);
-        return new EqualsBuilder().append(defaultCacheBehavior, rhs.defaultCacheBehavior).append(customErrorResponses, rhs.customErrorResponses).append(aliases, rhs.aliases).append(viewerCertificate, rhs.viewerCertificate).append(cacheBehaviors, rhs.cacheBehaviors).append(restrictions, rhs.restrictions).append(enabled, rhs.enabled).append(httpVersion, rhs.httpVersion).append(priceClass, rhs.priceClass).append(logging, rhs.logging).append(origins, rhs.origins).append(comment, rhs.comment).append(defaultRootObject, rhs.defaultRootObject).append(webACLId, rhs.webACLId).append(iPV6Enabled, rhs.iPV6Enabled).isEquals();
+        return new EqualsBuilder().append(defaultCacheBehavior, rhs.defaultCacheBehavior).append(customErrorResponses, rhs.customErrorResponses).append(aliases, rhs.aliases).append(viewerCertificate, rhs.viewerCertificate).append(cacheBehaviors, rhs.cacheBehaviors).append(originGroups, rhs.originGroups).append(restrictions, rhs.restrictions).append(enabled, rhs.enabled).append(httpVersion, rhs.httpVersion).append(priceClass, rhs.priceClass).append(logging, rhs.logging).append(origins, rhs.origins).append(comment, rhs.comment).append(defaultRootObject, rhs.defaultRootObject).append(webACLId, rhs.webACLId).append(iPV6Enabled, rhs.iPV6Enabled).isEquals();
     }
 
 }

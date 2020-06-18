@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Cognito_UserPoolDomainResource.schema.json",
+  "title" : "UserPoolDomainResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooldomain.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.cognito.UserPoolDomainResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<UserPoolDomainResource>", "shiver.me.timbers.aws.HasCondition<UserPoolDomainResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Cognito::UserPoolDomain"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Cognito_UserPoolDomain.schema.json"
+    }
+  }
+}

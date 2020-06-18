@@ -1,0 +1,25 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_LocalGatewayRouteTableVPCAssociation.schema.json",
+  "title" : "LocalGatewayRouteTableVPCAssociation",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-localgatewayroutetablevpcassociation.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.ec2.LocalGatewayRouteTableVPCAssociation",
+  "properties" : {
+    "LocalGatewayRouteTableId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-localgatewayroutetablevpcassociation.html#cfn-ec2-localgatewayroutetablevpcassociation-localgatewayroutetableid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "VpcId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-localgatewayroutetablevpcassociation.html#cfn-ec2-localgatewayroutetablevpcassociation-vpcid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-localgatewayroutetablevpcassociation.html#cfn-ec2-localgatewayroutetablevpcassociation-tags",
+      "$ref" : "AWS_EC2_LocalGatewayRouteTableVPCAssociation.Tags.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.LocalGatewayRouteTableVPCAssociationTags>"
+    }
+  }
+}

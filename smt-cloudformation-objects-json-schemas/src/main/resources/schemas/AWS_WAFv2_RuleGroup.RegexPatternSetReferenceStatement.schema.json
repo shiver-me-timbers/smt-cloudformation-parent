@@ -1,0 +1,29 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WAFv2_RuleGroup.RegexPatternSetReferenceStatement.schema.json",
+  "title" : "RuleGroupRegexPatternSetReferenceStatement",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-regexpatternsetreferencestatement.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.wafv2.RuleGroupRegexPatternSetReferenceStatement",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<RuleGroupRegexPatternSetReferenceStatement>" ],
+  "properties" : {
+    "Arn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-regexpatternsetreferencestatement.html#cfn-wafv2-rulegroup-regexpatternsetreferencestatement-arn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "FieldToMatch" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-regexpatternsetreferencestatement.html#cfn-wafv2-rulegroup-regexpatternsetreferencestatement-fieldtomatch",
+      "$ref" : "AWS_WAFv2_RuleGroup.FieldToMatch.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.wafv2.RuleGroupFieldToMatch>"
+    },
+    "TextTransformations" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-regexpatternsetreferencestatement.html#cfn-wafv2-rulegroup-regexpatternsetreferencestatement-texttransformations",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_WAFv2_RuleGroup.TextTransformation.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.wafv2.RuleGroupTextTransformation>"
+      }
+    }
+  }
+}

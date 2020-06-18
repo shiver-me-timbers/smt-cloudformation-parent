@@ -1,0 +1,19 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppMesh_VirtualNode.TlsValidationContextAcmTrust.schema.json",
+  "title" : "VirtualNodeTlsValidationContextAcmTrust",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-tlsvalidationcontextacmtrust.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.appmesh.VirtualNodeTlsValidationContextAcmTrust",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<VirtualNodeTlsValidationContextAcmTrust>" ],
+  "properties" : {
+    "CertificateAuthorityArns" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-tlsvalidationcontextacmtrust.html#cfn-appmesh-virtualnode-tlsvalidationcontextacmtrust-certificateauthorityarns",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    }
+  }
+}

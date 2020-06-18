@@ -7,10 +7,35 @@
   "javaType" : "shiver.me.timbers.aws.ec2.EC2FleetOnDemandOptionsRequest",
   "javaInterfaces" : [ "shiver.me.timbers.aws.Property<EC2FleetOnDemandOptionsRequest>" ],
   "properties" : {
+    "SingleAvailabilityZone" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-ondemandoptionsrequest.html#cfn-ec2-ec2fleet-ondemandoptionsrequest-singleavailabilityzone",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
     "AllocationStrategy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-ondemandoptionsrequest.html#cfn-ec2-ec2fleet-ondemandoptionsrequest-allocationstrategy",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
+    },
+    "SingleInstanceType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-ondemandoptionsrequest.html#cfn-ec2-ec2fleet-ondemandoptionsrequest-singleinstancetype",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "MinTargetCapacity" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-ondemandoptionsrequest.html#cfn-ec2-ec2fleet-ondemandoptionsrequest-mintargetcapacity",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "MaxTotalPrice" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-ondemandoptionsrequest.html#cfn-ec2-ec2fleet-ondemandoptionsrequest-maxtotalprice",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "CapacityReservationOptions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-ondemandoptionsrequest.html#cfn-ec2-ec2fleet-ondemandoptionsrequest-capacityreservationoptions",
+      "$ref" : "AWS_EC2_EC2Fleet.CapacityReservationOptionsRequest.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.EC2FleetCapacityReservationOptionsRequest>"
     }
   }
 }

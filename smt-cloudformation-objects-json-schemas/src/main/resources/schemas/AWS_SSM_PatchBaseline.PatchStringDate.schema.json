@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SSM_PatchBaseline.PatchStringDate.schema.json",
+  "title" : "PatchBaselinePatchStringDate",
+  "type" : "string",
+  "javaType" : "java.lang.CharSequence",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<PatchBaselinePatchStringDate>" ]
+}

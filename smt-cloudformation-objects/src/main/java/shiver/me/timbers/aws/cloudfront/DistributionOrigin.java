@@ -22,7 +22,9 @@ import shiver.me.timbers.aws.Property;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "ConnectionTimeout",
     "OriginCustomHeaders",
+    "ConnectionAttempts",
     "DomainName",
     "S3OriginConfig",
     "OriginPath",
@@ -33,12 +35,26 @@ public class DistributionOrigin implements Property<DistributionOrigin>
 {
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-connectiontimeout
+     * 
+     */
+    @JsonProperty("ConnectionTimeout")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-connectiontimeout")
+    private Number connectionTimeout;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-origincustomheaders
      * 
      */
     @JsonProperty("OriginCustomHeaders")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-origincustomheaders")
     private List<Property<DistributionOriginCustomHeader>> originCustomHeaders = new ArrayList<Property<DistributionOriginCustomHeader>>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-connectionattempts
+     * 
+     */
+    @JsonProperty("ConnectionAttempts")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-connectionattempts")
+    private Number connectionAttempts;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-domainname
      * 
@@ -80,6 +96,29 @@ public class DistributionOrigin implements Property<DistributionOrigin>
     private Property<DistributionCustomOriginConfig> customOriginConfig;
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-connectiontimeout
+     * 
+     */
+    @JsonIgnore
+    public Number getConnectionTimeout() {
+        return connectionTimeout;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-connectiontimeout
+     * 
+     */
+    @JsonIgnore
+    public void setConnectionTimeout(Number connectionTimeout) {
+        this.connectionTimeout = connectionTimeout;
+    }
+
+    public DistributionOrigin withConnectionTimeout(Number connectionTimeout) {
+        this.connectionTimeout = connectionTimeout;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-origincustomheaders
      * 
      */
@@ -99,6 +138,29 @@ public class DistributionOrigin implements Property<DistributionOrigin>
 
     public DistributionOrigin withOriginCustomHeaders(List<Property<DistributionOriginCustomHeader>> originCustomHeaders) {
         this.originCustomHeaders = originCustomHeaders;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-connectionattempts
+     * 
+     */
+    @JsonIgnore
+    public Number getConnectionAttempts() {
+        return connectionAttempts;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-connectionattempts
+     * 
+     */
+    @JsonIgnore
+    public void setConnectionAttempts(Number connectionAttempts) {
+        this.connectionAttempts = connectionAttempts;
+    }
+
+    public DistributionOrigin withConnectionAttempts(Number connectionAttempts) {
+        this.connectionAttempts = connectionAttempts;
         return this;
     }
 
@@ -227,12 +289,12 @@ public class DistributionOrigin implements Property<DistributionOrigin>
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("originCustomHeaders", originCustomHeaders).append("domainName", domainName).append("s3OriginConfig", s3OriginConfig).append("originPath", originPath).append("id", id).append("customOriginConfig", customOriginConfig).toString();
+        return new ToStringBuilder(this).append("connectionTimeout", connectionTimeout).append("originCustomHeaders", originCustomHeaders).append("connectionAttempts", connectionAttempts).append("domainName", domainName).append("s3OriginConfig", s3OriginConfig).append("originPath", originPath).append("id", id).append("customOriginConfig", customOriginConfig).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(s3OriginConfig).append(originPath).append(originCustomHeaders).append(domainName).append(id).append(customOriginConfig).toHashCode();
+        return new HashCodeBuilder().append(s3OriginConfig).append(originPath).append(originCustomHeaders).append(connectionAttempts).append(domainName).append(id).append(customOriginConfig).append(connectionTimeout).toHashCode();
     }
 
     @Override
@@ -244,7 +306,7 @@ public class DistributionOrigin implements Property<DistributionOrigin>
             return false;
         }
         DistributionOrigin rhs = ((DistributionOrigin) other);
-        return new EqualsBuilder().append(s3OriginConfig, rhs.s3OriginConfig).append(originPath, rhs.originPath).append(originCustomHeaders, rhs.originCustomHeaders).append(domainName, rhs.domainName).append(id, rhs.id).append(customOriginConfig, rhs.customOriginConfig).isEquals();
+        return new EqualsBuilder().append(s3OriginConfig, rhs.s3OriginConfig).append(originPath, rhs.originPath).append(originCustomHeaders, rhs.originCustomHeaders).append(connectionAttempts, rhs.connectionAttempts).append(domainName, rhs.domainName).append(id, rhs.id).append(customOriginConfig, rhs.customOriginConfig).append(connectionTimeout, rhs.connectionTimeout).isEquals();
     }
 
 }

@@ -15,7 +15,9 @@ public enum ReplicationGroupAttributes {
     READ_END_POINT_ADDRESSES("ReadEndPoint.Addresses"),
     READ_END_POINT_ADDRESSES_LIST("ReadEndPoint.Addresses.List"),
     READ_END_POINT_PORTS("ReadEndPoint.Ports"),
-    READ_END_POINT_PORTS_LIST("ReadEndPoint.Ports.List");
+    READ_END_POINT_PORTS_LIST("ReadEndPoint.Ports.List"),
+    READER_END_POINT_ADDRESS("ReaderEndPoint.Address"),
+    READER_END_POINT_PORT("ReaderEndPoint.Port");
     private final String value;
     private final static Map<String, ReplicationGroupAttributes> CONSTANTS = new HashMap<String, ReplicationGroupAttributes>();
 

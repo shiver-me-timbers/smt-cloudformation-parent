@@ -1,0 +1,24 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EKS_Nodegroup.RemoteAccess.schema.json",
+  "title" : "NodegroupRemoteAccess",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-eks-nodegroup-remoteaccess.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.eks.NodegroupRemoteAccess",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<NodegroupRemoteAccess>" ],
+  "properties" : {
+    "SourceSecurityGroups" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-eks-nodegroup-remoteaccess.html#cfn-eks-nodegroup-remoteaccess-sourcesecuritygroups",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    },
+    "Ec2SshKey" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-eks-nodegroup-remoteaccess.html#cfn-eks-nodegroup-remoteaccess-ec2sshkey",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WAFv2_WebACL.DefaultAction.schema.json",
+  "title" : "WebACLDefaultAction",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-defaultaction.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.wafv2.WebACLDefaultAction",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<WebACLDefaultAction>" ],
+  "properties" : {
+    "Allow" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-defaultaction.html#cfn-wafv2-webacl-defaultaction-allow",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
+    },
+    "Block" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-defaultaction.html#cfn-wafv2-webacl-defaultaction-block",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
+    }
+  }
+}

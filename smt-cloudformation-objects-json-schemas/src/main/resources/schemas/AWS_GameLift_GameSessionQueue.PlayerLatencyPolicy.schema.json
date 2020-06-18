@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_GameLift_GameSessionQueue.PlayerLatencyPolicy.schema.json",
+  "title" : "GameSessionQueuePlayerLatencyPolicy",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-gamesessionqueue-playerlatencypolicy.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.gamelift.GameSessionQueuePlayerLatencyPolicy",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<GameSessionQueuePlayerLatencyPolicy>" ],
+  "properties" : {
+    "PolicyDurationSeconds" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-gamesessionqueue-playerlatencypolicy.html#cfn-gamelift-gamesessionqueue-playerlatencypolicy-policydurationseconds",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "MaximumIndividualPlayerLatencyMilliseconds" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-gamesessionqueue-playerlatencypolicy.html#cfn-gamelift-gamesessionqueue-playerlatencypolicy-maximumindividualplayerlatencymilliseconds",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    }
+  }
+}

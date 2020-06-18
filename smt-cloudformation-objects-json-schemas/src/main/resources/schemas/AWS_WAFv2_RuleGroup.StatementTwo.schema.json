@@ -1,0 +1,66 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WAFv2_RuleGroup.StatementTwo.schema.json",
+  "title" : "RuleGroupStatementTwo",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-statementtwo.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.wafv2.RuleGroupStatementTwo",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<RuleGroupStatementTwo>" ],
+  "properties" : {
+    "ByteMatchStatement" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-statementtwo.html#cfn-wafv2-rulegroup-statementtwo-bytematchstatement",
+      "$ref" : "AWS_WAFv2_RuleGroup.ByteMatchStatement.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.wafv2.RuleGroupByteMatchStatement>"
+    },
+    "SqliMatchStatement" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-statementtwo.html#cfn-wafv2-rulegroup-statementtwo-sqlimatchstatement",
+      "$ref" : "AWS_WAFv2_RuleGroup.SqliMatchStatement.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.wafv2.RuleGroupSqliMatchStatement>"
+    },
+    "XssMatchStatement" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-statementtwo.html#cfn-wafv2-rulegroup-statementtwo-xssmatchstatement",
+      "$ref" : "AWS_WAFv2_RuleGroup.XssMatchStatement.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.wafv2.RuleGroupXssMatchStatement>"
+    },
+    "SizeConstraintStatement" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-statementtwo.html#cfn-wafv2-rulegroup-statementtwo-sizeconstraintstatement",
+      "$ref" : "AWS_WAFv2_RuleGroup.SizeConstraintStatement.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.wafv2.RuleGroupSizeConstraintStatement>"
+    },
+    "GeoMatchStatement" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-statementtwo.html#cfn-wafv2-rulegroup-statementtwo-geomatchstatement",
+      "$ref" : "AWS_WAFv2_RuleGroup.GeoMatchStatement.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.wafv2.RuleGroupGeoMatchStatement>"
+    },
+    "IPSetReferenceStatement" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-statementtwo.html#cfn-wafv2-rulegroup-statementtwo-ipsetreferencestatement",
+      "$ref" : "AWS_WAFv2_RuleGroup.IPSetReferenceStatement.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.wafv2.RuleGroupIPSetReferenceStatement>"
+    },
+    "RegexPatternSetReferenceStatement" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-statementtwo.html#cfn-wafv2-rulegroup-statementtwo-regexpatternsetreferencestatement",
+      "$ref" : "AWS_WAFv2_RuleGroup.RegexPatternSetReferenceStatement.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.wafv2.RuleGroupRegexPatternSetReferenceStatement>"
+    },
+    "RateBasedStatement" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-statementtwo.html#cfn-wafv2-rulegroup-statementtwo-ratebasedstatement",
+      "$ref" : "AWS_WAFv2_RuleGroup.RateBasedStatementTwo.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.wafv2.RuleGroupRateBasedStatementTwo>"
+    },
+    "AndStatement" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-statementtwo.html#cfn-wafv2-rulegroup-statementtwo-andstatement",
+      "$ref" : "AWS_WAFv2_RuleGroup.AndStatementTwo.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.wafv2.RuleGroupAndStatementTwo>"
+    },
+    "OrStatement" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-statementtwo.html#cfn-wafv2-rulegroup-statementtwo-orstatement",
+      "$ref" : "AWS_WAFv2_RuleGroup.OrStatementTwo.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.wafv2.RuleGroupOrStatementTwo>"
+    },
+    "NotStatement" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-statementtwo.html#cfn-wafv2-rulegroup-statementtwo-notstatement",
+      "$ref" : "AWS_WAFv2_RuleGroup.NotStatementTwo.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.wafv2.RuleGroupNotStatementTwo>"
+    }
+  }
+}

@@ -36,8 +36,18 @@
       "type" : "object",
       "javaType" : "java.lang.Object"
     },
+    "ConnectionId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-connectionid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "IntegrationUri" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-integrationuri",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "PayloadFormatVersion" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-payloadformatversion",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
@@ -55,6 +65,11 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-timeoutinmillis",
       "type" : "integer",
       "javaType" : "java.lang.Number"
+    },
+    "TlsConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-tlsconfig",
+      "$ref" : "AWS_ApiGatewayV2_Integration.TlsConfig.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.apigatewayv2.IntegrationTlsConfig>"
     },
     "ContentHandlingStrategy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-contenthandlingstrategy",

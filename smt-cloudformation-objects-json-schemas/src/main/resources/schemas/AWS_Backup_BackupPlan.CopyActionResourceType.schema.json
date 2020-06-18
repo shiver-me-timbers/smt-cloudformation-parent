@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Backup_BackupPlan.CopyActionResourceType.schema.json",
+  "title" : "BackupPlanCopyActionResourceType",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-backup-backupplan-copyactionresourcetype.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.backup.BackupPlanCopyActionResourceType",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BackupPlanCopyActionResourceType>" ],
+  "properties" : {
+    "Lifecycle" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-backup-backupplan-copyactionresourcetype.html#cfn-backup-backupplan-copyactionresourcetype-lifecycle",
+      "$ref" : "AWS_Backup_BackupPlan.LifecycleResourceType.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.backup.BackupPlanLifecycleResourceType>"
+    },
+    "DestinationBackupVaultArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-backup-backupplan-copyactionresourcetype.html#cfn-backup-backupplan-copyactionresourcetype-destinationbackupvaultarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

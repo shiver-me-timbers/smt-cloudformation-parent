@@ -1,0 +1,36 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppMesh_Route.GrpcRouteMetadataMatchMethod.schema.json",
+  "title" : "RouteGrpcRouteMetadataMatchMethod",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-grpcroutemetadatamatchmethod.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.appmesh.RouteGrpcRouteMetadataMatchMethod",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<RouteGrpcRouteMetadataMatchMethod>" ],
+  "properties" : {
+    "Suffix" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-grpcroutemetadatamatchmethod.html#cfn-appmesh-route-grpcroutemetadatamatchmethod-suffix",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Regex" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-grpcroutemetadatamatchmethod.html#cfn-appmesh-route-grpcroutemetadatamatchmethod-regex",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Exact" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-grpcroutemetadatamatchmethod.html#cfn-appmesh-route-grpcroutemetadatamatchmethod-exact",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Prefix" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-grpcroutemetadatamatchmethod.html#cfn-appmesh-route-grpcroutemetadatamatchmethod-prefix",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Range" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-grpcroutemetadatamatchmethod.html#cfn-appmesh-route-grpcroutemetadatamatchmethod-range",
+      "$ref" : "AWS_AppMesh_Route.MatchRange.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appmesh.RouteMatchRange>"
+    }
+  }
+}

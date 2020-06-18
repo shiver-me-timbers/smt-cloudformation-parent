@@ -9,6 +9,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+import shiver.me.timbers.aws.Property;
 
 
 /**
@@ -20,10 +21,15 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "BatchSize",
+    "BisectBatchOnFunctionError",
+    "DestinationConfig",
     "Enabled",
     "EventSourceArn",
     "FunctionName",
     "MaximumBatchingWindowInSeconds",
+    "MaximumRecordAgeInSeconds",
+    "MaximumRetryAttempts",
+    "ParallelizationFactor",
     "StartingPosition"
 })
 public class EventSourceMapping {
@@ -35,6 +41,22 @@ public class EventSourceMapping {
     @JsonProperty("BatchSize")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-batchsize")
     private Number batchSize;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-bisectbatchonfunctionerror
+     * 
+     */
+    @JsonProperty("BisectBatchOnFunctionError")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-bisectbatchonfunctionerror")
+    private CharSequence bisectBatchOnFunctionError;
+    /**
+     * EventSourceMappingDestinationConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventsourcemapping-destinationconfig.html
+     * 
+     */
+    @JsonProperty("DestinationConfig")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventsourcemapping-destinationconfig.html")
+    private Property<EventSourceMappingDestinationConfig> destinationConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-enabled
      * 
@@ -64,6 +86,27 @@ public class EventSourceMapping {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-maximumbatchingwindowinseconds")
     private Number maximumBatchingWindowInSeconds;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-maximumrecordageinseconds
+     * 
+     */
+    @JsonProperty("MaximumRecordAgeInSeconds")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-maximumrecordageinseconds")
+    private Number maximumRecordAgeInSeconds;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-maximumretryattempts
+     * 
+     */
+    @JsonProperty("MaximumRetryAttempts")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-maximumretryattempts")
+    private Number maximumRetryAttempts;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-parallelizationfactor
+     * 
+     */
+    @JsonProperty("ParallelizationFactor")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-parallelizationfactor")
+    private Number parallelizationFactor;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-startingposition
      * 
      */
@@ -91,6 +134,56 @@ public class EventSourceMapping {
 
     public EventSourceMapping withBatchSize(Number batchSize) {
         this.batchSize = batchSize;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-bisectbatchonfunctionerror
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getBisectBatchOnFunctionError() {
+        return bisectBatchOnFunctionError;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-bisectbatchonfunctionerror
+     * 
+     */
+    @JsonIgnore
+    public void setBisectBatchOnFunctionError(CharSequence bisectBatchOnFunctionError) {
+        this.bisectBatchOnFunctionError = bisectBatchOnFunctionError;
+    }
+
+    public EventSourceMapping withBisectBatchOnFunctionError(CharSequence bisectBatchOnFunctionError) {
+        this.bisectBatchOnFunctionError = bisectBatchOnFunctionError;
+        return this;
+    }
+
+    /**
+     * EventSourceMappingDestinationConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventsourcemapping-destinationconfig.html
+     * 
+     */
+    @JsonIgnore
+    public Property<EventSourceMappingDestinationConfig> getDestinationConfig() {
+        return destinationConfig;
+    }
+
+    /**
+     * EventSourceMappingDestinationConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventsourcemapping-destinationconfig.html
+     * 
+     */
+    @JsonIgnore
+    public void setDestinationConfig(Property<EventSourceMappingDestinationConfig> destinationConfig) {
+        this.destinationConfig = destinationConfig;
+    }
+
+    public EventSourceMapping withDestinationConfig(Property<EventSourceMappingDestinationConfig> destinationConfig) {
+        this.destinationConfig = destinationConfig;
         return this;
     }
 
@@ -187,6 +280,75 @@ public class EventSourceMapping {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-maximumrecordageinseconds
+     * 
+     */
+    @JsonIgnore
+    public Number getMaximumRecordAgeInSeconds() {
+        return maximumRecordAgeInSeconds;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-maximumrecordageinseconds
+     * 
+     */
+    @JsonIgnore
+    public void setMaximumRecordAgeInSeconds(Number maximumRecordAgeInSeconds) {
+        this.maximumRecordAgeInSeconds = maximumRecordAgeInSeconds;
+    }
+
+    public EventSourceMapping withMaximumRecordAgeInSeconds(Number maximumRecordAgeInSeconds) {
+        this.maximumRecordAgeInSeconds = maximumRecordAgeInSeconds;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-maximumretryattempts
+     * 
+     */
+    @JsonIgnore
+    public Number getMaximumRetryAttempts() {
+        return maximumRetryAttempts;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-maximumretryattempts
+     * 
+     */
+    @JsonIgnore
+    public void setMaximumRetryAttempts(Number maximumRetryAttempts) {
+        this.maximumRetryAttempts = maximumRetryAttempts;
+    }
+
+    public EventSourceMapping withMaximumRetryAttempts(Number maximumRetryAttempts) {
+        this.maximumRetryAttempts = maximumRetryAttempts;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-parallelizationfactor
+     * 
+     */
+    @JsonIgnore
+    public Number getParallelizationFactor() {
+        return parallelizationFactor;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-parallelizationfactor
+     * 
+     */
+    @JsonIgnore
+    public void setParallelizationFactor(Number parallelizationFactor) {
+        this.parallelizationFactor = parallelizationFactor;
+    }
+
+    public EventSourceMapping withParallelizationFactor(Number parallelizationFactor) {
+        this.parallelizationFactor = parallelizationFactor;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-startingposition
      * 
      */
@@ -211,12 +373,12 @@ public class EventSourceMapping {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("batchSize", batchSize).append("enabled", enabled).append("eventSourceArn", eventSourceArn).append("functionName", functionName).append("maximumBatchingWindowInSeconds", maximumBatchingWindowInSeconds).append("startingPosition", startingPosition).toString();
+        return new ToStringBuilder(this).append("batchSize", batchSize).append("bisectBatchOnFunctionError", bisectBatchOnFunctionError).append("destinationConfig", destinationConfig).append("enabled", enabled).append("eventSourceArn", eventSourceArn).append("functionName", functionName).append("maximumBatchingWindowInSeconds", maximumBatchingWindowInSeconds).append("maximumRecordAgeInSeconds", maximumRecordAgeInSeconds).append("maximumRetryAttempts", maximumRetryAttempts).append("parallelizationFactor", parallelizationFactor).append("startingPosition", startingPosition).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(maximumBatchingWindowInSeconds).append(eventSourceArn).append(functionName).append(batchSize).append(startingPosition).append(enabled).toHashCode();
+        return new HashCodeBuilder().append(maximumBatchingWindowInSeconds).append(parallelizationFactor).append(eventSourceArn).append(functionName).append(maximumRecordAgeInSeconds).append(maximumRetryAttempts).append(batchSize).append(startingPosition).append(bisectBatchOnFunctionError).append(destinationConfig).append(enabled).toHashCode();
     }
 
     @Override
@@ -228,7 +390,7 @@ public class EventSourceMapping {
             return false;
         }
         EventSourceMapping rhs = ((EventSourceMapping) other);
-        return new EqualsBuilder().append(maximumBatchingWindowInSeconds, rhs.maximumBatchingWindowInSeconds).append(eventSourceArn, rhs.eventSourceArn).append(functionName, rhs.functionName).append(batchSize, rhs.batchSize).append(startingPosition, rhs.startingPosition).append(enabled, rhs.enabled).isEquals();
+        return new EqualsBuilder().append(maximumBatchingWindowInSeconds, rhs.maximumBatchingWindowInSeconds).append(parallelizationFactor, rhs.parallelizationFactor).append(eventSourceArn, rhs.eventSourceArn).append(functionName, rhs.functionName).append(maximumRecordAgeInSeconds, rhs.maximumRecordAgeInSeconds).append(maximumRetryAttempts, rhs.maximumRetryAttempts).append(batchSize, rhs.batchSize).append(startingPosition, rhs.startingPosition).append(bisectBatchOnFunctionError, rhs.bisectBatchOnFunctionError).append(destinationConfig, rhs.destinationConfig).append(enabled, rhs.enabled).isEquals();
     }
 
 }

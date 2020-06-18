@@ -1,0 +1,29 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WAFv2_WebACL.ManagedRuleGroupStatement.schema.json",
+  "title" : "WebACLManagedRuleGroupStatement",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-managedrulegroupstatement.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.wafv2.WebACLManagedRuleGroupStatement",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<WebACLManagedRuleGroupStatement>" ],
+  "properties" : {
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-managedrulegroupstatement.html#cfn-wafv2-webacl-managedrulegroupstatement-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "VendorName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-managedrulegroupstatement.html#cfn-wafv2-webacl-managedrulegroupstatement-vendorname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ExcludedRules" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-managedrulegroupstatement.html#cfn-wafv2-webacl-managedrulegroupstatement-excludedrules",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_WAFv2_WebACL.ExcludedRule.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.wafv2.WebACLExcludedRule>"
+      }
+    }
+  }
+}

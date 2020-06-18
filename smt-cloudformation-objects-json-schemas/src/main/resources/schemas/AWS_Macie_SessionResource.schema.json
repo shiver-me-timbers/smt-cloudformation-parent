@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Macie_SessionResource.schema.json",
+  "title" : "SessionResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-macie-session.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.macie.SessionResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<SessionResource>", "shiver.me.timbers.aws.HasCondition<SessionResource>", "shiver.me.timbers.aws.HasAttributes<SessionAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Macie::Session"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Macie_Session.schema.json"
+    }
+  }
+}

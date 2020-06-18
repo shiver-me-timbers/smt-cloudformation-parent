@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_QLDB_LedgerResource.schema.json",
+  "title" : "LedgerResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-qldb-ledger.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.qldb.LedgerResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<LedgerResource>", "shiver.me.timbers.aws.HasCondition<LedgerResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::QLDB::Ledger"
+    },
+    "Properties" : {
+      "$ref" : "AWS_QLDB_Ledger.schema.json"
+    }
+  }
+}

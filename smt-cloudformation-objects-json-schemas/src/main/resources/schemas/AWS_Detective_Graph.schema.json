@@ -1,0 +1,9 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Detective_Graph.schema.json",
+  "title" : "Graph",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-detective-graph.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.detective.Graph",
+  "properties" : { }
+}

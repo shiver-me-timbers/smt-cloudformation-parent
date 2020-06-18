@@ -20,6 +20,7 @@ import shiver.me.timbers.aws.Property;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "ApproveUntilDate",
     "EnableNonSecurity",
     "PatchFilterGroup",
     "ApproveAfterDays",
@@ -28,6 +29,14 @@ import shiver.me.timbers.aws.Property;
 public class PatchBaselineRule implements Property<PatchBaselineRule>
 {
 
+    /**
+     * PatchBaselinePatchStringDate
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("ApproveUntilDate")
+    private CharSequence approveUntilDate;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html#cfn-ssm-patchbaseline-rule-enablenonsecurity
      * 
@@ -58,6 +67,33 @@ public class PatchBaselineRule implements Property<PatchBaselineRule>
     @JsonProperty("ComplianceLevel")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html#cfn-ssm-patchbaseline-rule-compliancelevel")
     private CharSequence complianceLevel;
+
+    /**
+     * PatchBaselinePatchStringDate
+     * <p>
+     * 
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getApproveUntilDate() {
+        return approveUntilDate;
+    }
+
+    /**
+     * PatchBaselinePatchStringDate
+     * <p>
+     * 
+     * 
+     */
+    @JsonIgnore
+    public void setApproveUntilDate(CharSequence approveUntilDate) {
+        this.approveUntilDate = approveUntilDate;
+    }
+
+    public PatchBaselineRule withApproveUntilDate(CharSequence approveUntilDate) {
+        this.approveUntilDate = approveUntilDate;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html#cfn-ssm-patchbaseline-rule-enablenonsecurity
@@ -157,12 +193,12 @@ public class PatchBaselineRule implements Property<PatchBaselineRule>
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("enableNonSecurity", enableNonSecurity).append("patchFilterGroup", patchFilterGroup).append("approveAfterDays", approveAfterDays).append("complianceLevel", complianceLevel).toString();
+        return new ToStringBuilder(this).append("approveUntilDate", approveUntilDate).append("enableNonSecurity", enableNonSecurity).append("patchFilterGroup", patchFilterGroup).append("approveAfterDays", approveAfterDays).append("complianceLevel", complianceLevel).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(complianceLevel).append(patchFilterGroup).append(approveAfterDays).append(enableNonSecurity).toHashCode();
+        return new HashCodeBuilder().append(complianceLevel).append(patchFilterGroup).append(approveUntilDate).append(approveAfterDays).append(enableNonSecurity).toHashCode();
     }
 
     @Override
@@ -174,7 +210,7 @@ public class PatchBaselineRule implements Property<PatchBaselineRule>
             return false;
         }
         PatchBaselineRule rhs = ((PatchBaselineRule) other);
-        return new EqualsBuilder().append(complianceLevel, rhs.complianceLevel).append(patchFilterGroup, rhs.patchFilterGroup).append(approveAfterDays, rhs.approveAfterDays).append(enableNonSecurity, rhs.enableNonSecurity).isEquals();
+        return new EqualsBuilder().append(complianceLevel, rhs.complianceLevel).append(patchFilterGroup, rhs.patchFilterGroup).append(approveUntilDate, rhs.approveUntilDate).append(approveAfterDays, rhs.approveAfterDays).append(enableNonSecurity, rhs.enableNonSecurity).isEquals();
     }
 
 }

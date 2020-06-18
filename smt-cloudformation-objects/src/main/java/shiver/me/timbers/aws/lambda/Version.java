@@ -9,6 +9,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+import shiver.me.timbers.aws.Property;
 
 
 /**
@@ -21,7 +22,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "CodeSha256",
     "Description",
-    "FunctionName"
+    "FunctionName",
+    "ProvisionedConcurrencyConfig"
 })
 public class Version {
 
@@ -46,6 +48,15 @@ public class Version {
     @JsonProperty("FunctionName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html#cfn-lambda-version-functionname")
     private CharSequence functionName;
+    /**
+     * VersionProvisionedConcurrencyConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-version-provisionedconcurrencyconfiguration.html
+     * 
+     */
+    @JsonProperty("ProvisionedConcurrencyConfig")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-version-provisionedconcurrencyconfiguration.html")
+    private Property<VersionProvisionedConcurrencyConfiguration> provisionedConcurrencyConfig;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html#cfn-lambda-version-codesha256
@@ -116,14 +127,41 @@ public class Version {
         return this;
     }
 
+    /**
+     * VersionProvisionedConcurrencyConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-version-provisionedconcurrencyconfiguration.html
+     * 
+     */
+    @JsonIgnore
+    public Property<VersionProvisionedConcurrencyConfiguration> getProvisionedConcurrencyConfig() {
+        return provisionedConcurrencyConfig;
+    }
+
+    /**
+     * VersionProvisionedConcurrencyConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-version-provisionedconcurrencyconfiguration.html
+     * 
+     */
+    @JsonIgnore
+    public void setProvisionedConcurrencyConfig(Property<VersionProvisionedConcurrencyConfiguration> provisionedConcurrencyConfig) {
+        this.provisionedConcurrencyConfig = provisionedConcurrencyConfig;
+    }
+
+    public Version withProvisionedConcurrencyConfig(Property<VersionProvisionedConcurrencyConfiguration> provisionedConcurrencyConfig) {
+        this.provisionedConcurrencyConfig = provisionedConcurrencyConfig;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("codeSha256", codeSha256).append("description", description).append("functionName", functionName).toString();
+        return new ToStringBuilder(this).append("codeSha256", codeSha256).append("description", description).append("functionName", functionName).append("provisionedConcurrencyConfig", provisionedConcurrencyConfig).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(description).append(codeSha256).append(functionName).toHashCode();
+        return new HashCodeBuilder().append(description).append(codeSha256).append(provisionedConcurrencyConfig).append(functionName).toHashCode();
     }
 
     @Override
@@ -135,7 +173,7 @@ public class Version {
             return false;
         }
         Version rhs = ((Version) other);
-        return new EqualsBuilder().append(description, rhs.description).append(codeSha256, rhs.codeSha256).append(functionName, rhs.functionName).isEquals();
+        return new EqualsBuilder().append(description, rhs.description).append(codeSha256, rhs.codeSha256).append(provisionedConcurrencyConfig, rhs.provisionedConcurrencyConfig).append(functionName, rhs.functionName).isEquals();
     }
 
 }

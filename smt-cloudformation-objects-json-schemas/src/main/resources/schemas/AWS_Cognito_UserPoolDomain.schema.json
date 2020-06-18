@@ -1,0 +1,25 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Cognito_UserPoolDomain.schema.json",
+  "title" : "UserPoolDomain",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooldomain.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.cognito.UserPoolDomain",
+  "properties" : {
+    "UserPoolId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooldomain.html#cfn-cognito-userpooldomain-userpoolid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "CustomDomainConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooldomain.html#cfn-cognito-userpooldomain-customdomainconfig",
+      "$ref" : "AWS_Cognito_UserPoolDomain.CustomDomainConfigType.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cognito.UserPoolDomainCustomDomainConfigType>"
+    },
+    "Domain" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooldomain.html#cfn-cognito-userpooldomain-domain",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

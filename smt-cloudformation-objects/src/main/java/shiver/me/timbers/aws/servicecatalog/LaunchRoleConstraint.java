@@ -20,6 +20,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "Description",
+    "LocalRoleName",
     "AcceptLanguage",
     "PortfolioId",
     "ProductId",
@@ -34,6 +35,13 @@ public class LaunchRoleConstraint {
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchroleconstraint.html#cfn-servicecatalog-launchroleconstraint-description")
     private CharSequence description;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchroleconstraint.html#cfn-servicecatalog-launchroleconstraint-localrolename
+     * 
+     */
+    @JsonProperty("LocalRoleName")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchroleconstraint.html#cfn-servicecatalog-launchroleconstraint-localrolename")
+    private CharSequence localRoleName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchroleconstraint.html#cfn-servicecatalog-launchroleconstraint-acceptlanguage
      * 
@@ -83,6 +91,29 @@ public class LaunchRoleConstraint {
 
     public LaunchRoleConstraint withDescription(CharSequence description) {
         this.description = description;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchroleconstraint.html#cfn-servicecatalog-launchroleconstraint-localrolename
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getLocalRoleName() {
+        return localRoleName;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchroleconstraint.html#cfn-servicecatalog-launchroleconstraint-localrolename
+     * 
+     */
+    @JsonIgnore
+    public void setLocalRoleName(CharSequence localRoleName) {
+        this.localRoleName = localRoleName;
+    }
+
+    public LaunchRoleConstraint withLocalRoleName(CharSequence localRoleName) {
+        this.localRoleName = localRoleName;
         return this;
     }
 
@@ -180,12 +211,12 @@ public class LaunchRoleConstraint {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("description", description).append("acceptLanguage", acceptLanguage).append("portfolioId", portfolioId).append("productId", productId).append("roleArn", roleArn).toString();
+        return new ToStringBuilder(this).append("description", description).append("localRoleName", localRoleName).append("acceptLanguage", acceptLanguage).append("portfolioId", portfolioId).append("productId", productId).append("roleArn", roleArn).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(description).append(acceptLanguage).append(portfolioId).append(productId).append(roleArn).toHashCode();
+        return new HashCodeBuilder().append(acceptLanguage).append(portfolioId).append(productId).append(roleArn).append(localRoleName).append(description).toHashCode();
     }
 
     @Override
@@ -197,7 +228,7 @@ public class LaunchRoleConstraint {
             return false;
         }
         LaunchRoleConstraint rhs = ((LaunchRoleConstraint) other);
-        return new EqualsBuilder().append(description, rhs.description).append(acceptLanguage, rhs.acceptLanguage).append(portfolioId, rhs.portfolioId).append(productId, rhs.productId).append(roleArn, rhs.roleArn).isEquals();
+        return new EqualsBuilder().append(acceptLanguage, rhs.acceptLanguage).append(portfolioId, rhs.portfolioId).append(productId, rhs.productId).append(roleArn, rhs.roleArn).append(localRoleName, rhs.localRoleName).append(description, rhs.description).isEquals();
     }
 
 }

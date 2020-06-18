@@ -1,0 +1,55 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_PushTemplate.schema.json",
+  "title" : "PushTemplate",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-pushtemplate.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.pinpoint.PushTemplate",
+  "properties" : {
+    "GCM" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-pushtemplate.html#cfn-pinpoint-pushtemplate-gcm",
+      "$ref" : "AWS_Pinpoint_PushTemplate.AndroidPushNotificationTemplate.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpoint.PushTemplateAndroidPushNotificationTemplate>"
+    },
+    "Baidu" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-pushtemplate.html#cfn-pinpoint-pushtemplate-baidu",
+      "$ref" : "AWS_Pinpoint_PushTemplate.AndroidPushNotificationTemplate.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpoint.PushTemplateAndroidPushNotificationTemplate>"
+    },
+    "TemplateName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-pushtemplate.html#cfn-pinpoint-pushtemplate-templatename",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ADM" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-pushtemplate.html#cfn-pinpoint-pushtemplate-adm",
+      "$ref" : "AWS_Pinpoint_PushTemplate.AndroidPushNotificationTemplate.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpoint.PushTemplateAndroidPushNotificationTemplate>"
+    },
+    "APNS" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-pushtemplate.html#cfn-pinpoint-pushtemplate-apns",
+      "$ref" : "AWS_Pinpoint_PushTemplate.APNSPushNotificationTemplate.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpoint.PushTemplateAPNSPushNotificationTemplate>"
+    },
+    "TemplateDescription" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-pushtemplate.html#cfn-pinpoint-pushtemplate-templatedescription",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DefaultSubstitutions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-pushtemplate.html#cfn-pinpoint-pushtemplate-defaultsubstitutions",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Default" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-pushtemplate.html#cfn-pinpoint-pushtemplate-default",
+      "$ref" : "AWS_Pinpoint_PushTemplate.DefaultPushNotificationTemplate.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.pinpoint.PushTemplateDefaultPushNotificationTemplate>"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-pushtemplate.html#cfn-pinpoint-pushtemplate-tags",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
+    }
+  }
+}

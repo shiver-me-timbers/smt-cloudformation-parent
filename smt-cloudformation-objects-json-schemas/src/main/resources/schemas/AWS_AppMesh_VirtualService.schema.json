@@ -11,6 +11,11 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "MeshOwner" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualservice.html#cfn-appmesh-virtualservice-meshowner",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "VirtualServiceName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualservice.html#cfn-appmesh-virtualservice-virtualservicename",
       "type" : "string",

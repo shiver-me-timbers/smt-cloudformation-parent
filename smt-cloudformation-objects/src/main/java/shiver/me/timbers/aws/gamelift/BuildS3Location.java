@@ -22,6 +22,7 @@ import shiver.me.timbers.aws.Property;
 @JsonPropertyOrder({
     "Bucket",
     "Key",
+    "ObjectVersion",
     "RoleArn"
 })
 public class BuildS3Location implements Property<BuildS3Location>
@@ -41,6 +42,13 @@ public class BuildS3Location implements Property<BuildS3Location>
     @JsonProperty("Key")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html#cfn-gamelift-build-storage-key")
     private CharSequence key;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html#cfn-gamelift-build-object-verison
+     * 
+     */
+    @JsonProperty("ObjectVersion")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html#cfn-gamelift-build-object-verison")
+    private CharSequence objectVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html#cfn-gamelift-build-storage-rolearn
      * 
@@ -96,6 +104,29 @@ public class BuildS3Location implements Property<BuildS3Location>
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html#cfn-gamelift-build-object-verison
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getObjectVersion() {
+        return objectVersion;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html#cfn-gamelift-build-object-verison
+     * 
+     */
+    @JsonIgnore
+    public void setObjectVersion(CharSequence objectVersion) {
+        this.objectVersion = objectVersion;
+    }
+
+    public BuildS3Location withObjectVersion(CharSequence objectVersion) {
+        this.objectVersion = objectVersion;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html#cfn-gamelift-build-storage-rolearn
      * 
      */
@@ -120,12 +151,12 @@ public class BuildS3Location implements Property<BuildS3Location>
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("bucket", bucket).append("key", key).append("roleArn", roleArn).toString();
+        return new ToStringBuilder(this).append("bucket", bucket).append("key", key).append("objectVersion", objectVersion).append("roleArn", roleArn).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(bucket).append(key).append(roleArn).toHashCode();
+        return new HashCodeBuilder().append(bucket).append(objectVersion).append(key).append(roleArn).toHashCode();
     }
 
     @Override
@@ -137,7 +168,7 @@ public class BuildS3Location implements Property<BuildS3Location>
             return false;
         }
         BuildS3Location rhs = ((BuildS3Location) other);
-        return new EqualsBuilder().append(bucket, rhs.bucket).append(key, rhs.key).append(roleArn, rhs.roleArn).isEquals();
+        return new EqualsBuilder().append(bucket, rhs.bucket).append(objectVersion, rhs.objectVersion).append(key, rhs.key).append(roleArn, rhs.roleArn).isEquals();
     }
 
 }

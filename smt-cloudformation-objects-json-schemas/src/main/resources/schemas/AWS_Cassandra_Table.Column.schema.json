@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Cassandra_Table.Column.schema.json",
+  "title" : "TableColumn",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cassandra-table-column.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.cassandra.TableColumn",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TableColumn>" ],
+  "properties" : {
+    "ColumnName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cassandra-table-column.html#cfn-cassandra-table-column-columnname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ColumnType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cassandra-table-column.html#cfn-cassandra-table-column-columntype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

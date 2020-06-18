@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Macie_CustomDataIdentifierResource.schema.json",
+  "title" : "CustomDataIdentifierResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-macie-customdataidentifier.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.macie.CustomDataIdentifierResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<CustomDataIdentifierResource>", "shiver.me.timbers.aws.HasCondition<CustomDataIdentifierResource>", "shiver.me.timbers.aws.HasAttributes<CustomDataIdentifierAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Macie::CustomDataIdentifier"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Macie_CustomDataIdentifier.schema.json"
+    }
+  }
+}

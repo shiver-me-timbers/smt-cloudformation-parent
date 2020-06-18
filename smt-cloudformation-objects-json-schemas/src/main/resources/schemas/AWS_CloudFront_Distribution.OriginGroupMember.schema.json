@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CloudFront_Distribution.OriginGroupMember.schema.json",
+  "title" : "DistributionOriginGroupMember",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origingroupmember.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.cloudfront.DistributionOriginGroupMember",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DistributionOriginGroupMember>" ],
+  "properties" : {
+    "OriginId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origingroupmember.html#cfn-cloudfront-distribution-origingroupmember-originid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

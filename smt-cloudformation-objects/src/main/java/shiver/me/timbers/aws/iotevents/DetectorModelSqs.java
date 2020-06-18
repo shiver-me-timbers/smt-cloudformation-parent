@@ -21,6 +21,7 @@ import shiver.me.timbers.aws.Property;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "UseBase64",
+    "Payload",
     "QueueUrl"
 })
 public class DetectorModelSqs implements Property<DetectorModelSqs>
@@ -33,6 +34,15 @@ public class DetectorModelSqs implements Property<DetectorModelSqs>
     @JsonProperty("UseBase64")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-sqs.html#cfn-iotevents-detectormodel-sqs-usebase64")
     private CharSequence useBase64;
+    /**
+     * DetectorModelPayload
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-payload.html
+     * 
+     */
+    @JsonProperty("Payload")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-payload.html")
+    private Property<DetectorModelPayload> payload;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-sqs.html#cfn-iotevents-detectormodel-sqs-queueurl
      * 
@@ -65,6 +75,33 @@ public class DetectorModelSqs implements Property<DetectorModelSqs>
     }
 
     /**
+     * DetectorModelPayload
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-payload.html
+     * 
+     */
+    @JsonIgnore
+    public Property<DetectorModelPayload> getPayload() {
+        return payload;
+    }
+
+    /**
+     * DetectorModelPayload
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-payload.html
+     * 
+     */
+    @JsonIgnore
+    public void setPayload(Property<DetectorModelPayload> payload) {
+        this.payload = payload;
+    }
+
+    public DetectorModelSqs withPayload(Property<DetectorModelPayload> payload) {
+        this.payload = payload;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-sqs.html#cfn-iotevents-detectormodel-sqs-queueurl
      * 
      */
@@ -89,12 +126,12 @@ public class DetectorModelSqs implements Property<DetectorModelSqs>
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("useBase64", useBase64).append("queueUrl", queueUrl).toString();
+        return new ToStringBuilder(this).append("useBase64", useBase64).append("payload", payload).append("queueUrl", queueUrl).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(useBase64).append(queueUrl).toHashCode();
+        return new HashCodeBuilder().append(useBase64).append(queueUrl).append(payload).toHashCode();
     }
 
     @Override
@@ -106,7 +143,7 @@ public class DetectorModelSqs implements Property<DetectorModelSqs>
             return false;
         }
         DetectorModelSqs rhs = ((DetectorModelSqs) other);
-        return new EqualsBuilder().append(useBase64, rhs.useBase64).append(queueUrl, rhs.queueUrl).isEquals();
+        return new EqualsBuilder().append(useBase64, rhs.useBase64).append(queueUrl, rhs.queueUrl).append(payload, rhs.payload).isEquals();
     }
 
 }

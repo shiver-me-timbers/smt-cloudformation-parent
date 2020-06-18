@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "shiver.me.timbers.aws.ssm.AssociationResource",
-  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<AssociationResource>", "shiver.me.timbers.aws.HasCondition<AssociationResource>" ],
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<AssociationResource>", "shiver.me.timbers.aws.HasCondition<AssociationResource>", "shiver.me.timbers.aws.HasAttributes<AssociationAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

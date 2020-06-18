@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppMesh_VirtualNode.ListenerTlsFileCertificate.schema.json",
+  "title" : "VirtualNodeListenerTlsFileCertificate",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-listenertlsfilecertificate.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.appmesh.VirtualNodeListenerTlsFileCertificate",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<VirtualNodeListenerTlsFileCertificate>" ],
+  "properties" : {
+    "PrivateKey" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-listenertlsfilecertificate.html#cfn-appmesh-virtualnode-listenertlsfilecertificate-privatekey",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "CertificateChain" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-listenertlsfilecertificate.html#cfn-appmesh-virtualnode-listenertlsfilecertificate-certificatechain",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

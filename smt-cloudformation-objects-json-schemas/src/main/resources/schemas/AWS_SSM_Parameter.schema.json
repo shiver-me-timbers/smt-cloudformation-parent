@@ -36,6 +36,11 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "DataType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-datatype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-tags",
       "type" : "object",

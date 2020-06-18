@@ -6,10 +6,23 @@
   "type" : "object",
   "javaType" : "shiver.me.timbers.aws.sagemaker.Endpoint",
   "properties" : {
+    "RetainAllVariantProperties" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html#cfn-sagemaker-endpoint-retainallvariantproperties",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
     "EndpointName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html#cfn-sagemaker-endpoint-endpointname",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
+    },
+    "ExcludeRetainedVariantProperties" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html#cfn-sagemaker-endpoint-excluderetainedvariantproperties",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_SageMaker_Endpoint.VariantProperty.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.sagemaker.EndpointVariantProperty>"
+      }
     },
     "EndpointConfigName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html#cfn-sagemaker-endpoint-endpointconfigname",

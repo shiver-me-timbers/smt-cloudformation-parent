@@ -44,6 +44,11 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "UsernameConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-usernameconfiguration",
+      "$ref" : "AWS_Cognito_UserPool.UsernameConfiguration.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cognito.UserPoolUsernameConfiguration>"
+    },
     "UserPoolName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-userpoolname",
       "type" : "string",
@@ -71,6 +76,14 @@
     },
     "AliasAttributes" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-aliasattributes",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    },
+    "EnabledMfas" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-enabledmfas",
       "type" : "array",
       "items" : {
         "type" : "string",
@@ -112,6 +125,11 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-emailverificationmessage",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
+    },
+    "AccountRecoverySetting" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-accountrecoverysetting",
+      "$ref" : "AWS_Cognito_UserPool.AccountRecoverySetting.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cognito.UserPoolAccountRecoverySetting>"
     }
   }
 }

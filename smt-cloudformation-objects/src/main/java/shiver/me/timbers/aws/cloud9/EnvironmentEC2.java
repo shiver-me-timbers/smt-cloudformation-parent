@@ -12,6 +12,7 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 import shiver.me.timbers.aws.Property;
+import shiver.me.timbers.aws.Tag;
 
 
 /**
@@ -25,9 +26,11 @@ import shiver.me.timbers.aws.Property;
     "Repositories",
     "OwnerArn",
     "Description",
+    "ConnectionType",
     "AutomaticStopTimeMinutes",
     "SubnetId",
     "InstanceType",
+    "Tags",
     "Name"
 })
 public class EnvironmentEC2 {
@@ -54,6 +57,13 @@ public class EnvironmentEC2 {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-description")
     private CharSequence description;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-connectiontype
+     * 
+     */
+    @JsonProperty("ConnectionType")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-connectiontype")
+    private CharSequence connectionType;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-automaticstoptimeminutes
      * 
      */
@@ -74,6 +84,13 @@ public class EnvironmentEC2 {
     @JsonProperty("InstanceType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-instancetype")
     private CharSequence instanceType;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-tags")
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-name
      * 
@@ -152,6 +169,29 @@ public class EnvironmentEC2 {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-connectiontype
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getConnectionType() {
+        return connectionType;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-connectiontype
+     * 
+     */
+    @JsonIgnore
+    public void setConnectionType(CharSequence connectionType) {
+        this.connectionType = connectionType;
+    }
+
+    public EnvironmentEC2 withConnectionType(CharSequence connectionType) {
+        this.connectionType = connectionType;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-automaticstoptimeminutes
      * 
      */
@@ -221,6 +261,29 @@ public class EnvironmentEC2 {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-tags
+     * 
+     */
+    @JsonIgnore
+    public List<Property<Tag>> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+    }
+
+    public EnvironmentEC2 withTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-name
      * 
      */
@@ -245,12 +308,12 @@ public class EnvironmentEC2 {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("repositories", repositories).append("ownerArn", ownerArn).append("description", description).append("automaticStopTimeMinutes", automaticStopTimeMinutes).append("subnetId", subnetId).append("instanceType", instanceType).append("name", name).toString();
+        return new ToStringBuilder(this).append("repositories", repositories).append("ownerArn", ownerArn).append("description", description).append("connectionType", connectionType).append("automaticStopTimeMinutes", automaticStopTimeMinutes).append("subnetId", subnetId).append("instanceType", instanceType).append("tags", tags).append("name", name).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(subnetId).append(automaticStopTimeMinutes).append(repositories).append(instanceType).append(name).append(description).append(ownerArn).toHashCode();
+        return new HashCodeBuilder().append(subnetId).append(automaticStopTimeMinutes).append(repositories).append(instanceType).append(name).append(description).append(ownerArn).append(connectionType).append(tags).toHashCode();
     }
 
     @Override
@@ -262,7 +325,7 @@ public class EnvironmentEC2 {
             return false;
         }
         EnvironmentEC2 rhs = ((EnvironmentEC2) other);
-        return new EqualsBuilder().append(subnetId, rhs.subnetId).append(automaticStopTimeMinutes, rhs.automaticStopTimeMinutes).append(repositories, rhs.repositories).append(instanceType, rhs.instanceType).append(name, rhs.name).append(description, rhs.description).append(ownerArn, rhs.ownerArn).isEquals();
+        return new EqualsBuilder().append(subnetId, rhs.subnetId).append(automaticStopTimeMinutes, rhs.automaticStopTimeMinutes).append(repositories, rhs.repositories).append(instanceType, rhs.instanceType).append(name, rhs.name).append(description, rhs.description).append(ownerArn, rhs.ownerArn).append(connectionType, rhs.connectionType).append(tags, rhs.tags).isEquals();
     }
 
 }

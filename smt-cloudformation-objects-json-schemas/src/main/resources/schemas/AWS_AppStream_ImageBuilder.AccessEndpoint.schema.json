@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppStream_ImageBuilder.AccessEndpoint.schema.json",
+  "title" : "ImageBuilderAccessEndpoint",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-imagebuilder-accessendpoint.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.appstream.ImageBuilderAccessEndpoint",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ImageBuilderAccessEndpoint>" ],
+  "properties" : {
+    "EndpointType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-imagebuilder-accessendpoint.html#cfn-appstream-imagebuilder-accessendpoint-endpointtype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "VpceId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-imagebuilder-accessendpoint.html#cfn-appstream-imagebuilder-accessendpoint-vpceid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

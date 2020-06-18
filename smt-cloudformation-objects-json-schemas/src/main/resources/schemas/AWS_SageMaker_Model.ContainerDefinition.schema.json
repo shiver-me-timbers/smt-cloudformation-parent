@@ -12,6 +12,11 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "Mode" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-containerdefinition.html#cfn-sagemaker-model-containerdefinition-mode",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "Environment" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-containerdefinition.html#cfn-sagemaker-model-containerdefinition-environment",
       "type" : "object",

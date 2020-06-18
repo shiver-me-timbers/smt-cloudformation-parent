@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Cognito_UserPoolRiskConfigurationAttachment.AccountTakeoverActionType.schema.json",
+  "title" : "UserPoolRiskConfigurationAttachmentAccountTakeoverActionType",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpoolriskconfigurationattachment-accounttakeoveractiontype.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.cognito.UserPoolRiskConfigurationAttachmentAccountTakeoverActionType",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<UserPoolRiskConfigurationAttachmentAccountTakeoverActionType>" ],
+  "properties" : {
+    "Notify" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpoolriskconfigurationattachment-accounttakeoveractiontype.html#cfn-cognito-userpoolriskconfigurationattachment-accounttakeoveractiontype-notify",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "EventAction" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpoolriskconfigurationattachment-accounttakeoveractiontype.html#cfn-cognito-userpoolriskconfigurationattachment-accounttakeoveractiontype-eventaction",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

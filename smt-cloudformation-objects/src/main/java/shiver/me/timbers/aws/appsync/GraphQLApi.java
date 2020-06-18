@@ -21,6 +21,7 @@ import shiver.me.timbers.aws.Property;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "OpenIDConnectConfig",
+    "XrayEnabled",
     "UserPoolConfig",
     "Tags",
     "Name",
@@ -39,6 +40,13 @@ public class GraphQLApi {
     @JsonProperty("OpenIDConnectConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-openidconnectconfig.html")
     private Property<GraphQLApiOpenIDConnectConfig> openIDConnectConfig;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html#cfn-appsync-graphqlapi-xrayenabled
+     * 
+     */
+    @JsonProperty("XrayEnabled")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html#cfn-appsync-graphqlapi-xrayenabled")
+    private CharSequence xrayEnabled;
     /**
      * GraphQLApiUserPoolConfig
      * <p>
@@ -114,6 +122,29 @@ public class GraphQLApi {
 
     public GraphQLApi withOpenIDConnectConfig(Property<GraphQLApiOpenIDConnectConfig> openIDConnectConfig) {
         this.openIDConnectConfig = openIDConnectConfig;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html#cfn-appsync-graphqlapi-xrayenabled
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getXrayEnabled() {
+        return xrayEnabled;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html#cfn-appsync-graphqlapi-xrayenabled
+     * 
+     */
+    @JsonIgnore
+    public void setXrayEnabled(CharSequence xrayEnabled) {
+        this.xrayEnabled = xrayEnabled;
+    }
+
+    public GraphQLApi withXrayEnabled(CharSequence xrayEnabled) {
+        this.xrayEnabled = xrayEnabled;
         return this;
     }
 
@@ -273,12 +304,12 @@ public class GraphQLApi {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("openIDConnectConfig", openIDConnectConfig).append("userPoolConfig", userPoolConfig).append("tags", tags).append("name", name).append("authenticationType", authenticationType).append("logConfig", logConfig).append("additionalAuthenticationProviders", additionalAuthenticationProviders).toString();
+        return new ToStringBuilder(this).append("openIDConnectConfig", openIDConnectConfig).append("xrayEnabled", xrayEnabled).append("userPoolConfig", userPoolConfig).append("tags", tags).append("name", name).append("authenticationType", authenticationType).append("logConfig", logConfig).append("additionalAuthenticationProviders", additionalAuthenticationProviders).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(additionalAuthenticationProviders).append(logConfig).append(openIDConnectConfig).append(userPoolConfig).append(name).append(authenticationType).append(tags).toHashCode();
+        return new HashCodeBuilder().append(additionalAuthenticationProviders).append(logConfig).append(xrayEnabled).append(openIDConnectConfig).append(userPoolConfig).append(name).append(authenticationType).append(tags).toHashCode();
     }
 
     @Override
@@ -290,7 +321,7 @@ public class GraphQLApi {
             return false;
         }
         GraphQLApi rhs = ((GraphQLApi) other);
-        return new EqualsBuilder().append(additionalAuthenticationProviders, rhs.additionalAuthenticationProviders).append(logConfig, rhs.logConfig).append(openIDConnectConfig, rhs.openIDConnectConfig).append(userPoolConfig, rhs.userPoolConfig).append(name, rhs.name).append(authenticationType, rhs.authenticationType).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(additionalAuthenticationProviders, rhs.additionalAuthenticationProviders).append(logConfig, rhs.logConfig).append(xrayEnabled, rhs.xrayEnabled).append(openIDConnectConfig, rhs.openIDConnectConfig).append(userPoolConfig, rhs.userPoolConfig).append(name, rhs.name).append(authenticationType, rhs.authenticationType).append(tags, rhs.tags).isEquals();
     }
 
 }

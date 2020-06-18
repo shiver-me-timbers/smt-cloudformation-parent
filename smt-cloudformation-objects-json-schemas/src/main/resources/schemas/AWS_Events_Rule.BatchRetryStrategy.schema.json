@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Events_Rule.BatchRetryStrategy.schema.json",
+  "title" : "RuleBatchRetryStrategy",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-batchretrystrategy.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.events.RuleBatchRetryStrategy",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<RuleBatchRetryStrategy>" ],
+  "properties" : {
+    "Attempts" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-batchretrystrategy.html#cfn-events-rule-batchretrystrategy-attempts",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Cassandra_KeyspaceResource.schema.json",
+  "title" : "KeyspaceResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cassandra-keyspace.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.cassandra.KeyspaceResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<KeyspaceResource>", "shiver.me.timbers.aws.HasCondition<KeyspaceResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Cassandra::Keyspace"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Cassandra_Keyspace.schema.json"
+    }
+  }
+}

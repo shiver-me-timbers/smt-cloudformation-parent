@@ -7,6 +7,11 @@
   "javaType" : "shiver.me.timbers.aws.cloudfront.DistributionOrigin",
   "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DistributionOrigin>" ],
   "properties" : {
+    "ConnectionTimeout" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-connectiontimeout",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
     "OriginCustomHeaders" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-origincustomheaders",
       "type" : "array",
@@ -14,6 +19,11 @@
         "$ref" : "AWS_CloudFront_Distribution.OriginCustomHeader.schema.json",
         "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cloudfront.DistributionOriginCustomHeader>"
       }
+    },
+    "ConnectionAttempts" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-connectionattempts",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
     },
     "DomainName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-domainname",

@@ -20,11 +20,19 @@ import shiver.me.timbers.aws.Property;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "Count",
     "Type"
 })
 public class InstanceElasticInferenceAccelerator implements Property<InstanceElasticInferenceAccelerator>
 {
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-elasticinferenceaccelerator.html#cfn-ec2-instance-elasticinferenceaccelerator-count
+     * 
+     */
+    @JsonProperty("Count")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-elasticinferenceaccelerator.html#cfn-ec2-instance-elasticinferenceaccelerator-count")
+    private Number count;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-elasticinferenceaccelerator.html#cfn-ec2-instance-elasticinferenceaccelerator-type
      * 
@@ -32,6 +40,29 @@ public class InstanceElasticInferenceAccelerator implements Property<InstanceEla
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-elasticinferenceaccelerator.html#cfn-ec2-instance-elasticinferenceaccelerator-type")
     private CharSequence type;
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-elasticinferenceaccelerator.html#cfn-ec2-instance-elasticinferenceaccelerator-count
+     * 
+     */
+    @JsonIgnore
+    public Number getCount() {
+        return count;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-elasticinferenceaccelerator.html#cfn-ec2-instance-elasticinferenceaccelerator-count
+     * 
+     */
+    @JsonIgnore
+    public void setCount(Number count) {
+        this.count = count;
+    }
+
+    public InstanceElasticInferenceAccelerator withCount(Number count) {
+        this.count = count;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-elasticinferenceaccelerator.html#cfn-ec2-instance-elasticinferenceaccelerator-type
@@ -58,12 +89,12 @@ public class InstanceElasticInferenceAccelerator implements Property<InstanceEla
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("type", type).toString();
+        return new ToStringBuilder(this).append("count", count).append("type", type).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(type).toHashCode();
+        return new HashCodeBuilder().append(count).append(type).toHashCode();
     }
 
     @Override
@@ -75,7 +106,7 @@ public class InstanceElasticInferenceAccelerator implements Property<InstanceEla
             return false;
         }
         InstanceElasticInferenceAccelerator rhs = ((InstanceElasticInferenceAccelerator) other);
-        return new EqualsBuilder().append(type, rhs.type).isEquals();
+        return new EqualsBuilder().append(count, rhs.count).append(type, rhs.type).isEquals();
     }
 
 }

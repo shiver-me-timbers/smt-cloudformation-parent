@@ -11,6 +11,11 @@
       "$ref" : "AWS_AppSync_GraphQLApi.OpenIDConnectConfig.schema.json",
       "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appsync.GraphQLApiOpenIDConnectConfig>"
     },
+    "XrayEnabled" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html#cfn-appsync-graphqlapi-xrayenabled",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
     "UserPoolConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html#cfn-appsync-graphqlapi-userpoolconfig",
       "$ref" : "AWS_AppSync_GraphQLApi.UserPoolConfig.schema.json",

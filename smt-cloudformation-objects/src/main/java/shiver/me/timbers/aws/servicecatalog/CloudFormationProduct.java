@@ -23,6 +23,7 @@ import shiver.me.timbers.aws.Tag;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "ReplaceProvisioningArtifacts",
     "Owner",
     "SupportDescription",
     "Description",
@@ -36,6 +37,13 @@ import shiver.me.timbers.aws.Tag;
 })
 public class CloudFormationProduct {
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-replaceprovisioningartifacts
+     * 
+     */
+    @JsonProperty("ReplaceProvisioningArtifacts")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-replaceprovisioningartifacts")
+    private CharSequence replaceProvisioningArtifacts;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-owner
      * 
@@ -106,6 +114,29 @@ public class CloudFormationProduct {
     @JsonProperty("ProvisioningArtifactParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-provisioningartifactparameters")
     private List<Property<CloudFormationProductProvisioningArtifactProperties>> provisioningArtifactParameters = new ArrayList<Property<CloudFormationProductProvisioningArtifactProperties>>();
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-replaceprovisioningartifacts
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getReplaceProvisioningArtifacts() {
+        return replaceProvisioningArtifacts;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-replaceprovisioningartifacts
+     * 
+     */
+    @JsonIgnore
+    public void setReplaceProvisioningArtifacts(CharSequence replaceProvisioningArtifacts) {
+        this.replaceProvisioningArtifacts = replaceProvisioningArtifacts;
+    }
+
+    public CloudFormationProduct withReplaceProvisioningArtifacts(CharSequence replaceProvisioningArtifacts) {
+        this.replaceProvisioningArtifacts = replaceProvisioningArtifacts;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-owner
@@ -339,12 +370,12 @@ public class CloudFormationProduct {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("owner", owner).append("supportDescription", supportDescription).append("description", description).append("distributor", distributor).append("supportEmail", supportEmail).append("acceptLanguage", acceptLanguage).append("supportUrl", supportUrl).append("tags", tags).append("name", name).append("provisioningArtifactParameters", provisioningArtifactParameters).toString();
+        return new ToStringBuilder(this).append("replaceProvisioningArtifacts", replaceProvisioningArtifacts).append("owner", owner).append("supportDescription", supportDescription).append("description", description).append("distributor", distributor).append("supportEmail", supportEmail).append("acceptLanguage", acceptLanguage).append("supportUrl", supportUrl).append("tags", tags).append("name", name).append("provisioningArtifactParameters", provisioningArtifactParameters).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(owner).append(supportDescription).append(supportEmail).append(provisioningArtifactParameters).append(acceptLanguage).append(supportUrl).append(name).append(description).append(distributor).append(tags).toHashCode();
+        return new HashCodeBuilder().append(owner).append(supportDescription).append(replaceProvisioningArtifacts).append(supportEmail).append(provisioningArtifactParameters).append(acceptLanguage).append(supportUrl).append(name).append(description).append(distributor).append(tags).toHashCode();
     }
 
     @Override
@@ -356,7 +387,7 @@ public class CloudFormationProduct {
             return false;
         }
         CloudFormationProduct rhs = ((CloudFormationProduct) other);
-        return new EqualsBuilder().append(owner, rhs.owner).append(supportDescription, rhs.supportDescription).append(supportEmail, rhs.supportEmail).append(provisioningArtifactParameters, rhs.provisioningArtifactParameters).append(acceptLanguage, rhs.acceptLanguage).append(supportUrl, rhs.supportUrl).append(name, rhs.name).append(description, rhs.description).append(distributor, rhs.distributor).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(owner, rhs.owner).append(supportDescription, rhs.supportDescription).append(replaceProvisioningArtifacts, rhs.replaceProvisioningArtifacts).append(supportEmail, rhs.supportEmail).append(provisioningArtifactParameters, rhs.provisioningArtifactParameters).append(acceptLanguage, rhs.acceptLanguage).append(supportUrl, rhs.supportUrl).append(name, rhs.name).append(description, rhs.description).append(distributor, rhs.distributor).append(tags, rhs.tags).isEquals();
     }
 
 }

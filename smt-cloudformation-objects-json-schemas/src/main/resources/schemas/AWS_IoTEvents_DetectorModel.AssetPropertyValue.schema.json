@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoTEvents_DetectorModel.AssetPropertyValue.schema.json",
+  "title" : "DetectorModelAssetPropertyValue",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-assetpropertyvalue.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.iotevents.DetectorModelAssetPropertyValue",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DetectorModelAssetPropertyValue>" ],
+  "properties" : {
+    "Quality" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-assetpropertyvalue.html#cfn-iotevents-detectormodel-assetpropertyvalue-quality",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Value" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-assetpropertyvalue.html#cfn-iotevents-detectormodel-assetpropertyvalue-value",
+      "$ref" : "AWS_IoTEvents_DetectorModel.AssetPropertyVariant.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotevents.DetectorModelAssetPropertyVariant>"
+    },
+    "Timestamp" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-assetpropertyvalue.html#cfn-iotevents-detectormodel-assetpropertyvalue-timestamp",
+      "$ref" : "AWS_IoTEvents_DetectorModel.AssetPropertyTimestamp.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotevents.DetectorModelAssetPropertyTimestamp>"
+    }
+  }
+}

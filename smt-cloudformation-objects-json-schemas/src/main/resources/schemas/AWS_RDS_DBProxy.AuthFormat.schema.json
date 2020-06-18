@@ -1,0 +1,36 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_RDS_DBProxy.AuthFormat.schema.json",
+  "title" : "DBProxyAuthFormat",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbproxy-authformat.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.rds.DBProxyAuthFormat",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DBProxyAuthFormat>" ],
+  "properties" : {
+    "AuthScheme" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbproxy-authformat.html#cfn-rds-dbproxy-authformat-authscheme",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Description" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbproxy-authformat.html#cfn-rds-dbproxy-authformat-description",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "IAMAuth" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbproxy-authformat.html#cfn-rds-dbproxy-authformat-iamauth",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SecretArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbproxy-authformat.html#cfn-rds-dbproxy-authformat-secretarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "UserName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbproxy-authformat.html#cfn-rds-dbproxy-authformat-username",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_NetworkManager_LinkAssociationResource.schema.json",
+  "title" : "LinkAssociationResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkmanager-linkassociation.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.networkmanager.LinkAssociationResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<LinkAssociationResource>", "shiver.me.timbers.aws.HasCondition<LinkAssociationResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::NetworkManager::LinkAssociation"
+    },
+    "Properties" : {
+      "$ref" : "AWS_NetworkManager_LinkAssociation.schema.json"
+    }
+  }
+}

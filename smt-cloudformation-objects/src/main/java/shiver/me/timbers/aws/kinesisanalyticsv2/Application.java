@@ -1,6 +1,8 @@
 
 package shiver.me.timbers.aws.kinesisanalyticsv2;
 
+import java.util.ArrayList;
+import java.util.List;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -10,6 +12,7 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 import shiver.me.timbers.aws.Property;
+import shiver.me.timbers.aws.Tag;
 
 
 /**
@@ -24,6 +27,7 @@ import shiver.me.timbers.aws.Property;
     "RuntimeEnvironment",
     "ApplicationConfiguration",
     "ApplicationDescription",
+    "Tags",
     "ServiceExecutionRole"
 })
 public class Application {
@@ -58,6 +62,13 @@ public class Application {
     @JsonProperty("ApplicationDescription")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-application.html#cfn-kinesisanalyticsv2-application-applicationdescription")
     private CharSequence applicationDescription;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-application.html#cfn-kinesisanalyticsv2-application-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-application.html#cfn-kinesisanalyticsv2-application-tags")
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-application.html#cfn-kinesisanalyticsv2-application-serviceexecutionrole
      * 
@@ -163,6 +174,29 @@ public class Application {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-application.html#cfn-kinesisanalyticsv2-application-tags
+     * 
+     */
+    @JsonIgnore
+    public List<Property<Tag>> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-application.html#cfn-kinesisanalyticsv2-application-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+    }
+
+    public Application withTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-application.html#cfn-kinesisanalyticsv2-application-serviceexecutionrole
      * 
      */
@@ -187,12 +221,12 @@ public class Application {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("applicationName", applicationName).append("runtimeEnvironment", runtimeEnvironment).append("applicationConfiguration", applicationConfiguration).append("applicationDescription", applicationDescription).append("serviceExecutionRole", serviceExecutionRole).toString();
+        return new ToStringBuilder(this).append("applicationName", applicationName).append("runtimeEnvironment", runtimeEnvironment).append("applicationConfiguration", applicationConfiguration).append("applicationDescription", applicationDescription).append("tags", tags).append("serviceExecutionRole", serviceExecutionRole).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(serviceExecutionRole).append(applicationConfiguration).append(applicationDescription).append(applicationName).append(runtimeEnvironment).toHashCode();
+        return new HashCodeBuilder().append(applicationDescription).append(serviceExecutionRole).append(applicationConfiguration).append(applicationName).append(runtimeEnvironment).append(tags).toHashCode();
     }
 
     @Override
@@ -204,7 +238,7 @@ public class Application {
             return false;
         }
         Application rhs = ((Application) other);
-        return new EqualsBuilder().append(serviceExecutionRole, rhs.serviceExecutionRole).append(applicationConfiguration, rhs.applicationConfiguration).append(applicationDescription, rhs.applicationDescription).append(applicationName, rhs.applicationName).append(runtimeEnvironment, rhs.runtimeEnvironment).isEquals();
+        return new EqualsBuilder().append(applicationDescription, rhs.applicationDescription).append(serviceExecutionRole, rhs.serviceExecutionRole).append(applicationConfiguration, rhs.applicationConfiguration).append(applicationName, rhs.applicationName).append(runtimeEnvironment, rhs.runtimeEnvironment).append(tags, rhs.tags).isEquals();
     }
 
 }

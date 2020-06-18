@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Cognito_UserPool.RecoveryOption.schema.json",
+  "title" : "UserPoolRecoveryOption",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-recoveryoption.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.cognito.UserPoolRecoveryOption",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<UserPoolRecoveryOption>" ],
+  "properties" : {
+    "Priority" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-recoveryoption.html#cfn-cognito-userpool-recoveryoption-priority",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-recoveryoption.html#cfn-cognito-userpool-recoveryoption-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

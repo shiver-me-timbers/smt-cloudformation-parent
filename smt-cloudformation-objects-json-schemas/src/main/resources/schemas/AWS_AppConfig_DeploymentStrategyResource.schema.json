@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppConfig_DeploymentStrategyResource.schema.json",
+  "title" : "DeploymentStrategyResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appconfig-deploymentstrategy.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.appconfig.DeploymentStrategyResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<DeploymentStrategyResource>", "shiver.me.timbers.aws.HasCondition<DeploymentStrategyResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::AppConfig::DeploymentStrategy"
+    },
+    "Properties" : {
+      "$ref" : "AWS_AppConfig_DeploymentStrategy.schema.json"
+    }
+  }
+}

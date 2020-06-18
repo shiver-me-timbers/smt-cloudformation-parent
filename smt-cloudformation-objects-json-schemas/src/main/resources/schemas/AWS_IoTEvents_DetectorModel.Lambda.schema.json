@@ -11,6 +11,11 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-lambda.html#cfn-iotevents-detectormodel-lambda-functionarn",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
+    },
+    "Payload" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-lambda.html#cfn-iotevents-detectormodel-lambda-payload",
+      "$ref" : "AWS_IoTEvents_DetectorModel.Payload.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotevents.DetectorModelPayload>"
     }
   }
 }

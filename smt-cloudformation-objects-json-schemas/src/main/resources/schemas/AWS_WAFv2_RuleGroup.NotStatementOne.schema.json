@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WAFv2_RuleGroup.NotStatementOne.schema.json",
+  "title" : "RuleGroupNotStatementOne",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-notstatementone.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.wafv2.RuleGroupNotStatementOne",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<RuleGroupNotStatementOne>" ],
+  "properties" : {
+    "Statement" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-notstatementone.html#cfn-wafv2-rulegroup-notstatementone-statement",
+      "$ref" : "AWS_WAFv2_RuleGroup.RateBasedStatementTwo.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.wafv2.RuleGroupStatementTwo>"
+    }
+  }
+}

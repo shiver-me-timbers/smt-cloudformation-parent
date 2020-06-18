@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppConfig_Deployment.Tags.schema.json",
+  "title" : "DeploymentTags",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appconfig-deployment-tags.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.appconfig.DeploymentTags",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DeploymentTags>" ],
+  "properties" : {
+    "Value" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appconfig-deployment-tags.html#cfn-appconfig-deployment-tags-value",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Key" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appconfig-deployment-tags.html#cfn-appconfig-deployment-tags-key",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

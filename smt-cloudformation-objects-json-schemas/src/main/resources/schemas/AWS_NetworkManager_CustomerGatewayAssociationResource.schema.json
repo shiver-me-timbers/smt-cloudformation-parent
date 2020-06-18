@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_NetworkManager_CustomerGatewayAssociationResource.schema.json",
+  "title" : "CustomerGatewayAssociationResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkmanager-customergatewayassociation.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.networkmanager.CustomerGatewayAssociationResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<CustomerGatewayAssociationResource>", "shiver.me.timbers.aws.HasCondition<CustomerGatewayAssociationResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::NetworkManager::CustomerGatewayAssociation"
+    },
+    "Properties" : {
+      "$ref" : "AWS_NetworkManager_CustomerGatewayAssociation.schema.json"
+    }
+  }
+}

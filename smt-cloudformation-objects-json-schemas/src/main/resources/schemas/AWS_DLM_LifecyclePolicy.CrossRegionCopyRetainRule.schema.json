@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_DLM_LifecyclePolicy.CrossRegionCopyRetainRule.schema.json",
+  "title" : "LifecyclePolicyCrossRegionCopyRetainRule",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-crossregioncopyretainrule.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.dlm.LifecyclePolicyCrossRegionCopyRetainRule",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<LifecyclePolicyCrossRegionCopyRetainRule>" ],
+  "properties" : {
+    "IntervalUnit" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-crossregioncopyretainrule.html#cfn-dlm-lifecyclepolicy-crossregioncopyretainrule-intervalunit",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Interval" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-crossregioncopyretainrule.html#cfn-dlm-lifecyclepolicy-crossregioncopyretainrule-interval",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    }
+  }
+}

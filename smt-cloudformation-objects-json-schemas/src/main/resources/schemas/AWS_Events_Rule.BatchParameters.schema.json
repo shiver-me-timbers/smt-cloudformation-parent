@@ -1,0 +1,31 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Events_Rule.BatchParameters.schema.json",
+  "title" : "RuleBatchParameters",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-batchparameters.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.events.RuleBatchParameters",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<RuleBatchParameters>" ],
+  "properties" : {
+    "ArrayProperties" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-batchparameters.html#cfn-events-rule-batchparameters-arrayproperties",
+      "$ref" : "AWS_Events_Rule.BatchArrayProperties.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.events.RuleBatchArrayProperties>"
+    },
+    "JobDefinition" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-batchparameters.html#cfn-events-rule-batchparameters-jobdefinition",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "JobName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-batchparameters.html#cfn-events-rule-batchparameters-jobname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RetryStrategy" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-batchparameters.html#cfn-events-rule-batchparameters-retrystrategy",
+      "$ref" : "AWS_Events_Rule.BatchRetryStrategy.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.events.RuleBatchRetryStrategy>"
+    }
+  }
+}

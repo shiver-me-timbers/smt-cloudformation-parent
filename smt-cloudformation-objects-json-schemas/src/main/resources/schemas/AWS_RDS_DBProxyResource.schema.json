@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_RDS_DBProxyResource.schema.json",
+  "title" : "DBProxyResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbproxy.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.rds.DBProxyResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<DBProxyResource>", "shiver.me.timbers.aws.HasCondition<DBProxyResource>", "shiver.me.timbers.aws.HasAttributes<DBProxyAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::RDS::DBProxy"
+    },
+    "Properties" : {
+      "$ref" : "AWS_RDS_DBProxy.schema.json"
+    }
+  }
+}

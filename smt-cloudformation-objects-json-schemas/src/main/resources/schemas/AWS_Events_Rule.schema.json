@@ -11,6 +11,11 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "EventBusName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-eventbusname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "EventPattern" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-eventpattern",
       "type" : "object",

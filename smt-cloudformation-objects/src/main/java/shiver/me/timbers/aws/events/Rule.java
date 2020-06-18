@@ -24,6 +24,7 @@ import shiver.me.timbers.aws.Property;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "Description",
+    "EventBusName",
     "EventPattern",
     "Name",
     "RoleArn",
@@ -40,6 +41,13 @@ public class Rule {
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-description")
     private CharSequence description;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-eventbusname
+     * 
+     */
+    @JsonProperty("EventBusName")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-eventbusname")
+    private CharSequence eventBusName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-eventpattern
      * 
@@ -104,6 +112,29 @@ public class Rule {
 
     public Rule withDescription(CharSequence description) {
         this.description = description;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-eventbusname
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getEventBusName() {
+        return eventBusName;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-eventbusname
+     * 
+     */
+    @JsonIgnore
+    public void setEventBusName(CharSequence eventBusName) {
+        this.eventBusName = eventBusName;
+    }
+
+    public Rule withEventBusName(CharSequence eventBusName) {
+        this.eventBusName = eventBusName;
         return this;
     }
 
@@ -247,12 +278,12 @@ public class Rule {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("description", description).append("eventPattern", eventPattern).append("name", name).append("roleArn", roleArn).append("scheduleExpression", scheduleExpression).append("state", state).append("targets", targets).toString();
+        return new ToStringBuilder(this).append("description", description).append("eventBusName", eventBusName).append("eventPattern", eventPattern).append("name", name).append("roleArn", roleArn).append("scheduleExpression", scheduleExpression).append("state", state).append("targets", targets).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(scheduleExpression).append(roleArn).append(name).append(description).append(state).append(eventPattern).append(targets).toHashCode();
+        return new HashCodeBuilder().append(scheduleExpression).append(roleArn).append(eventBusName).append(name).append(description).append(state).append(eventPattern).append(targets).toHashCode();
     }
 
     @Override
@@ -264,7 +295,7 @@ public class Rule {
             return false;
         }
         Rule rhs = ((Rule) other);
-        return new EqualsBuilder().append(scheduleExpression, rhs.scheduleExpression).append(roleArn, rhs.roleArn).append(name, rhs.name).append(description, rhs.description).append(state, rhs.state).append(eventPattern, rhs.eventPattern).append(targets, rhs.targets).isEquals();
+        return new EqualsBuilder().append(scheduleExpression, rhs.scheduleExpression).append(roleArn, rhs.roleArn).append(eventBusName, rhs.eventBusName).append(name, rhs.name).append(description, rhs.description).append(state, rhs.state).append(eventPattern, rhs.eventPattern).append(targets, rhs.targets).isEquals();
     }
 
 }

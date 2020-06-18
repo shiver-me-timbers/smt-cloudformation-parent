@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_ClientVpnEndpoint.FederatedAuthenticationRequest.schema.json",
+  "title" : "ClientVpnEndpointFederatedAuthenticationRequest",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-clientvpnendpoint-federatedauthenticationrequest.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.ec2.ClientVpnEndpointFederatedAuthenticationRequest",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ClientVpnEndpointFederatedAuthenticationRequest>" ],
+  "properties" : {
+    "SAMLProviderArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-clientvpnendpoint-federatedauthenticationrequest.html#cfn-ec2-clientvpnendpoint-federatedauthenticationrequest-samlproviderarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

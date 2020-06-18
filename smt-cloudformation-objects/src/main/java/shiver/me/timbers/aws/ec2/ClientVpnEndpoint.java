@@ -27,10 +27,13 @@ import shiver.me.timbers.aws.Property;
     "SplitTunnel",
     "Description",
     "TagSpecifications",
+    "VpcId",
     "AuthenticationOptions",
     "ServerCertificateArn",
     "DnsServers",
-    "TransportProtocol"
+    "TransportProtocol",
+    "SecurityGroupIds",
+    "VpnPort"
 })
 public class ClientVpnEndpoint {
 
@@ -72,6 +75,13 @@ public class ClientVpnEndpoint {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html#cfn-ec2-clientvpnendpoint-tagspecifications")
     private List<Property<ClientVpnEndpointTagSpecification>> tagSpecifications = new ArrayList<Property<ClientVpnEndpointTagSpecification>>();
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html#cfn-ec2-clientvpnendpoint-vpcid
+     * 
+     */
+    @JsonProperty("VpcId")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html#cfn-ec2-clientvpnendpoint-vpcid")
+    private CharSequence vpcId;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html#cfn-ec2-clientvpnendpoint-authenticationoptions
      * 
      */
@@ -99,6 +109,20 @@ public class ClientVpnEndpoint {
     @JsonProperty("TransportProtocol")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html#cfn-ec2-clientvpnendpoint-transportprotocol")
     private CharSequence transportProtocol;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html#cfn-ec2-clientvpnendpoint-securitygroupids
+     * 
+     */
+    @JsonProperty("SecurityGroupIds")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html#cfn-ec2-clientvpnendpoint-securitygroupids")
+    private List<CharSequence> securityGroupIds = new ArrayList<CharSequence>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html#cfn-ec2-clientvpnendpoint-vpnport
+     * 
+     */
+    @JsonProperty("VpnPort")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html#cfn-ec2-clientvpnendpoint-vpnport")
+    private Number vpnPort;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html#cfn-ec2-clientvpnendpoint-clientcidrblock
@@ -220,6 +244,29 @@ public class ClientVpnEndpoint {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html#cfn-ec2-clientvpnendpoint-vpcid
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getVpcId() {
+        return vpcId;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html#cfn-ec2-clientvpnendpoint-vpcid
+     * 
+     */
+    @JsonIgnore
+    public void setVpcId(CharSequence vpcId) {
+        this.vpcId = vpcId;
+    }
+
+    public ClientVpnEndpoint withVpcId(CharSequence vpcId) {
+        this.vpcId = vpcId;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html#cfn-ec2-clientvpnendpoint-authenticationoptions
      * 
      */
@@ -311,14 +358,60 @@ public class ClientVpnEndpoint {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html#cfn-ec2-clientvpnendpoint-securitygroupids
+     * 
+     */
+    @JsonIgnore
+    public List<CharSequence> getSecurityGroupIds() {
+        return securityGroupIds;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html#cfn-ec2-clientvpnendpoint-securitygroupids
+     * 
+     */
+    @JsonIgnore
+    public void setSecurityGroupIds(List<CharSequence> securityGroupIds) {
+        this.securityGroupIds = securityGroupIds;
+    }
+
+    public ClientVpnEndpoint withSecurityGroupIds(List<CharSequence> securityGroupIds) {
+        this.securityGroupIds = securityGroupIds;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html#cfn-ec2-clientvpnendpoint-vpnport
+     * 
+     */
+    @JsonIgnore
+    public Number getVpnPort() {
+        return vpnPort;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html#cfn-ec2-clientvpnendpoint-vpnport
+     * 
+     */
+    @JsonIgnore
+    public void setVpnPort(Number vpnPort) {
+        this.vpnPort = vpnPort;
+    }
+
+    public ClientVpnEndpoint withVpnPort(Number vpnPort) {
+        this.vpnPort = vpnPort;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("clientCidrBlock", clientCidrBlock).append("connectionLogOptions", connectionLogOptions).append("splitTunnel", splitTunnel).append("description", description).append("tagSpecifications", tagSpecifications).append("authenticationOptions", authenticationOptions).append("serverCertificateArn", serverCertificateArn).append("dnsServers", dnsServers).append("transportProtocol", transportProtocol).toString();
+        return new ToStringBuilder(this).append("clientCidrBlock", clientCidrBlock).append("connectionLogOptions", connectionLogOptions).append("splitTunnel", splitTunnel).append("description", description).append("tagSpecifications", tagSpecifications).append("vpcId", vpcId).append("authenticationOptions", authenticationOptions).append("serverCertificateArn", serverCertificateArn).append("dnsServers", dnsServers).append("transportProtocol", transportProtocol).append("securityGroupIds", securityGroupIds).append("vpnPort", vpnPort).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(tagSpecifications).append(clientCidrBlock).append(serverCertificateArn).append(splitTunnel).append(authenticationOptions).append(transportProtocol).append(description).append(connectionLogOptions).append(dnsServers).toHashCode();
+        return new HashCodeBuilder().append(tagSpecifications).append(serverCertificateArn).append(splitTunnel).append(authenticationOptions).append(vpnPort).append(description).append(clientCidrBlock).append(securityGroupIds).append(vpcId).append(transportProtocol).append(connectionLogOptions).append(dnsServers).toHashCode();
     }
 
     @Override
@@ -330,7 +423,7 @@ public class ClientVpnEndpoint {
             return false;
         }
         ClientVpnEndpoint rhs = ((ClientVpnEndpoint) other);
-        return new EqualsBuilder().append(tagSpecifications, rhs.tagSpecifications).append(clientCidrBlock, rhs.clientCidrBlock).append(serverCertificateArn, rhs.serverCertificateArn).append(splitTunnel, rhs.splitTunnel).append(authenticationOptions, rhs.authenticationOptions).append(transportProtocol, rhs.transportProtocol).append(description, rhs.description).append(connectionLogOptions, rhs.connectionLogOptions).append(dnsServers, rhs.dnsServers).isEquals();
+        return new EqualsBuilder().append(tagSpecifications, rhs.tagSpecifications).append(serverCertificateArn, rhs.serverCertificateArn).append(splitTunnel, rhs.splitTunnel).append(authenticationOptions, rhs.authenticationOptions).append(vpnPort, rhs.vpnPort).append(description, rhs.description).append(clientCidrBlock, rhs.clientCidrBlock).append(securityGroupIds, rhs.securityGroupIds).append(vpcId, rhs.vpcId).append(transportProtocol, rhs.transportProtocol).append(connectionLogOptions, rhs.connectionLogOptions).append(dnsServers, rhs.dnsServers).isEquals();
     }
 
 }

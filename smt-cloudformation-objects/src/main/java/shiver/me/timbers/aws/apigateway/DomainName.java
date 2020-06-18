@@ -1,6 +1,8 @@
 
 package shiver.me.timbers.aws.apigateway;
 
+import java.util.ArrayList;
+import java.util.List;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -10,6 +12,7 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 import shiver.me.timbers.aws.Property;
+import shiver.me.timbers.aws.Tag;
 
 
 /**
@@ -23,7 +26,9 @@ import shiver.me.timbers.aws.Property;
     "CertificateArn",
     "DomainName",
     "EndpointConfiguration",
-    "RegionalCertificateArn"
+    "RegionalCertificateArn",
+    "SecurityPolicy",
+    "Tags"
 })
 public class DomainName {
 
@@ -57,6 +62,20 @@ public class DomainName {
     @JsonProperty("RegionalCertificateArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-regionalcertificatearn")
     private CharSequence regionalCertificateArn;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-securitypolicy
+     * 
+     */
+    @JsonProperty("SecurityPolicy")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-securitypolicy")
+    private CharSequence securityPolicy;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-tags")
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-certificatearn
@@ -154,14 +173,60 @@ public class DomainName {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-securitypolicy
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getSecurityPolicy() {
+        return securityPolicy;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-securitypolicy
+     * 
+     */
+    @JsonIgnore
+    public void setSecurityPolicy(CharSequence securityPolicy) {
+        this.securityPolicy = securityPolicy;
+    }
+
+    public DomainName withSecurityPolicy(CharSequence securityPolicy) {
+        this.securityPolicy = securityPolicy;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-tags
+     * 
+     */
+    @JsonIgnore
+    public List<Property<Tag>> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+    }
+
+    public DomainName withTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("certificateArn", certificateArn).append("domainName", domainName).append("endpointConfiguration", endpointConfiguration).append("regionalCertificateArn", regionalCertificateArn).toString();
+        return new ToStringBuilder(this).append("certificateArn", certificateArn).append("domainName", domainName).append("endpointConfiguration", endpointConfiguration).append("regionalCertificateArn", regionalCertificateArn).append("securityPolicy", securityPolicy).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(endpointConfiguration).append(certificateArn).append(regionalCertificateArn).append(domainName).toHashCode();
+        return new HashCodeBuilder().append(certificateArn).append(regionalCertificateArn).append(domainName).append(endpointConfiguration).append(securityPolicy).append(tags).toHashCode();
     }
 
     @Override
@@ -173,7 +238,7 @@ public class DomainName {
             return false;
         }
         DomainName rhs = ((DomainName) other);
-        return new EqualsBuilder().append(endpointConfiguration, rhs.endpointConfiguration).append(certificateArn, rhs.certificateArn).append(regionalCertificateArn, rhs.regionalCertificateArn).append(domainName, rhs.domainName).isEquals();
+        return new EqualsBuilder().append(certificateArn, rhs.certificateArn).append(regionalCertificateArn, rhs.regionalCertificateArn).append(domainName, rhs.domainName).append(endpointConfiguration, rhs.endpointConfiguration).append(securityPolicy, rhs.securityPolicy).append(tags, rhs.tags).isEquals();
     }
 
 }

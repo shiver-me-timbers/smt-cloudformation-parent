@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ResourceGroups_Group.ResourceQuery.schema.json",
+  "title" : "GroupResourceQuery",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resourcegroups-group-resourcequery.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.resourcegroups.GroupResourceQuery",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<GroupResourceQuery>" ],
+  "properties" : {
+    "Type" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resourcegroups-group-resourcequery.html#cfn-resourcegroups-group-resourcequery-type",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Query" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resourcegroups-group-resourcequery.html#cfn-resourcegroups-group-resourcequery-query",
+      "$ref" : "AWS_ResourceGroups_Group.Query.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.resourcegroups.GroupQuery>"
+    }
+  }
+}

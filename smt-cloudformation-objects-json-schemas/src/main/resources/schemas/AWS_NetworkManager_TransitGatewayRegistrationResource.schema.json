@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_NetworkManager_TransitGatewayRegistrationResource.schema.json",
+  "title" : "TransitGatewayRegistrationResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkmanager-transitgatewayregistration.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.networkmanager.TransitGatewayRegistrationResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<TransitGatewayRegistrationResource>", "shiver.me.timbers.aws.HasCondition<TransitGatewayRegistrationResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::NetworkManager::TransitGatewayRegistration"
+    },
+    "Properties" : {
+      "$ref" : "AWS_NetworkManager_TransitGatewayRegistration.schema.json"
+    }
+  }
+}

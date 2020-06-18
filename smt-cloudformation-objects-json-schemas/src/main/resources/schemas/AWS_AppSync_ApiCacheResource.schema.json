@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppSync_ApiCacheResource.schema.json",
+  "title" : "ApiCacheResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apicache.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.appsync.ApiCacheResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ApiCacheResource>", "shiver.me.timbers.aws.HasCondition<ApiCacheResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::AppSync::ApiCache"
+    },
+    "Properties" : {
+      "$ref" : "AWS_AppSync_ApiCache.schema.json"
+    }
+  }
+}

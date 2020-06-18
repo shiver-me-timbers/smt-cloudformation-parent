@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_NetworkManager_GlobalNetworkResource.schema.json",
+  "title" : "GlobalNetworkResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkmanager-globalnetwork.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.networkmanager.GlobalNetworkResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<GlobalNetworkResource>", "shiver.me.timbers.aws.HasCondition<GlobalNetworkResource>", "shiver.me.timbers.aws.HasAttributes<GlobalNetworkAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::NetworkManager::GlobalNetwork"
+    },
+    "Properties" : {
+      "$ref" : "AWS_NetworkManager_GlobalNetwork.schema.json"
+    }
+  }
+}

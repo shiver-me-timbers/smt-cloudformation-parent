@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_PushTemplateResource.schema.json",
+  "title" : "PushTemplateResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-pushtemplate.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.pinpoint.PushTemplateResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<PushTemplateResource>", "shiver.me.timbers.aws.HasCondition<PushTemplateResource>", "shiver.me.timbers.aws.HasAttributes<PushTemplateAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Pinpoint::PushTemplate"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Pinpoint_PushTemplate.schema.json"
+    }
+  }
+}

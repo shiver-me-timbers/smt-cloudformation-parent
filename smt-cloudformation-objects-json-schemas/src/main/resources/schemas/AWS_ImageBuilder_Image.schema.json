@@ -1,0 +1,35 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ImageBuilder_Image.schema.json",
+  "title" : "Image",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-imagebuilder-image.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.imagebuilder.Image",
+  "properties" : {
+    "ImageTestsConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-imagebuilder-image.html#cfn-imagebuilder-image-imagetestsconfiguration",
+      "$ref" : "AWS_ImageBuilder_ImagePipeline.ImageTestsConfiguration.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.imagebuilder.ImageImageTestsConfiguration>"
+    },
+    "ImageRecipeArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-imagebuilder-image.html#cfn-imagebuilder-image-imagerecipearn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DistributionConfigurationArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-imagebuilder-image.html#cfn-imagebuilder-image-distributionconfigurationarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "InfrastructureConfigurationArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-imagebuilder-image.html#cfn-imagebuilder-image-infrastructureconfigurationarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-imagebuilder-image.html#cfn-imagebuilder-image-tags",
+      "type" : "object",
+      "javaType" : "java.util.Map<String, java.lang.CharSequence>"
+    }
+  }
+}

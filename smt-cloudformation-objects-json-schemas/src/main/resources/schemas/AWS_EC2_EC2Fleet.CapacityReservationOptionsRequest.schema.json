@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_EC2Fleet.CapacityReservationOptionsRequest.schema.json",
+  "title" : "EC2FleetCapacityReservationOptionsRequest",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-capacityreservationoptionsrequest.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.ec2.EC2FleetCapacityReservationOptionsRequest",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<EC2FleetCapacityReservationOptionsRequest>" ],
+  "properties" : {
+    "UsageStrategy" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-capacityreservationoptionsrequest.html#cfn-ec2-ec2fleet-capacityreservationoptionsrequest-usagestrategy",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

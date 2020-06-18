@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Macie_FindingsFilterResource.schema.json",
+  "title" : "FindingsFilterResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-macie-findingsfilter.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.macie.FindingsFilterResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<FindingsFilterResource>", "shiver.me.timbers.aws.HasCondition<FindingsFilterResource>", "shiver.me.timbers.aws.HasAttributes<FindingsFilterAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Macie::FindingsFilter"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Macie_FindingsFilter.schema.json"
+    }
+  }
+}

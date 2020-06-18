@@ -1,0 +1,25 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_S3_Bucket.ReplicationRuleAndOperator.schema.json",
+  "title" : "BucketReplicationRuleAndOperator",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationruleandoperator.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.s3.BucketReplicationRuleAndOperator",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BucketReplicationRuleAndOperator>" ],
+  "properties" : {
+    "Prefix" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationruleandoperator.html#cfn-s3-bucket-replicationruleandoperator-prefix",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TagFilters" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationruleandoperator.html#cfn-s3-bucket-replicationruleandoperator-tagfilters",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "$ref" : "AWS_S3_Bucket.TagFilter.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.BucketTagFilter>"
+      }
+    }
+  }
+}

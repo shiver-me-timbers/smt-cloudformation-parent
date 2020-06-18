@@ -9,7 +9,6 @@ import org.jsonschema2pojo.Schema;
 import org.jsonschema2pojo.SchemaStore;
 import org.jsonschema2pojo.rules.Rule;
 import org.jsonschema2pojo.rules.RuleFactory;
-import org.jsonschema2pojo.rules.SchemaRule;
 import org.junit.Before;
 import org.junit.Test;
 

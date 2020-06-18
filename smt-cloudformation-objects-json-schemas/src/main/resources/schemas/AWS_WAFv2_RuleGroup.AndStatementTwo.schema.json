@@ -1,0 +1,19 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WAFv2_RuleGroup.AndStatementTwo.schema.json",
+  "title" : "RuleGroupAndStatementTwo",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-andstatementtwo.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.wafv2.RuleGroupAndStatementTwo",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<RuleGroupAndStatementTwo>" ],
+  "properties" : {
+    "Statements" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-andstatementtwo.html#cfn-wafv2-rulegroup-andstatementtwo-statements",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_WAFv2_RuleGroup.StatementThree.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.wafv2.RuleGroupStatementThree>"
+      }
+    }
+  }
+}

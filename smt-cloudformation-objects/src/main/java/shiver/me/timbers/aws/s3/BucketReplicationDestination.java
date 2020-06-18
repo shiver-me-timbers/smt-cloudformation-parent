@@ -24,6 +24,8 @@ import shiver.me.timbers.aws.Property;
     "Account",
     "Bucket",
     "EncryptionConfiguration",
+    "Metrics",
+    "ReplicationTime",
     "StorageClass"
 })
 public class BucketReplicationDestination implements Property<BucketReplicationDestination>
@@ -61,6 +63,24 @@ public class BucketReplicationDestination implements Property<BucketReplicationD
     @JsonProperty("EncryptionConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-encryptionconfiguration.html")
     private Property<BucketEncryptionConfiguration> encryptionConfiguration;
+    /**
+     * BucketMetrics
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-metrics.html
+     * 
+     */
+    @JsonProperty("Metrics")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-metrics.html")
+    private Property<BucketMetrics> metrics;
+    /**
+     * BucketReplicationTime
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationtime.html
+     * 
+     */
+    @JsonProperty("ReplicationTime")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationtime.html")
+    private Property<BucketReplicationTime> replicationTime;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules-destination.html#cfn-s3-bucket-replicationconfiguration-rules-destination-storageclass
      * 
@@ -170,6 +190,60 @@ public class BucketReplicationDestination implements Property<BucketReplicationD
     }
 
     /**
+     * BucketMetrics
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-metrics.html
+     * 
+     */
+    @JsonIgnore
+    public Property<BucketMetrics> getMetrics() {
+        return metrics;
+    }
+
+    /**
+     * BucketMetrics
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-metrics.html
+     * 
+     */
+    @JsonIgnore
+    public void setMetrics(Property<BucketMetrics> metrics) {
+        this.metrics = metrics;
+    }
+
+    public BucketReplicationDestination withMetrics(Property<BucketMetrics> metrics) {
+        this.metrics = metrics;
+        return this;
+    }
+
+    /**
+     * BucketReplicationTime
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationtime.html
+     * 
+     */
+    @JsonIgnore
+    public Property<BucketReplicationTime> getReplicationTime() {
+        return replicationTime;
+    }
+
+    /**
+     * BucketReplicationTime
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationtime.html
+     * 
+     */
+    @JsonIgnore
+    public void setReplicationTime(Property<BucketReplicationTime> replicationTime) {
+        this.replicationTime = replicationTime;
+    }
+
+    public BucketReplicationDestination withReplicationTime(Property<BucketReplicationTime> replicationTime) {
+        this.replicationTime = replicationTime;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules-destination.html#cfn-s3-bucket-replicationconfiguration-rules-destination-storageclass
      * 
      */
@@ -194,12 +268,12 @@ public class BucketReplicationDestination implements Property<BucketReplicationD
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("accessControlTranslation", accessControlTranslation).append("account", account).append("bucket", bucket).append("encryptionConfiguration", encryptionConfiguration).append("storageClass", storageClass).toString();
+        return new ToStringBuilder(this).append("accessControlTranslation", accessControlTranslation).append("account", account).append("bucket", bucket).append("encryptionConfiguration", encryptionConfiguration).append("metrics", metrics).append("replicationTime", replicationTime).append("storageClass", storageClass).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(bucket).append(encryptionConfiguration).append(accessControlTranslation).append(storageClass).append(account).toHashCode();
+        return new HashCodeBuilder().append(bucket).append(accessControlTranslation).append(storageClass).append(encryptionConfiguration).append(replicationTime).append(metrics).append(account).toHashCode();
     }
 
     @Override
@@ -211,7 +285,7 @@ public class BucketReplicationDestination implements Property<BucketReplicationD
             return false;
         }
         BucketReplicationDestination rhs = ((BucketReplicationDestination) other);
-        return new EqualsBuilder().append(bucket, rhs.bucket).append(encryptionConfiguration, rhs.encryptionConfiguration).append(accessControlTranslation, rhs.accessControlTranslation).append(storageClass, rhs.storageClass).append(account, rhs.account).isEquals();
+        return new EqualsBuilder().append(bucket, rhs.bucket).append(accessControlTranslation, rhs.accessControlTranslation).append(storageClass, rhs.storageClass).append(encryptionConfiguration, rhs.encryptionConfiguration).append(replicationTime, rhs.replicationTime).append(metrics, rhs.metrics).append(account, rhs.account).isEquals();
     }
 
 }

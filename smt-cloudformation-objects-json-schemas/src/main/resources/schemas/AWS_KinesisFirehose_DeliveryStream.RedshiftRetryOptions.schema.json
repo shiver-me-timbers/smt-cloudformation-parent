@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_KinesisFirehose_DeliveryStream.RedshiftRetryOptions.schema.json",
+  "title" : "DeliveryStreamRedshiftRetryOptions",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftretryoptions.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamRedshiftRetryOptions",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DeliveryStreamRedshiftRetryOptions>" ],
+  "properties" : {
+    "DurationInSeconds" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftretryoptions.html#cfn-kinesisfirehose-deliverystream-redshiftretryoptions-durationinseconds",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    }
+  }
+}

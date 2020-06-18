@@ -1,7 +1,9 @@
 
 package shiver.me.timbers.aws.codepipeline;
 
+import java.util.ArrayList;
 import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Set;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -13,6 +15,7 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 import shiver.me.timbers.aws.Property;
+import shiver.me.timbers.aws.Tag;
 
 
 /**
@@ -29,7 +32,8 @@ import shiver.me.timbers.aws.Property;
     "Name",
     "RestartExecutionOnUpdate",
     "RoleArn",
-    "Stages"
+    "Stages",
+    "Tags"
 })
 public class Pipeline {
 
@@ -87,6 +91,13 @@ public class Pipeline {
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-stages")
     private Set<Property<PipelineStageDeclaration>> stages = new LinkedHashSet<Property<PipelineStageDeclaration>>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-tags")
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
      * PipelineArtifactStore
@@ -253,14 +264,37 @@ public class Pipeline {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-tags
+     * 
+     */
+    @JsonIgnore
+    public List<Property<Tag>> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+    }
+
+    public Pipeline withTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("artifactStore", artifactStore).append("artifactStores", artifactStores).append("disableInboundStageTransitions", disableInboundStageTransitions).append("name", name).append("restartExecutionOnUpdate", restartExecutionOnUpdate).append("roleArn", roleArn).append("stages", stages).toString();
+        return new ToStringBuilder(this).append("artifactStore", artifactStore).append("artifactStores", artifactStores).append("disableInboundStageTransitions", disableInboundStageTransitions).append("name", name).append("restartExecutionOnUpdate", restartExecutionOnUpdate).append("roleArn", roleArn).append("stages", stages).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(artifactStore).append(roleArn).append(name).append(stages).append(artifactStores).append(restartExecutionOnUpdate).append(disableInboundStageTransitions).toHashCode();
+        return new HashCodeBuilder().append(artifactStore).append(roleArn).append(name).append(stages).append(artifactStores).append(restartExecutionOnUpdate).append(disableInboundStageTransitions).append(tags).toHashCode();
     }
 
     @Override
@@ -272,7 +306,7 @@ public class Pipeline {
             return false;
         }
         Pipeline rhs = ((Pipeline) other);
-        return new EqualsBuilder().append(artifactStore, rhs.artifactStore).append(roleArn, rhs.roleArn).append(name, rhs.name).append(stages, rhs.stages).append(artifactStores, rhs.artifactStores).append(restartExecutionOnUpdate, rhs.restartExecutionOnUpdate).append(disableInboundStageTransitions, rhs.disableInboundStageTransitions).isEquals();
+        return new EqualsBuilder().append(artifactStore, rhs.artifactStore).append(roleArn, rhs.roleArn).append(name, rhs.name).append(stages, rhs.stages).append(artifactStores, rhs.artifactStores).append(restartExecutionOnUpdate, rhs.restartExecutionOnUpdate).append(disableInboundStageTransitions, rhs.disableInboundStageTransitions).append(tags, rhs.tags).isEquals();
     }
 
 }

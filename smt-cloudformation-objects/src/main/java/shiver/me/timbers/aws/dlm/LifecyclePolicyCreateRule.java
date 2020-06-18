@@ -24,6 +24,7 @@ import shiver.me.timbers.aws.Property;
 @JsonPropertyOrder({
     "IntervalUnit",
     "Times",
+    "CronExpression",
     "Interval"
 })
 public class LifecyclePolicyCreateRule implements Property<LifecyclePolicyCreateRule>
@@ -43,6 +44,13 @@ public class LifecyclePolicyCreateRule implements Property<LifecyclePolicyCreate
     @JsonProperty("Times")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-createrule.html#cfn-dlm-lifecyclepolicy-createrule-times")
     private List<CharSequence> times = new ArrayList<CharSequence>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-createrule.html#cfn-dlm-lifecyclepolicy-createrule-cronexpression
+     * 
+     */
+    @JsonProperty("CronExpression")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-createrule.html#cfn-dlm-lifecyclepolicy-createrule-cronexpression")
+    private CharSequence cronExpression;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-createrule.html#cfn-dlm-lifecyclepolicy-createrule-interval
      * 
@@ -98,6 +106,29 @@ public class LifecyclePolicyCreateRule implements Property<LifecyclePolicyCreate
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-createrule.html#cfn-dlm-lifecyclepolicy-createrule-cronexpression
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getCronExpression() {
+        return cronExpression;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-createrule.html#cfn-dlm-lifecyclepolicy-createrule-cronexpression
+     * 
+     */
+    @JsonIgnore
+    public void setCronExpression(CharSequence cronExpression) {
+        this.cronExpression = cronExpression;
+    }
+
+    public LifecyclePolicyCreateRule withCronExpression(CharSequence cronExpression) {
+        this.cronExpression = cronExpression;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-createrule.html#cfn-dlm-lifecyclepolicy-createrule-interval
      * 
      */
@@ -122,12 +153,12 @@ public class LifecyclePolicyCreateRule implements Property<LifecyclePolicyCreate
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("intervalUnit", intervalUnit).append("times", times).append("interval", interval).toString();
+        return new ToStringBuilder(this).append("intervalUnit", intervalUnit).append("times", times).append("cronExpression", cronExpression).append("interval", interval).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(times).append(interval).append(intervalUnit).toHashCode();
+        return new HashCodeBuilder().append(cronExpression).append(times).append(interval).append(intervalUnit).toHashCode();
     }
 
     @Override
@@ -139,7 +170,7 @@ public class LifecyclePolicyCreateRule implements Property<LifecyclePolicyCreate
             return false;
         }
         LifecyclePolicyCreateRule rhs = ((LifecyclePolicyCreateRule) other);
-        return new EqualsBuilder().append(times, rhs.times).append(interval, rhs.interval).append(intervalUnit, rhs.intervalUnit).isEquals();
+        return new EqualsBuilder().append(cronExpression, rhs.cronExpression).append(times, rhs.times).append(interval, rhs.interval).append(intervalUnit, rhs.intervalUnit).isEquals();
     }
 
 }

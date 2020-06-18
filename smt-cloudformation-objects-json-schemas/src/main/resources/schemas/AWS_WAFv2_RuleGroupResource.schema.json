@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WAFv2_RuleGroupResource.schema.json",
+  "title" : "RuleGroupResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafv2-rulegroup.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.wafv2.RuleGroupResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<RuleGroupResource>", "shiver.me.timbers.aws.HasCondition<RuleGroupResource>", "shiver.me.timbers.aws.HasAttributes<RuleGroupAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::WAFv2::RuleGroup"
+    },
+    "Properties" : {
+      "$ref" : "AWS_WAFv2_RuleGroup.schema.json"
+    }
+  }
+}

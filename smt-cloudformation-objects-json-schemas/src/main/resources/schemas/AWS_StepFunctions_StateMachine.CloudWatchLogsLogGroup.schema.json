@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_StepFunctions_StateMachine.CloudWatchLogsLogGroup.schema.json",
+  "title" : "StateMachineCloudWatchLogsLogGroup",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stepfunctions-statemachine-logdestination-cloudwatchlogsloggroup.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.stepfunctions.StateMachineCloudWatchLogsLogGroup",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<StateMachineCloudWatchLogsLogGroup>" ],
+  "properties" : {
+    "LogGroupArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stepfunctions-statemachine-logdestination-cloudwatchlogsloggroup.html#cfn-stepfunctions-statemachine-logdestination-cloudwatchlogsloggroup-loggrouparn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_GatewayRouteTableAssociationResource.schema.json",
+  "title" : "GatewayRouteTableAssociationResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-gatewayroutetableassociation.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.ec2.GatewayRouteTableAssociationResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<GatewayRouteTableAssociationResource>", "shiver.me.timbers.aws.HasCondition<GatewayRouteTableAssociationResource>", "shiver.me.timbers.aws.HasAttributes<GatewayRouteTableAssociationAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::GatewayRouteTableAssociation"
+    },
+    "Properties" : {
+      "$ref" : "AWS_EC2_GatewayRouteTableAssociation.schema.json"
+    }
+  }
+}

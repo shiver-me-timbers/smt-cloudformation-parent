@@ -1,0 +1,30 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Events_Rule.HttpParameters.schema.json",
+  "title" : "RuleHttpParameters",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-httpparameters.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.events.RuleHttpParameters",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<RuleHttpParameters>" ],
+  "properties" : {
+    "HeaderParameters" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-httpparameters.html#cfn-events-rule-httpparameters-headerparameters",
+      "type" : "object",
+      "javaType" : "java.util.Map<String, java.lang.CharSequence>"
+    },
+    "PathParameterValues" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-httpparameters.html#cfn-events-rule-httpparameters-pathparametervalues",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    },
+    "QueryStringParameters" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-httpparameters.html#cfn-events-rule-httpparameters-querystringparameters",
+      "type" : "object",
+      "javaType" : "java.util.Map<String, java.lang.CharSequence>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MediaConvert_JobTemplateResource.schema.json",
+  "title" : "JobTemplateResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediaconvert-jobtemplate.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.mediaconvert.JobTemplateResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<JobTemplateResource>", "shiver.me.timbers.aws.HasCondition<JobTemplateResource>", "shiver.me.timbers.aws.HasAttributes<JobTemplateAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::MediaConvert::JobTemplate"
+    },
+    "Properties" : {
+      "$ref" : "AWS_MediaConvert_JobTemplate.schema.json"
+    }
+  }
+}

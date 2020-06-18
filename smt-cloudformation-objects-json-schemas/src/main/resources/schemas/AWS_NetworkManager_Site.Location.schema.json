@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_NetworkManager_Site.Location.schema.json",
+  "title" : "SiteLocation",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-networkmanager-site-location.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.networkmanager.SiteLocation",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<SiteLocation>" ],
+  "properties" : {
+    "Address" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-networkmanager-site-location.html#cfn-networkmanager-site-location-address",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Latitude" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-networkmanager-site-location.html#cfn-networkmanager-site-location-latitude",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Longitude" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-networkmanager-site-location.html#cfn-networkmanager-site-location-longitude",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

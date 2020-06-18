@@ -31,6 +31,11 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "Namespace" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-actiondeclaration-namespace",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "OutputArtifacts" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-outputartifacts",
       "type" : "array",

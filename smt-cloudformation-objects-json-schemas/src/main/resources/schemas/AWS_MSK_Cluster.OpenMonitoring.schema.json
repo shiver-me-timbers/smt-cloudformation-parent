@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MSK_Cluster.OpenMonitoring.schema.json",
+  "title" : "ClusterOpenMonitoring",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-openmonitoring.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.msk.ClusterOpenMonitoring",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ClusterOpenMonitoring>" ],
+  "properties" : {
+    "Prometheus" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-openmonitoring.html#cfn-msk-cluster-openmonitoring-prometheus",
+      "$ref" : "AWS_MSK_Cluster.Prometheus.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.msk.ClusterPrometheus>"
+    }
+  }
+}

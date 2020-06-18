@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EKS_NodegroupResource.schema.json",
+  "title" : "NodegroupResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-nodegroup.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.eks.NodegroupResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<NodegroupResource>", "shiver.me.timbers.aws.HasCondition<NodegroupResource>", "shiver.me.timbers.aws.HasAttributes<NodegroupAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EKS::Nodegroup"
+    },
+    "Properties" : {
+      "$ref" : "AWS_EKS_Nodegroup.schema.json"
+    }
+  }
+}

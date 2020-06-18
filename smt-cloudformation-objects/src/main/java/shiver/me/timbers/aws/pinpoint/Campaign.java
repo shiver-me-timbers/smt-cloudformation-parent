@@ -35,6 +35,7 @@ import shiver.me.timbers.aws.Property;
     "Schedule",
     "ApplicationId",
     "CampaignHook",
+    "Tags",
     "TreatmentName"
 })
 public class Campaign {
@@ -138,6 +139,13 @@ public class Campaign {
     @JsonProperty("CampaignHook")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-campaign-campaignhook.html")
     private Property<CampaignCampaignHook> campaignHook;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html#cfn-pinpoint-campaign-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html#cfn-pinpoint-campaign-tags")
+    private Object tags;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html#cfn-pinpoint-campaign-treatmentname
      * 
@@ -462,6 +470,29 @@ public class Campaign {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html#cfn-pinpoint-campaign-tags
+     * 
+     */
+    @JsonIgnore
+    public Object getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html#cfn-pinpoint-campaign-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(Object tags) {
+        this.tags = tags;
+    }
+
+    public Campaign withTags(Object tags) {
+        this.tags = tags;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html#cfn-pinpoint-campaign-treatmentname
      * 
      */
@@ -486,12 +517,12 @@ public class Campaign {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("description", description).append("segmentId", segmentId).append("isPaused", isPaused).append("additionalTreatments", additionalTreatments).append("name", name).append("segmentVersion", segmentVersion).append("treatmentDescription", treatmentDescription).append("messageConfiguration", messageConfiguration).append("limits", limits).append("holdoutPercent", holdoutPercent).append("schedule", schedule).append("applicationId", applicationId).append("campaignHook", campaignHook).append("treatmentName", treatmentName).toString();
+        return new ToStringBuilder(this).append("description", description).append("segmentId", segmentId).append("isPaused", isPaused).append("additionalTreatments", additionalTreatments).append("name", name).append("segmentVersion", segmentVersion).append("treatmentDescription", treatmentDescription).append("messageConfiguration", messageConfiguration).append("limits", limits).append("holdoutPercent", holdoutPercent).append("schedule", schedule).append("applicationId", applicationId).append("campaignHook", campaignHook).append("tags", tags).append("treatmentName", treatmentName).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(isPaused).append(segmentVersion).append(description).append(additionalTreatments).append(holdoutPercent).append(schedule).append(treatmentDescription).append(segmentId).append(messageConfiguration).append(campaignHook).append(name).append(applicationId).append(limits).append(treatmentName).toHashCode();
+        return new HashCodeBuilder().append(isPaused).append(segmentVersion).append(description).append(additionalTreatments).append(holdoutPercent).append(tags).append(schedule).append(treatmentDescription).append(segmentId).append(messageConfiguration).append(campaignHook).append(name).append(applicationId).append(limits).append(treatmentName).toHashCode();
     }
 
     @Override
@@ -503,7 +534,7 @@ public class Campaign {
             return false;
         }
         Campaign rhs = ((Campaign) other);
-        return new EqualsBuilder().append(isPaused, rhs.isPaused).append(segmentVersion, rhs.segmentVersion).append(description, rhs.description).append(additionalTreatments, rhs.additionalTreatments).append(holdoutPercent, rhs.holdoutPercent).append(schedule, rhs.schedule).append(treatmentDescription, rhs.treatmentDescription).append(segmentId, rhs.segmentId).append(messageConfiguration, rhs.messageConfiguration).append(campaignHook, rhs.campaignHook).append(name, rhs.name).append(applicationId, rhs.applicationId).append(limits, rhs.limits).append(treatmentName, rhs.treatmentName).isEquals();
+        return new EqualsBuilder().append(isPaused, rhs.isPaused).append(segmentVersion, rhs.segmentVersion).append(description, rhs.description).append(additionalTreatments, rhs.additionalTreatments).append(holdoutPercent, rhs.holdoutPercent).append(tags, rhs.tags).append(schedule, rhs.schedule).append(treatmentDescription, rhs.treatmentDescription).append(segmentId, rhs.segmentId).append(messageConfiguration, rhs.messageConfiguration).append(campaignHook, rhs.campaignHook).append(name, rhs.name).append(applicationId, rhs.applicationId).append(limits, rhs.limits).append(treatmentName, rhs.treatmentName).isEquals();
     }
 
 }

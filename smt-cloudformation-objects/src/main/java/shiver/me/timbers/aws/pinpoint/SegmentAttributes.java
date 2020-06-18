@@ -8,7 +8,8 @@ import com.fasterxml.jackson.annotation.JsonValue;
 
 public enum SegmentAttributes {
 
-    SEGMENT_ID("SegmentId");
+    SEGMENT_ID("SegmentId"),
+    ARN("Arn");
     private final String value;
     private final static Map<String, SegmentAttributes> CONSTANTS = new HashMap<String, SegmentAttributes>();
 

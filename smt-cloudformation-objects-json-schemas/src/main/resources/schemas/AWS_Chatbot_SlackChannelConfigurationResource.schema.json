@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Chatbot_SlackChannelConfigurationResource.schema.json",
+  "title" : "SlackChannelConfigurationResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-chatbot-slackchannelconfiguration.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.chatbot.SlackChannelConfigurationResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<SlackChannelConfigurationResource>", "shiver.me.timbers.aws.HasCondition<SlackChannelConfigurationResource>", "shiver.me.timbers.aws.HasAttributes<SlackChannelConfigurationAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Chatbot::SlackChannelConfiguration"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Chatbot_SlackChannelConfiguration.schema.json"
+    }
+  }
+}

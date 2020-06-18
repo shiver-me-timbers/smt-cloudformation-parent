@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CloudFront_Distribution.OriginGroup.schema.json",
+  "title" : "DistributionOriginGroup",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origingroup.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.cloudfront.DistributionOriginGroup",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DistributionOriginGroup>" ],
+  "properties" : {
+    "Id" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origingroup.html#cfn-cloudfront-distribution-origingroup-id",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "FailoverCriteria" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origingroup.html#cfn-cloudfront-distribution-origingroup-failovercriteria",
+      "$ref" : "AWS_CloudFront_Distribution.OriginGroupFailoverCriteria.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cloudfront.DistributionOriginGroupFailoverCriteria>"
+    },
+    "Members" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origingroup.html#cfn-cloudfront-distribution-origingroup-members",
+      "$ref" : "AWS_CloudFront_Distribution.OriginGroupMembers.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cloudfront.DistributionOriginGroupMembers>"
+    }
+  }
+}

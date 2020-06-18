@@ -22,6 +22,7 @@ import shiver.me.timbers.aws.Property;
 @JsonPropertyOrder({
     "MutualAuthentication",
     "Type",
+    "FederatedAuthentication",
     "ActiveDirectory"
 })
 public class ClientVpnEndpointClientAuthenticationRequest implements Property<ClientVpnEndpointClientAuthenticationRequest>
@@ -43,6 +44,15 @@ public class ClientVpnEndpointClientAuthenticationRequest implements Property<Cl
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-clientvpnendpoint-clientauthenticationrequest.html#cfn-ec2-clientvpnendpoint-clientauthenticationrequest-type")
     private CharSequence type;
+    /**
+     * ClientVpnEndpointFederatedAuthenticationRequest
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-clientvpnendpoint-federatedauthenticationrequest.html
+     * 
+     */
+    @JsonProperty("FederatedAuthentication")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-clientvpnendpoint-federatedauthenticationrequest.html")
+    private Property<ClientVpnEndpointFederatedAuthenticationRequest> federatedAuthentication;
     /**
      * ClientVpnEndpointDirectoryServiceAuthenticationRequest
      * <p>
@@ -104,6 +114,33 @@ public class ClientVpnEndpointClientAuthenticationRequest implements Property<Cl
     }
 
     /**
+     * ClientVpnEndpointFederatedAuthenticationRequest
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-clientvpnendpoint-federatedauthenticationrequest.html
+     * 
+     */
+    @JsonIgnore
+    public Property<ClientVpnEndpointFederatedAuthenticationRequest> getFederatedAuthentication() {
+        return federatedAuthentication;
+    }
+
+    /**
+     * ClientVpnEndpointFederatedAuthenticationRequest
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-clientvpnendpoint-federatedauthenticationrequest.html
+     * 
+     */
+    @JsonIgnore
+    public void setFederatedAuthentication(Property<ClientVpnEndpointFederatedAuthenticationRequest> federatedAuthentication) {
+        this.federatedAuthentication = federatedAuthentication;
+    }
+
+    public ClientVpnEndpointClientAuthenticationRequest withFederatedAuthentication(Property<ClientVpnEndpointFederatedAuthenticationRequest> federatedAuthentication) {
+        this.federatedAuthentication = federatedAuthentication;
+        return this;
+    }
+
+    /**
      * ClientVpnEndpointDirectoryServiceAuthenticationRequest
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-clientvpnendpoint-directoryserviceauthenticationrequest.html
@@ -132,12 +169,12 @@ public class ClientVpnEndpointClientAuthenticationRequest implements Property<Cl
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("mutualAuthentication", mutualAuthentication).append("type", type).append("activeDirectory", activeDirectory).toString();
+        return new ToStringBuilder(this).append("mutualAuthentication", mutualAuthentication).append("type", type).append("federatedAuthentication", federatedAuthentication).append("activeDirectory", activeDirectory).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(mutualAuthentication).append(type).append(activeDirectory).toHashCode();
+        return new HashCodeBuilder().append(federatedAuthentication).append(mutualAuthentication).append(type).append(activeDirectory).toHashCode();
     }
 
     @Override
@@ -149,7 +186,7 @@ public class ClientVpnEndpointClientAuthenticationRequest implements Property<Cl
             return false;
         }
         ClientVpnEndpointClientAuthenticationRequest rhs = ((ClientVpnEndpointClientAuthenticationRequest) other);
-        return new EqualsBuilder().append(mutualAuthentication, rhs.mutualAuthentication).append(type, rhs.type).append(activeDirectory, rhs.activeDirectory).isEquals();
+        return new EqualsBuilder().append(federatedAuthentication, rhs.federatedAuthentication).append(mutualAuthentication, rhs.mutualAuthentication).append(type, rhs.type).append(activeDirectory, rhs.activeDirectory).isEquals();
     }
 
 }

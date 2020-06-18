@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_StepFunctions_StateMachine.S3Location.schema.json",
+  "title" : "StateMachineS3Location",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stepfunctions-statemachine-s3location.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.stepfunctions.StateMachineS3Location",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<StateMachineS3Location>" ],
+  "properties" : {
+    "Bucket" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stepfunctions-statemachine-s3location.html#cfn-stepfunctions-statemachine-s3location-bucket",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Version" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stepfunctions-statemachine-s3location.html#cfn-stepfunctions-statemachine-s3location-version",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Key" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stepfunctions-statemachine-s3location.html#cfn-stepfunctions-statemachine-s3location-key",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

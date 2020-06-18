@@ -70,6 +70,11 @@
         "javaType" : "java.lang.CharSequence"
       }
     },
+    "MaxInstanceLifetime" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-maxinstancelifetime",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
     "MaxSize" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-maxsize",
       "type" : "string",

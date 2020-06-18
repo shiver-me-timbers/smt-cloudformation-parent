@@ -33,7 +33,8 @@ import shiver.me.timbers.aws.Tag;
     "InstanceType",
     "Tags",
     "Name",
-    "ImageArn"
+    "ImageArn",
+    "AccessEndpoints"
 })
 public class ImageBuilder {
 
@@ -118,6 +119,13 @@ public class ImageBuilder {
     @JsonProperty("ImageArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-imagebuilder.html#cfn-appstream-imagebuilder-imagearn")
     private CharSequence imageArn;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-imagebuilder.html#cfn-appstream-imagebuilder-accessendpoints
+     * 
+     */
+    @JsonProperty("AccessEndpoints")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-imagebuilder.html#cfn-appstream-imagebuilder-accessendpoints")
+    private List<Property<ImageBuilderAccessEndpoint>> accessEndpoints = new ArrayList<Property<ImageBuilderAccessEndpoint>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-imagebuilder.html#cfn-appstream-imagebuilder-imagename
@@ -380,14 +388,37 @@ public class ImageBuilder {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-imagebuilder.html#cfn-appstream-imagebuilder-accessendpoints
+     * 
+     */
+    @JsonIgnore
+    public List<Property<ImageBuilderAccessEndpoint>> getAccessEndpoints() {
+        return accessEndpoints;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-imagebuilder.html#cfn-appstream-imagebuilder-accessendpoints
+     * 
+     */
+    @JsonIgnore
+    public void setAccessEndpoints(List<Property<ImageBuilderAccessEndpoint>> accessEndpoints) {
+        this.accessEndpoints = accessEndpoints;
+    }
+
+    public ImageBuilder withAccessEndpoints(List<Property<ImageBuilderAccessEndpoint>> accessEndpoints) {
+        this.accessEndpoints = accessEndpoints;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("imageName", imageName).append("description", description).append("vpcConfig", vpcConfig).append("enableDefaultInternetAccess", enableDefaultInternetAccess).append("displayName", displayName).append("domainJoinInfo", domainJoinInfo).append("appstreamAgentVersion", appstreamAgentVersion).append("instanceType", instanceType).append("tags", tags).append("name", name).append("imageArn", imageArn).toString();
+        return new ToStringBuilder(this).append("imageName", imageName).append("description", description).append("vpcConfig", vpcConfig).append("enableDefaultInternetAccess", enableDefaultInternetAccess).append("displayName", displayName).append("domainJoinInfo", domainJoinInfo).append("appstreamAgentVersion", appstreamAgentVersion).append("instanceType", instanceType).append("tags", tags).append("name", name).append("imageArn", imageArn).append("accessEndpoints", accessEndpoints).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(domainJoinInfo).append(imageArn).append(imageName).append(enableDefaultInternetAccess).append(displayName).append(vpcConfig).append(instanceType).append(name).append(description).append(appstreamAgentVersion).append(tags).toHashCode();
+        return new HashCodeBuilder().append(imageArn).append(imageName).append(enableDefaultInternetAccess).append(displayName).append(instanceType).append(accessEndpoints).append(description).append(appstreamAgentVersion).append(tags).append(domainJoinInfo).append(vpcConfig).append(name).toHashCode();
     }
 
     @Override
@@ -399,7 +430,7 @@ public class ImageBuilder {
             return false;
         }
         ImageBuilder rhs = ((ImageBuilder) other);
-        return new EqualsBuilder().append(domainJoinInfo, rhs.domainJoinInfo).append(imageArn, rhs.imageArn).append(imageName, rhs.imageName).append(enableDefaultInternetAccess, rhs.enableDefaultInternetAccess).append(displayName, rhs.displayName).append(vpcConfig, rhs.vpcConfig).append(instanceType, rhs.instanceType).append(name, rhs.name).append(description, rhs.description).append(appstreamAgentVersion, rhs.appstreamAgentVersion).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(imageArn, rhs.imageArn).append(imageName, rhs.imageName).append(enableDefaultInternetAccess, rhs.enableDefaultInternetAccess).append(displayName, rhs.displayName).append(instanceType, rhs.instanceType).append(accessEndpoints, rhs.accessEndpoints).append(description, rhs.description).append(appstreamAgentVersion, rhs.appstreamAgentVersion).append(tags, rhs.tags).append(domainJoinInfo, rhs.domainJoinInfo).append(vpcConfig, rhs.vpcConfig).append(name, rhs.name).isEquals();
     }
 
 }

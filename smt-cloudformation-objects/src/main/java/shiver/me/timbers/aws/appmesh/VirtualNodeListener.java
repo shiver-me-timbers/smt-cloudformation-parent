@@ -21,6 +21,7 @@ import shiver.me.timbers.aws.Property;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "HealthCheck",
+    "TLS",
     "PortMapping"
 })
 public class VirtualNodeListener implements Property<VirtualNodeListener>
@@ -35,6 +36,15 @@ public class VirtualNodeListener implements Property<VirtualNodeListener>
     @JsonProperty("HealthCheck")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-healthcheck.html")
     private Property<VirtualNodeHealthCheck> healthCheck;
+    /**
+     * VirtualNodeListenerTls
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-listenertls.html
+     * 
+     */
+    @JsonProperty("TLS")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-listenertls.html")
+    private Property<VirtualNodeListenerTls> tLS;
     /**
      * VirtualNodePortMapping
      * <p>
@@ -73,6 +83,33 @@ public class VirtualNodeListener implements Property<VirtualNodeListener>
     }
 
     /**
+     * VirtualNodeListenerTls
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-listenertls.html
+     * 
+     */
+    @JsonIgnore
+    public Property<VirtualNodeListenerTls> getTLS() {
+        return tLS;
+    }
+
+    /**
+     * VirtualNodeListenerTls
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-listenertls.html
+     * 
+     */
+    @JsonIgnore
+    public void setTLS(Property<VirtualNodeListenerTls> tLS) {
+        this.tLS = tLS;
+    }
+
+    public VirtualNodeListener withTLS(Property<VirtualNodeListenerTls> tLS) {
+        this.tLS = tLS;
+        return this;
+    }
+
+    /**
      * VirtualNodePortMapping
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-portmapping.html
@@ -101,12 +138,12 @@ public class VirtualNodeListener implements Property<VirtualNodeListener>
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("healthCheck", healthCheck).append("portMapping", portMapping).toString();
+        return new ToStringBuilder(this).append("healthCheck", healthCheck).append("tLS", tLS).append("portMapping", portMapping).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(portMapping).append(healthCheck).toHashCode();
+        return new HashCodeBuilder().append(portMapping).append(tLS).append(healthCheck).toHashCode();
     }
 
     @Override
@@ -118,7 +155,7 @@ public class VirtualNodeListener implements Property<VirtualNodeListener>
             return false;
         }
         VirtualNodeListener rhs = ((VirtualNodeListener) other);
-        return new EqualsBuilder().append(portMapping, rhs.portMapping).append(healthCheck, rhs.healthCheck).isEquals();
+        return new EqualsBuilder().append(portMapping, rhs.portMapping).append(tLS, rhs.tLS).append(healthCheck, rhs.healthCheck).isEquals();
     }
 
 }

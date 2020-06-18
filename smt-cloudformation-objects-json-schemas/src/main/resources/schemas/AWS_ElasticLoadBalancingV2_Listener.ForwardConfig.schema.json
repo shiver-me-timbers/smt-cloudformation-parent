@@ -1,0 +1,25 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ElasticLoadBalancingV2_Listener.ForwardConfig.schema.json",
+  "title" : "ListenerForwardConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-forwardconfig.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.elasticloadbalancingv2.ListenerForwardConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ListenerForwardConfig>" ],
+  "properties" : {
+    "TargetGroupStickinessConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-forwardconfig.html#cfn-elasticloadbalancingv2-listener-forwardconfig-targetgroupstickinessconfig",
+      "$ref" : "AWS_ElasticLoadBalancingV2_ListenerRule.TargetGroupStickinessConfig.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.elasticloadbalancingv2.ListenerTargetGroupStickinessConfig>"
+    },
+    "TargetGroups" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-forwardconfig.html#cfn-elasticloadbalancingv2-listener-forwardconfig-targetgroups",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "$ref" : "AWS_ElasticLoadBalancingV2_ListenerRule.TargetGroupTuple.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.elasticloadbalancingv2.ListenerTargetGroupTuple>"
+      }
+    }
+  }
+}

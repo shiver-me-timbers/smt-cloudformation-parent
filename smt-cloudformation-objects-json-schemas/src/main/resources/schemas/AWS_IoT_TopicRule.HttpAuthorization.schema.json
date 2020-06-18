@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoT_TopicRule.HttpAuthorization.schema.json",
+  "title" : "TopicRuleHttpAuthorization",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-httpauthorization.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.iot.TopicRuleHttpAuthorization",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TopicRuleHttpAuthorization>" ],
+  "properties" : {
+    "Sigv4" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-httpauthorization.html#cfn-iot-topicrule-httpauthorization-sigv4",
+      "$ref" : "AWS_IoT_TopicRule.SigV4Authorization.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iot.TopicRuleSigV4Authorization>"
+    }
+  }
+}

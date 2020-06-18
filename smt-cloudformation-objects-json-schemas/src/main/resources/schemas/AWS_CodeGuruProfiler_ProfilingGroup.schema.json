@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CodeGuruProfiler_ProfilingGroup.schema.json",
+  "title" : "ProfilingGroup",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codeguruprofiler-profilinggroup.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.codeguruprofiler.ProfilingGroup",
+  "properties" : {
+    "ProfilingGroupName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codeguruprofiler-profilinggroup.html#cfn-codeguruprofiler-profilinggroup-profilinggroupname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "AgentPermissions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codeguruprofiler-profilinggroup.html#cfn-codeguruprofiler-profilinggroup-agentpermissions",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
+    }
+  }
+}

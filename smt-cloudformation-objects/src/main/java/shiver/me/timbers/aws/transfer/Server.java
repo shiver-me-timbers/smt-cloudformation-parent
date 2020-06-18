@@ -24,11 +24,13 @@ import shiver.me.timbers.aws.Tag;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "LoggingRole",
+    "Protocols",
     "IdentityProviderDetails",
     "EndpointType",
     "EndpointDetails",
     "IdentityProviderType",
-    "Tags"
+    "Tags",
+    "Certificate"
 })
 public class Server {
 
@@ -39,6 +41,13 @@ public class Server {
     @JsonProperty("LoggingRole")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-server.html#cfn-transfer-server-loggingrole")
     private CharSequence loggingRole;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-server.html#cfn-transfer-server-protocols
+     * 
+     */
+    @JsonProperty("Protocols")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-server.html#cfn-transfer-server-protocols")
+    private List<CharSequence> protocols = new ArrayList<CharSequence>();
     /**
      * ServerIdentityProviderDetails
      * <p>
@@ -78,6 +87,13 @@ public class Server {
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-server.html#cfn-transfer-server-tags")
     private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-server.html#cfn-transfer-server-certificate
+     * 
+     */
+    @JsonProperty("Certificate")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-server.html#cfn-transfer-server-certificate")
+    private CharSequence certificate;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-server.html#cfn-transfer-server-loggingrole
@@ -99,6 +115,29 @@ public class Server {
 
     public Server withLoggingRole(CharSequence loggingRole) {
         this.loggingRole = loggingRole;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-server.html#cfn-transfer-server-protocols
+     * 
+     */
+    @JsonIgnore
+    public List<CharSequence> getProtocols() {
+        return protocols;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-server.html#cfn-transfer-server-protocols
+     * 
+     */
+    @JsonIgnore
+    public void setProtocols(List<CharSequence> protocols) {
+        this.protocols = protocols;
+    }
+
+    public Server withProtocols(List<CharSequence> protocols) {
+        this.protocols = protocols;
         return this;
     }
 
@@ -225,14 +264,37 @@ public class Server {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-server.html#cfn-transfer-server-certificate
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getCertificate() {
+        return certificate;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-server.html#cfn-transfer-server-certificate
+     * 
+     */
+    @JsonIgnore
+    public void setCertificate(CharSequence certificate) {
+        this.certificate = certificate;
+    }
+
+    public Server withCertificate(CharSequence certificate) {
+        this.certificate = certificate;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("loggingRole", loggingRole).append("identityProviderDetails", identityProviderDetails).append("endpointType", endpointType).append("endpointDetails", endpointDetails).append("identityProviderType", identityProviderType).append("tags", tags).toString();
+        return new ToStringBuilder(this).append("loggingRole", loggingRole).append("protocols", protocols).append("identityProviderDetails", identityProviderDetails).append("endpointType", endpointType).append("endpointDetails", endpointDetails).append("identityProviderType", identityProviderType).append("tags", tags).append("certificate", certificate).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(endpointType).append(endpointDetails).append(identityProviderType).append(identityProviderDetails).append(loggingRole).append(tags).toHashCode();
+        return new HashCodeBuilder().append(endpointType).append(endpointDetails).append(certificate).append(identityProviderType).append(identityProviderDetails).append(protocols).append(loggingRole).append(tags).toHashCode();
     }
 
     @Override
@@ -244,7 +306,7 @@ public class Server {
             return false;
         }
         Server rhs = ((Server) other);
-        return new EqualsBuilder().append(endpointType, rhs.endpointType).append(endpointDetails, rhs.endpointDetails).append(identityProviderType, rhs.identityProviderType).append(identityProviderDetails, rhs.identityProviderDetails).append(loggingRole, rhs.loggingRole).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(endpointType, rhs.endpointType).append(endpointDetails, rhs.endpointDetails).append(certificate, rhs.certificate).append(identityProviderType, rhs.identityProviderType).append(identityProviderDetails, rhs.identityProviderDetails).append(protocols, rhs.protocols).append(loggingRole, rhs.loggingRole).append(tags, rhs.tags).isEquals();
     }
 
 }

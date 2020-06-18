@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MSK_Cluster.BrokerLogs.schema.json",
+  "title" : "ClusterBrokerLogs",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-brokerlogs.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.msk.ClusterBrokerLogs",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ClusterBrokerLogs>" ],
+  "properties" : {
+    "S3" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-brokerlogs.html#cfn-msk-cluster-brokerlogs-s3",
+      "$ref" : "AWS_MSK_Cluster.S3.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.msk.ClusterS3>"
+    },
+    "Firehose" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-brokerlogs.html#cfn-msk-cluster-brokerlogs-firehose",
+      "$ref" : "AWS_MSK_Cluster.Firehose.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.msk.ClusterFirehose>"
+    },
+    "CloudWatchLogs" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-brokerlogs.html#cfn-msk-cluster-brokerlogs-cloudwatchlogs",
+      "$ref" : "AWS_MSK_Cluster.CloudWatchLogs.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.msk.ClusterCloudWatchLogs>"
+    }
+  }
+}

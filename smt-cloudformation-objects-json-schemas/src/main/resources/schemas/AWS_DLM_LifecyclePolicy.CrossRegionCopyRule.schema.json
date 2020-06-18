@@ -1,0 +1,36 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_DLM_LifecyclePolicy.CrossRegionCopyRule.schema.json",
+  "title" : "LifecyclePolicyCrossRegionCopyRule",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-crossregioncopyrule.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.dlm.LifecyclePolicyCrossRegionCopyRule",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<LifecyclePolicyCrossRegionCopyRule>" ],
+  "properties" : {
+    "TargetRegion" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-crossregioncopyrule.html#cfn-dlm-lifecyclepolicy-crossregioncopyrule-targetregion",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Encrypted" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-crossregioncopyrule.html#cfn-dlm-lifecyclepolicy-crossregioncopyrule-encrypted",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "CmkArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-crossregioncopyrule.html#cfn-dlm-lifecyclepolicy-crossregioncopyrule-cmkarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RetainRule" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-crossregioncopyrule.html#cfn-dlm-lifecyclepolicy-crossregioncopyrule-retainrule",
+      "$ref" : "AWS_DLM_LifecyclePolicy.CrossRegionCopyRetainRule.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.dlm.LifecyclePolicyCrossRegionCopyRetainRule>"
+    },
+    "CopyTags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-crossregioncopyrule.html#cfn-dlm-lifecyclepolicy-crossregioncopyrule-copytags",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

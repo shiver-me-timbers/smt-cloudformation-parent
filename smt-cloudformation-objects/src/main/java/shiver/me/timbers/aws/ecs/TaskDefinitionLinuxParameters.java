@@ -26,7 +26,9 @@ import shiver.me.timbers.aws.Property;
     "Capabilities",
     "Devices",
     "InitProcessEnabled",
+    "MaxSwap",
     "SharedMemorySize",
+    "Swappiness",
     "Tmpfs"
 })
 public class TaskDefinitionLinuxParameters implements Property<TaskDefinitionLinuxParameters>
@@ -57,12 +59,26 @@ public class TaskDefinitionLinuxParameters implements Property<TaskDefinitionLin
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-initprocessenabled")
     private CharSequence initProcessEnabled;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-maxswap
+     * 
+     */
+    @JsonProperty("MaxSwap")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-maxswap")
+    private Number maxSwap;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-sharedmemorysize
      * 
      */
     @JsonProperty("SharedMemorySize")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-sharedmemorysize")
     private Number sharedMemorySize;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-swappiness
+     * 
+     */
+    @JsonProperty("Swappiness")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-swappiness")
+    private Number swappiness;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-tmpfs
      * 
@@ -146,6 +162,29 @@ public class TaskDefinitionLinuxParameters implements Property<TaskDefinitionLin
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-maxswap
+     * 
+     */
+    @JsonIgnore
+    public Number getMaxSwap() {
+        return maxSwap;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-maxswap
+     * 
+     */
+    @JsonIgnore
+    public void setMaxSwap(Number maxSwap) {
+        this.maxSwap = maxSwap;
+    }
+
+    public TaskDefinitionLinuxParameters withMaxSwap(Number maxSwap) {
+        this.maxSwap = maxSwap;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-sharedmemorysize
      * 
      */
@@ -165,6 +204,29 @@ public class TaskDefinitionLinuxParameters implements Property<TaskDefinitionLin
 
     public TaskDefinitionLinuxParameters withSharedMemorySize(Number sharedMemorySize) {
         this.sharedMemorySize = sharedMemorySize;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-swappiness
+     * 
+     */
+    @JsonIgnore
+    public Number getSwappiness() {
+        return swappiness;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-swappiness
+     * 
+     */
+    @JsonIgnore
+    public void setSwappiness(Number swappiness) {
+        this.swappiness = swappiness;
+    }
+
+    public TaskDefinitionLinuxParameters withSwappiness(Number swappiness) {
+        this.swappiness = swappiness;
         return this;
     }
 
@@ -193,12 +255,12 @@ public class TaskDefinitionLinuxParameters implements Property<TaskDefinitionLin
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("capabilities", capabilities).append("devices", devices).append("initProcessEnabled", initProcessEnabled).append("sharedMemorySize", sharedMemorySize).append("tmpfs", tmpfs).toString();
+        return new ToStringBuilder(this).append("capabilities", capabilities).append("devices", devices).append("initProcessEnabled", initProcessEnabled).append("maxSwap", maxSwap).append("sharedMemorySize", sharedMemorySize).append("swappiness", swappiness).append("tmpfs", tmpfs).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(tmpfs).append(capabilities).append(initProcessEnabled).append(sharedMemorySize).append(devices).toHashCode();
+        return new HashCodeBuilder().append(swappiness).append(tmpfs).append(capabilities).append(devices).append(maxSwap).append(initProcessEnabled).append(sharedMemorySize).toHashCode();
     }
 
     @Override
@@ -210,7 +272,7 @@ public class TaskDefinitionLinuxParameters implements Property<TaskDefinitionLin
             return false;
         }
         TaskDefinitionLinuxParameters rhs = ((TaskDefinitionLinuxParameters) other);
-        return new EqualsBuilder().append(tmpfs, rhs.tmpfs).append(capabilities, rhs.capabilities).append(initProcessEnabled, rhs.initProcessEnabled).append(sharedMemorySize, rhs.sharedMemorySize).append(devices, rhs.devices).isEquals();
+        return new EqualsBuilder().append(swappiness, rhs.swappiness).append(tmpfs, rhs.tmpfs).append(capabilities, rhs.capabilities).append(devices, rhs.devices).append(maxSwap, rhs.maxSwap).append(initProcessEnabled, rhs.initProcessEnabled).append(sharedMemorySize, rhs.sharedMemorySize).isEquals();
     }
 
 }

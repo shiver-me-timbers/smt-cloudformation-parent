@@ -6,6 +6,11 @@
   "type" : "object",
   "javaType" : "shiver.me.timbers.aws.servicecatalog.CloudFormationProduct",
   "properties" : {
+    "ReplaceProvisioningArtifacts" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-replaceprovisioningartifacts",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
     "Owner" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-owner",
       "type" : "string",

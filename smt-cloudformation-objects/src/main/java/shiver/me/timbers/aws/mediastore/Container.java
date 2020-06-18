@@ -12,6 +12,7 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 import shiver.me.timbers.aws.Property;
+import shiver.me.timbers.aws.Tag;
 
 
 /**
@@ -23,10 +24,12 @@ import shiver.me.timbers.aws.Property;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "Policy",
+    "MetricPolicy",
     "ContainerName",
     "CorsPolicy",
     "LifecyclePolicy",
-    "AccessLoggingEnabled"
+    "AccessLoggingEnabled",
+    "Tags"
 })
 public class Container {
 
@@ -37,6 +40,15 @@ public class Container {
     @JsonProperty("Policy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediastore-container.html#cfn-mediastore-container-policy")
     private CharSequence policy;
+    /**
+     * ContainerMetricPolicy
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediastore-container-metricpolicy.html
+     * 
+     */
+    @JsonProperty("MetricPolicy")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediastore-container-metricpolicy.html")
+    private Property<ContainerMetricPolicy> metricPolicy;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediastore-container.html#cfn-mediastore-container-containername
      * 
@@ -65,6 +77,13 @@ public class Container {
     @JsonProperty("AccessLoggingEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediastore-container.html#cfn-mediastore-container-accessloggingenabled")
     private CharSequence accessLoggingEnabled;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediastore-container.html#cfn-mediastore-container-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediastore-container.html#cfn-mediastore-container-tags")
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediastore-container.html#cfn-mediastore-container-policy
@@ -86,6 +105,33 @@ public class Container {
 
     public Container withPolicy(CharSequence policy) {
         this.policy = policy;
+        return this;
+    }
+
+    /**
+     * ContainerMetricPolicy
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediastore-container-metricpolicy.html
+     * 
+     */
+    @JsonIgnore
+    public Property<ContainerMetricPolicy> getMetricPolicy() {
+        return metricPolicy;
+    }
+
+    /**
+     * ContainerMetricPolicy
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediastore-container-metricpolicy.html
+     * 
+     */
+    @JsonIgnore
+    public void setMetricPolicy(Property<ContainerMetricPolicy> metricPolicy) {
+        this.metricPolicy = metricPolicy;
+    }
+
+    public Container withMetricPolicy(Property<ContainerMetricPolicy> metricPolicy) {
+        this.metricPolicy = metricPolicy;
         return this;
     }
 
@@ -181,14 +227,37 @@ public class Container {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediastore-container.html#cfn-mediastore-container-tags
+     * 
+     */
+    @JsonIgnore
+    public List<Property<Tag>> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediastore-container.html#cfn-mediastore-container-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+    }
+
+    public Container withTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("policy", policy).append("containerName", containerName).append("corsPolicy", corsPolicy).append("lifecyclePolicy", lifecyclePolicy).append("accessLoggingEnabled", accessLoggingEnabled).toString();
+        return new ToStringBuilder(this).append("policy", policy).append("metricPolicy", metricPolicy).append("containerName", containerName).append("corsPolicy", corsPolicy).append("lifecyclePolicy", lifecyclePolicy).append("accessLoggingEnabled", accessLoggingEnabled).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(lifecyclePolicy).append(containerName).append(policy).append(corsPolicy).append(accessLoggingEnabled).toHashCode();
+        return new HashCodeBuilder().append(lifecyclePolicy).append(containerName).append(metricPolicy).append(corsPolicy).append(policy).append(accessLoggingEnabled).append(tags).toHashCode();
     }
 
     @Override
@@ -200,7 +269,7 @@ public class Container {
             return false;
         }
         Container rhs = ((Container) other);
-        return new EqualsBuilder().append(lifecyclePolicy, rhs.lifecyclePolicy).append(containerName, rhs.containerName).append(policy, rhs.policy).append(corsPolicy, rhs.corsPolicy).append(accessLoggingEnabled, rhs.accessLoggingEnabled).isEquals();
+        return new EqualsBuilder().append(lifecyclePolicy, rhs.lifecyclePolicy).append(containerName, rhs.containerName).append(metricPolicy, rhs.metricPolicy).append(corsPolicy, rhs.corsPolicy).append(policy, rhs.policy).append(accessLoggingEnabled, rhs.accessLoggingEnabled).append(tags, rhs.tags).isEquals();
     }
 
 }

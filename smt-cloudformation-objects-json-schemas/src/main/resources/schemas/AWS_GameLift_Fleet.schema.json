@@ -11,6 +11,11 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "CertificateConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-certificateconfiguration",
+      "$ref" : "AWS_GameLift_Fleet.CertificateConfiguration.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.gamelift.FleetCertificateConfiguration>"
+    },
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-description",
       "type" : "string",
@@ -35,6 +40,16 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "FleetType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-fleettype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "InstanceRoleARN" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-instancerolearn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "LogPaths" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-logpaths",
       "type" : "array",
@@ -49,6 +64,15 @@
       "type" : "integer",
       "javaType" : "java.lang.Number"
     },
+    "MetricGroups" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-metricgroups",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    },
     "MinSize" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-minsize",
       "type" : "integer",
@@ -56,6 +80,36 @@
     },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "NewGameSessionProtectionPolicy" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-newgamesessionprotectionpolicy",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "PeerVpcAwsAccountId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-peervpcawsaccountid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "PeerVpcId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-peervpcid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ResourceCreationLimitPolicy" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-resourcecreationlimitpolicy",
+      "$ref" : "AWS_GameLift_Fleet.ResourceCreationLimitPolicy.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.gamelift.FleetResourceCreationLimitPolicy>"
+    },
+    "RuntimeConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-runtimeconfiguration",
+      "$ref" : "AWS_GameLift_Fleet.RuntimeConfiguration.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.gamelift.FleetRuntimeConfiguration>"
+    },
+    "ScriptId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-scriptid",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },

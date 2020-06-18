@@ -22,6 +22,8 @@ import shiver.me.timbers.aws.Property;
 @JsonPropertyOrder({
     "TableName",
     "AwsRegion",
+    "Versioned",
+    "DeltaSyncConfig",
     "UseCallerCredentials"
 })
 public class DataSourceDynamoDBConfig implements Property<DataSourceDynamoDBConfig>
@@ -41,6 +43,22 @@ public class DataSourceDynamoDBConfig implements Property<DataSourceDynamoDBConf
     @JsonProperty("AwsRegion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-dynamodbconfig.html#cfn-appsync-datasource-dynamodbconfig-awsregion")
     private CharSequence awsRegion;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-dynamodbconfig.html#cfn-appsync-datasource-dynamodbconfig-versioned
+     * 
+     */
+    @JsonProperty("Versioned")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-dynamodbconfig.html#cfn-appsync-datasource-dynamodbconfig-versioned")
+    private CharSequence versioned;
+    /**
+     * DataSourceDeltaSyncConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-deltasyncconfig.html
+     * 
+     */
+    @JsonProperty("DeltaSyncConfig")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-deltasyncconfig.html")
+    private Property<DataSourceDeltaSyncConfig> deltaSyncConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-dynamodbconfig.html#cfn-appsync-datasource-dynamodbconfig-usecallercredentials
      * 
@@ -96,6 +114,56 @@ public class DataSourceDynamoDBConfig implements Property<DataSourceDynamoDBConf
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-dynamodbconfig.html#cfn-appsync-datasource-dynamodbconfig-versioned
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getVersioned() {
+        return versioned;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-dynamodbconfig.html#cfn-appsync-datasource-dynamodbconfig-versioned
+     * 
+     */
+    @JsonIgnore
+    public void setVersioned(CharSequence versioned) {
+        this.versioned = versioned;
+    }
+
+    public DataSourceDynamoDBConfig withVersioned(CharSequence versioned) {
+        this.versioned = versioned;
+        return this;
+    }
+
+    /**
+     * DataSourceDeltaSyncConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-deltasyncconfig.html
+     * 
+     */
+    @JsonIgnore
+    public Property<DataSourceDeltaSyncConfig> getDeltaSyncConfig() {
+        return deltaSyncConfig;
+    }
+
+    /**
+     * DataSourceDeltaSyncConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-deltasyncconfig.html
+     * 
+     */
+    @JsonIgnore
+    public void setDeltaSyncConfig(Property<DataSourceDeltaSyncConfig> deltaSyncConfig) {
+        this.deltaSyncConfig = deltaSyncConfig;
+    }
+
+    public DataSourceDynamoDBConfig withDeltaSyncConfig(Property<DataSourceDeltaSyncConfig> deltaSyncConfig) {
+        this.deltaSyncConfig = deltaSyncConfig;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-dynamodbconfig.html#cfn-appsync-datasource-dynamodbconfig-usecallercredentials
      * 
      */
@@ -120,12 +188,12 @@ public class DataSourceDynamoDBConfig implements Property<DataSourceDynamoDBConf
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("tableName", tableName).append("awsRegion", awsRegion).append("useCallerCredentials", useCallerCredentials).toString();
+        return new ToStringBuilder(this).append("tableName", tableName).append("awsRegion", awsRegion).append("versioned", versioned).append("deltaSyncConfig", deltaSyncConfig).append("useCallerCredentials", useCallerCredentials).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(useCallerCredentials).append(awsRegion).append(tableName).toHashCode();
+        return new HashCodeBuilder().append(useCallerCredentials).append(awsRegion).append(versioned).append(tableName).append(deltaSyncConfig).toHashCode();
     }
 
     @Override
@@ -137,7 +205,7 @@ public class DataSourceDynamoDBConfig implements Property<DataSourceDynamoDBConf
             return false;
         }
         DataSourceDynamoDBConfig rhs = ((DataSourceDynamoDBConfig) other);
-        return new EqualsBuilder().append(useCallerCredentials, rhs.useCallerCredentials).append(awsRegion, rhs.awsRegion).append(tableName, rhs.tableName).isEquals();
+        return new EqualsBuilder().append(useCallerCredentials, rhs.useCallerCredentials).append(awsRegion, rhs.awsRegion).append(versioned, rhs.versioned).append(tableName, rhs.tableName).append(deltaSyncConfig, rhs.deltaSyncConfig).isEquals();
     }
 
 }

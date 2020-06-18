@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AccessAnalyzer_AnalyzerResource.schema.json",
+  "title" : "AnalyzerResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-accessanalyzer-analyzer.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.accessanalyzer.AnalyzerResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<AnalyzerResource>", "shiver.me.timbers.aws.HasCondition<AnalyzerResource>", "shiver.me.timbers.aws.HasAttributes<AnalyzerAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::AccessAnalyzer::Analyzer"
+    },
+    "Properties" : {
+      "$ref" : "AWS_AccessAnalyzer_Analyzer.schema.json"
+    }
+  }
+}

@@ -21,6 +21,11 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-rolemapping.html#cfn-cognito-identitypoolroleattachment-rolemapping-rulesconfiguration",
       "$ref" : "AWS_Cognito_IdentityPoolRoleAttachment.RulesConfigurationType.schema.json",
       "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cognito.IdentityPoolRoleAttachmentRulesConfigurationType>"
+    },
+    "IdentityProvider" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-rolemapping.html#cfn-cognito-identitypoolroleattachment-rolemapping-identityprovider",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
     }
   }
 }

@@ -1,0 +1,50 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_S3_AccessPoint.schema.json",
+  "title" : "AccessPoint",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3-accesspoint.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.s3.AccessPoint",
+  "properties" : {
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3-accesspoint.html#cfn-s3-accesspoint-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Bucket" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3-accesspoint.html#cfn-s3-accesspoint-bucket",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "VpcConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3-accesspoint.html#cfn-s3-accesspoint-vpcconfiguration",
+      "$ref" : "AWS_S3_AccessPoint.VpcConfiguration.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.AccessPointVpcConfiguration>"
+    },
+    "PublicAccessBlockConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3-accesspoint.html#cfn-s3-accesspoint-publicaccessblockconfiguration",
+      "$ref" : "AWS_S3_AccessPoint.PublicAccessBlockConfiguration.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.AccessPointPublicAccessBlockConfiguration>"
+    },
+    "Policy" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3-accesspoint.html#cfn-s3-accesspoint-policy",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
+    },
+    "PolicyStatus" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3-accesspoint.html#cfn-s3-accesspoint-policystatus",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
+    },
+    "NetworkOrigin" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3-accesspoint.html#cfn-s3-accesspoint-networkorigin",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "CreationDate" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3-accesspoint.html#cfn-s3-accesspoint-creationdate",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

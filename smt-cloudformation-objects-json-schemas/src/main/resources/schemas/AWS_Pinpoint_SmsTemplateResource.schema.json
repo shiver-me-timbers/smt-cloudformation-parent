@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_SmsTemplateResource.schema.json",
+  "title" : "SmsTemplateResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-smstemplate.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.pinpoint.SmsTemplateResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<SmsTemplateResource>", "shiver.me.timbers.aws.HasCondition<SmsTemplateResource>", "shiver.me.timbers.aws.HasAttributes<SmsTemplateAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Pinpoint::SmsTemplate"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Pinpoint_SmsTemplate.schema.json"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoT_ProvisioningTemplateResource.schema.json",
+  "title" : "ProvisioningTemplateResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-provisioningtemplate.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.iot.ProvisioningTemplateResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ProvisioningTemplateResource>", "shiver.me.timbers.aws.HasCondition<ProvisioningTemplateResource>", "shiver.me.timbers.aws.HasAttributes<ProvisioningTemplateAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::IoT::ProvisioningTemplate"
+    },
+    "Properties" : {
+      "$ref" : "AWS_IoT_ProvisioningTemplate.schema.json"
+    }
+  }
+}

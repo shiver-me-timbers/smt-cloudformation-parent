@@ -36,6 +36,7 @@ import shiver.me.timbers.aws.Tag;
     "DatabaseName",
     "DeletionProtection",
     "EnableCloudwatchLogsExports",
+    "EnableHttpEndpoint",
     "EnableIAMDatabaseAuthentication",
     "Engine",
     "EngineMode",
@@ -132,6 +133,13 @@ public class DBCluster {
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-enablecloudwatchlogsexports")
     private Set<CharSequence> enableCloudwatchLogsExports = new LinkedHashSet<CharSequence>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-enablehttpendpoint
+     * 
+     */
+    @JsonProperty("EnableHttpEndpoint")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-enablehttpendpoint")
+    private CharSequence enableHttpEndpoint;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-enableiamdatabaseauthentication
      * 
@@ -503,6 +511,29 @@ public class DBCluster {
 
     public DBCluster withEnableCloudwatchLogsExports(Set<CharSequence> enableCloudwatchLogsExports) {
         this.enableCloudwatchLogsExports = enableCloudwatchLogsExports;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-enablehttpendpoint
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getEnableHttpEndpoint() {
+        return enableHttpEndpoint;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-enablehttpendpoint
+     * 
+     */
+    @JsonIgnore
+    public void setEnableHttpEndpoint(CharSequence enableHttpEndpoint) {
+        this.enableHttpEndpoint = enableHttpEndpoint;
+    }
+
+    public DBCluster withEnableHttpEndpoint(CharSequence enableHttpEndpoint) {
+        this.enableHttpEndpoint = enableHttpEndpoint;
         return this;
     }
 
@@ -972,12 +1003,12 @@ public class DBCluster {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("associatedRoles", associatedRoles).append("availabilityZones", availabilityZones).append("backtrackWindow", backtrackWindow).append("backupRetentionPeriod", backupRetentionPeriod).append("dBClusterIdentifier", dBClusterIdentifier).append("dBClusterParameterGroupName", dBClusterParameterGroupName).append("dBSubnetGroupName", dBSubnetGroupName).append("databaseName", databaseName).append("deletionProtection", deletionProtection).append("enableCloudwatchLogsExports", enableCloudwatchLogsExports).append("enableIAMDatabaseAuthentication", enableIAMDatabaseAuthentication).append("engine", engine).append("engineMode", engineMode).append("engineVersion", engineVersion).append("kmsKeyId", kmsKeyId).append("masterUserPassword", masterUserPassword).append("masterUsername", masterUsername).append("port", port).append("preferredBackupWindow", preferredBackupWindow).append("preferredMaintenanceWindow", preferredMaintenanceWindow).append("replicationSourceIdentifier", replicationSourceIdentifier).append("restoreType", restoreType).append("scalingConfiguration", scalingConfiguration).append("snapshotIdentifier", snapshotIdentifier).append("sourceDBClusterIdentifier", sourceDBClusterIdentifier).append("sourceRegion", sourceRegion).append("storageEncrypted", storageEncrypted).append("tags", tags).append("useLatestRestorableTime", useLatestRestorableTime).append("vpcSecurityGroupIds", vpcSecurityGroupIds).toString();
+        return new ToStringBuilder(this).append("associatedRoles", associatedRoles).append("availabilityZones", availabilityZones).append("backtrackWindow", backtrackWindow).append("backupRetentionPeriod", backupRetentionPeriod).append("dBClusterIdentifier", dBClusterIdentifier).append("dBClusterParameterGroupName", dBClusterParameterGroupName).append("dBSubnetGroupName", dBSubnetGroupName).append("databaseName", databaseName).append("deletionProtection", deletionProtection).append("enableCloudwatchLogsExports", enableCloudwatchLogsExports).append("enableHttpEndpoint", enableHttpEndpoint).append("enableIAMDatabaseAuthentication", enableIAMDatabaseAuthentication).append("engine", engine).append("engineMode", engineMode).append("engineVersion", engineVersion).append("kmsKeyId", kmsKeyId).append("masterUserPassword", masterUserPassword).append("masterUsername", masterUsername).append("port", port).append("preferredBackupWindow", preferredBackupWindow).append("preferredMaintenanceWindow", preferredMaintenanceWindow).append("replicationSourceIdentifier", replicationSourceIdentifier).append("restoreType", restoreType).append("scalingConfiguration", scalingConfiguration).append("snapshotIdentifier", snapshotIdentifier).append("sourceDBClusterIdentifier", sourceDBClusterIdentifier).append("sourceRegion", sourceRegion).append("storageEncrypted", storageEncrypted).append("tags", tags).append("useLatestRestorableTime", useLatestRestorableTime).append("vpcSecurityGroupIds", vpcSecurityGroupIds).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(restoreType).append(vpcSecurityGroupIds).append(databaseName).append(associatedRoles).append(availabilityZones).append(preferredBackupWindow).append(dBSubnetGroupName).append(deletionProtection).append(engineMode).append(engine).append(replicationSourceIdentifier).append(masterUserPassword).append(scalingConfiguration).append(engineVersion).append(masterUsername).append(backtrackWindow).append(snapshotIdentifier).append(storageEncrypted).append(sourceDBClusterIdentifier).append(tags).append(enableIAMDatabaseAuthentication).append(dBClusterParameterGroupName).append(port).append(preferredMaintenanceWindow).append(sourceRegion).append(backupRetentionPeriod).append(useLatestRestorableTime).append(kmsKeyId).append(dBClusterIdentifier).append(enableCloudwatchLogsExports).toHashCode();
+        return new HashCodeBuilder().append(restoreType).append(vpcSecurityGroupIds).append(databaseName).append(associatedRoles).append(availabilityZones).append(preferredBackupWindow).append(dBSubnetGroupName).append(deletionProtection).append(engineMode).append(engine).append(replicationSourceIdentifier).append(masterUserPassword).append(scalingConfiguration).append(engineVersion).append(masterUsername).append(enableHttpEndpoint).append(backtrackWindow).append(snapshotIdentifier).append(storageEncrypted).append(sourceDBClusterIdentifier).append(tags).append(enableIAMDatabaseAuthentication).append(dBClusterParameterGroupName).append(port).append(preferredMaintenanceWindow).append(sourceRegion).append(backupRetentionPeriod).append(useLatestRestorableTime).append(kmsKeyId).append(dBClusterIdentifier).append(enableCloudwatchLogsExports).toHashCode();
     }
 
     @Override
@@ -989,7 +1020,7 @@ public class DBCluster {
             return false;
         }
         DBCluster rhs = ((DBCluster) other);
-        return new EqualsBuilder().append(restoreType, rhs.restoreType).append(vpcSecurityGroupIds, rhs.vpcSecurityGroupIds).append(databaseName, rhs.databaseName).append(associatedRoles, rhs.associatedRoles).append(availabilityZones, rhs.availabilityZones).append(preferredBackupWindow, rhs.preferredBackupWindow).append(dBSubnetGroupName, rhs.dBSubnetGroupName).append(deletionProtection, rhs.deletionProtection).append(engineMode, rhs.engineMode).append(engine, rhs.engine).append(replicationSourceIdentifier, rhs.replicationSourceIdentifier).append(masterUserPassword, rhs.masterUserPassword).append(scalingConfiguration, rhs.scalingConfiguration).append(engineVersion, rhs.engineVersion).append(masterUsername, rhs.masterUsername).append(backtrackWindow, rhs.backtrackWindow).append(snapshotIdentifier, rhs.snapshotIdentifier).append(storageEncrypted, rhs.storageEncrypted).append(sourceDBClusterIdentifier, rhs.sourceDBClusterIdentifier).append(tags, rhs.tags).append(enableIAMDatabaseAuthentication, rhs.enableIAMDatabaseAuthentication).append(dBClusterParameterGroupName, rhs.dBClusterParameterGroupName).append(port, rhs.port).append(preferredMaintenanceWindow, rhs.preferredMaintenanceWindow).append(sourceRegion, rhs.sourceRegion).append(backupRetentionPeriod, rhs.backupRetentionPeriod).append(useLatestRestorableTime, rhs.useLatestRestorableTime).append(kmsKeyId, rhs.kmsKeyId).append(dBClusterIdentifier, rhs.dBClusterIdentifier).append(enableCloudwatchLogsExports, rhs.enableCloudwatchLogsExports).isEquals();
+        return new EqualsBuilder().append(restoreType, rhs.restoreType).append(vpcSecurityGroupIds, rhs.vpcSecurityGroupIds).append(databaseName, rhs.databaseName).append(associatedRoles, rhs.associatedRoles).append(availabilityZones, rhs.availabilityZones).append(preferredBackupWindow, rhs.preferredBackupWindow).append(dBSubnetGroupName, rhs.dBSubnetGroupName).append(deletionProtection, rhs.deletionProtection).append(engineMode, rhs.engineMode).append(engine, rhs.engine).append(replicationSourceIdentifier, rhs.replicationSourceIdentifier).append(masterUserPassword, rhs.masterUserPassword).append(scalingConfiguration, rhs.scalingConfiguration).append(engineVersion, rhs.engineVersion).append(masterUsername, rhs.masterUsername).append(enableHttpEndpoint, rhs.enableHttpEndpoint).append(backtrackWindow, rhs.backtrackWindow).append(snapshotIdentifier, rhs.snapshotIdentifier).append(storageEncrypted, rhs.storageEncrypted).append(sourceDBClusterIdentifier, rhs.sourceDBClusterIdentifier).append(tags, rhs.tags).append(enableIAMDatabaseAuthentication, rhs.enableIAMDatabaseAuthentication).append(dBClusterParameterGroupName, rhs.dBClusterParameterGroupName).append(port, rhs.port).append(preferredMaintenanceWindow, rhs.preferredMaintenanceWindow).append(sourceRegion, rhs.sourceRegion).append(backupRetentionPeriod, rhs.backupRetentionPeriod).append(useLatestRestorableTime, rhs.useLatestRestorableTime).append(kmsKeyId, rhs.kmsKeyId).append(dBClusterIdentifier, rhs.dBClusterIdentifier).append(enableCloudwatchLogsExports, rhs.enableCloudwatchLogsExports).isEquals();
     }
 
 }

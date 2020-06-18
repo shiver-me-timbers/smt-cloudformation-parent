@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CE_CostCategoryAttributes.schema.json",
+  "title" : "CostCategoryAttributes",
+  "type" : "string",
+  "enum" : [ "Arn", "EffectiveStart" ],
+  "javaType" : "shiver.me.timbers.aws.ce.CostCategoryAttributes"
+}

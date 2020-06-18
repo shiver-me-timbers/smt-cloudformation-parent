@@ -1,0 +1,36 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoTEvents_DetectorModel.IotSiteWise.schema.json",
+  "title" : "DetectorModelIotSiteWise",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-iotsitewise.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.iotevents.DetectorModelIotSiteWise",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DetectorModelIotSiteWise>" ],
+  "properties" : {
+    "EntryId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-iotsitewise.html#cfn-iotevents-detectormodel-iotsitewise-entryid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "PropertyAlias" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-iotsitewise.html#cfn-iotevents-detectormodel-iotsitewise-propertyalias",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "PropertyValue" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-iotsitewise.html#cfn-iotevents-detectormodel-iotsitewise-propertyvalue",
+      "$ref" : "AWS_IoTEvents_DetectorModel.AssetPropertyValue.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotevents.DetectorModelAssetPropertyValue>"
+    },
+    "AssetId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-iotsitewise.html#cfn-iotevents-detectormodel-iotsitewise-assetid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "PropertyId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-iotsitewise.html#cfn-iotevents-detectormodel-iotsitewise-propertyid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

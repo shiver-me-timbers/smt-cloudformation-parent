@@ -12,6 +12,7 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 import shiver.me.timbers.aws.Property;
+import shiver.me.timbers.aws.Tag;
 
 
 /**
@@ -24,7 +25,8 @@ import shiver.me.timbers.aws.Property;
 @JsonPropertyOrder({
     "AccountAggregationSources",
     "ConfigurationAggregatorName",
-    "OrganizationAggregationSource"
+    "OrganizationAggregationSource",
+    "Tags"
 })
 public class ConfigurationAggregator {
 
@@ -51,6 +53,13 @@ public class ConfigurationAggregator {
     @JsonProperty("OrganizationAggregationSource")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html")
     private Property<ConfigurationAggregatorOrganizationAggregationSource> organizationAggregationSource;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationaggregator.html#cfn-config-configurationaggregator-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationaggregator.html#cfn-config-configurationaggregator-tags")
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationaggregator.html#cfn-config-configurationaggregator-accountaggregationsources
@@ -125,14 +134,37 @@ public class ConfigurationAggregator {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationaggregator.html#cfn-config-configurationaggregator-tags
+     * 
+     */
+    @JsonIgnore
+    public List<Property<Tag>> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationaggregator.html#cfn-config-configurationaggregator-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+    }
+
+    public ConfigurationAggregator withTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("accountAggregationSources", accountAggregationSources).append("configurationAggregatorName", configurationAggregatorName).append("organizationAggregationSource", organizationAggregationSource).toString();
+        return new ToStringBuilder(this).append("accountAggregationSources", accountAggregationSources).append("configurationAggregatorName", configurationAggregatorName).append("organizationAggregationSource", organizationAggregationSource).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(accountAggregationSources).append(organizationAggregationSource).append(configurationAggregatorName).toHashCode();
+        return new HashCodeBuilder().append(accountAggregationSources).append(organizationAggregationSource).append(configurationAggregatorName).append(tags).toHashCode();
     }
 
     @Override
@@ -144,7 +176,7 @@ public class ConfigurationAggregator {
             return false;
         }
         ConfigurationAggregator rhs = ((ConfigurationAggregator) other);
-        return new EqualsBuilder().append(accountAggregationSources, rhs.accountAggregationSources).append(organizationAggregationSource, rhs.organizationAggregationSource).append(configurationAggregatorName, rhs.configurationAggregatorName).isEquals();
+        return new EqualsBuilder().append(accountAggregationSources, rhs.accountAggregationSources).append(organizationAggregationSource, rhs.organizationAggregationSource).append(configurationAggregatorName, rhs.configurationAggregatorName).append(tags, rhs.tags).isEquals();
     }
 
 }

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_RDS_DBProxyTargetGroupResource.schema.json",
+  "title" : "DBProxyTargetGroupResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbproxytargetgroup.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.rds.DBProxyTargetGroupResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<DBProxyTargetGroupResource>", "shiver.me.timbers.aws.HasCondition<DBProxyTargetGroupResource>", "shiver.me.timbers.aws.HasAttributes<DBProxyTargetGroupAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::RDS::DBProxyTargetGroup"
+    },
+    "Properties" : {
+      "$ref" : "AWS_RDS_DBProxyTargetGroup.schema.json"
+    }
+  }
+}

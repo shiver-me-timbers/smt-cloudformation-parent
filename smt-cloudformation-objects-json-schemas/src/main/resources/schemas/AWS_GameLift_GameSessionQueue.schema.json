@@ -1,0 +1,36 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_GameLift_GameSessionQueue.schema.json",
+  "title" : "GameSessionQueue",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-gamesessionqueue.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.gamelift.GameSessionQueue",
+  "properties" : {
+    "TimeoutInSeconds" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-gamesessionqueue.html#cfn-gamelift-gamesessionqueue-timeoutinseconds",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "PlayerLatencyPolicies" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-gamesessionqueue.html#cfn-gamelift-gamesessionqueue-playerlatencypolicies",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_GameLift_GameSessionQueue.PlayerLatencyPolicy.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.gamelift.GameSessionQueuePlayerLatencyPolicy>"
+      }
+    },
+    "Destinations" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-gamesessionqueue.html#cfn-gamelift-gamesessionqueue-destinations",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_GameLift_GameSessionQueue.Destination.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.gamelift.GameSessionQueueDestination>"
+      }
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-gamesessionqueue.html#cfn-gamelift-gamesessionqueue-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

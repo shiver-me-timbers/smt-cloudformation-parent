@@ -6,6 +6,11 @@
   "type" : "object",
   "javaType" : "shiver.me.timbers.aws.events.EventBusPolicy",
   "properties" : {
+    "EventBusName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-eventbuspolicy.html#cfn-events-eventbuspolicy-eventbusname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "Condition" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-eventbuspolicy.html#cfn-events-eventbuspolicy-condition",
       "$ref" : "AWS_Events_EventBusPolicy.Condition.schema.json",

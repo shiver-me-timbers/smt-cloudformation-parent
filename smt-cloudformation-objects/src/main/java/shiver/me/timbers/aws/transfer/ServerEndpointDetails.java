@@ -1,6 +1,8 @@
 
 package shiver.me.timbers.aws.transfer;
 
+import java.util.ArrayList;
+import java.util.List;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -20,11 +22,28 @@ import shiver.me.timbers.aws.Property;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
-    "VpcEndpointId"
+    "AddressAllocationIds",
+    "VpcId",
+    "VpcEndpointId",
+    "SubnetIds"
 })
 public class ServerEndpointDetails implements Property<ServerEndpointDetails>
 {
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-transfer-server-endpointdetails.html#cfn-transfer-server-endpointdetails-addressallocationids
+     * 
+     */
+    @JsonProperty("AddressAllocationIds")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-transfer-server-endpointdetails.html#cfn-transfer-server-endpointdetails-addressallocationids")
+    private List<CharSequence> addressAllocationIds = new ArrayList<CharSequence>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-transfer-server-endpointdetails.html#cfn-transfer-server-endpointdetails-vpcid
+     * 
+     */
+    @JsonProperty("VpcId")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-transfer-server-endpointdetails.html#cfn-transfer-server-endpointdetails-vpcid")
+    private CharSequence vpcId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-transfer-server-endpointdetails.html#cfn-transfer-server-endpointdetails-vpcendpointid
      * 
@@ -32,6 +51,59 @@ public class ServerEndpointDetails implements Property<ServerEndpointDetails>
     @JsonProperty("VpcEndpointId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-transfer-server-endpointdetails.html#cfn-transfer-server-endpointdetails-vpcendpointid")
     private CharSequence vpcEndpointId;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-transfer-server-endpointdetails.html#cfn-transfer-server-endpointdetails-subnetids
+     * 
+     */
+    @JsonProperty("SubnetIds")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-transfer-server-endpointdetails.html#cfn-transfer-server-endpointdetails-subnetids")
+    private List<CharSequence> subnetIds = new ArrayList<CharSequence>();
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-transfer-server-endpointdetails.html#cfn-transfer-server-endpointdetails-addressallocationids
+     * 
+     */
+    @JsonIgnore
+    public List<CharSequence> getAddressAllocationIds() {
+        return addressAllocationIds;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-transfer-server-endpointdetails.html#cfn-transfer-server-endpointdetails-addressallocationids
+     * 
+     */
+    @JsonIgnore
+    public void setAddressAllocationIds(List<CharSequence> addressAllocationIds) {
+        this.addressAllocationIds = addressAllocationIds;
+    }
+
+    public ServerEndpointDetails withAddressAllocationIds(List<CharSequence> addressAllocationIds) {
+        this.addressAllocationIds = addressAllocationIds;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-transfer-server-endpointdetails.html#cfn-transfer-server-endpointdetails-vpcid
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getVpcId() {
+        return vpcId;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-transfer-server-endpointdetails.html#cfn-transfer-server-endpointdetails-vpcid
+     * 
+     */
+    @JsonIgnore
+    public void setVpcId(CharSequence vpcId) {
+        this.vpcId = vpcId;
+    }
+
+    public ServerEndpointDetails withVpcId(CharSequence vpcId) {
+        this.vpcId = vpcId;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-transfer-server-endpointdetails.html#cfn-transfer-server-endpointdetails-vpcendpointid
@@ -56,14 +128,37 @@ public class ServerEndpointDetails implements Property<ServerEndpointDetails>
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-transfer-server-endpointdetails.html#cfn-transfer-server-endpointdetails-subnetids
+     * 
+     */
+    @JsonIgnore
+    public List<CharSequence> getSubnetIds() {
+        return subnetIds;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-transfer-server-endpointdetails.html#cfn-transfer-server-endpointdetails-subnetids
+     * 
+     */
+    @JsonIgnore
+    public void setSubnetIds(List<CharSequence> subnetIds) {
+        this.subnetIds = subnetIds;
+    }
+
+    public ServerEndpointDetails withSubnetIds(List<CharSequence> subnetIds) {
+        this.subnetIds = subnetIds;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("vpcEndpointId", vpcEndpointId).toString();
+        return new ToStringBuilder(this).append("addressAllocationIds", addressAllocationIds).append("vpcId", vpcId).append("vpcEndpointId", vpcEndpointId).append("subnetIds", subnetIds).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(vpcEndpointId).toHashCode();
+        return new HashCodeBuilder().append(addressAllocationIds).append(vpcId).append(vpcEndpointId).append(subnetIds).toHashCode();
     }
 
     @Override
@@ -75,7 +170,7 @@ public class ServerEndpointDetails implements Property<ServerEndpointDetails>
             return false;
         }
         ServerEndpointDetails rhs = ((ServerEndpointDetails) other);
-        return new EqualsBuilder().append(vpcEndpointId, rhs.vpcEndpointId).isEquals();
+        return new EqualsBuilder().append(addressAllocationIds, rhs.addressAllocationIds).append(vpcId, rhs.vpcId).append(vpcEndpointId, rhs.vpcEndpointId).append(subnetIds, rhs.subnetIds).isEquals();
     }
 
 }

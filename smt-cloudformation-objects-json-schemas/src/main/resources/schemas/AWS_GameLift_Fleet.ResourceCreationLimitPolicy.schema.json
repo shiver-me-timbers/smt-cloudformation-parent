@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_GameLift_Fleet.ResourceCreationLimitPolicy.schema.json",
+  "title" : "FleetResourceCreationLimitPolicy",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-resourcecreationlimitpolicy.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.gamelift.FleetResourceCreationLimitPolicy",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<FleetResourceCreationLimitPolicy>" ],
+  "properties" : {
+    "NewGameSessionsPerCreator" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-resourcecreationlimitpolicy.html#cfn-gamelift-fleet-resourcecreationlimitpolicy-newgamesessionspercreator",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "PolicyPeriodInMinutes" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-resourcecreationlimitpolicy.html#cfn-gamelift-fleet-resourcecreationlimitpolicy-policyperiodinminutes",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    }
+  }
+}

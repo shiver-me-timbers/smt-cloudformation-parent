@@ -25,6 +25,14 @@
       "$ref" : "AWS_ApiGateway_UsagePlan.QuotaSettings.schema.json",
       "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.apigateway.UsagePlanQuotaSettings>"
     },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html#cfn-apigateway-usageplan-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "Tag.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
+      }
+    },
     "Throttle" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html#cfn-apigateway-usageplan-throttle",
       "$ref" : "AWS_ApiGateway_UsagePlan.ThrottleSettings.schema.json",

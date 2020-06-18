@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Detective_MemberInvitationResource.schema.json",
+  "title" : "MemberInvitationResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-detective-memberinvitation.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.detective.MemberInvitationResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<MemberInvitationResource>", "shiver.me.timbers.aws.HasCondition<MemberInvitationResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Detective::MemberInvitation"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Detective_MemberInvitation.schema.json"
+    }
+  }
+}

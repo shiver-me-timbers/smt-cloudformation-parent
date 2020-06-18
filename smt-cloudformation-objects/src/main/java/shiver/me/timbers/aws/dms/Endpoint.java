@@ -24,8 +24,10 @@ import shiver.me.timbers.aws.Tag;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "KmsKeyId",
+    "KafkaSettings",
     "Port",
     "DatabaseName",
+    "NeptuneSettings",
     "ElasticsearchSettings",
     "S3Settings",
     "EngineName",
@@ -52,6 +54,15 @@ public class Endpoint {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-kmskeyid")
     private CharSequence kmsKeyId;
     /**
+     * EndpointKafkaSettings
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-kafkasettings.html
+     * 
+     */
+    @JsonProperty("KafkaSettings")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-kafkasettings.html")
+    private Property<EndpointKafkaSettings> kafkaSettings;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-port
      * 
      */
@@ -65,6 +76,15 @@ public class Endpoint {
     @JsonProperty("DatabaseName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-databasename")
     private CharSequence databaseName;
+    /**
+     * EndpointNeptuneSettings
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-neptunesettings.html
+     * 
+     */
+    @JsonProperty("NeptuneSettings")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-neptunesettings.html")
+    private Property<EndpointNeptuneSettings> neptuneSettings;
     /**
      * EndpointElasticsearchSettings
      * <p>
@@ -205,6 +225,33 @@ public class Endpoint {
     }
 
     /**
+     * EndpointKafkaSettings
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-kafkasettings.html
+     * 
+     */
+    @JsonIgnore
+    public Property<EndpointKafkaSettings> getKafkaSettings() {
+        return kafkaSettings;
+    }
+
+    /**
+     * EndpointKafkaSettings
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-kafkasettings.html
+     * 
+     */
+    @JsonIgnore
+    public void setKafkaSettings(Property<EndpointKafkaSettings> kafkaSettings) {
+        this.kafkaSettings = kafkaSettings;
+    }
+
+    public Endpoint withKafkaSettings(Property<EndpointKafkaSettings> kafkaSettings) {
+        this.kafkaSettings = kafkaSettings;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-port
      * 
      */
@@ -247,6 +294,33 @@ public class Endpoint {
 
     public Endpoint withDatabaseName(CharSequence databaseName) {
         this.databaseName = databaseName;
+        return this;
+    }
+
+    /**
+     * EndpointNeptuneSettings
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-neptunesettings.html
+     * 
+     */
+    @JsonIgnore
+    public Property<EndpointNeptuneSettings> getNeptuneSettings() {
+        return neptuneSettings;
+    }
+
+    /**
+     * EndpointNeptuneSettings
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-neptunesettings.html
+     * 
+     */
+    @JsonIgnore
+    public void setNeptuneSettings(Property<EndpointNeptuneSettings> neptuneSettings) {
+        this.neptuneSettings = neptuneSettings;
+    }
+
+    public Endpoint withNeptuneSettings(Property<EndpointNeptuneSettings> neptuneSettings) {
+        this.neptuneSettings = neptuneSettings;
         return this;
     }
 
@@ -617,12 +691,12 @@ public class Endpoint {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("kmsKeyId", kmsKeyId).append("port", port).append("databaseName", databaseName).append("elasticsearchSettings", elasticsearchSettings).append("s3Settings", s3Settings).append("engineName", engineName).append("dynamoDbSettings", dynamoDbSettings).append("kinesisSettings", kinesisSettings).append("username", username).append("sslMode", sslMode).append("serverName", serverName).append("extraConnectionAttributes", extraConnectionAttributes).append("endpointType", endpointType).append("tags", tags).append("endpointIdentifier", endpointIdentifier).append("password", password).append("certificateArn", certificateArn).append("mongoDbSettings", mongoDbSettings).toString();
+        return new ToStringBuilder(this).append("kmsKeyId", kmsKeyId).append("kafkaSettings", kafkaSettings).append("port", port).append("databaseName", databaseName).append("neptuneSettings", neptuneSettings).append("elasticsearchSettings", elasticsearchSettings).append("s3Settings", s3Settings).append("engineName", engineName).append("dynamoDbSettings", dynamoDbSettings).append("kinesisSettings", kinesisSettings).append("username", username).append("sslMode", sslMode).append("serverName", serverName).append("extraConnectionAttributes", extraConnectionAttributes).append("endpointType", endpointType).append("tags", tags).append("endpointIdentifier", endpointIdentifier).append("password", password).append("certificateArn", certificateArn).append("mongoDbSettings", mongoDbSettings).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(endpointType).append(endpointIdentifier).append(databaseName).append(elasticsearchSettings).append(serverName).append(dynamoDbSettings).append(kinesisSettings).append(mongoDbSettings).append(sslMode).append(tags).append(password).append(certificateArn).append(port).append(kmsKeyId).append(engineName).append(s3Settings).append(extraConnectionAttributes).append(username).toHashCode();
+        return new HashCodeBuilder().append(endpointType).append(endpointIdentifier).append(databaseName).append(elasticsearchSettings).append(serverName).append(dynamoDbSettings).append(kinesisSettings).append(mongoDbSettings).append(sslMode).append(tags).append(password).append(certificateArn).append(port).append(kafkaSettings).append(kmsKeyId).append(engineName).append(s3Settings).append(extraConnectionAttributes).append(neptuneSettings).append(username).toHashCode();
     }
 
     @Override
@@ -634,7 +708,7 @@ public class Endpoint {
             return false;
         }
         Endpoint rhs = ((Endpoint) other);
-        return new EqualsBuilder().append(endpointType, rhs.endpointType).append(endpointIdentifier, rhs.endpointIdentifier).append(databaseName, rhs.databaseName).append(elasticsearchSettings, rhs.elasticsearchSettings).append(serverName, rhs.serverName).append(dynamoDbSettings, rhs.dynamoDbSettings).append(kinesisSettings, rhs.kinesisSettings).append(mongoDbSettings, rhs.mongoDbSettings).append(sslMode, rhs.sslMode).append(tags, rhs.tags).append(password, rhs.password).append(certificateArn, rhs.certificateArn).append(port, rhs.port).append(kmsKeyId, rhs.kmsKeyId).append(engineName, rhs.engineName).append(s3Settings, rhs.s3Settings).append(extraConnectionAttributes, rhs.extraConnectionAttributes).append(username, rhs.username).isEquals();
+        return new EqualsBuilder().append(endpointType, rhs.endpointType).append(endpointIdentifier, rhs.endpointIdentifier).append(databaseName, rhs.databaseName).append(elasticsearchSettings, rhs.elasticsearchSettings).append(serverName, rhs.serverName).append(dynamoDbSettings, rhs.dynamoDbSettings).append(kinesisSettings, rhs.kinesisSettings).append(mongoDbSettings, rhs.mongoDbSettings).append(sslMode, rhs.sslMode).append(tags, rhs.tags).append(password, rhs.password).append(certificateArn, rhs.certificateArn).append(port, rhs.port).append(kafkaSettings, rhs.kafkaSettings).append(kmsKeyId, rhs.kmsKeyId).append(engineName, rhs.engineName).append(s3Settings, rhs.s3Settings).append(extraConnectionAttributes, rhs.extraConnectionAttributes).append(neptuneSettings, rhs.neptuneSettings).append(username, rhs.username).isEquals();
     }
 
 }

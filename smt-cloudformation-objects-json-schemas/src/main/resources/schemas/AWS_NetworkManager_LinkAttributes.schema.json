@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_NetworkManager_LinkAttributes.schema.json",
+  "title" : "LinkAttributes",
+  "type" : "string",
+  "enum" : [ "LinkArn", "LinkId" ],
+  "javaType" : "shiver.me.timbers.aws.networkmanager.LinkAttributes"
+}

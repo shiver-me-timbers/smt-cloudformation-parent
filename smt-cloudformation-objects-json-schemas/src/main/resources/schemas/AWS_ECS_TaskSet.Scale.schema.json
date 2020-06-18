@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ECS_TaskSet.Scale.schema.json",
+  "title" : "TaskSetScale",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskset-scale.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.ecs.TaskSetScale",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TaskSetScale>" ],
+  "properties" : {
+    "Unit" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskset-scale.html#cfn-ecs-taskset-scale-unit",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Value" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskset-scale.html#cfn-ecs-taskset-scale-value",
+      "type" : "number",
+      "javaType" : "java.lang.Number"
+    }
+  }
+}

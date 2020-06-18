@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoT_ProvisioningTemplate.ProvisioningHook.schema.json",
+  "title" : "ProvisioningTemplateProvisioningHook",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-provisioningtemplate-provisioninghook.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.iot.ProvisioningTemplateProvisioningHook",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ProvisioningTemplateProvisioningHook>" ],
+  "properties" : {
+    "TargetArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-provisioningtemplate-provisioninghook.html#cfn-iot-provisioningtemplate-provisioninghook-targetarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "PayloadVersion" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-provisioningtemplate-provisioninghook.html#cfn-iot-provisioningtemplate-provisioninghook-payloadversion",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

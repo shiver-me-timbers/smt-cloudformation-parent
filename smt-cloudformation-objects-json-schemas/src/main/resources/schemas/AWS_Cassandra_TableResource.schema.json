@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Cassandra_TableResource.schema.json",
+  "title" : "TableResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cassandra-table.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.cassandra.TableResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<TableResource>", "shiver.me.timbers.aws.HasCondition<TableResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Cassandra::Table"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Cassandra_Table.schema.json"
+    }
+  }
+}

@@ -21,8 +21,7 @@ import shiver.me.timbers.aws.Property;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "FeatureName",
-    "RoleArn",
-    "Status"
+    "RoleArn"
 })
 public class DBClusterDBClusterRole implements Property<DBClusterDBClusterRole>
 {
@@ -41,13 +40,6 @@ public class DBClusterDBClusterRole implements Property<DBClusterDBClusterRole>
     @JsonProperty("RoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-dbclusterrole.html#cfn-rds-dbcluster-dbclusterrole-rolearn")
     private CharSequence roleArn;
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-dbclusterrole.html#cfn-rds-dbcluster-dbclusterrole-status
-     * 
-     */
-    @JsonProperty("Status")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-dbclusterrole.html#cfn-rds-dbcluster-dbclusterrole-status")
-    private CharSequence status;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-dbclusterrole.html#cfn-rds-dbcluster-dbclusterrole-featurename
@@ -95,37 +87,14 @@ public class DBClusterDBClusterRole implements Property<DBClusterDBClusterRole>
         return this;
     }
 
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-dbclusterrole.html#cfn-rds-dbcluster-dbclusterrole-status
-     * 
-     */
-    @JsonIgnore
-    public CharSequence getStatus() {
-        return status;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-dbclusterrole.html#cfn-rds-dbcluster-dbclusterrole-status
-     * 
-     */
-    @JsonIgnore
-    public void setStatus(CharSequence status) {
-        this.status = status;
-    }
-
-    public DBClusterDBClusterRole withStatus(CharSequence status) {
-        this.status = status;
-        return this;
-    }
-
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("featureName", featureName).append("roleArn", roleArn).append("status", status).toString();
+        return new ToStringBuilder(this).append("featureName", featureName).append("roleArn", roleArn).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(featureName).append(roleArn).append(status).toHashCode();
+        return new HashCodeBuilder().append(featureName).append(roleArn).toHashCode();
     }
 
     @Override
@@ -137,7 +106,7 @@ public class DBClusterDBClusterRole implements Property<DBClusterDBClusterRole>
             return false;
         }
         DBClusterDBClusterRole rhs = ((DBClusterDBClusterRole) other);
-        return new EqualsBuilder().append(featureName, rhs.featureName).append(roleArn, rhs.roleArn).append(status, rhs.status).isEquals();
+        return new EqualsBuilder().append(featureName, rhs.featureName).append(roleArn, rhs.roleArn).isEquals();
     }
 
 }

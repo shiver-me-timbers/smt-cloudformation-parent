@@ -1,0 +1,9 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CloudWatch_InsightRule.Tags.schema.json",
+  "title" : "InsightRuleTags",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-insightrule-tags.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.cloudwatch.InsightRuleTags",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<InsightRuleTags>" ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SSM_ResourceDataSync.S3Destination.schema.json",
+  "title" : "ResourceDataSyncS3Destination",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-resourcedatasync-s3destination.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.ssm.ResourceDataSyncS3Destination",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ResourceDataSyncS3Destination>" ],
+  "properties" : {
+    "KMSKeyArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-resourcedatasync-s3destination.html#cfn-ssm-resourcedatasync-s3destination-kmskeyarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "BucketName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-resourcedatasync-s3destination.html#cfn-ssm-resourcedatasync-s3destination-bucketname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "BucketRegion" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-resourcedatasync-s3destination.html#cfn-ssm-resourcedatasync-s3destination-bucketregion",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SyncFormat" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-resourcedatasync-s3destination.html#cfn-ssm-resourcedatasync-s3destination-syncformat",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "BucketPrefix" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-resourcedatasync-s3destination.html#cfn-ssm-resourcedatasync-s3destination-bucketprefix",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

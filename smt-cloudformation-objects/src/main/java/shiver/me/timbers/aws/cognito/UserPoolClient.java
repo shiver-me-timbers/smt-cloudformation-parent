@@ -36,7 +36,8 @@ import shiver.me.timbers.aws.Property;
     "ExplicitAuthFlows",
     "LogoutURLs",
     "RefreshTokenValidity",
-    "WriteAttributes"
+    "WriteAttributes",
+    "PreventUserExistenceErrors"
 })
 public class UserPoolClient {
 
@@ -147,6 +148,13 @@ public class UserPoolClient {
     @JsonProperty("WriteAttributes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-writeattributes")
     private List<CharSequence> writeAttributes = new ArrayList<CharSequence>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-preventuserexistenceerrors
+     * 
+     */
+    @JsonProperty("PreventUserExistenceErrors")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-preventuserexistenceerrors")
+    private CharSequence preventUserExistenceErrors;
 
     /**
      * UserPoolClientAnalyticsConfiguration
@@ -497,14 +505,37 @@ public class UserPoolClient {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-preventuserexistenceerrors
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getPreventUserExistenceErrors() {
+        return preventUserExistenceErrors;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-preventuserexistenceerrors
+     * 
+     */
+    @JsonIgnore
+    public void setPreventUserExistenceErrors(CharSequence preventUserExistenceErrors) {
+        this.preventUserExistenceErrors = preventUserExistenceErrors;
+    }
+
+    public UserPoolClient withPreventUserExistenceErrors(CharSequence preventUserExistenceErrors) {
+        this.preventUserExistenceErrors = preventUserExistenceErrors;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("analyticsConfiguration", analyticsConfiguration).append("generateSecret", generateSecret).append("callbackURLs", callbackURLs).append("allowedOAuthScopes", allowedOAuthScopes).append("readAttributes", readAttributes).append("allowedOAuthFlowsUserPoolClient", allowedOAuthFlowsUserPoolClient).append("defaultRedirectURI", defaultRedirectURI).append("supportedIdentityProviders", supportedIdentityProviders).append("clientName", clientName).append("userPoolId", userPoolId).append("allowedOAuthFlows", allowedOAuthFlows).append("explicitAuthFlows", explicitAuthFlows).append("logoutURLs", logoutURLs).append("refreshTokenValidity", refreshTokenValidity).append("writeAttributes", writeAttributes).toString();
+        return new ToStringBuilder(this).append("analyticsConfiguration", analyticsConfiguration).append("generateSecret", generateSecret).append("callbackURLs", callbackURLs).append("allowedOAuthScopes", allowedOAuthScopes).append("readAttributes", readAttributes).append("allowedOAuthFlowsUserPoolClient", allowedOAuthFlowsUserPoolClient).append("defaultRedirectURI", defaultRedirectURI).append("supportedIdentityProviders", supportedIdentityProviders).append("clientName", clientName).append("userPoolId", userPoolId).append("allowedOAuthFlows", allowedOAuthFlows).append("explicitAuthFlows", explicitAuthFlows).append("logoutURLs", logoutURLs).append("refreshTokenValidity", refreshTokenValidity).append("writeAttributes", writeAttributes).append("preventUserExistenceErrors", preventUserExistenceErrors).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(clientName).append(logoutURLs).append(callbackURLs).append(allowedOAuthScopes).append(writeAttributes).append(defaultRedirectURI).append(explicitAuthFlows).append(supportedIdentityProviders).append(allowedOAuthFlowsUserPoolClient).append(refreshTokenValidity).append(analyticsConfiguration).append(readAttributes).append(allowedOAuthFlows).append(generateSecret).append(userPoolId).toHashCode();
+        return new HashCodeBuilder().append(clientName).append(logoutURLs).append(callbackURLs).append(allowedOAuthScopes).append(preventUserExistenceErrors).append(writeAttributes).append(defaultRedirectURI).append(explicitAuthFlows).append(supportedIdentityProviders).append(allowedOAuthFlowsUserPoolClient).append(refreshTokenValidity).append(analyticsConfiguration).append(readAttributes).append(allowedOAuthFlows).append(generateSecret).append(userPoolId).toHashCode();
     }
 
     @Override
@@ -516,7 +547,7 @@ public class UserPoolClient {
             return false;
         }
         UserPoolClient rhs = ((UserPoolClient) other);
-        return new EqualsBuilder().append(clientName, rhs.clientName).append(logoutURLs, rhs.logoutURLs).append(callbackURLs, rhs.callbackURLs).append(allowedOAuthScopes, rhs.allowedOAuthScopes).append(writeAttributes, rhs.writeAttributes).append(defaultRedirectURI, rhs.defaultRedirectURI).append(explicitAuthFlows, rhs.explicitAuthFlows).append(supportedIdentityProviders, rhs.supportedIdentityProviders).append(allowedOAuthFlowsUserPoolClient, rhs.allowedOAuthFlowsUserPoolClient).append(refreshTokenValidity, rhs.refreshTokenValidity).append(analyticsConfiguration, rhs.analyticsConfiguration).append(readAttributes, rhs.readAttributes).append(allowedOAuthFlows, rhs.allowedOAuthFlows).append(generateSecret, rhs.generateSecret).append(userPoolId, rhs.userPoolId).isEquals();
+        return new EqualsBuilder().append(clientName, rhs.clientName).append(logoutURLs, rhs.logoutURLs).append(callbackURLs, rhs.callbackURLs).append(allowedOAuthScopes, rhs.allowedOAuthScopes).append(preventUserExistenceErrors, rhs.preventUserExistenceErrors).append(writeAttributes, rhs.writeAttributes).append(defaultRedirectURI, rhs.defaultRedirectURI).append(explicitAuthFlows, rhs.explicitAuthFlows).append(supportedIdentityProviders, rhs.supportedIdentityProviders).append(allowedOAuthFlowsUserPoolClient, rhs.allowedOAuthFlowsUserPoolClient).append(refreshTokenValidity, rhs.refreshTokenValidity).append(analyticsConfiguration, rhs.analyticsConfiguration).append(readAttributes, rhs.readAttributes).append(allowedOAuthFlows, rhs.allowedOAuthFlows).append(generateSecret, rhs.generateSecret).append(userPoolId, rhs.userPoolId).isEquals();
     }
 
 }

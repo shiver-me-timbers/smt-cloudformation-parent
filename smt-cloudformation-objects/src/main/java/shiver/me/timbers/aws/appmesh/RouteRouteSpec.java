@@ -22,6 +22,8 @@ import shiver.me.timbers.aws.Property;
 @JsonPropertyOrder({
     "HttpRoute",
     "Priority",
+    "Http2Route",
+    "GrpcRoute",
     "TcpRoute"
 })
 public class RouteRouteSpec implements Property<RouteRouteSpec>
@@ -35,7 +37,7 @@ public class RouteRouteSpec implements Property<RouteRouteSpec>
      */
     @JsonProperty("HttpRoute")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-httproute.html")
-    private Property<RouteHttpRoute> httpRoute;
+    private Property<shiver.me.timbers.aws.appmesh.RouteHttpRoute> httpRoute;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-routespec.html#cfn-appmesh-route-routespec-priority
      * 
@@ -43,6 +45,24 @@ public class RouteRouteSpec implements Property<RouteRouteSpec>
     @JsonProperty("Priority")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-routespec.html#cfn-appmesh-route-routespec-priority")
     private Number priority;
+    /**
+     * RouteHttpRoute
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-httproute.html
+     * 
+     */
+    @JsonProperty("Http2Route")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-httproute.html")
+    private Property<shiver.me.timbers.aws.appmesh.RouteHttpRoute> http2Route;
+    /**
+     * RouteGrpcRoute
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-grpcroute.html
+     * 
+     */
+    @JsonProperty("GrpcRoute")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-grpcroute.html")
+    private Property<RouteGrpcRoute> grpcRoute;
     /**
      * RouteTcpRoute
      * <p>
@@ -60,7 +80,7 @@ public class RouteRouteSpec implements Property<RouteRouteSpec>
      * 
      */
     @JsonIgnore
-    public Property<RouteHttpRoute> getHttpRoute() {
+    public Property<shiver.me.timbers.aws.appmesh.RouteHttpRoute> getHttpRoute() {
         return httpRoute;
     }
 
@@ -71,11 +91,11 @@ public class RouteRouteSpec implements Property<RouteRouteSpec>
      * 
      */
     @JsonIgnore
-    public void setHttpRoute(Property<RouteHttpRoute> httpRoute) {
+    public void setHttpRoute(Property<shiver.me.timbers.aws.appmesh.RouteHttpRoute> httpRoute) {
         this.httpRoute = httpRoute;
     }
 
-    public RouteRouteSpec withHttpRoute(Property<RouteHttpRoute> httpRoute) {
+    public RouteRouteSpec withHttpRoute(Property<shiver.me.timbers.aws.appmesh.RouteHttpRoute> httpRoute) {
         this.httpRoute = httpRoute;
         return this;
     }
@@ -100,6 +120,60 @@ public class RouteRouteSpec implements Property<RouteRouteSpec>
 
     public RouteRouteSpec withPriority(Number priority) {
         this.priority = priority;
+        return this;
+    }
+
+    /**
+     * RouteHttpRoute
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-httproute.html
+     * 
+     */
+    @JsonIgnore
+    public Property<shiver.me.timbers.aws.appmesh.RouteHttpRoute> getHttp2Route() {
+        return http2Route;
+    }
+
+    /**
+     * RouteHttpRoute
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-httproute.html
+     * 
+     */
+    @JsonIgnore
+    public void setHttp2Route(Property<shiver.me.timbers.aws.appmesh.RouteHttpRoute> http2Route) {
+        this.http2Route = http2Route;
+    }
+
+    public RouteRouteSpec withHttp2Route(Property<shiver.me.timbers.aws.appmesh.RouteHttpRoute> http2Route) {
+        this.http2Route = http2Route;
+        return this;
+    }
+
+    /**
+     * RouteGrpcRoute
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-grpcroute.html
+     * 
+     */
+    @JsonIgnore
+    public Property<RouteGrpcRoute> getGrpcRoute() {
+        return grpcRoute;
+    }
+
+    /**
+     * RouteGrpcRoute
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-grpcroute.html
+     * 
+     */
+    @JsonIgnore
+    public void setGrpcRoute(Property<RouteGrpcRoute> grpcRoute) {
+        this.grpcRoute = grpcRoute;
+    }
+
+    public RouteRouteSpec withGrpcRoute(Property<RouteGrpcRoute> grpcRoute) {
+        this.grpcRoute = grpcRoute;
         return this;
     }
 
@@ -132,12 +206,12 @@ public class RouteRouteSpec implements Property<RouteRouteSpec>
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("httpRoute", httpRoute).append("priority", priority).append("tcpRoute", tcpRoute).toString();
+        return new ToStringBuilder(this).append("httpRoute", httpRoute).append("priority", priority).append("http2Route", http2Route).append("grpcRoute", grpcRoute).append("tcpRoute", tcpRoute).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(priority).append(httpRoute).append(tcpRoute).toHashCode();
+        return new HashCodeBuilder().append(http2Route).append(grpcRoute).append(priority).append(httpRoute).append(tcpRoute).toHashCode();
     }
 
     @Override
@@ -149,7 +223,7 @@ public class RouteRouteSpec implements Property<RouteRouteSpec>
             return false;
         }
         RouteRouteSpec rhs = ((RouteRouteSpec) other);
-        return new EqualsBuilder().append(priority, rhs.priority).append(httpRoute, rhs.httpRoute).append(tcpRoute, rhs.tcpRoute).isEquals();
+        return new EqualsBuilder().append(http2Route, rhs.http2Route).append(grpcRoute, rhs.grpcRoute).append(priority, rhs.priority).append(httpRoute, rhs.httpRoute).append(tcpRoute, rhs.tcpRoute).isEquals();
     }
 
 }

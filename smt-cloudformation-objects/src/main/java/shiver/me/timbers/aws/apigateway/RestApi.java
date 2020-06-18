@@ -1,7 +1,9 @@
 
 package shiver.me.timbers.aws.apigateway;
 
+import java.util.ArrayList;
 import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -14,6 +16,7 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 import shiver.me.timbers.aws.Property;
+import shiver.me.timbers.aws.Tag;
 
 
 /**
@@ -35,7 +38,8 @@ import shiver.me.timbers.aws.Property;
     "MinimumCompressionSize",
     "Name",
     "Parameters",
-    "Policy"
+    "Policy",
+    "Tags"
 })
 public class RestApi {
 
@@ -128,6 +132,13 @@ public class RestApi {
     @JsonProperty("Policy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-policy")
     private Object policy;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-tags")
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-apikeysourcetype
@@ -413,14 +424,37 @@ public class RestApi {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-tags
+     * 
+     */
+    @JsonIgnore
+    public List<Property<Tag>> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+    }
+
+    public RestApi withTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+        return this;
+    }
+
     @Override
     public java.lang.String toString() {
-        return new ToStringBuilder(this).append("apiKeySourceType", apiKeySourceType).append("binaryMediaTypes", binaryMediaTypes).append("body", body).append("bodyS3Location", bodyS3Location).append("cloneFrom", cloneFrom).append("description", description).append("endpointConfiguration", endpointConfiguration).append("failOnWarnings", failOnWarnings).append("minimumCompressionSize", minimumCompressionSize).append("name", name).append("parameters", parameters).append("policy", policy).toString();
+        return new ToStringBuilder(this).append("apiKeySourceType", apiKeySourceType).append("binaryMediaTypes", binaryMediaTypes).append("body", body).append("bodyS3Location", bodyS3Location).append("cloneFrom", cloneFrom).append("description", description).append("endpointConfiguration", endpointConfiguration).append("failOnWarnings", failOnWarnings).append("minimumCompressionSize", minimumCompressionSize).append("name", name).append("parameters", parameters).append("policy", policy).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(binaryMediaTypes).append(apiKeySourceType).append(cloneFrom).append(minimumCompressionSize).append(description).append(body).append(failOnWarnings).append(bodyS3Location).append(endpointConfiguration).append(name).append(parameters).append(policy).toHashCode();
+        return new HashCodeBuilder().append(binaryMediaTypes).append(apiKeySourceType).append(cloneFrom).append(minimumCompressionSize).append(description).append(body).append(failOnWarnings).append(tags).append(bodyS3Location).append(endpointConfiguration).append(name).append(parameters).append(policy).toHashCode();
     }
 
     @Override
@@ -432,7 +466,7 @@ public class RestApi {
             return false;
         }
         RestApi rhs = ((RestApi) other);
-        return new EqualsBuilder().append(binaryMediaTypes, rhs.binaryMediaTypes).append(apiKeySourceType, rhs.apiKeySourceType).append(cloneFrom, rhs.cloneFrom).append(minimumCompressionSize, rhs.minimumCompressionSize).append(description, rhs.description).append(body, rhs.body).append(failOnWarnings, rhs.failOnWarnings).append(bodyS3Location, rhs.bodyS3Location).append(endpointConfiguration, rhs.endpointConfiguration).append(name, rhs.name).append(parameters, rhs.parameters).append(policy, rhs.policy).isEquals();
+        return new EqualsBuilder().append(binaryMediaTypes, rhs.binaryMediaTypes).append(apiKeySourceType, rhs.apiKeySourceType).append(cloneFrom, rhs.cloneFrom).append(minimumCompressionSize, rhs.minimumCompressionSize).append(description, rhs.description).append(body, rhs.body).append(failOnWarnings, rhs.failOnWarnings).append(tags, rhs.tags).append(bodyS3Location, rhs.bodyS3Location).append(endpointConfiguration, rhs.endpointConfiguration).append(name, rhs.name).append(parameters, rhs.parameters).append(policy, rhs.policy).isEquals();
     }
 
 }

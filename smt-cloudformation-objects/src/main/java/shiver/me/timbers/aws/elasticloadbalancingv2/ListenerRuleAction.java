@@ -23,6 +23,7 @@ import shiver.me.timbers.aws.Property;
     "AuthenticateCognitoConfig",
     "AuthenticateOidcConfig",
     "FixedResponseConfig",
+    "ForwardConfig",
     "Order",
     "RedirectConfig",
     "TargetGroupArn",
@@ -58,6 +59,15 @@ public class ListenerRuleAction implements Property<ListenerRuleAction>
     @JsonProperty("FixedResponseConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-fixedresponseconfig.html")
     private Property<ListenerRuleFixedResponseConfig> fixedResponseConfig;
+    /**
+     * ListenerRuleForwardConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-forwardconfig.html
+     * 
+     */
+    @JsonProperty("ForwardConfig")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-forwardconfig.html")
+    private Property<ListenerRuleForwardConfig> forwardConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-actions.html#cfn-elasticloadbalancingv2-listenerrule-action-order
      * 
@@ -171,6 +181,33 @@ public class ListenerRuleAction implements Property<ListenerRuleAction>
     }
 
     /**
+     * ListenerRuleForwardConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-forwardconfig.html
+     * 
+     */
+    @JsonIgnore
+    public Property<ListenerRuleForwardConfig> getForwardConfig() {
+        return forwardConfig;
+    }
+
+    /**
+     * ListenerRuleForwardConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-forwardconfig.html
+     * 
+     */
+    @JsonIgnore
+    public void setForwardConfig(Property<ListenerRuleForwardConfig> forwardConfig) {
+        this.forwardConfig = forwardConfig;
+    }
+
+    public ListenerRuleAction withForwardConfig(Property<ListenerRuleForwardConfig> forwardConfig) {
+        this.forwardConfig = forwardConfig;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-actions.html#cfn-elasticloadbalancingv2-listenerrule-action-order
      * 
      */
@@ -268,12 +305,12 @@ public class ListenerRuleAction implements Property<ListenerRuleAction>
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("authenticateCognitoConfig", authenticateCognitoConfig).append("authenticateOidcConfig", authenticateOidcConfig).append("fixedResponseConfig", fixedResponseConfig).append("order", order).append("redirectConfig", redirectConfig).append("targetGroupArn", targetGroupArn).append("type", type).toString();
+        return new ToStringBuilder(this).append("authenticateCognitoConfig", authenticateCognitoConfig).append("authenticateOidcConfig", authenticateOidcConfig).append("fixedResponseConfig", fixedResponseConfig).append("forwardConfig", forwardConfig).append("order", order).append("redirectConfig", redirectConfig).append("targetGroupArn", targetGroupArn).append("type", type).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(fixedResponseConfig).append(authenticateOidcConfig).append(targetGroupArn).append(authenticateCognitoConfig).append(redirectConfig).append(type).append(order).toHashCode();
+        return new HashCodeBuilder().append(fixedResponseConfig).append(authenticateOidcConfig).append(targetGroupArn).append(authenticateCognitoConfig).append(forwardConfig).append(redirectConfig).append(type).append(order).toHashCode();
     }
 
     @Override
@@ -285,7 +322,7 @@ public class ListenerRuleAction implements Property<ListenerRuleAction>
             return false;
         }
         ListenerRuleAction rhs = ((ListenerRuleAction) other);
-        return new EqualsBuilder().append(fixedResponseConfig, rhs.fixedResponseConfig).append(authenticateOidcConfig, rhs.authenticateOidcConfig).append(targetGroupArn, rhs.targetGroupArn).append(authenticateCognitoConfig, rhs.authenticateCognitoConfig).append(redirectConfig, rhs.redirectConfig).append(type, rhs.type).append(order, rhs.order).isEquals();
+        return new EqualsBuilder().append(fixedResponseConfig, rhs.fixedResponseConfig).append(authenticateOidcConfig, rhs.authenticateOidcConfig).append(targetGroupArn, rhs.targetGroupArn).append(authenticateCognitoConfig, rhs.authenticateCognitoConfig).append(forwardConfig, rhs.forwardConfig).append(redirectConfig, rhs.redirectConfig).append(type, rhs.type).append(order, rhs.order).isEquals();
     }
 
 }

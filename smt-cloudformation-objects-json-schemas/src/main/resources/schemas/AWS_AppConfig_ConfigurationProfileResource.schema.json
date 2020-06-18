@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppConfig_ConfigurationProfileResource.schema.json",
+  "title" : "ConfigurationProfileResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appconfig-configurationprofile.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.appconfig.ConfigurationProfileResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ConfigurationProfileResource>", "shiver.me.timbers.aws.HasCondition<ConfigurationProfileResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::AppConfig::ConfigurationProfile"
+    },
+    "Properties" : {
+      "$ref" : "AWS_AppConfig_ConfigurationProfile.schema.json"
+    }
+  }
+}

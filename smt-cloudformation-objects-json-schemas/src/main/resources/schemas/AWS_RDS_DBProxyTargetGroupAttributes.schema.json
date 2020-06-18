@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_RDS_DBProxyTargetGroupAttributes.schema.json",
+  "title" : "DBProxyTargetGroupAttributes",
+  "type" : "string",
+  "enum" : [ "TargetGroupArn", "TargetGroupName" ],
+  "javaType" : "shiver.me.timbers.aws.rds.DBProxyTargetGroupAttributes"
+}

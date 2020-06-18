@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Events_EventBusAttributes.schema.json",
+  "title" : "EventBusAttributes",
+  "type" : "string",
+  "enum" : [ "Policy", "Arn", "Name" ],
+  "javaType" : "shiver.me.timbers.aws.events.EventBusAttributes"
+}

@@ -1,0 +1,19 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Athena_WorkGroup.Tags.schema.json",
+  "title" : "WorkGroupTags",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-athena-workgroup-tags.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.athena.WorkGroupTags",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<WorkGroupTags>" ],
+  "properties" : {
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-athena-workgroup-tags.html#cfn-athena-workgroup-tags-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "Tag.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppMesh_Route.Duration.schema.json",
+  "title" : "RouteDuration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-duration.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.appmesh.RouteDuration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<RouteDuration>" ],
+  "properties" : {
+    "Value" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-duration.html#cfn-appmesh-route-duration-value",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "Unit" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-duration.html#cfn-appmesh-route-duration-unit",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

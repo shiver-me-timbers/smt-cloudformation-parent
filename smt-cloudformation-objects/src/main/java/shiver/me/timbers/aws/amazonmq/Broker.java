@@ -23,6 +23,7 @@ import shiver.me.timbers.aws.Property;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "SecurityGroups",
+    "StorageType",
     "EngineVersion",
     "Configuration",
     "MaintenanceWindowStartTime",
@@ -47,6 +48,13 @@ public class Broker {
     @JsonProperty("SecurityGroups")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-securitygroups")
     private List<CharSequence> securityGroups = new ArrayList<CharSequence>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-storagetype
+     * 
+     */
+    @JsonProperty("StorageType")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-storagetype")
+    private CharSequence storageType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-engineversion
      * 
@@ -174,6 +182,29 @@ public class Broker {
 
     public Broker withSecurityGroups(List<CharSequence> securityGroups) {
         this.securityGroups = securityGroups;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-storagetype
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getStorageType() {
+        return storageType;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-storagetype
+     * 
+     */
+    @JsonIgnore
+    public void setStorageType(CharSequence storageType) {
+        this.storageType = storageType;
+    }
+
+    public Broker withStorageType(CharSequence storageType) {
+        this.storageType = storageType;
         return this;
     }
 
@@ -517,12 +548,12 @@ public class Broker {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("securityGroups", securityGroups).append("engineVersion", engineVersion).append("configuration", configuration).append("maintenanceWindowStartTime", maintenanceWindowStartTime).append("hostInstanceType", hostInstanceType).append("autoMinorVersionUpgrade", autoMinorVersionUpgrade).append("users", users).append("logs", logs).append("subnetIds", subnetIds).append("brokerName", brokerName).append("deploymentMode", deploymentMode).append("engineType", engineType).append("publiclyAccessible", publiclyAccessible).append("encryptionOptions", encryptionOptions).append("tags", tags).toString();
+        return new ToStringBuilder(this).append("securityGroups", securityGroups).append("storageType", storageType).append("engineVersion", engineVersion).append("configuration", configuration).append("maintenanceWindowStartTime", maintenanceWindowStartTime).append("hostInstanceType", hostInstanceType).append("autoMinorVersionUpgrade", autoMinorVersionUpgrade).append("users", users).append("logs", logs).append("subnetIds", subnetIds).append("brokerName", brokerName).append("deploymentMode", deploymentMode).append("engineType", engineType).append("publiclyAccessible", publiclyAccessible).append("encryptionOptions", encryptionOptions).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(engineVersion).append(deploymentMode).append(maintenanceWindowStartTime).append(configuration).append(engineType).append(hostInstanceType).append(users).append(tags).append(publiclyAccessible).append(encryptionOptions).append(securityGroups).append(brokerName).append(logs).append(autoMinorVersionUpgrade).append(subnetIds).toHashCode();
+        return new HashCodeBuilder().append(engineVersion).append(deploymentMode).append(maintenanceWindowStartTime).append(configuration).append(engineType).append(hostInstanceType).append(users).append(tags).append(publiclyAccessible).append(encryptionOptions).append(storageType).append(securityGroups).append(brokerName).append(logs).append(autoMinorVersionUpgrade).append(subnetIds).toHashCode();
     }
 
     @Override
@@ -534,7 +565,7 @@ public class Broker {
             return false;
         }
         Broker rhs = ((Broker) other);
-        return new EqualsBuilder().append(engineVersion, rhs.engineVersion).append(deploymentMode, rhs.deploymentMode).append(maintenanceWindowStartTime, rhs.maintenanceWindowStartTime).append(configuration, rhs.configuration).append(engineType, rhs.engineType).append(hostInstanceType, rhs.hostInstanceType).append(users, rhs.users).append(tags, rhs.tags).append(publiclyAccessible, rhs.publiclyAccessible).append(encryptionOptions, rhs.encryptionOptions).append(securityGroups, rhs.securityGroups).append(brokerName, rhs.brokerName).append(logs, rhs.logs).append(autoMinorVersionUpgrade, rhs.autoMinorVersionUpgrade).append(subnetIds, rhs.subnetIds).isEquals();
+        return new EqualsBuilder().append(engineVersion, rhs.engineVersion).append(deploymentMode, rhs.deploymentMode).append(maintenanceWindowStartTime, rhs.maintenanceWindowStartTime).append(configuration, rhs.configuration).append(engineType, rhs.engineType).append(hostInstanceType, rhs.hostInstanceType).append(users, rhs.users).append(tags, rhs.tags).append(publiclyAccessible, rhs.publiclyAccessible).append(encryptionOptions, rhs.encryptionOptions).append(storageType, rhs.storageType).append(securityGroups, rhs.securityGroups).append(brokerName, rhs.brokerName).append(logs, rhs.logs).append(autoMinorVersionUpgrade, rhs.autoMinorVersionUpgrade).append(subnetIds, rhs.subnetIds).isEquals();
     }
 
 }

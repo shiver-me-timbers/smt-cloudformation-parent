@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MediaConvert_JobTemplate.HopDestination.schema.json",
+  "title" : "JobTemplateHopDestination",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediaconvert-jobtemplate-hopdestination.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.mediaconvert.JobTemplateHopDestination",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<JobTemplateHopDestination>" ],
+  "properties" : {
+    "WaitMinutes" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediaconvert-jobtemplate-hopdestination.html#cfn-mediaconvert-jobtemplate-hopdestination-waitminutes",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "Priority" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediaconvert-jobtemplate-hopdestination.html#cfn-mediaconvert-jobtemplate-hopdestination-priority",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "Queue" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediaconvert-jobtemplate-hopdestination.html#cfn-mediaconvert-jobtemplate-hopdestination-queue",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

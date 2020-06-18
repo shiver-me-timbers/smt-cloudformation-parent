@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Macie_Session.schema.json",
+  "title" : "Session",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-macie-session.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.macie.Session",
+  "properties" : {
+    "Status" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-macie-session.html#cfn-macie-session-status",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "FindingPublishingFrequency" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-macie-session.html#cfn-macie-session-findingpublishingfrequency",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

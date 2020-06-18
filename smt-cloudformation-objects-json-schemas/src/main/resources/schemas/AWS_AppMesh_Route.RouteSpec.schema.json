@@ -17,6 +17,16 @@
       "type" : "integer",
       "javaType" : "java.lang.Number"
     },
+    "Http2Route" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-routespec.html#cfn-appmesh-route-routespec-http2route",
+      "$ref" : "AWS_AppMesh_Route.HttpRoute.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appmesh.RouteHttpRoute>"
+    },
+    "GrpcRoute" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-routespec.html#cfn-appmesh-route-routespec-grpcroute",
+      "$ref" : "AWS_AppMesh_Route.GrpcRoute.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appmesh.RouteGrpcRoute>"
+    },
     "TcpRoute" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-routespec.html#cfn-appmesh-route-routespec-tcproute",
       "$ref" : "AWS_AppMesh_Route.TcpRoute.schema.json",

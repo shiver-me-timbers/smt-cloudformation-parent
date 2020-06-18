@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CodeGuruProfiler_ProfilingGroupResource.schema.json",
+  "title" : "ProfilingGroupResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codeguruprofiler-profilinggroup.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.codeguruprofiler.ProfilingGroupResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ProfilingGroupResource>", "shiver.me.timbers.aws.HasCondition<ProfilingGroupResource>", "shiver.me.timbers.aws.HasAttributes<ProfilingGroupAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::CodeGuruProfiler::ProfilingGroup"
+    },
+    "Properties" : {
+      "$ref" : "AWS_CodeGuruProfiler_ProfilingGroup.schema.json"
+    }
+  }
+}

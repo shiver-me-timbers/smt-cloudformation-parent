@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EKS_Nodegroup.ScalingConfig.schema.json",
+  "title" : "NodegroupScalingConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-eks-nodegroup-scalingconfig.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.eks.NodegroupScalingConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<NodegroupScalingConfig>" ],
+  "properties" : {
+    "MinSize" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-eks-nodegroup-scalingconfig.html#cfn-eks-nodegroup-scalingconfig-minsize",
+      "type" : "number",
+      "javaType" : "java.lang.Number"
+    },
+    "DesiredSize" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-eks-nodegroup-scalingconfig.html#cfn-eks-nodegroup-scalingconfig-desiredsize",
+      "type" : "number",
+      "javaType" : "java.lang.Number"
+    },
+    "MaxSize" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-eks-nodegroup-scalingconfig.html#cfn-eks-nodegroup-scalingconfig-maxsize",
+      "type" : "number",
+      "javaType" : "java.lang.Number"
+    }
+  }
+}

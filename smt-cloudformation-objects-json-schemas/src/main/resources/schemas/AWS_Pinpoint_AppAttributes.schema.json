@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_AppAttributes.schema.json",
+  "title" : "AppAttributes",
+  "type" : "string",
+  "enum" : [ "Arn" ],
+  "javaType" : "shiver.me.timbers.aws.pinpoint.AppAttributes"
+}

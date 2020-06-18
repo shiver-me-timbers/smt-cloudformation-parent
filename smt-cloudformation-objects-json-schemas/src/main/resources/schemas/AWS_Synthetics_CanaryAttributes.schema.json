@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Synthetics_CanaryAttributes.schema.json",
+  "title" : "CanaryAttributes",
+  "type" : "string",
+  "enum" : [ "Id", "State" ],
+  "javaType" : "shiver.me.timbers.aws.synthetics.CanaryAttributes"
+}

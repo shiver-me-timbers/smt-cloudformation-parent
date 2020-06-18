@@ -23,6 +23,14 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationaggregator.html#cfn-config-configurationaggregator-organizationaggregationsource",
       "$ref" : "AWS_Config_ConfigurationAggregator.OrganizationAggregationSource.schema.json",
       "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.config.ConfigurationAggregatorOrganizationAggregationSource>"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationaggregator.html#cfn-config-configurationaggregator-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "Tag.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
+      }
     }
   }
 }

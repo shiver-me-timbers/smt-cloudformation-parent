@@ -27,6 +27,7 @@ import shiver.me.timbers.aws.Property;
     "Configuration",
     "InputArtifacts",
     "Name",
+    "Namespace",
     "OutputArtifacts",
     "Region",
     "RoleArn",
@@ -66,6 +67,13 @@ public class PipelineActionDeclaration implements Property<PipelineActionDeclara
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-name")
     private CharSequence name;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-actiondeclaration-namespace
+     * 
+     */
+    @JsonProperty("Namespace")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-actiondeclaration-namespace")
+    private CharSequence namespace;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-outputartifacts
      * 
@@ -193,6 +201,29 @@ public class PipelineActionDeclaration implements Property<PipelineActionDeclara
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-actiondeclaration-namespace
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getNamespace() {
+        return namespace;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-actiondeclaration-namespace
+     * 
+     */
+    @JsonIgnore
+    public void setNamespace(CharSequence namespace) {
+        this.namespace = namespace;
+    }
+
+    public PipelineActionDeclaration withNamespace(CharSequence namespace) {
+        this.namespace = namespace;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-outputartifacts
      * 
      */
@@ -286,12 +317,12 @@ public class PipelineActionDeclaration implements Property<PipelineActionDeclara
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("actionTypeId", actionTypeId).append("configuration", configuration).append("inputArtifacts", inputArtifacts).append("name", name).append("outputArtifacts", outputArtifacts).append("region", region).append("roleArn", roleArn).append("runOrder", runOrder).toString();
+        return new ToStringBuilder(this).append("actionTypeId", actionTypeId).append("configuration", configuration).append("inputArtifacts", inputArtifacts).append("name", name).append("namespace", namespace).append("outputArtifacts", outputArtifacts).append("region", region).append("roleArn", roleArn).append("runOrder", runOrder).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(runOrder).append(actionTypeId).append(configuration).append(outputArtifacts).append(roleArn).append(name).append(region).append(inputArtifacts).toHashCode();
+        return new HashCodeBuilder().append(runOrder).append(actionTypeId).append(configuration).append(outputArtifacts).append(roleArn).append(name).append(namespace).append(region).append(inputArtifacts).toHashCode();
     }
 
     @Override
@@ -303,7 +334,7 @@ public class PipelineActionDeclaration implements Property<PipelineActionDeclara
             return false;
         }
         PipelineActionDeclaration rhs = ((PipelineActionDeclaration) other);
-        return new EqualsBuilder().append(runOrder, rhs.runOrder).append(actionTypeId, rhs.actionTypeId).append(configuration, rhs.configuration).append(outputArtifacts, rhs.outputArtifacts).append(roleArn, rhs.roleArn).append(name, rhs.name).append(region, rhs.region).append(inputArtifacts, rhs.inputArtifacts).isEquals();
+        return new EqualsBuilder().append(runOrder, rhs.runOrder).append(actionTypeId, rhs.actionTypeId).append(configuration, rhs.configuration).append(outputArtifacts, rhs.outputArtifacts).append(roleArn, rhs.roleArn).append(name, rhs.name).append(namespace, rhs.namespace).append(region, rhs.region).append(inputArtifacts, rhs.inputArtifacts).isEquals();
     }
 
 }

@@ -30,7 +30,9 @@ import shiver.me.timbers.aws.Property;
     "RoleARN",
     "S3BackupMode",
     "S3Configuration",
-    "TypeName"
+    "ClusterEndpoint",
+    "TypeName",
+    "VpcConfiguration"
 })
 public class DeliveryStreamElasticsearchDestinationConfiguration implements Property<DeliveryStreamElasticsearchDestinationConfiguration>
 {
@@ -116,12 +118,28 @@ public class DeliveryStreamElasticsearchDestinationConfiguration implements Prop
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html")
     private Property<DeliveryStreamS3DestinationConfiguration> s3Configuration;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-clusterendpoint
+     * 
+     */
+    @JsonProperty("ClusterEndpoint")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-clusterendpoint")
+    private CharSequence clusterEndpoint;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-typename
      * 
      */
     @JsonProperty("TypeName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-typename")
     private CharSequence typeName;
+    /**
+     * DeliveryStreamVpcConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-vpcconfiguration.html
+     * 
+     */
+    @JsonProperty("VpcConfiguration")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-vpcconfiguration.html")
+    private Property<DeliveryStreamVpcConfiguration> vpcConfiguration;
 
     /**
      * DeliveryStreamElasticsearchBufferingHints
@@ -374,6 +392,29 @@ public class DeliveryStreamElasticsearchDestinationConfiguration implements Prop
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-clusterendpoint
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getClusterEndpoint() {
+        return clusterEndpoint;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-clusterendpoint
+     * 
+     */
+    @JsonIgnore
+    public void setClusterEndpoint(CharSequence clusterEndpoint) {
+        this.clusterEndpoint = clusterEndpoint;
+    }
+
+    public DeliveryStreamElasticsearchDestinationConfiguration withClusterEndpoint(CharSequence clusterEndpoint) {
+        this.clusterEndpoint = clusterEndpoint;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-typename
      * 
      */
@@ -396,14 +437,41 @@ public class DeliveryStreamElasticsearchDestinationConfiguration implements Prop
         return this;
     }
 
+    /**
+     * DeliveryStreamVpcConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-vpcconfiguration.html
+     * 
+     */
+    @JsonIgnore
+    public Property<DeliveryStreamVpcConfiguration> getVpcConfiguration() {
+        return vpcConfiguration;
+    }
+
+    /**
+     * DeliveryStreamVpcConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-vpcconfiguration.html
+     * 
+     */
+    @JsonIgnore
+    public void setVpcConfiguration(Property<DeliveryStreamVpcConfiguration> vpcConfiguration) {
+        this.vpcConfiguration = vpcConfiguration;
+    }
+
+    public DeliveryStreamElasticsearchDestinationConfiguration withVpcConfiguration(Property<DeliveryStreamVpcConfiguration> vpcConfiguration) {
+        this.vpcConfiguration = vpcConfiguration;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("bufferingHints", bufferingHints).append("cloudWatchLoggingOptions", cloudWatchLoggingOptions).append("domainARN", domainARN).append("indexName", indexName).append("indexRotationPeriod", indexRotationPeriod).append("processingConfiguration", processingConfiguration).append("retryOptions", retryOptions).append("roleARN", roleARN).append("s3BackupMode", s3BackupMode).append("s3Configuration", s3Configuration).append("typeName", typeName).toString();
+        return new ToStringBuilder(this).append("bufferingHints", bufferingHints).append("cloudWatchLoggingOptions", cloudWatchLoggingOptions).append("domainARN", domainARN).append("indexName", indexName).append("indexRotationPeriod", indexRotationPeriod).append("processingConfiguration", processingConfiguration).append("retryOptions", retryOptions).append("roleARN", roleARN).append("s3BackupMode", s3BackupMode).append("s3Configuration", s3Configuration).append("clusterEndpoint", clusterEndpoint).append("typeName", typeName).append("vpcConfiguration", vpcConfiguration).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(cloudWatchLoggingOptions).append(processingConfiguration).append(retryOptions).append(s3Configuration).append(indexRotationPeriod).append(indexName).append(roleARN).append(typeName).append(s3BackupMode).append(domainARN).append(bufferingHints).toHashCode();
+        return new HashCodeBuilder().append(cloudWatchLoggingOptions).append(clusterEndpoint).append(processingConfiguration).append(s3Configuration).append(indexName).append(typeName).append(retryOptions).append(indexRotationPeriod).append(roleARN).append(s3BackupMode).append(domainARN).append(bufferingHints).append(vpcConfiguration).toHashCode();
     }
 
     @Override
@@ -415,7 +483,7 @@ public class DeliveryStreamElasticsearchDestinationConfiguration implements Prop
             return false;
         }
         DeliveryStreamElasticsearchDestinationConfiguration rhs = ((DeliveryStreamElasticsearchDestinationConfiguration) other);
-        return new EqualsBuilder().append(cloudWatchLoggingOptions, rhs.cloudWatchLoggingOptions).append(processingConfiguration, rhs.processingConfiguration).append(retryOptions, rhs.retryOptions).append(s3Configuration, rhs.s3Configuration).append(indexRotationPeriod, rhs.indexRotationPeriod).append(indexName, rhs.indexName).append(roleARN, rhs.roleARN).append(typeName, rhs.typeName).append(s3BackupMode, rhs.s3BackupMode).append(domainARN, rhs.domainARN).append(bufferingHints, rhs.bufferingHints).isEquals();
+        return new EqualsBuilder().append(cloudWatchLoggingOptions, rhs.cloudWatchLoggingOptions).append(clusterEndpoint, rhs.clusterEndpoint).append(processingConfiguration, rhs.processingConfiguration).append(s3Configuration, rhs.s3Configuration).append(indexName, rhs.indexName).append(typeName, rhs.typeName).append(retryOptions, rhs.retryOptions).append(indexRotationPeriod, rhs.indexRotationPeriod).append(roleARN, rhs.roleARN).append(s3BackupMode, rhs.s3BackupMode).append(domainARN, rhs.domainARN).append(bufferingHints, rhs.bufferingHints).append(vpcConfiguration, rhs.vpcConfiguration).isEquals();
     }
 
 }

@@ -21,6 +21,7 @@ import shiver.me.timbers.aws.Property;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "Name",
+    "OperatingSystem",
     "StorageLocation",
     "Version"
 })
@@ -33,6 +34,13 @@ public class Build {
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-build.html#cfn-gamelift-build-name")
     private CharSequence name;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-build.html#cfn-gamelift-build-operatingsystem
+     * 
+     */
+    @JsonProperty("OperatingSystem")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-build.html#cfn-gamelift-build-operatingsystem")
+    private CharSequence operatingSystem;
     /**
      * BuildS3Location
      * <p>
@@ -70,6 +78,29 @@ public class Build {
 
     public Build withName(CharSequence name) {
         this.name = name;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-build.html#cfn-gamelift-build-operatingsystem
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getOperatingSystem() {
+        return operatingSystem;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-build.html#cfn-gamelift-build-operatingsystem
+     * 
+     */
+    @JsonIgnore
+    public void setOperatingSystem(CharSequence operatingSystem) {
+        this.operatingSystem = operatingSystem;
+    }
+
+    public Build withOperatingSystem(CharSequence operatingSystem) {
+        this.operatingSystem = operatingSystem;
         return this;
     }
 
@@ -125,12 +156,12 @@ public class Build {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("name", name).append("storageLocation", storageLocation).append("version", version).toString();
+        return new ToStringBuilder(this).append("name", name).append("operatingSystem", operatingSystem).append("storageLocation", storageLocation).append("version", version).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(name).append(storageLocation).append(version).toHashCode();
+        return new HashCodeBuilder().append(name).append(storageLocation).append(operatingSystem).append(version).toHashCode();
     }
 
     @Override
@@ -142,7 +173,7 @@ public class Build {
             return false;
         }
         Build rhs = ((Build) other);
-        return new EqualsBuilder().append(name, rhs.name).append(storageLocation, rhs.storageLocation).append(version, rhs.version).isEquals();
+        return new EqualsBuilder().append(name, rhs.name).append(storageLocation, rhs.storageLocation).append(operatingSystem, rhs.operatingSystem).append(version, rhs.version).isEquals();
     }
 
 }

@@ -1,0 +1,40 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppSync_ApiCache.schema.json",
+  "title" : "ApiCache",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apicache.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.appsync.ApiCache",
+  "properties" : {
+    "Type" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apicache.html#cfn-appsync-apicache-type",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TransitEncryptionEnabled" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apicache.html#cfn-appsync-apicache-transitencryptionenabled",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "AtRestEncryptionEnabled" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apicache.html#cfn-appsync-apicache-atrestencryptionenabled",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ApiId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apicache.html#cfn-appsync-apicache-apiid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ApiCachingBehavior" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apicache.html#cfn-appsync-apicache-apicachingbehavior",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Ttl" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apicache.html#cfn-appsync-apicache-ttl",
+      "type" : "number",
+      "javaType" : "java.lang.Number"
+    }
+  }
+}

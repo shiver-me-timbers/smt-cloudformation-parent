@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoT_TopicRule.AssetPropertyTimestamp.schema.json",
+  "title" : "TopicRuleAssetPropertyTimestamp",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-assetpropertytimestamp.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.iot.TopicRuleAssetPropertyTimestamp",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TopicRuleAssetPropertyTimestamp>" ],
+  "properties" : {
+    "OffsetInNanos" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-assetpropertytimestamp.html#cfn-iot-topicrule-assetpropertytimestamp-offsetinnanos",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TimeInSeconds" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-assetpropertytimestamp.html#cfn-iot-topicrule-assetpropertytimestamp-timeinseconds",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

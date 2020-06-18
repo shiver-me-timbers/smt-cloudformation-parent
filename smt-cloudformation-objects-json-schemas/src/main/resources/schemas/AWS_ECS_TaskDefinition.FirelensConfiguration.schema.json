@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ECS_TaskDefinition.FirelensConfiguration.schema.json",
+  "title" : "TaskDefinitionFirelensConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-firelensconfiguration.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.ecs.TaskDefinitionFirelensConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TaskDefinitionFirelensConfiguration>" ],
+  "properties" : {
+    "Options" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-firelensconfiguration.html#cfn-ecs-taskdefinition-firelensconfiguration-options",
+      "type" : "object",
+      "javaType" : "java.util.Map<String, java.lang.CharSequence>"
+    },
+    "Type" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-firelensconfiguration.html#cfn-ecs-taskdefinition-firelensconfiguration-type",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

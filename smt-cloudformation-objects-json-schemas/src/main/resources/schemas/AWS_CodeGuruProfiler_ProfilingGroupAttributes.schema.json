@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CodeGuruProfiler_ProfilingGroupAttributes.schema.json",
+  "title" : "ProfilingGroupAttributes",
+  "type" : "string",
+  "enum" : [ "Arn" ],
+  "javaType" : "shiver.me.timbers.aws.codeguruprofiler.ProfilingGroupAttributes"
+}

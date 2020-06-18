@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CloudWatch_CompositeAlarmResource.schema.json",
+  "title" : "CompositeAlarmResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-compositealarm.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.cloudwatch.CompositeAlarmResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<CompositeAlarmResource>", "shiver.me.timbers.aws.HasCondition<CompositeAlarmResource>", "shiver.me.timbers.aws.HasAttributes<CompositeAlarmAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::CloudWatch::CompositeAlarm"
+    },
+    "Properties" : {
+      "$ref" : "AWS_CloudWatch_CompositeAlarm.schema.json"
+    }
+  }
+}

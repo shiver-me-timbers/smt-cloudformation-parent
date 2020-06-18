@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_TrafficMirrorTargetResource.schema.json",
+  "title" : "TrafficMirrorTargetResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trafficmirrortarget.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.ec2.TrafficMirrorTargetResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<TrafficMirrorTargetResource>", "shiver.me.timbers.aws.HasCondition<TrafficMirrorTargetResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::TrafficMirrorTarget"
+    },
+    "Properties" : {
+      "$ref" : "AWS_EC2_TrafficMirrorTarget.schema.json"
+    }
+  }
+}

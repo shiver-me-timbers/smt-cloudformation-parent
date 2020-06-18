@@ -21,11 +21,14 @@ import shiver.me.timbers.aws.Property;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "IotEvents",
+    "Firehose",
+    "IotTopicPublish",
+    "DynamoDB",
+    "DynamoDBv2",
+    "IotSiteWise",
     "ResetTimer",
     "Sqs",
-    "Firehose",
     "Sns",
-    "IotTopicPublish",
     "SetTimer",
     "ClearTimer",
     "Lambda",
@@ -43,6 +46,51 @@ public class DetectorModelAction implements Property<DetectorModelAction>
     @JsonProperty("IotEvents")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-iotevents.html")
     private Property<DetectorModelIotEvents> iotEvents;
+    /**
+     * DetectorModelFirehose
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-firehose.html
+     * 
+     */
+    @JsonProperty("Firehose")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-firehose.html")
+    private Property<DetectorModelFirehose> firehose;
+    /**
+     * DetectorModelIotTopicPublish
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-iottopicpublish.html
+     * 
+     */
+    @JsonProperty("IotTopicPublish")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-iottopicpublish.html")
+    private Property<DetectorModelIotTopicPublish> iotTopicPublish;
+    /**
+     * DetectorModelDynamoDB
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-dynamodb.html
+     * 
+     */
+    @JsonProperty("DynamoDB")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-dynamodb.html")
+    private Property<DetectorModelDynamoDB> dynamoDB;
+    /**
+     * DetectorModelDynamoDBv2
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-dynamodbv2.html
+     * 
+     */
+    @JsonProperty("DynamoDBv2")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-dynamodbv2.html")
+    private Property<DetectorModelDynamoDBv2> dynamoDBv2;
+    /**
+     * DetectorModelIotSiteWise
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-iotsitewise.html
+     * 
+     */
+    @JsonProperty("IotSiteWise")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-iotsitewise.html")
+    private Property<DetectorModelIotSiteWise> iotSiteWise;
     /**
      * DetectorModelResetTimer
      * <p>
@@ -62,15 +110,6 @@ public class DetectorModelAction implements Property<DetectorModelAction>
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-sqs.html")
     private Property<DetectorModelSqs> sqs;
     /**
-     * DetectorModelFirehose
-     * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-firehose.html
-     * 
-     */
-    @JsonProperty("Firehose")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-firehose.html")
-    private Property<DetectorModelFirehose> firehose;
-    /**
      * DetectorModelSns
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-sns.html
@@ -79,15 +118,6 @@ public class DetectorModelAction implements Property<DetectorModelAction>
     @JsonProperty("Sns")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-sns.html")
     private Property<DetectorModelSns> sns;
-    /**
-     * DetectorModelIotTopicPublish
-     * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-iottopicpublish.html
-     * 
-     */
-    @JsonProperty("IotTopicPublish")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-iottopicpublish.html")
-    private Property<DetectorModelIotTopicPublish> iotTopicPublish;
     /**
      * DetectorModelSetTimer
      * <p>
@@ -153,6 +183,141 @@ public class DetectorModelAction implements Property<DetectorModelAction>
     }
 
     /**
+     * DetectorModelFirehose
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-firehose.html
+     * 
+     */
+    @JsonIgnore
+    public Property<DetectorModelFirehose> getFirehose() {
+        return firehose;
+    }
+
+    /**
+     * DetectorModelFirehose
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-firehose.html
+     * 
+     */
+    @JsonIgnore
+    public void setFirehose(Property<DetectorModelFirehose> firehose) {
+        this.firehose = firehose;
+    }
+
+    public DetectorModelAction withFirehose(Property<DetectorModelFirehose> firehose) {
+        this.firehose = firehose;
+        return this;
+    }
+
+    /**
+     * DetectorModelIotTopicPublish
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-iottopicpublish.html
+     * 
+     */
+    @JsonIgnore
+    public Property<DetectorModelIotTopicPublish> getIotTopicPublish() {
+        return iotTopicPublish;
+    }
+
+    /**
+     * DetectorModelIotTopicPublish
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-iottopicpublish.html
+     * 
+     */
+    @JsonIgnore
+    public void setIotTopicPublish(Property<DetectorModelIotTopicPublish> iotTopicPublish) {
+        this.iotTopicPublish = iotTopicPublish;
+    }
+
+    public DetectorModelAction withIotTopicPublish(Property<DetectorModelIotTopicPublish> iotTopicPublish) {
+        this.iotTopicPublish = iotTopicPublish;
+        return this;
+    }
+
+    /**
+     * DetectorModelDynamoDB
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-dynamodb.html
+     * 
+     */
+    @JsonIgnore
+    public Property<DetectorModelDynamoDB> getDynamoDB() {
+        return dynamoDB;
+    }
+
+    /**
+     * DetectorModelDynamoDB
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-dynamodb.html
+     * 
+     */
+    @JsonIgnore
+    public void setDynamoDB(Property<DetectorModelDynamoDB> dynamoDB) {
+        this.dynamoDB = dynamoDB;
+    }
+
+    public DetectorModelAction withDynamoDB(Property<DetectorModelDynamoDB> dynamoDB) {
+        this.dynamoDB = dynamoDB;
+        return this;
+    }
+
+    /**
+     * DetectorModelDynamoDBv2
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-dynamodbv2.html
+     * 
+     */
+    @JsonIgnore
+    public Property<DetectorModelDynamoDBv2> getDynamoDBv2() {
+        return dynamoDBv2;
+    }
+
+    /**
+     * DetectorModelDynamoDBv2
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-dynamodbv2.html
+     * 
+     */
+    @JsonIgnore
+    public void setDynamoDBv2(Property<DetectorModelDynamoDBv2> dynamoDBv2) {
+        this.dynamoDBv2 = dynamoDBv2;
+    }
+
+    public DetectorModelAction withDynamoDBv2(Property<DetectorModelDynamoDBv2> dynamoDBv2) {
+        this.dynamoDBv2 = dynamoDBv2;
+        return this;
+    }
+
+    /**
+     * DetectorModelIotSiteWise
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-iotsitewise.html
+     * 
+     */
+    @JsonIgnore
+    public Property<DetectorModelIotSiteWise> getIotSiteWise() {
+        return iotSiteWise;
+    }
+
+    /**
+     * DetectorModelIotSiteWise
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-iotsitewise.html
+     * 
+     */
+    @JsonIgnore
+    public void setIotSiteWise(Property<DetectorModelIotSiteWise> iotSiteWise) {
+        this.iotSiteWise = iotSiteWise;
+    }
+
+    public DetectorModelAction withIotSiteWise(Property<DetectorModelIotSiteWise> iotSiteWise) {
+        this.iotSiteWise = iotSiteWise;
+        return this;
+    }
+
+    /**
      * DetectorModelResetTimer
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-resettimer.html
@@ -207,33 +372,6 @@ public class DetectorModelAction implements Property<DetectorModelAction>
     }
 
     /**
-     * DetectorModelFirehose
-     * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-firehose.html
-     * 
-     */
-    @JsonIgnore
-    public Property<DetectorModelFirehose> getFirehose() {
-        return firehose;
-    }
-
-    /**
-     * DetectorModelFirehose
-     * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-firehose.html
-     * 
-     */
-    @JsonIgnore
-    public void setFirehose(Property<DetectorModelFirehose> firehose) {
-        this.firehose = firehose;
-    }
-
-    public DetectorModelAction withFirehose(Property<DetectorModelFirehose> firehose) {
-        this.firehose = firehose;
-        return this;
-    }
-
-    /**
      * DetectorModelSns
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-sns.html
@@ -257,33 +395,6 @@ public class DetectorModelAction implements Property<DetectorModelAction>
 
     public DetectorModelAction withSns(Property<DetectorModelSns> sns) {
         this.sns = sns;
-        return this;
-    }
-
-    /**
-     * DetectorModelIotTopicPublish
-     * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-iottopicpublish.html
-     * 
-     */
-    @JsonIgnore
-    public Property<DetectorModelIotTopicPublish> getIotTopicPublish() {
-        return iotTopicPublish;
-    }
-
-    /**
-     * DetectorModelIotTopicPublish
-     * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-iottopicpublish.html
-     * 
-     */
-    @JsonIgnore
-    public void setIotTopicPublish(Property<DetectorModelIotTopicPublish> iotTopicPublish) {
-        this.iotTopicPublish = iotTopicPublish;
-    }
-
-    public DetectorModelAction withIotTopicPublish(Property<DetectorModelIotTopicPublish> iotTopicPublish) {
-        this.iotTopicPublish = iotTopicPublish;
         return this;
     }
 
@@ -397,12 +508,12 @@ public class DetectorModelAction implements Property<DetectorModelAction>
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("iotEvents", iotEvents).append("resetTimer", resetTimer).append("sqs", sqs).append("firehose", firehose).append("sns", sns).append("iotTopicPublish", iotTopicPublish).append("setTimer", setTimer).append("clearTimer", clearTimer).append("lambda", lambda).append("setVariable", setVariable).toString();
+        return new ToStringBuilder(this).append("iotEvents", iotEvents).append("firehose", firehose).append("iotTopicPublish", iotTopicPublish).append("dynamoDB", dynamoDB).append("dynamoDBv2", dynamoDBv2).append("iotSiteWise", iotSiteWise).append("resetTimer", resetTimer).append("sqs", sqs).append("sns", sns).append("setTimer", setTimer).append("clearTimer", clearTimer).append("lambda", lambda).append("setVariable", setVariable).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(firehose).append(lambda).append(iotEvents).append(sqs).append(resetTimer).append(sns).append(setVariable).append(iotTopicPublish).append(clearTimer).append(setTimer).toHashCode();
+        return new HashCodeBuilder().append(firehose).append(resetTimer).append(dynamoDBv2).append(setVariable).append(clearTimer).append(dynamoDB).append(lambda).append(iotEvents).append(sqs).append(sns).append(iotTopicPublish).append(iotSiteWise).append(setTimer).toHashCode();
     }
 
     @Override
@@ -414,7 +525,7 @@ public class DetectorModelAction implements Property<DetectorModelAction>
             return false;
         }
         DetectorModelAction rhs = ((DetectorModelAction) other);
-        return new EqualsBuilder().append(firehose, rhs.firehose).append(lambda, rhs.lambda).append(iotEvents, rhs.iotEvents).append(sqs, rhs.sqs).append(resetTimer, rhs.resetTimer).append(sns, rhs.sns).append(setVariable, rhs.setVariable).append(iotTopicPublish, rhs.iotTopicPublish).append(clearTimer, rhs.clearTimer).append(setTimer, rhs.setTimer).isEquals();
+        return new EqualsBuilder().append(firehose, rhs.firehose).append(resetTimer, rhs.resetTimer).append(dynamoDBv2, rhs.dynamoDBv2).append(setVariable, rhs.setVariable).append(clearTimer, rhs.clearTimer).append(dynamoDB, rhs.dynamoDB).append(lambda, rhs.lambda).append(iotEvents, rhs.iotEvents).append(sqs, rhs.sqs).append(sns, rhs.sns).append(iotTopicPublish, rhs.iotTopicPublish).append(iotSiteWise, rhs.iotSiteWise).append(setTimer, rhs.setTimer).isEquals();
     }
 
 }

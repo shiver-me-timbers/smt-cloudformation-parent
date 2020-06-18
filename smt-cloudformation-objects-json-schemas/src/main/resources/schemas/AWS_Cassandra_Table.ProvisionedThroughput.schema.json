@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Cassandra_Table.ProvisionedThroughput.schema.json",
+  "title" : "TableProvisionedThroughput",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cassandra-table-provisionedthroughput.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.cassandra.TableProvisionedThroughput",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TableProvisionedThroughput>" ],
+  "properties" : {
+    "ReadCapacityUnits" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cassandra-table-provisionedthroughput.html#cfn-cassandra-table-provisionedthroughput-readcapacityunits",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "WriteCapacityUnits" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cassandra-table-provisionedthroughput.html#cfn-cassandra-table-provisionedthroughput-writecapacityunits",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_EmailTemplate.schema.json",
+  "title" : "EmailTemplate",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-emailtemplate.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.pinpoint.EmailTemplate",
+  "properties" : {
+    "HtmlPart" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-emailtemplate.html#cfn-pinpoint-emailtemplate-htmlpart",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TextPart" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-emailtemplate.html#cfn-pinpoint-emailtemplate-textpart",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TemplateName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-emailtemplate.html#cfn-pinpoint-emailtemplate-templatename",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TemplateDescription" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-emailtemplate.html#cfn-pinpoint-emailtemplate-templatedescription",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DefaultSubstitutions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-emailtemplate.html#cfn-pinpoint-emailtemplate-defaultsubstitutions",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Subject" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-emailtemplate.html#cfn-pinpoint-emailtemplate-subject",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-emailtemplate.html#cfn-pinpoint-emailtemplate-tags",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
+    }
+  }
+}

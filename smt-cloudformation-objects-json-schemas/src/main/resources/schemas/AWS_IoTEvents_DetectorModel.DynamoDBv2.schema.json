@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoTEvents_DetectorModel.DynamoDBv2.schema.json",
+  "title" : "DetectorModelDynamoDBv2",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-dynamodbv2.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.iotevents.DetectorModelDynamoDBv2",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DetectorModelDynamoDBv2>" ],
+  "properties" : {
+    "TableName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-dynamodbv2.html#cfn-iotevents-detectormodel-dynamodbv2-tablename",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Payload" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-dynamodbv2.html#cfn-iotevents-detectormodel-dynamodbv2-payload",
+      "$ref" : "AWS_IoTEvents_DetectorModel.Payload.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotevents.DetectorModelPayload>"
+    }
+  }
+}

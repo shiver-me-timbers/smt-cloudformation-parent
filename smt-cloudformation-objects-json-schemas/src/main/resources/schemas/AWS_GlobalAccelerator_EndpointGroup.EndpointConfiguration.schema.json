@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_GlobalAccelerator_EndpointGroup.EndpointConfiguration.schema.json",
+  "title" : "EndpointGroupEndpointConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-globalaccelerator-endpointgroup-endpointconfiguration.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.globalaccelerator.EndpointGroupEndpointConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<EndpointGroupEndpointConfiguration>" ],
+  "properties" : {
+    "EndpointId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-globalaccelerator-endpointgroup-endpointconfiguration.html#cfn-globalaccelerator-endpointgroup-endpointconfiguration-endpointid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Weight" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-globalaccelerator-endpointgroup-endpointconfiguration.html#cfn-globalaccelerator-endpointgroup-endpointconfiguration-weight",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "ClientIPPreservationEnabled" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-globalaccelerator-endpointgroup-endpointconfiguration.html#cfn-globalaccelerator-endpointgroup-endpointconfiguration-clientippreservationenabled",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

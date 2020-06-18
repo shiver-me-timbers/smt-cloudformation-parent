@@ -7,6 +7,11 @@
   "javaType" : "shiver.me.timbers.aws.ssm.AssociationS3OutputLocation",
   "javaInterfaces" : [ "shiver.me.timbers.aws.Property<AssociationS3OutputLocation>" ],
   "properties" : {
+    "OutputS3Region" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-s3outputlocation.html#cfn-ssm-association-s3outputlocation-outputs3region",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "OutputS3BucketName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-s3outputlocation.html#cfn-ssm-association-s3outputlocation-outputs3bucketname",
       "type" : "string",

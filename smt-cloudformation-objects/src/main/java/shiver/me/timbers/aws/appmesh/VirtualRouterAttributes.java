@@ -11,6 +11,8 @@ public enum VirtualRouterAttributes {
     UID("Uid"),
     MESH_NAME("MeshName"),
     VIRTUAL_ROUTER_NAME("VirtualRouterName"),
+    MESH_OWNER("MeshOwner"),
+    RESOURCE_OWNER("ResourceOwner"),
     ARN("Arn");
     private final String value;
     private final static Map<String, VirtualRouterAttributes> CONSTANTS = new HashMap<String, VirtualRouterAttributes>();

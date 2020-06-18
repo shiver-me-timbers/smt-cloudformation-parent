@@ -22,9 +22,12 @@ import shiver.me.timbers.aws.Property;
 @JsonPropertyOrder({
     "GroupName",
     "Tenancy",
+    "SpreadDomain",
+    "PartitionNumber",
     "AvailabilityZone",
     "Affinity",
-    "HostId"
+    "HostId",
+    "HostResourceGroupArn"
 })
 public class LaunchTemplatePlacement implements Property<LaunchTemplatePlacement>
 {
@@ -43,6 +46,20 @@ public class LaunchTemplatePlacement implements Property<LaunchTemplatePlacement
     @JsonProperty("Tenancy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-tenancy")
     private CharSequence tenancy;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-spreaddomain
+     * 
+     */
+    @JsonProperty("SpreadDomain")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-spreaddomain")
+    private CharSequence spreadDomain;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-partitionnumber
+     * 
+     */
+    @JsonProperty("PartitionNumber")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-partitionnumber")
+    private Number partitionNumber;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-availabilityzone
      * 
@@ -64,6 +81,13 @@ public class LaunchTemplatePlacement implements Property<LaunchTemplatePlacement
     @JsonProperty("HostId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-hostid")
     private CharSequence hostId;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-hostresourcegrouparn
+     * 
+     */
+    @JsonProperty("HostResourceGroupArn")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-hostresourcegrouparn")
+    private CharSequence hostResourceGroupArn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-groupname
@@ -108,6 +132,52 @@ public class LaunchTemplatePlacement implements Property<LaunchTemplatePlacement
 
     public LaunchTemplatePlacement withTenancy(CharSequence tenancy) {
         this.tenancy = tenancy;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-spreaddomain
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getSpreadDomain() {
+        return spreadDomain;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-spreaddomain
+     * 
+     */
+    @JsonIgnore
+    public void setSpreadDomain(CharSequence spreadDomain) {
+        this.spreadDomain = spreadDomain;
+    }
+
+    public LaunchTemplatePlacement withSpreadDomain(CharSequence spreadDomain) {
+        this.spreadDomain = spreadDomain;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-partitionnumber
+     * 
+     */
+    @JsonIgnore
+    public Number getPartitionNumber() {
+        return partitionNumber;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-partitionnumber
+     * 
+     */
+    @JsonIgnore
+    public void setPartitionNumber(Number partitionNumber) {
+        this.partitionNumber = partitionNumber;
+    }
+
+    public LaunchTemplatePlacement withPartitionNumber(Number partitionNumber) {
+        this.partitionNumber = partitionNumber;
         return this;
     }
 
@@ -180,14 +250,37 @@ public class LaunchTemplatePlacement implements Property<LaunchTemplatePlacement
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-hostresourcegrouparn
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getHostResourceGroupArn() {
+        return hostResourceGroupArn;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-hostresourcegrouparn
+     * 
+     */
+    @JsonIgnore
+    public void setHostResourceGroupArn(CharSequence hostResourceGroupArn) {
+        this.hostResourceGroupArn = hostResourceGroupArn;
+    }
+
+    public LaunchTemplatePlacement withHostResourceGroupArn(CharSequence hostResourceGroupArn) {
+        this.hostResourceGroupArn = hostResourceGroupArn;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("groupName", groupName).append("tenancy", tenancy).append("availabilityZone", availabilityZone).append("affinity", affinity).append("hostId", hostId).toString();
+        return new ToStringBuilder(this).append("groupName", groupName).append("tenancy", tenancy).append("spreadDomain", spreadDomain).append("partitionNumber", partitionNumber).append("availabilityZone", availabilityZone).append("affinity", affinity).append("hostId", hostId).append("hostResourceGroupArn", hostResourceGroupArn).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(tenancy).append(hostId).append(groupName).append(availabilityZone).append(affinity).toHashCode();
+        return new HashCodeBuilder().append(partitionNumber).append(groupName).append(hostResourceGroupArn).append(tenancy).append(hostId).append(availabilityZone).append(spreadDomain).append(affinity).toHashCode();
     }
 
     @Override
@@ -199,7 +292,7 @@ public class LaunchTemplatePlacement implements Property<LaunchTemplatePlacement
             return false;
         }
         LaunchTemplatePlacement rhs = ((LaunchTemplatePlacement) other);
-        return new EqualsBuilder().append(tenancy, rhs.tenancy).append(hostId, rhs.hostId).append(groupName, rhs.groupName).append(availabilityZone, rhs.availabilityZone).append(affinity, rhs.affinity).isEquals();
+        return new EqualsBuilder().append(partitionNumber, rhs.partitionNumber).append(groupName, rhs.groupName).append(hostResourceGroupArn, rhs.hostResourceGroupArn).append(tenancy, rhs.tenancy).append(hostId, rhs.hostId).append(availabilityZone, rhs.availabilityZone).append(spreadDomain, rhs.spreadDomain).append(affinity, rhs.affinity).isEquals();
     }
 
 }

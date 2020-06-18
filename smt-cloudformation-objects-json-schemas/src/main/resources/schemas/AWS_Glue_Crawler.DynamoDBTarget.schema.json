@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Glue_Crawler.DynamoDBTarget.schema.json",
+  "title" : "CrawlerDynamoDBTarget",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-dynamodbtarget.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.glue.CrawlerDynamoDBTarget",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<CrawlerDynamoDBTarget>" ],
+  "properties" : {
+    "Path" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-dynamodbtarget.html#cfn-glue-crawler-dynamodbtarget-path",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

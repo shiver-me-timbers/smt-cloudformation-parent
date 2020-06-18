@@ -6,6 +6,16 @@
   "type" : "object",
   "javaType" : "shiver.me.timbers.aws.certificatemanager.Certificate",
   "properties" : {
+    "CertificateAuthorityArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-certificateauthorityarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "CertificateTransparencyLoggingPreference" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-certificatetransparencyloggingpreference",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "DomainName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-domainname",
       "type" : "string",

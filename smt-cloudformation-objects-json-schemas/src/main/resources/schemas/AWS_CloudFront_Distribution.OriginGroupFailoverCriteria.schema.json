@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CloudFront_Distribution.OriginGroupFailoverCriteria.schema.json",
+  "title" : "DistributionOriginGroupFailoverCriteria",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origingroupfailovercriteria.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.cloudfront.DistributionOriginGroupFailoverCriteria",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DistributionOriginGroupFailoverCriteria>" ],
+  "properties" : {
+    "StatusCodes" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origingroupfailovercriteria.html#cfn-cloudfront-distribution-origingroupfailovercriteria-statuscodes",
+      "$ref" : "AWS_CloudFront_Distribution.StatusCodes.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cloudfront.DistributionStatusCodes>"
+    }
+  }
+}

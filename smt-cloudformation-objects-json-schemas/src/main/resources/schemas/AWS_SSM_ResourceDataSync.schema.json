@@ -6,10 +6,20 @@
   "type" : "object",
   "javaType" : "shiver.me.timbers.aws.ssm.ResourceDataSync",
   "properties" : {
+    "S3Destination" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-s3destination",
+      "$ref" : "AWS_SSM_ResourceDataSync.S3Destination.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ssm.ResourceDataSyncS3Destination>"
+    },
     "KMSKeyArn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-kmskeyarn",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
+    },
+    "SyncSource" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-syncsource",
+      "$ref" : "AWS_SSM_ResourceDataSync.SyncSource.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ssm.ResourceDataSyncSyncSource>"
     },
     "BucketName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-bucketname",
@@ -28,6 +38,11 @@
     },
     "SyncName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-syncname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SyncType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-synctype",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Cassandra_Table.ClusteringKeyColumn.schema.json",
+  "title" : "TableClusteringKeyColumn",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cassandra-table-clusteringkeycolumn.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.cassandra.TableClusteringKeyColumn",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TableClusteringKeyColumn>" ],
+  "properties" : {
+    "Column" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cassandra-table-clusteringkeycolumn.html#cfn-cassandra-table-clusteringkeycolumn-column",
+      "$ref" : "AWS_Cassandra_Table.Column.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cassandra.TableColumn>"
+    },
+    "OrderBy" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cassandra-table-clusteringkeycolumn.html#cfn-cassandra-table-clusteringkeycolumn-orderby",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

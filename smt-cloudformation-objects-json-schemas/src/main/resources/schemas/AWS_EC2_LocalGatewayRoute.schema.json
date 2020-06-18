@@ -1,0 +1,25 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_LocalGatewayRoute.schema.json",
+  "title" : "LocalGatewayRoute",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-localgatewayroute.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.ec2.LocalGatewayRoute",
+  "properties" : {
+    "DestinationCidrBlock" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-localgatewayroute.html#cfn-ec2-localgatewayroute-destinationcidrblock",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "LocalGatewayRouteTableId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-localgatewayroute.html#cfn-ec2-localgatewayroute-localgatewayroutetableid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "LocalGatewayVirtualInterfaceGroupId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-localgatewayroute.html#cfn-ec2-localgatewayroute-localgatewayvirtualinterfacegroupid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

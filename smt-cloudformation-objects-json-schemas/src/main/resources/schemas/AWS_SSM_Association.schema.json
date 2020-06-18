@@ -26,15 +26,10 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
-    "OutputLocation" : {
-      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-outputlocation",
-      "$ref" : "AWS_SSM_Association.InstanceAssociationOutputLocation.schema.json",
-      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ssm.AssociationInstanceAssociationOutputLocation>"
-    },
     "Parameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-parameters",
       "type" : "object",
-      "javaType" : "java.util.Map<String, shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ssm.AssociationParameterValues>>"
+      "javaType" : "java.util.Map<String, Object>"
     },
     "ScheduleExpression" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-scheduleexpression",
@@ -44,11 +39,45 @@
     "Targets" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-targets",
       "type" : "array",
-      "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_SSM_Association.Target.schema.json",
         "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ssm.AssociationTarget>"
       }
+    },
+    "OutputLocation" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-outputlocation",
+      "$ref" : "AWS_SSM_Association.InstanceAssociationOutputLocation.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ssm.AssociationInstanceAssociationOutputLocation>"
+    },
+    "AutomationTargetParameterName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-automationtargetparametername",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "MaxErrors" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-maxerrors",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "MaxConcurrency" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-maxconcurrency",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ComplianceSeverity" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-complianceseverity",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SyncCompliance" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-synccompliance",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "WaitForSuccessTimeoutSeconds" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-waitforsuccesstimeoutseconds",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
     }
   }
 }

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Athena_WorkGroupResource.schema.json",
+  "title" : "WorkGroupResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-workgroup.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.athena.WorkGroupResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<WorkGroupResource>", "shiver.me.timbers.aws.HasCondition<WorkGroupResource>", "shiver.me.timbers.aws.HasAttributes<WorkGroupAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Athena::WorkGroup"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Athena_WorkGroup.schema.json"
+    }
+  }
+}

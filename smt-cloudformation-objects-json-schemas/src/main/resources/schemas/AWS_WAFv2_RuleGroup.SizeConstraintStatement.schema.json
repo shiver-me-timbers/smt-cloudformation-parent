@@ -1,0 +1,34 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WAFv2_RuleGroup.SizeConstraintStatement.schema.json",
+  "title" : "RuleGroupSizeConstraintStatement",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-sizeconstraintstatement.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.wafv2.RuleGroupSizeConstraintStatement",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<RuleGroupSizeConstraintStatement>" ],
+  "properties" : {
+    "FieldToMatch" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-sizeconstraintstatement.html#cfn-wafv2-rulegroup-sizeconstraintstatement-fieldtomatch",
+      "$ref" : "AWS_WAFv2_RuleGroup.FieldToMatch.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.wafv2.RuleGroupFieldToMatch>"
+    },
+    "ComparisonOperator" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-sizeconstraintstatement.html#cfn-wafv2-rulegroup-sizeconstraintstatement-comparisonoperator",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Size" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-sizeconstraintstatement.html#cfn-wafv2-rulegroup-sizeconstraintstatement-size",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "TextTransformations" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-sizeconstraintstatement.html#cfn-wafv2-rulegroup-sizeconstraintstatement-texttransformations",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_WAFv2_RuleGroup.TextTransformation.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.wafv2.RuleGroupTextTransformation>"
+      }
+    }
+  }
+}

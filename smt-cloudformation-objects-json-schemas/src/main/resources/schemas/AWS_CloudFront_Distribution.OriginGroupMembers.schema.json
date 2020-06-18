@@ -1,0 +1,24 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CloudFront_Distribution.OriginGroupMembers.schema.json",
+  "title" : "DistributionOriginGroupMembers",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origingroupmembers.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.cloudfront.DistributionOriginGroupMembers",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DistributionOriginGroupMembers>" ],
+  "properties" : {
+    "Quantity" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origingroupmembers.html#cfn-cloudfront-distribution-origingroupmembers-quantity",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "Items" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origingroupmembers.html#cfn-cloudfront-distribution-origingroupmembers-items",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_CloudFront_Distribution.OriginGroupMember.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cloudfront.DistributionOriginGroupMember>"
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_GameLift_MatchmakingRuleSetAttributes.schema.json",
+  "title" : "MatchmakingRuleSetAttributes",
+  "type" : "string",
+  "enum" : [ "Arn", "Name" ],
+  "javaType" : "shiver.me.timbers.aws.gamelift.MatchmakingRuleSetAttributes"
+}

@@ -1,6 +1,8 @@
 
 package shiver.me.timbers.aws.ec2;
 
+import java.util.ArrayList;
+import java.util.List;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -9,6 +11,8 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+import shiver.me.timbers.aws.Property;
+import shiver.me.timbers.aws.Tag;
 
 
 /**
@@ -21,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "Domain",
     "InstanceId",
-    "PublicIpv4Pool"
+    "PublicIpv4Pool",
+    "Tags"
 })
 public class EIP {
 
@@ -46,6 +51,13 @@ public class EIP {
     @JsonProperty("PublicIpv4Pool")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip.html#cfn-ec2-eip-publicipv4pool")
     private CharSequence publicIpv4Pool;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip.html#cfn-ec2-eip-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip.html#cfn-ec2-eip-tags")
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip.html#cfn-ec2-eip-domain
@@ -116,14 +128,37 @@ public class EIP {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip.html#cfn-ec2-eip-tags
+     * 
+     */
+    @JsonIgnore
+    public List<Property<Tag>> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip.html#cfn-ec2-eip-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+    }
+
+    public EIP withTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("domain", domain).append("instanceId", instanceId).append("publicIpv4Pool", publicIpv4Pool).toString();
+        return new ToStringBuilder(this).append("domain", domain).append("instanceId", instanceId).append("publicIpv4Pool", publicIpv4Pool).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(publicIpv4Pool).append(instanceId).append(domain).toHashCode();
+        return new HashCodeBuilder().append(publicIpv4Pool).append(instanceId).append(domain).append(tags).toHashCode();
     }
 
     @Override
@@ -135,7 +170,7 @@ public class EIP {
             return false;
         }
         EIP rhs = ((EIP) other);
-        return new EqualsBuilder().append(publicIpv4Pool, rhs.publicIpv4Pool).append(instanceId, rhs.instanceId).append(domain, rhs.domain).isEquals();
+        return new EqualsBuilder().append(publicIpv4Pool, rhs.publicIpv4Pool).append(instanceId, rhs.instanceId).append(domain, rhs.domain).append(tags, rhs.tags).isEquals();
     }
 
 }

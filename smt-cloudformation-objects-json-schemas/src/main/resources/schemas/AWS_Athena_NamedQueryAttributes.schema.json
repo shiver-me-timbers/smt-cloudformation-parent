@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Athena_NamedQueryAttributes.schema.json",
+  "title" : "NamedQueryAttributes",
+  "type" : "string",
+  "enum" : [ "NamedQueryId" ],
+  "javaType" : "shiver.me.timbers.aws.athena.NamedQueryAttributes"
+}

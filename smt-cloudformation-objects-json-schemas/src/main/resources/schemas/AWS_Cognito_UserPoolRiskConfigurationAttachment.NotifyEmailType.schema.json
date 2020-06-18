@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Cognito_UserPoolRiskConfigurationAttachment.NotifyEmailType.schema.json",
+  "title" : "UserPoolRiskConfigurationAttachmentNotifyEmailType",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpoolriskconfigurationattachment-notifyemailtype.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.cognito.UserPoolRiskConfigurationAttachmentNotifyEmailType",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<UserPoolRiskConfigurationAttachmentNotifyEmailType>" ],
+  "properties" : {
+    "TextBody" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpoolriskconfigurationattachment-notifyemailtype.html#cfn-cognito-userpoolriskconfigurationattachment-notifyemailtype-textbody",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "HtmlBody" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpoolriskconfigurationattachment-notifyemailtype.html#cfn-cognito-userpoolriskconfigurationattachment-notifyemailtype-htmlbody",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Subject" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpoolriskconfigurationattachment-notifyemailtype.html#cfn-cognito-userpoolriskconfigurationattachment-notifyemailtype-subject",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

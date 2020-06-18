@@ -23,6 +23,7 @@ import shiver.me.timbers.aws.Tag;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "StorageType",
     "KmsKeyId",
     "StorageCapacity",
     "FileSystemType",
@@ -35,6 +36,13 @@ import shiver.me.timbers.aws.Tag;
 })
 public class FileSystem {
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html#cfn-fsx-filesystem-storagetype
+     * 
+     */
+    @JsonProperty("StorageType")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html#cfn-fsx-filesystem-storagetype")
+    private CharSequence storageType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html#cfn-fsx-filesystem-kmskeyid
      * 
@@ -102,6 +110,29 @@ public class FileSystem {
     @JsonProperty("WindowsConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration.html")
     private Property<FileSystemWindowsConfiguration> windowsConfiguration;
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html#cfn-fsx-filesystem-storagetype
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getStorageType() {
+        return storageType;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html#cfn-fsx-filesystem-storagetype
+     * 
+     */
+    @JsonIgnore
+    public void setStorageType(CharSequence storageType) {
+        this.storageType = storageType;
+    }
+
+    public FileSystem withStorageType(CharSequence storageType) {
+        this.storageType = storageType;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html#cfn-fsx-filesystem-kmskeyid
@@ -320,12 +351,12 @@ public class FileSystem {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("kmsKeyId", kmsKeyId).append("storageCapacity", storageCapacity).append("fileSystemType", fileSystemType).append("lustreConfiguration", lustreConfiguration).append("backupId", backupId).append("subnetIds", subnetIds).append("securityGroupIds", securityGroupIds).append("tags", tags).append("windowsConfiguration", windowsConfiguration).toString();
+        return new ToStringBuilder(this).append("storageType", storageType).append("kmsKeyId", kmsKeyId).append("storageCapacity", storageCapacity).append("fileSystemType", fileSystemType).append("lustreConfiguration", lustreConfiguration).append("backupId", backupId).append("subnetIds", subnetIds).append("securityGroupIds", securityGroupIds).append("tags", tags).append("windowsConfiguration", windowsConfiguration).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(lustreConfiguration).append(securityGroupIds).append(backupId).append(storageCapacity).append(kmsKeyId).append(windowsConfiguration).append(fileSystemType).append(subnetIds).append(tags).toHashCode();
+        return new HashCodeBuilder().append(lustreConfiguration).append(securityGroupIds).append(backupId).append(storageType).append(storageCapacity).append(kmsKeyId).append(windowsConfiguration).append(fileSystemType).append(subnetIds).append(tags).toHashCode();
     }
 
     @Override
@@ -337,7 +368,7 @@ public class FileSystem {
             return false;
         }
         FileSystem rhs = ((FileSystem) other);
-        return new EqualsBuilder().append(lustreConfiguration, rhs.lustreConfiguration).append(securityGroupIds, rhs.securityGroupIds).append(backupId, rhs.backupId).append(storageCapacity, rhs.storageCapacity).append(kmsKeyId, rhs.kmsKeyId).append(windowsConfiguration, rhs.windowsConfiguration).append(fileSystemType, rhs.fileSystemType).append(subnetIds, rhs.subnetIds).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(lustreConfiguration, rhs.lustreConfiguration).append(securityGroupIds, rhs.securityGroupIds).append(backupId, rhs.backupId).append(storageType, rhs.storageType).append(storageCapacity, rhs.storageCapacity).append(kmsKeyId, rhs.kmsKeyId).append(windowsConfiguration, rhs.windowsConfiguration).append(fileSystemType, rhs.fileSystemType).append(subnetIds, rhs.subnetIds).append(tags, rhs.tags).isEquals();
     }
 
 }

@@ -37,6 +37,7 @@ import shiver.me.timbers.aws.Property;
     "InstanceType",
     "Monitoring",
     "HibernationOptions",
+    "MetadataOptions",
     "LicenseSpecifications",
     "InstanceInitiatedShutdownBehavior",
     "CpuOptions",
@@ -164,6 +165,15 @@ public class LaunchTemplateLaunchTemplateData implements Property<LaunchTemplate
     @JsonProperty("HibernationOptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-hibernationoptions.html")
     private Property<LaunchTemplateHibernationOptions> hibernationOptions;
+    /**
+     * LaunchTemplateMetadataOptions
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-metadataoptions.html
+     * 
+     */
+    @JsonProperty("MetadataOptions")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-metadataoptions.html")
+    private Property<LaunchTemplateMetadataOptions> metadataOptions;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-licensespecifications
      * 
@@ -605,6 +615,33 @@ public class LaunchTemplateLaunchTemplateData implements Property<LaunchTemplate
     }
 
     /**
+     * LaunchTemplateMetadataOptions
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-metadataoptions.html
+     * 
+     */
+    @JsonIgnore
+    public Property<LaunchTemplateMetadataOptions> getMetadataOptions() {
+        return metadataOptions;
+    }
+
+    /**
+     * LaunchTemplateMetadataOptions
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-metadataoptions.html
+     * 
+     */
+    @JsonIgnore
+    public void setMetadataOptions(Property<LaunchTemplateMetadataOptions> metadataOptions) {
+        this.metadataOptions = metadataOptions;
+    }
+
+    public LaunchTemplateLaunchTemplateData withMetadataOptions(Property<LaunchTemplateMetadataOptions> metadataOptions) {
+        this.metadataOptions = metadataOptions;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-licensespecifications
      * 
      */
@@ -852,12 +889,12 @@ public class LaunchTemplateLaunchTemplateData implements Property<LaunchTemplate
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("securityGroups", securityGroups).append("tagSpecifications", tagSpecifications).append("userData", userData).append("blockDeviceMappings", blockDeviceMappings).append("iamInstanceProfile", iamInstanceProfile).append("kernelId", kernelId).append("ebsOptimized", ebsOptimized).append("elasticGpuSpecifications", elasticGpuSpecifications).append("elasticInferenceAccelerators", elasticInferenceAccelerators).append("placement", placement).append("networkInterfaces", networkInterfaces).append("imageId", imageId).append("instanceType", instanceType).append("monitoring", monitoring).append("hibernationOptions", hibernationOptions).append("licenseSpecifications", licenseSpecifications).append("instanceInitiatedShutdownBehavior", instanceInitiatedShutdownBehavior).append("cpuOptions", cpuOptions).append("securityGroupIds", securityGroupIds).append("keyName", keyName).append("disableApiTermination", disableApiTermination).append("instanceMarketOptions", instanceMarketOptions).append("ramDiskId", ramDiskId).append("capacityReservationSpecification", capacityReservationSpecification).append("creditSpecification", creditSpecification).toString();
+        return new ToStringBuilder(this).append("securityGroups", securityGroups).append("tagSpecifications", tagSpecifications).append("userData", userData).append("blockDeviceMappings", blockDeviceMappings).append("iamInstanceProfile", iamInstanceProfile).append("kernelId", kernelId).append("ebsOptimized", ebsOptimized).append("elasticGpuSpecifications", elasticGpuSpecifications).append("elasticInferenceAccelerators", elasticInferenceAccelerators).append("placement", placement).append("networkInterfaces", networkInterfaces).append("imageId", imageId).append("instanceType", instanceType).append("monitoring", monitoring).append("hibernationOptions", hibernationOptions).append("metadataOptions", metadataOptions).append("licenseSpecifications", licenseSpecifications).append("instanceInitiatedShutdownBehavior", instanceInitiatedShutdownBehavior).append("cpuOptions", cpuOptions).append("securityGroupIds", securityGroupIds).append("keyName", keyName).append("disableApiTermination", disableApiTermination).append("instanceMarketOptions", instanceMarketOptions).append("ramDiskId", ramDiskId).append("capacityReservationSpecification", capacityReservationSpecification).append("creditSpecification", creditSpecification).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(kernelId).append(userData).append(capacityReservationSpecification).append(hibernationOptions).append(ramDiskId).append(instanceInitiatedShutdownBehavior).append(elasticInferenceAccelerators).append(securityGroupIds).append(tagSpecifications).append(elasticGpuSpecifications).append(ebsOptimized).append(imageId).append(blockDeviceMappings).append(licenseSpecifications).append(instanceType).append(keyName).append(cpuOptions).append(creditSpecification).append(monitoring).append(iamInstanceProfile).append(networkInterfaces).append(disableApiTermination).append(instanceMarketOptions).append(securityGroups).append(placement).toHashCode();
+        return new HashCodeBuilder().append(kernelId).append(userData).append(capacityReservationSpecification).append(hibernationOptions).append(ramDiskId).append(instanceInitiatedShutdownBehavior).append(elasticInferenceAccelerators).append(securityGroupIds).append(tagSpecifications).append(elasticGpuSpecifications).append(ebsOptimized).append(imageId).append(blockDeviceMappings).append(licenseSpecifications).append(instanceType).append(keyName).append(cpuOptions).append(creditSpecification).append(monitoring).append(iamInstanceProfile).append(networkInterfaces).append(disableApiTermination).append(metadataOptions).append(instanceMarketOptions).append(securityGroups).append(placement).toHashCode();
     }
 
     @Override
@@ -869,7 +906,7 @@ public class LaunchTemplateLaunchTemplateData implements Property<LaunchTemplate
             return false;
         }
         LaunchTemplateLaunchTemplateData rhs = ((LaunchTemplateLaunchTemplateData) other);
-        return new EqualsBuilder().append(kernelId, rhs.kernelId).append(userData, rhs.userData).append(capacityReservationSpecification, rhs.capacityReservationSpecification).append(hibernationOptions, rhs.hibernationOptions).append(ramDiskId, rhs.ramDiskId).append(instanceInitiatedShutdownBehavior, rhs.instanceInitiatedShutdownBehavior).append(elasticInferenceAccelerators, rhs.elasticInferenceAccelerators).append(securityGroupIds, rhs.securityGroupIds).append(tagSpecifications, rhs.tagSpecifications).append(elasticGpuSpecifications, rhs.elasticGpuSpecifications).append(ebsOptimized, rhs.ebsOptimized).append(imageId, rhs.imageId).append(blockDeviceMappings, rhs.blockDeviceMappings).append(licenseSpecifications, rhs.licenseSpecifications).append(instanceType, rhs.instanceType).append(keyName, rhs.keyName).append(cpuOptions, rhs.cpuOptions).append(creditSpecification, rhs.creditSpecification).append(monitoring, rhs.monitoring).append(iamInstanceProfile, rhs.iamInstanceProfile).append(networkInterfaces, rhs.networkInterfaces).append(disableApiTermination, rhs.disableApiTermination).append(instanceMarketOptions, rhs.instanceMarketOptions).append(securityGroups, rhs.securityGroups).append(placement, rhs.placement).isEquals();
+        return new EqualsBuilder().append(kernelId, rhs.kernelId).append(userData, rhs.userData).append(capacityReservationSpecification, rhs.capacityReservationSpecification).append(hibernationOptions, rhs.hibernationOptions).append(ramDiskId, rhs.ramDiskId).append(instanceInitiatedShutdownBehavior, rhs.instanceInitiatedShutdownBehavior).append(elasticInferenceAccelerators, rhs.elasticInferenceAccelerators).append(securityGroupIds, rhs.securityGroupIds).append(tagSpecifications, rhs.tagSpecifications).append(elasticGpuSpecifications, rhs.elasticGpuSpecifications).append(ebsOptimized, rhs.ebsOptimized).append(imageId, rhs.imageId).append(blockDeviceMappings, rhs.blockDeviceMappings).append(licenseSpecifications, rhs.licenseSpecifications).append(instanceType, rhs.instanceType).append(keyName, rhs.keyName).append(cpuOptions, rhs.cpuOptions).append(creditSpecification, rhs.creditSpecification).append(monitoring, rhs.monitoring).append(iamInstanceProfile, rhs.iamInstanceProfile).append(networkInterfaces, rhs.networkInterfaces).append(disableApiTermination, rhs.disableApiTermination).append(metadataOptions, rhs.metadataOptions).append(instanceMarketOptions, rhs.instanceMarketOptions).append(securityGroups, rhs.securityGroups).append(placement, rhs.placement).isEquals();
     }
 
 }

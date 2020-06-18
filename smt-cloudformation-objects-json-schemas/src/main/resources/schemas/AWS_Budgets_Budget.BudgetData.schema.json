@@ -22,6 +22,11 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "PlannedBudgetLimits" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-plannedbudgetlimits",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
+    },
     "CostFilters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-costfilters",
       "type" : "object",

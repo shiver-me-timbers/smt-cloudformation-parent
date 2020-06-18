@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Macie_FindingsFilter.FindingCriteria.schema.json",
+  "title" : "FindingsFilterFindingCriteria",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-macie-findingsfilter-findingcriteria.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.macie.FindingsFilterFindingCriteria",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<FindingsFilterFindingCriteria>" ],
+  "properties" : {
+    "Criterion" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-macie-findingsfilter-findingcriteria.html#cfn-macie-findingsfilter-findingcriteria-criterion",
+      "$ref" : "AWS_Macie_FindingsFilter.Criterion.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.macie.FindingsFilterCriterion>"
+    }
+  }
+}

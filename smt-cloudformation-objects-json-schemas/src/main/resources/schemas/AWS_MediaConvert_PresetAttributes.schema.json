@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MediaConvert_PresetAttributes.schema.json",
+  "title" : "PresetAttributes",
+  "type" : "string",
+  "enum" : [ "Arn", "Name" ],
+  "javaType" : "shiver.me.timbers.aws.mediaconvert.PresetAttributes"
+}

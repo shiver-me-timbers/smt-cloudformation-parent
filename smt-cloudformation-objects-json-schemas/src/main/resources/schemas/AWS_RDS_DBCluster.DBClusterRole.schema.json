@@ -16,11 +16,6 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-dbclusterrole.html#cfn-rds-dbcluster-dbclusterrole-rolearn",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
-    },
-    "Status" : {
-      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-dbclusterrole.html#cfn-rds-dbcluster-dbclusterrole-status",
-      "type" : "string",
-      "javaType" : "java.lang.CharSequence"
     }
   }
 }

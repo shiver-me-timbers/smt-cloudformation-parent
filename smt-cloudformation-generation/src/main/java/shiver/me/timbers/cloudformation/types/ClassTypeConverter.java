@@ -21,6 +21,9 @@ public class ClassTypeConverter {
     }
 
     public String toJavaType(String resourceName, String type) {
+        if ("ParameterValues".equals(type)) {
+            return "Object";
+        }
         final String typeName = nameFinder.find(resourceName, type);
         return toJavaTypeFromTypeName(typeName, resourceName, type);
     }

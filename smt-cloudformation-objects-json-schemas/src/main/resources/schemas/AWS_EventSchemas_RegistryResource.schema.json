@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EventSchemas_RegistryResource.schema.json",
+  "title" : "RegistryResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eventschemas-registry.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.eventschemas.RegistryResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<RegistryResource>", "shiver.me.timbers.aws.HasCondition<RegistryResource>", "shiver.me.timbers.aws.HasAttributes<RegistryAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EventSchemas::Registry"
+    },
+    "Properties" : {
+      "$ref" : "AWS_EventSchemas_Registry.schema.json"
+    }
+  }
+}

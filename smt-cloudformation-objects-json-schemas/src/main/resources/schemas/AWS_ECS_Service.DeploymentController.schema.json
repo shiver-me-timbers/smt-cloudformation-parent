@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ECS_Service.DeploymentController.schema.json",
+  "title" : "ServiceDeploymentController",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-deploymentcontroller.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.ecs.ServiceDeploymentController",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ServiceDeploymentController>" ],
+  "properties" : {
+    "Type" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-deploymentcontroller.html#cfn-ecs-service-deploymentcontroller-type",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

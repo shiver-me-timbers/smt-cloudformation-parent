@@ -19,13 +19,27 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
-    "Description",
-    "QueryString",
+    "Name",
     "Database",
-    "Name"
+    "Description",
+    "QueryString"
 })
 public class NamedQuery {
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html#cfn-athena-namedquery-name
+     * 
+     */
+    @JsonProperty("Name")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html#cfn-athena-namedquery-name")
+    private CharSequence name;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html#cfn-athena-namedquery-database
+     * 
+     */
+    @JsonProperty("Database")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html#cfn-athena-namedquery-database")
+    private CharSequence database;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html#cfn-athena-namedquery-description
      * 
@@ -40,20 +54,52 @@ public class NamedQuery {
     @JsonProperty("QueryString")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html#cfn-athena-namedquery-querystring")
     private CharSequence queryString;
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html#cfn-athena-namedquery-database
-     * 
-     */
-    @JsonProperty("Database")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html#cfn-athena-namedquery-database")
-    private CharSequence database;
+
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html#cfn-athena-namedquery-name
      * 
      */
-    @JsonProperty("Name")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html#cfn-athena-namedquery-name")
-    private CharSequence name;
+    @JsonIgnore
+    public CharSequence getName() {
+        return name;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html#cfn-athena-namedquery-name
+     * 
+     */
+    @JsonIgnore
+    public void setName(CharSequence name) {
+        this.name = name;
+    }
+
+    public NamedQuery withName(CharSequence name) {
+        this.name = name;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html#cfn-athena-namedquery-database
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getDatabase() {
+        return database;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html#cfn-athena-namedquery-database
+     * 
+     */
+    @JsonIgnore
+    public void setDatabase(CharSequence database) {
+        this.database = database;
+    }
+
+    public NamedQuery withDatabase(CharSequence database) {
+        this.database = database;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html#cfn-athena-namedquery-description
@@ -101,55 +147,9 @@ public class NamedQuery {
         return this;
     }
 
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html#cfn-athena-namedquery-database
-     * 
-     */
-    @JsonIgnore
-    public CharSequence getDatabase() {
-        return database;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html#cfn-athena-namedquery-database
-     * 
-     */
-    @JsonIgnore
-    public void setDatabase(CharSequence database) {
-        this.database = database;
-    }
-
-    public NamedQuery withDatabase(CharSequence database) {
-        this.database = database;
-        return this;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html#cfn-athena-namedquery-name
-     * 
-     */
-    @JsonIgnore
-    public CharSequence getName() {
-        return name;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html#cfn-athena-namedquery-name
-     * 
-     */
-    @JsonIgnore
-    public void setName(CharSequence name) {
-        this.name = name;
-    }
-
-    public NamedQuery withName(CharSequence name) {
-        this.name = name;
-        return this;
-    }
-
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("description", description).append("queryString", queryString).append("database", database).append("name", name).toString();
+        return new ToStringBuilder(this).append("name", name).append("database", database).append("description", description).append("queryString", queryString).toString();
     }
 
     @Override

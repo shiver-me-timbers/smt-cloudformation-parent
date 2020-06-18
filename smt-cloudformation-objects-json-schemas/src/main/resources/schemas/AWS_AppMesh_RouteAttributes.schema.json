@@ -3,6 +3,6 @@
   "$id" : "AWS_AppMesh_RouteAttributes.schema.json",
   "title" : "RouteAttributes",
   "type" : "string",
-  "enum" : [ "Uid", "MeshName", "VirtualRouterName", "RouteName", "Arn" ],
+  "enum" : [ "Uid", "MeshName", "VirtualRouterName", "MeshOwner", "ResourceOwner", "RouteName", "Arn" ],
   "javaType" : "shiver.me.timbers.aws.appmesh.RouteAttributes"
 }

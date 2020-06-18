@@ -3,6 +3,6 @@
   "$id" : "AWS_AppMesh_MeshAttributes.schema.json",
   "title" : "MeshAttributes",
   "type" : "string",
-  "enum" : [ "Uid", "MeshName", "Arn" ],
+  "enum" : [ "Uid", "MeshName", "MeshOwner", "ResourceOwner", "Arn" ],
   "javaType" : "shiver.me.timbers.aws.appmesh.MeshAttributes"
 }

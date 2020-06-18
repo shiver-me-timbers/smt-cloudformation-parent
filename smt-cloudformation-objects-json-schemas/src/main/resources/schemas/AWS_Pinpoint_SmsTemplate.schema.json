@@ -1,0 +1,35 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_SmsTemplate.schema.json",
+  "title" : "SmsTemplate",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-smstemplate.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.pinpoint.SmsTemplate",
+  "properties" : {
+    "TemplateName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-smstemplate.html#cfn-pinpoint-smstemplate-templatename",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TemplateDescription" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-smstemplate.html#cfn-pinpoint-smstemplate-templatedescription",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DefaultSubstitutions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-smstemplate.html#cfn-pinpoint-smstemplate-defaultsubstitutions",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Body" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-smstemplate.html#cfn-pinpoint-smstemplate-body",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-smstemplate.html#cfn-pinpoint-smstemplate-tags",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
+    }
+  }
+}

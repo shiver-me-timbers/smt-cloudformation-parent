@@ -1,0 +1,34 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WAFv2_WebACL.SizeConstraintStatement.schema.json",
+  "title" : "WebACLSizeConstraintStatement",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-sizeconstraintstatement.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.wafv2.WebACLSizeConstraintStatement",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<WebACLSizeConstraintStatement>" ],
+  "properties" : {
+    "FieldToMatch" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-sizeconstraintstatement.html#cfn-wafv2-webacl-sizeconstraintstatement-fieldtomatch",
+      "$ref" : "AWS_WAFv2_WebACL.FieldToMatch.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.wafv2.WebACLFieldToMatch>"
+    },
+    "ComparisonOperator" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-sizeconstraintstatement.html#cfn-wafv2-webacl-sizeconstraintstatement-comparisonoperator",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Size" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-sizeconstraintstatement.html#cfn-wafv2-webacl-sizeconstraintstatement-size",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "TextTransformations" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-sizeconstraintstatement.html#cfn-wafv2-webacl-sizeconstraintstatement-texttransformations",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_WAFv2_WebACL.TextTransformation.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.wafv2.WebACLTextTransformation>"
+      }
+    }
+  }
+}

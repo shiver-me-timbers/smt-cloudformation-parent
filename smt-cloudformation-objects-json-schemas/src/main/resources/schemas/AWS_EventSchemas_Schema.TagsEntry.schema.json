@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EventSchemas_Schema.TagsEntry.schema.json",
+  "title" : "SchemaTagsEntry",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-eventschemas-schema-tagsentry.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.eventschemas.SchemaTagsEntry",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<SchemaTagsEntry>" ],
+  "properties" : {
+    "Value" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-eventschemas-schema-tagsentry.html#cfn-eventschemas-schema-tagsentry-value",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Key" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-eventschemas-schema-tagsentry.html#cfn-eventschemas-schema-tagsentry-key",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_S3_Bucket.ReplicationTime.schema.json",
+  "title" : "BucketReplicationTime",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationtime.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.s3.BucketReplicationTime",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BucketReplicationTime>" ],
+  "properties" : {
+    "Status" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationtime.html#cfn-s3-bucket-replicationtime-status",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Time" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationtime.html#cfn-s3-bucket-replicationtime-time",
+      "$ref" : "AWS_S3_Bucket.ReplicationTimeValue.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.BucketReplicationTimeValue>"
+    }
+  }
+}

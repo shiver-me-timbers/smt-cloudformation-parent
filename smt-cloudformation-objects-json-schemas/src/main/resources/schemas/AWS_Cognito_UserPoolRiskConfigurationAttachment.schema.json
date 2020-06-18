@@ -1,0 +1,35 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Cognito_UserPoolRiskConfigurationAttachment.schema.json",
+  "title" : "UserPoolRiskConfigurationAttachment",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolriskconfigurationattachment.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.cognito.UserPoolRiskConfigurationAttachment",
+  "properties" : {
+    "CompromisedCredentialsRiskConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolriskconfigurationattachment.html#cfn-cognito-userpoolriskconfigurationattachment-compromisedcredentialsriskconfiguration",
+      "$ref" : "AWS_Cognito_UserPoolRiskConfigurationAttachment.CompromisedCredentialsRiskConfigurationType.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cognito.UserPoolRiskConfigurationAttachmentCompromisedCredentialsRiskConfigurationType>"
+    },
+    "UserPoolId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolriskconfigurationattachment.html#cfn-cognito-userpoolriskconfigurationattachment-userpoolid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ClientId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolriskconfigurationattachment.html#cfn-cognito-userpoolriskconfigurationattachment-clientid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "AccountTakeoverRiskConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolriskconfigurationattachment.html#cfn-cognito-userpoolriskconfigurationattachment-accounttakeoverriskconfiguration",
+      "$ref" : "AWS_Cognito_UserPoolRiskConfigurationAttachment.AccountTakeoverRiskConfigurationType.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cognito.UserPoolRiskConfigurationAttachmentAccountTakeoverRiskConfigurationType>"
+    },
+    "RiskExceptionConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolriskconfigurationattachment.html#cfn-cognito-userpoolriskconfigurationattachment-riskexceptionconfiguration",
+      "$ref" : "AWS_Cognito_UserPoolRiskConfigurationAttachment.RiskExceptionConfigurationType.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.cognito.UserPoolRiskConfigurationAttachmentRiskExceptionConfigurationType>"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ImageBuilder_InfrastructureConfiguration.Logging.schema.json",
+  "title" : "InfrastructureConfigurationLogging",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-imagebuilder-infrastructureconfiguration-logging.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.imagebuilder.InfrastructureConfigurationLogging",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<InfrastructureConfigurationLogging>" ],
+  "properties" : {
+    "S3Logs" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-imagebuilder-infrastructureconfiguration-logging.html#cfn-imagebuilder-infrastructureconfiguration-logging-s3logs",
+      "$ref" : "AWS_ImageBuilder_InfrastructureConfiguration.S3Logs.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.imagebuilder.InfrastructureConfigurationS3Logs>"
+    }
+  }
+}

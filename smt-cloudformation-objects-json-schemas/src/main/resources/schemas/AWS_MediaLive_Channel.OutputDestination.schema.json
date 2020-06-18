@@ -7,6 +7,11 @@
   "javaType" : "shiver.me.timbers.aws.medialive.ChannelOutputDestination",
   "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ChannelOutputDestination>" ],
   "properties" : {
+    "MultiplexSettings" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-outputdestination.html#cfn-medialive-channel-outputdestination-multiplexsettings",
+      "$ref" : "AWS_MediaLive_Channel.MultiplexProgramChannelDestinationSettings.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.medialive.ChannelMultiplexProgramChannelDestinationSettings>"
+    },
     "Id" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-outputdestination.html#cfn-medialive-channel-outputdestination-id",
       "type" : "string",

@@ -2,18 +2,18 @@
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "Tag.schema.json",
   "title" : "Tag",
-  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-input-tag.html",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html",
   "type" : "object",
   "javaType" : "shiver.me.timbers.aws.Tag",
   "javaInterfaces" : [ "shiver.me.timbers.aws.Property<Tag>" ],
   "properties" : {
-    "Value" : {
-      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-input-tag.html#cfn-iotevents-input-tag-value",
+    "Key" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-key",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
-    "Key" : {
-      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-input-tag.html#cfn-iotevents-input-tag-key",
+    "Value" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-value",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     }

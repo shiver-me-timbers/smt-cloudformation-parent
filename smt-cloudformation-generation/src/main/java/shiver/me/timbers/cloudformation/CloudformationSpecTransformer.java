@@ -1,20 +1,8 @@
 package shiver.me.timbers.cloudformation;
 
 import shiver.me.timbers.cloudformation.files.FileNames;
-import shiver.me.timbers.cloudformation.transformers.property.ClassTypeTransformer;
-import shiver.me.timbers.cloudformation.transformers.property.DescriptionTransformer;
-import shiver.me.timbers.cloudformation.transformers.property.ListTransformer;
-import shiver.me.timbers.cloudformation.transformers.property.MapTransformer;
-import shiver.me.timbers.cloudformation.transformers.property.PrimitiveTypeTransformer;
-import shiver.me.timbers.cloudformation.transformers.type.AttributesTransformer;
-import shiver.me.timbers.cloudformation.transformers.type.InterfacesTransformer;
-import shiver.me.timbers.cloudformation.transformers.type.JavaTypeTransformer;
-import shiver.me.timbers.cloudformation.transformers.type.MetaDataApplier;
-import shiver.me.timbers.cloudformation.transformers.type.MetaDataTransformer;
-import shiver.me.timbers.cloudformation.transformers.type.PrimitiveTypeResourceTransformer;
-import shiver.me.timbers.cloudformation.transformers.type.PropertiesTransformer;
-import shiver.me.timbers.cloudformation.transformers.type.ResourceTransformer;
-import shiver.me.timbers.cloudformation.transformers.type.TypesTransformer;
+import shiver.me.timbers.cloudformation.transformers.property.*;
+import shiver.me.timbers.cloudformation.transformers.type.*;
 import shiver.me.timbers.cloudformation.types.ClassTypeConverter;
 import shiver.me.timbers.cloudformation.types.JavaTypes;
 import shiver.me.timbers.cloudformation.types.PrimitiveTypeConverter;

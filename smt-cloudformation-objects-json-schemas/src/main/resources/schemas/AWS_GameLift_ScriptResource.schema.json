@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_GameLift_ScriptResource.schema.json",
+  "title" : "ScriptResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-script.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.gamelift.ScriptResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ScriptResource>", "shiver.me.timbers.aws.HasCondition<ScriptResource>", "shiver.me.timbers.aws.HasAttributes<ScriptAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::GameLift::Script"
+    },
+    "Properties" : {
+      "$ref" : "AWS_GameLift_Script.schema.json"
+    }
+  }
+}

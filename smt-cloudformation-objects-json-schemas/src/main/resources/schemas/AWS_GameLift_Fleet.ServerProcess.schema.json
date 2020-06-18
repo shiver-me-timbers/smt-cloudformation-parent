@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_GameLift_Fleet.ServerProcess.schema.json",
+  "title" : "FleetServerProcess",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-serverprocess.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.gamelift.FleetServerProcess",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<FleetServerProcess>" ],
+  "properties" : {
+    "ConcurrentExecutions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-serverprocess.html#cfn-gamelift-fleet-serverprocess-concurrentexecutions",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "LaunchPath" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-serverprocess.html#cfn-gamelift-fleet-serverprocess-launchpath",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Parameters" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-serverprocess.html#cfn-gamelift-fleet-serverprocess-parameters",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

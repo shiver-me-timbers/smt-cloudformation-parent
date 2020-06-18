@@ -21,8 +21,10 @@ import shiver.me.timbers.aws.Property;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "ReplyToEmailAddress",
+    "ConfigurationSet",
     "EmailSendingAccount",
-    "SourceArn"
+    "SourceArn",
+    "From"
 })
 public class UserPoolEmailConfiguration implements Property<UserPoolEmailConfiguration>
 {
@@ -34,6 +36,13 @@ public class UserPoolEmailConfiguration implements Property<UserPoolEmailConfigu
     @JsonProperty("ReplyToEmailAddress")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-replytoemailaddress")
     private CharSequence replyToEmailAddress;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-configurationset
+     * 
+     */
+    @JsonProperty("ConfigurationSet")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-configurationset")
+    private CharSequence configurationSet;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-emailsendingaccount
      * 
@@ -48,6 +57,13 @@ public class UserPoolEmailConfiguration implements Property<UserPoolEmailConfigu
     @JsonProperty("SourceArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-sourcearn")
     private CharSequence sourceArn;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-from
+     * 
+     */
+    @JsonProperty("From")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-from")
+    private CharSequence from;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-replytoemailaddress
@@ -69,6 +85,29 @@ public class UserPoolEmailConfiguration implements Property<UserPoolEmailConfigu
 
     public UserPoolEmailConfiguration withReplyToEmailAddress(CharSequence replyToEmailAddress) {
         this.replyToEmailAddress = replyToEmailAddress;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-configurationset
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getConfigurationSet() {
+        return configurationSet;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-configurationset
+     * 
+     */
+    @JsonIgnore
+    public void setConfigurationSet(CharSequence configurationSet) {
+        this.configurationSet = configurationSet;
+    }
+
+    public UserPoolEmailConfiguration withConfigurationSet(CharSequence configurationSet) {
+        this.configurationSet = configurationSet;
         return this;
     }
 
@@ -118,14 +157,37 @@ public class UserPoolEmailConfiguration implements Property<UserPoolEmailConfigu
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-from
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getFrom() {
+        return from;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-from
+     * 
+     */
+    @JsonIgnore
+    public void setFrom(CharSequence from) {
+        this.from = from;
+    }
+
+    public UserPoolEmailConfiguration withFrom(CharSequence from) {
+        this.from = from;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("replyToEmailAddress", replyToEmailAddress).append("emailSendingAccount", emailSendingAccount).append("sourceArn", sourceArn).toString();
+        return new ToStringBuilder(this).append("replyToEmailAddress", replyToEmailAddress).append("configurationSet", configurationSet).append("emailSendingAccount", emailSendingAccount).append("sourceArn", sourceArn).append("from", from).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(sourceArn).append(replyToEmailAddress).append(emailSendingAccount).toHashCode();
+        return new HashCodeBuilder().append(sourceArn).append(from).append(replyToEmailAddress).append(configurationSet).append(emailSendingAccount).toHashCode();
     }
 
     @Override
@@ -137,7 +199,7 @@ public class UserPoolEmailConfiguration implements Property<UserPoolEmailConfigu
             return false;
         }
         UserPoolEmailConfiguration rhs = ((UserPoolEmailConfiguration) other);
-        return new EqualsBuilder().append(sourceArn, rhs.sourceArn).append(replyToEmailAddress, rhs.replyToEmailAddress).append(emailSendingAccount, rhs.emailSendingAccount).isEquals();
+        return new EqualsBuilder().append(sourceArn, rhs.sourceArn).append(from, rhs.from).append(replyToEmailAddress, rhs.replyToEmailAddress).append(configurationSet, rhs.configurationSet).append(emailSendingAccount, rhs.emailSendingAccount).isEquals();
     }
 
 }

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoTEvents_DetectorModel.AssetPropertyTimestamp.schema.json",
+  "title" : "DetectorModelAssetPropertyTimestamp",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-assetpropertytimestamp.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.iotevents.DetectorModelAssetPropertyTimestamp",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DetectorModelAssetPropertyTimestamp>" ],
+  "properties" : {
+    "TimeInSeconds" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-assetpropertytimestamp.html#cfn-iotevents-detectormodel-assetpropertytimestamp-timeinseconds",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "OffsetInNanos" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-assetpropertytimestamp.html#cfn-iotevents-detectormodel-assetpropertytimestamp-offsetinnanos",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

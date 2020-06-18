@@ -20,12 +20,22 @@ import shiver.me.timbers.aws.Property;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "OwnerSetting",
     "DestinationPath",
     "S3Uri"
 })
 public class ResourceDefinitionVersionS3MachineLearningModelResourceData implements Property<ResourceDefinitionVersionS3MachineLearningModelResourceData>
 {
 
+    /**
+     * ResourceDefinitionVersionResourceDownloadOwnerSetting
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-resourcedownloadownersetting.html
+     * 
+     */
+    @JsonProperty("OwnerSetting")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-resourcedownloadownersetting.html")
+    private Property<ResourceDefinitionVersionResourceDownloadOwnerSetting> ownerSetting;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-s3machinelearningmodelresourcedata.html#cfn-greengrass-resourcedefinitionversion-s3machinelearningmodelresourcedata-destinationpath
      * 
@@ -40,6 +50,33 @@ public class ResourceDefinitionVersionS3MachineLearningModelResourceData impleme
     @JsonProperty("S3Uri")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-s3machinelearningmodelresourcedata.html#cfn-greengrass-resourcedefinitionversion-s3machinelearningmodelresourcedata-s3uri")
     private CharSequence s3Uri;
+
+    /**
+     * ResourceDefinitionVersionResourceDownloadOwnerSetting
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-resourcedownloadownersetting.html
+     * 
+     */
+    @JsonIgnore
+    public Property<ResourceDefinitionVersionResourceDownloadOwnerSetting> getOwnerSetting() {
+        return ownerSetting;
+    }
+
+    /**
+     * ResourceDefinitionVersionResourceDownloadOwnerSetting
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-resourcedownloadownersetting.html
+     * 
+     */
+    @JsonIgnore
+    public void setOwnerSetting(Property<ResourceDefinitionVersionResourceDownloadOwnerSetting> ownerSetting) {
+        this.ownerSetting = ownerSetting;
+    }
+
+    public ResourceDefinitionVersionS3MachineLearningModelResourceData withOwnerSetting(Property<ResourceDefinitionVersionResourceDownloadOwnerSetting> ownerSetting) {
+        this.ownerSetting = ownerSetting;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-s3machinelearningmodelresourcedata.html#cfn-greengrass-resourcedefinitionversion-s3machinelearningmodelresourcedata-destinationpath
@@ -89,12 +126,12 @@ public class ResourceDefinitionVersionS3MachineLearningModelResourceData impleme
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("destinationPath", destinationPath).append("s3Uri", s3Uri).toString();
+        return new ToStringBuilder(this).append("ownerSetting", ownerSetting).append("destinationPath", destinationPath).append("s3Uri", s3Uri).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(destinationPath).append(s3Uri).toHashCode();
+        return new HashCodeBuilder().append(s3Uri).append(ownerSetting).append(destinationPath).toHashCode();
     }
 
     @Override
@@ -106,7 +143,7 @@ public class ResourceDefinitionVersionS3MachineLearningModelResourceData impleme
             return false;
         }
         ResourceDefinitionVersionS3MachineLearningModelResourceData rhs = ((ResourceDefinitionVersionS3MachineLearningModelResourceData) other);
-        return new EqualsBuilder().append(destinationPath, rhs.destinationPath).append(s3Uri, rhs.s3Uri).isEquals();
+        return new EqualsBuilder().append(s3Uri, rhs.s3Uri).append(ownerSetting, rhs.ownerSetting).append(destinationPath, rhs.destinationPath).isEquals();
     }
 
 }

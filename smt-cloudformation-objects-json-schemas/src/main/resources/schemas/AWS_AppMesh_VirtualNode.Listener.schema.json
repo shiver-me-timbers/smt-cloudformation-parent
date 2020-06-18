@@ -12,6 +12,11 @@
       "$ref" : "AWS_AppMesh_VirtualNode.HealthCheck.schema.json",
       "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appmesh.VirtualNodeHealthCheck>"
     },
+    "TLS" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-listener.html#cfn-appmesh-virtualnode-listener-tls",
+      "$ref" : "AWS_AppMesh_VirtualNode.ListenerTls.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appmesh.VirtualNodeListenerTls>"
+    },
     "PortMapping" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-listener.html#cfn-appmesh-virtualnode-listener-portmapping",
       "$ref" : "AWS_AppMesh_VirtualNode.PortMapping.schema.json",

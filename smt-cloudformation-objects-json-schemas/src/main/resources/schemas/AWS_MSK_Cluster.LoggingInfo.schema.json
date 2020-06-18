@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MSK_Cluster.LoggingInfo.schema.json",
+  "title" : "ClusterLoggingInfo",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-logginginfo.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.msk.ClusterLoggingInfo",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ClusterLoggingInfo>" ],
+  "properties" : {
+    "BrokerLogs" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-logginginfo.html#cfn-msk-cluster-logginginfo-brokerlogs",
+      "$ref" : "AWS_MSK_Cluster.BrokerLogs.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.msk.ClusterBrokerLogs>"
+    }
+  }
+}

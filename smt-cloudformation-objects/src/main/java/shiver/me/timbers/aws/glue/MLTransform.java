@@ -25,9 +25,11 @@ import shiver.me.timbers.aws.Property;
     "WorkerType",
     "Description",
     "Timeout",
+    "GlueVersion",
     "TransformParameters",
     "InputRecordTables",
     "NumberOfWorkers",
+    "Tags",
     "Name",
     "MaxCapacity"
 })
@@ -69,6 +71,13 @@ public class MLTransform {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html#cfn-glue-mltransform-timeout")
     private Number timeout;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html#cfn-glue-mltransform-glueversion
+     * 
+     */
+    @JsonProperty("GlueVersion")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html#cfn-glue-mltransform-glueversion")
+    private CharSequence glueVersion;
+    /**
      * MLTransformTransformParameters
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-mltransform-transformparameters.html
@@ -93,6 +102,13 @@ public class MLTransform {
     @JsonProperty("NumberOfWorkers")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html#cfn-glue-mltransform-numberofworkers")
     private Number numberOfWorkers;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html#cfn-glue-mltransform-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html#cfn-glue-mltransform-tags")
+    private Object tags;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html#cfn-glue-mltransform-name
      * 
@@ -224,6 +240,29 @@ public class MLTransform {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html#cfn-glue-mltransform-glueversion
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getGlueVersion() {
+        return glueVersion;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html#cfn-glue-mltransform-glueversion
+     * 
+     */
+    @JsonIgnore
+    public void setGlueVersion(CharSequence glueVersion) {
+        this.glueVersion = glueVersion;
+    }
+
+    public MLTransform withGlueVersion(CharSequence glueVersion) {
+        this.glueVersion = glueVersion;
+        return this;
+    }
+
+    /**
      * MLTransformTransformParameters
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-mltransform-transformparameters.html
@@ -301,6 +340,29 @@ public class MLTransform {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html#cfn-glue-mltransform-tags
+     * 
+     */
+    @JsonIgnore
+    public Object getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html#cfn-glue-mltransform-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(Object tags) {
+        this.tags = tags;
+    }
+
+    public MLTransform withTags(Object tags) {
+        this.tags = tags;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html#cfn-glue-mltransform-name
      * 
      */
@@ -348,12 +410,12 @@ public class MLTransform {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("role", role).append("maxRetries", maxRetries).append("workerType", workerType).append("description", description).append("timeout", timeout).append("transformParameters", transformParameters).append("inputRecordTables", inputRecordTables).append("numberOfWorkers", numberOfWorkers).append("name", name).append("maxCapacity", maxCapacity).toString();
+        return new ToStringBuilder(this).append("role", role).append("maxRetries", maxRetries).append("workerType", workerType).append("description", description).append("timeout", timeout).append("glueVersion", glueVersion).append("transformParameters", transformParameters).append("inputRecordTables", inputRecordTables).append("numberOfWorkers", numberOfWorkers).append("tags", tags).append("name", name).append("maxCapacity", maxCapacity).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(workerType).append(numberOfWorkers).append(maxRetries).append(role).append(name).append(description).append(inputRecordTables).append(maxCapacity).append(timeout).append(transformParameters).toHashCode();
+        return new HashCodeBuilder().append(workerType).append(numberOfWorkers).append(role).append(description).append(glueVersion).append(maxCapacity).append(timeout).append(transformParameters).append(tags).append(maxRetries).append(name).append(inputRecordTables).toHashCode();
     }
 
     @Override
@@ -365,7 +427,7 @@ public class MLTransform {
             return false;
         }
         MLTransform rhs = ((MLTransform) other);
-        return new EqualsBuilder().append(workerType, rhs.workerType).append(numberOfWorkers, rhs.numberOfWorkers).append(maxRetries, rhs.maxRetries).append(role, rhs.role).append(name, rhs.name).append(description, rhs.description).append(inputRecordTables, rhs.inputRecordTables).append(maxCapacity, rhs.maxCapacity).append(timeout, rhs.timeout).append(transformParameters, rhs.transformParameters).isEquals();
+        return new EqualsBuilder().append(workerType, rhs.workerType).append(numberOfWorkers, rhs.numberOfWorkers).append(role, rhs.role).append(description, rhs.description).append(glueVersion, rhs.glueVersion).append(maxCapacity, rhs.maxCapacity).append(timeout, rhs.timeout).append(transformParameters, rhs.transformParameters).append(tags, rhs.tags).append(maxRetries, rhs.maxRetries).append(name, rhs.name).append(inputRecordTables, rhs.inputRecordTables).isEquals();
     }
 
 }

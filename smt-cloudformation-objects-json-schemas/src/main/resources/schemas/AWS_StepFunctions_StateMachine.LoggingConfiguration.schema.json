@@ -1,0 +1,29 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_StepFunctions_StateMachine.LoggingConfiguration.schema.json",
+  "title" : "StateMachineLoggingConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stepfunctions-statemachine-loggingconfiguration.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.stepfunctions.StateMachineLoggingConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<StateMachineLoggingConfiguration>" ],
+  "properties" : {
+    "IncludeExecutionData" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stepfunctions-statemachine-loggingconfiguration.html#cfn-stepfunctions-statemachine-loggingconfiguration-includeexecutiondata",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Destinations" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stepfunctions-statemachine-loggingconfiguration.html#cfn-stepfunctions-statemachine-loggingconfiguration-destinations",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_StepFunctions_StateMachine.LogDestination.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.stepfunctions.StateMachineLogDestination>"
+      }
+    },
+    "Level" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stepfunctions-statemachine-loggingconfiguration.html#cfn-stepfunctions-statemachine-loggingconfiguration-level",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

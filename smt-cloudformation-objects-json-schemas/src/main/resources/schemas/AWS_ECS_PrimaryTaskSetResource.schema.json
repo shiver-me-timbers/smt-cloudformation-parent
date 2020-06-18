@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ECS_PrimaryTaskSetResource.schema.json",
+  "title" : "PrimaryTaskSetResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-primarytaskset.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.ecs.PrimaryTaskSetResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<PrimaryTaskSetResource>", "shiver.me.timbers.aws.HasCondition<PrimaryTaskSetResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ECS::PrimaryTaskSet"
+    },
+    "Properties" : {
+      "$ref" : "AWS_ECS_PrimaryTaskSet.schema.json"
+    }
+  }
+}

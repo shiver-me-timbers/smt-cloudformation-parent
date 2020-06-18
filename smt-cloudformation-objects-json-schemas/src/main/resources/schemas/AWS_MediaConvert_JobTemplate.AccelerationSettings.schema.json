@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MediaConvert_JobTemplate.AccelerationSettings.schema.json",
+  "title" : "JobTemplateAccelerationSettings",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediaconvert-jobtemplate-accelerationsettings.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.mediaconvert.JobTemplateAccelerationSettings",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<JobTemplateAccelerationSettings>" ],
+  "properties" : {
+    "Mode" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediaconvert-jobtemplate-accelerationsettings.html#cfn-mediaconvert-jobtemplate-accelerationsettings-mode",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

@@ -12,6 +12,11 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "ConfigurationSet" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-configurationset",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "EmailSendingAccount" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-emailsendingaccount",
       "type" : "string",
@@ -19,6 +24,11 @@
     },
     "SourceArn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-sourcearn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "From" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-from",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     }

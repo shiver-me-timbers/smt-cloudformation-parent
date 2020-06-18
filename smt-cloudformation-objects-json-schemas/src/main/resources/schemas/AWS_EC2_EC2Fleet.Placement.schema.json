@@ -1,0 +1,51 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_EC2Fleet.Placement.schema.json",
+  "title" : "EC2FleetPlacement",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.ec2.EC2FleetPlacement",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<EC2FleetPlacement>" ],
+  "properties" : {
+    "GroupName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html#cfn-ec2-ec2fleet-placement-groupname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Tenancy" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html#cfn-ec2-ec2fleet-placement-tenancy",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SpreadDomain" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html#cfn-ec2-ec2fleet-placement-spreaddomain",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "PartitionNumber" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html#cfn-ec2-ec2fleet-placement-partitionnumber",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "AvailabilityZone" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html#cfn-ec2-ec2fleet-placement-availabilityzone",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Affinity" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html#cfn-ec2-ec2fleet-placement-affinity",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "HostId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html#cfn-ec2-ec2fleet-placement-hostid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "HostResourceGroupArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html#cfn-ec2-ec2fleet-placement-hostresourcegrouparn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

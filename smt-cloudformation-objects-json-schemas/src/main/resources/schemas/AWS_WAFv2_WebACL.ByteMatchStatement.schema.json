@@ -1,0 +1,39 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WAFv2_WebACL.ByteMatchStatement.schema.json",
+  "title" : "WebACLByteMatchStatement",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-bytematchstatement.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.wafv2.WebACLByteMatchStatement",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<WebACLByteMatchStatement>" ],
+  "properties" : {
+    "SearchString" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-bytematchstatement.html#cfn-wafv2-webacl-bytematchstatement-searchstring",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SearchStringBase64" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-bytematchstatement.html#cfn-wafv2-webacl-bytematchstatement-searchstringbase64",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "FieldToMatch" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-bytematchstatement.html#cfn-wafv2-webacl-bytematchstatement-fieldtomatch",
+      "$ref" : "AWS_WAFv2_WebACL.FieldToMatch.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.wafv2.WebACLFieldToMatch>"
+    },
+    "TextTransformations" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-bytematchstatement.html#cfn-wafv2-webacl-bytematchstatement-texttransformations",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_WAFv2_WebACL.TextTransformation.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.wafv2.WebACLTextTransformation>"
+      }
+    },
+    "PositionalConstraint" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-bytematchstatement.html#cfn-wafv2-webacl-bytematchstatement-positionalconstraint",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

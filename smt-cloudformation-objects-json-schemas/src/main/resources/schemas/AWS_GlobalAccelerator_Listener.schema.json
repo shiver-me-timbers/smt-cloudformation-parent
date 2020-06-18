@@ -1,0 +1,33 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_GlobalAccelerator_Listener.schema.json",
+  "title" : "Listener",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-globalaccelerator-listener.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.globalaccelerator.Listener",
+  "properties" : {
+    "AcceleratorArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-globalaccelerator-listener.html#cfn-globalaccelerator-listener-acceleratorarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "PortRanges" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-globalaccelerator-listener.html#cfn-globalaccelerator-listener-portranges",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_GlobalAccelerator_Listener.PortRange.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.globalaccelerator.ListenerPortRange>"
+      }
+    },
+    "Protocol" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-globalaccelerator-listener.html#cfn-globalaccelerator-listener-protocol",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ClientAffinity" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-globalaccelerator-listener.html#cfn-globalaccelerator-listener-clientaffinity",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

@@ -22,10 +22,20 @@
       "type" : "integer",
       "javaType" : "java.lang.Number"
     },
+    "DeploymentType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-lustreconfiguration.html#cfn-fsx-filesystem-lustreconfiguration-deploymenttype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "ExportPath" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-lustreconfiguration.html#cfn-fsx-filesystem-lustreconfiguration-exportpath",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
+    },
+    "PerUnitStorageThroughput" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-lustreconfiguration.html#cfn-fsx-filesystem-lustreconfiguration-perunitstoragethroughput",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
     }
   }
 }

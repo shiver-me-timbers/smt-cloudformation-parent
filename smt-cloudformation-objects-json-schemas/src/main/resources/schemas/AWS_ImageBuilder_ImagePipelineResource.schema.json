@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ImageBuilder_ImagePipelineResource.schema.json",
+  "title" : "ImagePipelineResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-imagebuilder-imagepipeline.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.imagebuilder.ImagePipelineResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ImagePipelineResource>", "shiver.me.timbers.aws.HasCondition<ImagePipelineResource>", "shiver.me.timbers.aws.HasAttributes<ImagePipelineAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ImageBuilder::ImagePipeline"
+    },
+    "Properties" : {
+      "$ref" : "AWS_ImageBuilder_ImagePipeline.schema.json"
+    }
+  }
+}

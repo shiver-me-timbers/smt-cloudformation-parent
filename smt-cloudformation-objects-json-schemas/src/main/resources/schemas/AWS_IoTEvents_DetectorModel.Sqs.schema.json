@@ -12,6 +12,11 @@
       "type" : "boolean",
       "javaType" : "java.lang.CharSequence"
     },
+    "Payload" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-sqs.html#cfn-iotevents-detectormodel-sqs-payload",
+      "$ref" : "AWS_IoTEvents_DetectorModel.Payload.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotevents.DetectorModelPayload>"
+    },
     "QueueUrl" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-sqs.html#cfn-iotevents-detectormodel-sqs-queueurl",
       "type" : "string",

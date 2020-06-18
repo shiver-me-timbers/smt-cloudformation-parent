@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Lambda_EventInvokeConfigResource.schema.json",
+  "title" : "EventInvokeConfigResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventinvokeconfig.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.lambda.EventInvokeConfigResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<EventInvokeConfigResource>", "shiver.me.timbers.aws.HasCondition<EventInvokeConfigResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Lambda::EventInvokeConfig"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Lambda_EventInvokeConfig.schema.json"
+    }
+  }
+}

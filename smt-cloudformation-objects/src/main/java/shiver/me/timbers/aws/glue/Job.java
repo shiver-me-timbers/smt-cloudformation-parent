@@ -23,10 +23,12 @@ import shiver.me.timbers.aws.Property;
     "Connections",
     "MaxRetries",
     "Description",
+    "Timeout",
     "AllocatedCapacity",
     "Name",
     "Role",
     "DefaultArguments",
+    "NotificationProperty",
     "WorkerType",
     "LogUri",
     "Command",
@@ -63,6 +65,13 @@ public class Job {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-description")
     private CharSequence description;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-timeout
+     * 
+     */
+    @JsonProperty("Timeout")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-timeout")
+    private Number timeout;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-allocatedcapacity
      * 
      */
@@ -90,6 +99,15 @@ public class Job {
     @JsonProperty("DefaultArguments")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-defaultarguments")
     private Object defaultArguments;
+    /**
+     * JobNotificationProperty
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-notificationproperty.html
+     * 
+     */
+    @JsonProperty("NotificationProperty")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-notificationproperty.html")
+    private Property<JobNotificationProperty> notificationProperty;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-workertype
      * 
@@ -232,6 +250,29 @@ public class Job {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-timeout
+     * 
+     */
+    @JsonIgnore
+    public Number getTimeout() {
+        return timeout;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-timeout
+     * 
+     */
+    @JsonIgnore
+    public void setTimeout(Number timeout) {
+        this.timeout = timeout;
+    }
+
+    public Job withTimeout(Number timeout) {
+        this.timeout = timeout;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-allocatedcapacity
      * 
      */
@@ -320,6 +361,33 @@ public class Job {
 
     public Job withDefaultArguments(Object defaultArguments) {
         this.defaultArguments = defaultArguments;
+        return this;
+    }
+
+    /**
+     * JobNotificationProperty
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-notificationproperty.html
+     * 
+     */
+    @JsonIgnore
+    public Property<JobNotificationProperty> getNotificationProperty() {
+        return notificationProperty;
+    }
+
+    /**
+     * JobNotificationProperty
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-notificationproperty.html
+     * 
+     */
+    @JsonIgnore
+    public void setNotificationProperty(Property<JobNotificationProperty> notificationProperty) {
+        this.notificationProperty = notificationProperty;
+    }
+
+    public Job withNotificationProperty(Property<JobNotificationProperty> notificationProperty) {
+        this.notificationProperty = notificationProperty;
         return this;
     }
 
@@ -540,12 +608,12 @@ public class Job {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("connections", connections).append("maxRetries", maxRetries).append("description", description).append("allocatedCapacity", allocatedCapacity).append("name", name).append("role", role).append("defaultArguments", defaultArguments).append("workerType", workerType).append("logUri", logUri).append("command", command).append("glueVersion", glueVersion).append("executionProperty", executionProperty).append("securityConfiguration", securityConfiguration).append("numberOfWorkers", numberOfWorkers).append("tags", tags).append("maxCapacity", maxCapacity).toString();
+        return new ToStringBuilder(this).append("connections", connections).append("maxRetries", maxRetries).append("description", description).append("timeout", timeout).append("allocatedCapacity", allocatedCapacity).append("name", name).append("role", role).append("defaultArguments", defaultArguments).append("notificationProperty", notificationProperty).append("workerType", workerType).append("logUri", logUri).append("command", command).append("glueVersion", glueVersion).append("executionProperty", executionProperty).append("securityConfiguration", securityConfiguration).append("numberOfWorkers", numberOfWorkers).append("tags", tags).append("maxCapacity", maxCapacity).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(workerType).append(numberOfWorkers).append(allocatedCapacity).append(role).append(description).append(glueVersion).append(maxCapacity).append(command).append(tags).append(maxRetries).append(defaultArguments).append(name).append(executionProperty).append(securityConfiguration).append(connections).append(logUri).toHashCode();
+        return new HashCodeBuilder().append(workerType).append(numberOfWorkers).append(allocatedCapacity).append(role).append(description).append(glueVersion).append(maxCapacity).append(notificationProperty).append(timeout).append(command).append(tags).append(maxRetries).append(defaultArguments).append(name).append(executionProperty).append(securityConfiguration).append(connections).append(logUri).toHashCode();
     }
 
     @Override
@@ -557,7 +625,7 @@ public class Job {
             return false;
         }
         Job rhs = ((Job) other);
-        return new EqualsBuilder().append(workerType, rhs.workerType).append(numberOfWorkers, rhs.numberOfWorkers).append(allocatedCapacity, rhs.allocatedCapacity).append(role, rhs.role).append(description, rhs.description).append(glueVersion, rhs.glueVersion).append(maxCapacity, rhs.maxCapacity).append(command, rhs.command).append(tags, rhs.tags).append(maxRetries, rhs.maxRetries).append(defaultArguments, rhs.defaultArguments).append(name, rhs.name).append(executionProperty, rhs.executionProperty).append(securityConfiguration, rhs.securityConfiguration).append(connections, rhs.connections).append(logUri, rhs.logUri).isEquals();
+        return new EqualsBuilder().append(workerType, rhs.workerType).append(numberOfWorkers, rhs.numberOfWorkers).append(allocatedCapacity, rhs.allocatedCapacity).append(role, rhs.role).append(description, rhs.description).append(glueVersion, rhs.glueVersion).append(maxCapacity, rhs.maxCapacity).append(notificationProperty, rhs.notificationProperty).append(timeout, rhs.timeout).append(command, rhs.command).append(tags, rhs.tags).append(maxRetries, rhs.maxRetries).append(defaultArguments, rhs.defaultArguments).append(name, rhs.name).append(executionProperty, rhs.executionProperty).append(securityConfiguration, rhs.securityConfiguration).append(connections, rhs.connections).append(logUri, rhs.logUri).isEquals();
     }
 
 }

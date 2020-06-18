@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_TrafficMirrorFilterRule.TrafficMirrorPortRange.schema.json",
+  "title" : "TrafficMirrorFilterRuleTrafficMirrorPortRange",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-trafficmirrorfilterrule-trafficmirrorportrange.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.ec2.TrafficMirrorFilterRuleTrafficMirrorPortRange",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TrafficMirrorFilterRuleTrafficMirrorPortRange>" ],
+  "properties" : {
+    "FromPort" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-trafficmirrorfilterrule-trafficmirrorportrange.html#cfn-ec2-trafficmirrorfilterrule-trafficmirrorportrange-fromport",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "ToPort" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-trafficmirrorfilterrule-trafficmirrorportrange.html#cfn-ec2-trafficmirrorfilterrule-trafficmirrorportrange-toport",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    }
+  }
+}

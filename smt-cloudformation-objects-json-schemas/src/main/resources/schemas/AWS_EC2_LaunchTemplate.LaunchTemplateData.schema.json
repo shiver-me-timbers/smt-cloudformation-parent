@@ -100,6 +100,11 @@
       "$ref" : "AWS_EC2_LaunchTemplate.HibernationOptions.schema.json",
       "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.LaunchTemplateHibernationOptions>"
     },
+    "MetadataOptions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-metadataoptions",
+      "$ref" : "AWS_EC2_LaunchTemplate.MetadataOptions.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.LaunchTemplateMetadataOptions>"
+    },
     "LicenseSpecifications" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-licensespecifications",
       "type" : "array",

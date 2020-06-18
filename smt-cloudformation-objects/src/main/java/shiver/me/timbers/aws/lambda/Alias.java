@@ -24,6 +24,7 @@ import shiver.me.timbers.aws.Property;
     "FunctionName",
     "FunctionVersion",
     "Name",
+    "ProvisionedConcurrencyConfig",
     "RoutingConfig"
 })
 public class Alias {
@@ -56,6 +57,15 @@ public class Alias {
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-alias.html#cfn-lambda-alias-name")
     private CharSequence name;
+    /**
+     * AliasProvisionedConcurrencyConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-provisionedconcurrencyconfiguration.html
+     * 
+     */
+    @JsonProperty("ProvisionedConcurrencyConfig")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-provisionedconcurrencyconfiguration.html")
+    private Property<AliasProvisionedConcurrencyConfiguration> provisionedConcurrencyConfig;
     /**
      * AliasAliasRoutingConfiguration
      * <p>
@@ -159,6 +169,33 @@ public class Alias {
     }
 
     /**
+     * AliasProvisionedConcurrencyConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-provisionedconcurrencyconfiguration.html
+     * 
+     */
+    @JsonIgnore
+    public Property<AliasProvisionedConcurrencyConfiguration> getProvisionedConcurrencyConfig() {
+        return provisionedConcurrencyConfig;
+    }
+
+    /**
+     * AliasProvisionedConcurrencyConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-provisionedconcurrencyconfiguration.html
+     * 
+     */
+    @JsonIgnore
+    public void setProvisionedConcurrencyConfig(Property<AliasProvisionedConcurrencyConfiguration> provisionedConcurrencyConfig) {
+        this.provisionedConcurrencyConfig = provisionedConcurrencyConfig;
+    }
+
+    public Alias withProvisionedConcurrencyConfig(Property<AliasProvisionedConcurrencyConfiguration> provisionedConcurrencyConfig) {
+        this.provisionedConcurrencyConfig = provisionedConcurrencyConfig;
+        return this;
+    }
+
+    /**
      * AliasAliasRoutingConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-aliasroutingconfiguration.html
@@ -187,12 +224,12 @@ public class Alias {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("description", description).append("functionName", functionName).append("functionVersion", functionVersion).append("name", name).append("routingConfig", routingConfig).toString();
+        return new ToStringBuilder(this).append("description", description).append("functionName", functionName).append("functionVersion", functionVersion).append("name", name).append("provisionedConcurrencyConfig", provisionedConcurrencyConfig).append("routingConfig", routingConfig).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(name).append(description).append(functionVersion).append(functionName).append(routingConfig).toHashCode();
+        return new HashCodeBuilder().append(provisionedConcurrencyConfig).append(functionVersion).append(functionName).append(name).append(description).append(routingConfig).toHashCode();
     }
 
     @Override
@@ -204,7 +241,7 @@ public class Alias {
             return false;
         }
         Alias rhs = ((Alias) other);
-        return new EqualsBuilder().append(name, rhs.name).append(description, rhs.description).append(functionVersion, rhs.functionVersion).append(functionName, rhs.functionName).append(routingConfig, rhs.routingConfig).isEquals();
+        return new EqualsBuilder().append(provisionedConcurrencyConfig, rhs.provisionedConcurrencyConfig).append(functionVersion, rhs.functionVersion).append(functionName, rhs.functionName).append(name, rhs.name).append(description, rhs.description).append(routingConfig, rhs.routingConfig).isEquals();
     }
 
 }

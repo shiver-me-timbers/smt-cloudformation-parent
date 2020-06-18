@@ -1,0 +1,15 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Cassandra_Keyspace.schema.json",
+  "title" : "Keyspace",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cassandra-keyspace.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.cassandra.Keyspace",
+  "properties" : {
+    "KeyspaceName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cassandra-keyspace.html#cfn-cassandra-keyspace-keyspacename",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

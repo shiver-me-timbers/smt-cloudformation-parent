@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CloudWatch_InsightRuleResource.schema.json",
+  "title" : "InsightRuleResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-insightrule.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.cloudwatch.InsightRuleResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<InsightRuleResource>", "shiver.me.timbers.aws.HasCondition<InsightRuleResource>", "shiver.me.timbers.aws.HasAttributes<InsightRuleAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::CloudWatch::InsightRule"
+    },
+    "Properties" : {
+      "$ref" : "AWS_CloudWatch_InsightRule.schema.json"
+    }
+  }
+}

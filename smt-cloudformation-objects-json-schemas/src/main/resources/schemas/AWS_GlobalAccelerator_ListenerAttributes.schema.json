@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_GlobalAccelerator_ListenerAttributes.schema.json",
+  "title" : "ListenerAttributes",
+  "type" : "string",
+  "enum" : [ "ListenerArn" ],
+  "javaType" : "shiver.me.timbers.aws.globalaccelerator.ListenerAttributes"
+}

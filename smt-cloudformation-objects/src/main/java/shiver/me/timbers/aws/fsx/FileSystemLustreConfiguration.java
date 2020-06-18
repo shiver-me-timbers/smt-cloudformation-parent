@@ -23,7 +23,9 @@ import shiver.me.timbers.aws.Property;
     "ImportPath",
     "WeeklyMaintenanceStartTime",
     "ImportedFileChunkSize",
-    "ExportPath"
+    "DeploymentType",
+    "ExportPath",
+    "PerUnitStorageThroughput"
 })
 public class FileSystemLustreConfiguration implements Property<FileSystemLustreConfiguration>
 {
@@ -50,12 +52,26 @@ public class FileSystemLustreConfiguration implements Property<FileSystemLustreC
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-lustreconfiguration.html#cfn-fsx-filesystem-lustreconfiguration-importedfilechunksize")
     private Number importedFileChunkSize;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-lustreconfiguration.html#cfn-fsx-filesystem-lustreconfiguration-deploymenttype
+     * 
+     */
+    @JsonProperty("DeploymentType")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-lustreconfiguration.html#cfn-fsx-filesystem-lustreconfiguration-deploymenttype")
+    private CharSequence deploymentType;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-lustreconfiguration.html#cfn-fsx-filesystem-lustreconfiguration-exportpath
      * 
      */
     @JsonProperty("ExportPath")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-lustreconfiguration.html#cfn-fsx-filesystem-lustreconfiguration-exportpath")
     private CharSequence exportPath;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-lustreconfiguration.html#cfn-fsx-filesystem-lustreconfiguration-perunitstoragethroughput
+     * 
+     */
+    @JsonProperty("PerUnitStorageThroughput")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-lustreconfiguration.html#cfn-fsx-filesystem-lustreconfiguration-perunitstoragethroughput")
+    private Number perUnitStorageThroughput;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-lustreconfiguration.html#cfn-fsx-filesystem-lustreconfiguration-importpath
@@ -127,6 +143,29 @@ public class FileSystemLustreConfiguration implements Property<FileSystemLustreC
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-lustreconfiguration.html#cfn-fsx-filesystem-lustreconfiguration-deploymenttype
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getDeploymentType() {
+        return deploymentType;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-lustreconfiguration.html#cfn-fsx-filesystem-lustreconfiguration-deploymenttype
+     * 
+     */
+    @JsonIgnore
+    public void setDeploymentType(CharSequence deploymentType) {
+        this.deploymentType = deploymentType;
+    }
+
+    public FileSystemLustreConfiguration withDeploymentType(CharSequence deploymentType) {
+        this.deploymentType = deploymentType;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-lustreconfiguration.html#cfn-fsx-filesystem-lustreconfiguration-exportpath
      * 
      */
@@ -149,14 +188,37 @@ public class FileSystemLustreConfiguration implements Property<FileSystemLustreC
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-lustreconfiguration.html#cfn-fsx-filesystem-lustreconfiguration-perunitstoragethroughput
+     * 
+     */
+    @JsonIgnore
+    public Number getPerUnitStorageThroughput() {
+        return perUnitStorageThroughput;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-lustreconfiguration.html#cfn-fsx-filesystem-lustreconfiguration-perunitstoragethroughput
+     * 
+     */
+    @JsonIgnore
+    public void setPerUnitStorageThroughput(Number perUnitStorageThroughput) {
+        this.perUnitStorageThroughput = perUnitStorageThroughput;
+    }
+
+    public FileSystemLustreConfiguration withPerUnitStorageThroughput(Number perUnitStorageThroughput) {
+        this.perUnitStorageThroughput = perUnitStorageThroughput;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("importPath", importPath).append("weeklyMaintenanceStartTime", weeklyMaintenanceStartTime).append("importedFileChunkSize", importedFileChunkSize).append("exportPath", exportPath).toString();
+        return new ToStringBuilder(this).append("importPath", importPath).append("weeklyMaintenanceStartTime", weeklyMaintenanceStartTime).append("importedFileChunkSize", importedFileChunkSize).append("deploymentType", deploymentType).append("exportPath", exportPath).append("perUnitStorageThroughput", perUnitStorageThroughput).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(importPath).append(weeklyMaintenanceStartTime).append(importedFileChunkSize).append(exportPath).toHashCode();
+        return new HashCodeBuilder().append(importPath).append(deploymentType).append(weeklyMaintenanceStartTime).append(perUnitStorageThroughput).append(importedFileChunkSize).append(exportPath).toHashCode();
     }
 
     @Override
@@ -168,7 +230,7 @@ public class FileSystemLustreConfiguration implements Property<FileSystemLustreC
             return false;
         }
         FileSystemLustreConfiguration rhs = ((FileSystemLustreConfiguration) other);
-        return new EqualsBuilder().append(importPath, rhs.importPath).append(weeklyMaintenanceStartTime, rhs.weeklyMaintenanceStartTime).append(importedFileChunkSize, rhs.importedFileChunkSize).append(exportPath, rhs.exportPath).isEquals();
+        return new EqualsBuilder().append(importPath, rhs.importPath).append(deploymentType, rhs.deploymentType).append(weeklyMaintenanceStartTime, rhs.weeklyMaintenanceStartTime).append(perUnitStorageThroughput, rhs.perUnitStorageThroughput).append(importedFileChunkSize, rhs.importedFileChunkSize).append(exportPath, rhs.exportPath).isEquals();
     }
 
 }

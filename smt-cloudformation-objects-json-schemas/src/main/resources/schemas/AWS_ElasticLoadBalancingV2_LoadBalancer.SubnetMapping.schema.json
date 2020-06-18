@@ -12,6 +12,11 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "PrivateIPv4Address" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-loadbalancer-subnetmapping.html#cfn-elasticloadbalancingv2-loadbalancer-subnetmapping-privateipv4address",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "SubnetId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-loadbalancer-subnetmapping.html#cfn-elasticloadbalancingv2-loadbalancer-subnetmapping-subnetid",
       "type" : "string",

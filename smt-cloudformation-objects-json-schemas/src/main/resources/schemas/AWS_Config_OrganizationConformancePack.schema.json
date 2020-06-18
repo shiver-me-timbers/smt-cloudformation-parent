@@ -1,0 +1,51 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Config_OrganizationConformancePack.schema.json",
+  "title" : "OrganizationConformancePack",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-organizationconformancepack.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.config.OrganizationConformancePack",
+  "properties" : {
+    "OrganizationConformancePackName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-organizationconformancepack.html#cfn-config-organizationconformancepack-organizationconformancepackname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TemplateS3Uri" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-organizationconformancepack.html#cfn-config-organizationconformancepack-templates3uri",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TemplateBody" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-organizationconformancepack.html#cfn-config-organizationconformancepack-templatebody",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DeliveryS3Bucket" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-organizationconformancepack.html#cfn-config-organizationconformancepack-deliverys3bucket",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DeliveryS3KeyPrefix" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-organizationconformancepack.html#cfn-config-organizationconformancepack-deliverys3keyprefix",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ConformancePackInputParameters" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-organizationconformancepack.html#cfn-config-organizationconformancepack-conformancepackinputparameters",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_Config_OrganizationConformancePack.ConformancePackInputParameter.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.config.OrganizationConformancePackConformancePackInputParameter>"
+      }
+    },
+    "ExcludedAccounts" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-organizationconformancepack.html#cfn-config-organizationconformancepack-excludedaccounts",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    }
+  }
+}

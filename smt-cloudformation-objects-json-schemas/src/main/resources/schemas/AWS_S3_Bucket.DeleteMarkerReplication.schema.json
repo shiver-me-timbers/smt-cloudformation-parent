@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_S3_Bucket.DeleteMarkerReplication.schema.json",
+  "title" : "BucketDeleteMarkerReplication",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-deletemarkerreplication.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.s3.BucketDeleteMarkerReplication",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BucketDeleteMarkerReplication>" ],
+  "properties" : {
+    "Status" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-deletemarkerreplication.html#cfn-s3-bucket-deletemarkerreplication-status",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

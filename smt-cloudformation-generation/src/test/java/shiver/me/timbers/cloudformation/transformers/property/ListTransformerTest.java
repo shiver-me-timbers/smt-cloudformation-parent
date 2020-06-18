@@ -13,13 +13,9 @@ import java.util.Map;
 
 import static java.lang.String.format;
 import static org.assertj.core.api.Assertions.catchThrowable;
-import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.hasEntry;
-import static org.hamcrest.Matchers.hasKey;
-import static org.hamcrest.Matchers.instanceOf;
-import static org.hamcrest.Matchers.is;
-import static org.hamcrest.Matchers.not;
-import static org.junit.Assert.assertThat;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.*;
+import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
 import static shiver.me.timbers.data.random.RandomBooleans.someBoolean;
@@ -53,6 +49,34 @@ public class ListTransformerTest {
         given(cloudformationProperty.getPrimitiveItemType()).willReturn(itemType);
         given(cloudformationProperty.isDuplicatesAllowed()).willReturn(true);
         given(primitiveTypeConverter.convert(itemType)).willReturn(primitiveType);
+        given(classTypeConverter.toTypeMap(anyString(), anyString())).willReturn(null);
+
+        // When
+        transformer.transform(someString(), mock(CloudformationType.class), someString(), cloudformationProperty, actual);
+
+        // Then
+        assertThat(actual, hasEntry("type", "array"));
+        assertThat(actual, not(hasKey("uniqueItems")));
+        assertThat(actual, hasEntry("items", primitiveType));
+    }
+
+    @Test
+    @SuppressWarnings("unchecked")
+    public void Can_transform_a_primitive_typed_list_from_item_type() {
+
+        final CloudformationProperty cloudformationProperty = mock(CloudformationProperty.class);
+
+        final String itemType = someString();
+        final Map<String, Object> primitiveType = mock(Map.class);
+
+        final Map<String, Object> actual = new HashMap<>();
+
+        // Given
+        given(cloudformationProperty.getPrimitiveItemType()).willReturn(null);
+        given(cloudformationProperty.getItemType()).willReturn(itemType);
+        given(cloudformationProperty.isDuplicatesAllowed()).willReturn(true);
+        given(primitiveTypeConverter.convert(itemType)).willReturn(primitiveType);
+        given(classTypeConverter.toTypeMap(anyString(), anyString())).willReturn(null);
 
         // When
         transformer.transform(someString(), mock(CloudformationType.class), someString(), cloudformationProperty, actual);
@@ -78,6 +102,7 @@ public class ListTransformerTest {
         given(cloudformationProperty.getPrimitiveItemType()).willReturn(itemType);
         given(cloudformationProperty.isDuplicatesAllowed()).willReturn(false);
         given(primitiveTypeConverter.convert(itemType)).willReturn(primitiveType);
+        given(classTypeConverter.toTypeMap(anyString(), anyString())).willReturn(null);
 
         // When
         transformer.transform(someString(), mock(CloudformationType.class), someString(), cloudformationProperty, actual);
@@ -103,6 +128,7 @@ public class ListTransformerTest {
         // Given
         given(cloudformationProperty.getItemType()).willReturn(itemType);
         given(cloudformationProperty.isDuplicatesAllowed()).willReturn(someBoolean());
+        given(primitiveTypeConverter.convert(anyString())).willReturn(null);
         given(classTypeConverter.toTypeMap(resourceName, itemType)).willReturn(typeMap);
 
         // When
@@ -117,12 +143,9 @@ public class ListTransformerTest {
     @SuppressWarnings("unchecked")
     public void Can_fail_to_transform_a_list() {
 
+        // Given
         final String resourceName = someString();
         final String propertyName = someString();
-
-        // Given
-        given(mock(CloudformationProperty.class).getPrimitiveItemType()).willReturn(null);
-        given(mock(CloudformationProperty.class).getItemType()).willReturn(null);
 
         // When
         final Throwable actual = catchThrowable(() -> transformer.transform(

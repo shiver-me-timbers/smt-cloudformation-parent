@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoT_TopicRule.AssetPropertyValue.schema.json",
+  "title" : "TopicRuleAssetPropertyValue",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-assetpropertyvalue.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.iot.TopicRuleAssetPropertyValue",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TopicRuleAssetPropertyValue>" ],
+  "properties" : {
+    "Quality" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-assetpropertyvalue.html#cfn-iot-topicrule-assetpropertyvalue-quality",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Timestamp" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-assetpropertyvalue.html#cfn-iot-topicrule-assetpropertyvalue-timestamp",
+      "$ref" : "AWS_IoT_TopicRule.AssetPropertyTimestamp.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iot.TopicRuleAssetPropertyTimestamp>"
+    },
+    "Value" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-assetpropertyvalue.html#cfn-iot-topicrule-assetpropertyvalue-value",
+      "$ref" : "AWS_IoT_TopicRule.AssetPropertyVariant.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iot.TopicRuleAssetPropertyVariant>"
+    }
+  }
+}

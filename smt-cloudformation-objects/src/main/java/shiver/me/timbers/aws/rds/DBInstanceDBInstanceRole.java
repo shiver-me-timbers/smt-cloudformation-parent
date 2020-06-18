@@ -21,8 +21,7 @@ import shiver.me.timbers.aws.Property;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "FeatureName",
-    "RoleArn",
-    "Status"
+    "RoleArn"
 })
 public class DBInstanceDBInstanceRole implements Property<DBInstanceDBInstanceRole>
 {
@@ -41,13 +40,6 @@ public class DBInstanceDBInstanceRole implements Property<DBInstanceDBInstanceRo
     @JsonProperty("RoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbinstance-dbinstancerole.html#cfn-rds-dbinstance-dbinstancerole-rolearn")
     private CharSequence roleArn;
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbinstance-dbinstancerole.html#cfn-rds-dbinstance-dbinstancerole-status
-     * 
-     */
-    @JsonProperty("Status")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbinstance-dbinstancerole.html#cfn-rds-dbinstance-dbinstancerole-status")
-    private CharSequence status;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbinstance-dbinstancerole.html#cfn-rds-dbinstance-dbinstancerole-featurename
@@ -95,37 +87,14 @@ public class DBInstanceDBInstanceRole implements Property<DBInstanceDBInstanceRo
         return this;
     }
 
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbinstance-dbinstancerole.html#cfn-rds-dbinstance-dbinstancerole-status
-     * 
-     */
-    @JsonIgnore
-    public CharSequence getStatus() {
-        return status;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbinstance-dbinstancerole.html#cfn-rds-dbinstance-dbinstancerole-status
-     * 
-     */
-    @JsonIgnore
-    public void setStatus(CharSequence status) {
-        this.status = status;
-    }
-
-    public DBInstanceDBInstanceRole withStatus(CharSequence status) {
-        this.status = status;
-        return this;
-    }
-
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("featureName", featureName).append("roleArn", roleArn).append("status", status).toString();
+        return new ToStringBuilder(this).append("featureName", featureName).append("roleArn", roleArn).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(featureName).append(roleArn).append(status).toHashCode();
+        return new HashCodeBuilder().append(featureName).append(roleArn).toHashCode();
     }
 
     @Override
@@ -137,7 +106,7 @@ public class DBInstanceDBInstanceRole implements Property<DBInstanceDBInstanceRo
             return false;
         }
         DBInstanceDBInstanceRole rhs = ((DBInstanceDBInstanceRole) other);
-        return new EqualsBuilder().append(featureName, rhs.featureName).append(roleArn, rhs.roleArn).append(status, rhs.status).isEquals();
+        return new EqualsBuilder().append(featureName, rhs.featureName).append(roleArn, rhs.roleArn).isEquals();
     }
 
 }

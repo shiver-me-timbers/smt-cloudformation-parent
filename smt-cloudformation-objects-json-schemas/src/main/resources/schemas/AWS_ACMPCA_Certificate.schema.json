@@ -1,0 +1,35 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ACMPCA_Certificate.schema.json",
+  "title" : "Certificate",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-acmpca-certificate.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.acmpca.Certificate",
+  "properties" : {
+    "CertificateAuthorityArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-acmpca-certificate.html#cfn-acmpca-certificate-certificateauthorityarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "CertificateSigningRequest" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-acmpca-certificate.html#cfn-acmpca-certificate-certificatesigningrequest",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SigningAlgorithm" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-acmpca-certificate.html#cfn-acmpca-certificate-signingalgorithm",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TemplateArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-acmpca-certificate.html#cfn-acmpca-certificate-templatearn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Validity" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-acmpca-certificate.html#cfn-acmpca-certificate-validity",
+      "$ref" : "AWS_ACMPCA_Certificate.Validity.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.acmpca.CertificateValidity>"
+    }
+  }
+}

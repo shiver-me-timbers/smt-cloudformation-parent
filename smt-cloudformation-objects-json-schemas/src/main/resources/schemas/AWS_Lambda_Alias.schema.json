@@ -26,6 +26,11 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "ProvisionedConcurrencyConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-alias.html#cfn-lambda-alias-provisionedconcurrencyconfig",
+      "$ref" : "AWS_Lambda_Alias.ProvisionedConcurrencyConfiguration.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.lambda.AliasProvisionedConcurrencyConfiguration>"
+    },
     "RoutingConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-alias.html#cfn-lambda-alias-routingconfig",
       "$ref" : "AWS_Lambda_Alias.AliasRoutingConfiguration.schema.json",

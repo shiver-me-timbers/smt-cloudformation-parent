@@ -22,6 +22,11 @@
       "$ref" : "AWS_ElasticLoadBalancingV2_ListenerRule.FixedResponseConfig.schema.json",
       "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.elasticloadbalancingv2.ListenerRuleFixedResponseConfig>"
     },
+    "ForwardConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-actions.html#cfn-elasticloadbalancingv2-listenerrule-action-forwardconfig",
+      "$ref" : "AWS_ElasticLoadBalancingV2_ListenerRule.ForwardConfig.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.elasticloadbalancingv2.ListenerRuleForwardConfig>"
+    },
     "Order" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-actions.html#cfn-elasticloadbalancingv2-listenerrule-action-order",
       "type" : "integer",

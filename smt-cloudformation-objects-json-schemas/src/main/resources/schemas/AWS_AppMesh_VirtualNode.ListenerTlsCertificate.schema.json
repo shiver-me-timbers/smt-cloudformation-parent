@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppMesh_VirtualNode.ListenerTlsCertificate.schema.json",
+  "title" : "VirtualNodeListenerTlsCertificate",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-listenertlscertificate.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.appmesh.VirtualNodeListenerTlsCertificate",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<VirtualNodeListenerTlsCertificate>" ],
+  "properties" : {
+    "ACM" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-listenertlscertificate.html#cfn-appmesh-virtualnode-listenertlscertificate-acm",
+      "$ref" : "AWS_AppMesh_VirtualNode.ListenerTlsAcmCertificate.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appmesh.VirtualNodeListenerTlsAcmCertificate>"
+    },
+    "File" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-listenertlscertificate.html#cfn-appmesh-virtualnode-listenertlscertificate-file",
+      "$ref" : "AWS_AppMesh_VirtualNode.ListenerTlsFileCertificate.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appmesh.VirtualNodeListenerTlsFileCertificate>"
+    }
+  }
+}

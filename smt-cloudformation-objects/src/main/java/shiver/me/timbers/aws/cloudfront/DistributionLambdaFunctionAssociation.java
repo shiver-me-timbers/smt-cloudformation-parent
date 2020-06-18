@@ -20,12 +20,20 @@ import shiver.me.timbers.aws.Property;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "IncludeBody",
     "EventType",
     "LambdaFunctionARN"
 })
 public class DistributionLambdaFunctionAssociation implements Property<DistributionLambdaFunctionAssociation>
 {
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-lambdafunctionassociation.html#cfn-cloudfront-distribution-lambdafunctionassociation-includebody
+     * 
+     */
+    @JsonProperty("IncludeBody")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-lambdafunctionassociation.html#cfn-cloudfront-distribution-lambdafunctionassociation-includebody")
+    private CharSequence includeBody;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-lambdafunctionassociation.html#cfn-cloudfront-distribution-lambdafunctionassociation-eventtype
      * 
@@ -40,6 +48,29 @@ public class DistributionLambdaFunctionAssociation implements Property<Distribut
     @JsonProperty("LambdaFunctionARN")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-lambdafunctionassociation.html#cfn-cloudfront-distribution-lambdafunctionassociation-lambdafunctionarn")
     private CharSequence lambdaFunctionARN;
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-lambdafunctionassociation.html#cfn-cloudfront-distribution-lambdafunctionassociation-includebody
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getIncludeBody() {
+        return includeBody;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-lambdafunctionassociation.html#cfn-cloudfront-distribution-lambdafunctionassociation-includebody
+     * 
+     */
+    @JsonIgnore
+    public void setIncludeBody(CharSequence includeBody) {
+        this.includeBody = includeBody;
+    }
+
+    public DistributionLambdaFunctionAssociation withIncludeBody(CharSequence includeBody) {
+        this.includeBody = includeBody;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-lambdafunctionassociation.html#cfn-cloudfront-distribution-lambdafunctionassociation-eventtype
@@ -89,12 +120,12 @@ public class DistributionLambdaFunctionAssociation implements Property<Distribut
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("eventType", eventType).append("lambdaFunctionARN", lambdaFunctionARN).toString();
+        return new ToStringBuilder(this).append("includeBody", includeBody).append("eventType", eventType).append("lambdaFunctionARN", lambdaFunctionARN).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(lambdaFunctionARN).append(eventType).toHashCode();
+        return new HashCodeBuilder().append(lambdaFunctionARN).append(eventType).append(includeBody).toHashCode();
     }
 
     @Override
@@ -106,7 +137,7 @@ public class DistributionLambdaFunctionAssociation implements Property<Distribut
             return false;
         }
         DistributionLambdaFunctionAssociation rhs = ((DistributionLambdaFunctionAssociation) other);
-        return new EqualsBuilder().append(lambdaFunctionARN, rhs.lambdaFunctionARN).append(eventType, rhs.eventType).isEquals();
+        return new EqualsBuilder().append(lambdaFunctionARN, rhs.lambdaFunctionARN).append(eventType, rhs.eventType).append(includeBody, rhs.includeBody).isEquals();
     }
 
 }

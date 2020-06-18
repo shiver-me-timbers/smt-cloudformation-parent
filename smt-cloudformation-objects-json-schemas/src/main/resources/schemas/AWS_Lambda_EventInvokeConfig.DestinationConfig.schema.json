@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Lambda_EventInvokeConfig.DestinationConfig.schema.json",
+  "title" : "EventInvokeConfigDestinationConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventinvokeconfig-destinationconfig.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.lambda.EventInvokeConfigDestinationConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<EventInvokeConfigDestinationConfig>" ],
+  "properties" : {
+    "OnSuccess" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventinvokeconfig-destinationconfig.html#cfn-lambda-eventinvokeconfig-destinationconfig-onsuccess",
+      "$ref" : "AWS_Lambda_EventInvokeConfig.OnSuccess.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.lambda.EventInvokeConfigOnSuccess>"
+    },
+    "OnFailure" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventinvokeconfig-destinationconfig.html#cfn-lambda-eventinvokeconfig-destinationconfig-onfailure",
+      "$ref" : "AWS_Lambda_EventInvokeConfig.OnFailure.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.lambda.EventInvokeConfigOnFailure>"
+    }
+  }
+}

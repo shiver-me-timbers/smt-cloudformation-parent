@@ -26,7 +26,10 @@ import shiver.me.timbers.aws.Property;
     "DynamoDBv2",
     "Elasticsearch",
     "Firehose",
+    "Http",
     "IotAnalytics",
+    "IotEvents",
+    "IotSiteWise",
     "Kinesis",
     "Lambda",
     "Republish",
@@ -93,6 +96,15 @@ public class TopicRuleAction implements Property<TopicRuleAction>
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-firehoseaction.html")
     private Property<TopicRuleFirehoseAction> firehose;
     /**
+     * TopicRuleHttpAction
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-httpaction.html
+     * 
+     */
+    @JsonProperty("Http")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-httpaction.html")
+    private Property<TopicRuleHttpAction> http;
+    /**
      * TopicRuleIotAnalyticsAction
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-iotanalyticsaction.html
@@ -101,6 +113,24 @@ public class TopicRuleAction implements Property<TopicRuleAction>
     @JsonProperty("IotAnalytics")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-iotanalyticsaction.html")
     private Property<TopicRuleIotAnalyticsAction> iotAnalytics;
+    /**
+     * TopicRuleIotEventsAction
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-ioteventsaction.html
+     * 
+     */
+    @JsonProperty("IotEvents")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-ioteventsaction.html")
+    private Property<TopicRuleIotEventsAction> iotEvents;
+    /**
+     * TopicRuleIotSiteWiseAction
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-iotsitewiseaction.html
+     * 
+     */
+    @JsonProperty("IotSiteWise")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-iotsitewiseaction.html")
+    private Property<TopicRuleIotSiteWiseAction> iotSiteWise;
     /**
      * TopicRuleKinesisAction
      * <p>
@@ -328,6 +358,33 @@ public class TopicRuleAction implements Property<TopicRuleAction>
     }
 
     /**
+     * TopicRuleHttpAction
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-httpaction.html
+     * 
+     */
+    @JsonIgnore
+    public Property<TopicRuleHttpAction> getHttp() {
+        return http;
+    }
+
+    /**
+     * TopicRuleHttpAction
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-httpaction.html
+     * 
+     */
+    @JsonIgnore
+    public void setHttp(Property<TopicRuleHttpAction> http) {
+        this.http = http;
+    }
+
+    public TopicRuleAction withHttp(Property<TopicRuleHttpAction> http) {
+        this.http = http;
+        return this;
+    }
+
+    /**
      * TopicRuleIotAnalyticsAction
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-iotanalyticsaction.html
@@ -351,6 +408,60 @@ public class TopicRuleAction implements Property<TopicRuleAction>
 
     public TopicRuleAction withIotAnalytics(Property<TopicRuleIotAnalyticsAction> iotAnalytics) {
         this.iotAnalytics = iotAnalytics;
+        return this;
+    }
+
+    /**
+     * TopicRuleIotEventsAction
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-ioteventsaction.html
+     * 
+     */
+    @JsonIgnore
+    public Property<TopicRuleIotEventsAction> getIotEvents() {
+        return iotEvents;
+    }
+
+    /**
+     * TopicRuleIotEventsAction
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-ioteventsaction.html
+     * 
+     */
+    @JsonIgnore
+    public void setIotEvents(Property<TopicRuleIotEventsAction> iotEvents) {
+        this.iotEvents = iotEvents;
+    }
+
+    public TopicRuleAction withIotEvents(Property<TopicRuleIotEventsAction> iotEvents) {
+        this.iotEvents = iotEvents;
+        return this;
+    }
+
+    /**
+     * TopicRuleIotSiteWiseAction
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-iotsitewiseaction.html
+     * 
+     */
+    @JsonIgnore
+    public Property<TopicRuleIotSiteWiseAction> getIotSiteWise() {
+        return iotSiteWise;
+    }
+
+    /**
+     * TopicRuleIotSiteWiseAction
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-iotsitewiseaction.html
+     * 
+     */
+    @JsonIgnore
+    public void setIotSiteWise(Property<TopicRuleIotSiteWiseAction> iotSiteWise) {
+        this.iotSiteWise = iotSiteWise;
+    }
+
+    public TopicRuleAction withIotSiteWise(Property<TopicRuleIotSiteWiseAction> iotSiteWise) {
+        this.iotSiteWise = iotSiteWise;
         return this;
     }
 
@@ -545,12 +656,12 @@ public class TopicRuleAction implements Property<TopicRuleAction>
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("cloudwatchAlarm", cloudwatchAlarm).append("cloudwatchMetric", cloudwatchMetric).append("dynamoDB", dynamoDB).append("dynamoDBv2", dynamoDBv2).append("elasticsearch", elasticsearch).append("firehose", firehose).append("iotAnalytics", iotAnalytics).append("kinesis", kinesis).append("lambda", lambda).append("republish", republish).append("s3", s3).append("sns", sns).append("sqs", sqs).append("stepFunctions", stepFunctions).toString();
+        return new ToStringBuilder(this).append("cloudwatchAlarm", cloudwatchAlarm).append("cloudwatchMetric", cloudwatchMetric).append("dynamoDB", dynamoDB).append("dynamoDBv2", dynamoDBv2).append("elasticsearch", elasticsearch).append("firehose", firehose).append("http", http).append("iotAnalytics", iotAnalytics).append("iotEvents", iotEvents).append("iotSiteWise", iotSiteWise).append("kinesis", kinesis).append("lambda", lambda).append("republish", republish).append("s3", s3).append("sns", sns).append("sqs", sqs).append("stepFunctions", stepFunctions).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(s3).append(firehose).append(dynamoDBv2).append(stepFunctions).append(kinesis).append(dynamoDB).append(iotAnalytics).append(lambda).append(elasticsearch).append(republish).append(sqs).append(cloudwatchAlarm).append(sns).append(cloudwatchMetric).toHashCode();
+        return new HashCodeBuilder().append(s3).append(firehose).append(dynamoDBv2).append(stepFunctions).append(kinesis).append(dynamoDB).append(iotAnalytics).append(lambda).append(elasticsearch).append(iotEvents).append(republish).append(sqs).append(cloudwatchAlarm).append(http).append(sns).append(iotSiteWise).append(cloudwatchMetric).toHashCode();
     }
 
     @Override
@@ -562,7 +673,7 @@ public class TopicRuleAction implements Property<TopicRuleAction>
             return false;
         }
         TopicRuleAction rhs = ((TopicRuleAction) other);
-        return new EqualsBuilder().append(s3, rhs.s3).append(firehose, rhs.firehose).append(dynamoDBv2, rhs.dynamoDBv2).append(stepFunctions, rhs.stepFunctions).append(kinesis, rhs.kinesis).append(dynamoDB, rhs.dynamoDB).append(iotAnalytics, rhs.iotAnalytics).append(lambda, rhs.lambda).append(elasticsearch, rhs.elasticsearch).append(republish, rhs.republish).append(sqs, rhs.sqs).append(cloudwatchAlarm, rhs.cloudwatchAlarm).append(sns, rhs.sns).append(cloudwatchMetric, rhs.cloudwatchMetric).isEquals();
+        return new EqualsBuilder().append(s3, rhs.s3).append(firehose, rhs.firehose).append(dynamoDBv2, rhs.dynamoDBv2).append(stepFunctions, rhs.stepFunctions).append(kinesis, rhs.kinesis).append(dynamoDB, rhs.dynamoDB).append(iotAnalytics, rhs.iotAnalytics).append(lambda, rhs.lambda).append(elasticsearch, rhs.elasticsearch).append(iotEvents, rhs.iotEvents).append(republish, rhs.republish).append(sqs, rhs.sqs).append(cloudwatchAlarm, rhs.cloudwatchAlarm).append(http, rhs.http).append(sns, rhs.sns).append(iotSiteWise, rhs.iotSiteWise).append(cloudwatchMetric, rhs.cloudwatchMetric).isEquals();
     }
 
 }

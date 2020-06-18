@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EKS_NodegroupAttributes.schema.json",
+  "title" : "NodegroupAttributes",
+  "type" : "string",
+  "enum" : [ "NodegroupName", "ClusterName", "Arn" ],
+  "javaType" : "shiver.me.timbers.aws.eks.NodegroupAttributes"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CodeStarNotifications_NotificationRuleResource.schema.json",
+  "title" : "NotificationRuleResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codestarnotifications-notificationrule.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.codestarnotifications.NotificationRuleResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<NotificationRuleResource>", "shiver.me.timbers.aws.HasCondition<NotificationRuleResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::CodeStarNotifications::NotificationRule"
+    },
+    "Properties" : {
+      "$ref" : "AWS_CodeStarNotifications_NotificationRule.schema.json"
+    }
+  }
+}

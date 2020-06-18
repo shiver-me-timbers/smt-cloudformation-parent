@@ -1,7 +1,9 @@
 
 package shiver.me.timbers.aws.codepipeline;
 
+import java.util.ArrayList;
 import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Set;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -13,6 +15,7 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 import shiver.me.timbers.aws.Property;
+import shiver.me.timbers.aws.Tag;
 
 
 /**
@@ -29,6 +32,7 @@ import shiver.me.timbers.aws.Property;
     "OutputArtifactDetails",
     "Provider",
     "Settings",
+    "Tags",
     "Version"
 })
 public class CustomActionType {
@@ -82,6 +86,13 @@ public class CustomActionType {
     @JsonProperty("Settings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-settings.html")
     private Property<CustomActionTypeSettings> settings;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-tags")
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-version
      * 
@@ -241,6 +252,29 @@ public class CustomActionType {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-tags
+     * 
+     */
+    @JsonIgnore
+    public List<Property<Tag>> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+    }
+
+    public CustomActionType withTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-version
      * 
      */
@@ -265,12 +299,12 @@ public class CustomActionType {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("category", category).append("configurationProperties", configurationProperties).append("inputArtifactDetails", inputArtifactDetails).append("outputArtifactDetails", outputArtifactDetails).append("provider", provider).append("settings", settings).append("version", version).toString();
+        return new ToStringBuilder(this).append("category", category).append("configurationProperties", configurationProperties).append("inputArtifactDetails", inputArtifactDetails).append("outputArtifactDetails", outputArtifactDetails).append("provider", provider).append("settings", settings).append("tags", tags).append("version", version).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(settings).append(provider).append(inputArtifactDetails).append(outputArtifactDetails).append(category).append(configurationProperties).append(version).toHashCode();
+        return new HashCodeBuilder().append(settings).append(provider).append(inputArtifactDetails).append(outputArtifactDetails).append(category).append(configurationProperties).append(version).append(tags).toHashCode();
     }
 
     @Override
@@ -282,7 +316,7 @@ public class CustomActionType {
             return false;
         }
         CustomActionType rhs = ((CustomActionType) other);
-        return new EqualsBuilder().append(settings, rhs.settings).append(provider, rhs.provider).append(inputArtifactDetails, rhs.inputArtifactDetails).append(outputArtifactDetails, rhs.outputArtifactDetails).append(category, rhs.category).append(configurationProperties, rhs.configurationProperties).append(version, rhs.version).isEquals();
+        return new EqualsBuilder().append(settings, rhs.settings).append(provider, rhs.provider).append(inputArtifactDetails, rhs.inputArtifactDetails).append(outputArtifactDetails, rhs.outputArtifactDetails).append(category, rhs.category).append(configurationProperties, rhs.configurationProperties).append(version, rhs.version).append(tags, rhs.tags).isEquals();
     }
 
 }

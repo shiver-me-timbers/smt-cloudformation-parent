@@ -21,6 +21,7 @@ import shiver.me.timbers.aws.Property;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "DomainName",
+    "HostedZoneId",
     "ValidationDomain"
 })
 public class CertificateDomainValidationOption implements Property<CertificateDomainValidationOption>
@@ -33,6 +34,13 @@ public class CertificateDomainValidationOption implements Property<CertificateDo
     @JsonProperty("DomainName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-certificatemanager-certificate-domainvalidationoption.html#cfn-certificatemanager-certificate-domainvalidationoptions-domainname")
     private CharSequence domainName;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-certificatemanager-certificate-domainvalidationoption.html#cfn-certificatemanager-certificate-domainvalidationoption-hostedzoneid
+     * 
+     */
+    @JsonProperty("HostedZoneId")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-certificatemanager-certificate-domainvalidationoption.html#cfn-certificatemanager-certificate-domainvalidationoption-hostedzoneid")
+    private CharSequence hostedZoneId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-certificatemanager-certificate-domainvalidationoption.html#cfn-certificatemanager-certificate-domainvalidationoption-validationdomain
      * 
@@ -65,6 +73,29 @@ public class CertificateDomainValidationOption implements Property<CertificateDo
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-certificatemanager-certificate-domainvalidationoption.html#cfn-certificatemanager-certificate-domainvalidationoption-hostedzoneid
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getHostedZoneId() {
+        return hostedZoneId;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-certificatemanager-certificate-domainvalidationoption.html#cfn-certificatemanager-certificate-domainvalidationoption-hostedzoneid
+     * 
+     */
+    @JsonIgnore
+    public void setHostedZoneId(CharSequence hostedZoneId) {
+        this.hostedZoneId = hostedZoneId;
+    }
+
+    public CertificateDomainValidationOption withHostedZoneId(CharSequence hostedZoneId) {
+        this.hostedZoneId = hostedZoneId;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-certificatemanager-certificate-domainvalidationoption.html#cfn-certificatemanager-certificate-domainvalidationoption-validationdomain
      * 
      */
@@ -89,12 +120,12 @@ public class CertificateDomainValidationOption implements Property<CertificateDo
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("domainName", domainName).append("validationDomain", validationDomain).toString();
+        return new ToStringBuilder(this).append("domainName", domainName).append("hostedZoneId", hostedZoneId).append("validationDomain", validationDomain).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(validationDomain).append(domainName).toHashCode();
+        return new HashCodeBuilder().append(hostedZoneId).append(validationDomain).append(domainName).toHashCode();
     }
 
     @Override
@@ -106,7 +137,7 @@ public class CertificateDomainValidationOption implements Property<CertificateDo
             return false;
         }
         CertificateDomainValidationOption rhs = ((CertificateDomainValidationOption) other);
-        return new EqualsBuilder().append(validationDomain, rhs.validationDomain).append(domainName, rhs.domainName).isEquals();
+        return new EqualsBuilder().append(hostedZoneId, rhs.hostedZoneId).append(validationDomain, rhs.validationDomain).append(domainName, rhs.domainName).isEquals();
     }
 
 }

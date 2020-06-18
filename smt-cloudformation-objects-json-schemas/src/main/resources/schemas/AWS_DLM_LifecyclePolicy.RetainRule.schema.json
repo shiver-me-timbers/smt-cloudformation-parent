@@ -7,8 +7,18 @@
   "javaType" : "shiver.me.timbers.aws.dlm.LifecyclePolicyRetainRule",
   "javaInterfaces" : [ "shiver.me.timbers.aws.Property<LifecyclePolicyRetainRule>" ],
   "properties" : {
+    "IntervalUnit" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-retainrule.html#cfn-dlm-lifecyclepolicy-retainrule-intervalunit",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "Count" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-retainrule.html#cfn-dlm-lifecyclepolicy-retainrule-count",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "Interval" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-retainrule.html#cfn-dlm-lifecyclepolicy-retainrule-interval",
       "type" : "integer",
       "javaType" : "java.lang.Number"
     }

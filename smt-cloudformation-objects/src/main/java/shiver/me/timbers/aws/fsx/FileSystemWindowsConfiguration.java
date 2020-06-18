@@ -20,16 +20,28 @@ import shiver.me.timbers.aws.Property;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "SelfManagedActiveDirectoryConfiguration",
     "WeeklyMaintenanceStartTime",
     "ActiveDirectoryId",
+    "DeploymentType",
     "ThroughputCapacity",
     "CopyTagsToBackups",
     "DailyAutomaticBackupStartTime",
-    "AutomaticBackupRetentionDays"
+    "AutomaticBackupRetentionDays",
+    "PreferredSubnetId"
 })
 public class FileSystemWindowsConfiguration implements Property<FileSystemWindowsConfiguration>
 {
 
+    /**
+     * FileSystemSelfManagedActiveDirectoryConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration-selfmanagedactivedirectoryconfiguration.html
+     * 
+     */
+    @JsonProperty("SelfManagedActiveDirectoryConfiguration")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration-selfmanagedactivedirectoryconfiguration.html")
+    private Property<FileSystemSelfManagedActiveDirectoryConfiguration> selfManagedActiveDirectoryConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration.html#cfn-fsx-filesystem-windowsconfiguration-weeklymaintenancestarttime
      * 
@@ -44,6 +56,13 @@ public class FileSystemWindowsConfiguration implements Property<FileSystemWindow
     @JsonProperty("ActiveDirectoryId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration.html#cfn-fsx-filesystem-windowsconfiguration-activedirectoryid")
     private CharSequence activeDirectoryId;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration.html#cfn-fsx-filesystem-windowsconfiguration-deploymenttype
+     * 
+     */
+    @JsonProperty("DeploymentType")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration.html#cfn-fsx-filesystem-windowsconfiguration-deploymenttype")
+    private CharSequence deploymentType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration.html#cfn-fsx-filesystem-windowsconfiguration-throughputcapacity
      * 
@@ -72,6 +91,40 @@ public class FileSystemWindowsConfiguration implements Property<FileSystemWindow
     @JsonProperty("AutomaticBackupRetentionDays")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration.html#cfn-fsx-filesystem-windowsconfiguration-automaticbackupretentiondays")
     private Number automaticBackupRetentionDays;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration.html#cfn-fsx-filesystem-windowsconfiguration-preferredsubnetid
+     * 
+     */
+    @JsonProperty("PreferredSubnetId")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration.html#cfn-fsx-filesystem-windowsconfiguration-preferredsubnetid")
+    private CharSequence preferredSubnetId;
+
+    /**
+     * FileSystemSelfManagedActiveDirectoryConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration-selfmanagedactivedirectoryconfiguration.html
+     * 
+     */
+    @JsonIgnore
+    public Property<FileSystemSelfManagedActiveDirectoryConfiguration> getSelfManagedActiveDirectoryConfiguration() {
+        return selfManagedActiveDirectoryConfiguration;
+    }
+
+    /**
+     * FileSystemSelfManagedActiveDirectoryConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration-selfmanagedactivedirectoryconfiguration.html
+     * 
+     */
+    @JsonIgnore
+    public void setSelfManagedActiveDirectoryConfiguration(Property<FileSystemSelfManagedActiveDirectoryConfiguration> selfManagedActiveDirectoryConfiguration) {
+        this.selfManagedActiveDirectoryConfiguration = selfManagedActiveDirectoryConfiguration;
+    }
+
+    public FileSystemWindowsConfiguration withSelfManagedActiveDirectoryConfiguration(Property<FileSystemSelfManagedActiveDirectoryConfiguration> selfManagedActiveDirectoryConfiguration) {
+        this.selfManagedActiveDirectoryConfiguration = selfManagedActiveDirectoryConfiguration;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration.html#cfn-fsx-filesystem-windowsconfiguration-weeklymaintenancestarttime
@@ -116,6 +169,29 @@ public class FileSystemWindowsConfiguration implements Property<FileSystemWindow
 
     public FileSystemWindowsConfiguration withActiveDirectoryId(CharSequence activeDirectoryId) {
         this.activeDirectoryId = activeDirectoryId;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration.html#cfn-fsx-filesystem-windowsconfiguration-deploymenttype
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getDeploymentType() {
+        return deploymentType;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration.html#cfn-fsx-filesystem-windowsconfiguration-deploymenttype
+     * 
+     */
+    @JsonIgnore
+    public void setDeploymentType(CharSequence deploymentType) {
+        this.deploymentType = deploymentType;
+    }
+
+    public FileSystemWindowsConfiguration withDeploymentType(CharSequence deploymentType) {
+        this.deploymentType = deploymentType;
         return this;
     }
 
@@ -211,14 +287,37 @@ public class FileSystemWindowsConfiguration implements Property<FileSystemWindow
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration.html#cfn-fsx-filesystem-windowsconfiguration-preferredsubnetid
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getPreferredSubnetId() {
+        return preferredSubnetId;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration.html#cfn-fsx-filesystem-windowsconfiguration-preferredsubnetid
+     * 
+     */
+    @JsonIgnore
+    public void setPreferredSubnetId(CharSequence preferredSubnetId) {
+        this.preferredSubnetId = preferredSubnetId;
+    }
+
+    public FileSystemWindowsConfiguration withPreferredSubnetId(CharSequence preferredSubnetId) {
+        this.preferredSubnetId = preferredSubnetId;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("weeklyMaintenanceStartTime", weeklyMaintenanceStartTime).append("activeDirectoryId", activeDirectoryId).append("throughputCapacity", throughputCapacity).append("copyTagsToBackups", copyTagsToBackups).append("dailyAutomaticBackupStartTime", dailyAutomaticBackupStartTime).append("automaticBackupRetentionDays", automaticBackupRetentionDays).toString();
+        return new ToStringBuilder(this).append("selfManagedActiveDirectoryConfiguration", selfManagedActiveDirectoryConfiguration).append("weeklyMaintenanceStartTime", weeklyMaintenanceStartTime).append("activeDirectoryId", activeDirectoryId).append("deploymentType", deploymentType).append("throughputCapacity", throughputCapacity).append("copyTagsToBackups", copyTagsToBackups).append("dailyAutomaticBackupStartTime", dailyAutomaticBackupStartTime).append("automaticBackupRetentionDays", automaticBackupRetentionDays).append("preferredSubnetId", preferredSubnetId).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(throughputCapacity).append(activeDirectoryId).append(weeklyMaintenanceStartTime).append(copyTagsToBackups).append(dailyAutomaticBackupStartTime).append(automaticBackupRetentionDays).toHashCode();
+        return new HashCodeBuilder().append(throughputCapacity).append(activeDirectoryId).append(deploymentType).append(selfManagedActiveDirectoryConfiguration).append(weeklyMaintenanceStartTime).append(copyTagsToBackups).append(dailyAutomaticBackupStartTime).append(preferredSubnetId).append(automaticBackupRetentionDays).toHashCode();
     }
 
     @Override
@@ -230,7 +329,7 @@ public class FileSystemWindowsConfiguration implements Property<FileSystemWindow
             return false;
         }
         FileSystemWindowsConfiguration rhs = ((FileSystemWindowsConfiguration) other);
-        return new EqualsBuilder().append(throughputCapacity, rhs.throughputCapacity).append(activeDirectoryId, rhs.activeDirectoryId).append(weeklyMaintenanceStartTime, rhs.weeklyMaintenanceStartTime).append(copyTagsToBackups, rhs.copyTagsToBackups).append(dailyAutomaticBackupStartTime, rhs.dailyAutomaticBackupStartTime).append(automaticBackupRetentionDays, rhs.automaticBackupRetentionDays).isEquals();
+        return new EqualsBuilder().append(throughputCapacity, rhs.throughputCapacity).append(activeDirectoryId, rhs.activeDirectoryId).append(deploymentType, rhs.deploymentType).append(selfManagedActiveDirectoryConfiguration, rhs.selfManagedActiveDirectoryConfiguration).append(weeklyMaintenanceStartTime, rhs.weeklyMaintenanceStartTime).append(copyTagsToBackups, rhs.copyTagsToBackups).append(dailyAutomaticBackupStartTime, rhs.dailyAutomaticBackupStartTime).append(preferredSubnetId, rhs.preferredSubnetId).append(automaticBackupRetentionDays, rhs.automaticBackupRetentionDays).isEquals();
     }
 
 }

@@ -21,7 +21,7 @@
     <parent>
         <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
         <artifactId>smt-cloudformation-parent</artifactId>
-        <version>6.0.0.1-SNAPSHOT</version>
+        <version>15.2.0.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>smt-cloudformation-objects</artifactId>
@@ -38,9 +38,6 @@
     <profiles>
         <profile>
             <id>generate-java-classes</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
             <build>
                 <plugins>
                     <plugin>
@@ -122,13 +119,13 @@
                 <dependency>
                     <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
                     <artifactId>smt-cloudformation-base-json-schemas</artifactId>
-                    <version>6.0.0.1-SNAPSHOT</version>
+                    <version>15.2.0.0-SNAPSHOT</version>
                     <scope>provided</scope>
                 </dependency>
                 <dependency>
                     <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
                     <artifactId>smt-cloudformation-objects-json-schemas</artifactId>
-                    <version>6.0.0.1-SNAPSHOT</version>
+                    <version>15.2.0.0-SNAPSHOT</version>
                     <scope>provided</scope>
                 </dependency>
             </dependencies>
@@ -162,7 +159,7 @@
         <dependency>
             <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
             <artifactId>smt-cloudformation-base</artifactId>
-            <version>6.0.0.1-SNAPSHOT</version>
+            <version>15.2.0.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>

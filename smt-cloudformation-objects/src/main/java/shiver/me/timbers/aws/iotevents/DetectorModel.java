@@ -24,6 +24,7 @@ import shiver.me.timbers.aws.Tag;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "DetectorModelDefinition",
+    "EvaluationMethod",
     "DetectorModelName",
     "DetectorModelDescription",
     "Key",
@@ -41,6 +42,13 @@ public class DetectorModel {
     @JsonProperty("DetectorModelDefinition")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-detectormodeldefinition.html")
     private Property<DetectorModelDetectorModelDefinition> detectorModelDefinition;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotevents-detectormodel.html#cfn-iotevents-detectormodel-evaluationmethod
+     * 
+     */
+    @JsonProperty("EvaluationMethod")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotevents-detectormodel.html#cfn-iotevents-detectormodel-evaluationmethod")
+    private CharSequence evaluationMethod;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotevents-detectormodel.html#cfn-iotevents-detectormodel-detectormodelname
      * 
@@ -101,6 +109,29 @@ public class DetectorModel {
 
     public DetectorModel withDetectorModelDefinition(Property<DetectorModelDetectorModelDefinition> detectorModelDefinition) {
         this.detectorModelDefinition = detectorModelDefinition;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotevents-detectormodel.html#cfn-iotevents-detectormodel-evaluationmethod
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getEvaluationMethod() {
+        return evaluationMethod;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotevents-detectormodel.html#cfn-iotevents-detectormodel-evaluationmethod
+     * 
+     */
+    @JsonIgnore
+    public void setEvaluationMethod(CharSequence evaluationMethod) {
+        this.evaluationMethod = evaluationMethod;
+    }
+
+    public DetectorModel withEvaluationMethod(CharSequence evaluationMethod) {
+        this.evaluationMethod = evaluationMethod;
         return this;
     }
 
@@ -221,12 +252,12 @@ public class DetectorModel {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("detectorModelDefinition", detectorModelDefinition).append("detectorModelName", detectorModelName).append("detectorModelDescription", detectorModelDescription).append("key", key).append("roleArn", roleArn).append("tags", tags).toString();
+        return new ToStringBuilder(this).append("detectorModelDefinition", detectorModelDefinition).append("evaluationMethod", evaluationMethod).append("detectorModelName", detectorModelName).append("detectorModelDescription", detectorModelDescription).append("key", key).append("roleArn", roleArn).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(roleArn).append(detectorModelDefinition).append(detectorModelName).append(key).append(detectorModelDescription).append(tags).toHashCode();
+        return new HashCodeBuilder().append(evaluationMethod).append(roleArn).append(detectorModelDefinition).append(detectorModelName).append(key).append(detectorModelDescription).append(tags).toHashCode();
     }
 
     @Override
@@ -238,7 +269,7 @@ public class DetectorModel {
             return false;
         }
         DetectorModel rhs = ((DetectorModel) other);
-        return new EqualsBuilder().append(roleArn, rhs.roleArn).append(detectorModelDefinition, rhs.detectorModelDefinition).append(detectorModelName, rhs.detectorModelName).append(key, rhs.key).append(detectorModelDescription, rhs.detectorModelDescription).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(evaluationMethod, rhs.evaluationMethod).append(roleArn, rhs.roleArn).append(detectorModelDefinition, rhs.detectorModelDefinition).append(detectorModelName, rhs.detectorModelName).append(key, rhs.key).append(detectorModelDescription, rhs.detectorModelDescription).append(tags, rhs.tags).isEquals();
     }
 
 }

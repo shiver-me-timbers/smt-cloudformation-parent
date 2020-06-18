@@ -20,7 +20,8 @@ import shiver.me.timbers.aws.Property;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
-    "InputName"
+    "InputName",
+    "Payload"
 })
 public class DetectorModelIotEvents implements Property<DetectorModelIotEvents>
 {
@@ -32,6 +33,15 @@ public class DetectorModelIotEvents implements Property<DetectorModelIotEvents>
     @JsonProperty("InputName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-iotevents.html#cfn-iotevents-detectormodel-iotevents-inputname")
     private CharSequence inputName;
+    /**
+     * DetectorModelPayload
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-payload.html
+     * 
+     */
+    @JsonProperty("Payload")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-payload.html")
+    private Property<DetectorModelPayload> payload;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-iotevents.html#cfn-iotevents-detectormodel-iotevents-inputname
@@ -56,14 +66,41 @@ public class DetectorModelIotEvents implements Property<DetectorModelIotEvents>
         return this;
     }
 
+    /**
+     * DetectorModelPayload
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-payload.html
+     * 
+     */
+    @JsonIgnore
+    public Property<DetectorModelPayload> getPayload() {
+        return payload;
+    }
+
+    /**
+     * DetectorModelPayload
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-payload.html
+     * 
+     */
+    @JsonIgnore
+    public void setPayload(Property<DetectorModelPayload> payload) {
+        this.payload = payload;
+    }
+
+    public DetectorModelIotEvents withPayload(Property<DetectorModelPayload> payload) {
+        this.payload = payload;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("inputName", inputName).toString();
+        return new ToStringBuilder(this).append("inputName", inputName).append("payload", payload).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(inputName).toHashCode();
+        return new HashCodeBuilder().append(payload).append(inputName).toHashCode();
     }
 
     @Override
@@ -75,7 +112,7 @@ public class DetectorModelIotEvents implements Property<DetectorModelIotEvents>
             return false;
         }
         DetectorModelIotEvents rhs = ((DetectorModelIotEvents) other);
-        return new EqualsBuilder().append(inputName, rhs.inputName).isEquals();
+        return new EqualsBuilder().append(payload, rhs.payload).append(inputName, rhs.inputName).isEquals();
     }
 
 }

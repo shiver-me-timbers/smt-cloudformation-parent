@@ -21,6 +21,7 @@ import shiver.me.timbers.aws.Property;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "Action",
+    "RetryPolicy",
     "Match"
 })
 public class RouteHttpRoute implements Property<RouteHttpRoute>
@@ -35,6 +36,15 @@ public class RouteHttpRoute implements Property<RouteHttpRoute>
     @JsonProperty("Action")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-httprouteaction.html")
     private Property<RouteHttpRouteAction> action;
+    /**
+     * RouteHttpRetryPolicy
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-httpretrypolicy.html
+     * 
+     */
+    @JsonProperty("RetryPolicy")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-httpretrypolicy.html")
+    private Property<RouteHttpRetryPolicy> retryPolicy;
     /**
      * RouteHttpRouteMatch
      * <p>
@@ -73,6 +83,33 @@ public class RouteHttpRoute implements Property<RouteHttpRoute>
     }
 
     /**
+     * RouteHttpRetryPolicy
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-httpretrypolicy.html
+     * 
+     */
+    @JsonIgnore
+    public Property<RouteHttpRetryPolicy> getRetryPolicy() {
+        return retryPolicy;
+    }
+
+    /**
+     * RouteHttpRetryPolicy
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-httpretrypolicy.html
+     * 
+     */
+    @JsonIgnore
+    public void setRetryPolicy(Property<RouteHttpRetryPolicy> retryPolicy) {
+        this.retryPolicy = retryPolicy;
+    }
+
+    public RouteHttpRoute withRetryPolicy(Property<RouteHttpRetryPolicy> retryPolicy) {
+        this.retryPolicy = retryPolicy;
+        return this;
+    }
+
+    /**
      * RouteHttpRouteMatch
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-httproutematch.html
@@ -101,12 +138,12 @@ public class RouteHttpRoute implements Property<RouteHttpRoute>
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("action", action).append("match", match).toString();
+        return new ToStringBuilder(this).append("action", action).append("retryPolicy", retryPolicy).append("match", match).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(match).append(action).toHashCode();
+        return new HashCodeBuilder().append(match).append(action).append(retryPolicy).toHashCode();
     }
 
     @Override
@@ -118,7 +155,7 @@ public class RouteHttpRoute implements Property<RouteHttpRoute>
             return false;
         }
         RouteHttpRoute rhs = ((RouteHttpRoute) other);
-        return new EqualsBuilder().append(match, rhs.match).append(action, rhs.action).isEquals();
+        return new EqualsBuilder().append(match, rhs.match).append(action, rhs.action).append(retryPolicy, rhs.retryPolicy).isEquals();
     }
 
 }

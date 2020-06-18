@@ -24,7 +24,9 @@ import shiver.me.timbers.aws.Property;
 @JsonPropertyOrder({
     "EnvironmentVariables",
     "EnableAutoBranchCreation",
+    "PullRequestEnvironmentName",
     "AutoBranchCreationPatterns",
+    "EnablePullRequestPreview",
     "EnableAutoBuild",
     "BuildSpec",
     "Stage",
@@ -48,12 +50,26 @@ public class AppAutoBranchCreationConfig implements Property<AppAutoBranchCreati
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-autobranchcreationconfig.html#cfn-amplify-app-autobranchcreationconfig-enableautobranchcreation")
     private CharSequence enableAutoBranchCreation;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-autobranchcreationconfig.html#cfn-amplify-app-autobranchcreationconfig-pullrequestenvironmentname
+     * 
+     */
+    @JsonProperty("PullRequestEnvironmentName")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-autobranchcreationconfig.html#cfn-amplify-app-autobranchcreationconfig-pullrequestenvironmentname")
+    private CharSequence pullRequestEnvironmentName;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-autobranchcreationconfig.html#cfn-amplify-app-autobranchcreationconfig-autobranchcreationpatterns
      * 
      */
     @JsonProperty("AutoBranchCreationPatterns")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-autobranchcreationconfig.html#cfn-amplify-app-autobranchcreationconfig-autobranchcreationpatterns")
     private List<CharSequence> autoBranchCreationPatterns = new ArrayList<CharSequence>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-autobranchcreationconfig.html#cfn-amplify-app-autobranchcreationconfig-enablepullrequestpreview
+     * 
+     */
+    @JsonProperty("EnablePullRequestPreview")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-autobranchcreationconfig.html#cfn-amplify-app-autobranchcreationconfig-enablepullrequestpreview")
+    private CharSequence enablePullRequestPreview;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-autobranchcreationconfig.html#cfn-amplify-app-autobranchcreationconfig-enableautobuild
      * 
@@ -132,6 +148,29 @@ public class AppAutoBranchCreationConfig implements Property<AppAutoBranchCreati
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-autobranchcreationconfig.html#cfn-amplify-app-autobranchcreationconfig-pullrequestenvironmentname
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getPullRequestEnvironmentName() {
+        return pullRequestEnvironmentName;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-autobranchcreationconfig.html#cfn-amplify-app-autobranchcreationconfig-pullrequestenvironmentname
+     * 
+     */
+    @JsonIgnore
+    public void setPullRequestEnvironmentName(CharSequence pullRequestEnvironmentName) {
+        this.pullRequestEnvironmentName = pullRequestEnvironmentName;
+    }
+
+    public AppAutoBranchCreationConfig withPullRequestEnvironmentName(CharSequence pullRequestEnvironmentName) {
+        this.pullRequestEnvironmentName = pullRequestEnvironmentName;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-autobranchcreationconfig.html#cfn-amplify-app-autobranchcreationconfig-autobranchcreationpatterns
      * 
      */
@@ -151,6 +190,29 @@ public class AppAutoBranchCreationConfig implements Property<AppAutoBranchCreati
 
     public AppAutoBranchCreationConfig withAutoBranchCreationPatterns(List<CharSequence> autoBranchCreationPatterns) {
         this.autoBranchCreationPatterns = autoBranchCreationPatterns;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-autobranchcreationconfig.html#cfn-amplify-app-autobranchcreationconfig-enablepullrequestpreview
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getEnablePullRequestPreview() {
+        return enablePullRequestPreview;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-app-autobranchcreationconfig.html#cfn-amplify-app-autobranchcreationconfig-enablepullrequestpreview
+     * 
+     */
+    @JsonIgnore
+    public void setEnablePullRequestPreview(CharSequence enablePullRequestPreview) {
+        this.enablePullRequestPreview = enablePullRequestPreview;
+    }
+
+    public AppAutoBranchCreationConfig withEnablePullRequestPreview(CharSequence enablePullRequestPreview) {
+        this.enablePullRequestPreview = enablePullRequestPreview;
         return this;
     }
 
@@ -252,12 +314,12 @@ public class AppAutoBranchCreationConfig implements Property<AppAutoBranchCreati
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("environmentVariables", environmentVariables).append("enableAutoBranchCreation", enableAutoBranchCreation).append("autoBranchCreationPatterns", autoBranchCreationPatterns).append("enableAutoBuild", enableAutoBuild).append("buildSpec", buildSpec).append("stage", stage).append("basicAuthConfig", basicAuthConfig).toString();
+        return new ToStringBuilder(this).append("environmentVariables", environmentVariables).append("enableAutoBranchCreation", enableAutoBranchCreation).append("pullRequestEnvironmentName", pullRequestEnvironmentName).append("autoBranchCreationPatterns", autoBranchCreationPatterns).append("enablePullRequestPreview", enablePullRequestPreview).append("enableAutoBuild", enableAutoBuild).append("buildSpec", buildSpec).append("stage", stage).append("basicAuthConfig", basicAuthConfig).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(autoBranchCreationPatterns).append(enableAutoBuild).append(stage).append(environmentVariables).append(buildSpec).append(enableAutoBranchCreation).append(basicAuthConfig).toHashCode();
+        return new HashCodeBuilder().append(autoBranchCreationPatterns).append(enableAutoBuild).append(stage).append(environmentVariables).append(enablePullRequestPreview).append(buildSpec).append(enableAutoBranchCreation).append(basicAuthConfig).append(pullRequestEnvironmentName).toHashCode();
     }
 
     @Override
@@ -269,7 +331,7 @@ public class AppAutoBranchCreationConfig implements Property<AppAutoBranchCreati
             return false;
         }
         AppAutoBranchCreationConfig rhs = ((AppAutoBranchCreationConfig) other);
-        return new EqualsBuilder().append(autoBranchCreationPatterns, rhs.autoBranchCreationPatterns).append(enableAutoBuild, rhs.enableAutoBuild).append(stage, rhs.stage).append(environmentVariables, rhs.environmentVariables).append(buildSpec, rhs.buildSpec).append(enableAutoBranchCreation, rhs.enableAutoBranchCreation).append(basicAuthConfig, rhs.basicAuthConfig).isEquals();
+        return new EqualsBuilder().append(autoBranchCreationPatterns, rhs.autoBranchCreationPatterns).append(enableAutoBuild, rhs.enableAutoBuild).append(stage, rhs.stage).append(environmentVariables, rhs.environmentVariables).append(enablePullRequestPreview, rhs.enablePullRequestPreview).append(buildSpec, rhs.buildSpec).append(enableAutoBranchCreation, rhs.enableAutoBranchCreation).append(basicAuthConfig, rhs.basicAuthConfig).append(pullRequestEnvironmentName, rhs.pullRequestEnvironmentName).isEquals();
     }
 
 }

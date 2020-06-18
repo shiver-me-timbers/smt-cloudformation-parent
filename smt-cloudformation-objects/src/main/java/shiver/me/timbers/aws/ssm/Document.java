@@ -25,6 +25,7 @@ import shiver.me.timbers.aws.Tag;
 @JsonPropertyOrder({
     "Content",
     "DocumentType",
+    "Name",
     "Tags"
 })
 public class Document {
@@ -43,6 +44,13 @@ public class Document {
     @JsonProperty("DocumentType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html#cfn-ssm-document-documenttype")
     private CharSequence documentType;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html#cfn-ssm-document-name
+     * 
+     */
+    @JsonProperty("Name")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html#cfn-ssm-document-name")
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html#cfn-ssm-document-tags
      * 
@@ -98,6 +106,29 @@ public class Document {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html#cfn-ssm-document-name
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getName() {
+        return name;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html#cfn-ssm-document-name
+     * 
+     */
+    @JsonIgnore
+    public void setName(CharSequence name) {
+        this.name = name;
+    }
+
+    public Document withName(CharSequence name) {
+        this.name = name;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html#cfn-ssm-document-tags
      * 
      */
@@ -122,12 +153,12 @@ public class Document {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("content", content).append("documentType", documentType).append("tags", tags).toString();
+        return new ToStringBuilder(this).append("content", content).append("documentType", documentType).append("name", name).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(documentType).append(content).append(tags).toHashCode();
+        return new HashCodeBuilder().append(name).append(documentType).append(content).append(tags).toHashCode();
     }
 
     @Override
@@ -139,7 +170,7 @@ public class Document {
             return false;
         }
         Document rhs = ((Document) other);
-        return new EqualsBuilder().append(documentType, rhs.documentType).append(content, rhs.content).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(name, rhs.name).append(documentType, rhs.documentType).append(content, rhs.content).append(tags, rhs.tags).isEquals();
     }
 
 }

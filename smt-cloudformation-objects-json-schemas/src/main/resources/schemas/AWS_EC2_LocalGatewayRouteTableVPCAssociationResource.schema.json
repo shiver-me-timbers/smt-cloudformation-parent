@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_LocalGatewayRouteTableVPCAssociationResource.schema.json",
+  "title" : "LocalGatewayRouteTableVPCAssociationResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-localgatewayroutetablevpcassociation.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.ec2.LocalGatewayRouteTableVPCAssociationResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<LocalGatewayRouteTableVPCAssociationResource>", "shiver.me.timbers.aws.HasCondition<LocalGatewayRouteTableVPCAssociationResource>", "shiver.me.timbers.aws.HasAttributes<LocalGatewayRouteTableVPCAssociationAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::LocalGatewayRouteTableVPCAssociation"
+    },
+    "Properties" : {
+      "$ref" : "AWS_EC2_LocalGatewayRouteTableVPCAssociation.schema.json"
+    }
+  }
+}

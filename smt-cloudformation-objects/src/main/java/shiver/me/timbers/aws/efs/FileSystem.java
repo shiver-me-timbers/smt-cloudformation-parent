@@ -29,7 +29,8 @@ import shiver.me.timbers.aws.Property;
     "LifecyclePolicies",
     "PerformanceMode",
     "ProvisionedThroughputInMibps",
-    "ThroughputMode"
+    "ThroughputMode",
+    "FileSystemPolicy"
 })
 public class FileSystem {
 
@@ -56,12 +57,12 @@ public class FileSystem {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-kmskeyid")
     private CharSequence kmsKeyId;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-elasticfilesystem-filesystem-lifecyclepolicies
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-lifecyclepolicies
      * 
      */
     @JsonProperty("LifecyclePolicies")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-elasticfilesystem-filesystem-lifecyclepolicies")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-lifecyclepolicies")
     private Set<Property<FileSystemLifecyclePolicy>> lifecyclePolicies = new LinkedHashSet<Property<FileSystemLifecyclePolicy>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-performancemode
@@ -71,19 +72,26 @@ public class FileSystem {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-performancemode")
     private CharSequence performanceMode;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-elasticfilesystem-filesystem-provisionedthroughputinmibps
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-provisionedthroughputinmibps
      * 
      */
     @JsonProperty("ProvisionedThroughputInMibps")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-elasticfilesystem-filesystem-provisionedthroughputinmibps")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-provisionedthroughputinmibps")
     private Number provisionedThroughputInMibps;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-elasticfilesystem-filesystem-throughputmode
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-throughputmode
      * 
      */
     @JsonProperty("ThroughputMode")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-elasticfilesystem-filesystem-throughputmode")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-throughputmode")
     private CharSequence throughputMode;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-filesystempolicy
+     * 
+     */
+    @JsonProperty("FileSystemPolicy")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-filesystempolicy")
+    private Object fileSystemPolicy;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-encrypted
@@ -155,7 +163,7 @@ public class FileSystem {
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-elasticfilesystem-filesystem-lifecyclepolicies
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-lifecyclepolicies
      * 
      */
     @JsonIgnore
@@ -164,7 +172,7 @@ public class FileSystem {
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-elasticfilesystem-filesystem-lifecyclepolicies
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-lifecyclepolicies
      * 
      */
     @JsonIgnore
@@ -201,7 +209,7 @@ public class FileSystem {
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-elasticfilesystem-filesystem-provisionedthroughputinmibps
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-provisionedthroughputinmibps
      * 
      */
     @JsonIgnore
@@ -210,7 +218,7 @@ public class FileSystem {
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-elasticfilesystem-filesystem-provisionedthroughputinmibps
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-provisionedthroughputinmibps
      * 
      */
     @JsonIgnore
@@ -224,7 +232,7 @@ public class FileSystem {
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-elasticfilesystem-filesystem-throughputmode
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-throughputmode
      * 
      */
     @JsonIgnore
@@ -233,7 +241,7 @@ public class FileSystem {
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-elasticfilesystem-filesystem-throughputmode
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-throughputmode
      * 
      */
     @JsonIgnore
@@ -246,14 +254,37 @@ public class FileSystem {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-filesystempolicy
+     * 
+     */
+    @JsonIgnore
+    public Object getFileSystemPolicy() {
+        return fileSystemPolicy;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-filesystempolicy
+     * 
+     */
+    @JsonIgnore
+    public void setFileSystemPolicy(Object fileSystemPolicy) {
+        this.fileSystemPolicy = fileSystemPolicy;
+    }
+
+    public FileSystem withFileSystemPolicy(Object fileSystemPolicy) {
+        this.fileSystemPolicy = fileSystemPolicy;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("encrypted", encrypted).append("fileSystemTags", fileSystemTags).append("kmsKeyId", kmsKeyId).append("lifecyclePolicies", lifecyclePolicies).append("performanceMode", performanceMode).append("provisionedThroughputInMibps", provisionedThroughputInMibps).append("throughputMode", throughputMode).toString();
+        return new ToStringBuilder(this).append("encrypted", encrypted).append("fileSystemTags", fileSystemTags).append("kmsKeyId", kmsKeyId).append("lifecyclePolicies", lifecyclePolicies).append("performanceMode", performanceMode).append("provisionedThroughputInMibps", provisionedThroughputInMibps).append("throughputMode", throughputMode).append("fileSystemPolicy", fileSystemPolicy).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(encrypted).append(lifecyclePolicies).append(performanceMode).append(throughputMode).append(provisionedThroughputInMibps).append(kmsKeyId).append(fileSystemTags).toHashCode();
+        return new HashCodeBuilder().append(encrypted).append(lifecyclePolicies).append(performanceMode).append(throughputMode).append(provisionedThroughputInMibps).append(kmsKeyId).append(fileSystemPolicy).append(fileSystemTags).toHashCode();
     }
 
     @Override
@@ -265,7 +296,7 @@ public class FileSystem {
             return false;
         }
         FileSystem rhs = ((FileSystem) other);
-        return new EqualsBuilder().append(encrypted, rhs.encrypted).append(lifecyclePolicies, rhs.lifecyclePolicies).append(performanceMode, rhs.performanceMode).append(throughputMode, rhs.throughputMode).append(provisionedThroughputInMibps, rhs.provisionedThroughputInMibps).append(kmsKeyId, rhs.kmsKeyId).append(fileSystemTags, rhs.fileSystemTags).isEquals();
+        return new EqualsBuilder().append(encrypted, rhs.encrypted).append(lifecyclePolicies, rhs.lifecyclePolicies).append(performanceMode, rhs.performanceMode).append(throughputMode, rhs.throughputMode).append(provisionedThroughputInMibps, rhs.provisionedThroughputInMibps).append(kmsKeyId, rhs.kmsKeyId).append(fileSystemPolicy, rhs.fileSystemPolicy).append(fileSystemTags, rhs.fileSystemTags).isEquals();
     }
 
 }

@@ -67,8 +67,18 @@
         "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.InstanceElasticInferenceAccelerator>"
       }
     },
+    "HibernationOptions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-hibernationoptions",
+      "$ref" : "AWS_EC2_Instance.HibernationOptions.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.InstanceHibernationOptions>"
+    },
     "HostId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-hostid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "HostResourceGroupArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-hostresourcegrouparn",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },

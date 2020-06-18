@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ECS_TaskSet.NetworkConfiguration.schema.json",
+  "title" : "TaskSetNetworkConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskset-networkconfiguration.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.ecs.TaskSetNetworkConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TaskSetNetworkConfiguration>" ],
+  "properties" : {
+    "AwsVpcConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskset-networkconfiguration.html#cfn-ecs-taskset-networkconfiguration-awsvpcconfiguration",
+      "$ref" : "AWS_ECS_TaskSet.AwsVpcConfiguration.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecs.TaskSetAwsVpcConfiguration>"
+    }
+  }
+}

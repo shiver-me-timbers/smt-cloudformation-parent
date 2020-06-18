@@ -21,7 +21,9 @@ import shiver.me.timbers.aws.Property;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "Arn",
+    "BatchParameters",
     "EcsParameters",
+    "HttpParameters",
     "Id",
     "Input",
     "InputPath",
@@ -42,6 +44,15 @@ public class RuleTarget implements Property<RuleTarget>
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-arn")
     private CharSequence arn;
     /**
+     * RuleBatchParameters
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-batchparameters.html
+     * 
+     */
+    @JsonProperty("BatchParameters")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-batchparameters.html")
+    private Property<RuleBatchParameters> batchParameters;
+    /**
      * RuleEcsParameters
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-ecsparameters.html
@@ -50,6 +61,15 @@ public class RuleTarget implements Property<RuleTarget>
     @JsonProperty("EcsParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-ecsparameters.html")
     private Property<RuleEcsParameters> ecsParameters;
+    /**
+     * RuleHttpParameters
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-httpparameters.html
+     * 
+     */
+    @JsonProperty("HttpParameters")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-httpparameters.html")
+    private Property<RuleHttpParameters> httpParameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-id
      * 
@@ -139,6 +159,33 @@ public class RuleTarget implements Property<RuleTarget>
     }
 
     /**
+     * RuleBatchParameters
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-batchparameters.html
+     * 
+     */
+    @JsonIgnore
+    public Property<RuleBatchParameters> getBatchParameters() {
+        return batchParameters;
+    }
+
+    /**
+     * RuleBatchParameters
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-batchparameters.html
+     * 
+     */
+    @JsonIgnore
+    public void setBatchParameters(Property<RuleBatchParameters> batchParameters) {
+        this.batchParameters = batchParameters;
+    }
+
+    public RuleTarget withBatchParameters(Property<RuleBatchParameters> batchParameters) {
+        this.batchParameters = batchParameters;
+        return this;
+    }
+
+    /**
      * RuleEcsParameters
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-ecsparameters.html
@@ -162,6 +209,33 @@ public class RuleTarget implements Property<RuleTarget>
 
     public RuleTarget withEcsParameters(Property<RuleEcsParameters> ecsParameters) {
         this.ecsParameters = ecsParameters;
+        return this;
+    }
+
+    /**
+     * RuleHttpParameters
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-httpparameters.html
+     * 
+     */
+    @JsonIgnore
+    public Property<RuleHttpParameters> getHttpParameters() {
+        return httpParameters;
+    }
+
+    /**
+     * RuleHttpParameters
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-httpparameters.html
+     * 
+     */
+    @JsonIgnore
+    public void setHttpParameters(Property<RuleHttpParameters> httpParameters) {
+        this.httpParameters = httpParameters;
+    }
+
+    public RuleTarget withHttpParameters(Property<RuleHttpParameters> httpParameters) {
+        this.httpParameters = httpParameters;
         return this;
     }
 
@@ -367,12 +441,12 @@ public class RuleTarget implements Property<RuleTarget>
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("arn", arn).append("ecsParameters", ecsParameters).append("id", id).append("input", input).append("inputPath", inputPath).append("inputTransformer", inputTransformer).append("kinesisParameters", kinesisParameters).append("roleArn", roleArn).append("runCommandParameters", runCommandParameters).append("sqsParameters", sqsParameters).toString();
+        return new ToStringBuilder(this).append("arn", arn).append("batchParameters", batchParameters).append("ecsParameters", ecsParameters).append("httpParameters", httpParameters).append("id", id).append("input", input).append("inputPath", inputPath).append("inputTransformer", inputTransformer).append("kinesisParameters", kinesisParameters).append("roleArn", roleArn).append("runCommandParameters", runCommandParameters).append("sqsParameters", sqsParameters).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(inputTransformer).append(input).append(runCommandParameters).append(inputPath).append(sqsParameters).append(ecsParameters).append(roleArn).append(kinesisParameters).append(id).append(arn).toHashCode();
+        return new HashCodeBuilder().append(runCommandParameters).append(batchParameters).append(kinesisParameters).append(inputTransformer).append(input).append(inputPath).append(sqsParameters).append(ecsParameters).append(roleArn).append(id).append(arn).append(httpParameters).toHashCode();
     }
 
     @Override
@@ -384,7 +458,7 @@ public class RuleTarget implements Property<RuleTarget>
             return false;
         }
         RuleTarget rhs = ((RuleTarget) other);
-        return new EqualsBuilder().append(inputTransformer, rhs.inputTransformer).append(input, rhs.input).append(runCommandParameters, rhs.runCommandParameters).append(inputPath, rhs.inputPath).append(sqsParameters, rhs.sqsParameters).append(ecsParameters, rhs.ecsParameters).append(roleArn, rhs.roleArn).append(kinesisParameters, rhs.kinesisParameters).append(id, rhs.id).append(arn, rhs.arn).isEquals();
+        return new EqualsBuilder().append(runCommandParameters, rhs.runCommandParameters).append(batchParameters, rhs.batchParameters).append(kinesisParameters, rhs.kinesisParameters).append(inputTransformer, rhs.inputTransformer).append(input, rhs.input).append(inputPath, rhs.inputPath).append(sqsParameters, rhs.sqsParameters).append(ecsParameters, rhs.ecsParameters).append(roleArn, rhs.roleArn).append(id, rhs.id).append(arn, rhs.arn).append(httpParameters, rhs.httpParameters).isEquals();
     }
 
 }

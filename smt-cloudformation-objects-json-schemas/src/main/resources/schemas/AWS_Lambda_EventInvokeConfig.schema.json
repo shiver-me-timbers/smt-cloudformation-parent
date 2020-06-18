@@ -1,0 +1,35 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Lambda_EventInvokeConfig.schema.json",
+  "title" : "EventInvokeConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventinvokeconfig.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.lambda.EventInvokeConfig",
+  "properties" : {
+    "FunctionName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventinvokeconfig.html#cfn-lambda-eventinvokeconfig-functionname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "MaximumRetryAttempts" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventinvokeconfig.html#cfn-lambda-eventinvokeconfig-maximumretryattempts",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "DestinationConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventinvokeconfig.html#cfn-lambda-eventinvokeconfig-destinationconfig",
+      "$ref" : "AWS_Lambda_EventInvokeConfig.DestinationConfig.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.lambda.EventInvokeConfigDestinationConfig>"
+    },
+    "Qualifier" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventinvokeconfig.html#cfn-lambda-eventinvokeconfig-qualifier",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "MaximumEventAgeInSeconds" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventinvokeconfig.html#cfn-lambda-eventinvokeconfig-maximumeventageinseconds",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    }
+  }
+}

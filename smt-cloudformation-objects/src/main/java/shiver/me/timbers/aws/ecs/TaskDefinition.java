@@ -30,6 +30,7 @@ import shiver.me.timbers.aws.Tag;
     "Cpu",
     "ExecutionRoleArn",
     "Family",
+    "InferenceAccelerators",
     "IpcMode",
     "Memory",
     "NetworkMode",
@@ -72,6 +73,14 @@ public class TaskDefinition {
     @JsonProperty("Family")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-family")
     private CharSequence family;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-inferenceaccelerators
+     * 
+     */
+    @JsonProperty("InferenceAccelerators")
+    @JsonDeserialize(as = java.util.LinkedHashSet.class)
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-inferenceaccelerators")
+    private Set<Property<TaskDefinitionInferenceAccelerator>> inferenceAccelerators = new LinkedHashSet<Property<TaskDefinitionInferenceAccelerator>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-ipcmode
      * 
@@ -237,6 +246,29 @@ public class TaskDefinition {
 
     public TaskDefinition withFamily(CharSequence family) {
         this.family = family;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-inferenceaccelerators
+     * 
+     */
+    @JsonIgnore
+    public Set<Property<TaskDefinitionInferenceAccelerator>> getInferenceAccelerators() {
+        return inferenceAccelerators;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-inferenceaccelerators
+     * 
+     */
+    @JsonIgnore
+    public void setInferenceAccelerators(Set<Property<TaskDefinitionInferenceAccelerator>> inferenceAccelerators) {
+        this.inferenceAccelerators = inferenceAccelerators;
+    }
+
+    public TaskDefinition withInferenceAccelerators(Set<Property<TaskDefinitionInferenceAccelerator>> inferenceAccelerators) {
+        this.inferenceAccelerators = inferenceAccelerators;
         return this;
     }
 
@@ -476,12 +508,12 @@ public class TaskDefinition {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("containerDefinitions", containerDefinitions).append("cpu", cpu).append("executionRoleArn", executionRoleArn).append("family", family).append("ipcMode", ipcMode).append("memory", memory).append("networkMode", networkMode).append("pidMode", pidMode).append("placementConstraints", placementConstraints).append("proxyConfiguration", proxyConfiguration).append("requiresCompatibilities", requiresCompatibilities).append("tags", tags).append("taskRoleArn", taskRoleArn).append("volumes", volumes).toString();
+        return new ToStringBuilder(this).append("containerDefinitions", containerDefinitions).append("cpu", cpu).append("executionRoleArn", executionRoleArn).append("family", family).append("inferenceAccelerators", inferenceAccelerators).append("ipcMode", ipcMode).append("memory", memory).append("networkMode", networkMode).append("pidMode", pidMode).append("placementConstraints", placementConstraints).append("proxyConfiguration", proxyConfiguration).append("requiresCompatibilities", requiresCompatibilities).append("tags", tags).append("taskRoleArn", taskRoleArn).append("volumes", volumes).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(networkMode).append(placementConstraints).append(pidMode).append(memory).append(volumes).append(cpu).append(tags).append(executionRoleArn).append(taskRoleArn).append(ipcMode).append(family).append(requiresCompatibilities).append(containerDefinitions).append(proxyConfiguration).toHashCode();
+        return new HashCodeBuilder().append(networkMode).append(placementConstraints).append(pidMode).append(memory).append(inferenceAccelerators).append(volumes).append(cpu).append(tags).append(executionRoleArn).append(taskRoleArn).append(ipcMode).append(family).append(requiresCompatibilities).append(containerDefinitions).append(proxyConfiguration).toHashCode();
     }
 
     @Override
@@ -493,7 +525,7 @@ public class TaskDefinition {
             return false;
         }
         TaskDefinition rhs = ((TaskDefinition) other);
-        return new EqualsBuilder().append(networkMode, rhs.networkMode).append(placementConstraints, rhs.placementConstraints).append(pidMode, rhs.pidMode).append(memory, rhs.memory).append(volumes, rhs.volumes).append(cpu, rhs.cpu).append(tags, rhs.tags).append(executionRoleArn, rhs.executionRoleArn).append(taskRoleArn, rhs.taskRoleArn).append(ipcMode, rhs.ipcMode).append(family, rhs.family).append(requiresCompatibilities, rhs.requiresCompatibilities).append(containerDefinitions, rhs.containerDefinitions).append(proxyConfiguration, rhs.proxyConfiguration).isEquals();
+        return new EqualsBuilder().append(networkMode, rhs.networkMode).append(placementConstraints, rhs.placementConstraints).append(pidMode, rhs.pidMode).append(memory, rhs.memory).append(inferenceAccelerators, rhs.inferenceAccelerators).append(volumes, rhs.volumes).append(cpu, rhs.cpu).append(tags, rhs.tags).append(executionRoleArn, rhs.executionRoleArn).append(taskRoleArn, rhs.taskRoleArn).append(ipcMode, rhs.ipcMode).append(family, rhs.family).append(requiresCompatibilities, rhs.requiresCompatibilities).append(containerDefinitions, rhs.containerDefinitions).append(proxyConfiguration, rhs.proxyConfiguration).isEquals();
     }
 
 }

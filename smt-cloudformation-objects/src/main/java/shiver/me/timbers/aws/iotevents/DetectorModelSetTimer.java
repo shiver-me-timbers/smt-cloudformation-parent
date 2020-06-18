@@ -21,7 +21,8 @@ import shiver.me.timbers.aws.Property;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "Seconds",
-    "TimerName"
+    "TimerName",
+    "DurationExpression"
 })
 public class DetectorModelSetTimer implements Property<DetectorModelSetTimer>
 {
@@ -40,6 +41,13 @@ public class DetectorModelSetTimer implements Property<DetectorModelSetTimer>
     @JsonProperty("TimerName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-settimer.html#cfn-iotevents-detectormodel-settimer-timername")
     private CharSequence timerName;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-settimer.html#cfn-iotevents-detectormodel-settimer-durationexpression
+     * 
+     */
+    @JsonProperty("DurationExpression")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-settimer.html#cfn-iotevents-detectormodel-settimer-durationexpression")
+    private CharSequence durationExpression;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-settimer.html#cfn-iotevents-detectormodel-settimer-seconds
@@ -87,14 +95,37 @@ public class DetectorModelSetTimer implements Property<DetectorModelSetTimer>
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-settimer.html#cfn-iotevents-detectormodel-settimer-durationexpression
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getDurationExpression() {
+        return durationExpression;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-settimer.html#cfn-iotevents-detectormodel-settimer-durationexpression
+     * 
+     */
+    @JsonIgnore
+    public void setDurationExpression(CharSequence durationExpression) {
+        this.durationExpression = durationExpression;
+    }
+
+    public DetectorModelSetTimer withDurationExpression(CharSequence durationExpression) {
+        this.durationExpression = durationExpression;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("seconds", seconds).append("timerName", timerName).toString();
+        return new ToStringBuilder(this).append("seconds", seconds).append("timerName", timerName).append("durationExpression", durationExpression).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(timerName).append(seconds).toHashCode();
+        return new HashCodeBuilder().append(durationExpression).append(timerName).append(seconds).toHashCode();
     }
 
     @Override
@@ -106,7 +137,7 @@ public class DetectorModelSetTimer implements Property<DetectorModelSetTimer>
             return false;
         }
         DetectorModelSetTimer rhs = ((DetectorModelSetTimer) other);
-        return new EqualsBuilder().append(timerName, rhs.timerName).append(seconds, rhs.seconds).isEquals();
+        return new EqualsBuilder().append(durationExpression, rhs.durationExpression).append(timerName, rhs.timerName).append(seconds, rhs.seconds).isEquals();
     }
 
 }

@@ -1,0 +1,19 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WAFv2_WebACL.AndStatementOne.schema.json",
+  "title" : "WebACLAndStatementOne",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-andstatementone.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.wafv2.WebACLAndStatementOne",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<WebACLAndStatementOne>" ],
+  "properties" : {
+    "Statements" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-andstatementone.html#cfn-wafv2-webacl-andstatementone-statements",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_WAFv2_WebACL.OrStatementTwo.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.wafv2.WebACLStatementTwo>"
+      }
+    }
+  }
+}

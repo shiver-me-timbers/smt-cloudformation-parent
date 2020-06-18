@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_LocalGatewayRouteResource.schema.json",
+  "title" : "LocalGatewayRouteResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-localgatewayroute.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.ec2.LocalGatewayRouteResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<LocalGatewayRouteResource>", "shiver.me.timbers.aws.HasCondition<LocalGatewayRouteResource>", "shiver.me.timbers.aws.HasAttributes<LocalGatewayRouteAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::LocalGatewayRoute"
+    },
+    "Properties" : {
+      "$ref" : "AWS_EC2_LocalGatewayRoute.schema.json"
+    }
+  }
+}

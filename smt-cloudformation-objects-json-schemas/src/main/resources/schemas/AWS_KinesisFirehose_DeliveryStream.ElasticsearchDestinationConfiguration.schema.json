@@ -57,10 +57,20 @@
       "$ref" : "AWS_KinesisFirehose_DeliveryStream.S3DestinationConfiguration.schema.json",
       "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamS3DestinationConfiguration>"
     },
+    "ClusterEndpoint" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-clusterendpoint",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "TypeName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-typename",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
+    },
+    "VpcConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-vpcconfiguration",
+      "$ref" : "AWS_KinesisFirehose_DeliveryStream.VpcConfiguration.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamVpcConfiguration>"
     }
   }
 }

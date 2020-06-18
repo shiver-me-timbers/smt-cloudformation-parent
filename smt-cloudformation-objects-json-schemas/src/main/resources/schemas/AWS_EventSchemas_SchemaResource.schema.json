@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EventSchemas_SchemaResource.schema.json",
+  "title" : "SchemaResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eventschemas-schema.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.eventschemas.SchemaResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<SchemaResource>", "shiver.me.timbers.aws.HasCondition<SchemaResource>", "shiver.me.timbers.aws.HasAttributes<SchemaAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EventSchemas::Schema"
+    },
+    "Properties" : {
+      "$ref" : "AWS_EventSchemas_Schema.schema.json"
+    }
+  }
+}

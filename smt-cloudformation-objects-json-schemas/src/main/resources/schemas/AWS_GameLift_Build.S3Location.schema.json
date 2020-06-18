@@ -17,6 +17,11 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "ObjectVersion" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html#cfn-gamelift-build-object-verison",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "RoleArn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html#cfn-gamelift-build-storage-rolearn",
       "type" : "string",

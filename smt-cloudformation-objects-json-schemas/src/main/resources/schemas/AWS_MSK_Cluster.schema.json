@@ -31,6 +31,11 @@
       "$ref" : "AWS_MSK_Cluster.EncryptionInfo.schema.json",
       "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.msk.ClusterEncryptionInfo>"
     },
+    "OpenMonitoring" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-msk-cluster.html#cfn-msk-cluster-openmonitoring",
+      "$ref" : "AWS_MSK_Cluster.OpenMonitoring.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.msk.ClusterOpenMonitoring>"
+    },
     "ClusterName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-msk-cluster.html#cfn-msk-cluster-clustername",
       "type" : "string",
@@ -40,6 +45,11 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-msk-cluster.html#cfn-msk-cluster-clientauthentication",
       "$ref" : "AWS_MSK_Cluster.ClientAuthentication.schema.json",
       "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.msk.ClusterClientAuthentication>"
+    },
+    "LoggingInfo" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-msk-cluster.html#cfn-msk-cluster-logginginfo",
+      "$ref" : "AWS_MSK_Cluster.LoggingInfo.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.msk.ClusterLoggingInfo>"
     },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-msk-cluster.html#cfn-msk-cluster-tags",

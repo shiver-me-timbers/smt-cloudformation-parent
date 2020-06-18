@@ -23,6 +23,7 @@ import shiver.me.timbers.aws.Property;
     "BudgetLimit",
     "TimePeriod",
     "TimeUnit",
+    "PlannedBudgetLimits",
     "CostFilters",
     "BudgetName",
     "CostTypes",
@@ -56,6 +57,13 @@ public class BudgetBudgetData implements Property<BudgetBudgetData>
     @JsonProperty("TimeUnit")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-timeunit")
     private CharSequence timeUnit;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-plannedbudgetlimits
+     * 
+     */
+    @JsonProperty("PlannedBudgetLimits")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-plannedbudgetlimits")
+    private Object plannedBudgetLimits;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-costfilters
      * 
@@ -165,6 +173,29 @@ public class BudgetBudgetData implements Property<BudgetBudgetData>
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-plannedbudgetlimits
+     * 
+     */
+    @JsonIgnore
+    public Object getPlannedBudgetLimits() {
+        return plannedBudgetLimits;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-plannedbudgetlimits
+     * 
+     */
+    @JsonIgnore
+    public void setPlannedBudgetLimits(Object plannedBudgetLimits) {
+        this.plannedBudgetLimits = plannedBudgetLimits;
+    }
+
+    public BudgetBudgetData withPlannedBudgetLimits(Object plannedBudgetLimits) {
+        this.plannedBudgetLimits = plannedBudgetLimits;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-costfilters
      * 
      */
@@ -262,12 +293,12 @@ public class BudgetBudgetData implements Property<BudgetBudgetData>
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("budgetLimit", budgetLimit).append("timePeriod", timePeriod).append("timeUnit", timeUnit).append("costFilters", costFilters).append("budgetName", budgetName).append("costTypes", costTypes).append("budgetType", budgetType).toString();
+        return new ToStringBuilder(this).append("budgetLimit", budgetLimit).append("timePeriod", timePeriod).append("timeUnit", timeUnit).append("plannedBudgetLimits", plannedBudgetLimits).append("costFilters", costFilters).append("budgetName", budgetName).append("costTypes", costTypes).append("budgetType", budgetType).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(budgetType).append(costFilters).append(timePeriod).append(budgetName).append(costTypes).append(budgetLimit).append(timeUnit).toHashCode();
+        return new HashCodeBuilder().append(budgetType).append(plannedBudgetLimits).append(costFilters).append(timePeriod).append(budgetName).append(costTypes).append(budgetLimit).append(timeUnit).toHashCode();
     }
 
     @Override
@@ -279,7 +310,7 @@ public class BudgetBudgetData implements Property<BudgetBudgetData>
             return false;
         }
         BudgetBudgetData rhs = ((BudgetBudgetData) other);
-        return new EqualsBuilder().append(budgetType, rhs.budgetType).append(costFilters, rhs.costFilters).append(timePeriod, rhs.timePeriod).append(budgetName, rhs.budgetName).append(costTypes, rhs.costTypes).append(budgetLimit, rhs.budgetLimit).append(timeUnit, rhs.timeUnit).isEquals();
+        return new EqualsBuilder().append(budgetType, rhs.budgetType).append(plannedBudgetLimits, rhs.plannedBudgetLimits).append(costFilters, rhs.costFilters).append(timePeriod, rhs.timePeriod).append(budgetName, rhs.budgetName).append(costTypes, rhs.costTypes).append(budgetLimit, rhs.budgetLimit).append(timeUnit, rhs.timeUnit).isEquals();
     }
 
 }

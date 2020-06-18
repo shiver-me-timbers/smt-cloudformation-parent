@@ -1,0 +1,36 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CodeBuild_ReportGroup.S3ReportExportConfig.schema.json",
+  "title" : "ReportGroupS3ReportExportConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-reportgroup-s3reportexportconfig.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.codebuild.ReportGroupS3ReportExportConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ReportGroupS3ReportExportConfig>" ],
+  "properties" : {
+    "Path" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-reportgroup-s3reportexportconfig.html#cfn-codebuild-reportgroup-s3reportexportconfig-path",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Bucket" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-reportgroup-s3reportexportconfig.html#cfn-codebuild-reportgroup-s3reportexportconfig-bucket",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Packaging" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-reportgroup-s3reportexportconfig.html#cfn-codebuild-reportgroup-s3reportexportconfig-packaging",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "EncryptionKey" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-reportgroup-s3reportexportconfig.html#cfn-codebuild-reportgroup-s3reportexportconfig-encryptionkey",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "EncryptionDisabled" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-reportgroup-s3reportexportconfig.html#cfn-codebuild-reportgroup-s3reportexportconfig-encryptiondisabled",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

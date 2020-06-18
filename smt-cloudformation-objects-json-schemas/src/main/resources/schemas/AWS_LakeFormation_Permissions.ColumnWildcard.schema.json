@@ -1,0 +1,19 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_LakeFormation_Permissions.ColumnWildcard.schema.json",
+  "title" : "PermissionsColumnWildcard",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lakeformation-permissions-columnwildcard.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.lakeformation.PermissionsColumnWildcard",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<PermissionsColumnWildcard>" ],
+  "properties" : {
+    "ExcludedColumnNames" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lakeformation-permissions-columnwildcard.html#cfn-lakeformation-permissions-columnwildcard-excludedcolumnnames",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    }
+  }
+}

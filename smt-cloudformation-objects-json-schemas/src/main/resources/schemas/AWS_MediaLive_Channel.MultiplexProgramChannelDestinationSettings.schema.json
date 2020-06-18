@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MediaLive_Channel.MultiplexProgramChannelDestinationSettings.schema.json",
+  "title" : "ChannelMultiplexProgramChannelDestinationSettings",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-multiplexprogramchanneldestinationsettings.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.medialive.ChannelMultiplexProgramChannelDestinationSettings",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ChannelMultiplexProgramChannelDestinationSettings>" ],
+  "properties" : {
+    "MultiplexId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-multiplexprogramchanneldestinationsettings.html#cfn-medialive-channel-multiplexprogramchanneldestinationsettings-multiplexid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ProgramName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-medialive-channel-multiplexprogramchanneldestinationsettings.html#cfn-medialive-channel-multiplexprogramchanneldestinationsettings-programname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

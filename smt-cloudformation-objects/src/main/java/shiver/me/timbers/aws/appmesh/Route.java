@@ -25,6 +25,7 @@ import shiver.me.timbers.aws.Tag;
 @JsonPropertyOrder({
     "MeshName",
     "VirtualRouterName",
+    "MeshOwner",
     "RouteName",
     "Spec",
     "Tags"
@@ -45,6 +46,13 @@ public class Route {
     @JsonProperty("VirtualRouterName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-route.html#cfn-appmesh-route-virtualroutername")
     private CharSequence virtualRouterName;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-route.html#cfn-appmesh-route-meshowner
+     * 
+     */
+    @JsonProperty("MeshOwner")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-route.html#cfn-appmesh-route-meshowner")
+    private CharSequence meshOwner;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-route.html#cfn-appmesh-route-routename
      * 
@@ -112,6 +120,29 @@ public class Route {
 
     public Route withVirtualRouterName(CharSequence virtualRouterName) {
         this.virtualRouterName = virtualRouterName;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-route.html#cfn-appmesh-route-meshowner
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getMeshOwner() {
+        return meshOwner;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-route.html#cfn-appmesh-route-meshowner
+     * 
+     */
+    @JsonIgnore
+    public void setMeshOwner(CharSequence meshOwner) {
+        this.meshOwner = meshOwner;
+    }
+
+    public Route withMeshOwner(CharSequence meshOwner) {
+        this.meshOwner = meshOwner;
         return this;
     }
 
@@ -190,12 +221,12 @@ public class Route {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("meshName", meshName).append("virtualRouterName", virtualRouterName).append("routeName", routeName).append("spec", spec).append("tags", tags).toString();
+        return new ToStringBuilder(this).append("meshName", meshName).append("virtualRouterName", virtualRouterName).append("meshOwner", meshOwner).append("routeName", routeName).append("spec", spec).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(meshName).append(virtualRouterName).append(spec).append(routeName).append(tags).toHashCode();
+        return new HashCodeBuilder().append(meshName).append(meshOwner).append(virtualRouterName).append(spec).append(routeName).append(tags).toHashCode();
     }
 
     @Override
@@ -207,7 +238,7 @@ public class Route {
             return false;
         }
         Route rhs = ((Route) other);
-        return new EqualsBuilder().append(meshName, rhs.meshName).append(virtualRouterName, rhs.virtualRouterName).append(spec, rhs.spec).append(routeName, rhs.routeName).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(meshName, rhs.meshName).append(meshOwner, rhs.meshOwner).append(virtualRouterName, rhs.virtualRouterName).append(spec, rhs.spec).append(routeName, rhs.routeName).append(tags, rhs.tags).isEquals();
     }
 
 }

@@ -16,6 +16,11 @@
       "$ref" : "AWS_ECS_Service.DeploymentConfiguration.schema.json",
       "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecs.ServiceDeploymentConfiguration>"
     },
+    "DeploymentController" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-deploymentcontroller",
+      "$ref" : "AWS_ECS_Service.DeploymentController.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecs.ServiceDeploymentController>"
+    },
     "DesiredCount" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-desiredcount",
       "type" : "integer",

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ECS_TaskSetResource.schema.json",
+  "title" : "TaskSetResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskset.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.ecs.TaskSetResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<TaskSetResource>", "shiver.me.timbers.aws.HasCondition<TaskSetResource>", "shiver.me.timbers.aws.HasAttributes<TaskSetAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ECS::TaskSet"
+    },
+    "Properties" : {
+      "$ref" : "AWS_ECS_TaskSet.schema.json"
+    }
+  }
+}

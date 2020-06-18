@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_Instance.HibernationOptions.schema.json",
+  "title" : "InstanceHibernationOptions",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-hibernationoptions.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.ec2.InstanceHibernationOptions",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<InstanceHibernationOptions>" ],
+  "properties" : {
+    "Configured" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-hibernationoptions.html#cfn-ec2-instance-hibernationoptions-configured",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

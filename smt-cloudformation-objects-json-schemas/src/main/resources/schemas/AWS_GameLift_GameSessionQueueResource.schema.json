@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_GameLift_GameSessionQueueResource.schema.json",
+  "title" : "GameSessionQueueResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-gamesessionqueue.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.gamelift.GameSessionQueueResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<GameSessionQueueResource>", "shiver.me.timbers.aws.HasCondition<GameSessionQueueResource>", "shiver.me.timbers.aws.HasAttributes<GameSessionQueueAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::GameLift::GameSessionQueue"
+    },
+    "Properties" : {
+      "$ref" : "AWS_GameLift_GameSessionQueue.schema.json"
+    }
+  }
+}

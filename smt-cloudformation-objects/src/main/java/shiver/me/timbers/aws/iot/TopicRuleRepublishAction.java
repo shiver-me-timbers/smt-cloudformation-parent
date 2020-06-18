@@ -20,12 +20,20 @@ import shiver.me.timbers.aws.Property;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "Qos",
     "RoleArn",
     "Topic"
 })
 public class TopicRuleRepublishAction implements Property<TopicRuleRepublishAction>
 {
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-republishaction.html#cfn-iot-topicrule-republishaction-qos
+     * 
+     */
+    @JsonProperty("Qos")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-republishaction.html#cfn-iot-topicrule-republishaction-qos")
+    private Number qos;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-republishaction.html#cfn-iot-topicrule-republishaction-rolearn
      * 
@@ -40,6 +48,29 @@ public class TopicRuleRepublishAction implements Property<TopicRuleRepublishActi
     @JsonProperty("Topic")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-republishaction.html#cfn-iot-topicrule-republishaction-topic")
     private CharSequence topic;
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-republishaction.html#cfn-iot-topicrule-republishaction-qos
+     * 
+     */
+    @JsonIgnore
+    public Number getQos() {
+        return qos;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-republishaction.html#cfn-iot-topicrule-republishaction-qos
+     * 
+     */
+    @JsonIgnore
+    public void setQos(Number qos) {
+        this.qos = qos;
+    }
+
+    public TopicRuleRepublishAction withQos(Number qos) {
+        this.qos = qos;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-republishaction.html#cfn-iot-topicrule-republishaction-rolearn
@@ -89,12 +120,12 @@ public class TopicRuleRepublishAction implements Property<TopicRuleRepublishActi
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("roleArn", roleArn).append("topic", topic).toString();
+        return new ToStringBuilder(this).append("qos", qos).append("roleArn", roleArn).append("topic", topic).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(topic).append(roleArn).toHashCode();
+        return new HashCodeBuilder().append(topic).append(qos).append(roleArn).toHashCode();
     }
 
     @Override
@@ -106,7 +137,7 @@ public class TopicRuleRepublishAction implements Property<TopicRuleRepublishActi
             return false;
         }
         TopicRuleRepublishAction rhs = ((TopicRuleRepublishAction) other);
-        return new EqualsBuilder().append(topic, rhs.topic).append(roleArn, rhs.roleArn).isEquals();
+        return new EqualsBuilder().append(topic, rhs.topic).append(qos, rhs.qos).append(roleArn, rhs.roleArn).isEquals();
     }
 
 }

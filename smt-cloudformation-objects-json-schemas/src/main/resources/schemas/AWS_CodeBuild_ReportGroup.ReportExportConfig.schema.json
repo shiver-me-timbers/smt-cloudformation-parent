@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CodeBuild_ReportGroup.ReportExportConfig.schema.json",
+  "title" : "ReportGroupReportExportConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-reportgroup-reportexportconfig.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.codebuild.ReportGroupReportExportConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ReportGroupReportExportConfig>" ],
+  "properties" : {
+    "S3Destination" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-reportgroup-reportexportconfig.html#cfn-codebuild-reportgroup-reportexportconfig-s3destination",
+      "$ref" : "AWS_CodeBuild_ReportGroup.S3ReportExportConfig.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.codebuild.ReportGroupS3ReportExportConfig>"
+    },
+    "ExportConfigType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-reportgroup-reportexportconfig.html#cfn-codebuild-reportgroup-reportexportconfig-exportconfigtype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

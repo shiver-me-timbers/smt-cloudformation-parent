@@ -11,6 +11,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+import shiver.me.timbers.aws.Property;
 
 
 /**
@@ -25,6 +26,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "AuthorizerUri",
     "AuthorizerCredentialsArn",
     "AuthorizerType",
+    "JwtConfiguration",
     "AuthorizerResultTtlInSeconds",
     "IdentitySource",
     "ApiId",
@@ -60,6 +62,15 @@ public class Authorizer {
     @JsonProperty("AuthorizerType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-authorizer.html#cfn-apigatewayv2-authorizer-authorizertype")
     private CharSequence authorizerType;
+    /**
+     * AuthorizerJWTConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-authorizer-jwtconfiguration.html
+     * 
+     */
+    @JsonProperty("JwtConfiguration")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-authorizer-jwtconfiguration.html")
+    private Property<AuthorizerJWTConfiguration> jwtConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-authorizer.html#cfn-apigatewayv2-authorizer-authorizerresultttlinseconds
      * 
@@ -182,6 +193,33 @@ public class Authorizer {
     }
 
     /**
+     * AuthorizerJWTConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-authorizer-jwtconfiguration.html
+     * 
+     */
+    @JsonIgnore
+    public Property<AuthorizerJWTConfiguration> getJwtConfiguration() {
+        return jwtConfiguration;
+    }
+
+    /**
+     * AuthorizerJWTConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-authorizer-jwtconfiguration.html
+     * 
+     */
+    @JsonIgnore
+    public void setJwtConfiguration(Property<AuthorizerJWTConfiguration> jwtConfiguration) {
+        this.jwtConfiguration = jwtConfiguration;
+    }
+
+    public Authorizer withJwtConfiguration(Property<AuthorizerJWTConfiguration> jwtConfiguration) {
+        this.jwtConfiguration = jwtConfiguration;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-authorizer.html#cfn-apigatewayv2-authorizer-authorizerresultttlinseconds
      * 
      */
@@ -275,12 +313,12 @@ public class Authorizer {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("identityValidationExpression", identityValidationExpression).append("authorizerUri", authorizerUri).append("authorizerCredentialsArn", authorizerCredentialsArn).append("authorizerType", authorizerType).append("authorizerResultTtlInSeconds", authorizerResultTtlInSeconds).append("identitySource", identitySource).append("apiId", apiId).append("name", name).toString();
+        return new ToStringBuilder(this).append("identityValidationExpression", identityValidationExpression).append("authorizerUri", authorizerUri).append("authorizerCredentialsArn", authorizerCredentialsArn).append("authorizerType", authorizerType).append("jwtConfiguration", jwtConfiguration).append("authorizerResultTtlInSeconds", authorizerResultTtlInSeconds).append("identitySource", identitySource).append("apiId", apiId).append("name", name).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(identityValidationExpression).append(identitySource).append(authorizerCredentialsArn).append(authorizerUri).append(authorizerResultTtlInSeconds).append(name).append(authorizerType).append(apiId).toHashCode();
+        return new HashCodeBuilder().append(identityValidationExpression).append(identitySource).append(authorizerCredentialsArn).append(authorizerUri).append(authorizerResultTtlInSeconds).append(name).append(jwtConfiguration).append(authorizerType).append(apiId).toHashCode();
     }
 
     @Override
@@ -292,7 +330,7 @@ public class Authorizer {
             return false;
         }
         Authorizer rhs = ((Authorizer) other);
-        return new EqualsBuilder().append(identityValidationExpression, rhs.identityValidationExpression).append(identitySource, rhs.identitySource).append(authorizerCredentialsArn, rhs.authorizerCredentialsArn).append(authorizerUri, rhs.authorizerUri).append(authorizerResultTtlInSeconds, rhs.authorizerResultTtlInSeconds).append(name, rhs.name).append(authorizerType, rhs.authorizerType).append(apiId, rhs.apiId).isEquals();
+        return new EqualsBuilder().append(identityValidationExpression, rhs.identityValidationExpression).append(identitySource, rhs.identitySource).append(authorizerCredentialsArn, rhs.authorizerCredentialsArn).append(authorizerUri, rhs.authorizerUri).append(authorizerResultTtlInSeconds, rhs.authorizerResultTtlInSeconds).append(name, rhs.name).append(jwtConfiguration, rhs.jwtConfiguration).append(authorizerType, rhs.authorizerType).append(apiId, rhs.apiId).isEquals();
     }
 
 }

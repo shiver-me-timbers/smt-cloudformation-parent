@@ -21,6 +21,7 @@ import shiver.me.timbers.aws.Property;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "AllocationId",
+    "PrivateIPv4Address",
     "SubnetId"
 })
 public class LoadBalancerSubnetMapping implements Property<LoadBalancerSubnetMapping>
@@ -33,6 +34,13 @@ public class LoadBalancerSubnetMapping implements Property<LoadBalancerSubnetMap
     @JsonProperty("AllocationId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-loadbalancer-subnetmapping.html#cfn-elasticloadbalancingv2-loadbalancer-subnetmapping-allocationid")
     private CharSequence allocationId;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-loadbalancer-subnetmapping.html#cfn-elasticloadbalancingv2-loadbalancer-subnetmapping-privateipv4address
+     * 
+     */
+    @JsonProperty("PrivateIPv4Address")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-loadbalancer-subnetmapping.html#cfn-elasticloadbalancingv2-loadbalancer-subnetmapping-privateipv4address")
+    private CharSequence privateIPv4Address;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-loadbalancer-subnetmapping.html#cfn-elasticloadbalancingv2-loadbalancer-subnetmapping-subnetid
      * 
@@ -65,6 +73,29 @@ public class LoadBalancerSubnetMapping implements Property<LoadBalancerSubnetMap
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-loadbalancer-subnetmapping.html#cfn-elasticloadbalancingv2-loadbalancer-subnetmapping-privateipv4address
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getPrivateIPv4Address() {
+        return privateIPv4Address;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-loadbalancer-subnetmapping.html#cfn-elasticloadbalancingv2-loadbalancer-subnetmapping-privateipv4address
+     * 
+     */
+    @JsonIgnore
+    public void setPrivateIPv4Address(CharSequence privateIPv4Address) {
+        this.privateIPv4Address = privateIPv4Address;
+    }
+
+    public LoadBalancerSubnetMapping withPrivateIPv4Address(CharSequence privateIPv4Address) {
+        this.privateIPv4Address = privateIPv4Address;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-loadbalancer-subnetmapping.html#cfn-elasticloadbalancingv2-loadbalancer-subnetmapping-subnetid
      * 
      */
@@ -89,12 +120,12 @@ public class LoadBalancerSubnetMapping implements Property<LoadBalancerSubnetMap
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("allocationId", allocationId).append("subnetId", subnetId).toString();
+        return new ToStringBuilder(this).append("allocationId", allocationId).append("privateIPv4Address", privateIPv4Address).append("subnetId", subnetId).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(subnetId).append(allocationId).toHashCode();
+        return new HashCodeBuilder().append(subnetId).append(allocationId).append(privateIPv4Address).toHashCode();
     }
 
     @Override
@@ -106,7 +137,7 @@ public class LoadBalancerSubnetMapping implements Property<LoadBalancerSubnetMap
             return false;
         }
         LoadBalancerSubnetMapping rhs = ((LoadBalancerSubnetMapping) other);
-        return new EqualsBuilder().append(subnetId, rhs.subnetId).append(allocationId, rhs.allocationId).isEquals();
+        return new EqualsBuilder().append(subnetId, rhs.subnetId).append(allocationId, rhs.allocationId).append(privateIPv4Address, rhs.privateIPv4Address).isEquals();
     }
 
 }

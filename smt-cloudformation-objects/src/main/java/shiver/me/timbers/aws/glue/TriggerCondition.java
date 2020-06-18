@@ -20,7 +20,9 @@ import shiver.me.timbers.aws.Property;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "CrawlerName",
     "State",
+    "CrawlState",
     "LogicalOperator",
     "JobName"
 })
@@ -28,12 +30,26 @@ public class TriggerCondition implements Property<TriggerCondition>
 {
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-crawlername
+     * 
+     */
+    @JsonProperty("CrawlerName")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-crawlername")
+    private CharSequence crawlerName;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-state
      * 
      */
     @JsonProperty("State")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-state")
     private CharSequence state;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-crawlstate
+     * 
+     */
+    @JsonProperty("CrawlState")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-crawlstate")
+    private CharSequence crawlState;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-logicaloperator
      * 
@@ -48,6 +64,29 @@ public class TriggerCondition implements Property<TriggerCondition>
     @JsonProperty("JobName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-jobname")
     private CharSequence jobName;
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-crawlername
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getCrawlerName() {
+        return crawlerName;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-crawlername
+     * 
+     */
+    @JsonIgnore
+    public void setCrawlerName(CharSequence crawlerName) {
+        this.crawlerName = crawlerName;
+    }
+
+    public TriggerCondition withCrawlerName(CharSequence crawlerName) {
+        this.crawlerName = crawlerName;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-state
@@ -69,6 +108,29 @@ public class TriggerCondition implements Property<TriggerCondition>
 
     public TriggerCondition withState(CharSequence state) {
         this.state = state;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-crawlstate
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getCrawlState() {
+        return crawlState;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-crawlstate
+     * 
+     */
+    @JsonIgnore
+    public void setCrawlState(CharSequence crawlState) {
+        this.crawlState = crawlState;
+    }
+
+    public TriggerCondition withCrawlState(CharSequence crawlState) {
+        this.crawlState = crawlState;
         return this;
     }
 
@@ -120,12 +182,12 @@ public class TriggerCondition implements Property<TriggerCondition>
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("state", state).append("logicalOperator", logicalOperator).append("jobName", jobName).toString();
+        return new ToStringBuilder(this).append("crawlerName", crawlerName).append("state", state).append("crawlState", crawlState).append("logicalOperator", logicalOperator).append("jobName", jobName).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(jobName).append(state).append(logicalOperator).toHashCode();
+        return new HashCodeBuilder().append(crawlState).append(jobName).append(crawlerName).append(state).append(logicalOperator).toHashCode();
     }
 
     @Override
@@ -137,7 +199,7 @@ public class TriggerCondition implements Property<TriggerCondition>
             return false;
         }
         TriggerCondition rhs = ((TriggerCondition) other);
-        return new EqualsBuilder().append(jobName, rhs.jobName).append(state, rhs.state).append(logicalOperator, rhs.logicalOperator).isEquals();
+        return new EqualsBuilder().append(crawlState, rhs.crawlState).append(jobName, rhs.jobName).append(crawlerName, rhs.crawlerName).append(state, rhs.state).append(logicalOperator, rhs.logicalOperator).isEquals();
     }
 
 }

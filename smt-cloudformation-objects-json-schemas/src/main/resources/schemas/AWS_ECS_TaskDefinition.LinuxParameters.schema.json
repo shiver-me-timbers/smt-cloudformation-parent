@@ -26,8 +26,18 @@
       "type" : "boolean",
       "javaType" : "java.lang.CharSequence"
     },
+    "MaxSwap" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-maxswap",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
     "SharedMemorySize" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-sharedmemorysize",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "Swappiness" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-swappiness",
       "type" : "integer",
       "javaType" : "java.lang.Number"
     },

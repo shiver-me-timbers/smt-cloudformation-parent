@@ -1,0 +1,36 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CodeBuild_Project.ProjectFileSystemLocation.schema.json",
+  "title" : "ProjectProjectFileSystemLocation",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projectfilesystemlocation.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.codebuild.ProjectProjectFileSystemLocation",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ProjectProjectFileSystemLocation>" ],
+  "properties" : {
+    "MountPoint" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projectfilesystemlocation.html#cfn-codebuild-project-projectfilesystemlocation-mountpoint",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Type" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projectfilesystemlocation.html#cfn-codebuild-project-projectfilesystemlocation-type",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Identifier" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projectfilesystemlocation.html#cfn-codebuild-project-projectfilesystemlocation-identifier",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "MountOptions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projectfilesystemlocation.html#cfn-codebuild-project-projectfilesystemlocation-mountoptions",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Location" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projectfilesystemlocation.html#cfn-codebuild-project-projectfilesystemlocation-location",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

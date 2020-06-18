@@ -32,8 +32,23 @@
       "$ref" : "AWS_KinesisFirehose_DeliveryStream.ProcessingConfiguration.schema.json",
       "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamProcessingConfiguration>"
     },
+    "RetryOptions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-retryoptions",
+      "$ref" : "AWS_KinesisFirehose_DeliveryStream.RedshiftRetryOptions.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamRedshiftRetryOptions>"
+    },
     "RoleARN" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-rolearn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "S3BackupConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-s3backupconfiguration",
+      "$ref" : "AWS_KinesisFirehose_DeliveryStream.S3DestinationConfiguration.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamS3DestinationConfiguration>"
+    },
+    "S3BackupMode" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-s3backupmode",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },

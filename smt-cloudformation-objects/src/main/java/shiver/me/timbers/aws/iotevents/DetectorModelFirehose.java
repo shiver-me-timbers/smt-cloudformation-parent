@@ -21,6 +21,7 @@ import shiver.me.timbers.aws.Property;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "DeliveryStreamName",
+    "Payload",
     "Separator"
 })
 public class DetectorModelFirehose implements Property<DetectorModelFirehose>
@@ -33,6 +34,15 @@ public class DetectorModelFirehose implements Property<DetectorModelFirehose>
     @JsonProperty("DeliveryStreamName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-firehose.html#cfn-iotevents-detectormodel-firehose-deliverystreamname")
     private CharSequence deliveryStreamName;
+    /**
+     * DetectorModelPayload
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-payload.html
+     * 
+     */
+    @JsonProperty("Payload")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-payload.html")
+    private Property<DetectorModelPayload> payload;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-firehose.html#cfn-iotevents-detectormodel-firehose-separator
      * 
@@ -65,6 +75,33 @@ public class DetectorModelFirehose implements Property<DetectorModelFirehose>
     }
 
     /**
+     * DetectorModelPayload
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-payload.html
+     * 
+     */
+    @JsonIgnore
+    public Property<DetectorModelPayload> getPayload() {
+        return payload;
+    }
+
+    /**
+     * DetectorModelPayload
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-payload.html
+     * 
+     */
+    @JsonIgnore
+    public void setPayload(Property<DetectorModelPayload> payload) {
+        this.payload = payload;
+    }
+
+    public DetectorModelFirehose withPayload(Property<DetectorModelPayload> payload) {
+        this.payload = payload;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-firehose.html#cfn-iotevents-detectormodel-firehose-separator
      * 
      */
@@ -89,12 +126,12 @@ public class DetectorModelFirehose implements Property<DetectorModelFirehose>
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("deliveryStreamName", deliveryStreamName).append("separator", separator).toString();
+        return new ToStringBuilder(this).append("deliveryStreamName", deliveryStreamName).append("payload", payload).append("separator", separator).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(deliveryStreamName).append(separator).toHashCode();
+        return new HashCodeBuilder().append(deliveryStreamName).append(payload).append(separator).toHashCode();
     }
 
     @Override
@@ -106,7 +143,7 @@ public class DetectorModelFirehose implements Property<DetectorModelFirehose>
             return false;
         }
         DetectorModelFirehose rhs = ((DetectorModelFirehose) other);
-        return new EqualsBuilder().append(deliveryStreamName, rhs.deliveryStreamName).append(separator, rhs.separator).isEquals();
+        return new EqualsBuilder().append(deliveryStreamName, rhs.deliveryStreamName).append(payload, rhs.payload).append(separator, rhs.separator).isEquals();
     }
 
 }

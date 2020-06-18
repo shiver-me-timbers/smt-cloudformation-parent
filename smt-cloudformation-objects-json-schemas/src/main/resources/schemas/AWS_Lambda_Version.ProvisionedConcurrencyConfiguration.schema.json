@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Lambda_Version.ProvisionedConcurrencyConfiguration.schema.json",
+  "title" : "VersionProvisionedConcurrencyConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-version-provisionedconcurrencyconfiguration.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.lambda.VersionProvisionedConcurrencyConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<VersionProvisionedConcurrencyConfiguration>" ],
+  "properties" : {
+    "ProvisionedConcurrentExecutions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-version-provisionedconcurrencyconfiguration.html#cfn-lambda-version-provisionedconcurrencyconfiguration-provisionedconcurrentexecutions",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    }
+  }
+}

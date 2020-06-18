@@ -24,6 +24,8 @@ import shiver.me.timbers.aws.Tag;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "StorageEncrypted",
+    "RestoreToTime",
+    "EngineVersion",
     "KmsKeyId",
     "AvailabilityZones",
     "SnapshotIdentifier",
@@ -32,10 +34,14 @@ import shiver.me.timbers.aws.Tag;
     "PreferredMaintenanceWindow",
     "IamAuthEnabled",
     "DBSubnetGroupName",
+    "DeletionProtection",
     "PreferredBackupWindow",
+    "UseLatestRestorableTime",
     "VpcSecurityGroupIds",
+    "SourceDBClusterIdentifier",
     "DBClusterParameterGroupName",
     "BackupRetentionPeriod",
+    "RestoreType",
     "Tags",
     "EnableCloudwatchLogsExports"
 })
@@ -48,6 +54,20 @@ public class DBCluster {
     @JsonProperty("StorageEncrypted")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-storageencrypted")
     private CharSequence storageEncrypted;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-restoretotime
+     * 
+     */
+    @JsonProperty("RestoreToTime")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-restoretotime")
+    private CharSequence restoreToTime;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-engineversion
+     * 
+     */
+    @JsonProperty("EngineVersion")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-engineversion")
+    private CharSequence engineVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-kmskeyid
      * 
@@ -105,6 +125,13 @@ public class DBCluster {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-dbsubnetgroupname")
     private CharSequence dBSubnetGroupName;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-deletionprotection
+     * 
+     */
+    @JsonProperty("DeletionProtection")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-deletionprotection")
+    private CharSequence deletionProtection;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-preferredbackupwindow
      * 
      */
@@ -112,12 +139,26 @@ public class DBCluster {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-preferredbackupwindow")
     private CharSequence preferredBackupWindow;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-uselatestrestorabletime
+     * 
+     */
+    @JsonProperty("UseLatestRestorableTime")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-uselatestrestorabletime")
+    private CharSequence useLatestRestorableTime;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-vpcsecuritygroupids
      * 
      */
     @JsonProperty("VpcSecurityGroupIds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-vpcsecuritygroupids")
     private List<CharSequence> vpcSecurityGroupIds = new ArrayList<CharSequence>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-sourcedbclusteridentifier
+     * 
+     */
+    @JsonProperty("SourceDBClusterIdentifier")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-sourcedbclusteridentifier")
+    private CharSequence sourceDBClusterIdentifier;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-dbclusterparametergroupname
      * 
@@ -132,6 +173,13 @@ public class DBCluster {
     @JsonProperty("BackupRetentionPeriod")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-backupretentionperiod")
     private Number backupRetentionPeriod;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-restoretype
+     * 
+     */
+    @JsonProperty("RestoreType")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-restoretype")
+    private CharSequence restoreType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-tags
      * 
@@ -167,6 +215,52 @@ public class DBCluster {
 
     public DBCluster withStorageEncrypted(CharSequence storageEncrypted) {
         this.storageEncrypted = storageEncrypted;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-restoretotime
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getRestoreToTime() {
+        return restoreToTime;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-restoretotime
+     * 
+     */
+    @JsonIgnore
+    public void setRestoreToTime(CharSequence restoreToTime) {
+        this.restoreToTime = restoreToTime;
+    }
+
+    public DBCluster withRestoreToTime(CharSequence restoreToTime) {
+        this.restoreToTime = restoreToTime;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-engineversion
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getEngineVersion() {
+        return engineVersion;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-engineversion
+     * 
+     */
+    @JsonIgnore
+    public void setEngineVersion(CharSequence engineVersion) {
+        this.engineVersion = engineVersion;
+    }
+
+    public DBCluster withEngineVersion(CharSequence engineVersion) {
+        this.engineVersion = engineVersion;
         return this;
     }
 
@@ -355,6 +449,29 @@ public class DBCluster {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-deletionprotection
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getDeletionProtection() {
+        return deletionProtection;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-deletionprotection
+     * 
+     */
+    @JsonIgnore
+    public void setDeletionProtection(CharSequence deletionProtection) {
+        this.deletionProtection = deletionProtection;
+    }
+
+    public DBCluster withDeletionProtection(CharSequence deletionProtection) {
+        this.deletionProtection = deletionProtection;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-preferredbackupwindow
      * 
      */
@@ -378,6 +495,29 @@ public class DBCluster {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-uselatestrestorabletime
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getUseLatestRestorableTime() {
+        return useLatestRestorableTime;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-uselatestrestorabletime
+     * 
+     */
+    @JsonIgnore
+    public void setUseLatestRestorableTime(CharSequence useLatestRestorableTime) {
+        this.useLatestRestorableTime = useLatestRestorableTime;
+    }
+
+    public DBCluster withUseLatestRestorableTime(CharSequence useLatestRestorableTime) {
+        this.useLatestRestorableTime = useLatestRestorableTime;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-vpcsecuritygroupids
      * 
      */
@@ -397,6 +537,29 @@ public class DBCluster {
 
     public DBCluster withVpcSecurityGroupIds(List<CharSequence> vpcSecurityGroupIds) {
         this.vpcSecurityGroupIds = vpcSecurityGroupIds;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-sourcedbclusteridentifier
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getSourceDBClusterIdentifier() {
+        return sourceDBClusterIdentifier;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-sourcedbclusteridentifier
+     * 
+     */
+    @JsonIgnore
+    public void setSourceDBClusterIdentifier(CharSequence sourceDBClusterIdentifier) {
+        this.sourceDBClusterIdentifier = sourceDBClusterIdentifier;
+    }
+
+    public DBCluster withSourceDBClusterIdentifier(CharSequence sourceDBClusterIdentifier) {
+        this.sourceDBClusterIdentifier = sourceDBClusterIdentifier;
         return this;
     }
 
@@ -443,6 +606,29 @@ public class DBCluster {
 
     public DBCluster withBackupRetentionPeriod(Number backupRetentionPeriod) {
         this.backupRetentionPeriod = backupRetentionPeriod;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-restoretype
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getRestoreType() {
+        return restoreType;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-restoretype
+     * 
+     */
+    @JsonIgnore
+    public void setRestoreType(CharSequence restoreType) {
+        this.restoreType = restoreType;
+    }
+
+    public DBCluster withRestoreType(CharSequence restoreType) {
+        this.restoreType = restoreType;
         return this;
     }
 
@@ -494,12 +680,12 @@ public class DBCluster {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("storageEncrypted", storageEncrypted).append("kmsKeyId", kmsKeyId).append("availabilityZones", availabilityZones).append("snapshotIdentifier", snapshotIdentifier).append("port", port).append("dBClusterIdentifier", dBClusterIdentifier).append("preferredMaintenanceWindow", preferredMaintenanceWindow).append("iamAuthEnabled", iamAuthEnabled).append("dBSubnetGroupName", dBSubnetGroupName).append("preferredBackupWindow", preferredBackupWindow).append("vpcSecurityGroupIds", vpcSecurityGroupIds).append("dBClusterParameterGroupName", dBClusterParameterGroupName).append("backupRetentionPeriod", backupRetentionPeriod).append("tags", tags).append("enableCloudwatchLogsExports", enableCloudwatchLogsExports).toString();
+        return new ToStringBuilder(this).append("storageEncrypted", storageEncrypted).append("restoreToTime", restoreToTime).append("engineVersion", engineVersion).append("kmsKeyId", kmsKeyId).append("availabilityZones", availabilityZones).append("snapshotIdentifier", snapshotIdentifier).append("port", port).append("dBClusterIdentifier", dBClusterIdentifier).append("preferredMaintenanceWindow", preferredMaintenanceWindow).append("iamAuthEnabled", iamAuthEnabled).append("dBSubnetGroupName", dBSubnetGroupName).append("deletionProtection", deletionProtection).append("preferredBackupWindow", preferredBackupWindow).append("useLatestRestorableTime", useLatestRestorableTime).append("vpcSecurityGroupIds", vpcSecurityGroupIds).append("sourceDBClusterIdentifier", sourceDBClusterIdentifier).append("dBClusterParameterGroupName", dBClusterParameterGroupName).append("backupRetentionPeriod", backupRetentionPeriod).append("restoreType", restoreType).append("tags", tags).append("enableCloudwatchLogsExports", enableCloudwatchLogsExports).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(vpcSecurityGroupIds).append(iamAuthEnabled).append(availabilityZones).append(snapshotIdentifier).append(storageEncrypted).append(preferredBackupWindow).append(dBSubnetGroupName).append(tags).append(dBClusterParameterGroupName).append(port).append(preferredMaintenanceWindow).append(backupRetentionPeriod).append(kmsKeyId).append(dBClusterIdentifier).append(enableCloudwatchLogsExports).toHashCode();
+        return new HashCodeBuilder().append(engineVersion).append(vpcSecurityGroupIds).append(restoreType).append(restoreToTime).append(iamAuthEnabled).append(availabilityZones).append(snapshotIdentifier).append(storageEncrypted).append(preferredBackupWindow).append(dBSubnetGroupName).append(deletionProtection).append(sourceDBClusterIdentifier).append(tags).append(dBClusterParameterGroupName).append(port).append(preferredMaintenanceWindow).append(backupRetentionPeriod).append(useLatestRestorableTime).append(kmsKeyId).append(dBClusterIdentifier).append(enableCloudwatchLogsExports).toHashCode();
     }
 
     @Override
@@ -511,7 +697,7 @@ public class DBCluster {
             return false;
         }
         DBCluster rhs = ((DBCluster) other);
-        return new EqualsBuilder().append(vpcSecurityGroupIds, rhs.vpcSecurityGroupIds).append(iamAuthEnabled, rhs.iamAuthEnabled).append(availabilityZones, rhs.availabilityZones).append(snapshotIdentifier, rhs.snapshotIdentifier).append(storageEncrypted, rhs.storageEncrypted).append(preferredBackupWindow, rhs.preferredBackupWindow).append(dBSubnetGroupName, rhs.dBSubnetGroupName).append(tags, rhs.tags).append(dBClusterParameterGroupName, rhs.dBClusterParameterGroupName).append(port, rhs.port).append(preferredMaintenanceWindow, rhs.preferredMaintenanceWindow).append(backupRetentionPeriod, rhs.backupRetentionPeriod).append(kmsKeyId, rhs.kmsKeyId).append(dBClusterIdentifier, rhs.dBClusterIdentifier).append(enableCloudwatchLogsExports, rhs.enableCloudwatchLogsExports).isEquals();
+        return new EqualsBuilder().append(engineVersion, rhs.engineVersion).append(vpcSecurityGroupIds, rhs.vpcSecurityGroupIds).append(restoreType, rhs.restoreType).append(restoreToTime, rhs.restoreToTime).append(iamAuthEnabled, rhs.iamAuthEnabled).append(availabilityZones, rhs.availabilityZones).append(snapshotIdentifier, rhs.snapshotIdentifier).append(storageEncrypted, rhs.storageEncrypted).append(preferredBackupWindow, rhs.preferredBackupWindow).append(dBSubnetGroupName, rhs.dBSubnetGroupName).append(deletionProtection, rhs.deletionProtection).append(sourceDBClusterIdentifier, rhs.sourceDBClusterIdentifier).append(tags, rhs.tags).append(dBClusterParameterGroupName, rhs.dBClusterParameterGroupName).append(port, rhs.port).append(preferredMaintenanceWindow, rhs.preferredMaintenanceWindow).append(backupRetentionPeriod, rhs.backupRetentionPeriod).append(useLatestRestorableTime, rhs.useLatestRestorableTime).append(kmsKeyId, rhs.kmsKeyId).append(dBClusterIdentifier, rhs.dBClusterIdentifier).append(enableCloudwatchLogsExports, rhs.enableCloudwatchLogsExports).isEquals();
     }
 
 }

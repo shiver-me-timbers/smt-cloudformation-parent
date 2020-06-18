@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Glue_WorkflowResource.schema.json",
+  "title" : "WorkflowResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-workflow.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.glue.WorkflowResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<WorkflowResource>", "shiver.me.timbers.aws.HasCondition<WorkflowResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Glue::Workflow"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Glue_Workflow.schema.json"
+    }
+  }
+}

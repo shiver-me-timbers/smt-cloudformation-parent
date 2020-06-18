@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_S3_AccessPoint.VpcConfiguration.schema.json",
+  "title" : "AccessPointVpcConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-accesspoint-vpcconfiguration.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.s3.AccessPointVpcConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<AccessPointVpcConfiguration>" ],
+  "properties" : {
+    "VpcId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-accesspoint-vpcconfiguration.html#cfn-s3-accesspoint-vpcconfiguration-vpcid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

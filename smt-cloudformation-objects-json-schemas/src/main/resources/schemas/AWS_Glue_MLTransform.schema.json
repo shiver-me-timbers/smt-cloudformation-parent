@@ -31,6 +31,11 @@
       "type" : "integer",
       "javaType" : "java.lang.Number"
     },
+    "GlueVersion" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html#cfn-glue-mltransform-glueversion",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "TransformParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html#cfn-glue-mltransform-transformparameters",
       "$ref" : "AWS_Glue_MLTransform.TransformParameters.schema.json",
@@ -45,6 +50,11 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html#cfn-glue-mltransform-numberofworkers",
       "type" : "integer",
       "javaType" : "java.lang.Number"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html#cfn-glue-mltransform-tags",
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html#cfn-glue-mltransform-name",

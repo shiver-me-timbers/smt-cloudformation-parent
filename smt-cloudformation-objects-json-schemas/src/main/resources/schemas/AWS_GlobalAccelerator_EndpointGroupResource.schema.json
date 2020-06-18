@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_GlobalAccelerator_EndpointGroupResource.schema.json",
+  "title" : "EndpointGroupResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-globalaccelerator-endpointgroup.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.globalaccelerator.EndpointGroupResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<EndpointGroupResource>", "shiver.me.timbers.aws.HasCondition<EndpointGroupResource>", "shiver.me.timbers.aws.HasAttributes<EndpointGroupAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::GlobalAccelerator::EndpointGroup"
+    },
+    "Properties" : {
+      "$ref" : "AWS_GlobalAccelerator_EndpointGroup.schema.json"
+    }
+  }
+}

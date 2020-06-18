@@ -25,6 +25,7 @@ import shiver.me.timbers.aws.Property;
     "Logging",
     "Backends",
     "Listeners",
+    "BackendDefaults",
     "ServiceDiscovery"
 })
 public class VirtualNodeVirtualNodeSpec implements Property<VirtualNodeVirtualNodeSpec>
@@ -53,6 +54,15 @@ public class VirtualNodeVirtualNodeSpec implements Property<VirtualNodeVirtualNo
     @JsonProperty("Listeners")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-virtualnodespec.html#cfn-appmesh-virtualnode-virtualnodespec-listeners")
     private List<Property<VirtualNodeListener>> listeners = new ArrayList<Property<VirtualNodeListener>>();
+    /**
+     * VirtualNodeBackendDefaults
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-backenddefaults.html
+     * 
+     */
+    @JsonProperty("BackendDefaults")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-backenddefaults.html")
+    private Property<VirtualNodeBackendDefaults> backendDefaults;
     /**
      * VirtualNodeServiceDiscovery
      * <p>
@@ -137,6 +147,33 @@ public class VirtualNodeVirtualNodeSpec implements Property<VirtualNodeVirtualNo
     }
 
     /**
+     * VirtualNodeBackendDefaults
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-backenddefaults.html
+     * 
+     */
+    @JsonIgnore
+    public Property<VirtualNodeBackendDefaults> getBackendDefaults() {
+        return backendDefaults;
+    }
+
+    /**
+     * VirtualNodeBackendDefaults
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-backenddefaults.html
+     * 
+     */
+    @JsonIgnore
+    public void setBackendDefaults(Property<VirtualNodeBackendDefaults> backendDefaults) {
+        this.backendDefaults = backendDefaults;
+    }
+
+    public VirtualNodeVirtualNodeSpec withBackendDefaults(Property<VirtualNodeBackendDefaults> backendDefaults) {
+        this.backendDefaults = backendDefaults;
+        return this;
+    }
+
+    /**
      * VirtualNodeServiceDiscovery
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-servicediscovery.html
@@ -165,12 +202,12 @@ public class VirtualNodeVirtualNodeSpec implements Property<VirtualNodeVirtualNo
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("logging", logging).append("backends", backends).append("listeners", listeners).append("serviceDiscovery", serviceDiscovery).toString();
+        return new ToStringBuilder(this).append("logging", logging).append("backends", backends).append("listeners", listeners).append("backendDefaults", backendDefaults).append("serviceDiscovery", serviceDiscovery).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(logging).append(serviceDiscovery).append(listeners).append(backends).toHashCode();
+        return new HashCodeBuilder().append(logging).append(serviceDiscovery).append(listeners).append(backends).append(backendDefaults).toHashCode();
     }
 
     @Override
@@ -182,7 +219,7 @@ public class VirtualNodeVirtualNodeSpec implements Property<VirtualNodeVirtualNo
             return false;
         }
         VirtualNodeVirtualNodeSpec rhs = ((VirtualNodeVirtualNodeSpec) other);
-        return new EqualsBuilder().append(logging, rhs.logging).append(serviceDiscovery, rhs.serviceDiscovery).append(listeners, rhs.listeners).append(backends, rhs.backends).isEquals();
+        return new EqualsBuilder().append(logging, rhs.logging).append(serviceDiscovery, rhs.serviceDiscovery).append(listeners, rhs.listeners).append(backends, rhs.backends).append(backendDefaults, rhs.backendDefaults).isEquals();
     }
 
 }

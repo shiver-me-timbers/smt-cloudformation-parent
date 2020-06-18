@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_GameLift_MatchmakingConfigurationResource.schema.json",
+  "title" : "MatchmakingConfigurationResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-matchmakingconfiguration.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.gamelift.MatchmakingConfigurationResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<MatchmakingConfigurationResource>", "shiver.me.timbers.aws.HasCondition<MatchmakingConfigurationResource>", "shiver.me.timbers.aws.HasAttributes<MatchmakingConfigurationAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::GameLift::MatchmakingConfiguration"
+    },
+    "Properties" : {
+      "$ref" : "AWS_GameLift_MatchmakingConfiguration.schema.json"
+    }
+  }
+}

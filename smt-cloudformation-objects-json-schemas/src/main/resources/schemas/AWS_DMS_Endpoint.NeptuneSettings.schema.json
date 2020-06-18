@@ -1,0 +1,46 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_DMS_Endpoint.NeptuneSettings.schema.json",
+  "title" : "EndpointNeptuneSettings",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-neptunesettings.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.dms.EndpointNeptuneSettings",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<EndpointNeptuneSettings>" ],
+  "properties" : {
+    "MaxRetryCount" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-neptunesettings.html#cfn-dms-endpoint-neptunesettings-maxretrycount",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "MaxFileSize" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-neptunesettings.html#cfn-dms-endpoint-neptunesettings-maxfilesize",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "S3BucketFolder" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-neptunesettings.html#cfn-dms-endpoint-neptunesettings-s3bucketfolder",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ErrorRetryDuration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-neptunesettings.html#cfn-dms-endpoint-neptunesettings-errorretryduration",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "IamAuthEnabled" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-neptunesettings.html#cfn-dms-endpoint-neptunesettings-iamauthenabled",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "S3BucketName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-neptunesettings.html#cfn-dms-endpoint-neptunesettings-s3bucketname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ServiceAccessRoleArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-neptunesettings.html#cfn-dms-endpoint-neptunesettings-serviceaccessrolearn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

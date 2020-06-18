@@ -25,8 +25,10 @@ import shiver.me.timbers.aws.Property;
     "KafkaVersion",
     "NumberOfBrokerNodes",
     "EncryptionInfo",
+    "OpenMonitoring",
     "ClusterName",
     "ClientAuthentication",
+    "LoggingInfo",
     "Tags",
     "ConfigurationInfo"
 })
@@ -72,6 +74,15 @@ public class Cluster {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-encryptioninfo.html")
     private Property<ClusterEncryptionInfo> encryptionInfo;
     /**
+     * ClusterOpenMonitoring
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-openmonitoring.html
+     * 
+     */
+    @JsonProperty("OpenMonitoring")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-openmonitoring.html")
+    private Property<ClusterOpenMonitoring> openMonitoring;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-msk-cluster.html#cfn-msk-cluster-clustername
      * 
      */
@@ -87,6 +98,15 @@ public class Cluster {
     @JsonProperty("ClientAuthentication")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-clientauthentication.html")
     private Property<ClusterClientAuthentication> clientAuthentication;
+    /**
+     * ClusterLoggingInfo
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-logginginfo.html
+     * 
+     */
+    @JsonProperty("LoggingInfo")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-logginginfo.html")
+    private Property<ClusterLoggingInfo> loggingInfo;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-msk-cluster.html#cfn-msk-cluster-tags
      * 
@@ -228,6 +248,33 @@ public class Cluster {
     }
 
     /**
+     * ClusterOpenMonitoring
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-openmonitoring.html
+     * 
+     */
+    @JsonIgnore
+    public Property<ClusterOpenMonitoring> getOpenMonitoring() {
+        return openMonitoring;
+    }
+
+    /**
+     * ClusterOpenMonitoring
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-openmonitoring.html
+     * 
+     */
+    @JsonIgnore
+    public void setOpenMonitoring(Property<ClusterOpenMonitoring> openMonitoring) {
+        this.openMonitoring = openMonitoring;
+    }
+
+    public Cluster withOpenMonitoring(Property<ClusterOpenMonitoring> openMonitoring) {
+        this.openMonitoring = openMonitoring;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-msk-cluster.html#cfn-msk-cluster-clustername
      * 
      */
@@ -274,6 +321,33 @@ public class Cluster {
 
     public Cluster withClientAuthentication(Property<ClusterClientAuthentication> clientAuthentication) {
         this.clientAuthentication = clientAuthentication;
+        return this;
+    }
+
+    /**
+     * ClusterLoggingInfo
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-logginginfo.html
+     * 
+     */
+    @JsonIgnore
+    public Property<ClusterLoggingInfo> getLoggingInfo() {
+        return loggingInfo;
+    }
+
+    /**
+     * ClusterLoggingInfo
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-msk-cluster-logginginfo.html
+     * 
+     */
+    @JsonIgnore
+    public void setLoggingInfo(Property<ClusterLoggingInfo> loggingInfo) {
+        this.loggingInfo = loggingInfo;
+    }
+
+    public Cluster withLoggingInfo(Property<ClusterLoggingInfo> loggingInfo) {
+        this.loggingInfo = loggingInfo;
         return this;
     }
 
@@ -329,12 +403,12 @@ public class Cluster {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("brokerNodeGroupInfo", brokerNodeGroupInfo).append("enhancedMonitoring", enhancedMonitoring).append("kafkaVersion", kafkaVersion).append("numberOfBrokerNodes", numberOfBrokerNodes).append("encryptionInfo", encryptionInfo).append("clusterName", clusterName).append("clientAuthentication", clientAuthentication).append("tags", tags).append("configurationInfo", configurationInfo).toString();
+        return new ToStringBuilder(this).append("brokerNodeGroupInfo", brokerNodeGroupInfo).append("enhancedMonitoring", enhancedMonitoring).append("kafkaVersion", kafkaVersion).append("numberOfBrokerNodes", numberOfBrokerNodes).append("encryptionInfo", encryptionInfo).append("openMonitoring", openMonitoring).append("clusterName", clusterName).append("clientAuthentication", clientAuthentication).append("loggingInfo", loggingInfo).append("tags", tags).append("configurationInfo", configurationInfo).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(numberOfBrokerNodes).append(encryptionInfo).append(configurationInfo).append(enhancedMonitoring).append(kafkaVersion).append(clusterName).append(clientAuthentication).append(brokerNodeGroupInfo).append(tags).toHashCode();
+        return new HashCodeBuilder().append(numberOfBrokerNodes).append(encryptionInfo).append(configurationInfo).append(enhancedMonitoring).append(kafkaVersion).append(clusterName).append(clientAuthentication).append(loggingInfo).append(brokerNodeGroupInfo).append(openMonitoring).append(tags).toHashCode();
     }
 
     @Override
@@ -346,7 +420,7 @@ public class Cluster {
             return false;
         }
         Cluster rhs = ((Cluster) other);
-        return new EqualsBuilder().append(numberOfBrokerNodes, rhs.numberOfBrokerNodes).append(encryptionInfo, rhs.encryptionInfo).append(configurationInfo, rhs.configurationInfo).append(enhancedMonitoring, rhs.enhancedMonitoring).append(kafkaVersion, rhs.kafkaVersion).append(clusterName, rhs.clusterName).append(clientAuthentication, rhs.clientAuthentication).append(brokerNodeGroupInfo, rhs.brokerNodeGroupInfo).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(numberOfBrokerNodes, rhs.numberOfBrokerNodes).append(encryptionInfo, rhs.encryptionInfo).append(configurationInfo, rhs.configurationInfo).append(enhancedMonitoring, rhs.enhancedMonitoring).append(kafkaVersion, rhs.kafkaVersion).append(clusterName, rhs.clusterName).append(clientAuthentication, rhs.clientAuthentication).append(loggingInfo, rhs.loggingInfo).append(brokerNodeGroupInfo, rhs.brokerNodeGroupInfo).append(openMonitoring, rhs.openMonitoring).append(tags, rhs.tags).isEquals();
     }
 
 }

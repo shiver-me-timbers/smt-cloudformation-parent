@@ -11,6 +11,8 @@ public enum RouteAttributes {
     UID("Uid"),
     MESH_NAME("MeshName"),
     VIRTUAL_ROUTER_NAME("VirtualRouterName"),
+    MESH_OWNER("MeshOwner"),
+    RESOURCE_OWNER("ResourceOwner"),
     ROUTE_NAME("RouteName"),
     ARN("Arn");
     private final String value;

@@ -24,6 +24,7 @@ import shiver.me.timbers.aws.Property;
     "DeploymentId",
     "Description",
     "AccessLogSettings",
+    "AutoDeploy",
     "RouteSettings",
     "StageName",
     "StageVariables",
@@ -63,6 +64,13 @@ public class Stage {
     @JsonProperty("AccessLogSettings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-stage-accesslogsettings.html")
     private Property<StageAccessLogSettings> accessLogSettings;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html#cfn-apigatewayv2-stage-autodeploy
+     * 
+     */
+    @JsonProperty("AutoDeploy")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html#cfn-apigatewayv2-stage-autodeploy")
+    private CharSequence autoDeploy;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html#cfn-apigatewayv2-stage-routesettings
      * 
@@ -201,6 +209,29 @@ public class Stage {
 
     public Stage withAccessLogSettings(Property<StageAccessLogSettings> accessLogSettings) {
         this.accessLogSettings = accessLogSettings;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html#cfn-apigatewayv2-stage-autodeploy
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getAutoDeploy() {
+        return autoDeploy;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html#cfn-apigatewayv2-stage-autodeploy
+     * 
+     */
+    @JsonIgnore
+    public void setAutoDeploy(CharSequence autoDeploy) {
+        this.autoDeploy = autoDeploy;
+    }
+
+    public Stage withAutoDeploy(CharSequence autoDeploy) {
+        this.autoDeploy = autoDeploy;
         return this;
     }
 
@@ -348,12 +379,12 @@ public class Stage {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("clientCertificateId", clientCertificateId).append("deploymentId", deploymentId).append("description", description).append("accessLogSettings", accessLogSettings).append("routeSettings", routeSettings).append("stageName", stageName).append("stageVariables", stageVariables).append("apiId", apiId).append("defaultRouteSettings", defaultRouteSettings).append("tags", tags).toString();
+        return new ToStringBuilder(this).append("clientCertificateId", clientCertificateId).append("deploymentId", deploymentId).append("description", description).append("accessLogSettings", accessLogSettings).append("autoDeploy", autoDeploy).append("routeSettings", routeSettings).append("stageName", stageName).append("stageVariables", stageVariables).append("apiId", apiId).append("defaultRouteSettings", defaultRouteSettings).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(stageName).append(clientCertificateId).append(routeSettings).append(deploymentId).append(description).append(defaultRouteSettings).append(stageVariables).append(apiId).append(accessLogSettings).append(tags).toHashCode();
+        return new HashCodeBuilder().append(stageName).append(clientCertificateId).append(autoDeploy).append(routeSettings).append(deploymentId).append(description).append(defaultRouteSettings).append(stageVariables).append(apiId).append(accessLogSettings).append(tags).toHashCode();
     }
 
     @Override
@@ -365,7 +396,7 @@ public class Stage {
             return false;
         }
         Stage rhs = ((Stage) other);
-        return new EqualsBuilder().append(stageName, rhs.stageName).append(clientCertificateId, rhs.clientCertificateId).append(routeSettings, rhs.routeSettings).append(deploymentId, rhs.deploymentId).append(description, rhs.description).append(defaultRouteSettings, rhs.defaultRouteSettings).append(stageVariables, rhs.stageVariables).append(apiId, rhs.apiId).append(accessLogSettings, rhs.accessLogSettings).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(stageName, rhs.stageName).append(clientCertificateId, rhs.clientCertificateId).append(autoDeploy, rhs.autoDeploy).append(routeSettings, rhs.routeSettings).append(deploymentId, rhs.deploymentId).append(description, rhs.description).append(defaultRouteSettings, rhs.defaultRouteSettings).append(stageVariables, rhs.stageVariables).append(apiId, rhs.apiId).append(accessLogSettings, rhs.accessLogSettings).append(tags, rhs.tags).isEquals();
     }
 
 }

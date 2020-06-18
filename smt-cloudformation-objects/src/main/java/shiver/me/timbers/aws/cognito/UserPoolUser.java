@@ -26,6 +26,7 @@ import shiver.me.timbers.aws.Property;
     "UserPoolId",
     "Username",
     "MessageAction",
+    "ClientMetadata",
     "DesiredDeliveryMediums",
     "ForceAliasCreation",
     "UserAttributes"
@@ -60,6 +61,13 @@ public class UserPoolUser {
     @JsonProperty("MessageAction")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-messageaction")
     private CharSequence messageAction;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-clientmetadata
+     * 
+     */
+    @JsonProperty("ClientMetadata")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-clientmetadata")
+    private Object clientMetadata;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-desireddeliverymediums
      * 
@@ -175,6 +183,29 @@ public class UserPoolUser {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-clientmetadata
+     * 
+     */
+    @JsonIgnore
+    public Object getClientMetadata() {
+        return clientMetadata;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-clientmetadata
+     * 
+     */
+    @JsonIgnore
+    public void setClientMetadata(Object clientMetadata) {
+        this.clientMetadata = clientMetadata;
+    }
+
+    public UserPoolUser withClientMetadata(Object clientMetadata) {
+        this.clientMetadata = clientMetadata;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-desireddeliverymediums
      * 
      */
@@ -245,12 +276,12 @@ public class UserPoolUser {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("validationData", validationData).append("userPoolId", userPoolId).append("username", username).append("messageAction", messageAction).append("desiredDeliveryMediums", desiredDeliveryMediums).append("forceAliasCreation", forceAliasCreation).append("userAttributes", userAttributes).toString();
+        return new ToStringBuilder(this).append("validationData", validationData).append("userPoolId", userPoolId).append("username", username).append("messageAction", messageAction).append("clientMetadata", clientMetadata).append("desiredDeliveryMediums", desiredDeliveryMediums).append("forceAliasCreation", forceAliasCreation).append("userAttributes", userAttributes).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(userAttributes).append(desiredDeliveryMediums).append(messageAction).append(forceAliasCreation).append(userPoolId).append(validationData).append(username).toHashCode();
+        return new HashCodeBuilder().append(clientMetadata).append(userAttributes).append(desiredDeliveryMediums).append(messageAction).append(forceAliasCreation).append(userPoolId).append(validationData).append(username).toHashCode();
     }
 
     @Override
@@ -262,7 +293,7 @@ public class UserPoolUser {
             return false;
         }
         UserPoolUser rhs = ((UserPoolUser) other);
-        return new EqualsBuilder().append(userAttributes, rhs.userAttributes).append(desiredDeliveryMediums, rhs.desiredDeliveryMediums).append(messageAction, rhs.messageAction).append(forceAliasCreation, rhs.forceAliasCreation).append(userPoolId, rhs.userPoolId).append(validationData, rhs.validationData).append(username, rhs.username).isEquals();
+        return new EqualsBuilder().append(clientMetadata, rhs.clientMetadata).append(userAttributes, rhs.userAttributes).append(desiredDeliveryMediums, rhs.desiredDeliveryMediums).append(messageAction, rhs.messageAction).append(forceAliasCreation, rhs.forceAliasCreation).append(userPoolId, rhs.userPoolId).append(validationData, rhs.validationData).append(username, rhs.username).isEquals();
     }
 
 }

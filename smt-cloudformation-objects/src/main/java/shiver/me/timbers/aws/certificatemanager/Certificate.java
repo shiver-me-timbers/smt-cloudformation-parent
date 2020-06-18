@@ -26,6 +26,8 @@ import shiver.me.timbers.aws.Tag;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "CertificateAuthorityArn",
+    "CertificateTransparencyLoggingPreference",
     "DomainName",
     "DomainValidationOptions",
     "SubjectAlternativeNames",
@@ -34,6 +36,20 @@ import shiver.me.timbers.aws.Tag;
 })
 public class Certificate {
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-certificateauthorityarn
+     * 
+     */
+    @JsonProperty("CertificateAuthorityArn")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-certificateauthorityarn")
+    private CharSequence certificateAuthorityArn;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-certificatetransparencyloggingpreference
+     * 
+     */
+    @JsonProperty("CertificateTransparencyLoggingPreference")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-certificatetransparencyloggingpreference")
+    private CharSequence certificateTransparencyLoggingPreference;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-domainname
      * 
@@ -71,6 +87,52 @@ public class Certificate {
     @JsonProperty("ValidationMethod")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-validationmethod")
     private CharSequence validationMethod;
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-certificateauthorityarn
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getCertificateAuthorityArn() {
+        return certificateAuthorityArn;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-certificateauthorityarn
+     * 
+     */
+    @JsonIgnore
+    public void setCertificateAuthorityArn(CharSequence certificateAuthorityArn) {
+        this.certificateAuthorityArn = certificateAuthorityArn;
+    }
+
+    public Certificate withCertificateAuthorityArn(CharSequence certificateAuthorityArn) {
+        this.certificateAuthorityArn = certificateAuthorityArn;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-certificatetransparencyloggingpreference
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getCertificateTransparencyLoggingPreference() {
+        return certificateTransparencyLoggingPreference;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-certificatetransparencyloggingpreference
+     * 
+     */
+    @JsonIgnore
+    public void setCertificateTransparencyLoggingPreference(CharSequence certificateTransparencyLoggingPreference) {
+        this.certificateTransparencyLoggingPreference = certificateTransparencyLoggingPreference;
+    }
+
+    public Certificate withCertificateTransparencyLoggingPreference(CharSequence certificateTransparencyLoggingPreference) {
+        this.certificateTransparencyLoggingPreference = certificateTransparencyLoggingPreference;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-domainname
@@ -189,12 +251,12 @@ public class Certificate {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("domainName", domainName).append("domainValidationOptions", domainValidationOptions).append("subjectAlternativeNames", subjectAlternativeNames).append("tags", tags).append("validationMethod", validationMethod).toString();
+        return new ToStringBuilder(this).append("certificateAuthorityArn", certificateAuthorityArn).append("certificateTransparencyLoggingPreference", certificateTransparencyLoggingPreference).append("domainName", domainName).append("domainValidationOptions", domainValidationOptions).append("subjectAlternativeNames", subjectAlternativeNames).append("tags", tags).append("validationMethod", validationMethod).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(domainValidationOptions).append(validationMethod).append(subjectAlternativeNames).append(domainName).append(tags).toHashCode();
+        return new HashCodeBuilder().append(certificateAuthorityArn).append(validationMethod).append(certificateTransparencyLoggingPreference).append(subjectAlternativeNames).append(domainName).append(domainValidationOptions).append(tags).toHashCode();
     }
 
     @Override
@@ -206,7 +268,7 @@ public class Certificate {
             return false;
         }
         Certificate rhs = ((Certificate) other);
-        return new EqualsBuilder().append(domainValidationOptions, rhs.domainValidationOptions).append(validationMethod, rhs.validationMethod).append(subjectAlternativeNames, rhs.subjectAlternativeNames).append(domainName, rhs.domainName).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(certificateAuthorityArn, rhs.certificateAuthorityArn).append(validationMethod, rhs.validationMethod).append(certificateTransparencyLoggingPreference, rhs.certificateTransparencyLoggingPreference).append(subjectAlternativeNames, rhs.subjectAlternativeNames).append(domainName, rhs.domainName).append(domainValidationOptions, rhs.domainValidationOptions).append(tags, rhs.tags).isEquals();
     }
 
 }

@@ -6,17 +6,25 @@
   "type" : "object",
   "javaType" : "shiver.me.timbers.aws.ecs.Cluster",
   "properties" : {
-    "ClusterName" : {
-      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#cfn-ecs-cluster-clustername",
-      "type" : "string",
-      "javaType" : "java.lang.CharSequence"
-    },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#cfn-ecs-cluster-tags",
       "type" : "array",
       "items" : {
         "$ref" : "Tag.schema.json",
         "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
+      }
+    },
+    "ClusterName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#cfn-ecs-cluster-clustername",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ClusterSettings" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#cfn-ecs-cluster-clustersettings",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_ECS_Cluster.ClusterSettings.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ecs.ClusterClusterSettings>"
       }
     }
   }

@@ -1,7 +1,9 @@
 
 package shiver.me.timbers.aws.apigateway;
 
+import java.util.ArrayList;
 import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Set;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -13,6 +15,7 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 import shiver.me.timbers.aws.Property;
+import shiver.me.timbers.aws.Tag;
 
 
 /**
@@ -26,6 +29,7 @@ import shiver.me.timbers.aws.Property;
     "ApiStages",
     "Description",
     "Quota",
+    "Tags",
     "Throttle",
     "UsagePlanName"
 })
@@ -55,6 +59,13 @@ public class UsagePlan {
     @JsonProperty("Quota")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-quotasettings.html")
     private Property<UsagePlanQuotaSettings> quota;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html#cfn-apigateway-usageplan-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html#cfn-apigateway-usageplan-tags")
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * UsagePlanThrottleSettings
      * <p>
@@ -146,6 +157,29 @@ public class UsagePlan {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html#cfn-apigateway-usageplan-tags
+     * 
+     */
+    @JsonIgnore
+    public List<Property<Tag>> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html#cfn-apigateway-usageplan-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+    }
+
+    public UsagePlan withTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+        return this;
+    }
+
+    /**
      * UsagePlanThrottleSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-throttlesettings.html
@@ -197,12 +231,12 @@ public class UsagePlan {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("apiStages", apiStages).append("description", description).append("quota", quota).append("throttle", throttle).append("usagePlanName", usagePlanName).toString();
+        return new ToStringBuilder(this).append("apiStages", apiStages).append("description", description).append("quota", quota).append("tags", tags).append("throttle", throttle).append("usagePlanName", usagePlanName).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(description).append(throttle).append(apiStages).append(usagePlanName).append(quota).toHashCode();
+        return new HashCodeBuilder().append(throttle).append(quota).append(description).append(apiStages).append(usagePlanName).append(tags).toHashCode();
     }
 
     @Override
@@ -214,7 +248,7 @@ public class UsagePlan {
             return false;
         }
         UsagePlan rhs = ((UsagePlan) other);
-        return new EqualsBuilder().append(description, rhs.description).append(throttle, rhs.throttle).append(apiStages, rhs.apiStages).append(usagePlanName, rhs.usagePlanName).append(quota, rhs.quota).isEquals();
+        return new EqualsBuilder().append(throttle, rhs.throttle).append(quota, rhs.quota).append(description, rhs.description).append(apiStages, rhs.apiStages).append(usagePlanName, rhs.usagePlanName).append(tags, rhs.tags).isEquals();
     }
 
 }

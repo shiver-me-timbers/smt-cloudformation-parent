@@ -22,7 +22,8 @@ import shiver.me.timbers.aws.Property;
 @JsonPropertyOrder({
     "Type",
     "AmbiguousRoleResolution",
-    "RulesConfiguration"
+    "RulesConfiguration",
+    "IdentityProvider"
 })
 public class IdentityPoolRoleAttachmentRoleMapping implements Property<IdentityPoolRoleAttachmentRoleMapping>
 {
@@ -50,6 +51,13 @@ public class IdentityPoolRoleAttachmentRoleMapping implements Property<IdentityP
     @JsonProperty("RulesConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-rulesconfigurationtype.html")
     private Property<IdentityPoolRoleAttachmentRulesConfigurationType> rulesConfiguration;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-rolemapping.html#cfn-cognito-identitypoolroleattachment-rolemapping-identityprovider
+     * 
+     */
+    @JsonProperty("IdentityProvider")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-rolemapping.html#cfn-cognito-identitypoolroleattachment-rolemapping-identityprovider")
+    private CharSequence identityProvider;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-rolemapping.html#cfn-cognito-identitypoolroleattachment-rolemapping-type
@@ -124,14 +132,37 @@ public class IdentityPoolRoleAttachmentRoleMapping implements Property<IdentityP
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-rolemapping.html#cfn-cognito-identitypoolroleattachment-rolemapping-identityprovider
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getIdentityProvider() {
+        return identityProvider;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-rolemapping.html#cfn-cognito-identitypoolroleattachment-rolemapping-identityprovider
+     * 
+     */
+    @JsonIgnore
+    public void setIdentityProvider(CharSequence identityProvider) {
+        this.identityProvider = identityProvider;
+    }
+
+    public IdentityPoolRoleAttachmentRoleMapping withIdentityProvider(CharSequence identityProvider) {
+        this.identityProvider = identityProvider;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("type", type).append("ambiguousRoleResolution", ambiguousRoleResolution).append("rulesConfiguration", rulesConfiguration).toString();
+        return new ToStringBuilder(this).append("type", type).append("ambiguousRoleResolution", ambiguousRoleResolution).append("rulesConfiguration", rulesConfiguration).append("identityProvider", identityProvider).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(rulesConfiguration).append(type).append(ambiguousRoleResolution).toHashCode();
+        return new HashCodeBuilder().append(rulesConfiguration).append(type).append(ambiguousRoleResolution).append(identityProvider).toHashCode();
     }
 
     @Override
@@ -143,7 +174,7 @@ public class IdentityPoolRoleAttachmentRoleMapping implements Property<IdentityP
             return false;
         }
         IdentityPoolRoleAttachmentRoleMapping rhs = ((IdentityPoolRoleAttachmentRoleMapping) other);
-        return new EqualsBuilder().append(rulesConfiguration, rhs.rulesConfiguration).append(type, rhs.type).append(ambiguousRoleResolution, rhs.ambiguousRoleResolution).isEquals();
+        return new EqualsBuilder().append(rulesConfiguration, rhs.rulesConfiguration).append(type, rhs.type).append(ambiguousRoleResolution, rhs.ambiguousRoleResolution).append(identityProvider, rhs.identityProvider).isEquals();
     }
 
 }

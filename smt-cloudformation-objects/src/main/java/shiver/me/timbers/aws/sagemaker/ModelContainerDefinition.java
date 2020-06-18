@@ -21,6 +21,7 @@ import shiver.me.timbers.aws.Property;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "ContainerHostname",
+    "Mode",
     "Environment",
     "ModelDataUrl",
     "Image"
@@ -35,6 +36,13 @@ public class ModelContainerDefinition implements Property<ModelContainerDefiniti
     @JsonProperty("ContainerHostname")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-containerdefinition.html#cfn-sagemaker-model-containerdefinition-containerhostname")
     private CharSequence containerHostname;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-containerdefinition.html#cfn-sagemaker-model-containerdefinition-mode
+     * 
+     */
+    @JsonProperty("Mode")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-containerdefinition.html#cfn-sagemaker-model-containerdefinition-mode")
+    private CharSequence mode;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-containerdefinition.html#cfn-sagemaker-model-containerdefinition-environment
      * 
@@ -77,6 +85,29 @@ public class ModelContainerDefinition implements Property<ModelContainerDefiniti
 
     public ModelContainerDefinition withContainerHostname(CharSequence containerHostname) {
         this.containerHostname = containerHostname;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-containerdefinition.html#cfn-sagemaker-model-containerdefinition-mode
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getMode() {
+        return mode;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-containerdefinition.html#cfn-sagemaker-model-containerdefinition-mode
+     * 
+     */
+    @JsonIgnore
+    public void setMode(CharSequence mode) {
+        this.mode = mode;
+    }
+
+    public ModelContainerDefinition withMode(CharSequence mode) {
+        this.mode = mode;
         return this;
     }
 
@@ -151,12 +182,12 @@ public class ModelContainerDefinition implements Property<ModelContainerDefiniti
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("containerHostname", containerHostname).append("environment", environment).append("modelDataUrl", modelDataUrl).append("image", image).toString();
+        return new ToStringBuilder(this).append("containerHostname", containerHostname).append("mode", mode).append("environment", environment).append("modelDataUrl", modelDataUrl).append("image", image).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(containerHostname).append(image).append(environment).append(modelDataUrl).toHashCode();
+        return new HashCodeBuilder().append(containerHostname).append(mode).append(image).append(environment).append(modelDataUrl).toHashCode();
     }
 
     @Override
@@ -168,7 +199,7 @@ public class ModelContainerDefinition implements Property<ModelContainerDefiniti
             return false;
         }
         ModelContainerDefinition rhs = ((ModelContainerDefinition) other);
-        return new EqualsBuilder().append(containerHostname, rhs.containerHostname).append(image, rhs.image).append(environment, rhs.environment).append(modelDataUrl, rhs.modelDataUrl).isEquals();
+        return new EqualsBuilder().append(containerHostname, rhs.containerHostname).append(mode, rhs.mode).append(image, rhs.image).append(environment, rhs.environment).append(modelDataUrl, rhs.modelDataUrl).isEquals();
     }
 
 }

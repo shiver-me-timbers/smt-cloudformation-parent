@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ImageBuilder_Image.ImageTestsConfiguration.schema.json",
+  "title" : "ImageImageTestsConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-imagebuilder-image-imagetestsconfiguration.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.imagebuilder.ImageImageTestsConfiguration",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ImageImageTestsConfiguration>" ],
+  "properties" : {
+    "ImageTestsEnabled" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-imagebuilder-image-imagetestsconfiguration.html#cfn-imagebuilder-image-imagetestsconfiguration-imagetestsenabled",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TimeoutMinutes" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-imagebuilder-image-imagetestsconfiguration.html#cfn-imagebuilder-image-imagetestsconfiguration-timeoutminutes",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    }
+  }
+}

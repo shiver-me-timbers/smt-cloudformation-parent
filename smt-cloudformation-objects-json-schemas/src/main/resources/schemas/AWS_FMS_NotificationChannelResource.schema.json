@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_FMS_NotificationChannelResource.schema.json",
+  "title" : "NotificationChannelResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fms-notificationchannel.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.fms.NotificationChannelResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<NotificationChannelResource>", "shiver.me.timbers.aws.HasCondition<NotificationChannelResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::FMS::NotificationChannel"
+    },
+    "Properties" : {
+      "$ref" : "AWS_FMS_NotificationChannel.schema.json"
+    }
+  }
+}

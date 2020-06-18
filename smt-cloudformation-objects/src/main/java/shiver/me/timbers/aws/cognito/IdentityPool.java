@@ -31,7 +31,8 @@ import shiver.me.timbers.aws.Property;
     "AllowUnauthenticatedIdentities",
     "SupportedLoginProviders",
     "SamlProviderARNs",
-    "OpenIdConnectProviderARNs"
+    "OpenIdConnectProviderARNs",
+    "AllowClassicFlow"
 })
 public class IdentityPool {
 
@@ -109,6 +110,13 @@ public class IdentityPool {
     @JsonProperty("OpenIdConnectProviderARNs")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-openidconnectproviderarns")
     private List<CharSequence> openIdConnectProviderARNs = new ArrayList<CharSequence>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-allowclassicflow
+     * 
+     */
+    @JsonProperty("AllowClassicFlow")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-allowclassicflow")
+    private CharSequence allowClassicFlow;
 
     /**
      * IdentityPoolPushSync
@@ -348,14 +356,37 @@ public class IdentityPool {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-allowclassicflow
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getAllowClassicFlow() {
+        return allowClassicFlow;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-allowclassicflow
+     * 
+     */
+    @JsonIgnore
+    public void setAllowClassicFlow(CharSequence allowClassicFlow) {
+        this.allowClassicFlow = allowClassicFlow;
+    }
+
+    public IdentityPool withAllowClassicFlow(CharSequence allowClassicFlow) {
+        this.allowClassicFlow = allowClassicFlow;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("pushSync", pushSync).append("cognitoIdentityProviders", cognitoIdentityProviders).append("cognitoEvents", cognitoEvents).append("developerProviderName", developerProviderName).append("cognitoStreams", cognitoStreams).append("identityPoolName", identityPoolName).append("allowUnauthenticatedIdentities", allowUnauthenticatedIdentities).append("supportedLoginProviders", supportedLoginProviders).append("samlProviderARNs", samlProviderARNs).append("openIdConnectProviderARNs", openIdConnectProviderARNs).toString();
+        return new ToStringBuilder(this).append("pushSync", pushSync).append("cognitoIdentityProviders", cognitoIdentityProviders).append("cognitoEvents", cognitoEvents).append("developerProviderName", developerProviderName).append("cognitoStreams", cognitoStreams).append("identityPoolName", identityPoolName).append("allowUnauthenticatedIdentities", allowUnauthenticatedIdentities).append("supportedLoginProviders", supportedLoginProviders).append("samlProviderARNs", samlProviderARNs).append("openIdConnectProviderARNs", openIdConnectProviderARNs).append("allowClassicFlow", allowClassicFlow).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(identityPoolName).append(openIdConnectProviderARNs).append(samlProviderARNs).append(cognitoEvents).append(allowUnauthenticatedIdentities).append(cognitoStreams).append(cognitoIdentityProviders).append(developerProviderName).append(supportedLoginProviders).append(pushSync).toHashCode();
+        return new HashCodeBuilder().append(identityPoolName).append(openIdConnectProviderARNs).append(samlProviderARNs).append(allowClassicFlow).append(cognitoEvents).append(allowUnauthenticatedIdentities).append(cognitoStreams).append(cognitoIdentityProviders).append(developerProviderName).append(supportedLoginProviders).append(pushSync).toHashCode();
     }
 
     @Override
@@ -367,7 +398,7 @@ public class IdentityPool {
             return false;
         }
         IdentityPool rhs = ((IdentityPool) other);
-        return new EqualsBuilder().append(identityPoolName, rhs.identityPoolName).append(openIdConnectProviderARNs, rhs.openIdConnectProviderARNs).append(samlProviderARNs, rhs.samlProviderARNs).append(cognitoEvents, rhs.cognitoEvents).append(allowUnauthenticatedIdentities, rhs.allowUnauthenticatedIdentities).append(cognitoStreams, rhs.cognitoStreams).append(cognitoIdentityProviders, rhs.cognitoIdentityProviders).append(developerProviderName, rhs.developerProviderName).append(supportedLoginProviders, rhs.supportedLoginProviders).append(pushSync, rhs.pushSync).isEquals();
+        return new EqualsBuilder().append(identityPoolName, rhs.identityPoolName).append(openIdConnectProviderARNs, rhs.openIdConnectProviderARNs).append(samlProviderARNs, rhs.samlProviderARNs).append(allowClassicFlow, rhs.allowClassicFlow).append(cognitoEvents, rhs.cognitoEvents).append(allowUnauthenticatedIdentities, rhs.allowUnauthenticatedIdentities).append(cognitoStreams, rhs.cognitoStreams).append(cognitoIdentityProviders, rhs.cognitoIdentityProviders).append(developerProviderName, rhs.developerProviderName).append(supportedLoginProviders, rhs.supportedLoginProviders).append(pushSync, rhs.pushSync).isEquals();
     }
 
 }

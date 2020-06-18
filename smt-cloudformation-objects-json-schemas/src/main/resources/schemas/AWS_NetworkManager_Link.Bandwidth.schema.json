@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_NetworkManager_Link.Bandwidth.schema.json",
+  "title" : "LinkBandwidth",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-networkmanager-link-bandwidth.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.networkmanager.LinkBandwidth",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<LinkBandwidth>" ],
+  "properties" : {
+    "DownloadSpeed" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-networkmanager-link-bandwidth.html#cfn-networkmanager-link-bandwidth-downloadspeed",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "UploadSpeed" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-networkmanager-link-bandwidth.html#cfn-networkmanager-link-bandwidth-uploadspeed",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    }
+  }
+}

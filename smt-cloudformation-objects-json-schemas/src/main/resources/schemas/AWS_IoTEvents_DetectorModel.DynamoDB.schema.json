@@ -1,0 +1,61 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoTEvents_DetectorModel.DynamoDB.schema.json",
+  "title" : "DetectorModelDynamoDB",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-dynamodb.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.iotevents.DetectorModelDynamoDB",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DetectorModelDynamoDB>" ],
+  "properties" : {
+    "TableName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-dynamodb.html#cfn-iotevents-detectormodel-dynamodb-tablename",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "PayloadField" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-dynamodb.html#cfn-iotevents-detectormodel-dynamodb-payloadfield",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RangeKeyField" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-dynamodb.html#cfn-iotevents-detectormodel-dynamodb-rangekeyfield",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "HashKeyField" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-dynamodb.html#cfn-iotevents-detectormodel-dynamodb-hashkeyfield",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RangeKeyValue" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-dynamodb.html#cfn-iotevents-detectormodel-dynamodb-rangekeyvalue",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RangeKeyType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-dynamodb.html#cfn-iotevents-detectormodel-dynamodb-rangekeytype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "HashKeyType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-dynamodb.html#cfn-iotevents-detectormodel-dynamodb-hashkeytype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "HashKeyValue" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-dynamodb.html#cfn-iotevents-detectormodel-dynamodb-hashkeyvalue",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Payload" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-dynamodb.html#cfn-iotevents-detectormodel-dynamodb-payload",
+      "$ref" : "AWS_IoTEvents_DetectorModel.Payload.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotevents.DetectorModelPayload>"
+    },
+    "Operation" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-dynamodb.html#cfn-iotevents-detectormodel-dynamodb-operation",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

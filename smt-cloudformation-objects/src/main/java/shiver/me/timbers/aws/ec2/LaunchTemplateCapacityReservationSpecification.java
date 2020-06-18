@@ -27,12 +27,11 @@ public class LaunchTemplateCapacityReservationSpecification implements Property<
 {
 
     /**
-     * LaunchTemplateCapacityReservationPreference
-     * <p>
-     * 
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-capacityreservationspecification.html#cfn-ec2-launchtemplate-launchtemplatedata-capacityreservationspecification-capacityreservationpreference
      * 
      */
     @JsonProperty("CapacityReservationPreference")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-capacityreservationspecification.html#cfn-ec2-launchtemplate-launchtemplatedata-capacityreservationspecification-capacityreservationpreference")
     private CharSequence capacityReservationPreference;
     /**
      * LaunchTemplateCapacityReservationTarget
@@ -45,9 +44,7 @@ public class LaunchTemplateCapacityReservationSpecification implements Property<
     private Property<LaunchTemplateCapacityReservationTarget> capacityReservationTarget;
 
     /**
-     * LaunchTemplateCapacityReservationPreference
-     * <p>
-     * 
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-capacityreservationspecification.html#cfn-ec2-launchtemplate-launchtemplatedata-capacityreservationspecification-capacityreservationpreference
      * 
      */
     @JsonIgnore
@@ -56,9 +53,7 @@ public class LaunchTemplateCapacityReservationSpecification implements Property<
     }
 
     /**
-     * LaunchTemplateCapacityReservationPreference
-     * <p>
-     * 
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-capacityreservationspecification.html#cfn-ec2-launchtemplate-launchtemplatedata-capacityreservationspecification-capacityreservationpreference
      * 
      */
     @JsonIgnore

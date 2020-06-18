@@ -9,6 +9,8 @@ import com.fasterxml.jackson.annotation.JsonValue;
 public enum ClusterAttributes {
 
     ENDPOINT("Endpoint"),
+    CLUSTER_SECURITY_GROUP_ID("ClusterSecurityGroupId"),
+    ENCRYPTION_CONFIG_KEY_ARN("EncryptionConfigKeyArn"),
     ARN("Arn"),
     CERTIFICATE_AUTHORITY_DATA("CertificateAuthorityData");
     private final String value;

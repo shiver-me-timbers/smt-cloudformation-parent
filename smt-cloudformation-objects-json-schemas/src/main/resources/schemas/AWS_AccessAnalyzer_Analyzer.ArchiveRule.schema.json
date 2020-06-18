@@ -1,0 +1,24 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AccessAnalyzer_Analyzer.ArchiveRule.schema.json",
+  "title" : "AnalyzerArchiveRule",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-accessanalyzer-analyzer-archiverule.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.accessanalyzer.AnalyzerArchiveRule",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<AnalyzerArchiveRule>" ],
+  "properties" : {
+    "Filter" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-accessanalyzer-analyzer-archiverule.html#cfn-accessanalyzer-analyzer-archiverule-filter",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_AccessAnalyzer_Analyzer.Filter.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.accessanalyzer.AnalyzerFilter>"
+      }
+    },
+    "RuleName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-accessanalyzer-analyzer-archiverule.html#cfn-accessanalyzer-analyzer-archiverule-rulename",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

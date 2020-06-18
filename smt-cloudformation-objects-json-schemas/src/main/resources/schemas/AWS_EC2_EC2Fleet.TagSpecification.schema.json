@@ -16,8 +16,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-tagspecification.html#cfn-ec2-ec2fleet-tagspecification-tags",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_EC2_EC2Fleet.TagRequest.schema.json",
-        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.EC2FleetTagRequest>"
+        "$ref" : "Tag.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
       }
     }
   }

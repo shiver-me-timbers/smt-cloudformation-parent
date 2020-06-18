@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ACMPCA_CertificateResource.schema.json",
+  "title" : "CertificateResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-acmpca-certificate.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.acmpca.CertificateResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<CertificateResource>", "shiver.me.timbers.aws.HasCondition<CertificateResource>", "shiver.me.timbers.aws.HasAttributes<CertificateAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ACMPCA::Certificate"
+    },
+    "Properties" : {
+      "$ref" : "AWS_ACMPCA_Certificate.schema.json"
+    }
+  }
+}

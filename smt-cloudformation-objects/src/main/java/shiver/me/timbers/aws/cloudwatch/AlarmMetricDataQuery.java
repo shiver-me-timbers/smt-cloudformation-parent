@@ -24,6 +24,7 @@ import shiver.me.timbers.aws.Property;
     "Id",
     "Label",
     "MetricStat",
+    "Period",
     "ReturnData"
 })
 public class AlarmMetricDataQuery implements Property<AlarmMetricDataQuery>
@@ -59,6 +60,13 @@ public class AlarmMetricDataQuery implements Property<AlarmMetricDataQuery>
     @JsonProperty("MetricStat")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metricstat.html")
     private Property<AlarmMetricStat> metricStat;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metricdataquery.html#cfn-cloudwatch-alarm-metricdataquery-period
+     * 
+     */
+    @JsonProperty("Period")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metricdataquery.html#cfn-cloudwatch-alarm-metricdataquery-period")
+    private Number period;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metricdataquery.html#cfn-cloudwatch-alarm-metricdataquery-returndata
      * 
@@ -164,6 +172,29 @@ public class AlarmMetricDataQuery implements Property<AlarmMetricDataQuery>
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metricdataquery.html#cfn-cloudwatch-alarm-metricdataquery-period
+     * 
+     */
+    @JsonIgnore
+    public Number getPeriod() {
+        return period;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metricdataquery.html#cfn-cloudwatch-alarm-metricdataquery-period
+     * 
+     */
+    @JsonIgnore
+    public void setPeriod(Number period) {
+        this.period = period;
+    }
+
+    public AlarmMetricDataQuery withPeriod(Number period) {
+        this.period = period;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metricdataquery.html#cfn-cloudwatch-alarm-metricdataquery-returndata
      * 
      */
@@ -188,12 +219,12 @@ public class AlarmMetricDataQuery implements Property<AlarmMetricDataQuery>
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("expression", expression).append("id", id).append("label", label).append("metricStat", metricStat).append("returnData", returnData).toString();
+        return new ToStringBuilder(this).append("expression", expression).append("id", id).append("label", label).append("metricStat", metricStat).append("period", period).append("returnData", returnData).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(expression).append(id).append(label).append(returnData).append(metricStat).toHashCode();
+        return new HashCodeBuilder().append(period).append(expression).append(returnData).append(id).append(label).append(metricStat).toHashCode();
     }
 
     @Override
@@ -205,7 +236,7 @@ public class AlarmMetricDataQuery implements Property<AlarmMetricDataQuery>
             return false;
         }
         AlarmMetricDataQuery rhs = ((AlarmMetricDataQuery) other);
-        return new EqualsBuilder().append(expression, rhs.expression).append(id, rhs.id).append(label, rhs.label).append(returnData, rhs.returnData).append(metricStat, rhs.metricStat).isEquals();
+        return new EqualsBuilder().append(period, rhs.period).append(expression, rhs.expression).append(returnData, rhs.returnData).append(id, rhs.id).append(label, rhs.label).append(metricStat, rhs.metricStat).isEquals();
     }
 
 }

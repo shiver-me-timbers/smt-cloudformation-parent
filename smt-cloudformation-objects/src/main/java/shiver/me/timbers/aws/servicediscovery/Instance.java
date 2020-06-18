@@ -1,7 +1,6 @@
 
 package shiver.me.timbers.aws.servicediscovery;
 
-import java.util.Map;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -32,7 +31,7 @@ public class Instance {
      */
     @JsonProperty("InstanceAttributes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-instance.html#cfn-servicediscovery-instance-instanceattributes")
-    private Map<String, Object> instanceAttributes;
+    private Object instanceAttributes;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-instance.html#cfn-servicediscovery-instance-instanceid
      * 
@@ -53,7 +52,7 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public Map<String, Object> getInstanceAttributes() {
+    public Object getInstanceAttributes() {
         return instanceAttributes;
     }
 
@@ -62,11 +61,11 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public void setInstanceAttributes(Map<String, Object> instanceAttributes) {
+    public void setInstanceAttributes(Object instanceAttributes) {
         this.instanceAttributes = instanceAttributes;
     }
 
-    public Instance withInstanceAttributes(Map<String, Object> instanceAttributes) {
+    public Instance withInstanceAttributes(Object instanceAttributes) {
         this.instanceAttributes = instanceAttributes;
         return this;
     }
@@ -118,7 +117,7 @@ public class Instance {
     }
 
     @Override
-    public java.lang.String toString() {
+    public String toString() {
         return new ToStringBuilder(this).append("instanceAttributes", instanceAttributes).append("instanceId", instanceId).append("serviceId", serviceId).toString();
     }
 
@@ -128,7 +127,7 @@ public class Instance {
     }
 
     @Override
-    public boolean equals(java.lang.Object other) {
+    public boolean equals(Object other) {
         if (other == this) {
             return true;
         }

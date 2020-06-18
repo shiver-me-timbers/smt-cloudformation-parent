@@ -20,7 +20,8 @@ import shiver.me.timbers.aws.Property;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
-    "InstanceType"
+    "InstanceType",
+    "WeightedCapacity"
 })
 public class AutoScalingGroupLaunchTemplateOverrides implements Property<AutoScalingGroupLaunchTemplateOverrides>
 {
@@ -32,6 +33,13 @@ public class AutoScalingGroupLaunchTemplateOverrides implements Property<AutoSca
     @JsonProperty("InstanceType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-mixedinstancespolicy-launchtemplateoverrides.html#cfn-autoscaling-autoscalinggroup-launchtemplateoverrides-instancetype")
     private CharSequence instanceType;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-mixedinstancespolicy-launchtemplateoverrides.html#cfn-autoscaling-autoscalinggroup-launchtemplateoverrides-weightedcapacity
+     * 
+     */
+    @JsonProperty("WeightedCapacity")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-mixedinstancespolicy-launchtemplateoverrides.html#cfn-autoscaling-autoscalinggroup-launchtemplateoverrides-weightedcapacity")
+    private CharSequence weightedCapacity;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-mixedinstancespolicy-launchtemplateoverrides.html#cfn-autoscaling-autoscalinggroup-launchtemplateoverrides-instancetype
@@ -56,14 +64,37 @@ public class AutoScalingGroupLaunchTemplateOverrides implements Property<AutoSca
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-mixedinstancespolicy-launchtemplateoverrides.html#cfn-autoscaling-autoscalinggroup-launchtemplateoverrides-weightedcapacity
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getWeightedCapacity() {
+        return weightedCapacity;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-mixedinstancespolicy-launchtemplateoverrides.html#cfn-autoscaling-autoscalinggroup-launchtemplateoverrides-weightedcapacity
+     * 
+     */
+    @JsonIgnore
+    public void setWeightedCapacity(CharSequence weightedCapacity) {
+        this.weightedCapacity = weightedCapacity;
+    }
+
+    public AutoScalingGroupLaunchTemplateOverrides withWeightedCapacity(CharSequence weightedCapacity) {
+        this.weightedCapacity = weightedCapacity;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("instanceType", instanceType).toString();
+        return new ToStringBuilder(this).append("instanceType", instanceType).append("weightedCapacity", weightedCapacity).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(instanceType).toHashCode();
+        return new HashCodeBuilder().append(weightedCapacity).append(instanceType).toHashCode();
     }
 
     @Override
@@ -75,7 +106,7 @@ public class AutoScalingGroupLaunchTemplateOverrides implements Property<AutoSca
             return false;
         }
         AutoScalingGroupLaunchTemplateOverrides rhs = ((AutoScalingGroupLaunchTemplateOverrides) other);
-        return new EqualsBuilder().append(instanceType, rhs.instanceType).isEquals();
+        return new EqualsBuilder().append(weightedCapacity, rhs.weightedCapacity).append(instanceType, rhs.instanceType).isEquals();
     }
 
 }

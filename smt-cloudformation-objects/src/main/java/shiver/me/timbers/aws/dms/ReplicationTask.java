@@ -33,6 +33,7 @@ import shiver.me.timbers.aws.Tag;
     "TargetEndpointArn",
     "ReplicationInstanceArn",
     "Tags",
+    "TaskData",
     "CdcStartTime"
 })
 public class ReplicationTask {
@@ -107,6 +108,13 @@ public class ReplicationTask {
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-tags")
     private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-taskdata
+     * 
+     */
+    @JsonProperty("TaskData")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-taskdata")
+    private CharSequence taskData;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-cdcstarttime
      * 
@@ -346,6 +354,29 @@ public class ReplicationTask {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-taskdata
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getTaskData() {
+        return taskData;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-taskdata
+     * 
+     */
+    @JsonIgnore
+    public void setTaskData(CharSequence taskData) {
+        this.taskData = taskData;
+    }
+
+    public ReplicationTask withTaskData(CharSequence taskData) {
+        this.taskData = taskData;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-cdcstarttime
      * 
      */
@@ -370,12 +401,12 @@ public class ReplicationTask {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("replicationTaskSettings", replicationTaskSettings).append("tableMappings", tableMappings).append("cdcStartPosition", cdcStartPosition).append("replicationTaskIdentifier", replicationTaskIdentifier).append("cdcStopPosition", cdcStopPosition).append("sourceEndpointArn", sourceEndpointArn).append("migrationType", migrationType).append("targetEndpointArn", targetEndpointArn).append("replicationInstanceArn", replicationInstanceArn).append("tags", tags).append("cdcStartTime", cdcStartTime).toString();
+        return new ToStringBuilder(this).append("replicationTaskSettings", replicationTaskSettings).append("tableMappings", tableMappings).append("cdcStartPosition", cdcStartPosition).append("replicationTaskIdentifier", replicationTaskIdentifier).append("cdcStopPosition", cdcStopPosition).append("sourceEndpointArn", sourceEndpointArn).append("migrationType", migrationType).append("targetEndpointArn", targetEndpointArn).append("replicationInstanceArn", replicationInstanceArn).append("tags", tags).append("taskData", taskData).append("cdcStartTime", cdcStartTime).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(cdcStartPosition).append(targetEndpointArn).append(tableMappings).append(replicationInstanceArn).append(cdcStopPosition).append(cdcStartTime).append(migrationType).append(replicationTaskIdentifier).append(sourceEndpointArn).append(replicationTaskSettings).append(tags).toHashCode();
+        return new HashCodeBuilder().append(cdcStartPosition).append(targetEndpointArn).append(taskData).append(migrationType).append(replicationTaskIdentifier).append(tags).append(tableMappings).append(replicationInstanceArn).append(cdcStopPosition).append(cdcStartTime).append(sourceEndpointArn).append(replicationTaskSettings).toHashCode();
     }
 
     @Override
@@ -387,7 +418,7 @@ public class ReplicationTask {
             return false;
         }
         ReplicationTask rhs = ((ReplicationTask) other);
-        return new EqualsBuilder().append(cdcStartPosition, rhs.cdcStartPosition).append(targetEndpointArn, rhs.targetEndpointArn).append(tableMappings, rhs.tableMappings).append(replicationInstanceArn, rhs.replicationInstanceArn).append(cdcStopPosition, rhs.cdcStopPosition).append(cdcStartTime, rhs.cdcStartTime).append(migrationType, rhs.migrationType).append(replicationTaskIdentifier, rhs.replicationTaskIdentifier).append(sourceEndpointArn, rhs.sourceEndpointArn).append(replicationTaskSettings, rhs.replicationTaskSettings).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(cdcStartPosition, rhs.cdcStartPosition).append(targetEndpointArn, rhs.targetEndpointArn).append(taskData, rhs.taskData).append(migrationType, rhs.migrationType).append(replicationTaskIdentifier, rhs.replicationTaskIdentifier).append(tags, rhs.tags).append(tableMappings, rhs.tableMappings).append(replicationInstanceArn, rhs.replicationInstanceArn).append(cdcStopPosition, rhs.cdcStopPosition).append(cdcStartTime, rhs.cdcStartTime).append(sourceEndpointArn, rhs.sourceEndpointArn).append(replicationTaskSettings, rhs.replicationTaskSettings).isEquals();
     }
 
 }

@@ -23,7 +23,8 @@ import shiver.me.timbers.aws.Property;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
-    "Types"
+    "Types",
+    "VpcEndpointIds"
 })
 public class RestApiEndpointConfiguration implements Property<RestApiEndpointConfiguration>
 {
@@ -36,6 +37,14 @@ public class RestApiEndpointConfiguration implements Property<RestApiEndpointCon
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-restapi-endpointconfiguration.html#cfn-apigateway-restapi-endpointconfiguration-types")
     private Set<CharSequence> types = new LinkedHashSet<CharSequence>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-restapi-endpointconfiguration.html#cfn-apigateway-restapi-endpointconfiguration-vpcendpointids
+     * 
+     */
+    @JsonProperty("VpcEndpointIds")
+    @JsonDeserialize(as = java.util.LinkedHashSet.class)
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-restapi-endpointconfiguration.html#cfn-apigateway-restapi-endpointconfiguration-vpcendpointids")
+    private Set<CharSequence> vpcEndpointIds = new LinkedHashSet<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-restapi-endpointconfiguration.html#cfn-apigateway-restapi-endpointconfiguration-types
@@ -60,14 +69,37 @@ public class RestApiEndpointConfiguration implements Property<RestApiEndpointCon
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-restapi-endpointconfiguration.html#cfn-apigateway-restapi-endpointconfiguration-vpcendpointids
+     * 
+     */
+    @JsonIgnore
+    public Set<CharSequence> getVpcEndpointIds() {
+        return vpcEndpointIds;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-restapi-endpointconfiguration.html#cfn-apigateway-restapi-endpointconfiguration-vpcendpointids
+     * 
+     */
+    @JsonIgnore
+    public void setVpcEndpointIds(Set<CharSequence> vpcEndpointIds) {
+        this.vpcEndpointIds = vpcEndpointIds;
+    }
+
+    public RestApiEndpointConfiguration withVpcEndpointIds(Set<CharSequence> vpcEndpointIds) {
+        this.vpcEndpointIds = vpcEndpointIds;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("types", types).toString();
+        return new ToStringBuilder(this).append("types", types).append("vpcEndpointIds", vpcEndpointIds).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(types).toHashCode();
+        return new HashCodeBuilder().append(vpcEndpointIds).append(types).toHashCode();
     }
 
     @Override
@@ -79,7 +111,7 @@ public class RestApiEndpointConfiguration implements Property<RestApiEndpointCon
             return false;
         }
         RestApiEndpointConfiguration rhs = ((RestApiEndpointConfiguration) other);
-        return new EqualsBuilder().append(types, rhs.types).isEquals();
+        return new EqualsBuilder().append(vpcEndpointIds, rhs.vpcEndpointIds).append(types, rhs.types).isEquals();
     }
 
 }

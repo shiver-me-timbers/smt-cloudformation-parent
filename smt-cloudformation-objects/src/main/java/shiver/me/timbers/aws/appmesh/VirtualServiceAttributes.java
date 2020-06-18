@@ -10,6 +10,8 @@ public enum VirtualServiceAttributes {
 
     UID("Uid"),
     MESH_NAME("MeshName"),
+    MESH_OWNER("MeshOwner"),
+    RESOURCE_OWNER("ResourceOwner"),
     VIRTUAL_SERVICE_NAME("VirtualServiceName"),
     ARN("Arn");
     private final String value;

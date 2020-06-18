@@ -1,0 +1,60 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_TrafficMirrorFilterRule.schema.json",
+  "title" : "TrafficMirrorFilterRule",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trafficmirrorfilterrule.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.ec2.TrafficMirrorFilterRule",
+  "properties" : {
+    "DestinationPortRange" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trafficmirrorfilterrule.html#cfn-ec2-trafficmirrorfilterrule-destinationportrange",
+      "$ref" : "AWS_EC2_TrafficMirrorFilterRule.TrafficMirrorPortRange.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.TrafficMirrorFilterRuleTrafficMirrorPortRange>"
+    },
+    "Description" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trafficmirrorfilterrule.html#cfn-ec2-trafficmirrorfilterrule-description",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SourcePortRange" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trafficmirrorfilterrule.html#cfn-ec2-trafficmirrorfilterrule-sourceportrange",
+      "$ref" : "AWS_EC2_TrafficMirrorFilterRule.TrafficMirrorPortRange.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ec2.TrafficMirrorFilterRuleTrafficMirrorPortRange>"
+    },
+    "RuleAction" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trafficmirrorfilterrule.html#cfn-ec2-trafficmirrorfilterrule-ruleaction",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SourceCidrBlock" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trafficmirrorfilterrule.html#cfn-ec2-trafficmirrorfilterrule-sourcecidrblock",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RuleNumber" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trafficmirrorfilterrule.html#cfn-ec2-trafficmirrorfilterrule-rulenumber",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "DestinationCidrBlock" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trafficmirrorfilterrule.html#cfn-ec2-trafficmirrorfilterrule-destinationcidrblock",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TrafficMirrorFilterId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trafficmirrorfilterrule.html#cfn-ec2-trafficmirrorfilterrule-trafficmirrorfilterid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TrafficDirection" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trafficmirrorfilterrule.html#cfn-ec2-trafficmirrorfilterrule-trafficdirection",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Protocol" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trafficmirrorfilterrule.html#cfn-ec2-trafficmirrorfilterrule-protocol",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    }
+  }
+}

@@ -24,6 +24,16 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "PullRequestEnvironmentName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html#cfn-amplify-branch-pullrequestenvironmentname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "EnablePullRequestPreview" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html#cfn-amplify-branch-enablepullrequestpreview",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
     "EnableAutoBuild" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html#cfn-amplify-branch-enableautobuild",
       "type" : "boolean",

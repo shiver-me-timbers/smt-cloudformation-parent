@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MediaConvert_QueueResource.schema.json",
+  "title" : "QueueResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediaconvert-queue.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.mediaconvert.QueueResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<QueueResource>", "shiver.me.timbers.aws.HasCondition<QueueResource>", "shiver.me.timbers.aws.HasAttributes<QueueAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::MediaConvert::Queue"
+    },
+    "Properties" : {
+      "$ref" : "AWS_MediaConvert_Queue.schema.json"
+    }
+  }
+}

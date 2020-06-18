@@ -25,7 +25,10 @@ import shiver.me.timbers.aws.Property;
     "CopyCommand",
     "Password",
     "ProcessingConfiguration",
+    "RetryOptions",
     "RoleARN",
+    "S3BackupConfiguration",
+    "S3BackupMode",
     "S3Configuration",
     "Username"
 })
@@ -74,6 +77,15 @@ public class DeliveryStreamRedshiftDestinationConfiguration implements Property<
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processingconfiguration.html")
     private Property<DeliveryStreamProcessingConfiguration> processingConfiguration;
     /**
+     * DeliveryStreamRedshiftRetryOptions
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftretryoptions.html
+     * 
+     */
+    @JsonProperty("RetryOptions")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftretryoptions.html")
+    private Property<DeliveryStreamRedshiftRetryOptions> retryOptions;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-rolearn
      * 
      */
@@ -86,9 +98,25 @@ public class DeliveryStreamRedshiftDestinationConfiguration implements Property<
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html
      * 
      */
+    @JsonProperty("S3BackupConfiguration")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html")
+    private Property<shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamS3DestinationConfiguration> s3BackupConfiguration;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-s3backupmode
+     * 
+     */
+    @JsonProperty("S3BackupMode")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-s3backupmode")
+    private CharSequence s3BackupMode;
+    /**
+     * DeliveryStreamS3DestinationConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html
+     * 
+     */
     @JsonProperty("S3Configuration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html")
-    private Property<DeliveryStreamS3DestinationConfiguration> s3Configuration;
+    private Property<shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamS3DestinationConfiguration> s3Configuration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-username
      * 
@@ -225,6 +253,33 @@ public class DeliveryStreamRedshiftDestinationConfiguration implements Property<
     }
 
     /**
+     * DeliveryStreamRedshiftRetryOptions
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftretryoptions.html
+     * 
+     */
+    @JsonIgnore
+    public Property<DeliveryStreamRedshiftRetryOptions> getRetryOptions() {
+        return retryOptions;
+    }
+
+    /**
+     * DeliveryStreamRedshiftRetryOptions
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftretryoptions.html
+     * 
+     */
+    @JsonIgnore
+    public void setRetryOptions(Property<DeliveryStreamRedshiftRetryOptions> retryOptions) {
+        this.retryOptions = retryOptions;
+    }
+
+    public DeliveryStreamRedshiftDestinationConfiguration withRetryOptions(Property<DeliveryStreamRedshiftRetryOptions> retryOptions) {
+        this.retryOptions = retryOptions;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-rolearn
      * 
      */
@@ -254,7 +309,57 @@ public class DeliveryStreamRedshiftDestinationConfiguration implements Property<
      * 
      */
     @JsonIgnore
-    public Property<DeliveryStreamS3DestinationConfiguration> getS3Configuration() {
+    public Property<shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamS3DestinationConfiguration> getS3BackupConfiguration() {
+        return s3BackupConfiguration;
+    }
+
+    /**
+     * DeliveryStreamS3DestinationConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html
+     * 
+     */
+    @JsonIgnore
+    public void setS3BackupConfiguration(Property<shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamS3DestinationConfiguration> s3BackupConfiguration) {
+        this.s3BackupConfiguration = s3BackupConfiguration;
+    }
+
+    public DeliveryStreamRedshiftDestinationConfiguration withS3BackupConfiguration(Property<shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamS3DestinationConfiguration> s3BackupConfiguration) {
+        this.s3BackupConfiguration = s3BackupConfiguration;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-s3backupmode
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getS3BackupMode() {
+        return s3BackupMode;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-s3backupmode
+     * 
+     */
+    @JsonIgnore
+    public void setS3BackupMode(CharSequence s3BackupMode) {
+        this.s3BackupMode = s3BackupMode;
+    }
+
+    public DeliveryStreamRedshiftDestinationConfiguration withS3BackupMode(CharSequence s3BackupMode) {
+        this.s3BackupMode = s3BackupMode;
+        return this;
+    }
+
+    /**
+     * DeliveryStreamS3DestinationConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html
+     * 
+     */
+    @JsonIgnore
+    public Property<shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamS3DestinationConfiguration> getS3Configuration() {
         return s3Configuration;
     }
 
@@ -265,11 +370,11 @@ public class DeliveryStreamRedshiftDestinationConfiguration implements Property<
      * 
      */
     @JsonIgnore
-    public void setS3Configuration(Property<DeliveryStreamS3DestinationConfiguration> s3Configuration) {
+    public void setS3Configuration(Property<shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamS3DestinationConfiguration> s3Configuration) {
         this.s3Configuration = s3Configuration;
     }
 
-    public DeliveryStreamRedshiftDestinationConfiguration withS3Configuration(Property<DeliveryStreamS3DestinationConfiguration> s3Configuration) {
+    public DeliveryStreamRedshiftDestinationConfiguration withS3Configuration(Property<shiver.me.timbers.aws.kinesisfirehose.DeliveryStreamS3DestinationConfiguration> s3Configuration) {
         this.s3Configuration = s3Configuration;
         return this;
     }
@@ -299,12 +404,12 @@ public class DeliveryStreamRedshiftDestinationConfiguration implements Property<
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("cloudWatchLoggingOptions", cloudWatchLoggingOptions).append("clusterJDBCURL", clusterJDBCURL).append("copyCommand", copyCommand).append("password", password).append("processingConfiguration", processingConfiguration).append("roleARN", roleARN).append("s3Configuration", s3Configuration).append("username", username).toString();
+        return new ToStringBuilder(this).append("cloudWatchLoggingOptions", cloudWatchLoggingOptions).append("clusterJDBCURL", clusterJDBCURL).append("copyCommand", copyCommand).append("password", password).append("processingConfiguration", processingConfiguration).append("retryOptions", retryOptions).append("roleARN", roleARN).append("s3BackupConfiguration", s3BackupConfiguration).append("s3BackupMode", s3BackupMode).append("s3Configuration", s3Configuration).append("username", username).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(cloudWatchLoggingOptions).append(copyCommand).append(processingConfiguration).append(password).append(clusterJDBCURL).append(s3Configuration).append(roleARN).append(username).toHashCode();
+        return new HashCodeBuilder().append(cloudWatchLoggingOptions).append(copyCommand).append(processingConfiguration).append(password).append(retryOptions).append(clusterJDBCURL).append(s3Configuration).append(roleARN).append(s3BackupConfiguration).append(s3BackupMode).append(username).toHashCode();
     }
 
     @Override
@@ -316,7 +421,7 @@ public class DeliveryStreamRedshiftDestinationConfiguration implements Property<
             return false;
         }
         DeliveryStreamRedshiftDestinationConfiguration rhs = ((DeliveryStreamRedshiftDestinationConfiguration) other);
-        return new EqualsBuilder().append(cloudWatchLoggingOptions, rhs.cloudWatchLoggingOptions).append(copyCommand, rhs.copyCommand).append(processingConfiguration, rhs.processingConfiguration).append(password, rhs.password).append(clusterJDBCURL, rhs.clusterJDBCURL).append(s3Configuration, rhs.s3Configuration).append(roleARN, rhs.roleARN).append(username, rhs.username).isEquals();
+        return new EqualsBuilder().append(cloudWatchLoggingOptions, rhs.cloudWatchLoggingOptions).append(copyCommand, rhs.copyCommand).append(processingConfiguration, rhs.processingConfiguration).append(password, rhs.password).append(retryOptions, rhs.retryOptions).append(clusterJDBCURL, rhs.clusterJDBCURL).append(s3Configuration, rhs.s3Configuration).append(roleARN, rhs.roleARN).append(s3BackupConfiguration, rhs.s3BackupConfiguration).append(s3BackupMode, rhs.s3BackupMode).append(username, rhs.username).isEquals();
     }
 
 }

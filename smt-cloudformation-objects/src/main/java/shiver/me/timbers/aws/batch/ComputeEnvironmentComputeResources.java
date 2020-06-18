@@ -28,6 +28,7 @@ import shiver.me.timbers.aws.Property;
     "SecurityGroupIds",
     "Subnets",
     "Type",
+    "AllocationStrategy",
     "MinvCpus",
     "LaunchTemplate",
     "ImageId",
@@ -83,6 +84,13 @@ public class ComputeEnvironmentComputeResources implements Property<ComputeEnvir
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-type")
     private CharSequence type;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-allocationstrategy
+     * 
+     */
+    @JsonProperty("AllocationStrategy")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-allocationstrategy")
+    private CharSequence allocationStrategy;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-minvcpus
      * 
@@ -284,6 +292,29 @@ public class ComputeEnvironmentComputeResources implements Property<ComputeEnvir
 
     public ComputeEnvironmentComputeResources withType(CharSequence type) {
         this.type = type;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-allocationstrategy
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getAllocationStrategy() {
+        return allocationStrategy;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-allocationstrategy
+     * 
+     */
+    @JsonIgnore
+    public void setAllocationStrategy(CharSequence allocationStrategy) {
+        this.allocationStrategy = allocationStrategy;
+    }
+
+    public ComputeEnvironmentComputeResources withAllocationStrategy(CharSequence allocationStrategy) {
+        this.allocationStrategy = allocationStrategy;
         return this;
     }
 
@@ -500,12 +531,12 @@ public class ComputeEnvironmentComputeResources implements Property<ComputeEnvir
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("spotIamFleetRole", spotIamFleetRole).append("maxvCpus", maxvCpus).append("bidPercentage", bidPercentage).append("securityGroupIds", securityGroupIds).append("subnets", subnets).append("type", type).append("minvCpus", minvCpus).append("launchTemplate", launchTemplate).append("imageId", imageId).append("instanceRole", instanceRole).append("instanceTypes", instanceTypes).append("ec2KeyPair", ec2KeyPair).append("placementGroup", placementGroup).append("tags", tags).append("desiredvCpus", desiredvCpus).toString();
+        return new ToStringBuilder(this).append("spotIamFleetRole", spotIamFleetRole).append("maxvCpus", maxvCpus).append("bidPercentage", bidPercentage).append("securityGroupIds", securityGroupIds).append("subnets", subnets).append("type", type).append("allocationStrategy", allocationStrategy).append("minvCpus", minvCpus).append("launchTemplate", launchTemplate).append("imageId", imageId).append("instanceRole", instanceRole).append("instanceTypes", instanceTypes).append("ec2KeyPair", ec2KeyPair).append("placementGroup", placementGroup).append("tags", tags).append("desiredvCpus", desiredvCpus).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(spotIamFleetRole).append(ec2KeyPair).append(imageId).append(instanceTypes).append(desiredvCpus).append(type).append(instanceRole).append(bidPercentage).append(minvCpus).append(tags).append(securityGroupIds).append(launchTemplate).append(subnets).append(placementGroup).append(maxvCpus).toHashCode();
+        return new HashCodeBuilder().append(spotIamFleetRole).append(ec2KeyPair).append(imageId).append(instanceTypes).append(desiredvCpus).append(type).append(instanceRole).append(bidPercentage).append(minvCpus).append(allocationStrategy).append(tags).append(securityGroupIds).append(launchTemplate).append(subnets).append(placementGroup).append(maxvCpus).toHashCode();
     }
 
     @Override
@@ -517,7 +548,7 @@ public class ComputeEnvironmentComputeResources implements Property<ComputeEnvir
             return false;
         }
         ComputeEnvironmentComputeResources rhs = ((ComputeEnvironmentComputeResources) other);
-        return new EqualsBuilder().append(spotIamFleetRole, rhs.spotIamFleetRole).append(ec2KeyPair, rhs.ec2KeyPair).append(imageId, rhs.imageId).append(instanceTypes, rhs.instanceTypes).append(desiredvCpus, rhs.desiredvCpus).append(type, rhs.type).append(instanceRole, rhs.instanceRole).append(bidPercentage, rhs.bidPercentage).append(minvCpus, rhs.minvCpus).append(tags, rhs.tags).append(securityGroupIds, rhs.securityGroupIds).append(launchTemplate, rhs.launchTemplate).append(subnets, rhs.subnets).append(placementGroup, rhs.placementGroup).append(maxvCpus, rhs.maxvCpus).isEquals();
+        return new EqualsBuilder().append(spotIamFleetRole, rhs.spotIamFleetRole).append(ec2KeyPair, rhs.ec2KeyPair).append(imageId, rhs.imageId).append(instanceTypes, rhs.instanceTypes).append(desiredvCpus, rhs.desiredvCpus).append(type, rhs.type).append(instanceRole, rhs.instanceRole).append(bidPercentage, rhs.bidPercentage).append(minvCpus, rhs.minvCpus).append(allocationStrategy, rhs.allocationStrategy).append(tags, rhs.tags).append(securityGroupIds, rhs.securityGroupIds).append(launchTemplate, rhs.launchTemplate).append(subnets, rhs.subnets).append(placementGroup, rhs.placementGroup).append(maxvCpus, rhs.maxvCpus).isEquals();
     }
 
 }

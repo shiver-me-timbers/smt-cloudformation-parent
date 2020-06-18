@@ -12,6 +12,7 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 import shiver.me.timbers.aws.Property;
+import shiver.me.timbers.aws.Tag;
 
 
 /**
@@ -41,7 +42,7 @@ public class EC2FleetTagSpecification implements Property<EC2FleetTagSpecificati
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-tagspecification.html#cfn-ec2-ec2fleet-tagspecification-tags")
-    private List<Property<EC2FleetTagRequest>> tags = new ArrayList<Property<EC2FleetTagRequest>>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-tagspecification.html#cfn-ec2-ec2fleet-tagspecification-resourcetype
@@ -71,7 +72,7 @@ public class EC2FleetTagSpecification implements Property<EC2FleetTagSpecificati
      * 
      */
     @JsonIgnore
-    public List<Property<EC2FleetTagRequest>> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -80,11 +81,11 @@ public class EC2FleetTagSpecification implements Property<EC2FleetTagSpecificati
      * 
      */
     @JsonIgnore
-    public void setTags(List<Property<EC2FleetTagRequest>> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public EC2FleetTagSpecification withTags(List<Property<EC2FleetTagRequest>> tags) {
+    public EC2FleetTagSpecification withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

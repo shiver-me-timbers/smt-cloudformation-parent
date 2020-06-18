@@ -20,11 +20,20 @@ import shiver.me.timbers.aws.Property;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
-    "Count"
+    "IntervalUnit",
+    "Count",
+    "Interval"
 })
 public class LifecyclePolicyRetainRule implements Property<LifecyclePolicyRetainRule>
 {
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-retainrule.html#cfn-dlm-lifecyclepolicy-retainrule-intervalunit
+     * 
+     */
+    @JsonProperty("IntervalUnit")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-retainrule.html#cfn-dlm-lifecyclepolicy-retainrule-intervalunit")
+    private CharSequence intervalUnit;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-retainrule.html#cfn-dlm-lifecyclepolicy-retainrule-count
      * 
@@ -32,6 +41,36 @@ public class LifecyclePolicyRetainRule implements Property<LifecyclePolicyRetain
     @JsonProperty("Count")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-retainrule.html#cfn-dlm-lifecyclepolicy-retainrule-count")
     private Number count;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-retainrule.html#cfn-dlm-lifecyclepolicy-retainrule-interval
+     * 
+     */
+    @JsonProperty("Interval")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-retainrule.html#cfn-dlm-lifecyclepolicy-retainrule-interval")
+    private Number interval;
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-retainrule.html#cfn-dlm-lifecyclepolicy-retainrule-intervalunit
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getIntervalUnit() {
+        return intervalUnit;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-retainrule.html#cfn-dlm-lifecyclepolicy-retainrule-intervalunit
+     * 
+     */
+    @JsonIgnore
+    public void setIntervalUnit(CharSequence intervalUnit) {
+        this.intervalUnit = intervalUnit;
+    }
+
+    public LifecyclePolicyRetainRule withIntervalUnit(CharSequence intervalUnit) {
+        this.intervalUnit = intervalUnit;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-retainrule.html#cfn-dlm-lifecyclepolicy-retainrule-count
@@ -56,14 +95,37 @@ public class LifecyclePolicyRetainRule implements Property<LifecyclePolicyRetain
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-retainrule.html#cfn-dlm-lifecyclepolicy-retainrule-interval
+     * 
+     */
+    @JsonIgnore
+    public Number getInterval() {
+        return interval;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-retainrule.html#cfn-dlm-lifecyclepolicy-retainrule-interval
+     * 
+     */
+    @JsonIgnore
+    public void setInterval(Number interval) {
+        this.interval = interval;
+    }
+
+    public LifecyclePolicyRetainRule withInterval(Number interval) {
+        this.interval = interval;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("count", count).toString();
+        return new ToStringBuilder(this).append("intervalUnit", intervalUnit).append("count", count).append("interval", interval).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(count).toHashCode();
+        return new HashCodeBuilder().append(count).append(interval).append(intervalUnit).toHashCode();
     }
 
     @Override
@@ -75,7 +137,7 @@ public class LifecyclePolicyRetainRule implements Property<LifecyclePolicyRetain
             return false;
         }
         LifecyclePolicyRetainRule rhs = ((LifecyclePolicyRetainRule) other);
-        return new EqualsBuilder().append(count, rhs.count).isEquals();
+        return new EqualsBuilder().append(count, rhs.count).append(interval, rhs.interval).append(intervalUnit, rhs.intervalUnit).isEquals();
     }
 
 }

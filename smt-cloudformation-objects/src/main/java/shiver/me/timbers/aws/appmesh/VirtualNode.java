@@ -24,6 +24,7 @@ import shiver.me.timbers.aws.Tag;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "MeshName",
+    "MeshOwner",
     "Spec",
     "VirtualNodeName",
     "Tags"
@@ -37,6 +38,13 @@ public class VirtualNode {
     @JsonProperty("MeshName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualnode.html#cfn-appmesh-virtualnode-meshname")
     private CharSequence meshName;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualnode.html#cfn-appmesh-virtualnode-meshowner
+     * 
+     */
+    @JsonProperty("MeshOwner")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualnode.html#cfn-appmesh-virtualnode-meshowner")
+    private CharSequence meshOwner;
     /**
      * VirtualNodeVirtualNodeSpec
      * <p>
@@ -81,6 +89,29 @@ public class VirtualNode {
 
     public VirtualNode withMeshName(CharSequence meshName) {
         this.meshName = meshName;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualnode.html#cfn-appmesh-virtualnode-meshowner
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getMeshOwner() {
+        return meshOwner;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualnode.html#cfn-appmesh-virtualnode-meshowner
+     * 
+     */
+    @JsonIgnore
+    public void setMeshOwner(CharSequence meshOwner) {
+        this.meshOwner = meshOwner;
+    }
+
+    public VirtualNode withMeshOwner(CharSequence meshOwner) {
+        this.meshOwner = meshOwner;
         return this;
     }
 
@@ -159,12 +190,12 @@ public class VirtualNode {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("meshName", meshName).append("spec", spec).append("virtualNodeName", virtualNodeName).append("tags", tags).toString();
+        return new ToStringBuilder(this).append("meshName", meshName).append("meshOwner", meshOwner).append("spec", spec).append("virtualNodeName", virtualNodeName).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(meshName).append(virtualNodeName).append(spec).append(tags).toHashCode();
+        return new HashCodeBuilder().append(meshName).append(meshOwner).append(virtualNodeName).append(spec).append(tags).toHashCode();
     }
 
     @Override
@@ -176,7 +207,7 @@ public class VirtualNode {
             return false;
         }
         VirtualNode rhs = ((VirtualNode) other);
-        return new EqualsBuilder().append(meshName, rhs.meshName).append(virtualNodeName, rhs.virtualNodeName).append(spec, rhs.spec).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(meshName, rhs.meshName).append(meshOwner, rhs.meshOwner).append(virtualNodeName, rhs.virtualNodeName).append(spec, rhs.spec).append(tags, rhs.tags).isEquals();
     }
 
 }

@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SageMaker_CodeRepository.GitConfig.schema.json",
+  "title" : "CodeRepositoryGitConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-coderepository-gitconfig.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.sagemaker.CodeRepositoryGitConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<CodeRepositoryGitConfig>" ],
+  "properties" : {
+    "SecretArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-coderepository-gitconfig.html#cfn-sagemaker-coderepository-gitconfig-secretarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Branch" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-coderepository-gitconfig.html#cfn-sagemaker-coderepository-gitconfig-branch",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RepositoryUrl" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-coderepository-gitconfig.html#cfn-sagemaker-coderepository-gitconfig-repositoryurl",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

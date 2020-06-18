@@ -21,6 +21,7 @@ import shiver.me.timbers.aws.Property;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "WeightedCapacity",
+    "Placement",
     "Priority",
     "AvailabilityZone",
     "SubnetId",
@@ -37,6 +38,15 @@ public class EC2FleetFleetLaunchTemplateOverridesRequest implements Property<EC2
     @JsonProperty("WeightedCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-weightedcapacity")
     private Number weightedCapacity;
+    /**
+     * EC2FleetPlacement
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html
+     * 
+     */
+    @JsonProperty("Placement")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html")
+    private Property<EC2FleetPlacement> placement;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-priority
      * 
@@ -93,6 +103,33 @@ public class EC2FleetFleetLaunchTemplateOverridesRequest implements Property<EC2
 
     public EC2FleetFleetLaunchTemplateOverridesRequest withWeightedCapacity(Number weightedCapacity) {
         this.weightedCapacity = weightedCapacity;
+        return this;
+    }
+
+    /**
+     * EC2FleetPlacement
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html
+     * 
+     */
+    @JsonIgnore
+    public Property<EC2FleetPlacement> getPlacement() {
+        return placement;
+    }
+
+    /**
+     * EC2FleetPlacement
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html
+     * 
+     */
+    @JsonIgnore
+    public void setPlacement(Property<EC2FleetPlacement> placement) {
+        this.placement = placement;
+    }
+
+    public EC2FleetFleetLaunchTemplateOverridesRequest withPlacement(Property<EC2FleetPlacement> placement) {
+        this.placement = placement;
         return this;
     }
 
@@ -213,12 +250,12 @@ public class EC2FleetFleetLaunchTemplateOverridesRequest implements Property<EC2
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("weightedCapacity", weightedCapacity).append("priority", priority).append("availabilityZone", availabilityZone).append("subnetId", subnetId).append("instanceType", instanceType).append("maxPrice", maxPrice).toString();
+        return new ToStringBuilder(this).append("weightedCapacity", weightedCapacity).append("placement", placement).append("priority", priority).append("availabilityZone", availabilityZone).append("subnetId", subnetId).append("instanceType", instanceType).append("maxPrice", maxPrice).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(subnetId).append(instanceType).append(maxPrice).append(priority).append(availabilityZone).append(weightedCapacity).toHashCode();
+        return new HashCodeBuilder().append(subnetId).append(instanceType).append(placement).append(maxPrice).append(priority).append(availabilityZone).append(weightedCapacity).toHashCode();
     }
 
     @Override
@@ -230,7 +267,7 @@ public class EC2FleetFleetLaunchTemplateOverridesRequest implements Property<EC2
             return false;
         }
         EC2FleetFleetLaunchTemplateOverridesRequest rhs = ((EC2FleetFleetLaunchTemplateOverridesRequest) other);
-        return new EqualsBuilder().append(subnetId, rhs.subnetId).append(instanceType, rhs.instanceType).append(maxPrice, rhs.maxPrice).append(priority, rhs.priority).append(availabilityZone, rhs.availabilityZone).append(weightedCapacity, rhs.weightedCapacity).isEquals();
+        return new EqualsBuilder().append(subnetId, rhs.subnetId).append(instanceType, rhs.instanceType).append(placement, rhs.placement).append(maxPrice, rhs.maxPrice).append(priority, rhs.priority).append(availabilityZone, rhs.availabilityZone).append(weightedCapacity, rhs.weightedCapacity).isEquals();
     }
 
 }

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_FMS_Policy.PolicyTag.schema.json",
+  "title" : "PolicyPolicyTag",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fms-policy-policytag.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.fms.PolicyPolicyTag",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<PolicyPolicyTag>" ],
+  "properties" : {
+    "Key" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fms-policy-policytag.html#cfn-fms-policy-policytag-key",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Value" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fms-policy-policytag.html#cfn-fms-policy-policytag-value",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

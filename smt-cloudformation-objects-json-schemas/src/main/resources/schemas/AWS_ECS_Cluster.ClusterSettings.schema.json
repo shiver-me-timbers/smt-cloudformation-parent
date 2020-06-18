@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ECS_Cluster.ClusterSettings.schema.json",
+  "title" : "ClusterClusterSettings",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-cluster-clustersettings.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.ecs.ClusterClusterSettings",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ClusterClusterSettings>" ],
+  "properties" : {
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-cluster-clustersettings.html#cfn-ecs-cluster-clustersettings-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Value" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-cluster-clustersettings.html#cfn-ecs-cluster-clustersettings-value",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

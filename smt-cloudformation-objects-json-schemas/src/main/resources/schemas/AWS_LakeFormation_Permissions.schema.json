@@ -13,7 +13,7 @@
     },
     "Resource" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lakeformation-permissions.html#cfn-lakeformation-permissions-resource",
-      "$ref" : "AWS_LakeFormation_Permissions.DatabaseResource.schema.json",
+      "$ref" : "AWS_LakeFormation_Permissions.DataLocationResource.schema.json",
       "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.lakeformation.PermissionsResource>"
     },
     "Permissions" : {

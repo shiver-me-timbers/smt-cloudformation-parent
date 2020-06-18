@@ -3,6 +3,6 @@
   "$id" : "AWS_EKS_ClusterAttributes.schema.json",
   "title" : "ClusterAttributes",
   "type" : "string",
-  "enum" : [ "Endpoint", "Arn", "CertificateAuthorityData" ],
+  "enum" : [ "Endpoint", "ClusterSecurityGroupId", "EncryptionConfigKeyArn", "Arn", "CertificateAuthorityData" ],
   "javaType" : "shiver.me.timbers.aws.eks.ClusterAttributes"
 }

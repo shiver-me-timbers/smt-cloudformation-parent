@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_GameLift_ScriptAttributes.schema.json",
+  "title" : "ScriptAttributes",
+  "type" : "string",
+  "enum" : [ "Id", "Arn" ],
+  "javaType" : "shiver.me.timbers.aws.gamelift.ScriptAttributes"
+}

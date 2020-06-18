@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_EmailTemplateResource.schema.json",
+  "title" : "EmailTemplateResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-emailtemplate.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.pinpoint.EmailTemplateResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<EmailTemplateResource>", "shiver.me.timbers.aws.HasCondition<EmailTemplateResource>", "shiver.me.timbers.aws.HasAttributes<EmailTemplateAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Pinpoint::EmailTemplate"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Pinpoint_EmailTemplate.schema.json"
+    }
+  }
+}

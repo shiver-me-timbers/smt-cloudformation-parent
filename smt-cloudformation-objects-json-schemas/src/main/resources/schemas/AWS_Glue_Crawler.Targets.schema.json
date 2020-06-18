@@ -15,12 +15,28 @@
         "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.glue.CrawlerS3Target>"
       }
     },
+    "CatalogTargets" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-targets.html#cfn-glue-crawler-targets-catalogtargets",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_Glue_Crawler.CatalogTarget.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.glue.CrawlerCatalogTarget>"
+      }
+    },
     "JdbcTargets" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-targets.html#cfn-glue-crawler-targets-jdbctargets",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Glue_Crawler.JdbcTarget.schema.json",
         "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.glue.CrawlerJdbcTarget>"
+      }
+    },
+    "DynamoDBTargets" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-targets.html#cfn-glue-crawler-targets-dynamodbtargets",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_Glue_Crawler.DynamoDBTarget.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.glue.CrawlerDynamoDBTarget>"
       }
     }
   }

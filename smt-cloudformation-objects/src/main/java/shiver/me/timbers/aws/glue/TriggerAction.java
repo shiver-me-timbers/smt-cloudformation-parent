@@ -20,6 +20,9 @@ import shiver.me.timbers.aws.Property;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "NotificationProperty",
+    "CrawlerName",
+    "Timeout",
     "JobName",
     "Arguments",
     "SecurityConfiguration"
@@ -27,6 +30,29 @@ import shiver.me.timbers.aws.Property;
 public class TriggerAction implements Property<TriggerAction>
 {
 
+    /**
+     * TriggerNotificationProperty
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-notificationproperty.html
+     * 
+     */
+    @JsonProperty("NotificationProperty")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-notificationproperty.html")
+    private Property<TriggerNotificationProperty> notificationProperty;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-crawlername
+     * 
+     */
+    @JsonProperty("CrawlerName")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-crawlername")
+    private CharSequence crawlerName;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-timeout
+     * 
+     */
+    @JsonProperty("Timeout")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-timeout")
+    private Number timeout;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-jobname
      * 
@@ -48,6 +74,79 @@ public class TriggerAction implements Property<TriggerAction>
     @JsonProperty("SecurityConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-securityconfiguration")
     private CharSequence securityConfiguration;
+
+    /**
+     * TriggerNotificationProperty
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-notificationproperty.html
+     * 
+     */
+    @JsonIgnore
+    public Property<TriggerNotificationProperty> getNotificationProperty() {
+        return notificationProperty;
+    }
+
+    /**
+     * TriggerNotificationProperty
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-notificationproperty.html
+     * 
+     */
+    @JsonIgnore
+    public void setNotificationProperty(Property<TriggerNotificationProperty> notificationProperty) {
+        this.notificationProperty = notificationProperty;
+    }
+
+    public TriggerAction withNotificationProperty(Property<TriggerNotificationProperty> notificationProperty) {
+        this.notificationProperty = notificationProperty;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-crawlername
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getCrawlerName() {
+        return crawlerName;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-crawlername
+     * 
+     */
+    @JsonIgnore
+    public void setCrawlerName(CharSequence crawlerName) {
+        this.crawlerName = crawlerName;
+    }
+
+    public TriggerAction withCrawlerName(CharSequence crawlerName) {
+        this.crawlerName = crawlerName;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-timeout
+     * 
+     */
+    @JsonIgnore
+    public Number getTimeout() {
+        return timeout;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-timeout
+     * 
+     */
+    @JsonIgnore
+    public void setTimeout(Number timeout) {
+        this.timeout = timeout;
+    }
+
+    public TriggerAction withTimeout(Number timeout) {
+        this.timeout = timeout;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-jobname
@@ -120,12 +219,12 @@ public class TriggerAction implements Property<TriggerAction>
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("jobName", jobName).append("arguments", arguments).append("securityConfiguration", securityConfiguration).toString();
+        return new ToStringBuilder(this).append("notificationProperty", notificationProperty).append("crawlerName", crawlerName).append("timeout", timeout).append("jobName", jobName).append("arguments", arguments).append("securityConfiguration", securityConfiguration).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(jobName).append(arguments).append(securityConfiguration).toHashCode();
+        return new HashCodeBuilder().append(jobName).append(crawlerName).append(arguments).append(notificationProperty).append(securityConfiguration).append(timeout).toHashCode();
     }
 
     @Override
@@ -137,7 +236,7 @@ public class TriggerAction implements Property<TriggerAction>
             return false;
         }
         TriggerAction rhs = ((TriggerAction) other);
-        return new EqualsBuilder().append(jobName, rhs.jobName).append(arguments, rhs.arguments).append(securityConfiguration, rhs.securityConfiguration).isEquals();
+        return new EqualsBuilder().append(jobName, rhs.jobName).append(crawlerName, rhs.crawlerName).append(arguments, rhs.arguments).append(notificationProperty, rhs.notificationProperty).append(securityConfiguration, rhs.securityConfiguration).append(timeout, rhs.timeout).isEquals();
     }
 
 }

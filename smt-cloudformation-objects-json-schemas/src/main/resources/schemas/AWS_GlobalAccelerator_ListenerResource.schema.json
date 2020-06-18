@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_GlobalAccelerator_ListenerResource.schema.json",
+  "title" : "ListenerResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-globalaccelerator-listener.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.globalaccelerator.ListenerResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ListenerResource>", "shiver.me.timbers.aws.HasCondition<ListenerResource>", "shiver.me.timbers.aws.HasAttributes<ListenerAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::GlobalAccelerator::Listener"
+    },
+    "Properties" : {
+      "$ref" : "AWS_GlobalAccelerator_Listener.schema.json"
+    }
+  }
+}

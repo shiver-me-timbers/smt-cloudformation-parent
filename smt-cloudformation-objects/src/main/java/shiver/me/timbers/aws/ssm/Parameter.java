@@ -25,6 +25,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "AllowedPattern",
     "Tier",
     "Value",
+    "DataType",
     "Tags",
     "Name"
 })
@@ -72,6 +73,13 @@ public class Parameter {
     @JsonProperty("Value")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-value")
     private CharSequence value;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-datatype
+     * 
+     */
+    @JsonProperty("DataType")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-datatype")
+    private CharSequence dataType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-tags
      * 
@@ -226,6 +234,29 @@ public class Parameter {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-datatype
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getDataType() {
+        return dataType;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-datatype
+     * 
+     */
+    @JsonIgnore
+    public void setDataType(CharSequence dataType) {
+        this.dataType = dataType;
+    }
+
+    public Parameter withDataType(CharSequence dataType) {
+        this.dataType = dataType;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-tags
      * 
      */
@@ -273,12 +304,12 @@ public class Parameter {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("type", type).append("description", description).append("policies", policies).append("allowedPattern", allowedPattern).append("tier", tier).append("value", value).append("tags", tags).append("name", name).toString();
+        return new ToStringBuilder(this).append("type", type).append("description", description).append("policies", policies).append("allowedPattern", allowedPattern).append("tier", tier).append("value", value).append("dataType", dataType).append("tags", tags).append("name", name).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(tier).append(policies).append(name).append(description).append(type).append(allowedPattern).append(value).append(tags).toHashCode();
+        return new HashCodeBuilder().append(tier).append(dataType).append(policies).append(name).append(description).append(type).append(allowedPattern).append(value).append(tags).toHashCode();
     }
 
     @Override
@@ -290,7 +321,7 @@ public class Parameter {
             return false;
         }
         Parameter rhs = ((Parameter) other);
-        return new EqualsBuilder().append(tier, rhs.tier).append(policies, rhs.policies).append(name, rhs.name).append(description, rhs.description).append(type, rhs.type).append(allowedPattern, rhs.allowedPattern).append(value, rhs.value).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(tier, rhs.tier).append(dataType, rhs.dataType).append(policies, rhs.policies).append(name, rhs.name).append(description, rhs.description).append(type, rhs.type).append(allowedPattern, rhs.allowedPattern).append(value, rhs.value).append(tags, rhs.tags).isEquals();
     }
 
 }

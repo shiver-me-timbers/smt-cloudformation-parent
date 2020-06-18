@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ImageBuilder_ComponentResource.schema.json",
+  "title" : "ComponentResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-imagebuilder-component.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.imagebuilder.ComponentResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ComponentResource>", "shiver.me.timbers.aws.HasCondition<ComponentResource>", "shiver.me.timbers.aws.HasAttributes<ComponentAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ImageBuilder::Component"
+    },
+    "Properties" : {
+      "$ref" : "AWS_ImageBuilder_Component.schema.json"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Detective_GraphAttributes.schema.json",
+  "title" : "GraphAttributes",
+  "type" : "string",
+  "enum" : [ "Arn" ],
+  "javaType" : "shiver.me.timbers.aws.detective.GraphAttributes"
+}

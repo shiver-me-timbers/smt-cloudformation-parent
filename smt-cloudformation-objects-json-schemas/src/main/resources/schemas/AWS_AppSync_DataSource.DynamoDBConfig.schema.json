@@ -17,6 +17,16 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "Versioned" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-dynamodbconfig.html#cfn-appsync-datasource-dynamodbconfig-versioned",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DeltaSyncConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-dynamodbconfig.html#cfn-appsync-datasource-dynamodbconfig-deltasyncconfig",
+      "$ref" : "AWS_AppSync_DataSource.DeltaSyncConfig.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appsync.DataSourceDeltaSyncConfig>"
+    },
     "UseCallerCredentials" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-dynamodbconfig.html#cfn-appsync-datasource-dynamodbconfig-usecallercredentials",
       "type" : "boolean",

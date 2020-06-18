@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CodeStarConnections_ConnectionAttributes.schema.json",
+  "title" : "ConnectionAttributes",
+  "type" : "string",
+  "enum" : [ "ConnectionArn", "ConnectionStatus", "OwnerAccountId" ],
+  "javaType" : "shiver.me.timbers.aws.codestarconnections.ConnectionAttributes"
+}

@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Transfer_Server.Protocol.schema.json",
+  "title" : "ServerProtocol",
+  "type" : "string",
+  "javaType" : "java.lang.CharSequence",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ServerProtocol>" ]
+}

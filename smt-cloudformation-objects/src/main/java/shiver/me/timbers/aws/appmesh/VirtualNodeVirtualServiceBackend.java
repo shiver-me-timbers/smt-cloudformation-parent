@@ -20,11 +20,21 @@ import shiver.me.timbers.aws.Property;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "ClientPolicy",
     "VirtualServiceName"
 })
 public class VirtualNodeVirtualServiceBackend implements Property<VirtualNodeVirtualServiceBackend>
 {
 
+    /**
+     * VirtualNodeClientPolicy
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-clientpolicy.html
+     * 
+     */
+    @JsonProperty("ClientPolicy")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-clientpolicy.html")
+    private Property<VirtualNodeClientPolicy> clientPolicy;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-virtualservicebackend.html#cfn-appmesh-virtualnode-virtualservicebackend-virtualservicename
      * 
@@ -32,6 +42,33 @@ public class VirtualNodeVirtualServiceBackend implements Property<VirtualNodeVir
     @JsonProperty("VirtualServiceName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-virtualservicebackend.html#cfn-appmesh-virtualnode-virtualservicebackend-virtualservicename")
     private CharSequence virtualServiceName;
+
+    /**
+     * VirtualNodeClientPolicy
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-clientpolicy.html
+     * 
+     */
+    @JsonIgnore
+    public Property<VirtualNodeClientPolicy> getClientPolicy() {
+        return clientPolicy;
+    }
+
+    /**
+     * VirtualNodeClientPolicy
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-clientpolicy.html
+     * 
+     */
+    @JsonIgnore
+    public void setClientPolicy(Property<VirtualNodeClientPolicy> clientPolicy) {
+        this.clientPolicy = clientPolicy;
+    }
+
+    public VirtualNodeVirtualServiceBackend withClientPolicy(Property<VirtualNodeClientPolicy> clientPolicy) {
+        this.clientPolicy = clientPolicy;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-virtualservicebackend.html#cfn-appmesh-virtualnode-virtualservicebackend-virtualservicename
@@ -58,12 +95,12 @@ public class VirtualNodeVirtualServiceBackend implements Property<VirtualNodeVir
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("virtualServiceName", virtualServiceName).toString();
+        return new ToStringBuilder(this).append("clientPolicy", clientPolicy).append("virtualServiceName", virtualServiceName).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(virtualServiceName).toHashCode();
+        return new HashCodeBuilder().append(virtualServiceName).append(clientPolicy).toHashCode();
     }
 
     @Override
@@ -75,7 +112,7 @@ public class VirtualNodeVirtualServiceBackend implements Property<VirtualNodeVir
             return false;
         }
         VirtualNodeVirtualServiceBackend rhs = ((VirtualNodeVirtualServiceBackend) other);
-        return new EqualsBuilder().append(virtualServiceName, rhs.virtualServiceName).isEquals();
+        return new EqualsBuilder().append(virtualServiceName, rhs.virtualServiceName).append(clientPolicy, rhs.clientPolicy).isEquals();
     }
 
 }

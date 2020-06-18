@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_S3_Bucket.Metrics.schema.json",
+  "title" : "BucketMetrics",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-metrics.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.s3.BucketMetrics",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<BucketMetrics>" ],
+  "properties" : {
+    "EventThreshold" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-metrics.html#cfn-s3-bucket-metrics-eventthreshold",
+      "$ref" : "AWS_S3_Bucket.ReplicationTimeValue.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.s3.BucketReplicationTimeValue>"
+    },
+    "Status" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-metrics.html#cfn-s3-bucket-metrics-status",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

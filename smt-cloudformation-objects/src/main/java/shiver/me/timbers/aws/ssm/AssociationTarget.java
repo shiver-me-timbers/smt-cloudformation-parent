@@ -1,14 +1,13 @@
 
 package shiver.me.timbers.aws.ssm;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
@@ -41,9 +40,8 @@ public class AssociationTarget implements Property<AssociationTarget>
      * 
      */
     @JsonProperty("Values")
-    @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-target.html#cfn-ssm-association-target-values")
-    private Set<CharSequence> values = new LinkedHashSet<CharSequence>();
+    private List<CharSequence> values = new ArrayList<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-target.html#cfn-ssm-association-target-key
@@ -73,7 +71,7 @@ public class AssociationTarget implements Property<AssociationTarget>
      * 
      */
     @JsonIgnore
-    public Set<CharSequence> getValues() {
+    public List<CharSequence> getValues() {
         return values;
     }
 
@@ -82,11 +80,11 @@ public class AssociationTarget implements Property<AssociationTarget>
      * 
      */
     @JsonIgnore
-    public void setValues(Set<CharSequence> values) {
+    public void setValues(List<CharSequence> values) {
         this.values = values;
     }
 
-    public AssociationTarget withValues(Set<CharSequence> values) {
+    public AssociationTarget withValues(List<CharSequence> values) {
         this.values = values;
         return this;
     }

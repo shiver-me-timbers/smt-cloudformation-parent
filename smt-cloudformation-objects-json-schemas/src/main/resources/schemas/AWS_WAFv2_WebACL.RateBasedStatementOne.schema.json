@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WAFv2_WebACL.RateBasedStatementOne.schema.json",
+  "title" : "WebACLRateBasedStatementOne",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-ratebasedstatementone.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.wafv2.WebACLRateBasedStatementOne",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<WebACLRateBasedStatementOne>" ],
+  "properties" : {
+    "Limit" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-ratebasedstatementone.html#cfn-wafv2-webacl-ratebasedstatementone-limit",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "AggregateKeyType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-ratebasedstatementone.html#cfn-wafv2-webacl-ratebasedstatementone-aggregatekeytype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ScopeDownStatement" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-ratebasedstatementone.html#cfn-wafv2-webacl-ratebasedstatementone-scopedownstatement",
+      "$ref" : "AWS_WAFv2_WebACL.OrStatementTwo.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.wafv2.WebACLStatementTwo>"
+    }
+  }
+}

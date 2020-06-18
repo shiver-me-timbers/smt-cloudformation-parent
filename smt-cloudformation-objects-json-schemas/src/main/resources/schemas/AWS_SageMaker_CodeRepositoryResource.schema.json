@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SageMaker_CodeRepositoryResource.schema.json",
+  "title" : "CodeRepositoryResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-coderepository.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.sagemaker.CodeRepositoryResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<CodeRepositoryResource>", "shiver.me.timbers.aws.HasCondition<CodeRepositoryResource>", "shiver.me.timbers.aws.HasAttributes<CodeRepositoryAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::SageMaker::CodeRepository"
+    },
+    "Properties" : {
+      "$ref" : "AWS_SageMaker_CodeRepository.schema.json"
+    }
+  }
+}

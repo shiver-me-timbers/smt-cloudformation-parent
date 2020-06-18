@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppMesh_VirtualNode.ClientPolicy.schema.json",
+  "title" : "VirtualNodeClientPolicy",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-clientpolicy.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.appmesh.VirtualNodeClientPolicy",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<VirtualNodeClientPolicy>" ],
+  "properties" : {
+    "TLS" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-clientpolicy.html#cfn-appmesh-virtualnode-clientpolicy-tls",
+      "$ref" : "AWS_AppMesh_VirtualNode.ClientPolicyTls.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appmesh.VirtualNodeClientPolicyTls>"
+    }
+  }
+}

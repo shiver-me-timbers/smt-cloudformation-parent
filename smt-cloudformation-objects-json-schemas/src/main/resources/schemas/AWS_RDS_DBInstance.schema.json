@@ -40,6 +40,11 @@
       "type" : "integer",
       "javaType" : "java.lang.Number"
     },
+    "CACertificateIdentifier" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-cacertificateidentifier",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "CharacterSetName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-charactersetname",
       "type" : "string",
@@ -166,6 +171,11 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-masterusername",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
+    },
+    "MaxAllocatedStorage" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-maxallocatedstorage",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
     },
     "MonitoringInterval" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-monitoringinterval",

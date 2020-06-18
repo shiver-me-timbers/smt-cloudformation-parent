@@ -25,7 +25,9 @@ import shiver.me.timbers.aws.Property;
     "TagsToAdd",
     "CreateRule",
     "VariableTags",
+    "FastRestoreRule",
     "RetainRule",
+    "CrossRegionCopyRules",
     "Name",
     "CopyTags"
 })
@@ -56,14 +58,30 @@ public class LifecyclePolicySchedule implements Property<LifecyclePolicySchedule
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-schedule.html#cfn-dlm-lifecyclepolicy-schedule-variabletags")
     private List<Property<shiver.me.timbers.aws.Tag>> variableTags = new ArrayList<Property<shiver.me.timbers.aws.Tag>>();
     /**
-     * LifecyclePolicyRetainRule
+     * LifecyclePolicyFastRestoreRule
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-retainrule.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-fastrestorerule.html
+     * 
+     */
+    @JsonProperty("FastRestoreRule")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-fastrestorerule.html")
+    private Property<LifecyclePolicyFastRestoreRule> fastRestoreRule;
+    /**
+     * LifecyclePolicyCrossRegionCopyRetainRule
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-crossregioncopyretainrule.html
      * 
      */
     @JsonProperty("RetainRule")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-retainrule.html")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-crossregioncopyretainrule.html")
     private Property<LifecyclePolicyRetainRule> retainRule;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-schedule.html#cfn-dlm-lifecyclepolicy-schedule-crossregioncopyrules
+     * 
+     */
+    @JsonProperty("CrossRegionCopyRules")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-schedule.html#cfn-dlm-lifecyclepolicy-schedule-crossregioncopyrules")
+    private List<Property<LifecyclePolicyCrossRegionCopyRule>> crossRegionCopyRules = new ArrayList<Property<LifecyclePolicyCrossRegionCopyRule>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-schedule.html#cfn-dlm-lifecyclepolicy-schedule-name
      * 
@@ -153,9 +171,36 @@ public class LifecyclePolicySchedule implements Property<LifecyclePolicySchedule
     }
 
     /**
-     * LifecyclePolicyRetainRule
+     * LifecyclePolicyFastRestoreRule
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-retainrule.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-fastrestorerule.html
+     * 
+     */
+    @JsonIgnore
+    public Property<LifecyclePolicyFastRestoreRule> getFastRestoreRule() {
+        return fastRestoreRule;
+    }
+
+    /**
+     * LifecyclePolicyFastRestoreRule
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-fastrestorerule.html
+     * 
+     */
+    @JsonIgnore
+    public void setFastRestoreRule(Property<LifecyclePolicyFastRestoreRule> fastRestoreRule) {
+        this.fastRestoreRule = fastRestoreRule;
+    }
+
+    public LifecyclePolicySchedule withFastRestoreRule(Property<LifecyclePolicyFastRestoreRule> fastRestoreRule) {
+        this.fastRestoreRule = fastRestoreRule;
+        return this;
+    }
+
+    /**
+     * LifecyclePolicyCrossRegionCopyRetainRule
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-crossregioncopyretainrule.html
      * 
      */
     @JsonIgnore
@@ -164,9 +209,9 @@ public class LifecyclePolicySchedule implements Property<LifecyclePolicySchedule
     }
 
     /**
-     * LifecyclePolicyRetainRule
+     * LifecyclePolicyCrossRegionCopyRetainRule
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-retainrule.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-crossregioncopyretainrule.html
      * 
      */
     @JsonIgnore
@@ -176,6 +221,29 @@ public class LifecyclePolicySchedule implements Property<LifecyclePolicySchedule
 
     public LifecyclePolicySchedule withRetainRule(Property<LifecyclePolicyRetainRule> retainRule) {
         this.retainRule = retainRule;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-schedule.html#cfn-dlm-lifecyclepolicy-schedule-crossregioncopyrules
+     * 
+     */
+    @JsonIgnore
+    public List<Property<LifecyclePolicyCrossRegionCopyRule>> getCrossRegionCopyRules() {
+        return crossRegionCopyRules;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-schedule.html#cfn-dlm-lifecyclepolicy-schedule-crossregioncopyrules
+     * 
+     */
+    @JsonIgnore
+    public void setCrossRegionCopyRules(List<Property<LifecyclePolicyCrossRegionCopyRule>> crossRegionCopyRules) {
+        this.crossRegionCopyRules = crossRegionCopyRules;
+    }
+
+    public LifecyclePolicySchedule withCrossRegionCopyRules(List<Property<LifecyclePolicyCrossRegionCopyRule>> crossRegionCopyRules) {
+        this.crossRegionCopyRules = crossRegionCopyRules;
         return this;
     }
 
@@ -227,12 +295,12 @@ public class LifecyclePolicySchedule implements Property<LifecyclePolicySchedule
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("tagsToAdd", tagsToAdd).append("createRule", createRule).append("variableTags", variableTags).append("retainRule", retainRule).append("name", name).append("copyTags", copyTags).toString();
+        return new ToStringBuilder(this).append("tagsToAdd", tagsToAdd).append("createRule", createRule).append("variableTags", variableTags).append("fastRestoreRule", fastRestoreRule).append("retainRule", retainRule).append("crossRegionCopyRules", crossRegionCopyRules).append("name", name).append("copyTags", copyTags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(createRule).append(variableTags).append(name).append(copyTags).append(tagsToAdd).append(retainRule).toHashCode();
+        return new HashCodeBuilder().append(createRule).append(variableTags).append(crossRegionCopyRules).append(name).append(copyTags).append(fastRestoreRule).append(tagsToAdd).append(retainRule).toHashCode();
     }
 
     @Override
@@ -244,7 +312,7 @@ public class LifecyclePolicySchedule implements Property<LifecyclePolicySchedule
             return false;
         }
         LifecyclePolicySchedule rhs = ((LifecyclePolicySchedule) other);
-        return new EqualsBuilder().append(createRule, rhs.createRule).append(variableTags, rhs.variableTags).append(name, rhs.name).append(copyTags, rhs.copyTags).append(tagsToAdd, rhs.tagsToAdd).append(retainRule, rhs.retainRule).isEquals();
+        return new EqualsBuilder().append(createRule, rhs.createRule).append(variableTags, rhs.variableTags).append(crossRegionCopyRules, rhs.crossRegionCopyRules).append(name, rhs.name).append(copyTags, rhs.copyTags).append(fastRestoreRule, rhs.fastRestoreRule).append(tagsToAdd, rhs.tagsToAdd).append(retainRule, rhs.retainRule).isEquals();
     }
 
 }

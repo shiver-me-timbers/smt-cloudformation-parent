@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Lambda_EventSourceMapping.DestinationConfig.schema.json",
+  "title" : "EventSourceMappingDestinationConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventsourcemapping-destinationconfig.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.lambda.EventSourceMappingDestinationConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<EventSourceMappingDestinationConfig>" ],
+  "properties" : {
+    "OnFailure" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventsourcemapping-destinationconfig.html#cfn-lambda-eventsourcemapping-destinationconfig-onfailure",
+      "$ref" : "AWS_Lambda_EventSourceMapping.OnFailure.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.lambda.EventSourceMappingOnFailure>"
+    }
+  }
+}

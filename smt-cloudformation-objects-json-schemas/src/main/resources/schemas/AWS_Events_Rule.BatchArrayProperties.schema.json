@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Events_Rule.BatchArrayProperties.schema.json",
+  "title" : "RuleBatchArrayProperties",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-batcharrayproperties.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.events.RuleBatchArrayProperties",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<RuleBatchArrayProperties>" ],
+  "properties" : {
+    "Size" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-batcharrayproperties.html#cfn-events-rule-batcharrayproperties-size",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    }
+  }
+}

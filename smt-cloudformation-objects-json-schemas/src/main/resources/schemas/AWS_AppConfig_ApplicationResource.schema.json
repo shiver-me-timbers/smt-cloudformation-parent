@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppConfig_ApplicationResource.schema.json",
+  "title" : "ApplicationResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appconfig-application.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.appconfig.ApplicationResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ApplicationResource>", "shiver.me.timbers.aws.HasCondition<ApplicationResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::AppConfig::Application"
+    },
+    "Properties" : {
+      "$ref" : "AWS_AppConfig_Application.schema.json"
+    }
+  }
+}

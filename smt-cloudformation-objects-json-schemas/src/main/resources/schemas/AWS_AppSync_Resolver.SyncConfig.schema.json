@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppSync_Resolver.SyncConfig.schema.json",
+  "title" : "ResolverSyncConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-resolver-syncconfig.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.appsync.ResolverSyncConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ResolverSyncConfig>" ],
+  "properties" : {
+    "ConflictHandler" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-resolver-syncconfig.html#cfn-appsync-resolver-syncconfig-conflicthandler",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ConflictDetection" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-resolver-syncconfig.html#cfn-appsync-resolver-syncconfig-conflictdetection",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "LambdaConflictHandlerConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-resolver-syncconfig.html#cfn-appsync-resolver-syncconfig-lambdaconflicthandlerconfig",
+      "$ref" : "AWS_AppSync_Resolver.LambdaConflictHandlerConfig.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.appsync.ResolverLambdaConflictHandlerConfig>"
+    }
+  }
+}

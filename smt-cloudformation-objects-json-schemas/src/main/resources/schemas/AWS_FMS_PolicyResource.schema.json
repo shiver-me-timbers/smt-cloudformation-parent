@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_FMS_PolicyResource.schema.json",
+  "title" : "PolicyResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fms-policy.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.fms.PolicyResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<PolicyResource>", "shiver.me.timbers.aws.HasCondition<PolicyResource>", "shiver.me.timbers.aws.HasAttributes<PolicyAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::FMS::Policy"
+    },
+    "Properties" : {
+      "$ref" : "AWS_FMS_Policy.schema.json"
+    }
+  }
+}

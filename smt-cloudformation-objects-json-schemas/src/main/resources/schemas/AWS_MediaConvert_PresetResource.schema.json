@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_MediaConvert_PresetResource.schema.json",
+  "title" : "PresetResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediaconvert-preset.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.mediaconvert.PresetResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<PresetResource>", "shiver.me.timbers.aws.HasCondition<PresetResource>", "shiver.me.timbers.aws.HasAttributes<PresetAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::MediaConvert::Preset"
+    },
+    "Properties" : {
+      "$ref" : "AWS_MediaConvert_Preset.schema.json"
+    }
+  }
+}

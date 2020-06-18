@@ -3,6 +3,6 @@
   "$id" : "AWS_Pinpoint_CampaignAttributes.schema.json",
   "title" : "CampaignAttributes",
   "type" : "string",
-  "enum" : [ "CampaignId" ],
+  "enum" : [ "CampaignId", "Arn" ],
   "javaType" : "shiver.me.timbers.aws.pinpoint.CampaignAttributes"
 }

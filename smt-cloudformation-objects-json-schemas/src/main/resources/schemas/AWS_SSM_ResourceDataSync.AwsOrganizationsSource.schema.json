@@ -1,0 +1,24 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SSM_ResourceDataSync.AwsOrganizationsSource.schema.json",
+  "title" : "ResourceDataSyncAwsOrganizationsSource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-resourcedatasync-awsorganizationssource.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.ssm.ResourceDataSyncAwsOrganizationsSource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ResourceDataSyncAwsOrganizationsSource>" ],
+  "properties" : {
+    "OrganizationSourceType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-resourcedatasync-awsorganizationssource.html#cfn-ssm-resourcedatasync-awsorganizationssource-organizationsourcetype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "OrganizationalUnits" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-resourcedatasync-awsorganizationssource.html#cfn-ssm-resourcedatasync-awsorganizationssource-organizationalunits",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    }
+  }
+}

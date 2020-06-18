@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EKS_Cluster.Provider.schema.json",
+  "title" : "ClusterProvider",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-eks-cluster-provider.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.eks.ClusterProvider",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ClusterProvider>" ],
+  "properties" : {
+    "KeyArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-eks-cluster-provider.html#cfn-eks-cluster-provider-keyarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

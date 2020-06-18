@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_TrafficMirrorFilterRuleResource.schema.json",
+  "title" : "TrafficMirrorFilterRuleResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trafficmirrorfilterrule.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.ec2.TrafficMirrorFilterRuleResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<TrafficMirrorFilterRuleResource>", "shiver.me.timbers.aws.HasCondition<TrafficMirrorFilterRuleResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::TrafficMirrorFilterRule"
+    },
+    "Properties" : {
+      "$ref" : "AWS_EC2_TrafficMirrorFilterRule.schema.json"
+    }
+  }
+}

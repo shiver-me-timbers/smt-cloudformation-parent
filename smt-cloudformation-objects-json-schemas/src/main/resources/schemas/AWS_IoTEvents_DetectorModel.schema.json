@@ -11,6 +11,11 @@
       "$ref" : "AWS_IoTEvents_DetectorModel.DetectorModelDefinition.schema.json",
       "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotevents.DetectorModelDetectorModelDefinition>"
     },
+    "EvaluationMethod" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotevents-detectormodel.html#cfn-iotevents-detectormodel-evaluationmethod",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "DetectorModelName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotevents-detectormodel.html#cfn-iotevents-detectormodel-detectormodelname",
       "type" : "string",

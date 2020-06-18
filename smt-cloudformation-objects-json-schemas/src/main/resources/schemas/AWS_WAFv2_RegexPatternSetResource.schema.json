@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WAFv2_RegexPatternSetResource.schema.json",
+  "title" : "RegexPatternSetResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafv2-regexpatternset.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.wafv2.RegexPatternSetResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<RegexPatternSetResource>", "shiver.me.timbers.aws.HasCondition<RegexPatternSetResource>", "shiver.me.timbers.aws.HasAttributes<RegexPatternSetAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::WAFv2::RegexPatternSet"
+    },
+    "Properties" : {
+      "$ref" : "AWS_WAFv2_RegexPatternSet.schema.json"
+    }
+  }
+}

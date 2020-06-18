@@ -37,10 +37,25 @@
       "$ref" : "AWS_IoT_TopicRule.FirehoseAction.schema.json",
       "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iot.TopicRuleFirehoseAction>"
     },
+    "Http" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-http",
+      "$ref" : "AWS_IoT_TopicRule.HttpAction.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iot.TopicRuleHttpAction>"
+    },
     "IotAnalytics" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-iotanalytics",
       "$ref" : "AWS_IoT_TopicRule.IotAnalyticsAction.schema.json",
       "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iot.TopicRuleIotAnalyticsAction>"
+    },
+    "IotEvents" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-iotevents",
+      "$ref" : "AWS_IoT_TopicRule.IotEventsAction.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iot.TopicRuleIotEventsAction>"
+    },
+    "IotSiteWise" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-iotsitewise",
+      "$ref" : "AWS_IoT_TopicRule.IotSiteWiseAction.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iot.TopicRuleIotSiteWiseAction>"
     },
     "Kinesis" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-kinesis",

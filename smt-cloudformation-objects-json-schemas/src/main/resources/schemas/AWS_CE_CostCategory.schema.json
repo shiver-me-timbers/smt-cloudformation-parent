@@ -1,0 +1,25 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CE_CostCategory.schema.json",
+  "title" : "CostCategory",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ce-costcategory.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.ce.CostCategory",
+  "properties" : {
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ce-costcategory.html#cfn-ce-costcategory-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RuleVersion" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ce-costcategory.html#cfn-ce-costcategory-ruleversion",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Rules" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ce-costcategory.html#cfn-ce-costcategory-rules",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

@@ -54,6 +54,11 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "DeletionProtection" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-deletionprotection",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
     "PreferredBackupWindow" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-preferredbackupwindow",
       "type" : "string",
@@ -93,6 +98,14 @@
       "items" : {
         "$ref" : "Tag.schema.json",
         "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.Tag>"
+      }
+    },
+    "EnableCloudwatchLogsExports" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-enablecloudwatchlogsexports",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
       }
     }
   }

@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EventSchemas_DiscovererAttributes.schema.json",
+  "title" : "DiscovererAttributes",
+  "type" : "string",
+  "enum" : [ "DiscovererArn", "DiscovererId" ],
+  "javaType" : "shiver.me.timbers.aws.eventschemas.DiscovererAttributes"
+}

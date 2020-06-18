@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ACMPCA_CertificateAuthorityResource.schema.json",
+  "title" : "CertificateAuthorityResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-acmpca-certificateauthority.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.acmpca.CertificateAuthorityResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<CertificateAuthorityResource>", "shiver.me.timbers.aws.HasCondition<CertificateAuthorityResource>", "shiver.me.timbers.aws.HasAttributes<CertificateAuthorityAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ACMPCA::CertificateAuthority"
+    },
+    "Properties" : {
+      "$ref" : "AWS_ACMPCA_CertificateAuthority.schema.json"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Events_EventBusResource.schema.json",
+  "title" : "EventBusResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-eventbus.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.events.EventBusResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<EventBusResource>", "shiver.me.timbers.aws.HasCondition<EventBusResource>", "shiver.me.timbers.aws.HasAttributes<EventBusAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Events::EventBus"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Events_EventBus.schema.json"
+    }
+  }
+}

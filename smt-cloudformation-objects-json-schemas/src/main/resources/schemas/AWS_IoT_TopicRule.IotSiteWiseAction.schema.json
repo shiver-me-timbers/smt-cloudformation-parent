@@ -1,0 +1,25 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoT_TopicRule.IotSiteWiseAction.schema.json",
+  "title" : "TopicRuleIotSiteWiseAction",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-iotsitewiseaction.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.iot.TopicRuleIotSiteWiseAction",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TopicRuleIotSiteWiseAction>" ],
+  "properties" : {
+    "PutAssetPropertyValueEntries" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-iotsitewiseaction.html#cfn-iot-topicrule-iotsitewiseaction-putassetpropertyvalueentries",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "$ref" : "AWS_IoT_TopicRule.PutAssetPropertyValueEntry.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iot.TopicRulePutAssetPropertyValueEntry>"
+      }
+    },
+    "RoleArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-iotsitewiseaction.html#cfn-iot-topicrule-iotsitewiseaction-rolearn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

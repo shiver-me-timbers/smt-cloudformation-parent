@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EventSchemas_Discoverer.TagsEntry.schema.json",
+  "title" : "DiscovererTagsEntry",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-eventschemas-discoverer-tagsentry.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.eventschemas.DiscovererTagsEntry",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DiscovererTagsEntry>" ],
+  "properties" : {
+    "Value" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-eventschemas-discoverer-tagsentry.html#cfn-eventschemas-discoverer-tagsentry-value",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Key" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-eventschemas-discoverer-tagsentry.html#cfn-eventschemas-discoverer-tagsentry-key",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

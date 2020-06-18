@@ -26,8 +26,10 @@ import shiver.me.timbers.aws.Tag;
     "Policy",
     "Role",
     "HomeDirectory",
+    "HomeDirectoryType",
     "ServerId",
     "UserName",
+    "HomeDirectoryMappings",
     "SshPublicKeys",
     "Tags"
 })
@@ -55,6 +57,13 @@ public class User {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-user.html#cfn-transfer-user-homedirectory")
     private CharSequence homeDirectory;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-user.html#cfn-transfer-user-homedirectorytype
+     * 
+     */
+    @JsonProperty("HomeDirectoryType")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-user.html#cfn-transfer-user-homedirectorytype")
+    private CharSequence homeDirectoryType;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-user.html#cfn-transfer-user-serverid
      * 
      */
@@ -68,6 +77,13 @@ public class User {
     @JsonProperty("UserName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-user.html#cfn-transfer-user-username")
     private CharSequence userName;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-user.html#cfn-transfer-user-homedirectorymappings
+     * 
+     */
+    @JsonProperty("HomeDirectoryMappings")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-user.html#cfn-transfer-user-homedirectorymappings")
+    private List<Property<UserHomeDirectoryMapEntry>> homeDirectoryMappings = new ArrayList<Property<UserHomeDirectoryMapEntry>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-user.html#cfn-transfer-user-sshpublickeys
      * 
@@ -153,6 +169,29 @@ public class User {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-user.html#cfn-transfer-user-homedirectorytype
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getHomeDirectoryType() {
+        return homeDirectoryType;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-user.html#cfn-transfer-user-homedirectorytype
+     * 
+     */
+    @JsonIgnore
+    public void setHomeDirectoryType(CharSequence homeDirectoryType) {
+        this.homeDirectoryType = homeDirectoryType;
+    }
+
+    public User withHomeDirectoryType(CharSequence homeDirectoryType) {
+        this.homeDirectoryType = homeDirectoryType;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-user.html#cfn-transfer-user-serverid
      * 
      */
@@ -195,6 +234,29 @@ public class User {
 
     public User withUserName(CharSequence userName) {
         this.userName = userName;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-user.html#cfn-transfer-user-homedirectorymappings
+     * 
+     */
+    @JsonIgnore
+    public List<Property<UserHomeDirectoryMapEntry>> getHomeDirectoryMappings() {
+        return homeDirectoryMappings;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-user.html#cfn-transfer-user-homedirectorymappings
+     * 
+     */
+    @JsonIgnore
+    public void setHomeDirectoryMappings(List<Property<UserHomeDirectoryMapEntry>> homeDirectoryMappings) {
+        this.homeDirectoryMappings = homeDirectoryMappings;
+    }
+
+    public User withHomeDirectoryMappings(List<Property<UserHomeDirectoryMapEntry>> homeDirectoryMappings) {
+        this.homeDirectoryMappings = homeDirectoryMappings;
         return this;
     }
 
@@ -246,12 +308,12 @@ public class User {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("policy", policy).append("role", role).append("homeDirectory", homeDirectory).append("serverId", serverId).append("userName", userName).append("sshPublicKeys", sshPublicKeys).append("tags", tags).toString();
+        return new ToStringBuilder(this).append("policy", policy).append("role", role).append("homeDirectory", homeDirectory).append("homeDirectoryType", homeDirectoryType).append("serverId", serverId).append("userName", userName).append("homeDirectoryMappings", homeDirectoryMappings).append("sshPublicKeys", sshPublicKeys).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(role).append(homeDirectory).append(sshPublicKeys).append(userName).append(serverId).append(policy).append(tags).toHashCode();
+        return new HashCodeBuilder().append(role).append(homeDirectory).append(sshPublicKeys).append(homeDirectoryMappings).append(userName).append(serverId).append(homeDirectoryType).append(policy).append(tags).toHashCode();
     }
 
     @Override
@@ -263,7 +325,7 @@ public class User {
             return false;
         }
         User rhs = ((User) other);
-        return new EqualsBuilder().append(role, rhs.role).append(homeDirectory, rhs.homeDirectory).append(sshPublicKeys, rhs.sshPublicKeys).append(userName, rhs.userName).append(serverId, rhs.serverId).append(policy, rhs.policy).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(role, rhs.role).append(homeDirectory, rhs.homeDirectory).append(sshPublicKeys, rhs.sshPublicKeys).append(homeDirectoryMappings, rhs.homeDirectoryMappings).append(userName, rhs.userName).append(serverId, rhs.serverId).append(homeDirectoryType, rhs.homeDirectoryType).append(policy, rhs.policy).append(tags, rhs.tags).isEquals();
     }
 
 }

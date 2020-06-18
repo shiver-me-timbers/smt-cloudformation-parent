@@ -12,6 +12,7 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 import shiver.me.timbers.aws.Property;
+import shiver.me.timbers.aws.Tag;
 
 
 /**
@@ -22,13 +23,23 @@ import shiver.me.timbers.aws.Property;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "ContentBasedDeduplication",
     "DisplayName",
+    "FifoTopic",
     "KmsMasterKeyId",
     "Subscription",
+    "Tags",
     "TopicName"
 })
 public class Topic {
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-contentbaseddeduplication
+     * 
+     */
+    @JsonProperty("ContentBasedDeduplication")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-contentbaseddeduplication")
+    private CharSequence contentBasedDeduplication;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-displayname
      * 
@@ -36,6 +47,13 @@ public class Topic {
     @JsonProperty("DisplayName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-displayname")
     private CharSequence displayName;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-fifotopic
+     * 
+     */
+    @JsonProperty("FifoTopic")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-fifotopic")
+    private CharSequence fifoTopic;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-kmsmasterkeyid
      * 
@@ -51,12 +69,42 @@ public class Topic {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-subscription")
     private List<Property<TopicSubscription>> subscription = new ArrayList<Property<TopicSubscription>>();
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-tags")
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-topicname
      * 
      */
     @JsonProperty("TopicName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-topicname")
     private CharSequence topicName;
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-contentbaseddeduplication
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getContentBasedDeduplication() {
+        return contentBasedDeduplication;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-contentbaseddeduplication
+     * 
+     */
+    @JsonIgnore
+    public void setContentBasedDeduplication(CharSequence contentBasedDeduplication) {
+        this.contentBasedDeduplication = contentBasedDeduplication;
+    }
+
+    public Topic withContentBasedDeduplication(CharSequence contentBasedDeduplication) {
+        this.contentBasedDeduplication = contentBasedDeduplication;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-displayname
@@ -78,6 +126,29 @@ public class Topic {
 
     public Topic withDisplayName(CharSequence displayName) {
         this.displayName = displayName;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-fifotopic
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getFifoTopic() {
+        return fifoTopic;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-fifotopic
+     * 
+     */
+    @JsonIgnore
+    public void setFifoTopic(CharSequence fifoTopic) {
+        this.fifoTopic = fifoTopic;
+    }
+
+    public Topic withFifoTopic(CharSequence fifoTopic) {
+        this.fifoTopic = fifoTopic;
         return this;
     }
 
@@ -128,6 +199,29 @@ public class Topic {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-tags
+     * 
+     */
+    @JsonIgnore
+    public List<Property<Tag>> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+    }
+
+    public Topic withTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-topicname
      * 
      */
@@ -152,12 +246,12 @@ public class Topic {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("displayName", displayName).append("kmsMasterKeyId", kmsMasterKeyId).append("subscription", subscription).append("topicName", topicName).toString();
+        return new ToStringBuilder(this).append("contentBasedDeduplication", contentBasedDeduplication).append("displayName", displayName).append("fifoTopic", fifoTopic).append("kmsMasterKeyId", kmsMasterKeyId).append("subscription", subscription).append("tags", tags).append("topicName", topicName).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(topicName).append(kmsMasterKeyId).append(subscription).append(displayName).toHashCode();
+        return new HashCodeBuilder().append(contentBasedDeduplication).append(displayName).append(topicName).append(fifoTopic).append(kmsMasterKeyId).append(subscription).append(tags).toHashCode();
     }
 
     @Override
@@ -169,7 +263,7 @@ public class Topic {
             return false;
         }
         Topic rhs = ((Topic) other);
-        return new EqualsBuilder().append(topicName, rhs.topicName).append(kmsMasterKeyId, rhs.kmsMasterKeyId).append(subscription, rhs.subscription).append(displayName, rhs.displayName).isEquals();
+        return new EqualsBuilder().append(contentBasedDeduplication, rhs.contentBasedDeduplication).append(displayName, rhs.displayName).append(topicName, rhs.topicName).append(fifoTopic, rhs.fifoTopic).append(kmsMasterKeyId, rhs.kmsMasterKeyId).append(subscription, rhs.subscription).append(tags, rhs.tags).isEquals();
     }
 
 }

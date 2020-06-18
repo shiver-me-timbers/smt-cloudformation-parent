@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WAFv2_RuleGroupAttributes.schema.json",
+  "title" : "RuleGroupAttributes",
+  "type" : "string",
+  "enum" : [ "Arn", "Id" ],
+  "javaType" : "shiver.me.timbers.aws.wafv2.RuleGroupAttributes"
+}

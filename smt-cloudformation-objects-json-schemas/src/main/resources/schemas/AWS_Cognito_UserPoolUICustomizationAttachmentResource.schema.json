@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Cognito_UserPoolUICustomizationAttachmentResource.schema.json",
+  "title" : "UserPoolUICustomizationAttachmentResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluicustomizationattachment.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.cognito.UserPoolUICustomizationAttachmentResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<UserPoolUICustomizationAttachmentResource>", "shiver.me.timbers.aws.HasCondition<UserPoolUICustomizationAttachmentResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Cognito::UserPoolUICustomizationAttachment"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Cognito_UserPoolUICustomizationAttachment.schema.json"
+    }
+  }
+}

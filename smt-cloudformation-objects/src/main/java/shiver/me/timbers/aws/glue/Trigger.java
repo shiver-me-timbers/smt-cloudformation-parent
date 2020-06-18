@@ -23,8 +23,10 @@ import shiver.me.timbers.aws.Property;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "Type",
+    "StartOnCreation",
     "Description",
     "Actions",
+    "WorkflowName",
     "Schedule",
     "Tags",
     "Name",
@@ -40,6 +42,13 @@ public class Trigger {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-type")
     private CharSequence type;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-startoncreation
+     * 
+     */
+    @JsonProperty("StartOnCreation")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-startoncreation")
+    private CharSequence startOnCreation;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-description
      * 
      */
@@ -53,6 +62,13 @@ public class Trigger {
     @JsonProperty("Actions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-actions")
     private List<Property<TriggerAction>> actions = new ArrayList<Property<TriggerAction>>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-workflowname
+     * 
+     */
+    @JsonProperty("WorkflowName")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-workflowname")
+    private CharSequence workflowName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-schedule
      * 
@@ -108,6 +124,29 @@ public class Trigger {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-startoncreation
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getStartOnCreation() {
+        return startOnCreation;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-startoncreation
+     * 
+     */
+    @JsonIgnore
+    public void setStartOnCreation(CharSequence startOnCreation) {
+        this.startOnCreation = startOnCreation;
+    }
+
+    public Trigger withStartOnCreation(CharSequence startOnCreation) {
+        this.startOnCreation = startOnCreation;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-description
      * 
      */
@@ -150,6 +189,29 @@ public class Trigger {
 
     public Trigger withActions(List<Property<TriggerAction>> actions) {
         this.actions = actions;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-workflowname
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getWorkflowName() {
+        return workflowName;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-workflowname
+     * 
+     */
+    @JsonIgnore
+    public void setWorkflowName(CharSequence workflowName) {
+        this.workflowName = workflowName;
+    }
+
+    public Trigger withWorkflowName(CharSequence workflowName) {
+        this.workflowName = workflowName;
         return this;
     }
 
@@ -251,12 +313,12 @@ public class Trigger {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("type", type).append("description", description).append("actions", actions).append("schedule", schedule).append("tags", tags).append("name", name).append("predicate", predicate).toString();
+        return new ToStringBuilder(this).append("type", type).append("startOnCreation", startOnCreation).append("description", description).append("actions", actions).append("workflowName", workflowName).append("schedule", schedule).append("tags", tags).append("name", name).append("predicate", predicate).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(schedule).append(predicate).append(name).append(description).append(type).append(actions).append(tags).toHashCode();
+        return new HashCodeBuilder().append(schedule).append(predicate).append(name).append(description).append(workflowName).append(type).append(actions).append(startOnCreation).append(tags).toHashCode();
     }
 
     @Override
@@ -268,7 +330,7 @@ public class Trigger {
             return false;
         }
         Trigger rhs = ((Trigger) other);
-        return new EqualsBuilder().append(schedule, rhs.schedule).append(predicate, rhs.predicate).append(name, rhs.name).append(description, rhs.description).append(type, rhs.type).append(actions, rhs.actions).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(schedule, rhs.schedule).append(predicate, rhs.predicate).append(name, rhs.name).append(description, rhs.description).append(workflowName, rhs.workflowName).append(type, rhs.type).append(actions, rhs.actions).append(startOnCreation, rhs.startOnCreation).append(tags, rhs.tags).isEquals();
     }
 
 }

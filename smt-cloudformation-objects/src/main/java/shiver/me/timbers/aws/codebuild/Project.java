@@ -37,6 +37,7 @@ import shiver.me.timbers.aws.Tag;
     "LogsConfig",
     "ServiceRole",
     "QueuedTimeoutInMinutes",
+    "FileSystemLocations",
     "Environment",
     "SecondarySourceVersions",
     "Tags",
@@ -153,6 +154,13 @@ public class Project {
     @JsonProperty("QueuedTimeoutInMinutes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-queuedtimeoutinminutes")
     private Number queuedTimeoutInMinutes;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-filesystemlocations
+     * 
+     */
+    @JsonProperty("FileSystemLocations")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-filesystemlocations")
+    private List<Property<ProjectProjectFileSystemLocation>> fileSystemLocations = new ArrayList<Property<ProjectProjectFileSystemLocation>>();
     /**
      * ProjectEnvironment
      * <p>
@@ -536,6 +544,29 @@ public class Project {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-filesystemlocations
+     * 
+     */
+    @JsonIgnore
+    public List<Property<ProjectProjectFileSystemLocation>> getFileSystemLocations() {
+        return fileSystemLocations;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-filesystemlocations
+     * 
+     */
+    @JsonIgnore
+    public void setFileSystemLocations(List<Property<ProjectProjectFileSystemLocation>> fileSystemLocations) {
+        this.fileSystemLocations = fileSystemLocations;
+    }
+
+    public Project withFileSystemLocations(List<Property<ProjectProjectFileSystemLocation>> fileSystemLocations) {
+        this.fileSystemLocations = fileSystemLocations;
+        return this;
+    }
+
+    /**
      * ProjectEnvironment
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html
@@ -660,12 +691,12 @@ public class Project {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("description", description).append("vpcConfig", vpcConfig).append("secondarySources", secondarySources).append("encryptionKey", encryptionKey).append("sourceVersion", sourceVersion).append("triggers", triggers).append("secondaryArtifacts", secondaryArtifacts).append("source", source).append("name", name).append("artifacts", artifacts).append("badgeEnabled", badgeEnabled).append("logsConfig", logsConfig).append("serviceRole", serviceRole).append("queuedTimeoutInMinutes", queuedTimeoutInMinutes).append("environment", environment).append("secondarySourceVersions", secondarySourceVersions).append("tags", tags).append("timeoutInMinutes", timeoutInMinutes).append("cache", cache).toString();
+        return new ToStringBuilder(this).append("description", description).append("vpcConfig", vpcConfig).append("secondarySources", secondarySources).append("encryptionKey", encryptionKey).append("sourceVersion", sourceVersion).append("triggers", triggers).append("secondaryArtifacts", secondaryArtifacts).append("source", source).append("name", name).append("artifacts", artifacts).append("badgeEnabled", badgeEnabled).append("logsConfig", logsConfig).append("serviceRole", serviceRole).append("queuedTimeoutInMinutes", queuedTimeoutInMinutes).append("fileSystemLocations", fileSystemLocations).append("environment", environment).append("secondarySourceVersions", secondarySourceVersions).append("tags", tags).append("timeoutInMinutes", timeoutInMinutes).append("cache", cache).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(logsConfig).append(cache).append(secondarySources).append(sourceVersion).append(serviceRole).append(description).append(encryptionKey).append(source).append(triggers).append(secondarySourceVersions).append(secondaryArtifacts).append(tags).append(environment).append(vpcConfig).append(name).append(timeoutInMinutes).append(queuedTimeoutInMinutes).append(badgeEnabled).append(artifacts).toHashCode();
+        return new HashCodeBuilder().append(logsConfig).append(cache).append(secondarySources).append(fileSystemLocations).append(sourceVersion).append(serviceRole).append(description).append(encryptionKey).append(source).append(triggers).append(secondarySourceVersions).append(secondaryArtifacts).append(tags).append(environment).append(vpcConfig).append(name).append(timeoutInMinutes).append(queuedTimeoutInMinutes).append(badgeEnabled).append(artifacts).toHashCode();
     }
 
     @Override
@@ -677,7 +708,7 @@ public class Project {
             return false;
         }
         Project rhs = ((Project) other);
-        return new EqualsBuilder().append(logsConfig, rhs.logsConfig).append(cache, rhs.cache).append(secondarySources, rhs.secondarySources).append(sourceVersion, rhs.sourceVersion).append(serviceRole, rhs.serviceRole).append(description, rhs.description).append(encryptionKey, rhs.encryptionKey).append(source, rhs.source).append(triggers, rhs.triggers).append(secondarySourceVersions, rhs.secondarySourceVersions).append(secondaryArtifacts, rhs.secondaryArtifacts).append(tags, rhs.tags).append(environment, rhs.environment).append(vpcConfig, rhs.vpcConfig).append(name, rhs.name).append(timeoutInMinutes, rhs.timeoutInMinutes).append(queuedTimeoutInMinutes, rhs.queuedTimeoutInMinutes).append(badgeEnabled, rhs.badgeEnabled).append(artifacts, rhs.artifacts).isEquals();
+        return new EqualsBuilder().append(logsConfig, rhs.logsConfig).append(cache, rhs.cache).append(secondarySources, rhs.secondarySources).append(fileSystemLocations, rhs.fileSystemLocations).append(sourceVersion, rhs.sourceVersion).append(serviceRole, rhs.serviceRole).append(description, rhs.description).append(encryptionKey, rhs.encryptionKey).append(source, rhs.source).append(triggers, rhs.triggers).append(secondarySourceVersions, rhs.secondarySourceVersions).append(secondaryArtifacts, rhs.secondaryArtifacts).append(tags, rhs.tags).append(environment, rhs.environment).append(vpcConfig, rhs.vpcConfig).append(name, rhs.name).append(timeoutInMinutes, rhs.timeoutInMinutes).append(queuedTimeoutInMinutes, rhs.queuedTimeoutInMinutes).append(badgeEnabled, rhs.badgeEnabled).append(artifacts, rhs.artifacts).isEquals();
     }
 
 }

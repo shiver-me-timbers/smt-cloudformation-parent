@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_DMS_Endpoint.KafkaSettings.schema.json",
+  "title" : "EndpointKafkaSettings",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-kafkasettings.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.dms.EndpointKafkaSettings",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<EndpointKafkaSettings>" ],
+  "properties" : {
+    "Broker" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-kafkasettings.html#cfn-dms-endpoint-kafkasettings-broker",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Topic" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-kafkasettings.html#cfn-dms-endpoint-kafkasettings-topic",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

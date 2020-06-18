@@ -29,18 +29,21 @@ import shiver.me.timbers.aws.Property;
     "Schema",
     "AdminCreateUserConfig",
     "SmsAuthenticationMessage",
+    "UsernameConfiguration",
     "UserPoolName",
     "SmsVerificationMessage",
     "UserPoolAddOns",
     "EmailConfiguration",
     "SmsConfiguration",
     "AliasAttributes",
+    "EnabledMfas",
     "EmailVerificationSubject",
     "LambdaConfig",
     "UsernameAttributes",
     "AutoVerifiedAttributes",
     "DeviceConfiguration",
-    "EmailVerificationMessage"
+    "EmailVerificationMessage",
+    "AccountRecoverySetting"
 })
 public class UserPool {
 
@@ -100,6 +103,15 @@ public class UserPool {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-smsauthenticationmessage")
     private CharSequence smsAuthenticationMessage;
     /**
+     * UserPoolUsernameConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-usernameconfiguration.html
+     * 
+     */
+    @JsonProperty("UsernameConfiguration")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-usernameconfiguration.html")
+    private Property<UserPoolUsernameConfiguration> usernameConfiguration;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-userpoolname
      * 
      */
@@ -148,6 +160,13 @@ public class UserPool {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-aliasattributes")
     private List<CharSequence> aliasAttributes = new ArrayList<CharSequence>();
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-enabledmfas
+     * 
+     */
+    @JsonProperty("EnabledMfas")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-enabledmfas")
+    private List<CharSequence> enabledMfas = new ArrayList<CharSequence>();
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-emailverificationsubject
      * 
      */
@@ -193,6 +212,15 @@ public class UserPool {
     @JsonProperty("EmailVerificationMessage")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-emailverificationmessage")
     private CharSequence emailVerificationMessage;
+    /**
+     * UserPoolAccountRecoverySetting
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-accountrecoverysetting.html
+     * 
+     */
+    @JsonProperty("AccountRecoverySetting")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-accountrecoverysetting.html")
+    private Property<UserPoolAccountRecoverySetting> accountRecoverySetting;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-userpooltags
@@ -368,6 +396,33 @@ public class UserPool {
     }
 
     /**
+     * UserPoolUsernameConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-usernameconfiguration.html
+     * 
+     */
+    @JsonIgnore
+    public Property<UserPoolUsernameConfiguration> getUsernameConfiguration() {
+        return usernameConfiguration;
+    }
+
+    /**
+     * UserPoolUsernameConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-usernameconfiguration.html
+     * 
+     */
+    @JsonIgnore
+    public void setUsernameConfiguration(Property<UserPoolUsernameConfiguration> usernameConfiguration) {
+        this.usernameConfiguration = usernameConfiguration;
+    }
+
+    public UserPool withUsernameConfiguration(Property<UserPoolUsernameConfiguration> usernameConfiguration) {
+        this.usernameConfiguration = usernameConfiguration;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-userpoolname
      * 
      */
@@ -518,6 +573,29 @@ public class UserPool {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-enabledmfas
+     * 
+     */
+    @JsonIgnore
+    public List<CharSequence> getEnabledMfas() {
+        return enabledMfas;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-enabledmfas
+     * 
+     */
+    @JsonIgnore
+    public void setEnabledMfas(List<CharSequence> enabledMfas) {
+        this.enabledMfas = enabledMfas;
+    }
+
+    public UserPool withEnabledMfas(List<CharSequence> enabledMfas) {
+        this.enabledMfas = enabledMfas;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-emailverificationsubject
      * 
      */
@@ -663,14 +741,41 @@ public class UserPool {
         return this;
     }
 
+    /**
+     * UserPoolAccountRecoverySetting
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-accountrecoverysetting.html
+     * 
+     */
+    @JsonIgnore
+    public Property<UserPoolAccountRecoverySetting> getAccountRecoverySetting() {
+        return accountRecoverySetting;
+    }
+
+    /**
+     * UserPoolAccountRecoverySetting
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-accountrecoverysetting.html
+     * 
+     */
+    @JsonIgnore
+    public void setAccountRecoverySetting(Property<UserPoolAccountRecoverySetting> accountRecoverySetting) {
+        this.accountRecoverySetting = accountRecoverySetting;
+    }
+
+    public UserPool withAccountRecoverySetting(Property<UserPoolAccountRecoverySetting> accountRecoverySetting) {
+        this.accountRecoverySetting = accountRecoverySetting;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("userPoolTags", userPoolTags).append("policies", policies).append("verificationMessageTemplate", verificationMessageTemplate).append("mfaConfiguration", mfaConfiguration).append("schema", schema).append("adminCreateUserConfig", adminCreateUserConfig).append("smsAuthenticationMessage", smsAuthenticationMessage).append("userPoolName", userPoolName).append("smsVerificationMessage", smsVerificationMessage).append("userPoolAddOns", userPoolAddOns).append("emailConfiguration", emailConfiguration).append("smsConfiguration", smsConfiguration).append("aliasAttributes", aliasAttributes).append("emailVerificationSubject", emailVerificationSubject).append("lambdaConfig", lambdaConfig).append("usernameAttributes", usernameAttributes).append("autoVerifiedAttributes", autoVerifiedAttributes).append("deviceConfiguration", deviceConfiguration).append("emailVerificationMessage", emailVerificationMessage).toString();
+        return new ToStringBuilder(this).append("userPoolTags", userPoolTags).append("policies", policies).append("verificationMessageTemplate", verificationMessageTemplate).append("mfaConfiguration", mfaConfiguration).append("schema", schema).append("adminCreateUserConfig", adminCreateUserConfig).append("smsAuthenticationMessage", smsAuthenticationMessage).append("usernameConfiguration", usernameConfiguration).append("userPoolName", userPoolName).append("smsVerificationMessage", smsVerificationMessage).append("userPoolAddOns", userPoolAddOns).append("emailConfiguration", emailConfiguration).append("smsConfiguration", smsConfiguration).append("aliasAttributes", aliasAttributes).append("enabledMfas", enabledMfas).append("emailVerificationSubject", emailVerificationSubject).append("lambdaConfig", lambdaConfig).append("usernameAttributes", usernameAttributes).append("autoVerifiedAttributes", autoVerifiedAttributes).append("deviceConfiguration", deviceConfiguration).append("emailVerificationMessage", emailVerificationMessage).append("accountRecoverySetting", accountRecoverySetting).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(schema).append(userPoolName).append(verificationMessageTemplate).append(usernameAttributes).append(autoVerifiedAttributes).append(policies).append(smsVerificationMessage).append(deviceConfiguration).append(emailVerificationSubject).append(mfaConfiguration).append(lambdaConfig).append(emailVerificationMessage).append(emailConfiguration).append(userPoolTags).append(adminCreateUserConfig).append(smsAuthenticationMessage).append(smsConfiguration).append(aliasAttributes).append(userPoolAddOns).toHashCode();
+        return new HashCodeBuilder().append(schema).append(userPoolName).append(verificationMessageTemplate).append(usernameAttributes).append(autoVerifiedAttributes).append(enabledMfas).append(accountRecoverySetting).append(policies).append(smsVerificationMessage).append(deviceConfiguration).append(emailVerificationSubject).append(usernameConfiguration).append(mfaConfiguration).append(lambdaConfig).append(emailVerificationMessage).append(emailConfiguration).append(userPoolTags).append(adminCreateUserConfig).append(smsAuthenticationMessage).append(smsConfiguration).append(aliasAttributes).append(userPoolAddOns).toHashCode();
     }
 
     @Override
@@ -682,7 +787,7 @@ public class UserPool {
             return false;
         }
         UserPool rhs = ((UserPool) other);
-        return new EqualsBuilder().append(schema, rhs.schema).append(userPoolName, rhs.userPoolName).append(verificationMessageTemplate, rhs.verificationMessageTemplate).append(usernameAttributes, rhs.usernameAttributes).append(autoVerifiedAttributes, rhs.autoVerifiedAttributes).append(policies, rhs.policies).append(smsVerificationMessage, rhs.smsVerificationMessage).append(deviceConfiguration, rhs.deviceConfiguration).append(emailVerificationSubject, rhs.emailVerificationSubject).append(mfaConfiguration, rhs.mfaConfiguration).append(lambdaConfig, rhs.lambdaConfig).append(emailVerificationMessage, rhs.emailVerificationMessage).append(emailConfiguration, rhs.emailConfiguration).append(userPoolTags, rhs.userPoolTags).append(adminCreateUserConfig, rhs.adminCreateUserConfig).append(smsAuthenticationMessage, rhs.smsAuthenticationMessage).append(smsConfiguration, rhs.smsConfiguration).append(aliasAttributes, rhs.aliasAttributes).append(userPoolAddOns, rhs.userPoolAddOns).isEquals();
+        return new EqualsBuilder().append(schema, rhs.schema).append(userPoolName, rhs.userPoolName).append(verificationMessageTemplate, rhs.verificationMessageTemplate).append(usernameAttributes, rhs.usernameAttributes).append(autoVerifiedAttributes, rhs.autoVerifiedAttributes).append(enabledMfas, rhs.enabledMfas).append(accountRecoverySetting, rhs.accountRecoverySetting).append(policies, rhs.policies).append(smsVerificationMessage, rhs.smsVerificationMessage).append(deviceConfiguration, rhs.deviceConfiguration).append(emailVerificationSubject, rhs.emailVerificationSubject).append(usernameConfiguration, rhs.usernameConfiguration).append(mfaConfiguration, rhs.mfaConfiguration).append(lambdaConfig, rhs.lambdaConfig).append(emailVerificationMessage, rhs.emailVerificationMessage).append(emailConfiguration, rhs.emailConfiguration).append(userPoolTags, rhs.userPoolTags).append(adminCreateUserConfig, rhs.adminCreateUserConfig).append(smsAuthenticationMessage, rhs.smsAuthenticationMessage).append(smsConfiguration, rhs.smsConfiguration).append(aliasAttributes, rhs.aliasAttributes).append(userPoolAddOns, rhs.userPoolAddOns).isEquals();
     }
 
 }

@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppSync_DataSource.DeltaSyncConfig.schema.json",
+  "title" : "DataSourceDeltaSyncConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-deltasyncconfig.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.appsync.DataSourceDeltaSyncConfig",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<DataSourceDeltaSyncConfig>" ],
+  "properties" : {
+    "BaseTableTTL" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-deltasyncconfig.html#cfn-appsync-datasource-deltasyncconfig-basetablettl",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DeltaSyncTableTTL" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-deltasyncconfig.html#cfn-appsync-datasource-deltasyncconfig-deltasynctablettl",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DeltaSyncTableName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-deltasyncconfig.html#cfn-appsync-datasource-deltasyncconfig-deltasynctablename",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ECS_PrimaryTaskSet.schema.json",
+  "title" : "PrimaryTaskSet",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-primarytaskset.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.ecs.PrimaryTaskSet",
+  "properties" : {
+    "Cluster" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-primarytaskset.html#cfn-ecs-primarytaskset-cluster",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TaskSetId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-primarytaskset.html#cfn-ecs-primarytaskset-tasksetid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Service" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-primarytaskset.html#cfn-ecs-primarytaskset-service",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

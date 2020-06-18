@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EventSchemas_SchemaAttributes.schema.json",
+  "title" : "SchemaAttributes",
+  "type" : "string",
+  "enum" : [ "SchemaVersion", "SchemaArn", "SchemaName" ],
+  "javaType" : "shiver.me.timbers.aws.eventschemas.SchemaAttributes"
+}

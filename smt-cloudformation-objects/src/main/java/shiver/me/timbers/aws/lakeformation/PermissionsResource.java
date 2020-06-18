@@ -21,7 +21,9 @@ import shiver.me.timbers.aws.Property;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "TableResource",
-    "DatabaseResource"
+    "DatabaseResource",
+    "DataLocationResource",
+    "TableWithColumnsResource"
 })
 public class PermissionsResource implements Property<PermissionsResource>
 {
@@ -44,6 +46,24 @@ public class PermissionsResource implements Property<PermissionsResource>
     @JsonProperty("DatabaseResource")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lakeformation-permissions-databaseresource.html")
     private Property<PermissionsDatabaseResource> databaseResource;
+    /**
+     * PermissionsDataLocationResource
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lakeformation-permissions-datalocationresource.html
+     * 
+     */
+    @JsonProperty("DataLocationResource")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lakeformation-permissions-datalocationresource.html")
+    private Property<PermissionsDataLocationResource> dataLocationResource;
+    /**
+     * PermissionsTableWithColumnsResource
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lakeformation-permissions-tablewithcolumnsresource.html
+     * 
+     */
+    @JsonProperty("TableWithColumnsResource")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lakeformation-permissions-tablewithcolumnsresource.html")
+    private Property<PermissionsTableWithColumnsResource> tableWithColumnsResource;
 
     /**
      * PermissionsTableResource
@@ -99,14 +119,68 @@ public class PermissionsResource implements Property<PermissionsResource>
         return this;
     }
 
+    /**
+     * PermissionsDataLocationResource
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lakeformation-permissions-datalocationresource.html
+     * 
+     */
+    @JsonIgnore
+    public Property<PermissionsDataLocationResource> getDataLocationResource() {
+        return dataLocationResource;
+    }
+
+    /**
+     * PermissionsDataLocationResource
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lakeformation-permissions-datalocationresource.html
+     * 
+     */
+    @JsonIgnore
+    public void setDataLocationResource(Property<PermissionsDataLocationResource> dataLocationResource) {
+        this.dataLocationResource = dataLocationResource;
+    }
+
+    public PermissionsResource withDataLocationResource(Property<PermissionsDataLocationResource> dataLocationResource) {
+        this.dataLocationResource = dataLocationResource;
+        return this;
+    }
+
+    /**
+     * PermissionsTableWithColumnsResource
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lakeformation-permissions-tablewithcolumnsresource.html
+     * 
+     */
+    @JsonIgnore
+    public Property<PermissionsTableWithColumnsResource> getTableWithColumnsResource() {
+        return tableWithColumnsResource;
+    }
+
+    /**
+     * PermissionsTableWithColumnsResource
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lakeformation-permissions-tablewithcolumnsresource.html
+     * 
+     */
+    @JsonIgnore
+    public void setTableWithColumnsResource(Property<PermissionsTableWithColumnsResource> tableWithColumnsResource) {
+        this.tableWithColumnsResource = tableWithColumnsResource;
+    }
+
+    public PermissionsResource withTableWithColumnsResource(Property<PermissionsTableWithColumnsResource> tableWithColumnsResource) {
+        this.tableWithColumnsResource = tableWithColumnsResource;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("tableResource", tableResource).append("databaseResource", databaseResource).toString();
+        return new ToStringBuilder(this).append("tableResource", tableResource).append("databaseResource", databaseResource).append("dataLocationResource", dataLocationResource).append("tableWithColumnsResource", tableWithColumnsResource).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(tableResource).append(databaseResource).toHashCode();
+        return new HashCodeBuilder().append(tableResource).append(tableWithColumnsResource).append(databaseResource).append(dataLocationResource).toHashCode();
     }
 
     @Override
@@ -118,7 +192,7 @@ public class PermissionsResource implements Property<PermissionsResource>
             return false;
         }
         PermissionsResource rhs = ((PermissionsResource) other);
-        return new EqualsBuilder().append(tableResource, rhs.tableResource).append(databaseResource, rhs.databaseResource).isEquals();
+        return new EqualsBuilder().append(tableResource, rhs.tableResource).append(tableWithColumnsResource, rhs.tableWithColumnsResource).append(databaseResource, rhs.databaseResource).append(dataLocationResource, rhs.dataLocationResource).isEquals();
     }
 
 }

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_NetworkManager_SiteResource.schema.json",
+  "title" : "SiteResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkmanager-site.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.networkmanager.SiteResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<SiteResource>", "shiver.me.timbers.aws.HasCondition<SiteResource>", "shiver.me.timbers.aws.HasAttributes<SiteAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::NetworkManager::Site"
+    },
+    "Properties" : {
+      "$ref" : "AWS_NetworkManager_Site.schema.json"
+    }
+  }
+}

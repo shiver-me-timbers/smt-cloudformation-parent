@@ -25,6 +25,7 @@ import shiver.me.timbers.aws.Tag;
 @JsonPropertyOrder({
     "MeshName",
     "VirtualRouterName",
+    "MeshOwner",
     "Spec",
     "Tags"
 })
@@ -44,6 +45,13 @@ public class VirtualRouter {
     @JsonProperty("VirtualRouterName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualrouter.html#cfn-appmesh-virtualrouter-virtualroutername")
     private CharSequence virtualRouterName;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualrouter.html#cfn-appmesh-virtualrouter-meshowner
+     * 
+     */
+    @JsonProperty("MeshOwner")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualrouter.html#cfn-appmesh-virtualrouter-meshowner")
+    private CharSequence meshOwner;
     /**
      * VirtualRouterVirtualRouterSpec
      * <p>
@@ -108,6 +116,29 @@ public class VirtualRouter {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualrouter.html#cfn-appmesh-virtualrouter-meshowner
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getMeshOwner() {
+        return meshOwner;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualrouter.html#cfn-appmesh-virtualrouter-meshowner
+     * 
+     */
+    @JsonIgnore
+    public void setMeshOwner(CharSequence meshOwner) {
+        this.meshOwner = meshOwner;
+    }
+
+    public VirtualRouter withMeshOwner(CharSequence meshOwner) {
+        this.meshOwner = meshOwner;
+        return this;
+    }
+
+    /**
      * VirtualRouterVirtualRouterSpec
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualrouter-virtualrouterspec.html
@@ -159,12 +190,12 @@ public class VirtualRouter {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("meshName", meshName).append("virtualRouterName", virtualRouterName).append("spec", spec).append("tags", tags).toString();
+        return new ToStringBuilder(this).append("meshName", meshName).append("virtualRouterName", virtualRouterName).append("meshOwner", meshOwner).append("spec", spec).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(meshName).append(virtualRouterName).append(spec).append(tags).toHashCode();
+        return new HashCodeBuilder().append(meshName).append(meshOwner).append(virtualRouterName).append(spec).append(tags).toHashCode();
     }
 
     @Override
@@ -176,7 +207,7 @@ public class VirtualRouter {
             return false;
         }
         VirtualRouter rhs = ((VirtualRouter) other);
-        return new EqualsBuilder().append(meshName, rhs.meshName).append(virtualRouterName, rhs.virtualRouterName).append(spec, rhs.spec).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(meshName, rhs.meshName).append(meshOwner, rhs.meshOwner).append(virtualRouterName, rhs.virtualRouterName).append(spec, rhs.spec).append(tags, rhs.tags).isEquals();
     }
 
 }

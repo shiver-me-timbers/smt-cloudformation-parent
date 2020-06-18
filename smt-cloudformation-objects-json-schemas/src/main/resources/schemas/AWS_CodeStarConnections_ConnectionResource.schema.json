@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CodeStarConnections_ConnectionResource.schema.json",
+  "title" : "ConnectionResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codestarconnections-connection.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.codestarconnections.ConnectionResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ConnectionResource>", "shiver.me.timbers.aws.HasCondition<ConnectionResource>", "shiver.me.timbers.aws.HasAttributes<ConnectionAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::CodeStarConnections::Connection"
+    },
+    "Properties" : {
+      "$ref" : "AWS_CodeStarConnections_Connection.schema.json"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WAFv2_RuleGroup.ByteMatchStatement.schema.json",
+  "title" : "RuleGroupByteMatchStatement",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-bytematchstatement.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.wafv2.RuleGroupByteMatchStatement",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<RuleGroupByteMatchStatement>" ],
+  "properties" : {
+    "SearchString" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-bytematchstatement.html#cfn-wafv2-rulegroup-bytematchstatement-searchstring",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SearchStringBase64" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-bytematchstatement.html#cfn-wafv2-rulegroup-bytematchstatement-searchstringbase64",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "FieldToMatch" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-bytematchstatement.html#cfn-wafv2-rulegroup-bytematchstatement-fieldtomatch",
+      "$ref" : "AWS_WAFv2_RuleGroup.FieldToMatch.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.wafv2.RuleGroupFieldToMatch>"
+    },
+    "TextTransformations" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-bytematchstatement.html#cfn-wafv2-rulegroup-bytematchstatement-texttransformations",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_WAFv2_RuleGroup.TextTransformation.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.wafv2.RuleGroupTextTransformation>"
+      }
+    },
+    "PositionalConstraint" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-rulegroup-bytematchstatement.html#cfn-wafv2-rulegroup-bytematchstatement-positionalconstraint",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

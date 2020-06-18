@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Greengrass_ResourceDefinition.ResourceDownloadOwnerSetting.schema.json",
+  "title" : "ResourceDefinitionResourceDownloadOwnerSetting",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedownloadownersetting.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.greengrass.ResourceDefinitionResourceDownloadOwnerSetting",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<ResourceDefinitionResourceDownloadOwnerSetting>" ],
+  "properties" : {
+    "GroupOwner" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedownloadownersetting.html#cfn-greengrass-resourcedefinition-resourcedownloadownersetting-groupowner",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "GroupPermission" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedownloadownersetting.html#cfn-greengrass-resourcedefinition-resourcedownloadownersetting-grouppermission",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

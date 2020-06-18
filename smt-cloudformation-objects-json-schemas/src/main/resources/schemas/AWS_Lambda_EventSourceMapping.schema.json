@@ -11,6 +11,16 @@
       "type" : "integer",
       "javaType" : "java.lang.Number"
     },
+    "BisectBatchOnFunctionError" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-bisectbatchonfunctionerror",
+      "type" : "boolean",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DestinationConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-destinationconfig",
+      "$ref" : "AWS_Lambda_EventSourceMapping.DestinationConfig.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.lambda.EventSourceMappingDestinationConfig>"
+    },
     "Enabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-enabled",
       "type" : "boolean",
@@ -28,6 +38,21 @@
     },
     "MaximumBatchingWindowInSeconds" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-maximumbatchingwindowinseconds",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "MaximumRecordAgeInSeconds" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-maximumrecordageinseconds",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "MaximumRetryAttempts" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-maximumretryattempts",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "ParallelizationFactor" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-parallelizationfactor",
       "type" : "integer",
       "javaType" : "java.lang.Number"
     },

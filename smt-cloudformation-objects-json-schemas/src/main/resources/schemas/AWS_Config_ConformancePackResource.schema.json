@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Config_ConformancePackResource.schema.json",
+  "title" : "ConformancePackResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-conformancepack.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "shiver.me.timbers.aws.config.ConformancePackResource",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.HasDependsOn<ConformancePackResource>", "shiver.me.timbers.aws.HasCondition<ConformancePackResource>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Config::ConformancePack"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Config_ConformancePack.schema.json"
+    }
+  }
+}

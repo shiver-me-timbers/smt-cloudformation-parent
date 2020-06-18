@@ -23,12 +23,21 @@ import shiver.me.timbers.aws.Tag;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "RetainAllVariantProperties",
     "EndpointName",
+    "ExcludeRetainedVariantProperties",
     "EndpointConfigName",
     "Tags"
 })
 public class Endpoint {
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html#cfn-sagemaker-endpoint-retainallvariantproperties
+     * 
+     */
+    @JsonProperty("RetainAllVariantProperties")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html#cfn-sagemaker-endpoint-retainallvariantproperties")
+    private CharSequence retainAllVariantProperties;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html#cfn-sagemaker-endpoint-endpointname
      * 
@@ -36,6 +45,13 @@ public class Endpoint {
     @JsonProperty("EndpointName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html#cfn-sagemaker-endpoint-endpointname")
     private CharSequence endpointName;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html#cfn-sagemaker-endpoint-excluderetainedvariantproperties
+     * 
+     */
+    @JsonProperty("ExcludeRetainedVariantProperties")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html#cfn-sagemaker-endpoint-excluderetainedvariantproperties")
+    private List<Property<EndpointVariantProperty>> excludeRetainedVariantProperties = new ArrayList<Property<EndpointVariantProperty>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html#cfn-sagemaker-endpoint-endpointconfigname
      * 
@@ -50,6 +66,29 @@ public class Endpoint {
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html#cfn-sagemaker-endpoint-tags")
     private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html#cfn-sagemaker-endpoint-retainallvariantproperties
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getRetainAllVariantProperties() {
+        return retainAllVariantProperties;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html#cfn-sagemaker-endpoint-retainallvariantproperties
+     * 
+     */
+    @JsonIgnore
+    public void setRetainAllVariantProperties(CharSequence retainAllVariantProperties) {
+        this.retainAllVariantProperties = retainAllVariantProperties;
+    }
+
+    public Endpoint withRetainAllVariantProperties(CharSequence retainAllVariantProperties) {
+        this.retainAllVariantProperties = retainAllVariantProperties;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html#cfn-sagemaker-endpoint-endpointname
@@ -71,6 +110,29 @@ public class Endpoint {
 
     public Endpoint withEndpointName(CharSequence endpointName) {
         this.endpointName = endpointName;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html#cfn-sagemaker-endpoint-excluderetainedvariantproperties
+     * 
+     */
+    @JsonIgnore
+    public List<Property<EndpointVariantProperty>> getExcludeRetainedVariantProperties() {
+        return excludeRetainedVariantProperties;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html#cfn-sagemaker-endpoint-excluderetainedvariantproperties
+     * 
+     */
+    @JsonIgnore
+    public void setExcludeRetainedVariantProperties(List<Property<EndpointVariantProperty>> excludeRetainedVariantProperties) {
+        this.excludeRetainedVariantProperties = excludeRetainedVariantProperties;
+    }
+
+    public Endpoint withExcludeRetainedVariantProperties(List<Property<EndpointVariantProperty>> excludeRetainedVariantProperties) {
+        this.excludeRetainedVariantProperties = excludeRetainedVariantProperties;
         return this;
     }
 
@@ -122,12 +184,12 @@ public class Endpoint {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("endpointName", endpointName).append("endpointConfigName", endpointConfigName).append("tags", tags).toString();
+        return new ToStringBuilder(this).append("retainAllVariantProperties", retainAllVariantProperties).append("endpointName", endpointName).append("excludeRetainedVariantProperties", excludeRetainedVariantProperties).append("endpointConfigName", endpointConfigName).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(endpointName).append(endpointConfigName).append(tags).toHashCode();
+        return new HashCodeBuilder().append(endpointName).append(endpointConfigName).append(retainAllVariantProperties).append(excludeRetainedVariantProperties).append(tags).toHashCode();
     }
 
     @Override
@@ -139,7 +201,7 @@ public class Endpoint {
             return false;
         }
         Endpoint rhs = ((Endpoint) other);
-        return new EqualsBuilder().append(endpointName, rhs.endpointName).append(endpointConfigName, rhs.endpointConfigName).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(endpointName, rhs.endpointName).append(endpointConfigName, rhs.endpointConfigName).append(retainAllVariantProperties, rhs.retainAllVariantProperties).append(excludeRetainedVariantProperties, rhs.excludeRetainedVariantProperties).append(tags, rhs.tags).isEquals();
     }
 
 }

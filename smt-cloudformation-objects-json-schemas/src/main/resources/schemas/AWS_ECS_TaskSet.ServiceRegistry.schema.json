@@ -1,0 +1,31 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ECS_TaskSet.ServiceRegistry.schema.json",
+  "title" : "TaskSetServiceRegistry",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskset-serviceregistry.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.ecs.TaskSetServiceRegistry",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<TaskSetServiceRegistry>" ],
+  "properties" : {
+    "ContainerName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskset-serviceregistry.html#cfn-ecs-taskset-serviceregistry-containername",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ContainerPort" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskset-serviceregistry.html#cfn-ecs-taskset-serviceregistry-containerport",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "Port" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskset-serviceregistry.html#cfn-ecs-taskset-serviceregistry-port",
+      "type" : "integer",
+      "javaType" : "java.lang.Number"
+    },
+    "RegistryArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskset-serviceregistry.html#cfn-ecs-taskset-serviceregistry-registryarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

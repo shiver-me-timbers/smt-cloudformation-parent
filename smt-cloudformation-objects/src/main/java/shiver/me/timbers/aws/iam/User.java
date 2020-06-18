@@ -15,6 +15,7 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 import shiver.me.timbers.aws.Property;
+import shiver.me.timbers.aws.Tag;
 
 
 /**
@@ -31,6 +32,7 @@ import shiver.me.timbers.aws.Property;
     "Path",
     "PermissionsBoundary",
     "Policies",
+    "Tags",
     "UserName"
 })
 public class User {
@@ -80,6 +82,13 @@ public class User {
     @JsonProperty("Policies")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-policies")
     private List<Property<UserPolicy>> policies = new ArrayList<Property<UserPolicy>>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-tags")
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-username
      * 
@@ -231,6 +240,29 @@ public class User {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-tags
+     * 
+     */
+    @JsonIgnore
+    public List<Property<Tag>> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+    }
+
+    public User withTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-username
      * 
      */
@@ -255,12 +287,12 @@ public class User {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("groups", groups).append("loginProfile", loginProfile).append("managedPolicyArns", managedPolicyArns).append("path", path).append("permissionsBoundary", permissionsBoundary).append("policies", policies).append("userName", userName).toString();
+        return new ToStringBuilder(this).append("groups", groups).append("loginProfile", loginProfile).append("managedPolicyArns", managedPolicyArns).append("path", path).append("permissionsBoundary", permissionsBoundary).append("policies", policies).append("tags", tags).append("userName", userName).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(loginProfile).append(path).append(permissionsBoundary).append(managedPolicyArns).append(policies).append(groups).append(userName).toHashCode();
+        return new HashCodeBuilder().append(loginProfile).append(path).append(permissionsBoundary).append(managedPolicyArns).append(policies).append(groups).append(userName).append(tags).toHashCode();
     }
 
     @Override
@@ -272,7 +304,7 @@ public class User {
             return false;
         }
         User rhs = ((User) other);
-        return new EqualsBuilder().append(loginProfile, rhs.loginProfile).append(path, rhs.path).append(permissionsBoundary, rhs.permissionsBoundary).append(managedPolicyArns, rhs.managedPolicyArns).append(policies, rhs.policies).append(groups, rhs.groups).append(userName, rhs.userName).isEquals();
+        return new EqualsBuilder().append(loginProfile, rhs.loginProfile).append(path, rhs.path).append(permissionsBoundary, rhs.permissionsBoundary).append(managedPolicyArns, rhs.managedPolicyArns).append(policies, rhs.policies).append(groups, rhs.groups).append(userName, rhs.userName).append(tags, rhs.tags).isEquals();
     }
 
 }

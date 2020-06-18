@@ -12,6 +12,31 @@
       "$ref" : "AWS_IoTEvents_DetectorModel.IotEvents.schema.json",
       "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotevents.DetectorModelIotEvents>"
     },
+    "Firehose" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-action.html#cfn-iotevents-detectormodel-action-firehose",
+      "$ref" : "AWS_IoTEvents_DetectorModel.Firehose.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotevents.DetectorModelFirehose>"
+    },
+    "IotTopicPublish" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-action.html#cfn-iotevents-detectormodel-action-iottopicpublish",
+      "$ref" : "AWS_IoTEvents_DetectorModel.IotTopicPublish.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotevents.DetectorModelIotTopicPublish>"
+    },
+    "DynamoDB" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-action.html#cfn-iotevents-detectormodel-action-dynamodb",
+      "$ref" : "AWS_IoTEvents_DetectorModel.DynamoDB.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotevents.DetectorModelDynamoDB>"
+    },
+    "DynamoDBv2" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-action.html#cfn-iotevents-detectormodel-action-dynamodbv2",
+      "$ref" : "AWS_IoTEvents_DetectorModel.DynamoDBv2.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotevents.DetectorModelDynamoDBv2>"
+    },
+    "IotSiteWise" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-action.html#cfn-iotevents-detectormodel-action-iotsitewise",
+      "$ref" : "AWS_IoTEvents_DetectorModel.IotSiteWise.schema.json",
+      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotevents.DetectorModelIotSiteWise>"
+    },
     "ResetTimer" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-action.html#cfn-iotevents-detectormodel-action-resettimer",
       "$ref" : "AWS_IoTEvents_DetectorModel.ResetTimer.schema.json",
@@ -22,20 +47,10 @@
       "$ref" : "AWS_IoTEvents_DetectorModel.Sqs.schema.json",
       "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotevents.DetectorModelSqs>"
     },
-    "Firehose" : {
-      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-action.html#cfn-iotevents-detectormodel-action-firehose",
-      "$ref" : "AWS_IoTEvents_DetectorModel.Firehose.schema.json",
-      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotevents.DetectorModelFirehose>"
-    },
     "Sns" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-action.html#cfn-iotevents-detectormodel-action-sns",
       "$ref" : "AWS_IoTEvents_DetectorModel.Sns.schema.json",
       "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotevents.DetectorModelSns>"
-    },
-    "IotTopicPublish" : {
-      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-action.html#cfn-iotevents-detectormodel-action-iottopicpublish",
-      "$ref" : "AWS_IoTEvents_DetectorModel.IotTopicPublish.schema.json",
-      "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.iotevents.DetectorModelIotTopicPublish>"
     },
     "SetTimer" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotevents-detectormodel-action.html#cfn-iotevents-detectormodel-action-settimer",

@@ -3,6 +3,6 @@
   "$id" : "AWS_AppMesh_VirtualNodeAttributes.schema.json",
   "title" : "VirtualNodeAttributes",
   "type" : "string",
-  "enum" : [ "Uid", "MeshName", "Arn", "VirtualNodeName" ],
+  "enum" : [ "Uid", "MeshName", "MeshOwner", "ResourceOwner", "Arn", "VirtualNodeName" ],
   "javaType" : "shiver.me.timbers.aws.appmesh.VirtualNodeAttributes"
 }

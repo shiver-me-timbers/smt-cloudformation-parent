@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppStream_Stack.AccessEndpoint.schema.json",
+  "title" : "StackAccessEndpoint",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-stack-accessendpoint.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.appstream.StackAccessEndpoint",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<StackAccessEndpoint>" ],
+  "properties" : {
+    "EndpointType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-stack-accessendpoint.html#cfn-appstream-stack-accessendpoint-endpointtype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "VpceId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-stack-accessendpoint.html#cfn-appstream-stack-accessendpoint-vpceid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

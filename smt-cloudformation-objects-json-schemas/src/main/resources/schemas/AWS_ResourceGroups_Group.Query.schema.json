@@ -1,0 +1,32 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ResourceGroups_Group.Query.schema.json",
+  "title" : "GroupQuery",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resourcegroups-group-query.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.resourcegroups.GroupQuery",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<GroupQuery>" ],
+  "properties" : {
+    "ResourceTypeFilters" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resourcegroups-group-query.html#cfn-resourcegroups-group-query-resourcetypefilters",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    },
+    "StackIdentifier" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resourcegroups-group-query.html#cfn-resourcegroups-group-query-stackidentifier",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TagFilters" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resourcegroups-group-query.html#cfn-resourcegroups-group-query-tagfilters",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_ResourceGroups_Group.TagFilter.schema.json",
+        "javaType" : "shiver.me.timbers.aws.Property<shiver.me.timbers.aws.resourcegroups.GroupTagFilter>"
+      }
+    }
+  }
+}

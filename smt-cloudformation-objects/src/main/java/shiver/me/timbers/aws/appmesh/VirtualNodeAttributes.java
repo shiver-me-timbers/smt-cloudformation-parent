@@ -10,6 +10,8 @@ public enum VirtualNodeAttributes {
 
     UID("Uid"),
     MESH_NAME("MeshName"),
+    MESH_OWNER("MeshOwner"),
+    RESOURCE_OWNER("ResourceOwner"),
     ARN("Arn"),
     VIRTUAL_NODE_NAME("VirtualNodeName");
     private final String value;

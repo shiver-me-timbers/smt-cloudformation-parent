@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppConfig_Environment.Monitors.schema.json",
+  "title" : "EnvironmentMonitors",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appconfig-environment-monitors.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.appconfig.EnvironmentMonitors",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<EnvironmentMonitors>" ],
+  "properties" : {
+    "AlarmArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appconfig-environment-monitors.html#cfn-appconfig-environment-monitors-alarmarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "AlarmRoleArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appconfig-environment-monitors.html#cfn-appconfig-environment-monitors-alarmrolearn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

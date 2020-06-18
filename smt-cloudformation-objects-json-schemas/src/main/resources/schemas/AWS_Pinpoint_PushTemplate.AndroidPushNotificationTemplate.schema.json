@@ -1,0 +1,51 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Pinpoint_PushTemplate.AndroidPushNotificationTemplate.schema.json",
+  "title" : "PushTemplateAndroidPushNotificationTemplate",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-pushtemplate-androidpushnotificationtemplate.html",
+  "type" : "object",
+  "javaType" : "shiver.me.timbers.aws.pinpoint.PushTemplateAndroidPushNotificationTemplate",
+  "javaInterfaces" : [ "shiver.me.timbers.aws.Property<PushTemplateAndroidPushNotificationTemplate>" ],
+  "properties" : {
+    "Action" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-pushtemplate-androidpushnotificationtemplate.html#cfn-pinpoint-pushtemplate-androidpushnotificationtemplate-action",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ImageUrl" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-pushtemplate-androidpushnotificationtemplate.html#cfn-pinpoint-pushtemplate-androidpushnotificationtemplate-imageurl",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SmallImageIconUrl" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-pushtemplate-androidpushnotificationtemplate.html#cfn-pinpoint-pushtemplate-androidpushnotificationtemplate-smallimageiconurl",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Title" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-pushtemplate-androidpushnotificationtemplate.html#cfn-pinpoint-pushtemplate-androidpushnotificationtemplate-title",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ImageIconUrl" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-pushtemplate-androidpushnotificationtemplate.html#cfn-pinpoint-pushtemplate-androidpushnotificationtemplate-imageiconurl",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Sound" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-pushtemplate-androidpushnotificationtemplate.html#cfn-pinpoint-pushtemplate-androidpushnotificationtemplate-sound",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Body" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-pushtemplate-androidpushnotificationtemplate.html#cfn-pinpoint-pushtemplate-androidpushnotificationtemplate-body",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Url" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-pinpoint-pushtemplate-androidpushnotificationtemplate.html#cfn-pinpoint-pushtemplate-androidpushnotificationtemplate-url",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}
