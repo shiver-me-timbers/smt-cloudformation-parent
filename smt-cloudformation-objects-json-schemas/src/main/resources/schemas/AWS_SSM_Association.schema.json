@@ -29,7 +29,7 @@
     "Parameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-parameters",
       "type" : "object",
-      "javaType" : "java.util.Map<String, Object>"
+      "javaType" : "java.util.Map<String, shiver.me.timbers.aws.Property<shiver.me.timbers.aws.ssm.AssociationParameterValues>>"
     },
     "ScheduleExpression" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-scheduleexpression",

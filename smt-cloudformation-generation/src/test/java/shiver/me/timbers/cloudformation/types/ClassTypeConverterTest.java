@@ -58,28 +58,6 @@ public class ClassTypeConverterTest {
     }
 
     @Test
-    public void Can_convert_a_ParameterValues_to_a_java_type() {
-
-        final String resourceName = someString();
-
-        final String type = someString();
-        final String typeName = someString();
-        final String typePackage = someString();
-        final String resourceClassName = someString();
-
-        // Given
-        given(nameFinder.find(resourceName, type)).willReturn(typeName);
-        given(javaTypes.parsePackage(typeName)).willReturn(typePackage);
-        given(javaTypes.extractResourceClassName(resourceName)).willReturn(resourceClassName);
-
-        // When
-        final String actual = converter.toJavaType(resourceName, "ParameterValues");
-
-        // Then
-        assertThat(actual, equalTo("Object"));
-    }
-
-    @Test
     public void Can_convert_a_resource_name_and_tag_to_a_java_type() {
 
         final String resourceName = someString();

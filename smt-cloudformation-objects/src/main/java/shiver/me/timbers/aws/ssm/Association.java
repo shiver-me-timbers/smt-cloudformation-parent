@@ -74,7 +74,7 @@ public class Association {
      */
     @JsonProperty("Parameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-parameters")
-    private Map<String, Object> parameters;
+    private Map<String, Property<AssociationParameterValues>> parameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-scheduleexpression
      * 
@@ -238,7 +238,7 @@ public class Association {
      * 
      */
     @JsonIgnore
-    public Map<String, Object> getParameters() {
+    public Map<String, Property<AssociationParameterValues>> getParameters() {
         return parameters;
     }
 
@@ -247,11 +247,11 @@ public class Association {
      * 
      */
     @JsonIgnore
-    public void setParameters(Map<String, Object> parameters) {
+    public void setParameters(Map<String, Property<AssociationParameterValues>> parameters) {
         this.parameters = parameters;
     }
 
-    public Association withParameters(Map<String, Object> parameters) {
+    public Association withParameters(Map<String, Property<AssociationParameterValues>> parameters) {
         this.parameters = parameters;
         return this;
     }
@@ -478,7 +478,7 @@ public class Association {
     }
 
     @Override
-    public boolean equals(java.lang.Object other) {
+    public boolean equals(Object other) {
         if (other == this) {
             return true;
         }
