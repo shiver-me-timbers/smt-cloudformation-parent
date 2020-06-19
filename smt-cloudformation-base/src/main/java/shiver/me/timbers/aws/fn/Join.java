@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import shiver.me.timbers.aws.PrimitiveProperty;
 
 import java.util.List;
+import java.util.Objects;
 
 import static java.lang.String.format;
 import static java.util.Arrays.asList;
@@ -34,5 +35,18 @@ public class Join extends PrimitiveProperty implements StringFunction {
     public Join(String delimiter, List<CharSequence> listOfValues) {
         super(format("{ \"Fn::Join\" : [ \"%s\", [%s] ] }", delimiter, toStringList(listOfValues)));
         this.listOfValues = asList(delimiter, listOfValues);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Join join = (Join) o;
+        return Objects.equals(listOfValues, join.listOfValues);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(listOfValues);
     }
 }

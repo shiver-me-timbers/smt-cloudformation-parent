@@ -3,6 +3,7 @@ package shiver.me.timbers.aws.fn;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
+import java.util.Objects;
 
 import static java.util.Collections.singletonList;
 
@@ -19,5 +20,18 @@ public class Not implements ConditionFunction {
      */
     public Not(ConditionFunction condition) {
         this.condition = singletonList(condition);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Not not = (Not) o;
+        return Objects.equals(condition, not.condition);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(condition);
     }
 }

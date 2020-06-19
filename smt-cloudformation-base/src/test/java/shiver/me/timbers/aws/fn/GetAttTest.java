@@ -1,11 +1,12 @@
 package shiver.me.timbers.aws.fn;
 
+import nl.jqno.equalsverifier.EqualsVerifier;
 import org.junit.Test;
 import shiver.me.timbers.aws.HasAttributes;
 import shiver.me.timbers.aws.HasName;
 
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.contains;
-import static org.junit.Assert.assertThat;
 import static shiver.me.timbers.aws.fn.Functions.fnGetAtt;
 import static shiver.me.timbers.data.random.RandomEnums.someEnum;
 import static shiver.me.timbers.data.random.RandomStrings.someString;
@@ -25,6 +26,11 @@ public class GetAttTest {
 
         // Then
         assertThat(actual, hasFieldThat("values", contains(name, attribute)));
+    }
+
+    @Test
+    public void GetAtt_has_equality() {
+        EqualsVerifier.forClass(GetAtt.class).usingGetClass().withIgnoredFields("string").verify();
     }
 
     private static class TestResource implements HasAttributes<TestAttributes>, HasName {

@@ -1,9 +1,10 @@
 package shiver.me.timbers.aws.fn;
 
+import nl.jqno.equalsverifier.EqualsVerifier;
 import org.junit.Test;
 
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.contains;
-import static org.junit.Assert.assertThat;
 import static shiver.me.timbers.aws.fn.Functions.fnFindInMap;
 import static shiver.me.timbers.data.random.RandomStrings.someString;
 import static shiver.me.timbers.matchers.Matchers.hasFieldThat;
@@ -23,5 +24,10 @@ public class FindInMapTest {
 
         // Then
         assertThat(actual, hasFieldThat("values", contains(mapName, topLevelKey, secondLevelKey)));
+    }
+
+    @Test
+    public void FindInMap_has_equality() {
+        EqualsVerifier.forClass(FindInMap.class).usingGetClass().withIgnoredFields("string").verify();
     }
 }

@@ -6,6 +6,7 @@ import shiver.me.timbers.aws.HasName;
 import shiver.me.timbers.aws.PrimitiveProperty;
 
 import java.util.List;
+import java.util.Objects;
 
 import static java.lang.String.format;
 import static java.util.Arrays.asList;
@@ -26,5 +27,18 @@ public class GetAtt extends PrimitiveProperty implements StringFunction {
     public <T, R extends HasName & HasAttributes<T>> GetAtt(R resource, T attribute) {
         super(format("{ \"Fn::GetAtt\" : [ \"%s\", \"%s\" ] }", resource.getName(), attribute));
         this.values = asList(resource.getName(), attribute);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        GetAtt getAtt = (GetAtt) o;
+        return Objects.equals(values, getAtt.values);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(values);
     }
 }

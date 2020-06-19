@@ -3,6 +3,7 @@ package shiver.me.timbers.aws.fn;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
+import java.util.Objects;
 
 import static java.util.Arrays.asList;
 
@@ -26,5 +27,18 @@ public class Or implements ConditionFunction {
      */
     public Or(List<ConditionFunction> conditions) {
         this.conditions = conditions;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Or or = (Or) o;
+        return Objects.equals(conditions, or.conditions);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(conditions);
     }
 }

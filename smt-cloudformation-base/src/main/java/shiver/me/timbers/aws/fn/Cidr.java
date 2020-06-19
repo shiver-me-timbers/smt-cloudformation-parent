@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import shiver.me.timbers.aws.PrimitiveProperty;
 
 import java.util.List;
+import java.util.Objects;
 
 import static java.lang.String.format;
 import static java.util.Arrays.asList;
@@ -25,5 +26,18 @@ public class Cidr extends PrimitiveProperty implements StringFunction {
     public Cidr(CharSequence ipBlock, CharSequence count, CharSequence cidrBits) {
         super(format("{ \"Fn::Cidr\" : [\"%s\", \"%s\", \"%s\"] }", ipBlock, count, cidrBits));
         this.values = asList(ipBlock, count, cidrBits);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Cidr cidr = (Cidr) o;
+        return Objects.equals(values, cidr.values);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(values);
     }
 }

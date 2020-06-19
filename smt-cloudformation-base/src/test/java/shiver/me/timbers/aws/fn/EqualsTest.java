@@ -1,9 +1,10 @@
 package shiver.me.timbers.aws.fn;
 
+import nl.jqno.equalsverifier.EqualsVerifier;
 import org.junit.Test;
 
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.contains;
-import static org.junit.Assert.assertThat;
 import static org.mockito.Mockito.mock;
 import static shiver.me.timbers.aws.fn.Functions.fnEquals;
 import static shiver.me.timbers.matchers.Matchers.hasFieldThat;
@@ -22,5 +23,10 @@ public class EqualsTest {
 
         // Then
         assertThat(actual, hasFieldThat("values", contains(left, right)));
+    }
+
+    @Test
+    public void Equals_has_equality() {
+        EqualsVerifier.forClass(Equals.class).usingGetClass().verify();
     }
 }

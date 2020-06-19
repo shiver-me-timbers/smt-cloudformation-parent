@@ -4,6 +4,8 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import shiver.me.timbers.aws.fn.ConditionFunction;
 
+import java.util.Objects;
+
 /**
  * @see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html">Condition</a>
  */
@@ -37,5 +39,19 @@ public class Condition implements ConditionFunction, HasName {
      */
     public ConditionFunction getCondition() {
         return condition;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Condition condition1 = (Condition) o;
+        return Objects.equals(name, condition1.name) &&
+            Objects.equals(condition, condition1.condition);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, condition);
     }
 }

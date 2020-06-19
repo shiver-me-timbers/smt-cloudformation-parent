@@ -5,9 +5,7 @@ import org.junit.Test;
 
 import static java.lang.String.format;
 import static org.assertj.core.api.Assertions.catchThrowable;
-import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.instanceOf;
-import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.assertThat;
 import static shiver.me.timbers.data.random.RandomEnums.someEnum;
 import static shiver.me.timbers.data.random.RandomIntegers.someIntegerBetween;

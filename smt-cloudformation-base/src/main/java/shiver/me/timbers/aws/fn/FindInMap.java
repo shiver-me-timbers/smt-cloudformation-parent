@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import shiver.me.timbers.aws.PrimitiveProperty;
 
 import java.util.List;
+import java.util.Objects;
 
 import static java.lang.String.format;
 import static java.util.Arrays.asList;
@@ -26,5 +27,18 @@ public class FindInMap extends PrimitiveProperty implements StringFunction {
     public FindInMap(CharSequence mapName, CharSequence topLevelKey, CharSequence secondLevelKey) {
         super(format("{ \"Fn::FindInMap\" : [\"%s\", \"%s\", \"%s\"] }", mapName, topLevelKey, secondLevelKey));
         this.values = asList(mapName, topLevelKey, secondLevelKey);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        FindInMap findInMap = (FindInMap) o;
+        return Objects.equals(values, findInMap.values);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(values);
     }
 }

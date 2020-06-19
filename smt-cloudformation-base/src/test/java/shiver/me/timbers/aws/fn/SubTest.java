@@ -1,11 +1,12 @@
 package shiver.me.timbers.aws.fn;
 
+import nl.jqno.equalsverifier.EqualsVerifier;
 import org.junit.Test;
 
 import java.util.Map;
 
 import static java.util.Arrays.asList;
-import static org.junit.Assert.assertThat;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.mockito.Mockito.mock;
 import static shiver.me.timbers.aws.fn.Functions.fnSub;
 import static shiver.me.timbers.data.random.RandomStrings.someString;
@@ -39,5 +40,10 @@ public class SubTest {
 
         // Then
         assertThat(actual, hasField("value", asList(string, variables)));
+    }
+
+    @Test
+    public void Sub_has_equality() {
+        EqualsVerifier.forClass(Sub.class).usingGetClass().withIgnoredFields("string").verify();
     }
 }

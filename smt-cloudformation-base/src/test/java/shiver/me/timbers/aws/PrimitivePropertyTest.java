@@ -3,12 +3,13 @@ package shiver.me.timbers.aws;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import nl.jqno.equalsverifier.EqualsVerifier;
 import org.junit.Before;
 import org.junit.Test;
 
 import static java.util.Collections.singletonMap;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
-import static org.junit.Assert.assertThat;
 import static shiver.me.timbers.data.random.RandomIntegers.someIntegerBetween;
 import static shiver.me.timbers.data.random.RandomStrings.someString;
 
@@ -85,6 +86,11 @@ public class PrimitivePropertyTest {
 
         // Then
         assertThat(actual, equalTo(toJson(singletonMap("one", value))));
+    }
+
+    @Test
+    public void PrimitiveProperty_has_equality() {
+        EqualsVerifier.forClass(PrimitiveProperty.class).usingGetClass().verify();
     }
 
     private static String toJson(Object object) throws JsonProcessingException {

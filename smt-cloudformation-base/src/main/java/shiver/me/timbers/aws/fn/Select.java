@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import shiver.me.timbers.aws.PrimitiveProperty;
 
 import java.util.List;
+import java.util.Objects;
 
 import static java.lang.String.format;
 import static java.util.Arrays.asList;
@@ -44,5 +45,18 @@ public class Select extends PrimitiveProperty implements StringFunction {
     public Select(int index, Function function) {
         super(format("{ \"Fn::Select\" : [ \"%s\", %s ] }", index, function));
         this.listOfStrings = asList(String.valueOf(index), function);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Select select = (Select) o;
+        return Objects.equals(listOfStrings, select.listOfStrings);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(listOfStrings);
     }
 }

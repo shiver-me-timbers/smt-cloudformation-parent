@@ -1,10 +1,11 @@
 package shiver.me.timbers.aws.fn;
 
+import nl.jqno.equalsverifier.EqualsVerifier;
 import org.junit.Test;
 
 import static java.util.Arrays.asList;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.contains;
-import static org.junit.Assert.assertThat;
 import static org.mockito.Mockito.mock;
 import static shiver.me.timbers.aws.fn.Functions.fnSelect;
 import static shiver.me.timbers.data.random.RandomIntegers.someInteger;
@@ -55,5 +56,10 @@ public class SelectTest {
 
         // Then
         assertThat(actual, hasFieldThat("listOfStrings", contains(String.valueOf(index), function)));
+    }
+
+    @Test
+    public void Select_has_equality() {
+        EqualsVerifier.forClass(Select.class).usingGetClass().withIgnoredFields("string").verify();
     }
 }

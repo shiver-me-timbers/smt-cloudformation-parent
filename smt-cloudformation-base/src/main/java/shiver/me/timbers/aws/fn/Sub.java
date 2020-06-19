@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import shiver.me.timbers.aws.PrimitiveProperty;
 
 import java.util.Map;
+import java.util.Objects;
 
 import static java.lang.String.format;
 import static java.util.Arrays.asList;
@@ -35,5 +36,18 @@ public class Sub extends PrimitiveProperty implements StringFunction {
     public Sub(CharSequence string, Map<String, CharSequence> variables) {
         super(format("{ \"Fn::Sub\" : [\"%s\", %s] }", string, variables));
         this.value = asList(string, variables);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Sub sub = (Sub) o;
+        return Objects.equals(value, sub.value);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(value);
     }
 }

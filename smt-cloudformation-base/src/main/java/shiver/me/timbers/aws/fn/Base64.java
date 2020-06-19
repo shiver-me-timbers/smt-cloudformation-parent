@@ -3,6 +3,8 @@ package shiver.me.timbers.aws.fn;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import shiver.me.timbers.aws.PrimitiveProperty;
 
+import java.util.Objects;
+
 import static java.lang.String.format;
 
 /**
@@ -19,5 +21,18 @@ public class Base64 extends PrimitiveProperty implements StringFunction {
     public Base64(CharSequence valueToEncode) {
         super(format("{ \"Fn::Base64\" : \"%s\" }", valueToEncode));
         this.valueToEncode = valueToEncode;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Base64 base64 = (Base64) o;
+        return Objects.equals(valueToEncode, base64.valueToEncode);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(valueToEncode);
     }
 }

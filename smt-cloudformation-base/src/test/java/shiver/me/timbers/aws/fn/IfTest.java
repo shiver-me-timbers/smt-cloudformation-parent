@@ -1,12 +1,13 @@
 package shiver.me.timbers.aws.fn;
 
+import nl.jqno.equalsverifier.EqualsVerifier;
 import org.junit.Test;
 import shiver.me.timbers.aws.Condition;
 
 import static org.assertj.core.api.Assertions.catchThrowableOfType;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.contains;
 import static org.hamcrest.Matchers.equalTo;
-import static org.junit.Assert.assertThat;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
 import static shiver.me.timbers.aws.fn.Functions.fnIf;
@@ -76,5 +77,10 @@ public class IfTest {
                 "The type instance of an 'If' is indeterminate before the template has been processed by Cloudformation."
             )
         );
+    }
+
+    @Test
+    public void If_has_equality() {
+        EqualsVerifier.forClass(If.class).usingGetClass().withIgnoredFields("string").verify();
     }
 }
