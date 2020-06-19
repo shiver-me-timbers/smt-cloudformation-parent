@@ -21,7 +21,7 @@
     <parent>
         <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
         <artifactId>smt-cloudformation-parent</artifactId>
-        <version>15.2.0.0-SNAPSHOT</version>
+        <version>15.2.0.0</version>
     </parent>
 
     <artifactId>smt-cloudformation-base-json-schemas</artifactId>
