@@ -93,6 +93,12 @@
             <version>3.4.1</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.google.code.bean-matchers</groupId>
+            <artifactId>bean-matchers</artifactId>
+            <version>0.12</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <modules>
@@ -101,6 +107,8 @@
         <module>smt-cloudformation-base</module>
         <module>smt-cloudformation-objects-json-schemas</module>
         <module>smt-cloudformation-objects</module>
+        <module>smt-cloudformation-codebuild</module>
+        <module>smt-cloudformation-codepipeline</module>
     </modules>
 
     <scm>
