@@ -3,7 +3,6 @@ package shiver.me.timbers.cloudformation.codepipeline.actions.transformations;
 import org.junit.Before;
 import org.junit.Test;
 import shiver.me.timbers.aws.codepipeline.PipelineActionDeclaration;
-import shiver.me.timbers.cloudformation.codepipeline.Pipeline;
 import shiver.me.timbers.cloudformation.codepipeline.PipelineConfig;
 import shiver.me.timbers.cloudformation.codepipeline.actions.Action;
 import shiver.me.timbers.cloudformation.codepipeline.actions.PipelineAction;

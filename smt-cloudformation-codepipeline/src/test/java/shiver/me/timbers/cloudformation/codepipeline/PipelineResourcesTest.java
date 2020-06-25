@@ -7,28 +7,29 @@ import shiver.me.timbers.cloudformation.codepipeline.actions.SourcesFactory;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.mockito.BDDMockito.given;
+import static org.mockito.BDDMockito.then;
 import static org.mockito.Mockito.mock;
 import static shiver.me.timbers.data.random.RandomStrings.someString;
 
-public class PipelineTest {
+public class PipelineResourcesTest {
 
     @Test
     public void Can_create_a_new_Pipelines() {
 
-        final String resourceName = someString();
+        final PipelineConfig config = mock(PipelineConfig.class);
         final SourcesFactory sourcesFactory = mock(SourcesFactory.class);
-        final PipelineResources pipelineResources = new PipelineResources(resourceName, sourcesFactory);
         final String pipelineName = someString();
 
         final Sources expected = mock(Sources.class);
 
         // Given
-        given(sourcesFactory.create(resourceName, pipelineName)).willReturn(expected);
+        given(sourcesFactory.create(config)).willReturn(expected);
 
         // When
-        final Sources actual = pipelineResources.name(pipelineName);
+        final Sources actual = new PipelineResources(config, sourcesFactory).name(pipelineName);
 
         // Then
+        then(config).should().setPipelineName(pipelineName);
         assertThat(actual, is(expected));
     }
 }

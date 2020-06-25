@@ -28,7 +28,7 @@ public class PolicyBuilder implements Builder {
                             new PolicyDocument()
                                 .withStatement(singletonList(new PipelineBucketStatement(bucket.ref())))
                         )
-                    .withRoles(singletonList(role.ref()))
+                        .withRoles(singletonList(role.ref()))
                 )
         );
     }

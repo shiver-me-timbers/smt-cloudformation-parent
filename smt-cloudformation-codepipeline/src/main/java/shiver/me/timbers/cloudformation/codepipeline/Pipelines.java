@@ -5,37 +5,27 @@ import shiver.me.timbers.cloudformation.codepipeline.builders.Builders;
 import shiver.me.timbers.cloudformation.codepipeline.stages.Stage;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import static java.util.Arrays.asList;
 
 public class Pipelines {
 
     private final Builders builders;
-    private final String resourceName;
-    private final String pipelineName;
-    private final List<Stage> stages;
+    private final PipelineConfig config;
 
-    public Pipelines(
-        Builders builders,
-        String resourceName,
-        String pipelineName,
-        List<Stage> stages
-    ) {
+    public Pipelines(Builders builders, PipelineConfig config) {
         this.builders = builders;
-        this.resourceName = resourceName;
-        this.pipelineName = pipelineName;
-        this.stages = stages;
+        this.config = config;
     }
 
     public Pipelines stage(String name, PipelineAction... actions) {
-        stages.add(new Stage(name, new ArrayList<>(asList(actions))));
+        config.addStage(new Stage(name, new ArrayList<>(asList(actions))));
         return this;
     }
 
     public Pipeline build() {
         final Pipeline pipeline = new Pipeline();
-        builders.apply(pipeline, new PipelineConfig(resourceName, pipelineName, stages));
+        builders.apply(pipeline, config);
         return pipeline;
     }
 }

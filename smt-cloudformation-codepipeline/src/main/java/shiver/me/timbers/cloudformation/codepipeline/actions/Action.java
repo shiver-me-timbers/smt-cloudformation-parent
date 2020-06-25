@@ -1,10 +1,8 @@
 package shiver.me.timbers.cloudformation.codepipeline.actions;
 
-import shiver.me.timbers.aws.Property;
 import shiver.me.timbers.aws.codepipeline.PipelineActionDeclaration;
 import shiver.me.timbers.aws.codepipeline.PipelineInputArtifact;
 import shiver.me.timbers.aws.codepipeline.PipelineOutputArtifact;
-import shiver.me.timbers.cloudformation.codebuild.CodeBuilds;
 
 import java.util.Arrays;
 import java.util.Set;

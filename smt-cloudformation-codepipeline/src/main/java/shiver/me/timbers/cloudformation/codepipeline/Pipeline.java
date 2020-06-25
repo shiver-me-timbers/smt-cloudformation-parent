@@ -16,14 +16,16 @@ public class Pipeline extends ResourceList<Pipeline, Resource> {
     }
 
     public static PipelineResources resource(String name) {
-        return new PipelineResources(name, new SourcesFactory(new PipelinesFactory(new Builders(asList(
-            new S3BucketBuilder(),
-            new RoleBuilder(),
-            new S3BucketPolicyBuilder(),
-            new PolicyBuilder(),
-            new PipelineBuilder(new PipelineStageFactory(new PipelineActionTransformations(asList(
-                new ActionTransformation()
-            ))))
-        )))));
+        return new PipelineResources(new PipelineConfig(name), new SourcesFactory(new PipelinesFactory(
+            new Builders(asList(
+                new S3BucketBuilder(),
+                new RoleBuilder(),
+                new S3BucketPolicyBuilder(),
+                new PolicyBuilder(),
+                new PipelineBuilder(new PipelineStageFactory(new PipelineActionTransformations(asList(
+                    new ActionTransformation()
+                ))))
+            ))
+        )));
     }
 }

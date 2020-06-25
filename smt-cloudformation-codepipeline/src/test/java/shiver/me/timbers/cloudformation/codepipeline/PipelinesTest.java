@@ -7,11 +7,9 @@ import shiver.me.timbers.cloudformation.codepipeline.actions.PipelineAction;
 import shiver.me.timbers.cloudformation.codepipeline.builders.Builders;
 import shiver.me.timbers.cloudformation.codepipeline.stages.Stage;
 
-import java.util.List;
-
 import static java.util.Arrays.asList;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.is;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.BDDMockito.then;
 import static org.mockito.Mockito.mock;
@@ -20,19 +18,15 @@ import static shiver.me.timbers.data.random.RandomStrings.someString;
 public class PipelinesTest {
 
     private Builders builders;
-    private String resourceName;
-    private String pipelineName;
-    private List<Stage> stageList;
+    private PipelineConfig config;
     private Pipelines pipelines;
 
     @Before
     @SuppressWarnings("unchecked")
     public void setUp() {
         builders = mock(Builders.class);
-        resourceName = someString();
-        pipelineName = someString();
-        stageList = mock(List.class);
-        pipelines = new Pipelines(builders, resourceName, pipelineName, stageList);
+        config = mock(PipelineConfig.class);
+        pipelines = new Pipelines(builders, config);
     }
 
     @Test
@@ -48,7 +42,7 @@ public class PipelinesTest {
         pipelines.stage(name, action1, action2, action3);
 
         // Then
-        then(stageList).should().add(new Stage(name, asList(action1, action2, action3)));
+        then(config).should().addStage(new Stage(name, asList(action1, action2, action3)));
     }
 
     @Test
@@ -61,7 +55,7 @@ public class PipelinesTest {
         final Pipeline actual = pipelines.build();
 
         // Then
-        then(builders).should().apply(captor.capture(), eq(new PipelineConfig(resourceName, pipelineName, stageList)));
+        then(builders).should().apply(captor.capture(), eq(config));
         assertThat(actual, is(captor.getValue()));
     }
 }

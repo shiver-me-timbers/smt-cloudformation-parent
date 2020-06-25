@@ -7,15 +7,16 @@ public class PipelineResources {
 
     public static final int DEFAULT_S3_EXPIRATION_DAYS = 30;
 
-    private final String resourceName;
+    private final PipelineConfig config;
     private final SourcesFactory sourcesFactory;
 
-    public PipelineResources(String resourceName, SourcesFactory sourcesFactory) {
-        this.resourceName = resourceName;
+    public PipelineResources(PipelineConfig config, SourcesFactory sourcesFactory) {
+        this.config = config;
         this.sourcesFactory = sourcesFactory;
     }
 
     public Sources name(String name) {
-        return sourcesFactory.create(resourceName, name);
+        config.setPipelineName(name);
+        return sourcesFactory.create(config);
     }
 }

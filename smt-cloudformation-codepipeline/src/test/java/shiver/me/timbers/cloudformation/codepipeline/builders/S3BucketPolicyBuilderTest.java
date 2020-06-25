@@ -12,12 +12,10 @@ import shiver.me.timbers.cloudformation.codepipeline.Pipeline;
 import shiver.me.timbers.cloudformation.codepipeline.PipelineConfig;
 import shiver.me.timbers.cloudformation.codepipeline.iam.PipelineBucketStatement;
 
-import static java.util.Arrays.asList;
 import static java.util.Collections.singletonList;
 import static java.util.Collections.singletonMap;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.BDDMockito.then;
-import static org.mockito.Mockito.RETURNS_DEEP_STUBS;
 import static org.mockito.Mockito.mock;
 import static shiver.me.timbers.data.random.RandomStrings.someString;
 
