@@ -1,9 +1,8 @@
 package shiver.me.timbers.cloudformation.codebuild;
 
 import shiver.me.timbers.aws.codebuild.Project;
-import shiver.me.timbers.cloudformation.codepipeline.actions.PipelineAction;
 
-public class CodeBuild extends Project implements PipelineAction {
+public class CodeBuild extends Project {
 
     CodeBuild() {
     }
