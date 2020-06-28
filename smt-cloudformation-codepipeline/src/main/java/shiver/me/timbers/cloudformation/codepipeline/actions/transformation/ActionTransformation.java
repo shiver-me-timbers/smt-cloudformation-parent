@@ -10,7 +10,7 @@ public class ActionTransformation implements PipelineActionTransformation {
 
     @Override
     public boolean supports(Action action) {
-        return Action.class.equals(action.getClass()) || Source.class.equals(action.getClass());
+        return Action.class.equals(action.getClass()) || action instanceof Source;
     }
 
     @Override

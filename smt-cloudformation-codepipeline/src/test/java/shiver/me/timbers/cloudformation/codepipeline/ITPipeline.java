@@ -23,6 +23,7 @@ import static java.util.Arrays.asList;
 import static java.util.Collections.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
+import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
 import static shiver.me.timbers.aws.fn.Functions.fnGetAtt;
 import static shiver.me.timbers.aws.iam.Effect.ALLOW;
@@ -119,24 +120,28 @@ public class ITPipeline {
     @SuppressWarnings({"unchecked", "rawtypes"})
     public void Can_add_a_code_build_to_the_pipeline() {
 
-        // Given
         final String plResourceName = someString();
         final String pipelineName = someString();
-        final String sourceName = someString();
+        final String sourceName = "SOURCE";
         final Source<Source> source = mock(Source.class);
         final String sourceOutputArtifact = someString();
         final String stageName = someString();
-        final String codeBuildActionName = someString();
+        final String codeBuildActionName = "CODEBUILD";
         final String cbResourceName = someString();
         final String projectName = someString();
         final String codeBuildDescription = someString();
         final String buildSpec = someString();
 
+        // Given
+        given(source.getOutputArtifacts()).willReturn(
+            singleton(new PipelineOutputArtifact().withName(sourceOutputArtifact))
+        );
+
         // When
         final Pipeline actual = Pipeline
             .resource(plResourceName)
             .name(pipelineName)
-            .source(sourceName, source.outputArtifacts(sourceOutputArtifact))
+            .source(sourceName, source)
             .stage(
                 stageName,
                 CodeBuildAction
