@@ -2,7 +2,7 @@ package shiver.me.timbers.cloudformation.codepipeline.stages;
 
 import shiver.me.timbers.aws.codepipeline.PipelineStageDeclaration;
 import shiver.me.timbers.cloudformation.codepipeline.PipelineConfig;
-import shiver.me.timbers.cloudformation.codepipeline.actions.transformations.PipelineActionTransformations;
+import shiver.me.timbers.cloudformation.codepipeline.actions.transformation.PipelineActionTransformations;
 
 import java.util.LinkedHashSet;
 

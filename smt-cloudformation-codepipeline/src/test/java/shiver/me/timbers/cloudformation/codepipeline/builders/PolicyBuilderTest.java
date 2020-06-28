@@ -46,8 +46,7 @@ public class PolicyBuilderTest {
 
         // Then
         then(pipeline).should().add(
-            new PolicyResource()
-                .withName(resourceName + "Policy")
+            new PolicyResource(resourceName + "Policy")
                 .withDependsOn(role, bucket)
                 .withProperties(
                     new Policy()

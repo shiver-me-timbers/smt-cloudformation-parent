@@ -31,8 +31,7 @@ public class RoleBuilderTest {
         new RoleBuilder().apply(pipeline, config);
 
         // Then
-        final RoleResource roleResource = new RoleResource()
-            .withName(resourceName + "Role")
+        final RoleResource roleResource = new RoleResource(resourceName + "Role")
             .withProperties(
                 new Role()
                     .withRoleName(pipelineName + "-role")

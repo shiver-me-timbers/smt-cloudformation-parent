@@ -34,8 +34,7 @@ public class S3BucketBuilderTest {
         new S3BucketBuilder().apply(pipeline, config);
 
         // Then
-        final BucketResource bucketResource = new BucketResource()
-            .withName(resourceName + "S3Bucket")
+        final BucketResource bucketResource = new BucketResource(resourceName + "S3Bucket")
             .withProperties(
                 new Bucket()
                     .withBucketName(pipelineName + "-s3")

@@ -1,12 +1,12 @@
 package shiver.me.timbers.cloudformation.codepipeline;
 
-import shiver.me.timbers.cloudformation.codepipeline.builders.Builders;
+import shiver.me.timbers.cloudformation.builders.Builders;
 
 public class PipelinesFactory {
 
-    private final Builders builders;
+    private final Builders<Pipeline, PipelineConfig> builders;
 
-    public PipelinesFactory(Builders builders) {
+    public PipelinesFactory(Builders<Pipeline, PipelineConfig> builders) {
         this.builders = builders;
     }
 

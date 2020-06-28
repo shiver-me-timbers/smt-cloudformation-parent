@@ -23,7 +23,6 @@
     <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
     <artifactId>smt-cloudformation-parent</artifactId>
     <version>15.2.0.2-SNAPSHOT</version>
-    <relativePath/>
   </parent>
 
   <artifactId>smt-cloudformation-codepipeline</artifactId>
@@ -48,6 +47,12 @@
       <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
       <artifactId>smt-cloudformation-codebuild</artifactId>
       <version>15.2.0.2-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
+      <artifactId>smt-cloudformation-test</artifactId>
+      <version>15.2.0.2-SNAPSHOT</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
 </project>

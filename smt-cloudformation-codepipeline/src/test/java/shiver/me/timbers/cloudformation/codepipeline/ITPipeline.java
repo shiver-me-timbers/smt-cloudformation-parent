@@ -11,9 +11,9 @@ import shiver.me.timbers.aws.s3.*;
 import shiver.me.timbers.cloudformation.codebuild.CodeBuild;
 import shiver.me.timbers.cloudformation.codebuild.iam.CodeBuildLogGroupStatement;
 import shiver.me.timbers.cloudformation.codepipeline.actions.Action;
-import shiver.me.timbers.cloudformation.codepipeline.actions.CodeBuildAction;
-import shiver.me.timbers.cloudformation.codepipeline.actions.Source;
+import shiver.me.timbers.cloudformation.codepipeline.actions.build.CodeBuildAction;
 import shiver.me.timbers.cloudformation.codepipeline.actions.configuration.CodeBuildActionConfiguration;
+import shiver.me.timbers.cloudformation.codepipeline.actions.source.Source;
 import shiver.me.timbers.cloudformation.codepipeline.iam.PipelineBucketStatement;
 
 import java.util.LinkedHashSet;
@@ -28,12 +28,14 @@ import static shiver.me.timbers.aws.fn.Functions.fnGetAtt;
 import static shiver.me.timbers.aws.iam.Effect.ALLOW;
 import static shiver.me.timbers.aws.iam.RoleAttributes.ARN;
 import static shiver.me.timbers.aws.parameters.PseudoParameter.AccountId;
-import static shiver.me.timbers.cloudformation.codepipeline.CloudFormationResources.findResource;
-import static shiver.me.timbers.cloudformation.codepipeline.CloudFormationResources.t;
+import static shiver.me.timbers.cloudformation.codebuild.ArtifactType.CODEPIPELINE;
 import static shiver.me.timbers.cloudformation.codepipeline.PipelineResources.DEFAULT_S3_EXPIRATION_DAYS;
+import static shiver.me.timbers.cloudformation.test.CloudFormationResources.findResource;
+import static shiver.me.timbers.cloudformation.test.CloudFormationResources.t;
 import static shiver.me.timbers.data.random.RandomStrings.someString;
 import static shiver.me.timbers.matchers.Matchers.hasField;
 
+@SuppressWarnings("rawtypes")
 public class ITPipeline {
 
     @Test
@@ -43,12 +45,12 @@ public class ITPipeline {
         final String resourceName = someString();
         final String pipelineName = someString();
         final String sourceName = someString();
-        final Source source = mock(Source.class);
+        final Source source = new Source();
         final String stageName1 = someString();
         final String stageName2 = someString();
-        final Action action1 = mock(Action.class);
-        final Action action2 = mock(Action.class);
-        final Action action3 = mock(Action.class);
+        final Action action1 = new Action();
+        final Action action2 = new Action();
+        final Action action3 = new Action();
 
         // When
         final Pipeline actual = Pipeline
@@ -126,7 +128,7 @@ public class ITPipeline {
         final String stageName = someString();
         final String codeBuildActionName = someString();
         final String cbResourceName = someString();
-        final String codeBuildName = someString();
+        final String projectName = someString();
         final String codeBuildDescription = someString();
         final String buildSpec = someString();
 
@@ -141,7 +143,7 @@ public class ITPipeline {
                     .name(codeBuildActionName)
                     .codeBuild(
                         CodeBuild.resource(cbResourceName)
-                            .name(codeBuildName)
+                            .name(projectName)
                             .description(codeBuildDescription)
                             .buildSpec(buildSpec)
                             .build()
@@ -190,10 +192,10 @@ public class ITPipeline {
         final Policy codeBuildPolicy = codeBuildPolicyResource.getProperties();
         assertThat(codeBuildPolicyResource.getName(), equalTo(cbResourceName + "Policy"));
         assertThat(codeBuildPolicyResource.getDependsOn(), contains(codeBuildRoleResourceName, bucketResourceName));
-        assertThat(codeBuildPolicy.getPolicyName(), equalTo(pipelineName + "-policy"));
+        assertThat(codeBuildPolicy.getPolicyName(), equalTo(projectName + "-policy"));
         assertThat(t(codeBuildPolicy.getPolicyDocument()).getStatement(), contains(
             new PipelineBucketStatement(bucketResource.ref()),
-            new CodeBuildLogGroupStatement(AccountId, codeBuildName)
+            new CodeBuildLogGroupStatement(AccountId, projectName)
         ));
         final Policy pipelinePolicy = findResource(actual, PolicyResource.class, forRole(pipelineRoleResource)).getProperties();
         assertThat(t(pipelinePolicy.getPolicyDocument()).getStatement(), contains(
@@ -202,13 +204,13 @@ public class ITPipeline {
         final LogGroupResource logGroupResource = findResource(actual, LogGroupResource.class);
         assertThat(logGroupResource.getName(), equalTo(cbResourceName + "LogGroup"));
         final LogGroup logGroup = logGroupResource.getProperties();
-        assertThat(logGroup.getLogGroupName(), equalTo("/aws/codebuild/" + codeBuildName));
+        assertThat(logGroup.getLogGroupName(), equalTo("/aws/codebuild/" + projectName));
         assertThat(logGroup.getRetentionInDays(), equalTo(7));
         final ProjectResource projectResource = findResource(actual, ProjectResource.class);
         assertThat(projectResource.getName(), equalTo(cbResourceName));
         assertThat(projectResource.getDependsOn(), contains(codeBuildRoleResourceName, logGroupResource.getName()));
         final Project project = projectResource.getProperties();
-        assertThat(project.getName(), equalTo(codeBuildName));
+        assertThat(project.getName(), equalTo(projectName));
         assertThat(project.getDescription(), equalTo(codeBuildDescription));
         assertThat(project.getServiceRole(), equalTo(fnGetAtt(codeBuildRoleResource, ARN)));
         assertThat(project.getSource(), equalTo(new ProjectSource().withType("CODEPIPELINE").withBuildSpec(buildSpec)));
@@ -218,7 +220,7 @@ public class ITPipeline {
                 .withImage("aws/codebuild/standard:4.0")
                 .withType("LINUX_CONTAINER")
         ));
-        assertThat(project.getArtifacts(), equalTo(new ProjectArtifacts().withType("CODEPIPELINE")));
+        assertThat(project.getArtifacts(), equalTo(new ProjectArtifacts().withType(CODEPIPELINE)));
         final PipelineResource pipelineResource = findResource(actual, PipelineResource.class);
         final shiver.me.timbers.aws.codepipeline.Pipeline pipeline = pipelineResource.getProperties();
         assertThat(pipelineResource.getName(), equalTo(plResourceName));
@@ -232,7 +234,7 @@ public class ITPipeline {
             allOf(hasField("name", sourceName), hasField("actions", singleton(source))),
             allOf(hasField("name", stageName), hasField("actions", singleton(
                 new PipelineActionDeclaration()
-                    .withName(codeBuildName)
+                    .withName(projectName)
                     .withActionTypeId(
                         new PipelineActionTypeId()
                             .withCategory("Build")

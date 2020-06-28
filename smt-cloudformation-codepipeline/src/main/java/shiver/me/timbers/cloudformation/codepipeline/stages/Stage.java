@@ -1,6 +1,6 @@
 package shiver.me.timbers.cloudformation.codepipeline.stages;
 
-import shiver.me.timbers.cloudformation.codepipeline.actions.PipelineAction;
+import shiver.me.timbers.cloudformation.codepipeline.actions.Action;
 
 import java.util.List;
 import java.util.Objects;
@@ -8,9 +8,9 @@ import java.util.Objects;
 public class Stage {
 
     private final String name;
-    private final List<PipelineAction> actions;
+    private final List<Action<?>> actions;
 
-    public Stage(String name, List<PipelineAction> actions) {
+    public Stage(String name, List<Action<?>> actions) {
         this.name = name;
         this.actions = actions;
     }
@@ -19,7 +19,7 @@ public class Stage {
         return name;
     }
 
-    public List<PipelineAction> getActions() {
+    public List<Action<?>> getActions() {
         return actions;
     }
 

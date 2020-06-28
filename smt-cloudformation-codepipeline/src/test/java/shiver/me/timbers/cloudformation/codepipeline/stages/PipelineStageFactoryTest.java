@@ -4,8 +4,8 @@ import org.junit.Test;
 import shiver.me.timbers.aws.codepipeline.PipelineActionDeclaration;
 import shiver.me.timbers.aws.codepipeline.PipelineStageDeclaration;
 import shiver.me.timbers.cloudformation.codepipeline.PipelineConfig;
-import shiver.me.timbers.cloudformation.codepipeline.actions.PipelineAction;
-import shiver.me.timbers.cloudformation.codepipeline.actions.transformations.PipelineActionTransformations;
+import shiver.me.timbers.cloudformation.codepipeline.actions.Action;
+import shiver.me.timbers.cloudformation.codepipeline.actions.transformation.PipelineActionTransformations;
 
 import java.util.LinkedHashSet;
 
@@ -26,9 +26,9 @@ public class PipelineStageFactoryTest {
         final Stage stage = mock(Stage.class);
 
         final String stageName = someString();
-        final PipelineAction action1 = mock(PipelineAction.class);
-        final PipelineAction action2 = mock(PipelineAction.class);
-        final PipelineAction action3 = mock(PipelineAction.class);
+        final Action<?> action1 = mock(Action.class);
+        final Action<?> action2 = mock(Action.class);
+        final Action<?> action3 = mock(Action.class);
         final PipelineActionDeclaration pipelineAction1 = mock(PipelineActionDeclaration.class);
         final PipelineActionDeclaration pipelineAction2 = mock(PipelineActionDeclaration.class);
         final PipelineActionDeclaration pipelineAction3 = mock(PipelineActionDeclaration.class);

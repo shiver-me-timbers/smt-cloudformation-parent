@@ -48,8 +48,7 @@ public class S3BucketPolicyBuilderTest {
 
         // Then
         then(pipeline).should().add(
-            new BucketPolicyResource()
-                .withName(resourceName + "S3BucketPolicy")
+            new BucketPolicyResource(resourceName + "S3BucketPolicy")
                 .withDependsOn(role, bucket)
                 .withProperties(
                     new BucketPolicy()

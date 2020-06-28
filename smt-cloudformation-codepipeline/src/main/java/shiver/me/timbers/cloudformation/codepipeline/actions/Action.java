@@ -11,7 +11,7 @@ import java.util.function.Function;
 import static java.util.stream.Collectors.toSet;
 
 @SuppressWarnings({"rawtypes", "unchecked"})
-public class Action<A extends Action> extends PipelineActionDeclaration implements PipelineAction {
+public class Action<A extends Action> extends PipelineActionDeclaration {
 
     public A outputArtifacts(String... outputArtifacts) {
         withOutputArtifacts(toArtifacts(o -> new PipelineOutputArtifact().withName(o), outputArtifacts));

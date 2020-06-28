@@ -3,8 +3,8 @@ package shiver.me.timbers.cloudformation.codepipeline;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;
-import shiver.me.timbers.cloudformation.codepipeline.actions.PipelineAction;
-import shiver.me.timbers.cloudformation.codepipeline.builders.Builders;
+import shiver.me.timbers.cloudformation.builders.Builders;
+import shiver.me.timbers.cloudformation.codepipeline.actions.Action;
 import shiver.me.timbers.cloudformation.codepipeline.stages.Stage;
 
 import static java.util.Arrays.asList;
@@ -15,9 +15,10 @@ import static org.mockito.BDDMockito.then;
 import static org.mockito.Mockito.mock;
 import static shiver.me.timbers.data.random.RandomStrings.someString;
 
+@SuppressWarnings("rawtypes")
 public class PipelinesTest {
 
-    private Builders builders;
+    private Builders<Pipeline, PipelineConfig> builders;
     private PipelineConfig config;
     private Pipelines pipelines;
 
@@ -34,9 +35,9 @@ public class PipelinesTest {
 
         // Given
         final String name = someString();
-        final PipelineAction action1 = mock(PipelineAction.class);
-        final PipelineAction action2 = mock(PipelineAction.class);
-        final PipelineAction action3 = mock(PipelineAction.class);
+        final Action<?> action1 = mock(Action.class);
+        final Action<?> action2 = mock(Action.class);
+        final Action<?> action3 = mock(Action.class);
 
         // When
         pipelines.stage(name, action1, action2, action3);

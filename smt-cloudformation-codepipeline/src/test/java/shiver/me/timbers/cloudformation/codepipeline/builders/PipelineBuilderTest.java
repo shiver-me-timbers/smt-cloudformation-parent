@@ -59,8 +59,7 @@ public class PipelineBuilderTest {
         new PipelineBuilder(pipelineStageFactory).apply(pipeline, config);
 
         // Then
-        then(pipeline).should().add(new PipelineResource()
-            .withName(resourceName)
+        then(pipeline).should().add(new PipelineResource(resourceName)
             .withDependsOn(role, bucket)
             .withProperties(
                 new shiver.me.timbers.aws.codepipeline.Pipeline()

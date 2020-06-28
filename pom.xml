@@ -107,6 +107,8 @@
         <module>smt-cloudformation-base</module>
         <module>smt-cloudformation-objects-json-schemas</module>
         <module>smt-cloudformation-objects</module>
+        <module>smt-cloudformation-core</module>
+        <module>smt-cloudformation-test</module>
         <module>smt-cloudformation-codebuild</module>
         <module>smt-cloudformation-codepipeline</module>
     </modules>

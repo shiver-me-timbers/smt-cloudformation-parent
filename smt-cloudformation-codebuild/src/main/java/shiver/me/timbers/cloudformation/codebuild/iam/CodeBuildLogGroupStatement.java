@@ -8,14 +8,14 @@ import static shiver.me.timbers.aws.iam.Effect.ALLOW;
 
 public class CodeBuildLogGroupStatement extends Statement {
 
-    public CodeBuildLogGroupStatement(CharSequence accountId, String codeBuildName) {
+    public CodeBuildLogGroupStatement(CharSequence accountId, String projectName) {
         setEffect(ALLOW);
         withActions(
             "logs:CreateLogStream",
             "logs:PutLogEvents"
         );
         withResources(
-            fnSub(format("arn:aws:logs:ap-southeast-2:%s:log-group:/aws/codebuild/%s*", accountId, codeBuildName))
+            fnSub(format("arn:aws:logs:ap-southeast-2:%s:log-group:/aws/codebuild/%s*", accountId, projectName))
         );
     }
 }

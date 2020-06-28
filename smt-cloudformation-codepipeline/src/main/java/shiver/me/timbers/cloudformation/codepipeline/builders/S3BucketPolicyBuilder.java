@@ -7,6 +7,7 @@ import shiver.me.timbers.aws.iam.RoleResource;
 import shiver.me.timbers.aws.s3.BucketPolicy;
 import shiver.me.timbers.aws.s3.BucketPolicyResource;
 import shiver.me.timbers.aws.s3.BucketResource;
+import shiver.me.timbers.cloudformation.builders.Builder;
 import shiver.me.timbers.cloudformation.codepipeline.Pipeline;
 import shiver.me.timbers.cloudformation.codepipeline.PipelineConfig;
 import shiver.me.timbers.cloudformation.codepipeline.iam.PipelineBucketStatement;
@@ -14,7 +15,7 @@ import shiver.me.timbers.cloudformation.codepipeline.iam.PipelineBucketStatement
 import static java.util.Collections.singletonList;
 import static java.util.Collections.singletonMap;
 
-public class S3BucketPolicyBuilder implements Builder {
+public class S3BucketPolicyBuilder implements Builder<Pipeline, PipelineConfig> {
 
     @Override
     public void apply(Pipeline pipeline, PipelineConfig config) {
@@ -22,8 +23,7 @@ public class S3BucketPolicyBuilder implements Builder {
         final BucketResource bucket = config.getBucketResource();
         final Reference bucketRef = bucket.ref();
         pipeline.add(
-            new BucketPolicyResource()
-                .withName(config.getResourceName() + "S3BucketPolicy")
+            new BucketPolicyResource(config.getResourceName() + "S3BucketPolicy")
                 .withDependsOn(role, bucket)
                 .withProperties(
                     new BucketPolicy()

@@ -1,7 +1,7 @@
 package shiver.me.timbers.cloudformation.codepipeline;
 
 import org.junit.Test;
-import shiver.me.timbers.cloudformation.codepipeline.builders.Builders;
+import shiver.me.timbers.cloudformation.builders.Builders;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.mockito.Mockito.mock;

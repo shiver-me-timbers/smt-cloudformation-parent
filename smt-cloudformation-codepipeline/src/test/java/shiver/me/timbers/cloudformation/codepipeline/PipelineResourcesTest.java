@@ -1,8 +1,6 @@
 package shiver.me.timbers.cloudformation.codepipeline;
 
 import org.junit.Test;
-import shiver.me.timbers.cloudformation.codepipeline.actions.Sources;
-import shiver.me.timbers.cloudformation.codepipeline.actions.SourcesFactory;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
@@ -26,7 +24,7 @@ public class PipelineResourcesTest {
         given(sourcesFactory.create(config)).willReturn(expected);
 
         // When
-        final Sources actual = new PipelineResources(config, sourcesFactory).name(pipelineName);
+        final Sources actual = new PipelineResources(sourcesFactory, config).name(pipelineName);
 
         // Then
         then(config).should().setPipelineName(pipelineName);
